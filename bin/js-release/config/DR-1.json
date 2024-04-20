@@ -1,0 +1,36 @@
+{
+    "Product": [
+      {
+        "label": "Module -1",
+        "Product": [
+          {
+              "label": "Animation",
+              "url": "assets/content/english/DR/dr1/dr1/CM/launch.html?../RT/Stories/x_a017.swf,sanjeev",
+              "item1":"black",
+              "item2": "Bleachers"
+          },
+          {
+            "label": "Animation",
+            "url": "assets/content/english/DR/dr1/dr1/CM/launch.html?../RT/Stories/x_a014.swf,sanjeev",
+            "item1":"black",
+            "item2": "Bleachers"
+        },
+        {
+          "label": "Animation",
+          "url": "assets/content/english/DR/dr1/dr1/CM/launch.html?../DD/SortingTables/x_a209.swf,sanjeev",
+          "item1":"black",
+          "item2": "Bleachers"
+      }
+      ]
+      },
+      {
+        "label": "Destination Reading",
+        "indexing": "DM-1.json"
+      },
+      {
+        "label": "Destination Reading",
+        "indexing": "DM-2.json"
+      }
+    ]
+  }
+  

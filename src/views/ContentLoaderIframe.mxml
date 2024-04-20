@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<j:ResponsiveView xmlns:fx="http://ns.adobe.com/mxml/2009"
+	xmlns:j="library://ns.apache.org/royale/jewel"
+	xmlns:js="library://ns.apache.org/royale/basic"
+	xmlns:html="library://ns.apache.org/royale/html" xmlns:local="*" visible="false"
+    initComplete="init()">
+
+    <html:Iframe localId="iFrm" className="iFrmCssFullScreen"/>
+    <j:Image localId="hideMe" src="img/full-screen.png" click="disposeMe()" className="iFrmCssFullScreenBth"/>
+    <fx:Script>
+        <![CDATA[
+            
+            import org.apache.royale.html.elements.Iframe;
+            import views.ContentLoaderIframe;
+            import com.event.DsEvent;
+            private static var _instance:ContentLoaderIframe = null;
+
+            private function init():void{
+                _instance = this;
+            }
+            public static function get instance():ContentLoaderIframe{
+                return _instance;
+            }
+
+            public function loadPage(data:Object):void{
+                this.visible=true;
+                iFrm.src = data.url;
+            }
+            
+            public function disposeMe():void{
+                iFrm.src = "ht-pages/loading.html";
+                this.visible = false;
+                DsEvent.instance.dispatch(DsEvent.IFRAMECLOSED, DsEvent.IFRAMECLOSED)
+            }
+
+            [Bindable]
+            public function visibleState():Boolean {
+                return _instance.visible;
+            }
+        ]]>
+    </fx:Script>
+
+</j:ResponsiveView>

@@ -1,0 +1,12 @@
+{
+  "Product": [
+    {
+      "label": "Destination Reading - 1",
+      "indexing": "toc-dr-1.csv"
+    },
+    {
+      "label": "Destination Reading - 2",
+      "indexing": "toc-dr-2.csv"
+    }
+  ]   
+}

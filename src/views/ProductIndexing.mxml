@@ -1,0 +1,139 @@
+<j:ResponsiveView xmlns="library://ns.apache.org/royale/html"
+        xmlns:html="library://ns.apache.org/royale/html"
+  xmlns:fx="http://ns.adobe.com/mxml/2009"
+  xmlns:sp="library://ns.unhurdle.com/spectrum" xmlns:js="library://ns.apache.org/royale/basic" xmlns:j="library://ns.apache.org/royale/jewel" xmlns:views="views.*"
+  initComplete="initComplete()">
+
+    <fx:Script>
+        <![CDATA[
+            
+            import com.unhurdle.spectrum.Toast;
+            import com.model.ServiceLoader;
+            import com.util.DsUtil;
+            import com.unhurdle.spectrum.AccordionSection;
+            import com.unhurdle.spectrum.AccordionContent;
+            import org.apache.royale.events.MouseEvent;
+            import com.unhurdle.spectrum.Label;
+            import views.ContentLoaderIframe;
+            import com.unhurdle.spectrum.Accordion;
+            import org.apache.royale.html.supportClasses.ScrollingViewport;
+            import org.apache.royale.core.IBead;
+            import views.ContentLoaderIframe;
+            import com.event.DsEvent;
+
+            private static var CbData:Object;
+            private var accUi:Accordion = null;
+            
+            private function initComplete():void {
+                var t:Toast = new Toast();
+                t.flavor = Toast.SUCCESS;
+                t.text = "Data Loaded";
+                t.autoClose=2000;
+                t.show();
+                initTreeUi();
+                DsEvent.instance.addEventListener(DsEvent.IFRAMECLOSED, ifameEventHandler);
+                
+                
+            }
+
+            private function ifameEventHandler(obj:Object):void {
+                footerUi.visible = true;
+                
+            }
+
+            private function initTreeUi():void{
+                var sldr:ServiceLoader = new ServiceLoader();
+                sldr.loadJData("config/product.json", loadHandler)
+            }
+
+            private function loadAndUpdateAccData(url:String):void {
+                var sldr:ServiceLoader = new ServiceLoader();
+                sldr.loadJData("config/"+url, function loadHandler(e:Object):void {
+                    renderAccUi(DsUtil.csvFileToJsonObj(e));
+                }, ServiceLoader.T_EXT)
+            }
+            private function renderAccUi(data:Array):void{
+                if(accUi !=null)vg.removeElement(accUi);
+                accUi = new Accordion();
+                accUi.percentWidth=100;
+                accUi.height=window.innerHeight - 100;
+                var bd:ScrollingViewport = new ScrollingViewport();
+                accUi.addBead(bd as IBead)
+                 var subjName:String = "";
+                 var header:AccordionSection = null;
+                for(var i:int=0; i<data.length-1; i++){
+                    var sName:String = data[i]["Grade"];
+                    if(sName != subjName){
+                        if(header)accUi.addElement(header);
+                        header = new AccordionSection();
+                        header.headerText.bold();
+                        header.headerText = sName;
+                        subjName = sName;
+                    }
+                    var content:AccordionContent = new AccordionContent();
+                    content.text = i+1 +".  |  " + data[i]["Topic"] + " :: " + data[i]["Subtopic"] + " :: " + data[i]["Activity Type"] + " :: " + data[i]["Activity Name"];
+                    var objModel:Object = new Object();
+                    objModel.url = data[i]["Location"];
+                    content.model = objModel;
+                    if(sName == "POC"){
+                        content.className = "tocText";
+                        content.addEventListener(MouseEvent.CLICK, tocItemClickHanler);
+                    }
+                    
+                    header.addElement(content);
+                }
+                accUi.addElement(header);
+                vg.addElement(accUi);
+            }
+
+            private function tocItemClickHanler(e:MouseEvent):void{
+                var accContent:AccordionContent = e.target as AccordionContent;
+                titleTxt.text=accContent.text;
+                //trace(accContent.model);
+                ContentLoaderIframe.instance.loadPage(accContent.model);
+                footerUi.visible = false;
+                e.preventDefault();
+            }
+
+            private function loadHandler(e:JSON):void{
+                CbData = e['Product'];
+                var menuItem:Array = new Array();
+                for each(var i:Object in CbData){
+                    menuItem.push(i.label);
+                }
+                CbProduct.dataProvider = menuItem;
+                CbProduct.selectedIndex=-1;
+                
+            }
+
+            private function CbChandEventHandler():void{
+                if(CbProduct.selectedItem == null) return;
+                var idx:int=CbProduct.selectedIndex;
+                console.log(CbData[idx])
+                loadAndUpdateAccData(CbData[idx]['indexing'])
+            }
+
+
+        ]]>
+    </fx:Script>
+        <j:VGroup percentWidth="100" localId="vg">
+        <j:HGroup percentWidth="100" gap="10" className="actionHgroup"
+        itemsVerticalAlign="itemsCenter" itemsHorizontalAlign="itemsCenter">
+            <sp:Dropdown id="CbProduct" selectedIndex="0" quiet="true" 
+            change="CbChandEventHandler()" percentWidth="20">
+            
+            </sp:Dropdown>
+            <sp:Label id="titleTxt"  text="Select a subject from combobox" percentWidth="70" className="selectedTocItem"/>
+        </j:HGroup>
+            
+            <j:FooterBar percentWidth="100" x="0" localId="footerUi">
+                <sp:Label x="0" percentWidth="100" text="Copyright © 2022 - 2024 TECH FOR EDUCATION PVT. LTD.®. All rights reserved. " 
+                className="footerBarText"/>
+            </j:FooterBar>
+        </j:VGroup>
+        <!--<sp:Accordion id="accUi"  percentWidth="100" height="500">
+        <sp:beads>
+            <js:ScrollingViewport/>
+        </sp:beads>
+        </sp:Accordion>-->
+</j:ResponsiveView>

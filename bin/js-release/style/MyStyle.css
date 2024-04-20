@@ -1,0 +1,27 @@
+.iFrmCssFullScreenBth{
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    height: 33px;
+    cursor: pointer;
+}
+.iFrmCssFullScreen {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 0;
+}
+
+.tocText:hover {
+    background-color: rgb(209, 155, 89);
+    color:brown;
+    cursor: pointer;
+  }
+.footerBarText{
+    text-align: center;
+  }
+.actionHgroup{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }

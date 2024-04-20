@@ -1,0 +1,30 @@
+{
+    "config": "royale",
+    "compilerOptions": {
+        "debug": true,
+        "targets": ["JSRoyale"],
+        "source-map": false,
+        "js-library-path": [
+            "../ruffle/target",
+            "libs"
+        ],
+        "theme": "",
+        "source-path": [
+            "src"
+
+        ],
+        "js-external-library-path": ["typedefs"],
+        "remove-circulars": true,
+        "html-template": "index-template.html",
+        "js-compiler-option": [
+            "--skip_type_inference"
+        ]
+    },
+    "copySourcePathAssets": true,
+    "additionalOptions": "-js-output-optimization=skipAsCoercions  -warn-public-vars=false",
+    "files":
+    [
+        "src/AsJsWasm.mxml"
+    ]
+    
+  }
