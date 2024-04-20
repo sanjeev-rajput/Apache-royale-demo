@@ -131,9 +131,5 @@
                 className="footerBarText"/>
             </j:FooterBar>
         </j:VGroup>
-        <!--<sp:Accordion id="accUi"  percentWidth="100" height="500">
-        <sp:beads>
-            <js:ScrollingViewport/>
-        </sp:beads>
-        </sp:Accordion>-->
+        
 </j:ResponsiveView>
