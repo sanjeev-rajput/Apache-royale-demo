@@ -12,6 +12,7 @@
     top: 0;
     left: 0;
     padding-top: 0;
+    border:none;
 }
 
 .tocText:hover {
