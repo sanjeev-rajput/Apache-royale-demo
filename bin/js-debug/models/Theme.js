@@ -8,7 +8,7 @@
  */
 
 goog.provide('models.Theme');
-/* Royale Dependency List: AsJsWasm,org.apache.royale.routing.HashRouter*/
+/* Royale Dependency List: AsJsWasm,org.apache.royale.routing.HashRouter,XML*/
 
 
 

@@ -20,7 +20,7 @@ goog.provide('XMLList');
 XMLList = function(expression) {
   expression = typeof expression !== 'undefined' ? expression : null;
   
-  this.XMLList__xmlArray = [];
+  this._xmlArray = [];
   this.XMLList_addIndex(0);
   if (expression != null)
     this.XMLList_parseExpression(expression);
@@ -94,6 +94,21 @@ XMLList.coerce_string = function(list) {
 
 
 /**
+ * @nocollapse
+ * @param {Array} arr
+ * @return {XMLList}
+ */
+XMLList.fromArray = function(arr) {
+  var /** @type {XMLList} */ list = new XMLList();
+  var /** @type {number} */ len = (arr.length) >> 0;
+  while (XMLList.counter < len)
+    list.XMLList_addIndex((XMLList.counter + 1) >> 0);
+  list._xmlArray = arr;
+  return list;
+};
+
+
+/**
  * @royaleignorecoercion String
  * @royaleignorecoercion XMLList
  * @royaleignorecoercion XML
@@ -153,7 +168,7 @@ XMLList.prototype.XMLList_parseExpression = function(expression) {
  * @return {*}
  */
 XMLList.prototype.XMLList_resolveValue = function() {
-  if (this.XMLList__xmlArray.length > 0)
+  if (this._xmlArray.length > 0)
     return this;
   if ((this.XMLList__targetObject == null || this.XMLList__targetProperty == null) || (org.apache.royale.utils.Language.is(this.XMLList__targetProperty, QName) && (this.XMLList__targetProperty.isAttribute || this.XMLList__targetProperty.localName == '*')))
     return null;
@@ -172,10 +187,17 @@ XMLList.prototype.XMLList_resolveValue = function() {
 
 
 /**
- * @private
+ * @protected
  * @type {Array}
  */
-XMLList.prototype.XMLList__xmlArray;
+XMLList.prototype._xmlArray;
+
+
+/**
+ * @private
+ * @type {number}
+ */
+XMLList.counter = -1;
 
 
 /**
@@ -184,14 +206,17 @@ XMLList.prototype.XMLList__xmlArray;
  */
 XMLList.prototype.XMLList_addIndex = function(idx) {
   var self = this;
+  if (idx <= XMLList.counter)
+    return;
+  XMLList.counter = idx;
   var /** @type {string} */ idxStr = "" + idx;
-  Object.defineProperty(this, idxStr, {"get":function() {
-    return self.XMLList__xmlArray[idx];
+  Object.defineProperty(XMLList.prototype, idxStr, {"get":function() {
+    return this._xmlArray[idx];
   }, "set":function(newValue) {
-    if (idx >= self.XMLList__xmlArray.length)
-      self.append(newValue);
+    if (idx >= this._xmlArray.length)
+      this.append(newValue);
     else
-      self.XMLList_replaceChildAt(idx, newValue);
+      this.replaceChildAt(idx, newValue);
   }, enumerable:true, configurable:true});
 };
 
@@ -204,7 +229,7 @@ XMLList.prototype.XMLList_addIndex = function(idx) {
  * @param {Object} content
  */
 XMLList.prototype.XMLList_Append = function(content) {
-  var /** @type {number} */ i = (this.XMLList__xmlArray.length) >>> 0;
+  var /** @type {number} */ i = (this._xmlArray.length) >>> 0;
   var /** @type {number} */ n = 1;
   if (org.apache.royale.utils.Language.is(content, XMLList)) {
     var /** @type {XMLList} */ l = content;
@@ -214,12 +239,12 @@ XMLList.prototype.XMLList_Append = function(content) {
     if (n == 0)
       return;
     for (var /** @type {number} */ j = 0; j < n; j++) {
-      this.XMLList__xmlArray[i + j] = l.XMLList__xmlArray[j];
+      this._xmlArray[i + j] = l._xmlArray[j];
       this.XMLList_addIndex((i + j) >> 0);
     }
   } else {
     if (org.apache.royale.utils.Language.is(content, XML)) {
-      this.XMLList__xmlArray[i] = content;
+      this._xmlArray[i] = content;
       this.XMLList_addIndex((i) >> 0);
     }
   }
@@ -230,22 +255,20 @@ XMLList.prototype.XMLList_Append = function(content) {
  * @param {XML} child
  */
 XMLList.prototype.append = function(child) {
-  this.XMLList__xmlArray[this.XMLList__xmlArray.length] = child;
-  this.XMLList_addIndex((this.XMLList__xmlArray.length) >> 0);
-  do {
-    if (!this.XMLList__targetObject)
-      break;
-    if (!this.XMLList__targetProperty) {
-      this.XMLList__targetObject.appendChild(child);
-      break;
-    }
-    var /** @type {XMLList} */ objToAppend = this.XMLList__targetObject.child(this.XMLList__targetProperty);
-    if (!objToAppend.length()) {
-      this.XMLList__targetObject.appendChild(child);
-      break;
-    }
-    this.XMLList__targetObject.insertChildAfter(objToAppend[objToAppend.length() - 1], child);
-  } while (false);
+  this._xmlArray[this._xmlArray.length] = child;
+  this.XMLList_addIndex((this._xmlArray.length) >> 0);
+  if (!this.XMLList__targetObject)
+    return;
+  if (!this.XMLList__targetProperty) {
+    this.XMLList__targetObject.appendChild(child);
+    return;
+  }
+  var /** @type {XMLList} */ objToAppend = this.XMLList__targetObject.child(this.XMLList__targetProperty);
+  if (!objToAppend.length()) {
+    this.XMLList__targetObject.appendChild(child);
+    return;
+  }
+  this.XMLList__targetObject.insertChildAfter(objToAppend[objToAppend.length() - 1], child);
 };
 
 
@@ -255,7 +278,7 @@ XMLList.prototype.append = function(child) {
  */
 XMLList.prototype.appendChild = function(child) {
   if (this.XMLList_isSingle())
-    return this.XMLList__xmlArray[0].appendChild(child);
+    return this._xmlArray[0].appendChild(child);
   return null;
 };
 
@@ -274,11 +297,11 @@ XMLList.prototype.appendChild = function(child) {
  */
 XMLList.prototype.attribute = function(attributeName) {
   if (this.XMLList_isSingle())
-    return this.XMLList__xmlArray[0].attribute(attributeName);
+    return this._xmlArray[0].attribute(attributeName);
   var /** @type {XMLList} */ retVal = new XMLList();
-  var /** @type {number} */ len = (this.XMLList__xmlArray.length) >> 0;
+  var /** @type {number} */ len = (this._xmlArray.length) >> 0;
   for (var /** @type {number} */ i = 0; i < len; i++) {
-    var /** @type {XMLList} */ list = this.XMLList__xmlArray[i].attribute(attributeName);
+    var /** @type {XMLList} */ list = this._xmlArray[i].attribute(attributeName);
     if (list.length())
       retVal.concat(list);
   }
@@ -295,11 +318,11 @@ XMLList.prototype.attribute = function(attributeName) {
  */
 XMLList.prototype.attributes = function() {
   if (this.XMLList_isSingle())
-    return this.XMLList__xmlArray[0].attributes();
+    return this._xmlArray[0].attributes();
   var /** @type {XMLList} */ retVal = new XMLList();
-  var /** @type {number} */ len = (this.XMLList__xmlArray.length) >> 0;
+  var /** @type {number} */ len = (this._xmlArray.length) >> 0;
   for (var /** @type {number} */ i = 0; i < len; i++) {
-    var /** @type {XMLList} */ list = this.XMLList__xmlArray[i].attributes();
+    var /** @type {XMLList} */ list = this._xmlArray[i].attributes();
     if (list.length())
       retVal.concat(list);
   }
@@ -318,22 +341,22 @@ XMLList.prototype.attributes = function() {
  */
 XMLList.prototype.child = function(propertyName) {
   if (this.XMLList_isSingle())
-    return this.XMLList__xmlArray[0].child(propertyName);
+    return this._xmlArray[0].child(propertyName);
   var /** @type {XMLList} */ retVal = new XMLList();
   retVal.targetProperty = propertyName.toString();
   if (this.XMLList_isEmpty())
     retVal.targetObject = this;
   var /** @type {number} */ propNum = parseInt(propertyName, 10);
   if (propNum.toString() == propertyName) {
-    if (propNum >= 0 && propNum < this.XMLList__xmlArray.length) {
-      retVal.append(this.XMLList__xmlArray[propNum]);
-      retVal.targetObject = this.XMLList__xmlArray[propNum];
+    if (propNum >= 0 && propNum < this._xmlArray.length) {
+      retVal.append(this._xmlArray[propNum]);
+      retVal.targetObject = this._xmlArray[propNum];
     }
     return retVal;
   }
-  var /** @type {number} */ len = (this.XMLList__xmlArray.length) >> 0;
+  var /** @type {number} */ len = (this._xmlArray.length) >> 0;
   for (var /** @type {number} */ i = 0; i < len; i++) {
-    var /** @type {XMLList} */ list = this.XMLList__xmlArray[i].child(propertyName);
+    var /** @type {XMLList} */ list = this._xmlArray[i].child(propertyName);
     if (list.length())
       retVal.concat(list);
   }
@@ -346,7 +369,7 @@ XMLList.prototype.child = function(propertyName) {
  */
 XMLList.prototype.childIndex = function() {
   if (this.XMLList_isSingle())
-    return (this.XMLList__xmlArray[0].childIndex()) >> 0;
+    return (this._xmlArray[0].childIndex()) >> 0;
   throw new Error("childIndex can only be called on an XMLList with one item.");
 };
 
@@ -360,11 +383,11 @@ XMLList.prototype.childIndex = function() {
  */
 XMLList.prototype.children = function() {
   if (this.XMLList_isSingle())
-    return this.XMLList__xmlArray[0].children();
+    return this._xmlArray[0].children();
   var /** @type {XMLList} */ retVal = new XMLList();
-  var /** @type {number} */ len = (this.XMLList__xmlArray.length) >> 0;
+  var /** @type {number} */ len = (this._xmlArray.length) >> 0;
   for (var /** @type {number} */ i = 0; i < len; i++) {
-    var /** @type {XMLList} */ list = this.XMLList__xmlArray[i].children();
+    var /** @type {XMLList} */ list = this._xmlArray[i].children();
     if (list.length())
       retVal.concat(list);
   }
@@ -380,11 +403,11 @@ XMLList.prototype.children = function() {
  */
 XMLList.prototype.comments = function() {
   if (this.XMLList_isSingle())
-    return this.XMLList__xmlArray[0].comments();
+    return this._xmlArray[0].comments();
   var /** @type {XMLList} */ retVal = new XMLList();
-  var /** @type {number} */ len = (this.XMLList__xmlArray.length) >> 0;
+  var /** @type {number} */ len = (this._xmlArray.length) >> 0;
   for (var /** @type {number} */ i = 0; i < len; i++) {
-    var /** @type {XMLList} */ list = this.XMLList__xmlArray[i].comments();
+    var /** @type {XMLList} */ list = this._xmlArray[i].comments();
     if (list.length())
       retVal.concat(list);
   }
@@ -409,7 +432,7 @@ XMLList.prototype.concat = function(list) {
   } else {
     if (!org.apache.royale.utils.Language.is(list, XMLList))
       throw new TypeError("invalid type");
-    var /** @type {Array} */ otherListContents = list.XMLList__xmlArray;
+    var /** @type {Array} */ otherListContents = list._xmlArray;
     var /** @type {number} */ l = (otherListContents.length) >>> 0;
     for (var /** @type {number} */ i = 0; i < l; i++) {
       this.append(otherListContents[i]);
@@ -429,9 +452,9 @@ XMLList.prototype.concat = function(list) {
  * @return {boolean}
  */
 XMLList.prototype.contains = function(value) {
-  var /** @type {number} */ len = (this.XMLList__xmlArray.length) >> 0;
+  var /** @type {number} */ len = (this._xmlArray.length) >> 0;
   for (var /** @type {number} */ i = 0; i < len; i++) {
-    if (this.XMLList__xmlArray[i].contains(value))
+    if (this._xmlArray[i].contains(value))
       return true;
   }
   return false;
@@ -447,9 +470,9 @@ XMLList.prototype.contains = function(value) {
  */
 XMLList.prototype.copy = function() {
   var /** @type {XMLList} */ retVal = new XMLList();
-  var /** @type {number} */ len = (this.XMLList__xmlArray.length) >> 0;
+  var /** @type {number} */ len = (this._xmlArray.length) >> 0;
   for (var /** @type {number} */ i = 0; i < len; i++)
-    retVal.append(this.XMLList__xmlArray[i].copy());
+    retVal.append(this._xmlArray[i].copy());
   return retVal;
 };
 
@@ -466,11 +489,11 @@ XMLList.prototype.copy = function() {
 XMLList.prototype.descendants = function(name) {
   name = typeof name !== 'undefined' ? name : "*";
   if (this.XMLList_isSingle())
-    return this.XMLList__xmlArray[0].descendants(name);
+    return this._xmlArray[0].descendants(name);
   var /** @type {XMLList} */ retVal = new XMLList();
-  var /** @type {number} */ len = (this.XMLList__xmlArray.length) >> 0;
+  var /** @type {number} */ len = (this._xmlArray.length) >> 0;
   for (var /** @type {number} */ i = 0; i < len; i++) {
-    var /** @type {XMLList} */ list = this.XMLList__xmlArray[i].descendants(name);
+    var /** @type {XMLList} */ list = this._xmlArray[i].descendants(name);
     if (list.length())
       retVal.concat(list);
   }
@@ -490,11 +513,11 @@ XMLList.prototype.descendants = function(name) {
 XMLList.prototype.elements = function(name) {
   name = typeof name !== 'undefined' ? name : "*";
   if (this.XMLList_isSingle())
-    return this.XMLList__xmlArray[0].elements(name);
+    return this._xmlArray[0].elements(name);
   var /** @type {XMLList} */ retVal = new XMLList();
-  var /** @type {number} */ len = (this.XMLList__xmlArray.length) >> 0;
+  var /** @type {number} */ len = (this._xmlArray.length) >> 0;
   for (var /** @type {number} */ i = 0; i < len; i++) {
-    var /** @type {XMLList} */ list = this.XMLList__xmlArray[i].elements(name);
+    var /** @type {XMLList} */ list = this._xmlArray[i].elements(name);
     if (list.length())
       retVal.concat(list);
   }
@@ -508,7 +531,7 @@ XMLList.prototype.elements = function(name) {
 XMLList.prototype.elementNames = function() {
   var /** @type {Array} */ retVal = [];
   var /** @type {number} */ i = 0;
-  var /** @type {number} */ len = (this.XMLList__xmlArray.length) >> 0;
+  var /** @type {number} */ len = (this._xmlArray.length) >> 0;
   while (i < len)
     retVal.push(i++);
   return retVal;
@@ -526,23 +549,23 @@ XMLList.prototype.elementNames = function() {
  * @return {boolean}
  */
 XMLList.prototype.equals = function(list) {
-  if (list === undefined && this.XMLList__xmlArray.length == 0)
+  if (list === undefined && this._xmlArray.length == 0)
     return true;
   if (list instanceof XMLList) {
     if (list !== this) {
-      var /** @type {number} */ l = (this.XMLList__xmlArray.length) >>> 0;
-      var /** @type {Array} */ other = list.XMLList__xmlArray;
+      var /** @type {number} */ l = (this._xmlArray.length) >>> 0;
+      var /** @type {Array} */ other = list._xmlArray;
       if (other.length != l)
         return false;
       for (var /** @type {number} */ i = 0; i < l; i++) {
-        if (!this.XMLList__xmlArray[i].equals(other[i]))
+        if (!this._xmlArray[i].equals(other[i]))
           return false;
       }
     }
     return true;
   }
   if (this.XMLList_isSingle())
-    return this.XMLList__xmlArray[0].equals(list);
+    return this._xmlArray[0].equals(list);
   return false;
 };
 
@@ -553,9 +576,9 @@ XMLList.prototype.equals = function(list) {
  */
 XMLList.prototype.filter = function(callback) {
   var /** @type {XMLList} */ list = new XMLList();
-  for (var /** @type {number} */ i = 0; i < this.XMLList__xmlArray.length; i++) {
-    if (callback(this.XMLList__xmlArray[i]))
-      list.append(this.XMLList__xmlArray[i]);
+  for (var /** @type {number} */ i = 0; i < this._xmlArray.length; i++) {
+    if (callback(this._xmlArray[i]))
+      list.append(this._xmlArray[i]);
   }
   list.targetObject = this.XMLList__targetObject;
   list.targetProperty = this.XMLList__targetProperty;
@@ -569,9 +592,9 @@ XMLList.prototype.filter = function(callback) {
 XMLList.prototype.hasComplexContent = function() {
   if (this.XMLList_isEmpty())
     return false;
-  var /** @type {number} */ len = (this.XMLList__xmlArray.length) >> 0;
+  var /** @type {number} */ len = (this._xmlArray.length) >> 0;
   for (var /** @type {number} */ i = 1; i < len; i++) {
-    if (this.XMLList__xmlArray[i].hasComplexContent())
+    if (this._xmlArray[i].hasComplexContent())
       return true;
   }
   return false;
@@ -583,13 +606,13 @@ XMLList.prototype.hasComplexContent = function() {
  */
 XMLList.prototype.hasOwnProperty = function(propertyName) {
   if (this.XMLList_isSingle())
-    return !!(this.XMLList__xmlArray[0].hasOwnProperty(propertyName));
+    return !!(this._xmlArray[0].hasOwnProperty(propertyName));
   if (parseInt(propertyName, 10).toString() == propertyName) {
-    return parseInt(propertyName, 10) < this.XMLList__xmlArray.length;
+    return parseInt(propertyName, 10) < this._xmlArray.length;
   }
-  var /** @type {number} */ len = (this.XMLList__xmlArray.length) >> 0;
+  var /** @type {number} */ len = (this._xmlArray.length) >> 0;
   for (var /** @type {number} */ i = 1; i < len; i++) {
-    if (this.XMLList__xmlArray[i].hasOwnProperty(propertyName))
+    if (this._xmlArray[i].hasOwnProperty(propertyName))
       return true;
   }
   return false;
@@ -606,11 +629,11 @@ XMLList.prototype.hasOwnProperty = function(propertyName) {
 XMLList.prototype.hasSimpleContent = function() {
   if (this.XMLList_isEmpty())
     return true;
-  var /** @type {number} */ len = (this.XMLList__xmlArray.length) >> 0;
+  var /** @type {number} */ len = (this._xmlArray.length) >> 0;
   if (len == 1)
-    return !!(this.XMLList__xmlArray[0].hasSimpleContent());
+    return !!(this._xmlArray[0].hasSimpleContent());
   for (var /** @type {number} */ i = 0; i < len; i++) {
-    if (this.XMLList__xmlArray[i].nodeKind() == 'element')
+    if (this._xmlArray[i].nodeKind() == 'element')
       return false;
   }
   return true;
@@ -625,7 +648,7 @@ XMLList.prototype.hasSimpleContent = function() {
  * @return {number}
  */
 XMLList.prototype.length = function() {
-  return (this.XMLList__xmlArray.length) >> 0;
+  return (this._xmlArray.length) >> 0;
 };
 
 
@@ -634,7 +657,7 @@ XMLList.prototype.length = function() {
  */
 XMLList.prototype.name = function() {
   if (this.XMLList_isSingle())
-    return this.XMLList__xmlArray[0].name();
+    return this._xmlArray[0].name();
   return null;
 };
 
@@ -648,10 +671,10 @@ XMLList.prototype.name = function() {
  * @return {XMLList}
  */
 XMLList.prototype.normalize = function() {
-  var /** @type {number} */ len = (this.XMLList__xmlArray.length) >>> 0;
+  var /** @type {number} */ len = (this._xmlArray.length) >>> 0;
   var /** @type {XML} */ textAccumulator;
   for (var /** @type {number} */ i = 0; i < len; i++) {
-    var /** @type {XML} */ node = XML.conversion(this.XMLList__xmlArray[i]);
+    var /** @type {XML} */ node = XML.conversion(this._xmlArray[i]);
     var /** @type {string} */ nodeKind = node.nodeKind();
     if (nodeKind == 'element') {
       node.normalize();
@@ -683,10 +706,10 @@ XMLList.prototype.normalize = function() {
 XMLList.prototype.parent = function() {
   if (this.XMLList_isEmpty())
     return undefined;
-  var /** @type {XML} */ retVal = this.XMLList__xmlArray[0].parent();
-  var /** @type {number} */ len = (this.XMLList__xmlArray.length) >> 0;
+  var /** @type {XML} */ retVal = this._xmlArray[0].parent();
+  var /** @type {number} */ len = (this._xmlArray.length) >> 0;
   for (var /** @type {number} */ i = 1; i < len; i++) {
-    if (this.XMLList__xmlArray[i].parent() != retVal)
+    if (this._xmlArray[i].parent() != retVal)
       return undefined;
   }
   return retVal;
@@ -733,19 +756,19 @@ XMLList.prototype.plus = function(rightHand) {
 XMLList.prototype.processingInstructions = function(name) {
   name = typeof name !== 'undefined' ? name : "*";
   if (this.XMLList_isSingle())
-    return this.XMLList__xmlArray[0].processingInstructions(name);
+    return this._xmlArray[0].processingInstructions(name);
   var /** @type {XMLList} */ retVal = new XMLList();
   if (!name)
     return retVal;
-  var /** @type {number} */ len = (this.XMLList__xmlArray.length) >> 0;
+  var /** @type {number} */ len = (this._xmlArray.length) >> 0;
   for (var /** @type {number} */ i = 0; i < len; i++) {
-    if (this.XMLList__xmlArray[i].nodeKind() != "processing-instruction")
+    if (this._xmlArray[i].nodeKind() != "processing-instruction")
       continue;
     if (name == "*") {
-      retVal.append(this.XMLList__xmlArray[i]);
+      retVal.append(this._xmlArray[i]);
     }
-    else if (name == this.XMLList__xmlArray[i].localName)
-      retVal.append(this.XMLList__xmlArray[i]);
+    else if (name == this._xmlArray[i].localName)
+      retVal.append(this._xmlArray[i]);
   }
   return retVal;
 };
@@ -764,7 +787,7 @@ XMLList.prototype.removeChild = function(child) {
     if (propNum.toString() == child) {
       this.removeChildAt((propNum) >> 0);
     } else if (this.XMLList_isSingle()) {
-      this.XMLList__xmlArray[0].removeChild(child);
+      this._xmlArray[0].removeChild(child);
     }
     return;
   }
@@ -774,16 +797,16 @@ XMLList.prototype.removeChild = function(child) {
     return;
   }
   if (this.XMLList_isSingle())
-    this.XMLList__xmlArray[0].removeChild(child); else if (org.apache.royale.utils.Language.is(child, XMLList)) {
+    this._xmlArray[0].removeChild(child); else if (org.apache.royale.utils.Language.is(child, XMLList)) {
     len = (child.length()) >> 0;
     for (i = 0; i < len; i++) {
       this.removeChild(child[i]);
     }
   } else if (org.apache.royale.utils.Language.is(child, XML)) {
-    len = (this.XMLList__xmlArray.length - 1) >> 0;
+    len = (this._xmlArray.length - 1) >> 0;
     for (i = len; i >= 0; i--) {
-      if (this.XMLList__xmlArray[i] == child) {
-        this.XMLList__xmlArray.splice(i, 1);
+      if (this._xmlArray[i] == child) {
+        this._xmlArray.splice(i, 1);
         if (child.hasAncestor(this.XMLList__targetObject))
           child.parent().removeChild(child);
       }
@@ -796,9 +819,9 @@ XMLList.prototype.removeChild = function(child) {
  * @param {number} idx
  */
 XMLList.prototype.removeChildAt = function(idx) {
-  if (idx >= 0 && idx < this.XMLList__xmlArray.length) {
-    var /** @type {XML} */ child = this.XMLList__xmlArray[idx];
-    this.XMLList__xmlArray.splice(idx, 1);
+  if (idx >= 0 && idx < this._xmlArray.length) {
+    var /** @type {XML} */ child = this._xmlArray[idx];
+    this._xmlArray.splice(idx, 1);
     if (child.hasAncestor(this.XMLList__targetObject))
       child.parent().removeChild(child);
   }
@@ -806,29 +829,29 @@ XMLList.prototype.removeChildAt = function(idx) {
 
 
 /**
- * @private
+ * @protected
  * @param {number} idx
  * @param {*} child
  */
-XMLList.prototype.XMLList_replaceChildAt = function(idx, child) {
+XMLList.prototype.replaceChildAt = function(idx, child) {
   var /** @type {number} */ i = 0;
   //var /** @type {number} */ i = 0;
-  var /** @type {XML} */ childToReplace = this.XMLList__xmlArray[idx];
+  var /** @type {XML} */ childToReplace = this._xmlArray[idx];
   if (childToReplace && this.XMLList__targetObject) {
     this.XMLList__targetObject.replaceChildAt(childToReplace.childIndex(), child);
   }
   if (org.apache.royale.utils.Language.is(child, XML)) {
-    this.XMLList__xmlArray[idx] = child;
+    this._xmlArray[idx] = child;
   } else if (org.apache.royale.utils.Language.is(child, XMLList)) {
     var /** @type {number} */ len = (child.length()) >> 0;
     for (i = 0; i < len; i++) {
       if (i == 0)
-        this.XMLList__xmlArray[idx] = child[i];
+        this._xmlArray[idx] = child[i];
       else
-        this.XMLList__xmlArray.splice(idx + i, 0, child[i]);
+        this._xmlArray.splice(idx + i, 0, child[i]);
     }
   }
-  while (idx++ < this.XMLList__xmlArray.length) {
+  while (idx++ < this._xmlArray.length) {
     if (!this.hasOwnProperty(idx))
       this.XMLList_addIndex(idx);
   }
@@ -899,7 +922,7 @@ XMLList.prototype.setAttribute = function(attr, value) {
  */
 XMLList.prototype.hasAncestor = function(obj) {
   if (this.XMLList_isSingle())
-    return !!(this.XMLList__xmlArray[0].hasAncestor(obj));
+    return !!(this._xmlArray[0].hasAncestor(obj));
   return false;
 };
 
@@ -911,7 +934,7 @@ XMLList.prototype.hasAncestor = function(obj) {
  */
 XMLList.prototype.insertChildAfter = function(child1, child2) {
   if (this.XMLList_isSingle())
-    return this.XMLList__xmlArray[0].insertChildAfter(child1, child2);
+    return this._xmlArray[0].insertChildAfter(child1, child2);
   return null;
 };
 
@@ -923,7 +946,7 @@ XMLList.prototype.insertChildAfter = function(child1, child2) {
  */
 XMLList.prototype.insertChildBefore = function(child1, child2) {
   if (this.XMLList_isSingle())
-    return this.XMLList__xmlArray[0].insertChildAfter(child1, child2);
+    return this._xmlArray[0].insertChildAfter(child1, child2);
   return null;
 };
 
@@ -935,7 +958,7 @@ XMLList.prototype.insertChildBefore = function(child1, child2) {
 XMLList.prototype.namespace = function(prefix) {
   prefix = typeof prefix !== 'undefined' ? prefix : null;
   if (this.XMLList_isSingle())
-    return this.XMLList__xmlArray[0].namespace(prefix);
+    return this._xmlArray[0].namespace(prefix);
   return null;
 };
 
@@ -945,7 +968,7 @@ XMLList.prototype.namespace = function(prefix) {
  */
 XMLList.prototype.nodeKind = function() {
   if (this.XMLList_isSingle())
-    return org.apache.royale.utils.Language.string(this.XMLList__xmlArray[0].nodeKind());
+    return org.apache.royale.utils.Language.string(this._xmlArray[0].nodeKind());
   return null;
 };
 
@@ -956,7 +979,7 @@ XMLList.prototype.nodeKind = function() {
  */
 XMLList.prototype.removeNamespace = function(ns) {
   if (this.XMLList_isSingle())
-    return this.XMLList__xmlArray[0].removeNamespace(ns);
+    return this._xmlArray[0].removeNamespace(ns);
   return null;
 };
 
@@ -968,7 +991,7 @@ XMLList.prototype.removeNamespace = function(ns) {
  */
 XMLList.prototype.replace = function(propertyName, value) {
   if (this.XMLList_isSingle())
-    return this.XMLList__xmlArray[0].replace(propertyName, value);
+    return this._xmlArray[0].replace(propertyName, value);
 };
 
 
@@ -995,7 +1018,7 @@ XMLList.prototype.setChild = function(elementName, elements) {
     } else {
       r = null;
     }
-    if (idx >= this.XMLList__xmlArray.length) {
+    if (idx >= this._xmlArray.length) {
       var /** @type {XML} */ xmlR = r;
       if (!r && org.apache.royale.utils.Language.is(r, XMLList)) {
         if (!r.XMLList_isSingle())
@@ -1005,12 +1028,12 @@ XMLList.prototype.setChild = function(elementName, elements) {
       if (xmlR && xmlR.nodeKind() != 'element')
         return null;
       var /** @type {XML} */ y = this.XMLList_xmlFromProperty(xmlR);
-      idx = (this.XMLList__xmlArray.length) >>> 0;
+      idx = (this._xmlArray.length) >>> 0;
       if (y.nodeKind() != 'attribute') {
         if (xmlR) {
           if (idx > 0) {
             var /** @type {number} */ j = 0;
-            while (j < xmlR.getChildrenArray().length - 1 && xmlR.getChildrenArray()[j] !== this.XMLList__xmlArray[idx - 1]) {
+            while (j < xmlR.getChildrenArray().length - 1 && xmlR.getChildrenArray()[j] !== this._xmlArray[idx - 1]) {
               j++;
             }
           } else {
@@ -1028,43 +1051,43 @@ XMLList.prototype.setChild = function(elementName, elements) {
     if (!(org.apache.royale.utils.Language.is(elements, XML) || org.apache.royale.utils.Language.is(elements, XMLList)) || (org.apache.royale.utils.Language.is(elements, XML) && (elements.nodeKind() == 'text' || elements.nodeKind() == 'attribute'))) {
       elements = elements + '';
     }
-    if (this.XMLList__xmlArray[idx].nodeKind() == 'attribute') {
-      var /** @type {QName} */ z = this.XMLList__xmlArray[idx].name();
-      this.XMLList__xmlArray[idx].parent().setAttribute(z, elements);
-      var /** @type {XMLList} */ attr = this.XMLList__xmlArray[idx].parent().attribute(z);
-      this.XMLList__xmlArray[idx] = attr[0];
+    if (this._xmlArray[idx].nodeKind() == 'attribute') {
+      var /** @type {QName} */ z = this._xmlArray[idx].name();
+      this._xmlArray[idx].parent().setAttribute(z, elements);
+      var /** @type {XMLList} */ attr = this._xmlArray[idx].parent().attribute(z);
+      this._xmlArray[idx] = attr[0];
       this.XMLList_addIndex((idx) >> 0);
     } else if (org.apache.royale.utils.Language.is(elements, XMLList)) {
       var /** @type {XMLList} */ c = new XMLList(elements);
-      var /** @type {XML} */ parent = this.XMLList__xmlArray[idx].parent();
+      var /** @type {XML} */ parent = this._xmlArray[idx].parent();
       if (parent) {
-        var /** @type {number} */ q = (parent.getChildrenArray().indexOf(this.XMLList__xmlArray[idx])) >> 0;
+        var /** @type {number} */ q = (parent.getChildrenArray().indexOf(this._xmlArray[idx])) >> 0;
         parent.replaceChildAt(q, c);
-        for (j = 0; j < c.XMLList__xmlArray.child('length') - 1; j++) {
+        for (j = 0; j < c._xmlArray.child('length') - 1; j++) {
           c.setChild(j, parent.getChildrenArray()[q + j]);
         }
       }
       if (c.length() == 0) {
-        this.XMLList__xmlArray.splice(idx, 1);
+        this._xmlArray.splice(idx, 1);
         for (j = idx; j < this.length() - 1; j++) {
           this.XMLList_addIndex((j) >> 0);
         }
       } else {
-        var /** @type {number} */ l = (this.XMLList__xmlArray.length) >>> 0;
+        var /** @type {number} */ l = (this._xmlArray.length) >>> 0;
         var /** @type {number} */ cl = (c.length() - 1) >>> 0;
         for (j = (l - 1) >>> 0; j > idx; j--) {
-          this.XMLList__xmlArray[j + cl] = this.XMLList__xmlArray[j];
+          this._xmlArray[j + cl] = this._xmlArray[j];
           this.XMLList_addIndex((j + cl) >> 0);
         }
         for (j = 0; j < cl; j++) {
-          this.XMLList__xmlArray[idx + j] = c[j];
+          this._xmlArray[idx + j] = c[j];
           this.XMLList_addIndex((idx + j) >> 0);
         }
       }
-    } else if (org.apache.royale.utils.Language.is(elements, XML) || this.XMLList__xmlArray[idx].nodeKind() == 'text' || this.XMLList__xmlArray[idx].nodeKind() == 'comment' || this.XMLList__xmlArray[idx].nodeKind() == 'processing-instruction') {
-      parent = this.XMLList__xmlArray[idx].parent();
+    } else if (org.apache.royale.utils.Language.is(elements, XML) || this._xmlArray[idx].nodeKind() == 'text' || this._xmlArray[idx].nodeKind() == 'comment' || this._xmlArray[idx].nodeKind() == 'processing-instruction') {
+      parent = this._xmlArray[idx].parent();
       if (parent) {
-        q = (parent.getChildrenArray().indexOf(this.XMLList__xmlArray[idx])) >> 0;
+        q = (parent.getChildrenArray().indexOf(this._xmlArray[idx])) >> 0;
         parent.replaceChildAt(q, elements);
         elements = parent.getChildrenArray()[q];
       }
@@ -1072,23 +1095,23 @@ XMLList.prototype.setChild = function(elementName, elements) {
         var /** @type {XML} */ t = new XML();
         t.setParent(this);
         t.setValue(elements + '');
-        this.XMLList__xmlArray[idx] = t;
+        this._xmlArray[idx] = t;
       } else {
-        this.XMLList__xmlArray[idx] = elements;
+        this._xmlArray[idx] = elements;
       }
       this.XMLList_addIndex((idx) >> 0);
     } else {
-      this.XMLList__xmlArray[idx].setChild('*', elements);
+      this._xmlArray[idx].setChild('*', elements);
     }
   } else {
-    if (this.XMLList__xmlArray.length <= 1) {
+    if (this._xmlArray.length <= 1) {
       if (this.XMLList_isEmpty()) {
         r = this.XMLList_resolveValue();
         if (r == null || r.length() != 1)
           return null;
         this.XMLList_Append(r);
       }
-      this.XMLList__xmlArray[0].setChild(elementName, elements);
+      this._xmlArray[0].setChild(elementName, elements);
     } else {
       throw new TypeError('Error #1089: Assignment to lists with more than one item is not supported.');
     }
@@ -1102,7 +1125,7 @@ XMLList.prototype.setChild = function(elementName, elements) {
  */
 XMLList.prototype.setParent = function(parent) {
   if (this.XMLList_isSingle())
-    this.XMLList__xmlArray[0].setParent(parent);
+    this._xmlArray[0].setParent(parent);
 };
 
 
@@ -1112,7 +1135,7 @@ XMLList.prototype.setParent = function(parent) {
  */
 XMLList.prototype.setChildren = function(value) {
   if (this.XMLList_isSingle())
-    return this.XMLList__xmlArray[0].setChildren(value);
+    return this._xmlArray[0].setChildren(value);
   return null;
 };
 
@@ -1122,7 +1145,7 @@ XMLList.prototype.setChildren = function(value) {
  */
 XMLList.prototype.setLocalName = function(name) {
   if (this.XMLList_isSingle())
-    this.XMLList__xmlArray[0].setLocalName(name);
+    this._xmlArray[0].setLocalName(name);
 };
 
 
@@ -1131,7 +1154,7 @@ XMLList.prototype.setLocalName = function(name) {
  */
 XMLList.prototype.setName = function(name) {
   if (this.XMLList_isSingle())
-    this.XMLList__xmlArray[0].setName(name);
+    this._xmlArray[0].setName(name);
 };
 
 
@@ -1140,7 +1163,7 @@ XMLList.prototype.setName = function(name) {
  */
 XMLList.prototype.setNamespace = function(ns) {
   if (this.XMLList_isSingle())
-    this.XMLList__xmlArray[0].setNamespace(ns);
+    this._xmlArray[0].setNamespace(ns);
 };
 
 
@@ -1153,11 +1176,11 @@ XMLList.prototype.setNamespace = function(ns) {
  */
 XMLList.prototype.text = function() {
   if (this.XMLList_isSingle())
-    return this.XMLList__xmlArray[0].text();
+    return this._xmlArray[0].text();
   var /** @type {XMLList} */ retVal = new XMLList();
-  var /** @type {number} */ len = (this.XMLList__xmlArray.length) >> 0;
+  var /** @type {number} */ len = (this._xmlArray.length) >> 0;
   for (var /** @type {number} */ i = 0; i < len; i++) {
-    var /** @type {XMLList} */ list = this.XMLList__xmlArray[i].text();
+    var /** @type {XMLList} */ list = this._xmlArray[i].text();
     if (list.length())
       retVal.concat(list);
   }
@@ -1174,9 +1197,9 @@ XMLList.prototype.text = function() {
  */
 XMLList.prototype.toLocaleString = function() {
   var /** @type {Array} */ retVal = [];
-  var /** @type {number} */ len = (this.XMLList__xmlArray.length) >> 0;
+  var /** @type {number} */ len = (this._xmlArray.length) >> 0;
   for (var /** @type {number} */ i = 0; i < len; i++) {
-    var /** @type {string} */ str = org.apache.royale.utils.Language.string(this.XMLList__xmlArray[i].toLocaleString());
+    var /** @type {string} */ str = org.apache.royale.utils.Language.string(this._xmlArray[i].toLocaleString());
     if (str)
       retVal.push(str);
   }
@@ -1194,10 +1217,10 @@ XMLList.prototype.toLocaleString = function() {
  */
 XMLList.prototype.toString = function() {
   if (this.hasSimpleContent()) {
-    var /** @type {number} */ len = (this.XMLList__xmlArray.length) >> 0;
+    var /** @type {number} */ len = (this._xmlArray.length) >> 0;
     var /** @type {string} */ cumulativeText = '';
     for (var /** @type {number} */ i = 0; i < len; i++) {
-      var /** @type {XML} */ child = this.XMLList__xmlArray[i];
+      var /** @type {XML} */ child = this._xmlArray[i];
       var /** @type {string} */ kind = child.nodeKind();
       if (kind != "comment" && kind != "processing-instruction") {
         cumulativeText += child.toString();
@@ -1219,9 +1242,9 @@ XMLList.prototype.toString = function() {
  */
 XMLList.prototype.toXMLString = function() {
   var /** @type {Array} */ retVal = [];
-  var /** @type {number} */ len = (this.XMLList__xmlArray.length) >> 0;
+  var /** @type {number} */ len = (this._xmlArray.length) >> 0;
   for (var /** @type {number} */ i = 0; i < len; i++) {
-    var /** @type {string} */ str = org.apache.royale.utils.Language.string(this.XMLList__xmlArray[i].toXMLString());
+    var /** @type {string} */ str = org.apache.royale.utils.Language.string(this._xmlArray[i].toXMLString());
     if (str)
       retVal.push(str);
   }
@@ -1247,7 +1270,7 @@ XMLList.prototype.valueOf = function() {
     return target.valueOf();
   }
   if (this.XMLList_isSingle())
-    return this.XMLList__xmlArray[0].valueOf();
+    return this._xmlArray[0].valueOf();
   return this.toString();
 };
 
@@ -1257,7 +1280,7 @@ XMLList.prototype.valueOf = function() {
  * @return {string}
  */
 XMLList.prototype.anchor = function(name) {
-  return org.apache.royale.utils.Language.string(this.XMLList_isSingle() ? this.XMLList__xmlArray[0].anchor(name) : "");
+  return org.apache.royale.utils.Language.string(this.XMLList_isSingle() ? this._xmlArray[0].anchor(name) : "");
 };
 
 
@@ -1266,7 +1289,7 @@ XMLList.prototype.anchor = function(name) {
  * @return {string}
  */
 XMLList.prototype.charAt = function(index) {
-  return org.apache.royale.utils.Language.string(this.XMLList_isSingle() ? this.XMLList__xmlArray[0].charAt(index) : "");
+  return org.apache.royale.utils.Language.string(this.XMLList_isSingle() ? this._xmlArray[0].charAt(index) : "");
 };
 
 
@@ -1275,7 +1298,7 @@ XMLList.prototype.charAt = function(index) {
  * @return {number}
  */
 XMLList.prototype.charCodeAt = function(index) {
-  return Number(this.XMLList_isSingle() ? this.XMLList__xmlArray[0].charCodeAt(index) : -1);
+  return Number(this.XMLList_isSingle() ? this._xmlArray[0].charCodeAt(index) : -1);
 };
 
 
@@ -1284,7 +1307,7 @@ XMLList.prototype.charCodeAt = function(index) {
  * @return {number}
  */
 XMLList.prototype.codePointAt = function(pos) {
-  return Number(this.XMLList_isSingle() ? this.XMLList__xmlArray[0].codePointAt(pos) : -1);
+  return Number(this.XMLList_isSingle() ? this._xmlArray[0].codePointAt(pos) : -1);
 };
 
 
@@ -1295,7 +1318,7 @@ XMLList.prototype.codePointAt = function(pos) {
  */
 XMLList.prototype.indexOf = function(searchValue, fromIndex) {
   fromIndex = typeof fromIndex !== 'undefined' ? fromIndex : 0;
-  return Number(this.XMLList_isSingle() ? this.XMLList__xmlArray[0].indexOf(searchValue, fromIndex) : -1);
+  return Number(this.XMLList_isSingle() ? this._xmlArray[0].indexOf(searchValue, fromIndex) : -1);
 };
 
 
@@ -1306,7 +1329,7 @@ XMLList.prototype.indexOf = function(searchValue, fromIndex) {
  */
 XMLList.prototype.lastIndexOf = function(searchValue, fromIndex) {
   fromIndex = typeof fromIndex !== 'undefined' ? fromIndex : 0;
-  return Number(this.XMLList_isSingle() ? this.XMLList__xmlArray[0].lastIndexOf(searchValue, fromIndex) : -1);
+  return Number(this.XMLList_isSingle() ? this._xmlArray[0].lastIndexOf(searchValue, fromIndex) : -1);
 };
 
 
@@ -1319,7 +1342,7 @@ XMLList.prototype.lastIndexOf = function(searchValue, fromIndex) {
 XMLList.prototype.localeCompare = function(compareString, locales, options) {
   locales = typeof locales !== 'undefined' ? locales : undefined;
   options = typeof options !== 'undefined' ? options : undefined;
-  return Number(this.XMLList_isSingle() ? this.XMLList__xmlArray[0].localeCompare(compareString, locales, options) : NaN);
+  return Number(this.XMLList_isSingle() ? this._xmlArray[0].localeCompare(compareString, locales, options) : NaN);
 };
 
 
@@ -1328,7 +1351,7 @@ XMLList.prototype.localeCompare = function(compareString, locales, options) {
  * @return {Array}
  */
 XMLList.prototype.match = function(regexp) {
-  return this.XMLList_isSingle() ? this.XMLList__xmlArray[0].match(regexp) : null;
+  return this.XMLList_isSingle() ? this._xmlArray[0].match(regexp) : null;
 };
 
 
@@ -1337,7 +1360,7 @@ XMLList.prototype.match = function(regexp) {
  * @return {number}
  */
 XMLList.prototype.search = function(regexp) {
-  return Number(this.XMLList_isSingle() ? this.XMLList__xmlArray[0].search(regexp) : -1);
+  return Number(this.XMLList_isSingle() ? this._xmlArray[0].search(regexp) : -1);
 };
 
 
@@ -1348,7 +1371,7 @@ XMLList.prototype.search = function(regexp) {
  */
 XMLList.prototype.slice = function(beginSlice, endSlice) {
   endSlice = typeof endSlice !== 'undefined' ? endSlice : undefined;
-  return org.apache.royale.utils.Language.string(this.XMLList_isSingle() ? this.XMLList__xmlArray[0].slice(beginSlice, endSlice) : null);
+  return org.apache.royale.utils.Language.string(this.XMLList_isSingle() ? this._xmlArray[0].slice(beginSlice, endSlice) : null);
 };
 
 
@@ -1360,7 +1383,7 @@ XMLList.prototype.slice = function(beginSlice, endSlice) {
 XMLList.prototype.split = function(separator, limit) {
   separator = typeof separator !== 'undefined' ? separator : undefined;
   limit = typeof limit !== 'undefined' ? limit : undefined;
-  return this.XMLList_isSingle() ? this.XMLList__xmlArray[0].split(separator, limit) : null;
+  return this.XMLList_isSingle() ? this._xmlArray[0].split(separator, limit) : null;
 };
 
 
@@ -1371,7 +1394,7 @@ XMLList.prototype.split = function(separator, limit) {
  */
 XMLList.prototype.substr = function(start, length) {
   length = typeof length !== 'undefined' ? length : undefined;
-  return org.apache.royale.utils.Language.string(this.XMLList_isSingle() ? this.XMLList__xmlArray[0].substr(start, length) : null);
+  return org.apache.royale.utils.Language.string(this.XMLList_isSingle() ? this._xmlArray[0].substr(start, length) : null);
 };
 
 
@@ -1382,7 +1405,7 @@ XMLList.prototype.substr = function(start, length) {
  */
 XMLList.prototype.substring = function(indexStart, indexEnd) {
   indexEnd = typeof indexEnd !== 'undefined' ? indexEnd : undefined;
-  return org.apache.royale.utils.Language.string(this.XMLList_isSingle() ? this.XMLList__xmlArray[0].substring(indexStart, indexEnd) : null);
+  return org.apache.royale.utils.Language.string(this.XMLList_isSingle() ? this._xmlArray[0].substring(indexStart, indexEnd) : null);
 };
 
 
@@ -1390,7 +1413,7 @@ XMLList.prototype.substring = function(indexStart, indexEnd) {
  * @return {string}
  */
 XMLList.prototype.toLocaleLowerCase = function() {
-  return org.apache.royale.utils.Language.string(this.XMLList_isSingle() ? this.XMLList__xmlArray[0].toLocaleLowerCase() : null);
+  return org.apache.royale.utils.Language.string(this.XMLList_isSingle() ? this._xmlArray[0].toLocaleLowerCase() : null);
 };
 
 
@@ -1398,7 +1421,7 @@ XMLList.prototype.toLocaleLowerCase = function() {
  * @return {string}
  */
 XMLList.prototype.toLocaleUpperCase = function() {
-  return org.apache.royale.utils.Language.string(this.XMLList_isSingle() ? this.XMLList__xmlArray[0].toLocaleUpperCase() : null);
+  return org.apache.royale.utils.Language.string(this.XMLList_isSingle() ? this._xmlArray[0].toLocaleUpperCase() : null);
 };
 
 
@@ -1406,7 +1429,7 @@ XMLList.prototype.toLocaleUpperCase = function() {
  * @return {string}
  */
 XMLList.prototype.toLowerCase = function() {
-  return org.apache.royale.utils.Language.string(this.XMLList_isSingle() ? this.XMLList__xmlArray[0].toLowerCase() : null);
+  return org.apache.royale.utils.Language.string(this.XMLList_isSingle() ? this._xmlArray[0].toLowerCase() : null);
 };
 
 
@@ -1414,7 +1437,7 @@ XMLList.prototype.toLowerCase = function() {
  * @return {string}
  */
 XMLList.prototype.toUpperCase = function() {
-  return org.apache.royale.utils.Language.string(this.XMLList_isSingle() ? this.XMLList__xmlArray[0].toUpperCase() : null);
+  return org.apache.royale.utils.Language.string(this.XMLList_isSingle() ? this._xmlArray[0].toUpperCase() : null);
 };
 
 
@@ -1422,7 +1445,7 @@ XMLList.prototype.toUpperCase = function() {
  * @return {string}
  */
 XMLList.prototype.trim = function() {
-  return org.apache.royale.utils.Language.string(this.XMLList_isSingle() ? this.XMLList__xmlArray[0].trim() : null);
+  return org.apache.royale.utils.Language.string(this.XMLList_isSingle() ? this._xmlArray[0].trim() : null);
 };
 
 
@@ -1432,7 +1455,7 @@ XMLList.prototype.trim = function() {
  */
 XMLList.prototype.toExponential = function(fractionDigits) {
   fractionDigits = typeof fractionDigits !== 'undefined' ? fractionDigits : undefined;
-  return Number(this.XMLList_isSingle() ? this.XMLList__xmlArray[0].toExponential(fractionDigits) : NaN);
+  return Number(this.XMLList_isSingle() ? this._xmlArray[0].toExponential(fractionDigits) : NaN);
 };
 
 
@@ -1442,7 +1465,7 @@ XMLList.prototype.toExponential = function(fractionDigits) {
  */
 XMLList.prototype.toFixed = function(digits) {
   digits = typeof digits !== 'undefined' ? digits : 0;
-  return Number(this.XMLList_isSingle() ? this.XMLList__xmlArray[0].toFixed(digits) : NaN);
+  return Number(this.XMLList_isSingle() ? this._xmlArray[0].toFixed(digits) : NaN);
 };
 
 
@@ -1452,7 +1475,7 @@ XMLList.prototype.toFixed = function(digits) {
  */
 XMLList.prototype.toPrecision = function(precision) {
   precision = typeof precision !== 'undefined' ? precision : undefined;
-  return Number(this.XMLList_isSingle() ? this.XMLList__xmlArray[0].toPrecision(precision) : NaN);
+  return Number(this.XMLList_isSingle() ? this._xmlArray[0].toPrecision(precision) : NaN);
 };
 
 
@@ -1461,7 +1484,7 @@ XMLList.prototype.toPrecision = function(precision) {
  * @return {boolean}
  */
 XMLList.prototype.XMLList_isEmpty = function() {
-  return this.XMLList__xmlArray.length == 0;
+  return this._xmlArray.length == 0;
 };
 
 
@@ -1470,7 +1493,7 @@ XMLList.prototype.XMLList_isEmpty = function() {
  * @return {boolean}
  */
 XMLList.prototype.XMLList_isSingle = function() {
-  return this.XMLList__xmlArray.length == 1;
+  return this._xmlArray.length == 1;
 };
 
 
@@ -1480,7 +1503,7 @@ XMLList.prototype.XMLList_isSingle = function() {
  */
 XMLList.prototype.toXML = function() {
   if (this.XMLList_isSingle())
-    return this.XMLList__xmlArray[0];
+    return this._xmlArray[0];
   org.apache.royale.debugging.throwError("Incompatible assignment of XMLList to XML");
   return null;
 };
@@ -1491,7 +1514,7 @@ XMLList.prototype.toXML = function() {
  */
 XMLList.prototype.localName = function() {
   if (this.XMLList_isSingle())
-    return org.apache.royale.utils.Language.string(this.XMLList__xmlArray[0].localName());
+    return org.apache.royale.utils.Language.string(this._xmlArray[0].localName());
   org.apache.royale.debugging.throwError("Incompatible assignment of XMLList to XML");
   return null;
 };
@@ -1573,6 +1596,7 @@ XMLList.prototype.ROYALE_REFLECTION_INFO = function () {
     },
     methods: function () {
       return {
+        '|fromArray': { type: 'XMLList', declaredBy: 'XMLList', parameters: function () { return [ 'Array', false ]; }},
         'XMLList': { type: '', declaredBy: 'XMLList', parameters: function () { return [ 'Object', true ]; }},
         'append': { type: 'void', declaredBy: 'XMLList', parameters: function () { return [ 'XML', false ]; }},
         'appendChild': { type: 'XML', declaredBy: 'XMLList', parameters: function () { return [ '*', false ]; }},

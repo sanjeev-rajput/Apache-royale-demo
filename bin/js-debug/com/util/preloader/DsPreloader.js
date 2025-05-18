@@ -8,7 +8,7 @@
  */
 
 goog.provide('com.util.preloader.DsPreloader');
-/* Royale Dependency List: com.unhurdle.spectrum.Application,org.apache.royale.jewel.SimpleLoader,org.apache.royale.utils.Language*/
+/* Royale Dependency List: com.unhurdle.spectrum.Application,org.apache.royale.jewel.SimpleLoader,org.apache.royale.utils.Language,XML*/
 goog.provide('com.util.preloader.DsPreloader.SingletonEnforcer');
 
 

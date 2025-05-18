@@ -1,0 +1,76 @@
+<j:Drawer xmlns:fx="http://ns.adobe.com/mxml/2009"
+    xmlns:j="library://ns.apache.org/royale/jewel"
+    xmlns:sp="library://ns.unhurdle.com/spectrum" x="0" y="0"
+    initComplete="init()">
+
+
+    <j:beads>
+		<j:ResponsiveDrawer auto="true"/>
+	</j:beads>
+    
+	<j:DrawerContent>
+        <sp:ActionMenu text="R" localId="menuR" quiet="true" change="handleSelection()"/>
+	</j:DrawerContent>
+
+
+    <fx:Script>
+        <![CDATA[
+            
+            import com.event.DsEvent;
+            import com.model.ServiceLoader;
+            import com.unhurdle.spectrum.data.MenuItem;
+            
+            
+            private var CbData:Object;
+            private var selectedItemIndex:int = -1;
+            private function init():void{
+                var sldr:ServiceLoader = new ServiceLoader();
+                sldr.loadJData("config/product.json", loadHandler)
+            }
+
+            private function loadHandler(e:JSON):void{
+                CbData = e['Product'];
+                var menuArr:Array = new Array();
+                for each(var i:Object in CbData){
+                    var item:MenuItem = new MenuItem();
+                    item.text  = i.label;
+                    item.disabled  = (i.type == "disabled") ? true : false;
+                    item.isDivider  = (i.type == "divider") ? true : false;
+                    menuArr.push(item);
+                }
+                menuR.dataProvider = menuArr;
+            }
+            private function handleSelection():void {
+                var idx:int = menuR.selectedIndex;
+                if(idx == selectedItemIndex)return;
+                selectedItemIndex = idx;
+                var type:String = CbData[idx]['type'];
+                var name:String = CbData[idx]['label'];
+                var url:String = CbData[idx]['url'];
+                var addx:String = CbData[idx]['addx'];
+                var obj:Object = new Object();
+                obj.title = name;
+                obj.url = url;
+                obj.type = type;
+                obj.addx = addx
+                switch (type) {
+                    case ("toc"):
+                        DsEvent.instance.dispatch(DsEvent.FETCH_DATA_EVENT, obj);
+                        break;
+                    case "clean":
+                        DsEvent.instance.dispatch(DsEvent.CLEAR_UI_EVENT, "clean");
+                        break;
+                    case "extui":
+                        DsEvent.instance.dispatch(DsEvent.UI_COMPONENT_EVENT, obj);
+                        break;
+                    case "Action 4":
+                        // Handle Action 4
+                        break;
+                }
+                
+            }
+
+        
+        ]]>
+    </fx:Script>
+</j:Drawer>

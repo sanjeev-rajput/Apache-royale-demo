@@ -1,0 +1,67 @@
+<j:VGroup xmlns:fx="http://ns.adobe.com/mxml/2009"
+    xmlns:j="library://ns.apache.org/royale/jewel"
+    xmlns:sp="library://ns.unhurdle.com/spectrum" xmlns:html="library://ns.apache.org/royale/html"
+    initComplete="init()" itemsHorizontalAlign="itemsCenter" itemsVerticalAlign="itemsCenter"
+    height="100%" width="100%" gap="5">
+    <fx:Script>
+        <![CDATA[
+            
+            import com.unhurdle.spectrum.data.MenuItem;
+            import views.actionitemviews.basicdrawing.DrawingManager;
+            import views.actionitemviews.basicdrawing.ExportHelper;
+
+            private var cbDp:Array = new Array('Rectangle', 'Circle', 'Line', 'Freehand');            
+            //private var helper:DrawingHelper;
+            private var drawingmanager:DrawingManager;
+            private function init():void {
+                cbList.dataProvider = cbDp;
+                cbList.selectedIndex=0;
+                clrPkr.colorValue = 0xffcc99;
+                drawingmanager = new DrawingManager(drawingCtr);
+                drawingmanager.drawingMode = DrawingManager.DRAW;
+            }
+
+            private function set currentColor(value:String):void{
+                drawingmanager.color = value;
+            }
+            private function set currentShape(value:String):void{
+                drawingmanager.shapeType = value;
+            }
+
+            private function clrPkrEventHandler():void{
+                currentColor = clrPkr.appliedColor.hexString;
+            }
+
+            private function clrBtnEventHandler():void{
+                drawingmanager.initCanvas();
+            }
+            private function listEventChangeHandler():void{
+                var mItem:MenuItem = cbList.selectedItem as MenuItem;
+                currentShape = mItem.label;
+                drawAndMoveBtn.checked = true;
+                drawingmanager.drawingMode = DrawingManager.DRAW;
+            }
+
+            private function moveAndDrawEventHandler():void {
+                var flag:Boolean = drawAndMoveBtn.checked;
+                if(!flag)drawingmanager.drawingMode = DrawingManager.SELECT;
+                if(flag)drawingmanager.drawingMode = DrawingManager.DRAW;
+            }
+
+            private function exportImgEventHandler():void{
+                ExportHelper.exportSVGAsPNG(drawingmanager.canvas);
+            }
+
+        ]]>
+    </fx:Script>
+    <j:HGroup gap="10" itemsVerticalAlign="itemsCenter">
+        <sp:Picker id="cbList" quiet="true" width="120" change="listEventChangeHandler()"/>
+        <sp:ColorPicker id="clrPkr" showAlphaControls="false" openChanged="clrPkrEventHandler()"/>
+        <sp:Switch id="drawAndMoveBtn" leftLabel="Move" rightLabel="Draw" click="moveAndDrawEventHandler()" checked="true"/>
+        <j:ImageIcon src="img/export-drawing.png" click="exportImgEventHandler()"/>
+        <j:ImageIcon src="img/drawing-clean.png" click="clrBtnEventHandler()"/>
+    </j:HGroup>
+    <sp:Container id="drawingCtr" width="800" height="600" className="drawingCanvas">
+        <!-- <html:Svg id="svgCanvas" width="800" height="600"/> -->
+    </sp:Container>
+</j:VGroup>

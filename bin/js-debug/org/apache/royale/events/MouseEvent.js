@@ -498,6 +498,8 @@ org.apache.royale.events.MouseEvent.prototype.stopPropagation = function() {
  */
 org.apache.royale.events.MouseEvent.setupConverter = function() {
   org.apache.royale.core.ElementWrapper.converterMap["MouseEvent"] = org.apache.royale.events.utils.MouseEventConverter.convert;
+  org.apache.royale.core.ElementWrapper.converterMap["WheelEvent"] = org.apache.royale.events.utils.MouseEventConverter.convert;
+  org.apache.royale.core.ElementWrapper.converterMap["PointerEvent"] = org.apache.royale.events.utils.MouseEventConverter.pointerEventFilter;
   org.apache.royale.events.MouseEvent._useNativeConstructor = typeof(window.MouseEvent) == 'function';
   return true;
 };

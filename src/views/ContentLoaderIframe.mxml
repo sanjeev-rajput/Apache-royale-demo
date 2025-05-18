@@ -5,7 +5,7 @@
 	xmlns:html="library://ns.apache.org/royale/html" xmlns:local="*" visible="false"
     initComplete="init()">
 
-    <html:Iframe localId="iFrm" className="iFrmCssFullScreen"/>
+    <html:Iframe localId="iFrm" className="iFrmCssFullScreen" percentHeight="100" percentWidth="100"/>
     <j:Image localId="hideMe" src="img/full-screen.png" click="disposeMe()" className="iFrmCssFullScreenBth"/>
     <fx:Script>
         <![CDATA[
@@ -25,12 +25,13 @@
             public function loadPage(data:Object):void{
                 this.visible=true;
                 iFrm.src = data.url;
+                DsEvent.instance.dispatch(DsEvent.IFRAMEOPENED)
             }
             
             public function disposeMe():void{
                 iFrm.src = "ht-pages/loading.html";
                 this.visible = false;
-                DsEvent.instance.dispatch(DsEvent.IFRAMECLOSED, DsEvent.IFRAMECLOSED)
+                DsEvent.instance.dispatch(DsEvent.IFRAMECLOSED);
             }
 
             [Bindable]

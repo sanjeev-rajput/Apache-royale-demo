@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html:Div xmlns:fx="http://ns.adobe.com/mxml/2009"
+    xmlns:html="library://ns.apache.org/royale/html"
+    initComplete="init()" className="dragableItem">
+
+    <fx:Script>
+        <![CDATA[
+            import org.apache.royale.events.Event;
+            import views.actionitemviews.dragAndDropPopup;
+            private function init():void {
+               
+            }
+        ]]>
+    </fx:Script>       
+    <html:Span id="icnx" className="closeicon" visible="false">✕</html:Span>
+</html:Div>

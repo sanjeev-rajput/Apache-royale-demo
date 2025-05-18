@@ -50,7 +50,8 @@ org.apache.royale.core.ElementWrapper.fireListenerOverride = function(listener, 
   var /** @type {Object} */ nativeEvent = eventObject.getBrowserEvent();
   var /** @type {Function} */ converter = org.apache.royale.core.ElementWrapper.converterMap[nativeEvent.constructor.name];
   if (converter)
-    e = converter(nativeEvent, eventObject); else {
+    e = converter(nativeEvent, eventObject);
+  if (!e) {
     e = org.apache.royale.events.utils.EventUtils.retrieveEvent(nativeEvent);
     if (e == nativeEvent) {
       e = new org.apache.royale.events.BrowserEvent();

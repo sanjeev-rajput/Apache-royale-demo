@@ -8,7 +8,7 @@
  */
 
 goog.provide('views.ProductIndexing');
-/* Royale Dependency List: org.apache.royale.jewel.VGroup,org.apache.royale.jewel.HGroup,com.unhurdle.spectrum.Dropdown,com.unhurdle.spectrum.Label,org.apache.royale.jewel.FooterBar,com.event.DsEvent,com.model.ServiceLoader,com.unhurdle.spectrum.Accordion,com.unhurdle.spectrum.AccordionContent,com.unhurdle.spectrum.AccordionSection,com.unhurdle.spectrum.Toast,com.util.DsUtil,org.apache.royale.events.Event,org.apache.royale.events.MouseEvent,org.apache.royale.html.supportClasses.ScrollingViewport,views.ContentLoaderIframe*/
+/* Royale Dependency List: org.apache.royale.jewel.VGroup,org.apache.royale.jewel.HGroup,views.TopMenuL,org.apache.royale.jewel.Label,views.TopMenuR,org.apache.royale.jewel.FooterBar,com.unhurdle.spectrum.Label,org.apache.royale.jewel.Container,com.event.DsEvent,com.unhurdle.spectrum.Toast,org.apache.royale.events.Event,views.actionitemviews.BasicDrawing,views.actionitemviews.SearchListPopup,views.actionitemviews.ai.ChatBot_MistralMedium3,views.actionitemviews.keybordgame.KeyGame,views.actionitemviews.toc.TocAndPgnation,XML*/
 
 goog.require('org.apache.royale.jewel.ResponsiveView');
 
@@ -25,25 +25,31 @@ views.ProductIndexing = function() {
    * @private
    * @type {org.apache.royale.jewel.VGroup}
    */
-  this.vg_;
+  this.$ID_12_7;
   
   /**
    * @private
    * @type {org.apache.royale.jewel.HGroup}
    */
+  this.$ID_12_2;
+  
+  /**
+   * @private
+   * @type {views.TopMenuL}
+   */
   this.$ID_12_0;
   
   /**
    * @private
-   * @type {com.unhurdle.spectrum.Dropdown}
+   * @type {org.apache.royale.jewel.Label}
    */
-  this.CbProduct_;
+  this.title_;
   
   /**
    * @private
-   * @type {com.unhurdle.spectrum.Label}
+   * @type {views.TopMenuR}
    */
-  this.titleTxt_;
+  this.$ID_12_1;
   
   /**
    * @private
@@ -53,9 +59,21 @@ views.ProductIndexing = function() {
   
   /**
    * @private
+   * @type {org.apache.royale.jewel.HGroup}
+   */
+  this.pgNationCtr_;
+  
+  /**
+   * @private
    * @type {com.unhurdle.spectrum.Label}
    */
-  this.$ID_12_1;
+  this.$ID_12_4;
+  
+  /**
+   * @private
+   * @type {org.apache.royale.jewel.Container}
+   */
+  this.vg_;
   
   /**
    * @private
@@ -85,20 +103,6 @@ goog.inherits(views.ProductIndexing, org.apache.royale.jewel.ResponsiveView);
 
 /**
  * @private
- * @type {Object}
- */
-views.ProductIndexing.CbData = null;
-
-
-/**
- * @private
- * @type {com.unhurdle.spectrum.Accordion}
- */
-views.ProductIndexing.prototype.views_ProductIndexing_accUi = null;
-
-
-/**
- * @private
  */
 views.ProductIndexing.prototype.views_ProductIndexing_initComplete = function() {
   var /** @type {com.unhurdle.spectrum.Toast} */ t = new com.unhurdle.spectrum.Toast();
@@ -106,8 +110,11 @@ views.ProductIndexing.prototype.views_ProductIndexing_initComplete = function() 
   t.text = "Data Loaded";
   t.autoClose = 2000;
   t.show();
-  this.views_ProductIndexing_initTreeUi();
   com.event.DsEvent.instance.addEventListener(com.event.DsEvent.IFRAMECLOSED, org.apache.royale.utils.Language.closure(this.views_ProductIndexing_ifameEventHandler, this, 'views_ProductIndexing_ifameEventHandler'));
+  com.event.DsEvent.instance.addEventListener(com.event.DsEvent.IFRAMEOPENED, org.apache.royale.utils.Language.closure(this.views_ProductIndexing_ifameEventHandler, this, 'views_ProductIndexing_ifameEventHandler'));
+  com.event.DsEvent.instance.addEventListener(com.event.DsEvent.FETCH_DATA_EVENT, org.apache.royale.utils.Language.closure(this.views_ProductIndexing_fetchDataEventHandler, this, 'views_ProductIndexing_fetchDataEventHandler'));
+  com.event.DsEvent.instance.addEventListener(com.event.DsEvent.CLEAR_UI_EVENT, org.apache.royale.utils.Language.closure(this.views_ProductIndexing_clearUi, this, 'views_ProductIndexing_clearUi'));
+  com.event.DsEvent.instance.addEventListener(com.event.DsEvent.UI_COMPONENT_EVENT, org.apache.royale.utils.Language.closure(this.views_ProductIndexing_addUiComponent, this, 'views_ProductIndexing_addUiComponent'));
 };
 
 
@@ -116,115 +123,72 @@ views.ProductIndexing.prototype.views_ProductIndexing_initComplete = function() 
  * @param {Object} obj
  */
 views.ProductIndexing.prototype.views_ProductIndexing_ifameEventHandler = function(obj) {
-  this.footerUi.visible = true;
-};
-
-
-/**
- * @private
- */
-views.ProductIndexing.prototype.views_ProductIndexing_initTreeUi = function() {
-  var /** @type {com.model.ServiceLoader} */ sldr = new com.model.ServiceLoader();
-  sldr.loadJData("config/product.json", org.apache.royale.utils.Language.closure(this.views_ProductIndexing_loadHandler, this, 'views_ProductIndexing_loadHandler'));
-};
-
-
-/**
- * @private
- * @param {string} url
- */
-views.ProductIndexing.prototype.views_ProductIndexing_loadAndUpdateAccData = function(url) {
-  var self = this;
-  function loadHandler(e) {
-    self.views_ProductIndexing_renderAccUi(com.util.DsUtil.csvFileToJsonObj(e));
-  };
-  var /** @type {com.model.ServiceLoader} */ sldr = new com.model.ServiceLoader();
-  sldr.loadJData("config/" + url, loadHandler, com.model.ServiceLoader.T_EXT);
-};
-
-
-/**
- * @private
- * @param {Array} data
- */
-views.ProductIndexing.prototype.views_ProductIndexing_renderAccUi = function(data) {
-  if (this.views_ProductIndexing_accUi != null)
-    this.vg.removeElement(this.views_ProductIndexing_accUi);
-  this.views_ProductIndexing_accUi = new com.unhurdle.spectrum.Accordion();
-  this.views_ProductIndexing_accUi.percentWidth = 100;
-  this.views_ProductIndexing_accUi.height = window.innerHeight - 100;
-  var /** @type {org.apache.royale.html.supportClasses.ScrollingViewport} */ bd = new org.apache.royale.html.supportClasses.ScrollingViewport();
-  this.views_ProductIndexing_accUi.addBead(bd);
-  var /** @type {string} */ subjName = "";
-  var /** @type {com.unhurdle.spectrum.AccordionSection} */ header = null;
-  for (var /** @type {number} */ i = 0; i < data.length - 1; i++) {
-    var /** @type {string} */ sName = org.apache.royale.utils.Language.string(data[i]["Grade"]);
-    if (sName != subjName) {
-      if (header)
-        this.views_ProductIndexing_accUi.addElement(header);
-      header = new com.unhurdle.spectrum.AccordionSection();
-      header.headerText.bold();
-      header.headerText = sName;
-      subjName = sName;
-    }
-    var /** @type {com.unhurdle.spectrum.AccordionContent} */ content = new com.unhurdle.spectrum.AccordionContent();
-    content.text = i + 1 + ".  |  " + data[i]["Topic"] + " :: " + data[i]["Subtopic"] + " :: " + data[i]["Activity Type"] + " :: " + data[i]["Activity Name"];
-    var /** @type {Object} */ objModel = new Object();
-    objModel.url = data[i]["Location"];
-    content.model = objModel;
-    if (sName == "POC") {
-      content.className = "tocText";
-      content.addEventListener(org.apache.royale.events.MouseEvent.CLICK, org.apache.royale.utils.Language.closure(this.views_ProductIndexing_tocItemClickHanler, this, 'views_ProductIndexing_tocItemClickHanler'));
-    }
-    header.addElement(content);
+  if (obj.type == com.event.DsEvent.IFRAMEOPENED) {
+    this.footerUi.visible = false;
   }
-  this.views_ProductIndexing_accUi.addElement(header);
-  this.vg.addElement(this.views_ProductIndexing_accUi);
+  if (obj.type == com.event.DsEvent.IFRAMECLOSED) {
+    this.footerUi.visible = true;
+  }
 };
 
 
 /**
  * @private
- * @param {org.apache.royale.events.MouseEvent} e
+ * @param {Object} obj
  */
-views.ProductIndexing.prototype.views_ProductIndexing_tocItemClickHanler = function(e) {
-  var /** @type {com.unhurdle.spectrum.AccordionContent} */ accContent = e.target;
-  this.titleTxt.text = accContent.text;
-  views.ContentLoaderIframe.instance.loadPage(accContent.model);
-  this.footerUi.visible = false;
-  e.preventDefault();
+views.ProductIndexing.prototype.views_ProductIndexing_fetchDataEventHandler = function(obj) {
+  this.views_ProductIndexing_clearUi();
+  var /** @type {views.actionitemviews.toc.TocAndPgnation} */ tocPg = new views.actionitemviews.toc.TocAndPgnation(this.vg, this.pgNationCtr);
+  tocPg.loadAndUpdateAccData(obj);
+  this.title.text = org.apache.royale.utils.Language.string(obj.data.title);
 };
 
 
 /**
  * @private
- * @param {JSON} e
+ * @param {Object} obj
  */
-views.ProductIndexing.prototype.views_ProductIndexing_loadHandler = function(e) {
-  views.ProductIndexing.CbData = e['Product'];
-  var /** @type {Array} */ menuItem = new Array();
-  var foreachiter0_target = views.ProductIndexing.CbData;
-  for (var foreachiter0 in foreachiter0_target) 
-  {
-  var i = foreachiter0_target[foreachiter0];
-  {
-    menuItem.push(i.label);
-  }}
-  
-  this.CbProduct.dataProvider = menuItem;
-  this.CbProduct.selectedIndex = -1;
-};
-
-
-/**
- * @private
- */
-views.ProductIndexing.prototype.views_ProductIndexing_CbChandEventHandler = function() {
-  if (this.CbProduct.selectedItem == null)
+views.ProductIndexing.prototype.views_ProductIndexing_addUiComponent = function(obj) {
+  var /** @type {org.apache.royale.jewel.Group} */ uiComp = null;
+  this.views_ProductIndexing_clearUi();
+  var /** @type {string} */ compName = org.apache.royale.utils.Language.string(obj.data.title);
+  //var /** @type {org.apache.royale.jewel.Group} */ uiComp = null;
+  if (compName == 'Basic Drawing') {
+    uiComp = new views.actionitemviews.BasicDrawing();
+    this.vg.addElement(uiComp);
     return;
-  var /** @type {number} */ idx = this.CbProduct.selectedIndex;
-  console.log(views.ProductIndexing.CbData[idx]);
-  this.views_ProductIndexing_loadAndUpdateAccData(org.apache.royale.utils.Language.string(views.ProductIndexing.CbData[idx]['indexing']));
+  }
+  if (compName == 'AI - Chatbot - mistral-medium-3') {
+    uiComp = new views.actionitemviews.ai.ChatBot_MistralMedium3();
+    this.vg.addElement(uiComp);
+    return;
+  }
+  if (compName == 'Game') {
+    uiComp = new views.actionitemviews.keybordgame.KeyGame();
+    this.vg.addElement(uiComp);
+    uiComp.x = (this.vg.width - uiComp.width) / 2;
+    return;
+  }
+  if (compName == 'Load & Filter Data') {
+    var /** @type {views.actionitemviews.SearchListPopup} */ sLstComp = new views.actionitemviews.SearchListPopup();
+    sLstComp.showCloseBtn = false;
+    this.vg.addElement(sLstComp);
+    return;
+  }
+};
+
+
+/**
+ * @private
+ */
+views.ProductIndexing.prototype.views_ProductIndexing_clearUi = function() {
+  while (this.vg.numElements > 0) {
+    this.vg.removeElement(this.vg.getElementAt(0));
+  }
+  while (this.pgNationCtr.numElements > 0) {
+    this.pgNationCtr.removeElement(this.pgNationCtr.getElementAt(0));
+  }
+  this.title.text = "Make an action using 'L' and 'R' menu";
 };
 
 
@@ -238,53 +202,17 @@ views.ProductIndexing.prototype.$EH_12_0 = function(event)
 };
 
 
-/**
- * @export
- * @param {org.apache.royale.events.Event} event
- */
-views.ProductIndexing.prototype.$EH_12_1 = function(event)
-{
-  this.views_ProductIndexing_CbChandEventHandler();
-};
-
-
 Object.defineProperties(views.ProductIndexing.prototype, /** @lends {views.ProductIndexing.prototype} */ {
-  vg: {
+  title: {
     /** @this {views.ProductIndexing} */
     get: function() {
-      return this.vg_;
+      return this.title_;
     },
     /** @this {views.ProductIndexing} */
     set: function(value) {
-      if (value != this.vg_) {
-        this.vg_ = value;
-        this.dispatchEvent(org.apache.royale.events.ValueChangeEvent.createUpdateEvent(this, 'vg', null, value));
-      }
-    }
-  },
-  CbProduct: {
-    /** @this {views.ProductIndexing} */
-    get: function() {
-      return this.CbProduct_;
-    },
-    /** @this {views.ProductIndexing} */
-    set: function(value) {
-      if (value != this.CbProduct_) {
-        this.CbProduct_ = value;
-        this.dispatchEvent(org.apache.royale.events.ValueChangeEvent.createUpdateEvent(this, 'CbProduct', null, value));
-      }
-    }
-  },
-  titleTxt: {
-    /** @this {views.ProductIndexing} */
-    get: function() {
-      return this.titleTxt_;
-    },
-    /** @this {views.ProductIndexing} */
-    set: function(value) {
-      if (value != this.titleTxt_) {
-        this.titleTxt_ = value;
-        this.dispatchEvent(org.apache.royale.events.ValueChangeEvent.createUpdateEvent(this, 'titleTxt', null, value));
+      if (value != this.title_) {
+        this.title_ = value;
+        this.dispatchEvent(org.apache.royale.events.ValueChangeEvent.createUpdateEvent(this, 'title', null, value));
       }
     }
   },
@@ -301,6 +229,32 @@ Object.defineProperties(views.ProductIndexing.prototype, /** @lends {views.Produ
       }
     }
   },
+  pgNationCtr: {
+    /** @this {views.ProductIndexing} */
+    get: function() {
+      return this.pgNationCtr_;
+    },
+    /** @this {views.ProductIndexing} */
+    set: function(value) {
+      if (value != this.pgNationCtr_) {
+        this.pgNationCtr_ = value;
+        this.dispatchEvent(org.apache.royale.events.ValueChangeEvent.createUpdateEvent(this, 'pgNationCtr', null, value));
+      }
+    }
+  },
+  vg: {
+    /** @this {views.ProductIndexing} */
+    get: function() {
+      return this.vg_;
+    },
+    /** @this {views.ProductIndexing} */
+    set: function(value) {
+      if (value != this.vg_) {
+        this.vg_ = value;
+        this.dispatchEvent(org.apache.royale.events.ValueChangeEvent.createUpdateEvent(this, 'vg', null, value));
+      }
+    }
+  },
   'MXMLDescriptor': {
     /** @this {views.ProductIndexing} */
     get: function() {
@@ -311,27 +265,30 @@ Object.defineProperties(views.ProductIndexing.prototype, /** @lends {views.Produ
         /** @type {Array} */
         var mxmldd = [
           org.apache.royale.jewel.VGroup,
-          2,
+          4,
           '_id',
           true,
-          'vg',
+          '$ID_12_7',
           'percentWidth',
           true,
           100,
+          'itemsVerticalAlign',
+          true,
+          'itemsCenter',
+          'itemsHorizontalAlign',
+          true,
+          'itemsCenter',
           0,
           0,
           [
             org.apache.royale.jewel.HGroup,
-            6,
+            5,
             '_id',
             true,
-            '$ID_12_0',
+            '$ID_12_2',
             'percentWidth',
             true,
             100,
-            'gap',
-            true,
-            10,
             'className',
             true,
             'actionHgroup',
@@ -340,49 +297,40 @@ Object.defineProperties(views.ProductIndexing.prototype, /** @lends {views.Produ
             'itemsCenter',
             'itemsHorizontalAlign',
             true,
-            'itemsCenter',
+            'itemsSpaceAround',
             0,
             0,
             [
-              com.unhurdle.spectrum.Dropdown,
-              4,
-              'id',
-              true,
-              'CbProduct',
-              'selectedIndex',
-              true,
-              0,
-              'quiet',
-              true,
-              true,
-              'percentWidth',
-              true,
-              20,
-              0,
+              views.TopMenuL,
               1,
-              'change',
-              this.$EH_12_1,
+              '_id',
+              true,
+              '$ID_12_0',
+              0,
+              0,
               null,
-              com.unhurdle.spectrum.Label,
-              4,
+              org.apache.royale.jewel.Label,
+              2,
               'id',
               true,
-              'titleTxt',
+              'title',
               'text',
               true,
-              'Select a subject from combobox',
-              'percentWidth',
+              'Make an action using \'L\' and \'R\' menu',
+              0,
+              0,
+              null,
+              views.TopMenuR,
+              1,
+              '_id',
               true,
-              70,
-              'className',
-              true,
-              'selectedTocItem',
+              '$ID_12_1',
               0,
               0,
               null
             ],
             org.apache.royale.jewel.FooterBar,
-            3,
+            4,
             '_id',
             true,
             'footerUi',
@@ -392,14 +340,34 @@ Object.defineProperties(views.ProductIndexing.prototype, /** @lends {views.Produ
             'x',
             true,
             0,
+            'className',
+            true,
+            'footerBarText',
             0,
             0,
             [
-              com.unhurdle.spectrum.Label,
-              5,
+              org.apache.royale.jewel.HGroup,
+              4,
               '_id',
               true,
-              '$ID_12_1',
+              'pgNationCtr',
+              'itemsHorizontalAlign',
+              true,
+              'itemsSpaceAround',
+              'itemsVerticalAlign',
+              true,
+              'itemsCenter',
+              'className',
+              true,
+              'paginatiocontainer',
+              0,
+              0,
+              null,
+              com.unhurdle.spectrum.Label,
+              4,
+              '_id',
+              true,
+              '$ID_12_4',
               'x',
               true,
               0,
@@ -408,14 +376,25 @@ Object.defineProperties(views.ProductIndexing.prototype, /** @lends {views.Produ
               100,
               'text',
               true,
-              'Copyright © 2022 - 2024 TECH FOR EDUCATION PVT. LTD.®. All rights reserved. ',
-              'className',
-              true,
-              'footerBarText',
+              'Copyright © 2022 - 2024 All rights reserved. ',
               0,
               0,
               null
-            ]
+            ],
+            org.apache.royale.jewel.Container,
+            3,
+            '_id',
+            true,
+            'vg',
+            'percentWidth',
+            true,
+            100,
+            'percentHeight',
+            true,
+            100,
+            0,
+            0,
+            null
           ]
         ];
         if (arr)
@@ -445,10 +424,10 @@ views.ProductIndexing.prototype.ROYALE_REFLECTION_INFO = function () {
   return {
     accessors: function () {
       return {
-        'vg': { type: 'org.apache.royale.jewel.VGroup', access: 'readwrite', declaredBy: 'views.ProductIndexing'},
-        'CbProduct': { type: 'com.unhurdle.spectrum.Dropdown', access: 'readwrite', declaredBy: 'views.ProductIndexing'},
-        'titleTxt': { type: 'com.unhurdle.spectrum.Label', access: 'readwrite', declaredBy: 'views.ProductIndexing'},
-        'footerUi': { type: 'org.apache.royale.jewel.FooterBar', access: 'readwrite', declaredBy: 'views.ProductIndexing'}
+        'title': { type: 'org.apache.royale.jewel.Label', access: 'readwrite', declaredBy: 'views.ProductIndexing'},
+        'footerUi': { type: 'org.apache.royale.jewel.FooterBar', access: 'readwrite', declaredBy: 'views.ProductIndexing'},
+        'pgNationCtr': { type: 'org.apache.royale.jewel.HGroup', access: 'readwrite', declaredBy: 'views.ProductIndexing'},
+        'vg': { type: 'org.apache.royale.jewel.Container', access: 'readwrite', declaredBy: 'views.ProductIndexing'}
       };
     },
     methods: function () {
@@ -463,9 +442,3 @@ views.ProductIndexing.prototype.ROYALE_REFLECTION_INFO = function () {
  * @type {number}
  */
 views.ProductIndexing.prototype.ROYALE_COMPILE_FLAGS = 9;
-/**
- * Provide reflection support for distinguishing dynamic fields on class object (static)
- * @const
- * @type {Array<string>}
- */
-views.ProductIndexing.prototype.ROYALE_INITIAL_STATICS = Object.keys(views.ProductIndexing);

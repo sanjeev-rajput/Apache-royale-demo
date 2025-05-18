@@ -8,7 +8,7 @@
  */
 
 goog.provide('com.controller.MainUiController');
-/* Royale Dependency List: AsJsWasm,com.unhurdle.spectrum.Alert,com.util.DsUtil,org.apache.royale.utils.Language*/
+/* Royale Dependency List: AsJsWasm,com.unhurdle.spectrum.Alert,com.util.DsUtil,org.apache.royale.utils.Language,XML*/
 
 
 

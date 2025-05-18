@@ -1,6 +1,8 @@
 {
-    "as3mxml.sdk.framework": "C:\\Users\\admin\\AppData\\Roaming\\npm\\node_modules\\@apache-royale\\royale-js\\royale-asjs",
+    "as3mxml.sdk.framework": "e:\\softwares\\apache-royale-0.9.12-bin-js\\royale-asjs",
     "files.exclude": {
         "**/CVS": false
     }
 }
+
+

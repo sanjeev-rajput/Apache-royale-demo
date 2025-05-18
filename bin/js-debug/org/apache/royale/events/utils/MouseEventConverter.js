@@ -41,6 +41,24 @@ org.apache.royale.events.utils.MouseEventConverter.convert = function(nativeEven
 
 
 /**
+ * filter for MouseEvents represented by PointerEvents ('click' is known to be on in recent browser/OS combos)
+ * @asparam nativeEvent the native browser event
+ * @asparam browserEvent the google BrowserEvent representation
+ * @asreturn null if not converted, otherwise a Royale MouseEvent
+ *
+ * @royaleignorecoercion org.apache.royale.events.IBrowserEvent
+ * @nocollapse
+ * @param {Object} nativeEvent
+ * @param {goog.events.BrowserEvent=} browserEvent
+ * @return {Object}
+ */
+org.apache.royale.events.utils.MouseEventConverter.pointerEventFilter = function(nativeEvent, browserEvent) {
+  browserEvent = typeof browserEvent !== 'undefined' ? browserEvent : null;
+  return (nativeEvent.type == 'click') ? org.apache.royale.events.utils.MouseEventConverter.convert(nativeEvent, browserEvent) : null;
+};
+
+
+/**
  * Metadata
  *
  * @type {Object.<string, Array.<Object>>}
@@ -58,7 +76,8 @@ org.apache.royale.events.utils.MouseEventConverter.prototype.ROYALE_REFLECTION_I
   return {
     methods: function () {
       return {
-        '|convert': { type: 'org.apache.royale.events.MouseEvent', declaredBy: 'org.apache.royale.events.utils.MouseEventConverter', parameters: function () { return [ 'Object', false ,'goog.events.BrowserEvent', true ]; }}
+        '|convert': { type: 'org.apache.royale.events.MouseEvent', declaredBy: 'org.apache.royale.events.utils.MouseEventConverter', parameters: function () { return [ 'Object', false ,'goog.events.BrowserEvent', true ]; }},
+        '|pointerEventFilter': { type: 'Object', declaredBy: 'org.apache.royale.events.utils.MouseEventConverter', parameters: function () { return [ 'Object', false ,'goog.events.BrowserEvent', true ]; }}
       };
     }
   };

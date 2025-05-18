@@ -8,7 +8,7 @@
  */
 
 goog.provide('com.util.DsUtil');
-/* Royale Dependency List: org.apache.royale.utils.Language*/
+/* Royale Dependency List: XML,org.apache.royale.utils.Language*/
 
 
 
@@ -155,6 +155,22 @@ com.util.DsUtil.remvoeNewlineAndTab = function(i) {
 
 
 /**
+ * @nocollapse
+ * @param {string} str
+ * @param {number=} num
+ * @return {string}
+ */
+com.util.DsUtil.truncateString = function(str, num) {
+  num = typeof num !== 'undefined' ? num : 25;
+  if (str.length > num) {
+    return str.slice(0, num) + "...";
+  } else {
+    return str;
+  }
+};
+
+
+/**
  * Metadata
  *
  * @type {Object.<string, Array.<Object>>}
@@ -177,7 +193,8 @@ com.util.DsUtil.prototype.ROYALE_REFLECTION_INFO = function () {
         '|isValidUrl': { type: 'Boolean', declaredBy: 'com.util.DsUtil', parameters: function () { return [ 'String', false ]; }},
         '|csvFileToJsonObj': { type: 'Array', declaredBy: 'com.util.DsUtil', parameters: function () { return [ 'Object', false ]; }},
         '|csvFileToArrayObj': { type: 'Array', declaredBy: 'com.util.DsUtil', parameters: function () { return [ 'Object', false ]; }},
-        '|remvoeNewlineAndTab': { type: 'String', declaredBy: 'com.util.DsUtil', parameters: function () { return [ 'String', false ]; }}
+        '|remvoeNewlineAndTab': { type: 'String', declaredBy: 'com.util.DsUtil', parameters: function () { return [ 'String', false ]; }},
+        '|truncateString': { type: 'String', declaredBy: 'com.util.DsUtil', parameters: function () { return [ 'String', false ,'int', true ]; }}
       };
     }
   };

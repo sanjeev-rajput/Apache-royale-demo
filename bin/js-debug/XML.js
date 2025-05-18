@@ -1453,25 +1453,46 @@ XML.prototype.descendants = function(name) {
   //var /** @type {number} */ len = 0;
   if (!name)
     name = "*";
-  name = this.XML_toXMLName(name);
-  var /** @type {XMLList} */ list = new XMLList();
-  if (name.isAttribute) {
-    len = this.attributeLength();
-    for (i = 0; i < len; i++) {
-      if (name.matches(this._attributes[i].name()))
-        list.append(this._attributes[i]);
-    }
+  var /** @type {Array} */ descendents = this.XML_getDescendentArray(this, this.XML_toXMLName(name), []);
+  
+  return XMLList.fromArray(descendents);
+};
+
+
+/**
+ * @private
+ * @param {XML} current
+ * @param {QName} name
+ * @param {Array} arr
+ * @return {Array}
+ */
+XML.prototype.XML_getDescendentArray = function(current, name, arr) {
+  if (name.isAttribute && current._attributes) {
+    var foreachiter1_target = current._attributes;
+    for (var foreachiter1 in foreachiter1_target) 
+    {
+    var attr = foreachiter1_target[foreachiter1];
+    {
+      if (name.matches(attr.name()))
+        arr.push(attr);
+    }}
+    
   }
-  len = this.childrenLength();
-  for (i = 0; i < len; i++) {
-    var /** @type {XML} */ child = this._children[i];
-    if (name.matches(child.name()))
-      list.append(child);
-    if (child.getNodeRef() == XML.ELEMENT) {
-      list.concat(child.descendants(name));
-    }
+  if (current._children) {
+    var foreachiter2_target = current._children;
+    for (var foreachiter2 in foreachiter2_target) 
+    {
+    var child = foreachiter2_target[foreachiter2];
+    {
+      if (name.matches(child.name()))
+        arr.push(child);
+      if (child.getNodeRef() == XML.ELEMENT) {
+        this.XML_getDescendentArray(child, name, arr);
+      }
+    }}
+    
   }
-  return list;
+  return arr;
 };
 
 
@@ -1817,10 +1838,10 @@ XML.prototype.inScopeNamespaces = function() {
   while (y != null) {
     var /** @type {Array} */ searchNS = y._namespaces;
     if (searchNS) {
-      var foreachiter1_target = searchNS;
-      for (var foreachiter1 in foreachiter1_target) 
+      var foreachiter3_target = searchNS;
+      for (var foreachiter3 in foreachiter3_target) 
       {
-      var ns = foreachiter1_target[foreachiter1];
+      var ns = foreachiter3_target[foreachiter3];
       {
         if (!prefixCheck[ns.prefix]) {
           inScopeNS[i++] = ns;
@@ -1999,16 +2020,16 @@ XML.prototype.namespaceDeclarations = function() {
   }
   var /** @type {Array} */ declaredNS = [];
   var /** @type {boolean} */ match;
-  var foreachiter2_target = nspaces;
-  for (var foreachiter2 in foreachiter2_target) 
+  var foreachiter4_target = nspaces;
+  for (var foreachiter4 in foreachiter4_target) 
   {
-  var ns = foreachiter2_target[foreachiter2];
+  var ns = foreachiter4_target[foreachiter4];
   {
     match = false;
-    var foreachiter3_target = ancestors;
-    for (var foreachiter3 in foreachiter3_target) 
+    var foreachiter5_target = ancestors;
+    for (var foreachiter5 in foreachiter5_target) 
     {
-    var ns2 = foreachiter3_target[foreachiter3];
+    var ns2 = foreachiter5_target[foreachiter5];
     {
       if (ns.prefix == ns.prefix && ns.uri == ns2.uri) {
         match = true;
@@ -2904,9 +2925,13 @@ var typeName = typeof(name);
   var /** @type {string} */ str = name.toString();
   if (parseInt(str, 10).toString() == name)
     throw new TypeError("invalid element name");
-  if (str.indexOf("@") == 0)
-    return org.apache.royale.language.toAttributeName(name);
-  return new QName(str);
+  var /** @type {boolean} */ isAttribute = str.charCodeAt(0) == 64;
+  if (isAttribute)
+    str = str.slice(1);
+  var /** @type {QName} */ qname = new QName(str);
+  if (isAttribute)
+    qname.setIsAttribute(true);
+  return qname;
 };
 
 

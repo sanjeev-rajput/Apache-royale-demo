@@ -1,0 +1,111 @@
+<j:HGroup xmlns:fx="http://ns.adobe.com/mxml/2009"
+    xmlns:j="library://ns.apache.org/royale/jewel" xmlns:html="library://ns.apache.org/royale/html"
+    initComplete="init()" itemsVerticalAlign="itemsCenter" className="tabData">
+        <j:ImageIcon id="moveBtn" src="img/move.png" click="editModeEventHandler(event)" className="launchBtn launchBtnImg">
+            <j:beads>
+                <j:ToolTip toolTip="Arrange row" className="toolTip"/>
+            </j:beads>
+        </j:ImageIcon>
+         <html:Span localId="txt" percentWidth="100">some tex</html:Span>
+        <j:ImageIcon id="ifrmBrn" src="img/icons8-click-24.png" click="iframeLoadEventHandler()" className="launchBtn launchBtnImg">
+            <j:beads>
+                <j:ToolTip toolTip="Click to open" className="toolTip"/>
+            </j:beads>
+        </j:ImageIcon>
+        <j:ImageIcon id="copyBtn" src="img/icons8-copy-24.png" click="copyToClipBoard(event)" className="launchBtn launchBtnImg">
+            <j:beads>
+                <j:ToolTip toolTip="Copy module ID" className="toolTip"/>
+            </j:beads>
+        </j:ImageIcon>
+
+        <j:ImageIcon id="editBtn" src="img/edit.png" click="editModeEventHandler(event)" className="launchBtn launchBtnImg">
+            <j:beads>
+                <j:ToolTip toolTip="Edit row content" className="toolTip"/>
+            </j:beads>
+        </j:ImageIcon>
+        <j:ImageIcon id="deleteBtn" src="img/delete.png" click="editModeEventHandler(event)" className="launchBtn launchBtnImg">
+            <j:beads>
+                <j:ToolTip toolTip="Delete row" className="toolTip"/>
+            </j:beads>
+        </j:ImageIcon>
+
+    <fx:Script>
+        <![CDATA[
+            import views.ContentLoaderIframe;
+            import com.util.AsJsUtil;
+            import com.unhurdle.spectrum.Toast;
+            import org.apache.royale.events.Event;
+            import com.extjavascript.cryp.CryptoJS;
+            import com.event.DsEvent;
+            import org.apache.royale.events.MouseEvent;
+            import org.apache.royale.jewel.ImageIcon;
+            import com.unhurdle.spectrum.AccordionContent;
+            import com.unhurdle.spectrum.AccordionSection;
+            import org.apache.royale.events.DragEvent;
+            
+            private static const EDIT:String = "Edit";
+            private static const MOVE:String = "Move";
+            private var data:Array;
+
+            private function init():void{
+                data = this.model.dataSet
+                txt.innerHTML = data["Topic"] + " :: " + data["Subtopic"] + " :: " + data["Activity Type"] + " :: " + data["Activity Name"];
+                DsEvent.instance.addEventListener(DsEvent.TOC_DATA_TABLE_EVENT, tocDataEventHandler);
+                setEditMoveMode(EDIT, this.model.isEditModeOn);
+                setEditMoveMode(MOVE, this.model.isMoveModeOn);
+            }
+
+            private function tocDataEventHandler(obj:Object):void {
+                setEditMoveMode(obj.data.label, obj.data.isChecked);
+            }
+
+            private function setEditMoveMode(type:String, flag:Boolean):void {
+                if(type == EDIT){
+                    this.model.isEditModeOn = flag;
+                    ifrmBrn.visible = copyBtn.visible = !flag;;
+                    deleteBtn.visible = editBtn.visible = flag;
+                }
+                if(type == MOVE){
+                    this.model.isMoveModeOn = flag;
+                    moveBtn.visible = flag;
+
+                }
+                
+            }
+
+            private function iframeLoadEventHandler():void{
+                ContentLoaderIframe.instance.loadPage(data['url']);
+            }
+
+            private function copyToClipBoard(event:Event):void{
+                var str:String = this.model.url;
+                var encypData:String = CryptoJS.encrypt(str, "12345678901234567890123456789012")
+                AsJsUtil.copyToClipboard(encypData);   
+                var t:Toast = new Toast("Copied to clipboard!!!", 1000);
+                t.x=  this.y;
+                t.y=this.y
+                t.show();
+               console.log(CryptoJS.decrypt(encypData,"12345678901234567890123456789012"))
+            }
+
+            private function editModeEventHandler(e:MouseEvent):void{
+                var btn:ImageIcon = (e.target as ImageIcon)
+                var itemA:AccordionContent = this.parent as AccordionContent ;
+                if(btn == deleteBtn){
+                    itemA.parent.removeElement(itemA);
+                }
+                if(btn == editBtn){
+                    txt.contentEditable = "true";
+                }
+                if(btn == moveBtn){
+                    var indexA:int = itemA.parent.getElementIndex(itemA);
+                    var indexB:int = indexA-1;
+                    var itemB:AccordionContent = itemA.parent.getElementAt(indexB) as AccordionContent
+                    itemB.parent.addElementAt(itemA, indexA);
+                }
+                this.model.callBack(model.dataSet)
+            }
+            
+        ]]>
+    </fx:Script>
+</j:HGroup>

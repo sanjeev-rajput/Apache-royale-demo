@@ -1,0 +1,197 @@
+<j:View xmlns:fx="http://ns.adobe.com/mxml/2009"
+         xmlns:js="library://ns.apache.org/royale/basic" 
+         xmlns:j="library://ns.apache.org/royale/jewel" 
+         xmlns:html="library://ns.apache.org/royale/html"
+         width="800"
+         height="600"
+         initComplete="init()" 
+         className="gameArea">
+
+    <fx:Script>
+        <![CDATA[
+            import org.apache.royale.events.KeyboardEvent;
+            import org.apache.royale.events.Event;
+            
+            import org.apache.royale.jewel.Label;
+            import org.apache.royale.utils.Timer;
+            import org.apache.royale.svg.elements.Rect;
+            import org.apache.royale.jewel.Image;
+
+            private var basket:Image;
+            private var basketPosX:int = 350;
+            private var basketSpeed:int = 30;
+            private var basketPosY:int = 20;
+
+            private var balls:Array = [];
+            private var score:int = 0;
+
+            private var gameTimer:Timer;
+            private var isGameOver:Boolean = false;
+
+            //private var warningLine:HTMLDivElement;
+            private var warningThickness:int = 2;
+            private var intervalId:int;
+            private var _shape:Rect;
+
+            private function init():void {
+                createBasket();
+                setupKeyboardControls();
+                setupGameTimer();
+                intervalId = setInterval(spawnBall, 2000);
+                updateWarningArea();
+                
+            }
+
+            private function createBasket():void {
+                basket = new Image();
+                basket.width = 100;
+                basket.height = 50;
+                basket.src = "img/basket.png";
+                basket.element.style.position = "absolute";
+                updateBasketPosition();
+                basket.element.style.transition = "left 0.2s linear";
+                this.addElement(basket);
+            }
+
+            private function setupKeyboardControls():void {
+                document.addEventListener(KeyboardEvent.KEY_DOWN, onKeyDown);
+            }
+
+            private function setupGameTimer():void {
+                gameTimer = new Timer(30);
+                gameTimer.addEventListener("timer", onGameTick);
+                gameTimer.start();
+            }
+
+            private function onKeyDown(e:KeyboardEvent):void {
+                if (isGameOver) return;
+                if (e.key == "ArrowLeft") {
+                    basketPosX = Math.max(0, basketPosX - basketSpeed);
+                } else if (e.key == "ArrowRight") {
+                    basketPosX = Math.min(this.width - basket.width, basketPosX + basketSpeed);
+                }
+                updateBasketPosition();
+            }
+
+            private function spawnBall():void {
+                if(isGameOver){
+                    clearInterval(intervalId);
+                    return;
+                }
+                var ball:Image = new Image();
+                ball.width = 30;
+                ball.height = 30;
+                ball.src = "img/ball.png";
+                ball.element.style.position = "absolute";
+                ball.element.style.left = (Math.random() * (this.width - ball.width)) + "px";
+                ball.element.style.top = "0px";
+                this.addElement(ball);
+                balls.push(ball);
+            }
+
+            private function onGameTick(event:Event):void {
+                for (var i:int = balls.length - 1; i >= 0; i--) {
+                    var ball:Image = balls[i];
+                    var currentTop:int = parseInt(ball.element.style.top) || 0;
+                    currentTop += 5;
+                    ball.element.style.top = currentTop + "px";
+
+                    var ballX:int = parseInt(ball.element.style.left) || 0;
+                    var ballY:int = currentTop;
+
+                    var basketTop:int = this.height - basketPosY - basket.height;
+                    var basketBottom:int = this.height - basketPosY;
+
+                    if (ballY + ball.height >= basketTop && ballY <= basketBottom &&
+                        ballX + ball.width > basketPosX && ballX < basketPosX + basket.width) {
+                        removeBall(ball, true);
+                    } else if (ballY > this.height) {
+                        removeBall(ball, false);
+                    }
+                }
+            }
+
+            private function removeBall(ball:Image, isCatched:Boolean):void {
+                var ballX:int = parseInt(ball.element.style.left) || 0;
+                var ballY:int = parseInt(ball.element.style.top) || 0;
+
+                if (isCatched) {
+                    showPointsAnimation("+10", basketPosX + basket.width / 2, this.height - (basketPosY + basket.height), "green");
+                    basket.element.classList.add('gameBlurBasket');
+                    setTimeout(function():void {
+                        basket.element.classList.remove('gameBlurBasket');
+                    }, 200);
+                    score += 10;
+                    removeElement(ball);
+                } else {
+                    ball.src = "img/blast.png";
+                    showPointsAnimation("-10", ballX, ballY, "red");
+                    score -= 10;
+                    setTimeout(this.removeElement, 500, ball);
+
+                    if (score % -30 == 0) {
+                        basketPosY += 20;
+                        updateBasketPosition();
+                        updateWarningArea()
+                    }
+                }
+
+                scoreLabel.text = "Score: " + score;
+                balls.splice(balls.indexOf(ball), 1);
+            }
+
+            private function showPointsAnimation(pointsText:String, x:int, y:int, color:String):void {
+                var pointsLabel:Label = new Label();
+                pointsLabel.text = pointsText;
+                pointsLabel.element.style.position = "absolute";
+                pointsLabel.element.style.left = x + "px";
+                pointsLabel.element.style.top = y + "px";
+                pointsLabel.element.style.color = color;
+                pointsLabel.element.style.fontWeight = "bold";
+                pointsLabel.element.style.transition = "top 1s ease-out, opacity 1s ease-out";
+                this.addElement(pointsLabel);
+
+                setTimeout(function():void {
+                    pointsLabel.element.style.top = (y - 50) + "px";
+                    pointsLabel.element.style.opacity = "0";
+                }, 10);
+
+                setTimeout(function():void {
+                    removeElement(pointsLabel);
+                }, 200);
+            }
+
+            private function updateBasketPosition():void {
+                basket.element.style.bottom = basketPosY + "px";
+                basket.element.style.left = basketPosX + "px";
+                
+                if (basketPosY >= this.height - basket.height - 50) {
+                    isGameOver = true;
+                    showGameOver();
+                }
+            }
+
+            private function showGameOver():void {
+                gmOvr.visible = true;
+                gameTimer.stop();
+            }
+
+            private function updateWarningArea():void {
+                 warningArea.height = basketPosY;
+                 warningArea.y = 600-basketPosY;
+                 if (basketPosY >= this.height/2) {
+                    warningArea.fill = 'yellow';
+                }if (basketPosY >= this.height-200) {
+                    warningArea.fill = 'orange';
+                }
+            }
+
+
+        ]]>
+    </fx:Script>
+    <html:Svg percentWidth="100" percentHeight="100">
+      <html:Rect id="warningArea" percentWidth="100" height="10" x="0" y="600" fill="green" />
+    </html:Svg>
+    <j:Label id="gmOvr" text="GAME OVER" className="gameOverLbl" visible="false"/>
+    <j:Label id="scoreLabel" text="Score: 00" className="scoreLbl"/>
+</j:View>

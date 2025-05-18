@@ -1,0 +1,11 @@
+https://openrouter.ai/settings/keys
+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
+
+
+model-mistralai/mistral-medium-3
+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
+
+
+huggingface
+pwd - Skr@8480
+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

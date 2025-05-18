@@ -8,6 +8,7 @@
  */
 
 goog.provide('AsJsWasm');
+goog.require('XML');
 goog.require('com.controller.MainUiController');
 goog.require('com.unhurdle.spectrum.Application');
 goog.require('com.unhurdle.spectrum.ListController');
@@ -18,6 +19,10 @@ goog.require('com.unhurdle.spectrum.ListView');
 goog.require('com.unhurdle.spectrum.MenuController');
 goog.require('com.unhurdle.spectrum.beads.KeyboardNavigateableHandler');
 goog.require('com.unhurdle.spectrum.beads.KeyboardNavigateableHandler');
+goog.require('com.unhurdle.spectrum.beads.SwatchListView');
+goog.require('com.unhurdle.spectrum.beads.TileLayout');
+goog.require('com.unhurdle.spectrum.colorpicker.ColorPickerPopUp');
+goog.require('com.unhurdle.spectrum.renderers.ColorSwatchRenderer');
 goog.require('com.unhurdle.spectrum.renderers.ListItemRenderer');
 goog.require('com.unhurdle.spectrum.renderers.MenuItemRenderer');
 goog.require('com.unhurdle.spectrum.renderers.SelectableItemRenderer');
@@ -28,7 +33,9 @@ goog.require('org.apache.royale.core.ItemRendererClassFactory');
 goog.require('org.apache.royale.core.OverridableSelectableItemRendererClassFactory');
 goog.require('org.apache.royale.core.OverridableSelectableItemRendererClassFactory');
 goog.require('org.apache.royale.core.SelectableItemRendererClassFactory');
+goog.require('org.apache.royale.core.StyledUIBase');
 goog.require('org.apache.royale.events.Event');
+goog.require('org.apache.royale.html.beads.ContainerView');
 goog.require('org.apache.royale.html.beads.DataContainerView');
 goog.require('org.apache.royale.html.beads.DataItemRendererFactoryForArrayData');
 goog.require('org.apache.royale.html.beads.DataItemRendererFactoryForArrayData');
@@ -46,6 +53,7 @@ goog.require('org.apache.royale.html.beads.SolidBackgroundSelectableItemRenderer
 goog.require('org.apache.royale.html.beads.controllers.ItemRendererMouseController');
 goog.require('org.apache.royale.html.beads.controllers.ItemRendererMouseController');
 goog.require('org.apache.royale.html.beads.controllers.ListSingleSelectionMouseController');
+goog.require('org.apache.royale.html.beads.layouts.HorizontalLayout');
 goog.require('org.apache.royale.html.beads.layouts.NoLayout');
 goog.require('org.apache.royale.html.beads.layouts.NoLayout');
 goog.require('org.apache.royale.html.beads.layouts.VerticalLayout');
@@ -63,152 +71,221 @@ goog.require('org.apache.royale.html.supportClasses.StringItemRenderer');
 goog.require('org.apache.royale.html.supportClasses.StringItemRenderer');
 goog.require('org.apache.royale.html.supportClasses.Viewport');
 goog.require('org.apache.royale.jewel.ResponsiveView');
-goog.require('org.apache.royale.jewel.beads.controllers.AlertController');
+goog.require('org.apache.royale.jewel.beads.controllers.PopUpMouseController');
+goog.require('org.apache.royale.jewel.beads.layouts.BasicLayout');
 goog.require('org.apache.royale.jewel.beads.layouts.BasicLayout');
 goog.require('org.apache.royale.jewel.beads.layouts.HorizontalLayout');
-goog.require('org.apache.royale.jewel.beads.layouts.HorizontalLayout');
+goog.require('org.apache.royale.jewel.beads.layouts.NullLayout');
 goog.require('org.apache.royale.jewel.beads.layouts.NullLayout');
 goog.require('org.apache.royale.jewel.beads.layouts.NullLayout');
 goog.require('org.apache.royale.jewel.beads.layouts.VerticalLayout');
 goog.require('org.apache.royale.jewel.beads.layouts.ViewLayout');
-goog.require('org.apache.royale.jewel.beads.models.AlertModel');
 goog.require('org.apache.royale.jewel.beads.models.ImageModel');
+goog.require('org.apache.royale.jewel.beads.models.PopUpModel');
 goog.require('org.apache.royale.jewel.beads.models.TextModel');
-goog.require('org.apache.royale.jewel.beads.models.TitleBarModel');
-goog.require('org.apache.royale.jewel.beads.views.AlertView');
 goog.require('org.apache.royale.jewel.beads.views.ImageView');
-goog.require('org.apache.royale.jewel.beads.views.TitleBarView');
+goog.require('org.apache.royale.jewel.beads.views.PopUpView');
+goog.require('org.apache.royale.jewel.supportClasses.Viewport');
 goog.require('org.apache.royale.routing.PathRouteBead');
 goog.require('views.ContentLoaderIframe');
 goog.require('views.ProductIndexing');
 goog.require('com.unhurdle.spectrum.Application');
-goog.require('org.apache.royale.utils.getSelectionRenderBead');
+goog.require('com.unhurdle.spectrum.SwatchList');
+goog.require('views.actionitemviews.searchlist.LstItem');
+goog.require('com.unhurdle.spectrum.colorpicker.AlphaTextField');
 goog.require('com.unhurdle.spectrum.FieldButton');
-goog.require('org.apache.royale.utils.ClassSelectorList');
+goog.require('com.unhurdle.spectrum.colorpicker.ColorTextField');
 goog.require('com.unhurdle.spectrum.AccordionContent');
+goog.require('org.apache.royale.svg.elements.Path');
 goog.require('com.unhurdle.spectrum.Accordion');
+goog.require('org.apache.royale.jewel.Spacer');
 goog.require('org.apache.royale.routing.HashRouter');
 goog.require('org.apache.royale.language.toAttributeName');
 goog.require('org.apache.royale.core.IStyleObject');
 goog.require('org.apache.royale.utils.MXMLDataInterpreter');
 goog.require('org.apache.royale.events.utils.WhitespaceKeys');
-goog.require('org.apache.royale.html.beads.models.ListPresentationModel');
-goog.require('org.apache.royale.events.ItemClickedEvent');
-goog.require('org.apache.royale.html.util.getLabelFromData');
+goog.require('org.apache.royale.svg.elements.Line');
+goog.require('views.actionitemviews.basicdrawing.shapes.FreehandShape');
 goog.require('org.apache.royale.core.IStatesImpl');
 goog.require('org.apache.royale.core.IMeasurementBead');
-goog.require('org.apache.royale.events.MouseEvent');
-goog.require('org.apache.royale.jewel.Button');
-goog.require('com.unhurdle.spectrum.AccordionSection');
-goog.require('org.apache.royale.jewel.SimpleLoader');
-goog.require('com.unhurdle.spectrum.Underlay');
+goog.require('org.apache.royale.utils.Endian');
+goog.require('views.actionitemviews.draganddrop.DragItem');
 goog.require('org.apache.royale.html.util.addElementToWrapper');
 goog.require('com.event.DsEvent');
-goog.require('org.apache.royale.core.styles.BorderStyles');
-goog.require('com.unhurdle.spectrum.beads.KeyboardFocusHandler');
-goog.require('org.apache.royale.jewel.Label');
+goog.require('com.unhurdle.spectrum.ActionMenu');
+goog.require('views.actionitemviews.ai.ChatBot');
 goog.require('org.apache.royale.net.HTTPService');
-goog.require('org.apache.royale.functional.decorator.debounceLong');
+goog.require('views.actionitemviews.toc.tableData');
+goog.require('com.unhurdle.spectrum.ActionGroup');
 goog.require('org.apache.royale.utils.CSSUtils');
 goog.require('org.apache.royale.binding.SimpleBinding');
+goog.require('com.unhurdle.spectrum.colorpicker.ColorPicker');
 goog.require('com.unhurdle.spectrum.const.IconType');
-goog.require('org.apache.royale.geom.Point');
 goog.require('org.apache.royale.binding.ConstantBinding');
-goog.require('com.unhurdle.spectrum.Toast');
-goog.require('com.unhurdle.spectrum.Dropdown');
+goog.require('org.apache.royale.utils.rgbToHsv');
 goog.require('com.model.ServiceLoader');
-goog.require('org.apache.royale.events.ItemAddedEvent');
+goog.require('com.unhurdle.spectrum.ColorLoupe');
 goog.require('com.util.DsUtil');
 goog.require('org.apache.royale.events.utils.EditingKeys');
 goog.require('com.unhurdle.spectrum.TextNode');
 goog.require('org.apache.royale.events.CloseEvent');
-goog.require('org.apache.royale.events.getTargetWrapper');
-goog.require('com.unhurdle.spectrum.ComboBoxList');
-goog.require('org.apache.royale.jewel.HGroup');
 goog.require('org.apache.royale.debugging.assertType');
+goog.require('views.actionitemviews.basicdrawing.shapes.CircleShape');
+goog.require('org.apache.royale.jewel.Container');
 goog.require('com.unhurdle.spectrum.includes.SideNavInclude');
 goog.require('com.unhurdle.spectrum.newElement');
 goog.require('org.apache.royale.geom.Size');
 goog.require('org.apache.royale.utils.sendStrandEvent');
-goog.require('QName');
-goog.require('org.apache.royale.states.State');
-goog.require('org.apache.royale.html.util.DialogPolyfill');
-goog.require('org.apache.royale.core.ValuesManager');
-goog.require('org.apache.royale.events.ValueChangeEvent');
-goog.require('com.unhurdle.spectrum.Alert');
+goog.require('org.apache.royale.jewel.ImageIcon');
+goog.require('views.actionitemviews.dragAndDropPopup');
+goog.require('com.unhurdle.spectrum.includes.ActionButtonInclude');
+goog.require('org.apache.royale.core.IState');
+goog.require('views.actionitemviews.toc.TocAndPgnation');
+goog.require('org.apache.royale.utils.BinaryData');
+goog.require('org.apache.royale.core.IContentView');
 goog.require('com.unhurdle.spectrum.newSVGElement');
+goog.require('org.apache.royale.utils.net.IDataOutput');
 goog.require('com.unhurdle.spectrum.ImageAsset');
-goog.require('org.apache.royale.core.ClassFactory');
 goog.require('org.apache.royale.geom.Matrix');
-goog.require('com.unhurdle.spectrum.ClearButton');
+goog.require('org.apache.royale.binding.ContainerDataBinding');
 goog.require('org.apache.royale.events.KeyboardEvent');
 goog.require('org.apache.royale.events.utils.NavigationKeys');
-goog.require('com.unhurdle.spectrum.const.IconPrefix');
-goog.require('org.apache.royale.html.elements.H3');
 goog.require('org.apache.royale.debugging.assert');
-goog.require('org.apache.royale.utils.StringUtil');
+goog.require('org.apache.royale.svg.elements.Circle');
 goog.require('org.apache.royale.debugging.alreadyRecorded');
-goog.require('org.apache.royale.jewel.FooterBar');
-goog.require('org.apache.royale.jewel.Alert');
-goog.require('org.apache.royale.html.beads.layouts.LayoutChangeNotifier');
+goog.require('org.apache.royale.html.util.addSvgElementToWrapper');
 goog.require('org.apache.royale.geom.Rectangle');
 goog.require('org.apache.royale.core.AllCSSValuesImpl');
 goog.require('org.apache.royale.utils.StringTrimmer');
-goog.require('Namespace');
 goog.require('com.unhurdle.spectrum.data.MenuItem');
 goog.require('org.apache.royale.net.HTTPHeader');
-goog.require('org.apache.royale.utils.string.trim');
-goog.require('org.apache.royale.utils.callLater');
-goog.require('com.unhurdle.spectrum.Label');
-goog.require('org.apache.royale.core.layout.MarginData');
-goog.require('com.unhurdle.spectrum.Menu');
+goog.require('org.apache.royale.utils.number.getPercent');
+goog.require('org.apache.royale.jewel.supportClasses.ResponsiveSizes');
 goog.require('org.apache.royale.utils.css.addDynamicSelector');
-goog.require('org.apache.royale.html.accessories.RestrictTextInputBead');
-goog.require('org.apache.royale.core.SimpleCSSStyles');
+goog.require('com.controller.PopupManager');
+goog.require('org.apache.royale.jewel.beads.controls.ToolTip');
 goog.require('com.unhurdle.spectrum.IDialog');
 goog.require('org.apache.royale.html.elements.Iframe');
-goog.require('org.apache.royale.binding.MXMLBeadViewDataBinding');
+goog.require('views.actionitemviews.searchlist.LstModel');
+goog.require('views.actionitemviews.keybordgame.KeyGame');
+goog.require('org.apache.royale.collections.ArrayList');
 goog.require('org.apache.royale.binding.ApplicationDataBinding');
-goog.require('com.unhurdle.spectrum.ImageIcon');
-goog.require('org.apache.royale.collections.IArrayList');
-goog.require('org.apache.royale.core.ITransformHost');
-goog.require('org.apache.royale.binding.GenericBinding');
 goog.require('org.apache.royale.utils.PointUtils');
+goog.require('views.actionitemviews.ai.ChatBot_MistralMedium3');
+goog.require('views.actionitemviews.basicdrawing.ExportHelper');
+goog.require('com.unhurdle.spectrum.AlphaColorSlider');
+goog.require('org.apache.royale.jewel.supportClasses.popup.PopUpContent');
 goog.require('org.apache.royale.utils.html.getStyle');
 goog.require('org.apache.royale.core.ContainerBaseStrandChildren');
-goog.require('com.unhurdle.spectrum.Icon');
-goog.require('org.apache.royale.routing.RouteState');
 goog.require('org.apache.royale.utils.loadBeadFromValuesManager');
-goog.require('isXMLName');
-goog.require('org.apache.royale.jewel.Image');
 goog.require('com.unhurdle.spectrum.includes.IconInclude');
 goog.require('org.apache.royale.html.util.getModelByType');
-goog.require('org.apache.royale.core.CSSClassList');
-goog.require('org.apache.royale.binding.PropertyWatcher');
-goog.require('org.apache.royale.jewel.VGroup');
 goog.require('org.apache.royale.html.beads.plugin.ModalDisplay');
-goog.require('org.apache.royale.core.ILabeledData');
+goog.require('com.unhurdle.spectrum.utils.getDataProviderItem');
 goog.require('org.apache.royale.utils.DisplayUtils');
-goog.require('org.apache.royale.utils.sendEvent');
 goog.require('org.apache.royale.core.layout.ILayoutChildren');
+goog.require('org.apache.royale.html.beads.DispatchInputFinishedBead');
 goog.require('com.unhurdle.spectrum.newIconSVG');
-goog.require('org.apache.royale.events.ItemRemovedEvent');
-goog.require('org.apache.royale.jewel.beads.layouts.GapConstants');
 goog.require('org.apache.royale.debugging.throwError');
-goog.require('org.apache.royale.events.ValueEvent');
+goog.require('com.unhurdle.spectrum.ColorHandle');
 goog.require('com.unhurdle.spectrum.Search');
-goog.require('org.apache.royale.conversions.createEventInit');
 goog.require('org.apache.royale.net.HTTPConstants');
 goog.require('org.apache.royale.core.layout.LayoutData');
 goog.require('org.apache.royale.utils.StringPadder');
-goog.require('XMLList');
-goog.require('org.apache.royale.jewel.beads.views.AlertTitleBarView');
-goog.require('org.apache.royale.utils.string.splitAndTrim');
-goog.require('org.apache.royale.jewel.TitleBar');
-goog.require('XML');
+goog.require('org.apache.royale.jewel.beads.controls.drawer.ResponsiveDrawer');
 goog.require('org.apache.royale.utils.Timer');
-goog.require('com.unhurdle.spectrum.TextField');
-/* Royale Dependency List: org.apache.royale.jewel.ResponsiveView,views.ProductIndexing,views.ContentLoaderIframe,com.controller.MainUiController,com.util.preloader.DsPreloader,models.Theme,org.apache.royale.events.Event,org.apache.royale.html.beads.DataContainerView,org.apache.royale.html.supportClasses.StringItemRenderer,org.apache.royale.html.supportClasses.Viewport,org.apache.royale.html.beads.layouts.VerticalLayout,org.apache.royale.html.beads.models.DataProviderModel,org.apache.royale.html.beads.ListItemRendererInitializer,org.apache.royale.core.ItemRendererClassFactory,org.apache.royale.html.beads.models.ViewportModel,org.apache.royale.html.beads.DataItemRendererFactoryForArrayData,org.apache.royale.html.beads.controllers.ItemRendererMouseController,org.apache.royale.html.beads.GroupView,org.apache.royale.html.beads.ListView,org.apache.royale.html.supportClasses.StringItemRenderer,org.apache.royale.html.supportClasses.ScrollingViewport,org.apache.royale.html.beads.SolidBackgroundSelectableItemRendererBead,org.apache.royale.html.beads.layouts.VerticalLayout,org.apache.royale.html.beads.models.ArraySelectionModel,org.apache.royale.html.beads.ListItemRendererInitializer,org.apache.royale.html.beads.controllers.ListSingleSelectionMouseController,org.apache.royale.core.SelectableItemRendererClassFactory,org.apache.royale.html.beads.models.ViewportModel,org.apache.royale.html.beads.DataItemRendererFactoryForArrayData,org.apache.royale.html.beads.controllers.ItemRendererMouseController,org.apache.royale.routing.PathRouteBead,org.apache.royale.html.beads.GroupView,org.apache.royale.jewel.beads.layouts.ViewLayout,org.apache.royale.html.beads.GroupView,org.apache.royale.jewel.beads.layouts.BasicLayout,org.apache.royale.jewel.beads.layouts.HorizontalLayout,org.apache.royale.jewel.beads.layouts.VerticalLayout,org.apache.royale.jewel.beads.views.ImageView,org.apache.royale.jewel.beads.models.ImageModel,org.apache.royale.jewel.beads.views.AlertView,org.apache.royale.jewel.beads.layouts.NullLayout,org.apache.royale.jewel.beads.models.AlertModel,org.apache.royale.jewel.beads.controllers.AlertController,org.apache.royale.jewel.beads.layouts.NullLayout,org.apache.royale.jewel.beads.models.TextModel,org.apache.royale.jewel.beads.views.TitleBarView,org.apache.royale.jewel.beads.layouts.HorizontalLayout,org.apache.royale.jewel.beads.models.TitleBarModel,com.unhurdle.spectrum.ListView,com.unhurdle.spectrum.renderers.MenuItemRenderer,org.apache.royale.html.supportClasses.ScrollingViewport,com.unhurdle.spectrum.renderers.SelectableItemRenderer,org.apache.royale.html.beads.layouts.NoLayout,com.unhurdle.spectrum.ListModel,com.unhurdle.spectrum.beads.KeyboardNavigateableHandler,org.apache.royale.html.beads.IndexedItemRendererInitializer,com.unhurdle.spectrum.MenuController,org.apache.royale.core.OverridableSelectableItemRendererClassFactory,org.apache.royale.html.beads.models.ViewportModel,org.apache.royale.html.beads.DataItemRendererFactoryForArrayData,com.unhurdle.spectrum.ListView,com.unhurdle.spectrum.renderers.ListItemRenderer,org.apache.royale.html.supportClasses.ScrollingViewport,com.unhurdle.spectrum.renderers.SelectableItemRenderer,org.apache.royale.html.beads.layouts.NoLayout,com.unhurdle.spectrum.ListModel,com.unhurdle.spectrum.beads.KeyboardNavigateableHandler,org.apache.royale.html.beads.IndexedItemRendererInitializer,com.unhurdle.spectrum.ListController,org.apache.royale.core.OverridableSelectableItemRendererClassFactory,org.apache.royale.html.beads.models.ViewportModel,org.apache.royale.html.beads.DataItemRendererFactoryForArrayData*/
+goog.require('org.apache.royale.utils.getSelectionRenderBead');
+goog.require('org.apache.royale.utils.ClassSelectorList');
+goog.require('org.apache.royale.utils.OSUtils');
+goog.require('views.actionitemviews.BasicDrawing');
+goog.require('org.apache.royale.html.util.createSVG');
+goog.require('org.apache.royale.html.HGroup');
+goog.require('org.apache.royale.html.beads.models.ListPresentationModel');
+goog.require('org.apache.royale.mdl.beads.Disabled');
+goog.require('org.apache.royale.events.ItemClickedEvent');
+goog.require('org.apache.royale.html.util.getLabelFromData');
+goog.require('org.apache.royale.events.MouseEvent');
+goog.require('com.unhurdle.spectrum.AccordionSection');
+goog.require('org.apache.royale.jewel.supportClasses.scrollbar.ScrollingViewport');
+goog.require('org.apache.royale.jewel.SimpleLoader');
+goog.require('com.unhurdle.spectrum.Underlay');
+goog.require('org.apache.royale.core.styles.BorderStyles');
+goog.require('com.unhurdle.spectrum.beads.KeyboardFocusHandler');
+goog.require('com.unhurdle.spectrum.data.RGBColor');
+goog.require('views.actionitemviews.SearchListPopup');
+goog.require('org.apache.royale.functional.decorator.debounceLong');
+goog.require('views.actionitemviews.basicdrawing.shapes.RectangleShape');
+goog.require('com.unhurdle.spectrum.Switch');
+goog.require('com.util.AsJsUtil');
+goog.require('org.apache.royale.geom.Point');
+goog.require('com.extjavascript.dragdrop.ExtDragDrop');
+goog.require('com.unhurdle.spectrum.Toast');
+goog.require('views.actionitemviews.basicdrawing.DrawingManager');
+goog.require('org.apache.royale.events.ItemAddedEvent');
+goog.require('org.apache.royale.events.getTargetWrapper');
+goog.require('com.unhurdle.spectrum.ComboBoxList');
+goog.require('org.apache.royale.svg.elements.Rect');
+goog.require('com.unhurdle.spectrum.DialogFooter');
+goog.require('QName');
+goog.require('org.apache.royale.core.ValuesManager');
+goog.require('org.apache.royale.events.ValueChangeEvent');
+goog.require('com.unhurdle.spectrum.Alert');
+goog.require('org.apache.royale.utils.number.pinValue');
+goog.require('org.apache.royale.core.ClassFactory');
+goog.require('com.unhurdle.spectrum.ClearButton');
+goog.require('com.unhurdle.spectrum.const.IconPrefix');
+goog.require('org.apache.royale.html.elements.H3');
+goog.require('org.apache.royale.utils.StringUtil');
+goog.require('org.apache.royale.events.CollectionEvent');
+goog.require('org.apache.royale.jewel.FooterBar');
+goog.require('org.apache.royale.functional.decorator.debounceShort');
+goog.require('Namespace');
+goog.require('org.apache.royale.utils.string.trim');
+goog.require('org.apache.royale.utils.callLater');
+goog.require('com.unhurdle.spectrum.Label');
+goog.require('org.apache.royale.utils.UIUtils');
+goog.require('org.apache.royale.core.layout.MarginData');
+goog.require('com.unhurdle.spectrum.Menu');
+goog.require('org.apache.royale.html.accessories.RestrictTextInputBead');
+goog.require('org.apache.royale.core.SimpleCSSStyles');
+goog.require('com.unhurdle.spectrum.Container');
+goog.require('org.apache.royale.html.supportClasses.VScrollViewport');
+goog.require('views.actionitemviews.basicdrawing.shapes.LineShape');
+goog.require('org.apache.royale.jewel.supportClasses.tooltip.ToolTipLabel');
+goog.require('com.comp.pagination.Pagination');
+goog.require('com.unhurdle.spectrum.ImageIcon');
+goog.require('com.unhurdle.spectrum.ColorSwatch');
+goog.require('org.apache.royale.core.ITransformHost');
+goog.require('org.apache.royale.binding.GenericBinding');
+goog.require('org.apache.royale.utils.net.IDataInput');
+goog.require('views.actionitemviews.ImgPopuop');
+goog.require('org.apache.royale.binding.ChainBinding');
+goog.require('com.extjavascript.cryp.CryptoJS');
+goog.require('com.unhurdle.spectrum.Icon');
+goog.require('org.apache.royale.routing.RouteState');
+goog.require('isXMLName');
+goog.require('com.unhurdle.spectrum.ButtonGroup');
+goog.require('org.apache.royale.core.CSSClassList');
+goog.require('org.apache.royale.binding.PropertyWatcher');
+goog.require('org.apache.royale.core.ILabeledData');
+goog.require('org.apache.royale.jewel.supportClasses.drawer.DrawerContent');
+goog.require('org.apache.royale.utils.sendEvent');
+goog.require('com.unhurdle.spectrum.ColorArea');
+goog.require('org.apache.royale.html.elements.Span');
+goog.require('org.apache.royale.events.ItemRemovedEvent');
+goog.require('org.apache.royale.jewel.beads.layouts.GapConstants');
+goog.require('org.apache.royale.events.ValueEvent');
+goog.require('org.apache.royale.conversions.createEventInit');
+goog.require('XMLList');
+goog.require('org.apache.royale.utils.string.splitAndTrim');
+goog.require('views.TopMenuL');
+goog.require('com.unhurdle.spectrum.Picker');
+goog.require('views.TopMenuR');
+goog.require('org.apache.royale.utils.number.clamp');
+goog.require('org.apache.royale.svg.elements.Svg');
+goog.require('com.unhurdle.spectrum.FlexContainer');
+goog.require('org.apache.royale.utils.HSV');
+/* Royale Dependency List: org.apache.royale.jewel.ResponsiveView,views.ProductIndexing,views.ContentLoaderIframe,com.controller.MainUiController,com.util.preloader.DsPreloader,models.Theme,org.apache.royale.events.Event,XML,com.unhurdle.spectrum.ListView,com.unhurdle.spectrum.renderers.MenuItemRenderer,org.apache.royale.html.supportClasses.ScrollingViewport,com.unhurdle.spectrum.renderers.SelectableItemRenderer,org.apache.royale.html.beads.layouts.NoLayout,com.unhurdle.spectrum.ListModel,com.unhurdle.spectrum.beads.KeyboardNavigateableHandler,org.apache.royale.html.beads.IndexedItemRendererInitializer,com.unhurdle.spectrum.MenuController,org.apache.royale.core.OverridableSelectableItemRendererClassFactory,org.apache.royale.html.beads.models.ViewportModel,org.apache.royale.html.beads.DataItemRendererFactoryForArrayData,com.unhurdle.spectrum.ListView,com.unhurdle.spectrum.renderers.ListItemRenderer,org.apache.royale.html.supportClasses.ScrollingViewport,com.unhurdle.spectrum.renderers.SelectableItemRenderer,org.apache.royale.html.beads.layouts.NoLayout,com.unhurdle.spectrum.ListModel,com.unhurdle.spectrum.beads.KeyboardNavigateableHandler,org.apache.royale.html.beads.IndexedItemRendererInitializer,com.unhurdle.spectrum.ListController,org.apache.royale.core.OverridableSelectableItemRendererClassFactory,org.apache.royale.html.beads.models.ViewportModel,org.apache.royale.html.beads.DataItemRendererFactoryForArrayData,com.unhurdle.spectrum.colorpicker.ColorPickerPopUp,com.unhurdle.spectrum.beads.SwatchListView,com.unhurdle.spectrum.renderers.ColorSwatchRenderer,com.unhurdle.spectrum.beads.TileLayout,org.apache.royale.html.beads.DataContainerView,org.apache.royale.html.supportClasses.StringItemRenderer,org.apache.royale.html.supportClasses.Viewport,org.apache.royale.html.beads.layouts.VerticalLayout,org.apache.royale.html.beads.models.DataProviderModel,org.apache.royale.html.beads.ListItemRendererInitializer,org.apache.royale.core.ItemRendererClassFactory,org.apache.royale.html.beads.models.ViewportModel,org.apache.royale.html.beads.DataItemRendererFactoryForArrayData,org.apache.royale.html.beads.controllers.ItemRendererMouseController,org.apache.royale.html.beads.GroupView,org.apache.royale.html.beads.layouts.HorizontalLayout,org.apache.royale.html.beads.ListView,org.apache.royale.html.supportClasses.StringItemRenderer,org.apache.royale.html.supportClasses.ScrollingViewport,org.apache.royale.html.beads.SolidBackgroundSelectableItemRendererBead,org.apache.royale.html.beads.layouts.VerticalLayout,org.apache.royale.html.beads.models.ArraySelectionModel,org.apache.royale.html.beads.ListItemRendererInitializer,org.apache.royale.html.beads.controllers.ListSingleSelectionMouseController,org.apache.royale.core.SelectableItemRendererClassFactory,org.apache.royale.html.beads.models.ViewportModel,org.apache.royale.html.beads.DataItemRendererFactoryForArrayData,org.apache.royale.html.beads.controllers.ItemRendererMouseController,org.apache.royale.routing.PathRouteBead,org.apache.royale.html.beads.GroupView,org.apache.royale.jewel.beads.layouts.ViewLayout,org.apache.royale.html.beads.GroupView,org.apache.royale.jewel.beads.layouts.BasicLayout,org.apache.royale.jewel.beads.layouts.HorizontalLayout,org.apache.royale.jewel.beads.layouts.VerticalLayout,org.apache.royale.html.beads.ContainerView,org.apache.royale.jewel.supportClasses.Viewport,org.apache.royale.jewel.beads.layouts.BasicLayout,org.apache.royale.jewel.beads.views.ImageView,org.apache.royale.jewel.beads.models.ImageModel,org.apache.royale.jewel.beads.layouts.NullLayout,org.apache.royale.jewel.beads.layouts.NullLayout,org.apache.royale.jewel.beads.layouts.NullLayout,org.apache.royale.jewel.beads.models.TextModel,org.apache.royale.jewel.beads.views.PopUpView,org.apache.royale.jewel.beads.models.PopUpModel,org.apache.royale.jewel.beads.controllers.PopUpMouseController,org.apache.royale.core.StyledUIBase*/
 
 goog.require('com.unhurdle.spectrum.Application');
 
@@ -276,7 +353,7 @@ AsJsWasm = function() {
         0,
         null,
         views.ContentLoaderIframe,
-        3,
+        5,
         'id',
         true,
         'ifrmContentLoader',
@@ -286,6 +363,12 @@ AsJsWasm = function() {
         'y',
         true,
         0,
+        'percentHeight',
+        true,
+        100,
+        'percentWidth',
+        true,
+        100,
         0,
         0,
         null
@@ -412,6 +495,106 @@ AsJsWasm.prototype.info = function() {
 
 AsJsWasm.prototype.cssData = [0,
 1,
+"com.unhurdle.spectrum.Menu",
+function() {this["iBeadController"] = com.unhurdle.spectrum.MenuController;
+this["iBeadLayout"] = org.apache.royale.html.beads.layouts.NoLayout;
+this["iBeadModel"] = com.unhurdle.spectrum.ListModel;
+this["iBeadView"] = com.unhurdle.spectrum.ListView;
+this["iDataProviderItemRendererMapper"] = org.apache.royale.html.beads.DataItemRendererFactoryForArrayData;
+this["iItemRenderer"] = com.unhurdle.spectrum.renderers.MenuItemRenderer;
+this["iItemRendererClassFactory"] = org.apache.royale.core.OverridableSelectableItemRendererClassFactory;
+this["iItemRendererInitializer"] = org.apache.royale.html.beads.IndexedItemRendererInitializer;
+this["iKeyboardHandler"] = com.unhurdle.spectrum.beads.KeyboardNavigateableHandler;
+this["iSelectableItemRenderer"] = com.unhurdle.spectrum.renderers.SelectableItemRenderer;
+this["iViewport"] = org.apache.royale.html.supportClasses.ScrollingViewport;
+this["iViewportModel"] = org.apache.royale.html.beads.models.ViewportModel},
+0,
+1,
+"com.unhurdle.spectrum.List",
+function() {this["iBeadController"] = com.unhurdle.spectrum.ListController;
+this["iBeadLayout"] = org.apache.royale.html.beads.layouts.NoLayout;
+this["iBeadModel"] = com.unhurdle.spectrum.ListModel;
+this["iBeadView"] = com.unhurdle.spectrum.ListView;
+this["iDataProviderItemRendererMapper"] = org.apache.royale.html.beads.DataItemRendererFactoryForArrayData;
+this["iItemRenderer"] = com.unhurdle.spectrum.renderers.ListItemRenderer;
+this["iItemRendererClassFactory"] = org.apache.royale.core.OverridableSelectableItemRendererClassFactory;
+this["iItemRendererInitializer"] = org.apache.royale.html.beads.IndexedItemRendererInitializer;
+this["iKeyboardHandler"] = com.unhurdle.spectrum.beads.KeyboardNavigateableHandler;
+this["iSelectableItemRenderer"] = com.unhurdle.spectrum.renderers.SelectableItemRenderer;
+this["iViewport"] = org.apache.royale.html.supportClasses.ScrollingViewport;
+this["iViewportModel"] = org.apache.royale.html.beads.models.ViewportModel},
+0,
+1,
+"com.unhurdle.spectrum.colorpicker.ColorPicker",
+function() {this["iColorPopover"] = com.unhurdle.spectrum.colorpicker.ColorPickerPopUp},
+0,
+1,
+"com.unhurdle.spectrum.colorpicker.ColorPickerPopUp",
+function() {},
+0,
+1,
+"com.unhurdle.spectrum.SwatchList",
+function() {this["iBeadLayout"] = com.unhurdle.spectrum.beads.TileLayout;
+this["iBeadView"] = com.unhurdle.spectrum.beads.SwatchListView;
+this["iItemRenderer"] = com.unhurdle.spectrum.renderers.ColorSwatchRenderer},
+0,
+1,
+".square.spectrum-ColorSlider-checkerboard:before",
+function() {this["borderRadius"] = 0.0},
+0,
+1,
+".square.spectrum-ColorSlider-checkerboard",
+function() {this["borderRadius"] = 0.0},
+0,
+1,
+".square-right.spectrum-ColorSlider-checkerboard:before",
+function() {this["borderBottomRightRadius"] = 0.0;
+this["borderTopRightRadius"] = 0.0},
+0,
+1,
+".square-right.spectrum-ColorSlider-checkerboard",
+function() {this["borderBottomRightRadius"] = 0.0;
+this["borderTopRightRadius"] = 0.0},
+0,
+1,
+".square-left.spectrum-ColorSlider-checkerboard:before",
+function() {this["borderBottomLeftRadius"] = 0.0;
+this["borderTopLeftRadius"] = 0.0},
+0,
+1,
+".square-left.spectrum-ColorSlider-checkerboard",
+function() {this["borderBottomLeftRadius"] = 0.0;
+this["borderTopLeftRadius"] = 0.0},
+0,
+1,
+".spectrum--dark .spectrum-ColorSwatch.is-selected",
+function() {this["boxShadow"] = [0.0, 0.0, 0.0, 2.0, 2523371]},
+0,
+1,
+".spectrum--darkest .spectrum-ColorSwatch.is-selected",
+function() {this["boxShadow"] = [0.0, 0.0, 0.0, 2.0, 1340390]},
+0,
+1,
+".spectrum--light .spectrum-ColorSwatch.is-selected",
+function() {this["boxShadow"] = [0.0, 0.0, 0.0, 2.0, 2523371]},
+0,
+1,
+".spectrum--lightest .spectrum-ColorSwatch.is-selected",
+function() {this["boxShadow"] = [0.0, 0.0, 0.0, 2.0, 3641072]},
+0,
+1,
+".spectrum-ColorSwatch",
+function() {this["MozUserSelect"] = "none";
+this["MsUserSelect"] = "none";
+this["WebkitUserSelect"] = "none";
+this["cursor"] = "default";
+this["display"] = "block";
+this["height"] = 24.0;
+this["position"] = "relative";
+this["userSelect"] = "none";
+this["width"] = 192.0},
+0,
+1,
 ".Application *",
 function() {this["MozBoxSizing"] = "border-box";
 this["WebkitBoxSizing"] = "border-box";
@@ -459,6 +642,10 @@ function() {this["iBeadController"] = org.apache.royale.html.beads.controllers.I
 1,
 "org.apache.royale.html.Group",
 function() {this["iBeadView"] = org.apache.royale.html.beads.GroupView},
+0,
+1,
+"org.apache.royale.html.HGroup",
+function() {this["iBeadLayout"] = org.apache.royale.html.beads.layouts.HorizontalLayout},
 0,
 1,
 "org.apache.royale.html.List",
@@ -653,6 +840,12 @@ function() {this["iBeadLayout"] = org.apache.royale.jewel.beads.layouts.Horizont
 function() {this["iBeadLayout"] = org.apache.royale.jewel.beads.layouts.VerticalLayout},
 0,
 1,
+"org.apache.royale.jewel.Container",
+function() {this["iBeadLayout"] = org.apache.royale.jewel.beads.layouts.BasicLayout;
+this["iBeadView"] = org.apache.royale.html.beads.ContainerView;
+this["iViewport"] = org.apache.royale.jewel.supportClasses.Viewport},
+0,
+1,
 "org.apache.royale.jewel.Image",
 function() {this["iBeadModel"] = org.apache.royale.jewel.beads.models.ImageModel;
 this["iBeadView"] = org.apache.royale.jewel.beads.views.ImageView},
@@ -704,13 +897,6 @@ function() {this["whiteSpace"] = "normal"},
 ".jewel.alert .jewel.controlbar",
 function() {this["bottom"] = 0.0;
 this["height"] = 50.0},
-0,
-1,
-"org.apache.royale.jewel.Alert",
-function() {this["iBeadController"] = org.apache.royale.jewel.beads.controllers.AlertController;
-this["iBeadLayout"] = org.apache.royale.jewel.beads.layouts.NullLayout;
-this["iBeadModel"] = org.apache.royale.jewel.beads.models.AlertModel;
-this["iBeadView"] = org.apache.royale.jewel.beads.views.AlertView},
 0,
 1,
 ".jewel.badge",
@@ -1132,6 +1318,16 @@ function() {this["float"] = "right"},
 function() {this["content"] = " "},
 0,
 1,
+".jewel.datechooser .jewel.table .jewel.tableheadercell.buttonsRow .previousButton",
+function() {this["minHeight"] = 40.0;
+this["minWidth"] = 40.0},
+0,
+1,
+".jewel.datechooser .jewel.table .jewel.tableheadercell.buttonsRow .nextButton",
+function() {this["minHeight"] = 40.0;
+this["minWidth"] = 40.0},
+0,
+1,
 ".jewel.datechooser .jewel.table .jewel.tableheadercell.buttonsRow .previousButton::after",
 function() {this["content"] = " ";
 this["position"] = "absolute"},
@@ -1318,6 +1514,14 @@ function() {this["display"] = "flex";
 this["height"] = 66.0;
 this["position"] = "relative";
 this["width"] = 100.0},
+0,
+1,
+"org.apache.royale.jewel.Drawer",
+function() {this["iBeadLayout"] = org.apache.royale.jewel.beads.layouts.NullLayout},
+0,
+1,
+"org.apache.royale.jewel.supportClasses.drawer.DrawerContent",
+function() {this["iBeadLayout"] = org.apache.royale.jewel.beads.layouts.NullLayout},
 0,
 1,
 ".jewel.dropdownlist",
@@ -2285,6 +2489,13 @@ this["transform"] = null;
 this["transition"] = ["transform 0.4s 0ms", "opacity 0.4s 0ms"]},
 0,
 1,
+"org.apache.royale.jewel.PopUp",
+function() {this["iBeadController"] = org.apache.royale.jewel.beads.controllers.PopUpMouseController;
+this["iBeadModel"] = org.apache.royale.jewel.beads.models.PopUpModel;
+this["iBeadView"] = org.apache.royale.jewel.beads.views.PopUpView;
+this["iPopUpContent"] = org.apache.royale.core.StyledUIBase},
+0,
+1,
 ".jewel.radiobutton",
 function() {this["display"] = "inline-flex";
 this["height"] = "auto";
@@ -2828,12 +3039,6 @@ this["minHeight"] = 34.0;
 this["padding"] = 0.0},
 0,
 1,
-"org.apache.royale.jewel.TitleBar",
-function() {this["iBeadLayout"] = org.apache.royale.jewel.beads.layouts.HorizontalLayout;
-this["iBeadModel"] = org.apache.royale.jewel.beads.models.TitleBarModel;
-this["iBeadView"] = org.apache.royale.jewel.beads.views.TitleBarView},
-0,
-1,
 ".jewel.togglebutton",
 function() {this["alignItems"] = "center";
 this["cursor"] = "pointer";
@@ -3085,90 +3290,41 @@ function() {this["paddingTop"] = [66.0, "!important"]},
 function() {this["paddingBottom"] = [66.0, "!important"]},
 0,
 1,
-"com.unhurdle.spectrum.Menu",
-function() {this["iBeadController"] = com.unhurdle.spectrum.MenuController;
-this["iBeadLayout"] = org.apache.royale.html.beads.layouts.NoLayout;
-this["iBeadModel"] = com.unhurdle.spectrum.ListModel;
-this["iBeadView"] = com.unhurdle.spectrum.ListView;
-this["iDataProviderItemRendererMapper"] = org.apache.royale.html.beads.DataItemRendererFactoryForArrayData;
-this["iItemRenderer"] = com.unhurdle.spectrum.renderers.MenuItemRenderer;
-this["iItemRendererClassFactory"] = org.apache.royale.core.OverridableSelectableItemRendererClassFactory;
-this["iItemRendererInitializer"] = org.apache.royale.html.beads.IndexedItemRendererInitializer;
-this["iKeyboardHandler"] = com.unhurdle.spectrum.beads.KeyboardNavigateableHandler;
-this["iSelectableItemRenderer"] = com.unhurdle.spectrum.renderers.SelectableItemRenderer;
-this["iViewport"] = org.apache.royale.html.supportClasses.ScrollingViewport;
-this["iViewportModel"] = org.apache.royale.html.beads.models.ViewportModel},
+".material-icons.md-18",
+function() {this["fontSize"] = 18.0},
 0,
 1,
-"com.unhurdle.spectrum.List",
-function() {this["iBeadController"] = com.unhurdle.spectrum.ListController;
-this["iBeadLayout"] = org.apache.royale.html.beads.layouts.NoLayout;
-this["iBeadModel"] = com.unhurdle.spectrum.ListModel;
-this["iBeadView"] = com.unhurdle.spectrum.ListView;
-this["iDataProviderItemRendererMapper"] = org.apache.royale.html.beads.DataItemRendererFactoryForArrayData;
-this["iItemRenderer"] = com.unhurdle.spectrum.renderers.ListItemRenderer;
-this["iItemRendererClassFactory"] = org.apache.royale.core.OverridableSelectableItemRendererClassFactory;
-this["iItemRendererInitializer"] = org.apache.royale.html.beads.IndexedItemRendererInitializer;
-this["iKeyboardHandler"] = com.unhurdle.spectrum.beads.KeyboardNavigateableHandler;
-this["iSelectableItemRenderer"] = com.unhurdle.spectrum.renderers.SelectableItemRenderer;
-this["iViewport"] = org.apache.royale.html.supportClasses.ScrollingViewport;
-this["iViewportModel"] = org.apache.royale.html.beads.models.ViewportModel},
+".material-icons.md-24",
+function() {this["fontSize"] = 24.0},
 0,
 1,
-".square.spectrum-ColorSlider-checkerboard:before",
-function() {this["borderRadius"] = 0.0},
+".material-icons.md-36",
+function() {this["fontSize"] = 36.0},
 0,
 1,
-".square.spectrum-ColorSlider-checkerboard",
-function() {this["borderRadius"] = 0.0},
+".material-icons.md-48",
+function() {this["fontSize"] = 48.0},
 0,
 1,
-".square-right.spectrum-ColorSlider-checkerboard:before",
-function() {this["borderBottomRightRadius"] = 0.0;
-this["borderTopRightRadius"] = 0.0},
+".material-icons.md-dark",
+function() {this["color"] = 2298478592},
 0,
 1,
-".square-right.spectrum-ColorSlider-checkerboard",
-function() {this["borderBottomRightRadius"] = 0.0;
-this["borderTopRightRadius"] = 0.0},
+".material-icons.md-dark.md-inactive",
+function() {this["color"] = 1107296256},
 0,
 1,
-".square-left.spectrum-ColorSlider-checkerboard:before",
-function() {this["borderBottomLeftRadius"] = 0.0;
-this["borderTopLeftRadius"] = 0.0},
+".material-icons.md-light",
+function() {this["color"] = 4294967295},
 0,
 1,
-".square-left.spectrum-ColorSlider-checkerboard",
-function() {this["borderBottomLeftRadius"] = 0.0;
-this["borderTopLeftRadius"] = 0.0},
+".material-icons.md-light.md-inactive",
+function() {this["color"] = 1291845631},
 0,
 1,
-".spectrum--dark .spectrum-ColorSwatch.is-selected",
-function() {this["boxShadow"] = [0.0, 0.0, 0.0, 2.0, 2523371]},
-0,
-1,
-".spectrum--darkest .spectrum-ColorSwatch.is-selected",
-function() {this["boxShadow"] = [0.0, 0.0, 0.0, 2.0, 1340390]},
-0,
-1,
-".spectrum--light .spectrum-ColorSwatch.is-selected",
-function() {this["boxShadow"] = [0.0, 0.0, 0.0, 2.0, 2523371]},
-0,
-1,
-".spectrum--lightest .spectrum-ColorSwatch.is-selected",
-function() {this["boxShadow"] = [0.0, 0.0, 0.0, 2.0, 3641072]},
-0,
-1,
-".spectrum-ColorSwatch",
-function() {this["MozUserSelect"] = "none";
-this["MsUserSelect"] = "none";
-this["WebkitUserSelect"] = "none";
-this["cursor"] = "default";
-this["display"] = "block";
-this["height"] = 24.0;
-this["position"] = "relative";
-this["userSelect"] = "none";
-this["width"] = 192.0},
+".cardWithDropDownList",
+function() {this["overflow"] = ["visible", "!important"];
+this["zIndex"] = ["initial", "!important"]},
 2,
 "all",
 "(-ms-high-contrast: none)",

@@ -1,135 +1,115 @@
 <j:ResponsiveView xmlns="library://ns.apache.org/royale/html"
         xmlns:html="library://ns.apache.org/royale/html"
-  xmlns:fx="http://ns.adobe.com/mxml/2009"
-  xmlns:sp="library://ns.unhurdle.com/spectrum" xmlns:js="library://ns.apache.org/royale/basic" xmlns:j="library://ns.apache.org/royale/jewel" xmlns:views="views.*"
-  initComplete="initComplete()">
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:sp="library://ns.unhurdle.com/spectrum" 
+        xmlns:js="library://ns.apache.org/royale/basic" 
+        xmlns:j="library://ns.apache.org/royale/jewel" 
+        xmlns:views="views.*" xmlns:actionitemviews="views.actionitemviews.*" 
+        xmlns:drawing="com.comp.drawing.*"
+        initComplete="initComplete()">
 
     <fx:Script>
         <![CDATA[
             
             import com.unhurdle.spectrum.Toast;
-            import com.model.ServiceLoader;
-            import com.util.DsUtil;
-            import com.unhurdle.spectrum.AccordionSection;
-            import com.unhurdle.spectrum.AccordionContent;
-            import org.apache.royale.events.MouseEvent;
-            import com.unhurdle.spectrum.Label;
-            import views.ContentLoaderIframe;
-            import com.unhurdle.spectrum.Accordion;
-            import org.apache.royale.html.supportClasses.ScrollingViewport;
-            import org.apache.royale.core.IBead;
-            import views.ContentLoaderIframe;
             import com.event.DsEvent;
-
-            private static var CbData:Object;
-            private var accUi:Accordion = null;
-            
+            import views.actionitemviews.BasicDrawing;
+            import views.actionitemviews.SearchListPopup;
+            import views.actionitemviews.toc.TocAndPgnation;
+            import views.actionitemviews.ai.ChatBot_MistralMedium3;
+            import org.apache.royale.jewel.View;
+            import org.apache.royale.jewel.Group;
+            import views.actionitemviews.keybordgame.KeyGame;
+                        
             private function initComplete():void {
                 var t:Toast = new Toast();
                 t.flavor = Toast.SUCCESS;
                 t.text = "Data Loaded";
                 t.autoClose=2000;
                 t.show();
-                initTreeUi();
+                //initTreeUi();
                 DsEvent.instance.addEventListener(DsEvent.IFRAMECLOSED, ifameEventHandler);
-                
-                
+                DsEvent.instance.addEventListener(DsEvent.IFRAMEOPENED, ifameEventHandler);
+                DsEvent.instance.addEventListener(DsEvent.FETCH_DATA_EVENT, fetchDataEventHandler);
+                DsEvent.instance.addEventListener(DsEvent.CLEAR_UI_EVENT, clearUi);
+                DsEvent.instance.addEventListener(DsEvent.UI_COMPONENT_EVENT, addUiComponent);
+
             }
 
             private function ifameEventHandler(obj:Object):void {
-                footerUi.visible = true;
+                if(obj.type == DsEvent.IFRAMEOPENED){
+                    footerUi.visible = false;
+                }
+                if(obj.type == DsEvent.IFRAMECLOSED){
+                    footerUi.visible = true;
+                }
+            }
+
+            private function fetchDataEventHandler(obj:Object):void {
+                    clearUi();
+                    var tocPg:TocAndPgnation = new TocAndPgnation(vg, pgNationCtr);
+                    tocPg.loadAndUpdateAccData(obj);
+                    title.text = obj.data.title;
+            }
+
+            private function addUiComponent(obj:Object):void{
+                clearUi();
+                //var drawingComp:DrawingCanvasComponent = new DrawingCanvasComponent();
+                var compName:String = obj.data.title;
+                var uiComp:Group;
+                if(compName == 'Basic Drawing'){
+                    uiComp = new BasicDrawing();
+                    vg.addElement(uiComp);
+                    return;
+                }
+                if(compName == 'AI - Chatbot - mistral-medium-3'){
+                    uiComp = new ChatBot_MistralMedium3();
+                    vg.addElement(uiComp);
+                    return;
+                }
+                if(compName == 'Game'){
+                    uiComp = new KeyGame() as Group;
+                    vg.addElement(uiComp);
+                    uiComp.x = (vg.width - uiComp.width)/2
+                    return;
+                }
+                if(compName == 'Load & Filter Data'){
+                    var sLstComp:SearchListPopup = new SearchListPopup();
+                    sLstComp.showCloseBtn = false;
+                    vg.addElement(sLstComp);
+                    return;
+                }
                 
             }
 
-            private function initTreeUi():void{
-                var sldr:ServiceLoader = new ServiceLoader();
-                sldr.loadJData("config/product.json", loadHandler)
-            }
-
-            private function loadAndUpdateAccData(url:String):void {
-                var sldr:ServiceLoader = new ServiceLoader();
-                sldr.loadJData("config/"+url, function loadHandler(e:Object):void {
-                    renderAccUi(DsUtil.csvFileToJsonObj(e));
-                }, ServiceLoader.T_EXT)
-            }
-            private function renderAccUi(data:Array):void{
-                if(accUi !=null)vg.removeElement(accUi);
-                accUi = new Accordion();
-                accUi.percentWidth=100;
-                accUi.height=window.innerHeight - 100;
-                var bd:ScrollingViewport = new ScrollingViewport();
-                accUi.addBead(bd as IBead)
-                 var subjName:String = "";
-                 var header:AccordionSection = null;
-                for(var i:int=0; i<data.length-1; i++){
-                    var sName:String = data[i]["Grade"];
-                    if(sName != subjName){
-                        if(header)accUi.addElement(header);
-                        header = new AccordionSection();
-                        header.headerText.bold();
-                        header.headerText = sName;
-                        subjName = sName;
-                    }
-                    var content:AccordionContent = new AccordionContent();
-                    content.text = i+1 +".  |  " + data[i]["Topic"] + " :: " + data[i]["Subtopic"] + " :: " + data[i]["Activity Type"] + " :: " + data[i]["Activity Name"];
-                    var objModel:Object = new Object();
-                    objModel.url = data[i]["Location"];
-                    content.model = objModel;
-                    if(sName == "POC"){
-                        content.className = "tocText";
-                        content.addEventListener(MouseEvent.CLICK, tocItemClickHanler);
-                    }
-                    
-                    header.addElement(content);
+            private function clearUi():void{
+                while(vg.numElements>0){
+                    vg.removeElement(vg.getElementAt(0));
                 }
-                accUi.addElement(header);
-                vg.addElement(accUi);
-            }
-
-            private function tocItemClickHanler(e:MouseEvent):void{
-                var accContent:AccordionContent = e.target as AccordionContent;
-                titleTxt.text=accContent.text;
-                //trace(accContent.model);
-                ContentLoaderIframe.instance.loadPage(accContent.model);
-                footerUi.visible = false;
-                e.preventDefault();
-            }
-
-            private function loadHandler(e:JSON):void{
-                CbData = e['Product'];
-                var menuItem:Array = new Array();
-                for each(var i:Object in CbData){
-                    menuItem.push(i.label);
+                while (pgNationCtr.numElements > 0) {
+                    pgNationCtr.removeElement(pgNationCtr.getElementAt(0));
                 }
-                CbProduct.dataProvider = menuItem;
-                CbProduct.selectedIndex=-1;
-                
-            }
+                title.text = "Make an action using 'L' and 'R' menu";
 
-            private function CbChandEventHandler():void{
-                if(CbProduct.selectedItem == null) return;
-                var idx:int=CbProduct.selectedIndex;
-                console.log(CbData[idx])
-                loadAndUpdateAccData(CbData[idx]['indexing'])
             }
-
+            
 
         ]]>
     </fx:Script>
-        <j:VGroup percentWidth="100" localId="vg">
-        <j:HGroup percentWidth="100" gap="10" className="actionHgroup"
-        itemsVerticalAlign="itemsCenter" itemsHorizontalAlign="itemsCenter">
-            <sp:Dropdown id="CbProduct" selectedIndex="0" quiet="true" 
-            change="CbChandEventHandler()" percentWidth="20">
-            
-            </sp:Dropdown>
-            <sp:Label id="titleTxt"  text="Select a subject from combobox" percentWidth="70" className="selectedTocItem"/>
+        <j:VGroup percentWidth="100" itemsVerticalAlign="itemsCenter" itemsHorizontalAlign="itemsCenter">
+        <j:HGroup percentWidth="100" className="actionHgroup"
+        itemsVerticalAlign="itemsCenter" itemsHorizontalAlign="itemsSpaceAround">
+            <views:TopMenuL />
+            <j:Label id="title" text="Make an action using 'L' and 'R' menu"/>
+            <views:TopMenuR />
         </j:HGroup>
-            
-            <j:FooterBar percentWidth="100" x="0" localId="footerUi">
-                <sp:Label x="0" percentWidth="100" text="Copyright © 2022 - 2024 TECH FOR EDUCATION PVT. LTD.®. All rights reserved. " 
-                className="footerBarText"/>
+            <j:FooterBar percentWidth="100" x="0" localId="footerUi" className="footerBarText">
+                <j:HGroup localId="pgNationCtr" itemsHorizontalAlign="itemsSpaceAround" itemsVerticalAlign="itemsCenter" 
+                className="paginatiocontainer"/>
+                <sp:Label x="0" percentWidth="100" text="Copyright © 2022 - 2024 All rights reserved. " />
             </j:FooterBar>
+        <j:Container localId="vg" percentWidth="100" percentHeight="100">
+        <!-- <actionitemviews:Socket/> -->
+        </j:Container>
         </j:VGroup>
-        
 </j:ResponsiveView>

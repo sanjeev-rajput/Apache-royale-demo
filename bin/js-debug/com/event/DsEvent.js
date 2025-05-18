@@ -8,7 +8,7 @@
  */
 
 goog.provide('com.event.DsEvent');
-/* Royale Dependency List: */
+/* Royale Dependency List: XML*/
 goog.provide('com.event.DsEvent.SingletonEnforcer');
 
 goog.require('org.apache.royale.events.EventDispatcher');
@@ -32,6 +32,46 @@ goog.inherits(com.event.DsEvent, org.apache.royale.events.EventDispatcher);
  * @type {string}
  */
 com.event.DsEvent.IFRAMECLOSED = "iframeclosed";
+
+
+/**
+ * @nocollapse
+ * @const
+ * @type {string}
+ */
+com.event.DsEvent.IFRAMEOPENED = "iframeopened";
+
+
+/**
+ * @nocollapse
+ * @const
+ * @type {string}
+ */
+com.event.DsEvent.FETCH_DATA_EVENT = "fetchDataEvent";
+
+
+/**
+ * @nocollapse
+ * @const
+ * @type {string}
+ */
+com.event.DsEvent.CLEAR_UI_EVENT = "clearuievent";
+
+
+/**
+ * @nocollapse
+ * @const
+ * @type {string}
+ */
+com.event.DsEvent.UI_COMPONENT_EVENT = "uicomponentevent";
+
+
+/**
+ * @nocollapse
+ * @const
+ * @type {string}
+ */
+com.event.DsEvent.TOC_DATA_TABLE_EVENT = "tocdatatableevent";
 
 
 /**

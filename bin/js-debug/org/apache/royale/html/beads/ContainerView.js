@@ -8,7 +8,7 @@
  */
 
 goog.provide('org.apache.royale.html.beads.ContainerView');
-/* Royale Dependency List: org.apache.royale.core.IContainer,org.apache.royale.core.ILayoutView,org.apache.royale.core.IStrand,org.apache.royale.core.IViewport,org.apache.royale.utils.loadBeadFromValuesManager,org.apache.royale.utils.Language,XML*/
+/* Royale Dependency List: org.apache.royale.core.IContainer,org.apache.royale.core.ILayoutView,org.apache.royale.core.IStrand,org.apache.royale.core.IViewport,org.apache.royale.debugging.assert,org.apache.royale.utils.loadBeadFromValuesManager,org.apache.royale.utils.Language,XML*/
 
 goog.require('org.apache.royale.html.beads.GroupView');
 
@@ -66,9 +66,9 @@ org.apache.royale.html.beads.ContainerView.prototype.get__viewport = function() 
 
 org.apache.royale.html.beads.ContainerView.prototype.get__contentView = function() {
   if (this.viewport != null) {
-    return org.apache.royale.utils.Language.as(this.viewport.contentView, org.apache.royale.core.ILayoutView);
+    return this.viewport.contentView;
   } else {
-    return org.apache.royale.utils.Language.as(this.host, org.apache.royale.core.ILayoutView);
+    return this.host;
   }
 };
 
@@ -80,7 +80,10 @@ org.apache.royale.html.beads.ContainerView.prototype.set__strand = function(valu
   if (!this.org_apache_royale_html_beads_ContainerView__viewport)
     this.org_apache_royale_html_beads_ContainerView__viewport = org.apache.royale.utils.loadBeadFromValuesManager(org.apache.royale.core.IViewport, "iViewport", this._strand);
   if (this.org_apache_royale_html_beads_ContainerView__viewport) {
+    org.apache.royale.debugging.assert(org.apache.royale.utils.Language.is(this.org_apache_royale_html_beads_ContainerView__viewport.contentView, org.apache.royale.core.ILayoutView), "The viewport is expected to be an ILayoutView");
     this.addViewport();
+  } else {
+    org.apache.royale.debugging.assert(org.apache.royale.utils.Language.is(this.host, org.apache.royale.core.ILayoutView), "When there's no viewport, the host must be an ILayoutView");
   }
 };
 

@@ -8,7 +8,7 @@
  */
 
 goog.provide('com.model.ServiceLoader');
-/* Royale Dependency List: com.util.preloader.DsPreloader,org.apache.royale.events.Event,org.apache.royale.jewel.Alert,org.apache.royale.net.HTTPConstants,org.apache.royale.net.HTTPService,org.apache.royale.utils.Language*/
+/* Royale Dependency List: XML,com.unhurdle.spectrum.Alert,com.util.preloader.DsPreloader,org.apache.royale.debugging.throwError,org.apache.royale.events.Event,org.apache.royale.net.HTTPConstants,org.apache.royale.net.HTTPService,org.apache.royale.utils.Language*/
 
 
 
@@ -17,6 +17,7 @@ goog.provide('com.model.ServiceLoader');
  * @constructor
  */
 com.model.ServiceLoader = function() {
+  this.com_model_ServiceLoader__service = new org.apache.royale.net.HTTPService();
 };
 
 
@@ -25,6 +26,13 @@ com.model.ServiceLoader = function() {
  * @type {Function}
  */
 com.model.ServiceLoader.prototype.com_model_ServiceLoader__callBack = null;
+
+
+/**
+ * @private
+ * @type {Function}
+ */
+com.model.ServiceLoader.prototype.com_model_ServiceLoader__errorCallback = null;
 
 
 /**
@@ -39,7 +47,7 @@ com.model.ServiceLoader.prototype.com_model_ServiceLoader__service = null;
  * @const
  * @type {string}
  */
-com.model.ServiceLoader.J_SON = "json";
+com.model.ServiceLoader.DATA_TYPE_JSON = "json";
 
 
 /**
@@ -47,7 +55,7 @@ com.model.ServiceLoader.J_SON = "json";
  * @const
  * @type {string}
  */
-com.model.ServiceLoader.X_ML = "xml";
+com.model.ServiceLoader.DATA_TYPE_TEXT = "text";
 
 
 /**
@@ -55,7 +63,7 @@ com.model.ServiceLoader.X_ML = "xml";
  * @const
  * @type {string}
  */
-com.model.ServiceLoader.T_EXT = "text";
+com.model.ServiceLoader.DATA_TYPE_XML = "xml";
 
 
 /**
@@ -66,16 +74,62 @@ com.model.ServiceLoader.prototype.com_model_ServiceLoader__dataType = null;
 
 
 /**
+ * @private
+ * @type {string}
+ */
+com.model.ServiceLoader.prototype.com_model_ServiceLoader__reqMethod = "GET";
+
+
+/**
+ * @private
+ * @type {string}
+ */
+com.model.ServiceLoader.prototype.com_model_ServiceLoader__contentType = null;
+
+
+/**
+ * @private
+ * @type {*}
+ */
+com.model.ServiceLoader.prototype.com_model_ServiceLoader__reqData = undefined;
+
+
+/**
+ * @private
+ * @type {Array}
+ */
+com.model.ServiceLoader.prototype.com_model_ServiceLoader__headers = null;
+
+
+/**
  * @param {string} url
  * @param {Function} callBack
  * @param {string=} dataType
+ * @param {Function=} errCallBack
+ * @param {boolean=} randUrl
  */
-com.model.ServiceLoader.prototype.loadJData = function(url, callBack, dataType) {
-  dataType = typeof dataType !== 'undefined' ? dataType : com.model.ServiceLoader.J_SON;
+com.model.ServiceLoader.prototype.loadJData = function(url, callBack, dataType, errCallBack, randUrl) {
+  dataType = typeof dataType !== 'undefined' ? dataType : com.model.ServiceLoader.DATA_TYPE_JSON;
+  errCallBack = typeof errCallBack !== 'undefined' ? errCallBack : null;
+  randUrl = typeof randUrl !== 'undefined' ? randUrl : true;
   this.com_model_ServiceLoader__callBack = callBack;
-  this.com_model_ServiceLoader__service = new org.apache.royale.net.HTTPService();
+  if (this.com_model_ServiceLoader__callBack == null) {
+    org.apache.royale.debugging.throwError('Callback function cannot be null');
+  }
+  if (errCallBack) {
+    this.com_model_ServiceLoader__errorCallback = errCallBack;
+  }
+  this.com_model_ServiceLoader__service.method = this.com_model_ServiceLoader__reqMethod;
   this.com_model_ServiceLoader__dataType = dataType;
-  (url.indexOf("?") == -1) ? this.com_model_ServiceLoader__service.url = url + "?" + Math.random() : this.com_model_ServiceLoader__service.url = url + "&" + Math.random();
+  if (this.com_model_ServiceLoader__contentType)
+    this.com_model_ServiceLoader__service.contentType = this.com_model_ServiceLoader__contentType;
+  if (this.com_model_ServiceLoader__headers)
+    this.com_model_ServiceLoader__service.headers = this.com_model_ServiceLoader__headers;
+  if (randUrl) {
+    (url.indexOf("?") == -1) ? this.com_model_ServiceLoader__service.url = url + "?" + Math.random() : this.com_model_ServiceLoader__service.url = url + "&" + Math.random();
+  } else {
+    this.com_model_ServiceLoader__service.url = url;
+  }
   this.com_model_ServiceLoader__service.addEventListener(org.apache.royale.net.HTTPConstants.COMPLETE, org.apache.royale.utils.Language.closure(this.com_model_ServiceLoader_completeJdataHandler, this, 'com_model_ServiceLoader_completeJdataHandler'));
   this.com_model_ServiceLoader__service.addEventListener(org.apache.royale.net.HTTPConstants.IO_ERROR, org.apache.royale.utils.Language.closure(this.com_model_ServiceLoader_errorEventHandler, this, 'com_model_ServiceLoader_errorEventHandler'));
   com.util.preloader.DsPreloader.instance.showPreloader("serviceLoader");
@@ -90,13 +144,20 @@ com.model.ServiceLoader.prototype.loadJData = function(url, callBack, dataType) 
 com.model.ServiceLoader.prototype.com_model_ServiceLoader_completeJdataHandler = function(event) {
   com.util.preloader.DsPreloader.instance.remvoePreloader("serviceLoader");
   if (this.com_model_ServiceLoader__service.status == 0) {
-    org.apache.royale.jewel.Alert.show("Pelase check you network (internet) connection !!!", "Unable to connect");
+    var /** @type {com.unhurdle.spectrum.Alert} */ err = new com.unhurdle.spectrum.Alert();
+    err.status = com.unhurdle.spectrum.Alert.ERROR;
+    err.showOverlay = true;
+    err.header = "Network Error";
+    err.content = "Unable to connect!!! Pelase check you network (internet) connection !!!";
+    err.show();
     return;
   }
-  if (this.com_model_ServiceLoader__dataType == com.model.ServiceLoader.J_SON)
+  if (this.com_model_ServiceLoader__dataType == com.model.ServiceLoader.DATA_TYPE_JSON)
     this.com_model_ServiceLoader__callBack(JSON.parse(this.com_model_ServiceLoader__service.data));
-  if (this.com_model_ServiceLoader__dataType == com.model.ServiceLoader.T_EXT)
+  if (this.com_model_ServiceLoader__dataType == com.model.ServiceLoader.DATA_TYPE_TEXT)
     this.com_model_ServiceLoader__callBack(this.com_model_ServiceLoader__service.data);
+  if (this.com_model_ServiceLoader__dataType == com.model.ServiceLoader.DATA_TYPE_XML)
+    this.com_model_ServiceLoader__callBack(new XML(this.com_model_ServiceLoader__service.data));
 };
 
 
@@ -107,7 +168,104 @@ com.model.ServiceLoader.prototype.com_model_ServiceLoader_completeJdataHandler =
 com.model.ServiceLoader.prototype.com_model_ServiceLoader_errorEventHandler = function(event) {
   com.util.preloader.DsPreloader.instance.remvoePreloader("serviceLoader");
   org.apache.royale.utils.Language.trace("errorEventHandler ERROR!!!" + event.target);
+  if (this.com_model_ServiceLoader__errorCallback != null)
+    this.com_model_ServiceLoader__errorCallback(event);
 };
+
+
+/**
+ */
+com.model.ServiceLoader.prototype.sendReqData = function() {
+  if (this.com_model_ServiceLoader__service) {
+    this.com_model_ServiceLoader__service.send();
+  } else {
+    org.apache.royale.utils.Language.trace("Service not initialized.");
+  }
+};
+
+
+/**
+ * @nocollapse
+ * @export
+ * @type {string}
+ */
+com.model.ServiceLoader.prototype.reqMethod;
+
+
+com.model.ServiceLoader.prototype.set__reqMethod = function(value) {
+  this.com_model_ServiceLoader__reqMethod = value;
+};
+
+
+/**
+ * @nocollapse
+ * @export
+ * @type {string}
+ */
+com.model.ServiceLoader.prototype.contentType;
+
+
+com.model.ServiceLoader.prototype.set__contentType = function(value) {
+  this.com_model_ServiceLoader__contentType = value;
+};
+
+
+/**
+ * @nocollapse
+ * @export
+ * @type {Array}
+ */
+com.model.ServiceLoader.prototype.headers;
+
+
+com.model.ServiceLoader.prototype.set__headers = function(value) {
+  this.com_model_ServiceLoader__headers = value;
+};
+
+
+/**
+ * @nocollapse
+ * @export
+ * @type {*}
+ */
+com.model.ServiceLoader.prototype.reqData;
+
+
+com.model.ServiceLoader.prototype.set__reqData = function(value) {
+  this.com_model_ServiceLoader__reqData = value;
+  if (this.com_model_ServiceLoader__reqData) {
+    if (this.com_model_ServiceLoader__contentType && this.com_model_ServiceLoader__contentType.toLowerCase() == "application/json") {
+      org.apache.royale.utils.Language.trace(this.com_model_ServiceLoader__reqData);
+      this.com_model_ServiceLoader__service.contentData = this.com_model_ServiceLoader__reqData;
+    } else {
+      this.com_model_ServiceLoader__service.contentData = this.com_model_ServiceLoader__reqData;
+    }
+  }
+};
+
+
+Object.defineProperties(com.model.ServiceLoader.prototype, /** @lends {com.model.ServiceLoader.prototype} */ {
+/**
+ * @type {string}
+ */
+reqMethod: {
+set: com.model.ServiceLoader.prototype.set__reqMethod},
+/**
+ * @type {string}
+ */
+contentType: {
+set: com.model.ServiceLoader.prototype.set__contentType},
+/**
+ * @type {Array}
+ */
+headers: {
+set: com.model.ServiceLoader.prototype.set__headers},
+/**
+ * @type {*}
+ */
+reqData: {
+set: com.model.ServiceLoader.prototype.set__reqData}}
+);
 
 
 /**
@@ -126,10 +284,19 @@ com.model.ServiceLoader.prototype.ROYALE_CLASS_INFO = { names: [{ name: 'Service
  */
 com.model.ServiceLoader.prototype.ROYALE_REFLECTION_INFO = function () {
   return {
+    accessors: function () {
+      return {
+        'reqMethod': { type: 'String', access: 'writeonly', declaredBy: 'com.model.ServiceLoader'},
+        'contentType': { type: 'String', access: 'writeonly', declaredBy: 'com.model.ServiceLoader'},
+        'headers': { type: 'Array', access: 'writeonly', declaredBy: 'com.model.ServiceLoader'},
+        'reqData': { type: '*', access: 'writeonly', declaredBy: 'com.model.ServiceLoader'}
+      };
+    },
     methods: function () {
       return {
         'ServiceLoader': { type: 'void', declaredBy: 'com.model.ServiceLoader'},
-        'loadJData': { type: 'void', declaredBy: 'com.model.ServiceLoader', parameters: function () { return [ 'String', false ,'Function', false ,'String', true ]; }}
+        'loadJData': { type: 'void', declaredBy: 'com.model.ServiceLoader', parameters: function () { return [ 'String', false ,'Function', false ,'String', true ,'Function', true ,'Boolean', true ]; }},
+        'sendReqData': { type: 'void', declaredBy: 'com.model.ServiceLoader'}
       };
     }
   };

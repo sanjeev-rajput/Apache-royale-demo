@@ -8,7 +8,7 @@
  */
 
 goog.provide('views.ContentLoaderIframe');
-/* Royale Dependency List: org.apache.royale.html.elements.Iframe,org.apache.royale.jewel.Image,com.event.DsEvent,org.apache.royale.events.Event,org.apache.royale.events.MouseEvent*/
+/* Royale Dependency List: org.apache.royale.html.elements.Iframe,org.apache.royale.jewel.Image,com.event.DsEvent,org.apache.royale.events.Event,org.apache.royale.events.MouseEvent,XML*/
 
 goog.require('org.apache.royale.jewel.ResponsiveView');
 
@@ -86,6 +86,7 @@ views.ContentLoaderIframe.prototype.views_ContentLoaderIframe_init = function() 
 views.ContentLoaderIframe.prototype.loadPage = function(data) {
   this.visible = true;
   this.iFrm.src = org.apache.royale.utils.Language.string(data.url);
+  com.event.DsEvent.instance.dispatch(com.event.DsEvent.IFRAMEOPENED);
 };
 
 
@@ -94,7 +95,7 @@ views.ContentLoaderIframe.prototype.loadPage = function(data) {
 views.ContentLoaderIframe.prototype.disposeMe = function() {
   this.iFrm.src = "ht-pages/loading.html";
   this.visible = false;
-  com.event.DsEvent.instance.dispatch(com.event.DsEvent.IFRAMECLOSED, com.event.DsEvent.IFRAMECLOSED);
+  com.event.DsEvent.instance.dispatch(com.event.DsEvent.IFRAMECLOSED);
 };
 
 
@@ -185,13 +186,19 @@ Object.defineProperties(views.ContentLoaderIframe.prototype, /** @lends {views.C
         /** @type {Array} */
         var mxmldd = [
           org.apache.royale.html.elements.Iframe,
-          2,
+          4,
           '_id',
           true,
           'iFrm',
           'className',
           true,
           'iFrmCssFullScreen',
+          'percentHeight',
+          true,
+          100,
+          'percentWidth',
+          true,
+          100,
           0,
           0,
           null,

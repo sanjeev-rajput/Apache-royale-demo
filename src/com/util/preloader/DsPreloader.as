@@ -1,9 +1,9 @@
 package com.util.preloader {
 
     import org.apache.royale.jewel.SimpleLoader;
-    
     import com.unhurdle.spectrum.Application;
-
+    
+    
     public class DsPreloader{
 
         private static var _instance:DsPreloader = null;

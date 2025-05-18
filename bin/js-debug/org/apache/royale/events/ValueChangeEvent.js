@@ -77,7 +77,7 @@ org.apache.royale.events.ValueChangeEvent.VALUE_CHANGE = "valueChange";
  *  A convenience method to create an instance of the ValueChangeEvent.
  * 
  *  @asparam source The source of the object.
- *  @asparam name The name of the event.
+ *  @asparam name The name of the property being changed
  *  @asparam oldValue The value before it was changed.
  *  @asparam newValue The value after it was changed.
  *  @asreturn An instance of the ValueChangeEvent.
