@@ -1,0 +1,50 @@
+<j:VGroup xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:sp="library://ns.unhurdle.com/spectrum"
+        xmlns:j="library://ns.apache.org/royale/jewel"          
+        itemsHorizontalAlign="itemsCenter" height="100%" width="100%">
+
+         <fx:Script>
+            <![CDATA[
+                import com.unhurdle.spectrum.ActionButton;
+                import org.apache.royale.jewel.View;
+                import views.actionitemviews.games.keybordgame.KeyGame;
+                import views.actionitemviews.games.mousegame.MouseGame;
+
+                
+                private var currentGame:View;
+                private var actionBtn:ActionButton;
+                private function init():void {
+                    
+                }
+
+                private function actionBtnEventHandler(e:MouseEvent):void{
+                    if(actionBtn)actionBtn.selected=false;
+                    actionBtn = ActionButton(e.target);
+                    actionBtn.selected=true;
+                    if(currentGame){
+                        disposeMe();
+                        gameCtr.removeElement(currentGame);
+                    }
+
+                    if(actionBtn == kbdGame){
+                        currentGame = new KeyGame();
+                    }
+                    else if(actionBtn == mGame){
+                        currentGame = new MouseGame();
+                    }
+                    gameCtr.addElement(currentGame);
+                }
+
+                public function disposeMe():void {
+                    if(currentGame is KeyGame) KeyGame(currentGame).disposeMe();
+                    if(currentGame is MouseGame) MouseGame(currentGame).disposeMe();
+                }
+
+            ]]>
+         </fx:Script>
+         <sp:ActionGroup id="actionBtnGrp" compact="true">
+            <sp:ActionButton text="Ply by keyboard" id="kbdGame" click="actionBtnEventHandler(event)"/>
+            <sp:ActionButton text="Play by mouse" id="mGame" click="actionBtnEventHandler(event)"/>
+        </sp:ActionGroup>
+        <j:Container id="gameCtr" width="800" height="620" className="gameArea"/>
+</j:VGroup>

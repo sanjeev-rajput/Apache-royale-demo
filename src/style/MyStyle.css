@@ -215,3 +215,20 @@
   left:10px;
   background-color: yellow;
 }
+.gameResetBtn{
+  position:absolute;
+  top:-40%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  font-weight: bold;
+}
+.mouseGameWarningArea{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+.temp{
+  border: solid 2px;
+}

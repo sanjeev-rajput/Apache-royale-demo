@@ -1,4 +1,5 @@
-package views.actionitemviews.keybordgame {
+package views.actionitemviews.games.keybordgame {
+    // TODO bcoming lenghty bring it inside mxml
     import org.apache.royale.events.Event;
     import org.apache.royale.events.KeyboardEvent;
     import org.apache.royale.html.Label;

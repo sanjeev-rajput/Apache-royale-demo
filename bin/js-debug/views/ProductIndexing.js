@@ -8,7 +8,7 @@
  */
 
 goog.provide('views.ProductIndexing');
-/* Royale Dependency List: org.apache.royale.jewel.VGroup,org.apache.royale.jewel.HGroup,views.TopMenuL,org.apache.royale.jewel.Label,views.TopMenuR,org.apache.royale.jewel.FooterBar,com.unhurdle.spectrum.Label,org.apache.royale.jewel.Container,com.event.DsEvent,com.unhurdle.spectrum.Toast,org.apache.royale.events.Event,views.actionitemviews.BasicDrawing,views.actionitemviews.SearchListPopup,views.actionitemviews.ai.ChatBot_MistralMedium3,views.actionitemviews.keybordgame.KeyGame,views.actionitemviews.toc.TocAndPgnation,XML*/
+/* Royale Dependency List: org.apache.royale.jewel.VGroup,org.apache.royale.jewel.HGroup,views.TopMenuL,org.apache.royale.jewel.Label,views.TopMenuR,org.apache.royale.jewel.FooterBar,com.unhurdle.spectrum.Label,org.apache.royale.jewel.Container,com.event.DsEvent,com.unhurdle.spectrum.Toast,org.apache.royale.events.Event,views.actionitemviews.BasicDrawing,views.actionitemviews.SearchListPopup,views.actionitemviews.ai.ChatBot_MistralMedium3,views.actionitemviews.games.Game,views.actionitemviews.toc.TocAndPgnation,XML*/
 
 goog.require('org.apache.royale.jewel.ResponsiveView');
 
@@ -21,6 +21,7 @@ goog.require('org.apache.royale.jewel.ResponsiveView');
 views.ProductIndexing = function() {
   views.ProductIndexing.base(this, 'constructor');
   
+  this.views_ProductIndexing_mgmtObj = new Array();
   /**
    * @private
    * @type {org.apache.royale.jewel.VGroup}
@@ -103,6 +104,13 @@ goog.inherits(views.ProductIndexing, org.apache.royale.jewel.ResponsiveView);
 
 /**
  * @private
+ * @type {Array}
+ */
+views.ProductIndexing.prototype.views_ProductIndexing_mgmtObj = null;
+
+
+/**
+ * @private
  */
 views.ProductIndexing.prototype.views_ProductIndexing_initComplete = function() {
   var /** @type {com.unhurdle.spectrum.Toast} */ t = new com.unhurdle.spectrum.Toast();
@@ -163,10 +171,10 @@ views.ProductIndexing.prototype.views_ProductIndexing_addUiComponent = function(
     this.vg.addElement(uiComp);
     return;
   }
-  if (compName == 'Game') {
-    uiComp = new views.actionitemviews.keybordgame.KeyGame();
+  if (compName == 'Fun n Game') {
+    uiComp = new views.actionitemviews.games.Game();
     this.vg.addElement(uiComp);
-    uiComp.x = (this.vg.width - uiComp.width) / 2;
+    this.views_ProductIndexing_mgmtObj.push(uiComp);
     return;
   }
   if (compName == 'Load & Filter Data') {
@@ -189,6 +197,18 @@ views.ProductIndexing.prototype.views_ProductIndexing_clearUi = function() {
     this.pgNationCtr.removeElement(this.pgNationCtr.getElementAt(0));
   }
   this.title.text = "Make an action using 'L' and 'R' menu";
+  if (this.views_ProductIndexing_mgmtObj.length > 0) {
+    var foreachiter0_target = this.views_ProductIndexing_mgmtObj;
+    for (var foreachiter0 in foreachiter0_target) 
+    {
+    var i = foreachiter0_target[foreachiter0];
+    {
+      if (org.apache.royale.utils.Language.is(i, views.actionitemviews.games.Game))
+        org.apache.royale.utils.Language.as(i, views.actionitemviews.games.Game, true).disposeMe();
+    }}
+    
+    this.views_ProductIndexing_mgmtObj = new Array();
+  }
 };
 
 

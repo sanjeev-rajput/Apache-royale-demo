@@ -17,9 +17,9 @@
             import views.actionitemviews.SearchListPopup;
             import views.actionitemviews.toc.TocAndPgnation;
             import views.actionitemviews.ai.ChatBot_MistralMedium3;
-            import org.apache.royale.jewel.View;
             import org.apache.royale.jewel.Group;
-            import views.actionitemviews.keybordgame.KeyGame;
+            import views.actionitemviews.games.Game;
+            private var mgmtObj:Array = new Array();
                         
             private function initComplete():void {
                 var t:Toast = new Toast();
@@ -67,10 +67,10 @@
                     vg.addElement(uiComp);
                     return;
                 }
-                if(compName == 'Game'){
-                    uiComp = new KeyGame() as Group;
+                if(compName == 'Fun n Game'){
+                    uiComp = new Game()
                     vg.addElement(uiComp);
-                    uiComp.x = (vg.width - uiComp.width)/2
+                    mgmtObj.push(uiComp);
                     return;
                 }
                 if(compName == 'Load & Filter Data'){
@@ -90,7 +90,12 @@
                     pgNationCtr.removeElement(pgNationCtr.getElementAt(0));
                 }
                 title.text = "Make an action using 'L' and 'R' menu";
-
+                if(mgmtObj.length>0){
+                    for each(var i:Object in mgmtObj){
+                        if(i is Game) Game(i).disposeMe();
+                    }
+                    mgmtObj = new Array();
+                }
             }
             
 

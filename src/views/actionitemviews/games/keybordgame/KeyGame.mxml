@@ -1,0 +1,32 @@
+<j:View xmlns:fx="http://ns.adobe.com/mxml/2009"
+         xmlns:js="library://ns.apache.org/royale/basic" 
+         xmlns:j="library://ns.apache.org/royale/jewel" 
+         xmlns:html="library://ns.apache.org/royale/html"
+         width="800"
+         height="600"
+         initComplete="init()">
+
+    <fx:Script>
+        <![CDATA[
+            import views.actionitemviews.games.keybordgame.Controller;
+
+
+            private var gController:Controller;
+            private function init():void {
+                gController = new Controller(this);
+            }
+
+            public function disposeMe():void{
+                gController.disposeGame();
+            }
+
+
+        ]]>
+    </fx:Script>
+    <html:Svg percentWidth="100" percentHeight="100">
+      <html:Rect id="warningArea" percentWidth="100" height="10" x="0" y="600" fill="green" />
+    </html:Svg>
+    <j:Label id="gmOvr" text="GAME OVER" className="gameOverLbl" visible="false"/>
+    <j:Label id="scoreLabel" text="Score: 00" className="scoreLbl"/>
+    <j:Button id="resetBtn" text="Start Again !!!" visible="false" className="gameResetBtn"/>
+</j:View>

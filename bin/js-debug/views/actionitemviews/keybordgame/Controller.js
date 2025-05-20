@@ -4,73 +4,361 @@
  *
  * @fileoverview
  *
- * @suppress {checkTypes|accessControls}
+ * @suppress {missingRequire|checkTypes|accessControls}
  */
 
 goog.provide('views.actionitemviews.keybordgame.Controller');
+/* Royale Dependency List: org.apache.royale.events.Event,org.apache.royale.events.KeyboardEvent,org.apache.royale.events.MouseEvent,org.apache.royale.html5.AudioElement,org.apache.royale.jewel.Image,org.apache.royale.jewel.Label,org.apache.royale.utils.Timer,views.actionitemviews.keybordgame.KeyGame,org.apache.royale.utils.Language,XML*/
 
-goog.require('org.apache.royale.events.KeyboardEvent');
-goog.require('org.apache.royale.html.elements.Div');
-goog.require('org.apache.royale.jewel.Container');
-goog.require('org.apache.royale.utils.Language');
-goog.require('XML');
 
 
 
 /**
  * @constructor
- * @param {org.apache.royale.jewel.Container} area
- * @param {org.apache.royale.html.elements.Div} b
+ * @param {views.actionitemviews.keybordgame.KeyGame} ui
  */
-views.actionitemviews.keybordgame.Controller = function(area, b) {
-  this.views_actionitemviews_keybordgame_Controller_brick = b;
-  this.views_actionitemviews_keybordgame_Controller_gameArea = area;
-  document.addEventListener(org.apache.royale.events.KeyboardEvent.KEY_DOWN, org.apache.royale.utils.Language.closure(this.views_actionitemviews_keybordgame_Controller_onKeyDown, this, 'views_actionitemviews_keybordgame_Controller_onKeyDown'));
+views.actionitemviews.keybordgame.Controller = function(ui) {
+  
+  this.views_actionitemviews_keybordgame_Controller_balls = [];
+  this.views_actionitemviews_keybordgame_Controller_gameStage = ui;
+  this.views_actionitemviews_keybordgame_Controller_init();
 };
 
 
 /**
  * @private
- * @type {org.apache.royale.html.elements.Div}
+ * @type {org.apache.royale.jewel.Image}
  */
-views.actionitemviews.keybordgame.Controller.prototype.views_actionitemviews_keybordgame_Controller_brick = null;
-
-
-/**
- * @private
- * @type {org.apache.royale.jewel.Container}
- */
-views.actionitemviews.keybordgame.Controller.prototype.views_actionitemviews_keybordgame_Controller_gameArea = null;
+views.actionitemviews.keybordgame.Controller.prototype.views_actionitemviews_keybordgame_Controller_basket = null;
 
 
 /**
  * @private
  * @type {number}
  */
-views.actionitemviews.keybordgame.Controller.prototype.views_actionitemviews_keybordgame_Controller_step = 10;
+views.actionitemviews.keybordgame.Controller.prototype.views_actionitemviews_keybordgame_Controller_basketPosX = 350;
 
 
 /**
  * @private
- * @param {org.apache.royale.events.KeyboardEvent} event
+ * @type {number}
  */
-views.actionitemviews.keybordgame.Controller.prototype.views_actionitemviews_keybordgame_Controller_onKeyDown = function(event) {
-  org.apache.royale.utils.Language.trace(event.code, event.key);
-  org.apache.royale.utils.Language.trace(this.views_actionitemviews_keybordgame_Controller_gameArea.width, this.views_actionitemviews_keybordgame_Controller_gameArea.height, this.views_actionitemviews_keybordgame_Controller_brick.width, this.views_actionitemviews_keybordgame_Controller_brick.height);
-  switch (event.code) {
-    case 'ArrowLeft':
-      this.views_actionitemviews_keybordgame_Controller_brick.x = Math.max(this.views_actionitemviews_keybordgame_Controller_gameArea.x, this.views_actionitemviews_keybordgame_Controller_brick.x - this.views_actionitemviews_keybordgame_Controller_step);
-      break;
-    case 'ArrowRight':
-      this.views_actionitemviews_keybordgame_Controller_brick.x = Math.min(this.views_actionitemviews_keybordgame_Controller_gameArea.width - this.views_actionitemviews_keybordgame_Controller_brick.width, this.views_actionitemviews_keybordgame_Controller_brick.x + this.views_actionitemviews_keybordgame_Controller_step);
-      break;
-    case 'ArrowUp':
-      this.views_actionitemviews_keybordgame_Controller_brick.y = Math.max(this.views_actionitemviews_keybordgame_Controller_gameArea.y, this.views_actionitemviews_keybordgame_Controller_brick.y - this.views_actionitemviews_keybordgame_Controller_step);
-      break;
-    case 'ArrowDown':
-      this.views_actionitemviews_keybordgame_Controller_brick.y = Math.min(this.views_actionitemviews_keybordgame_Controller_gameArea.height - this.views_actionitemviews_keybordgame_Controller_brick.height, this.views_actionitemviews_keybordgame_Controller_brick.y + this.views_actionitemviews_keybordgame_Controller_step);
-      break;
+views.actionitemviews.keybordgame.Controller.prototype.views_actionitemviews_keybordgame_Controller_basketSpeed = 30;
+
+
+/**
+ * @private
+ * @type {number}
+ */
+views.actionitemviews.keybordgame.Controller.prototype.views_actionitemviews_keybordgame_Controller_basketPosY = 20;
+
+
+/**
+ * @private
+ * @type {Array}
+ */
+views.actionitemviews.keybordgame.Controller.prototype.views_actionitemviews_keybordgame_Controller_balls = null;
+
+
+/**
+ * @private
+ * @type {number}
+ */
+views.actionitemviews.keybordgame.Controller.prototype.views_actionitemviews_keybordgame_Controller_score = 0;
+
+
+/**
+ * @private
+ * @type {org.apache.royale.utils.Timer}
+ */
+views.actionitemviews.keybordgame.Controller.prototype.views_actionitemviews_keybordgame_Controller_gameTimer = null;
+
+
+/**
+ * @private
+ * @type {boolean}
+ */
+views.actionitemviews.keybordgame.Controller.prototype.views_actionitemviews_keybordgame_Controller_isGameOver = false;
+
+
+/**
+ * @private
+ * @type {number}
+ */
+views.actionitemviews.keybordgame.Controller.prototype.views_actionitemviews_keybordgame_Controller_warningThickness = 2;
+
+
+/**
+ * @private
+ * @type {number}
+ */
+views.actionitemviews.keybordgame.Controller.prototype.views_actionitemviews_keybordgame_Controller_intervalId = 0;
+
+
+/**
+ * @private
+ * @type {org.apache.royale.html5.AudioElement}
+ */
+views.actionitemviews.keybordgame.Controller.prototype.views_actionitemviews_keybordgame_Controller_catchSound = null;
+
+
+/**
+ * @private
+ * @type {org.apache.royale.html5.AudioElement}
+ */
+views.actionitemviews.keybordgame.Controller.prototype.views_actionitemviews_keybordgame_Controller_dropSound = null;
+
+
+/**
+ * @private
+ * @type {views.actionitemviews.keybordgame.KeyGame}
+ */
+views.actionitemviews.keybordgame.Controller.prototype.views_actionitemviews_keybordgame_Controller_gameStage = null;
+
+
+/**
+ * @private
+ */
+views.actionitemviews.keybordgame.Controller.prototype.views_actionitemviews_keybordgame_Controller_init = function() {
+  this.views_actionitemviews_keybordgame_Controller_createBasket();
+  this.views_actionitemviews_keybordgame_Controller_setupKeyboardControls();
+  this.views_actionitemviews_keybordgame_Controller_setupGameTimer();
+  this.views_actionitemviews_keybordgame_Controller_intervalId = (setInterval(org.apache.royale.utils.Language.closure(this.views_actionitemviews_keybordgame_Controller_spawnBall, this, 'views_actionitemviews_keybordgame_Controller_spawnBall'), 2000)) >> 0;
+  this.views_actionitemviews_keybordgame_Controller_updateWarningArea();
+  this.views_actionitemviews_keybordgame_Controller_initSound();
+  this.views_actionitemviews_keybordgame_Controller_gameStage.resetBtn.addEventListener(org.apache.royale.events.MouseEvent.CLICK, org.apache.royale.utils.Language.closure(this.views_actionitemviews_keybordgame_Controller_resetGame, this, 'views_actionitemviews_keybordgame_Controller_resetGame'));
+};
+
+
+/**
+ * @private
+ */
+views.actionitemviews.keybordgame.Controller.prototype.views_actionitemviews_keybordgame_Controller_initSound = function() {
+  this.views_actionitemviews_keybordgame_Controller_catchSound = new org.apache.royale.html5.AudioElement();
+  this.views_actionitemviews_keybordgame_Controller_catchSound.src = "audio/catch.mp3";
+  this.views_actionitemviews_keybordgame_Controller_dropSound = new org.apache.royale.html5.AudioElement();
+  this.views_actionitemviews_keybordgame_Controller_dropSound.src = "audio/drop.mp3";
+  this.views_actionitemviews_keybordgame_Controller_catchSound.volume = this.views_actionitemviews_keybordgame_Controller_dropSound.volume = 0.5;
+};
+
+
+/**
+ * @private
+ */
+views.actionitemviews.keybordgame.Controller.prototype.views_actionitemviews_keybordgame_Controller_createBasket = function() {
+  this.views_actionitemviews_keybordgame_Controller_basket = new org.apache.royale.jewel.Image();
+  this.views_actionitemviews_keybordgame_Controller_basket.width = 100;
+  this.views_actionitemviews_keybordgame_Controller_basket.height = 50;
+  this.views_actionitemviews_keybordgame_Controller_basket.src = "img/basket.png";
+  this.views_actionitemviews_keybordgame_Controller_basket.element.style.position = "absolute";
+  this.views_actionitemviews_keybordgame_Controller_updateBasketPosition();
+  this.views_actionitemviews_keybordgame_Controller_basket.element.style.transition = "left 0.2s linear";
+  this.views_actionitemviews_keybordgame_Controller_gameStage.addElement(this.views_actionitemviews_keybordgame_Controller_basket);
+};
+
+
+/**
+ * @private
+ */
+views.actionitemviews.keybordgame.Controller.prototype.views_actionitemviews_keybordgame_Controller_setupKeyboardControls = function() {
+  document.addEventListener(org.apache.royale.events.KeyboardEvent.KEY_DOWN, org.apache.royale.utils.Language.closure(this.views_actionitemviews_keybordgame_Controller_onKeyDown, this, 'views_actionitemviews_keybordgame_Controller_onKeyDown'));
+};
+
+
+/**
+ * @private
+ */
+views.actionitemviews.keybordgame.Controller.prototype.views_actionitemviews_keybordgame_Controller_setupGameTimer = function() {
+  this.views_actionitemviews_keybordgame_Controller_gameTimer = new org.apache.royale.utils.Timer(30);
+  this.views_actionitemviews_keybordgame_Controller_gameTimer.addEventListener("timer", org.apache.royale.utils.Language.closure(this.views_actionitemviews_keybordgame_Controller_onGameTick, this, 'views_actionitemviews_keybordgame_Controller_onGameTick'));
+  this.views_actionitemviews_keybordgame_Controller_gameTimer.start();
+};
+
+
+/**
+ * @private
+ * @param {org.apache.royale.events.KeyboardEvent} e
+ */
+views.actionitemviews.keybordgame.Controller.prototype.views_actionitemviews_keybordgame_Controller_onKeyDown = function(e) {
+  if (this.views_actionitemviews_keybordgame_Controller_isGameOver)
+    return;
+  if (e.key == "ArrowLeft") {
+    this.views_actionitemviews_keybordgame_Controller_basketPosX = (Math.max(0, this.views_actionitemviews_keybordgame_Controller_basketPosX - this.views_actionitemviews_keybordgame_Controller_basketSpeed)) >> 0;
+  } else if (e.key == "ArrowRight") {
+    this.views_actionitemviews_keybordgame_Controller_basketPosX = (Math.min(this.views_actionitemviews_keybordgame_Controller_gameStage.width - this.views_actionitemviews_keybordgame_Controller_basket.width, this.views_actionitemviews_keybordgame_Controller_basketPosX + this.views_actionitemviews_keybordgame_Controller_basketSpeed)) >> 0;
   }
+  this.views_actionitemviews_keybordgame_Controller_updateBasketPosition();
+};
+
+
+/**
+ * @private
+ */
+views.actionitemviews.keybordgame.Controller.prototype.views_actionitemviews_keybordgame_Controller_spawnBall = function() {
+  if (this.views_actionitemviews_keybordgame_Controller_isGameOver)
+    return;
+  var /** @type {org.apache.royale.jewel.Image} */ ball = new org.apache.royale.jewel.Image();
+  ball.width = 30;
+  ball.height = 30;
+  ball.src = "img/ball.png";
+  ball.element.style.position = "absolute";
+  ball.element.style.left = (Math.random() * (this.views_actionitemviews_keybordgame_Controller_gameStage.width - ball.width)) + "px";
+  ball.element.style.top = "0px";
+  this.views_actionitemviews_keybordgame_Controller_gameStage.addElement(ball);
+  this.views_actionitemviews_keybordgame_Controller_balls.push(ball);
+};
+
+
+/**
+ * @private
+ * @param {org.apache.royale.events.Event} event
+ */
+views.actionitemviews.keybordgame.Controller.prototype.views_actionitemviews_keybordgame_Controller_onGameTick = function(event) {
+  for (var /** @type {number} */ i = (this.views_actionitemviews_keybordgame_Controller_balls.length - 1) >> 0; i >= 0; i--) {
+    var /** @type {org.apache.royale.jewel.Image} */ ball = /* implicit cast */ org.apache.royale.utils.Language.as(this.views_actionitemviews_keybordgame_Controller_balls[i], org.apache.royale.jewel.Image, true);
+    var /** @type {number} */ currentTop = (parseInt(ball.element.style.top, 0) || 0) >> 0;
+    currentTop += 5;
+    ball.element.style.top = currentTop + "px";
+    var /** @type {number} */ ballX = (parseInt(ball.element.style.left, 0) || 0) >> 0;
+    var /** @type {number} */ ballY = currentTop;
+    var /** @type {number} */ basketTop = (this.views_actionitemviews_keybordgame_Controller_gameStage.height - this.views_actionitemviews_keybordgame_Controller_basketPosY - this.views_actionitemviews_keybordgame_Controller_basket.height) >> 0;
+    var /** @type {number} */ basketBottom = (this.views_actionitemviews_keybordgame_Controller_gameStage.height - this.views_actionitemviews_keybordgame_Controller_basketPosY) >> 0;
+    if (ballY + ball.height >= basketTop && ballY <= basketBottom && ballX + ball.width > this.views_actionitemviews_keybordgame_Controller_basketPosX && ballX < this.views_actionitemviews_keybordgame_Controller_basketPosX + this.views_actionitemviews_keybordgame_Controller_basket.width) {
+      this.views_actionitemviews_keybordgame_Controller_removeBall(ball, true);
+    } else if (ballY > this.views_actionitemviews_keybordgame_Controller_gameStage.height) {
+      this.views_actionitemviews_keybordgame_Controller_removeBall(ball, false);
+    }
+  }
+};
+
+
+/**
+ * @private
+ * @param {org.apache.royale.jewel.Image} ball
+ * @param {boolean} isCatched
+ */
+views.actionitemviews.keybordgame.Controller.prototype.views_actionitemviews_keybordgame_Controller_removeBall = function(ball, isCatched) {
+  var self = this;
+  var /** @type {number} */ ballX = (parseInt(ball.element.style.left, 0) || 0) >> 0;
+  var /** @type {number} */ ballY = (parseInt(ball.element.style.top, 0) || 0) >> 0;
+  if (isCatched) {
+    this.views_actionitemviews_keybordgame_Controller_showPointsAnimation("+10", (this.views_actionitemviews_keybordgame_Controller_basketPosX + this.views_actionitemviews_keybordgame_Controller_basket.width / 2) >> 0, (this.views_actionitemviews_keybordgame_Controller_gameStage.height - (this.views_actionitemviews_keybordgame_Controller_basketPosY + this.views_actionitemviews_keybordgame_Controller_basket.height)) >> 0, "green");
+    this.views_actionitemviews_keybordgame_Controller_basket.element.classList.add('gameBlurBasket');
+    setTimeout(function() {
+      self.views_actionitemviews_keybordgame_Controller_basket.element.classList.remove('gameBlurBasket');
+    }, 200);
+    this.views_actionitemviews_keybordgame_Controller_score += 10;
+    this.views_actionitemviews_keybordgame_Controller_catchSound.play();
+    this.views_actionitemviews_keybordgame_Controller_gameStage.removeElement(ball);
+  } else {
+    ball.src = "img/blast.png";
+    this.views_actionitemviews_keybordgame_Controller_showPointsAnimation("-10", ballX, ballY, "red");
+    this.views_actionitemviews_keybordgame_Controller_score -= 10;
+    this.views_actionitemviews_keybordgame_Controller_dropSound.play();
+    setTimeout(org.apache.royale.utils.Language.closure(this.views_actionitemviews_keybordgame_Controller_gameStage.removeElement, this.views_actionitemviews_keybordgame_Controller_gameStage, 'removeElement'), 500, ball);
+    if (this.views_actionitemviews_keybordgame_Controller_score % -30 == 0) {
+      this.views_actionitemviews_keybordgame_Controller_basketPosY += 20;
+      this.views_actionitemviews_keybordgame_Controller_updateBasketPosition();
+      this.views_actionitemviews_keybordgame_Controller_updateWarningArea();
+    }
+  }
+  this.views_actionitemviews_keybordgame_Controller_gameStage.scoreLabel.text = "Score: " + this.views_actionitemviews_keybordgame_Controller_score;
+  this.views_actionitemviews_keybordgame_Controller_balls.splice(this.views_actionitemviews_keybordgame_Controller_balls.indexOf(ball), 1);
+};
+
+
+/**
+ * @private
+ * @param {string} pointsText
+ * @param {number} x
+ * @param {number} y
+ * @param {string} color
+ */
+views.actionitemviews.keybordgame.Controller.prototype.views_actionitemviews_keybordgame_Controller_showPointsAnimation = function(pointsText, x, y, color) {
+  var self = this;
+  var /** @type {org.apache.royale.jewel.Label} */ pointsLabel = new org.apache.royale.jewel.Label();
+  pointsLabel.text = pointsText;
+  pointsLabel.element.style.position = "absolute";
+  pointsLabel.element.style.left = x + "px";
+  pointsLabel.element.style.top = y + "px";
+  pointsLabel.element.style.color = color;
+  pointsLabel.element.style.fontWeight = "bold";
+  pointsLabel.element.style.transition = "top 1s ease-out, opacity 1s ease-out";
+  this.views_actionitemviews_keybordgame_Controller_gameStage.addElement(pointsLabel);
+  setTimeout(function() {
+    pointsLabel.element.style.top = (y - 50) + "px";
+    pointsLabel.element.style.opacity = "0";
+  }, 10);
+  setTimeout(function() {
+    self.views_actionitemviews_keybordgame_Controller_gameStage.removeElement(pointsLabel);
+  }, 200);
+};
+
+
+/**
+ * @private
+ */
+views.actionitemviews.keybordgame.Controller.prototype.views_actionitemviews_keybordgame_Controller_updateBasketPosition = function() {
+  this.views_actionitemviews_keybordgame_Controller_basket.element.style.bottom = this.views_actionitemviews_keybordgame_Controller_basketPosY + "px";
+  this.views_actionitemviews_keybordgame_Controller_basket.element.style.left = this.views_actionitemviews_keybordgame_Controller_basketPosX + "px";
+  if (this.views_actionitemviews_keybordgame_Controller_basketPosY >= this.views_actionitemviews_keybordgame_Controller_gameStage.height - this.views_actionitemviews_keybordgame_Controller_basket.height - 50) {
+    this.views_actionitemviews_keybordgame_Controller_isGameOver = true;
+    this.views_actionitemviews_keybordgame_Controller_showGameOver();
+  }
+};
+
+
+/**
+ * @private
+ */
+views.actionitemviews.keybordgame.Controller.prototype.views_actionitemviews_keybordgame_Controller_showGameOver = function() {
+  this.views_actionitemviews_keybordgame_Controller_gameStage.gmOvr.visible = true;
+  clearInterval(this.views_actionitemviews_keybordgame_Controller_intervalId);
+  this.views_actionitemviews_keybordgame_Controller_gameTimer.stop();
+  this.views_actionitemviews_keybordgame_Controller_gameStage.resetBtn.visible = true;
+};
+
+
+/**
+ * @private
+ */
+views.actionitemviews.keybordgame.Controller.prototype.views_actionitemviews_keybordgame_Controller_updateWarningArea = function() {
+  this.views_actionitemviews_keybordgame_Controller_gameStage.warningArea.height = this.views_actionitemviews_keybordgame_Controller_basketPosY;
+  this.views_actionitemviews_keybordgame_Controller_gameStage.warningArea.y = 600 - this.views_actionitemviews_keybordgame_Controller_basketPosY;
+  if (this.views_actionitemviews_keybordgame_Controller_basketPosY >= this.views_actionitemviews_keybordgame_Controller_gameStage.height - 200) {
+    this.views_actionitemviews_keybordgame_Controller_gameStage.warningArea.fill = 'orange';
+  } else if (this.views_actionitemviews_keybordgame_Controller_basketPosY >= this.views_actionitemviews_keybordgame_Controller_gameStage.height / 2) {
+    this.views_actionitemviews_keybordgame_Controller_gameStage.warningArea.fill = 'yellow';
+  } else {
+    this.views_actionitemviews_keybordgame_Controller_gameStage.warningArea.fill = 'green';
+  }
+};
+
+
+/**
+ * @private
+ */
+views.actionitemviews.keybordgame.Controller.prototype.views_actionitemviews_keybordgame_Controller_resetGame = function() {
+  this.views_actionitemviews_keybordgame_Controller_isGameOver = false;
+  this.views_actionitemviews_keybordgame_Controller_gameStage.resetBtn.visible = false;
+  this.views_actionitemviews_keybordgame_Controller_score = 0;
+  this.views_actionitemviews_keybordgame_Controller_basketPosX = 350;
+  this.views_actionitemviews_keybordgame_Controller_basketPosY = 20;
+  this.views_actionitemviews_keybordgame_Controller_gameStage.scoreLabel.text = "Score: 0";
+  this.views_actionitemviews_keybordgame_Controller_gameStage.gmOvr.visible = false;
+  this.views_actionitemviews_keybordgame_Controller_updateBasketPosition();
+  this.views_actionitemviews_keybordgame_Controller_updateWarningArea();
+  var foreachiter0_target = this.views_actionitemviews_keybordgame_Controller_balls;
+  for (var foreachiter0 in foreachiter0_target) 
+  {
+  var ball = foreachiter0_target[foreachiter0];
+  {
+    this.views_actionitemviews_keybordgame_Controller_gameStage.removeElement(ball);
+  }}
+  
+  this.views_actionitemviews_keybordgame_Controller_balls = [];
+  this.views_actionitemviews_keybordgame_Controller_gameTimer.start();
+  this.views_actionitemviews_keybordgame_Controller_intervalId = (setInterval(org.apache.royale.utils.Language.closure(this.views_actionitemviews_keybordgame_Controller_spawnBall, this, 'views_actionitemviews_keybordgame_Controller_spawnBall'), 2000)) >> 0;
 };
 
 
@@ -92,7 +380,7 @@ views.actionitemviews.keybordgame.Controller.prototype.ROYALE_REFLECTION_INFO = 
   return {
     methods: function () {
       return {
-        'Controller': { type: '', declaredBy: 'views.actionitemviews.keybordgame.Controller', parameters: function () { return [ 'org.apache.royale.jewel.Container', false ,'org.apache.royale.html.elements.Div', false ]; }}
+        'Controller': { type: 'void', declaredBy: 'views.actionitemviews.keybordgame.Controller', parameters: function () { return [ 'views.actionitemviews.keybordgame.KeyGame', false ]; }}
       };
     }
   };
