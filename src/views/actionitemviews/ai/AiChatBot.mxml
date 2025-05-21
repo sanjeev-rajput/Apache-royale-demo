@@ -2,7 +2,8 @@
     xmlns:j="library://ns.apache.org/royale/jewel"
     xmlns:sp="library://ns.unhurdle.com/spectrum"
     width="100%" height="100%" 
-    itemsHorizontalAlign="itemsCenter" itemsVerticalAlign="itemsCenter" gap="1">
+    itemsHorizontalAlign="itemsCenter" itemsVerticalAlign="itemsCenter" gap="1"
+    initComplete="init()">
     <fx:Script>
         <![CDATA[
         
@@ -14,6 +15,7 @@
             import com.util.AsJsUtil;
             import org.apache.royale.events.MouseEvent;
             import com.unhurdle.spectrum.ActionButton;
+            import org.apache.royale.events.KeyboardEvent;
             
             
             private var requestData:String;
@@ -22,13 +24,23 @@
             private var qryCounter:int=0;
             private var actionBtn:ActionButton;
 
+            private function init():void {
+                this.addEventListener(KeyboardEvent.KEY_DOWN, onKeyDown);
+                qryCtr.visible=false;
+            }
+
+
+            private function onKeyDown(e:KeyboardEvent):void {
+                if(e.key == 'Enter')getAIResponse();
+            }
             private function initMdlType():void{
-                if(actionBtn == mdl1){
-                    imgUrl.visible=false;
-                }
                 if(actionBtn == mdl2){
                     imgUrl.visible=true;
+                }else{
+                    imgUrl.visible=false;
                 }
+                txtPrompt.focus();
+                qryCtr.visible=true;
             }
 
             private function initMdl1():void {
@@ -36,7 +48,6 @@
                 httpService = new ServiceLoader();
                 httpService.reqMethod = "POST";
                 httpService.contentType = "application/json"; 
-
                 httpService.reqData = JSON.stringify({prompt: "Please introduce yourself"});
                 httpService.loadJData('http://localhost:3000/api/chat', dataLoadEventHandler, ServiceLoader.DATA_TYPE_JSON, errorEventHander, false)
             }
@@ -49,6 +60,16 @@
                 httpService.reqData = JSON.stringify({prompt: "Describe the scene in this image.", "imageUrl":"https://www.amitshah.co.in/storage/uploads/1/1679578399-641c551f657b4.png"});
                 httpService.loadJData('http://localhost:3000/api/vision', dataLoadEventHandler, ServiceLoader.DATA_TYPE_JSON, errorEventHander, false)
             }
+
+            private function initMdl3():void {
+                clearBotCtr();
+                httpService = new ServiceLoader();
+                httpService.reqMethod = "POST";
+                httpService.contentType = "application/json"; 
+                httpService.reqData = JSON.stringify({ prompt: "Tell me a fun fact about space." });
+                httpService.loadJData('http://localhost:3000/api/Llama', dataLoadEventHandler, ServiceLoader.DATA_TYPE_JSON, errorEventHander, false)
+            }
+
 
             private function dataLoadEventHandler(d:Object):void {
                 trace(d)
@@ -63,6 +84,7 @@
                 txtPrompt.disabled = false;
                 btnQry.visible = true;
                 AsJsUtil.scrollIntoView(chatBotUi.id)
+                txtPrompt.focus();
             }
 
             private function errorEventHander(event:Event):void {
@@ -85,6 +107,10 @@
                     chatBotUi.aiQuery  = requestData + "<br> <img src='" + imgUrl.text + "' height='150'>"
                     httpService.reqData = JSON.stringify({prompt: requestData, "imageUrl":  imgUrl.text});
                 }
+                if(actionBtn == mdl3){
+                    chatBotUi.aiQuery  = requestData + "<br> <img src='" + imgUrl.text + "' height='150'>"
+                    httpService.reqData = JSON.stringify({prompt: requestData, "imageUrl":  imgUrl.text});
+                }
                 
                 httpService.sendReqData();
                 chatCtr.addElement(chatBotUi);
@@ -97,6 +123,7 @@
                 actionBtn = ActionButton(e.target);
                 if(actionBtn == mdl1)initMdl1();
                 if(actionBtn == mdl2)initMdl2();
+                if(actionBtn == mdl3)initMdl3();
                 actionBtn.selected = true;
                 initMdlType()
 
@@ -114,7 +141,7 @@
     <sp:ActionGroup id="actionBtnGrp" compact="true">
         <sp:ActionButton text="deephermes-3" id="mdl1" click="actionBtnEventHandler(event)"/>
         <sp:ActionButton text="Vision AI" id="mdl2" click="actionBtnEventHandler(event)"/>
-        <sp:ActionButton text="more" id="mdl3" click="actionBtnEventHandler(event)" disabled="true"/>
+        <sp:ActionButton text="LLAMA 3.2" id="mdl3" click="actionBtnEventHandler(event)"/>
     </sp:ActionGroup>
     <j:VGroup id="chatCtr" className="chatBoatContainer" height="80%" width="80%" gap="5" itemsHorizontalAlign="itemsCenter">
         <j:beads>
@@ -123,7 +150,7 @@
     </j:VGroup>
     <j:HGroup id="qryCtr" width="80%" itemsVerticalAlign="itemsCenter">
         <sp:TextField id="txtPrompt" width="100%"  placeholder="Prompt text"/>
-        <sp:TextField id="imgUrl" width="100%"  placeholder="Full image url"/>
+        <sp:TextField id="imgUrl" width="100%"  placeholder="Full image url"  visible="false"/>
         <j:ImageIcon id="btnQry" src="img/message-sent.png" click="getAIResponse()"/>
     </j:HGroup>
 </j:VGroup>

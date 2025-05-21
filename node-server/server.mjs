@@ -1,6 +1,9 @@
-const express = require('express');
-const cors = require('cors');
-const bodyParser = require('body-parser');
+import express from 'express';
+import cors from 'cors';
+
+import bodyParser from 'body-parser';
+
+
 const fetch = (...args) => import('node-fetch').then(({ default: fetch }) => fetch(...args));
 
 const app = express();
@@ -101,6 +104,51 @@ app.post('/api/vision', async (req, res) => {
     }
 });
 
+//-----LLIMA
+
+app.post('/api/Llama', async (req, res) => {
+    const prompt = req.body.prompt;
+
+    if (!prompt) {
+        return res.status(400).json({ error: 'Prompt is required' });
+    }
+
+    try {
+        const response = await fetch('https://openrouter.ai/api/v1/chat/completions', {
+            method: 'POST',
+            headers: {
+                'Authorization': `Bearer ${OPENROUTER_API_KEY}`,
+                'Content-Type': 'application/json',
+                'HTTP-Referer': 'http://localhost:3000',
+                'X-Title': 'Royale-Chat'
+            },
+            body: JSON.stringify({
+                model: "meta-llama/llama-3.3-8b-instruct:free",
+                messages: [
+                    { role: 'user', content: prompt }
+                ]
+            })
+        });
+
+        const data = await response.json();
+
+        if (data.error) {
+            return res.status(500).json({ error: data.error.message });
+        }
+
+        const aiResponse = data.choices?.[0]?.message?.content || 'No response';
+        res.json({ response: aiResponse });
+
+    } catch (err) {
+        console.error('AI Error:', err);
+        res.status(500).json({ error: 'AI server error' });
+    }
+});
+
+
+
+
+//---------------
 app.listen(PORT, () => {
     console.log(`✅ Server running at http://localhost:${PORT}`);
 });

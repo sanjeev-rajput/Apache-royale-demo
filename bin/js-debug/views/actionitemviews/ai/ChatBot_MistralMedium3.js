@@ -8,7 +8,7 @@
  */
 
 goog.provide('views.actionitemviews.ai.ChatBot_MistralMedium3');
-/* Royale Dependency List: com.unhurdle.spectrum.ActionGroup,com.unhurdle.spectrum.ActionButton,org.apache.royale.jewel.supportClasses.scrollbar.ScrollingViewport,org.apache.royale.jewel.HGroup,com.unhurdle.spectrum.TextField,org.apache.royale.jewel.ImageIcon,com.model.ServiceLoader,com.util.AsJsUtil,org.apache.royale.events.MouseEvent,org.apache.royale.html.elements.Span,views.actionitemviews.ai.ChatBot,XML*/
+/* Royale Dependency List: com.unhurdle.spectrum.ActionGroup,com.unhurdle.spectrum.ActionButton,org.apache.royale.jewel.supportClasses.scrollbar.ScrollingViewport,org.apache.royale.jewel.HGroup,com.unhurdle.spectrum.TextField,org.apache.royale.jewel.ImageIcon,com.model.ServiceLoader,com.util.AsJsUtil,org.apache.royale.events.Event,org.apache.royale.events.KeyboardEvent,org.apache.royale.events.MouseEvent,org.apache.royale.html.elements.Span,views.actionitemviews.ai.ChatBot,XML*/
 
 goog.require('org.apache.royale.jewel.VGroup');
 
@@ -111,7 +111,9 @@ views.actionitemviews.ai.ChatBot_MistralMedium3 = function() {
     true,
     1,
     0,
-    0
+    1,
+    'initComplete',
+    this.$EH_13_0
   ]);
   
 };
@@ -158,12 +160,29 @@ views.actionitemviews.ai.ChatBot_MistralMedium3.prototype.views_actionitemviews_
 /**
  * @private
  */
+views.actionitemviews.ai.ChatBot_MistralMedium3.prototype.views_actionitemviews_ai_ChatBot_MistralMedium3_init = function() {
+  this.addEventListener(org.apache.royale.events.KeyboardEvent.KEY_DOWN, org.apache.royale.utils.Language.closure(this.views_actionitemviews_ai_ChatBot_MistralMedium3_onKeyDown, this, 'views_actionitemviews_ai_ChatBot_MistralMedium3_onKeyDown'));
+};
+
+
+/**
+ * @private
+ * @param {org.apache.royale.events.KeyboardEvent} e
+ */
+views.actionitemviews.ai.ChatBot_MistralMedium3.prototype.views_actionitemviews_ai_ChatBot_MistralMedium3_onKeyDown = function(e) {
+  if (e.key == 'Enter')
+    this.getAIResponse();
+};
+
+
+/**
+ * @private
+ */
 views.actionitemviews.ai.ChatBot_MistralMedium3.prototype.views_actionitemviews_ai_ChatBot_MistralMedium3_initMdlType = function() {
-  if (this.views_actionitemviews_ai_ChatBot_MistralMedium3_actionBtn == this.mdl1) {
-    this.imgUrl.visible = false;
-  }
   if (this.views_actionitemviews_ai_ChatBot_MistralMedium3_actionBtn == this.mdl2) {
     this.imgUrl.visible = true;
+  } else {
+    this.imgUrl.visible = false;
   }
 };
 
@@ -196,6 +215,19 @@ views.actionitemviews.ai.ChatBot_MistralMedium3.prototype.views_actionitemviews_
 
 /**
  * @private
+ */
+views.actionitemviews.ai.ChatBot_MistralMedium3.prototype.views_actionitemviews_ai_ChatBot_MistralMedium3_initMdl3 = function() {
+  this.views_actionitemviews_ai_ChatBot_MistralMedium3_clearBotCtr();
+  this.views_actionitemviews_ai_ChatBot_MistralMedium3_httpService = new com.model.ServiceLoader();
+  this.views_actionitemviews_ai_ChatBot_MistralMedium3_httpService.reqMethod = "POST";
+  this.views_actionitemviews_ai_ChatBot_MistralMedium3_httpService.contentType = "application/json";
+  this.views_actionitemviews_ai_ChatBot_MistralMedium3_httpService.reqData = JSON.stringify({prompt:"Tell me a fun fact about space."});
+  this.views_actionitemviews_ai_ChatBot_MistralMedium3_httpService.loadJData('http://localhost:3000/api/Llama', org.apache.royale.utils.Language.closure(this.views_actionitemviews_ai_ChatBot_MistralMedium3_dataLoadEventHandler, this, 'views_actionitemviews_ai_ChatBot_MistralMedium3_dataLoadEventHandler'), com.model.ServiceLoader.DATA_TYPE_JSON, org.apache.royale.utils.Language.closure(this.views_actionitemviews_ai_ChatBot_MistralMedium3_errorEventHander, this, 'views_actionitemviews_ai_ChatBot_MistralMedium3_errorEventHander'), false);
+};
+
+
+/**
+ * @private
  * @param {Object} d
  */
 views.actionitemviews.ai.ChatBot_MistralMedium3.prototype.views_actionitemviews_ai_ChatBot_MistralMedium3_dataLoadEventHandler = function(d) {
@@ -211,6 +243,7 @@ views.actionitemviews.ai.ChatBot_MistralMedium3.prototype.views_actionitemviews_
   this.txtPrompt.disabled = false;
   this.btnQry.visible = true;
   com.util.AsJsUtil.scrollIntoView(this.views_actionitemviews_ai_ChatBot_MistralMedium3_chatBotUi.id);
+  this.txtPrompt.focus();
 };
 
 
@@ -239,6 +272,10 @@ views.actionitemviews.ai.ChatBot_MistralMedium3.prototype.getAIResponse = functi
     this.views_actionitemviews_ai_ChatBot_MistralMedium3_chatBotUi.aiQuery = this.views_actionitemviews_ai_ChatBot_MistralMedium3_requestData + "<br> <img src='" + this.imgUrl.text + "' height='150'>";
     this.views_actionitemviews_ai_ChatBot_MistralMedium3_httpService.reqData = JSON.stringify({prompt:this.views_actionitemviews_ai_ChatBot_MistralMedium3_requestData, "imageUrl":this.imgUrl.text});
   }
+  if (this.views_actionitemviews_ai_ChatBot_MistralMedium3_actionBtn == this.mdl3) {
+    this.views_actionitemviews_ai_ChatBot_MistralMedium3_chatBotUi.aiQuery = this.views_actionitemviews_ai_ChatBot_MistralMedium3_requestData + "<br> <img src='" + this.imgUrl.text + "' height='150'>";
+    this.views_actionitemviews_ai_ChatBot_MistralMedium3_httpService.reqData = JSON.stringify({prompt:this.views_actionitemviews_ai_ChatBot_MistralMedium3_requestData, "imageUrl":this.imgUrl.text});
+  }
   this.views_actionitemviews_ai_ChatBot_MistralMedium3_httpService.sendReqData();
   this.chatCtr.addElement(this.views_actionitemviews_ai_ChatBot_MistralMedium3_chatBotUi);
   this.views_actionitemviews_ai_ChatBot_MistralMedium3_qryCounter++;
@@ -258,6 +295,8 @@ views.actionitemviews.ai.ChatBot_MistralMedium3.prototype.views_actionitemviews_
     this.views_actionitemviews_ai_ChatBot_MistralMedium3_initMdl1();
   if (this.views_actionitemviews_ai_ChatBot_MistralMedium3_actionBtn == this.mdl2)
     this.views_actionitemviews_ai_ChatBot_MistralMedium3_initMdl2();
+  if (this.views_actionitemviews_ai_ChatBot_MistralMedium3_actionBtn == this.mdl3)
+    this.views_actionitemviews_ai_ChatBot_MistralMedium3_initMdl3();
   this.views_actionitemviews_ai_ChatBot_MistralMedium3_actionBtn.selected = true;
   this.views_actionitemviews_ai_ChatBot_MistralMedium3_initMdlType();
 };
@@ -276,11 +315,11 @@ views.actionitemviews.ai.ChatBot_MistralMedium3.prototype.views_actionitemviews_
 
 /**
  * @export
- * @param {org.apache.royale.events.MouseEvent} event
+ * @param {org.apache.royale.events.Event} event
  */
 views.actionitemviews.ai.ChatBot_MistralMedium3.prototype.$EH_13_0 = function(event)
 {
-  this.views_actionitemviews_ai_ChatBot_MistralMedium3_actionBtnEventHandler(event);
+  this.views_actionitemviews_ai_ChatBot_MistralMedium3_init();
 };
 
 
@@ -309,6 +348,16 @@ views.actionitemviews.ai.ChatBot_MistralMedium3.prototype.$EH_13_2 = function(ev
  * @param {org.apache.royale.events.MouseEvent} event
  */
 views.actionitemviews.ai.ChatBot_MistralMedium3.prototype.$EH_13_3 = function(event)
+{
+  this.views_actionitemviews_ai_ChatBot_MistralMedium3_actionBtnEventHandler(event);
+};
+
+
+/**
+ * @export
+ * @param {org.apache.royale.events.MouseEvent} event
+ */
+views.actionitemviews.ai.ChatBot_MistralMedium3.prototype.$EH_13_4 = function(event)
 {
   this.getAIResponse();
 };
@@ -463,7 +512,7 @@ Object.defineProperties(views.actionitemviews.ai.ChatBot_MistralMedium3.prototyp
             0,
             1,
             'click',
-            this.$EH_13_0,
+            this.$EH_13_1,
             null,
             com.unhurdle.spectrum.ActionButton,
             2,
@@ -476,23 +525,20 @@ Object.defineProperties(views.actionitemviews.ai.ChatBot_MistralMedium3.prototyp
             0,
             1,
             'click',
-            this.$EH_13_1,
+            this.$EH_13_2,
             null,
             com.unhurdle.spectrum.ActionButton,
-            3,
+            2,
             'id',
             true,
             'mdl3',
             'text',
             true,
-            'more',
-            'disabled',
-            true,
-            true,
+            'LLAMA 3.2',
             0,
             1,
             'click',
-            this.$EH_13_2,
+            this.$EH_13_3,
             null
           ],
           org.apache.royale.jewel.VGroup,
@@ -559,7 +605,7 @@ Object.defineProperties(views.actionitemviews.ai.ChatBot_MistralMedium3.prototyp
             0,
             null,
             com.unhurdle.spectrum.TextField,
-            3,
+            4,
             'id',
             true,
             'imgUrl',
@@ -569,6 +615,9 @@ Object.defineProperties(views.actionitemviews.ai.ChatBot_MistralMedium3.prototyp
             'placeholder',
             true,
             'Full image url',
+            'visible',
+            true,
+            false,
             0,
             0,
             null,
@@ -583,7 +632,7 @@ Object.defineProperties(views.actionitemviews.ai.ChatBot_MistralMedium3.prototyp
             0,
             1,
             'click',
-            this.$EH_13_3,
+            this.$EH_13_4,
             null
           ]
         ];

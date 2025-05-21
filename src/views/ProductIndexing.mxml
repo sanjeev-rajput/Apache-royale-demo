@@ -16,9 +16,9 @@
             import views.actionitemviews.BasicDrawing;
             import views.actionitemviews.SearchListPopup;
             import views.actionitemviews.toc.TocAndPgnation;
-            import views.actionitemviews.ai.ChatBot_MistralMedium3;
             import org.apache.royale.jewel.Group;
             import views.actionitemviews.games.Game;
+            import views.actionitemviews.ai.AiChatBot;
             private var mgmtObj:Array = new Array();
                         
             private function initComplete():void {
@@ -62,8 +62,8 @@
                     vg.addElement(uiComp);
                     return;
                 }
-                if(compName == 'AI - Chatbot - mistral-medium-3'){
-                    uiComp = new ChatBot_MistralMedium3();
+                if(compName == 'AI - Shatbots'){
+                    uiComp = new AiChatBot();
                     vg.addElement(uiComp);
                     return;
                 }

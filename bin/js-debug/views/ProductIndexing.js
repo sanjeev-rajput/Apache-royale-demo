@@ -8,7 +8,7 @@
  */
 
 goog.provide('views.ProductIndexing');
-/* Royale Dependency List: org.apache.royale.jewel.VGroup,org.apache.royale.jewel.HGroup,views.TopMenuL,org.apache.royale.jewel.Label,views.TopMenuR,org.apache.royale.jewel.FooterBar,com.unhurdle.spectrum.Label,org.apache.royale.jewel.Container,com.event.DsEvent,com.unhurdle.spectrum.Toast,org.apache.royale.events.Event,views.actionitemviews.BasicDrawing,views.actionitemviews.SearchListPopup,views.actionitemviews.ai.ChatBot_MistralMedium3,views.actionitemviews.games.Game,views.actionitemviews.toc.TocAndPgnation,XML*/
+/* Royale Dependency List: org.apache.royale.jewel.VGroup,org.apache.royale.jewel.HGroup,views.TopMenuL,org.apache.royale.jewel.Label,views.TopMenuR,org.apache.royale.jewel.FooterBar,com.unhurdle.spectrum.Label,org.apache.royale.jewel.Container,com.event.DsEvent,com.unhurdle.spectrum.Toast,org.apache.royale.events.Event,views.actionitemviews.BasicDrawing,views.actionitemviews.SearchListPopup,views.actionitemviews.ai.AiChatBot,views.actionitemviews.games.Game,views.actionitemviews.toc.TocAndPgnation,XML*/
 
 goog.require('org.apache.royale.jewel.ResponsiveView');
 
@@ -166,8 +166,8 @@ views.ProductIndexing.prototype.views_ProductIndexing_addUiComponent = function(
     this.vg.addElement(uiComp);
     return;
   }
-  if (compName == 'AI - Chatbot - mistral-medium-3') {
-    uiComp = new views.actionitemviews.ai.ChatBot_MistralMedium3();
+  if (compName == 'AI - Shatbots') {
+    uiComp = new views.actionitemviews.ai.AiChatBot();
     this.vg.addElement(uiComp);
     return;
   }
