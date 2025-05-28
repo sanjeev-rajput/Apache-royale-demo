@@ -313,6 +313,7 @@ views.actionitemviews.ai.AiChatBot.prototype.views_actionitemviews_ai_AiChatBot_
     this.chatCtr.removeElement(this.chatCtr.getElementAt(0));
   }
   this.views_actionitemviews_ai_AiChatBot_httpService = null;
+  this.views_actionitemviews_ai_AiChatBot_chatBotUi = null;
 };
 
 

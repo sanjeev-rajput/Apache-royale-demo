@@ -8,7 +8,7 @@
  */
 
 goog.provide('views.actionitemviews.ai.ChatBot');
-/* Royale Dependency List: org.apache.royale.html.elements.Span,org.apache.royale.events.Event,XML*/
+/* Royale Dependency List: org.apache.royale.html.elements.Span,org.apache.royale.html.elements.Pre,org.apache.royale.events.Event,XML*/
 
 goog.require('org.apache.royale.jewel.VGroup');
 
@@ -29,7 +29,7 @@ views.actionitemviews.ai.ChatBot = function() {
   
   /**
    * @private
-   * @type {org.apache.royale.html.elements.Span}
+   * @type {org.apache.royale.html.elements.Pre}
    */
   this.response_;
   
@@ -84,7 +84,7 @@ views.actionitemviews.ai.ChatBot.prototype.views_actionitemviews_ai_ChatBot__aiR
  */
 views.actionitemviews.ai.ChatBot.prototype.views_actionitemviews_ai_ChatBot_init = function() {
   this.query.innerHTML = this.views_actionitemviews_ai_ChatBot__aiQuery;
-  this.response.innerHTML = this.views_actionitemviews_ai_ChatBot__aiResponse;
+  this.response.innerText = this.views_actionitemviews_ai_ChatBot__aiResponse;
 };
 
 
@@ -121,7 +121,7 @@ views.actionitemviews.ai.ChatBot.prototype.aiResponse;
 views.actionitemviews.ai.ChatBot.prototype.set__aiResponse = function(r) {
   this.views_actionitemviews_ai_ChatBot__aiResponse = r;
   if (this.response) {
-    this.response.innerHTML = this.views_actionitemviews_ai_ChatBot__aiResponse;
+    this.response.innerText = this.views_actionitemviews_ai_ChatBot__aiResponse;
   }
 };
 
@@ -197,7 +197,7 @@ Object.defineProperties(views.actionitemviews.ai.ChatBot.prototype, /** @lends {
           0,
           0,
           null,
-          org.apache.royale.html.elements.Span,
+          org.apache.royale.html.elements.Pre,
           4,
           'id',
           true,
@@ -245,7 +245,7 @@ views.actionitemviews.ai.ChatBot.prototype.ROYALE_REFLECTION_INFO = function () 
         'aiQuery': { type: 'String', access: 'writeonly', declaredBy: 'views.actionitemviews.ai.ChatBot'},
         'aiResponse': { type: 'String', access: 'writeonly', declaredBy: 'views.actionitemviews.ai.ChatBot'},
         'query': { type: 'org.apache.royale.html.elements.Span', access: 'readwrite', declaredBy: 'views.actionitemviews.ai.ChatBot'},
-        'response': { type: 'org.apache.royale.html.elements.Span', access: 'readwrite', declaredBy: 'views.actionitemviews.ai.ChatBot'}
+        'response': { type: 'org.apache.royale.html.elements.Pre', access: 'readwrite', declaredBy: 'views.actionitemviews.ai.ChatBot'}
       };
     },
     methods: function () {

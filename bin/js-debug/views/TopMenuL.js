@@ -8,7 +8,7 @@
  */
 
 goog.provide('views.TopMenuL');
-/* Royale Dependency List: org.apache.royale.jewel.beads.controls.drawer.ResponsiveDrawer,org.apache.royale.jewel.supportClasses.drawer.DrawerContent,com.unhurdle.spectrum.ActionMenu,com.controller.PopupManager,org.apache.royale.events.CloseEvent,org.apache.royale.events.Event,views.actionitemviews.ImgPopuop,views.actionitemviews.SearchListPopup,views.actionitemviews.dragAndDropPopup,XML*/
+/* Royale Dependency List: org.apache.royale.jewel.beads.controls.drawer.ResponsiveDrawer,org.apache.royale.jewel.supportClasses.drawer.DrawerContent,com.unhurdle.spectrum.ActionMenu,com.controller.PopupManager,org.apache.royale.events.CloseEvent,org.apache.royale.events.Event,views.actionitemviews.ImgPopuop,views.actionitemviews.draganddrop.DragAndDropMain,views.actionitemviews.searchlist.SearchListMain,XML*/
 
 goog.require('org.apache.royale.jewel.Drawer');
 
@@ -94,10 +94,10 @@ views.TopMenuL.prototype.views_TopMenuL_handleSelection = function() {
       this.views_TopMenuL_createprogrammaticPopup(new views.actionitemviews.ImgPopuop(), 490, 392);
       break;
     case "Drag and Drop":
-      this.views_TopMenuL_createprogrammaticPopup(new views.actionitemviews.dragAndDropPopup(), 640, 480);
+      this.views_TopMenuL_createprogrammaticPopup(new views.actionitemviews.draganddrop.DragAndDropMain(), 640, 480);
       break;
     case "List and Search":
-      this.views_TopMenuL_createprogrammaticPopup(new views.actionitemviews.SearchListPopup(), 490, 392);
+      this.views_TopMenuL_createprogrammaticPopup(new views.actionitemviews.searchlist.SearchListMain(), 490, 392);
       break;
     case "Action 4":
       break;

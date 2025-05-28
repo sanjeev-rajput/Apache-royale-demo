@@ -1,22 +1,30 @@
 package views.actionitemviews.websocket 
 {
 
+    import org.apache.royale.collections.ArrayList;
+
     public class SocketService{
 
         private var ws:WebSocket;
-        private var _url:String = "http://localhost:8080";
+        private var _url:String = "http://localhost:3000";
         private var _isConnected:Boolean = false;
+        private var _callBackFunction:Function=null;
         public function SocketService():void {
         }
         
+        public function addCAllBackFunction(callBackFunction:Function):void {
+            _callBackFunction = callBackFunction;
+        }
         public function connectWebSocket():void{  
+            if(_callBackFunction == null){
+                console.error("CallBack function is not set");
+                return;
+            }
             ws = new WebSocket(_url); 
             ws.addEventListener('open', connectionOpenEvtHandler);
             ws.addEventListener('message', connectionMessageEvtHandler);
             ws.addEventListener('close', connectionCloseEvtHandler);
-            ws.addEventListener('error', connectionErrorEvtHandler);
-
-            ws.addEventListener('counter', counterEvtHandler)    
+            ws.addEventListener('error', connectionErrorEvtHandler); 
         }
 
         public function disconnectWebSocket():void {
@@ -29,13 +37,9 @@ package views.actionitemviews.websocket
         }
 
         private function connectionMessageEvtHandler(e:*):void {
-            console.log('Message from server:', e.data);
             var data:Object = JSON.parse(e.data);
-            if (data.type === "counter") {
-                console.log("Counter value:", data.value);
-            } else {
-                console.log("Other message:", data);
-            }
+            console.log("Message from server:", data);
+            _callBackFunction(data);
         }
 
         private function connectionCloseEvtHandler():void {
@@ -46,19 +50,8 @@ package views.actionitemviews.websocket
             console.error('WebSocket error:', e);
         }
 
-        private function counterEvtHandler(e:*):void{
-            console.log(e.data);
-        }
-
         private function onSend(event:MouseEvent):void{
-            if (ws && ws.readyState == 1){
-                // ws.send(input.text);
-                // log.text += "Sent: " + input.text + "\n";
-                // input.text = "";
-            }
-            else{
-                //log.text += "WebSocket not ready\n";
-            }
+        
         }
 
     }

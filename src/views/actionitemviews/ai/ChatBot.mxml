@@ -11,7 +11,7 @@
             private var _aiResponse:String;
             private function init():void {
                 query.innerHTML = _aiQuery;
-                response.innerHTML = _aiResponse;
+                response.innerText = _aiResponse;
             }
 
             public function set aiQuery(q:String):void {
@@ -21,7 +21,7 @@
             public function set aiResponse(r:String):void {
                 _aiResponse = r;
                 if(response){
-                    response.innerHTML = _aiResponse;
+                    response.innerText = _aiResponse;
                 }
             }
         ]]>
@@ -29,7 +29,7 @@
 
 
     <html:Span id="query" width="100%" class="chatBotQuery"/>
-    <html:Span id="response" width="100%" class="chatBotAns" text="..."/>
+    <html:Pre id="response" width="100%" class="chatBotAns" text="..."/>
     
 
 </j:VGroup>

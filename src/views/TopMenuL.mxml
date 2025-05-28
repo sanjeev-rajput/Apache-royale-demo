@@ -18,10 +18,9 @@
             import com.controller.PopupManager;
             import org.apache.royale.events.CloseEvent;
             import views.actionitemviews.ImgPopuop;
-            import views.actionitemviews.dragAndDropPopup;
-            
             import org.apache.royale.jewel.View;
-            import views.actionitemviews.SearchListPopup;
+            import views.actionitemviews.draganddrop.DragAndDropMain;
+            import views.actionitemviews.searchlist.SearchListMain;
             
             private function handleSelection():void {
                 var selectedAction:String = menuL.selectedItem.label as String;
@@ -30,10 +29,10 @@
                         createprogrammaticPopup(new ImgPopuop(), 490, 392);
                         break;
                     case "Drag and Drop":
-                        createprogrammaticPopup(new dragAndDropPopup(), 640, 480);
+                        createprogrammaticPopup(new DragAndDropMain(), 640, 480);
                         break;
                     case "List and Search":
-                        createprogrammaticPopup(new SearchListPopup(), 490, 392);
+                        createprogrammaticPopup(new SearchListMain(), 490, 392);
                         break;
                     case "Action 4":
                         // Handle Action 4

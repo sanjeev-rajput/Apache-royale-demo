@@ -14,3 +14,8 @@ AIzaSyBQ6xUZ9dku-ysKnUzMAalqC3wLJyAsW7g
 huggingface
 pwd - Skr@8480
 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
+
+
+
+https://www.pexels.com/api/key/
+dSk7faqBdAhgumubOzfM5fXeJ5jmXYCYivPxeL4k37Lg7jJglLxJpuY8

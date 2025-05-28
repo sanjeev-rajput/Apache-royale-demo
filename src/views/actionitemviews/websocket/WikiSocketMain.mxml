@@ -1,0 +1,52 @@
+<j:VGroup xmlns:fx="http://ns.adobe.com/mxml/2009"
+    xmlns:j="library://ns.apache.org/royale/jewel" 
+    xmlns:js="library://ns.apache.org/royale/express"
+    xmlns:sp="library://ns.unhurdle.com/spectrum"
+    initComplete="init()" width="100%" height="100%" itemsHorizontalAlign="itemsCenter">
+    
+    <fx:Script>
+        <![CDATA[
+            import views.actionitemviews.websocket.SocketService;
+            import views.actionitemviews.websocket.SocketEventUi;
+            import com.util.AsJsUtil;
+
+            private var _socketService:SocketService;
+            private var _maxItems:int = 100;
+            private var counter:int = 0;
+            private function init():void {
+                _socketService = new SocketService();
+                _socketService.addCAllBackFunction(onSocketData);
+                
+            }
+
+            private function switchEventHandler():void {
+                if(switchBtn.checked) {
+                    _socketService.connectWebSocket()
+                } else {
+                    _socketService.disconnectWebSocket();
+                }
+            }
+
+            private function onSocketData(data:Object):void {
+                var changeData:Object = data//JSON.parse(data);
+                var eventUi:SocketEventUi = new SocketEventUi();
+                eventUi.id = "eventUi" + counter++;
+                eventUi.change = changeData;
+                ctr.addElementAt(eventUi,0);
+
+                if(ctr.numElements > _maxItems) {
+                    ctr.removeElement(ctr.getElementAt(ctr.numElements - 1));
+                }
+                trace(scrollViewport.contentView.height)
+            }
+
+        ]]>
+    </fx:Script>    
+    <sp:Switch id="switchBtn" leftLabel="Disconnect" rightLabel="Connect to event source" click="switchEventHandler()"/>
+    <j:VGroup id="ctr" width="100%" height="600" gap="5" className="socketEventItemContainer">
+        <j:beads>
+            <j:ScrollingViewport id="scrollViewport" />
+        </j:beads>
+    </j:VGroup>
+
+</j:VGroup>

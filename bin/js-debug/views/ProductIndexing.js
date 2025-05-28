@@ -8,7 +8,7 @@
  */
 
 goog.provide('views.ProductIndexing');
-/* Royale Dependency List: org.apache.royale.jewel.VGroup,org.apache.royale.jewel.HGroup,views.TopMenuL,org.apache.royale.jewel.Label,views.TopMenuR,org.apache.royale.jewel.FooterBar,com.unhurdle.spectrum.Label,org.apache.royale.jewel.Container,com.event.DsEvent,com.unhurdle.spectrum.Toast,org.apache.royale.events.Event,views.actionitemviews.BasicDrawing,views.actionitemviews.SearchListPopup,views.actionitemviews.ai.AiChatBot,views.actionitemviews.games.Game,views.actionitemviews.toc.TocAndPgnation,XML*/
+/* Royale Dependency List: org.apache.royale.jewel.VGroup,org.apache.royale.jewel.HGroup,views.TopMenuL,org.apache.royale.jewel.Label,views.TopMenuR,org.apache.royale.jewel.FooterBar,com.unhurdle.spectrum.Label,org.apache.royale.jewel.Container,com.event.DsEvent,com.unhurdle.spectrum.Toast,org.apache.royale.events.Event,views.actionitemviews.ai.AiMain,views.actionitemviews.basicdrawing.BasicDrawingMain,views.actionitemviews.games.Game,views.actionitemviews.pexels.pexelsVideoStream,views.actionitemviews.searchlist.SearchListMain,views.actionitemviews.toc.TocAndPgnation,views.actionitemviews.websocket.WikiSocketMain,XML*/
 
 goog.require('org.apache.royale.jewel.ResponsiveView');
 
@@ -162,12 +162,12 @@ views.ProductIndexing.prototype.views_ProductIndexing_addUiComponent = function(
   var /** @type {string} */ compName = org.apache.royale.utils.Language.string(obj.data.title);
   //var /** @type {org.apache.royale.jewel.Group} */ uiComp = null;
   if (compName == 'Basic Drawing') {
-    uiComp = new views.actionitemviews.BasicDrawing();
+    uiComp = new views.actionitemviews.basicdrawing.BasicDrawingMain();
     this.vg.addElement(uiComp);
     return;
   }
-  if (compName == 'AI - Shatbots') {
-    uiComp = new views.actionitemviews.ai.AiChatBot();
+  if (compName == 'AI - Chatbots') {
+    uiComp = new views.actionitemviews.ai.AiMain();
     this.vg.addElement(uiComp);
     return;
   }
@@ -177,8 +177,20 @@ views.ProductIndexing.prototype.views_ProductIndexing_addUiComponent = function(
     this.views_ProductIndexing_mgmtObj.push(uiComp);
     return;
   }
+  if (compName == 'Wiki Live Streams') {
+    uiComp = new views.actionitemviews.websocket.WikiSocketMain();
+    this.vg.addElement(uiComp);
+    this.views_ProductIndexing_mgmtObj.push(uiComp);
+    return;
+  }
+  if (compName == 'Pexels Video Streams') {
+    uiComp = new views.actionitemviews.pexels.pexelsVideoStream();
+    this.vg.addElement(uiComp);
+    this.views_ProductIndexing_mgmtObj.push(uiComp);
+    return;
+  }
   if (compName == 'Load & Filter Data') {
-    var /** @type {views.actionitemviews.SearchListPopup} */ sLstComp = new views.actionitemviews.SearchListPopup();
+    var /** @type {views.actionitemviews.searchlist.SearchListMain} */ sLstComp = new views.actionitemviews.searchlist.SearchListMain();
     sLstComp.showCloseBtn = false;
     this.vg.addElement(sLstComp);
     return;

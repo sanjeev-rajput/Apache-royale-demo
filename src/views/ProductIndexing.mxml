@@ -13,12 +13,14 @@
             
             import com.unhurdle.spectrum.Toast;
             import com.event.DsEvent;
-            import views.actionitemviews.BasicDrawing;
-            import views.actionitemviews.SearchListPopup;
             import views.actionitemviews.toc.TocAndPgnation;
             import org.apache.royale.jewel.Group;
             import views.actionitemviews.games.Game;
-            import views.actionitemviews.ai.AiChatBot;
+            import views.actionitemviews.pexels.pexelsVideoStream;
+            import views.actionitemviews.basicdrawing.BasicDrawingMain;
+            import views.actionitemviews.searchlist.SearchListMain;
+            import views.actionitemviews.websocket.WikiSocketMain;
+            import views.actionitemviews.ai.AiMain;
             private var mgmtObj:Array = new Array();
                         
             private function initComplete():void {
@@ -58,12 +60,12 @@
                 var compName:String = obj.data.title;
                 var uiComp:Group;
                 if(compName == 'Basic Drawing'){
-                    uiComp = new BasicDrawing();
+                    uiComp = new BasicDrawingMain();
                     vg.addElement(uiComp);
                     return;
                 }
-                if(compName == 'AI - Shatbots'){
-                    uiComp = new AiChatBot();
+                if(compName == 'AI - Chatbots'){
+                    uiComp = new AiMain();
                     vg.addElement(uiComp);
                     return;
                 }
@@ -73,8 +75,20 @@
                     mgmtObj.push(uiComp);
                     return;
                 }
+                if(compName == 'Wiki Live Streams'){
+                    uiComp = new WikiSocketMain() as Group;
+                    vg.addElement(uiComp);
+                    mgmtObj.push(uiComp);
+                    return;
+                }
+                if(compName == 'Pexels Video Streams'){
+                    uiComp = new pexelsVideoStream();
+                    vg.addElement(uiComp);
+                    mgmtObj.push(uiComp);
+                    return;
+                }
                 if(compName == 'Load & Filter Data'){
-                    var sLstComp:SearchListPopup = new SearchListPopup();
+                    var sLstComp:SearchListMain = new SearchListMain();
                     sLstComp.showCloseBtn = false;
                     vg.addElement(sLstComp);
                     return;

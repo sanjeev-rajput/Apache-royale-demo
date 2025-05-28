@@ -192,6 +192,7 @@
 .chatBotAns{
   padding: 10px;
   background-color: rgba(135, 206, 250, 0.467);
+  white-space: pre-wrap; word-break: break-word;
 }
 .gameArea{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -229,6 +230,15 @@
   left:50%;
   transform: translate(-50%, -50%);
 }
-.temp{
-  border: solid 2px;
+.socketEventItemContainer{
+  overflow: auto;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.socketEventItem{
+  border-bottom: solid 1px lightgray;
+  padding: 5px;
+}
+.pexelSearchContainer{
+  padding-top: 20px;
 }

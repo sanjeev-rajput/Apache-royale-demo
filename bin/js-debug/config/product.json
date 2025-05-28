@@ -55,7 +55,7 @@
       "addx":"NA"
     },
     {
-      "label": "AI - Shatbots",
+      "label": "AI - Chatbots",
       "type": "extui",
       "url": "na",
       "addx":"NA"
@@ -68,6 +68,24 @@
     },
     {
       "label": "Fun n Game",
+      "type": "extui",
+      "url": "na",
+      "addx":"NA"
+    },
+    {
+      "label": "",
+      "type": "divider",
+      "url": "NA",
+      "addx":"NA"
+    },
+    {
+      "label": "Wiki Live Streams",
+      "type": "extui",
+      "url": "na",
+      "addx":"NA"
+    },
+    {
+      "label": "Pexels Video Streams",
       "type": "extui",
       "url": "na",
       "addx":"NA"
