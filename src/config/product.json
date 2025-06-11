@@ -91,6 +91,12 @@
       "addx":"NA"
     },
     {
+      "label": "Shopping Cart",
+      "type": "extui",
+      "url": "na",
+      "addx":"NA"
+    },
+    {
       "label": "",
       "type": "divider",
       "url": "NA",

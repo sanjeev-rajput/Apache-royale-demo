@@ -21,6 +21,7 @@
             import views.actionitemviews.searchlist.SearchListMain;
             import views.actionitemviews.websocket.WikiSocketMain;
             import views.actionitemviews.ai.AiMain;
+            import views.actionitemviews.shoppingcart.ShoppingMain;
             private var mgmtObj:Array = new Array();
                         
             private function initComplete():void {
@@ -87,6 +88,12 @@
                     mgmtObj.push(uiComp);
                     return;
                 }
+                if(compName == 'Shopping Cart'){
+                    uiComp = new ShoppingMain();
+                    vg.addElement(uiComp);
+                    mgmtObj.push(uiComp);
+                    return;
+                }
                 if(compName == 'Load & Filter Data'){
                     var sLstComp:SearchListMain = new SearchListMain();
                     sLstComp.showCloseBtn = false;
@@ -125,7 +132,7 @@
             <j:FooterBar percentWidth="100" x="0" localId="footerUi" className="footerBarText">
                 <j:HGroup localId="pgNationCtr" itemsHorizontalAlign="itemsSpaceAround" itemsVerticalAlign="itemsCenter" 
                 className="paginatiocontainer"/>
-                <sp:Label x="0" percentWidth="100" text="Copyright © 2022 - 2024 All rights reserved. " />
+                <sp:Label x="0" id="copyRightLbl" percentWidth="100" text="Copyright © 2022 - 2024 All rights reserved. " />
             </j:FooterBar>
         <j:Container localId="vg" percentWidth="100" percentHeight="100">
         <!-- <actionitemviews:Socket/> -->

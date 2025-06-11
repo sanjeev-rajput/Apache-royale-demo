@@ -1,0 +1,43 @@
+<j:HGroup xmlns:fx="http://ns.adobe.com/mxml/2009"
+                xmlns:js="library://ns.apache.org/royale/basic"
+                xmlns:j="library://ns.apache.org/royale/jewel"
+                height="100%" width="100%"
+                initComplete="initApp()">
+
+    <fx:Script><![CDATA[
+        import org.apache.royale.jewel.Button;
+        import views.actionitemviews.shoppingcart.Controller;
+
+        private var _controller:Controller
+        private function initApp():void {
+            _controller = new Controller(this);
+        }
+
+    ]]></fx:Script>
+
+            <j:VGroup width="75%" height="100%">
+                <j:Label text="Drag item from here" width="100%" className="shopLbl"/>
+                <j:Group id="productList" height="100%" width="100%">
+                    <j:beads>
+                        <j:TileHorizontalLayout localId="plist" waitForSize="true"/>
+                        <j:ScrollingViewport/>
+                    </j:beads>
+                </j:Group>
+            </j:VGroup>
+            <j:VGroup width="25%" height="100%">
+                <j:HGroup gap="1" width="100%" itemsVerticalAlign="itemsCenter">
+                    <j:Image src="img/shopping/shopping-cart.png" height="30"/>
+                    <j:Label text="Drop items here" className="shopLbl" width="100%"/>
+                </j:HGroup>
+                <j:Group id="cartArea" width="100%" height="100%" style="border:1px dashed gray;">
+                    <j:beads>
+                        <j:TileHorizontalLayout localId="clist" waitForSize="true"/>
+                        <j:ScrollingViewport/>
+                    </j:beads>
+                </j:Group>
+                <j:HGroup id="checkoutArea" itemsVerticalAlign="itemsCenter" width="100%" itemsHorizontalAlign="itemsSpaceBetween">
+                    <j:Button text="Checkout" />
+                    <j:Label id="totalLabel" text="Total: $0.00" className="shopLbl"/>
+                </j:HGroup>
+            </j:VGroup>
+</j:HGroup>

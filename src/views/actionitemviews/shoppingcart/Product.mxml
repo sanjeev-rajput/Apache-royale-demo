@@ -1,0 +1,41 @@
+<j:Card xmlns:fx="http://ns.adobe.com/mxml/2009"
+    xmlns:j="library://ns.apache.org/royale/jewel" 
+    xmlns:html="library://ns.apache.org/royale/html"
+    initComplete="init()" className="shoppingItem" itemsHorizontalAlign="itemsCenter" gap="2">
+    <fx:Script>
+        <![CDATA[
+            
+            private var _data:Object;
+            private function init():void {
+                if (!_data) return;
+                name.text = _data.title;
+                description.text = _data.description;
+                price.text = "$" + _data.price;
+                img.src = 'img/shopping/'+_data.filename;
+                qt.text = _data.qty.toString();
+
+
+                this.element.setAttribute("draggable", "true");
+                this.element.setAttribute("data-id", _data.id);
+                this.element.addEventListener("dragstart", function(e:*):void {
+                    e.dataTransfer.setData("text/plain", _data.id);
+                    trace("Drag started for item with ID: " + e.dataTransfer.getData("text/plain"));
+                    e.dataTransfer.effectAllowed = "move";
+                });
+
+            }
+
+            public function set data(d:Object):void {
+                _data = d;
+                this.id = d.id;
+            }
+
+        ]]>
+    </fx:Script>
+
+    <j:Image id="img" height="200"/>
+    <html:H3 id="name" text="Jewel Simple Card" width="200"/>
+    <j:Label id="description" text="A simple t-shirt made from organic cotton." multiline="true" width="200"/>
+    <html:H3 id="price" text="Jewel Simple Card"/>
+    <j:Label id="qt"/>
+</j:Card>

@@ -37,7 +37,7 @@
                     return
                 }
                 var svr:ServiceLoader = new ServiceLoader();
-                svr.loadJData("https://restcountries.com/v3.1/all", dataLoadHandler, ServiceLoader.DATA_TYPE_JSON)
+                svr.loadJData("https://restcountries.com/v3.1/independent?status=true", dataLoadHandler, ServiceLoader.DATA_TYPE_JSON, failHandler, false)
             }
 
             private function dataLoadHandler(obj:JSON):void{
@@ -50,6 +50,10 @@
                 }
                 populateListUiItems();
 
+            }
+
+            private function failHandler(error:Object):void {
+                trace("Failed to load data"+error);
             }
 
             private function populateListUiItems():void{

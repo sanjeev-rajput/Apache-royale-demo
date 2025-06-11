@@ -8,7 +8,7 @@
  */
 
 goog.provide('views.ProductIndexing');
-/* Royale Dependency List: org.apache.royale.jewel.VGroup,org.apache.royale.jewel.HGroup,views.TopMenuL,org.apache.royale.jewel.Label,views.TopMenuR,org.apache.royale.jewel.FooterBar,com.unhurdle.spectrum.Label,org.apache.royale.jewel.Container,com.event.DsEvent,com.unhurdle.spectrum.Toast,org.apache.royale.events.Event,views.actionitemviews.ai.AiMain,views.actionitemviews.basicdrawing.BasicDrawingMain,views.actionitemviews.games.Game,views.actionitemviews.pexels.pexelsVideoStream,views.actionitemviews.searchlist.SearchListMain,views.actionitemviews.toc.TocAndPgnation,views.actionitemviews.websocket.WikiSocketMain,XML*/
+/* Royale Dependency List: org.apache.royale.jewel.VGroup,org.apache.royale.jewel.HGroup,views.TopMenuL,org.apache.royale.jewel.Label,views.TopMenuR,org.apache.royale.jewel.FooterBar,com.unhurdle.spectrum.Label,org.apache.royale.jewel.Container,com.event.DsEvent,com.unhurdle.spectrum.Toast,org.apache.royale.events.Event,views.actionitemviews.ai.AiMain,views.actionitemviews.basicdrawing.BasicDrawingMain,views.actionitemviews.games.Game,views.actionitemviews.pexels.pexelsVideoStream,views.actionitemviews.searchlist.SearchListMain,views.actionitemviews.shoppingcart.ShoppingMain,views.actionitemviews.toc.TocAndPgnation,views.actionitemviews.websocket.WikiSocketMain,XML*/
 
 goog.require('org.apache.royale.jewel.ResponsiveView');
 
@@ -26,7 +26,7 @@ views.ProductIndexing = function() {
    * @private
    * @type {org.apache.royale.jewel.VGroup}
    */
-  this.$ID_12_7;
+  this.$ID_12_6;
   
   /**
    * @private
@@ -68,7 +68,7 @@ views.ProductIndexing = function() {
    * @private
    * @type {com.unhurdle.spectrum.Label}
    */
-  this.$ID_12_4;
+  this.copyRightLbl_;
   
   /**
    * @private
@@ -189,6 +189,12 @@ views.ProductIndexing.prototype.views_ProductIndexing_addUiComponent = function(
     this.views_ProductIndexing_mgmtObj.push(uiComp);
     return;
   }
+  if (compName == 'Shopping Cart') {
+    uiComp = new views.actionitemviews.shoppingcart.ShoppingMain();
+    this.vg.addElement(uiComp);
+    this.views_ProductIndexing_mgmtObj.push(uiComp);
+    return;
+  }
   if (compName == 'Load & Filter Data') {
     var /** @type {views.actionitemviews.searchlist.SearchListMain} */ sLstComp = new views.actionitemviews.searchlist.SearchListMain();
     sLstComp.showCloseBtn = false;
@@ -274,6 +280,19 @@ Object.defineProperties(views.ProductIndexing.prototype, /** @lends {views.Produ
       }
     }
   },
+  copyRightLbl: {
+    /** @this {views.ProductIndexing} */
+    get: function() {
+      return this.copyRightLbl_;
+    },
+    /** @this {views.ProductIndexing} */
+    set: function(value) {
+      if (value != this.copyRightLbl_) {
+        this.copyRightLbl_ = value;
+        this.dispatchEvent(org.apache.royale.events.ValueChangeEvent.createUpdateEvent(this, 'copyRightLbl', null, value));
+      }
+    }
+  },
   vg: {
     /** @this {views.ProductIndexing} */
     get: function() {
@@ -300,7 +319,7 @@ Object.defineProperties(views.ProductIndexing.prototype, /** @lends {views.Produ
           4,
           '_id',
           true,
-          '$ID_12_7',
+          '$ID_12_6',
           'percentWidth',
           true,
           100,
@@ -397,9 +416,9 @@ Object.defineProperties(views.ProductIndexing.prototype, /** @lends {views.Produ
               null,
               com.unhurdle.spectrum.Label,
               4,
-              '_id',
+              'id',
               true,
-              '$ID_12_4',
+              'copyRightLbl',
               'x',
               true,
               0,
@@ -459,6 +478,7 @@ views.ProductIndexing.prototype.ROYALE_REFLECTION_INFO = function () {
         'title': { type: 'org.apache.royale.jewel.Label', access: 'readwrite', declaredBy: 'views.ProductIndexing'},
         'footerUi': { type: 'org.apache.royale.jewel.FooterBar', access: 'readwrite', declaredBy: 'views.ProductIndexing'},
         'pgNationCtr': { type: 'org.apache.royale.jewel.HGroup', access: 'readwrite', declaredBy: 'views.ProductIndexing'},
+        'copyRightLbl': { type: 'com.unhurdle.spectrum.Label', access: 'readwrite', declaredBy: 'views.ProductIndexing'},
         'vg': { type: 'org.apache.royale.jewel.Container', access: 'readwrite', declaredBy: 'views.ProductIndexing'}
       };
     },

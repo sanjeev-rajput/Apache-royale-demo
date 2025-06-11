@@ -242,3 +242,23 @@
 .pexelSearchContainer{
   padding-top: 20px;
 }
+
+.shoppingItem{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: solid 1px lightgray;
+}
+
+.shopLbl{
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+}
+.chopCheckOut{
+  padding-bottom: 10px;
+}
+.stepper-input{
+  pointer-events: none;
+  background-color: lightsalmon;
+}

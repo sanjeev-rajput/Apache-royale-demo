@@ -150,7 +150,7 @@ views.actionitemviews.searchlist.SearchListMain.prototype.views_actionitemviews_
     return;
   }
   var /** @type {com.model.ServiceLoader} */ svr = new com.model.ServiceLoader();
-  svr.loadJData("https://restcountries.com/v3.1/all", org.apache.royale.utils.Language.closure(this.views_actionitemviews_searchlist_SearchListMain_dataLoadHandler, this, 'views_actionitemviews_searchlist_SearchListMain_dataLoadHandler'), com.model.ServiceLoader.DATA_TYPE_JSON);
+  svr.loadJData("https://restcountries.com/v3.1/independent?status=true", org.apache.royale.utils.Language.closure(this.views_actionitemviews_searchlist_SearchListMain_dataLoadHandler, this, 'views_actionitemviews_searchlist_SearchListMain_dataLoadHandler'), com.model.ServiceLoader.DATA_TYPE_JSON, org.apache.royale.utils.Language.closure(this.views_actionitemviews_searchlist_SearchListMain_failHandler, this, 'views_actionitemviews_searchlist_SearchListMain_failHandler'), false);
 };
 
 
@@ -167,6 +167,15 @@ views.actionitemviews.searchlist.SearchListMain.prototype.views_actionitemviews_
     this.cLst.dataProvider = views.actionitemviews.searchlist.LstModel.instance.getCountryDetailsByKey('name');
   }
   this.views_actionitemviews_searchlist_SearchListMain_populateListUiItems();
+};
+
+
+/**
+ * @private
+ * @param {Object} error
+ */
+views.actionitemviews.searchlist.SearchListMain.prototype.views_actionitemviews_searchlist_SearchListMain_failHandler = function(error) {
+  org.apache.royale.utils.Language.trace("Failed to load data" + error);
 };
 
 

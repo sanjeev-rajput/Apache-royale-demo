@@ -1,0 +1,51 @@
+<j:Card xmlns:fx="http://ns.adobe.com/mxml/2009"
+    xmlns:j="library://ns.apache.org/royale/jewel" 
+    xmlns:html="library://ns.apache.org/royale/html" xmlns:sp="library://ns.unhurdle.com/spectrum" xmlns:edit="org.apache.royale.textLayout.edit.*"
+    initComplete="init()" itemsHorizontalAlign="itemsCenter" className="shoppingItem">
+    <fx:Script>
+        <![CDATA[
+            import org.apache.royale.debugging.throwError;
+
+
+            private var _data:Object;
+            private var removeFunc:Function
+            private function init():void {
+                if (!_data) return;
+                name.text = _data.title;
+                qt.value = + _data.qty;
+                price.text = "$" + _data.price;
+                img.src = 'img/shopping/'+_data.img;
+                document.querySelector('.spectrum-Stepper-input').setAttribute('readonly', true);
+                
+            }
+
+            public function set data(d:Object):void {
+                _data = d;
+                removeFunc = _data.removeFunc;   
+            }
+
+            private function removeItem():void {
+                if (removeFunc != null) {
+                    removeFunc(_data.id);
+                } else {
+                    throwError("Remove function not set");
+                }
+            }
+        ]]>
+    </fx:Script>
+    <j:CardHeader itemsVerticalAlign="itemsCenter">
+        <j:BarSection itemsHorizontalAlign="itemsLeft" >
+            <j:Label id="name" text="Jewel Simple Card"/>
+        </j:BarSection>
+        <j:BarSection itemsHorizontalAlign="itemsRight">
+            <j:Label id="removeBtn" text="❌" click="removeItem()"/>
+        </j:BarSection>
+    </j:CardHeader>
+    <j:Image id="img" height="100"/>
+    <j:Label id="price" text="Jewel Simple Card"/>
+   
+    <sp:Stepper id="qt" keyboardFocused="false" min="0">
+        
+    </sp:Stepper>
+  
+</j:Card>
