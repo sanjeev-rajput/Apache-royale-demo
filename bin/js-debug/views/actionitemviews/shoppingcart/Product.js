@@ -8,7 +8,7 @@
  */
 
 goog.provide('views.actionitemviews.shoppingcart.Product');
-/* Royale Dependency List: org.apache.royale.jewel.Image,org.apache.royale.html.elements.H3,org.apache.royale.jewel.Label,org.apache.royale.events.Event,XML*/
+/* Royale Dependency List: org.apache.royale.jewel.supportClasses.card.CardPrimaryContent,org.apache.royale.jewel.Image,org.apache.royale.jewel.VGroup,org.apache.royale.jewel.Label,org.apache.royale.jewel.beads.controls.ToolTip,org.apache.royale.jewel.HGroup,org.apache.royale.events.Event,XML*/
 
 goog.require('org.apache.royale.jewel.Card');
 
@@ -23,13 +23,25 @@ views.actionitemviews.shoppingcart.Product = function() {
   
   /**
    * @private
+   * @type {org.apache.royale.jewel.supportClasses.card.CardPrimaryContent}
+   */
+  this.$ID_15_0;
+  
+  /**
+   * @private
    * @type {org.apache.royale.jewel.Image}
    */
   this.img_;
   
   /**
    * @private
-   * @type {org.apache.royale.html.elements.H3}
+   * @type {org.apache.royale.jewel.VGroup}
+   */
+  this.$ID_15_3;
+  
+  /**
+   * @private
+   * @type {org.apache.royale.jewel.Label}
    */
   this.name_;
   
@@ -41,7 +53,19 @@ views.actionitemviews.shoppingcart.Product = function() {
   
   /**
    * @private
-   * @type {org.apache.royale.html.elements.H3}
+   * @type {org.apache.royale.jewel.beads.controls.ToolTip}
+   */
+  this.$ID_15_1;
+  
+  /**
+   * @private
+   * @type {org.apache.royale.jewel.HGroup}
+   */
+  this.$ID_15_2;
+  
+  /**
+   * @private
+   * @type {org.apache.royale.jewel.Label}
    */
   this.price_;
   
@@ -95,14 +119,22 @@ views.actionitemviews.shoppingcart.Product.prototype.views_actionitemviews_shopp
 
 /**
  * @private
+ * @type {boolean}
+ */
+views.actionitemviews.shoppingcart.Product.prototype.views_actionitemviews_shoppingcart_Product__initialized = false;
+
+
+/**
+ * @private
  */
 views.actionitemviews.shoppingcart.Product.prototype.views_actionitemviews_shoppingcart_Product_init = function() {
   var self = this;
   if (!this.views_actionitemviews_shoppingcart_Product__data)
     return;
+  this.views_actionitemviews_shoppingcart_Product__initialized = true;
   this.name.text = org.apache.royale.utils.Language.string(this.views_actionitemviews_shoppingcart_Product__data.title);
-  this.description.text = org.apache.royale.utils.Language.string(this.views_actionitemviews_shoppingcart_Product__data.description);
-  this.price.text = "$" + this.views_actionitemviews_shoppingcart_Product__data.price;
+  this.description.html = org.apache.royale.utils.Language.string(this.views_actionitemviews_shoppingcart_Product__data.description);
+  this.price.text = "$" + this.views_actionitemviews_shoppingcart_Product__data.price.toFixed(2);
   this.img.src = 'img/shopping/' + this.views_actionitemviews_shoppingcart_Product__data.filename;
   this.qt.text = this.views_actionitemviews_shoppingcart_Product__data.qty.toString();
   this.element.setAttribute("draggable", "true");
@@ -113,6 +145,9 @@ views.actionitemviews.shoppingcart.Product.prototype.views_actionitemviews_shopp
     e.dataTransfer.effectAllowed = "move";
   });
 };
+
+
+;
 
 
 ;
@@ -129,9 +164,17 @@ views.actionitemviews.shoppingcart.Product.prototype.views_actionitemviews_shopp
 views.actionitemviews.shoppingcart.Product.prototype.data;
 
 
+views.actionitemviews.shoppingcart.Product.prototype.get__data = function() {
+  return this.views_actionitemviews_shoppingcart_Product__data;
+};
+
+
 views.actionitemviews.shoppingcart.Product.prototype.set__data = function(d) {
   this.views_actionitemviews_shoppingcart_Product__data = d;
   this.id = org.apache.royale.utils.Language.string(d.id);
+  if (this.views_actionitemviews_shoppingcart_Product__initialized) {
+    this.views_actionitemviews_shoppingcart_Product_init();
+  }
 };
 
 
@@ -140,6 +183,7 @@ Object.defineProperties(views.actionitemviews.shoppingcart.Product.prototype, /*
  * @type {Object}
  */
 data: {
+get: views.actionitemviews.shoppingcart.Product.prototype.get__data,
 set: views.actionitemviews.shoppingcart.Product.prototype.set__data}}
 );/**
  * @export
@@ -226,67 +270,130 @@ Object.defineProperties(views.actionitemviews.shoppingcart.Product.prototype, /*
         var arr = views.actionitemviews.shoppingcart.Product.superClass_.get__MXMLDescriptor.apply(this);
         /** @type {Array} */
         var mxmldd = [
-          org.apache.royale.jewel.Image,
-          2,
-          'id',
-          true,
-          'img',
-          'height',
-          true,
-          200,
-          0,
-          0,
-          null,
-          org.apache.royale.html.elements.H3,
+          org.apache.royale.jewel.supportClasses.card.CardPrimaryContent,
           3,
-          'id',
+          '_id',
           true,
-          'name',
-          'text',
+          '$ID_15_0',
+          'gap',
           true,
-          'Jewel Simple Card',
-          'width',
+          0,
+          'itemsHorizontalAlign',
           true,
-          200,
+          'itemsCenter',
           0,
           0,
-          null,
-          org.apache.royale.jewel.Label,
-          4,
-          'id',
-          true,
-          'description',
-          'text',
-          true,
-          'A simple t-shirt made from organic cotton.',
-          'multiline',
-          true,
-          true,
-          'width',
-          true,
-          200,
-          0,
-          0,
-          null,
-          org.apache.royale.html.elements.H3,
-          2,
-          'id',
-          true,
-          'price',
-          'text',
-          true,
-          'Jewel Simple Card',
-          0,
-          0,
-          null,
-          org.apache.royale.jewel.Label,
+          [
+            org.apache.royale.jewel.Image,
+            2,
+            'id',
+            true,
+            'img',
+            'height',
+            true,
+            200,
+            0,
+            0,
+            null
+          ],
+          org.apache.royale.jewel.VGroup,
           1,
-          'id',
+          '_id',
           true,
-          'qt',
+          '$ID_15_3',
           0,
           0,
-          null
+          [
+            org.apache.royale.jewel.Label,
+            4,
+            'id',
+            true,
+            'name',
+            'text',
+            true,
+            'Jewel Simple Card',
+            'width',
+            true,
+            200,
+            'className',
+            true,
+            'shopProductLbl',
+            0,
+            0,
+            null,
+            org.apache.royale.jewel.Label,
+            6,
+            'id',
+            true,
+            'description',
+            'text',
+            true,
+            'A simple t-shirt made from organic cotton.',
+            'multiline',
+            true,
+            true,
+            'width',
+            true,
+            200,
+            'className',
+            true,
+            'truncateText',
+            'beads',
+            null,
+            [
+              org.apache.royale.jewel.beads.controls.ToolTip,
+              1,
+              '_id',
+              true,
+              '$ID_15_1',
+              0,
+              0,
+              null
+            ],
+            0,
+            0,
+            null,
+            org.apache.royale.jewel.HGroup,
+            3,
+            '_id',
+            true,
+            '$ID_15_2',
+            'itemsHorizontalAlign',
+            true,
+            'itemsSpaceBetween',
+            'percentWidth',
+            true,
+            100.0,
+            0,
+            0,
+            [
+              org.apache.royale.jewel.Label,
+              3,
+              'id',
+              true,
+              'price',
+              'text',
+              true,
+              'Jewel Simple Card',
+              'className',
+              true,
+              'shopProductLbl',
+              0,
+              0,
+              null,
+              org.apache.royale.jewel.Label,
+              2,
+              'id',
+              true,
+              'qt',
+              'className',
+              true,
+              'shopProductLbl',
+              0,
+              0,
+              null
+            ]
+          ]
         ];
         if (arr)
           this.mxmldd = arr.concat(mxmldd);
@@ -297,6 +404,29 @@ Object.defineProperties(views.actionitemviews.shoppingcart.Product.prototype, /*
     }
   }
 });
+/**
+ * @export
+ */
+views.actionitemviews.shoppingcart.Product.prototype._bindings = [
+1,
+["description", "text"],
+null,
+["$ID_15_1", "toolTip"],
+0,
+2,
+"description",
+"valueChange",
+0,
+null,
+[
+1,
+2,
+"text",
+"textChange",
+0,
+null,
+null,
+null]];
 /**
  * Metadata
  *
@@ -315,11 +445,11 @@ views.actionitemviews.shoppingcart.Product.prototype.ROYALE_REFLECTION_INFO = fu
   return {
     accessors: function () {
       return {
-        'data': { type: 'Object', access: 'writeonly', declaredBy: 'views.actionitemviews.shoppingcart.Product'},
+        'data': { type: 'Object', access: 'readwrite', declaredBy: 'views.actionitemviews.shoppingcart.Product'},
         'img': { type: 'org.apache.royale.jewel.Image', access: 'readwrite', declaredBy: 'views.actionitemviews.shoppingcart.Product'},
-        'name': { type: 'org.apache.royale.html.elements.H3', access: 'readwrite', declaredBy: 'views.actionitemviews.shoppingcart.Product'},
+        'name': { type: 'org.apache.royale.jewel.Label', access: 'readwrite', declaredBy: 'views.actionitemviews.shoppingcart.Product'},
         'description': { type: 'org.apache.royale.jewel.Label', access: 'readwrite', declaredBy: 'views.actionitemviews.shoppingcart.Product'},
-        'price': { type: 'org.apache.royale.html.elements.H3', access: 'readwrite', declaredBy: 'views.actionitemviews.shoppingcart.Product'},
+        'price': { type: 'org.apache.royale.jewel.Label', access: 'readwrite', declaredBy: 'views.actionitemviews.shoppingcart.Product'},
         'qt': { type: 'org.apache.royale.jewel.Label', access: 'readwrite', declaredBy: 'views.actionitemviews.shoppingcart.Product'}
       };
     },

@@ -244,16 +244,19 @@
 }
 
 .shoppingItem{
-  display: flex;
-  flex-direction: row;
   align-items: center;
   border: solid 1px lightgray;
+  padding: 10px;
+  cursor: pointer;
 }
 
-.shopLbl{
+.shopProductLbl{
+  padding: 5px;
   font-weight: bold;
+}
+.textAlignCenter{
   text-align: center;
-  color: #333;
+  align-items: center;
 }
 .chopCheckOut{
   padding-bottom: 10px;
@@ -261,4 +264,19 @@
 .stepper-input{
   pointer-events: none;
   background-color: lightsalmon;
+}
+.truncateText {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* number of lines to show */
+  line-clamp: 2; 
+  -webkit-box-orient: vertical;
+  padding: 5px;
+}
+.shoppingProductPreview{
+  background-color: lightgray;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: solid 1px #aaa;
+  border-radius: 5px;
 }

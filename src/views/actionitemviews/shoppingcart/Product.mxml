@@ -1,16 +1,18 @@
 <j:Card xmlns:fx="http://ns.adobe.com/mxml/2009"
     xmlns:j="library://ns.apache.org/royale/jewel" 
     xmlns:html="library://ns.apache.org/royale/html"
-    initComplete="init()" className="shoppingItem" itemsHorizontalAlign="itemsCenter" gap="2">
+    initComplete="init()" className="shoppingItem" itemsHorizontalAlign="itemsCenter" gap="2" >
     <fx:Script>
         <![CDATA[
             
             private var _data:Object;
+            private var _initialized:Boolean = false;
             private function init():void {
                 if (!_data) return;
+                _initialized = true;
                 name.text = _data.title;
-                description.text = _data.description;
-                price.text = "$" + _data.price;
+                description.html = _data.description;
+                price.text = "$" + _data.price.toFixed(2);
                 img.src = 'img/shopping/'+_data.filename;
                 qt.text = _data.qty.toString();
 
@@ -28,14 +30,32 @@
             public function set data(d:Object):void {
                 _data = d;
                 this.id = d.id;
+                if(_initialized) {
+                    init();
+                }
             }
+
+            public function get data():Object {
+                return _data;
+            }
+            
 
         ]]>
     </fx:Script>
-
-    <j:Image id="img" height="200"/>
-    <html:H3 id="name" text="Jewel Simple Card" width="200"/>
-    <j:Label id="description" text="A simple t-shirt made from organic cotton." multiline="true" width="200"/>
-    <html:H3 id="price" text="Jewel Simple Card"/>
-    <j:Label id="qt"/>
+    <j:CardPrimaryContent gap="0" itemsHorizontalAlign="itemsCenter">
+        <j:Image id="img" height="200"/>
+    </j:CardPrimaryContent>
+    <j:VGroup>
+        <j:Label id="name" text="Jewel Simple Card" width="200" className="shopProductLbl"/>
+        <j:Label id="description" text="A simple t-shirt made from organic cotton." multiline="true" width="200"
+        className="truncateText">
+            <j:beads>
+                <j:ToolTip toolTip="{description.text}"/>
+            </j:beads>
+        </j:Label>
+        <j:HGroup itemsHorizontalAlign="itemsSpaceBetween" width="100%">
+            <j:Label id="price" text="Jewel Simple Card" className="shopProductLbl"/>
+            <j:Label id="qt" className="shopProductLbl"/>
+        </j:HGroup>
+    </j:VGroup>
 </j:Card>

@@ -112,7 +112,30 @@ views.actionitemviews.shoppingcart.CartItem.prototype.views_actionitemviews_shop
  * @private
  * @type {Function}
  */
-views.actionitemviews.shoppingcart.CartItem.prototype.views_actionitemviews_shoppingcart_CartItem_removeFunc = null;
+views.actionitemviews.shoppingcart.CartItem.prototype.views_actionitemviews_shoppingcart_CartItem_callBackFunc = null;
+
+
+/**
+ * @private
+ * @type {boolean}
+ */
+views.actionitemviews.shoppingcart.CartItem.prototype.views_actionitemviews_shoppingcart_CartItem__initialized = false;
+
+
+/**
+ * @nocollapse
+ * @const
+ * @type {string}
+ */
+views.actionitemviews.shoppingcart.CartItem.ITEM_REMOVED = "itemRemoved";
+
+
+/**
+ * @nocollapse
+ * @const
+ * @type {string}
+ */
+views.actionitemviews.shoppingcart.CartItem.ITEM_QTY_CHANGED = "itemQtyChanged";
 
 
 /**
@@ -121,11 +144,13 @@ views.actionitemviews.shoppingcart.CartItem.prototype.views_actionitemviews_shop
 views.actionitemviews.shoppingcart.CartItem.prototype.views_actionitemviews_shoppingcart_CartItem_init = function() {
   if (!this.views_actionitemviews_shoppingcart_CartItem__data)
     return;
+  this.views_actionitemviews_shoppingcart_CartItem__initialized = true;
   this.name.text = org.apache.royale.utils.Language.string(this.views_actionitemviews_shoppingcart_CartItem__data.title);
   this.qt.value = +this.views_actionitemviews_shoppingcart_CartItem__data.qty;
   this.price.text = "$" + this.views_actionitemviews_shoppingcart_CartItem__data.price;
   this.img.src = 'img/shopping/' + this.views_actionitemviews_shoppingcart_CartItem__data.img;
   document.querySelector('.spectrum-Stepper-input').setAttribute('readonly', true);
+  this.qt.max = Number(this.views_actionitemviews_shoppingcart_CartItem__data.maxQty);
 };
 
 
@@ -134,10 +159,15 @@ views.actionitemviews.shoppingcart.CartItem.prototype.views_actionitemviews_shop
 
 /**
  * @private
+ * @param {string} action
  */
-views.actionitemviews.shoppingcart.CartItem.prototype.views_actionitemviews_shoppingcart_CartItem_removeItem = function() {
-  if (this.views_actionitemviews_shoppingcart_CartItem_removeFunc != null) {
-    this.views_actionitemviews_shoppingcart_CartItem_removeFunc(this.views_actionitemviews_shoppingcart_CartItem__data.id);
+views.actionitemviews.shoppingcart.CartItem.prototype.views_actionitemviews_shoppingcart_CartItem_cartItemManager = function(action) {
+  if (this.views_actionitemviews_shoppingcart_CartItem_callBackFunc != null) {
+    this.views_actionitemviews_shoppingcart_CartItem__data.qty = this.qt.value;
+    if (action == views.actionitemviews.shoppingcart.CartItem.ITEM_REMOVED)
+      this.views_actionitemviews_shoppingcart_CartItem_callBackFunc(action, this);
+    if (action == views.actionitemviews.shoppingcart.CartItem.ITEM_QTY_CHANGED)
+      this.views_actionitemviews_shoppingcart_CartItem_callBackFunc(action, this, this.qt.value);
   } else {
     org.apache.royale.debugging.throwError("Remove function not set");
   }
@@ -157,7 +187,11 @@ views.actionitemviews.shoppingcart.CartItem.prototype.data;
 
 views.actionitemviews.shoppingcart.CartItem.prototype.set__data = function(d) {
   this.views_actionitemviews_shoppingcart_CartItem__data = d;
-  this.views_actionitemviews_shoppingcart_CartItem_removeFunc = this.views_actionitemviews_shoppingcart_CartItem__data.removeFunc;
+  this.id = org.apache.royale.utils.Language.string(d.id);
+  if (this.views_actionitemviews_shoppingcart_CartItem__initialized) {
+    this.views_actionitemviews_shoppingcart_CartItem_init();
+  }
+  this.views_actionitemviews_shoppingcart_CartItem_callBackFunc = this.views_actionitemviews_shoppingcart_CartItem__data.callBackFunc;
 };
 
 
@@ -183,7 +217,17 @@ views.actionitemviews.shoppingcart.CartItem.prototype.$EH_15_0 = function(event)
  */
 views.actionitemviews.shoppingcart.CartItem.prototype.$EH_15_1 = function(event)
 {
-  this.views_actionitemviews_shoppingcart_CartItem_removeItem();
+  this.views_actionitemviews_shoppingcart_CartItem_cartItemManager(views.actionitemviews.shoppingcart.CartItem.ITEM_REMOVED);
+};
+
+
+/**
+ * @export
+ * @param {org.apache.royale.events.Event} event
+ */
+views.actionitemviews.shoppingcart.CartItem.prototype.$EH_15_2 = function(event)
+{
+  this.views_actionitemviews_shoppingcart_CartItem_cartItemManager(views.actionitemviews.shoppingcart.CartItem.ITEM_QTY_CHANGED);
 };
 
 
@@ -356,7 +400,9 @@ Object.defineProperties(views.actionitemviews.shoppingcart.CartItem.prototype, /
           true,
           0,
           0,
-          0,
+          1,
+          'change',
+          this.$EH_15_2,
           null
         ];
         if (arr)
@@ -406,3 +452,9 @@ views.actionitemviews.shoppingcart.CartItem.prototype.ROYALE_REFLECTION_INFO = f
  * @type {number}
  */
 views.actionitemviews.shoppingcart.CartItem.prototype.ROYALE_COMPILE_FLAGS = 9;
+/**
+ * Provide reflection support for distinguishing dynamic fields on class object (static)
+ * @const
+ * @type {Array<string>}
+ */
+views.actionitemviews.shoppingcart.CartItem.prototype.ROYALE_INITIAL_STATICS = Object.keys(views.actionitemviews.shoppingcart.CartItem);

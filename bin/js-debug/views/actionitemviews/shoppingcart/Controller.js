@@ -8,30 +8,21 @@
  */
 
 goog.provide('views.actionitemviews.shoppingcart.Controller');
-/* Royale Dependency List: com.model.ServiceLoader,com.unhurdle.spectrum.Toast,org.apache.royale.debugging.throwError,org.apache.royale.events.ValueChangeEvent,views.actionitemviews.shoppingcart.CartItem,views.actionitemviews.shoppingcart.Product,views.actionitemviews.shoppingcart.ShoppingMain,org.apache.royale.utils.Language,XML*/
+/* Royale Dependency List: com.model.ServiceLoader,org.apache.royale.debugging.throwError,views.actionitemviews.shoppingcart.CartManager,views.actionitemviews.shoppingcart.CheckoutManager,views.actionitemviews.shoppingcart.ProductManager,views.actionitemviews.shoppingcart.ShoppingMain,org.apache.royale.utils.Language,XML*/
 
-goog.require('org.apache.royale.events.EventDispatcher');
 
 
 
 /**
  * @constructor
- * @extends {org.apache.royale.events.EventDispatcher}
  * @param {views.actionitemviews.shoppingcart.ShoppingMain} view
  */
 views.actionitemviews.shoppingcart.Controller = function(view) {
-  // Compiler generated Binding support implementation:
-  views.actionitemviews.shoppingcart.Controller.base(this, 'constructor');
-  
-  
-  this.views_actionitemviews_shoppingcart_Controller_cartItems = [];
   this.views_actionitemviews_shoppingcart_Controller__view = view;
   this.views_actionitemviews_shoppingcart_Controller__view.cartArea.height -= this.views_actionitemviews_shoppingcart_Controller__view.checkoutArea.height;
   this.views_actionitemviews_shoppingcart_Controller_loadData();
   this.views_actionitemviews_shoppingcart_Controller_setupCartDropTarget();
 };
-// Compiler generated Binding support implementation:
-goog.inherits(views.actionitemviews.shoppingcart.Controller, org.apache.royale.events.EventDispatcher);
 
 
 /**
@@ -39,26 +30,6 @@ goog.inherits(views.actionitemviews.shoppingcart.Controller, org.apache.royale.e
  * @type {views.actionitemviews.shoppingcart.ShoppingMain}
  */
 views.actionitemviews.shoppingcart.Controller.prototype.views_actionitemviews_shoppingcart_Controller__view = null;
-
-
-/**
- * @private
- * @type {Array}
- */
-views.actionitemviews.shoppingcart.Controller.prototype.views_actionitemviews_shoppingcart_Controller_cartItems = null;
-
-
-/**
- * @type {JSON}
- */
-views.actionitemviews.shoppingcart.Controller.prototype.products_ = null;
-
-
-/**
- * @private
- * @type {number}
- */
-views.actionitemviews.shoppingcart.Controller.prototype.views_actionitemviews_shoppingcart_Controller_pIdx = 0;
 
 
 /**
@@ -75,25 +46,10 @@ views.actionitemviews.shoppingcart.Controller.prototype.views_actionitemviews_sh
  * @param {JSON} d
  */
 views.actionitemviews.shoppingcart.Controller.prototype.views_actionitemviews_shoppingcart_Controller_loadHandler = function(d) {
-  this.products = d;
-  this.views_actionitemviews_shoppingcart_Controller_addPid();
-  this.views_actionitemviews_shoppingcart_Controller_renderProductList();
-};
-
-
-/**
- * @private
- */
-views.actionitemviews.shoppingcart.Controller.prototype.views_actionitemviews_shoppingcart_Controller_addPid = function() {
-  var foreachiter0_target = this.products;
-  for (var foreachiter0 in foreachiter0_target) 
-  {
-  var product = foreachiter0_target[foreachiter0];
-  {
-    product.id = this.views_actionitemviews_shoppingcart_Controller_pIdx.toString();
-    this.views_actionitemviews_shoppingcart_Controller_pIdx++;
-  }}
-  
+  views.actionitemviews.shoppingcart.ProductManager.instance.products = d;
+  views.actionitemviews.shoppingcart.ProductManager.instance.renderProductList(this.views_actionitemviews_shoppingcart_Controller__view.productList);
+  views.actionitemviews.shoppingcart.CartManager.instance.view = this.views_actionitemviews_shoppingcart_Controller__view.cartArea;
+  views.actionitemviews.shoppingcart.CheckoutManager.instance.priceLbl = this.views_actionitemviews_shoppingcart_Controller__view.totalLabel;
 };
 
 
@@ -108,23 +64,6 @@ views.actionitemviews.shoppingcart.Controller.prototype.views_actionitemviews_sh
 /**
  * @private
  */
-views.actionitemviews.shoppingcart.Controller.prototype.views_actionitemviews_shoppingcart_Controller_renderProductList = function() {
-  var foreachiter1_target = this.products;
-  for (var foreachiter1 in foreachiter1_target) 
-  {
-  var product = foreachiter1_target[foreachiter1];
-  {
-    var /** @type {views.actionitemviews.shoppingcart.Product} */ p = new views.actionitemviews.shoppingcart.Product();
-    p.data = product;
-    this.views_actionitemviews_shoppingcart_Controller__view.productList.addElement(p);
-  }}
-  
-};
-
-
-/**
- * @private
- */
 views.actionitemviews.shoppingcart.Controller.prototype.views_actionitemviews_shoppingcart_Controller_setupCartDropTarget = function() {
   var self = this;
   this.views_actionitemviews_shoppingcart_Controller__view.cartArea.element.addEventListener("dragover", function(e) {
@@ -132,119 +71,9 @@ views.actionitemviews.shoppingcart.Controller.prototype.views_actionitemviews_sh
   });
   this.views_actionitemviews_shoppingcart_Controller__view.cartArea.element.addEventListener("drop", function(e) {
     var /** @type {string} */ id = org.apache.royale.utils.Language.string(e.dataTransfer.getData("text/plain"));
-    self.views_actionitemviews_shoppingcart_Controller_addToCart(id);
+    views.actionitemviews.shoppingcart.CartManager.instance.addToCart(id);
   });
 };
-
-
-/**
- * @private
- * @param {string} id
- */
-views.actionitemviews.shoppingcart.Controller.prototype.views_actionitemviews_shoppingcart_Controller_addToCart = function(id) {
-  var self = this;
-  var /** @type {Object} */ existing = this.views_actionitemviews_shoppingcart_Controller_cartItems.find(function(item, index, arr) {
-    return item.id == id;
-  });
-  var /** @type {views.actionitemviews.shoppingcart.Product} */ p = this.views_actionitemviews_shoppingcart_Controller_findProductById(id);
-  if (parseInt(p.qt.text, 0) == 0) {
-    p.alpha = 0.5;
-    var /** @type {com.unhurdle.spectrum.Toast} */ snk = new com.unhurdle.spectrum.Toast();
-    snk.flavor = com.unhurdle.spectrum.Toast.INFO;
-    snk.text = "No more items left in stock";
-    snk.autoClose = 2000;
-    snk.show();
-    return;
-  }
-  var /** @type {number} */ qty = (parseInt(p.qt.text, 0)) >> 0;
-  p.qt.text = (qty - 1).toString();
-  if (existing) {
-    existing.qty++;
-  } else {
-    var foreachiter2_target = this.products;
-    for (var foreachiter2 in foreachiter2_target) 
-    {
-    var product = foreachiter2_target[foreachiter2];
-    {
-      if (product.id == id) {
-        var /** @type {Object} */ item = {id:product.id, name:product.title, price:product.price, img:product.filename, qty:1};
-        this.views_actionitemviews_shoppingcart_Controller_cartItems.push(item);
-        break;
-      }
-    }}
-    
-  }
-  this.views_actionitemviews_shoppingcart_Controller_updateCartUI();
-};
-
-
-/**
- * @private
- */
-views.actionitemviews.shoppingcart.Controller.prototype.views_actionitemviews_shoppingcart_Controller_updateCartUI = function() {
-  while (this.views_actionitemviews_shoppingcart_Controller__view.cartArea.numElements > 0) {
-    this.views_actionitemviews_shoppingcart_Controller__view.cartArea.removeElement(this.views_actionitemviews_shoppingcart_Controller__view.cartArea.getElementAt(0));
-  }
-  var /** @type {number} */ total = 0;
-  for (var /** @type {number} */ i = 0; i < this.views_actionitemviews_shoppingcart_Controller_cartItems.length; i++) {
-    var /** @type {Object} */ item = this.views_actionitemviews_shoppingcart_Controller_cartItems[i];
-    total += item.price * item.qty;
-    var /** @type {views.actionitemviews.shoppingcart.CartItem} */ cItem = new views.actionitemviews.shoppingcart.CartItem();
-    item.removeFunc = org.apache.royale.utils.Language.closure(this.views_actionitemviews_shoppingcart_Controller_removeItemFromCart, this, 'views_actionitemviews_shoppingcart_Controller_removeItemFromCart');
-    cItem.data = item;
-    this.views_actionitemviews_shoppingcart_Controller__view.cartArea.addElement(cItem);
-  }
-  this.views_actionitemviews_shoppingcart_Controller__view.totalLabel.text = "Total: $" + total.toFixed(2);
-};
-
-
-/**
- * @private
- * @param {string} id
- */
-views.actionitemviews.shoppingcart.Controller.prototype.views_actionitemviews_shoppingcart_Controller_removeItemFromCart = function(id) {
-  var self = this;
-  this.views_actionitemviews_shoppingcart_Controller_cartItems = this.views_actionitemviews_shoppingcart_Controller_cartItems.filter(function(item, index, arr) {
-    return item.id != id;
-  });
-  this.views_actionitemviews_shoppingcart_Controller_updateCartUI();
-};
-
-
-/**
- * @private
- * @param {string} id
- * @return {views.actionitemviews.shoppingcart.Product}
- */
-views.actionitemviews.shoppingcart.Controller.prototype.views_actionitemviews_shoppingcart_Controller_findProductById = function(id) {
-  var /** @type {number} */ items = this.views_actionitemviews_shoppingcart_Controller__view.productList.numElements;
-  for (var /** @type {number} */ i = 0; i < items; i++) {
-    var /** @type {views.actionitemviews.shoppingcart.Product} */ product = this.views_actionitemviews_shoppingcart_Controller__view.productList.getElementAt(i);
-    if (product.id == id) {
-      return product;
-    }
-  }
-  return null;
-};Object.defineProperties(views.actionitemviews.shoppingcart.Controller.prototype, /** @lends {views.actionitemviews.shoppingcart.Controller.prototype} */ {
-/**
- * @type {JSON}
- */
-products: {
-/** @this {views.actionitemviews.shoppingcart.Controller} */
-  get: function() {
-  return this.products_;
-  },
-
-/** @this {views.actionitemviews.shoppingcart.Controller} */
-set: function(value) {
-if (value != this.products_) {
-    var oldValue = this.products_;
-    this.products_ = value;
-    this.dispatchEvent(org.apache.royale.events.ValueChangeEvent.createUpdateEvent(
-         this, "products", oldValue, value));
-}
-}}}
-);
 
 
 /**
@@ -263,11 +92,6 @@ views.actionitemviews.shoppingcart.Controller.prototype.ROYALE_CLASS_INFO = { na
  */
 views.actionitemviews.shoppingcart.Controller.prototype.ROYALE_REFLECTION_INFO = function () {
   return {
-    accessors: function () {
-      return {
-        'products': { type: 'JSON', access: 'readwrite', declaredBy: 'views.actionitemviews.shoppingcart.Controller'}
-      };
-    },
     methods: function () {
       return {
         'Controller': { type: '', declaredBy: 'views.actionitemviews.shoppingcart.Controller', parameters: function () { return [ 'views.actionitemviews.shoppingcart.ShoppingMain', false ]; }}
