@@ -21,6 +21,7 @@ package views.actionitemviews.shoppingcart{
         }
 
         public function set view(v:Group):void {
+            _cartItems = [];
             _view = v;
         }
 
@@ -77,14 +78,44 @@ package views.actionitemviews.shoppingcart{
             for (var i:int = 0; i < _cartItems.length; i++) {
                 var item:Object = _cartItems[i];
                 var cItem:CartItem = new CartItem();
-                item.callBackFunc = cartItemCallBackFunc;
+                //item.callBackFunc = cartItemCallBackFunc;// cahgen to dispatch event
+                cItem.addEventListener(CartItem.ITEM_REMOVED, cartItemRemoveHandler)
+                cItem.addEventListener(CartItem.ITEM_QTY_CHANGED, cartItemQtyChangeHandler)
                 cItem.data = item;
                 _view.addElement(cItem);
             }
             CheckoutManager.instance.updaPriceTotal();
         }
 
-        private function cartItemCallBackFunc(action:String, p:Product, qty:String = null):void {
+        private function cartItemRemoveHandler(cItem:Object):void {
+            var p:CartItem = cItem.item as CartItem;    
+            p.qt.value = 0;    
+            _cartItems = _cartItems.filter(function(item:Object, index:int, arr:Array):Boolean {
+                return item.id != p.id;
+            });
+            updateCartUI();
+            ProductManager.instance.updateProductViewQty(p);
+        }
+
+        private function cartItemQtyChangeHandler(cItem:Object):void{
+            var item:CartItem = cItem.item as CartItem;
+            var qty:int = item.qt.value
+            if (qty == 0) {
+                    var obj:Object = new Object;
+                    obj.item = item;
+                    cartItemRemoveHandler(obj);
+                }else{
+                    var existing:Object = _cartItems.find(function(i:Object, index:int, arr:Array):Boolean {
+                        return i.id == item.id;
+                    });
+                    if(existing)existing.qty = qty;
+                    ProductManager.instance.updateProductViewQty(item)
+                }
+            CheckoutManager.instance.updaPriceTotal();
+        }
+
+        // changed below code to dispatch event manner
+        /*private function cartItemCallBackFunc(action:String, p:Product, qty:String = null):void {
             if (action == CartItem.ITEM_REMOVED) {
                 _cartItems = _cartItems.filter(function(item:Object, index:int, arr:Array):Boolean {
                     return item.id != p.id;
@@ -103,10 +134,8 @@ package views.actionitemviews.shoppingcart{
 
                 }
                 CheckoutManager.instance.updaPriceTotal();
-            }
-
-            
-        }
+            } 
+        }*/
     }
     
 }

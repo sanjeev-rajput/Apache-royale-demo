@@ -8,7 +8,7 @@
  */
 
 goog.provide('views.actionitemviews.shoppingcart.Controller');
-/* Royale Dependency List: com.model.ServiceLoader,org.apache.royale.debugging.throwError,views.actionitemviews.shoppingcart.CartManager,views.actionitemviews.shoppingcart.CheckoutManager,views.actionitemviews.shoppingcart.ProductManager,views.actionitemviews.shoppingcart.ShoppingMain,org.apache.royale.utils.Language,XML*/
+/* Royale Dependency List: com.model.ServiceLoader,org.apache.royale.debugging.throwError,org.apache.royale.events.MouseEvent,org.apache.royale.icons.FontAwesomeToggleIcon,views.actionitemviews.shoppingcart.CartManager,views.actionitemviews.shoppingcart.CheckoutManager,views.actionitemviews.shoppingcart.ProductManager,views.actionitemviews.shoppingcart.ShoppingMain,org.apache.royale.utils.Language,XML*/
 
 
 
@@ -22,6 +22,7 @@ views.actionitemviews.shoppingcart.Controller = function(view) {
   this.views_actionitemviews_shoppingcart_Controller__view.cartArea.height -= this.views_actionitemviews_shoppingcart_Controller__view.checkoutArea.height;
   this.views_actionitemviews_shoppingcart_Controller_loadData();
   this.views_actionitemviews_shoppingcart_Controller_setupCartDropTarget();
+  this.views_actionitemviews_shoppingcart_Controller_initEvents();
 };
 
 
@@ -73,6 +74,38 @@ views.actionitemviews.shoppingcart.Controller.prototype.views_actionitemviews_sh
     var /** @type {string} */ id = org.apache.royale.utils.Language.string(e.dataTransfer.getData("text/plain"));
     views.actionitemviews.shoppingcart.CartManager.instance.addToCart(id);
   });
+};
+
+
+/**
+ * @private
+ */
+views.actionitemviews.shoppingcart.Controller.prototype.views_actionitemviews_shoppingcart_Controller_initEvents = function() {
+  this.views_actionitemviews_shoppingcart_Controller__view.sortUiByPrice.addEventListener(org.apache.royale.events.MouseEvent.CLICK, org.apache.royale.utils.Language.closure(this.views_actionitemviews_shoppingcart_Controller_sortUiEventHandler, this, 'views_actionitemviews_shoppingcart_Controller_sortUiEventHandler'));
+  this.views_actionitemviews_shoppingcart_Controller__view.sortUiByQty.addEventListener(org.apache.royale.events.MouseEvent.CLICK, org.apache.royale.utils.Language.closure(this.views_actionitemviews_shoppingcart_Controller_sortUiEventHandler, this, 'views_actionitemviews_shoppingcart_Controller_sortUiEventHandler'));
+};
+
+
+/**
+ * @private
+ * @param {org.apache.royale.events.MouseEvent} e
+ */
+views.actionitemviews.shoppingcart.Controller.prototype.views_actionitemviews_shoppingcart_Controller_sortUiEventHandler = function(e) {
+  var /** @type {org.apache.royale.icons.FontAwesomeToggleIcon} */ sUi = e.currentTarget;
+  if (sUi.id == 'sortUiByPrice') {
+    if (sUi.flipVertical)
+      views.actionitemviews.shoppingcart.ProductManager.instance.shortProductListBy(views.actionitemviews.shoppingcart.ProductManager.SORT_BY_PRICE, views.actionitemviews.shoppingcart.ProductManager.DESCENDING);
+    if (!sUi.flipVertical)
+      views.actionitemviews.shoppingcart.ProductManager.instance.shortProductListBy(views.actionitemviews.shoppingcart.ProductManager.SORT_BY_PRICE, views.actionitemviews.shoppingcart.ProductManager.ASCENDING);
+    sUi.flipVertical = !sUi.flipVertical;
+  }
+  if (sUi.id == 'sortUiByQty') {
+    if (sUi.flipVertical)
+      views.actionitemviews.shoppingcart.ProductManager.instance.shortProductListBy(views.actionitemviews.shoppingcart.ProductManager.SORT_BY_QUANTITY, views.actionitemviews.shoppingcart.ProductManager.DESCENDING);
+    if (!sUi.flipVertical)
+      views.actionitemviews.shoppingcart.ProductManager.instance.shortProductListBy(views.actionitemviews.shoppingcart.ProductManager.SORT_BY_QUANTITY, views.actionitemviews.shoppingcart.ProductManager.ASCENDING);
+    sUi.flipVertical = !sUi.flipVertical;
+  }
 };
 
 

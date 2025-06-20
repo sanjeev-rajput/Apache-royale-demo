@@ -8,7 +8,7 @@
  */
 
 goog.provide('views.actionitemviews.shoppingcart.CartItem');
-/* Royale Dependency List: org.apache.royale.jewel.supportClasses.card.CardHeader,org.apache.royale.jewel.supportClasses.bar.BarSection,org.apache.royale.jewel.Label,org.apache.royale.jewel.Image,com.unhurdle.spectrum.Stepper,org.apache.royale.debugging.throwError,org.apache.royale.events.Event,org.apache.royale.events.MouseEvent,XML*/
+/* Royale Dependency List: org.apache.royale.jewel.supportClasses.card.CardHeader,org.apache.royale.jewel.supportClasses.bar.BarSection,org.apache.royale.jewel.Label,org.apache.royale.html.elements.I,org.apache.royale.jewel.Image,com.unhurdle.spectrum.Stepper,org.apache.royale.events.Event,org.apache.royale.events.MouseEvent,XML*/
 
 goog.require('org.apache.royale.jewel.Card');
 
@@ -25,7 +25,7 @@ views.actionitemviews.shoppingcart.CartItem = function() {
    * @private
    * @type {org.apache.royale.jewel.supportClasses.card.CardHeader}
    */
-  this.$ID_15_2;
+  this.$ID_15_3;
   
   /**
    * @private
@@ -43,13 +43,13 @@ views.actionitemviews.shoppingcart.CartItem = function() {
    * @private
    * @type {org.apache.royale.jewel.supportClasses.bar.BarSection}
    */
-  this.$ID_15_1;
+  this.$ID_15_2;
   
   /**
    * @private
-   * @type {org.apache.royale.jewel.Label}
+   * @type {org.apache.royale.html.elements.I}
    */
-  this.removeBtn_;
+  this.$ID_15_1;
   
   /**
    * @private
@@ -88,7 +88,7 @@ views.actionitemviews.shoppingcart.CartItem = function() {
     'itemsCenter',
     'className',
     true,
-    'shoppingItem',
+    'shoppingCartItem',
     0,
     1,
     'initComplete',
@@ -106,13 +106,6 @@ goog.inherits(views.actionitemviews.shoppingcart.CartItem, org.apache.royale.jew
  * @type {Object}
  */
 views.actionitemviews.shoppingcart.CartItem.prototype.views_actionitemviews_shoppingcart_CartItem__data = null;
-
-
-/**
- * @private
- * @type {Function}
- */
-views.actionitemviews.shoppingcart.CartItem.prototype.views_actionitemviews_shoppingcart_CartItem_callBackFunc = null;
 
 
 /**
@@ -161,16 +154,11 @@ views.actionitemviews.shoppingcart.CartItem.prototype.views_actionitemviews_shop
  * @private
  * @param {string} action
  */
-views.actionitemviews.shoppingcart.CartItem.prototype.views_actionitemviews_shoppingcart_CartItem_cartItemManager = function(action) {
-  if (this.views_actionitemviews_shoppingcart_CartItem_callBackFunc != null) {
-    this.views_actionitemviews_shoppingcart_CartItem__data.qty = this.qt.value;
-    if (action == views.actionitemviews.shoppingcart.CartItem.ITEM_REMOVED)
-      this.views_actionitemviews_shoppingcart_CartItem_callBackFunc(action, this);
-    if (action == views.actionitemviews.shoppingcart.CartItem.ITEM_QTY_CHANGED)
-      this.views_actionitemviews_shoppingcart_CartItem_callBackFunc(action, this, this.qt.value);
-  } else {
-    org.apache.royale.debugging.throwError("Remove function not set");
-  }
+views.actionitemviews.shoppingcart.CartItem.prototype.views_actionitemviews_shoppingcart_CartItem_cartItemQtyHandler = function(action) {
+  var /** @type {Object} */ obj = new Object();
+  obj.type = action;
+  obj.item = this;
+  this.dispatchEvent(obj);
 };
 
 
@@ -191,7 +179,6 @@ views.actionitemviews.shoppingcart.CartItem.prototype.set__data = function(d) {
   if (this.views_actionitemviews_shoppingcart_CartItem__initialized) {
     this.views_actionitemviews_shoppingcart_CartItem_init();
   }
-  this.views_actionitemviews_shoppingcart_CartItem_callBackFunc = this.views_actionitemviews_shoppingcart_CartItem__data.callBackFunc;
 };
 
 
@@ -217,7 +204,7 @@ views.actionitemviews.shoppingcart.CartItem.prototype.$EH_15_0 = function(event)
  */
 views.actionitemviews.shoppingcart.CartItem.prototype.$EH_15_1 = function(event)
 {
-  this.views_actionitemviews_shoppingcart_CartItem_cartItemManager(views.actionitemviews.shoppingcart.CartItem.ITEM_REMOVED);
+  this.views_actionitemviews_shoppingcart_CartItem_cartItemQtyHandler(views.actionitemviews.shoppingcart.CartItem.ITEM_REMOVED);
 };
 
 
@@ -227,7 +214,7 @@ views.actionitemviews.shoppingcart.CartItem.prototype.$EH_15_1 = function(event)
  */
 views.actionitemviews.shoppingcart.CartItem.prototype.$EH_15_2 = function(event)
 {
-  this.views_actionitemviews_shoppingcart_CartItem_cartItemManager(views.actionitemviews.shoppingcart.CartItem.ITEM_QTY_CHANGED);
+  this.views_actionitemviews_shoppingcart_CartItem_cartItemQtyHandler(views.actionitemviews.shoppingcart.CartItem.ITEM_QTY_CHANGED);
 };
 
 
@@ -242,19 +229,6 @@ Object.defineProperties(views.actionitemviews.shoppingcart.CartItem.prototype, /
       if (value != this.name_) {
         this.name_ = value;
         this.dispatchEvent(org.apache.royale.events.ValueChangeEvent.createUpdateEvent(this, 'name', null, value));
-      }
-    }
-  },
-  removeBtn: {
-    /** @this {views.actionitemviews.shoppingcart.CartItem} */
-    get: function() {
-      return this.removeBtn_;
-    },
-    /** @this {views.actionitemviews.shoppingcart.CartItem} */
-    set: function(value) {
-      if (value != this.removeBtn_) {
-        this.removeBtn_ = value;
-        this.dispatchEvent(org.apache.royale.events.ValueChangeEvent.createUpdateEvent(this, 'removeBtn', null, value));
       }
     }
   },
@@ -310,7 +284,7 @@ Object.defineProperties(views.actionitemviews.shoppingcart.CartItem.prototype, /
           2,
           '_id',
           true,
-          '$ID_15_2',
+          '$ID_15_3',
           'itemsVerticalAlign',
           true,
           'itemsCenter',
@@ -344,21 +318,21 @@ Object.defineProperties(views.actionitemviews.shoppingcart.CartItem.prototype, /
             2,
             '_id',
             true,
-            '$ID_15_1',
+            '$ID_15_2',
             'itemsHorizontalAlign',
             true,
             'itemsRight',
             0,
             0,
             [
-              org.apache.royale.jewel.Label,
+              org.apache.royale.html.elements.I,
               2,
-              'id',
+              '_id',
               true,
-              'removeBtn',
-              'text',
+              '$ID_15_1',
+              'class',
               true,
-              '❌',
+              'fa-solid fa-xmark',
               0,
               1,
               'click',
@@ -367,13 +341,16 @@ Object.defineProperties(views.actionitemviews.shoppingcart.CartItem.prototype, /
             ]
           ],
           org.apache.royale.jewel.Image,
-          2,
+          3,
           'id',
           true,
           'img',
           'height',
           true,
           100,
+          'className',
+          true,
+          'shoppingProductImg',
           0,
           0,
           null,
@@ -434,7 +411,6 @@ views.actionitemviews.shoppingcart.CartItem.prototype.ROYALE_REFLECTION_INFO = f
       return {
         'data': { type: 'Object', access: 'writeonly', declaredBy: 'views.actionitemviews.shoppingcart.CartItem'},
         'name': { type: 'org.apache.royale.jewel.Label', access: 'readwrite', declaredBy: 'views.actionitemviews.shoppingcart.CartItem'},
-        'removeBtn': { type: 'org.apache.royale.jewel.Label', access: 'readwrite', declaredBy: 'views.actionitemviews.shoppingcart.CartItem'},
         'img': { type: 'org.apache.royale.jewel.Image', access: 'readwrite', declaredBy: 'views.actionitemviews.shoppingcart.CartItem'},
         'price': { type: 'org.apache.royale.jewel.Label', access: 'readwrite', declaredBy: 'views.actionitemviews.shoppingcart.CartItem'},
         'qt': { type: 'com.unhurdle.spectrum.Stepper', access: 'readwrite', declaredBy: 'views.actionitemviews.shoppingcart.CartItem'}

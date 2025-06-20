@@ -43,7 +43,7 @@
         ]]>
     </fx:Script>
     <j:CardPrimaryContent gap="0" itemsHorizontalAlign="itemsCenter">
-        <j:Image id="img" height="200"/>
+        <j:Image id="img" height="200" width="150"  className="shoppingProductImg"/>
     </j:CardPrimaryContent>
     <j:VGroup>
         <j:Label id="name" text="Jewel Simple Card" width="200" className="shopProductLbl"/>

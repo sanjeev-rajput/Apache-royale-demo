@@ -1,16 +1,14 @@
 <j:Card xmlns:fx="http://ns.adobe.com/mxml/2009"
     xmlns:j="library://ns.apache.org/royale/jewel" 
     xmlns:html="library://ns.apache.org/royale/html" xmlns:sp="library://ns.unhurdle.com/spectrum" xmlns:edit="org.apache.royale.textLayout.edit.*"
-    initComplete="init()" itemsHorizontalAlign="itemsCenter" className="shoppingItem">
+    initComplete="init()" itemsHorizontalAlign="itemsCenter" className="shoppingCartItem">
     <fx:Script>
         <![CDATA[
-            import org.apache.royale.debugging.throwError;
-            import views.actionitemviews.shoppingcart.CartItem;
-            import views.actionitemviews.shoppingcart.CartItem;
-
+            
+            
 
             private var _data:Object;
-            private var callBackFunc:Function
+            //private var callBackFunc:Function
             private var _initialized:Boolean = false;
             public static const ITEM_REMOVED:String = "itemRemoved";
             public static const ITEM_QTY_CHANGED:String = "itemQtyChanged";
@@ -32,17 +30,22 @@
                 if(_initialized) {
                     init();
                 }
-                callBackFunc = _data.callBackFunc;
+                //callBackFunc = _data.callBackFunc;
             }
 
-            private function cartItemManager(action:String):void {
-                if (callBackFunc != null) {
+            private function cartItemQtyHandler(action:String):void {
+                /*if (callBackFunc != null) {
                     _data.qty = qt.value; // Update the quantity in the data object
                     if(action == ITEM_REMOVED)callBackFunc(action, this);
                     if(action == ITEM_QTY_CHANGED) callBackFunc(action, this, qt.value);
                 } else {
                     throwError("Remove function not set");
-                }
+                }*/
+                
+                var obj:Object = new Object();
+                obj.type = action
+                obj.item = this;
+                this.dispatchEvent(obj);
             }
         ]]>
     </fx:Script>
@@ -51,13 +54,14 @@
             <j:Label id="name" text="Jewel Simple Card"/>
         </j:BarSection>
         <j:BarSection itemsHorizontalAlign="itemsRight">
-            <j:Label id="removeBtn" text="❌" click="cartItemManager(CartItem.ITEM_REMOVED)"/>
+            <html:I class="fa-solid fa-xmark" click="cartItemQtyHandler(CartItem.ITEM_REMOVED)"/>
+            <!-- <j:Image src="img/xmark.svg" height="20" width="20" click="cartItemQtyHandler(CartItem.ITEM_REMOVED)"/> -->
         </j:BarSection>
     </j:CardHeader>
-    <j:Image id="img" height="100"/>
+    <j:Image id="img" height="100" className="shoppingProductImg"/>
     <j:Label id="price" text="Jewel Simple Card"/>
    
-    <sp:Stepper id="qt" keyboardFocused="false" min="0" change="cartItemManager(CartItem.ITEM_QTY_CHANGED)">
+    <sp:Stepper id="qt" keyboardFocused="false" min="0" change="cartItemQtyHandler(CartItem.ITEM_QTY_CHANGED)">
         
     </sp:Stepper>
   

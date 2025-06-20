@@ -8,7 +8,7 @@
  */
 
 goog.provide('views.actionitemviews.shoppingcart.ShoppingMain');
-/* Royale Dependency List: org.apache.royale.jewel.VGroup,org.apache.royale.jewel.Label,org.apache.royale.jewel.Group,org.apache.royale.jewel.beads.layouts.TileHorizontalLayout,org.apache.royale.jewel.supportClasses.scrollbar.ScrollingViewport,org.apache.royale.jewel.Image,org.apache.royale.jewel.Button,org.apache.royale.events.Event,views.actionitemviews.shoppingcart.Controller,XML*/
+/* Royale Dependency List: org.apache.royale.jewel.VGroup,org.apache.royale.icons.FontAwesomeToggleIcon,org.apache.royale.jewel.beads.controls.ToolTip,org.apache.royale.jewel.Label,org.apache.royale.jewel.Group,org.apache.royale.jewel.beads.layouts.TileHorizontalLayout,org.apache.royale.jewel.supportClasses.scrollbar.ScrollingViewport,org.apache.royale.jewel.Image,org.apache.royale.jewel.Button,org.apache.royale.events.Event,views.actionitemviews.shoppingcart.Controller,XML*/
 
 goog.require('org.apache.royale.jewel.HGroup');
 
@@ -25,13 +25,43 @@ views.actionitemviews.shoppingcart.ShoppingMain = function() {
    * @private
    * @type {org.apache.royale.jewel.VGroup}
    */
+  this.$ID_13_6;
+  
+  /**
+   * @private
+   * @type {org.apache.royale.jewel.HGroup}
+   */
   this.$ID_13_3;
+  
+  /**
+   * @private
+   * @type {org.apache.royale.icons.FontAwesomeToggleIcon}
+   */
+  this.sortUiByPrice_;
+  
+  /**
+   * @private
+   * @type {org.apache.royale.jewel.beads.controls.ToolTip}
+   */
+  this.$ID_13_0;
   
   /**
    * @private
    * @type {org.apache.royale.jewel.Label}
    */
-  this.$ID_13_0;
+  this.$ID_13_1;
+  
+  /**
+   * @private
+   * @type {org.apache.royale.icons.FontAwesomeToggleIcon}
+   */
+  this.sortUiByQty_;
+  
+  /**
+   * @private
+   * @type {org.apache.royale.jewel.beads.controls.ToolTip}
+   */
+  this.$ID_13_2;
   
   /**
    * @private
@@ -49,31 +79,31 @@ views.actionitemviews.shoppingcart.ShoppingMain = function() {
    * @private
    * @type {org.apache.royale.jewel.supportClasses.scrollbar.ScrollingViewport}
    */
-  this.$ID_13_2;
+  this.$ID_13_5;
   
   /**
    * @private
    * @type {org.apache.royale.jewel.VGroup}
    */
-  this.$ID_13_10;
+  this.$ID_13_12;
   
   /**
    * @private
    * @type {org.apache.royale.jewel.HGroup}
    */
-  this.$ID_13_6;
+  this.$ID_13_9;
   
   /**
    * @private
    * @type {org.apache.royale.jewel.Image}
    */
-  this.$ID_13_4;
+  this.$ID_13_7;
   
   /**
    * @private
    * @type {org.apache.royale.jewel.Label}
    */
-  this.$ID_13_5;
+  this.$ID_13_8;
   
   /**
    * @private
@@ -91,7 +121,7 @@ views.actionitemviews.shoppingcart.ShoppingMain = function() {
    * @private
    * @type {org.apache.royale.jewel.supportClasses.scrollbar.ScrollingViewport}
    */
-  this.$ID_13_8;
+  this.$ID_13_11;
   
   /**
    * @private
@@ -103,7 +133,7 @@ views.actionitemviews.shoppingcart.ShoppingMain = function() {
    * @private
    * @type {org.apache.royale.jewel.Button}
    */
-  this.$ID_13_9;
+  this.checkout_;
   
   /**
    * @private
@@ -169,6 +199,32 @@ views.actionitemviews.shoppingcart.ShoppingMain.prototype.$EH_13_0 = function(ev
 
 
 Object.defineProperties(views.actionitemviews.shoppingcart.ShoppingMain.prototype, /** @lends {views.actionitemviews.shoppingcart.ShoppingMain.prototype} */ {
+  sortUiByPrice: {
+    /** @this {views.actionitemviews.shoppingcart.ShoppingMain} */
+    get: function() {
+      return this.sortUiByPrice_;
+    },
+    /** @this {views.actionitemviews.shoppingcart.ShoppingMain} */
+    set: function(value) {
+      if (value != this.sortUiByPrice_) {
+        this.sortUiByPrice_ = value;
+        this.dispatchEvent(org.apache.royale.events.ValueChangeEvent.createUpdateEvent(this, 'sortUiByPrice', null, value));
+      }
+    }
+  },
+  sortUiByQty: {
+    /** @this {views.actionitemviews.shoppingcart.ShoppingMain} */
+    get: function() {
+      return this.sortUiByQty_;
+    },
+    /** @this {views.actionitemviews.shoppingcart.ShoppingMain} */
+    set: function(value) {
+      if (value != this.sortUiByQty_) {
+        this.sortUiByQty_ = value;
+        this.dispatchEvent(org.apache.royale.events.ValueChangeEvent.createUpdateEvent(this, 'sortUiByQty', null, value));
+      }
+    }
+  },
   productList: {
     /** @this {views.actionitemviews.shoppingcart.ShoppingMain} */
     get: function() {
@@ -234,6 +290,19 @@ Object.defineProperties(views.actionitemviews.shoppingcart.ShoppingMain.prototyp
       }
     }
   },
+  checkout: {
+    /** @this {views.actionitemviews.shoppingcart.ShoppingMain} */
+    get: function() {
+      return this.checkout_;
+    },
+    /** @this {views.actionitemviews.shoppingcart.ShoppingMain} */
+    set: function(value) {
+      if (value != this.checkout_) {
+        this.checkout_ = value;
+        this.dispatchEvent(org.apache.royale.events.ValueChangeEvent.createUpdateEvent(this, 'checkout', null, value));
+      }
+    }
+  },
   totalLabel: {
     /** @this {views.actionitemviews.shoppingcart.ShoppingMain} */
     get: function() {
@@ -260,7 +329,7 @@ Object.defineProperties(views.actionitemviews.shoppingcart.ShoppingMain.prototyp
           3,
           '_id',
           true,
-          '$ID_13_3',
+          '$ID_13_6',
           'percentWidth',
           true,
           75.0,
@@ -270,25 +339,104 @@ Object.defineProperties(views.actionitemviews.shoppingcart.ShoppingMain.prototyp
           0,
           0,
           [
-            org.apache.royale.jewel.Label,
+            org.apache.royale.jewel.HGroup,
             4,
             '_id',
             true,
-            '$ID_13_0',
-            'text',
+            '$ID_13_3',
+            'itemsHorizontalAlign',
             true,
-            'Drag item from here',
+            'itemsSpaceAround',
+            'itemsVerticalAlign',
+            true,
+            'itemsCenter',
             'percentWidth',
             true,
             100.0,
-            'className',
-            true,
-            'shopProductLbl textAlignCenter',
             0,
             0,
-            null,
+            [
+              org.apache.royale.icons.FontAwesomeToggleIcon,
+              4,
+              'id',
+              true,
+              'sortUiByPrice',
+              'typeNames',
+              true,
+              'fa-solid fa-arrow-up-short-wide',
+              'style',
+              true,
+              'font-size:20px',
+              'beads',
+              null,
+              [
+                org.apache.royale.jewel.beads.controls.ToolTip,
+                3,
+                '_id',
+                true,
+                '$ID_13_0',
+                'toolTip',
+                true,
+                'sort by price',
+                'className',
+                true,
+                'toolTip',
+                0,
+                0,
+                null
+              ],
+              0,
+              0,
+              null,
+              org.apache.royale.jewel.Label,
+              3,
+              '_id',
+              true,
+              '$ID_13_1',
+              'text',
+              true,
+              'Drag item from here',
+              'className',
+              true,
+              'shopProductLbl textAlignCenter',
+              0,
+              0,
+              null,
+              org.apache.royale.icons.FontAwesomeToggleIcon,
+              4,
+              'id',
+              true,
+              'sortUiByQty',
+              'typeNames',
+              true,
+              'fa-solid fa-arrow-up-short-wide',
+              'style',
+              true,
+              'font-size:20px',
+              'beads',
+              null,
+              [
+                org.apache.royale.jewel.beads.controls.ToolTip,
+                3,
+                '_id',
+                true,
+                '$ID_13_2',
+                'toolTip',
+                true,
+                'sort by quantity',
+                'className',
+                true,
+                'toolTip',
+                0,
+                0,
+                null
+              ],
+              0,
+              0,
+              null
+            ],
             org.apache.royale.jewel.Group,
-            4,
+            5,
             'id',
             true,
             'productList',
@@ -298,6 +446,9 @@ Object.defineProperties(views.actionitemviews.shoppingcart.ShoppingMain.prototyp
             'percentWidth',
             true,
             100.0,
+            'style',
+            true,
+            'padding:10px',
             'beads',
             null,
             [
@@ -316,7 +467,7 @@ Object.defineProperties(views.actionitemviews.shoppingcart.ShoppingMain.prototyp
               1,
               '_id',
               true,
-              '$ID_13_2',
+              '$ID_13_5',
               0,
               0,
               null
@@ -329,7 +480,7 @@ Object.defineProperties(views.actionitemviews.shoppingcart.ShoppingMain.prototyp
           3,
           '_id',
           true,
-          '$ID_13_10',
+          '$ID_13_12',
           'percentWidth',
           true,
           25.0,
@@ -343,7 +494,7 @@ Object.defineProperties(views.actionitemviews.shoppingcart.ShoppingMain.prototyp
             4,
             '_id',
             true,
-            '$ID_13_6',
+            '$ID_13_9',
             'gap',
             true,
             1,
@@ -360,7 +511,7 @@ Object.defineProperties(views.actionitemviews.shoppingcart.ShoppingMain.prototyp
               3,
               '_id',
               true,
-              '$ID_13_4',
+              '$ID_13_7',
               'src',
               true,
               'img/shopping/shopping-cart.png',
@@ -374,7 +525,7 @@ Object.defineProperties(views.actionitemviews.shoppingcart.ShoppingMain.prototyp
               4,
               '_id',
               true,
-              '$ID_13_5',
+              '$ID_13_8',
               'text',
               true,
               'Drop items here',
@@ -420,7 +571,7 @@ Object.defineProperties(views.actionitemviews.shoppingcart.ShoppingMain.prototyp
               1,
               '_id',
               true,
-              '$ID_13_8',
+              '$ID_13_11',
               0,
               0,
               null
@@ -447,9 +598,9 @@ Object.defineProperties(views.actionitemviews.shoppingcart.ShoppingMain.prototyp
             [
               org.apache.royale.jewel.Button,
               2,
-              '_id',
+              'id',
               true,
-              '$ID_13_9',
+              'checkout',
               'text',
               true,
               'Checkout ➡️ ',
@@ -500,11 +651,14 @@ views.actionitemviews.shoppingcart.ShoppingMain.prototype.ROYALE_REFLECTION_INFO
   return {
     accessors: function () {
       return {
+        'sortUiByPrice': { type: 'org.apache.royale.icons.FontAwesomeToggleIcon', access: 'readwrite', declaredBy: 'views.actionitemviews.shoppingcart.ShoppingMain'},
+        'sortUiByQty': { type: 'org.apache.royale.icons.FontAwesomeToggleIcon', access: 'readwrite', declaredBy: 'views.actionitemviews.shoppingcart.ShoppingMain'},
         'productList': { type: 'org.apache.royale.jewel.Group', access: 'readwrite', declaredBy: 'views.actionitemviews.shoppingcart.ShoppingMain'},
         'plist': { type: 'org.apache.royale.jewel.beads.layouts.TileHorizontalLayout', access: 'readwrite', declaredBy: 'views.actionitemviews.shoppingcart.ShoppingMain'},
         'cartArea': { type: 'org.apache.royale.jewel.Group', access: 'readwrite', declaredBy: 'views.actionitemviews.shoppingcart.ShoppingMain'},
         'clist': { type: 'org.apache.royale.jewel.beads.layouts.TileHorizontalLayout', access: 'readwrite', declaredBy: 'views.actionitemviews.shoppingcart.ShoppingMain'},
         'checkoutArea': { type: 'org.apache.royale.jewel.HGroup', access: 'readwrite', declaredBy: 'views.actionitemviews.shoppingcart.ShoppingMain'},
+        'checkout': { type: 'org.apache.royale.jewel.Button', access: 'readwrite', declaredBy: 'views.actionitemviews.shoppingcart.ShoppingMain'},
         'totalLabel': { type: 'org.apache.royale.jewel.Label', access: 'readwrite', declaredBy: 'views.actionitemviews.shoppingcart.ShoppingMain'}
       };
     },

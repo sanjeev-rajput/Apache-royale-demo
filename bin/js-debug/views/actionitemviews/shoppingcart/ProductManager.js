@@ -8,7 +8,7 @@
  */
 
 goog.provide('views.actionitemviews.shoppingcart.ProductManager');
-/* Royale Dependency List: com.controller.PopupManager,org.apache.royale.core.UIBase,org.apache.royale.debugging.throwError,org.apache.royale.events.MouseEvent,org.apache.royale.jewel.Group,views.actionitemviews.shoppingcart.Product,views.actionitemviews.shoppingcart.ProductPreview,org.apache.royale.utils.Language,XML*/
+/* Royale Dependency List: com.controller.PopupManager,org.apache.royale.core.UIBase,org.apache.royale.debugging.throwError,org.apache.royale.events.MouseEvent,org.apache.royale.jewel.Group,views.actionitemviews.shoppingcart.CartItem,views.actionitemviews.shoppingcart.Product,views.actionitemviews.shoppingcart.ProductPreview,org.apache.royale.utils.Language,XML*/
 
 
 
@@ -46,6 +46,38 @@ views.actionitemviews.shoppingcart.ProductManager.prototype.views_actionitemview
  * @type {number}
  */
 views.actionitemviews.shoppingcart.ProductManager.prototype.views_actionitemviews_shoppingcart_ProductManager_pIdx = 0;
+
+
+/**
+ * @nocollapse
+ * @const
+ * @type {string}
+ */
+views.actionitemviews.shoppingcart.ProductManager.SORT_BY_PRICE = "sortbyprice";
+
+
+/**
+ * @nocollapse
+ * @const
+ * @type {string}
+ */
+views.actionitemviews.shoppingcart.ProductManager.SORT_BY_QUANTITY = "softbyqty";
+
+
+/**
+ * @nocollapse
+ * @const
+ * @type {string}
+ */
+views.actionitemviews.shoppingcart.ProductManager.ASCENDING = "ascending";
+
+
+/**
+ * @nocollapse
+ * @const
+ * @type {string}
+ */
+views.actionitemviews.shoppingcart.ProductManager.DESCENDING = "descending";
 
 
 /**
@@ -88,6 +120,36 @@ views.actionitemviews.shoppingcart.ProductManager.prototype.renderProductList = 
 
 
 /**
+ * @param {string} sortType
+ * @param {string} sortOrder
+ */
+views.actionitemviews.shoppingcart.ProductManager.prototype.shortProductListBy = function(sortType, sortOrder) {
+  var self = this;
+  var /** @type {Array} */ jsonArr = this.products;
+  if (sortType == views.actionitemviews.shoppingcart.ProductManager.SORT_BY_PRICE) {
+    this.products.sort(function(a, b) {
+      if (sortOrder == views.actionitemviews.shoppingcart.ProductManager.ASCENDING)
+        return (a.price > b.price ? 1 : (a.price < b.price ? -1 : 0)) >> 0;
+      if (sortOrder == views.actionitemviews.shoppingcart.ProductManager.DESCENDING)
+        return (a.price < b.price ? 1 : (a.price > b.price ? -1 : 0)) >> 0;
+    });
+  }
+  if (sortType == views.actionitemviews.shoppingcart.ProductManager.SORT_BY_QUANTITY) {
+    this.products.sort(function(a, b) {
+      if (sortOrder == views.actionitemviews.shoppingcart.ProductManager.ASCENDING)
+        return (a.qty - b.qty) >> 0;
+      if (sortOrder == views.actionitemviews.shoppingcart.ProductManager.DESCENDING)
+        return (b.qty - a.qty) >> 0;
+    });
+  }
+  while (this.views_actionitemviews_shoppingcart_ProductManager__view.numElements > 0) {
+    this.views_actionitemviews_shoppingcart_ProductManager__view.removeElement(this.views_actionitemviews_shoppingcart_ProductManager__view.getElementAt(0));
+  }
+  this.renderProductList(this.views_actionitemviews_shoppingcart_ProductManager__view);
+};
+
+
+/**
  * @private
  * @param {org.apache.royale.events.MouseEvent} event
  */
@@ -118,23 +180,13 @@ views.actionitemviews.shoppingcart.ProductManager.prototype.getProductById = fun
 
 
 /**
- * @param {views.actionitemviews.shoppingcart.Product} item
+ * @param {views.actionitemviews.shoppingcart.CartItem} item
  */
-views.actionitemviews.shoppingcart.ProductManager.prototype.resetProductToDefault = function(item) {
-  if (item) {
-    var foreachiter2_target = this.products;
-    for (var foreachiter2 in foreachiter2_target) 
-    {
-    var value = foreachiter2_target[foreachiter2];
-    {
-      if (value.id == item.id) {
-        this.getProductById(item.id).data = value;
-        break;
-      }
-    }}
-    
-    this.getProductById(item.id).alpha = 1.0;
-  }
+views.actionitemviews.shoppingcart.ProductManager.prototype.updateProductViewQty = function(item) {
+  var /** @type {number} */ updateQty = (item.qt.max - item.qt.value) >> 0;
+  this.getProductById(item.id).qt.text = updateQty.toString();
+  this.getProductDataById(item.id).qty = updateQty;
+  this.getProductById(item.id).alpha = 1.0;
 };
 
 
@@ -143,17 +195,15 @@ views.actionitemviews.shoppingcart.ProductManager.prototype.resetProductToDefaul
  * @return {Object}
  */
 views.actionitemviews.shoppingcart.ProductManager.prototype.getProductDataById = function(id) {
-  var foreachiter3_target = this.products;
-  for (var foreachiter3 in foreachiter3_target) 
-  {
-  var product = foreachiter3_target[foreachiter3];
-  {
-    if (product.id == id) {
-      return product;
-    }
-  }}
-  
-  return null;
+  var self = this;
+  var /** @type {Object} */ existing = this.products.find(function(i, index, arr) {
+    return i.id == id;
+  });
+  if (existing) {
+    return existing;
+  } else {
+    return null;
+  }
 };
 
 
@@ -236,8 +286,9 @@ views.actionitemviews.shoppingcart.ProductManager.prototype.ROYALE_REFLECTION_IN
     methods: function () {
       return {
         'renderProductList': { type: 'void', declaredBy: 'views.actionitemviews.shoppingcart.ProductManager', parameters: function () { return [ 'org.apache.royale.jewel.Group', false ]; }},
+        'shortProductListBy': { type: 'void', declaredBy: 'views.actionitemviews.shoppingcart.ProductManager', parameters: function () { return [ 'String', false ,'String', false ]; }},
         'getProductById': { type: 'views.actionitemviews.shoppingcart.Product', declaredBy: 'views.actionitemviews.shoppingcart.ProductManager', parameters: function () { return [ 'String', false ]; }},
-        'resetProductToDefault': { type: 'void', declaredBy: 'views.actionitemviews.shoppingcart.ProductManager', parameters: function () { return [ 'views.actionitemviews.shoppingcart.Product', false ]; }},
+        'updateProductViewQty': { type: 'void', declaredBy: 'views.actionitemviews.shoppingcart.ProductManager', parameters: function () { return [ 'views.actionitemviews.shoppingcart.CartItem', false ]; }},
         'getProductDataById': { type: 'Object', declaredBy: 'views.actionitemviews.shoppingcart.ProductManager', parameters: function () { return [ 'String', false ]; }}
       };
     }

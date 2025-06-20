@@ -1,5 +1,6 @@
 <j:HGroup xmlns:fx="http://ns.adobe.com/mxml/2009"
                 xmlns:js="library://ns.apache.org/royale/basic"
+                xmlns:html="library://ns.apache.org/royale/html"
                 xmlns:j="library://ns.apache.org/royale/jewel"
                 height="100%" width="100%"
                 initComplete="initApp()">
@@ -8,16 +9,30 @@
         import org.apache.royale.jewel.Button;
         import views.actionitemviews.shoppingcart.Controller;
 
-        private var _controller:Controller
+        private var _controller:Controller = null;
         private function initApp():void {
             _controller = new Controller(this);
         }
 
+ 
     ]]></fx:Script>
 
             <j:VGroup width="75%" height="100%">
-                <j:Label text="Drag item from here" width="100%" className="shopProductLbl textAlignCenter"/>
-                <j:Group id="productList" height="100%" width="100%">
+                <j:HGroup itemsHorizontalAlign="itemsSpaceAround" itemsVerticalAlign="itemsCenter" width="100%" >
+                    <js:FontAwesomeToggleIcon  id="sortUiByPrice" typeNames="fa-solid fa-arrow-up-short-wide" style="font-size:20px">
+                        <js:beads>
+                            <j:ToolTip toolTip="sort by price" className="toolTip"/>
+                        </js:beads>
+                    </js:FontAwesomeToggleIcon>                    
+                        <j:Label text="Drag item from here" className="shopProductLbl textAlignCenter"/>
+                        <js:FontAwesomeToggleIcon  id="sortUiByQty" typeNames="fa-solid fa-arrow-up-short-wide" style="font-size:20px">
+                        <js:beads>
+                            <j:ToolTip toolTip="sort by quantity" className="toolTip"/>
+                        </js:beads>
+                    </js:FontAwesomeToggleIcon>
+                </j:HGroup>
+
+                <j:Group id="productList" height="100%" width="100%" style="padding:10px">
                     <j:beads>
                         <j:TileHorizontalLayout localId="plist" waitForSize="true"/>
                         <j:ScrollingViewport/>

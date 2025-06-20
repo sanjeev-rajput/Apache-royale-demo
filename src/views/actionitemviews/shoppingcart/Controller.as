@@ -3,7 +3,8 @@ package views.actionitemviews.shoppingcart {
 
     import com.model.ServiceLoader;
     import org.apache.royale.debugging.throwError;
-    import com.unhurdle.spectrum.Toast;
+    import org.apache.royale.events.MouseEvent;
+    import org.apache.royale.icons.FontAwesomeToggleIcon;
 
     public class Controller {
         private var _view:ShoppingMain;
@@ -12,6 +13,7 @@ package views.actionitemviews.shoppingcart {
             _view.cartArea.height -= _view.checkoutArea.height
             loadData();
             setupCartDropTarget();
+            initEvents();
         }
 
         private function loadData():void {
@@ -39,6 +41,25 @@ package views.actionitemviews.shoppingcart {
                 var id:String = e.dataTransfer.getData("text/plain");
                 CartManager.instance.addToCart(id);
             });
+        }
+
+        private function initEvents():void {
+            _view.sortUiByPrice.addEventListener(MouseEvent.CLICK, sortUiEventHandler);
+            _view.sortUiByQty.addEventListener(MouseEvent.CLICK, sortUiEventHandler)
+        }
+
+        private function sortUiEventHandler(e:MouseEvent):void {
+            var sUi:FontAwesomeToggleIcon = e.currentTarget as FontAwesomeToggleIcon;
+            if(sUi.id == 'sortUiByPrice'){
+                if(sUi.flipVertical)ProductManager.instance.shortProductListBy(ProductManager.SORT_BY_PRICE, ProductManager.DESCENDING);
+                if(!sUi.flipVertical)ProductManager.instance.shortProductListBy(ProductManager.SORT_BY_PRICE, ProductManager.ASCENDING);
+                sUi.flipVertical = !sUi.flipVertical;
+            }
+            if(sUi.id == 'sortUiByQty'){
+                if(sUi.flipVertical)ProductManager.instance.shortProductListBy(ProductManager.SORT_BY_QUANTITY, ProductManager.DESCENDING);
+                if(!sUi.flipVertical)ProductManager.instance.shortProductListBy(ProductManager.SORT_BY_QUANTITY, ProductManager.ASCENDING);
+                sUi.flipVertical = !sUi.flipVertical;
+            }
         }
 
     }

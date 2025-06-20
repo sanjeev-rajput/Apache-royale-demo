@@ -97,6 +97,7 @@ goog.require('views.actionitemviews.searchlist.LstItem');
 goog.require('com.unhurdle.spectrum.colorpicker.AlphaTextField');
 goog.require('com.unhurdle.spectrum.FieldButton');
 goog.require('com.unhurdle.spectrum.colorpicker.ColorTextField');
+goog.require('org.apache.royale.icons.FontAwesomeToggleIcon');
 goog.require('com.unhurdle.spectrum.AccordionContent');
 goog.require('org.apache.royale.svg.elements.Path');
 goog.require('com.unhurdle.spectrum.Accordion');

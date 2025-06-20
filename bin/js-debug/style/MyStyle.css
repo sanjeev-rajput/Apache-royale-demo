@@ -58,7 +58,7 @@
 }
 .toolTip{
   padding: 10px;
-  position: absolute;
+  position: relative;
   width: auto;
   white-space: nowrap;
   word-wrap: no-wrap;
@@ -249,7 +249,17 @@
   padding: 10px;
   cursor: pointer;
 }
+.shoppingCartItem{
+  align-items: center;
+  border: solid 1px lightgray;
+  padding: 10px;
+}
 
+.shoppingProductImg{
+  border: 2px solid #ddd;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 .shopProductLbl{
   padding: 5px;
   font-weight: bold;

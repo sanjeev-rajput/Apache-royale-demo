@@ -14,6 +14,10 @@ package views.actionitemviews.shoppingcart {
         private var _view:Group;
         private var _products:JSON;
         private var pIdx:int = 0;
+        public static const SORT_BY_PRICE:String = "sortbyprice";
+        public static const SORT_BY_QUANTITY:String = "softbyqty";
+        public static const ASCENDING:String = "ascending";
+        public static const DESCENDING:String = "descending";
 
         private function ProductManager() {
           
@@ -31,6 +35,7 @@ package views.actionitemviews.shoppingcart {
             addPid();
             
         }
+
         public function get products():JSON{
             return _products;
         }
@@ -53,8 +58,30 @@ package views.actionitemviews.shoppingcart {
                 p.data = product;
                 p.addEventListener(MouseEvent.CLICK, pClickHandler);
                 _view.addElement(p);
-
             }
+        }
+
+        public function shortProductListBy(sortType:String, sortOrder:String):void {
+            var jsonArr:Array = products as Array;
+            if(sortType == SORT_BY_PRICE){
+                (products as Array).sort(function(a:Object, b:Object):int{
+                    if(sortOrder == ASCENDING) return a.price > b.price ? 1 : (a.price < b.price ? -1 : 0);
+
+                    if(sortOrder == DESCENDING) return a.price < b.price ? 1 : (a.price > b.price ? -1 : 0);
+                })
+            }
+            if(sortType == SORT_BY_QUANTITY){
+                (products as Array).sort(function(a:Object, b:Object):int{
+                    if(sortOrder == ASCENDING)return a.qty-b.qty;
+                    if(sortOrder == DESCENDING)return b.qty-a.qty;
+
+                })
+            }
+            
+            while(_view.numElements > 0) {
+                _view.removeElement(_view.getElementAt(0));
+            }
+            renderProductList(_view)
         }
 
         private function pClickHandler(event:MouseEvent):void {
@@ -77,25 +104,22 @@ package views.actionitemviews.shoppingcart {
             return null;
         }
 
-        public function resetProductToDefault(item:Product):void {
-            if (item) {
-                for each(var value:Object in products){
-                    if(value.id == item.id){
-                        getProductById(item.id).data = value;
-                        break;
-                    }
-                }
-                getProductById(item.id).alpha = 1.0;
-            }
+        public function updateProductViewQty(item:CartItem):void {
+            var updateQty:int = item.qt.max - item.qt.value;
+            getProductById(item.id).qt.text = updateQty.toString();
+            getProductDataById(item.id).qty = updateQty;
+            getProductById(item.id).alpha = 1.0;
         }
 
         public function getProductDataById(id:String):Object {
-            for each (var product:Object in products) {
-                if (product.id == id) {
-                    return product;
-                }
+            var existing:Object = (products as Array).find(function(i:Object, index:int, arr:Array):Boolean {
+                return i.id == id;
+            });
+            if(existing){
+                return existing;
+            }else{
+                return null;
             }
-            return null;
         }
 
     }
