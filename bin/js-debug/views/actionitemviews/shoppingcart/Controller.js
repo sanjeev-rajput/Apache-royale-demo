@@ -50,7 +50,7 @@ views.actionitemviews.shoppingcart.Controller.prototype.views_actionitemviews_sh
   views.actionitemviews.shoppingcart.ProductManager.instance.products = d;
   views.actionitemviews.shoppingcart.ProductManager.instance.renderProductList(this.views_actionitemviews_shoppingcart_Controller__view.productList);
   views.actionitemviews.shoppingcart.CartManager.instance.view = this.views_actionitemviews_shoppingcart_Controller__view.cartArea;
-  views.actionitemviews.shoppingcart.CheckoutManager.instance.priceLbl = this.views_actionitemviews_shoppingcart_Controller__view.totalLabel;
+  views.actionitemviews.shoppingcart.CheckoutManager.instance.view = this.views_actionitemviews_shoppingcart_Controller__view.checkoutArea;
 };
 
 

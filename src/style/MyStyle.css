@@ -290,3 +290,17 @@
   border: solid 1px #aaa;
   border-radius: 5px;
 }
+.collaborativeContainer{
+  padding: 10px;
+  padding-bottom: 50px;
+}
+.chatItem {
+  border: 1px solid #CCC;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  padding: 6px 8px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}

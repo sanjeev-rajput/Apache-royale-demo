@@ -133,7 +133,7 @@ views.actionitemviews.shoppingcart.ShoppingMain = function() {
    * @private
    * @type {org.apache.royale.jewel.Button}
    */
-  this.checkout_;
+  this.btnCheckout_;
   
   /**
    * @private
@@ -290,16 +290,16 @@ Object.defineProperties(views.actionitemviews.shoppingcart.ShoppingMain.prototyp
       }
     }
   },
-  checkout: {
+  btnCheckout: {
     /** @this {views.actionitemviews.shoppingcart.ShoppingMain} */
     get: function() {
-      return this.checkout_;
+      return this.btnCheckout_;
     },
     /** @this {views.actionitemviews.shoppingcart.ShoppingMain} */
     set: function(value) {
-      if (value != this.checkout_) {
-        this.checkout_ = value;
-        this.dispatchEvent(org.apache.royale.events.ValueChangeEvent.createUpdateEvent(this, 'checkout', null, value));
+      if (value != this.btnCheckout_) {
+        this.btnCheckout_ = value;
+        this.dispatchEvent(org.apache.royale.events.ValueChangeEvent.createUpdateEvent(this, 'btnCheckout', null, value));
       }
     }
   },
@@ -600,7 +600,7 @@ Object.defineProperties(views.actionitemviews.shoppingcart.ShoppingMain.prototyp
               2,
               'id',
               true,
-              'checkout',
+              'btnCheckout',
               'text',
               true,
               'Checkout ➡️ ',
@@ -658,7 +658,7 @@ views.actionitemviews.shoppingcart.ShoppingMain.prototype.ROYALE_REFLECTION_INFO
         'cartArea': { type: 'org.apache.royale.jewel.Group', access: 'readwrite', declaredBy: 'views.actionitemviews.shoppingcart.ShoppingMain'},
         'clist': { type: 'org.apache.royale.jewel.beads.layouts.TileHorizontalLayout', access: 'readwrite', declaredBy: 'views.actionitemviews.shoppingcart.ShoppingMain'},
         'checkoutArea': { type: 'org.apache.royale.jewel.HGroup', access: 'readwrite', declaredBy: 'views.actionitemviews.shoppingcart.ShoppingMain'},
-        'checkout': { type: 'org.apache.royale.jewel.Button', access: 'readwrite', declaredBy: 'views.actionitemviews.shoppingcart.ShoppingMain'},
+        'btnCheckout': { type: 'org.apache.royale.jewel.Button', access: 'readwrite', declaredBy: 'views.actionitemviews.shoppingcart.ShoppingMain'},
         'totalLabel': { type: 'org.apache.royale.jewel.Label', access: 'readwrite', declaredBy: 'views.actionitemviews.shoppingcart.ShoppingMain'}
       };
     },

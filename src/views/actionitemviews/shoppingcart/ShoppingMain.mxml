@@ -51,7 +51,7 @@
                     </j:beads>
                 </j:Group>
                 <j:HGroup id="checkoutArea" itemsVerticalAlign="itemsCenter" width="100%" itemsHorizontalAlign="itemsSpaceBetween">
-                    <j:Button id="checkout" text="Checkout ➡️ " />
+                    <j:Button id="btnCheckout" text="Checkout ➡️ "/>
                     <j:Label id="totalLabel" text="Total: $0.00" className="shopProductLbl"/>
                 </j:HGroup>
             </j:VGroup>

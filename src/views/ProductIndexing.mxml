@@ -22,6 +22,7 @@
             import views.actionitemviews.websocket.WikiSocketMain;
             import views.actionitemviews.ai.AiMain;
             import views.actionitemviews.shoppingcart.ShoppingMain;
+            import views.actionitemviews.collaboration.CollaborationMain;
             private var mgmtObj:Array = new Array();
                         
             private function initComplete():void {
@@ -62,6 +63,11 @@
                 var uiComp:Group;
                 if(compName == 'Basic Drawing'){
                     uiComp = new BasicDrawingMain();
+                    vg.addElement(uiComp);
+                    return;
+                }
+                if(compName == 'Collaborative Drawing'){
+                    uiComp = new CollaborationMain();
                     vg.addElement(uiComp);
                     return;
                 }

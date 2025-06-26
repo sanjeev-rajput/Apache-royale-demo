@@ -21,7 +21,8 @@
 
             private function switchEventHandler():void {
                 if(switchBtn.checked) {
-                    _socketService.connectWebSocket()
+                    _socketService.connectWebSocket(SocketService.SUBSCRIBE_WIKI)
+                    
                 } else {
                     _socketService.disconnectWebSocket();
                 }
@@ -37,7 +38,6 @@
                 if(ctr.numElements > _maxItems) {
                     ctr.removeElement(ctr.getElementAt(ctr.numElements - 1));
                 }
-                trace(scrollViewport.contentView.height)
             }
 
         ]]>

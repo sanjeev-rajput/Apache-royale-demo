@@ -25,7 +25,7 @@ package views.actionitemviews.shoppingcart {
             ProductManager.instance.products = d;
             ProductManager.instance.renderProductList(_view.productList);
             CartManager.instance.view = _view.cartArea;
-            CheckoutManager.instance.priceLbl = _view.totalLabel;
+            CheckoutManager.instance.view = _view.checkoutArea;
         }
 
         private function errorHandler():void {

@@ -363,6 +363,10 @@ textarea {
 }
 
 
+.DataContainer {
+}
+
+
 hr {
         border: 0;
         height: 1px;
@@ -1360,6 +1364,10 @@ hr {
 }
 
 
+.ListItemRenderer {
+}
+
+
 .jewel.label {
         -webkit-font-smoothing: antialiased;
         cursor: default;
@@ -2216,6 +2224,10 @@ hr {
 
 .jewel.navigation.horizontalScroll .jewel.item {
         overflow: initial;
+}
+
+
+.List {
 }
 
 

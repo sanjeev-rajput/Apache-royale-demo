@@ -48,6 +48,29 @@ views.actionitemviews.websocket.SocketService.prototype.views_actionitemviews_we
 
 
 /**
+ * @nocollapse
+ * @const
+ * @type {string}
+ */
+views.actionitemviews.websocket.SocketService.SUBSCRIBE_WIKI = "subscribe_wiki";
+
+
+/**
+ * @nocollapse
+ * @const
+ * @type {string}
+ */
+views.actionitemviews.websocket.SocketService.SUBSCRIBE_COLLABARATION = "subscribe_collabaration";
+
+
+/**
+ * @private
+ * @type {string}
+ */
+views.actionitemviews.websocket.SocketService.prototype.views_actionitemviews_websocket_SocketService__subscribeType = null;
+
+
+/**
  * @param {Function} callBackFunction
  */
 views.actionitemviews.websocket.SocketService.prototype.addCAllBackFunction = function(callBackFunction) {
@@ -56,8 +79,10 @@ views.actionitemviews.websocket.SocketService.prototype.addCAllBackFunction = fu
 
 
 /**
+ * @param {string} type
  */
-views.actionitemviews.websocket.SocketService.prototype.connectWebSocket = function() {
+views.actionitemviews.websocket.SocketService.prototype.connectWebSocket = function(type) {
+  this.views_actionitemviews_websocket_SocketService__subscribeType = type;
   if (this.views_actionitemviews_websocket_SocketService__callBackFunction == null) {
     console.error("CallBack function is not set");
     return;
@@ -82,7 +107,19 @@ views.actionitemviews.websocket.SocketService.prototype.disconnectWebSocket = fu
  */
 views.actionitemviews.websocket.SocketService.prototype.views_actionitemviews_websocket_SocketService_connectionOpenEvtHandler = function() {
   console.log('Connected to the WebSocket server');
-  this.views_actionitemviews_websocket_SocketService_ws.send('Hello Server!');
+  this.views_actionitemviews_websocket_SocketService__isConnected = true;
+  this.views_actionitemviews_websocket_SocketService_subscribeWs();
+};
+
+
+/**
+ * @private
+ */
+views.actionitemviews.websocket.SocketService.prototype.views_actionitemviews_websocket_SocketService_subscribeWs = function() {
+  if (this.views_actionitemviews_websocket_SocketService__subscribeType == views.actionitemviews.websocket.SocketService.SUBSCRIBE_WIKI)
+    this.views_actionitemviews_websocket_SocketService_ws.send(JSON.stringify({type:this.views_actionitemviews_websocket_SocketService__subscribeType}));
+  if (this.views_actionitemviews_websocket_SocketService__subscribeType == views.actionitemviews.websocket.SocketService.SUBSCRIBE_COLLABARATION)
+    this.views_actionitemviews_websocket_SocketService_ws.send(JSON.stringify({type:this.views_actionitemviews_websocket_SocketService__subscribeType, shape:'rect'}));
 };
 
 
@@ -92,7 +129,6 @@ views.actionitemviews.websocket.SocketService.prototype.views_actionitemviews_we
  */
 views.actionitemviews.websocket.SocketService.prototype.views_actionitemviews_websocket_SocketService_connectionMessageEvtHandler = function(e) {
   var /** @type {Object} */ data = JSON.parse(org.apache.royale.utils.Language.string(e.data));
-  console.log("Message from server:", data);
   this.views_actionitemviews_websocket_SocketService__callBackFunction(data);
 };
 
@@ -101,6 +137,7 @@ views.actionitemviews.websocket.SocketService.prototype.views_actionitemviews_we
  * @private
  */
 views.actionitemviews.websocket.SocketService.prototype.views_actionitemviews_websocket_SocketService_connectionCloseEvtHandler = function() {
+  this.views_actionitemviews_websocket_SocketService__isConnected = false;
   console.log('Disconnected from the WebSocket server');
 };
 
@@ -115,11 +152,33 @@ views.actionitemviews.websocket.SocketService.prototype.views_actionitemviews_we
 
 
 /**
- * @private
- * @param {MouseEvent} event
+ * @param {Object} obj
  */
-views.actionitemviews.websocket.SocketService.prototype.views_actionitemviews_websocket_SocketService_onSend = function(event) {
+views.actionitemviews.websocket.SocketService.prototype.sendToSocket = function(obj) {
+  this.views_actionitemviews_websocket_SocketService_ws.send(JSON.stringify(obj));
 };
+
+
+/**
+ * @nocollapse
+ * @export
+ * @type {boolean}
+ */
+views.actionitemviews.websocket.SocketService.prototype.connected;
+
+
+views.actionitemviews.websocket.SocketService.prototype.get__connected = function() {
+  return this.views_actionitemviews_websocket_SocketService__isConnected;
+};
+
+
+Object.defineProperties(views.actionitemviews.websocket.SocketService.prototype, /** @lends {views.actionitemviews.websocket.SocketService.prototype} */ {
+/**
+ * @type {boolean}
+ */
+connected: {
+get: views.actionitemviews.websocket.SocketService.prototype.get__connected}}
+);
 
 
 /**
@@ -138,12 +197,18 @@ views.actionitemviews.websocket.SocketService.prototype.ROYALE_CLASS_INFO = { na
  */
 views.actionitemviews.websocket.SocketService.prototype.ROYALE_REFLECTION_INFO = function () {
   return {
+    accessors: function () {
+      return {
+        'connected': { type: 'Boolean', access: 'readonly', declaredBy: 'views.actionitemviews.websocket.SocketService'}
+      };
+    },
     methods: function () {
       return {
         'SocketService': { type: 'void', declaredBy: 'views.actionitemviews.websocket.SocketService'},
         'addCAllBackFunction': { type: 'void', declaredBy: 'views.actionitemviews.websocket.SocketService', parameters: function () { return [ 'Function', false ]; }},
-        'connectWebSocket': { type: 'void', declaredBy: 'views.actionitemviews.websocket.SocketService'},
-        'disconnectWebSocket': { type: 'void', declaredBy: 'views.actionitemviews.websocket.SocketService'}
+        'connectWebSocket': { type: 'void', declaredBy: 'views.actionitemviews.websocket.SocketService', parameters: function () { return [ 'String', false ]; }},
+        'disconnectWebSocket': { type: 'void', declaredBy: 'views.actionitemviews.websocket.SocketService'},
+        'sendToSocket': { type: 'void', declaredBy: 'views.actionitemviews.websocket.SocketService', parameters: function () { return [ 'Object', false ]; }}
       };
     }
   };
@@ -153,3 +218,9 @@ views.actionitemviews.websocket.SocketService.prototype.ROYALE_REFLECTION_INFO =
  * @type {number}
  */
 views.actionitemviews.websocket.SocketService.prototype.ROYALE_COMPILE_FLAGS = 9;
+/**
+ * Provide reflection support for distinguishing dynamic fields on class object (static)
+ * @const
+ * @type {Array<string>}
+ */
+views.actionitemviews.websocket.SocketService.prototype.ROYALE_INITIAL_STATICS = Object.keys(views.actionitemviews.websocket.SocketService);

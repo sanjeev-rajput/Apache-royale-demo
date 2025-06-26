@@ -43,6 +43,12 @@
       "addx":"NA"
     },
     {
+      "label": "Collaborative Drawing",
+      "type": "extui",
+      "url": "na",
+      "addx":"NA"
+    },
+    {
       "label": "Basic Drawing",
       "type": "extui",
       "url": "na",

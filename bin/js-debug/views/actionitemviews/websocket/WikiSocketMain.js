@@ -109,7 +109,7 @@ views.actionitemviews.websocket.WikiSocketMain.prototype.views_actionitemviews_w
  */
 views.actionitemviews.websocket.WikiSocketMain.prototype.views_actionitemviews_websocket_WikiSocketMain_switchEventHandler = function() {
   if (this.switchBtn.checked) {
-    this.views_actionitemviews_websocket_WikiSocketMain__socketService.connectWebSocket();
+    this.views_actionitemviews_websocket_WikiSocketMain__socketService.connectWebSocket(views.actionitemviews.websocket.SocketService.SUBSCRIBE_WIKI);
   } else {
     this.views_actionitemviews_websocket_WikiSocketMain__socketService.disconnectWebSocket();
   }
@@ -129,7 +129,6 @@ views.actionitemviews.websocket.WikiSocketMain.prototype.views_actionitemviews_w
   if (this.ctr.numElements > this.views_actionitemviews_websocket_WikiSocketMain__maxItems) {
     this.ctr.removeElement(this.ctr.getElementAt((this.ctr.numElements - 1) >> 0));
   }
-  org.apache.royale.utils.Language.trace(this.scrollViewport.contentView.height);
 };
 
 

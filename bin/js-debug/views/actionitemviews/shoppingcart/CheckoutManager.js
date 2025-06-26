@@ -8,7 +8,7 @@
  */
 
 goog.provide('views.actionitemviews.shoppingcart.CheckoutManager');
-/* Royale Dependency List: org.apache.royale.jewel.Label,views.actionitemviews.shoppingcart.CartManager,XML*/
+/* Royale Dependency List: org.apache.royale.jewel.Button,org.apache.royale.jewel.Group,org.apache.royale.jewel.Label,org.apache.royale.jewel.beads.controls.Disabled,views.actionitemviews.shoppingcart.CartManager,org.apache.royale.utils.Language,XML*/
 
 
 
@@ -32,9 +32,23 @@ views.actionitemviews.shoppingcart.CheckoutManager._instance = null;
 
 /**
  * @private
+ * @type {org.apache.royale.jewel.Group}
+ */
+views.actionitemviews.shoppingcart.CheckoutManager.prototype.views_actionitemviews_shoppingcart_CheckoutManager__view = null;
+
+
+/**
+ * @private
  * @type {org.apache.royale.jewel.Label}
  */
 views.actionitemviews.shoppingcart.CheckoutManager.prototype.views_actionitemviews_shoppingcart_CheckoutManager__priceLbl = null;
+
+
+/**
+ * @private
+ * @type {org.apache.royale.jewel.Button}
+ */
+views.actionitemviews.shoppingcart.CheckoutManager.prototype.views_actionitemviews_shoppingcart_CheckoutManager__btnChkout = null;
 
 
 /**
@@ -50,6 +64,8 @@ views.actionitemviews.shoppingcart.CheckoutManager.prototype.updaPriceTotal = fu
   }}
   
   this.views_actionitemviews_shoppingcart_CheckoutManager__priceLbl.html = "Total: $" + totalPrice.toFixed(2);
+  var /** @type {org.apache.royale.jewel.beads.controls.Disabled} */ db = org.apache.royale.utils.Language.as(this.views_actionitemviews_shoppingcart_CheckoutManager__btnChkout.getBeadByType(org.apache.royale.jewel.beads.controls.Disabled), org.apache.royale.jewel.beads.controls.Disabled, true);
+  totalPrice == 0 ? db.disabled = true : db.disabled = false;
 };
 
 
@@ -62,22 +78,31 @@ views.actionitemviews.shoppingcart.CheckoutManager.prototype.checkout = function
 /**
  * @nocollapse
  * @export
- * @type {org.apache.royale.jewel.Label}
+ * @type {org.apache.royale.jewel.Group}
  */
-views.actionitemviews.shoppingcart.CheckoutManager.prototype.priceLbl;
+views.actionitemviews.shoppingcart.CheckoutManager.prototype.view;
 
 
-views.actionitemviews.shoppingcart.CheckoutManager.prototype.set__priceLbl = function(v) {
-  this.views_actionitemviews_shoppingcart_CheckoutManager__priceLbl = v;
+views.actionitemviews.shoppingcart.CheckoutManager.prototype.set__view = function(v) {
+  this.views_actionitemviews_shoppingcart_CheckoutManager__view = v;
+  for (var /** @type {number} */ i = 0; i <= this.views_actionitemviews_shoppingcart_CheckoutManager__view.numElements - 1; i++) {
+    if (this.views_actionitemviews_shoppingcart_CheckoutManager__view.getElementAt(i).element.id == "totalLabel")
+      this.views_actionitemviews_shoppingcart_CheckoutManager__priceLbl = this.views_actionitemviews_shoppingcart_CheckoutManager__view.getElementAt(i);
+    if (this.views_actionitemviews_shoppingcart_CheckoutManager__view.getElementAt(i).element.id == "btnCheckout")
+      this.views_actionitemviews_shoppingcart_CheckoutManager__btnChkout = this.views_actionitemviews_shoppingcart_CheckoutManager__view.getElementAt(i);
+    var /** @type {org.apache.royale.jewel.beads.controls.Disabled} */ db = new org.apache.royale.jewel.beads.controls.Disabled();
+    this.views_actionitemviews_shoppingcart_CheckoutManager__btnChkout.addBead(db);
+    db.disabled = true;
+  }
 };
 
 
 Object.defineProperties(views.actionitemviews.shoppingcart.CheckoutManager.prototype, /** @lends {views.actionitemviews.shoppingcart.CheckoutManager.prototype} */ {
 /**
- * @type {org.apache.royale.jewel.Label}
+ * @type {org.apache.royale.jewel.Group}
  */
-priceLbl: {
-set: views.actionitemviews.shoppingcart.CheckoutManager.prototype.set__priceLbl}}
+view: {
+set: views.actionitemviews.shoppingcart.CheckoutManager.prototype.set__view}}
 );
 
 
@@ -125,7 +150,7 @@ views.actionitemviews.shoppingcart.CheckoutManager.prototype.ROYALE_REFLECTION_I
     accessors: function () {
       return {
         '|instance': { type: 'views.actionitemviews.shoppingcart.CheckoutManager', access: 'readonly', declaredBy: 'views.actionitemviews.shoppingcart.CheckoutManager'},
-        'priceLbl': { type: 'org.apache.royale.jewel.Label', access: 'writeonly', declaredBy: 'views.actionitemviews.shoppingcart.CheckoutManager'}
+        'view': { type: 'org.apache.royale.jewel.Group', access: 'writeonly', declaredBy: 'views.actionitemviews.shoppingcart.CheckoutManager'}
       };
     },
     methods: function () {
