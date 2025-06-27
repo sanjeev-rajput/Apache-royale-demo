@@ -70,5 +70,5 @@
             <j:List id="userList" width="100%" height="100%" />
         </j:VGroup>
     </j:HGroup>
-    <sp:TextField id="input" width="100%" onEnter="onInputChange()"/>    
+    <sp:TextField id="input" width="80%" onEnter="onInputChange()"/>    
 </j:VGroup>

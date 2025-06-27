@@ -38,6 +38,7 @@
                 if(ctr.numElements > _maxItems) {
                     ctr.removeElement(ctr.getElementAt(ctr.numElements - 1));
                 }
+                ctr.element.scrollTop = ctr.element.scrollHeight; // Auto-scroll to the bottom
             }
 
         ]]>

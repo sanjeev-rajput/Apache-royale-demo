@@ -10,13 +10,13 @@
 goog.provide('views.actionitemviews.collaboration.MessageItem');
 /* Royale Dependency List: org.apache.royale.jewel.Label,org.apache.royale.events.Event,XML*/
 
-goog.require('org.apache.royale.jewel.VGroup');
+goog.require('org.apache.royale.jewel.HGroup');
 
 
 
 /**
  * @constructor
- * @extends {org.apache.royale.jewel.VGroup}
+ * @extends {org.apache.royale.jewel.HGroup}
  */
 views.actionitemviews.collaboration.MessageItem = function() {
   views.actionitemviews.collaboration.MessageItem.base(this, 'constructor');
@@ -46,7 +46,10 @@ views.actionitemviews.collaboration.MessageItem = function() {
   this.mxmldp;
 
   this.generateMXMLAttributes([
-    0,
+    1,
+    'itemsVerticalAlign',
+    true,
+    'itemsCenter',
     0,
     1,
     'initComplete',
@@ -54,7 +57,7 @@ views.actionitemviews.collaboration.MessageItem = function() {
   ]);
   
 };
-goog.inherits(views.actionitemviews.collaboration.MessageItem, org.apache.royale.jewel.VGroup);
+goog.inherits(views.actionitemviews.collaboration.MessageItem, org.apache.royale.jewel.HGroup);
 
 
 
@@ -116,11 +119,12 @@ views.actionitemviews.collaboration.MessageItem.prototype.setData = function(id,
 views.actionitemviews.collaboration.MessageItem.prototype.views_actionitemviews_collaboration_MessageItem_initUi = function() {
   if (this.views_actionitemviews_collaboration_MessageItem__userId && this.views_actionitemviews_collaboration_MessageItem__message && this.views_actionitemviews_collaboration_MessageItem__isinitialized) {
     if (this.views_actionitemviews_collaboration_MessageItem__isMe) {
-      this.uMsg.element.classList.add("chatItem");
+      this.uMsg.element.classList.add("chatBoxMe", "arrowMe");
+      this.views_actionitemviews_collaboration_MessageItem__userId = "<b>You</b>";
     } else {
-      this.uMsg.element.classList.remove("chatItem");
+      this.uMsg.element.classList.add("chatBox", "arrow");
     }
-    this.uId.text = this.views_actionitemviews_collaboration_MessageItem__userId;
+    this.uId.html = "<b>" + this.views_actionitemviews_collaboration_MessageItem__userId + "</b>";
     this.uMsg.text = this.views_actionitemviews_collaboration_MessageItem__message;
   }
 };
@@ -203,10 +207,13 @@ Object.defineProperties(views.actionitemviews.collaboration.MessageItem.prototyp
           0,
           null,
           org.apache.royale.jewel.Label,
-          1,
+          2,
           'id',
           true,
           'uMsg',
+          'multiline',
+          true,
+          true,
           0,
           0,
           null

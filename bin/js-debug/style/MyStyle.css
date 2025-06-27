@@ -291,16 +291,40 @@
   border-radius: 5px;
 }
 .collaborativeContainer{
-  padding: 10px;
-  padding-bottom: 50px;
+  padding: auto;
+  padding-bottom: 100px;
 }
-.chatItem {
-  border: 1px solid #CCC;
-  background-color: #ffffff;
-  border: 1px solid #000000;
-  padding: 6px 8px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -o-border-radius: 5px;
+.chatBox, .chatBoxMe  {
+  width: auto;
+  height: auto;
+  background-color: lightblue;
+  color: black;
+  padding: 20px;
+  position: relative;
+  margin: 40px;
+}
+.chatBox.arrow:after, .chatBoxMe.arrowMe:after {
+  content: "";
+  position: absolute;
+  left: -14px;
+  top: 15px;
+  border-top: 15px solid transparent;
+  border-right: 15px solid lightblue;
+  border-left: none;
+  border-bottom: 15px solid transparent;
   border-radius: 5px;
+}
+.chatBoxMe {
+  background-color: lightslategray;
+  color: white;
+}
+.chatBoxMe.arrowMe:after {
+  border-right: 15px solid lightslategray;
+}
+@media only screen and (min-width:240px) and (max-width: 768px){
+    .chatBoxMe, .chatBox {
+        display: block;
+        float: none;
+        margin: 40px auto;
+    }
 }

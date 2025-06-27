@@ -129,6 +129,7 @@ views.actionitemviews.websocket.WikiSocketMain.prototype.views_actionitemviews_w
   if (this.ctr.numElements > this.views_actionitemviews_websocket_WikiSocketMain__maxItems) {
     this.ctr.removeElement(this.ctr.getElementAt((this.ctr.numElements - 1) >> 0));
   }
+  this.ctr.element.scrollTop = this.ctr.element.scrollHeight;
 };
 
 

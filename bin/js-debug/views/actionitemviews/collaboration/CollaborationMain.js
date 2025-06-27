@@ -328,7 +328,7 @@ Object.defineProperties(views.actionitemviews.collaboration.CollaborationMain.pr
           'input',
           'percentWidth',
           true,
-          100.0,
+          80.0,
           0,
           1,
           'onEnter',
