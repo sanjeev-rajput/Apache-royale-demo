@@ -131,17 +131,11 @@ views.actionitemviews.basicdrawing.BasicDrawingMain.prototype.views_actionitemvi
 };
 
 
-;
-
-
-;
-
-
 /**
  * @private
  */
 views.actionitemviews.basicdrawing.BasicDrawingMain.prototype.views_actionitemviews_basicdrawing_BasicDrawingMain_clrPkrEventHandler = function() {
-  this.views_actionitemviews_basicdrawing_BasicDrawingMain_currentColor = this.clrPkr.appliedColor.hexString;
+  this.views_actionitemviews_basicdrawing_BasicDrawingMain_drawingmanager.color = this.clrPkr.appliedColor.hexString;
 };
 
 
@@ -158,7 +152,7 @@ views.actionitemviews.basicdrawing.BasicDrawingMain.prototype.views_actionitemvi
  */
 views.actionitemviews.basicdrawing.BasicDrawingMain.prototype.views_actionitemviews_basicdrawing_BasicDrawingMain_listEventChangeHandler = function() {
   var /** @type {com.unhurdle.spectrum.data.MenuItem} */ mItem = this.cbList.selectedItem;
-  this.views_actionitemviews_basicdrawing_BasicDrawingMain_currentShape = mItem.label;
+  this.views_actionitemviews_basicdrawing_BasicDrawingMain_drawingmanager.shapeType = mItem.label;
   this.drawAndMoveBtn.checked = true;
   this.views_actionitemviews_basicdrawing_BasicDrawingMain_drawingmanager.drawingMode = views.actionitemviews.basicdrawing.DrawingManager.DRAW;
 };
@@ -184,43 +178,7 @@ views.actionitemviews.basicdrawing.BasicDrawingMain.prototype.views_actionitemvi
 };
 
 
-
-
-
 /**
- * @type {string}
- */
-views.actionitemviews.basicdrawing.BasicDrawingMain.prototype.views_actionitemviews_basicdrawing_BasicDrawingMain_currentColor;
-
-
-views.actionitemviews.basicdrawing.BasicDrawingMain.prototype.set__views_actionitemviews_basicdrawing_BasicDrawingMain_currentColor = function(value) {
-  this.views_actionitemviews_basicdrawing_BasicDrawingMain_drawingmanager.color = value;
-};
-
-
-/**
- * @type {string}
- */
-views.actionitemviews.basicdrawing.BasicDrawingMain.prototype.views_actionitemviews_basicdrawing_BasicDrawingMain_currentShape;
-
-
-views.actionitemviews.basicdrawing.BasicDrawingMain.prototype.set__views_actionitemviews_basicdrawing_BasicDrawingMain_currentShape = function(value) {
-  this.views_actionitemviews_basicdrawing_BasicDrawingMain_drawingmanager.shapeType = value;
-};
-
-
-Object.defineProperties(views.actionitemviews.basicdrawing.BasicDrawingMain.prototype, /** @lends {views.actionitemviews.basicdrawing.BasicDrawingMain.prototype} */ {
-/**
- * @type {string}
- */
-views_actionitemviews_basicdrawing_BasicDrawingMain_currentColor: {
-set: views.actionitemviews.basicdrawing.BasicDrawingMain.prototype.set__views_actionitemviews_basicdrawing_BasicDrawingMain_currentColor},
-/**
- * @type {string}
- */
-views_actionitemviews_basicdrawing_BasicDrawingMain_currentShape: {
-set: views.actionitemviews.basicdrawing.BasicDrawingMain.prototype.set__views_actionitemviews_basicdrawing_BasicDrawingMain_currentShape}}
-);/**
  * @export
  * @param {org.apache.royale.events.Event} event
  */

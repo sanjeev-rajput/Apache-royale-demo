@@ -26,17 +26,16 @@ package views.actionitemviews.basicdrawing {
         private var lastMouseY:Number;
         private var shapes:Array = [];
         private var selectionRect:Rect;
-
-
-        
+        private var temp:DrawingManager = null;
 
         public function DrawingManager(host:Container):void {
             container = host;
             initCanvas();
         }
-
+        
         public function set shapeType(value:String):void {
             currentShapeType = value;
+            console.log("Shape type set to: " + currentShapeType);
         }
 
         public function set color(value:String):void {

@@ -21,15 +21,8 @@
                 drawingmanager.drawingMode = DrawingManager.DRAW;
             }
 
-            private function set currentColor(value:String):void{
-                drawingmanager.color = value;
-            }
-            private function set currentShape(value:String):void{
-                drawingmanager.shapeType = value;
-            }
-
             private function clrPkrEventHandler():void{
-                currentColor = clrPkr.appliedColor.hexString;
+                drawingmanager.color=clrPkr.appliedColor.hexString;
             }
 
             private function clrBtnEventHandler():void{
@@ -37,7 +30,7 @@
             }
             private function listEventChangeHandler():void{
                 var mItem:MenuItem = cbList.selectedItem as MenuItem;
-                currentShape = mItem.label;
+                drawingmanager.shapeType = mItem.label;
                 drawAndMoveBtn.checked = true;
                 drawingmanager.drawingMode = DrawingManager.DRAW;
             }

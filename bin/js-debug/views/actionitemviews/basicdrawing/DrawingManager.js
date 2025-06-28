@@ -139,6 +139,13 @@ views.actionitemviews.basicdrawing.DrawingManager.prototype.views_actionitemview
 
 
 /**
+ * @private
+ * @type {views.actionitemviews.basicdrawing.DrawingManager}
+ */
+views.actionitemviews.basicdrawing.DrawingManager.prototype.views_actionitemviews_basicdrawing_DrawingManager_temp = null;
+
+
+/**
  */
 views.actionitemviews.basicdrawing.DrawingManager.prototype.initCanvas = function() {
   if (this.views_actionitemviews_basicdrawing_DrawingManager_svgCanvas)
@@ -344,6 +351,7 @@ views.actionitemviews.basicdrawing.DrawingManager.prototype.shapeType;
 
 views.actionitemviews.basicdrawing.DrawingManager.prototype.set__shapeType = function(value) {
   this.views_actionitemviews_basicdrawing_DrawingManager_currentShapeType = value;
+  console.log("Shape type set to: " + this.views_actionitemviews_basicdrawing_DrawingManager_currentShapeType);
 };
 
 
