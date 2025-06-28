@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"IItemRendererOwnerView.js",
+"lineCount":66,
+"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Core/src/main/royale",
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;kFAgD0BA,CAAC,QAAsB,EAAE,aAAqB,C;;;;;;oFAC5CC,CAAC,QAAsB,EAAE,KAAS,C;;;;;qFACjCC,CAAC,QAAsB,C;;;;;;0FAClBC,CAAC,KAAS,C;;;;;;oFACVC,CAAC,KAAS,C;;yFACXC,CAAC,C;;yFACDC,CAAAA;",
+"sources":["org/apache/royale/core/IItemRendererOwnerView.as"],
+"names":["addItemRenderer","addItemRendererAt","removeItemRenderer","getItemRendererForIndex","getItemRendererAt","removeAllItemRenderers","updateAllItemRenderers"]
+}

@@ -129,7 +129,7 @@ views.actionitemviews.shoppingcart.Product.prototype.views_actionitemviews_shopp
  */
 views.actionitemviews.shoppingcart.Product.prototype.views_actionitemviews_shoppingcart_Product_init = function() {
   var self = this;
-  if (!this.views_actionitemviews_shoppingcart_Product__data)
+  if (this.views_actionitemviews_shoppingcart_Product__data == null)
     return;
   this.views_actionitemviews_shoppingcart_Product__initialized = true;
   this.name.text = org.apache.royale.utils.Language.string(this.views_actionitemviews_shoppingcart_Product__data.title);
@@ -471,3 +471,7 @@ views.actionitemviews.shoppingcart.Product.prototype.ROYALE_REFLECTION_INFO = fu
  * @type {number}
  */
 views.actionitemviews.shoppingcart.Product.prototype.ROYALE_COMPILE_FLAGS = 9;
+
+
+
+//# sourceMappingURL=./Product.js.map

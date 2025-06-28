@@ -291,8 +291,7 @@
   border-radius: 5px;
 }
 .collaborativeContainer{
-  padding: auto;
-  padding-bottom: 100px;
+  padding-bottom: 25px;
 }
 .chatBox, .chatBoxMe  {
   width: auto;

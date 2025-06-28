@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"DataProviderModel.js",
+"lineCount":109,
+"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Jewel/src/main/royale",
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AA6CkB,sDAAhB,WAAiCA,CAAC,C;;;;;;;;;;AAItB,iEAAAC,8DAAe,C;;;;;;;AAef,iEAAAC,oEAAoB,C;;;;;;;AA0BpB,iEAAAC,kEAAkB,GAAG,IAAI,C;;;;;;;;;;;uFA/BXC,CAAC,KAAa,C,CACxC,C;EACC,KAAAH,8DAAO,GAAG,KAAK,C;AAChB,C;;;;;;;;;;;6FAYgCI,CAAC,C,CACjC,C;EACC,OAAO,KAAAH,oEAAa,C;AACrB,C;;;6FAKgCG,CAAC,KAAY,C,CAC7C,C;EACU,IAAI,KAAK,KAAK,KAAAH,oEAAa,C;IAAE,MAAM,C;EAEnC,KAAAA,oEAAa,GAAG,KAAK,C;EAC9B,KAAA,aAAa,CAAC,IAAI,8BAAK,CAAC,qBAAqB,CAAC,CAAC,C;AAChD,C;;;;;;;;;;;2FAY8BI,CAAC,C,CAC/B,C;EACC,OAAO,KAAAH,kEAAW,C;AACnB,C;;;2FAK8BG,CAAC,KAAY,C,CAC3C,C;EACC,IAAI,KAAK,IAAI,KAAAH,kEAAW,EAAE,C;IACzB,KAAAA,kEAAW,GAAG,KAAK,C;IACnB,KAAA,aAAa,CAAC,IAAI,8BAAK,CAAC,mBAAmB,CAAC,CAAC,C;EAC9C,CAAA;",
+"sources":["org/apache/royale/jewel/beads/models/DataProviderModel.as"],
+"names":["DataProviderModel.DataProviderModel","_strand","_dataProvider","_labelField","DataProviderModel.strand","DataProviderModel.dataProvider","DataProviderModel.labelField"]
+}

@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"alreadyRecorded.js",
+"lineCount":37,
+"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Core/src/main/royale",
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;2CAyBI,WAA+BA,CAAC,SAAgB,C,CAChD,C;EACI,IAAY,uBAAR,QAAgB,GAAG,IAAI,C;;EAUxB,IAAI,CAAC,+CAAG,CAAC,GAAG,CAAC,SAAS,CAAC,EAAE,C;IACrB,+CAAG,CAAC,GAAG,CAAC,SAAS,EAAE,IAAI,CAAC,C;IACxB,QAAQ,GAAG,KAAK,C;EACpB,C;EAGH,OAAO,QAAQ,C;AACnB,C;;;;;;;+CASW,GAAG,IAAI,OAAO,CAAA;",
+"sources":["org/apache/royale/debugging/alreadyRecorded.as"],
+"names":["alreadyRecorded"]
+}

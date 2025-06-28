@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"IImage.js",
+"lineCount":26,
+"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Core/src/main/royale",
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;iEAiCyBA,CAAC,kBAAA;",
+"sources":["org/apache/royale/core/IImage.as"],
+"names":["applyImageData"]
+}

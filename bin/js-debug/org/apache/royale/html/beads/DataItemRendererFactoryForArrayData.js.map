@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"DataItemRendererFactoryForArrayData.js",
+"lineCount":74,
+"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Basic/src/main/royale",
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAqEkB,gEAAhB,WAAmDA,CAAC,MAAkB,C,CACtE,C;EADoD,kDAAc,IAAd,C;6FAE7C,M,CAAO,C;AACd,C;;;;;;;;AAEkB,2EAAAC,mEAAQ,C;;;;;;;;;;;;;;;AAYE,2EAAA,yBAA5B,WAAqDC,CAAC,KAAW,C,CACjE,C;EACC,KAAAD,mEAAE,GAAG,KAAA,iBAAiB,CAAC,YAAqB,C;sHAEH,K,EAAM,C;AAC1C,C;;;;;;;AAO4B,2EAAA,SAA5B,WAAqCE,CAAC,CAAK,C,CAC3C,C;EACI,OAAO,KAAAF,mEAAE,CAAC,CAAC,CAAC,C;AAChB,C;;;6GARkDG,CAAC,C,CACnD,C;EACI,O,CAAO,KAAAH,mEAAE,CAAC,M,MAAM,CAAA;",
+"sources":["org/apache/royale/html/beads/DataItemRendererFactoryForArrayData.as"],
+"names":["DataItemRendererFactoryForArrayData.DataItemRendererFactoryForArrayData","dp","DataItemRendererFactoryForArrayData.dataProviderChangeHandler","DataItemRendererFactoryForArrayData.getItemAt","DataItemRendererFactoryForArrayData.dataProviderLength"]
+}

@@ -295,3 +295,5 @@ views.actionitemviews.toc.TocAndPgnation.prototype.ROYALE_COMPILE_FLAGS = 9;
  * @type {Array<string>}
  */
 views.actionitemviews.toc.TocAndPgnation.prototype.ROYALE_INITIAL_STATICS = Object.keys(views.actionitemviews.toc.TocAndPgnation);
+
+//# sourceMappingURL=./TocAndPgnation.js.map

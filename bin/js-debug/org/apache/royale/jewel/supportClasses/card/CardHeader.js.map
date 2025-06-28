@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"CardHeader.js",
+"lineCount":29,
+"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Jewel/src/main/royale",
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;AA4CkB,sDAAhB,WAA0BA,CAAC,C,CAC3B,C;kFACQ,C;EAEP,KAAA,SAAS,GAAG,aAAa,CAAA;",
+"sources":["org/apache/royale/jewel/supportClasses/card/CardHeader.as"],
+"names":["CardHeader.CardHeader"]
+}

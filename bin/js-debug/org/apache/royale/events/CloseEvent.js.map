@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"CloseEvent.js",
+"lineCount":46,
+"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Core/src/main/royale",
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;AAkCkB,mCAAhB,WAA0BA,CAAC,IAAW,EAAE,OAAqB,EAAE,UAAwB,EACtD,MADiH,C,CAElJ,C;EAFwC,qDAAgB,KAAhB,C;EAAuB,8DAAmB,KAAnB,C;EAC9B,kDAAc,QAAd,C;gEAE1B,I,EAAM,O,EAAS,U,CAAW,C;EAEhC,IAAI,CAAC,MAAM,GAAG,MAAM,C;AACrB,C;;;;;;;;;AARoB,oCAAA,KAAY,GAAG,OAAO,C;;;;;;AAuB/B,8CAAA,MAAA;",
+"sources":["org/apache/royale/events/CloseEvent.as"],
+"names":["CloseEvent.CloseEvent"]
+}

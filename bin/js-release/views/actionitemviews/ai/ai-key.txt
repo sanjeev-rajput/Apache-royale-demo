@@ -1,0 +1,27 @@
+https://openrouter.ai/settings/keys
+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
+
+model-mistralai/mistral-medium-3
+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
+
+model-google/gemini-2.5-pro-preview
+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
+
+key from google AI studio model-google/gemini-2.5-pro-preview
+AIzaSyBQ6xUZ9dku-ysKnUzMAalqC3wLJyAsW7g
+
+
+huggingface
+pwd - Skr@8480
+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
+
+
+
+https://www.pexels.com/api/key/
+dSk7faqBdAhgumubOzfM5fXeJ5jmXYCYivPxeL4k37Lg7jJglLxJpuY8
+
+
+https://mediastack.com/dashboard
+u - yilalem406@jio1.com
+pw- Sanjeev@123
+kwy-e2145f82a5e6b7e89541e408e2478547

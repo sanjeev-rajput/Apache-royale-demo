@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"IndexedItemRendererInitializer.js",
+"lineCount":70,
+"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Jewel/src/main/royale",
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;AA8CkB,0EAAhB,WAA8CA,CAAC,C;;;;;;;;;;;;;;;;AAYnB,qFAAA,2BAA5B,WAAuDC,CAAC,EAAuB,C,CACzE,C;EACL,KAAA,WAAW,CAAC,EAAE,CAAC,C;AAChB,C;;;;;;;;;;AAQgB,qFAAA,WAAhB,WAA2BC,CAAC,EAAU,C,CAAO,C;EAC5C,IAAY,6DAAR,QAAiB,GAA4C,oCAAzC,oCAAa,EAAb,EAAA,mCAAA,OAAgB,CAAC,aAAa,CAAC,sCAAS,CAAC,EAAI,6CAAJ,CAAY,C;EAE7E,IAAG,CAAC,QAAQ,EACZ,C;IACC,QAAQ,GAAG,IAAI,6CAAQ,CAAC,CAAC,C;IACzB,QAAQ,CAAC,OAAO,GAAG,2EAAA,eAAe,C;IAClC,EAAE,CAAC,OAAO,CAAC,QAAQ,CAAC,C;EACrB,C;AACD,C;;;;;;;;AAEoB,2EAAA,eAAsB,GAAG,CAAA;",
+"sources":["org/apache/royale/jewel/beads/itemRenderers/IndexedItemRendererInitializer.as"],
+"names":["IndexedItemRendererInitializer.IndexedItemRendererInitializer","IndexedItemRendererInitializer.setupVisualsForItemRenderer","IndexedItemRendererInitializer.setPaddings"]
+}

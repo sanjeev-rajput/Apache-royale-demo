@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"EdgeData.js",
+"lineCount":118,
+"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Core/src/main/royale",
+"mappings":"A;;;;;;;;;;;;;;;;;AAiCqB,sCAAhB,WAAwBA,CAAC,C;;;;;;;;AAIhB,iDAAAC,4CAAY,C;;;;;;;AACN,iDAAAC,2CAAW,C;;;;;;;AACX,iDAAAC,6CAAa,C;;;;;;;AACb,iDAAAC,8CAAc,C;;;;;;;;;;;qEAERC,CAAC,C,CACzB,C;EACC,OAAO,KAAAJ,4CAAK,C;AACb,C;;;qEACwBI,CAAC,KAAY,C,CACrC,C;EACU,KAAAJ,4CAAK,GAAG,KAAK,C;AACvB,C;;;;;;;;;;;oEACuBK,CAAC,C,CACxB,C;EACC,OAAO,KAAAJ,2CAAI,C;AACZ,C;;;oEACuBI,CAAC,KAAY,C,CACpC,C;EACU,KAAAJ,2CAAI,GAAG,KAAK,C;AACtB,C;;;;;;;;;;;sEAC4BK,CAAC,C,CAC1B,C;EACI,OAAO,KAAAJ,6CAAM,C;AACjB,C;;;sEACyBI,CAAC,KAAY,C,CACtC,C;EACO,KAAAJ,6CAAM,GAAG,KAAK,C;AACrB,C;;;;;;;;;;;uEAE0BK,CAAC,C,CAC3B,C;EACI,OAAO,KAAAJ,8CAAO,C;AAClB,C;;;uEAC0BI,CAAC,KAAY,C,CACvC,C;EACO,KAAAJ,8CAAO,GAAG,KAAK,CAAA;",
+"sources":["org/apache/royale/core/layout/EdgeData.as"],
+"names":["EdgeData.EdgeData","_left","_top","_right","_bottom","EdgeData.left","EdgeData.top","EdgeData.right","EdgeData.bottom"]
+}

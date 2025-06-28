@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"DataProviderModel.js",
+"lineCount":89,
+"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Basic/src/main/royale",
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AA4CkB,qDAAhB,WAAiCA,CAAC,C;;;;;;;;;;AAItB,gEAAAC,mEAAoB,C;;;;;;;AA0BpB,gEAAAC,iEAAkB,GAAG,IAAI,C;;;;;;;;;;;4FAhBLC,CAAC,C,CACjC,C;EACC,OAAO,KAAAF,mEAAa,C;AACrB,C;;;4FAKgCE,CAAC,KAAY,C,CAC7C,C;EACU,IAAI,KAAK,KAAK,KAAAF,mEAAa,C;IAAE,MAAM,C;EAEnC,KAAAA,mEAAa,GAAG,KAAK,C;EAC9B,KAAA,aAAa,CAAC,IAAI,8BAAK,CAAC,qBAAqB,CAAC,CAAC,C;AAChD,C;;;;;;;;;;;0FAY8BG,CAAC,C,CAC/B,C;EACC,OAAO,KAAAF,iEAAW,C;AACnB,C;;;0FAK8BE,CAAC,KAAY,C,CAC3C,C;EACC,IAAI,KAAK,IAAI,KAAAF,iEAAW,EAAE,C;IACzB,KAAAA,iEAAW,GAAG,KAAK,C;IACnB,KAAA,aAAa,CAAC,IAAI,8BAAK,CAAC,mBAAmB,CAAC,CAAC,C;EAC9C,CAAA;",
+"sources":["org/apache/royale/html/beads/models/DataProviderModel.as"],
+"names":["DataProviderModel.DataProviderModel","_dataProvider","_labelField","DataProviderModel.dataProvider","DataProviderModel.labelField"]
+}

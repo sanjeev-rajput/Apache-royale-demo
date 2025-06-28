@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"Image.js",
+"lineCount":55,
+"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Jewel/src/main/royale",
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;AA0DkB,6BAAhB,WAAqBA,CAAC,C,CACtB,C;yDACQ,C;EACE,KAAA,SAAS,GAAG,aAAa,C;AACnC,C;;;;;;;;;AAMkC,wCAAA,aAA5B,WAAyCC,CAAC,C,CAC1C,C;EACI,+CAAmB,CAAC,IAAI,EAAE,KAAK,CAAC,C;EAChC,OAAO,KAAA,OAAO,C;AAClB,C;;;;;;;AAYmB,wCAAA,cAAzB,WAAuCC,CAAC,kBAAyB,C,CACjE,C;EACE,KAAA,OAA2B,CAAE,GAAG,GAAG,kBAAkB,C;AACvD,C;;;oEAZyCC,CAAC,C,CAC1C,C;EACC,OAAO,KAAA,OAAO,CAAA;",
+"sources":["org/apache/royale/jewel/Image.as"],
+"names":["Image.Image","Image.createElement","Image.applyImageData","Image.imageElement"]
+}

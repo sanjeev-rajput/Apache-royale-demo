@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"IParent.js",
+"lineCount":97,
+"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Core/src/main/royale",
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8DA2C2BA,CAAC,CAAQ,EAAE,aAA4B,C;;;;;;;;;;;;;;;;;gEAcrCC,CAAC,CAAQ,EAAE,KAAS,EAAE,aAA4B,C;;;;;;;;;;;;;;;mEAa/CC,CAAC,CAAQ,C;;;;;;;;;;;;;;;iEAaZC,CAAC,CAAQ,EAAE,aAA4B,C;;;;;;;;;;;;;;;;gEAsBxCC,CAAC,KAAA;",
+"sources":["org/apache/royale/core/IParent.as"],
+"names":["addElement","addElementAt","getElementIndex","removeElement","getElementAt"]
+}

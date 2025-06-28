@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"StringPadder.js",
+"lineCount":56,
+"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Core/src/main/royale",
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAuDyB,qCAAA,GAAvB,WAA0BA,CAAC,GAAU,EAAC,OAAc,EAAC,IAAQ,EAAC,QAAsB,C,CACpF,C;EAD8D,wDAAiB,KAAjB,C;EAE7D,GAAG,GAAG,GAAG,GAAG,GAAG,GAAG,EAAE,C;EAEpB,IAAI,IAAE,CAAC,C;EACP,IAAI,I,CAAI,GAAG,CAAC,M,MAAM,C;EAClB,IAAK,sBAAD,CAAQ,GAAG,IAAI,KAAK,CAAC,IAAI,CAAC,CAAC,IAAI,CAAC,OAAO,CAAC,C;EAC5C,IAAG,QAAQ,C;IACV,OAAO,GAAG,GAAG,CAAC,C;EACf,I;IACC,OAAO,CAAC,GAAG,GAAG,CAAA;",
+"sources":["org/apache/royale/utils/StringPadder.as"],
+"names":["StringPadder.pad"]
+}

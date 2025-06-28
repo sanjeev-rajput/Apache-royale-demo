@@ -499,3 +499,7 @@ views.ProductIndexing.prototype.ROYALE_REFLECTION_INFO = function () {
  * @type {number}
  */
 views.ProductIndexing.prototype.ROYALE_COMPILE_FLAGS = 9;
+
+
+
+//# sourceMappingURL=./ProductIndexing.js.map

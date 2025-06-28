@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"CollectionEvent.js",
+"lineCount":108,
+"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Core/src/main/royale",
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAuDkB,wCAAhB,WAA+BA,CAAC,IAAW,EAAE,OAAqB,EAAE,UAAwB,C,CAC5F,C;EAD6C,qDAAgB,KAAhB,C;EAAuB,8DAAmB,KAAnB,C;qEAEpD,I,EAAM,O,EAAS,U,CAAW,C;AAC1C,C;;;;;;;;;AAzBoB,yCAAA,UAAiB,GAAG,WAAW,C;;;;;;;;AAC/B,yCAAA,YAAmB,GAAG,aAAa,C;;;;;;;;AAC7B,yCAAA,iBAAwB,GAAG,iBAAiB,C;;;;;;;;AAClD,yCAAA,YAAmB,GAAG,aAAa,C;;;;;;;;AACnC,yCAAA,kBAAyB,GAAG,mBAAmB,C;;;;;;AA+BxD,mDAAA,K,IAAS,C;;;;;;AAUH,mDAAA,IAAW,C;;;;;;AAUjB,mDAAA,KAAW,C;;;;;;AAES,mDAAA,UAAzB,WAAmCC,CAAC,C,CACpC,C;EACI,IAAmB,wDAAf,eAA+B,GAAG,IAAI,wCAAe,CAAC,KAAA,IAAI,EAAE,KAAA,OAAO,EAAE,KAAA,UAAU,CAAC,C;EAC7F,eAAe,CAAC,IAAI,GAAG,KAAA,IAAI,C;EAC3B,eAAe,CAAC,KAAK,GAAG,KAAA,KAAK,C;EAC7B,eAAe,CAAC,KAAK,GAAG,KAAA,KAAK,C;EAE7B,OAAO,eAAe,CAAA;",
+"sources":["org/apache/royale/events/CollectionEvent.as"],
+"names":["CollectionEvent.CollectionEvent","CollectionEvent.cloneEvent"]
+}

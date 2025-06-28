@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"ToolTipLabel.js",
+"lineCount":42,
+"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Jewel/src/main/royale",
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;AA0DkB,2DAAhB,WAA4BA,CAAC,C,CAC7B,C;uFACQ,C;EACP,KAAA,SAAS,GAAG,eAAe,C;;AAK5B,C;;;;;;;;;AAMkC,sEAAA,aAA5B,WAAyCC,CAAC,C,CAC1C,C;mGACgB,C;EACrB,OAAO,KAAA,OAAO,CAAA;",
+"sources":["org/apache/royale/jewel/supportClasses/tooltip/ToolTipLabel.as"],
+"names":["ToolTipLabel.ToolTipLabel","ToolTipLabel.createElement"]
+}

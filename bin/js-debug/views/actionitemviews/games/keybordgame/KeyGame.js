@@ -310,3 +310,7 @@ views.actionitemviews.games.keybordgame.KeyGame.prototype.ROYALE_REFLECTION_INFO
  * @type {number}
  */
 views.actionitemviews.games.keybordgame.KeyGame.prototype.ROYALE_COMPILE_FLAGS = 9;
+
+
+
+//# sourceMappingURL=./KeyGame.js.map

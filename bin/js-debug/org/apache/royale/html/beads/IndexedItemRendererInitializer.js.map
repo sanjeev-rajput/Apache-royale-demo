@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"IndexedItemRendererInitializer.js",
+"lineCount":108,
+"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Basic/src/main/royale",
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAkDkB,2DAAhB,WAA8CA,CAAC,C;;;;;;;;;;AAIjC,sEAAA,iBAAoC,C;;;;;;;AACtC,sEAAAC,uEAAkB,C;;;;;;;;;;AAmCd,sEAAA,sBAAhB,WAAsCC,CAAC,EAAgB,EAAE,IAAW,C,CACpE,C;EACC,IAAM,oCAAF,EAAE,EAAI,8CAAJ,CAA2B,C;IAC/B,EAA6B,CAAE,UAAU,GAAG,KAAA,UAAU,C;EAExD,KAAA,2BAA2B,CAAC,EAA0B,CAAC,C;AACxD,C;;;;;;;;;;AAMgB,sEAAA,6BAAhB,WAA6CC,CAAC,EAAuB,EAAE,IAAW,EAAE,KAAS,C,CAC7F,C;EACC,EAAE,CAAC,KAAK,GAAG,KAAK,C;EAChB,KAAA,sBAAsB,CAAC,EAAE,EAAE,IAAI,CAAC,C;EAChC,uCAAe,CAAC,KAAA,OAAO,EAAE,sBAAsB,CAAC,C;AACjD,C;;;;;;;AAEmB,sEAAA,2BAAnB,WAA8CC,CAAC,EAAuB,C,CACtE,C;AACA,C;;;;;;;;;;;gGApD8BC,CAAC,C,CAC/B,C;EACC,OAAO,KAAAJ,uEAAW,C;AACnB,C;;;gGAE8BI,CAAC,KAAY,C,CAC3C,C;EACC,KAAAJ,uEAAW,GAAG,KAAK,C;AACpB,C;;;4FAWmCK,CAAC,KAAa,C,CACjD,C;EACC,KAAA,OAAO,GAAG,KAAK,C;EACZ,KAAA,iBAAiB,GAAG,0CAAc,CAAC,KAAA,OAAO,EAAC,yCAAkB,CAAuB,C;EACvF,KAAA,UAAU,GAAG,KAAA,iBAAiB,CAAC,UAAU,CAAA;",
+"sources":["org/apache/royale/html/beads/IndexedItemRendererInitializer.as"],
+"names":["IndexedItemRendererInitializer.IndexedItemRendererInitializer","_labelField","IndexedItemRendererInitializer.initializeItemRenderer","IndexedItemRendererInitializer.initializeIndexedItemRenderer","IndexedItemRendererInitializer.setupVisualsForItemRenderer","IndexedItemRendererInitializer.labelField","IndexedItemRendererInitializer.strand"]
+}

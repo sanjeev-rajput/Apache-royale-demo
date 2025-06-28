@@ -240,3 +240,5 @@ com.comp.pagination.Pagination.prototype.ROYALE_COMPILE_FLAGS = 9;
  * @type {Array<string>}
  */
 com.comp.pagination.Pagination.prototype.ROYALE_INITIAL_STATICS = Object.keys(com.comp.pagination.Pagination);
+
+//# sourceMappingURL=./Pagination.js.map

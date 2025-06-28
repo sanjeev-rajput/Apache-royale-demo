@@ -188,3 +188,5 @@ views.actionitemviews.searchlist.LstModel.prototype.ROYALE_COMPILE_FLAGS = 9;
  * @type {Array<string>}
  */
 views.actionitemviews.searchlist.LstModel.prototype.ROYALE_INITIAL_STATICS = Object.keys(views.actionitemviews.searchlist.LstModel);
+
+//# sourceMappingURL=./LstModel.js.map

@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"Bead.js",
+"lineCount":62,
+"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Core/src/main/royale",
+"mappings":"A;;;;;;;;;;;;;;;;;;;;AAgCoB,2BAAhB,WAAoBA,CAAC,C;;;;;;;;AAqBT,sCAAA,OAAe,C;;;;;;;;;;;;;AAgBR,sCAAA,cAAnB,WAAiCC,CAAC,SAAgB,EAAC,OAAgB,EAAC,OAAqB,EAAC,QAAsB,C,CAChH,C;EADoE,qDAAgB,KAAhB,C;EAAsB,wDAAiB,KAAjB,C;EAExF,IAAI,QAAQ,EAAE,C;IACT,KAAA,OAA2B,CAAE,mBAAmB,CAAC,SAAS,EAAE,OAAO,EAAE,OAAO,CAAC,C;EAClF,C,CAAG,KAAK,C;IACH,KAAA,OAA2B,CAAE,gBAAgB,CAAC,SAAS,EAAE,OAAO,EAAE,OAAO,CAAC,C;EAC/E,C;AACF,C;;;;;;;;;;;4DAjBwBC,CAAC,KAAa,C,CACxC,C;EACC,KAAA,OAAO,GAAG,KAAK,CAAA;",
+"sources":["org/apache/royale/core/Bead.as"],
+"names":["Bead.Bead","Bead.listenOnStrand","Bead.strand"]
+}

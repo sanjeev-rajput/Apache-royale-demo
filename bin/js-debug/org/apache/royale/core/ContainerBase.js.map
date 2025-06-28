@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"ContainerBase.js",
+"lineCount":123,
+"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Basic/src/main/royale",
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;;;AA8EkB,oCAAhB,WAA6BA,CAAC,C,CAC9B,C;gEACQ,C;AACR,C;;;;;;;;AAEY,+CAAAC,oDAA2C,C;;;;;;;;;;AAyHvC,+CAAA,WAAhB,WAA2BC,CAAC,CAAQ,EAAE,aAA4B,C,CAClE,C;EADsC,uEAAwB,IAAxB,C;2EAEpB,C,EAAG,a,EAAc,C;AACnC,C;;;;;;;;;;;AAOgB,+CAAA,aAAhB,WAA6BC,CAAC,CAAQ,EAAE,KAAS,EAAE,aAA4B,C,CAC/E,C;EADmD,uEAAwB,IAAxB,C;6EAE/B,C,EAAG,K,EAAO,a,EAAc,C;AAC5C,C;;;;;;;;;;AAOgB,+CAAA,cAAhB,WAA8BC,CAAC,CAAQ,EAAE,aAA4B,C,CACrE,C;EADyC,uEAAwB,IAAxB,C;8EAEpB,C,EAAG,a,EAAc,C;AACtC,C;;;;;;;;;;AAOgB,+CAAA,gBAAhB,WAAgCC,CAAC,CAAQ,C,CACzC,C;EACC,O,8EAA6B,C,EAAE,C;AAChC,C;;;;;;;;;;AAOgB,+CAAA,aAAhB,WAA6BC,CAAC,KAAS,C,CACvC,C;EACC,O,2EAA0B,K,EAAM,C;AACjC,C;;;6EA/J2CC,CAAC,C,CAC5C,C;EACC,IAAI,KAAAN,oDAAe,IAAI,IAAI,EAAE,C;IAC5B,KAAAA,oDAAe,GAAG,IAAI,kDAA2B,CAAC,IAAI,CAAC,C;EACxD,C;EACA,OAAO,KAAAA,oDAAe,C;AACvB,C;;;;;;;;;;;2EAoGgCO,CAAC,C,CACjC,C;EACC,O,6EAAwB,CAAA;",
+"sources":["org/apache/royale/core/ContainerBase.as"],
+"names":["ContainerBase.ContainerBase","_strandChildren","ContainerBase.$addElement","ContainerBase.$addElementAt","ContainerBase.$removeElement","ContainerBase.$getElementIndex","ContainerBase.$getElementAt","ContainerBase.strandChildren","ContainerBase.$numElements"]
+}

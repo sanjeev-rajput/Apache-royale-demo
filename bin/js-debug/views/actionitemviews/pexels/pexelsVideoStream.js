@@ -510,3 +510,7 @@ views.actionitemviews.pexels.pexelsVideoStream.prototype.ROYALE_REFLECTION_INFO 
  * @type {number}
  */
 views.actionitemviews.pexels.pexelsVideoStream.prototype.ROYALE_COMPILE_FLAGS = 9;
+
+
+
+//# sourceMappingURL=./pexelsVideoStream.js.map

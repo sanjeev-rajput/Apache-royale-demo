@@ -1,9 +1,9 @@
 {
     "config": "royale",
     "compilerOptions": {
-        "debug": true,
+        "debug": false,
         "targets": ["JSRoyale"],
-        "source-map": false,
+        "source-map": true,
         "js-library-path": [
             "../ruffle-schand-as-js-wasm/target",
             "libs"

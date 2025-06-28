@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"ValueChangeEvent.js",
+"lineCount":114,
+"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Core/src/main/royale",
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AA2CkB,yCAAhB,WAAgCA,CAAC,IAAW,EAAE,OAAqB,EAAE,UAAwB,EACpF,QAAsB,EAAE,QADwH,C,CAEzJ,C;EAF8C,qDAAgB,KAAhB,C;EAAuB,8DAAmB,KAAnB,C;EAC5D,wDAAkB,IAAlB,C;EAAwB,wDAAkB,IAAlB,C;sEAEvB,I,EAAM,O,EAAS,U,CAAW,C;EACnC,IAAI,CAAC,QAAQ,GAAG,QAAQ,C;EACxB,IAAI,CAAC,QAAQ,GAAG,QAAQ,C;AACzB,C;;;;;;;AAUW,oDAAA,QAAe,C;;;;;;AAUf,oDAAA,QAAe,C;;;;;;AAUT,oDAAA,YAAmB,C;;;;;;AAUnB,oDAAA,MAAa,C;;;;;;;;AAUV,0CAAA,YAAmB,GAAG,aAAa,C;;;;;;;;;;;;;;;;;;;;;;;AAgB1B,0CAAA,iBAAvB,WAAwCC,CAAC,MAAa,EAAE,IAAW,EAAE,QAAe,EAAE,QAAe,C,CACrG,C;EACI,IAAS,yDAAL,KAAsB,GAAG,IAAI,yCAAgB,CAAC,0CAAA,YAAY,EAAE,KAAK,EAAE,KAAK,EAAE,QAAQ,EAAE,QAAQ,CAAC,C;EACjG,KAAK,CAAC,YAAY,GAAG,IAAI,C;EACzB,KAAK,CAAC,MAAM,GAAG,MAAM,C;EACrB,OAAO,KAAK,C;AAChB,C;;;;;;;;;;;;AAUyB,oDAAA,UAAzB,WAAmCC,CAAC,C,CACpC,C;EACI,OAAO,IAAI,yCAAgB,CAAC,KAAA,IAAI,EAAE,KAAA,OAAO,EAAE,KAAA,UAAU,EAAE,KAAA,QAAQ,EAAE,KAAA,QAAQ,CAAC,CAAA;",
+"sources":["org/apache/royale/events/ValueChangeEvent.as"],
+"names":["ValueChangeEvent.ValueChangeEvent","ValueChangeEvent.createUpdateEvent","ValueChangeEvent.cloneEvent"]
+}

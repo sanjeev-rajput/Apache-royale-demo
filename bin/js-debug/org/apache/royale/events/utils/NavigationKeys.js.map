@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"NavigationKeys.js",
+"lineCount":83,
+"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Core/src/main/royale",
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;AAmC4B,8CAAA,IAAW,GAAG,WAAW,C;;;;;;;;AAIzB,8CAAA,IAAW,GAAG,WAAW,C;;;;;;;;AAIzB,8CAAA,KAAY,GAAG,YAAY,C;;;;;;;;AAI3B,8CAAA,EAAS,GAAG,SAAS,C;;;;;;;;AAIrB,8CAAA,GAAU,GAAG,KAAK,C;;;;;;;;AAIlB,8CAAA,IAAW,GAAG,MAAM,C;;;;;;;;AAIpB,8CAAA,SAAgB,GAAG,UAAU,C;;;;;;;;AAI7B,8CAAA,OAAc,GAAG,QAAA;",
+"sources":["org/apache/royale/events/utils/NavigationKeys.as"],
+"names":[]
+}

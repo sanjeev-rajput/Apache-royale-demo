@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"ListPresentationModel.js",
+"lineCount":83,
+"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Basic/src/main/royale",
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;;;AA2CkB,yDAAhB,WAAqCA,CAAC,C,CACtC,C;qFACQ,C;AACR,C;;;;;;;;AAEY,oEAAAC,oEAAiB,GAAG,EAAE,C;;;;;;;AAqBtB,oEAAAC,6EAA0B,GAAG,CAAC,C;;;;;;;;;;;6FAXbC,CAAC,C,CAC9B,C;EACC,OAAO,KAAAF,oEAAU,C;AAClB,C;;;6FAE6BE,CAAC,KAAY,C,CAC1C,C;EACC,KAAAF,oEAAU,GAAG,KAAK,C;EAClB,KAAA,aAAa,CAAC,IAAI,8BAAK,CAAC,kBAAkB,CAAC,CAAC,C;AAC7C,C;;;;;;;;;;;sGAYsCG,CAAC,C,CACvC,C;EACC,OAAO,KAAAF,6EAAmB,C;AAC3B,C;;;sGAEsCE,CAAC,KAAY,C,CACnD,C;EACC,KAAAF,6EAAmB,GAAG,KAAK,C;EAC3B,KAAA,aAAa,CAAC,IAAI,8BAAK,CAAC,2BAA2B,CAAC,CAAC,CAAA;",
+"sources":["org/apache/royale/html/beads/models/ListPresentationModel.as"],
+"names":["ListPresentationModel.ListPresentationModel","_rowHeight","_separatorThickness","ListPresentationModel.rowHeight","ListPresentationModel.separatorThickness"]
+}

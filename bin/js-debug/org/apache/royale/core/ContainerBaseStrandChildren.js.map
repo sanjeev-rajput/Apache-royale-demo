@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"ContainerBaseStrandChildren.js",
+"lineCount":118,
+"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Core/src/main/royale",
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AA4CkB,kDAAhB,WAA2CA,CAAC,KAAa,C,CACzD,C;EACQ,C;EAEP,IAAI,CAAC,KAAK,GAAG,KAAyC,C;AACvD,C;;;;;;AAEW,6DAAA,KAAsC,C;;;;;;;;AAajC,6DAAA,UAAhB,WAA0BC,CAAC,CAAQ,EAAE,aAA4B,C,CACjE,C;EADqC,uEAAwB,IAAxB,C;EAEpC,KAAA,KAAK,CAAC,WAAW,CAAC,CAAC,EAAE,aAAa,CAAC,C;AACpC,C;;;;;;;;;AAKgB,6DAAA,YAAhB,WAA4BC,CAAC,CAAQ,EAAE,KAAS,EAAE,aAA4B,C,CAC9E,C;EADkD,uEAAwB,IAAxB,C;EAEjD,KAAA,KAAK,CAAC,aAAa,CAAC,CAAC,EAAE,KAAK,EAAE,aAAa,CAAC,C;AAC7C,C;;;;;;;;AAKgB,6DAAA,aAAhB,WAA6BC,CAAC,CAAQ,EAAE,aAA4B,C,CACpE,C;EADwC,uEAAwB,IAAxB,C;EAEvC,KAAA,KAAK,CAAC,cAAc,CAAC,CAAC,EAAE,aAAa,CAAC,C;AACvC,C;;;;;;;;AAKgB,6DAAA,eAAhB,WAA+BC,CAAC,CAAQ,C,CACxC,C;EACC,OAAO,KAAA,KAAK,CAAC,gBAAgB,CAAC,CAAC,CAAC,C;AACjC,C;;;;;;;;AAKgB,6DAAA,YAAhB,WAA4BC,CAAC,KAAS,C,CACtC,C;EACC,OAAO,KAAA,KAAK,CAAC,aAAa,CAAC,KAAK,CAAC,C;AAClC,C;;;;;;;;;;;wFA3C+BC,CAAC,C,CAChC,C;EACC,OAAO,KAAA,KAAK,CAAC,YAAY,C;AAC1B,C;;;;;;;;;;;sFA4CmCC,CAAC,C,CAC9B,C;EACI,OAAY,oCAAL,KAAA,KAAK,EAAI,iCAAJ,CAAc,CAAA;",
+"sources":["org/apache/royale/core/ContainerBaseStrandChildren.as"],
+"names":["ContainerBaseStrandChildren.ContainerBaseStrandChildren","ContainerBaseStrandChildren.addElement","ContainerBaseStrandChildren.addElementAt","ContainerBaseStrandChildren.removeElement","ContainerBaseStrandChildren.getElementIndex","ContainerBaseStrandChildren.getElementAt","ContainerBaseStrandChildren.numElements","ContainerBaseStrandChildren.popUpHost"]
+}

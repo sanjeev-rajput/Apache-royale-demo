@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"Size.js",
+"lineCount":37,
+"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Core/src/main/royale",
+"mappings":"A;;;;;;;;;;;;;;;;;;;AAiCoB,2BAAhB,WAAoBA,CAAC,KAAgB,EAAE,MAAiB,C,CACxD,C;EADqB,+CAAe,CAAf,C;EAAkB,kDAAgB,CAAhB,C;EAEnC,IAAI,CAAC,KAAK,GAAG,KAAK,C;EAClB,IAAI,CAAC,MAAM,GAAG,MAAM,C;AACxB,C;;;;;;AAEW,sCAAA,KAAY,C;;;;;;AACZ,sCAAA,MAAA;",
+"sources":["org/apache/royale/geom/Size.as"],
+"names":["Size.Size"]
+}

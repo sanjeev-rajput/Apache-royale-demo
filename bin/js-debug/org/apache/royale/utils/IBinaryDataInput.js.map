@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"IBinaryDataInput.js",
+"lineCount":82,
+"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Core/src/main/royale",
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;4EAwB2BA,CAAC,KAAgB,EAAE,MAAe,EAAE,MAAe,C;;;;;yEAUtDC,CAAC,C;;;;;sEACJC,CAAC,C;;;;;8EACOC,CAAC,C;;;;;uEACRC,CAAC,C;;;;;+EACOC,CAAC,C;;;;;qEACXC,CAAC,C;;;;;6EACOC,CAAC,C;;;;;uEAEPC,CAAC,C;;;;;wEACAC,CAAC,C;;;;;qEAEJC,CAAC,C;;;;;;0EACIC,CAAC,MAAA;",
+"sources":["org/apache/royale/utils/IBinaryDataInput.as"],
+"names":["readBinaryData","readBoolean","readByte","readUnsignedByte","readShort","readUnsignedShort","readInt","readUnsignedInt","readFloat","readDouble","readUTF","readUTFBytes"]
+}

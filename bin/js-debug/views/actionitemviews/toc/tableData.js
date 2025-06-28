@@ -614,3 +614,7 @@ views.actionitemviews.toc.tableData.prototype.ROYALE_COMPILE_FLAGS = 9;
  * @type {Array<string>}
  */
 views.actionitemviews.toc.tableData.prototype.ROYALE_INITIAL_STATICS = Object.keys(views.actionitemviews.toc.tableData);
+
+
+
+//# sourceMappingURL=./tableData.js.map

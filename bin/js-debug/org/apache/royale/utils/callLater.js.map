@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"callLater.js",
+"lineCount":28,
+"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Core/src/main/royale",
+"mappings":"A;;;;;;;;;;;;;;;;;;;;iCA2BI,WAAyBA,CAAC,EAAW,EAAE,IAAiB,EAAE,OAAqB,C,CAC/E,C;EADuC,4CAAa,IAAb,C;EAAmB,qDAAiB,IAAjB,C;EAQtD,iBAAiBC,CAAC,C,CAClB,C;IACI,EAAE,CAAC,KAAK,CAAC,OAAO,EAAC,IAAI,CAAC,C;EAC1B,C;;EALI,qBAAqB,CAAC,QAAQ,CAAC,CAAA;",
+"sources":["org/apache/royale/utils/callLater.as"],
+"names":["callLater","callback"]
+}

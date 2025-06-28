@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"SolidBackgroundSelectableItemRendererBead.js",
+"lineCount":42,
+"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Basic/src/main/royale",
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;AAiDkB,sEAAhB,WAAyDA,CAAC,C;;;;;;;;;;;AAQ3B,iFAAA,cAAzB,WAAuCC,CAAC,C,CACxC,C;;+GAa8B,C;EACtB,IAAW,2BAAP,OAAmB,GAAI,KAAA,OAAkB,CAAE,OAAO,C;EACtD,OAAO,CAAC,KAAK,CAAC,eAAe,GAAY,iCAAA,kBAAkB,CAAC,KAAA,QAAQ,CAAC,CAAA;",
+"sources":["org/apache/royale/html/beads/SolidBackgroundSelectableItemRendererBead.as"],
+"names":["SolidBackgroundSelectableItemRendererBead.SolidBackgroundSelectableItemRendererBead","SolidBackgroundSelectableItemRendererBead.updateRenderer"]
+}

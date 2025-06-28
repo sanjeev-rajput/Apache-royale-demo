@@ -434,3 +434,7 @@ views.actionitemviews.shoppingcart.CartItem.prototype.ROYALE_COMPILE_FLAGS = 9;
  * @type {Array<string>}
  */
 views.actionitemviews.shoppingcart.CartItem.prototype.ROYALE_INITIAL_STATICS = Object.keys(views.actionitemviews.shoppingcart.CartItem);
+
+
+
+//# sourceMappingURL=./CartItem.js.map

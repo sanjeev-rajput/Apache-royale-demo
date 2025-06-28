@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"Button.js",
+"lineCount":112,
+"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Jewel/src/main/royale",
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;;;AA4DkB,8BAAhB,WAAsBA,CAAC,C,CACvB,C;0DACQ,C;AACR,C;;;;;;;;AAgFY,yCAAAC,yCAA0B,C;;;;;;;;AAsBJ,yCAAA,aAA5B,WAAyCC,CAAC,C,CAC1C,C;sEACgB,C;EAErB,KAAA,SAAS,GAAiC,oCAA9B,QAAQ,CAAC,aAAa,CAAC,MAAM,CAAC,EAAI,eAAJ,CAAmB,C;EAC7D,KAAA,SAAS,CAAC,WAAW,GAAG,KAAA,IAAI,C;EAC5B,KAAA,OAAO,CAAC,WAAW,CAAC,KAAA,SAAS,CAAC,C;EAErB,OAAO,KAAA,OAAO,C;AAClB,C;;;;;;;;;;;6DAlGkBC,CAAC,C,CACzB,C;;EAOC,OAAO,KAAA,SAAS,CAAC,WAAW,C;AAE7B,C;;;6DAIwBA,CAAC,KAAY,C,CACrC,C;;EAOC,KAAA,SAAS,CAAC,WAAW,GAAG,KAAK,C;EAC7B,KAAA,aAAa,CAAC,IAAI,8BAAK,CAAC,YAAY,CAAC,CAAC,C;AAEvC,C;;;;;;;;;;;6DAcwBC,CAAC,C,CACzB,C;;EAOC,OAAO,KAAA,SAAS,CAAC,SAAS,C;AAE3B,C;;;6DAIwBA,CAAC,KAAY,C,CACrC,C;;EAOC,KAAA,SAAS,CAAC,SAAS,GAAG,KAAK,C;EAC3B,KAAA,aAAa,CAAC,IAAI,8BAAK,CAAC,YAAY,CAAC,CAAC,C;AAEvC,C;;;;;;;;;;;kEAa6BC,CAAC,C,CAAkB,C;EAC/C,OAAO,KAAAJ,yCAAU,C;AAClB,C;;;kEAE6BI,CAAC,KAAqB,C,CAAO,C;EACzD,KAAAJ,yCAAU,GAAG,KAAK,CAAA;",
+"sources":["org/apache/royale/jewel/Button.as"],
+"names":["Button.Button","_spanLabel","Button.createElement","Button.text","Button.html","Button.spanLabel"]
+}

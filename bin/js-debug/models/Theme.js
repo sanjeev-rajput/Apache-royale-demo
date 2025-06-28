@@ -124,3 +124,5 @@ models.Theme.prototype.ROYALE_COMPILE_FLAGS = 9;
  * @type {Array<string>}
  */
 models.Theme.prototype.ROYALE_INITIAL_STATICS = Object.keys(models.Theme);
+
+//# sourceMappingURL=./Theme.js.map

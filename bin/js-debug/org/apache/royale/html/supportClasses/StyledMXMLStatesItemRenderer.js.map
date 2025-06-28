@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"StyledMXMLStatesItemRenderer.js",
+"lineCount":145,
+"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Basic/src/main/royale",
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;;;AA0DkB,kEAAhB,WAA4CA,CAAC,C,CAC7C,C;8FACQ,C;EACE,KAAA,SAAS,GAAG,EAAE,C;AACxB,C;;;;;;;;AAOY,6EAAAC,0EAAa,C;;;;;;;;;;;;;;;;;AAoDH,6EAAA,QAAhB,WAAwBC,CAAC,KAAY,C,CACrC,C;EAC8B,0BAAA,KAAAD,0EAAA,C;EAA1B,KAA0B,gBAAJ,IAAI,mBAAO,E;;EAAvB,QAAgB,kC;EAC1B,C;IACI,IAAI,CAAC,CAAC,IAAI,IAAI,KAAK,C;MACf,OAAO,IAAI,C;EACnB,C;;EACA,OAAO,KAAK,C;AAChB,C;;;;;;;AAGY,6EAAAE,gFAAoB,C;;;;;;;AA2BpB,6EAAAC,+EAAkB,C;;;;;;;;;;;mGA/EJC,CAAC,C,CAC3B,C;EACI,OAAO,KAAAJ,0EAAO,C;AAClB,C;;;mGAO0BI,CAAC,KAAW,C,CACtC,C;EACI,KAAAJ,0EAAO,GAAG,KAAK,C;EACf,KAAAE,gFAAa,G,wCAAG,KAAAF,0EAAO,CAAC,CAAC,CAAC,CAAC,I,CAAI,C;EAExC,IAAG,C;IACC,iDAAyB,CAAC,kCAAW,EAAE,aAAa,EAAE,IAAI,CAAC,C;EAC/D,CAEA,QAAM,CAAO,EACb,C;;EAKA,C;AAEK,C;;;;;;;;;;;yGAoCgCK,CAAC,C,CACjC,C;EACI,OAAO,KAAAH,gFAAa,C;AACxB,C;;;yGAKgCG,CAAC,KAAY,C,CAC7C,C;EACL,IAAI,KAAK,IAAI,KAAAH,gFAAa,C;IAAE,MAAM,C;EACzB,IAAS,yDAAL,KAAsB,GAAG,IAAI,yCAAgB,CAAC,oBAAoB,EAAE,KAAK,EAAE,KAAK,EAAE,KAAAA,gFAAa,EAAE,KAAK,CAAC,C;EAC3G,KAAAA,gFAAa,GAAG,KAAK,C;EACrB,KAAA,aAAa,CAAC,KAAK,CAAC,C;AACxB,C;;;;;;;;;;;wGAY+BI,CAAC,C,CAChC,C;EACI,OAAO,KAAAH,+EAAY,C;AACvB,C;;;wGAK+BG,CAAC,KAAW,C,CAC3C,C;EACI,KAAAH,+EAAY,GAAG,KAAK,CAAA;",
+"sources":["org/apache/royale/html/supportClasses/StyledMXMLStatesItemRenderer.as"],
+"names":["StyledMXMLStatesItemRenderer.StyledMXMLStatesItemRenderer","_states","StyledMXMLStatesItemRenderer.hasState","_currentState","_transitions","StyledMXMLStatesItemRenderer.states","StyledMXMLStatesItemRenderer.currentState","StyledMXMLStatesItemRenderer.transitions"]
+}

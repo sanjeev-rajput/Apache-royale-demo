@@ -674,3 +674,7 @@ views.actionitemviews.shoppingcart.ShoppingMain.prototype.ROYALE_REFLECTION_INFO
  * @type {number}
  */
 views.actionitemviews.shoppingcart.ShoppingMain.prototype.ROYALE_COMPILE_FLAGS = 9;
+
+
+
+//# sourceMappingURL=./ShoppingMain.js.map

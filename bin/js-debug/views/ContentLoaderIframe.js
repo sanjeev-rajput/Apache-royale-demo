@@ -272,3 +272,7 @@ views.ContentLoaderIframe.prototype.ROYALE_COMPILE_FLAGS = 9;
  * @type {Array<string>}
  */
 views.ContentLoaderIframe.prototype.ROYALE_INITIAL_STATICS = Object.keys(views.ContentLoaderIframe);
+
+
+
+//# sourceMappingURL=./ContentLoaderIframe.js.map

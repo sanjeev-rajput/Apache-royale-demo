@@ -181,3 +181,5 @@ views.actionitemviews.basicdrawing.shapes.LineShape.prototype.ROYALE_REFLECTION_
  * @type {number}
  */
 views.actionitemviews.basicdrawing.shapes.LineShape.prototype.ROYALE_COMPILE_FLAGS = 9;
+
+//# sourceMappingURL=./LineShape.js.map

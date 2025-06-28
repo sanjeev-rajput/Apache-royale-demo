@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"ValueEvent.js",
+"lineCount":57,
+"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Core/src/main/royale",
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AA0CkB,mCAAhB,WAA0BA,CAAC,IAAW,EAAE,KAAc,EAAE,OAAqB,EAC3C,UADyG,C,CAE3I,C;EAFwC,+CAAU,IAAV,C;EAAgB,qDAAgB,KAAhB,C;EACtB,8DAAmB,KAAnB,C;gEAE3B,I,EAAM,O,EAAS,U,CAAW,C;EAEhC,IAAI,CAAC,KAAK,GAAG,KAAK,C;AACnB,C;;;;;;;AAUW,8CAAA,KAAO,C;;;;;;;;;;;;AAUO,8CAAA,UAAzB,WAAmCC,CAAC,C,CACpC,C;EACC,OAAO,IAAI,mCAAU,CAAC,KAAA,IAAI,EAAE,KAAA,KAAK,EAAE,KAAA,OAAO,EAAE,KAAA,UAAU,CAAC,CAAA;",
+"sources":["org/apache/royale/events/ValueEvent.as"],
+"names":["ValueEvent.ValueEvent","ValueEvent.cloneEvent"]
+}

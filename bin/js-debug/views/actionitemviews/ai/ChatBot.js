@@ -260,3 +260,7 @@ views.actionitemviews.ai.ChatBot.prototype.ROYALE_REFLECTION_INFO = function () 
  * @type {number}
  */
 views.actionitemviews.ai.ChatBot.prototype.ROYALE_COMPILE_FLAGS = 9;
+
+
+
+//# sourceMappingURL=./ChatBot.js.map

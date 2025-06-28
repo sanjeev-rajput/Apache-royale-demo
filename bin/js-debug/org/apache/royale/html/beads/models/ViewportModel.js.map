@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"ViewportModel.js",
+"lineCount":75,
+"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Basic/src/main/royale",
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;AAiCkB,iDAAhB,WAA6BA,CAAC,C,CAC9B,C;6EACQ,C;AACR,C;;;;;;;;AAEkB,4DAAAC,gEAAuB,C;;;;;;;AAC7B,4DAAAC,gEAAuB,C;;;;;;;;;;;yFAKIC,CAAC,C,CAClC,C;EACI,OAAO,KAAAF,gEAAc,C;AACzB,C;;;yFACiCE,CAAC,KAAc,C,CAChD,C;EACI,KAAAF,gEAAc,GAAG,KAAK,C;AAC1B,C;;;;;;;;;;;yFAKiCG,CAAC,C,CAClC,C;EACI,OAAO,KAAAF,gEAAc,C;AACzB,C;;;yFACiCE,CAAC,KAAc,C,CAChD,C;EACI,KAAAF,gEAAc,GAAG,KAAK,CAAA;",
+"sources":["org/apache/royale/html/beads/models/ViewportModel.as"],
+"names":["ViewportModel.ViewportModel","_borderMetrics","_chromeMetrics","ViewportModel.borderMetrics","ViewportModel.chromeMetrics"]
+}

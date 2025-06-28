@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"addDynamicSelector.js",
+"lineCount":42,
+"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Core/src/main/royale",
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8CAmCI,WAAkCA,CAAC,QAAe,EAAE,IAAW,C,CAC/D,C;EAGQ,IAAkB,sBAAd,cAAqB,GAAG,QAAQ,GAAG,KAAK,GAAG,IAAI,GAAG,IAAI,C;EAC1D,IAAW,gCAAP,OAAwB,GAAG,QAAQ,CAAC,cAAc,CAAC,oBAAoB,CAAqB,C;EAChG,IAAG,OAAO,EACV,C;IACI,IAAS,6BAAL,KAAmB,GAAG,OAAO,CAAC,KAAsB,C;IAExD,KAAK,CAAC,UAAU,CAAC,cAAc,EAAE,CAAC,CAAC,C;EACvC,C,CACA,KACA,C;IACI,IAAS,gCAAL,KAAsB,GAAG,QAAQ,CAAC,aAAa,CAAC,OAAO,CAAqB,C;IAChF,KAAK,CAAC,IAAI,GAAG,UAAU,C;IACvB,KAAK,CAAC,EAAE,GAAG,oBAAoB,C;IAC/B,KAAK,CAAC,SAAS,GAAG,cAAc,C;IAChC,QAAQ,CAAC,oBAAoB,CAAC,MAAM,CAAC,CAAC,CAAC,CAAC,CAAC,WAAW,CAAC,KAAK,CAAC,C;EAC/D,CAAA;",
+"sources":["org/apache/royale/utils/css/addDynamicSelector.as"],
+"names":["addDynamicSelector"]
+}

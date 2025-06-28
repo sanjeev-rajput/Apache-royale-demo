@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"clamp.js",
+"lineCount":44,
+"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Core/src/main/royale",
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;oCAwCC,WAAqBA,CAAC,KAAY,EAAE,GAAU,EAAE,GAAU,C,CAC1D,C;EACC,IAAG,KAAK,GAAG,GAAG,C;IAAE,OAAO,GAAG,C;EAC1B,IAAG,KAAK,GAAG,GAAG,C;IAAE,OAAO,GAAG,C;EAC1B,OAAO,KAAK,CAAA;",
+"sources":["org/apache/royale/utils/number/clamp.as"],
+"names":["clamp"]
+}

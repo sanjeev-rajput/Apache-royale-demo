@@ -93,3 +93,5 @@ com.controller.MainUiController.prototype.ROYALE_REFLECTION_INFO = function () {
  * @type {number}
  */
 com.controller.MainUiController.prototype.ROYALE_COMPILE_FLAGS = 9;
+
+//# sourceMappingURL=./MainUiController.js.map

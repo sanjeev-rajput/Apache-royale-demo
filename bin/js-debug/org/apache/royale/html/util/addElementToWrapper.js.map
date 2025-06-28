@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"addElementToWrapper.js",
+"lineCount":25,
+"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Basic/src/main/royale",
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;+CA8BI,WAAmCA,CAAC,OAAc,EAAC,IAAW,C,CAC9D,C;EACI,IAAQ,sBAAJ,IAAuB,GAAG,QAAQ,CAAC,aAAa,CAAC,IAAI,CAAuB,C;EACrF,OAAO,CAAC,OAAO,GAAG,IAAI,C;EACb,OAAO,IAAI,CAAA;",
+"sources":["org/apache/royale/html/util/addElementToWrapper.as"],
+"names":["addElementToWrapper"]
+}

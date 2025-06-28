@@ -494,3 +494,7 @@ views.actionitemviews.basicdrawing.BasicDrawingMain.prototype.ROYALE_REFLECTION_
  * @type {number}
  */
 views.actionitemviews.basicdrawing.BasicDrawingMain.prototype.ROYALE_COMPILE_FLAGS = 9;
+
+
+
+//# sourceMappingURL=./BasicDrawingMain.js.map

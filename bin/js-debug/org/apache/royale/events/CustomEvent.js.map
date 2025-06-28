@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"CustomEvent.js",
+"lineCount":52,
+"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Core/src/main/royale",
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAmDkB,oCAAhB,WAA2BA,CAAC,IAAW,EAAE,OAAqB,EAAE,UAAwB,C,CACxF,C;EADyC,qDAAgB,KAAhB,C;EAAuB,8DAAmB,KAAnB,C;iEAEhD,I,EAAM,O,EAAS,U,CAAW,C;AAC1C,C;;;;;;;;;;;;;AAUyB,+CAAA,UAAzB,WAAmCC,CAAC,C,CACpC,C;EACC,OAAO,IAAI,oCAAW,CAAC,KAAA,IAAI,EAAE,KAAA,OAAO,EAAE,KAAA,UAAU,CAAC,CAAA;",
+"sources":["org/apache/royale/events/CustomEvent.as"],
+"names":["CustomEvent.CustomEvent","CustomEvent.cloneEvent"]
+}

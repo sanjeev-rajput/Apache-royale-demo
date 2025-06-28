@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"HTTPConstants.js",
+"lineCount":115,
+"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Network/src/main/royale",
+"mappings":"A;;;;;;;;;;;;;;;;;AA0JwB,mCAAhB,WAA6BA,CAAC,C;;;;;;;;;AA3HV,oCAAA,GAAU,GAAG,KAAK,C;;;;;;;;AAWlB,oCAAA,IAAW,GAAG,MAAM,C;;;;;;;;AAUpB,oCAAA,GAAU,GAAG,KAAK,C;;;;;;;;AAWlB,oCAAA,gBAAuB,GAAG,mCAAmC,C;;;;;;;;AAWnE,oCAAA,MAAa,GAAG,QAAQ,C;;;;;;;;AAUxB,oCAAA,IAAW,GAAG,MAAM,C;;;;;;;;AAUd,oCAAA,QAAe,GAAG,UAAU,C;;;;;;;;AAU5B,oCAAA,mBAA0B,GAAG,oBAAoB,C;;;;;;;;AAUvD,oCAAA,QAAe,GAAG,SAAS,C;;;;;;;;AAU3B,oCAAA,cAAqB,GAAG,eAAe,C;;;;;;;;AAUjC,oCAAA,MAAa,GAAG,YAAY,C;;;;;;;;AAgB5B,oCAAA,eAAsB,GAAG,oBAAA;",
+"sources":["org/apache/royale/net/HTTPConstants.as"],
+"names":["HTTPConstants.HTTPConstants"]
+}

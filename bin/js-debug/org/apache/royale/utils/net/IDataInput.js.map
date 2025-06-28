@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"IDataInput.js",
+"lineCount":26,
+"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Core/src/main/royale",
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;sEA+B2BA,CAAAA;",
+"sources":["org/apache/royale/utils/net/IDataInput.as"],
+"names":["readObject"]
+}

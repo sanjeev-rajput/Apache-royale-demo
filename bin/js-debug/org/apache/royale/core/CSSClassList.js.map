@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"CSSClassList.js",
+"lineCount":78,
+"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Core/src/main/royale",
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;AAwCkB,mCAAhB,WAA4BA,CAAC,C;;;;;;;;AAIX,8CAAAC,yCAAW,C;;;;;;;;;;;;AAUb,8CAAA,GAAhB,WAAmBC,CAAC,SAAgB,C,CACpC,C;EACU,IAAG,CAAC,KAAAD,yCAAK,C;IACL,KAAAA,yCAAK,GAAG,CAAC,CAAC,C;EACd,IAAG,KAAAA,yCAAK,CAAC,OAAO,CAAC,SAAS,CAAC,IAAI,EAAE,C;IAC7B,KAAAA,yCAAK,CAAC,IAAI,CAAC,SAAS,CAAC,C;AACnC,C;;;;;;;;;;;AASgB,8CAAA,MAAhB,WAAsBE,CAAC,SAAgB,C,CACvC,C;EACU,IAAG,KAAAF,yCAAK,EACR,C;IACI,IAAO,sBAAH,GAAO,G,CAAG,KAAAA,yCAAK,CAAC,OAAO,CAAC,SAAS,C,MAAC,C;IACtC,IAAG,GAAG,IAAI,EAAE,C;MACR,KAAAA,yCAAK,CAAC,MAAM,CAAC,GAAG,EAAC,CAAC,CAAC,C;EAC3B,C;AACV,C;;;;;;;;;;;AASgB,8CAAA,OAAhB,WAAuBG,CAAC,C,CACxB,C;EACU,OAAO,KAAAH,yCAAK,GAAG,KAAAA,yCAAK,CAAC,IAAI,CAAC,GAAG,CAAC,GAAG,GAAG,GAAG,EAAE,CAAA;",
+"sources":["org/apache/royale/core/CSSClassList.as"],
+"names":["CSSClassList.CSSClassList","_list","CSSClassList.add","CSSClassList.remove","CSSClassList.compute"]
+}

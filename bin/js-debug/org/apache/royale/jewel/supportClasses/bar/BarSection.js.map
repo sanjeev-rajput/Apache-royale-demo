@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"BarSection.js",
+"lineCount":40,
+"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Jewel/src/main/royale",
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;AA8CkB,qDAAhB,WAA0BA,CAAC,C,CAC3B,C;iFACQ,C;EAEE,KAAA,SAAS,GAAG,kBAAkB,C;AACxC,C;;;;;;;;;AAMkC,gEAAA,aAA5B,WAAyCC,CAAC,C,CAC1C,C;EACL,OAAO,+CAAmB,CAAC,IAAI,EAAE,SAAS,CAAC,CAAA;",
+"sources":["org/apache/royale/jewel/supportClasses/bar/BarSection.as"],
+"names":["BarSection.BarSection","BarSection.createElement"]
+}

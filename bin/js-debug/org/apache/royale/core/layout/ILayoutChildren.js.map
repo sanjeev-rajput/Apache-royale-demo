@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"ILayoutChildren.js",
+"lineCount":23,
+"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Core/src/main/royale",
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;wFA2CsCA,CAAAA;",
+"sources":["org/apache/royale/core/layout/ILayoutChildren.as"],
+"names":["executeLayoutChildren"]
+}

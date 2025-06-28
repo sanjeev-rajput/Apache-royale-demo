@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"getPercent.js",
+"lineCount":23,
+"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Core/src/main/royale",
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;yCAuBC,WAA0BA,CAAC,SAAgB,EAAC,WAAkB,C,CAAQ,C;EACrE,OAAO,oCAAK,C,CAAE,SAAS,GAAG,W,CAAW,GAAI,GAAG,EAAC,CAAC,EAAC,GAAG,CAAC,CAAA;",
+"sources":["org/apache/royale/utils/number/getPercent.as"],
+"names":["getPercent"]
+}

@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"PopUp.js",
+"lineCount":123,
+"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Jewel/src/main/royale",
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;AAgEkB,6BAAhB,WAAqBA,CAAC,C,CACtB,C;yDACQ,C;EAEP,KAAA,SAAS,GAAG,aAAa,C;AAC1B,C;;;;;;;;AAEY,wCAAAC,oCAAc,C;;;;;;;AAWd,wCAAAC,mCAAa,GAAG,KAAK,C;;;;;;;AAsBrB,wCAAAC,sCAAe,C;;;;;;;;;AAwBO,wCAAA,aAA5B,WAAyCC,CAAC,C,CAC1C,C;EACL,+CAAmB,CAAC,IAAI,EAAE,KAAK,CAAC,C;EACvB,OAAO,KAAA,OAAO,C;AAClB,C;;;;;;;;;;;6DA3DmBC,CAAC,C,CAC1B,C;EACC,OAAO,KAAAJ,oCAAM,C;AACd,C;;;6DACyBI,CAAC,KAAa,C,CACvC,C;EACC,KAAAJ,oCAAM,GAAG,KAAK,C;AACf,C;;;;;;;;;;;4DAUwBK,CAAC,C,CACzB,C;EACC,OAAO,KAAAJ,mCAAK,C;AACb,C;;;4DACwBI,CAAC,KAAa,C,CACtC,C;EACC,IAAG,KAAAJ,mCAAK,IAAI,KAAK,EACjB,C;IACC,KAAAA,mCAAK,GAAG,KAAK,C;IAEb,KAAAA,mCAAK,GAAG,KAAA,aAAa,CAAC,IAAI,8BAAK,CAAC,WAAW,CAAC,CAAC,GAAG,KAAA,aAAa,CAAC,IAAI,8BAAK,CAAC,YAAY,CAAC,CAAC,C;EACvF,C;AACD,C;;;;;;;;;;;+DAQ2BK,CAAC,C,CAC5B,C;EACC,OAAO,KAAAJ,sCAAQ,C;AAChB,C;;;+DAC2BI,CAAC,KAAY,C,CACxC,C;EACC,IAAG,KAAAJ,sCAAQ,IAAI,KAAK,EACpB,C;IACC,KAAAA,sCAAQ,GAAG,KAAK,C;IAChB,KAAAA,sCAAQ,CAAC,SAAS,GAAC,oBAAoB,C;EACxC,CAAA;",
+"sources":["org/apache/royale/jewel/PopUp.as"],
+"names":["PopUp.PopUp","_modal","_open","_content","PopUp.createElement","PopUp.modal","PopUp.open","PopUp.content"]
+}

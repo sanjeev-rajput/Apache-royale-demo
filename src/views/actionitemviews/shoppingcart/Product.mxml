@@ -5,10 +5,10 @@
     <fx:Script>
         <![CDATA[
             
-            private var _data:Object;
+            private var _data:Object=null;
             private var _initialized:Boolean = false;
             private function init():void {
-                if (!_data) return;
+                if (_data == null) return;
                 _initialized = true;
                 name.text = _data.title;
                 description.html = _data.description;

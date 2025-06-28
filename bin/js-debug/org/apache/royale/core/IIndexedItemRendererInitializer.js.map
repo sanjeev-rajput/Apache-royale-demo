@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"IIndexedItemRendererInitializer.js",
+"lineCount":41,
+"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Core/src/main/royale",
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;yGAkDwCA,CAAC,QAA6B,EAAE,IAAW,EAAE,KAAA;",
+"sources":["org/apache/royale/core/IIndexedItemRendererInitializer.as"],
+"names":["initializeIndexedItemRenderer"]
+}

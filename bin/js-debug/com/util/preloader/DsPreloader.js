@@ -220,6 +220,7 @@ com.util.preloader.DsPreloader.prototype.ROYALE_COMPILE_FLAGS = 9;
  */
 com.util.preloader.DsPreloader.prototype.ROYALE_INITIAL_STATICS = Object.keys(com.util.preloader.DsPreloader);
 
+//# sourceMappingURL=./DsPreloader.js.map
 
 
 /**

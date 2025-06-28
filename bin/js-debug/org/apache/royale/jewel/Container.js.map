@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"Container.js",
+"lineCount":117,
+"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Jewel/src/main/royale",
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;;;AA8EkB,iCAAhB,WAAyBA,CAAC,C,CAC1B,C;;yDAMmC,I;6DAL3B,C;EACP,KAAA,SAAS,GAAG,iBAAiB,C;AAC9B,C;;;;;;;;AAEY,4CAAAC,iDAAqB,C;;;;;;;AACrB,4CAAAC,+CAA2B,C;;;;;;;AAC3B,4CAAAC,8CAAoB,C;;;;;;;AAKP,4CAAA,aAAzB,WAAsCC,CAAC,C,CACvC,C;EACC,IAAI,CAAC,KAAAD,8CAAY,EACjB,C;IAEe,qCAAA,UAAU,CAAC,IAAI,CAAC,IAAI,CAAC,C;EACpC,C;yEAEqB,C;EAErB,IAAI,CAAC,KAAAA,8CAAY,EACjB,C;IACqB,4CAAA,qBAAqB,CAAC,KAAAD,+CAAa,EAAE,IAAI,EAAE,KAAA,cAAc,CAAC,C;IAE9E,KAAA,aAAa,CAAC,IAAI,8BAAK,CAAC,cAAc,CAAC,CAAC,C;IACxC,KAAA,aAAa,CAAC,IAAI,8BAAK,CAAC,cAAc,CAAC,CAAC,C;IACxC,KAAAC,8CAAY,GAAG,IAAI,C;EACpB,C;AACD,C;;;;;;;;AAkBgB,4CAAA,iBAAhB,WAAiCE,CAAC,QAAe,EAAE,KAAW,C,CAC9D,C;EACC,KAAAH,+CAAa,GAAG,QAAQ,C;EACxB,KAAAD,iDAAe,GAAG,KAAK,C;AACxB,C;;;;;;;;;;;;AAUgB,4CAAA,sBAAhB,WAAsCK,CAAC,IAAU,C,CACjD,C;EACqB,4CAAA,sBAAsB,CAAC,IAAI,EAAE,IAAI,CAAC,C;AACvD,C;;;;;;AAcW,4CAAA,WAAiB,C;;;;;;;;;;;0EAvCMC,CAAC,C,CACnC,C;EACC,OAAO,KAAAN,iDAAe,CAAA;",
+"sources":["org/apache/royale/jewel/Container.as"],
+"names":["Container.Container","_mxmlDescriptor","_mxmlDocument","_initialized","Container.addedToParent","Container.setMXMLDescriptor","Container.generateMXMLAttributes","Container.MXMLDescriptor"]
+}

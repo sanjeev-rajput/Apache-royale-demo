@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"pinValue.js",
+"lineCount":24,
+"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Core/src/main/royale",
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;uCAyBC,WAAwBA,CAAC,KAAY,EAAE,OAAc,EAAE,OAAc,C,CACrE,C;EACC,OAAY,KAAA,GAAG,CAAM,KAAA,GAAG,CAAC,KAAK,EAAE,OAAO,CAAC,EAAE,OAAO,CAAC,CAAA;",
+"sources":["org/apache/royale/utils/number/pinValue.as"],
+"names":["pinValue"]
+}

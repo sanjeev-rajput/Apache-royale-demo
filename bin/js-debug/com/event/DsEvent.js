@@ -159,6 +159,7 @@ com.event.DsEvent.prototype.ROYALE_COMPILE_FLAGS = 9;
  */
 com.event.DsEvent.prototype.ROYALE_INITIAL_STATICS = Object.keys(com.event.DsEvent);
 
+//# sourceMappingURL=./DsEvent.js.map
 
 
 /**

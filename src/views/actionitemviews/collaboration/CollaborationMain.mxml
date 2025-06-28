@@ -7,8 +7,7 @@
         <![CDATA[
             import views.actionitemviews.websocket.SocketService;
             import org.apache.royale.collections.ArrayList;
-            import views.actionitemviews.collaboration.MessageItem;
-            
+            import views.actionitemviews.collaboration.MessageItem;     
             
             
             private var _socketService:SocketService;
@@ -17,6 +16,7 @@
                 _socketService = new SocketService();
                 _socketService.addCAllBackFunction(onSocketData);
                 _socketService.connectWebSocket(SocketService.SUBSCRIBE_COLLABARATION)
+                
             }
 
            private function onSocketData(data:Object):void {
@@ -37,7 +37,6 @@
             }
 
             private function initChatItemUI(userId:String, msg:String):void {
-                trace("initChatItemUI: " + userId + " : " + msg);
                 if(!userId || !msg) return;
                 var msgItem:MessageItem = new MessageItem();
                 msgItem.myself = Boolean(userId == myUserId);
@@ -54,21 +53,25 @@
                     });
                     input.text = ""; // Clear the box
                     
+
                 }
             }
 
         ]]>
     </fx:Script>
-    <j:HGroup height="100%" width="100%" gap="10" >
-        <j:VGroup width="80%" height="100%" id="outputContainer" itemsVerticalAlign="itemsTop" gap="1">
-            <j:beads>
-                <j:ScrollingViewport/>
-            </j:beads>
+    <j:HGroup height="100%" width="100%" gap="1" >
+        <j:VGroup width="85%" height="100%">
+            <j:VGroup width="100%" height="100%" id="outputContainer" itemsVerticalAlign="itemsTop" gap="1">
+                <j:beads>
+                    <j:ScrollingViewport/>
+                </j:beads>
+            </j:VGroup>
+            <sp:TextArea id="input" width="100%" onEnter="onInputChange()" style="resize:none"/>    
         </j:VGroup>
-        <j:VGroup>
-            <sp:Label text="Connected Users:" />
+        <j:VGroup style="border:1px dashed gray;" width="15%" height="100%" itemsVerticalAlign="itemsTop" gap="5">
+            <sp:Label text="Connected Users:" width="100%"/>
             <j:List id="userList" width="100%" height="100%" />
         </j:VGroup>
     </j:HGroup>
-    <sp:TextField id="input" width="80%" onEnter="onInputChange()"/>    
+    
 </j:VGroup>

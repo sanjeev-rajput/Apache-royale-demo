@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"SelectableItemRendererClassFactory.js",
+"lineCount":58,
+"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Core/src/main/royale",
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;AAmDkB,yDAAhB,WAAkDA,CAAC,C,CACnD,C;qFACQ,C;AACR,C;;;;;;;;AAiBkB,oEAAAC,6EAAyB,C;;;;;;;;;;;;AAUZ,oEAAA,kBAAzB,WAA2CC,CAAC,C,CAC5C,C;EACI,IAAM,oDAAF,EAAgB,G,oGAA6B,C;EACpD,EAAE,CAAC,OAAO,CAAC,IAAI,KAAAD,6EAAmB,CAAC,CAAC,CAAC,C;EAClC,OAAO,EAAE,C;AACb,C;;;0FArBmCE,CAAC,KAAa,C,CACjD,C;iGACmB,K,EAAK,C;EACpB,KAAAF,6EAAmB,G,6BAAiB,qCAAA,UAAU,CAAC,QAAQ,CAAC,KAAK,EAAE,yBAAyB,C,CAAU,CAAA;",
+"sources":["org/apache/royale/core/SelectableItemRendererClassFactory.as"],
+"names":["SelectableItemRendererClassFactory.SelectableItemRendererClassFactory","selectableBeadClass","SelectableItemRendererClassFactory.createItemRenderer","SelectableItemRendererClassFactory.strand"]
+}

@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"MouseEventConverter.js",
+"lineCount":57,
+"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Core/src/main/royale",
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AA8L+B,mDAAA,OAAvB,WAA8BA,CAAC,WAAkB,EAAC,YAA0C,C,CAC5F,C;EADkD,oEAAsC,IAAtC,C;EAE9C,IAAS,mDAAL,KAAgB,GAAG,IAAI,mCAAU,CAAC,WAAW,CAAC,MAAM,CAAC,EAAE,WAAW,CAAC,SAAS,CAAC,EAAE,WAAW,CAAC,YAAY,CAAC,CAAC,C;EACtH,IAAG,CAAC,YAAY,EAChB,C;IACC,YAAY,GAAG,IAAI,wBAAwB,CAAC,WAAgC,EAAC,WAAW,CAAC,eAAe,CAAC,CAAC,C;EAC3G,C;EACS,KAAK,CAAC,SAAS,CAAC,YAAY,CAAC,C;EAC7B,OAAO,KAAK,C;AAChB,C;;;;;;;;;;;;;;;AAUuB,mDAAA,kBAAvB,WAAyCC,CAAC,WAAkB,EAAC,YAA0C,C,CACvG,C;EAD6D,oEAAsC,IAAtC,C;EAGzD,O,CAAQ,WAAW,CAAC,IAAI,IAAI,O,CAAO,GAAI,mDAAA,OAAO,CAAC,WAAW,EAAE,YAAY,CAAC,GAAG,IAAI,CAAA;",
+"sources":["org/apache/royale/events/utils/MouseEventConverter.as"],
+"names":["MouseEventConverter.convert","MouseEventConverter.pointerEventFilter"]
+}

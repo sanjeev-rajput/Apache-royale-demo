@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"VContainer.js",
+"lineCount":50,
+"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Jewel/src/main/royale",
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;AA2CkB,kCAAhB,WAA0BA,CAAC,C,CAC3B,C;8DACQ,C;EAEP,KAAA,SAAS,IAAI,GAAG,GAAkB,qDAAA,iBAAiB,C;EAEnD,KAAA,MAAM,GAAG,IAAI,oDAAc,CAAC,CAAC,C;EAC7B,KAAA,OAAO,CAAC,KAAA,MAAM,CAAC,C;AAChB,C;;;;;;;;;;;;mEAEgCC,CAAC,C,CAC3B,C;EACI,OAAc,oCAAP,KAAA,OAAO,EAAI,oDAAJ,CAAkB,C;AACpC,C;;;mEACoBA,CAAC,KAAoB,C,CACzC,C;EACI,KAAA,OAAO,GAAG,KAAK,CAAA;",
+"sources":["org/apache/royale/jewel/VContainer.as"],
+"names":["VContainer.VContainer","VContainer.layout"]
+}

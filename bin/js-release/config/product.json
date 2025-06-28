@@ -1,0 +1,118 @@
+{
+  "Product": [
+    {
+      "label": "Fetch Data - local",
+      "type": "disabled",
+      "url": "NA",
+      "addx":"NA"
+    },
+    {
+      "label": "",
+      "type": "divider",
+      "url": "NA",
+      "addx":"NA"
+    },
+    {
+      "label": "Data & Pagination - 1",
+      "type": "toc",
+      "url": "toc-dr-1.csv",
+      "addx":"NA"
+    },
+    {
+      "label": "Data & Pagination - 2",
+      "type": "toc",
+      "url": "toc-dr-2.csv",
+      "addx":"showpgtools"
+    },
+    {
+      "label": "Fetch Data - 3rd party",
+      "type": "disabled",
+      "url": "NA",
+      "addx":"NA"
+    },
+    {
+      "label": "Load & Filter Data",
+      "type": "extui",
+      "url": "NA",
+      "addx":"NA"
+    },
+    {
+      "label": "",
+      "type": "divider",
+      "url": "NA",
+      "addx":"NA"
+    },
+    {
+      "label": "Collaborative Drawing",
+      "type": "extui",
+      "url": "na",
+      "addx":"NA"
+    },
+    {
+      "label": "Basic Drawing",
+      "type": "extui",
+      "url": "na",
+      "addx":"NA"
+    },
+    {
+      "label": "",
+      "type": "divider",
+      "url": "NA",
+      "addx":"NA"
+    },
+    {
+      "label": "AI - Chatbots",
+      "type": "extui",
+      "url": "na",
+      "addx":"NA"
+    },
+    {
+      "label": "",
+      "type": "divider",
+      "url": "NA",
+      "addx":"NA"
+    },
+    {
+      "label": "Fun n Game",
+      "type": "extui",
+      "url": "na",
+      "addx":"NA"
+    },
+    {
+      "label": "",
+      "type": "divider",
+      "url": "NA",
+      "addx":"NA"
+    },
+    {
+      "label": "Wiki Live Streams",
+      "type": "extui",
+      "url": "na",
+      "addx":"NA"
+    },
+    {
+      "label": "Pexels Video Streams",
+      "type": "extui",
+      "url": "na",
+      "addx":"NA"
+    },
+    {
+      "label": "Shopping Cart",
+      "type": "extui",
+      "url": "na",
+      "addx":"NA"
+    },
+    {
+      "label": "",
+      "type": "divider",
+      "url": "NA",
+      "addx":"NA"
+    },
+    {
+      "label": "CLEAN UI",
+      "type": "clean",
+      "url": "NA",
+      "addx":"NA"
+    }
+  ]   
+}

@@ -184,6 +184,7 @@ goog.require('com.unhurdle.spectrum.ImageAsset');
 goog.require('org.apache.royale.geom.Matrix');
 goog.require('org.apache.royale.binding.ContainerDataBinding');
 goog.require('views.actionitemviews.collaboration.CollaborationMain');
+goog.require('com.unhurdle.spectrum.TextArea');
 goog.require('views.actionitemviews.games.keybordgame.Controller');
 goog.require('org.apache.royale.events.KeyboardEvent');
 goog.require('org.apache.royale.events.utils.NavigationKeys');
@@ -546,6 +547,10 @@ AsJsWasm.prototype.ROYALE_REFLECTION_INFO = function () {
  * @type {number}
  */
 AsJsWasm.prototype.ROYALE_COMPILE_FLAGS = 9;
+
+
+
+//# sourceMappingURL=./AsJsWasm.js.map
 
 
 AsJsWasm.prototype.info = function() {

@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"ItemRemovedEvent.js",
+"lineCount":58,
+"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Core/src/main/royale",
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAqDkB,yCAAhB,WAAgCA,CAAC,IAAW,EAAE,OAAqB,EAAE,UAAwB,C,CAC7F,C;;EAD8C,qDAAgB,KAAhB,C;EAAuB,8DAAmB,KAAnB,C;;sEAQjD,I,CAAK,C;EAGxB,KAAA,IAAI,GAAG,IAAI,C;AACZ,C;;;;;;;AAUW,oDAAA,IAAW,C;;;;;;;AAKG,oDAAA,UAAzB,WAAmCC,CAAC,C,CACpC,C;EACC,IAAY,yDAAR,QAAyB,GAAG,IAAI,yCAAgB,CAAC,KAAA,IAAI,CAAC,C;EAC1D,QAAQ,CAAC,IAAI,GAAG,KAAA,IAAI,C;EACpB,OAAO,QAAQ,CAAA;",
+"sources":["org/apache/royale/events/ItemRemovedEvent.as"],
+"names":["ItemRemovedEvent.ItemRemovedEvent","ItemRemovedEvent.cloneEvent"]
+}

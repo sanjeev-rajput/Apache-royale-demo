@@ -172,3 +172,5 @@ views.actionitemviews.shoppingcart.CheckoutManager.prototype.ROYALE_COMPILE_FLAG
  * @type {Array<string>}
  */
 views.actionitemviews.shoppingcart.CheckoutManager.prototype.ROYALE_INITIAL_STATICS = Object.keys(views.actionitemviews.shoppingcart.CheckoutManager);
+
+//# sourceMappingURL=./CheckoutManager.js.map

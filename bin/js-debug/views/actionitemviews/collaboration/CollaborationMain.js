@@ -8,7 +8,7 @@
  */
 
 goog.provide('views.actionitemviews.collaboration.CollaborationMain');
-/* Royale Dependency List: org.apache.royale.jewel.HGroup,org.apache.royale.jewel.supportClasses.scrollbar.ScrollingViewport,com.unhurdle.spectrum.Label,org.apache.royale.jewel.List,com.unhurdle.spectrum.TextField,org.apache.royale.collections.ArrayList,org.apache.royale.events.Event,org.apache.royale.events.ValueEvent,views.actionitemviews.collaboration.MessageItem,views.actionitemviews.websocket.SocketService,XML*/
+/* Royale Dependency List: org.apache.royale.jewel.HGroup,org.apache.royale.jewel.supportClasses.scrollbar.ScrollingViewport,com.unhurdle.spectrum.TextArea,com.unhurdle.spectrum.Label,org.apache.royale.jewel.List,org.apache.royale.collections.ArrayList,org.apache.royale.events.Event,org.apache.royale.events.ValueEvent,views.actionitemviews.collaboration.MessageItem,views.actionitemviews.websocket.SocketService,XML*/
 
 goog.require('org.apache.royale.jewel.VGroup');
 
@@ -25,7 +25,13 @@ views.actionitemviews.collaboration.CollaborationMain = function() {
    * @private
    * @type {org.apache.royale.jewel.HGroup}
    */
-  this.$ID_13_3;
+  this.$ID_13_4;
+  
+  /**
+   * @private
+   * @type {org.apache.royale.jewel.VGroup}
+   */
+  this.$ID_13_1;
   
   /**
    * @private
@@ -41,27 +47,27 @@ views.actionitemviews.collaboration.CollaborationMain = function() {
   
   /**
    * @private
+   * @type {com.unhurdle.spectrum.TextArea}
+   */
+  this.input_;
+  
+  /**
+   * @private
    * @type {org.apache.royale.jewel.VGroup}
    */
-  this.$ID_13_2;
+  this.$ID_13_3;
   
   /**
    * @private
    * @type {com.unhurdle.spectrum.Label}
    */
-  this.$ID_13_1;
+  this.$ID_13_2;
   
   /**
    * @private
    * @type {org.apache.royale.jewel.List}
    */
   this.userList_;
-  
-  /**
-   * @private
-   * @type {com.unhurdle.spectrum.TextField}
-   */
-  this.input_;
   
   /**
    * @private
@@ -146,7 +152,6 @@ views.actionitemviews.collaboration.CollaborationMain.prototype.views_actionitem
  * @param {string} msg
  */
 views.actionitemviews.collaboration.CollaborationMain.prototype.views_actionitemviews_collaboration_CollaborationMain_initChatItemUI = function(userId, msg) {
-  org.apache.royale.utils.Language.trace("initChatItemUI: " + userId + " : " + msg);
   if (!userId || !msg)
     return;
   var /** @type {views.actionitemviews.collaboration.MessageItem} */ msgItem = new views.actionitemviews.collaboration.MessageItem();
@@ -202,19 +207,6 @@ Object.defineProperties(views.actionitemviews.collaboration.CollaborationMain.pr
       }
     }
   },
-  userList: {
-    /** @this {views.actionitemviews.collaboration.CollaborationMain} */
-    get: function() {
-      return this.userList_;
-    },
-    /** @this {views.actionitemviews.collaboration.CollaborationMain} */
-    set: function(value) {
-      if (value != this.userList_) {
-        this.userList_ = value;
-        this.dispatchEvent(org.apache.royale.events.ValueChangeEvent.createUpdateEvent(this, 'userList', null, value));
-      }
-    }
-  },
   input: {
     /** @this {views.actionitemviews.collaboration.CollaborationMain} */
     get: function() {
@@ -225,6 +217,19 @@ Object.defineProperties(views.actionitemviews.collaboration.CollaborationMain.pr
       if (value != this.input_) {
         this.input_ = value;
         this.dispatchEvent(org.apache.royale.events.ValueChangeEvent.createUpdateEvent(this, 'input', null, value));
+      }
+    }
+  },
+  userList: {
+    /** @this {views.actionitemviews.collaboration.CollaborationMain} */
+    get: function() {
+      return this.userList_;
+    },
+    /** @this {views.actionitemviews.collaboration.CollaborationMain} */
+    set: function(value) {
+      if (value != this.userList_) {
+        this.userList_ = value;
+        this.dispatchEvent(org.apache.royale.events.ValueChangeEvent.createUpdateEvent(this, 'userList', null, value));
       }
     }
   },
@@ -241,7 +246,7 @@ Object.defineProperties(views.actionitemviews.collaboration.CollaborationMain.pr
           4,
           '_id',
           true,
-          '$ID_13_3',
+          '$ID_13_4',
           'percentHeight',
           true,
           100.0,
@@ -250,18 +255,84 @@ Object.defineProperties(views.actionitemviews.collaboration.CollaborationMain.pr
           100.0,
           'gap',
           true,
-          10,
+          1,
           0,
           0,
           [
             org.apache.royale.jewel.VGroup,
-            6,
-            'id',
+            3,
+            '_id',
             true,
-            'outputContainer',
+            '$ID_13_1',
             'percentWidth',
             true,
-            80.0,
+            85.0,
+            'percentHeight',
+            true,
+            100.0,
+            0,
+            0,
+            [
+              org.apache.royale.jewel.VGroup,
+              6,
+              'id',
+              true,
+              'outputContainer',
+              'percentWidth',
+              true,
+              100.0,
+              'percentHeight',
+              true,
+              100.0,
+              'itemsVerticalAlign',
+              true,
+              'itemsTop',
+              'gap',
+              true,
+              1,
+              'beads',
+              null,
+              [
+                org.apache.royale.jewel.supportClasses.scrollbar.ScrollingViewport,
+                1,
+                '_id',
+                true,
+                '$ID_13_0',
+                0,
+                0,
+                null
+              ],
+              0,
+              0,
+              null,
+              com.unhurdle.spectrum.TextArea,
+              3,
+              'id',
+              true,
+              'input',
+              'percentWidth',
+              true,
+              100.0,
+              'style',
+              true,
+              'resize:none',
+              0,
+              1,
+              'onEnter',
+              this.$EH_13_1,
+              null
+            ],
+            org.apache.royale.jewel.VGroup,
+            6,
+            '_id',
+            true,
+            '$ID_13_3',
+            'style',
+            true,
+            'border:1px dashed gray;',
+            'percentWidth',
+            true,
+            15.0,
             'percentHeight',
             true,
             100.0,
@@ -270,38 +341,21 @@ Object.defineProperties(views.actionitemviews.collaboration.CollaborationMain.pr
             'itemsTop',
             'gap',
             true,
-            1,
-            'beads',
-            null,
-            [
-              org.apache.royale.jewel.supportClasses.scrollbar.ScrollingViewport,
-              1,
-              '_id',
-              true,
-              '$ID_13_0',
-              0,
-              0,
-              null
-            ],
-            0,
-            0,
-            null,
-            org.apache.royale.jewel.VGroup,
-            1,
-            '_id',
-            true,
-            '$ID_13_2',
+            5,
             0,
             0,
             [
               com.unhurdle.spectrum.Label,
-              2,
+              3,
               '_id',
               true,
-              '$ID_13_1',
+              '$ID_13_2',
               'text',
               true,
               'Connected Users:',
+              'percentWidth',
+              true,
+              100.0,
               0,
               0,
               null,
@@ -320,20 +374,7 @@ Object.defineProperties(views.actionitemviews.collaboration.CollaborationMain.pr
               0,
               null
             ]
-          ],
-          com.unhurdle.spectrum.TextField,
-          2,
-          'id',
-          true,
-          'input',
-          'percentWidth',
-          true,
-          80.0,
-          0,
-          1,
-          'onEnter',
-          this.$EH_13_1,
-          null
+          ]
         ];
         if (arr)
           this.mxmldd = arr.concat(mxmldd);
@@ -363,8 +404,8 @@ views.actionitemviews.collaboration.CollaborationMain.prototype.ROYALE_REFLECTIO
     accessors: function () {
       return {
         'outputContainer': { type: 'org.apache.royale.jewel.VGroup', access: 'readwrite', declaredBy: 'views.actionitemviews.collaboration.CollaborationMain'},
-        'userList': { type: 'org.apache.royale.jewel.List', access: 'readwrite', declaredBy: 'views.actionitemviews.collaboration.CollaborationMain'},
-        'input': { type: 'com.unhurdle.spectrum.TextField', access: 'readwrite', declaredBy: 'views.actionitemviews.collaboration.CollaborationMain'}
+        'input': { type: 'com.unhurdle.spectrum.TextArea', access: 'readwrite', declaredBy: 'views.actionitemviews.collaboration.CollaborationMain'},
+        'userList': { type: 'org.apache.royale.jewel.List', access: 'readwrite', declaredBy: 'views.actionitemviews.collaboration.CollaborationMain'}
       };
     },
     methods: function () {
@@ -379,3 +420,7 @@ views.actionitemviews.collaboration.CollaborationMain.prototype.ROYALE_REFLECTIO
  * @type {number}
  */
 views.actionitemviews.collaboration.CollaborationMain.prototype.ROYALE_COMPILE_FLAGS = 9;
+
+
+
+//# sourceMappingURL=./CollaborationMain.js.map

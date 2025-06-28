@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"ExtDragDrop.js",
+"lineCount":34,
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;AAYyB,sCAAjB,WAA4BA,CAAC,C;;;;;;;;;;AAEN,uCAAA,WAAvB,WAAkCC,CAAC,iBAAwB,EAAE,iBAAwB,EAAE,aAAsB,C,CAAO,C;EAChH,MAAM,CAAC,KAAK,CAAC,CAAC,aAAa,CAAC,iBAAiB,EAAC,iBAAiB,EAAE,aAAa,CAAC,CAAA;",
+"sources":["../../../../../src/com/extjavascript/dragdrop/ExtDragDrop.as"],
+"names":["ExtDragDrop.ExtDragDrop","ExtDragDrop.setDragDrop"]
+}

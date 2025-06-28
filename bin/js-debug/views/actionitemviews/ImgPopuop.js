@@ -537,3 +537,7 @@ views.actionitemviews.ImgPopuop.prototype.ROYALE_REFLECTION_INFO = function () {
  * @type {number}
  */
 views.actionitemviews.ImgPopuop.prototype.ROYALE_COMPILE_FLAGS = 9;
+
+
+
+//# sourceMappingURL=./ImgPopuop.js.map

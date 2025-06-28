@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"HSV.js",
+"lineCount":108,
+"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Core/src/main/royale",
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;AA6CkB,2BAAhB,WAAmBA,CAAC,CAAY,EAAE,CAAY,EAAE,CAAY,C,CAC5D,C;EADoB,mCAAS,GAAT,C;EAAc,mCAAS,GAAT,C;EAAc,mCAAS,GAAT,C;EAE/C,KAAAC,8BAAE,GAAG,CAAC,C;EACN,KAAAC,8BAAE,GAAG,CAAC,C;EACN,KAAAC,8BAAE,GAAG,CAAC,C;AACP,C;;;;;;;AAjBY,sCAAAF,8BAAS,C;;;;;;;AACT,sCAAAC,8BAAS,C;;;;;;;AACT,sCAAAC,8BAAS,C;;;;;;;;;;;uDAiBAC,CAAC,C,CACtB,C;EACC,OAAO,KAAAH,8BAAE,C;AACV,C;;;uDAEqBG,CAAC,KAAY,C,CAClC,C;EACC,KAAAH,8BAAE,GAAG,KAAK,C;AACX,C;;;;;;;;;;;uDAEqBI,CAAC,C,CACtB,C;EACC,OAAO,KAAAH,8BAAE,C;AACV,C;;;uDAEqBG,CAAC,KAAY,C,CAClC,C;EACC,KAAAH,8BAAE,GAAG,KAAK,C;AACX,C;;;;;;;;;;;uDAEqBI,CAAC,C,CACtB,C;EACC,OAAO,KAAAH,8BAAE,C;AACV,C;;;uDAEqBG,CAAC,KAAY,C,CAClC,C;EACC,KAAAH,8BAAE,GAAG,KAAK,CAAA;",
+"sources":["org/apache/royale/utils/HSV.as"],
+"names":["HSV.HSV","_h","_s","_v","HSV.h","HSV.s","HSV.v"]
+}

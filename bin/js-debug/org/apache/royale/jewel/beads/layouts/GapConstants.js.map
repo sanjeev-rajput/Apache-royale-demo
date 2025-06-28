@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"GapConstants.js",
+"lineCount":35,
+"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Jewel/src/main/royale",
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;AA8BsB,mDAAA,IAAW,GAAG,EAAE,C;;;;;;;;AAOhB,mDAAA,QAAe,GAAG,CAAA;",
+"sources":["org/apache/royale/jewel/beads/layouts/GapConstants.as"],
+"names":[]
+}

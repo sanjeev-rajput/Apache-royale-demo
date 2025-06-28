@@ -166,3 +166,5 @@ views.actionitemviews.basicdrawing.shapes.CircleShape.prototype.ROYALE_REFLECTIO
  * @type {number}
  */
 views.actionitemviews.basicdrawing.shapes.CircleShape.prototype.ROYALE_COMPILE_FLAGS = 9;
+
+//# sourceMappingURL=./CircleShape.js.map

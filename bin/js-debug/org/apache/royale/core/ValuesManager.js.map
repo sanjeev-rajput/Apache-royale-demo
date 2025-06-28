@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"ValuesManager.js",
+"lineCount":50,
+"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Core/src/main/royale",
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;AAyCkB,oCAAhB,WAA6BA,CAAC,C;;;;;;;;AAIX,qCAAA,WAAuB,C;;;;;;;;;;;+DAaLC,CAAC,C,CACtC,C;EACC,OAAO,qCAAA,WAAW,C;AACnB,C;;;+DAKqCA,CAAC,KAAiB,C,CACvD,C;EACC,qCAAA,WAAW,GAAG,KAAK,CAAA;",
+"sources":["org/apache/royale/core/ValuesManager.as"],
+"names":["ValuesManager.ValuesManager","ValuesManager.valuesImpl"]
+}

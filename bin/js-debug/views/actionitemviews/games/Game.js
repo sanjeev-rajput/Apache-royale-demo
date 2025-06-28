@@ -315,3 +315,7 @@ views.actionitemviews.games.Game.prototype.ROYALE_REFLECTION_INFO = function () 
  * @type {number}
  */
 views.actionitemviews.games.Game.prototype.ROYALE_COMPILE_FLAGS = 9;
+
+
+
+//# sourceMappingURL=./Game.js.map

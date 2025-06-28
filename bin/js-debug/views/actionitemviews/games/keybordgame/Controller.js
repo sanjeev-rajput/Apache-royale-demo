@@ -411,3 +411,5 @@ views.actionitemviews.games.keybordgame.Controller.prototype.ROYALE_REFLECTION_I
  * @type {number}
  */
 views.actionitemviews.games.keybordgame.Controller.prototype.ROYALE_COMPILE_FLAGS = 9;
+
+//# sourceMappingURL=./Controller.js.map

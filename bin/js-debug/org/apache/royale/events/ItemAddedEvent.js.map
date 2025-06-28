@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"ItemAddedEvent.js",
+"lineCount":58,
+"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Core/src/main/royale",
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAoDkB,uCAAhB,WAA8BA,CAAC,IAAW,EAAE,OAAqB,EAAE,UAAwB,C,CAC3F,C;;EAD4C,qDAAgB,KAAhB,C;EAAuB,8DAAmB,KAAnB,C;;oEAQ/C,I,CAAK,C;EAGxB,KAAA,IAAI,GAAG,IAAI,C;AACZ,C;;;;;;;AAUW,kDAAA,IAAW,C;;;;;;;AAKG,kDAAA,UAAzB,WAAmCC,CAAC,C,CACpC,C;EACC,IAAY,uDAAR,QAAuB,GAAG,IAAI,uCAAc,CAAC,KAAA,IAAI,CAAC,C;EACtD,QAAQ,CAAC,IAAI,GAAG,KAAA,IAAI,C;EACpB,OAAO,QAAQ,CAAA;",
+"sources":["org/apache/royale/events/ItemAddedEvent.as"],
+"names":["ItemAddedEvent.ItemAddedEvent","ItemAddedEvent.cloneEvent"]
+}

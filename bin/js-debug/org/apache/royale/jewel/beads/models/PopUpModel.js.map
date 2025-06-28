@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"PopUpModel.js",
+"lineCount":79,
+"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Jewel/src/main/royale",
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;;;AA4CkB,+CAAhB,WAA0BA,CAAC,C,CAC3B,C;2EACiB,C;AACjB,C;;;;;;;;AAEY,0DAAAC,uDAAe,C;;;;;;;AAmET,0DAAAC,yDAAa,GAAG,IAAI,C;;;;;;;;;;;gFAzDZC,CAAC,KAAa,C,CACxC,C;EACC,KAAAF,uDAAO,GAAG,KAAK,C;AAChB,C;;;;;;;;;;;kFAyD4BG,CAAC,C,CAC7B,C;EACC,OAAO,KAAAF,yDAAS,C;AACjB,C;;;kFAU4BE,CAAC,KAAS,C,CACtC,C;EACC,IAAI,KAAK,IAAI,KAAAF,yDAAS,EACtB,C;IACC,KAAAA,yDAAS,GAAG,KAAK,C;IACjB,KAAA,aAAa,CAAC,IAAI,8BAAK,CAAC,gBAAgB,CAAC,CAAC,C;EAC3C,CAAA;",
+"sources":["org/apache/royale/jewel/beads/models/PopUpModel.as"],
+"names":["PopUpModel.PopUpModel","_strand","_duration","PopUpModel.strand","PopUpModel.duration"]
+}

@@ -177,3 +177,5 @@ views.actionitemviews.basicdrawing.shapes.FreehandShape.prototype.ROYALE_REFLECT
  * @type {number}
  */
 views.actionitemviews.basicdrawing.shapes.FreehandShape.prototype.ROYALE_COMPILE_FLAGS = 9;
+
+//# sourceMappingURL=./FreehandShape.js.map

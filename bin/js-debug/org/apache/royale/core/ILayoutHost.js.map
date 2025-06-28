@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"ILayoutHost.js",
+"lineCount":36,
+"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Core/src/main/royale",
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;oEAqDuBA,CAAC,C;;mEAUFC,CAAAA;",
+"sources":["org/apache/royale/core/ILayoutHost.as"],
+"names":["beforeLayout","afterLayout"]
+}

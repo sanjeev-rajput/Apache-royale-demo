@@ -111,3 +111,5 @@ com.controller.PopupManager.prototype.ROYALE_COMPILE_FLAGS = 9;
  * @type {Array<string>}
  */
 com.controller.PopupManager.prototype.ROYALE_INITIAL_STATICS = Object.keys(com.controller.PopupManager);
+
+//# sourceMappingURL=./PopupManager.js.map

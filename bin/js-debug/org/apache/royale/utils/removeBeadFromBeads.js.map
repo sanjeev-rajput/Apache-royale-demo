@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"removeBeadFromBeads.js",
+"lineCount":52,
+"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Core/src/main/royale",
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2CA0EC,WAAmCA,CAAC,KAAY,EAAE,YAAkB,EAAE,aAAqB,C,CAC3F,C;EACC,IAAK,sBAAD,C,IAAM,C;MAAG,sBAAD,C;IAAZ,IAAK,sBAAD,C,IAAM,C;QAAG,sBAAD,C,IAAM,C;EAClB,IAAO,qBAAH,GAAS,GAAG,KAAc,C;EAC9B,CAAC,G,CAAG,GAAG,CAAC,M,OAAM,C;EACd,KAAK,CAAC,GAAG,CAAC,EAAE,CAAC,GAAG,CAAC,EAAE,CAAC,EAAE,EACtB,C;IACC,IAAI,YAAY,KAAK,GAAG,CAAC,CAAC,CAAC,EAC3B,C;MACC,GAAG,CAAC,MAAM,CAAC,CAAC,EAAE,CAAC,CAAC,C;MAChB,IAAI,aAAa,C;QAAE,YAAY,CAAC,MAAM,GAAG,IAAI,C;MAC7C,OAAO,YAAY,C;IACpB,C;EACD,C;EACA,OAAO,IAAI,CAAA;",
+"sources":["org/apache/royale/utils/removeBeadFromBeads.as"],
+"names":["removeBeadFromBeads"]
+}

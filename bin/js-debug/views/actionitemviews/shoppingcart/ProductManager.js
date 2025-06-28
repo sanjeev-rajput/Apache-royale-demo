@@ -305,3 +305,5 @@ views.actionitemviews.shoppingcart.ProductManager.prototype.ROYALE_COMPILE_FLAGS
  * @type {Array<string>}
  */
 views.actionitemviews.shoppingcart.ProductManager.prototype.ROYALE_INITIAL_STATICS = Object.keys(views.actionitemviews.shoppingcart.ProductManager);
+
+//# sourceMappingURL=./ProductManager.js.map

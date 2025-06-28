@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"LayoutData.js",
+"lineCount":94,
+"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Core/src/main/royale",
+"mappings":"A;;;;;;;;;;;;;;;;;;AA+BqB,wCAAhB,WAA0BA,CAAC,C;;;;;;;;AAIlB,mDAAAC,gDAAgB,C;;;;;;;AACV,mDAAAC,iDAAiB,C;;;;;;;AACjB,mDAAAC,iDAAmB,C;;;;;;;;;;;yEAEXC,CAAC,C,CAC3B,C;EACC,OAAO,KAAAH,gDAAO,C;AACf,C;;;yEAC0BG,CAAC,KAAc,C,CACzC,C;EACU,KAAAH,gDAAO,GAAG,KAAK,C;AACzB,C;;;;;;;;;;;0EAEiCI,CAAC,C,CAC5B,C;EACI,OAAO,KAAAH,iDAAQ,C;AACnB,C;;;0EAC2BG,CAAC,KAAc,C,CAC1C,C;EACI,KAAAH,iDAAQ,GAAG,KAAK,C;AACpB,C;;;;;;;;;;;0EAE2BI,CAAC,C,CAC5B,C;EACI,OAAO,KAAAH,iDAAQ,C;AACnB,C;;;0EAC2BG,CAAC,KAAgB,C,CAC5C,C;EACI,KAAAH,iDAAQ,GAAG,KAAK,CAAA;",
+"sources":["org/apache/royale/core/layout/LayoutData.as"],
+"names":["LayoutData.LayoutData","_border","_padding","_margins","LayoutData.border","LayoutData.padding","LayoutData.margins"]
+}

@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"HTTPHeader.js",
+"lineCount":95,
+"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Network/src/main/royale",
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAyGkB,gCAAhB,WAA0BA,CAAC,IAAkB,EAAE,KAAmB,C,CAClE,C;EAD2B,4CAAc,IAAd,C;EAAoB,+CAAe,IAAf,C;EAEvC,C;EACP,IAAI,CAAC,IAAI,GAAG,IAAI,C;EAChB,IAAI,CAAC,KAAK,GAAG,KAAK,C;AACnB,C;;;;;;;;AAtEoB,iCAAA,YAAmB,GAAG,cAAc,C;;;;;;;;AAUpC,iCAAA,gBAAuB,GAAG,kBAAkB,C;;;;;;;;AAU5C,iCAAA,UAAiB,GAAG,YAAY,C;;;;;;;;AAW1B,iCAAA,gBAAuB,GAAG,mCAAmC,C;;;;;;;;AAUnE,iCAAA,cAAqB,GAAG,gBAAgB,C;;;;;;;;AAWxC,iCAAA,UAAiB,GAAG,YAAY,C;;;;;;AA4BzC,2CAAA,IAAW,C;;;;;;AAUX,2CAAA,KAAA;",
+"sources":["org/apache/royale/net/HTTPHeader.as"],
+"names":["HTTPHeader.HTTPHeader"]
+}
