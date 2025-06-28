@@ -31,7 +31,7 @@ com.extjavascript.dragdrop.ExtDragDrop = function() {
  * @param {Function} callBalckFunc
  */
 com.extjavascript.dragdrop.ExtDragDrop.setDragDrop = function(dropZoneContainer, dragZoneContainer, callBalckFunc) {
-  window["DND"].setDNDElement(dropZoneContainer, dragZoneContainer, callBalckFunc);
+  window["DND"]["setDNDElement"](dropZoneContainer, dragZoneContainer, callBalckFunc);
 };
 
 

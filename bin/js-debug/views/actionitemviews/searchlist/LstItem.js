@@ -105,10 +105,10 @@ views.actionitemviews.searchlist.LstItem.prototype.views_actionitemviews_searchl
 views.actionitemviews.searchlist.LstItem.prototype.views_actionitemviews_searchlist_LstItem_init = function() {
   this.img.width = 100;
   this.img.height = 50;
-  this.img.src = org.apache.royale.utils.Language.string(this.views_actionitemviews_searchlist_LstItem__details.flag);
-  this.name.innerHTML = '<b> Name :: </b>' + this.views_actionitemviews_searchlist_LstItem__details.name;
-  this.capital.innerHTML = '<b> Capital :: </b>' + this.views_actionitemviews_searchlist_LstItem__details.capital;
-  this.region.innerHTML = '<b> Region :: </b>' + this.views_actionitemviews_searchlist_LstItem__details.region;
+  this.img.src = org.apache.royale.utils.Language.string(this.views_actionitemviews_searchlist_LstItem__details["flag"]);
+  this.name.innerHTML = '<b> Name :: </b>' + this.views_actionitemviews_searchlist_LstItem__details["name"];
+  this.capital.innerHTML = '<b> Capital :: </b>' + this.views_actionitemviews_searchlist_LstItem__details["capital"];
+  this.region.innerHTML = '<b> Region :: </b>' + this.views_actionitemviews_searchlist_LstItem__details["region"];
 };
 
 

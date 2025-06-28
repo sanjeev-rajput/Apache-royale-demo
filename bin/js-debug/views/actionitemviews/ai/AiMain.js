@@ -198,7 +198,7 @@ views.actionitemviews.ai.AiMain.prototype.views_actionitemviews_ai_AiMain_initMd
   this.views_actionitemviews_ai_AiMain_httpService = new com.model.ServiceLoader();
   this.views_actionitemviews_ai_AiMain_httpService.reqMethod = "POST";
   this.views_actionitemviews_ai_AiMain_httpService.contentType = "application/json";
-  this.views_actionitemviews_ai_AiMain_httpService.reqData = JSON.stringify({prompt:"Please introduce yourself"});
+  this.views_actionitemviews_ai_AiMain_httpService.reqData = JSON.stringify({"prompt":"Please introduce yourself"});
   this.views_actionitemviews_ai_AiMain_httpService.loadJData('http://localhost:3000/api/chat', org.apache.royale.utils.Language.closure(this.views_actionitemviews_ai_AiMain_dataLoadEventHandler, this, 'views_actionitemviews_ai_AiMain_dataLoadEventHandler'), com.model.ServiceLoader.DATA_TYPE_JSON, org.apache.royale.utils.Language.closure(this.views_actionitemviews_ai_AiMain_errorEventHander, this, 'views_actionitemviews_ai_AiMain_errorEventHander'), false);
 };
 
@@ -211,7 +211,7 @@ views.actionitemviews.ai.AiMain.prototype.views_actionitemviews_ai_AiMain_initMd
   this.views_actionitemviews_ai_AiMain_httpService = new com.model.ServiceLoader();
   this.views_actionitemviews_ai_AiMain_httpService.reqMethod = "POST";
   this.views_actionitemviews_ai_AiMain_httpService.contentType = "application/json";
-  this.views_actionitemviews_ai_AiMain_httpService.reqData = JSON.stringify({prompt:"Describe the scene in this image.", "imageUrl":"https://www.amitshah.co.in/storage/uploads/1/1679578399-641c551f657b4.png"});
+  this.views_actionitemviews_ai_AiMain_httpService.reqData = JSON.stringify({"prompt":"Describe the scene in this image.", "imageUrl":"https://www.amitshah.co.in/storage/uploads/1/1679578399-641c551f657b4.png"});
   this.views_actionitemviews_ai_AiMain_httpService.loadJData('http://localhost:3000/api/vision', org.apache.royale.utils.Language.closure(this.views_actionitemviews_ai_AiMain_dataLoadEventHandler, this, 'views_actionitemviews_ai_AiMain_dataLoadEventHandler'), com.model.ServiceLoader.DATA_TYPE_JSON, org.apache.royale.utils.Language.closure(this.views_actionitemviews_ai_AiMain_errorEventHander, this, 'views_actionitemviews_ai_AiMain_errorEventHander'), false);
 };
 
@@ -224,7 +224,7 @@ views.actionitemviews.ai.AiMain.prototype.views_actionitemviews_ai_AiMain_initMd
   this.views_actionitemviews_ai_AiMain_httpService = new com.model.ServiceLoader();
   this.views_actionitemviews_ai_AiMain_httpService.reqMethod = "POST";
   this.views_actionitemviews_ai_AiMain_httpService.contentType = "application/json";
-  this.views_actionitemviews_ai_AiMain_httpService.reqData = JSON.stringify({prompt:"Tell me a fun fact about space."});
+  this.views_actionitemviews_ai_AiMain_httpService.reqData = JSON.stringify({"prompt":"Tell me a fun fact about space."});
   this.views_actionitemviews_ai_AiMain_httpService.loadJData('http://localhost:3000/api/Llama', org.apache.royale.utils.Language.closure(this.views_actionitemviews_ai_AiMain_dataLoadEventHandler, this, 'views_actionitemviews_ai_AiMain_dataLoadEventHandler'), com.model.ServiceLoader.DATA_TYPE_JSON, org.apache.royale.utils.Language.closure(this.views_actionitemviews_ai_AiMain_errorEventHander, this, 'views_actionitemviews_ai_AiMain_errorEventHander'), false);
 };
 
@@ -236,10 +236,10 @@ views.actionitemviews.ai.AiMain.prototype.views_actionitemviews_ai_AiMain_initMd
 views.actionitemviews.ai.AiMain.prototype.views_actionitemviews_ai_AiMain_dataLoadEventHandler = function(d) {
   org.apache.royale.utils.Language.trace(d);
   if (this.views_actionitemviews_ai_AiMain_chatBotUi) {
-    this.views_actionitemviews_ai_AiMain_chatBotUi.aiResponse = org.apache.royale.utils.Language.string(d.response);
+    this.views_actionitemviews_ai_AiMain_chatBotUi.aiResponse = org.apache.royale.utils.Language.string(d["response"]);
   } else {
     var /** @type {org.apache.royale.html.elements.Span} */ res = new org.apache.royale.html.elements.Span();
-    res.text = org.apache.royale.utils.Language.string(d.response);
+    res.text = org.apache.royale.utils.Language.string(d["response"]);
     this.chatCtr.addElement(res);
   }
   this.txtPrompt.text = '';
@@ -255,7 +255,7 @@ views.actionitemviews.ai.AiMain.prototype.views_actionitemviews_ai_AiMain_dataLo
  * @param {org.apache.royale.events.Event} event
  */
 views.actionitemviews.ai.AiMain.prototype.views_actionitemviews_ai_AiMain_errorEventHander = function(event) {
-  console.log(event.toString() + "\n\n");
+  console.log(event["toString"]() + "\n\n");
 };
 
 
@@ -269,15 +269,15 @@ views.actionitemviews.ai.AiMain.prototype.getAIResponse = function() {
   this.views_actionitemviews_ai_AiMain_requestData = this.txtPrompt.text;
   if (this.views_actionitemviews_ai_AiMain_actionBtn == this.mdl1) {
     this.views_actionitemviews_ai_AiMain_chatBotUi.aiQuery = this.views_actionitemviews_ai_AiMain_requestData;
-    this.views_actionitemviews_ai_AiMain_httpService.reqData = JSON.stringify({prompt:this.views_actionitemviews_ai_AiMain_requestData});
+    this.views_actionitemviews_ai_AiMain_httpService.reqData = JSON.stringify({"prompt":this.views_actionitemviews_ai_AiMain_requestData});
   }
   if (this.views_actionitemviews_ai_AiMain_actionBtn == this.mdl2) {
     this.views_actionitemviews_ai_AiMain_chatBotUi.aiQuery = this.views_actionitemviews_ai_AiMain_requestData + "<br> <img src='" + this.imgUrl.text + "' height='150'>";
-    this.views_actionitemviews_ai_AiMain_httpService.reqData = JSON.stringify({prompt:this.views_actionitemviews_ai_AiMain_requestData, "imageUrl":this.imgUrl.text});
+    this.views_actionitemviews_ai_AiMain_httpService.reqData = JSON.stringify({"prompt":this.views_actionitemviews_ai_AiMain_requestData, "imageUrl":this.imgUrl.text});
   }
   if (this.views_actionitemviews_ai_AiMain_actionBtn == this.mdl3) {
     this.views_actionitemviews_ai_AiMain_chatBotUi.aiQuery = this.views_actionitemviews_ai_AiMain_requestData + "<br> <img src='" + this.imgUrl.text + "' height='150'>";
-    this.views_actionitemviews_ai_AiMain_httpService.reqData = JSON.stringify({prompt:this.views_actionitemviews_ai_AiMain_requestData, "imageUrl":this.imgUrl.text});
+    this.views_actionitemviews_ai_AiMain_httpService.reqData = JSON.stringify({"prompt":this.views_actionitemviews_ai_AiMain_requestData, "imageUrl":this.imgUrl.text});
   }
   this.views_actionitemviews_ai_AiMain_httpService.sendReqData();
   this.chatCtr.addElement(this.views_actionitemviews_ai_AiMain_chatBotUi);

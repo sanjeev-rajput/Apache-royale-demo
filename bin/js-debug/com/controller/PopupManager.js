@@ -56,8 +56,8 @@ com.controller.PopupManager.getInstance = function() {
 com.controller.PopupManager.prototype.createPopup = function(popup, ui, w, h) {
   w = typeof w !== 'undefined' ? w : 490;
   h = typeof h !== 'undefined' ? h : 392;
-  popup.width = w;
-  popup.height = h;
+  popup["width"] = w;
+  popup["height"] = h;
   com.controller.PopupManager._instance.content = popup;
   com.controller.PopupManager._instance.modal = true;
   ui.addElement(com.controller.PopupManager._instance);

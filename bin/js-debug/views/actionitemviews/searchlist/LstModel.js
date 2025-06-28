@@ -64,10 +64,10 @@ views.actionitemviews.searchlist.LstModel.prototype.views_actionitemviews_search
   var i = foreachiter0_target[foreachiter0];
   {
     var /** @type {Object} */ cDetails = new Object();
-    cDetails.flag = i.flags.png;
-    cDetails.name = i.name.common;
-    cDetails.capital = i.capital;
-    cDetails.region = i.region;
+    cDetails["flag"] = i["flags"]["png"];
+    cDetails["name"] = i["name"]["common"];
+    cDetails["capital"] = i["capital"];
+    cDetails["region"] = i["region"];
     this.views_actionitemviews_searchlist_LstModel__allCountryDetails.push(cDetails);
     org.apache.royale.utils.Language.sortOn(this.views_actionitemviews_searchlist_LstModel__allCountryDetails, 'name');
   }}

@@ -122,9 +122,9 @@ views.TopMenuR.prototype.views_TopMenuR_loadHandler = function(e) {
   var i = foreachiter0_target[foreachiter0];
   {
     var /** @type {com.unhurdle.spectrum.data.MenuItem} */ item = new com.unhurdle.spectrum.data.MenuItem();
-    item.text = org.apache.royale.utils.Language.string(i.label);
-    item.disabled = (i.type == "disabled") ? true : false;
-    item.isDivider = (i.type == "divider") ? true : false;
+    item.text = org.apache.royale.utils.Language.string(i["label"]);
+    item.disabled = (i["type"] == "disabled") ? true : false;
+    item.isDivider = (i["type"] == "divider") ? true : false;
     menuArr.push(item);
   }}
   
@@ -145,10 +145,10 @@ views.TopMenuR.prototype.views_TopMenuR_handleSelection = function() {
   var /** @type {string} */ url = org.apache.royale.utils.Language.string(this.views_TopMenuR_CbData[idx]['url']);
   var /** @type {string} */ addx = org.apache.royale.utils.Language.string(this.views_TopMenuR_CbData[idx]['addx']);
   var /** @type {Object} */ obj = new Object();
-  obj.title = name;
-  obj.url = url;
-  obj.type = type;
-  obj.addx = addx;
+  obj["title"] = name;
+  obj["url"] = url;
+  obj["type"] = type;
+  obj["addx"] = addx;
   switch (type) {
     case "toc":
       com.event.DsEvent.instance.dispatch(com.event.DsEvent.FETCH_DATA_EVENT, obj);

@@ -21,7 +21,7 @@ goog.require('org.apache.royale.jewel.VGroup');
 views.actionitemviews.websocket.SocketEventUi = function() {
   views.actionitemviews.websocket.SocketEventUi.base(this, 'constructor');
   
-  this.views_actionitemviews_websocket_SocketEventUi__change = {title:"Example Title", wiki:"Example Wiki", user:"Example User", comment:"Example Comment"};
+  this.views_actionitemviews_websocket_SocketEventUi__change = {"title":"Example Title", "wiki":"Example Wiki", "user":"Example User", "comment":"Example Comment"};
   /**
    * @private
    * @type {org.apache.royale.html.elements.Span}
@@ -101,10 +101,10 @@ views.actionitemviews.websocket.SocketEventUi.prototype.views_actionitemviews_we
  * @private
  */
 views.actionitemviews.websocket.SocketEventUi.prototype.views_actionitemviews_websocket_SocketEventUi_init = function() {
-  this.changeTitle.innerHTML = '<b>' + this.views_actionitemviews_websocket_SocketEventUi__change.title + '</b>';
-  this.changeWiki.innerHTML = org.apache.royale.utils.Language.string(this.views_actionitemviews_websocket_SocketEventUi__change.wiki);
-  this.changeUser.innerHTML = org.apache.royale.utils.Language.string(this.views_actionitemviews_websocket_SocketEventUi__change.user);
-  this.changeComment.innerHTML = org.apache.royale.utils.Language.string(this.views_actionitemviews_websocket_SocketEventUi__change.comment);
+  this.changeTitle.innerHTML = '<b>' + this.views_actionitemviews_websocket_SocketEventUi__change["title"] + '</b>';
+  this.changeWiki.innerHTML = org.apache.royale.utils.Language.string(this.views_actionitemviews_websocket_SocketEventUi__change["wiki"]);
+  this.changeUser.innerHTML = org.apache.royale.utils.Language.string(this.views_actionitemviews_websocket_SocketEventUi__change["user"]);
+  this.changeComment.innerHTML = org.apache.royale.utils.Language.string(this.views_actionitemviews_websocket_SocketEventUi__change["comment"]);
 };
 
 

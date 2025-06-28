@@ -60,7 +60,7 @@ views.actionitemviews.shoppingcart.CheckoutManager.prototype.updaPriceTotal = fu
   {
   var item = foreachiter0_target[foreachiter0];
   {
-    totalPrice += item.price * item.qty;
+    totalPrice += item["price"] * item["qty"];
   }}
   
   this.views_actionitemviews_shoppingcart_CheckoutManager__priceLbl.html = "Total: $" + totalPrice.toFixed(2);

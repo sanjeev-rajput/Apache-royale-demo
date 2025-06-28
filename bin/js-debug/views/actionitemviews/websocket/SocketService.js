@@ -117,9 +117,9 @@ views.actionitemviews.websocket.SocketService.prototype.views_actionitemviews_we
  */
 views.actionitemviews.websocket.SocketService.prototype.views_actionitemviews_websocket_SocketService_subscribeWs = function() {
   if (this.views_actionitemviews_websocket_SocketService__subscribeType == views.actionitemviews.websocket.SocketService.SUBSCRIBE_WIKI)
-    this.views_actionitemviews_websocket_SocketService_ws.send(JSON.stringify({type:this.views_actionitemviews_websocket_SocketService__subscribeType}));
+    this.views_actionitemviews_websocket_SocketService_ws.send(JSON.stringify({"type":this.views_actionitemviews_websocket_SocketService__subscribeType}));
   if (this.views_actionitemviews_websocket_SocketService__subscribeType == views.actionitemviews.websocket.SocketService.SUBSCRIBE_COLLABARATION)
-    this.views_actionitemviews_websocket_SocketService_ws.send(JSON.stringify({type:this.views_actionitemviews_websocket_SocketService__subscribeType, shape:'rect'}));
+    this.views_actionitemviews_websocket_SocketService_ws.send(JSON.stringify({"type":this.views_actionitemviews_websocket_SocketService__subscribeType, "shape":'rect'}));
 };
 
 
@@ -128,7 +128,7 @@ views.actionitemviews.websocket.SocketService.prototype.views_actionitemviews_we
  * @param {*} e
  */
 views.actionitemviews.websocket.SocketService.prototype.views_actionitemviews_websocket_SocketService_connectionMessageEvtHandler = function(e) {
-  var /** @type {Object} */ data = JSON.parse(org.apache.royale.utils.Language.string(e.data));
+  var /** @type {Object} */ data = JSON.parse(org.apache.royale.utils.Language.string(e["data"]));
   this.views_actionitemviews_websocket_SocketService__callBackFunction(data);
 };
 

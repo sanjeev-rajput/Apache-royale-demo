@@ -134,13 +134,13 @@ views.actionitemviews.collaboration.CollaborationMain.prototype.views_actionitem
  */
 views.actionitemviews.collaboration.CollaborationMain.prototype.views_actionitemviews_collaboration_CollaborationMain_onSocketData = function(data) {
   var /** @type {Object} */ changeData = JSON.parse(JSON.stringify(data));
-  if (data.type == "welcome") {
-    this.views_actionitemviews_collaboration_CollaborationMain_myUserId = org.apache.royale.utils.Language.string(data.userId);
+  if (data["type"] == "welcome") {
+    this.views_actionitemviews_collaboration_CollaborationMain_myUserId = org.apache.royale.utils.Language.string(data["userId"]);
     this.views_actionitemviews_collaboration_CollaborationMain_initChatItemUI(this.views_actionitemviews_collaboration_CollaborationMain_myUserId, "Welcome to the collaboration room! You are: " + this.views_actionitemviews_collaboration_CollaborationMain_myUserId);
-  } else if (data.type == "user_list") {
-    this.userList.dataProvider = new org.apache.royale.collections.ArrayList(data.users);
-  } else if (data.type == "subscribe_collabaration") {
-    this.views_actionitemviews_collaboration_CollaborationMain_initChatItemUI(org.apache.royale.utils.Language.string(data.sender), org.apache.royale.utils.Language.string(data.text));
+  } else if (data["type"] == "user_list") {
+    this.userList.dataProvider = new org.apache.royale.collections.ArrayList(data["users"]);
+  } else if (data["type"] == "subscribe_collabaration") {
+    this.views_actionitemviews_collaboration_CollaborationMain_initChatItemUI(org.apache.royale.utils.Language.string(data["sender"]), org.apache.royale.utils.Language.string(data["text"]));
   }
   this.outputContainer.element.scrollTop = this.outputContainer.element.scrollHeight;
 };
@@ -167,7 +167,7 @@ views.actionitemviews.collaboration.CollaborationMain.prototype.views_actionitem
 views.actionitemviews.collaboration.CollaborationMain.prototype.views_actionitemviews_collaboration_CollaborationMain_onInputChange = function() {
   var /** @type {string} */ msg = this.input.text;
   if (this.views_actionitemviews_collaboration_CollaborationMain__socketService && msg.length > 0) {
-    this.views_actionitemviews_collaboration_CollaborationMain__socketService.sendToSocket({type:views.actionitemviews.websocket.SocketService.SUBSCRIBE_COLLABARATION, text:msg});
+    this.views_actionitemviews_collaboration_CollaborationMain__socketService.sendToSocket({"type":views.actionitemviews.websocket.SocketService.SUBSCRIBE_COLLABARATION, "text":msg});
     this.input.text = "";
   }
 };

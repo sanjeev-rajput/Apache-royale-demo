@@ -132,17 +132,17 @@ views.actionitemviews.shoppingcart.Product.prototype.views_actionitemviews_shopp
   if (this.views_actionitemviews_shoppingcart_Product__data == null)
     return;
   this.views_actionitemviews_shoppingcart_Product__initialized = true;
-  this.name.text = org.apache.royale.utils.Language.string(this.views_actionitemviews_shoppingcart_Product__data.title);
-  this.description.html = org.apache.royale.utils.Language.string(this.views_actionitemviews_shoppingcart_Product__data.description);
-  this.price.text = "$" + this.views_actionitemviews_shoppingcart_Product__data.price.toFixed(2);
-  this.img.src = 'img/shopping/' + this.views_actionitemviews_shoppingcart_Product__data.filename;
-  this.qt.text = this.views_actionitemviews_shoppingcart_Product__data.qty.toString();
+  this.name.text = org.apache.royale.utils.Language.string(this.views_actionitemviews_shoppingcart_Product__data["title"]);
+  this.description.html = org.apache.royale.utils.Language.string(this.views_actionitemviews_shoppingcart_Product__data["description"]);
+  this.price.text = "$" + this.views_actionitemviews_shoppingcart_Product__data["price"]["toFixed"](2);
+  this.img.src = 'img/shopping/' + this.views_actionitemviews_shoppingcart_Product__data["filename"];
+  this.qt.text = this.views_actionitemviews_shoppingcart_Product__data["qty"]["toString"]();
   this.element.setAttribute("draggable", "true");
-  this.element.setAttribute("data-id", this.views_actionitemviews_shoppingcart_Product__data.id);
+  this.element.setAttribute("data-id", this.views_actionitemviews_shoppingcart_Product__data["id"]);
   this.element.addEventListener("dragstart", function(e) {
-    e.dataTransfer.setData("text/plain", self.views_actionitemviews_shoppingcart_Product__data.id);
-    org.apache.royale.utils.Language.trace("Drag started for item with ID: " + e.dataTransfer.getData("text/plain"));
-    e.dataTransfer.effectAllowed = "move";
+    e["dataTransfer"]["setData"]("text/plain", self.views_actionitemviews_shoppingcart_Product__data["id"]);
+    org.apache.royale.utils.Language.trace("Drag started for item with ID: " + e["dataTransfer"]["getData"]("text/plain"));
+    e["dataTransfer"]["effectAllowed"] = "move";
   });
 };
 
@@ -171,7 +171,7 @@ views.actionitemviews.shoppingcart.Product.prototype.get__data = function() {
 
 views.actionitemviews.shoppingcart.Product.prototype.set__data = function(d) {
   this.views_actionitemviews_shoppingcart_Product__data = d;
-  this.id = org.apache.royale.utils.Language.string(d.id);
+  this.id = org.apache.royale.utils.Language.string(d["id"]);
   if (this.views_actionitemviews_shoppingcart_Product__initialized) {
     this.views_actionitemviews_shoppingcart_Product_init();
   }

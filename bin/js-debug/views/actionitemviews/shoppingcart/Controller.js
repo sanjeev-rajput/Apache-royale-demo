@@ -68,10 +68,10 @@ views.actionitemviews.shoppingcart.Controller.prototype.views_actionitemviews_sh
 views.actionitemviews.shoppingcart.Controller.prototype.views_actionitemviews_shoppingcart_Controller_setupCartDropTarget = function() {
   var self = this;
   this.views_actionitemviews_shoppingcart_Controller__view.cartArea.element.addEventListener("dragover", function(e) {
-    e.preventDefault();
+    e["preventDefault"]();
   });
   this.views_actionitemviews_shoppingcart_Controller__view.cartArea.element.addEventListener("drop", function(e) {
-    var /** @type {string} */ id = org.apache.royale.utils.Language.string(e.dataTransfer.getData("text/plain"));
+    var /** @type {string} */ id = org.apache.royale.utils.Language.string(e["dataTransfer"]["getData"]("text/plain"));
     views.actionitemviews.shoppingcart.CartManager.instance.addToCart(id);
   });
 };

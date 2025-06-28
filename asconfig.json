@@ -22,7 +22,7 @@
         ]
     },
     "copySourcePathAssets": true,
-    "additionalOptions": "-js-output-optimization=skipAsCoercions  -warn-public-vars=false",
+    "additionalOptions": "-js-output-optimization=skipAsCoercions  -warn-public-vars=false -js-dynamic-access-unknown-members=true",
     "files":
     [
         "src/AsJsWasm.mxml"

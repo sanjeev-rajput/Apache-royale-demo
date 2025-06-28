@@ -146,11 +146,11 @@ views.actionitemviews.toc.tableData.prototype.views_actionitemviews_toc_tableDat
  * @private
  */
 views.actionitemviews.toc.tableData.prototype.views_actionitemviews_toc_tableData_init = function() {
-  this.views_actionitemviews_toc_tableData_data = this.model.dataSet;
+  this.views_actionitemviews_toc_tableData_data = this.model["dataSet"];
   this.txt.innerHTML = this.views_actionitemviews_toc_tableData_data["Topic"] + " :: " + this.views_actionitemviews_toc_tableData_data["Subtopic"] + " :: " + this.views_actionitemviews_toc_tableData_data["Activity Type"] + " :: " + this.views_actionitemviews_toc_tableData_data["Activity Name"];
   com.event.DsEvent.instance.addEventListener(com.event.DsEvent.TOC_DATA_TABLE_EVENT, org.apache.royale.utils.Language.closure(this.views_actionitemviews_toc_tableData_tocDataEventHandler, this, 'views_actionitemviews_toc_tableData_tocDataEventHandler'));
-  this.views_actionitemviews_toc_tableData_setEditMoveMode(views.actionitemviews.toc.tableData.EDIT, !!(this.model.isEditModeOn));
-  this.views_actionitemviews_toc_tableData_setEditMoveMode(views.actionitemviews.toc.tableData.MOVE, !!(this.model.isMoveModeOn));
+  this.views_actionitemviews_toc_tableData_setEditMoveMode(views.actionitemviews.toc.tableData.EDIT, !!(this.model["isEditModeOn"]));
+  this.views_actionitemviews_toc_tableData_setEditMoveMode(views.actionitemviews.toc.tableData.MOVE, !!(this.model["isMoveModeOn"]));
 };
 
 
@@ -159,7 +159,7 @@ views.actionitemviews.toc.tableData.prototype.views_actionitemviews_toc_tableDat
  * @param {Object} obj
  */
 views.actionitemviews.toc.tableData.prototype.views_actionitemviews_toc_tableData_tocDataEventHandler = function(obj) {
-  this.views_actionitemviews_toc_tableData_setEditMoveMode(org.apache.royale.utils.Language.string(obj.data.label), !!(obj.data.isChecked));
+  this.views_actionitemviews_toc_tableData_setEditMoveMode(org.apache.royale.utils.Language.string(obj["data"]["label"]), !!(obj["data"]["isChecked"]));
 };
 
 
@@ -170,12 +170,12 @@ views.actionitemviews.toc.tableData.prototype.views_actionitemviews_toc_tableDat
  */
 views.actionitemviews.toc.tableData.prototype.views_actionitemviews_toc_tableData_setEditMoveMode = function(type, flag) {
   if (type == views.actionitemviews.toc.tableData.EDIT) {
-    this.model.isEditModeOn = flag;
+    this.model["isEditModeOn"] = flag;
     this.ifrmBrn.visible = this.copyBtn.visible = !flag;
     this.deleteBtn.visible = this.editBtn.visible = flag;
   }
   if (type == views.actionitemviews.toc.tableData.MOVE) {
-    this.model.isMoveModeOn = flag;
+    this.model["isMoveModeOn"] = flag;
     this.moveBtn.visible = flag;
   }
 };
@@ -194,7 +194,7 @@ views.actionitemviews.toc.tableData.prototype.views_actionitemviews_toc_tableDat
  * @param {org.apache.royale.events.Event} event
  */
 views.actionitemviews.toc.tableData.prototype.views_actionitemviews_toc_tableData_copyToClipBoard = function(event) {
-  var /** @type {string} */ str = org.apache.royale.utils.Language.string(this.model.url);
+  var /** @type {string} */ str = org.apache.royale.utils.Language.string(this.model["url"]);
   var /** @type {string} */ encypData = com.extjavascript.cryp.CryptoJS.encrypt(str, "12345678901234567890123456789012");
   com.util.AsJsUtil.copyToClipboard(encypData);
   var /** @type {com.unhurdle.spectrum.Toast} */ t = new com.unhurdle.spectrum.Toast("Copied to clipboard!!!", 1000);
@@ -224,7 +224,7 @@ views.actionitemviews.toc.tableData.prototype.views_actionitemviews_toc_tableDat
     var /** @type {com.unhurdle.spectrum.AccordionContent} */ itemB = itemA.parent.getElementAt(indexB);
     itemB.parent.addElementAt(itemA, indexA);
   }
-  this.model.callBack(this.model.dataSet);
+  this.model["callBack"](this.model["dataSet"]);
 };
 
 

@@ -39,7 +39,7 @@
             }
 
             private function fetchVideos():void {
-                if (httpService) httpService = null;
+                //if (httpService) httpService = null;
                 var url:String = "http://localhost:3000/api/pexels/videoStream?q=" + encodeURIComponent(query) + "&per_page=" + perPage;
 
                 var httpService:ServiceLoader = new ServiceLoader();

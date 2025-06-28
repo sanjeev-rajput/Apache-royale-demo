@@ -118,9 +118,9 @@ views.actionitemviews.toc.TocAndPgnation.prototype.loadAndUpdateAccData = functi
   function loadHandler(e) {
     self.views_actionitemviews_toc_TocAndPgnation_parseDataToPegination(com.util.DsUtil.csvFileToJsonObj(e));
   };
-  this.views_actionitemviews_toc_TocAndPgnation_addx = org.apache.royale.utils.Language.string(obj.data.addx);
+  this.views_actionitemviews_toc_TocAndPgnation_addx = org.apache.royale.utils.Language.string(obj["data"]["addx"]);
   var /** @type {com.model.ServiceLoader} */ sldr = new com.model.ServiceLoader();
-  sldr.loadJData("config/" + obj.data.url, loadHandler, com.model.ServiceLoader.DATA_TYPE_TEXT);
+  sldr.loadJData("config/" + obj["data"]["url"], loadHandler, com.model.ServiceLoader.DATA_TYPE_TEXT);
 };
 
 
@@ -193,10 +193,10 @@ views.actionitemviews.toc.TocAndPgnation.prototype.views_actionitemviews_toc_Toc
     content.height = 50;
     var /** @type {views.actionitemviews.toc.tableData} */ tb = new views.actionitemviews.toc.tableData();
     var /** @type {Object} */ objModel = new Object();
-    objModel.dataSet = data[i];
-    objModel.isEditModeOn = this.views_actionitemviews_toc_TocAndPgnation__isEditModeOn;
-    objModel.isMoveModeOn = this.views_actionitemviews_toc_TocAndPgnation__isMoveModeOn;
-    objModel.callBack = org.apache.royale.utils.Language.closure(this.views_actionitemviews_toc_TocAndPgnation_tbDataCallBack, this, 'views_actionitemviews_toc_TocAndPgnation_tbDataCallBack');
+    objModel["dataSet"] = data[i];
+    objModel["isEditModeOn"] = this.views_actionitemviews_toc_TocAndPgnation__isEditModeOn;
+    objModel["isMoveModeOn"] = this.views_actionitemviews_toc_TocAndPgnation__isMoveModeOn;
+    objModel["callBack"] = org.apache.royale.utils.Language.closure(this.views_actionitemviews_toc_TocAndPgnation_tbDataCallBack, this, 'views_actionitemviews_toc_TocAndPgnation_tbDataCallBack');
     tb.model = objModel;
     content.addElement(tb);
     accSection.addElement(content);
@@ -254,8 +254,8 @@ views.actionitemviews.toc.TocAndPgnation.prototype.views_actionitemviews_toc_Toc
   if (label == views.actionitemviews.toc.TocAndPgnation.MOVE)
     this.views_actionitemviews_toc_TocAndPgnation__isMoveModeOn = isChecked;
   var /** @type {Object} */ obj = new Object();
-  obj.isChecked = isChecked;
-  obj.label = label;
+  obj["isChecked"] = isChecked;
+  obj["label"] = label;
   com.event.DsEvent.instance.dispatch(com.event.DsEvent.TOC_DATA_TABLE_EVENT, obj);
 };
 

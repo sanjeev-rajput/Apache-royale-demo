@@ -173,8 +173,6 @@ views.actionitemviews.pexels.pexelsVideoStream.prototype.views_actionitemviews_p
  * @private
  */
 views.actionitemviews.pexels.pexelsVideoStream.prototype.views_actionitemviews_pexels_pexelsVideoStream_fetchVideos = function() {
-  if (httpService)
-    httpService = null;
   var /** @type {string} */ url = "http://localhost:3000/api/pexels/videoStream?q=" + encodeURIComponent(this.views_actionitemviews_pexels_pexelsVideoStream_query) + "&per_page=" + this.views_actionitemviews_pexels_pexelsVideoStream_perPage;
   var /** @type {com.model.ServiceLoader} */ httpService = new com.model.ServiceLoader();
   httpService.reqMethod = "GET";
@@ -194,7 +192,7 @@ views.actionitemviews.pexels.pexelsVideoStream.prototype.views_actionitemviews_p
   {
   var video = foreachiter0_target[foreachiter0];
   {
-    this.views_actionitemviews_pexels_pexelsVideoStream_videoUrls.push(video.video_files[0].link);
+    this.views_actionitemviews_pexels_pexelsVideoStream_videoUrls.push(video["video_files"][0]["link"]);
   }}
   
   this.views_actionitemviews_pexels_pexelsVideoStream_showVideo(this.views_actionitemviews_pexels_pexelsVideoStream_currentIndex);

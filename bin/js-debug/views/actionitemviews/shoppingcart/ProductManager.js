@@ -89,7 +89,7 @@ views.actionitemviews.shoppingcart.ProductManager.prototype.views_actionitemview
   {
   var product = foreachiter0_target[foreachiter0];
   {
-    product.id = this.views_actionitemviews_shoppingcart_ProductManager_pIdx.toString();
+    product["id"] = this.views_actionitemviews_shoppingcart_ProductManager_pIdx.toString();
     this.views_actionitemviews_shoppingcart_ProductManager_pIdx++;
   }}
   
@@ -129,17 +129,17 @@ views.actionitemviews.shoppingcart.ProductManager.prototype.shortProductListBy =
   if (sortType == views.actionitemviews.shoppingcart.ProductManager.SORT_BY_PRICE) {
     this.products.sort(function(a, b) {
       if (sortOrder == views.actionitemviews.shoppingcart.ProductManager.ASCENDING)
-        return (a.price > b.price ? 1 : (a.price < b.price ? -1 : 0)) >> 0;
+        return (a["price"] > b["price"] ? 1 : (a["price"] < b["price"] ? -1 : 0)) >> 0;
       if (sortOrder == views.actionitemviews.shoppingcart.ProductManager.DESCENDING)
-        return (a.price < b.price ? 1 : (a.price > b.price ? -1 : 0)) >> 0;
+        return (a["price"] < b["price"] ? 1 : (a["price"] > b["price"] ? -1 : 0)) >> 0;
     });
   }
   if (sortType == views.actionitemviews.shoppingcart.ProductManager.SORT_BY_QUANTITY) {
     this.products.sort(function(a, b) {
       if (sortOrder == views.actionitemviews.shoppingcart.ProductManager.ASCENDING)
-        return (a.qty - b.qty) >> 0;
+        return (a["qty"] - b["qty"]) >> 0;
       if (sortOrder == views.actionitemviews.shoppingcart.ProductManager.DESCENDING)
-        return (b.qty - a.qty) >> 0;
+        return (b["qty"] - a["qty"]) >> 0;
     });
   }
   while (this.views_actionitemviews_shoppingcart_ProductManager__view.numElements > 0) {
@@ -185,7 +185,7 @@ views.actionitemviews.shoppingcart.ProductManager.prototype.getProductById = fun
 views.actionitemviews.shoppingcart.ProductManager.prototype.updateProductViewQty = function(item) {
   var /** @type {number} */ updateQty = (item.qt.max - item.qt.value) >> 0;
   this.getProductById(item.id).qt.text = updateQty.toString();
-  this.getProductDataById(item.id).qty = updateQty;
+  this.getProductDataById(item.id)["qty"] = updateQty;
   this.getProductById(item.id).alpha = 1.0;
 };
 
@@ -197,7 +197,7 @@ views.actionitemviews.shoppingcart.ProductManager.prototype.updateProductViewQty
 views.actionitemviews.shoppingcart.ProductManager.prototype.getProductDataById = function(id) {
   var self = this;
   var /** @type {Object} */ existing = this.products.find(function(i, index, arr) {
-    return i.id == id;
+    return i["id"] == id;
   });
   if (existing) {
     return existing;

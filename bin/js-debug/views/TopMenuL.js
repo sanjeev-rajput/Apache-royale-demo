@@ -88,7 +88,7 @@ goog.inherits(views.TopMenuL, org.apache.royale.jewel.Drawer);
  * @private
  */
 views.TopMenuL.prototype.views_TopMenuL_handleSelection = function() {
-  var /** @type {string} */ selectedAction = this.menuL.selectedItem.label;
+  var /** @type {string} */ selectedAction = this.menuL.selectedItem["label"];
   switch (selectedAction) {
     case "Image Gallary":
       this.views_TopMenuL_createprogrammaticPopup(new views.actionitemviews.ImgPopuop(), 490, 392);

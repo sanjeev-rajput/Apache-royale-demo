@@ -52,7 +52,7 @@ views.actionitemviews.shoppingcart.CartManager.prototype.views_actionitemviews_s
 views.actionitemviews.shoppingcart.CartManager.prototype.addToCart = function(id) {
   var self = this;
   var /** @type {Object} */ existing = this.views_actionitemviews_shoppingcart_CartManager__cartItems.find(function(item, index, arr) {
-    return item.id == id;
+    return item["id"] == id;
   });
   var /** @type {views.actionitemviews.shoppingcart.Product} */ p = views.actionitemviews.shoppingcart.ProductManager.instance.getProductById(id);
   if (parseInt(p.qt.text, 0) == 0) {
@@ -67,15 +67,15 @@ views.actionitemviews.shoppingcart.CartManager.prototype.addToCart = function(id
   var /** @type {number} */ qty = (parseInt(p.qt.text, 0)) >> 0;
   p.qt.text = (qty - 1).toString();
   if (existing) {
-    existing.qty++;
+    existing["qty"]++;
   } else {
     var foreachiter0_target = views.actionitemviews.shoppingcart.ProductManager.instance.products;
     for (var foreachiter0 in foreachiter0_target) 
     {
     var product = foreachiter0_target[foreachiter0];
     {
-      if (product.id == id) {
-        var /** @type {Object} */ item = {id:product.id, name:product.title, price:product.price, img:product.filename, qty:1, maxQty:product.qty};
+      if (product["id"] == id) {
+        var /** @type {Object} */ item = {"id":product["id"], "name":product["title"], "price":product["price"], "img":product["filename"], "qty":1, "maxQty":product["qty"]};
         this.views_actionitemviews_shoppingcart_CartManager__cartItems.push(item);
         break;
       }
@@ -111,10 +111,10 @@ views.actionitemviews.shoppingcart.CartManager.prototype.views_actionitemviews_s
  */
 views.actionitemviews.shoppingcart.CartManager.prototype.views_actionitemviews_shoppingcart_CartManager_cartItemRemoveHandler = function(cItem) {
   var self = this;
-  var /** @type {views.actionitemviews.shoppingcart.CartItem} */ p = cItem.item;
+  var /** @type {views.actionitemviews.shoppingcart.CartItem} */ p = cItem["item"];
   p.qt.value = 0;
   this.views_actionitemviews_shoppingcart_CartManager__cartItems = this.views_actionitemviews_shoppingcart_CartManager__cartItems.filter(function(item, index, arr) {
-    return item.id != p.id;
+    return item["id"] != p.id;
   });
   this.views_actionitemviews_shoppingcart_CartManager_updateCartUI();
   views.actionitemviews.shoppingcart.ProductManager.instance.updateProductViewQty(p);
@@ -127,18 +127,18 @@ views.actionitemviews.shoppingcart.CartManager.prototype.views_actionitemviews_s
  */
 views.actionitemviews.shoppingcart.CartManager.prototype.views_actionitemviews_shoppingcart_CartManager_cartItemQtyChangeHandler = function(cItem) {
   var self = this;
-  var /** @type {views.actionitemviews.shoppingcart.CartItem} */ item = cItem.item;
+  var /** @type {views.actionitemviews.shoppingcart.CartItem} */ item = cItem["item"];
   var /** @type {number} */ qty = (item.qt.value) >> 0;
   if (qty == 0) {
     var /** @type {Object} */ obj = new Object();
-    obj.item = item;
+    obj["item"] = item;
     this.views_actionitemviews_shoppingcart_CartManager_cartItemRemoveHandler(obj);
   } else {
     var /** @type {Object} */ existing = this.views_actionitemviews_shoppingcart_CartManager__cartItems.find(function(i, index, arr) {
-      return i.id == item.id;
+      return i["id"] == item.id;
     });
     if (existing)
-      existing.qty = qty;
+      existing["qty"] = qty;
     views.actionitemviews.shoppingcart.ProductManager.instance.updateProductViewQty(item);
   }
   views.actionitemviews.shoppingcart.CheckoutManager.instance.updaPriceTotal();

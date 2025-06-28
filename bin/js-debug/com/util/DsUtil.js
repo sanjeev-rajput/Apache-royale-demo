@@ -42,7 +42,7 @@ com.util.DsUtil.setQueryString = function() {
   if (query) {
     var /** @type {Array} */ vars = query.split("&");
     for (var /** @type {number} */ i = 0; i < vars.length; i++) {
-      var /** @type {Array} */ pair = /* implicit cast */ org.apache.royale.utils.Language.as(vars[i].split("="), Array, true);
+      var /** @type {Array} */ pair = /* implicit cast */ org.apache.royale.utils.Language.as(vars[i]["split"]("="), Array, true);
       com.util.DsUtil.urlQueryVars[pair[0]] = decodeURIComponent(org.apache.royale.utils.Language.string(pair[1]));
     }
   }
@@ -94,18 +94,18 @@ com.util.DsUtil.isValidUrl = function(urlStr) {
 com.util.DsUtil.csvFileToJsonObj = function(rawData) {
   var /** @type {Array} */ jsonData = [];
   var /** @type {Array} */ headers = [];
-  var /** @type {Array} */ rows = /* implicit cast */ org.apache.royale.utils.Language.as(rawData.split("\r\n"), Array, true);
+  var /** @type {Array} */ rows = /* implicit cast */ org.apache.royale.utils.Language.as(rawData["split"]("\r\n"), Array, true);
   for (var /** @type {number} */ i = 0; i < rows.length; i++) {
-    var /** @type {Array} */ cells = /* implicit cast */ org.apache.royale.utils.Language.as(rows[i].split(","), Array, true);
+    var /** @type {Array} */ cells = /* implicit cast */ org.apache.royale.utils.Language.as(rows[i]["split"](","), Array, true);
     var /** @type {Object} */ rowData = {};
     for (var /** @type {number} */ j = 0; j < cells.length; j++) {
       if (i == 0) {
-        var /** @type {string} */ headerName = org.apache.royale.utils.Language.string(cells[j].trim());
+        var /** @type {string} */ headerName = org.apache.royale.utils.Language.string(cells[j]["trim"]());
         headers.push(headerName);
       } else {
         var /** @type {Object} */ key = headers[j];
         if (key) {
-          rowData[key] = (cells[j]).trim();
+          rowData[key] = (cells[j])["trim"]();
         }
       }
     }
@@ -123,11 +123,11 @@ com.util.DsUtil.csvFileToJsonObj = function(rawData) {
  * @return {Array}
  */
 com.util.DsUtil.csvFileToArrayObj = function(rawData) {
-  var /** @type {Array} */ allTextLines = /* implicit cast */ org.apache.royale.utils.Language.as(rawData.split(/\u000d\u000a|\u000a/), Array, true);
-  var /** @type {Array} */ headers = /* implicit cast */ org.apache.royale.utils.Language.as(allTextLines[0].split(','), Array, true);
+  var /** @type {Array} */ allTextLines = /* implicit cast */ org.apache.royale.utils.Language.as(rawData["split"](/\u000d\u000a|\u000a/), Array, true);
+  var /** @type {Array} */ headers = /* implicit cast */ org.apache.royale.utils.Language.as(allTextLines[0]["split"](','), Array, true);
   var /** @type {Array} */ lines = [];
   for (var /** @type {number} */ i = 1; i < allTextLines.length; i++) {
-    var /** @type {Array} */ data = /* implicit cast */ org.apache.royale.utils.Language.as(allTextLines[i].split(','), Array, true);
+    var /** @type {Array} */ data = /* implicit cast */ org.apache.royale.utils.Language.as(allTextLines[i]["split"](','), Array, true);
     if (data.length == headers.length) {
       var /** @type {Array} */ tarr = [];
       for (var /** @type {number} */ j = 0; j < headers.length; j++) {

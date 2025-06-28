@@ -89,8 +89,8 @@ com.util.preloader.DsPreloader.prototype.remvoePreloader = function(uid) {
   {
   var i = foreachiter0_target[foreachiter0];
   {
-    if ((i.id).split('*-*')[0] == uid) {
-      i.parent.removeElement(i);
+    if ((i["id"])["split"]('*-*')[0] == uid) {
+      i["parent"]["removeElement"](i);
       var /** @type {number} */ idx = (this.com_util_preloader_DsPreloader_loaderObj.indexOf(i)) >>> 0;
       this.com_util_preloader_DsPreloader_loaderObj.splice(idx, 1);
       break;
@@ -112,7 +112,7 @@ com.util.preloader.DsPreloader.prototype.com_util_preloader_DsPreloader_removeAl
   var i = foreachiter1_target[foreachiter1];
   {
     try {
-      i.parent.removeElement(i);
+      i["parent"]["removeElement"](i);
     } catch (e) {
     }
   }}

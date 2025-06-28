@@ -131,10 +131,10 @@ views.ProductIndexing.prototype.views_ProductIndexing_initComplete = function() 
  * @param {Object} obj
  */
 views.ProductIndexing.prototype.views_ProductIndexing_ifameEventHandler = function(obj) {
-  if (obj.type == com.event.DsEvent.IFRAMEOPENED) {
+  if (obj["type"] == com.event.DsEvent.IFRAMEOPENED) {
     this.footerUi.visible = false;
   }
-  if (obj.type == com.event.DsEvent.IFRAMECLOSED) {
+  if (obj["type"] == com.event.DsEvent.IFRAMECLOSED) {
     this.footerUi.visible = true;
   }
 };
@@ -148,7 +148,7 @@ views.ProductIndexing.prototype.views_ProductIndexing_fetchDataEventHandler = fu
   this.views_ProductIndexing_clearUi();
   var /** @type {views.actionitemviews.toc.TocAndPgnation} */ tocPg = new views.actionitemviews.toc.TocAndPgnation(this.vg, this.pgNationCtr);
   tocPg.loadAndUpdateAccData(obj);
-  this.title.text = org.apache.royale.utils.Language.string(obj.data.title);
+  this.title.text = org.apache.royale.utils.Language.string(obj["data"]["title"]);
 };
 
 
@@ -159,7 +159,7 @@ views.ProductIndexing.prototype.views_ProductIndexing_fetchDataEventHandler = fu
 views.ProductIndexing.prototype.views_ProductIndexing_addUiComponent = function(obj) {
   var /** @type {org.apache.royale.jewel.Group} */ uiComp = null;
   this.views_ProductIndexing_clearUi();
-  var /** @type {string} */ compName = org.apache.royale.utils.Language.string(obj.data.title);
+  var /** @type {string} */ compName = org.apache.royale.utils.Language.string(obj["data"]["title"]);
   //var /** @type {org.apache.royale.jewel.Group} */ uiComp = null;
   if (compName == 'Basic Drawing') {
     uiComp = new views.actionitemviews.basicdrawing.BasicDrawingMain();

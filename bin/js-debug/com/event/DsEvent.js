@@ -88,8 +88,8 @@ com.event.DsEvent._instance = null;
 com.event.DsEvent.prototype.dispatch = function(type, data) {
   data = typeof data !== 'undefined' ? data : null;
   var /** @type {Object} */ obj = new Object();
-  obj.type = type;
-  obj.data = data;
+  obj["type"] = type;
+  obj["data"] = data;
   this.dispatchEvent(obj);
 };
 

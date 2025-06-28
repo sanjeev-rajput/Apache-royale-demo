@@ -31,7 +31,7 @@ com.extjavascript.cryp.CryptoJS = function() {
  * @return {string}
  */
 com.extjavascript.cryp.CryptoJS.encrypt = function(txt, key) {
-  return com.extjavascript.cryp.CryptoJS.cryptoObj['AES'].encrypt(txt, key).toString();
+  return com.extjavascript.cryp.CryptoJS.cryptoObj['AES']["encrypt"](txt, key)["toString"]();
 };
 
 
@@ -42,7 +42,7 @@ com.extjavascript.cryp.CryptoJS.encrypt = function(txt, key) {
  * @return {string}
  */
 com.extjavascript.cryp.CryptoJS.decrypt = function(txt, key) {
-  return com.extjavascript.cryp.CryptoJS.cryptoObj['AES'].decrypt(txt, key).toString(com.extjavascript.cryp.CryptoJS.cryptoObj['enc']['Utf8']);
+  return com.extjavascript.cryp.CryptoJS.cryptoObj['AES']["decrypt"](txt, key)["toString"](com.extjavascript.cryp.CryptoJS.cryptoObj['enc']['Utf8']);
 };
 
 

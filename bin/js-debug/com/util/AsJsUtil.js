@@ -25,9 +25,9 @@ com.util.AsJsUtil = function() {
  */
 com.util.AsJsUtil.copyToClipboard = function(text) {
   var /** @type {*} */ el = document.createElement('textarea');
-  el.value = text;
+  el["value"] = text;
   document.body.appendChild(/* implicit cast */ org.apache.royale.utils.Language.as(el, Node, true));
-  el.select();
+  el["select"]();
   document.execCommand('copy');
   document.body.removeChild(/* implicit cast */ org.apache.royale.utils.Language.as(el, Node, true));
 };

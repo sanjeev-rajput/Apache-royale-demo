@@ -203,10 +203,10 @@ views.actionitemviews.basicdrawing.DrawingManager.prototype.views_actionitemview
     this.views_actionitemviews_basicdrawing_DrawingManager_lastMouseY = e.localY;
     if (this.views_actionitemviews_basicdrawing_DrawingManager_selectionRect) {
       var /** @type {Object} */ bounds = this.views_actionitemviews_basicdrawing_DrawingManager_getShapeBounds(this.views_actionitemviews_basicdrawing_DrawingManager_selectedShape);
-      this.views_actionitemviews_basicdrawing_DrawingManager_selectionRect.x = Number(bounds.x);
-      this.views_actionitemviews_basicdrawing_DrawingManager_selectionRect.y = Number(bounds.y);
-      this.views_actionitemviews_basicdrawing_DrawingManager_selectionRect.width = Number(bounds.width);
-      this.views_actionitemviews_basicdrawing_DrawingManager_selectionRect.height = Number(bounds.height);
+      this.views_actionitemviews_basicdrawing_DrawingManager_selectionRect.x = Number(bounds["x"]);
+      this.views_actionitemviews_basicdrawing_DrawingManager_selectionRect.y = Number(bounds["y"]);
+      this.views_actionitemviews_basicdrawing_DrawingManager_selectionRect.width = Number(bounds["width"]);
+      this.views_actionitemviews_basicdrawing_DrawingManager_selectionRect.height = Number(bounds["height"]);
     }
   }
 };
@@ -250,7 +250,7 @@ views.actionitemviews.basicdrawing.DrawingManager.prototype.views_actionitemview
  */
 views.actionitemviews.basicdrawing.DrawingManager.prototype.views_actionitemviews_basicdrawing_DrawingManager_findShapeAtPoint = function(x, y) {
   for (var /** @type {number} */ i = (this.views_actionitemviews_basicdrawing_DrawingManager_shapes.length - 1) >> 0; i >= 0; i--) {
-    if (this.views_actionitemviews_basicdrawing_DrawingManager_shapes[i].hitTest(x, y))
+    if (this.views_actionitemviews_basicdrawing_DrawingManager_shapes[i]["hitTest"](x, y))
       return /* implicit cast */ org.apache.royale.utils.Language.as(this.views_actionitemviews_basicdrawing_DrawingManager_shapes[i], views.actionitemviews.basicdrawing.shapes.IDrawableShape, true);
   }
   return null;
@@ -286,10 +286,10 @@ views.actionitemviews.basicdrawing.DrawingManager.prototype.views_actionitemview
   }
   var /** @type {Object} */ bounds = this.views_actionitemviews_basicdrawing_DrawingManager_getShapeBounds(shape);
   this.views_actionitemviews_basicdrawing_DrawingManager_selectionRect = new org.apache.royale.svg.elements.Rect();
-  this.views_actionitemviews_basicdrawing_DrawingManager_selectionRect.x = Number(bounds.x);
-  this.views_actionitemviews_basicdrawing_DrawingManager_selectionRect.y = Number(bounds.y);
-  this.views_actionitemviews_basicdrawing_DrawingManager_selectionRect.width = Number(bounds.width);
-  this.views_actionitemviews_basicdrawing_DrawingManager_selectionRect.height = Number(bounds.height);
+  this.views_actionitemviews_basicdrawing_DrawingManager_selectionRect.x = Number(bounds["x"]);
+  this.views_actionitemviews_basicdrawing_DrawingManager_selectionRect.y = Number(bounds["y"]);
+  this.views_actionitemviews_basicdrawing_DrawingManager_selectionRect.width = Number(bounds["width"]);
+  this.views_actionitemviews_basicdrawing_DrawingManager_selectionRect.height = Number(bounds["height"]);
   this.views_actionitemviews_basicdrawing_DrawingManager_selectionRect.fill = "none";
   this.views_actionitemviews_basicdrawing_DrawingManager_selectionRect.stroke = "#00f";
   this.views_actionitemviews_basicdrawing_DrawingManager_selectionRect.strokeWidth = "2";
@@ -306,20 +306,20 @@ views.actionitemviews.basicdrawing.DrawingManager.prototype.views_actionitemview
 views.actionitemviews.basicdrawing.DrawingManager.prototype.views_actionitemviews_basicdrawing_DrawingManager_getShapeBounds = function(shape) {
   var /** @type {Object} */ s = shape.shape;
   if (org.apache.royale.utils.Language.is(s, org.apache.royale.svg.elements.Rect)) {
-    return {x:s.x, y:s.y, width:s.width, height:s.height};
+    return {"x":s["x"], "y":s["y"], "width":s["width"], "height":s["height"]};
   } else if (org.apache.royale.utils.Language.is(s, org.apache.royale.svg.elements.Circle)) {
-    var /** @type {number} */ cx = Number(s.cx);
-    var /** @type {number} */ cy = Number(s.cy);
-    var /** @type {number} */ r = Number(s.r);
-    return {x:cx - r, y:cy - r, width:r * 2, height:r * 2};
+    var /** @type {number} */ cx = Number(s["cx"]);
+    var /** @type {number} */ cy = Number(s["cy"]);
+    var /** @type {number} */ r = Number(s["r"]);
+    return {"x":cx - r, "y":cy - r, "width":r * 2, "height":r * 2};
   } else if (org.apache.royale.utils.Language.is(s, org.apache.royale.svg.elements.Line)) {
-    var /** @type {number} */ x1 = Number(s.x1);
-    var /** @type {number} */ y1 = Number(s.y1);
-    var /** @type {number} */ x2 = Number(s.x2);
-    var /** @type {number} */ y2 = Number(s.y2);
-    return {x:Math.min(x1, x2), y:Math.min(y1, y2), width:Math.abs(x2 - x1), height:Math.abs(y2 - y1)};
+    var /** @type {number} */ x1 = Number(s["x1"]);
+    var /** @type {number} */ y1 = Number(s["y1"]);
+    var /** @type {number} */ x2 = Number(s["x2"]);
+    var /** @type {number} */ y2 = Number(s["y2"]);
+    return {"x":Math.min(x1, x2), "y":Math.min(y1, y2), "width":Math.abs(x2 - x1), "height":Math.abs(y2 - y1)};
   }
-  return {x:0, y:0, width:0, height:0};
+  return {"x":0, "y":0, "width":0, "height":0};
 };
 
 

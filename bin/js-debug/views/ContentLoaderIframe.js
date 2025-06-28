@@ -85,7 +85,7 @@ views.ContentLoaderIframe.prototype.views_ContentLoaderIframe_init = function() 
  */
 views.ContentLoaderIframe.prototype.loadPage = function(data) {
   this.visible = true;
-  this.iFrm.src = org.apache.royale.utils.Language.string(data.url);
+  this.iFrm.src = org.apache.royale.utils.Language.string(data["url"]);
   com.event.DsEvent.instance.dispatch(com.event.DsEvent.IFRAMEOPENED);
 };
 

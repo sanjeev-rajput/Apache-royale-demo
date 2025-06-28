@@ -147,17 +147,17 @@ views.actionitemviews.shoppingcart.ProductPreview.prototype.views_actionitemview
   if (!this.views_actionitemviews_shoppingcart_ProductPreview__data)
     return;
   this.views_actionitemviews_shoppingcart_ProductPreview__initialized = true;
-  this.name.text = org.apache.royale.utils.Language.string(this.views_actionitemviews_shoppingcart_ProductPreview__data.title);
-  this.description.html = org.apache.royale.utils.Language.string(this.views_actionitemviews_shoppingcart_ProductPreview__data.description);
-  this.price.text = "Price $" + this.views_actionitemviews_shoppingcart_ProductPreview__data.price.toFixed(2);
-  this.img.src = 'img/shopping/' + this.views_actionitemviews_shoppingcart_ProductPreview__data.filename;
-  this.qt.text = 'Quantity ' + this.views_actionitemviews_shoppingcart_ProductPreview__data.qty.toString();
+  this.name.text = org.apache.royale.utils.Language.string(this.views_actionitemviews_shoppingcart_ProductPreview__data["title"]);
+  this.description.html = org.apache.royale.utils.Language.string(this.views_actionitemviews_shoppingcart_ProductPreview__data["description"]);
+  this.price.text = "Price $" + this.views_actionitemviews_shoppingcart_ProductPreview__data["price"]["toFixed"](2);
+  this.img.src = 'img/shopping/' + this.views_actionitemviews_shoppingcart_ProductPreview__data["filename"];
+  this.qt.text = 'Quantity ' + this.views_actionitemviews_shoppingcart_ProductPreview__data["qty"]["toString"]();
   this.element.setAttribute("draggable", "true");
-  this.element.setAttribute("data-id", this.views_actionitemviews_shoppingcart_ProductPreview__data.id);
+  this.element.setAttribute("data-id", this.views_actionitemviews_shoppingcart_ProductPreview__data["id"]);
   this.element.addEventListener("dragstart", function(e) {
-    e.dataTransfer.setData("text/plain", self.views_actionitemviews_shoppingcart_ProductPreview__data.id);
-    org.apache.royale.utils.Language.trace("Drag started for item with ID: " + e.dataTransfer.getData("text/plain"));
-    e.dataTransfer.effectAllowed = "move";
+    e["dataTransfer"]["setData"]("text/plain", self.views_actionitemviews_shoppingcart_ProductPreview__data["id"]);
+    org.apache.royale.utils.Language.trace("Drag started for item with ID: " + e["dataTransfer"]["getData"]("text/plain"));
+    e["dataTransfer"]["effectAllowed"] = "move";
   });
 };
 
@@ -186,7 +186,7 @@ views.actionitemviews.shoppingcart.ProductPreview.prototype.data;
 
 views.actionitemviews.shoppingcart.ProductPreview.prototype.set__data = function(d) {
   this.views_actionitemviews_shoppingcart_ProductPreview__data = d;
-  this.id = org.apache.royale.utils.Language.string(d.id);
+  this.id = org.apache.royale.utils.Language.string(d["id"]);
   if (this.views_actionitemviews_shoppingcart_ProductPreview__initialized) {
     this.views_actionitemviews_shoppingcart_ProductPreview_init();
   }

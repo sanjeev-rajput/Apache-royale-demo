@@ -150,7 +150,7 @@ views.actionitemviews.games.mousegame.Controller.prototype.views_actionitemviews
   this.views_actionitemviews_games_mousegame_Controller_gameStage.element.addEventListener("mousemove", function(e) {
     if (self.views_actionitemviews_games_mousegame_Controller_isGameOver)
       return;
-    var /** @type {number} */ mouseX = (e.clientX - self.views_actionitemviews_games_mousegame_Controller_gameStage.element.getBoundingClientRect().left) >> 0;
+    var /** @type {number} */ mouseX = (e["clientX"] - self.views_actionitemviews_games_mousegame_Controller_gameStage.element.getBoundingClientRect().left) >> 0;
     self.views_actionitemviews_games_mousegame_Controller_basket.element.style.left = (mouseX - self.views_actionitemviews_games_mousegame_Controller_basket.width / 2) + "px";
   });
 };
@@ -181,7 +181,7 @@ views.actionitemviews.games.mousegame.Controller.prototype.views_actionitemviews
   star.element.style.left = (Math.random() * (this.views_actionitemviews_games_mousegame_Controller_gameStage.width - star.width)) + "px";
   star.element.style.top = "0px";
   this.views_actionitemviews_games_mousegame_Controller_gameStage.addElement(star);
-  this.views_actionitemviews_games_mousegame_Controller_stars.push({image:star, isBomb:isBomb});
+  this.views_actionitemviews_games_mousegame_Controller_stars.push({"image":star, "isBomb":isBomb});
 };
 
 
@@ -210,8 +210,8 @@ views.actionitemviews.games.mousegame.Controller.prototype.views_actionitemviews
 views.actionitemviews.games.mousegame.Controller.prototype.views_actionitemviews_games_mousegame_Controller_onGameTick = function(event) {
   for (var /** @type {number} */ i = (this.views_actionitemviews_games_mousegame_Controller_stars.length - 1) >> 0; i >= 0; i--) {
     var /** @type {Object} */ obj = this.views_actionitemviews_games_mousegame_Controller_stars[i];
-    var /** @type {org.apache.royale.jewel.Image} */ star = obj.image;
-    var /** @type {boolean} */ isBomb = !!(obj.isBomb);
+    var /** @type {org.apache.royale.jewel.Image} */ star = obj["image"];
+    var /** @type {boolean} */ isBomb = !!(obj["isBomb"]);
     var /** @type {number} */ currentTop = (parseInt(star.element.style.top, 0) || 0) >> 0;
     currentTop += 5;
     star.element.style.top = currentTop + "px";
@@ -254,8 +254,8 @@ views.actionitemviews.games.mousegame.Controller.prototype.views_actionitemviews
  * @param {Object} obj
  */
 views.actionitemviews.games.mousegame.Controller.prototype.views_actionitemviews_games_mousegame_Controller_handleCatch = function(obj) {
-  var /** @type {org.apache.royale.jewel.Image} */ star = obj.image;
-  var /** @type {boolean} */ isBomb = !!(obj.isBomb);
+  var /** @type {org.apache.royale.jewel.Image} */ star = obj["image"];
+  var /** @type {boolean} */ isBomb = !!(obj["isBomb"]);
   var /** @type {number} */ starX = (parseInt(star.element.style.left, 0) || 0) >> 0;
   var /** @type {number} */ starY = (parseInt(star.element.style.top, 0) || 0) >> 0;
   if (isBomb) {
@@ -328,7 +328,7 @@ views.actionitemviews.games.mousegame.Controller.prototype.resetGame = function(
   {
   var obj = foreachiter0_target[foreachiter0];
   {
-    this.views_actionitemviews_games_mousegame_Controller_gameStage.removeElement(obj.image);
+    this.views_actionitemviews_games_mousegame_Controller_gameStage.removeElement(obj["image"]);
   }}
   
   this.views_actionitemviews_games_mousegame_Controller_stars = [];

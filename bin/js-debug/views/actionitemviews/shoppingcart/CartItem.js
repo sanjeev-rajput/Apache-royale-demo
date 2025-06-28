@@ -138,12 +138,12 @@ views.actionitemviews.shoppingcart.CartItem.prototype.views_actionitemviews_shop
   if (!this.views_actionitemviews_shoppingcart_CartItem__data)
     return;
   this.views_actionitemviews_shoppingcart_CartItem__initialized = true;
-  this.name.text = org.apache.royale.utils.Language.string(this.views_actionitemviews_shoppingcart_CartItem__data.title);
-  this.qt.value = +this.views_actionitemviews_shoppingcart_CartItem__data.qty;
-  this.price.text = "$" + this.views_actionitemviews_shoppingcart_CartItem__data.price;
-  this.img.src = 'img/shopping/' + this.views_actionitemviews_shoppingcart_CartItem__data.img;
+  this.name.text = org.apache.royale.utils.Language.string(this.views_actionitemviews_shoppingcart_CartItem__data["title"]);
+  this.qt.value = +this.views_actionitemviews_shoppingcart_CartItem__data["qty"];
+  this.price.text = "$" + this.views_actionitemviews_shoppingcart_CartItem__data["price"];
+  this.img.src = 'img/shopping/' + this.views_actionitemviews_shoppingcart_CartItem__data["img"];
   document.querySelector('.spectrum-Stepper-input').setAttribute('readonly', true);
-  this.qt.max = Number(this.views_actionitemviews_shoppingcart_CartItem__data.maxQty);
+  this.qt.max = Number(this.views_actionitemviews_shoppingcart_CartItem__data["maxQty"]);
 };
 
 
@@ -156,8 +156,8 @@ views.actionitemviews.shoppingcart.CartItem.prototype.views_actionitemviews_shop
  */
 views.actionitemviews.shoppingcart.CartItem.prototype.views_actionitemviews_shoppingcart_CartItem_cartItemQtyHandler = function(action) {
   var /** @type {Object} */ obj = new Object();
-  obj.type = action;
-  obj.item = this;
+  obj["type"] = action;
+  obj["item"] = this;
   this.dispatchEvent(obj);
 };
 
@@ -175,7 +175,7 @@ views.actionitemviews.shoppingcart.CartItem.prototype.data;
 
 views.actionitemviews.shoppingcart.CartItem.prototype.set__data = function(d) {
   this.views_actionitemviews_shoppingcart_CartItem__data = d;
-  this.id = org.apache.royale.utils.Language.string(d.id);
+  this.id = org.apache.royale.utils.Language.string(d["id"]);
   if (this.views_actionitemviews_shoppingcart_CartItem__initialized) {
     this.views_actionitemviews_shoppingcart_CartItem_init();
   }

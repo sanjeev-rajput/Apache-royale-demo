@@ -29,24 +29,24 @@ views.actionitemviews.basicdrawing.ExportHelper.exportSVGAsPNG = function(svgCan
   fileName = typeof fileName !== 'undefined' ? fileName : "drawing.png";
   var /** @type {org.apache.royale.core.WrappedHTMLElement} */ svgElement = svgCanvas.element;
   var /** @type {*} */ serializer = new window["XMLSerializer"]();
-  var /** @type {string} */ svgString = org.apache.royale.utils.Language.string(serializer.serializeToString(svgElement));
+  var /** @type {string} */ svgString = org.apache.royale.utils.Language.string(serializer["serializeToString"](svgElement));
   var /** @type {*} */ img = new window["Image"]();
-  img.onload = function() {
-    var /** @type {*} */ canvas = window["document"].createElement("canvas");
-    canvas.width = svgCanvas.width;
-    canvas.height = svgCanvas.height;
-    var /** @type {*} */ ctx = canvas.getContext("2d");
-    ctx.drawImage(img, 0, 0);
-    var /** @type {string} */ pngDataUrl = org.apache.royale.utils.Language.string(canvas.toDataURL("image/png"));
-    var /** @type {*} */ a = window["document"].createElement("a");
-    a.href = pngDataUrl;
-    a.download = fileName;
-    window["document"].body.appendChild(a);
-    a.click();
-    window["document"].body.removeChild(a);
+  img["onload"] = function() {
+    var /** @type {*} */ canvas = window["document"]["createElement"]("canvas");
+    canvas["width"] = svgCanvas.width;
+    canvas["height"] = svgCanvas.height;
+    var /** @type {*} */ ctx = canvas["getContext"]("2d");
+    ctx["drawImage"](img, 0, 0);
+    var /** @type {string} */ pngDataUrl = org.apache.royale.utils.Language.string(canvas["toDataURL"]("image/png"));
+    var /** @type {*} */ a = window["document"]["createElement"]("a");
+    a["href"] = pngDataUrl;
+    a["download"] = fileName;
+    window["document"]["body"]["appendChild"](a);
+    a["click"]();
+    window["document"]["body"]["removeChild"](a);
   };
   var /** @type {string} */ encodedData = org.apache.royale.utils.Language.string(window["btoa"](unescape(encodeURIComponent(svgString))));
-  img.src = "data:image/svg+xml;base64," + encodedData;
+  img["src"] = "data:image/svg+xml;base64," + encodedData;
 };
 
 
