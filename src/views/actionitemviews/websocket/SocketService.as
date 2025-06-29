@@ -2,10 +2,6 @@ package views.actionitemviews.websocket
 {
 
 
-    
-    import org.apache.royale.jewel.Alert;
-    
-
     public class SocketService{
 
         private var ws:WebSocket;
@@ -64,7 +60,6 @@ package views.actionitemviews.websocket
 
         private function connectionErrorEvtHandler(e:*):void {
             console.error('WebSocket error:', e);
-            Alert.show("WebSocket error: " + e.message, "Error");
         }
 
         public function get connected():Boolean {

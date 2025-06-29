@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"TitleBarModel.js",
-"lineCount":131,
-"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Jewel/src/main/royale",
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;AAqCkB,kDAAhB,WAA6BA,CAAC,C,CAC9B,C;8EACQ,C;AACR,C;;;;;;;;AAEY,6DAAAC,0DAAe,C;;;;;;;AAef,6DAAAC,yDAAa,C;;;;;;;AA0Bb,6DAAAC,6DAAiB,C;;;;;;;AA0BjB,6DAAAC,mEAAwB,GAAG,KAAK,C;;;;;;;;;;;mFAzDlBC,CAAC,KAAa,C,CACxC,C;EACC,KAAAJ,0DAAO,GAAG,KAAK,C;AAChB,C;;;;;;;;;;;kFAeyBK,CAAC,C,CAC1B,C;EACC,OAAO,KAAAJ,yDAAM,C;AACd,C;;;kFAEyBI,CAAC,KAAY,C,CACtC,C;EACC,IAAI,KAAK,IAAI,KAAAJ,yDAAM,EAAG,C;IACrB,KAAAA,yDAAM,GAAG,KAAK,C;IACd,KAAA,aAAa,CAAE,IAAI,8BAAK,CAAC,aAAa,CAAE,CAAC,C;EAC1C,C;AACD,C;;;;;;;;;;;sFAe6BK,CAAC,C,CAC9B,C;EACC,OAAO,KAAAJ,6DAAU,C;AAClB,C;;;sFAE6BI,CAAC,KAAY,C,CAC1C,C;EACC,IAAI,KAAK,IAAI,KAAAJ,6DAAU,EAAG,C;IACzB,KAAAA,6DAAU,GAAG,KAAK,C;IAClB,KAAA,aAAa,CAAE,IAAI,8BAAK,CAAC,iBAAiB,CAAE,CAAC,C;EAC9C,C;AACD,C;;;;;;;;;;;4FAemCK,CAAC,C,CACpC,C;EACC,OAAO,KAAAJ,mEAAgB,C;AACxB,C;;;4FAEmCI,CAAC,KAAa,C,CACjD,C;EACC,IAAI,KAAK,IAAI,KAAAJ,mEAAgB,EAAG,C;IAC/B,KAAAA,mEAAgB,GAAG,KAAK,C;IACxB,KAAA,aAAa,CAAE,IAAI,8BAAK,CAAC,uBAAuB,CAAE,CAAC,C;EACpD,CAAA;",
-"sources":["org/apache/royale/jewel/beads/models/TitleBarModel.as"],
-"names":["TitleBarModel.TitleBarModel","_strand","_title","_htmlTitle","_showCloseButton","TitleBarModel.strand","TitleBarModel.title","TitleBarModel.htmlTitle","TitleBarModel.showCloseButton"]
-}

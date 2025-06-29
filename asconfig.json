@@ -8,8 +8,8 @@
             "../ruffle-schand-as-js-wasm/target",
             "libs"
         ],
-        //"theme": "",
-        "theme": "${royalelib}/themes/JewelTheme/src/main/resources/defaults.css",
+        "theme": "",
+        //"theme": "${royalelib}/themes/JewelTheme/src/main/resources/defaults.css",
         "source-path": [
             "src"
 

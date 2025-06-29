@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"DialogPolyfill.js",
-"lineCount":37,
-"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Basic/src/main/royale",
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;;AAmCkB,0CAAhB,WAA8BA,CAAC,C;;;;;;;;AAER,2CAAA,cAAvB,WAAqCC,CAAC,MAAc,C,CACpD,C;EACE,MAAM,CAAC,gBAAgB,CAAC,CAAC,gBAAgB,CAAC,CAAC,MAAM,CAAC,CAAA;",
-"sources":["org/apache/royale/html/util/DialogPolyfill.as"],
-"names":["DialogPolyfill.DialogPolyfill","DialogPolyfill.registerDialog"]
-}

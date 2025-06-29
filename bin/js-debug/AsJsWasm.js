@@ -77,7 +77,6 @@ goog.require('org.apache.royale.html.supportClasses.StringItemRenderer');
 goog.require('org.apache.royale.html.supportClasses.StringItemRenderer');
 goog.require('org.apache.royale.html.supportClasses.Viewport');
 goog.require('org.apache.royale.jewel.ResponsiveView');
-goog.require('org.apache.royale.jewel.beads.controllers.AlertController');
 goog.require('org.apache.royale.jewel.beads.controllers.ListKeyDownController');
 goog.require('org.apache.royale.jewel.beads.controllers.ListSingleSelectionMouseController');
 goog.require('org.apache.royale.jewel.beads.controllers.PopUpMouseController');
@@ -89,8 +88,6 @@ goog.require('org.apache.royale.jewel.beads.layouts.BasicLayout');
 goog.require('org.apache.royale.jewel.beads.layouts.BasicLayout');
 goog.require('org.apache.royale.jewel.beads.layouts.HorizontalLayout');
 goog.require('org.apache.royale.jewel.beads.layouts.HorizontalLayout');
-goog.require('org.apache.royale.jewel.beads.layouts.HorizontalLayout');
-goog.require('org.apache.royale.jewel.beads.layouts.NullLayout');
 goog.require('org.apache.royale.jewel.beads.layouts.NullLayout');
 goog.require('org.apache.royale.jewel.beads.layouts.NullLayout');
 goog.require('org.apache.royale.jewel.beads.layouts.NullLayout');
@@ -98,18 +95,14 @@ goog.require('org.apache.royale.jewel.beads.layouts.VerticalLayout');
 goog.require('org.apache.royale.jewel.beads.layouts.VerticalLayout');
 goog.require('org.apache.royale.jewel.beads.layouts.VerticalLayout');
 goog.require('org.apache.royale.jewel.beads.layouts.ViewLayout');
-goog.require('org.apache.royale.jewel.beads.models.AlertModel');
 goog.require('org.apache.royale.jewel.beads.models.ArrayListSelectionModel');
 goog.require('org.apache.royale.jewel.beads.models.DataProviderModel');
 goog.require('org.apache.royale.jewel.beads.models.ImageModel');
 goog.require('org.apache.royale.jewel.beads.models.PopUpModel');
 goog.require('org.apache.royale.jewel.beads.models.TextModel');
-goog.require('org.apache.royale.jewel.beads.models.TitleBarModel');
-goog.require('org.apache.royale.jewel.beads.views.AlertView');
 goog.require('org.apache.royale.jewel.beads.views.ImageView');
 goog.require('org.apache.royale.jewel.beads.views.ListView');
 goog.require('org.apache.royale.jewel.beads.views.PopUpView');
-goog.require('org.apache.royale.jewel.beads.views.TitleBarView');
 goog.require('org.apache.royale.jewel.itemRenderers.ListItemRenderer');
 goog.require('org.apache.royale.jewel.itemRenderers.StringItemRenderer');
 goog.require('org.apache.royale.jewel.supportClasses.Viewport');
@@ -180,6 +173,7 @@ goog.require('org.apache.royale.geom.Size');
 goog.require('org.apache.royale.utils.sendStrandEvent');
 goog.require('org.apache.royale.jewel.ImageIcon');
 goog.require('com.unhurdle.spectrum.includes.ActionButtonInclude');
+goog.require('org.apache.royale.core.IState');
 goog.require('views.actionitemviews.toc.TocAndPgnation');
 goog.require('org.apache.royale.utils.BinaryData');
 goog.require('views.actionitemviews.shoppingcart.CartManager');
@@ -199,10 +193,8 @@ goog.require('views.actionitemviews.draganddrop.DragAndDropMain');
 goog.require('org.apache.royale.svg.elements.Circle');
 goog.require('org.apache.royale.debugging.alreadyRecorded');
 goog.require('org.apache.royale.html.util.addSvgElementToWrapper');
-goog.require('org.apache.royale.jewel.Alert');
 goog.require('views.actionitemviews.shoppingcart.Product');
 goog.require('org.apache.royale.geom.Rectangle');
-goog.require('org.apache.royale.html.beads.layouts.LayoutChangeNotifier');
 goog.require('org.apache.royale.core.AllCSSValuesImpl');
 goog.require('org.apache.royale.utils.StringTrimmer');
 goog.require('com.unhurdle.spectrum.data.MenuItem');
@@ -217,7 +209,6 @@ goog.require('org.apache.royale.jewel.beads.controls.ToolTip');
 goog.require('com.unhurdle.spectrum.IDialog');
 goog.require('org.apache.royale.html.elements.Iframe');
 goog.require('views.actionitemviews.searchlist.LstModel');
-goog.require('org.apache.royale.binding.MXMLBeadViewDataBinding');
 goog.require('views.actionitemviews.games.mousegame.MouseGame');
 goog.require('org.apache.royale.collections.ArrayList');
 goog.require('org.apache.royale.binding.ApplicationDataBinding');
@@ -247,7 +238,6 @@ goog.require('com.unhurdle.spectrum.Search');
 goog.require('org.apache.royale.net.HTTPConstants');
 goog.require('org.apache.royale.core.layout.LayoutData');
 goog.require('org.apache.royale.utils.StringPadder');
-goog.require('org.apache.royale.jewel.TitleBar');
 goog.require('org.apache.royale.jewel.beads.controls.Disabled');
 goog.require('org.apache.royale.jewel.beads.controls.drawer.ResponsiveDrawer');
 goog.require('org.apache.royale.utils.Timer');
@@ -285,8 +275,6 @@ goog.require('org.apache.royale.svg.elements.Rect');
 goog.require('org.apache.royale.html.elements.Hr');
 goog.require('com.unhurdle.spectrum.DialogFooter');
 goog.require('QName');
-goog.require('org.apache.royale.states.State');
-goog.require('org.apache.royale.html.util.DialogPolyfill');
 goog.require('org.apache.royale.core.ValuesManager');
 goog.require('org.apache.royale.events.ValueChangeEvent');
 goog.require('com.unhurdle.spectrum.Alert');
@@ -348,7 +336,6 @@ goog.require('com.unhurdle.spectrum.Stepper');
 goog.require('views.actionitemviews.shoppingcart.Controller');
 goog.require('org.apache.royale.conversions.createEventInit');
 goog.require('XMLList');
-goog.require('org.apache.royale.jewel.beads.views.AlertTitleBarView');
 goog.require('org.apache.royale.utils.string.splitAndTrim');
 goog.require('views.TopMenuL');
 goog.require('com.unhurdle.spectrum.Picker');
@@ -358,7 +345,7 @@ goog.require('org.apache.royale.svg.elements.Svg');
 goog.require('com.unhurdle.spectrum.FlexContainer');
 goog.require('org.apache.royale.utils.HSV');
 goog.require('views.actionitemviews.shoppingcart.ProductManager');
-/* Royale Dependency List: org.apache.royale.jewel.ResponsiveView,views.ProductIndexing,views.ContentLoaderIframe,com.controller.MainUiController,com.util.preloader.DsPreloader,models.Theme,org.apache.royale.events.Event,XML,com.unhurdle.spectrum.ListView,com.unhurdle.spectrum.renderers.MenuItemRenderer,org.apache.royale.html.supportClasses.ScrollingViewport,com.unhurdle.spectrum.renderers.SelectableItemRenderer,org.apache.royale.html.beads.layouts.NoLayout,com.unhurdle.spectrum.ListModel,com.unhurdle.spectrum.beads.KeyboardNavigateableHandler,org.apache.royale.html.beads.IndexedItemRendererInitializer,com.unhurdle.spectrum.MenuController,org.apache.royale.core.OverridableSelectableItemRendererClassFactory,org.apache.royale.html.beads.models.ViewportModel,org.apache.royale.html.beads.DataItemRendererFactoryForArrayData,com.unhurdle.spectrum.ListView,com.unhurdle.spectrum.renderers.ListItemRenderer,org.apache.royale.html.supportClasses.ScrollingViewport,com.unhurdle.spectrum.renderers.SelectableItemRenderer,org.apache.royale.html.beads.layouts.NoLayout,com.unhurdle.spectrum.ListModel,com.unhurdle.spectrum.beads.KeyboardNavigateableHandler,org.apache.royale.html.beads.IndexedItemRendererInitializer,com.unhurdle.spectrum.ListController,org.apache.royale.core.OverridableSelectableItemRendererClassFactory,org.apache.royale.html.beads.models.ViewportModel,org.apache.royale.html.beads.DataItemRendererFactoryForArrayData,com.unhurdle.spectrum.colorpicker.ColorPickerPopUp,com.unhurdle.spectrum.beads.SwatchListView,com.unhurdle.spectrum.renderers.ColorSwatchRenderer,com.unhurdle.spectrum.beads.TileLayout,org.apache.royale.html.beads.DataContainerView,org.apache.royale.html.supportClasses.StringItemRenderer,org.apache.royale.html.supportClasses.Viewport,org.apache.royale.html.beads.layouts.VerticalLayout,org.apache.royale.html.beads.models.DataProviderModel,org.apache.royale.html.beads.ListItemRendererInitializer,org.apache.royale.core.ItemRendererClassFactory,org.apache.royale.html.beads.models.ViewportModel,org.apache.royale.html.beads.DataItemRendererFactoryForArrayData,org.apache.royale.html.beads.controllers.ItemRendererMouseController,org.apache.royale.html.beads.GroupView,org.apache.royale.html.beads.layouts.HorizontalLayout,org.apache.royale.html.beads.ListView,org.apache.royale.html.supportClasses.StringItemRenderer,org.apache.royale.html.supportClasses.ScrollingViewport,org.apache.royale.html.beads.SolidBackgroundSelectableItemRendererBead,org.apache.royale.html.beads.layouts.VerticalLayout,org.apache.royale.html.beads.models.ArraySelectionModel,org.apache.royale.html.beads.ListItemRendererInitializer,org.apache.royale.html.beads.controllers.ListSingleSelectionMouseController,org.apache.royale.core.SelectableItemRendererClassFactory,org.apache.royale.html.beads.models.ViewportModel,org.apache.royale.html.beads.DataItemRendererFactoryForArrayData,org.apache.royale.html.beads.controllers.ItemRendererMouseController,org.apache.royale.routing.PathRouteBead,org.apache.royale.html.beads.GroupView,org.apache.royale.jewel.beads.layouts.ViewLayout,org.apache.royale.html.beads.GroupView,org.apache.royale.jewel.beads.layouts.BasicLayout,org.apache.royale.jewel.beads.layouts.HorizontalLayout,org.apache.royale.jewel.beads.layouts.VerticalLayout,org.apache.royale.html.beads.ContainerView,org.apache.royale.jewel.supportClasses.Viewport,org.apache.royale.jewel.beads.layouts.BasicLayout,org.apache.royale.jewel.beads.layouts.HorizontalLayout,org.apache.royale.jewel.beads.layouts.VerticalLayout,org.apache.royale.jewel.beads.views.ImageView,org.apache.royale.jewel.beads.models.ImageModel,org.apache.royale.html.beads.DataContainerView,org.apache.royale.jewel.itemRenderers.StringItemRenderer,org.apache.royale.jewel.supportClasses.Viewport,org.apache.royale.jewel.beads.layouts.VerticalLayout,org.apache.royale.jewel.beads.models.DataProviderModel,org.apache.royale.jewel.beads.itemRenderers.DataContainerItemRendererInitializer,org.apache.royale.core.ItemRendererClassFactory,org.apache.royale.html.beads.DataItemRendererFactoryForCollectionView,org.apache.royale.jewel.beads.views.AlertView,org.apache.royale.jewel.beads.layouts.NullLayout,org.apache.royale.jewel.beads.models.AlertModel,org.apache.royale.jewel.beads.controllers.AlertController,org.apache.royale.jewel.beads.layouts.NullLayout,org.apache.royale.jewel.beads.layouts.NullLayout,org.apache.royale.jewel.beads.layouts.NullLayout,org.apache.royale.jewel.beads.layouts.BasicLayout,org.apache.royale.html.beads.controllers.ItemRendererMouseController,org.apache.royale.jewel.beads.models.TextModel,org.apache.royale.jewel.beads.views.ListView,org.apache.royale.jewel.itemRenderers.ListItemRenderer,org.apache.royale.jewel.supportClasses.scrollbar.ScrollingViewport,org.apache.royale.jewel.beads.itemRenderers.ClassSelectorListSelectableItemRendererBead,org.apache.royale.jewel.beads.models.ArrayListSelectionModel,org.apache.royale.jewel.beads.itemRenderers.ListItemRendererInitializer,org.apache.royale.jewel.beads.controllers.ListSingleSelectionMouseController,org.apache.royale.jewel.beads.controllers.ListKeyDownController,org.apache.royale.core.SelectableItemRendererClassFactory,org.apache.royale.html.beads.SelectionDataItemRendererFactoryForCollectionView,org.apache.royale.jewel.beads.views.PopUpView,org.apache.royale.jewel.beads.models.PopUpModel,org.apache.royale.jewel.beads.controllers.PopUpMouseController,org.apache.royale.core.StyledUIBase,org.apache.royale.jewel.beads.views.TitleBarView,org.apache.royale.jewel.beads.layouts.HorizontalLayout,org.apache.royale.jewel.beads.models.TitleBarModel*/
+/* Royale Dependency List: org.apache.royale.jewel.ResponsiveView,views.ProductIndexing,views.ContentLoaderIframe,com.controller.MainUiController,com.util.preloader.DsPreloader,models.Theme,org.apache.royale.events.Event,XML,com.unhurdle.spectrum.ListView,com.unhurdle.spectrum.renderers.MenuItemRenderer,org.apache.royale.html.supportClasses.ScrollingViewport,com.unhurdle.spectrum.renderers.SelectableItemRenderer,org.apache.royale.html.beads.layouts.NoLayout,com.unhurdle.spectrum.ListModel,com.unhurdle.spectrum.beads.KeyboardNavigateableHandler,org.apache.royale.html.beads.IndexedItemRendererInitializer,com.unhurdle.spectrum.MenuController,org.apache.royale.core.OverridableSelectableItemRendererClassFactory,org.apache.royale.html.beads.models.ViewportModel,org.apache.royale.html.beads.DataItemRendererFactoryForArrayData,com.unhurdle.spectrum.ListView,com.unhurdle.spectrum.renderers.ListItemRenderer,org.apache.royale.html.supportClasses.ScrollingViewport,com.unhurdle.spectrum.renderers.SelectableItemRenderer,org.apache.royale.html.beads.layouts.NoLayout,com.unhurdle.spectrum.ListModel,com.unhurdle.spectrum.beads.KeyboardNavigateableHandler,org.apache.royale.html.beads.IndexedItemRendererInitializer,com.unhurdle.spectrum.ListController,org.apache.royale.core.OverridableSelectableItemRendererClassFactory,org.apache.royale.html.beads.models.ViewportModel,org.apache.royale.html.beads.DataItemRendererFactoryForArrayData,com.unhurdle.spectrum.colorpicker.ColorPickerPopUp,com.unhurdle.spectrum.beads.SwatchListView,com.unhurdle.spectrum.renderers.ColorSwatchRenderer,com.unhurdle.spectrum.beads.TileLayout,org.apache.royale.html.beads.DataContainerView,org.apache.royale.html.supportClasses.StringItemRenderer,org.apache.royale.html.supportClasses.Viewport,org.apache.royale.html.beads.layouts.VerticalLayout,org.apache.royale.html.beads.models.DataProviderModel,org.apache.royale.html.beads.ListItemRendererInitializer,org.apache.royale.core.ItemRendererClassFactory,org.apache.royale.html.beads.models.ViewportModel,org.apache.royale.html.beads.DataItemRendererFactoryForArrayData,org.apache.royale.html.beads.controllers.ItemRendererMouseController,org.apache.royale.html.beads.GroupView,org.apache.royale.html.beads.layouts.HorizontalLayout,org.apache.royale.html.beads.ListView,org.apache.royale.html.supportClasses.StringItemRenderer,org.apache.royale.html.supportClasses.ScrollingViewport,org.apache.royale.html.beads.SolidBackgroundSelectableItemRendererBead,org.apache.royale.html.beads.layouts.VerticalLayout,org.apache.royale.html.beads.models.ArraySelectionModel,org.apache.royale.html.beads.ListItemRendererInitializer,org.apache.royale.html.beads.controllers.ListSingleSelectionMouseController,org.apache.royale.core.SelectableItemRendererClassFactory,org.apache.royale.html.beads.models.ViewportModel,org.apache.royale.html.beads.DataItemRendererFactoryForArrayData,org.apache.royale.html.beads.controllers.ItemRendererMouseController,org.apache.royale.routing.PathRouteBead,org.apache.royale.html.beads.GroupView,org.apache.royale.jewel.beads.layouts.ViewLayout,org.apache.royale.html.beads.GroupView,org.apache.royale.jewel.beads.layouts.BasicLayout,org.apache.royale.jewel.beads.layouts.HorizontalLayout,org.apache.royale.jewel.beads.layouts.VerticalLayout,org.apache.royale.html.beads.ContainerView,org.apache.royale.jewel.supportClasses.Viewport,org.apache.royale.jewel.beads.layouts.BasicLayout,org.apache.royale.jewel.beads.layouts.HorizontalLayout,org.apache.royale.jewel.beads.layouts.VerticalLayout,org.apache.royale.jewel.beads.views.ImageView,org.apache.royale.jewel.beads.models.ImageModel,org.apache.royale.html.beads.DataContainerView,org.apache.royale.jewel.itemRenderers.StringItemRenderer,org.apache.royale.jewel.supportClasses.Viewport,org.apache.royale.jewel.beads.layouts.VerticalLayout,org.apache.royale.jewel.beads.models.DataProviderModel,org.apache.royale.jewel.beads.itemRenderers.DataContainerItemRendererInitializer,org.apache.royale.core.ItemRendererClassFactory,org.apache.royale.html.beads.DataItemRendererFactoryForCollectionView,org.apache.royale.jewel.beads.layouts.NullLayout,org.apache.royale.jewel.beads.layouts.NullLayout,org.apache.royale.jewel.beads.layouts.NullLayout,org.apache.royale.jewel.beads.layouts.BasicLayout,org.apache.royale.html.beads.controllers.ItemRendererMouseController,org.apache.royale.jewel.beads.models.TextModel,org.apache.royale.jewel.beads.views.ListView,org.apache.royale.jewel.itemRenderers.ListItemRenderer,org.apache.royale.jewel.supportClasses.scrollbar.ScrollingViewport,org.apache.royale.jewel.beads.itemRenderers.ClassSelectorListSelectableItemRendererBead,org.apache.royale.jewel.beads.models.ArrayListSelectionModel,org.apache.royale.jewel.beads.itemRenderers.ListItemRendererInitializer,org.apache.royale.jewel.beads.controllers.ListSingleSelectionMouseController,org.apache.royale.jewel.beads.controllers.ListKeyDownController,org.apache.royale.core.SelectableItemRendererClassFactory,org.apache.royale.html.beads.SelectionDataItemRendererFactoryForCollectionView,org.apache.royale.jewel.beads.views.PopUpView,org.apache.royale.jewel.beads.models.PopUpModel,org.apache.royale.jewel.beads.controllers.PopUpMouseController,org.apache.royale.core.StyledUIBase*/
 
 goog.require('com.unhurdle.spectrum.Application');
 
@@ -874,18 +861,15 @@ function() {this["padding"] = 0.0},
 0,
 1,
 "button",
-function() {this["fontFamily"] = "inherit";
-this["fontSize"] = 100.0},
+function() {this["fontSize"] = 100.0},
 0,
 1,
 "input",
-function() {this["fontFamily"] = "inherit";
-this["fontSize"] = 100.0},
+function() {this["fontSize"] = 100.0},
 0,
 1,
 "textarea",
-function() {this["fontFamily"] = "inherit";
-this["fontSize"] = 100.0},
+function() {this["fontSize"] = 100.0},
 0,
 1,
 ".cursor-pointer",
@@ -951,8 +935,7 @@ this["iViewport"] = org.apache.royale.jewel.supportClasses.Viewport},
 0,
 1,
 "hr",
-function() {this["backgroundColor"] = 14277081;
-this["border"] = 0.0;
+function() {this["border"] = 0.0;
 this["height"] = 1.0},
 0,
 1,
@@ -971,69 +954,36 @@ function() {this["color"] = 16776960},
 0,
 1,
 ".jewel.alert",
-function() {this["background"] = 16777215;
-this["border"] = [0.0, "solid"];
-this["borderRadius"] = 3.0;
-this["boxShadow"] = [0.0, 20.0, 65.0, 0.0, 3422552064];
-this["left"] = 50.0;
-this["margin"] = 0.0;
-this["minHeight"] = 240.0;
-this["minWidth"] = 320.0;
-this["opacity"] = 0.0;
-this["padding"] = 0.0;
+function() {this["left"] = 50.0;
+this["minHeight"] = 200.0;
+this["minWidth"] = 350.0;
 this["position"] = "fixed";
-this["top"] = 50.0;
-this["transform"] = null;
-this["willChange"] = ["opacity", "transform"]},
+this["top"] = 50.0},
 0,
 1,
 ".jewel.alert .jewel.titlebar",
-function() {this["color"] = 3976689;
-this["height"] = 50.0;
-this["padding"] = [20.0, 20.0, 0.0, 20.0]},
+function() {this["height"] = 50.0},
 0,
 1,
 ".jewel.alert .content",
-function() {this["bottom"] = 84.0;
+function() {this["bottom"] = 50.0;
 this["overflowY"] = "auto";
-this["padding"] = 20.0;
 this["position"] = "absolute";
 this["top"] = 50.0;
 this["width"] = 100.0},
 0,
 1,
 ".jewel.alert .content .jewel.label",
-function() {this["color"] = 8421504;
-this["fontSize"] = 1.100000023841858;
-this["fontWeight"] = 400.0;
-this["whiteSpace"] = "normal"},
+function() {this["whiteSpace"] = "normal"},
 0,
 1,
 ".jewel.alert .jewel.controlbar",
-function() {this["background"] = null;
-this["borderRadius"] = [0.0, 0.0, 3.0, 3.0];
-this["borderTop"] = [1.0, "solid", 11776947];
-this["bottom"] = 0.0;
-this["boxShadow"] = ["inset", 0.0, 1.0, 0.0, 16777215];
-this["height"] = 84.0;
-this["padding"] = 20.0;
-this["position"] = "absolute";
-this["width"] = 100.0},
-0,
-1,
-"org.apache.royale.jewel.Alert",
-function() {this["iBeadController"] = org.apache.royale.jewel.beads.controllers.AlertController;
-this["iBeadLayout"] = org.apache.royale.jewel.beads.layouts.NullLayout;
-this["iBeadModel"] = org.apache.royale.jewel.beads.models.AlertModel;
-this["iBeadView"] = org.apache.royale.jewel.beads.views.AlertView},
+function() {this["bottom"] = 0.0;
+this["height"] = 50.0},
 0,
 1,
 ".jewel.badge",
-function() {this["borderRadius"] = 500.0;
-this["color"] = 8421504;
-this["fontSize"] = [0.8500000238418579, "!important"];
-this["lineHeight"] = 1.0;
-this["minWidth"] = 2.0999999046325684;
+function() {this["minWidth"] = 2.0999999046325684;
 this["padding"] = 0.5;
 this["position"] = "absolute";
 this["right"] = -1.0;
@@ -1069,38 +1019,22 @@ this["right"] = "auto"},
 1,
 ".jewel.button",
 function() {this["alignItems"] = "center";
-this["background"] = null;
-this["border"] = [1.0, "solid", 11776947];
-this["borderRadius"] = 0.25;
-this["boxShadow"] = ["inset", 0.0, 1.0, 0.0, 16777215];
-this["color"] = 8421504;
 this["cursor"] = "pointer";
 this["display"] = "inline-flex";
-this["fontWeight"] = "bold";
 this["justifyContent"] = "center";
 this["lineHeight"] = ["normal", "!important"];
-this["margin"] = 0.0;
 this["outline"] = "none";
 this["overflow"] = "hidden";
-this["padding"] = [0.6790000200271606, 1.1200000047683716];
 this["position"] = "relative";
 this["textAlign"] = "center";
 this["textDecoration"] = "none";
-this["textShadow"] = "none";
-this["textTransform"] = "uppercase";
 this["userSelect"] = "none";
 this["verticalAlign"] = "middle";
 this["whiteSpace"] = "nowrap"},
 0,
 1,
 ".jewel.button[disabled]",
-function() {this["background"] = [15987699, "!important"];
-this["border"] = [1.0, "solid", 14277081, "!important"];
-this["boxShadow"] = ["none", "!important"];
-this["color"] = 12632256;
-this["cursor"] = "default";
-this["fontWeight"] = 400.0;
-this["textShadow"] = "unset"},
+function() {this["cursor"] = "default"},
 0,
 1,
 ".jewel.button.multiline",
@@ -1148,20 +1082,13 @@ function() {this["pointerEvents"] = "none"},
 0,
 1,
 ".jewel.card",
-function() {this["background"] = 16777215;
-this["border"] = [1.0, "solid", 13818591];
-this["borderRadius"] = 0.25;
-this["fontSize"] = 1.0;
-this["fontWeight"] = 400.0;
-this["minHeight"] = 52.0;
+function() {this["minHeight"] = 52.0;
 this["minWidth"] = 120.0;
 this["position"] = "relative"},
 0,
 1,
 ".jewel.card .card-header",
-function() {this["borderBottom"] = [1.0, "solid", 13818591];
-this["padding"] = [12.0, 20.0];
-this["width"] = 100.0},
+function() {this["width"] = 100.0},
 0,
 1,
 ".jewel.card .card-header .card-title",
@@ -1182,17 +1109,14 @@ function() {this["color"] = "inherit";
 this["flex"] = [1.0, 1.0, "auto"];
 this["minHeight"] = 152.0;
 this["outline"] = "none";
-this["padding"] = 20.0;
 this["position"] = "relative";
 this["textDecoration"] = "none";
 this["width"] = 100.0},
 0,
 1,
 ".jewel.card .card-actions",
-function() {this["borderTop"] = [1.0, "solid", 13818591];
-this["color"] = "inherit";
+function() {this["color"] = "inherit";
 this["outline"] = "none";
-this["padding"] = [18.0, 20.0];
 this["position"] = "relative";
 this["textDecoration"] = "none";
 this["width"] = 100.0},
@@ -1221,10 +1145,7 @@ this["width"] = 24.0},
 0,
 1,
 "span::before",
-function() {this["background"] = null;
-this["border"] = [1.0, "solid", 11776947];
-this["borderRadius"] = 3.0;
-this["content"] = " ";
+function() {this["content"] = " ";
 this["height"] = 22.0;
 this["left"] = 0.0;
 this["position"] = "absolute";
@@ -1233,88 +1154,58 @@ this["width"] = 22.0},
 0,
 1,
 "span::after",
-function() {this["background"] = ["url(\"data:image/svg+xml,%3Csvg viewBox='0 0 22 22' version='1.1' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0' y='0' width='22' height='22' fill-opacity='0'/%3E%3Cpolygon fill='%233CADF1' points='3.50018311 12.4854126 8.48547363 17.4989624 18.4641113 7.47589111 15.5010376 4.51739502 8.48547363 11.5650024 6.52087402 9.47265625'/%3E%3C/svg%3E\")", "no-repeat", "center", "center"];
-this["border"] = [1.0, "solid", "transparent"];
-this["borderRadius"] = 3.0;
-this["content"] = " ";
+function() {this["content"] = " ";
 this["height"] = 22.0;
 this["left"] = 0.0;
 this["opacity"] = 0.0;
 this["position"] = "absolute";
 this["top"] = 0.0;
-this["transform"] = "scale(0)";
-this["transition"] = ["all", 0.30000001192092896, "ease"];
 this["width"] = 22.0},
 0,
 1,
 "span::after",
-function() {this["background"] = ["url(\"data:image/svg+xml,%3Csvg viewBox='0 0 22 22' version='1.1' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0' y='0' width='22' height='22' fill-opacity='0'/%3E%3Cpolygon fill='%233CADF1' points='3.50018311 12.4854126 8.48547363 17.4989624 18.4641113 7.47589111 15.5010376 4.51739502 8.48547363 11.5650024 6.52087402 9.47265625'/%3E%3C/svg%3E\")", "no-repeat", "center", "center"];
-this["opacity"] = 1.0;
-this["transform"] = "scale(1)"},
+function() {this["opacity"] = 1.0},
 0,
 1,
 "span::after",
-function() {this["background"] = ["url(\"data:image/svg+xml,%3Csvg viewBox='0 0 22 22' version='1.1' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0' y='0' width='22' height='22' fill-opacity='0'/%3E%3Cpolygon fill='%233CADF1' points='3.50018311 12.4854126 8.48547363 17.4989624 18.4641113 7.47589111 15.5010376 4.51739502 8.48547363 11.5650024 6.52087402 9.47265625'/%3E%3C/svg%3E\")", "no-repeat", "center", "center"];
-this["opacity"] = 1.0;
-this["transform"] = "scale(1)"},
+function() {this["opacity"] = 1.0},
 0,
 1,
 "span::after",
-function() {this["background"] = ["url(\"data:image/svg+xml,%3Csvg viewBox='0 0 22 22' version='1.1' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0' y='0' width='22' height='22' fill-opacity='0'/%3E%3Crect stroke-width='0' stroke='%23FFFFFF' height='12' width='12' y='5' x='5' fill='%233CADF1' /%3E%3C/svg%3E\")", "no-repeat", "center", "center"];
-this["opacity"] = 1.0;
-this["transform"] = "scale(1)"},
+function() {this["opacity"] = 1.0},
 0,
 1,
 "span::after",
-function() {this["background"] = ["url(\"data:image/svg+xml,%3Csvg viewBox='0 0 22 22' version='1.1' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0' y='0' width='22' height='22' fill-opacity='0'/%3E%3Crect stroke-width='0' stroke='%23FFFFFF' height='12' width='12' y='5' x='5' fill='%233CADF1' /%3E%3C/svg%3E\")", "no-repeat", "center", "center"];
-this["opacity"] = 1.0;
-this["transform"] = "scale(1)"},
+function() {this["opacity"] = 1.0},
 0,
 1,
 "span::before",
-function() {this["background"] = null;
-this["border"] = [1.0, "solid", 1018065];
-this["borderRadius"] = 3.0;
-this["outline"] = "none"},
+function() {this["outline"] = "none"},
 0,
 1,
 "span::before",
-function() {this["background"] = null;
-this["border"] = [1.0, "solid", 1018065];
-this["borderRadius"] = 3.0;
-this["outline"] = "none"},
+function() {this["outline"] = "none"},
 0,
 1,
 "span::before",
-function() {this["background"] = null;
-this["border"] = [1.0, "solid", 1018065];
-this["borderRadius"] = 3.0;
-this["outline"] = "none"},
+function() {this["outline"] = "none"},
 0,
 1,
 "span::before",
-function() {this["background"] = null;
-this["border"] = [1.0, "solid", 1018065];
-this["borderRadius"] = 3.0;
-this["outline"] = "none"},
+function() {this["outline"] = "none"},
 0,
 1,
 "span::before",
-function() {this["background"] = null;
-this["border"] = [1.0, "solid", 1018065];
-this["borderRadius"] = 3.0;
-this["outline"] = "none"},
+function() {this["outline"] = "none"},
 0,
 1,
 "span",
-function() {this["color"] = 12632256;
-this["cursor"] = "unset"},
+function() {this["cursor"] = "unset"},
 0,
 1,
 "span",
 function() {this["cursor"] = "pointer";
 this["margin"] = "auto";
-this["paddingLeft"] = 8.0;
 this["width"] = "inherit"},
 0,
 1,
@@ -1343,37 +1234,28 @@ function() {this["cursor"] = "unset"},
 0,
 1,
 ".jewel.switch .switch",
-function() {this["background"] = null;
-this["borderRadius"] = 3.0;
-this["bottom"] = 0.0;
-this["boxShadow"] = [0.0, 0.0, 0.0, 1.0, 13421772];
+function() {this["bottom"] = 0.0;
 this["cursor"] = "pointer";
 this["height"] = 24.0;
 this["left"] = 0.0;
 this["position"] = "absolute";
 this["right"] = 0.0;
 this["top"] = 0.0;
-this["transition"] = 0.4000000059604645;
 this["width"] = 44.0},
 0,
 1,
 ".jewel.switch .switch::before",
-function() {this["background"] = 16777215;
-this["borderRadius"] = 3.0;
-this["bottom"] = 2.0;
-this["boxShadow"] = [1.0, 0.0, 1.0, 0.0, 419430400];
+function() {this["bottom"] = 2.0;
 this["content"] = "";
 this["height"] = 20.0;
 this["left"] = 2.0;
 this["position"] = "absolute";
-this["transition"] = 0.4000000059604645;
 this["width"] = 20.0},
 0,
 1,
 ".jewel.switch .label",
 function() {this["cursor"] = "pointer";
 this["margin"] = "auto";
-this["paddingLeft"] = 8.0;
 this["width"] = "inherit"},
 0,
 1,
@@ -1386,20 +1268,13 @@ function() {this["display"] = "block"},
 0,
 1,
 ".jewel.combobox .jewel.button::before",
-function() {this["lineHeight"] = 22.0;
-this["margin"] = 0.0;
+function() {this["margin"] = 0.0;
 this["padding"] = 0.0},
 0,
 1,
 ".jewel.combobox .jewel.button::after",
-function() {this["background"] = ["url(\"data:image/svg+xml,%3Csvg viewBox='0 0 12 8' version='1.1' xmlns='http://www.w3.org/2000/svg'%3E%3Cg stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg transform='translate(0.000000, -1.000000)' fill='%233CADF1' fill-rule='nonzero'%3E%3Cg transform='translate(-2.000000, 0.000000)'%3E%3Cpolygon transform='translate(8.000000, 4.705000) scale(1, -1) translate(-8.000000, -4.705000) ' points='3.41 8.41 8 3.83 12.59 8.41 14 7 8 1 2 7'%3E%3C/polygon%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E\")", "no-repeat", "center", "center"];
-this["backgroundSize"] = 66.0;
-this["content"] = " ";
-this["height"] = 22.0;
-this["left"] = null;
-this["position"] = "absolute";
-this["top"] = null;
-this["width"] = 14.0},
+function() {this["content"] = " ";
+this["position"] = "absolute"},
 0,
 1,
 ".combobox-popup",
@@ -1456,23 +1331,14 @@ this["transition"] = ["transform 0.3s 0ms", "opacity 0.3s 0ms"]},
 0,
 1,
 ".jewel.datagrid",
-function() {this["background"] = null;
-this["borderBottom"] = [1.0, "solid", 11776947];
-this["borderRadius"] = 0.25;
-this["boxShadow"] = ["inset", 0.0, 1.0, 0.0, 16777215];
-this["display"] = "flex";
+function() {this["display"] = "flex";
 this["flexDirection"] = "column";
 this["overflow"] = "auto";
 this["position"] = "relative"},
 0,
 1,
 ".jewel.datagrid .jewel.buttonbar.header",
-function() {this["background"] = null;
-this["border"] = [0.0, "none"];
-this["borderTopLeftRadius"] = 0.25;
-this["borderTopRightRadius"] = 0.25;
-this["boxShadow"] = "none";
-this["flex"] = [0.0, 0.0, "auto"];
+function() {this["flex"] = [0.0, 0.0, "auto"];
 this["width"] = 100.0},
 0,
 1,
@@ -1481,36 +1347,19 @@ function() {this["width"] = 100.0},
 0,
 1,
 ".jewel.datagrid .listarea",
-function() {this["borderBottomLeftRadius"] = 0.25;
-this["borderBottomRightRadius"] = 0.25;
-this["borderBottomWidth"] = 0.0;
-this["borderColor"] = 11776947;
-this["borderLeftWidth"] = 0.0;
-this["borderRightWidth"] = 0.0;
-this["borderStyle"] = "solid";
-this["borderTopWidth"] = 0.0;
-this["flex"] = [1.0, 1.0, "auto"];
+function() {this["flex"] = [1.0, 1.0, "auto"];
 this["width"] = 100.0},
 0,
 1,
 ".jewel.datagrid .jewel.list.column",
-function() {this["borderBottomWidth"] = 0.0;
-this["borderRadius"] = 0.0;
-this["boxShadow"] = ["inset", 0.0, 1.0, 0.0, 0.0, 419430400];
-this["minHeight"] = 100.0;
+function() {this["minHeight"] = 100.0;
 this["paddingLeft"] = 0.0;
 this["paddingRight"] = 0.0;
 this["position"] = "relative"},
 0,
 1,
 ".jewel.datagrid .jewel.list.column .jewel.item.datagrid",
-function() {this["borderBottom"] = [1.0, "solid", 15592941];
-this["borderLeft"] = "none";
-this["borderRadius"] = 0.0;
-this["borderRight"] = 0.0;
-this["borderTop"] = "none";
-this["boxShadow"] = "none";
-this["width"] = 100.0},
+function() {this["width"] = 100.0},
 0,
 1,
 "span:empty:before",
@@ -1536,19 +1385,12 @@ function() {this["display"] = "none"},
 0,
 1,
 ".jewel.datechooser .jewel.table",
-function() {this["background"] = 16777215;
-this["border"] = [1.0, "solid", 14277081];
-this["borderRadius"] = 0.25;
-this["boxShadow"] = "none";
-this["minHeight"] = 364.0;
+function() {this["minHeight"] = 364.0;
 this["minWidth"] = 324.0},
 0,
 1,
 ".jewel.datechooser .jewel.table .jewel.tablecell",
-function() {this["borderLeft"] = 0.0;
-this["borderTop"] = 0.0;
-this["height"] = "auto";
-this["padding"] = 4.0},
+function() {this["height"] = "auto"},
 0,
 1,
 ".jewel.datechooser .jewel.table .jewel.tableheadercell.buttonsRow>.layout.horizontal",
@@ -1556,47 +1398,27 @@ function() {this["float"] = "right"},
 0,
 1,
 ".jewel.datechooser .jewel.table .jewel.tableheadercell.buttonsRow .viewSelector::after",
-function() {this["backgroundImage"] = "data:image/svg+xml,%3Csvg viewBox='0 0 12 8' version='1.1' xmlns='http://www.w3.org/2000/svg'%3E%3Cg stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg transform='translate(0.000000, -1.000000)' fill='%233CADF1' fill-rule='nonzero'%3E%3Cg transform='translate(-2.000000, 0.000000)'%3E%3Cpolygon transform='translate(8.000000, 4.705000) scale(1, -1) translate(-8.000000, -4.705000) ' points='3.41 8.41 8 3.83 12.59 8.41 14 7 8 1 2 7'%3E%3C/polygon%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E";
-this["backgroundPosition"] = ["right", 0.0, "center"];
-this["backgroundRepeat"] = "no-repeat";
-this["content"] = " ";
-this["height"] = 8.0;
-this["paddingRight"] = 8.0;
-this["width"] = 14.0},
+function() {this["content"] = " "},
 0,
 1,
 ".jewel.datechooser .jewel.table .jewel.tableheadercell.buttonsRow .previousButton",
-function() {this["borderRadius"] = 50.0;
-this["color"] = "transparent";
-this["minHeight"] = 40.0;
+function() {this["minHeight"] = 40.0;
 this["minWidth"] = 40.0},
 0,
 1,
 ".jewel.datechooser .jewel.table .jewel.tableheadercell.buttonsRow .nextButton",
-function() {this["borderRadius"] = 50.0;
-this["color"] = "transparent";
-this["minHeight"] = 40.0;
+function() {this["minHeight"] = 40.0;
 this["minWidth"] = 40.0},
 0,
 1,
 ".jewel.datechooser .jewel.table .jewel.tableheadercell.buttonsRow .previousButton::after",
-function() {this["background"] = ["url(\"data:image/svg+xml,%3Csvg viewBox='0 0 8 12' version='1.1' xmlns='http://www.w3.org/2000/svg'%3E%3Cg stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg transform='translate(-7.000000, -5.000000)'%3E%3Crect x='0' y='0' width='22' height='22'%3E%3C/rect%3E%3Cpath d='M14.9911518,6.4116803 C14.9876664,5.88503401 14.7746504,5.53560917 14.5762939,5.35284424 C14.3779375,5.17007931 14.0808684,5.04951371 13.4608967,5.00170898 L7.01066011,11.0034834 L13.4822102,17.0014648 C14.1196233,16.9113382 14.3962441,16.8099967 14.5762939,16.6435547 C14.7563438,16.4771126 14.9881385,16.1084637 15.0074566,15.5914935 L10.0769967,11.0034834 L14.9911518,6.4116803 Z' fill='%233CADF1' fill-rule='nonzero'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E\")", "no-repeat", "center", "center"];
-this["content"] = " ";
-this["height"] = 14.0;
-this["left"] = null;
-this["position"] = "absolute";
-this["top"] = null;
-this["width"] = 14.0},
+function() {this["content"] = " ";
+this["position"] = "absolute"},
 0,
 1,
 ".jewel.datechooser .jewel.table .jewel.tableheadercell.buttonsRow .nextButton::after",
-function() {this["background"] = ["url(\"data:image/svg+xml,%3Csvg viewBox='0 0 8 12' version='1.1' xmlns='http://www.w3.org/2000/svg'%3E%3Cg stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg transform='translate(-7.000000, -5.000000)'%3E%3Crect x='0' y='0' width='22' height='22'%3E%3C/rect%3E%3Cpath d='M14.9911518,6.4116803 C14.9876664,5.88503401 14.7746504,5.53560917 14.5762939,5.35284424 C14.3779375,5.17007931 14.0808684,5.04951371 13.4608967,5.00170898 L7.01066011,11.0034834 L13.4822102,17.0014648 C14.1196233,16.9113382 14.3962441,16.8099967 14.5762939,16.6435547 C14.7563438,16.4771126 14.9881385,16.1084637 15.0074566,15.5914935 L10.0769967,11.0034834 L14.9911518,6.4116803 Z' fill='%233CADF1' fill-rule='nonzero' transform='translate(11.009058, 11.001587) scale(-1, 1) translate(-11.009058, -11.001587) '%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E\")", "no-repeat", "center", "center"];
-this["content"] = " ";
-this["height"] = 14.0;
-this["left"] = null;
-this["position"] = "absolute";
-this["top"] = null;
-this["width"] = 14.0},
+function() {this["content"] = " ";
+this["position"] = "absolute"},
 0,
 1,
 ".jewel.datefield",
@@ -1604,8 +1426,7 @@ function() {this["display"] = "inline-flex"},
 0,
 1,
 "input",
-function() {this["borderRadius"] = [0.25, 0.0, 0.0, 0.25];
-this["width"] = 9.199999809265137},
+function() {this["width"] = 9.199999809265137},
 0,
 1,
 ".jewel.datefield .jewel.button::before",
@@ -1615,9 +1436,7 @@ this["padding"] = 0.0},
 0,
 1,
 ".jewel.datefield .jewel.button::after",
-function() {this["background"] = ["url(\"data:image/svg+xml,%3Csvg viewBox='0 0 22 22' version='1.1' xmlns='http://www.w3.org/2000/svg'%3E%3Cg stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Crect x='0' y='0' width='22' height='22'%3E%3C/rect%3E%3Cpath d='M18.3333333,2.75 L17.4166667,2.75 L17.4166667,0.916666667 L15.5833333,0.916666667 L15.5833333,2.75 L6.41666667,2.75 L6.41666667,0.916666667 L4.58333333,0.916666667 L4.58333333,2.75 L3.66666667,2.75 C2.65833333,2.75 1.83333333,3.575 1.83333333,4.58333333 L1.83333333,19.25 C1.83333333,20.2583333 2.65833333,21.0833333 3.66666667,21.0833333 L18.3333333,21.0833333 C19.3416667,21.0833333 20.1666667,20.2583333 20.1666667,19.25 L20.1666667,4.58333333 C20.1666667,3.575 19.3416667,2.75 18.3333333,2.75 Z M18.3333333,19.25 L3.66666667,19.25 L3.66666667,7.33333333 L18.3333333,7.33333333 L18.3333333,19.25 Z' fill='%233CADF1' fill-rule='nonzero'%3E%3C/path%3E%3C/g%3E%3C/svg%3E\")", "no-repeat", "center", "center"];
-this["backgroundSize"] = 66.0;
-this["content"] = " ";
+function() {this["content"] = " ";
 this["height"] = 22.0;
 this["left"] = null;
 this["position"] = "absolute";
@@ -1680,16 +1499,12 @@ this["transition"] = ["transform 0.4s 0ms", "opacity 0.4s 0ms"]},
 0,
 1,
 ".jewel.divider",
-function() {this["borderBottomColor"] = 14277081;
-this["borderBottomStyle"] = "solid";
-this["borderBottomWidth"] = 1.0;
-this["height"] = 0.0;
+function() {this["height"] = 0.0;
 this["margin"] = 0.0},
 0,
 1,
 ".jewel.drawer.float",
-function() {this["color"] = 3422552064;
-this["contain"] = "strict";
+function() {this["contain"] = "strict";
 this["height"] = 100.0;
 this["left"] = 0.0;
 this["overflow"] = "hidden";
@@ -1701,33 +1516,23 @@ this["zIndex"] = 100.0},
 0,
 1,
 ".jewel.drawer.float::before",
-function() {this["backgroundColor"] = 2768240640;
-this["content"] = "";
+function() {this["content"] = "";
 this["display"] = "block";
 this["height"] = 100.0;
 this["left"] = 0.0;
 this["opacity"] = 0.0;
 this["position"] = "absolute";
 this["top"] = 0.0;
-this["transition"] = ["opacity", 0.4000000059604645, 0.0];
-this["width"] = 100.0;
-this["willChange"] = "opacity"},
+this["width"] = 100.0},
 0,
 1,
 ".jewel.drawer.float .drawermain",
-function() {this["backgroundColor"] = 16777215;
-this["boxShadow"] = [0.0, 0.0, 6.0, 1.0, 2986410241];
-this["display"] = "flex";
+function() {this["display"] = "flex";
 this["flexDirection"] = "column";
 this["height"] = 100.0;
 this["left"] = 0.0;
-this["maxWidth"] = 280.0;
 this["position"] = "absolute";
-this["right"] = "initial";
-this["transform"] = null;
-this["transition"] = ["transform", 250.0, 0.0];
-this["width"] = null;
-this["willChange"] = "transform"},
+this["right"] = "initial"},
 0,
 1,
 ".jewel.drawer.float.open",
@@ -1743,41 +1548,28 @@ function() {this["width"] = 0.0},
 0,
 1,
 ".jewel.drawer.fixed .drawermain",
-function() {this["backgroundColor"] = 16777215;
-this["borderLeft"] = 0.0;
-this["borderRight"] = [1.0, "solid", 14277081];
-this["display"] = "inline-flex";
+function() {this["display"] = "inline-flex";
 this["flexDirection"] = "column";
 this["height"] = 100.0;
 this["left"] = 0.0;
 this["overflow"] = "hidden";
 this["right"] = "auto";
-this["touchAction"] = "none";
-this["transform"] = null;
-this["transition"] = ["transform", 250.0, 0.0];
-this["width"] = 240.0;
-this["willChange"] = "transform"},
+this["touchAction"] = "none"},
 0,
 1,
 ".jewel.drawer.fixed.open",
-function() {this["pointerEvents"] = "auto";
-this["width"] = "auto"},
+function() {this["pointerEvents"] = "auto"},
 0,
 1,
 ".jewel.drawer.fixed.open .drawermain",
-function() {this["transform"] = "none";
-this["transition"] = ["transform", 300.0, 0.0]},
+function() {this["transform"] = "none"},
 0,
 1,
 ".jewel.drawerheader",
 function() {this["alignItems"] = "center";
-this["background"] = null;
-this["borderBottom"] = [1.0, "solid", 883130];
-this["color"] = 16777215;
 this["display"] = "flex";
 this["flexDirection"] = "column";
 this["flexShrink"] = 0.0;
-this["padding"] = 16.0;
 this["position"] = "relative"},
 0,
 1,
@@ -1786,7 +1578,6 @@ function() {this["alignItems"] = "flex-end";
 this["bottom"] = 0.0;
 this["display"] = "flex";
 this["left"] = 0.0;
-this["padding"] = 16.0;
 this["position"] = "absolute";
 this["right"] = 0.0;
 this["top"] = 0.0},
@@ -1802,14 +1593,9 @@ this["touchAction"] = "pan-y"},
 0,
 1,
 ".jewel.drawerfooter",
-function() {this["background"] = null;
-this["borderBottom"] = [1.0, "solid", 0];
-this["borderTop"] = [1.0, "solid", 5855577];
-this["color"] = 16777215;
-this["display"] = "flex";
+function() {this["display"] = "flex";
 this["height"] = 66.0;
 this["position"] = "relative";
-this["textShadow"] = [0.0, -1.0, 0.0, 2986344448];
 this["width"] = 100.0},
 0,
 1,
@@ -1827,13 +1613,6 @@ this["MsAppearance"] = "none";
 this["OAppearance"] = "none";
 this["WebkitAppearance"] = "none";
 this["appearance"] = "none";
-this["backgroundColor"] = 16777215;
-this["backgroundImage"] = "data:image/svg+xml,%3Csvg viewBox='0 0 12 8' version='1.1' xmlns='http://www.w3.org/2000/svg'%3E%3Cg stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg transform='translate(0.000000, -1.000000)' fill='%233CADF1' fill-rule='nonzero'%3E%3Cg transform='translate(-2.000000, 0.000000)'%3E%3Cpolygon transform='translate(8.000000, 4.705000) scale(1, -1) translate(-8.000000, -4.705000) ' points='3.41 8.41 8 3.83 12.59 8.41 14 7 8 1 2 7'%3E%3C/polygon%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E";
-this["backgroundPosition"] = ["right", 0.699999988079071, "center"];
-this["backgroundRepeat"] = "no-repeat";
-this["backgroundSize"] = 1.0800000429153442;
-this["border"] = [1.0, "solid", 11776947];
-this["borderRadius"] = 0.25;
 this["cursor"] = "pointer";
 this["display"] = "inline-flex";
 this["lineHeight"] = ["normal", "!important"];
@@ -1849,16 +1628,11 @@ this["flex"] = [1.0, 1.0, "auto"]},
 0,
 1,
 ".jewel.footerbar .footerBarAppHeader",
-function() {this["background"] = null;
-this["borderBottom"] = [1.0, "solid", 0];
-this["borderTop"] = [1.0, "solid", 5855577];
-this["bottom"] = 0.0;
-this["color"] = 16777215;
+function() {this["bottom"] = 0.0;
 this["display"] = "flex";
 this["flexDirection"] = "column";
 this["justifyContent"] = "space-between";
 this["position"] = "fixed";
-this["textShadow"] = [0.0, -1.0, 0.0, 2986344448];
 this["width"] = 100.0;
 this["zIndex"] = 20.0},
 0,
@@ -1880,27 +1654,19 @@ this["display"] = "inline-flex";
 this["flex"] = [1.0, 1.0, "auto"];
 this["minWidth"] = 0.0;
 this["order"] = -1.0;
-this["padding"] = [8.0, 12.0];
 this["zIndex"] = 1.0},
 0,
 1,
 "button",
 function() {this["alignItems"] = "center";
-this["background"] = "transparent";
-this["border"] = "none";
-this["boxShadow"] = "none";
-this["color"] = "inherit";
 this["display"] = "flex";
-this["fill"] = 16777215;
 this["flexShrink"] = 0.0;
 this["height"] = 48.0;
 this["justifyContent"] = "center";
 this["opacity"] = 1.0;
 this["outline"] = "none";
-this["padding"] = 12.0;
 this["position"] = "relative";
 this["textDecoration"] = "none";
-this["textShadow"] = [0.0, -1.0, 0.0, 2987022986];
 this["width"] = 48.0;
 this["willChange"] = ["transform", "opacity"]},
 0,
@@ -1955,13 +1721,11 @@ function() {this["fontSize"] = 48.0},
 1,
 ".jewel.imagebutton",
 function() {this["borderStyle"] = "none";
-this["outline"] = 0.0;
 this["padding"] = 0.0},
 0,
 1,
 ".jewel.item",
-function() {this["background"] = "transparent";
-this["cursor"] = "auto";
+function() {this["cursor"] = "auto";
 this["flexShrink"] = 0.0;
 this["letterSpacing"] = 0.0;
 this["lineHeight"] = ["normal", "!important"];
@@ -1972,40 +1736,27 @@ this["textDecoration"] = "none"},
 0,
 1,
 ".jewel.navigationlink",
-function() {this["color"] = 2566914048;
-this["cursor"] = "auto";
+function() {this["cursor"] = "auto";
 this["flexShrink"] = 0.0;
-this["fontSize"] = 1.0;
-this["fontWeight"] = 500.0;
 this["letterSpacing"] = 0.0;
 this["lineHeight"] = ["normal", "!important"];
 this["listStyle"] = "none";
-this["margin"] = 0.0;
 this["overflow"] = "hidden";
-this["padding"] = [0.0, 16.0];
 this["position"] = "relative";
 this["textDecoration"] = "none"},
 0,
 1,
 ".jewel.tabbarbutton",
-function() {this["background"] = "transparent";
-this["border"] = "none";
-this["color"] = 2566914048;
-this["cursor"] = "auto";
+function() {this["cursor"] = "auto";
 this["flex"] = [1.0, 0.0, "auto", "!important"];
 this["flexShrink"] = 0.0;
-this["fontSize"] = 1.0;
-this["fontWeight"] = 600.0;
-this["letterSpacing"] = 0.10000000149011612;
+this["letterSpacing"] = 0.0;
 this["lineHeight"] = ["normal", "!important"];
 this["listStyle"] = "none";
 this["margin"] = 0.0;
-this["outline"] = "none";
 this["overflow"] = "initial";
 this["position"] = "relative";
 this["textDecoration"] = "none";
-this["textTransform"] = "uppercase";
-this["transition"] = ["background-color 0.3s ease-in-out", "color 0.3s ease-in-out"];
 this["whiteSpace"] = "nowrap";
 this["zIndex"] = 1.0},
 0,
@@ -2054,14 +1805,11 @@ this["iBeadLayout"] = org.apache.royale.jewel.beads.layouts.BasicLayout},
 ".jewel.label",
 function() {this["WebkitFontSmoothing"] = "antialiased";
 this["cursor"] = "default";
-this["lineHeight"] = 1.0;
 this["whiteSpace"] = "nowrap"},
 0,
 1,
 ".jewel.label.multiline",
-function() {this["lineHeight"] = "normal";
-this["maxWidth"] = 100.0;
-this["whiteSpace"] = "pre-wrap";
+function() {this["whiteSpace"] = "pre-wrap";
 this["wordWrap"] = "break-word"},
 0,
 1,
@@ -2704,19 +2452,13 @@ function() {this["display"] = ["flex", "!important"]},
 ".jewel.list",
 function() {this["WebkitOverflowScrolling"] = "touch";
 this["alignContent"] = "flex-start";
-this["alignItems"] = "stretch";
-this["background"] = null;
-this["border"] = [1.0, "solid", 11776947];
-this["borderRadius"] = 3.0;
-this["boxShadow"] = ["inset", 0.0, 1.0, 0.0, 16777215];
-this["color"] = 8421504},
+this["alignItems"] = "stretch"},
 0,
 1,
 ".jewel.navigation",
 function() {this["WebkitOverflowScrolling"] = "touch";
 this["alignContent"] = "flex-start";
-this["alignItems"] = "stretch";
-this["backgroundColor"] = 16777215},
+this["alignItems"] = "stretch"},
 0,
 1,
 ".jewel.list>*",
@@ -2768,8 +2510,7 @@ this["iViewport"] = org.apache.royale.jewel.supportClasses.scrollbar.ScrollingVi
 1,
 ".jewel.numericstepper",
 function() {this["display"] = "flex";
-this["flexFlow"] = ["column", "wrap"];
-this["height"] = 38.0},
+this["flexFlow"] = ["column", "wrap"]},
 0,
 1,
 ".jewel.numericstepper .jewel.spinner",
@@ -2780,7 +2521,6 @@ this["order"] = -1.0},
 ".jewel.numericstepper .jewel.textinput",
 function() {this["display"] = "inline-flex";
 this["order"] = 0.0;
-this["width"] = null;
 this["zIndex"] = 1.0},
 0,
 1,
@@ -2790,16 +2530,11 @@ this["position"] = "absolute"},
 0,
 1,
 ".jewel.numericstepper .jewel.button.up",
-function() {this["borderBottomRightRadius"] = 0.0;
-this["order"] = 1.0;
-this["padding"] = [8.5, 16.0]},
+function() {this["order"] = 1.0},
 0,
 1,
 ".jewel.numericstepper .jewel.button.down",
-function() {this["borderTopRightRadius"] = 0.0;
-this["borderTopStyle"] = "groove";
-this["order"] = 2.0;
-this["padding"] = [8.5, 16.0]},
+function() {this["order"] = 2.0},
 0,
 1,
 ".jewel.popup",
@@ -2819,28 +2554,20 @@ this["zIndex"] = 40.0},
 0,
 1,
 ".popup-content::before",
-function() {this["backgroundColor"] = 2768240640;
-this["content"] = "";
+function() {this["content"] = "";
 this["display"] = "block";
 this["height"] = 100.0;
 this["left"] = 0.0;
 this["position"] = "absolute";
 this["top"] = 0.0;
-this["transition"] = ["opacity", 0.4000000059604645, 0.0];
-this["width"] = 100.0;
-this["willChange"] = "opacity"},
+this["width"] = 100.0},
 0,
 1,
 ".popup-content .jewel.popupcontent",
-function() {this["background"] = 16777215;
-this["border"] = 0.0;
-this["borderRadius"] = 10.0;
-this["bottom"] = "auto";
-this["boxShadow"] = [0.0, 0.0, 6.0, 1.0, 2986410241, "!important"];
+function() {this["bottom"] = "auto";
 this["display"] = "inline-flex";
 this["left"] = 50.0;
 this["opacity"] = 0.0;
-this["padding"] = 20.0;
 this["position"] = "relative";
 this["top"] = null;
 this["touchAction"] = "none";
@@ -2894,10 +2621,7 @@ this["width"] = 22.0},
 0,
 1,
 "span::before",
-function() {this["background"] = null;
-this["border"] = [1.0, "solid", 11776947];
-this["borderRadius"] = 50.0;
-this["content"] = " ";
+function() {this["content"] = " ";
 this["height"] = 22.0;
 this["left"] = 0.0;
 this["position"] = "absolute";
@@ -2906,60 +2630,42 @@ this["width"] = 22.0},
 0,
 1,
 "span::after",
-function() {this["background"] = ["url(\"data:image/svg+xml,%3Csvg viewBox='0 0 22 22' version='1.1' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0' y='0' width='22' height='22' fill-opacity='0'/%3E%3Ccircle fill='%233CADF1' cx='11' cy='11' r='6'/%3E%3C/svg%3E\")", "no-repeat", "center", "center"];
-this["border"] = [1.0, "solid", "transparent"];
-this["borderRadius"] = 50.0;
-this["content"] = " ";
+function() {this["content"] = " ";
 this["height"] = 22.0;
 this["left"] = 0.0;
 this["opacity"] = 0.0;
 this["position"] = "absolute";
 this["top"] = 0.0;
-this["transform"] = "scale(0)";
-this["transition"] = ["all", 0.30000001192092896, "ease"];
 this["width"] = 22.0},
 0,
 1,
 "span::after",
-function() {this["opacity"] = 1.0;
-this["transform"] = "scale(1)"},
+function() {this["opacity"] = 1.0},
 0,
 1,
 "span::after",
-function() {this["opacity"] = 1.0;
-this["transform"] = "scale(1)"},
+function() {this["opacity"] = 1.0},
 0,
 1,
 "span::before",
-function() {this["background"] = null;
-this["border"] = [1.0, "solid", 1018065];
-this["borderRadius"] = 50.0;
-this["outline"] = "none"},
+function() {this["outline"] = "none"},
 0,
 1,
 "span::before",
-function() {this["background"] = null;
-this["border"] = [1.0, "solid", 1018065];
-this["borderRadius"] = 50.0;
-this["outline"] = "none"},
+function() {this["outline"] = "none"},
 0,
 1,
 "span::before",
-function() {this["background"] = null;
-this["border"] = [1.0, "solid", 1018065];
-this["borderRadius"] = 50.0;
-this["outline"] = "none"},
+function() {this["outline"] = "none"},
 0,
 1,
 "span",
-function() {this["color"] = 12632256;
-this["cursor"] = "unset"},
+function() {this["cursor"] = "unset"},
 0,
 1,
 "span",
 function() {this["cursor"] = "pointer";
 this["margin"] = 0.0;
-this["paddingLeft"] = 8.0;
 this["width"] = "inherit"},
 0,
 1,
@@ -3033,18 +2739,11 @@ this["width"] = 100.0},
 0,
 1,
 "input::-ms-fill-lower",
-function() {this["background"] = null;
-this["border"] = [1.0, "solid", 1018065];
-this["borderRadius"] = 3.0;
-this["boxShadow"] = ["inset", 0.0, 1.0, 0.0, 10212856];
-this["padding"] = 0.0},
+function() {this["padding"] = 0.0},
 0,
 1,
 "input::-ms-fill-upper",
-function() {this["background"] = null;
-this["border"] = [1.0, "solid", 11776947];
-this["borderRadius"] = 3.0;
-this["padding"] = 0.0},
+function() {this["padding"] = 0.0},
 0,
 1,
 "input::-webkit-slider-thumb",
@@ -3052,13 +2751,7 @@ function() {this["MozAppearance"] = "none";
 this["MsAppearance"] = "none";
 this["OAppearance"] = "none";
 this["WebkitAppearance"] = "none";
-this["appearance"] = "none";
-this["background"] = null;
-this["border"] = [1.0, "solid", 1018065];
-this["borderRadius"] = 50.0;
-this["boxShadow"] = ["inset 0 1px 0 #9bd5f8", "0 0 0 1px rgba(255, 255, 255, 0.3)"];
-this["height"] = 18.0;
-this["width"] = 18.0},
+this["appearance"] = "none"},
 0,
 1,
 "input::-moz-range-thumb",
@@ -3066,13 +2759,7 @@ function() {this["MozAppearance"] = "none";
 this["MsAppearance"] = "none";
 this["OAppearance"] = "none";
 this["WebkitAppearance"] = "none";
-this["appearance"] = "none";
-this["background"] = null;
-this["border"] = [1.0, "solid", 1018065];
-this["borderRadius"] = 50.0;
-this["boxShadow"] = ["inset 0 1px 0 #9bd5f8", "0 0 0 1px rgba(255, 255, 255, 0.3)"];
-this["height"] = 18.0;
-this["width"] = 18.0},
+this["appearance"] = "none"},
 0,
 1,
 "input:focus",
@@ -3097,26 +2784,18 @@ this["margin"] = [0.0, 29.0];
 this["overflow"] = "hidden";
 this["padding"] = 0.0;
 this["position"] = "absolute";
-this["top"] = 50.0;
 this["transform"] = null;
 this["width"] = null},
 0,
 1,
 ".slider-track-fill",
-function() {this["background"] = null;
-this["border"] = [1.0, "solid", 1018065];
-this["borderRadius"] = 3.0;
-this["boxShadow"] = ["inset", 0.0, 1.0, 0.0, 10212856];
-this["flex"] = 0.0;
+function() {this["flex"] = 0.0;
 this["padding"] = 0.0;
 this["position"] = "relative"},
 0,
 1,
 ".slider-track",
-function() {this["background"] = null;
-this["border"] = [1.0, "solid", 11776947];
-this["borderRadius"] = 3.0;
-this["flex"] = 0.0;
+function() {this["flex"] = 0.0;
 this["padding"] = 0.0;
 this["position"] = "relative"},
 0,
@@ -3169,31 +2848,24 @@ function() {this["marginLeft"] = null},
 function() {this["bottom"] = 0.0;
 this["justifyContent"] = "center";
 this["position"] = "fixed";
-this["transform"] = null;
-this["transition"] = ["transform", 0.4000000059604645, 0.0];
 this["width"] = 100.0;
-this["willChange"] = "transform";
 this["zIndex"] = 40.0},
 0,
 1,
 ".jewel.snackbar-content",
-function() {this["background"] = 2899536;
-this["borderRadius"] = [0.25, 0.25, 0.0, 0.0];
-this["maxWidth"] = 568.0;
+function() {this["maxWidth"] = 568.0;
 this["minWidth"] = 288.0;
 this["padding"] = [0.6800000071525574, 1.1200000047683716];
 this["position"] = "relative"},
 0,
 1,
 ".jewel.snackbar-message",
-function() {this["color"] = 16777215;
-this["float"] = "left";
+function() {this["float"] = "left";
 this["margin"] = 10.0},
 0,
 1,
 ".jewel.snackbar-action",
-function() {this["color"] = 16766784;
-this["cursor"] = "pointer";
+function() {this["cursor"] = "pointer";
 this["float"] = "right";
 this["padding"] = 10.0},
 0,
@@ -3240,7 +2912,6 @@ this["zIndex"] = 1.0},
 1,
 ".jewel.tabbarbutton .indicator>.indicator-content",
 function() {this["alignSelf"] = "flex-end";
-this["backgroundColor"] = 3976689;
 this["opacity"] = 0.0},
 0,
 1,
@@ -3257,8 +2928,7 @@ function() {this["bottom"] = 0.0},
 0,
 1,
 ".jewel.tabbar.layout.horizontal .indicator>.indicator-content",
-function() {this["height"] = 2.0;
-this["width"] = 100.0},
+function() {this["width"] = 100.0},
 0,
 1,
 ".jewel.tabbar.layout.horizontal .indicator-opposite-side ._internal_",
@@ -3277,8 +2947,7 @@ function() {this["right"] = 0.0},
 ".jewel.tabbar.layout.vertical .indicator>.indicator-content",
 function() {this["height"] = 100.0;
 this["position"] = "absolute";
-this["right"] = 0.0;
-this["width"] = 2.0},
+this["right"] = 0.0},
 0,
 1,
 ".jewel.tabbar.layout.vertical .indicator-opposite-side ._internal_",
@@ -3291,26 +2960,14 @@ function() {this["right"] = "initial"},
 0,
 1,
 ".jewel.simpletable",
-function() {this["background"] = null;
-this["border"] = [1.0, "solid", 11776947];
-this["borderRadius"] = 0.25;
-this["borderSpacing"] = 0.0;
-this["boxShadow"] = ["inset", 0.0, 1.0, 0.0, 16777215];
+function() {this["borderSpacing"] = 0.0;
 this["overflow"] = "hidden";
 this["position"] = "relative";
 this["whiteSpace"] = "nowrap"},
 0,
 1,
 ".jewel.simpletable .jewel.tableheadercell",
-function() {this["background"] = null;
-this["borderLeft"] = [1.0, "solid", 14277081];
-this["boxShadow"] = ["inset", 0.0, 1.0, 0.0, 16777215];
-this["color"] = 8421504;
-this["fontSize"] = 1.0;
-this["fontWeight"] = 700.0;
-this["letterSpacing"] = 0.0;
-this["lineHeight"] = ["normal", "!important"];
-this["padding"] = 12.0;
+function() {this["letterSpacing"] = 0.0;
 this["position"] = "relative";
 this["textAlign"] = "left";
 this["textOverflow"] = "ellipsis";
@@ -3324,9 +2981,7 @@ this["transitionProperty"] = "background-color"},
 0,
 1,
 ".jewel.simpletable .jewel.tablecell",
-function() {this["borderLeft"] = [1.0, "solid", 14277081];
-this["borderTop"] = [1.0, "solid", 14277081];
-this["position"] = "relative"},
+function() {this["position"] = "relative"},
 0,
 1,
 "table",
@@ -3335,16 +2990,7 @@ this["width"] = 100.0},
 0,
 1,
 ".jewel.table .jewel.tableheadercell",
-function() {this["background"] = null;
-this["borderBottom"] = [1.0, "solid", 14277081];
-this["borderLeft"] = [1.0, "solid", 14277081];
-this["boxShadow"] = ["inset", 0.0, 1.0, 0.0, 16777215];
-this["color"] = 8421504;
-this["fontSize"] = 1.0;
-this["fontWeight"] = 700.0;
-this["letterSpacing"] = 0.0;
-this["lineHeight"] = ["normal", "!important"];
-this["padding"] = 12.0;
+function() {this["letterSpacing"] = 0.0;
 this["position"] = "relative";
 this["textAlign"] = "left";
 this["textOverflow"] = "ellipsis";
@@ -3358,9 +3004,7 @@ this["transitionProperty"] = "background-color"},
 0,
 1,
 ".jewel.table .jewel.tablecell",
-function() {this["borderLeft"] = [1.0, "solid", 14277081];
-this["borderTop"] = [1.0, "solid", 14277081];
-this["height"] = 100.0;
+function() {this["height"] = 100.0;
 this["position"] = "relative"},
 0,
 1,
@@ -3376,7 +3020,6 @@ this["zIndex"] = 1.0},
 1,
 ".jewel.tableitem",
 function() {this["cursor"] = "auto";
-this["height"] = 100.0;
 this["letterSpacing"] = 0.0;
 this["lineHeight"] = ["normal", "!important"];
 this["overflow"] = "hidden";
@@ -3404,9 +3047,7 @@ function() {this["textAlign"] = "center"},
 0,
 1,
 ".jewel.textinput",
-function() {this["color"] = 8421504;
-this["display"] = "inline-flex";
-this["fontWeight"] = 400.0;
+function() {this["display"] = "inline-flex";
 this["overflow"] = "hidden";
 this["position"] = "relative"},
 0,
@@ -3434,33 +3075,21 @@ this["MsAppearance"] = "none";
 this["OAppearance"] = "none";
 this["WebkitAppearance"] = "none";
 this["appearance"] = "none";
-this["background"] = null;
-this["border"] = [1.0, "solid", 11776947];
-this["borderRadius"] = 0.25;
 this["flex"] = [1.0, 0.0, "auto"];
 this["height"] = "auto";
 this["lineHeight"] = ["normal", "!important"];
-this["margin"] = 0.0;
 this["maxWidth"] = 100.0;
 this["outline"] = "none";
-this["padding"] = [0.6790000200271606, 14.0];
 this["textAlign"] = "left";
-this["transitionDuration"] = 0.30000001192092896;
-this["transitionTimingFunction"] = "easein";
 this["width"] = 100.0},
 0,
 1,
 "input[disabled]",
-function() {this["background"] = 15987699;
-this["border"] = [1.0, "solid", 14277081];
-this["boxShadow"] = "none";
-this["color"] = 12632256;
-this["cursor"] = "unset"},
+function() {this["cursor"] = "unset"},
 0,
 1,
 "i.fonticon",
 function() {this["cursor"] = "default";
-this["left"] = 14.0;
 this["marginTop"] = -6.0;
 this["pointerEvents"] = "none";
 this["position"] = "absolute";
@@ -3470,13 +3099,11 @@ this["top"] = 50.0},
 0,
 1,
 "i.fonticon.material-icons",
-function() {this["left"] = 10.0;
-this["marginTop"] = -0.5},
+function() {this["marginTop"] = -0.5},
 0,
 1,
 "i.fonticon",
-function() {this["left"] = "initial";
-this["right"] = 14.0},
+function() {this["left"] = "initial"},
 0,
 1,
 "input",
@@ -3485,9 +3112,7 @@ this["textOverflow"] = "ellipsis"},
 0,
 1,
 ".jewel.textarea",
-function() {this["color"] = 8421504;
-this["display"] = "inline-flex";
-this["fontWeight"] = 400.0;
+function() {this["display"] = "inline-flex";
 this["position"] = "relative"},
 0,
 1,
@@ -3497,27 +3122,16 @@ this["MsAppearance"] = "none";
 this["OAppearance"] = "none";
 this["WebkitAppearance"] = "none";
 this["appearance"] = "none";
-this["background"] = null;
-this["border"] = [1.0, "solid", 11776947];
-this["borderRadius"] = 0.25;
 this["flex"] = [1.0, 0.0, "auto"];
 this["lineHeight"] = ["normal", "!important"];
-this["margin"] = 0.0;
 this["maxWidth"] = 100.0;
 this["outline"] = "none";
-this["padding"] = [0.7200000286102295, 1.1200000047683716];
 this["resize"] = "none";
-this["textAlign"] = "left";
-this["transitionDuration"] = 0.30000001192092896;
-this["transitionTimingFunction"] = "easein"},
+this["textAlign"] = "left"},
 0,
 1,
 "textarea[disabled]",
-function() {this["background"] = 15987699;
-this["border"] = [1.0, "solid", 14277081];
-this["boxShadow"] = "none";
-this["color"] = 12632256;
-this["cursor"] = "unset"},
+function() {this["cursor"] = "unset"},
 0,
 1,
 ".jewel.titlebar",
@@ -3526,46 +3140,24 @@ this["minHeight"] = 34.0;
 this["padding"] = 0.0},
 0,
 1,
-"org.apache.royale.jewel.TitleBar",
-function() {this["iBeadLayout"] = org.apache.royale.jewel.beads.layouts.HorizontalLayout;
-this["iBeadModel"] = org.apache.royale.jewel.beads.models.TitleBarModel;
-this["iBeadView"] = org.apache.royale.jewel.beads.views.TitleBarView},
-0,
-1,
 ".jewel.togglebutton",
 function() {this["alignItems"] = "center";
-this["background"] = null;
-this["border"] = [1.0, "solid", 11776947];
-this["borderRadius"] = 0.25;
-this["boxShadow"] = ["inset", 0.0, 1.0, 0.0, 16777215];
-this["color"] = 8421504;
 this["cursor"] = "pointer";
 this["display"] = "inline-flex";
-this["fontWeight"] = "bold";
 this["justifyContent"] = "center";
 this["lineHeight"] = ["normal", "!important"];
-this["margin"] = 0.0;
 this["outline"] = "none";
 this["overflow"] = "hidden";
-this["padding"] = [0.6790000200271606, 1.1200000047683716];
 this["position"] = "relative";
 this["textAlign"] = "center";
 this["textDecoration"] = "none";
-this["textShadow"] = "none";
-this["textTransform"] = "uppercase";
 this["userSelect"] = "none";
 this["verticalAlign"] = "middle";
 this["whiteSpace"] = "nowrap"},
 0,
 1,
 ".jewel.togglebutton[disabled]",
-function() {this["background"] = [15987699, "!important"];
-this["border"] = [1.0, "solid", 14277081, "!important"];
-this["boxShadow"] = ["none", "!important"];
-this["color"] = 12632256;
-this["cursor"] = "default";
-this["fontWeight"] = 400.0;
-this["textShadow"] = "unset"},
+function() {this["cursor"] = "default"},
 0,
 1,
 ".jewel.togglebutton .fonticon",
@@ -3573,11 +3165,7 @@ function() {this["cursor"] = "inherit"},
 0,
 1,
 ".jewel.tooltip",
-function() {this["animation"] = ["slide-up", 0.4000000059604645, "ease"];
-this["background"] = 4210752;
-this["borderRadius"] = 0.25;
-this["boxShadow"] = [0.0, 3.0, 3.0, 0.0, 1711276032];
-this["color"] = 16777215;
+function() {this["borderRadius"] = 0.25;
 this["padding"] = 6.0;
 this["pointerEvents"] = "none";
 this["position"] = "absolute";
@@ -3585,8 +3173,7 @@ this["zIndex"] = 80.0},
 0,
 1,
 ".jewel.tooltip.error",
-function() {this["background"] = 15473700;
-this["marginTop"] = [-31.0, "!important"]},
+function() {this["marginTop"] = [-31.0, "!important"]},
 0,
 1,
 ".jewel.tooltip.error::before",
@@ -3631,15 +3218,10 @@ this["flex"] = [1.0, 1.0, "auto"]},
 0,
 1,
 ".jewel.topappbar .topBarAppHeader",
-function() {this["background"] = null;
-this["borderBottom"] = [1.0, "solid", 883130];
-this["borderTop"] = [1.0, "solid", 8637430];
-this["color"] = 16777215;
-this["display"] = "flex";
+function() {this["display"] = "flex";
 this["flexDirection"] = "column";
 this["justifyContent"] = "space-between";
 this["position"] = "fixed";
-this["textShadow"] = [0.0, -1.0, 0.0, 2987022986];
 this["width"] = 100.0;
 this["zIndex"] = 20.0},
 0,
@@ -3661,27 +3243,19 @@ this["display"] = "inline-flex";
 this["flex"] = [1.0, 1.0, "auto"];
 this["minWidth"] = 0.0;
 this["order"] = -1.0;
-this["padding"] = [8.0, 12.0];
 this["zIndex"] = 1.0},
 0,
 1,
 "button",
 function() {this["alignItems"] = "center";
-this["background"] = "transparent";
-this["border"] = "none";
-this["boxShadow"] = "none";
-this["color"] = "inherit";
 this["display"] = "flex";
-this["fill"] = 16777215;
 this["flexShrink"] = 0.0;
 this["height"] = 48.0;
 this["justifyContent"] = "center";
 this["opacity"] = 1.0;
 this["outline"] = "none";
-this["padding"] = 12.0;
 this["position"] = "relative";
 this["textDecoration"] = "none";
-this["textShadow"] = [0.0, -1.0, 0.0, 2987022986];
 this["width"] = 48.0;
 this["willChange"] = ["transform", "opacity"]},
 0,
@@ -3695,13 +3269,9 @@ this["marginRight"] = 0.0},
 function() {this["MozOsxFontSmoothing"] = "grayscale";
 this["WebkitFontSmoothing"] = "antialiased";
 this["flex"] = [1.0, 1.0, "auto"];
-this["fontSize"] = [1.399999976158142, "!important"];
-this["fontWeight"] = 800.0;
 this["letterSpacing"] = 0.012500000186264515;
 this["lineHeight"] = 2.0;
 this["overflow"] = "hidden";
-this["paddingLeft"] = 20.0;
-this["paddingRight"] = 0.0;
 this["textDecoration"] = "inherit";
 this["textOverflow"] = "ellipsis";
 this["textTransform"] = "inherit";
@@ -3743,7 +3313,6 @@ this["cursor"] = "pointer";
 this["flex"] = [0.0, 0.0, 0.0];
 this["height"] = 100.0;
 this["justifyContent"] = "center";
-this["minWidth"] = 44.0;
 this["zIndex"] = 1.0},
 0,
 1,
@@ -3753,20 +3322,17 @@ this["cursor"] = "pointer";
 this["flex"] = [0.0, 0.0, 0.0];
 this["height"] = 100.0;
 this["justifyContent"] = "center";
-this["minWidth"] = 44.0;
 this["zIndex"] = 1.0},
 0,
 1,
 ".jewel.next .jewel.button",
 function() {this["flexDirection"] = "column";
-this["position"] = "relative";
-this["width"] = null},
+this["position"] = "relative"},
 0,
 1,
 ".jewel.previous .jewel.button",
 function() {this["flexDirection"] = "column";
-this["position"] = "relative";
-this["width"] = null},
+this["position"] = "relative"},
 0,
 1,
 ".jewel.wizardcontent",
@@ -3860,2772 +3426,6 @@ function() {this["color"] = 1291845631},
 ".cardWithDropDownList",
 function() {this["overflow"] = ["visible", "!important"];
 this["zIndex"] = ["initial", "!important"]},
-0,
-1,
-".jewel.application",
-function() {this["background"] = 16120058;
-this["color"] = 8421504;
-this["fontFamily"] = ["Lato", "sans-serif"];
-this["margin"] = 0.0;
-this["padding"] = 0.0},
-0,
-1,
-"select",
-function() {this["fontFamily"] = "inherit"},
-0,
-1,
-".jewel.xsmall",
-function() {this["fontSize"] = 0.6000000238418579},
-0,
-1,
-".jewel.small",
-function() {this["fontSize"] = 0.800000011920929},
-0,
-1,
-".jewel",
-function() {this["fontSize"] = 1.0},
-0,
-1,
-".jewel.large",
-function() {this["fontSize"] = 1.2000000476837158},
-0,
-1,
-".jewel.xlarge",
-function() {this["fontSize"] = 1.399999976158142},
-0,
-1,
-".jewel.alert.open",
-function() {this["opacity"] = 1.0;
-this["transform"] = null;
-this["transition"] = ["opacity 0.4s 0ms", "transform 0.4s 0ms"]},
-0,
-1,
-".jewel.alert.open+.backdrop",
-function() {this["opacity"] = 1.0;
-this["transition"] = ["opacity", 0.4000000059604645, 0.0]},
-0,
-1,
-".jewel.alert .jewel.titlebar .jewel.label",
-function() {this["fontColor"] = 3976689;
-this["fontSize"] = [1.4500000476837158, "!important"];
-this["fontWeight"] = "bold"},
-0,
-1,
-".jewel.alert+.backdrop",
-function() {this["backgroundColor"] = 2130706432;
-this["opacity"] = 0.0;
-this["willChange"] = "opacity"},
-0,
-1,
-".jewel.badge.primary",
-function() {this["background"] = 3976689;
-this["color"] = 16777215},
-0,
-1,
-".jewel.button:hover",
-function() {this["background"] = null;
-this["border"] = [1.0, "solid", 10921638];
-this["color"] = 8421504},
-0,
-1,
-".jewel.button:hover:focus",
-function() {this["background"] = null;
-this["border"] = [1.0, "solid", 10921638];
-this["color"] = 8421504},
-0,
-1,
-".jewel.button:active",
-function() {this["background"] = null;
-this["border"] = [1.0, "solid", 9276813];
-this["boxShadow"] = ["inset", 0.0, 1.0, 3.0, 0.0, 2133996082];
-this["color"] = 8421504},
-0,
-1,
-".jewel.button:active:focus",
-function() {this["background"] = null;
-this["border"] = [1.0, "solid", 9276813];
-this["boxShadow"] = ["inset", 0.0, 1.0, 3.0, 0.0, 2133996082];
-this["color"] = 8421504},
-0,
-1,
-".jewel.button:focus",
-function() {this["border"] = [1.0, "solid", 11776947];
-this["boxShadow"] = ["inset 0px 0px 0px 1px rgba(255, 255, 255, 0.5)", "inset 0 1px 0 rgba(255, 255, 255, 0.6)"];
-this["color"] = 8421504},
-0,
-1,
-".jewel.button[disabled]:hover",
-function() {this["color"] = 12632256},
-0,
-1,
-".jewel.button[disabled]:hover:focus",
-function() {this["color"] = 12632256},
-0,
-1,
-".jewel.button.icon",
-function() {this["padding"] = [0.42899999022483826, 0.8700000047683716]},
-0,
-1,
-"span",
-function() {this["marginLeft"] = 0.0;
-this["marginRight"] = 0.0},
-0,
-1,
-"span",
-function() {this["marginLeft"] = 8.0;
-this["marginRight"] = 0.0},
-0,
-1,
-"span",
-function() {this["marginLeft"] = 0.0;
-this["marginRight"] = 8.0},
-0,
-1,
-".jewel.button.primary",
-function() {this["background"] = null;
-this["border"] = [1.0, "solid", 1018065];
-this["borderRadius"] = 0.25;
-this["boxShadow"] = ["inset", 0.0, 1.0, 0.0, 10212856];
-this["color"] = 16777215;
-this["textShadow"] = [0.0, -1.0, 0.0, 2987022986]},
-0,
-1,
-".jewel.button.primary:hover",
-function() {this["background"] = null;
-this["border"] = [1.0, "solid", 883130];
-this["color"] = 16777215},
-0,
-1,
-".jewel.button.primary:hover:focus",
-function() {this["background"] = null;
-this["border"] = [1.0, "solid", 883130];
-this["color"] = 16777215},
-0,
-1,
-".jewel.button.primary:active",
-function() {this["background"] = null;
-this["border"] = [1.0, "solid", 678538];
-this["boxShadow"] = ["inset", 0.0, 1.0, 3.0, 0.0, 2133996082];
-this["color"] = 16777215},
-0,
-1,
-".jewel.button.primary:active:focus",
-function() {this["background"] = null;
-this["border"] = [1.0, "solid", 678538];
-this["boxShadow"] = ["inset", 0.0, 1.0, 3.0, 0.0, 2133996082];
-this["color"] = 16777215},
-0,
-1,
-".jewel.button.primary:focus",
-function() {this["border"] = [1.0, "solid", 1018065];
-this["boxShadow"] = ["inset 0px 0px 0px 1px rgba(255, 255, 255, 0.5)", "inset 0 1px 0 rgba(255, 255, 255, 0.6)"];
-this["color"] = 16777215},
-0,
-1,
-".jewel.button.primary[disabled]",
-function() {this["background"] = [15987699, "!important"];
-this["border"] = [1.0, "solid", 14277081, "!important"];
-this["boxShadow"] = ["none", "!important"];
-this["color"] = 12632256;
-this["textShadow"] = "unset"},
-0,
-1,
-".jewel.button.primary[disabled]:hover",
-function() {this["color"] = 12632256},
-0,
-1,
-".jewel.button.primary[disabled]:hover:focus",
-function() {this["color"] = 12632256},
-0,
-1,
-".jewel.button.outlined",
-function() {this["background"] = 213103539;
-this["border"] = [1.0, "solid", 10066329];
-this["boxShadow"] = "none";
-this["color"] = 9276813;
-this["textShadow"] = "none"},
-0,
-1,
-".jewel.button.outlined:hover",
-function() {this["background"] = 649311155;
-this["border"] = [1.0, "solid", 9276813];
-this["color"] = 7566195},
-0,
-1,
-".jewel.button.outlined:hover:focus",
-function() {this["background"] = 649311155;
-this["border"] = [1.0, "solid", 9276813];
-this["color"] = 7566195},
-0,
-1,
-".jewel.button.outlined:active",
-function() {this["background"] = 1068741555;
-this["border"] = [1.0, "solid", 8750469];
-this["boxShadow"] = "none";
-this["color"] = 7566195},
-0,
-1,
-".jewel.button.outlined:active:focus",
-function() {this["background"] = 1068741555;
-this["border"] = [1.0, "solid", 8750469];
-this["boxShadow"] = "none";
-this["color"] = 7566195},
-0,
-1,
-".jewel.button.outlined:focus",
-function() {this["border"] = [1.0, "solid", 8421504];
-this["boxShadow"] = "none";
-this["color"] = 7566195},
-0,
-1,
-".jewel.button.outlined[disabled]",
-function() {this["background"] = [435418099, "!important"];
-this["border"] = [1.0, "solid", 14277081, "!important"];
-this["color"] = 12632256;
-this["textShadow"] = "unset"},
-0,
-1,
-".jewel.button.outlined[disabled]:hover",
-function() {this["color"] = 12632256},
-0,
-1,
-".jewel.button.outlined[disabled]:hover:focus",
-function() {this["color"] = 12632256},
-0,
-1,
-".jewel.button.primary.outlined",
-function() {this["background"] = 205303281;
-this["border"] = [1.0, "solid", 1153257];
-this["boxShadow"] = "none";
-this["color"] = 1018065;
-this["textShadow"] = "none"},
-0,
-1,
-".jewel.button.primary.outlined:hover",
-function() {this["background"] = 641510897;
-this["border"] = [1.0, "solid", 1018065];
-this["color"] = 813474},
-0,
-1,
-".jewel.button.primary.outlined:hover:focus",
-function() {this["background"] = 641510897;
-this["border"] = [1.0, "solid", 1018065];
-this["color"] = 813474},
-0,
-1,
-".jewel.button.primary.outlined:active",
-function() {this["background"] = 1060941297;
-this["border"] = [1.0, "solid", 950211];
-this["boxShadow"] = "none";
-this["color"] = 813474},
-0,
-1,
-".jewel.button.primary.outlined:active:focus",
-function() {this["background"] = 1060941297;
-this["border"] = [1.0, "solid", 950211];
-this["boxShadow"] = "none";
-this["color"] = 813474},
-0,
-1,
-".jewel.button.primary.outlined:focus",
-function() {this["border"] = [1.0, "solid", 883130];
-this["boxShadow"] = "none";
-this["color"] = 813474},
-0,
-1,
-".jewel.button.primary.outlined[disabled]",
-function() {this["background"] = [435418099, "!important"];
-this["border"] = [1.0, "solid", 14277081, "!important"];
-this["color"] = 12632256;
-this["textShadow"] = "unset"},
-0,
-1,
-".jewel.button.primary.outlined[disabled]:hover",
-function() {this["color"] = 12632256},
-0,
-1,
-".jewel.button.primary.outlined[disabled]:hover:focus",
-function() {this["color"] = 12632256},
-0,
-1,
-".jewel.button.unboxed",
-function() {this["background"] = 11776947;
-this["border"] = [1.0, "solid", "transparent"];
-this["boxShadow"] = "none";
-this["color"] = 9276813;
-this["textShadow"] = "none"},
-0,
-1,
-".jewel.button.unboxed:hover",
-function() {this["background"] = 649311155;
-this["border"] = [1.0, "solid", "transparent"];
-this["color"] = 7566195},
-0,
-1,
-".jewel.button.unboxed:hover:focus",
-function() {this["background"] = 649311155;
-this["border"] = [1.0, "solid", "transparent"];
-this["color"] = 7566195},
-0,
-1,
-".jewel.button.unboxed:active",
-function() {this["background"] = 1068741555;
-this["border"] = [1.0, "solid", "transparent"];
-this["boxShadow"] = "none";
-this["color"] = 7566195},
-0,
-1,
-".jewel.button.unboxed:active:focus",
-function() {this["background"] = 1068741555;
-this["border"] = [1.0, "solid", "transparent"];
-this["boxShadow"] = "none";
-this["color"] = 7566195},
-0,
-1,
-".jewel.button.unboxed:focus",
-function() {this["background"] = 649311155;
-this["border"] = [1.0, "solid", "transparent"];
-this["boxShadow"] = "none";
-this["color"] = 7566195},
-0,
-1,
-".jewel.button.unboxed[disabled]",
-function() {this["background"] = [15987699, "!important"];
-this["border"] = [1.0, "solid", "transparent", "!important"];
-this["color"] = 12632256;
-this["textShadow"] = "unset"},
-0,
-1,
-".jewel.button.unboxed[disabled]:hover",
-function() {this["color"] = 12632256},
-0,
-1,
-".jewel.button.unboxed[disabled]:hover:focus",
-function() {this["color"] = 12632256},
-0,
-1,
-".jewel.button.primary.unboxed",
-function() {this["background"] = 3976689;
-this["border"] = [1.0, "solid", "transparent"];
-this["boxShadow"] = "none";
-this["color"] = 1018065;
-this["textShadow"] = "none"},
-0,
-1,
-".jewel.button.primary.unboxed:hover",
-function() {this["background"] = 641510897;
-this["border"] = [1.0, "solid", "transparent"];
-this["color"] = 813474},
-0,
-1,
-".jewel.button.primary.unboxed:hover:focus",
-function() {this["background"] = 641510897;
-this["border"] = [1.0, "solid", "transparent"];
-this["color"] = 813474},
-0,
-1,
-".jewel.button.primary.unboxed:active",
-function() {this["background"] = 1060941297;
-this["border"] = [1.0, "solid", "transparent"];
-this["boxShadow"] = "none";
-this["color"] = 813474},
-0,
-1,
-".jewel.button.primary.unboxed:active:focus",
-function() {this["background"] = 1060941297;
-this["border"] = [1.0, "solid", "transparent"];
-this["boxShadow"] = "none";
-this["color"] = 813474},
-0,
-1,
-".jewel.button.primary.unboxed:focus",
-function() {this["background"] = 641510897;
-this["border"] = [1.0, "solid", "transparent"];
-this["boxShadow"] = "none";
-this["color"] = 813474},
-0,
-1,
-".jewel.button.primary.unboxed[disabled]",
-function() {this["background"] = [15987699, "!important"];
-this["border"] = [1.0, "solid", "transparent", "!important"];
-this["color"] = 12632256;
-this["textShadow"] = "unset"},
-0,
-1,
-".jewel.button.primary.unboxed[disabled]:hover",
-function() {this["color"] = 12632256},
-0,
-1,
-".jewel.button.primary.unboxed[disabled]:hover:focus",
-function() {this["color"] = 12632256},
-0,
-1,
-".jewel.card.simple",
-function() {this["padding"] = 20.0},
-0,
-1,
-".jewel.card .card-title",
-function() {this["fontSize"] = 1.5;
-this["letterSpacing"] = 0.012500000186264515;
-this["margin"] = [0.40799999237060547, 0.0]},
-0,
-1,
-"org.apache.royale.jewel.Card",
-function() {this["gap"] = 3.0},
-0,
-1,
-"org.apache.royale.jewel.supportClasses.card.CardHeader",
-function() {this["gap"] = 3.0},
-0,
-1,
-"org.apache.royale.jewel.supportClasses.card.CardPrimaryContent",
-function() {this["gap"] = 3.0},
-0,
-1,
-"span::before",
-function() {this["background"] = 15987699;
-this["border"] = [1.0, "solid", 14277081];
-this["borderRadius"] = 3.0},
-0,
-1,
-"span::after",
-function() {this["background"] = ["url(\"data:image/svg+xml,%3Csvg viewBox='0 0 22 22' version='1.1' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0' y='0' width='22' height='22' fill-opacity='0'/%3E%3Cpolygon fill='%23cccccc' points='3.50018311 12.4854126 8.48547363 17.4989624 18.4641113 7.47589111 15.5010376 4.51739502 8.48547363 11.5650024 6.52087402 9.47265625'/%3E%3C/svg%3E\")", "no-repeat", "center", "center"]},
-0,
-1,
-"span::after",
-function() {this["background"] = ["url(\"data:image/svg+xml,%3Csvg viewBox='0 0 22 22' version='1.1' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0' y='0' width='22' height='22' fill-opacity='0'/%3E%3Crect stroke-width='0' stroke='%23FFFFFF' height='12' width='12' y='5' x='5' fill='%23cccccc' /%3E%3C/svg%3E\")", "no-repeat", "center", "center"]},
-0,
-1,
-"span::after",
-function() {this["background"] = ["url(\"data:image/svg+xml,%3Csvg viewBox='0 0 22 22' version='1.1' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0' y='0' width='22' height='22' fill-opacity='0'/%3E%3Cline stroke-width='4' stroke='%233CADF1' stroke-linecap='undefined' stroke-linejoin='undefined' y2='10.9375' x2='17' y1='11.0625' x1='5' fill='none' /%3E%3C/svg%3E\")", "no-repeat", "center", "center"];
-this["opacity"] = 1.0;
-this["transform"] = "scale(1)"},
-0,
-1,
-"span::after",
-function() {this["background"] = ["url(\"data:image/svg+xml,%3Csvg viewBox='0 0 22 22' version='1.1' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0' y='0' width='22' height='22' fill-opacity='0'/%3E%3Cline stroke-width='4' stroke='%233CADF1' stroke-linecap='undefined' stroke-linejoin='undefined' y2='10.9375' x2='17' y1='11.0625' x1='5' fill='none' /%3E%3C/svg%3E\")", "no-repeat", "center", "center"];
-this["opacity"] = 1.0;
-this["transform"] = "scale(1)"},
-0,
-1,
-"span::after",
-function() {this["background"] = ["url(\"data:image/svg+xml,%3Csvg viewBox='0 0 22 22' version='1.1' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0' y='0' width='22' height='22' fill-opacity='0'/%3E%3Cline stroke-width='4' stroke='%23cccccc' stroke-linecap='undefined' stroke-linejoin='undefined' y2='10.9375' x2='17' y1='11.0625' x1='5' fill='none' /%3E%3C/svg%3E\")", "no-repeat", "center", "center"]},
-0,
-1,
-".jewel.switch input:checked+.switch",
-function() {this["background"] = null;
-this["boxShadow"] = [0.0, 0.0, 0.0, 1.0, 2401263]},
-0,
-1,
-".jewel.switch input:focus+.switch",
-function() {this["boxShadow"] = [0.0, 0.0, 0.0, 1.0, 1153257]},
-0,
-1,
-".jewel.switch input:checked+.switch::before",
-function() {this["background"] = 16777215;
-this["boxShadow"] = [-1.0, 0.0, 1.0, 0.0, 419430400];
-this["transform"] = null},
-0,
-1,
-".jewel.switch input[disabled]:checked+.switch",
-function() {this["background"] = 14277081;
-this["boxShadow"] = [0.0, 0.0, 0.0, 1.0, 13421772]},
-0,
-1,
-".jewel.switch input[disabled]+.switch",
-function() {this["background"] = 15987699;
-this["boxShadow"] = [0.0, 0.0, 0.0, 1.0, 15132390]},
-0,
-1,
-".jewel.switch input[disabled]+.switch::before",
-function() {this["background"] = 16777215;
-this["boxShadow"] = "none"},
-0,
-1,
-".jewel.switch.radio .switch",
-function() {this["borderRadius"] = 20.0},
-0,
-1,
-".jewel.switch.radio .switch::before",
-function() {this["borderRadius"] = 50.0},
-0,
-1,
-"input",
-function() {this["borderRadius"] = [0.25, 0.0, 0.0, 0.25]},
-0,
-1,
-".jewel.combobox .jewel.button",
-function() {this["borderBottomLeftRadius"] = 0.0;
-this["borderLeft"] = 0.0;
-this["borderTopLeftRadius"] = 0.0;
-this["color"] = "transparent"},
-0,
-1,
-".jewel.combobox .jewel.button[disabled]",
-function() {this["borderLeft"] = [0.0, "!important"]},
-0,
-1,
-".jewel.combobox .jewel.button[disabled]::after",
-function() {this["background"] = ["url(\"data:image/svg+xml,%3Csvg viewBox='0 0 12 8' version='1.1' xmlns='http://www.w3.org/2000/svg'%3E%3Cg stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg transform='translate(0.000000, -1.000000)' fill='%23cccccc' fill-rule='nonzero'%3E%3Cg transform='translate(-2.000000, 0.000000)'%3E%3Cpolygon transform='translate(8.000000, 4.705000) scale(1, -1) translate(-8.000000, -4.705000) ' points='3.41 8.41 8 3.83 12.59 8.41 14 7 8 1 2 7'%3E%3C/polygon%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E\")", "no-repeat", "center", "center"];
-this["backgroundSize"] = 66.0},
-0,
-1,
-".jewel.datagrid .jewel.buttonbar.header .jewel.button.first",
-function() {this["borderBottomLeftRadius"] = 0.0},
-0,
-1,
-".jewel.datagrid .jewel.buttonbar.header .jewel.button.last",
-function() {this["borderBottomRightRadius"] = 0.0},
-0,
-1,
-".jewel.datagrid .listarea:focus",
-function() {this["border"] = [1.0, "solid", 1018065]},
-0,
-1,
-".jewel.datagrid .jewel.list:focus",
-function() {this["borderColor"] = "inherit"},
-0,
-1,
-".jewel.datagrid .jewel.list.column.first",
-function() {this["borderBottomLeftRadius"] = 0.25},
-0,
-1,
-".jewel.datagrid .jewel.list.column.last",
-function() {this["borderBottomRightRadius"] = 0.25},
-0,
-1,
-".jewel.datagrid .jewel.list.column .jewel.item.datagrid.primary.hovered",
-function() {this["background"] = 7718389},
-0,
-1,
-".jewel.datagrid .jewel.list.column .jewel.item.datagrid.primary.selected",
-function() {this["background"] = 6142963},
-0,
-1,
-".jewel.datagrid .jewel.list.column .jewel.item.datagrid.primary.selectable:active",
-function() {this["background"] = 6142963},
-0,
-1,
-".jewel.datechooser .jewel.table .jewel.button",
-function() {this["background"] = "transparent";
-this["border"] = "none";
-this["boxShadow"] = "none"},
-0,
-1,
-".jewel.datechooser .jewel.table .jewel.tableheadercell",
-function() {this["background"] = 16777215;
-this["borderLeft"] = 0.0;
-this["boxShadow"] = "none";
-this["padding"] = [12.0, 0.0]},
-0,
-1,
-".jewel.datechooser .jewel.table .jewel.tableheadercell.buttonsRow",
-function() {this["borderBottom"] = [1.0, "solid", 14277081];
-this["padding"] = 4.0},
-0,
-1,
-".jewel.datechooser .jewel.table .jewel.tableheadercell.buttonsRow .viewSelector:hover",
-function() {this["background"] = 15987699},
-0,
-1,
-".jewel.datechooser .jewel.table .jewel.tableheadercell.buttonsRow .previousButton:hover",
-function() {this["background"] = 15987699},
-0,
-1,
-".jewel.datechooser .jewel.table .jewel.tableheadercell.buttonsRow .nextButton:hover",
-function() {this["background"] = 15987699},
-0,
-1,
-".jewel.datechooser .jewel.table .jewel.tableheadercell.buttonsRow .viewSelector:active",
-function() {this["background"] = 15132390},
-0,
-1,
-".jewel.datechooser .jewel.table .jewel.tableheadercell.buttonsRow .previousButton:active",
-function() {this["background"] = 15132390},
-0,
-1,
-".jewel.datechooser .jewel.table .jewel.tableheadercell.buttonsRow .nextButton:active",
-function() {this["background"] = 15132390},
-0,
-1,
-".jewel.datechooser[disabled]",
-function() {this["pointerEvents"] = "none"},
-0,
-1,
-".jewel.datechooser[disabled] .jewel.table",
-function() {this["background"] = 15987699;
-this["border"] = [1.0, "solid", 14277081];
-this["color"] = 12632256;
-this["textShadow"] = "unset"},
-0,
-1,
-".jewel.datechooser[disabled] .jewel.table .jewel.button",
-function() {this["color"] = 12632256;
-this["fontWeight"] = "normal";
-this["textShadow"] = "unset"},
-0,
-1,
-".jewel.datechooser[disabled] .jewel.table .jewel.tableheadercell",
-function() {this["background"] = "none";
-this["color"] = 12632256;
-this["textShadow"] = "unset"},
-0,
-1,
-".jewel.datechooser[disabled] .jewel.table .jewel.tableheadercell.buttonsRow .viewSelector::after",
-function() {this["backgroundImage"] = "data:image/svg+xml,%3Csvg viewBox='0 0 12 8' version='1.1' xmlns='http://www.w3.org/2000/svg'%3E%3Cg stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg transform='translate(0.000000, -1.000000)' fill='%23cccccc' fill-rule='nonzero'%3E%3Cg transform='translate(-2.000000, 0.000000)'%3E%3Cpolygon transform='translate(8.000000, 4.705000) scale(1, -1) translate(-8.000000, -4.705000) ' points='3.41 8.41 8 3.83 12.59 8.41 14 7 8 1 2 7'%3E%3C/polygon%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E"},
-0,
-1,
-".jewel.datechooser[disabled] .jewel.table .jewel.tableheadercell.buttonsRow .previousButton::after",
-function() {this["background"] = ["url(\"data:image/svg+xml,%3Csvg viewBox='0 0 8 12' version='1.1' xmlns='http://www.w3.org/2000/svg'%3E%3Cg stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg transform='translate(-7.000000, -5.000000)'%3E%3Crect x='0' y='0' width='22' height='22'%3E%3C/rect%3E%3Cpath d='M14.9911518,6.4116803 C14.9876664,5.88503401 14.7746504,5.53560917 14.5762939,5.35284424 C14.3779375,5.17007931 14.0808684,5.04951371 13.4608967,5.00170898 L7.01066011,11.0034834 L13.4822102,17.0014648 C14.1196233,16.9113382 14.3962441,16.8099967 14.5762939,16.6435547 C14.7563438,16.4771126 14.9881385,16.1084637 15.0074566,15.5914935 L10.0769967,11.0034834 L14.9911518,6.4116803 Z' fill='%23cccccc' fill-rule='nonzero'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E\")", "no-repeat", "center", "center"];
-this["backgroundSize"] = 40.0},
-0,
-1,
-".jewel.datechooser[disabled] .jewel.table .jewel.tableheadercell.buttonsRow .nextButton::after",
-function() {this["background"] = ["url(\"data:image/svg+xml,%3Csvg viewBox='0 0 8 12' version='1.1' xmlns='http://www.w3.org/2000/svg'%3E%3Cg stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg transform='translate(-7.000000, -5.000000)'%3E%3Crect x='0' y='0' width='22' height='22'%3E%3C/rect%3E%3Cpath d='M14.9911518,6.4116803 C14.9876664,5.88503401 14.7746504,5.53560917 14.5762939,5.35284424 C14.3779375,5.17007931 14.0808684,5.04951371 13.4608967,5.00170898 L7.01066011,11.0034834 L13.4822102,17.0014648 C14.1196233,16.9113382 14.3962441,16.8099967 14.5762939,16.6435547 C14.7563438,16.4771126 14.9881385,16.1084637 15.0074566,15.5914935 L10.0769967,11.0034834 L14.9911518,6.4116803 Z' fill='%23cccccc' fill-rule='nonzero' transform='translate(11.009058, 11.001587) scale(-1, 1) translate(-11.009058, -11.001587) '%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E\")", "no-repeat", "center", "center"];
-this["backgroundSize"] = 40.0},
-0,
-1,
-".jewel.datechooser[disabled] .jewel.tableitem",
-function() {this["height"] = 38.0},
-0,
-1,
-".jewel.datechooser[disabled] .jewel.tableitem.selected",
-function() {this["background"] = 13421772},
-0,
-1,
-".jewel.datechooser[disabled] .jewel.tableitem.selectable:active",
-function() {this["background"] = 13421772},
-0,
-1,
-".calendar.item",
-function() {this["fontSize"] = 1.0;
-this["padding"] = 10.0},
-0,
-1,
-".calendar.item.dayName",
-function() {this["fontWeight"] = 600.0},
-0,
-1,
-".calendar.item.date",
-function() {this["color"] = 8421504},
-0,
-1,
-".jewel.datefield .jewel.button",
-function() {this["borderBottomLeftRadius"] = 0.0;
-this["borderLeft"] = 0.0;
-this["borderTopLeftRadius"] = 0.0;
-this["color"] = "transparent"},
-0,
-1,
-".jewel.datefield .jewel.button[disabled]",
-function() {this["borderLeft"] = [0.0, "!important"]},
-0,
-1,
-".jewel.datefield .jewel.button[disabled]::after",
-function() {this["background"] = ["url(\"data:image/svg+xml,%3Csvg viewBox='0 0 22 22' version='1.1' xmlns='http://www.w3.org/2000/svg'%3E%3Cg stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Crect x='0' y='0' width='22' height='22'%3E%3C/rect%3E%3Cpath d='M18.3333333,2.75 L17.4166667,2.75 L17.4166667,0.916666667 L15.5833333,0.916666667 L15.5833333,2.75 L6.41666667,2.75 L6.41666667,0.916666667 L4.58333333,0.916666667 L4.58333333,2.75 L3.66666667,2.75 C2.65833333,2.75 1.83333333,3.575 1.83333333,4.58333333 L1.83333333,19.25 C1.83333333,20.2583333 2.65833333,21.0833333 3.66666667,21.0833333 L18.3333333,21.0833333 C19.3416667,21.0833333 20.1666667,20.2583333 20.1666667,19.25 L20.1666667,4.58333333 C20.1666667,3.575 19.3416667,2.75 18.3333333,2.75 Z M18.3333333,19.25 L3.66666667,19.25 L3.66666667,7.33333333 L18.3333333,7.33333333 L18.3333333,19.25 Z' fill='%23cccccc' fill-rule='nonzero'%3E%3C/path%3E%3C/g%3E%3C/svg%3E\")", "no-repeat", "center", "center"];
-this["backgroundSize"] = 66.0},
-0,
-1,
-".jewel.drawer.float.open .drawermain",
-function() {this["transform"] = "none";
-this["transition"] = ["transform", 300.0, 0.0]},
-0,
-1,
-".jewel.drawerfooter .jewel.barsection",
-function() {this["padding"] = [8.0, 12.0]},
-0,
-1,
-"button",
-function() {this["background"] = "transparent";
-this["border"] = "none";
-this["boxShadow"] = "none";
-this["color"] = "inherit";
-this["fill"] = 16777215;
-this["padding"] = 12.0;
-this["textShadow"] = [0.0, -1.0, 0.0, 2987022986]},
-0,
-1,
-"button:hover",
-function() {this["background"] = "transparent";
-this["border"] = "none";
-this["boxShadow"] = "none"},
-0,
-1,
-"button:hover:focus",
-function() {this["background"] = "transparent";
-this["border"] = "none";
-this["boxShadow"] = "none"},
-0,
-1,
-"button:active",
-function() {this["background"] = "transparent";
-this["border"] = "none";
-this["boxShadow"] = "none"},
-0,
-1,
-"button:active:focus",
-function() {this["background"] = "transparent";
-this["border"] = "none";
-this["boxShadow"] = "none"},
-0,
-1,
-"button:focus",
-function() {this["background"] = "transparent";
-this["border"] = "none";
-this["boxShadow"] = "none"},
-0,
-1,
-"button[disabled]",
-function() {this["background"] = "transparent";
-this["border"] = "none";
-this["boxShadow"] = "none"},
-0,
-1,
-".jewel.dropdownlist[disabled]",
-function() {this["backgroundColor"] = 15987699;
-this["backgroundImage"] = "data:image/svg+xml,%3Csvg viewBox='0 0 12 8' version='1.1' xmlns='http://www.w3.org/2000/svg'%3E%3Cg stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg transform='translate(0.000000, -1.000000)' fill='%23cccccc' fill-rule='nonzero'%3E%3Cg transform='translate(-2.000000, 0.000000)'%3E%3Cpolygon transform='translate(8.000000, 4.705000) scale(1, -1) translate(-8.000000, -4.705000) ' points='3.41 8.41 8 3.83 12.59 8.41 14 7 8 1 2 7'%3E%3C/polygon%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E";
-this["border"] = [1.0, "solid", 14277081];
-this["boxShadow"] = "none";
-this["color"] = 12632256},
-0,
-1,
-".jewel.dropdownlist[disabled]::placeholder",
-function() {this["color"] = 12632256},
-0,
-1,
-".jewel.dropdownlist[disabled]:-ms-input-placeholder",
-function() {this["color"] = 12632256},
-0,
-1,
-"i",
-function() {this["color"] = 12632256},
-0,
-1,
-".jewel.dropdownlist:focus",
-function() {this["border"] = [1.0, "solid", 1018065]},
-0,
-1,
-".jewel.footerbar .footerBarAppHeader.has-drawer",
-function() {this["width"] = null},
-0,
-1,
-"button:hover",
-function() {this["background"] = "transparent";
-this["border"] = "none";
-this["boxShadow"] = "none"},
-0,
-1,
-"button:hover:focus",
-function() {this["background"] = "transparent";
-this["border"] = "none";
-this["boxShadow"] = "none"},
-0,
-1,
-"button:active",
-function() {this["background"] = "transparent";
-this["border"] = "none";
-this["boxShadow"] = "none"},
-0,
-1,
-"button:active:focus",
-function() {this["background"] = "transparent";
-this["border"] = "none";
-this["boxShadow"] = "none"},
-0,
-1,
-"button:focus",
-function() {this["background"] = "transparent";
-this["border"] = "none";
-this["boxShadow"] = "none"},
-0,
-1,
-"button[disabled]",
-function() {this["background"] = "transparent";
-this["border"] = "none";
-this["boxShadow"] = "none"},
-0,
-1,
-".jewel.formheading",
-function() {this["color"] = 1153257;
-this["fontSize"] = [1.399999976158142, "!important"]},
-0,
-1,
-".jewel.formheading .jewel.label.spacerLabel",
-function() {this["width"] = 115.0},
-0,
-1,
-".jewel.formheading .jewel.label.requiredSpacerLabel",
-function() {this["width"] = 10.0},
-0,
-1,
-".jewel.formitem .jewel.label.formlabel",
-function() {this["width"] = 115.0},
-0,
-1,
-".jewel.formitem .jewel.label.required",
-function() {this["color"] = 15473700;
-this["fontSize"] = [1.600000023841858, "!important"];
-this["width"] = 10.0},
-0,
-1,
-".fonticon.dark",
-function() {this["color"] = 6776679},
-0,
-1,
-".fonticon.dark.inactive",
-function() {this["color"] = 1283489920},
-0,
-1,
-".fonticon.light",
-function() {this["color"] = 16777215},
-0,
-1,
-".fonticon.light.inactive",
-function() {this["color"] = 2147483647},
-0,
-1,
-".jewel.item.hovered",
-function() {this["color"] = 16777215},
-0,
-1,
-".jewel.item.selected",
-function() {this["color"] = 16777215},
-0,
-1,
-".jewel.item.selectable:active",
-function() {this["color"] = 16777215},
-0,
-1,
-".jewel.item.primary.hovered",
-function() {this["background"] = 3976689},
-0,
-1,
-".jewel.item.primary.selected",
-function() {this["background"] = 2401263},
-0,
-1,
-".jewel.item.primary.selectable:active",
-function() {this["background"] = 2401263},
-0,
-1,
-".jewel.list:focus",
-function() {this["border"] = [1.0, "solid", 1018065]},
-0,
-1,
-".jewel.list[disabled]",
-function() {this["background"] = 15987699;
-this["border"] = [1.0, "solid", 14277081];
-this["boxShadow"] = "none";
-this["color"] = 12632256;
-this["fontWeight"] = "normal";
-this["pointerEvents"] = "none";
-this["textShadow"] = "unset"},
-0,
-1,
-".jewel.list[disabled] .jewel.item.selected",
-function() {this["background"] = [13421772, "!important"]},
-0,
-1,
-".jewel.list[disabled] .jewel.item.selectable:active",
-function() {this["background"] = [13421772, "!important"]},
-0,
-1,
-".jewel.loader",
-function() {this["border"] = [16.0, "solid", 15987699];
-this["borderRadius"] = 50.0},
-0,
-1,
-".jewel.loader.segment",
-function() {this["borderTopColor"] = 12632256},
-0,
-1,
-".jewel.loader.primary.segment",
-function() {this["borderTopColor"] = 3976689},
-0,
-1,
-".jewel.navigation .layout.vertical",
-function() {this["alignItems"] = "stretch"},
-0,
-1,
-".jewel.navigationlink.hovered",
-function() {this["background"] = [15987699, "!important"]},
-0,
-1,
-".jewel.navigationlink .hint.fonticon",
-function() {this["marginLeft"] = "auto"},
-0,
-1,
-".jewel.navigationgroup.no-submenu.hovered",
-function() {this["background"] = [15987699, "!important"]},
-0,
-1,
-".navigation-section-group",
-function() {this["overflow"] = ["hidden", "!important"];
-this["transition"] = ["height", 0.5]},
-0,
-1,
-".navigation-section-group .navigationlink",
-function() {this["paddingLeft"] = 34.0},
-0,
-1,
-"input",
-function() {this["borderRadius"] = [0.25, 0.0, 0.0, 0.25]},
-0,
-1,
-".jewel.numericstepper .jewel.button",
-function() {this["borderLeft"] = 0.0;
-this["borderRadius"] = [0.0, 0.25, 0.25, 0.0];
-this["color"] = "transparent";
-this["height"] = 50.0;
-this["width"] = 33.0},
-0,
-1,
-".jewel.numericstepper .jewel.button:hover",
-function() {this["color"] = "transparent"},
-0,
-1,
-".jewel.numericstepper .jewel.button:hover:focus",
-function() {this["color"] = "transparent"},
-0,
-1,
-".jewel.numericstepper .jewel.button:active",
-function() {this["color"] = "transparent"},
-0,
-1,
-".jewel.numericstepper .jewel.button:active:focus",
-function() {this["color"] = "transparent"},
-0,
-1,
-".jewel.numericstepper .jewel.button.up::after",
-function() {this["background"] = ["url(\"data:image/svg+xml,%3Csvg viewBox='0 0 12 8' version='1.1' xmlns='http://www.w3.org/2000/svg'%3E%3Cg stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg transform='translate(0.000000, -1.000000)' fill='%233CADF1' fill-rule='nonzero'%3E%3Cg transform='translate(-2.000000, 0.000000)'%3E%3Cpolygon points='3.41 8.41 8 3.83 12.59 8.41 14 7 8 1 2 7'%3E%3C/polygon%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E\")", "no-repeat", "center", "center"];
-this["height"] = 7.0;
-this["width"] = 12.0},
-0,
-1,
-".jewel.numericstepper .jewel.button.down::after",
-function() {this["background"] = ["url(\"data:image/svg+xml,%3Csvg viewBox='0 0 12 8' version='1.1' xmlns='http://www.w3.org/2000/svg'%3E%3Cg stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg transform='translate(0.000000, -1.000000)' fill='%233CADF1' fill-rule='nonzero'%3E%3Cg transform='translate(-2.000000, 0.000000)'%3E%3Cpolygon transform='translate(8.000000, 4.705000) scale(1, -1) translate(-8.000000, -4.705000) ' points='3.41 8.41 8 3.83 12.59 8.41 14 7 8 1 2 7'%3E%3C/polygon%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E\")", "no-repeat", "center", "center"];
-this["height"] = 7.0;
-this["width"] = 12.0},
-0,
-1,
-"span::before",
-function() {this["background"] = 15987699;
-this["border"] = [1.0, "solid", 14277081];
-this["borderRadius"] = 50.0},
-0,
-1,
-"span::after",
-function() {this["background"] = ["url(\"data:image/svg+xml,%3Csvg viewBox='0 0 22 22' version='1.1' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0' y='0' width='22' height='22' fill-opacity='0'/%3E%3Ccircle fill='%23cccccc' cx='11' cy='11' r='6'/%3E%3C/svg%3E\")", "no-repeat", "center", "center"]},
-0,
-1,
-"input::-ms-thumb",
-function() {this["background"] = null;
-this["border"] = [1.0, "solid", 1018065];
-this["borderRadius"] = 50.0;
-this["boxShadow"] = ["inset 0 1px 0 #9bd5f8", "0 0 0 1px rgba(255, 255, 255, 0.3)"];
-this["height"] = 18.0;
-this["width"] = 18.0},
-0,
-1,
-"input:active::-webkit-slider-thumb",
-function() {this["transform"] = "scale(1.4)"},
-0,
-1,
-"input:active::-moz-range-thumb",
-function() {this["transform"] = "scale(1.4)"},
-0,
-1,
-"input:active::-ms-thumb",
-function() {this["transform"] = "scale(0.8)"},
-0,
-1,
-"input[disabled]::-ms-fill-lower",
-function() {this["background"] = 15132390;
-this["border"] = [1.0, "solid", 12632256];
-this["boxShadow"] = "none"},
-0,
-1,
-"input[disabled]::-ms-fill-upper",
-function() {this["background"] = 15987699;
-this["border"] = [1.0, "solid", 14277081];
-this["boxShadow"] = "none"},
-0,
-1,
-"input[disabled]::-webkit-slider-thumb",
-function() {this["background"] = 15987699;
-this["border"] = [1.0, "solid", 12632256];
-this["boxShadow"] = "none"},
-0,
-1,
-"input[disabled]::-moz-range-thumb",
-function() {this["background"] = 15987699;
-this["border"] = [1.0, "solid", 12632256];
-this["boxShadow"] = "none"},
-0,
-1,
-"input[disabled]::-ms-thumb",
-function() {this["background"] = 15987699;
-this["border"] = [1.0, "solid", 12632256];
-this["boxShadow"] = "none"},
-0,
-1,
-"input[disabled]:active::-webkit-slider-thumb",
-function() {this["transform"] = "scale(1)"},
-0,
-1,
-"input[disabled]:active::-moz-range-thumb",
-function() {this["transform"] = "scale(1)"},
-0,
-1,
-"input[disabled]:active::-ms-thumb",
-function() {this["transform"] = "scale(1)"},
-0,
-1,
-".jewel.slider input[disabled]+.slider-track-container>.slider-track-fill",
-function() {this["background"] = 15132390;
-this["border"] = [1.0, "solid", 12632256];
-this["boxShadow"] = "none"},
-0,
-1,
-".jewel.slider input[disabled]+.slider-track-container>.slider-track",
-function() {this["background"] = 15987699;
-this["border"] = [1.0, "solid", 14277081];
-this["boxShadow"] = "none"},
-0,
-1,
-".jewel.snackbar.open",
-function() {this["transform"] = null;
-this["transition"] = ["transform", 0.4000000059604645, 0.0]},
-0,
-1,
-".jewel.snackbar.primary .jewel.snackbar-content",
-function() {this["background"] = null;
-this["border"] = [1.0, "solid", 1018065];
-this["borderBottom"] = "none";
-this["boxShadow"] = ["inset", 0.0, 1.0, 0.0, 10212856]},
-0,
-1,
-".jewel.snackbar.primary .jewel.snackbar-message",
-function() {this["color"] = 16777215},
-0,
-1,
-".jewel.snackbar.primary .jewel.snackbar-action",
-function() {this["color"] = 14866187},
-0,
-1,
-".jewel.snackbar.primary .jewel.snackbar-action:hover",
-function() {this["background"] = null},
-0,
-1,
-".jewel.snackbar-action:hover",
-function() {this["backgroundColor"] = 3952224},
-0,
-1,
-".jewel.tabbar.sameWidths>*",
-function() {this["flex"] = [1.0, 0.0, 0.0, "!important"]},
-0,
-1,
-".jewel.tabbarbutton.hovered",
-function() {this["background"] = 859614705},
-0,
-1,
-".jewel.tabbarbutton.selected",
-function() {this["background"] = 1715252721;
-this["color"] = 1018065},
-0,
-1,
-".jewel.tabbarbutton.selectable:active",
-function() {this["background"] = 1715252721;
-this["color"] = 1018065},
-0,
-1,
-".jewel.simpletable .jewel.tableheadercell:first-of-type",
-function() {this["borderLeft"] = 0.0},
-0,
-1,
-".jewel.simpletable .jewel.tablecell:first-of-type",
-function() {this["borderLeft"] = 0.0},
-0,
-1,
-".jewel.simpletable .jewel.tablecell>*",
-function() {this["padding"] = 12.0},
-0,
-1,
-".jewel.simpletable .jewel.tfoot .jewel.tablecell",
-function() {this["background"] = null;
-this["borderLeft"] = 0.0;
-this["boxShadow"] = ["inset", 0.0, 1.0, 0.0, 16777215]},
-0,
-1,
-".jewel.table",
-function() {this["background"] = null;
-this["border"] = [1.0, "solid", 11776947];
-this["borderRadius"] = 0.25;
-this["boxShadow"] = ["inset", 0.0, 1.0, 0.0, 16777215]},
-0,
-1,
-".jewel.table .jewel.tableheadercell:first-of-type",
-function() {this["borderLeft"] = 0.0},
-0,
-1,
-".jewel.table .jewel.tablerow:first-child .jewel.tablecell",
-function() {this["borderTop"] = [0.0, "solid", "transparent"]},
-0,
-1,
-".jewel.table .jewel.tablecell:first-of-type",
-function() {this["borderLeft"] = 0.0},
-0,
-1,
-".jewel.table .jewel.tfoot .jewel.tablecell",
-function() {this["background"] = null;
-this["borderLeft"] = 0.0;
-this["boxShadow"] = ["inset", 0.0, 1.0, 0.0, 16777215]},
-0,
-1,
-".jewel.tableitem.hovered",
-function() {this["background"] = 3976689;
-this["color"] = 16777215},
-0,
-1,
-".jewel.tableitem.selected",
-function() {this["background"] = 2401263;
-this["color"] = 16777215},
-0,
-1,
-".jewel.tableitem.selectable:active",
-function() {this["background"] = 2401263;
-this["color"] = 16777215},
-0,
-1,
-".jewel.tableitem.calendar",
-function() {this["borderRadius"] = 4.0},
-0,
-1,
-".jewel.tableitem.calendar[disabled]",
-function() {this["color"] = 12632256;
-this["pointerEvents"] = "none"},
-0,
-1,
-".jewel.tableitem.calendar.selected",
-function() {this["fontWeight"] = "bold"},
-0,
-1,
-".jewel.tableitem.calendar.selected[disabled]",
-function() {this["background"] = 13421772;
-this["color"] = 16777215},
-0,
-1,
-"a:link",
-function() {this["color"] = 3976689},
-0,
-1,
-"a:active",
-function() {this["color"] = 15957849},
-0,
-1,
-".primary-lightest",
-function() {this["color"] = 16449023},
-0,
-1,
-".primary-light",
-function() {this["color"] = 10212856},
-0,
-1,
-".primary-normal",
-function() {this["color"] = 3976689},
-0,
-1,
-".primary-dark",
-function() {this["color"] = 883130},
-0,
-1,
-".primary-darkest",
-function() {this["color"] = 408411},
-0,
-1,
-".weight-lightest",
-function() {this["fontWeight"] = 100.0},
-0,
-1,
-".weight-light",
-function() {this["fontWeight"] = 300.0},
-0,
-1,
-".weight-regular",
-function() {this["fontWeight"] = 400.0},
-0,
-1,
-".weight-bold",
-function() {this["fontWeight"] = 600.0},
-0,
-1,
-".weight-bolder",
-function() {this["fontWeight"] = 800.0},
-0,
-1,
-"h1",
-function() {this["fontSize"] = 2.0;
-this["margin"] = [0.800000011920929, 0.0]},
-0,
-1,
-"h2",
-function() {this["fontSize"] = 2.0;
-this["margin"] = [0.5799999833106995, 0.0]},
-0,
-1,
-"h3",
-function() {this["fontSize"] = 1.5;
-this["margin"] = [0.40799999237060547, 0.0]},
-0,
-1,
-"h4",
-function() {this["fontSize"] = 1.25;
-this["margin"] = [0.3499999940395355, 0.0]},
-0,
-1,
-"h5",
-function() {this["fontSize"] = 1.0;
-this["margin"] = [0.20000000298023224, 0.0]},
-0,
-1,
-"span",
-function() {this["fontSize"] = 1.0},
-0,
-1,
-"div",
-function() {this["fontSize"] = 14.0},
-0,
-1,
-"input:focus",
-function() {this["border"] = [1.0, "solid", 1018065]},
-0,
-1,
-"input::placeholder",
-function() {this["color"] = 10921638},
-0,
-1,
-"input:-ms-input-placeholder",
-function() {this["color"] = 10921638},
-0,
-1,
-"input[disabled]::placeholder",
-function() {this["color"] = 12632256},
-0,
-1,
-"input[disabled]:-ms-input-placeholder",
-function() {this["color"] = 12632256},
-0,
-1,
-"i",
-function() {this["color"] = 12632256},
-0,
-1,
-"input",
-function() {this["paddingLeft"] = 42.0;
-this["paddingRight"] = 14.0},
-0,
-1,
-"input",
-function() {this["paddingLeft"] = 14.0;
-this["paddingRight"] = 42.0},
-0,
-1,
-"i.fonticon.material-icons",
-function() {this["right"] = 10.0},
-0,
-1,
-"input",
-function() {this["border"] = [1.0, 15473700, "solid"]},
-0,
-1,
-"textarea:focus",
-function() {this["border"] = [1.0, "solid", 1018065]},
-0,
-1,
-"textarea::placeholder",
-function() {this["color"] = 10921638},
-0,
-1,
-"textarea:-ms-input-placeholder",
-function() {this["color"] = 10921638},
-0,
-1,
-"textarea[disabled]::placeholder",
-function() {this["color"] = 12632256},
-0,
-1,
-"textarea[disabled]:-ms-input-placeholder",
-function() {this["color"] = 12632256},
-0,
-1,
-".jewel.togglebutton:hover",
-function() {this["background"] = null;
-this["border"] = [1.0, "solid", 10921638];
-this["color"] = 8421504},
-0,
-1,
-".jewel.togglebutton:hover:focus",
-function() {this["background"] = null;
-this["border"] = [1.0, "solid", 10921638];
-this["color"] = 8421504},
-0,
-1,
-".jewel.togglebutton:active",
-function() {this["background"] = null;
-this["border"] = [1.0, "solid", 9276813];
-this["boxShadow"] = ["inset", 0.0, 1.0, 3.0, 0.0, 2133996082];
-this["color"] = 8421504},
-0,
-1,
-".jewel.togglebutton:active:focus",
-function() {this["background"] = null;
-this["border"] = [1.0, "solid", 9276813];
-this["boxShadow"] = ["inset", 0.0, 1.0, 3.0, 0.0, 2133996082];
-this["color"] = 8421504},
-0,
-1,
-".jewel.togglebutton:focus",
-function() {this["border"] = [1.0, "solid", 11776947];
-this["boxShadow"] = ["inset 0px 0px 0px 1px rgba(255, 255, 255, 0.5)", "inset 0 1px 0 rgba(255, 255, 255, 0.6)"];
-this["color"] = 8421504},
-0,
-1,
-".jewel.togglebutton.selected",
-function() {this["background"] = null;
-this["border"] = [1.0, "solid", 9276813];
-this["boxShadow"] = ["inset", 0.0, 1.0, 3.0, 0.0, 2133996082];
-this["color"] = 8421504},
-0,
-1,
-".jewel.togglebutton.icon",
-function() {this["padding"] = [0.42899999022483826, 0.8700000047683716]},
-0,
-1,
-"i",
-function() {this["marginLeft"] = 0.0;
-this["marginRight"] = 0.0},
-0,
-1,
-"i",
-function() {this["marginLeft"] = 0.0;
-this["marginRight"] = 8.0},
-0,
-1,
-"i",
-function() {this["marginLeft"] = 8.0;
-this["marginRight"] = 0.0},
-0,
-1,
-".jewel.togglebutton.primary",
-function() {this["background"] = null;
-this["border"] = [1.0, "solid", 1018065];
-this["borderRadius"] = 0.25;
-this["boxShadow"] = ["inset", 0.0, 1.0, 0.0, 10212856];
-this["color"] = 16777215;
-this["textShadow"] = [0.0, -1.0, 0.0, 2987022986]},
-0,
-1,
-".jewel.togglebutton.primary:hover",
-function() {this["background"] = null;
-this["border"] = [1.0, "solid", 883130];
-this["color"] = 16777215},
-0,
-1,
-".jewel.togglebutton.primary:hover:focus",
-function() {this["background"] = null;
-this["border"] = [1.0, "solid", 883130];
-this["color"] = 16777215},
-0,
-1,
-".jewel.togglebutton.primary:active",
-function() {this["background"] = null;
-this["border"] = [1.0, "solid", 678538];
-this["boxShadow"] = ["inset", 0.0, 1.0, 3.0, 0.0, 2133996082];
-this["color"] = 16777215},
-0,
-1,
-".jewel.togglebutton.primary:active:focus",
-function() {this["background"] = null;
-this["border"] = [1.0, "solid", 678538];
-this["boxShadow"] = ["inset", 0.0, 1.0, 3.0, 0.0, 2133996082];
-this["color"] = 16777215},
-0,
-1,
-".jewel.togglebutton.primary:focus",
-function() {this["border"] = [1.0, "solid", 1018065];
-this["boxShadow"] = ["inset 0px 0px 0px 1px rgba(255, 255, 255, 0.5)", "inset 0 1px 0 rgba(255, 255, 255, 0.6)"];
-this["color"] = 16777215},
-0,
-1,
-".jewel.togglebutton.primary[disabled]",
-function() {this["background"] = [15987699, "!important"];
-this["border"] = [1.0, "solid", 14277081, "!important"];
-this["boxShadow"] = ["none", "!important"];
-this["color"] = 12632256;
-this["textShadow"] = "unset"},
-0,
-1,
-".jewel.togglebutton.primary.selected",
-function() {this["background"] = null;
-this["border"] = [1.0, "solid", 678538];
-this["boxShadow"] = ["inset", 0.0, 1.0, 3.0, 0.0, 2133996082];
-this["color"] = 16777215},
-0,
-1,
-".jewel.togglebutton.outlined",
-function() {this["background"] = 213103539;
-this["border"] = [1.0, "solid", 10066329];
-this["boxShadow"] = "none";
-this["color"] = 9276813;
-this["textShadow"] = "none"},
-0,
-1,
-".jewel.togglebutton.outlined:hover",
-function() {this["background"] = 649311155;
-this["border"] = [1.0, "solid", 9276813];
-this["color"] = 7566195},
-0,
-1,
-".jewel.togglebutton.outlined:hover:focus",
-function() {this["background"] = 649311155;
-this["border"] = [1.0, "solid", 9276813];
-this["color"] = 7566195},
-0,
-1,
-".jewel.togglebutton.outlined:active",
-function() {this["background"] = 1068741555;
-this["border"] = [1.0, "solid", 8750469];
-this["boxShadow"] = "none";
-this["color"] = 7566195},
-0,
-1,
-".jewel.togglebutton.outlined:active:focus",
-function() {this["background"] = 1068741555;
-this["border"] = [1.0, "solid", 8750469];
-this["boxShadow"] = "none";
-this["color"] = 7566195},
-0,
-1,
-".jewel.togglebutton.outlined:focus",
-function() {this["border"] = [1.0, "solid", 8421504];
-this["boxShadow"] = "none";
-this["color"] = 7566195},
-0,
-1,
-".jewel.togglebutton.outlined[disabled]",
-function() {this["background"] = [435418099, "!important"];
-this["border"] = [1.0, "solid", 14277081, "!important"];
-this["color"] = 12632256;
-this["textShadow"] = "unset"},
-0,
-1,
-".jewel.togglebutton.outlined.selected",
-function() {this["background"] = 1068741555;
-this["border"] = [1.0, "solid", 8750469];
-this["boxShadow"] = "none";
-this["color"] = 7566195},
-0,
-1,
-".jewel.togglebutton.primary.outlined",
-function() {this["background"] = 205303281;
-this["border"] = [1.0, "solid", 1153257];
-this["boxShadow"] = "none";
-this["color"] = 1018065;
-this["textShadow"] = "none"},
-0,
-1,
-".jewel.togglebutton.primary.outlined:hover",
-function() {this["background"] = 641510897;
-this["border"] = [1.0, "solid", 1018065];
-this["color"] = 813474},
-0,
-1,
-".jewel.togglebutton.primary.outlined:hover:focus",
-function() {this["background"] = 641510897;
-this["border"] = [1.0, "solid", 1018065];
-this["color"] = 813474},
-0,
-1,
-".jewel.togglebutton.primary.outlined:active",
-function() {this["background"] = 1060941297;
-this["border"] = [1.0, "solid", 950211];
-this["boxShadow"] = "none";
-this["color"] = 813474},
-0,
-1,
-".jewel.togglebutton.primary.outlined:active:focus",
-function() {this["background"] = 1060941297;
-this["border"] = [1.0, "solid", 950211];
-this["boxShadow"] = "none";
-this["color"] = 813474},
-0,
-1,
-".jewel.togglebutton.primary.outlined:focus",
-function() {this["border"] = [1.0, "solid", 883130];
-this["boxShadow"] = "none";
-this["color"] = 813474},
-0,
-1,
-".jewel.togglebutton.primary.outlined[disabled]",
-function() {this["background"] = [435418099, "!important"];
-this["border"] = [1.0, "solid", 14277081, "!important"];
-this["color"] = 12632256;
-this["textShadow"] = "unset"},
-0,
-1,
-".jewel.togglebutton.primary.outlined.selected",
-function() {this["background"] = 1060941297;
-this["border"] = [1.0, "solid", 950211];
-this["boxShadow"] = "none";
-this["color"] = 813474},
-0,
-1,
-".jewel.togglebutton.unboxed",
-function() {this["background"] = 11776947;
-this["border"] = [1.0, "solid", "transparent"];
-this["boxShadow"] = "none";
-this["color"] = 9276813;
-this["textShadow"] = "none"},
-0,
-1,
-".jewel.togglebutton.unboxed:hover",
-function() {this["background"] = 649311155;
-this["border"] = [1.0, "solid", "transparent"];
-this["color"] = 7566195},
-0,
-1,
-".jewel.togglebutton.unboxed:hover:focus",
-function() {this["background"] = 649311155;
-this["border"] = [1.0, "solid", "transparent"];
-this["color"] = 7566195},
-0,
-1,
-".jewel.togglebutton.unboxed:active",
-function() {this["background"] = 1068741555;
-this["border"] = [1.0, "solid", "transparent"];
-this["boxShadow"] = "none";
-this["color"] = 7566195},
-0,
-1,
-".jewel.togglebutton.unboxed:active:focus",
-function() {this["background"] = 1068741555;
-this["border"] = [1.0, "solid", "transparent"];
-this["boxShadow"] = "none";
-this["color"] = 7566195},
-0,
-1,
-".jewel.togglebutton.unboxed:focus",
-function() {this["background"] = 649311155;
-this["border"] = [1.0, "solid", "transparent"];
-this["boxShadow"] = "none";
-this["color"] = 7566195},
-0,
-1,
-".jewel.togglebutton.unboxed[disabled]",
-function() {this["background"] = [15987699, "!important"];
-this["border"] = [1.0, "solid", "transparent", "!important"];
-this["color"] = 12632256;
-this["textShadow"] = "unset"},
-0,
-1,
-".jewel.togglebutton.unboxed.selected",
-function() {this["background"] = 1068741555;
-this["border"] = [1.0, "solid", "transparent"];
-this["boxShadow"] = "none";
-this["color"] = 7566195},
-0,
-1,
-".jewel.togglebutton.primary.unboxed",
-function() {this["background"] = 3976689;
-this["border"] = [1.0, "solid", "transparent"];
-this["boxShadow"] = "none";
-this["color"] = 1018065;
-this["textShadow"] = "none"},
-0,
-1,
-".jewel.togglebutton.primary.unboxed:hover",
-function() {this["background"] = 641510897;
-this["border"] = [1.0, "solid", "transparent"];
-this["color"] = 813474},
-0,
-1,
-".jewel.togglebutton.primary.unboxed:hover:focus",
-function() {this["background"] = 641510897;
-this["border"] = [1.0, "solid", "transparent"];
-this["color"] = 813474},
-0,
-1,
-".jewel.togglebutton.primary.unboxed:active",
-function() {this["background"] = 1060941297;
-this["border"] = [1.0, "solid", "transparent"];
-this["boxShadow"] = "none";
-this["color"] = 813474},
-0,
-1,
-".jewel.togglebutton.primary.unboxed:active:focus",
-function() {this["background"] = 1060941297;
-this["border"] = [1.0, "solid", "transparent"];
-this["boxShadow"] = "none";
-this["color"] = 813474},
-0,
-1,
-".jewel.togglebutton.primary.unboxed:focus",
-function() {this["background"] = 641510897;
-this["border"] = [1.0, "solid", "transparent"];
-this["boxShadow"] = "none";
-this["color"] = 813474},
-0,
-1,
-".jewel.togglebutton.primary.unboxed[disabled]",
-function() {this["background"] = [15987699, "!important"];
-this["border"] = [1.0, "solid", "transparent", "!important"];
-this["color"] = 12632256;
-this["textShadow"] = "unset"},
-0,
-1,
-".jewel.togglebutton.primary.unboxed.selected",
-function() {this["background"] = 1060941297;
-this["border"] = [1.0, "solid", "transparent"];
-this["boxShadow"] = "none";
-this["color"] = 813474},
-0,
-1,
-".jewel.tooltip::before",
-function() {this["border"] = ["solid", 8.0, "transparent"]},
-0,
-1,
-".jewel.tooltip.left-top::before",
-function() {this["borderTopColor"] = 15473700;
-this["left"] = 8.0},
-0,
-1,
-".jewel.tooltip.middle-top::before",
-function() {this["borderTopColor"] = 15473700;
-this["marginBottom"] = -8.0;
-this["marginLeft"] = -8.0},
-0,
-1,
-".jewel.tooltip.left-middle::before",
-function() {this["borderLeftColor"] = 15473700;
-this["marginRight"] = -8.0;
-this["marginTop"] = -8.0},
-0,
-1,
-".jewel.tooltip.right-middle::before",
-function() {this["borderRightColor"] = 15473700;
-this["marginLeft"] = -8.0;
-this["marginTop"] = -8.0},
-0,
-1,
-".jewel.tooltip.middle-bottom::before",
-function() {this["borderBottomColor"] = 15473700;
-this["marginLeft"] = -8.0;
-this["marginTop"] = -8.0},
-0,
-1,
-".jewel.topappbar .topBarAppHeader.has-drawer",
-function() {this["width"] = null},
-0,
-1,
-"button:hover",
-function() {this["background"] = "transparent";
-this["border"] = "none";
-this["boxShadow"] = "none"},
-0,
-1,
-"button:hover:focus",
-function() {this["background"] = "transparent";
-this["border"] = "none";
-this["boxShadow"] = "none"},
-0,
-1,
-"button:active",
-function() {this["background"] = "transparent";
-this["border"] = "none";
-this["boxShadow"] = "none"},
-0,
-1,
-"button:active:focus",
-function() {this["background"] = "transparent";
-this["border"] = "none";
-this["boxShadow"] = "none"},
-0,
-1,
-"button:focus",
-function() {this["background"] = "transparent";
-this["border"] = "none";
-this["boxShadow"] = "none"},
-0,
-1,
-"button[disabled]",
-function() {this["background"] = "transparent";
-this["border"] = "none";
-this["boxShadow"] = "none"},
-0,
-1,
-".jewel.label.wizardTitle",
-function() {this["color"] = 3976689;
-this["fontSize"] = [2.0, "!important"]},
-0,
-1,
-".jewel.next:hover",
-function() {this["background"] = 419430400;
-this["borderRadius"] = 5.0},
-0,
-1,
-".jewel.previous:hover",
-function() {this["background"] = 419430400;
-this["borderRadius"] = 5.0},
-0,
-1,
-".jewel.badge.secondary",
-function() {this["background"] = 15686186;
-this["color"] = 16777215},
-0,
-1,
-".jewel.button.secondary",
-function() {this["background"] = null;
-this["border"] = [1.0, "solid", 12466446];
-this["borderRadius"] = 0.25;
-this["boxShadow"] = ["inset", 0.0, 1.0, 0.0, 16163721];
-this["color"] = 16777215;
-this["textShadow"] = [0.0, -1.0, 0.0, 2994152457]},
-0,
-1,
-".jewel.button.secondary:hover",
-function() {this["background"] = null;
-this["border"] = [1.0, "solid", 10891789];
-this["color"] = 16777215},
-0,
-1,
-".jewel.button.secondary:hover:focus",
-function() {this["background"] = null;
-this["border"] = [1.0, "solid", 10891789];
-this["color"] = 16777215},
-0,
-1,
-".jewel.button.secondary:active",
-function() {this["background"] = null;
-this["border"] = [1.0, "solid", 7808009];
-this["boxShadow"] = ["inset", 0.0, 1.0, 3.0, 0.0, 2133996082];
-this["color"] = 16777215},
-0,
-1,
-".jewel.button.secondary:active:focus",
-function() {this["background"] = null;
-this["border"] = [1.0, "solid", 7808009];
-this["boxShadow"] = ["inset", 0.0, 1.0, 3.0, 0.0, 2133996082];
-this["color"] = 16777215},
-0,
-1,
-".jewel.button.secondary:focus",
-function() {this["border"] = [1.0, "solid", 12466446];
-this["boxShadow"] = ["inset 0px 0px 0px 1px rgba(255, 255, 255, 0.5)", "inset 0 1px 0 rgba(255, 255, 255, 0.6)"];
-this["color"] = 16777215},
-0,
-1,
-".jewel.button.secondary[disabled]",
-function() {this["background"] = [15987699, "!important"];
-this["border"] = [1.0, "solid", 14277081, "!important"];
-this["boxShadow"] = ["none", "!important"];
-this["color"] = 12632256;
-this["textShadow"] = "unset"},
-0,
-1,
-".jewel.button.secondary[disabled]:hover",
-function() {this["color"] = 12632256},
-0,
-1,
-".jewel.button.secondary[disabled]:hover:focus",
-function() {this["color"] = 12632256},
-0,
-1,
-".jewel.button.secondary.outlined",
-function() {this["background"] = 217012778;
-this["border"] = [1.0, "solid", 14041104];
-this["boxShadow"] = "none";
-this["color"] = 12466446;
-this["textShadow"] = "none"},
-0,
-1,
-".jewel.button.secondary.outlined:hover",
-function() {this["background"] = 653220394;
-this["border"] = [1.0, "solid", 12466446];
-this["color"] = 9382667},
-0,
-1,
-".jewel.button.secondary.outlined:hover:focus",
-function() {this["background"] = 653220394;
-this["border"] = [1.0, "solid", 12466446];
-this["color"] = 9382667},
-0,
-1,
-".jewel.button.secondary.outlined:active",
-function() {this["background"] = 1072650794;
-this["border"] = [1.0, "solid", 11547917];
-this["boxShadow"] = "none";
-this["color"] = 9382667},
-0,
-1,
-".jewel.button.secondary.outlined:active:focus",
-function() {this["background"] = 1072650794;
-this["border"] = [1.0, "solid", 11547917];
-this["boxShadow"] = "none";
-this["color"] = 9382667},
-0,
-1,
-".jewel.button.secondary.outlined:focus",
-function() {this["border"] = [1.0, "solid", 10891789];
-this["boxShadow"] = "none";
-this["color"] = 9382667},
-0,
-1,
-".jewel.button.secondary.outlined[disabled]",
-function() {this["background"] = [435418099, "!important"];
-this["border"] = [1.0, "solid", 14277081, "!important"];
-this["color"] = 12632256;
-this["textShadow"] = "unset"},
-0,
-1,
-".jewel.button.secondary.outlined[disabled]:hover",
-function() {this["color"] = 12632256},
-0,
-1,
-".jewel.button.secondary.outlined[disabled]:hover:focus",
-function() {this["color"] = 12632256},
-0,
-1,
-".jewel.button.secondary.unboxed",
-function() {this["background"] = 15686186;
-this["border"] = [1.0, "solid", "transparent"];
-this["boxShadow"] = "none";
-this["color"] = 12466446;
-this["textShadow"] = "none"},
-0,
-1,
-".jewel.button.secondary.unboxed:hover",
-function() {this["background"] = 653220394;
-this["border"] = [1.0, "solid", "transparent"];
-this["color"] = 9382667},
-0,
-1,
-".jewel.button.secondary.unboxed:hover:focus",
-function() {this["background"] = 653220394;
-this["border"] = [1.0, "solid", "transparent"];
-this["color"] = 9382667},
-0,
-1,
-".jewel.button.secondary.unboxed:active",
-function() {this["background"] = 1072650794;
-this["border"] = [1.0, "solid", "transparent"];
-this["boxShadow"] = "none";
-this["color"] = 9382667},
-0,
-1,
-".jewel.button.secondary.unboxed:active:focus",
-function() {this["background"] = 1072650794;
-this["border"] = [1.0, "solid", "transparent"];
-this["boxShadow"] = "none";
-this["color"] = 9382667},
-0,
-1,
-".jewel.button.secondary.unboxed:focus",
-function() {this["background"] = 653220394;
-this["border"] = [1.0, "solid", "transparent"];
-this["boxShadow"] = "none";
-this["color"] = 9382667},
-0,
-1,
-".jewel.button.secondary.unboxed[disabled]",
-function() {this["background"] = [15987699, "!important"];
-this["border"] = [1.0, "solid", "transparent", "!important"];
-this["color"] = 12632256;
-this["textShadow"] = "unset"},
-0,
-1,
-".jewel.button.secondary.unboxed[disabled]:hover",
-function() {this["color"] = 12632256},
-0,
-1,
-".jewel.button.secondary.unboxed[disabled]:hover:focus",
-function() {this["color"] = 12632256},
-0,
-1,
-"span::before",
-function() {this["background"] = null;
-this["border"] = [1.0, "solid", 11776947]},
-0,
-1,
-"span::after",
-function() {this["background"] = ["url(\"data:image/svg+xml,%3Csvg viewBox='0 0 22 22' version='1.1' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0' y='0' width='22' height='22' fill-opacity='0'/%3E%3Cpolygon fill='%23EF5A2A' points='3.50018311 12.4854126 8.48547363 17.4989624 18.4641113 7.47589111 15.5010376 4.51739502 8.48547363 11.5650024 6.52087402 9.47265625'/%3E%3C/svg%3E\")", "no-repeat", "center", "center"]},
-0,
-1,
-"span::after",
-function() {this["background"] = ["url(\"data:image/svg+xml,%3Csvg viewBox='0 0 22 22' version='1.1' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0' y='0' width='22' height='22' fill-opacity='0'/%3E%3Cpolygon fill='%23EF5A2A' points='3.50018311 12.4854126 8.48547363 17.4989624 18.4641113 7.47589111 15.5010376 4.51739502 8.48547363 11.5650024 6.52087402 9.47265625'/%3E%3C/svg%3E\")", "no-repeat", "center", "center"]},
-0,
-1,
-"span::after",
-function() {this["background"] = ["url(\"data:image/svg+xml,%3Csvg viewBox='0 0 22 22' version='1.1' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0' y='0' width='22' height='22' fill-opacity='0'/%3E%3Cpolygon fill='%23EF5A2A' points='3.50018311 12.4854126 8.48547363 17.4989624 18.4641113 7.47589111 15.5010376 4.51739502 8.48547363 11.5650024 6.52087402 9.47265625'/%3E%3C/svg%3E\")", "no-repeat", "center", "center"]},
-0,
-1,
-"span::after",
-function() {this["background"] = ["url(\"data:image/svg+xml,%3Csvg viewBox='0 0 22 22' version='1.1' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0' y='0' width='22' height='22' fill-opacity='0'/%3E%3Crect stroke-width='0' stroke='%23FFFFFF' height='12' width='12' y='5' x='5' fill='%23EF5A2A' /%3E%3C/svg%3E\")", "no-repeat", "center", "center"]},
-0,
-1,
-"span::after",
-function() {this["background"] = ["url(\"data:image/svg+xml,%3Csvg viewBox='0 0 22 22' version='1.1' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0' y='0' width='22' height='22' fill-opacity='0'/%3E%3Crect stroke-width='0' stroke='%23FFFFFF' height='12' width='12' y='5' x='5' fill='%23EF5A2A' /%3E%3C/svg%3E\")", "no-repeat", "center", "center"]},
-0,
-1,
-"span::before",
-function() {this["background"] = null;
-this["border"] = [1.0, "solid", 12466446]},
-0,
-1,
-"span::before",
-function() {this["background"] = null;
-this["border"] = [1.0, "solid", 12466446]},
-0,
-1,
-"span::before",
-function() {this["background"] = null;
-this["border"] = [1.0, "solid", 12466446]},
-0,
-1,
-"span::before",
-function() {this["background"] = null;
-this["border"] = [1.0, "solid", 12466446]},
-0,
-1,
-"span::before",
-function() {this["background"] = null;
-this["border"] = [1.0, "solid", 12466446]},
-0,
-1,
-"span",
-function() {this["color"] = 12632256},
-0,
-1,
-"span::before",
-function() {this["background"] = 15987699;
-this["border"] = [1.0, "solid", 14277081]},
-0,
-1,
-"span::after",
-function() {this["background"] = ["url(\"data:image/svg+xml,%3Csvg viewBox='0 0 22 22' version='1.1' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0' y='0' width='22' height='22' fill-opacity='0'/%3E%3Cpolygon fill='%23cccccc' points='3.50018311 12.4854126 8.48547363 17.4989624 18.4641113 7.47589111 15.5010376 4.51739502 8.48547363 11.5650024 6.52087402 9.47265625'/%3E%3C/svg%3E\")", "no-repeat", "center", "center"]},
-0,
-1,
-"span::after",
-function() {this["background"] = ["url(\"data:image/svg+xml,%3Csvg viewBox='0 0 22 22' version='1.1' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0' y='0' width='22' height='22' fill-opacity='0'/%3E%3Crect stroke-width='0' stroke='%23FFFFFF' height='12' width='12' y='5' x='5' fill='%23cccccc' /%3E%3C/svg%3E\")", "no-repeat", "center", "center"]},
-0,
-1,
-"span::after",
-function() {this["background"] = ["url(\"data:image/svg+xml,%3Csvg viewBox='0 0 22 22' version='1.1' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0' y='0' width='22' height='22' fill-opacity='0'/%3E%3Cline stroke-width='4' stroke='%23EF5A2A' stroke-linecap='undefined' stroke-linejoin='undefined' y2='10.9375' x2='17' y1='11.0625' x1='5' fill='none' /%3E%3C/svg%3E\")", "no-repeat", "center", "center"]},
-0,
-1,
-"span::after",
-function() {this["background"] = ["url(\"data:image/svg+xml,%3Csvg viewBox='0 0 22 22' version='1.1' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0' y='0' width='22' height='22' fill-opacity='0'/%3E%3Cline stroke-width='4' stroke='%23EF5A2A' stroke-linecap='undefined' stroke-linejoin='undefined' y2='10.9375' x2='17' y1='11.0625' x1='5' fill='none' /%3E%3C/svg%3E\")", "no-repeat", "center", "center"]},
-0,
-1,
-"span::after",
-function() {this["background"] = ["url(\"data:image/svg+xml,%3Csvg viewBox='0 0 22 22' version='1.1' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0' y='0' width='22' height='22' fill-opacity='0'/%3E%3Cline stroke-width='4' stroke='%23cccccc' stroke-linecap='undefined' stroke-linejoin='undefined' y2='10.9375' x2='17' y1='11.0625' x1='5' fill='none' /%3E%3C/svg%3E\")", "no-repeat", "center", "center"]},
-0,
-1,
-".jewel.switch.secondary input:checked+.switch",
-function() {this["background"] = null;
-this["boxShadow"] = [0.0, 0.0, 0.0, 1.0, 15550482]},
-0,
-1,
-".jewel.switch.secondary input:focus+.switch",
-function() {this["boxShadow"] = [0.0, 0.0, 0.0, 1.0, 14041104]},
-0,
-1,
-".jewel.switch.secondary input:checked+.switch::before",
-function() {this["background"] = 16777215},
-0,
-1,
-".jewel.switch.secondary input[disabled]:checked+.switch",
-function() {this["background"] = 14277081;
-this["boxShadow"] = [0.0, 0.0, 0.0, 1.0, 13421772]},
-0,
-1,
-".jewel.switch.secondary input[disabled]+.switch",
-function() {this["background"] = 15987699;
-this["boxShadow"] = [0.0, 0.0, 0.0, 1.0, 15132390]},
-0,
-1,
-".jewel.switch.secondary input[disabled]+.switch::before",
-function() {this["background"] = 16777215},
-0,
-1,
-".jewel.switch.secondary .switch",
-function() {this["background"] = null;
-this["boxShadow"] = [0.0, 0.0, 0.0, 1.0, 13421772]},
-0,
-1,
-".jewel.switch.secondary .switch::before",
-function() {this["background"] = 16777215},
-0,
-1,
-".jewel.datagrid .jewel.list.column .jewel.item.datagrid.secondary.hovered",
-function() {this["background"] = 15959651},
-0,
-1,
-".jewel.datagrid .jewel.list.column .jewel.item.datagrid.secondary.selected",
-function() {this["background"] = 15823947},
-0,
-1,
-".jewel.datagrid .jewel.list.column .jewel.item.datagrid.secondary.selectable:active",
-function() {this["background"] = 15823947},
-0,
-1,
-".jewel.item.secondary.hovered",
-function() {this["background"] = 15686186},
-0,
-1,
-".jewel.item.secondary.selected",
-function() {this["background"] = 15550482},
-0,
-1,
-".jewel.item.secondary.selectable:active",
-function() {this["background"] = 15550482},
-0,
-1,
-".jewel.loader.secondary.segment",
-function() {this["borderTopColor"] = 15686186},
-0,
-1,
-".jewel.snackbar.secondary .jewel.snackbar-content",
-function() {this["background"] = null;
-this["border"] = [1.0, "solid", 12466446];
-this["borderBottom"] = "none";
-this["boxShadow"] = ["inset", 0.0, 1.0, 0.0, 16163721]},
-0,
-1,
-".jewel.snackbar.secondary .jewel.snackbar-message",
-function() {this["color"] = 16777215},
-0,
-1,
-".jewel.snackbar.secondary .jewel.snackbar-action",
-function() {this["color"] = 14866187},
-0,
-1,
-".jewel.snackbar.secondary .jewel.snackbar-action:hover",
-function() {this["background"] = null},
-0,
-1,
-"a:visited",
-function() {this["color"] = 14041104},
-0,
-1,
-"a:hover",
-function() {this["color"] = 15686186},
-0,
-1,
-".secondary-lightest",
-function() {this["color"] = 16641512},
-0,
-1,
-".secondary-light",
-function() {this["color"] = 16163721},
-0,
-1,
-".secondary-normal",
-function() {this["color"] = 15686186},
-0,
-1,
-".secondary-dark",
-function() {this["color"] = 10891789},
-0,
-1,
-".secondary-darkest",
-function() {this["color"] = 4724229},
-0,
-1,
-".jewel.togglebutton.secondary",
-function() {this["background"] = null;
-this["border"] = [1.0, "solid", 12466446];
-this["borderRadius"] = 0.25;
-this["boxShadow"] = ["inset", 0.0, 1.0, 0.0, 16163721];
-this["color"] = 16777215;
-this["textShadow"] = [0.0, -1.0, 0.0, 2994152457]},
-0,
-1,
-".jewel.togglebutton.secondary:hover",
-function() {this["background"] = null;
-this["border"] = [1.0, "solid", 10891789];
-this["color"] = 16777215},
-0,
-1,
-".jewel.togglebutton.secondary:hover:focus",
-function() {this["background"] = null;
-this["border"] = [1.0, "solid", 10891789];
-this["color"] = 16777215},
-0,
-1,
-".jewel.togglebutton.secondary:active",
-function() {this["background"] = null;
-this["border"] = [1.0, "solid", 7808009];
-this["boxShadow"] = ["inset", 0.0, 1.0, 3.0, 0.0, 2133996082];
-this["color"] = 16777215},
-0,
-1,
-".jewel.togglebutton.secondary:active:focus",
-function() {this["background"] = null;
-this["border"] = [1.0, "solid", 7808009];
-this["boxShadow"] = ["inset", 0.0, 1.0, 3.0, 0.0, 2133996082];
-this["color"] = 16777215},
-0,
-1,
-".jewel.togglebutton.secondary:focus",
-function() {this["border"] = [1.0, "solid", 12466446];
-this["boxShadow"] = ["inset 0px 0px 0px 1px rgba(255, 255, 255, 0.5)", "inset 0 1px 0 rgba(255, 255, 255, 0.6)"];
-this["color"] = 16777215},
-0,
-1,
-".jewel.togglebutton.secondary[disabled]",
-function() {this["background"] = [15987699, "!important"];
-this["border"] = [1.0, "solid", 14277081, "!important"];
-this["boxShadow"] = ["none", "!important"];
-this["color"] = 12632256;
-this["textShadow"] = "unset"},
-0,
-1,
-".jewel.togglebutton.secondary.selected",
-function() {this["background"] = null;
-this["border"] = [1.0, "solid", 7808009];
-this["boxShadow"] = ["inset", 0.0, 1.0, 3.0, 0.0, 2133996082];
-this["color"] = 16777215},
-0,
-1,
-".jewel.togglebutton.secondary.outlined",
-function() {this["background"] = 217012778;
-this["border"] = [1.0, "solid", 14041104];
-this["boxShadow"] = "none";
-this["color"] = 12466446;
-this["textShadow"] = "none"},
-0,
-1,
-".jewel.togglebutton.secondary.outlined:hover",
-function() {this["background"] = 653220394;
-this["border"] = [1.0, "solid", 12466446];
-this["color"] = 9382667},
-0,
-1,
-".jewel.togglebutton.secondary.outlined:hover:focus",
-function() {this["background"] = 653220394;
-this["border"] = [1.0, "solid", 12466446];
-this["color"] = 9382667},
-0,
-1,
-".jewel.togglebutton.secondary.outlined:active",
-function() {this["background"] = 1072650794;
-this["border"] = [1.0, "solid", 11547917];
-this["boxShadow"] = "none";
-this["color"] = 9382667},
-0,
-1,
-".jewel.togglebutton.secondary.outlined:active:focus",
-function() {this["background"] = 1072650794;
-this["border"] = [1.0, "solid", 11547917];
-this["boxShadow"] = "none";
-this["color"] = 9382667},
-0,
-1,
-".jewel.togglebutton.secondary.outlined:focus",
-function() {this["border"] = [1.0, "solid", 10891789];
-this["boxShadow"] = "none";
-this["color"] = 9382667},
-0,
-1,
-".jewel.togglebutton.secondary.outlined[disabled]",
-function() {this["background"] = [435418099, "!important"];
-this["border"] = [1.0, "solid", 14277081, "!important"];
-this["color"] = 12632256;
-this["textShadow"] = "unset"},
-0,
-1,
-".jewel.togglebutton.secondary.outlined.selected",
-function() {this["background"] = 1072650794;
-this["border"] = [1.0, "solid", 11547917];
-this["boxShadow"] = "none";
-this["color"] = 9382667},
-0,
-1,
-".jewel.togglebutton.secondary.unboxed",
-function() {this["background"] = 15686186;
-this["border"] = [1.0, "solid", "transparent"];
-this["boxShadow"] = "none";
-this["color"] = 12466446;
-this["textShadow"] = "none"},
-0,
-1,
-".jewel.togglebutton.secondary.unboxed:hover",
-function() {this["background"] = 653220394;
-this["border"] = [1.0, "solid", "transparent"];
-this["color"] = 9382667},
-0,
-1,
-".jewel.togglebutton.secondary.unboxed:hover:focus",
-function() {this["background"] = 653220394;
-this["border"] = [1.0, "solid", "transparent"];
-this["color"] = 9382667},
-0,
-1,
-".jewel.togglebutton.secondary.unboxed:active",
-function() {this["background"] = 1072650794;
-this["border"] = [1.0, "solid", "transparent"];
-this["boxShadow"] = "none";
-this["color"] = 9382667},
-0,
-1,
-".jewel.togglebutton.secondary.unboxed:active:focus",
-function() {this["background"] = 1072650794;
-this["border"] = [1.0, "solid", "transparent"];
-this["boxShadow"] = "none";
-this["color"] = 9382667},
-0,
-1,
-".jewel.togglebutton.secondary.unboxed:focus",
-function() {this["background"] = 653220394;
-this["border"] = [1.0, "solid", "transparent"];
-this["boxShadow"] = "none";
-this["color"] = 9382667},
-0,
-1,
-".jewel.togglebutton.secondary.unboxed[disabled]",
-function() {this["background"] = [15987699, "!important"];
-this["border"] = [1.0, "solid", "transparent", "!important"];
-this["color"] = 12632256;
-this["textShadow"] = "unset"},
-0,
-1,
-".jewel.togglebutton.secondary.unboxed[disabled]:hover",
-function() {this["color"] = 12632256},
-0,
-1,
-".jewel.togglebutton.secondary.unboxed[disabled]:hover:focus",
-function() {this["color"] = 12632256},
-0,
-1,
-".jewel.badge.emphasized",
-function() {this["background"] = 9225788;
-this["color"] = 16777215},
-0,
-1,
-".jewel.button.emphasized",
-function() {this["background"] = null;
-this["border"] = [1.0, "solid", 6523945];
-this["borderRadius"] = 0.25;
-this["boxShadow"] = ["inset", 0.0, 1.0, 0.0, 12311947];
-this["color"] = 16777215;
-this["textShadow"] = [0.0, -1.0, 0.0, 2990100760]},
-0,
-1,
-".jewel.button.emphasized:hover",
-function() {this["background"] = null;
-this["border"] = [1.0, "solid", 5601571];
-this["color"] = 16777215},
-0,
-1,
-".jewel.button.emphasized:hover:focus",
-function() {this["background"] = null;
-this["border"] = [1.0, "solid", 5601571];
-this["color"] = 16777215},
-0,
-1,
-".jewel.button.emphasized:active",
-function() {this["background"] = null;
-this["border"] = [1.0, "solid", 3756312];
-this["boxShadow"] = ["inset", 0.0, 1.0, 3.0, 0.0, 2133996082];
-this["color"] = 16777215},
-0,
-1,
-".jewel.button.emphasized:active:focus",
-function() {this["background"] = null;
-this["border"] = [1.0, "solid", 3756312];
-this["boxShadow"] = ["inset", 0.0, 1.0, 3.0, 0.0, 2133996082];
-this["color"] = 16777215},
-0,
-1,
-".jewel.button.emphasized:focus",
-function() {this["border"] = [1.0, "solid", 6523945];
-this["boxShadow"] = ["inset 0px 0px 0px 1px rgba(255, 255, 255, 0.5)", "inset 0 1px 0 rgba(255, 255, 255, 0.6)"];
-this["color"] = 16777215},
-0,
-1,
-".jewel.button.emphasized[disabled]",
-function() {this["background"] = [15987699, "!important"];
-this["border"] = [1.0, "solid", 14277081, "!important"];
-this["boxShadow"] = ["none", "!important"];
-this["color"] = 12632256;
-this["textShadow"] = "unset"},
-0,
-1,
-".jewel.button.emphasized[disabled]:hover",
-function() {this["color"] = 12632256},
-0,
-1,
-".jewel.button.emphasized[disabled]:hover:focus",
-function() {this["color"] = 12632256},
-0,
-1,
-".jewel.button.emphasized.outlined",
-function() {this["background"] = 210552380;
-this["border"] = [1.0, "solid", 7446575];
-this["boxShadow"] = "none";
-this["color"] = 6523945;
-this["textShadow"] = "none"},
-0,
-1,
-".jewel.button.emphasized.outlined:hover",
-function() {this["background"] = 646759996;
-this["border"] = [1.0, "solid", 6523945];
-this["color"] = 4678942},
-0,
-1,
-".jewel.button.emphasized.outlined:hover:focus",
-function() {this["background"] = 646759996;
-this["border"] = [1.0, "solid", 6523945];
-this["color"] = 4678942},
-0,
-1,
-".jewel.button.emphasized.outlined:active",
-function() {this["background"] = 1066190396;
-this["border"] = [1.0, "solid", 5931302];
-this["boxShadow"] = "none";
-this["color"] = 4678942},
-0,
-1,
-".jewel.button.emphasized.outlined:active:focus",
-function() {this["background"] = 1066190396;
-this["border"] = [1.0, "solid", 5931302];
-this["boxShadow"] = "none";
-this["color"] = 4678942},
-0,
-1,
-".jewel.button.emphasized.outlined:focus",
-function() {this["border"] = [1.0, "solid", 5601571];
-this["boxShadow"] = "none";
-this["color"] = 4678942},
-0,
-1,
-".jewel.button.emphasized.outlined[disabled]",
-function() {this["background"] = [435418099, "!important"];
-this["border"] = [1.0, "solid", 14277081, "!important"];
-this["color"] = 12632256;
-this["textShadow"] = "unset"},
-0,
-1,
-".jewel.button.emphasized.outlined[disabled]:hover",
-function() {this["color"] = 12632256},
-0,
-1,
-".jewel.button.emphasized.outlined[disabled]:hover:focus",
-function() {this["color"] = 12632256},
-0,
-1,
-".jewel.button.emphasized.unboxed",
-function() {this["background"] = 9225788;
-this["border"] = [1.0, "solid", "transparent"];
-this["boxShadow"] = "none";
-this["color"] = 6523945;
-this["textShadow"] = "none"},
-0,
-1,
-".jewel.button.emphasized.unboxed:hover",
-function() {this["background"] = 646759996;
-this["border"] = [1.0, "solid", "transparent"];
-this["color"] = 4678942},
-0,
-1,
-".jewel.button.emphasized.unboxed:hover:focus",
-function() {this["background"] = 646759996;
-this["border"] = [1.0, "solid", "transparent"];
-this["color"] = 4678942},
-0,
-1,
-".jewel.button.emphasized.unboxed:active",
-function() {this["background"] = 1066190396;
-this["border"] = [1.0, "solid", "transparent"];
-this["boxShadow"] = "none";
-this["color"] = 4678942},
-0,
-1,
-".jewel.button.emphasized.unboxed:active:focus",
-function() {this["background"] = 1066190396;
-this["border"] = [1.0, "solid", "transparent"];
-this["boxShadow"] = "none";
-this["color"] = 4678942},
-0,
-1,
-".jewel.button.emphasized.unboxed:focus",
-function() {this["background"] = 646759996;
-this["border"] = [1.0, "solid", "transparent"];
-this["boxShadow"] = "none";
-this["color"] = 4678942},
-0,
-1,
-".jewel.button.emphasized.unboxed[disabled]",
-function() {this["background"] = [15987699, "!important"];
-this["border"] = [1.0, "solid", "transparent", "!important"];
-this["color"] = 12632256;
-this["textShadow"] = "unset"},
-0,
-1,
-".jewel.button.emphasized.unboxed[disabled]:hover",
-function() {this["color"] = 12632256},
-0,
-1,
-".jewel.button.emphasized.unboxed[disabled]:hover:focus",
-function() {this["color"] = 12632256},
-0,
-1,
-"span::before",
-function() {this["background"] = null;
-this["border"] = [1.0, "solid", 11776947]},
-0,
-1,
-"span::after",
-function() {this["background"] = ["url(\"data:image/svg+xml,%3Csvg viewBox='0 0 22 22' version='1.1' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0' y='0' width='22' height='22' fill-opacity='0'/%3E%3Cpolygon fill='%238CC63C' points='3.50018311 12.4854126 8.48547363 17.4989624 18.4641113 7.47589111 15.5010376 4.51739502 8.48547363 11.5650024 6.52087402 9.47265625'/%3E%3C/svg%3E\")", "no-repeat", "center", "center"]},
-0,
-1,
-"span::after",
-function() {this["background"] = ["url(\"data:image/svg+xml,%3Csvg viewBox='0 0 22 22' version='1.1' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0' y='0' width='22' height='22' fill-opacity='0'/%3E%3Cpolygon fill='%238CC63C' points='3.50018311 12.4854126 8.48547363 17.4989624 18.4641113 7.47589111 15.5010376 4.51739502 8.48547363 11.5650024 6.52087402 9.47265625'/%3E%3C/svg%3E\")", "no-repeat", "center", "center"]},
-0,
-1,
-"span::after",
-function() {this["background"] = ["url(\"data:image/svg+xml,%3Csvg viewBox='0 0 22 22' version='1.1' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0' y='0' width='22' height='22' fill-opacity='0'/%3E%3Cpolygon fill='%238CC63C' points='3.50018311 12.4854126 8.48547363 17.4989624 18.4641113 7.47589111 15.5010376 4.51739502 8.48547363 11.5650024 6.52087402 9.47265625'/%3E%3C/svg%3E\")", "no-repeat", "center", "center"]},
-0,
-1,
-"span::after",
-function() {this["background"] = ["url(\"data:image/svg+xml,%3Csvg viewBox='0 0 22 22' version='1.1' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0' y='0' width='22' height='22' fill-opacity='0'/%3E%3Crect stroke-width='0' stroke='%23FFFFFF' height='12' width='12' y='5' x='5' fill='%238CC63C' /%3E%3C/svg%3E\")", "no-repeat", "center", "center"]},
-0,
-1,
-"span::after",
-function() {this["background"] = ["url(\"data:image/svg+xml,%3Csvg viewBox='0 0 22 22' version='1.1' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0' y='0' width='22' height='22' fill-opacity='0'/%3E%3Crect stroke-width='0' stroke='%23FFFFFF' height='12' width='12' y='5' x='5' fill='%238CC63C' /%3E%3C/svg%3E\")", "no-repeat", "center", "center"]},
-0,
-1,
-"span::before",
-function() {this["background"] = null;
-this["border"] = [1.0, "solid", 6523945]},
-0,
-1,
-"span::before",
-function() {this["background"] = null;
-this["border"] = [1.0, "solid", 6523945]},
-0,
-1,
-"span::before",
-function() {this["background"] = null;
-this["border"] = [1.0, "solid", 6523945]},
-0,
-1,
-"span::before",
-function() {this["background"] = null;
-this["border"] = [1.0, "solid", 6523945]},
-0,
-1,
-"span::before",
-function() {this["background"] = null;
-this["border"] = [1.0, "solid", 6523945]},
-0,
-1,
-"span",
-function() {this["color"] = 12632256},
-0,
-1,
-"span::before",
-function() {this["background"] = 15987699;
-this["border"] = [1.0, "solid", 14277081]},
-0,
-1,
-"span::after",
-function() {this["background"] = ["url(\"data:image/svg+xml,%3Csvg viewBox='0 0 22 22' version='1.1' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0' y='0' width='22' height='22' fill-opacity='0'/%3E%3Cpolygon fill='%23cccccc' points='3.50018311 12.4854126 8.48547363 17.4989624 18.4641113 7.47589111 15.5010376 4.51739502 8.48547363 11.5650024 6.52087402 9.47265625'/%3E%3C/svg%3E\")", "no-repeat", "center", "center"]},
-0,
-1,
-"span::after",
-function() {this["background"] = ["url(\"data:image/svg+xml,%3Csvg viewBox='0 0 22 22' version='1.1' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0' y='0' width='22' height='22' fill-opacity='0'/%3E%3Crect stroke-width='0' stroke='%23FFFFFF' height='12' width='12' y='5' x='5' fill='%23cccccc' /%3E%3C/svg%3E\")", "no-repeat", "center", "center"]},
-0,
-1,
-"span::after",
-function() {this["background"] = ["url(\"data:image/svg+xml,%3Csvg viewBox='0 0 22 22' version='1.1' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0' y='0' width='22' height='22' fill-opacity='0'/%3E%3Cline stroke-width='4' stroke='%238CC63C' stroke-linecap='undefined' stroke-linejoin='undefined' y2='10.9375' x2='17' y1='11.0625' x1='5' fill='none' /%3E%3C/svg%3E\")", "no-repeat", "center", "center"]},
-0,
-1,
-"span::after",
-function() {this["background"] = ["url(\"data:image/svg+xml,%3Csvg viewBox='0 0 22 22' version='1.1' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0' y='0' width='22' height='22' fill-opacity='0'/%3E%3Cline stroke-width='4' stroke='%238CC63C' stroke-linecap='undefined' stroke-linejoin='undefined' y2='10.9375' x2='17' y1='11.0625' x1='5' fill='none' /%3E%3C/svg%3E\")", "no-repeat", "center", "center"]},
-0,
-1,
-"span::after",
-function() {this["background"] = ["url(\"data:image/svg+xml,%3Csvg viewBox='0 0 22 22' version='1.1' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0' y='0' width='22' height='22' fill-opacity='0'/%3E%3Cline stroke-width='4' stroke='%23cccccc' stroke-linecap='undefined' stroke-linejoin='undefined' y2='10.9375' x2='17' y1='11.0625' x1='5' fill='none' /%3E%3C/svg%3E\")", "no-repeat", "center", "center"]},
-0,
-1,
-".jewel.switch.emphasized input:checked+.switch",
-function() {this["background"] = null;
-this["boxShadow"] = [0.0, 0.0, 0.0, 1.0, 8303669]},
-0,
-1,
-".jewel.switch.emphasized input:focus+.switch",
-function() {this["boxShadow"] = [0.0, 0.0, 0.0, 1.0, 7446575]},
-0,
-1,
-".jewel.switch.emphasized input:checked+.switch::before",
-function() {this["background"] = 16120558},
-0,
-1,
-".jewel.switch.emphasized input[disabled]:checked+.switch",
-function() {this["background"] = 14277081;
-this["boxShadow"] = [0.0, 0.0, 0.0, 1.0, 13421772]},
-0,
-1,
-".jewel.switch.emphasized input[disabled]+.switch",
-function() {this["background"] = 15987699;
-this["boxShadow"] = [0.0, 0.0, 0.0, 1.0, 15132390]},
-0,
-1,
-".jewel.switch.emphasized input[disabled]+.switch::before",
-function() {this["background"] = 16777215},
-0,
-1,
-".jewel.switch.emphasized .switch",
-function() {this["background"] = null;
-this["boxShadow"] = [0.0, 0.0, 0.0, 1.0, 13421772]},
-0,
-1,
-".jewel.switch.emphasized .switch::before",
-function() {this["background"] = 16120558;
-this["boxShadow"] = [1.0, 0.0, 1.0, 0.0, 419430400]},
-0,
-1,
-".jewel.datagrid .jewel.list.column .jewel.item.datagrid.emphasized.hovered",
-function() {this["background"] = 11064427},
-0,
-1,
-".jewel.datagrid .jewel.list.column .jewel.item.datagrid.emphasized.selected",
-function() {this["background"] = 10276440},
-0,
-1,
-".jewel.datagrid .jewel.list.column .jewel.item.datagrid.emphasized.selectable:active",
-function() {this["background"] = 10276440},
-0,
-1,
-".jewel.item.emphasized.hovered",
-function() {this["background"] = 9225788},
-0,
-1,
-".jewel.item.emphasized.selected",
-function() {this["background"] = 8303669},
-0,
-1,
-".jewel.item.emphasized.selectable:active",
-function() {this["background"] = 8303669},
-0,
-1,
-".jewel.loader.emphasized.segment",
-function() {this["borderTopColor"] = 9225788},
-0,
-1,
-".jewel.snackbar.emphasized .jewel.snackbar-content",
-function() {this["background"] = null;
-this["border"] = [1.0, "solid", 6523945];
-this["borderBottom"] = "none";
-this["boxShadow"] = ["inset", 0.0, 1.0, 0.0, 12311947]},
-0,
-1,
-".jewel.snackbar.emphasized .jewel.snackbar-message",
-function() {this["color"] = 16777215},
-0,
-1,
-".jewel.snackbar.emphasized .jewel.snackbar-action",
-function() {this["color"] = 14866187},
-0,
-1,
-".jewel.snackbar.emphasized .jewel.snackbar-action:hover",
-function() {this["background"] = null},
-0,
-1,
-".emphasized-lightest",
-function() {this["color"] = 15332570},
-0,
-1,
-".emphasized-light",
-function() {this["color"] = 12311947},
-0,
-1,
-".emphasized-normal",
-function() {this["color"] = 9225788},
-0,
-1,
-".emphasized-dark",
-function() {this["color"] = 5601571},
-0,
-1,
-".emphasized-darkest",
-function() {this["color"] = 1911308},
-0,
-1,
-".jewel.togglebutton.emphasized",
-function() {this["background"] = null;
-this["border"] = [1.0, "solid", 6523945];
-this["borderRadius"] = 0.25;
-this["boxShadow"] = ["inset", 0.0, 1.0, 0.0, 12311947];
-this["color"] = 16777215;
-this["textShadow"] = [0.0, -1.0, 0.0, 2990100760]},
-0,
-1,
-".jewel.togglebutton.emphasized:hover",
-function() {this["background"] = null;
-this["border"] = [1.0, "solid", 5601571];
-this["color"] = 16777215},
-0,
-1,
-".jewel.togglebutton.emphasized:hover:focus",
-function() {this["background"] = null;
-this["border"] = [1.0, "solid", 5601571];
-this["color"] = 16777215},
-0,
-1,
-".jewel.togglebutton.emphasized:active",
-function() {this["background"] = null;
-this["border"] = [1.0, "solid", 3756312];
-this["boxShadow"] = ["inset", 0.0, 1.0, 3.0, 0.0, 2133996082];
-this["color"] = 16777215},
-0,
-1,
-".jewel.togglebutton.emphasized:active:focus",
-function() {this["background"] = null;
-this["border"] = [1.0, "solid", 3756312];
-this["boxShadow"] = ["inset", 0.0, 1.0, 3.0, 0.0, 2133996082];
-this["color"] = 16777215},
-0,
-1,
-".jewel.togglebutton.emphasized:focus",
-function() {this["border"] = [1.0, "solid", 6523945];
-this["boxShadow"] = ["inset 0px 0px 0px 1px rgba(255, 255, 255, 0.5)", "inset 0 1px 0 rgba(255, 255, 255, 0.6)"];
-this["color"] = 16777215},
-0,
-1,
-".jewel.togglebutton.emphasized[disabled]",
-function() {this["background"] = [15987699, "!important"];
-this["border"] = [1.0, "solid", 14277081, "!important"];
-this["boxShadow"] = ["none", "!important"];
-this["color"] = 12632256;
-this["textShadow"] = "unset"},
-0,
-1,
-".jewel.togglebutton.emphasized.selected",
-function() {this["background"] = null;
-this["border"] = [1.0, "solid", 3756312];
-this["boxShadow"] = ["inset", 0.0, 1.0, 3.0, 0.0, 2133996082];
-this["color"] = 16777215},
-0,
-1,
-".jewel.togglebutton.emphasized.outlined",
-function() {this["background"] = 210552380;
-this["border"] = [1.0, "solid", 7446575];
-this["boxShadow"] = "none";
-this["color"] = 6523945;
-this["textShadow"] = "none"},
-0,
-1,
-".jewel.togglebutton.emphasized.outlined:hover",
-function() {this["background"] = 646759996;
-this["border"] = [1.0, "solid", 6523945];
-this["color"] = 4678942},
-0,
-1,
-".jewel.togglebutton.emphasized.outlined:hover:focus",
-function() {this["background"] = 646759996;
-this["border"] = [1.0, "solid", 6523945];
-this["color"] = 4678942},
-0,
-1,
-".jewel.togglebutton.emphasized.outlined:active",
-function() {this["background"] = 1066190396;
-this["border"] = [1.0, "solid", 5931302];
-this["boxShadow"] = "none";
-this["color"] = 4678942},
-0,
-1,
-".jewel.togglebutton.emphasized.outlined:active:focus",
-function() {this["background"] = 1066190396;
-this["border"] = [1.0, "solid", 5931302];
-this["boxShadow"] = "none";
-this["color"] = 4678942},
-0,
-1,
-".jewel.togglebutton.emphasized.outlined:focus",
-function() {this["border"] = [1.0, "solid", 5601571];
-this["boxShadow"] = "none";
-this["color"] = 4678942},
-0,
-1,
-".jewel.togglebutton.emphasized.outlined[disabled]",
-function() {this["background"] = [435418099, "!important"];
-this["border"] = [1.0, "solid", 14277081, "!important"];
-this["color"] = 12632256;
-this["textShadow"] = "unset"},
-0,
-1,
-".jewel.togglebutton.emphasized.outlined.selected",
-function() {this["background"] = 1066190396;
-this["border"] = [1.0, "solid", 5931302];
-this["boxShadow"] = "none";
-this["color"] = 4678942},
-0,
-1,
-".jewel.togglebutton.emphasized.unboxed",
-function() {this["background"] = 9225788;
-this["border"] = [1.0, "solid", "transparent"];
-this["boxShadow"] = "none";
-this["color"] = 6523945;
-this["textShadow"] = "none"},
-0,
-1,
-".jewel.togglebutton.emphasized.unboxed:hover",
-function() {this["background"] = 646759996;
-this["border"] = [1.0, "solid", "transparent"];
-this["color"] = 4678942},
-0,
-1,
-".jewel.togglebutton.emphasized.unboxed:hover:focus",
-function() {this["background"] = 646759996;
-this["border"] = [1.0, "solid", "transparent"];
-this["color"] = 4678942},
-0,
-1,
-".jewel.togglebutton.emphasized.unboxed:active",
-function() {this["background"] = 1066190396;
-this["border"] = [1.0, "solid", "transparent"];
-this["boxShadow"] = "none";
-this["color"] = 4678942},
-0,
-1,
-".jewel.togglebutton.emphasized.unboxed:active:focus",
-function() {this["background"] = 1066190396;
-this["border"] = [1.0, "solid", "transparent"];
-this["boxShadow"] = "none";
-this["color"] = 4678942},
-0,
-1,
-".jewel.togglebutton.emphasized.unboxed:focus",
-function() {this["background"] = 646759996;
-this["border"] = [1.0, "solid", "transparent"];
-this["boxShadow"] = "none";
-this["color"] = 4678942},
-0,
-1,
-".jewel.togglebutton.emphasized.unboxed[disabled]",
-function() {this["background"] = [15987699, "!important"];
-this["border"] = [1.0, "solid", "transparent", "!important"];
-this["color"] = 12632256;
-this["textShadow"] = "unset"},
-0,
-1,
-".jewel.togglebutton.emphasized.unboxed.selected",
-function() {this["background"] = 1066190396;
-this["border"] = [1.0, "solid", "transparent"];
-this["boxShadow"] = "none";
-this["color"] = 4678942},
 2,
 "all",
 "(-ms-high-contrast: none)",
@@ -9928,144 +6728,4 @@ this["transform"] = null},
 1,
 ".jewel.snackbar-content",
 function() {this["maxWidth"] = 100.0;
-this["width"] = 100.0},
-1,
-"(max-width: 992px)",
-1,
-"input",
-function() {this["borderRadius"] = 0.0},
-1,
-"(max-width: 992px)",
-1,
-".jewel.numericstepper .jewel.button.up",
-function() {this["border"] = [1.0, "solid", 11776947];
-this["borderRadius"] = [0.0, 0.25, 0.25, 0.0];
-this["height"] = 100.0;
-this["marginLeft"] = -1.0},
-1,
-"(max-width: 992px)",
-1,
-".jewel.numericstepper .jewel.button.down",
-function() {this["border"] = [1.0, "solid", 11776947];
-this["borderRadius"] = [0.25, 0.0, 0.0, 0.25];
-this["borderTopStyle"] = "solid";
-this["height"] = 100.0;
-this["marginRight"] = -1.0},
-1,
-"(min-width: 992px)",
-1,
-".popup-content .jewel.popupcontent",
-function() {this["boxShadow"] = ["none", "!important"]},
-1,
-"(max-width: 992px)",
-1,
-".jewel.snackbar-content",
-function() {this["borderRadius"] = 0.0},
-2,
-"(min-width: 992px)",
-"(max-width: 1200px)",
-1,
-".jewel",
-function() {this["fontSize"] = 100.0},
-2,
-"(min-width: 992px)",
-"(max-width: 1200px)",
-1,
-"h1",
-function() {this["fontSize"] = 2.0},
-2,
-"(min-width: 992px)",
-"(max-width: 1200px)",
-1,
-"h2",
-function() {this["fontSize"] = 2.0},
-2,
-"(min-width: 992px)",
-"(max-width: 1200px)",
-1,
-"h3",
-function() {this["fontSize"] = 1.5},
-2,
-"(min-width: 992px)",
-"(max-width: 1200px)",
-1,
-"h4",
-function() {this["fontSize"] = 1.25},
-2,
-"(min-width: 992px)",
-"(max-width: 1200px)",
-1,
-"h5",
-function() {this["fontSize"] = 1.0},
-2,
-"(min-width: 768px)",
-"(max-width: 992px)",
-1,
-".jewel",
-function() {this["fontSize"] = 99.0},
-2,
-"(min-width: 768px)",
-"(max-width: 992px)",
-1,
-"h1",
-function() {this["fontSize"] = 1.899999976158142},
-2,
-"(min-width: 768px)",
-"(max-width: 992px)",
-1,
-"h2",
-function() {this["fontSize"] = 1.899999976158142},
-2,
-"(min-width: 768px)",
-"(max-width: 992px)",
-1,
-"h3",
-function() {this["fontSize"] = 1.399999976158142},
-2,
-"(min-width: 768px)",
-"(max-width: 992px)",
-1,
-"h4",
-function() {this["fontSize"] = 1.100000023841858},
-2,
-"(min-width: 768px)",
-"(max-width: 992px)",
-1,
-"h5",
-function() {this["fontSize"] = 0.9800000190734863},
-2,
-"(min-width: 0px)",
-"(max-width: 768px)",
-1,
-".jewel",
-function() {this["fontSize"] = 97.0},
-2,
-"(min-width: 0px)",
-"(max-width: 768px)",
-1,
-"h1",
-function() {this["fontSize"] = 1.7000000476837158},
-2,
-"(min-width: 0px)",
-"(max-width: 768px)",
-1,
-"h2",
-function() {this["fontSize"] = 1.7000000476837158},
-2,
-"(min-width: 0px)",
-"(max-width: 768px)",
-1,
-"h3",
-function() {this["fontSize"] = 1.2999999523162842},
-2,
-"(min-width: 0px)",
-"(max-width: 768px)",
-1,
-"h4",
-function() {this["fontSize"] = 1.0},
-2,
-"(min-width: 0px)",
-"(max-width: 768px)",
-1,
-"h5",
-function() {this["fontSize"] = 0.9700000286102295}];
+this["width"] = 100.0}];
