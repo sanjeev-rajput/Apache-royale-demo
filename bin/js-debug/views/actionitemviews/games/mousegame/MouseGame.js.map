@@ -1,8 +1,0 @@
-{
-"version":3,
-"file":"MouseGame.js",
-"lineCount":114,
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAawB,0DAAAA,2D;;;;;;AAEK,0DAAAC,oDAAjB,WAAqBA,CAAC,C,CAAO,C;EACzB,KAAAD,2DAAW,GAAG,IAAI,gDAAU,CAAC,IAAI,CAAC,C;AACtC,C;;;;;AAEgB,0DAAA,SAAhB,WAAyBE,CAAC,C,CAAM,C;EAC5B,KAAAF,2DAAW,CAAC,WAAW,CAAC,CAAC,C;AAC7B,C;;;;;;;;;EAfW,KAAAC,oDAAI,CAAA;",
-"sources":["../../../../../../src/views/actionitemviews/games/mousegame/MouseGame.mxml"],
-"names":["gController","init","disposeMe"]
-}

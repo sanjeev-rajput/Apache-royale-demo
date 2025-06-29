@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"NoLayout.js",
-"lineCount":49,
-"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Basic/src/main/royale",
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;AA2CkB,6CAAhB,WAAwBA,CAAC,C,CACzB,C;EACQ,C;AACR,C;;;;;;;AAKgB,wDAAA,MAAhB,WAAsBC,CAAC,C,CACvB,C;EAEI,OAAO,IAAI,C;AACf,C;;;;;;;;;;;8EAC4BC,CAAC,KAAa,C,CACxC,CAAA;",
-"sources":["org/apache/royale/html/beads/layouts/NoLayout.as"],
-"names":["NoLayout.NoLayout","NoLayout.layout","NoLayout.strand"]
-}

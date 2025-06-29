@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"Bar.js",
-"lineCount":74,
-"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Jewel/src/main/royale",
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;AA+CkB,2BAAhB,WAAmBA,CAAC,C,CACpB,C;uDACQ,C;EAEE,KAAA,SAAS,GAAG,WAAW,C;AACjC,C;;;;;;;;;AAWkC,sCAAA,aAA5B,WAAyCC,CAAC,C,CAC1C,C;EACL,+CAAmB,CAAC,IAAI,EAAC,QAAQ,CAAC,C;EAClC,KAAA,OAAO,CAAC,SAAS,GAAG,KAAA,eAAe,C;EACnC,KAAA,UAAU,GAAG,QAAQ,CAAC,aAAa,CAAC,KAAK,CAAuB,C;EAChE,OAAO,KAAA,OAAO,C;AACT,C;;;;;;;AAGM,sCAAAC,uCAA8B,C;;;;;;;;;;qEAlBJC,CAAC,C,CACvC,C;EACC,OAAO,YAAY,C;AACpB,C;;;gEAiBuCC,CAAC,C,CACxC,C;EACC,OAAO,KAAAF,uCAAW,C;AACnB,C;;;gEAEuCE,CAAC,KAAwB,C,CAChE,C;EACC,KAAAF,uCAAW,GAAG,KAAK,C;EACV,KAAAA,uCAAW,CAAC,cAAc,GAAG,IAAI,C;EAC1C,KAAAA,uCAAW,CAAC,WAAW,CAAC,KAAA,OAAO,CAAC,CAAA;",
-"sources":["org/apache/royale/jewel/Bar.as"],
-"names":["Bar.Bar","Bar.createElement","_positioner","Bar.headerClassName","Bar.positioner"]
-}

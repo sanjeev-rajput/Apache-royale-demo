@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"debounceLong.js",
-"lineCount":39,
-"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Core/src/main/royale",
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;;mDAkCC,WAA4BA,CAAC,MAAe,EAAE,KAAY,C,CAC1D,C;EACC,IAAc,iBAAV,UAAY,C;EAChB,OAAO,QAAQ,CAAI,IAAI,C,CACvB,C;;IACC,iBAAiBC,CAAC,C,CAClB,C;MACC,UAAU,GAAG,IAAI,C;MAEjB,MAAM,CAAC,KAAK,CAAC,IAAI,EAAC,IAAI,CAAC,C;IACxB,C;IACA,IAAG,UAAU,C;MACZ,YAAY,C,OAAC,U,CAAU,CAAC,C;IAEzB,UAAU,GAAG,UAAU,CAAC,QAAQ,EAAE,KAAK,CAAC,C;EACzC,CAAA,CAAA;",
-"sources":["org/apache/royale/functional/decorator/debounceLong.as"],
-"names":["debounceLong","callback"]
-}

@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"AlignmentItemsContainerWithGap.js",
-"lineCount":75,
-"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Jewel/src/main/royale",
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;AA8CkB,+EAAhB,WAA8CA,CAAC,C,CAC/C,C;2GACQ,C;AACR,C;;;;;;;;;;;;6GAY6BC,CAAC,C,CACxB,C;EACI,OAAe,oCAAP,KAAA,OAAO,EAAI,0CAAJ,CAAQ,CAAE,GAAG,C;AAChC,C;;;6GACuBA,CAAC,KAAY,C,CACpC,C;EACL,KAAA,SAAS,GAAc,mCAAA,UAAU,CAAC,KAAA,SAAS,EAAE,OAAO,GAAW,oCAAP,KAAA,OAAO,EAAI,0CAAJ,CAAQ,CAAE,GAAG,GAAG,GAAG,GAAgB,mDAAA,QAAQ,GAAG,IAAI,CAAC,C;EAClH,IAAG,KAAK,IAAI,CAAC,C;IACZ,KAAA,SAAS,IAAI,OAAO,GAAG,KAAK,GAAG,GAAG,GAAgB,mDAAA,QAAQ,GAAG,IAAI,C;EAIjE,IAAI,KAAA,MAAM,C;IACG,KAAA,YAAY,CAAC,KAAA,sBAAsB,CAAC,CAAC,CAAC,C;EAG5C,oCAAP,KAAA,OAAO,EAAI,0CAAJ,CAAQ,CAAE,GAAG,GAAG,KAAK,C;AACxB,C;;;;;;;;;;;2HAgBqCC,CAAC,C,CACtC,C;EACI,OAAe,oCAAP,KAAA,OAAO,EAAI,wDAAJ,CAAsB,CAAE,iBAAiB,C;AAC5D,C;;;2HACqCA,CAAC,KAAa,C,CACnD,C;EACL,KAAA,SAAS,GAAc,mCAAA,UAAU,CAAC,KAAA,SAAS,EAAE,oBAAoB,CAAC,C;EAClE,IAAG,KAAK,C;IACP,KAAA,SAAS,IAAI,oBAAoB,C;EAIjC,IAAI,KAAA,MAAM,C;IACG,KAAA,YAAY,CAAC,KAAA,sBAAsB,CAAC,CAAC,CAAC,C;EAG5C,oCAAP,KAAA,OAAO,EAAI,wDAAJ,CAAsB,CAAE,iBAAiB,GAAG,KAAK,CAAA;",
-"sources":["org/apache/royale/jewel/supportClasses/container/AlignmentItemsContainerWithGap.as"],
-"names":["AlignmentItemsContainerWithGap.AlignmentItemsContainerWithGap","AlignmentItemsContainerWithGap.gap","AlignmentItemsContainerWithGap.variableRowHeight"]
-}

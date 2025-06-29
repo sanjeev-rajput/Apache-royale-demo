@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"IRoyaleEvent.js",
-"lineCount":29,
-"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Core/src/main/royale",
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;;;qEA6CqBA,CAAAA;",
-"sources":["org/apache/royale/events/IRoyaleEvent.as"],
-"names":["cloneEvent"]
-}

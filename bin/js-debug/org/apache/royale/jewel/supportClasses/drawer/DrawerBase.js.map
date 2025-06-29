@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"DrawerBase.js",
-"lineCount":62,
-"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Jewel/src/main/royale",
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;AAwEkB,wDAAhB,WAA0BA,CAAC,C,CAC3B,C;oFACQ,C;EAEE,KAAA,SAAS,GAAG,cAAc,C;AACpC,C;;;;;;;;;AAMkC,mEAAA,aAA5B,WAAyCC,CAAC,C,CAC1C,C;EACL,+CAAmB,CAAC,IAAI,EAAC,KAAK,CAAC,C;EAC/B,KAAA,OAAO,CAAC,SAAS,GAAG,YAAY,C;EAChC,KAAA,UAAU,GAAG,QAAQ,CAAC,aAAa,CAAC,OAAO,CAAuB,C;EAClE,OAAO,KAAA,OAAO,C;AACT,C;;;;;;;AAGM,mEAAAC,oEAA8B,C;;;6FAGHC,CAAC,C,CACxC,C;EACC,OAAO,KAAAD,oEAAW,C;AACnB,C;;;6FAGuCC,CAAC,KAAwB,C,CAChE,C;EACC,KAAAD,oEAAW,GAAG,KAAK,C;EACV,KAAAA,oEAAW,CAAC,cAAc,GAAG,IAAI,C;EAC1C,KAAAA,oEAAW,CAAC,WAAW,CAAC,KAAA,OAAO,CAAC,CAAA;",
-"sources":["org/apache/royale/jewel/supportClasses/drawer/DrawerBase.as"],
-"names":["DrawerBase.DrawerBase","DrawerBase.createElement","_positioner","DrawerBase.positioner"]
-}

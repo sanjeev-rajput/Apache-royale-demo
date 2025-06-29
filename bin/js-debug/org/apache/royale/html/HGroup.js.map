@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"HGroup.js",
-"lineCount":28,
-"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Basic/src/main/royale",
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;AAwCkB,6BAAhB,WAAsBA,CAAC,C,CACvB,C;yDACQ,CAAA;",
-"sources":["org/apache/royale/html/HGroup.as"],
-"names":["HGroup.HGroup"]
-}

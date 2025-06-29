@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"SimpleLoader.js",
-"lineCount":83,
-"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Jewel/src/main/royale",
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;AA0CkB,oCAAhB,WAA4BA,CAAC,C,CAC7B,C;gEACQ,C;EAEE,KAAA,SAAS,GAAG,sBAAsB,C;AAE5C,C;;;;;;;;AAGY,+CAAAC,8CAAmB,C;;;;;;;AAEnB,+CAAAC,mDAAsB,C;;;;;;;;;;;oEAITC,CAAC,C,CAC1B,C;EACC,OAAO,KAAAD,mDAAc,C;AACtB,C;;;;;;;;;;;4EAIiCE,CAAC,KAAa,C,CAC/C,C;EACC,IAAG,KAAAF,mDAAc,KAAK,KAAK,EAC3B,C;IACC,KAAAA,mDAAc,GAAG,KAAK,C;IAEtB,IAAG,KAAAA,mDAAc,EACjB,C;MAGC,IAAG,CAAC,KAAAD,8CAAS,EACb,C;QACC,IAAW,sBAAP,OAAc,GAAG,CACpB,UAAU,CAAE,IAAI,EAChB,YAAY,CAAE,QACf,CAAC,C;QACD,KAAAA,8CAAS,GAAG,KAAA,OAAO,CAAC,SAAS,CAAC,CAC7B,CACC,CAAE,WAAW,CAAE,cAAc,CAAC,EAC9B,CAAE,WAAW,CAAE,gBAAgB,CAAC,CAAC,EAEjC,OALoK,CAMpK,C;MACH,C;MAAE,I;QACD,KAAAA,8CAAS,CAAC,IAAI,CAAC,CAAC,C;IAElB,C,CACA,KACA,C;MAGC,IAAG,KAAAA,8CAAS,C;QACX,KAAAA,8CAAS,CAAC,KAAK,CAAC,CAAC,C;IAEnB,C;EACD,CAAA;",
-"sources":["org/apache/royale/jewel/SimpleLoader.as"],
-"names":["SimpleLoader.SimpleLoader","animation","_indeterminate","SimpleLoader.start","SimpleLoader.indeterminate"]
-}

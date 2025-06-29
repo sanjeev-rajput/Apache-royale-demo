@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ScrollingViewport.js",
-"lineCount":130,
-"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Jewel/src/main/royale",
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AA8DkB,kEAAhB,WAAiCA,CAAC,C,CAClC,C;8FACQ,C;AACR,C;;;;;;;;AAoBY,6EAAAC,0EAAe,GAAG,IAAI,C;;;;;;;;;;;;;AAkCN,6EAAA,cAA5B,WAA0CC,CAAC,C,CAC3C,C;2GACuB,C;EAEtB,KAAAD,0EAAO,GACN,KAAA,WAAW,CAAC,OAAO,CAAC,SAAS,CAAC,GAAG,CAAC,QAAQ,CAAC,GAC3C,KAAA,WAAW,CAAC,OAAO,CAAC,SAAS,CAAC,MAAM,CAAC,QAAQ,CAAC,C;AAChD,C;;;;;;;AAKyB,6EAAA,iCAAzB,WAA0DE,CAAC,KAAY,EAAE,MAAa,C,CACtF,C;AAEA,C;;;;;;;AAKyB,6EAAA,gCAAzB,WAAyDC,CAAC,WAAgB,C,CAC1E,C;AAEA,C;;;;;;;;;;;mHA3E0CC,CAAC,C,CAC3C,C;EACC,OAAO,IAAI,CAAC,WAAW,CAAC,UAAU,CAAC,SAAS,C;AAC7C,C;;;mHAC0CA,CAAC,KAAY,C,CACvD,C;EACC,IAAI,CAAC,WAAW,CAAC,UAAU,CAAC,SAAS,GAAG,KAAK,C;AAC9C,C;;;;;;;;;;;qHAE4CC,CAAC,C,CAC7C,C;EACC,OAAO,IAAI,CAAC,WAAW,CAAC,UAAU,CAAC,UAAU,C;AAC9C,C;;;qHAC4CA,CAAC,KAAY,C,CACzD,C;EACC,IAAI,CAAC,WAAW,CAAC,UAAU,CAAC,UAAU,GAAG,KAAK,C;AAC/C,C;;;;;;;;;;;mGAa0BC,CAAC,C,CAC3B,C;EACC,OAAO,KAAAN,0EAAO,C;AACf,C;;;mGAC0BM,CAAC,KAAa,C,CACxC,C;EACC,IAAG,KAAK,IAAI,KAAAN,0EAAO,EACnB,C;IACC,KAAAA,0EAAO,GAAG,KAAK,C;IACf,IAAG,KAAA,WAAW,C;MACb,KAAA,cAAc,CAAC,CAAC,C;EAClB,CAAA;",
-"sources":["org/apache/royale/jewel/supportClasses/scrollbar/ScrollingViewport.as"],
-"names":["ScrollingViewport.ScrollingViewport","_scroll","ScrollingViewport.setScrollStyle","ScrollingViewport.layoutViewportBeforeContentLayout","ScrollingViewport.layoutViewportAfterContentLayout","ScrollingViewport.verticalScrollPosition","ScrollingViewport.horizontalScrollPosition","ScrollingViewport.scroll"]
-}

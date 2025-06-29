@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"VScrollViewport.js",
-"lineCount":49,
-"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Basic/src/main/royale",
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;AAiEkB,qDAAhB,WAA+BA,CAAC,C,CAChC,C;iFACQ,C;AACR,C;;;;;;;;AAY4B,gEAAA,cAA5B,WAA0CC,CAAC,C,CAC3C,C;EACC,KAAA,WAAW,CAAC,OAAO,CAAC,KAAK,CAAC,QAAQ,GAAG,QAAQ,C;EAC7C,KAAA,WAAW,CAAC,OAAO,CAAC,KAAK,CAAC,SAAS,GAAG,MAAM,C;EAC5C,KAAA,gBAAgB,CAAC,CAAC,C;AACnB,C;;;wGAdqDC,CAAC,C,CACtD,C;EACC,OAAO,CAAC,C;AACT,C;;;wGACqDA,CAAC,KAAY,C,CAClE,CAAA;",
-"sources":["org/apache/royale/html/supportClasses/VScrollViewport.as"],
-"names":["VScrollViewport.VScrollViewport","VScrollViewport.setScrollStyle","VScrollViewport.horizontalScrollPosition"]
-}

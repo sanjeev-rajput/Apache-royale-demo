@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"throwError.js",
-"lineCount":23,
-"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Core/src/main/royale",
-"mappings":"A;;;;;;;;;;;;;;;;;;sCA4BI,WAA0BA,CAAC,YAAmB,C,CAC9C,C;;EAOQ,IAAG,IAAI,CAAC,KAAK,EACb,C;IACI,MAAM,IAAI,KAAK,CAAC,YAAY,CAAC,C;EACjC,CAAA;",
-"sources":["org/apache/royale/debugging/throwError.as"],
-"names":["throwError"]
-}

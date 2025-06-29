@@ -1,8 +1,0 @@
-{
-"version":3,
-"file":"DsEvent.js",
-"lineCount":109,
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;AAYyB,iBAAjB,WAAwBA,CAAC,MAA0B,C;;;;;;;;;;;AAP/B,kBAAA,YAAmB,GAAG,cAAc,C;;;;;;;;AACpC,kBAAA,YAAmB,GAAG,cAAc,C;;;;;;;;AACpC,kBAAA,gBAAuB,GAAG,gBAAgB,C;;;;;;;;AAC1C,kBAAA,cAAqB,GAAG,cAAc,C;;;;;;;;AACtC,kBAAA,kBAAyB,GAAG,kBAAkB,C;;;;;;;;AAC9C,kBAAA,oBAA2B,GAAG,mBAAmB,C;;;;;;;AAClD,kBAAA,SAAiB,GAAG,IAAI,C;;;;;;;AAW3B,4BAAA,QAAhB,WAAwBC,CAAC,IAAW,EAAE,IAAgB,C,CAAO,C;EAAvB,4CAAY,IAAZ,C;EAClC,IAAO,sBAAH,GAAU,GAAG,IAAI,M,EAAM,C;EAC3B,GAAQ,QAAA,GAAG,IAAI,C;EACf,GAAQ,QAAA,GAAG,IAAI,C;EACf,IAAI,CAAC,aAAa,CAAC,GAAG,CAAC,C;AAC3B,C;;;;;;;;;;;0CAbmCC,CAAC,C,CAAS,C;EACzC,IAAG,kBAAA,SAAS,IAAI,IAAI,EAAC,C;IACjB,kBAAA,SAAS,GAAG,IAAI,iBAAO,CAAC,IAAI,mCAAiB,CAAC,CAAC,CAAC,C;EACpD,C;EACA,OAAO,kBAAA,SAAS,CAAA;",
-"sources":["../../../../src/com/event/DsEvent.as"],
-"names":["DsEvent.DsEvent","DsEvent.dispatch","DsEvent.instance"]
-}

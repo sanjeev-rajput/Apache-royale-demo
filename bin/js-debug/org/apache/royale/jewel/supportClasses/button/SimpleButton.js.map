@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"SimpleButton.js",
-"lineCount":105,
-"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Jewel/src/main/royale",
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AA8WkB,0DAAhB,WAA4BA,CAAC,C,CAC7B,C;sFACQ,C;EACE,KAAA,SAAS,GAAG,cAAc,C;AACpC,C;;;;;;;;;;AAMkC,qEAAA,aAA5B,WAAyCC,CAAC,C,CAC1C,C;EACL,+CAAmB,CAAC,IAAI,EAAE,QAAQ,CAAC,C;EAC1B,KAAA,OAAO,CAAC,YAAY,CAAC,MAAM,EAAE,QAAQ,CAAC,C;EAEtC,OAAO,KAAA,OAAO,C;AAClB,C;;;;;;;AAEY,qEAAAC,oEAAiB,C;;;;;;;AAuBjB,qEAAAC,mEAAgB,C;;;;;;;;;;;6FAdAC,CAAC,C,CAC7B,C;EACI,OAAO,KAAAF,oEAAS,C;AACpB,C;;;6FAC4BE,CAAC,KAAa,C,CAC1C,C;EACI,IAAI,KAAAF,oEAAS,IAAI,KAAK,EACtB,C;IACI,KAAAA,oEAAS,GAAG,KAAK,C;IAEjB,KAAAA,oEAAS,GAAG,KAAA,QAAQ,CAAC,UAAU,CAAC,GAAG,KAAA,WAAW,CAAC,UAAU,CAAC,C;EAC9D,C;AACJ,C;;;;;;;;;;;4FAW2BG,CAAC,C,CAC5B,C;EACI,OAAO,KAAAF,mEAAQ,C;AACnB,C;;;4FAC2BE,CAAC,KAAa,C,CACzC,C;EACI,IAAI,KAAAF,mEAAQ,IAAI,KAAK,EACrB,C;IACI,KAAAA,mEAAQ,GAAG,KAAK,C;IAEhB,KAAAA,mEAAQ,GAAG,KAAA,QAAQ,CAAC,SAAS,CAAC,GAAG,KAAA,WAAW,CAAC,SAAS,CAAC,C;EAC3D,CAAA;",
-"sources":["org/apache/royale/jewel/supportClasses/button/SimpleButton.as"],
-"names":["SimpleButton.SimpleButton","SimpleButton.createElement","_outlined","_unboxed","SimpleButton.outlined","SimpleButton.unboxed"]
-}

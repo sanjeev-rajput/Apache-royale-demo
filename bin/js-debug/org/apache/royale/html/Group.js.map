@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"Group.js",
-"lineCount":117,
-"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Basic/src/main/royale",
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAiEkB,4BAAhB,WAAqBA,CAAC,C,CACtB,C;;oDAMmC,I;wDAL3B,C;EACE,KAAA,SAAS,GAAG,OAAO,C;AAC7B,C;;;;;;;;AAEY,uCAAAC,4CAAqB,C;;;;;;;AACrB,uCAAAC,0CAA2B,C;;;;;;;AAC3B,uCAAAC,yCAAoB,C;;;;;;;AAKP,uCAAA,aAAzB,WAAsCC,CAAC,C,CACvC,C;EACC,IAAI,CAAC,KAAAD,yCAAY,EACjB,C;IAEe,qCAAA,UAAU,CAAC,IAAI,CAAC,IAAI,CAAC,C;EACpC,C;oEAEqB,C;EAErB,IAAI,CAAC,KAAAA,yCAAY,EACjB,C;IACqB,4CAAA,qBAAqB,CAAC,KAAAD,0CAAa,EAAE,IAAI,EAAE,KAAA,cAAc,CAAC,C;IAE9E,KAAA,aAAa,CAAC,IAAI,8BAAK,CAAC,cAAc,CAAC,CAAC,C;IACxC,KAAA,aAAa,CAAC,IAAI,8BAAK,CAAC,cAAc,CAAC,CAAC,C;IACxC,KAAAC,yCAAY,GAAG,IAAI,C;EAGpB,C;AACD,C;;;;;;;;AAkBgB,uCAAA,iBAAhB,WAAiCE,CAAC,QAAe,EAAE,KAAW,C,CAC9D,C;EACC,KAAAH,0CAAa,GAAG,QAAQ,C;EACxB,KAAAD,4CAAe,GAAG,KAAK,C;AACxB,C;;;;;;;;;;;;AAUgB,uCAAA,sBAAhB,WAAsCK,CAAC,IAAU,C,CACjD,C;EACqB,4CAAA,sBAAsB,CAAC,IAAI,EAAE,IAAI,CAAC,C;AACvD,C;;;;;;AAYW,uCAAA,WAAiB,C;;;;;;;;;;;qEArCMC,CAAC,C,CACnC,C;EACC,OAAO,KAAAN,4CAAe,CAAA;",
-"sources":["org/apache/royale/html/Group.as"],
-"names":["Group.Group","_mxmlDescriptor","_mxmlDocument","_initialized","Group.addedToParent","Group.setMXMLDescriptor","Group.generateMXMLAttributes","Group.MXMLDescriptor"]
-}

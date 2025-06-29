@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"getTargetWrapper.js",
-"lineCount":26,
-"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Core/src/main/royale",
-"mappings":"A;;;;;;;;;;;;;;;;;;yCAoBI,WAAgCA,CAAC,GAAU,C,CAC3C,C;EACI,IAAI,GAAG,EACZ,C;IACC,IAAI,GAAG,CAAC,cAAc,C;MACrB,OAAO,GAAG,CAAC,cAAc,C;IAC1B,IAAI,GAAG,CAAC,UAAU,IAAI,GAAG,CAAC,UAAU,CAAC,cAAc,C;MAC/C,OAAO,GAAG,CAAC,UAAU,CAAC,cAAc,C;EACzC,C;EACD,OAAO,GAAG,CAAA;",
-"sources":["org/apache/royale/events/getTargetWrapper.as"],
-"names":["getTargetWrapper"]
-}

@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"assertType.js",
-"lineCount":25,
-"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Core/src/main/royale",
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;sCA6BI,WAA0BA,CAAC,GAAU,EAAC,IAAU,EAAC,OAAc,C,CAC/D,C;;EAOQ,IAAG,IAAI,CAAC,KAAK,C;IACT,kCAAM,CAAK,oCAAH,GAAG,EAAI,IAAJ,CAAQ,EAAE,OAAO,CAAC,CAAA;",
-"sources":["org/apache/royale/debugging/assertType.as"],
-"names":["assertType"]
-}

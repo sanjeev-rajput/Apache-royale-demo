@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"HTMLElementWrapper.js",
-"lineCount":56,
-"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Core/src/main/royale",
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAkKgB,oDAAA,MAAiB,C;;;;;;;;;;;yEAMAA,CAAC,C,CAC1B,C;EACI,IAAI,KAAA,MAAM,IAAI,IAAI,C;IACd,KAAA,MAAM,GAAG,iDAAyB,CAAC,iCAAU,EAAE,YAAY,EAAE,IAAI,CAAe,C;EAEpF,OAAO,KAAA,MAAM,C;AACjB,C;;;yEAOyBA,CAAC,KAAY,C,CACtC,C;EACI,IAAI,KAAA,MAAM,IAAI,KAAK,EACnB,C;IACI,KAAA,MAAM,GAAG,KAAmB,C;IAE5B,IAAQ,oCAAL,KAAK,EAAI,4BAAJ,CAAS,EAAC,C;MACd,KAAA,OAAO,CAAC,KAAA,MAAM,CAAC,C;IACnB,C;IACA,uCAAe,CAAC,IAAI,EAAC,cAAc,CAAC,C;EAExC,CAAA;",
-"sources":["org/apache/royale/core/HTMLElementWrapper.as"],
-"names":["HTMLElementWrapper.model"]
-}

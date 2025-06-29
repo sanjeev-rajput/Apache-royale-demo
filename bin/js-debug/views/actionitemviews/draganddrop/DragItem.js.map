@@ -1,8 +1,0 @@
-{
-"version":3,
-"file":"DragItem.js",
-"lineCount":72,
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAS6B,qDAAAA,+CAAjB,WAAqBA,CAAC,C,CAAO,C;AAE7B,C;;;;;;;;;EARM,KAAAA,+CAAI,CAAA;",
-"sources":["../../../../../src/views/actionitemviews/draganddrop/DragItem.mxml"],
-"names":["init"]
-}

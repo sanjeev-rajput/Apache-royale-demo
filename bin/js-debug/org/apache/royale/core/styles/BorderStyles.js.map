@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"BorderStyles.js",
-"lineCount":93,
-"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Core/src/main/royale",
-"mappings":"A;;;;;;;;;;;;;;;;;AAgCqB,0CAAhB,WAA4BA,CAAC,C;;;;;;;;AAId,qDAAAC,iDAAa,C;;;;;;;AAWb,qDAAAC,iD,IAAW,C;;;;;;;AAWX,qDAAAC,iDAAa,C;;;;;;;;;;;0EApBAC,CAAC,C,CAC1B,C;EACI,OAAO,KAAAH,iDAAM,C;AACjB,C;;;0EACyBG,CAAC,KAAY,C,CACtC,C;EACI,KAAAH,iDAAM,GAAG,KAAK,C;AAClB,C;;;;;;;;;;;0EAIyBI,CAAC,C,CAC1B,C;EACI,OAAO,KAAAH,iDAAM,C;AACjB,C;;;0EACyBG,CAAC,KAAU,C,CACpC,C;EACI,KAAAH,iDAAM,GAAG,KAAK,C;AAClB,C;;;;;;;;;;;0EAIyBI,CAAC,C,CAC1B,C;EACI,OAAO,KAAAH,iDAAM,C;AACjB,C;;;0EACyBG,CAAC,KAAY,C,CACtC,C;EACI,KAAAH,iDAAM,GAAG,KAAK,CAAA;",
-"sources":["org/apache/royale/core/styles/BorderStyles.as"],
-"names":["BorderStyles.BorderStyles","_style","_color","_width","BorderStyles.style","BorderStyles.color","BorderStyles.width"]
-}

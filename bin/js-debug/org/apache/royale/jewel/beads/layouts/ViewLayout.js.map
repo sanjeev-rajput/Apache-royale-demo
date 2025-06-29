@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ViewLayout.js",
-"lineCount":39,
-"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Jewel/src/main/royale",
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;AAsCwB,gDAAhB,WAA0BA,CAAC,C,CAC3B,C;4EACW,C;AACX,C;;;;;;;;AAKmB,2DAAA,MAAzB,WAA+BC,CAAC,C,CAChC,C;;EASc,OAAO,IAAI,CAAA;",
-"sources":["org/apache/royale/jewel/beads/layouts/ViewLayout.as"],
-"names":["ViewLayout.ViewLayout","ViewLayout.layout"]
-}

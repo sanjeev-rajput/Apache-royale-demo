@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"IValuesImpl.js",
-"lineCount":156,
-"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Core/src/main/royale",
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;gEAiDmBA,CAAC,UAAiB,EAAE,SAAgB,EAAE,KAAmB,EAAE,KAAmB,C;;;;;;;;;;;;;;;;;;;;;;;mEAkB3EC,CAAC,UAAiB,EAAE,SAAgB,EAAE,KAAmB,EAAE,KAAmB,C;;;;;;;;;;;;;;;;;mEAexEC,CAAC,SAAgB,C;;;;;;;;;;;;;;4DAaxBC,CAAC,SAAgB,C;;;;;;;;;;;;;;;oEAaTC,CAAC,KAAY,C;;;;;;;;;;;;;;mEAYdC,CAAC,KAAY,C;;;;;;;;;;;;;;;+DAajBC,CAAC,QAAe,EAAE,MAAa,C;;;;;;;;;;;;;;;;;mEAgB3BC,CAAC,QAAgB,EAAE,MAAA;",
-"sources":["org/apache/royale/core/IValuesImpl.as"],
-"names":["getValue","newInstance","getInstance","init","convertColor","parseStyles","addRule","applyStyles"]
-}

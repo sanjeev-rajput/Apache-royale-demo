@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"RouteState.js",
-"lineCount":57,
-"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Basic/src/main/royale",
-"mappings":"A;;;;;;;;;;;;;;;;;;AAsBoB,oCAAhB,WAA0BA,CAAC,IAAc,C,CACzC,C;EAD2B,4CAAY,EAAZ,C;EAEzB,IAAI,CAAC,IAAI,GAAG,IAAI,C;EAChB,IAAI,CAAC,UAAU,GAAG,CAAC,CAAC,C;AACtB,C;;;;;;AACW,+CAAA,MAAa,C;;;;;;AACb,+CAAA,UAAiB,C;;;;;;AACjB,+CAAA,IAAW,C;;;;;;AACX,+CAAA,KAAY,C;;;;;;AACP,+CAAA,WAAhB,WAA2BC,CAAC,C,CAC5B,C;EACI,IAAa,sBAAT,SAAa,G,CAAG,KAAA,IAAI,CAAC,WAAW,CAAC,GAAG,C,MAAC,C;EACzC,IAAG,SAAS,IAAI,EAAE,C;IAChB,OAAO,KAAA,IAAI,CAAC,KAAK,CAAC,SAAS,GAAC,CAAC,CAAC,C;EAElC,OAAO,KAAA,IAAI,CAAA;",
-"sources":["org/apache/royale/routing/RouteState.as"],
-"names":["RouteState.RouteState","RouteState.getBaseName"]
-}

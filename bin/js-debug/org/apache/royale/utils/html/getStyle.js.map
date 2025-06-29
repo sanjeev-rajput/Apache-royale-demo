@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"getStyle.js",
-"lineCount":22,
-"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Core/src/main/royale",
-"mappings":"A;;;;;;;;;;;;;;;;;;;;qCAyBE,WAAwBA,CAAC,OAAsB,C,CAC/C,C;EACE,OAAO,OAAO,CAAC,OAAO,CAAC,KAAK,CAAA;",
-"sources":["org/apache/royale/utils/html/getStyle.as"],
-"names":["getStyle"]
-}

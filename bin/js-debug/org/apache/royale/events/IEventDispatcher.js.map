@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"IEventDispatcher.js",
-"lineCount":46,
-"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Core/src/main/royale",
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;+EA2CiCA,CAAC,IAAW,EAAE,OAAgB,EAAE,WAA2B,EAAE,gBAA8B,C;;;;;;;;kFACxFC,CAAC,IAAW,EAAE,OAAgB,EAAE,WAA2B,EAAE,gBAA8B,C;;;;;;+EAC9FC,CAAC,IAAW,C;;;;;;4EACfC,CAAC,KAAA;",
-"sources":["org/apache/royale/events/IEventDispatcher.as"],
-"names":["addEventListener","removeEventListener","hasEventListener","dispatchEvent"]
-}

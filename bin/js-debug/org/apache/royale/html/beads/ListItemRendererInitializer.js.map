@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ListItemRendererInitializer.js",
-"lineCount":58,
-"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Basic/src/main/royale",
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;;;AA+CkB,wDAAhB,WAA2CA,CAAC,C;;;;;;;;;;AAI9B,mEAAA,iBAAwC,C;;;;;;;;AAqB1B,mEAAA,2BAA5B,WAAuDC,CAAC,EAAuB,C,CAC/E,C;EACC,IAAS,sDAAL,KAAqB,GAAG,IAAI,sCAAe,CAAC,CAAC,C;EACjD,KAAK,CAAC,YAAY,GAAG,KAAA,iBAAiB,CAAC,kBAAkB,C;EACxD,EAAY,CAAE,KAAK,GAAG,KAAK,C;EAC3B,EAAY,CAAE,MAAM,GAAG,KAAA,iBAAiB,CAAC,SAAS,C;EAClD,EAAY,CAAE,YAAY,GAAG,GAAG,C;AAClC,C;;;yFAfmCC,CAAC,KAAa,C,CACjD,C;gGACgB,K,EAAK,C;EACpB,KAAA,iBAAiB,GAAI,KAAA,OAAuC,CAAE,iBAA2C,CAAA;",
-"sources":["org/apache/royale/html/beads/ListItemRendererInitializer.as"],
-"names":["ListItemRendererInitializer.ListItemRendererInitializer","ListItemRendererInitializer.setupVisualsForItemRenderer","ListItemRendererInitializer.strand"]
-}

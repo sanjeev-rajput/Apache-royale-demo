@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ContainerView.js",
-"lineCount":87,
-"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Basic/src/main/royale",
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AA2EkB,0CAAhB,WAA6BA,CAAC,C,CAC9B,C;sEACQ,C;AACR,C;;;;;;;;AAhBY,qDAAAC,oDAAmB,C;;;;;;;AA0GZ,qDAAA,WAAnB,WAA8BC,CAAC,C,CAC/B,C;EACC,IAAS,sBAAL,KAAgB,GAAG,KAAA,IAAkB,C;EAIzC,IAAI,KAAK,IAAI,IAAI,IAAI,KAAK,IAAI,KAAAD,oDAAS,CAAC,WAAW,EAAE,C;IACpD,KAAK,CAAC,UAAU,CAAC,KAAAA,oDAAS,CAAC,WAAW,CAAC,C;EACxC,C;AACD,C;;;;;;;;;;6EAxF+BE,CAAC,C,CAChC,C;EACC,OAAO,KAAAF,oDAAS,C;AACjB,C;;;gFAYwCG,CAAC,C,CACzC,C;EACC,IAAI,KAAA,QAAQ,IAAI,IAAI,EAAE,C;IACrB,OAAO,KAAA,QAAQ,CAAC,WAA0B,C;EAC3C,C,CAAE,KAAK,C;IACN,OAAO,KAAA,IAAmB,C;EAC3B,C;AACD,C;;;2EA6BmCC,CAAC,KAAa,C,CACjD,C;EACC,KAAA,OAAO,GAAG,KAAK,C;kFACA,K,EAAK,C;;EAQpB,IAAG,CAAC,KAAAJ,oDAAS,C;IACZ,KAAAA,oDAAS,GAAG,iDAAyB,CAAC,gCAAS,EAAE,WAAW,EAAE,KAAA,OAAO,CAAc,C;EAEpF,IAAI,KAAAA,oDAAS,EACb,C;IACC,kCAAM,CAAsB,oCAArB,KAAAA,oDAAS,CAAC,WAAW,EAAI,kCAAJ,CAAe,EAAC,+CAA+C,CAAC,C;IAC5F,KAAA,WAAW,CAAC,CAAC,C;EACd,C,CACA,KACA,C;IACC,kCAAM,CAAK,oCAAJ,KAAA,IAAI,EAAI,kCAAJ,CAAe,EAAC,2DAA2D,CAAC,C;EACxF,CAAA;",
-"sources":["org/apache/royale/html/beads/ContainerView.as"],
-"names":["ContainerView.ContainerView","_viewport","ContainerView.addViewport","ContainerView.viewport","ContainerView.contentView","ContainerView.strand"]
-}

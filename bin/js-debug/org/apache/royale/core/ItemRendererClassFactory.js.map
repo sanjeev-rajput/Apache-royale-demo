@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ItemRendererClassFactory.js",
-"lineCount":168,
-"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Core/src/main/royale",
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAoDkB,+CAAhB,WAAwCA,CAAC,C,CACzC,C;;iEA2F2C,K;2EA1FnC,C;AACR,C;;;;;;;;AAEoB,0DAAA,OAAe,C;;;;;;AAyDxB,0DAAA,WAAiB,C;;;;;;;;;;;;AAUN,0DAAA,kBAAhB,WAAkCC,CAAC,C,CACnC,C;EACI,OAAO,KAAA,cAAc,CAAC,CAAC,C;AAC3B,C;;;;;;AAiBW,0DAAA,cAA+C,C;;;;;;;;;;;;;;AAWvC,0DAAA,qBAAnB,WAAwCC,CAAC,C,CACzC,C;EACI,OAA2B,4CAAA,iBAAiB,CAAC,KAAAC,wDAAQ,EAAE,IAAI,EAAE,KAAA,cAAc,CAAC,CAAC,CAAC,CAAC,C;AACnF,C;;;;;;AAaW,0DAAA,mBAA4B,C;;;;;;;;;;;;AAUvB,0DAAA,eAAhB,WAA+BC,CAAC,C,CAChC,C;EACI,IAAY,oDAAR,QAAsB,GAAG,KAAA,mBAAmB,CAAC,WAAW,CAAC,CAAC,C;EAC9D,OAAO,QAAQ,C;AACnB,C;;;;;;;AAEY,0DAAAD,wDAAe,C;;;;;;;;;;;;;AAUX,0DAAA,WAAhB,WAA2BE,CAAC,QAAe,EAAE,EAAgB,C,CAC7D,C;EAD6C,sCAAY,IAAZ,C;EAEzC,IAAI,CAACF,wDAAQ,GAAG,QAAQ,C;AAC5B,C;;;;;;;;;;;gFAnI0BG,CAAC,KAAa,C,CACxC,C;EACI,KAAA,OAAO,GAAG,KAAK,C;EAEf,IAAW,oCAAP,KAAA,OAAO,EAAI,4CAAJ,CAAyB,IAAK,KAAA,OAAgC,CAAE,YAAY,EAAE,C;IACxF,KAAA,mBAAmB,GAAI,KAAA,OAAgC,CAAE,YAAY,C;IACrE,KAAA,cAAc,G,yCAAG,K,yCAAe,C;EACjC,C,CACT,KAAK,C;IACJ,IAAqB,sBAAjB,iBAAuB,G,6BAAiB,qCAAA,UAAU,CAAC,QAAQ,CAAC,KAAA,OAAO,EAAE,eAAe,C,CAAU,C;IAClG,IAAI,iBAAiB,EAAE,C;MACtB,KAAA,mBAAmB,GAAG,IAAI,mCAAY,CAAC,iBAAiB,CAAC,C;MACzD,KAAA,cAAc,G,yCAAG,K,yCAAe,C;IACjC,C;IACA,SAAS,CAAC,KAAA,cAAc,C;MACvB,KAAA,cAAc,G,yCAAG,K,yCAAe,C;EAClC,C;AACK,C;;;;;;;;;;;wFAU4BC,CAAC,C,CACnC,C;EACC,OAAO,IAAI,CAAA;",
-"sources":["org/apache/royale/core/ItemRendererClassFactory.as"],
-"names":["ItemRendererClassFactory.ItemRendererClassFactory","ItemRendererClassFactory.createItemRenderer","ItemRendererClassFactory.createFromMXMLContent","document","ItemRendererClassFactory.createFromClass","ItemRendererClassFactory.setDocument","ItemRendererClassFactory.strand","ItemRendererClassFactory.MXMLDescriptor"]
-}

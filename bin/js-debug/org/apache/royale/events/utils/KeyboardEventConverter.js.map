@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"KeyboardEventConverter.js",
-"lineCount":53,
-"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Core/src/main/royale",
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAkFyB,sDAAA,OAAvB,WAA8BA,CAAC,WAAkB,EAAC,YAA0C,C,CAC5F,C;EADkD,oEAAsC,IAAtC,C;EAEjD,IAAQ,sBAAJ,IAAW,G,wCAAG,WAAW,CAAC,MAAM,C,CAAC,C;EACrC,IAAO,sBAAH,GAAU,G,wCAAG,WAAW,CAAC,KAAK,C,CAAC,C;EACnC,IAAI,CAAC,GAAG,C;IACP,GAAG,GAAgB,4CAAA,eAAe,C,CAAC,WAAW,CAAC,UAAU,C,OAAC,CAAC,C;EAE5D,IAAQ,sBAAJ,IAAW,G,wCAAG,WAAW,CAAC,MAAM,C,CAAC,C;EACrC,IAAI,IAAI,IAAI,IAAI,C;IACf,IAAI,GAAgB,4CAAA,cAAc,C,CAAC,WAAW,CAAC,SAAS,C,OAAC,CAAC,C;EAE3D,IAAY,sDAAR,QAAsB,GAAG,IAAI,sCAAa,CAAC,IAAI,EAAE,GAAG,EAAE,IAAI,EAAE,WAAW,CAAC,UAAU,CAAC,CAAC,C;EACxF,IAAG,CAAC,YAAY,EAChB,C;IACC,YAAY,GAAG,IAAI,wBAAwB,CAAC,WAAgC,EAAC,WAAW,CAAC,eAAe,CAAC,CAAC,C;EAC3G,C;EACA,QAAQ,CAAC,SAAS,CAAC,YAAY,CAAC,C;EAChC,OAAO,QAAQ,CAAA;",
-"sources":["org/apache/royale/events/utils/KeyboardEventConverter.as"],
-"names":["KeyboardEventConverter.convert"]
-}
