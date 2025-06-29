@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"TitleBar.js",
+"lineCount":106,
+"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Jewel/src/main/royale",
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAyDkB,gCAAhB,WAAwBA,CAAC,C,CACzB,C;4DACQ,C;EAEP,KAAA,SAAS,GAAG,gBAAgB,C;AAC7B,C;;;;;;;;AAqEyB,2CAAA,aAAzB,WAAsCC,CAAC,C,CACvC,C;wEACsB,C;EACrB,iDAAyB,CAAC,kCAAW,EAAE,aAAa,EAAE,IAAI,CAAC,C;AAC5D,C;;;;;;;;AAMkC,2CAAA,aAA5B,WAAyCC,CAAC,C,CAC1C,C;EACL,OAAO,+CAAmB,CAAC,IAAI,EAAC,KAAK,CAAC,C;AACjC,C;;;;;;;;;;;gEAvEmBC,CAAC,C,CAC1B,C;EACC,OAAsB,KAAA,KAAM,CAAC,KAAK,C;AACnC,C;;;gEAIyBA,CAAC,KAAY,C,CACtC,C;EACgB,KAAA,KAAM,CAAC,KAAK,GAAG,KAAK,C;AACpC,C;;;;;;;;;;;oEAW6BC,CAAC,C,CAC9B,C;EACC,OAAsB,KAAA,KAAM,CAAC,SAAS,C;AACvC,C;;;oEAI6BA,CAAC,KAAY,C,CAC1C,C;EACgB,KAAA,KAAM,CAAC,SAAS,GAAG,KAAK,C;AACxC,C;;;;;;;;;;;0EAYmCC,CAAC,C,CACpC,C;EACC,OAAsB,KAAA,KAAM,CAAC,eAAe,C;AAC7C,C;;;0EAImCA,CAAC,KAAa,C,CACjD,C;EACgB,KAAA,KAAM,CAAC,eAAe,GAAG,KAAK,CAAA;",
+"sources":["org/apache/royale/jewel/TitleBar.as"],
+"names":["TitleBar.TitleBar","TitleBar.addedToParent","TitleBar.createElement","TitleBar.title","TitleBar.htmlTitle","TitleBar.showCloseButton"]
+}

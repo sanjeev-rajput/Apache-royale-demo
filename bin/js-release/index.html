@@ -82,6 +82,14 @@
 	<!--<script disable-devtool-auto src='libs/DevTools.js'></script>-->
   <script type="text/javascript">
  var script = document.createElement("script");
+ script.setAttribute("src", "https://cdnjs.cloudflare.com/ajax/libs/dialog-polyfill/0.4.9/dialog-polyfill.min.js");
+ document.head.appendChild(script)
+  var link = document.createElement("link");
+  link.setAttribute("rel", "stylesheet");
+  link.setAttribute("type", "text/css");
+  link.setAttribute("href", "https://cdnjs.cloudflare.com/ajax/libs/dialog-polyfill/0.4.9/dialog-polyfill.min.css");
+  document.head.appendChild(link);
+ var script = document.createElement("script");
  script.setAttribute("src", "com/extjavascript/dragdrop/dragdrop.js");
  document.head.appendChild(script);
    var link = document.createElement("link");

@@ -8,7 +8,8 @@
  */
 
 goog.provide('views.actionitemviews.websocket.SocketService');
-/* Royale Dependency List: XML,org.apache.royale.utils.Language*/
+/* Royale Dependency List: org.apache.royale.jewel.Alert,org.apache.royale.utils.Language,XML*/
+
 
 
 
@@ -148,6 +149,7 @@ views.actionitemviews.websocket.SocketService.prototype.views_actionitemviews_we
  */
 views.actionitemviews.websocket.SocketService.prototype.views_actionitemviews_websocket_SocketService_connectionErrorEvtHandler = function(e) {
   console.error('WebSocket error:', e);
+  org.apache.royale.jewel.Alert.show("WebSocket error: " + e["message"], "Error");
 };
 
 
