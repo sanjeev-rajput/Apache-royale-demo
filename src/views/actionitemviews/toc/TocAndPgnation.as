@@ -42,13 +42,21 @@ package views.actionitemviews.toc {
         public function loadAndUpdateAccData(obj:Object):void {
             addx = obj.data.addx;
             var sldr:ServiceLoader = new ServiceLoader();
-            sldr.loadJData("config/"+obj.data.url, function loadHandler(e:Object):void {
+            /*sldr.loadJData("config/"+obj.data.url, function loadHandler(e:Object):void {
                 //renderAccUi(DsUtil.csvFileToJsonObj(e));
-                parseDataToPegination(DsUtil.csvFileToJsonObj(e));
-            }, ServiceLoader.DATA_TYPE_TEXT)
+                console.log("toc data loaded");
+                this.parseDataToPegination(DsUtil.csvFileToJsonObj(e));
+            }, ServiceLoader.DATA_TYPE_TEXT)*/
+            sldr.loadJData("config/"+obj.data.url, dataLoadedHandler, ServiceLoader.DATA_TYPE_TEXT);
             }
 
+        private function dataLoadedHandler(e:Object):void {
+            console.log("toc data loaded"); 
+            parseDataToPegination(DsUtil.csvFileToJsonObj(e));
+        }
+        
         private function parseDataToPegination(data:Array):void{
+            console.log("toc data parsed");
             _tocDataSet = data;
             var arrList:ArrayList = new ArrayList();
             var subjName:String = "";

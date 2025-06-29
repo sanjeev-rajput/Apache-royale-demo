@@ -114,13 +114,19 @@ views.actionitemviews.toc.TocAndPgnation.prototype.views_actionitemviews_toc_Toc
  * @param {Object} obj
  */
 views.actionitemviews.toc.TocAndPgnation.prototype.loadAndUpdateAccData = function(obj) {
-  var self = this;
-  function loadHandler(e) {
-    self.views_actionitemviews_toc_TocAndPgnation_parseDataToPegination(com.util.DsUtil.csvFileToJsonObj(e));
-  };
   this.views_actionitemviews_toc_TocAndPgnation_addx = org.apache.royale.utils.Language.string(obj["data"]["addx"]);
   var /** @type {com.model.ServiceLoader} */ sldr = new com.model.ServiceLoader();
-  sldr.loadJData("config/" + obj["data"]["url"], loadHandler, com.model.ServiceLoader.DATA_TYPE_TEXT);
+  sldr.loadJData("config/" + obj["data"]["url"], org.apache.royale.utils.Language.closure(this.views_actionitemviews_toc_TocAndPgnation_dataLoadedHandler, this, 'views_actionitemviews_toc_TocAndPgnation_dataLoadedHandler'), com.model.ServiceLoader.DATA_TYPE_TEXT);
+};
+
+
+/**
+ * @private
+ * @param {Object} e
+ */
+views.actionitemviews.toc.TocAndPgnation.prototype.views_actionitemviews_toc_TocAndPgnation_dataLoadedHandler = function(e) {
+  console.log("toc data loaded");
+  this.views_actionitemviews_toc_TocAndPgnation_parseDataToPegination(com.util.DsUtil.csvFileToJsonObj(e));
 };
 
 
@@ -130,6 +136,7 @@ views.actionitemviews.toc.TocAndPgnation.prototype.loadAndUpdateAccData = functi
  */
 views.actionitemviews.toc.TocAndPgnation.prototype.views_actionitemviews_toc_TocAndPgnation_parseDataToPegination = function(data) {
   var self = this;
+  console.log("toc data parsed");
   this.views_actionitemviews_toc_TocAndPgnation__tocDataSet = data;
   var /** @type {org.apache.royale.collections.ArrayList} */ arrList = new org.apache.royale.collections.ArrayList();
   var /** @type {string} */ subjName = "";

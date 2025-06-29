@@ -43,9 +43,9 @@
       "addx":"NA"
     },
     {
-      "label": "Collaborative Drawing",
-      "type": "extui",
-      "url": "na",
+      "label": "Static interactivity",
+      "type": "disabled",
+      "url": "NA",
       "addx":"NA"
     },
     {
@@ -55,33 +55,33 @@
       "addx":"NA"
     },
     {
-      "label": "",
-      "type": "divider",
-      "url": "NA",
-      "addx":"NA"
-    },
-    {
-      "label": "AI - Chatbots",
-      "type": "extui",
-      "url": "na",
-      "addx":"NA"
-    },
-    {
-      "label": "",
-      "type": "divider",
-      "url": "NA",
-      "addx":"NA"
-    },
-    {
       "label": "Fun n Game",
       "type": "extui",
       "url": "na",
       "addx":"NA"
     },
     {
+      "label": "Shopping Cart",
+      "type": "extui",
+      "url": "na",
+      "addx":"NA"
+    },
+    {
       "label": "",
       "type": "divider",
       "url": "NA",
+      "addx":"NA"
+    },
+    {
+      "label": "Web socket",
+      "type": "disabled",
+      "url": "NA",
+      "addx":"NA"
+    },
+    {
+      "label": "Collaborative Chat",
+      "type": "extui",
+      "url": "na",
       "addx":"NA"
     },
     {
@@ -97,7 +97,13 @@
       "addx":"NA"
     },
     {
-      "label": "Shopping Cart",
+      "label": "",
+      "type": "divider",
+      "url": "NA",
+      "addx":"NA"
+    },
+    {
+      "label": "AI - Chatbots",
       "type": "extui",
       "url": "na",
       "addx":"NA"

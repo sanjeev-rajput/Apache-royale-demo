@@ -166,7 +166,7 @@ views.ProductIndexing.prototype.views_ProductIndexing_addUiComponent = function(
     this.vg.addElement(uiComp);
     return;
   }
-  if (compName == 'Collaborative Drawing') {
+  if (compName == 'Collaborative Chat') {
     uiComp = new views.actionitemviews.collaboration.CollaborationMain();
     this.vg.addElement(uiComp);
     return;
