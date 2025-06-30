@@ -56,7 +56,7 @@ package com.util
         {
             var jsonData:Array = [];
             var headers:Array = [];
-            var rows:Array = rawData.split("\r\n");
+            var rows:Array = rawData.split(/\r?\n/);
             for (var i:int = 0; i < rows.length; i++)
             {
                 var cells:Array = rows[i].split(",");

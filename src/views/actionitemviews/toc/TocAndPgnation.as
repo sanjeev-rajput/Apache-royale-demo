@@ -42,21 +42,17 @@ package views.actionitemviews.toc {
         public function loadAndUpdateAccData(obj:Object):void {
             addx = obj.data.addx;
             var sldr:ServiceLoader = new ServiceLoader();
-            /*sldr.loadJData("config/"+obj.data.url, function loadHandler(e:Object):void {
+            sldr.loadJData("config/"+obj.data.url, function loadHandler(e:Object):void {
                 //renderAccUi(DsUtil.csvFileToJsonObj(e));
                 console.log("toc data loaded");
-                this.parseDataToPegination(DsUtil.csvFileToJsonObj(e));
-            }, ServiceLoader.DATA_TYPE_TEXT)*/
-            sldr.loadJData("config/"+obj.data.url, dataLoadedHandler, ServiceLoader.DATA_TYPE_TEXT);
+                parseDataToPegination(DsUtil.csvFileToJsonObj(e));
+            }, ServiceLoader.DATA_TYPE_TEXT)
             }
 
-        private function dataLoadedHandler(e:Object):void {
-            console.log("toc data loaded"); 
-            parseDataToPegination(DsUtil.csvFileToJsonObj(e));
-        }
         
+
         private function parseDataToPegination(data:Array):void{
-            console.log("toc data parsed");
+            console.log("toc data parsed", data.length, data);
             _tocDataSet = data;
             var arrList:ArrayList = new ArrayList();
             var subjName:String = "";
@@ -88,6 +84,7 @@ package views.actionitemviews.toc {
         }
 
         private function renderAccUi(data:Array):void{
+            console.log("rendering acc ui" , data.length, data);
             if(accUi !=null)vg.removeElement(accUi);
             accUi = new Accordion();
             accUi.percentWidth=100;

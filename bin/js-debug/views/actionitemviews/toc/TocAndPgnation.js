@@ -114,19 +114,14 @@ views.actionitemviews.toc.TocAndPgnation.prototype.views_actionitemviews_toc_Toc
  * @param {Object} obj
  */
 views.actionitemviews.toc.TocAndPgnation.prototype.loadAndUpdateAccData = function(obj) {
+  var self = this;
+  function loadHandler(e) {
+    console.log("toc data loaded");
+    self.views_actionitemviews_toc_TocAndPgnation_parseDataToPegination(com.util.DsUtil.csvFileToJsonObj(e));
+  };
   this.views_actionitemviews_toc_TocAndPgnation_addx = org.apache.royale.utils.Language.string(obj["data"]["addx"]);
   var /** @type {com.model.ServiceLoader} */ sldr = new com.model.ServiceLoader();
-  sldr.loadJData("config/" + obj["data"]["url"], org.apache.royale.utils.Language.closure(this.views_actionitemviews_toc_TocAndPgnation_dataLoadedHandler, this, 'views_actionitemviews_toc_TocAndPgnation_dataLoadedHandler'), com.model.ServiceLoader.DATA_TYPE_TEXT);
-};
-
-
-/**
- * @private
- * @param {Object} e
- */
-views.actionitemviews.toc.TocAndPgnation.prototype.views_actionitemviews_toc_TocAndPgnation_dataLoadedHandler = function(e) {
-  console.log("toc data loaded");
-  this.views_actionitemviews_toc_TocAndPgnation_parseDataToPegination(com.util.DsUtil.csvFileToJsonObj(e));
+  sldr.loadJData("config/" + obj["data"]["url"], loadHandler, com.model.ServiceLoader.DATA_TYPE_TEXT);
 };
 
 
@@ -136,7 +131,7 @@ views.actionitemviews.toc.TocAndPgnation.prototype.views_actionitemviews_toc_Toc
  */
 views.actionitemviews.toc.TocAndPgnation.prototype.views_actionitemviews_toc_TocAndPgnation_parseDataToPegination = function(data) {
   var self = this;
-  console.log("toc data parsed");
+  console.log("toc data parsed", data.length, data);
   this.views_actionitemviews_toc_TocAndPgnation__tocDataSet = data;
   var /** @type {org.apache.royale.collections.ArrayList} */ arrList = new org.apache.royale.collections.ArrayList();
   var /** @type {string} */ subjName = "";
@@ -176,6 +171,7 @@ views.actionitemviews.toc.TocAndPgnation.prototype.views_actionitemviews_toc_Toc
  * @param {Array} data
  */
 views.actionitemviews.toc.TocAndPgnation.prototype.views_actionitemviews_toc_TocAndPgnation_renderAccUi = function(data) {
+  console.log("rendering acc ui", data.length, data);
   if (this.views_actionitemviews_toc_TocAndPgnation_accUi != null)
     this.views_actionitemviews_toc_TocAndPgnation_vg.removeElement(this.views_actionitemviews_toc_TocAndPgnation_accUi);
   this.views_actionitemviews_toc_TocAndPgnation_accUi = new com.unhurdle.spectrum.Accordion();
