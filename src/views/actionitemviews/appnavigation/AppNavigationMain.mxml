@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<j:View xmlns:fx="http://ns.adobe.com/mxml/2009"
+    xmlns:j="library://ns.apache.org/royale/jewel"
+    xmlns:sp="library://ns.unhurdle.com/spectrum"
+    initComplete="init()" percentWidth="100" percentHeight="100">    
+    
+    <fx:Script>
+        <![CDATA[
+            import com.model.Config;
+            import org.apache.royale.jewel.Button;
+            import org.apache.royale.core.StyledUIBase;
+            import org.apache.royale.jewel.Label;
+            
+
+
+            
+            private var CbData:Object;
+            private function init():void {
+                CbData = Config.productJson;
+                for each(var i:Object in CbData){
+                    if(i.type == "disabled") {
+                        addSection(i.label)
+                    }
+                    if(i.type != "divider" && i.type != "disabled") {
+                        addButton(i.label);
+                    }
+                }
+                
+            }
+
+            private function addButton(title:String):void {
+                var item:Button = new Button();
+                item.text = title;
+                item.emphasis = StyledUIBase.PRIMARY;
+                navList.addElement(item);
+            }
+
+            private function addSection(title:String):void {
+                var item:Label = new Label();
+                item.text = title;
+                item.className = "appNavLabel";
+                item.percentWidth = 100;
+                item.emphasis = StyledUIBase.SECONDARY;
+                navList.addElement(item);
+            }
+
+
+
+        ]]>
+    </fx:Script>
+    <j:Group id="navList" height="100%" width="100%" style="padding:10px">
+        <j:beads>
+            <j:TileHorizontalLayout verticalGap="10" localId="nlist" waitForSize="true" itemsHorizontalAlign="itemsSpaceAround"/>
+            <j:ScrollingViewport/>
+        </j:beads>
+    </j:Group>
+    
+</j:View>

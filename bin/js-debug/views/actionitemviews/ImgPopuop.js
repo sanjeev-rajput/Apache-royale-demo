@@ -133,7 +133,17 @@ views.actionitemviews.ImgPopuop.prototype.views_actionitemviews_ImgPopuop__isIni
 views.actionitemviews.ImgPopuop.prototype.views_actionitemviews_ImgPopuop__imgUrl = null;
 
 
-;
+/**
+ * @private
+ * @param {string} url
+ */
+views.actionitemviews.ImgPopuop.prototype.views_actionitemviews_ImgPopuop_setImgUrl = function(url) {
+  this.views_actionitemviews_ImgPopuop__imgUrl = url;
+  if (this.views_actionitemviews_ImgPopuop__isIninted) {
+    this.img.src = this.views_actionitemviews_ImgPopuop__imgUrl;
+  }
+  console.log("imgUrl", this.views_actionitemviews_ImgPopuop__isIninted, this.views_actionitemviews_ImgPopuop__imgUrl);
+};
 
 
 /**
@@ -173,7 +183,7 @@ views.actionitemviews.ImgPopuop.prototype.views_actionitemviews_ImgPopuop_loadRa
   this.img.visible = false;
   this.lImg.visible = true;
   this.popuoTitle.text = "Loading... ";
-  this.views_actionitemviews_ImgPopuop_imgUrl = "https://picsum.photos/" + this.views_actionitemviews_ImgPopuop_getRndNum(300, 500) + "/" + this.views_actionitemviews_ImgPopuop_getRndNum(500, 800);
+  this.views_actionitemviews_ImgPopuop_setImgUrl("https://picsum.photos/" + this.views_actionitemviews_ImgPopuop_getRndNum(300, 500) + "/" + this.views_actionitemviews_ImgPopuop_getRndNum(500, 800));
 };
 
 
@@ -188,31 +198,7 @@ views.actionitemviews.ImgPopuop.prototype.views_actionitemviews_ImgPopuop_getRnd
 };
 
 
-
-
-
 /**
- * @type {string}
- */
-views.actionitemviews.ImgPopuop.prototype.views_actionitemviews_ImgPopuop_imgUrl;
-
-
-views.actionitemviews.ImgPopuop.prototype.set__views_actionitemviews_ImgPopuop_imgUrl = function(url) {
-  this.views_actionitemviews_ImgPopuop__imgUrl = url;
-  if (this.views_actionitemviews_ImgPopuop__isIninted) {
-    this.img.src = this.views_actionitemviews_ImgPopuop__imgUrl;
-  }
-  console.log("imgUrl", this.views_actionitemviews_ImgPopuop__isIninted, this.views_actionitemviews_ImgPopuop__imgUrl);
-};
-
-
-Object.defineProperties(views.actionitemviews.ImgPopuop.prototype, /** @lends {views.actionitemviews.ImgPopuop.prototype} */ {
-/**
- * @type {string}
- */
-views_actionitemviews_ImgPopuop_imgUrl: {
-set: views.actionitemviews.ImgPopuop.prototype.set__views_actionitemviews_ImgPopuop_imgUrl}}
-);/**
  * @export
  * @param {org.apache.royale.events.Event} event
  */

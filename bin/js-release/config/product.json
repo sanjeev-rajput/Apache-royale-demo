@@ -120,5 +120,11 @@
       "url": "NA",
       "addx":"NA"
     }
-  ]   
+  ],
+  "config":[
+    {
+      "env": "LIVE",
+      "appVersion": "1.0.0"
+    }
+  ]
 }

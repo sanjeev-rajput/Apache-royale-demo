@@ -1,6 +1,7 @@
 <j:Drawer xmlns:fx="http://ns.adobe.com/mxml/2009"
     xmlns:j="library://ns.apache.org/royale/jewel"
-    xmlns:sp="library://ns.unhurdle.com/spectrum" x="0" y="0">
+    xmlns:sp="library://ns.unhurdle.com/spectrum" x="0" y="0"
+    initComplete="init()">
 
 
     <j:beads>
@@ -8,7 +9,7 @@
 	</j:beads>
     
 	<j:DrawerContent>
-        <sp:ActionMenu text="L" localId="menuL" quiet="true" dataProvider="[Image Gallary,Drag and Drop,List and Search,Action 4]" change="handleSelection()"/>
+        <sp:ActionMenu text="L" localId="menuL" quiet="true" dataProvider="[Popup Examples, Image Gallery,Drag and Drop,List and Search, App Navigation]" change="handleSelection()"/>
 	</j:DrawerContent>
 
 
@@ -21,11 +22,19 @@
             import org.apache.royale.jewel.View;
             import views.actionitemviews.draganddrop.DragAndDropMain;
             import views.actionitemviews.searchlist.SearchListMain;
+            import com.unhurdle.spectrum.data.MenuItem;
+            import views.actionitemviews.appnavigation.AppNavigationMain;
+
+            private function init():void {
+                menuL.selectedIndex = 0;
+                MenuItem(menuL.selectedItem).disabled = true; // Disable the first item
+                menuL.selectedIndex = -1;
+            }
             
             private function handleSelection():void {
                 var selectedAction:String = menuL.selectedItem.label as String;
                 switch (selectedAction) {
-                    case "Image Gallary":
+                    case "Image Gallery":
                         createprogrammaticPopup(new ImgPopuop(), 490, 392);
                         break;
                     case "Drag and Drop":
@@ -34,8 +43,8 @@
                     case "List and Search":
                         createprogrammaticPopup(new SearchListMain(), 490, 392);
                         break;
-                    case "Action 4":
-                        // Handle Action 4
+                    case "App Navigation":
+                        createprogrammaticPopup(new AppNavigationMain(), 640, 480);
                         break;
                 }
                 

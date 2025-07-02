@@ -8,7 +8,7 @@
  */
 
 goog.provide('views.TopMenuL');
-/* Royale Dependency List: org.apache.royale.jewel.beads.controls.drawer.ResponsiveDrawer,org.apache.royale.jewel.supportClasses.drawer.DrawerContent,com.unhurdle.spectrum.ActionMenu,com.controller.PopupManager,org.apache.royale.events.CloseEvent,org.apache.royale.events.Event,views.actionitemviews.ImgPopuop,views.actionitemviews.draganddrop.DragAndDropMain,views.actionitemviews.searchlist.SearchListMain,XML*/
+/* Royale Dependency List: org.apache.royale.jewel.beads.controls.drawer.ResponsiveDrawer,org.apache.royale.jewel.supportClasses.drawer.DrawerContent,com.unhurdle.spectrum.ActionMenu,com.controller.PopupManager,com.unhurdle.spectrum.data.MenuItem,org.apache.royale.events.CloseEvent,org.apache.royale.events.Event,views.actionitemviews.ImgPopuop,views.actionitemviews.appnavigation.AppNavigationMain,views.actionitemviews.draganddrop.DragAndDropMain,views.actionitemviews.searchlist.SearchListMain,XML*/
 
 goog.require('org.apache.royale.jewel.Drawer');
 
@@ -75,7 +75,9 @@ views.TopMenuL = function() {
       null
     ],
     0,
-    0
+    1,
+    'initComplete',
+    this.$EH_12_0
   ]);
   
 };
@@ -87,10 +89,20 @@ goog.inherits(views.TopMenuL, org.apache.royale.jewel.Drawer);
 /**
  * @private
  */
+views.TopMenuL.prototype.views_TopMenuL_init = function() {
+  this.menuL.selectedIndex = 0;
+  org.apache.royale.utils.Language.as(this.menuL.selectedItem, com.unhurdle.spectrum.data.MenuItem, true).disabled = true;
+  this.menuL.selectedIndex = -1;
+};
+
+
+/**
+ * @private
+ */
 views.TopMenuL.prototype.views_TopMenuL_handleSelection = function() {
   var /** @type {string} */ selectedAction = this.menuL.selectedItem["label"];
   switch (selectedAction) {
-    case "Image Gallary":
+    case "Image Gallery":
       this.views_TopMenuL_createprogrammaticPopup(new views.actionitemviews.ImgPopuop(), 490, 392);
       break;
     case "Drag and Drop":
@@ -99,7 +111,8 @@ views.TopMenuL.prototype.views_TopMenuL_handleSelection = function() {
     case "List and Search":
       this.views_TopMenuL_createprogrammaticPopup(new views.actionitemviews.searchlist.SearchListMain(), 490, 392);
       break;
-    case "Action 4":
+    case "App Navigation":
+      this.views_TopMenuL_createprogrammaticPopup(new views.actionitemviews.appnavigation.AppNavigationMain(), 640, 480);
       break;
   }
 };
@@ -132,6 +145,16 @@ views.TopMenuL.prototype.views_TopMenuL_closeHandler = function(event) {
  * @param {org.apache.royale.events.Event} event
  */
 views.TopMenuL.prototype.$EH_12_0 = function(event)
+{
+  this.views_TopMenuL_init();
+};
+
+
+/**
+ * @export
+ * @param {org.apache.royale.events.Event} event
+ */
+views.TopMenuL.prototype.$EH_12_1 = function(event)
 {
   this.views_TopMenuL_handleSelection();
 };
@@ -181,11 +204,11 @@ Object.defineProperties(views.TopMenuL.prototype, /** @lends {views.TopMenuL.pro
             true,
             'dataProvider',
             true,
-            ['Image Gallary','Drag and Drop','List and Search','Action 4'],
+            ['Popup Examples','Image Gallery','Drag and Drop','List and Search','App Navigation'],
             0,
             1,
             'change',
-            this.$EH_12_0,
+            this.$EH_12_1,
             null
           ]
         ];

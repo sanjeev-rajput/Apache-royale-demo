@@ -8,7 +8,7 @@
  */
 
 goog.provide('views.TopMenuR');
-/* Royale Dependency List: org.apache.royale.jewel.beads.controls.drawer.ResponsiveDrawer,org.apache.royale.jewel.supportClasses.drawer.DrawerContent,com.unhurdle.spectrum.ActionMenu,com.event.DsEvent,com.model.ServiceLoader,com.unhurdle.spectrum.data.MenuItem,org.apache.royale.events.Event,XML*/
+/* Royale Dependency List: org.apache.royale.jewel.beads.controls.drawer.ResponsiveDrawer,org.apache.royale.jewel.supportClasses.drawer.DrawerContent,com.unhurdle.spectrum.ActionMenu,com.event.DsEvent,com.model.Config,com.model.ServiceLoader,com.unhurdle.spectrum.data.MenuItem,org.apache.royale.events.Event,XML*/
 
 goog.require('org.apache.royale.jewel.Drawer');
 
@@ -114,7 +114,8 @@ views.TopMenuR.prototype.views_TopMenuR_init = function() {
  * @param {JSON} e
  */
 views.TopMenuR.prototype.views_TopMenuR_loadHandler = function(e) {
-  this.views_TopMenuR_CbData = e['Product'];
+  this.views_TopMenuR_CbData = com.model.Config.productJson = e['Product'];
+  com.model.Config.serverEnvironment = org.apache.royale.utils.Language.string(e['config'][0]['env']);
   var /** @type {Array} */ menuArr = new Array();
   var foreachiter0_target = this.views_TopMenuR_CbData;
   for (var foreachiter0 in foreachiter0_target) 

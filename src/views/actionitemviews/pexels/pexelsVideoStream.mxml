@@ -18,6 +18,8 @@
             private var videoUrls:Array = [];
             private var currentIndex:int = 0;
             private var videoElement:HTMLVideoElement;
+            //private var sUrl:String = "http://localhost:3000/api/";
+            private var sUrl:String = "https://apache-roayle-demo-app.onrender.com/api/"
 
             private function onUp():void {
                 if (currentIndex > 0) {
@@ -40,7 +42,7 @@
 
             private function fetchVideos():void {
                 //if (httpService) httpService = null;
-                var url:String = "http://localhost:3000/api/pexels/videoStream?q=" + encodeURIComponent(query) + "&per_page=" + perPage;
+                var url:String = sUrl+"pexels/videoStream?q=" + encodeURIComponent(query) + "&per_page=" + perPage;
 
                 var httpService:ServiceLoader = new ServiceLoader();
                 httpService.reqMethod = "GET";

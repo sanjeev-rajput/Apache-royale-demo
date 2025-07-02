@@ -19,6 +19,7 @@
             import com.event.DsEvent;
             import com.model.ServiceLoader;
             import com.unhurdle.spectrum.data.MenuItem;
+            import com.model.Config;
             
             
             private var CbData:Object;
@@ -29,7 +30,8 @@
             }
 
             private function loadHandler(e:JSON):void{
-                CbData = e['Product'];
+                CbData = Config.productJson =  e['Product'];
+                Config.serverEnvironment = e['config'][0]['env'];
                 var menuArr:Array = new Array();
                 for each(var i:Object in CbData){
                     var item:MenuItem = new MenuItem();

@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"VRule.js",
+"lineCount":45,
+"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Basic/src/main/royale",
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;AA8CkB,4BAAhB,WAAqBA,CAAC,C,CACtB,C;wDACQ,C;AACF,C;;;;;;;;;AAM4B,uCAAA,aAA5B,WAAyCC,CAAC,C,CAC1C,C;EACL,IAAQ,sBAAJ,IAAuB,GAAG,+CAAmB,CAAC,IAAI,EAAC,KAAK,CAAC,C;EACpD,IAAI,CAAC,KAAK,CAAC,eAAe,GAAG,OAAO,C;EACpC,IAAI,CAAC,KAAK,CAAC,eAAe,GAAG,KAAK,C;EAClC,IAAI,CAAC,KAAK,CAAC,SAAS,GAAG,MAAM,C;EAC7B,IAAI,CAAC,KAAK,CAAC,YAAY,GAAG,MAAM,C;EAChC,IAAI,CAAC,KAAK,CAAC,WAAW,GAAG,MAAM,C;EAC/B,OAAO,IAAI,CAAA;",
+"sources":["org/apache/royale/html/VRule.as"],
+"names":["VRule.VRule","VRule.createElement"]
+}

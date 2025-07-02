@@ -8,7 +8,8 @@
  */
 
 goog.provide('views.actionitemviews.websocket.SocketService');
-/* Royale Dependency List: XML,org.apache.royale.utils.Language*/
+/* Royale Dependency List: com.model.Config,org.apache.royale.utils.Language,XML*/
+
 
 
 
@@ -16,6 +17,8 @@ goog.provide('views.actionitemviews.websocket.SocketService');
  * @constructor
  */
 views.actionitemviews.websocket.SocketService = function() {
+
+this.views_actionitemviews_websocket_SocketService__url = com.model.Config.wsUrl;
 };
 
 
@@ -30,7 +33,7 @@ views.actionitemviews.websocket.SocketService.prototype.views_actionitemviews_we
  * @private
  * @type {string}
  */
-views.actionitemviews.websocket.SocketService.prototype.views_actionitemviews_websocket_SocketService__url = "http://localhost:3000";
+views.actionitemviews.websocket.SocketService.prototype.views_actionitemviews_websocket_SocketService__url = null;
 
 
 /**

@@ -2,10 +2,14 @@ package views.actionitemviews.websocket
 {
 
 
+    import com.model.Config;
+
     public class SocketService{
 
         private var ws:WebSocket;
-        private var _url:String = "http://localhost:3000";
+        //private var _url:String = "http://localhost:3000";
+        //private var _url:String = "wss://apache-roayle-demo-app.onrender.com";
+        private var _url:String = Config.wsUrl;
         private var _isConnected:Boolean = false;
         private var _callBackFunction:Function=null;
 

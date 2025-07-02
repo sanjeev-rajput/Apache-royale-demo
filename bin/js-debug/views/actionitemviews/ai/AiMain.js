@@ -8,7 +8,7 @@
  */
 
 goog.provide('views.actionitemviews.ai.AiMain');
-/* Royale Dependency List: com.unhurdle.spectrum.ActionGroup,com.unhurdle.spectrum.ActionButton,org.apache.royale.jewel.supportClasses.scrollbar.ScrollingViewport,org.apache.royale.jewel.HGroup,com.unhurdle.spectrum.TextField,org.apache.royale.jewel.ImageIcon,com.model.ServiceLoader,com.util.AsJsUtil,org.apache.royale.events.Event,org.apache.royale.events.KeyboardEvent,org.apache.royale.events.MouseEvent,org.apache.royale.html.elements.Span,views.actionitemviews.ai.ChatBot,XML*/
+/* Royale Dependency List: com.unhurdle.spectrum.ActionGroup,com.unhurdle.spectrum.ActionButton,org.apache.royale.jewel.supportClasses.scrollbar.ScrollingViewport,org.apache.royale.jewel.HGroup,com.unhurdle.spectrum.TextField,org.apache.royale.jewel.ImageIcon,com.model.Config,com.model.ServiceLoader,org.apache.royale.events.Event,org.apache.royale.events.KeyboardEvent,org.apache.royale.events.MouseEvent,org.apache.royale.html.elements.Span,views.actionitemviews.ai.ChatBot,XML*/
 
 goog.require('org.apache.royale.jewel.VGroup');
 
@@ -21,6 +21,7 @@ goog.require('org.apache.royale.jewel.VGroup');
 views.actionitemviews.ai.AiMain = function() {
   views.actionitemviews.ai.AiMain.base(this, 'constructor');
   
+  this.views_actionitemviews_ai_AiMain_sUrl = com.model.Config.apiBaseUrl;
   /**
    * @private
    * @type {com.unhurdle.spectrum.ActionGroup}
@@ -159,6 +160,13 @@ views.actionitemviews.ai.AiMain.prototype.views_actionitemviews_ai_AiMain_action
 
 /**
  * @private
+ * @type {string}
+ */
+views.actionitemviews.ai.AiMain.prototype.views_actionitemviews_ai_AiMain_sUrl = null;
+
+
+/**
+ * @private
  */
 views.actionitemviews.ai.AiMain.prototype.views_actionitemviews_ai_AiMain_init = function() {
   this.addEventListener(org.apache.royale.events.KeyboardEvent.KEY_DOWN, org.apache.royale.utils.Language.closure(this.views_actionitemviews_ai_AiMain_onKeyDown, this, 'views_actionitemviews_ai_AiMain_onKeyDown'));
@@ -172,7 +180,7 @@ views.actionitemviews.ai.AiMain.prototype.views_actionitemviews_ai_AiMain_init =
  */
 views.actionitemviews.ai.AiMain.prototype.views_actionitemviews_ai_AiMain_onKeyDown = function(e) {
   if (e.key == 'Enter')
-    this.getAIResponse();
+    this.views_actionitemviews_ai_AiMain_getAIResponse();
 };
 
 
@@ -199,7 +207,7 @@ views.actionitemviews.ai.AiMain.prototype.views_actionitemviews_ai_AiMain_initMd
   this.views_actionitemviews_ai_AiMain_httpService.reqMethod = "POST";
   this.views_actionitemviews_ai_AiMain_httpService.contentType = "application/json";
   this.views_actionitemviews_ai_AiMain_httpService.reqData = JSON.stringify({"prompt":"Please introduce yourself"});
-  this.views_actionitemviews_ai_AiMain_httpService.loadJData('http://localhost:3000/api/chat', org.apache.royale.utils.Language.closure(this.views_actionitemviews_ai_AiMain_dataLoadEventHandler, this, 'views_actionitemviews_ai_AiMain_dataLoadEventHandler'), com.model.ServiceLoader.DATA_TYPE_JSON, org.apache.royale.utils.Language.closure(this.views_actionitemviews_ai_AiMain_errorEventHander, this, 'views_actionitemviews_ai_AiMain_errorEventHander'), false);
+  this.views_actionitemviews_ai_AiMain_httpService.loadJData(this.views_actionitemviews_ai_AiMain_sUrl + 'chat', org.apache.royale.utils.Language.closure(this.views_actionitemviews_ai_AiMain_dataLoadEventHandler, this, 'views_actionitemviews_ai_AiMain_dataLoadEventHandler'), com.model.ServiceLoader.DATA_TYPE_JSON, org.apache.royale.utils.Language.closure(this.views_actionitemviews_ai_AiMain_errorEventHander, this, 'views_actionitemviews_ai_AiMain_errorEventHander'), false);
 };
 
 
@@ -212,7 +220,7 @@ views.actionitemviews.ai.AiMain.prototype.views_actionitemviews_ai_AiMain_initMd
   this.views_actionitemviews_ai_AiMain_httpService.reqMethod = "POST";
   this.views_actionitemviews_ai_AiMain_httpService.contentType = "application/json";
   this.views_actionitemviews_ai_AiMain_httpService.reqData = JSON.stringify({"prompt":"Describe the scene in this image.", "imageUrl":"https://www.amitshah.co.in/storage/uploads/1/1679578399-641c551f657b4.png"});
-  this.views_actionitemviews_ai_AiMain_httpService.loadJData('http://localhost:3000/api/vision', org.apache.royale.utils.Language.closure(this.views_actionitemviews_ai_AiMain_dataLoadEventHandler, this, 'views_actionitemviews_ai_AiMain_dataLoadEventHandler'), com.model.ServiceLoader.DATA_TYPE_JSON, org.apache.royale.utils.Language.closure(this.views_actionitemviews_ai_AiMain_errorEventHander, this, 'views_actionitemviews_ai_AiMain_errorEventHander'), false);
+  this.views_actionitemviews_ai_AiMain_httpService.loadJData(this.views_actionitemviews_ai_AiMain_sUrl + 'vision', org.apache.royale.utils.Language.closure(this.views_actionitemviews_ai_AiMain_dataLoadEventHandler, this, 'views_actionitemviews_ai_AiMain_dataLoadEventHandler'), com.model.ServiceLoader.DATA_TYPE_JSON, org.apache.royale.utils.Language.closure(this.views_actionitemviews_ai_AiMain_errorEventHander, this, 'views_actionitemviews_ai_AiMain_errorEventHander'), false);
 };
 
 
@@ -225,7 +233,7 @@ views.actionitemviews.ai.AiMain.prototype.views_actionitemviews_ai_AiMain_initMd
   this.views_actionitemviews_ai_AiMain_httpService.reqMethod = "POST";
   this.views_actionitemviews_ai_AiMain_httpService.contentType = "application/json";
   this.views_actionitemviews_ai_AiMain_httpService.reqData = JSON.stringify({"prompt":"Tell me a fun fact about space."});
-  this.views_actionitemviews_ai_AiMain_httpService.loadJData('http://localhost:3000/api/Llama', org.apache.royale.utils.Language.closure(this.views_actionitemviews_ai_AiMain_dataLoadEventHandler, this, 'views_actionitemviews_ai_AiMain_dataLoadEventHandler'), com.model.ServiceLoader.DATA_TYPE_JSON, org.apache.royale.utils.Language.closure(this.views_actionitemviews_ai_AiMain_errorEventHander, this, 'views_actionitemviews_ai_AiMain_errorEventHander'), false);
+  this.views_actionitemviews_ai_AiMain_httpService.loadJData(this.views_actionitemviews_ai_AiMain_sUrl + 'Llama', org.apache.royale.utils.Language.closure(this.views_actionitemviews_ai_AiMain_dataLoadEventHandler, this, 'views_actionitemviews_ai_AiMain_dataLoadEventHandler'), com.model.ServiceLoader.DATA_TYPE_JSON, org.apache.royale.utils.Language.closure(this.views_actionitemviews_ai_AiMain_errorEventHander, this, 'views_actionitemviews_ai_AiMain_errorEventHander'), false);
 };
 
 
@@ -245,7 +253,7 @@ views.actionitemviews.ai.AiMain.prototype.views_actionitemviews_ai_AiMain_dataLo
   this.txtPrompt.text = '';
   this.txtPrompt.disabled = false;
   this.btnQry.visible = true;
-  com.util.AsJsUtil.scrollIntoView(this.views_actionitemviews_ai_AiMain_chatBotUi.id);
+  this.chatCtr.element.scrollTop = this.chatCtr.element.scrollHeight;
   this.txtPrompt.focus();
 };
 
@@ -260,13 +268,15 @@ views.actionitemviews.ai.AiMain.prototype.views_actionitemviews_ai_AiMain_errorE
 
 
 /**
+ * @private
  */
-views.actionitemviews.ai.AiMain.prototype.getAIResponse = function() {
+views.actionitemviews.ai.AiMain.prototype.views_actionitemviews_ai_AiMain_getAIResponse = function() {
   this.txtPrompt.disabled = true;
   this.btnQry.visible = false;
   this.views_actionitemviews_ai_AiMain_chatBotUi = new views.actionitemviews.ai.ChatBot();
   this.views_actionitemviews_ai_AiMain_chatBotUi.id = "chatBotUi_" + this.views_actionitemviews_ai_AiMain_qryCounter;
   this.views_actionitemviews_ai_AiMain_requestData = this.txtPrompt.text;
+  this.views_actionitemviews_ai_AiMain_httpService.reqMethod = "POST";
   if (this.views_actionitemviews_ai_AiMain_actionBtn == this.mdl1) {
     this.views_actionitemviews_ai_AiMain_chatBotUi.aiQuery = this.views_actionitemviews_ai_AiMain_requestData;
     this.views_actionitemviews_ai_AiMain_httpService.reqData = JSON.stringify({"prompt":this.views_actionitemviews_ai_AiMain_requestData});
@@ -282,7 +292,7 @@ views.actionitemviews.ai.AiMain.prototype.getAIResponse = function() {
   this.views_actionitemviews_ai_AiMain_httpService.sendReqData();
   this.chatCtr.addElement(this.views_actionitemviews_ai_AiMain_chatBotUi);
   this.views_actionitemviews_ai_AiMain_qryCounter++;
-  com.util.AsJsUtil.scrollIntoView(this.views_actionitemviews_ai_AiMain_chatBotUi.id);
+  this.chatCtr.element.scrollTop = this.chatCtr.element.scrollHeight;
 };
 
 
@@ -363,7 +373,7 @@ views.actionitemviews.ai.AiMain.prototype.$EH_13_3 = function(event)
  */
 views.actionitemviews.ai.AiMain.prototype.$EH_13_4 = function(event)
 {
-  this.getAIResponse();
+  this.views_actionitemviews_ai_AiMain_getAIResponse();
 };
 
 
@@ -512,7 +522,7 @@ Object.defineProperties(views.actionitemviews.ai.AiMain.prototype, /** @lends {v
             'mdl1',
             'text',
             true,
-            'deephermes-3',
+            'Model-1',
             0,
             1,
             'click',
@@ -525,7 +535,7 @@ Object.defineProperties(views.actionitemviews.ai.AiMain.prototype, /** @lends {v
             'mdl2',
             'text',
             true,
-            'Vision AI',
+            'Model-2',
             0,
             1,
             'click',
@@ -538,7 +548,7 @@ Object.defineProperties(views.actionitemviews.ai.AiMain.prototype, /** @lends {v
             'mdl3',
             'text',
             true,
-            'LLAMA 3.2',
+            'Model-3',
             0,
             1,
             'click',
@@ -680,7 +690,6 @@ views.actionitemviews.ai.AiMain.prototype.ROYALE_REFLECTION_INFO = function () {
     },
     methods: function () {
       return {
-        'getAIResponse': { type: 'void', declaredBy: 'views.actionitemviews.ai.AiMain'},
         'AiMain': { type: '', declaredBy: 'views.actionitemviews.ai.AiMain'}
       };
     }

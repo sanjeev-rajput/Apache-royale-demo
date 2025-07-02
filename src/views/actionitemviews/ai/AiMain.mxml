@@ -16,6 +16,8 @@
             import org.apache.royale.events.MouseEvent;
             import com.unhurdle.spectrum.ActionButton;
             import org.apache.royale.events.KeyboardEvent;
+            import com.model.Config;
+            import com.model.Config;
             
             
             private var requestData:String;
@@ -23,6 +25,9 @@
             private var httpService:ServiceLoader;
             private var qryCounter:int=0;
             private var actionBtn:ActionButton;
+            //private var sUrl:String ="http://localhost:3000/api/"
+            //private var sUrl:String = "https://apache-roayle-demo-app.onrender.com/api/"
+            private var sUrl:String = Config.apiBaseUrl;
 
             private function init():void {
                 this.addEventListener(KeyboardEvent.KEY_DOWN, onKeyDown);
@@ -33,6 +38,7 @@
             private function onKeyDown(e:KeyboardEvent):void {
                 if(e.key == 'Enter')getAIResponse();
             }
+
             private function initMdlType():void{
                 if(actionBtn == mdl2){
                     imgUrl.visible=true;
@@ -49,7 +55,7 @@
                 httpService.reqMethod = "POST";
                 httpService.contentType = "application/json"; 
                 httpService.reqData = JSON.stringify({prompt: "Please introduce yourself"});
-                httpService.loadJData('http://localhost:3000/api/chat', dataLoadEventHandler, ServiceLoader.DATA_TYPE_JSON, errorEventHander, false)
+                httpService.loadJData(sUrl+'chat', dataLoadEventHandler, ServiceLoader.DATA_TYPE_JSON, errorEventHander, false)
             }
 
             private function initMdl2():void {
@@ -58,7 +64,7 @@
                 httpService.reqMethod = "POST";
                 httpService.contentType = "application/json"; 
                 httpService.reqData = JSON.stringify({prompt: "Describe the scene in this image.", "imageUrl":"https://www.amitshah.co.in/storage/uploads/1/1679578399-641c551f657b4.png"});
-                httpService.loadJData('http://localhost:3000/api/vision', dataLoadEventHandler, ServiceLoader.DATA_TYPE_JSON, errorEventHander, false)
+                httpService.loadJData(sUrl+'vision', dataLoadEventHandler, ServiceLoader.DATA_TYPE_JSON, errorEventHander, false)
             }
 
             private function initMdl3():void {
@@ -67,7 +73,7 @@
                 httpService.reqMethod = "POST";
                 httpService.contentType = "application/json"; 
                 httpService.reqData = JSON.stringify({ prompt: "Tell me a fun fact about space." });
-                httpService.loadJData('http://localhost:3000/api/Llama', dataLoadEventHandler, ServiceLoader.DATA_TYPE_JSON, errorEventHander, false)
+                httpService.loadJData(sUrl+'Llama', dataLoadEventHandler, ServiceLoader.DATA_TYPE_JSON, errorEventHander, false)
             }
 
 
@@ -83,7 +89,8 @@
                 txtPrompt.text='';
                 txtPrompt.disabled = false;
                 btnQry.visible = true;
-                AsJsUtil.scrollIntoView(chatBotUi.id)
+                //AsJsUtil.scrollIntoView(chatBotUi.id)
+                chatCtr.element.scrollTop = chatCtr.element.scrollHeight; // Auto-scroll to the bottom
                 txtPrompt.focus();
             }
 
@@ -92,13 +99,14 @@
             }
 
             
-            public function getAIResponse():void {
+            private function getAIResponse():void {
                 // Send the prompt to the Node.js backend
                 txtPrompt.disabled = true;
                 btnQry.visible = false;
                 chatBotUi = new ChatBot();
                 chatBotUi.id = "chatBotUi_" + qryCounter;
                 requestData  = txtPrompt.text;
+                httpService.reqMethod = "POST";
                 if(actionBtn == mdl1){
                     chatBotUi.aiQuery = requestData;
                     httpService.reqData = JSON.stringify({prompt: requestData });
@@ -111,11 +119,12 @@
                     chatBotUi.aiQuery  = requestData + "<br> <img src='" + imgUrl.text + "' height='150'>"
                     httpService.reqData = JSON.stringify({prompt: requestData, "imageUrl":  imgUrl.text});
                 }
-                
+                                
                 httpService.sendReqData();
                 chatCtr.addElement(chatBotUi);
                 qryCounter++;
-                AsJsUtil.scrollIntoView(chatBotUi.id)
+                //AsJsUtil.scrollIntoView(chatBotUi.id)
+                chatCtr.element.scrollTop = chatCtr.element.scrollHeight;
             }
 
             private function actionBtnEventHandler(e:MouseEvent):void{
@@ -140,9 +149,9 @@
         ]]>
     </fx:Script>
     <sp:ActionGroup id="actionBtnGrp" compact="true">
-        <sp:ActionButton text="deephermes-3" id="mdl1" click="actionBtnEventHandler(event)"/>
-        <sp:ActionButton text="Vision AI" id="mdl2" click="actionBtnEventHandler(event)"/>
-        <sp:ActionButton text="LLAMA 3.2" id="mdl3" click="actionBtnEventHandler(event)"/>
+        <sp:ActionButton text="Model-1" id="mdl1" click="actionBtnEventHandler(event)"/>
+        <sp:ActionButton text="Model-2" id="mdl2" click="actionBtnEventHandler(event)"/>
+        <sp:ActionButton text="Model-3" id="mdl3" click="actionBtnEventHandler(event)"/>
     </sp:ActionGroup>
     <j:VGroup id="chatCtr" className="chatBoatContainer" height="80%" width="80%" gap="5" itemsHorizontalAlign="itemsCenter">
         <j:beads>

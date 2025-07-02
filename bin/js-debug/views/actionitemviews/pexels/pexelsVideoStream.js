@@ -146,6 +146,13 @@ views.actionitemviews.pexels.pexelsVideoStream.prototype.views_actionitemviews_p
 
 /**
  * @private
+ * @type {string}
+ */
+views.actionitemviews.pexels.pexelsVideoStream.prototype.views_actionitemviews_pexels_pexelsVideoStream_sUrl = "https://apache-roayle-demo-app.onrender.com/api/";
+
+
+/**
+ * @private
  */
 views.actionitemviews.pexels.pexelsVideoStream.prototype.views_actionitemviews_pexels_pexelsVideoStream_onUp = function() {
   if (this.views_actionitemviews_pexels_pexelsVideoStream_currentIndex > 0) {
@@ -173,7 +180,7 @@ views.actionitemviews.pexels.pexelsVideoStream.prototype.views_actionitemviews_p
  * @private
  */
 views.actionitemviews.pexels.pexelsVideoStream.prototype.views_actionitemviews_pexels_pexelsVideoStream_fetchVideos = function() {
-  var /** @type {string} */ url = "http://localhost:3000/api/pexels/videoStream?q=" + encodeURIComponent(this.views_actionitemviews_pexels_pexelsVideoStream_query) + "&per_page=" + this.views_actionitemviews_pexels_pexelsVideoStream_perPage;
+  var /** @type {string} */ url = this.views_actionitemviews_pexels_pexelsVideoStream_sUrl + "pexels/videoStream?q=" + encodeURIComponent(this.views_actionitemviews_pexels_pexelsVideoStream_query) + "&per_page=" + this.views_actionitemviews_pexels_pexelsVideoStream_perPage;
   var /** @type {com.model.ServiceLoader} */ httpService = new com.model.ServiceLoader();
   httpService.reqMethod = "GET";
   httpService.contentType = "application/json";

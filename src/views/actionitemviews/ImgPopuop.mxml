@@ -28,7 +28,7 @@
 			private var _isIninted:Boolean = false;
 			private var _imgUrl:String = null;
 			
-			private function set imgUrl(url:String):void{
+			private function setImgUrl(url:String):void{
 				_imgUrl = url;
 				if (_isIninted){
 					img.src = _imgUrl;
@@ -59,8 +59,8 @@
 				img.visible = false;
 				lImg.visible = true;
 				popuoTitle.text="Loading... "
-				imgUrl = "https://picsum.photos/" + getRndNum(300, 500) + "/" + getRndNum(500, 800)
-				
+				setImgUrl("https://picsum.photos/" + getRndNum(300, 500) + "/" + getRndNum(500, 800));
+
 			}
 
 			private function getRndNum(min:int, max:int):int {

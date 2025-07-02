@@ -1,8 +1,10 @@
 import express from 'express';
 import fetch from 'node-fetch';
+import dotenv from 'dotenv';
+dotenv.config();
 
 const router = express.Router();
-const OPENROUTER_API_KEY = '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';
+const OPENROUTER_API_KEY = process.env.OPENROUTER_API_KEY;
 
 router.post('/', async (req, res) => {
   const { prompt } = req.body;
@@ -14,11 +16,11 @@ router.post('/', async (req, res) => {
       headers: {
         Authorization: `Bearer ${OPENROUTER_API_KEY}`,
         'Content-Type': 'application/json',
-        'HTTP-Referer': 'http://localhost:3000',
+        //'HTTP-Referer': 'http://localhost:3000',
         'X-Title': 'Royale-Chat',
       },
       body: JSON.stringify({
-        model: 'meta-llama/llama-3.3-8b-instruct:free',
+        model: 'deepseek/deepseek-chat-v3-0324:free',
         messages: [{ role: 'user', content: prompt }],
       }),
     });

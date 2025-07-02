@@ -1,9 +1,11 @@
 // routes/pexels.js
 import express from 'express';
 import fetch from 'node-fetch';
+import dotenv from 'dotenv';
+dotenv.config();
 
 const router = express.Router();
-const PEXELS_API_KEY = 'dSk7faqBdAhgumubOzfM5fXeJ5jmXYCYivPxeL4k37Lg7jJglLxJpuY8'; // Replace with your real key
+const PEXELS_API_KEY = process.env.PEXELS_API_KEY;
 
 router.get('/videoStream', async (req, res) => {
   const query = req.query.q || 'technology'; // Default search
