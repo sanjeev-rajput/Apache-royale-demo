@@ -81,6 +81,46 @@ Features to explore:
 
 ---
 
+---
+
+## 📌 Notes & TODOs
+
+This project is a **proof of concept** designed to explore the capabilities, structure, and flexibility of **Apache Royale**. The current implementation prioritizes showcasing features over production-level optimization. The following are known limitations and areas for future improvement:
+
+---
+
+### 🔧 Development & Architecture Notes
+
+- ⚠️ **Code Optimization Pending**  
+  The codebase is intentionally written in a more exploratory style. Several modules and services can be **refactored** and **modularized** for better maintainability and performance.
+
+- 🧪 **No Frameworks Used (Vanilla Royale)**  
+  This demo avoids using architectural wrappers like [Crux](https://apache.github.io/royale-docs/libraries/crux), opting instead for **pure Apache Royale**, to better understand the raw development model and potential.
+
+- 🧹 **Event Listeners Not Properly Managed**  
+  Event listeners in some views are not removed or properly scoped. This can lead to **memory leaks** and **performance degradation** in long-running sessions.
+
+- 🧭 **Router Not Implemented**  
+  Although Apache Royale supports routing via `Router`, it is **not used** in this demo. All navigation and view rendering are manually controlled. Adding a router would enhance maintainability and user experience.
+
+- 🎨 **Engineering-Focused UI**  
+  The UI is currently **developer-centric**. While functional, it lacks refined UX/UI polish. With the help of a **CSS/UI expert**, visual consistency, spacing, and responsiveness can be significantly improved.
+
+---
+
+### 📈 Planned Enhancements
+
+- [ ] Refactor into **modular, optimized components**
+- [ ] Integrate the **Crux framework** for structured application layers
+- [ ] Apply **proper event lifecycle management**
+- [ ] Introduce **router-based navigation**
+- [ ] Add support for **unit testing and CI**
+- [ ] Improve **mobile responsiveness** and accessibility (a11y)
+- [ ] Externalize API keys using `.env` and secure configs
+- [ ] Add **real-time collaborative drawing** and multi-user state sync
+
+---
+
 ## 🧠 Author
 
 **Sanjeev Rajput**  
@@ -92,4 +132,7 @@ Features to explore:
 ## 📜 License
 
 This project is open source and free to use - Licence free
+🛠 This codebase is a **launchpad for future Royale experiments**, aimed at pushing boundaries and demonstrating how it can rival modern frameworks like Angular and React — especially in enterprise-scale application architecture.
+
+🙌 Contributions, forks, and suggestions are always welcome!
 
