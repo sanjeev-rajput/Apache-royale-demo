@@ -112,7 +112,10 @@ views.actionitemviews.shoppingcart.ProductPreview = function() {
   this.mxmldp;
 
   this.generateMXMLAttributes([
-    0,
+    1,
+    'style',
+    true,
+    'background:transparent',
     0,
     1,
     'initComplete',
