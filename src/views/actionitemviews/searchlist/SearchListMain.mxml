@@ -3,7 +3,7 @@
     xmlns:j="library://ns.apache.org/royale/jewel"
     xmlns:sp="library://ns.unhurdle.com/spectrum" 
     xmlns:js="library://ns.apache.org/royale/express"
-    initComplete="init()" width="100%" height="100%">
+    initComplete="init()" width="100%" height="100%" style="background:transparent">
 
 
     <fx:Script>

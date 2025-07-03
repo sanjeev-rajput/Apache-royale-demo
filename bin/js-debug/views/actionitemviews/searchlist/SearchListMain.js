@@ -89,13 +89,16 @@ views.actionitemviews.searchlist.SearchListMain = function() {
   this.mxmldp;
 
   this.generateMXMLAttributes([
-    2,
+    3,
     'percentWidth',
     true,
     100.0,
     'percentHeight',
     true,
     100.0,
+    'style',
+    true,
+    'background:transparent',
     0,
     1,
     'initComplete',

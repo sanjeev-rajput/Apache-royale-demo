@@ -8,7 +8,7 @@
  */
 
 goog.provide('views.actionitemviews.appnavigation.AppNavigationMain');
-/* Royale Dependency List: org.apache.royale.jewel.Group,org.apache.royale.jewel.beads.layouts.TileHorizontalLayout,org.apache.royale.jewel.supportClasses.scrollbar.ScrollingViewport,com.model.Config,org.apache.royale.core.StyledUIBase,org.apache.royale.events.Event,org.apache.royale.jewel.Button,org.apache.royale.jewel.Label,XML*/
+/* Royale Dependency List: org.apache.royale.jewel.VGroup,org.apache.royale.jewel.HGroup,org.apache.royale.jewel.Label,org.apache.royale.jewel.Spacer,org.apache.royale.jewel.ImageIcon,org.apache.royale.jewel.Group,org.apache.royale.jewel.beads.layouts.GridCellLayout,org.apache.royale.jewel.supportClasses.scrollbar.ScrollingViewport,com.controller.PopupManager,com.model.Config,com.unhurdle.spectrum.HDivider,org.apache.royale.core.StyledUIBase,org.apache.royale.events.Event,org.apache.royale.events.MouseEvent,org.apache.royale.jewel.Button,views.TopMenuR,XML*/
 
 goog.require('org.apache.royale.jewel.View');
 
@@ -23,13 +23,43 @@ views.actionitemviews.appnavigation.AppNavigationMain = function() {
   
   /**
    * @private
+   * @type {org.apache.royale.jewel.VGroup}
+   */
+  this.$ID_11_6;
+  
+  /**
+   * @private
+   * @type {org.apache.royale.jewel.HGroup}
+   */
+  this.$ID_11_3;
+  
+  /**
+   * @private
+   * @type {org.apache.royale.jewel.Label}
+   */
+  this.$ID_11_0;
+  
+  /**
+   * @private
+   * @type {org.apache.royale.jewel.Spacer}
+   */
+  this.$ID_11_1;
+  
+  /**
+   * @private
+   * @type {org.apache.royale.jewel.ImageIcon}
+   */
+  this.$ID_11_2;
+  
+  /**
+   * @private
    * @type {org.apache.royale.jewel.Group}
    */
   this.navList_;
   
   /**
    * @private
-   * @type {org.apache.royale.jewel.beads.layouts.TileHorizontalLayout}
+   * @type {org.apache.royale.jewel.beads.layouts.GridCellLayout}
    */
   this.nlist_;
   
@@ -37,7 +67,7 @@ views.actionitemviews.appnavigation.AppNavigationMain = function() {
    * @private
    * @type {org.apache.royale.jewel.supportClasses.scrollbar.ScrollingViewport}
    */
-  this.$ID_11_1;
+  this.$ID_11_5;
   
   /**
    * @private
@@ -52,13 +82,16 @@ views.actionitemviews.appnavigation.AppNavigationMain = function() {
   this.mxmldp;
 
   this.generateMXMLAttributes([
-    2,
+    3,
     'percentWidth',
     true,
     100,
     'percentHeight',
     true,
     100,
+    'style',
+    true,
+    'background:transparent',
     0,
     1,
     'initComplete',
@@ -69,6 +102,13 @@ views.actionitemviews.appnavigation.AppNavigationMain = function() {
 goog.inherits(views.actionitemviews.appnavigation.AppNavigationMain, org.apache.royale.jewel.View);
 
 
+
+
+/**
+ * @private
+ * @type {org.apache.royale.jewel.Button}
+ */
+views.actionitemviews.appnavigation.AppNavigationMain.selectedBtn = null;
 
 
 /**
@@ -89,13 +129,19 @@ views.actionitemviews.appnavigation.AppNavigationMain.prototype.views_actionitem
   var i = foreachiter0_target[foreachiter0];
   {
     if (i["type"] == "disabled") {
-      this.views_actionitemviews_appnavigation_AppNavigationMain_addSection(org.apache.royale.utils.Language.string(i["label"]));
+      this.views_actionitemviews_appnavigation_AppNavigationMain_addTitle(org.apache.royale.utils.Language.string(i["label"]));
+    }
+    if (i["type"] == "divider") {
+      this.views_actionitemviews_appnavigation_AppNavigationMain_addDivider();
     }
     if (i["type"] != "divider" && i["type"] != "disabled") {
       this.views_actionitemviews_appnavigation_AppNavigationMain_addButton(org.apache.royale.utils.Language.string(i["label"]));
     }
   }}
   
+  if (views.actionitemviews.appnavigation.AppNavigationMain.selectedBtn) {
+    console.log("selectedBtn: " + views.actionitemviews.appnavigation.AppNavigationMain.selectedBtn.text);
+  }
 };
 
 
@@ -106,8 +152,28 @@ views.actionitemviews.appnavigation.AppNavigationMain.prototype.views_actionitem
 views.actionitemviews.appnavigation.AppNavigationMain.prototype.views_actionitemviews_appnavigation_AppNavigationMain_addButton = function(title) {
   var /** @type {org.apache.royale.jewel.Button} */ item = new org.apache.royale.jewel.Button();
   item.text = title;
-  item.emphasis = org.apache.royale.core.StyledUIBase.PRIMARY;
+  item.addEventListener(org.apache.royale.events.MouseEvent.CLICK, org.apache.royale.utils.Language.closure(this.views_actionitemviews_appnavigation_AppNavigationMain_navEventHandler, this, 'views_actionitemviews_appnavigation_AppNavigationMain_navEventHandler'));
   this.navList.addElement(item);
+  item.emphasis = org.apache.royale.core.StyledUIBase.PRIMARY;
+  if (views.actionitemviews.appnavigation.AppNavigationMain.selectedBtn)
+    views.actionitemviews.appnavigation.AppNavigationMain.selectedBtn.emphasis = org.apache.royale.core.StyledUIBase.PRIMARY;
+  if (views.TopMenuR.menuSelectedIndex == this.navList.getElementIndex(item)) {
+    views.actionitemviews.appnavigation.AppNavigationMain.selectedBtn = item;
+  }
+  if (views.actionitemviews.appnavigation.AppNavigationMain.selectedBtn && views.actionitemviews.appnavigation.AppNavigationMain.selectedBtn.text == item.text) {
+    views.actionitemviews.appnavigation.AppNavigationMain.selectedBtn = item;
+  }
+  if (views.actionitemviews.appnavigation.AppNavigationMain.selectedBtn)
+    views.actionitemviews.appnavigation.AppNavigationMain.selectedBtn.emphasis = org.apache.royale.core.StyledUIBase.SECONDARY;
+};
+
+
+/**
+ * @private
+ */
+views.actionitemviews.appnavigation.AppNavigationMain.prototype.views_actionitemviews_appnavigation_AppNavigationMain_addDivider = function() {
+  var /** @type {com.unhurdle.spectrum.HDivider} */ hr = new com.unhurdle.spectrum.HDivider();
+  this.navList.addElement(hr);
 };
 
 
@@ -115,13 +181,32 @@ views.actionitemviews.appnavigation.AppNavigationMain.prototype.views_actionitem
  * @private
  * @param {string} title
  */
-views.actionitemviews.appnavigation.AppNavigationMain.prototype.views_actionitemviews_appnavigation_AppNavigationMain_addSection = function(title) {
+views.actionitemviews.appnavigation.AppNavigationMain.prototype.views_actionitemviews_appnavigation_AppNavigationMain_addTitle = function(title) {
   var /** @type {org.apache.royale.jewel.Label} */ item = new org.apache.royale.jewel.Label();
   item.text = title;
   item.className = "appNavLabel";
-  item.percentWidth = 100;
-  item.emphasis = org.apache.royale.core.StyledUIBase.SECONDARY;
   this.navList.addElement(item);
+};
+
+
+/**
+ * @private
+ * @param {org.apache.royale.events.MouseEvent} e
+ */
+views.actionitemviews.appnavigation.AppNavigationMain.prototype.views_actionitemviews_appnavigation_AppNavigationMain_navEventHandler = function(e) {
+  var /** @type {org.apache.royale.jewel.Button} */ btn = e.currentTarget;
+  views.actionitemviews.appnavigation.AppNavigationMain.selectedBtn = btn;
+  var /** @type {number} */ idx = this.navList.getElementIndex(btn);
+  views.TopMenuR.menuSelectedIndex = idx;
+  this.views_actionitemviews_appnavigation_AppNavigationMain_popupCloseHandler();
+};
+
+
+/**
+ * @private
+ */
+views.actionitemviews.appnavigation.AppNavigationMain.prototype.views_actionitemviews_appnavigation_AppNavigationMain_popupCloseHandler = function() {
+  com.controller.PopupManager.getInstance().reomovePopup();
 };
 
 
@@ -132,6 +217,16 @@ views.actionitemviews.appnavigation.AppNavigationMain.prototype.views_actionitem
 views.actionitemviews.appnavigation.AppNavigationMain.prototype.$EH_11_0 = function(event)
 {
   this.views_actionitemviews_appnavigation_AppNavigationMain_init();
+};
+
+
+/**
+ * @export
+ * @param {org.apache.royale.events.MouseEvent} event
+ */
+views.actionitemviews.appnavigation.AppNavigationMain.prototype.$EH_11_1 = function(event)
+{
+  this.views_actionitemviews_appnavigation_AppNavigationMain_popupCloseHandler();
 };
 
 
@@ -171,52 +266,129 @@ Object.defineProperties(views.actionitemviews.appnavigation.AppNavigationMain.pr
         var arr = views.actionitemviews.appnavigation.AppNavigationMain.superClass_.get__MXMLDescriptor.apply(this);
         /** @type {Array} */
         var mxmldd = [
-          org.apache.royale.jewel.Group,
+          org.apache.royale.jewel.VGroup,
           5,
-          'id',
+          '_id',
           true,
-          'navList',
-          'percentHeight',
-          true,
-          100.0,
+          '$ID_11_6',
           'percentWidth',
           true,
           100.0,
-          'style',
+          'itemsVerticalAlign',
           true,
-          'padding:10px',
-          'beads',
-          null,
+          'itemsTop',
+          'itemsHorizontalAlign',
+          true,
+          'itemsCenter',
+          'className',
+          true,
+          'imgPopup',
+          0,
+          0,
           [
-            org.apache.royale.jewel.beads.layouts.TileHorizontalLayout,
+            org.apache.royale.jewel.HGroup,
             4,
             '_id',
             true,
-            'nlist',
-            'verticalGap',
+            '$ID_11_3',
+            'percentWidth',
             true,
-            10,
-            'waitForSize',
+            100,
+            'itemsVerticalAlign',
             true,
+            'itemsTop',
+            'className',
             true,
-            'itemsHorizontalAlign',
-            true,
-            'itemsSpaceAround',
+            'imgPopupTitle',
             0,
             0,
+            [
+              org.apache.royale.jewel.Label,
+              2,
+              '_id',
+              true,
+              '$ID_11_0',
+              'text',
+              true,
+              'App Navigation (Sitemap)',
+              0,
+              0,
+              null,
+              org.apache.royale.jewel.Spacer,
+              2,
+              '_id',
+              true,
+              '$ID_11_1',
+              'percentWidth',
+              true,
+              100.0,
+              0,
+              0,
+              null,
+              org.apache.royale.jewel.ImageIcon,
+              4,
+              '_id',
+              true,
+              '$ID_11_2',
+              'src',
+              true,
+              'img/close.png',
+              'width',
+              true,
+              30,
+              'className',
+              true,
+              'imgPopupXicon',
+              0,
+              1,
+              'click',
+              this.$EH_11_1,
+              null
+            ],
+            org.apache.royale.jewel.Group,
+            6,
+            'id',
+            true,
+            'navList',
+            'percentHeight',
+            true,
+            100.0,
+            'percentWidth',
+            true,
+            100.0,
+            'style',
+            true,
+            'padding:10px',
+            'className',
+            true,
+            'imgPopup, appNavItemLayout',
+            'beads',
             null,
-            org.apache.royale.jewel.supportClasses.scrollbar.ScrollingViewport,
-            1,
-            '_id',
-            true,
-            '$ID_11_1',
+            [
+              org.apache.royale.jewel.beads.layouts.GridCellLayout,
+              2,
+              '_id',
+              true,
+              'nlist',
+              'tabletVisible',
+              true,
+              true,
+              0,
+              0,
+              null,
+              org.apache.royale.jewel.supportClasses.scrollbar.ScrollingViewport,
+              1,
+              '_id',
+              true,
+              '$ID_11_5',
+              0,
+              0,
+              null
+            ],
             0,
             0,
             null
-          ],
-          0,
-          0,
-          null
+          ]
         ];
         if (arr)
           this.mxmldd = arr.concat(mxmldd);
@@ -246,7 +418,7 @@ views.actionitemviews.appnavigation.AppNavigationMain.prototype.ROYALE_REFLECTIO
     accessors: function () {
       return {
         'navList': { type: 'org.apache.royale.jewel.Group', access: 'readwrite', declaredBy: 'views.actionitemviews.appnavigation.AppNavigationMain'},
-        'nlist': { type: 'org.apache.royale.jewel.beads.layouts.TileHorizontalLayout', access: 'readwrite', declaredBy: 'views.actionitemviews.appnavigation.AppNavigationMain'}
+        'nlist': { type: 'org.apache.royale.jewel.beads.layouts.GridCellLayout', access: 'readwrite', declaredBy: 'views.actionitemviews.appnavigation.AppNavigationMain'}
       };
     },
     methods: function () {
@@ -261,6 +433,12 @@ views.actionitemviews.appnavigation.AppNavigationMain.prototype.ROYALE_REFLECTIO
  * @type {number}
  */
 views.actionitemviews.appnavigation.AppNavigationMain.prototype.ROYALE_COMPILE_FLAGS = 9;
+/**
+ * Provide reflection support for distinguishing dynamic fields on class object (static)
+ * @const
+ * @type {Array<string>}
+ */
+views.actionitemviews.appnavigation.AppNavigationMain.prototype.ROYALE_INITIAL_STATICS = Object.keys(views.actionitemviews.appnavigation.AppNavigationMain);
 
 
 

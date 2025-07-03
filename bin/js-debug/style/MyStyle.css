@@ -78,7 +78,7 @@
 }
 
 .imgPopup{
-  background-color: lightgray;
+  background-color: whitesmoke;
   padding: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border: solid 1px lightgray;
@@ -90,7 +90,9 @@
 .imgPopupTitle{
   padding: 5px;
   color: black;
-  border-bottom: solid 1px grey;
+  border-bottom: solid 5px lightgrey;
+  font-weight: bolder;
+  font-size: large;
 }
 .pImg{
   border: 2px solid #ddd;
@@ -333,5 +335,11 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .appNavLabel{
-      border-top: double;
+      font-weight: bold;
+      font-size: medium;
+      padding-top: 10px;
+      padding-bottom: 10px;
+}
+.appNavItemLayout{
+  padding: 10px;
 }

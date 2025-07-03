@@ -9,7 +9,7 @@
 	</j:beads>
     
 	<j:DrawerContent>
-        <sp:ActionMenu text="R" localId="menuR" quiet="true" change="handleSelection()"/>
+        <sp:ActionMenu text="R" localId="menuR" quiet="true" change="handleChangeEvent()"/>
 	</j:DrawerContent>
 
 
@@ -22,11 +22,13 @@
             import com.model.Config;
             
             
+            private static var _instance:TopMenuR;
             private var CbData:Object;
             private var selectedItemIndex:int = -1;
             private function init():void{
                 var sldr:ServiceLoader = new ServiceLoader();
                 sldr.loadJData("config/product.json", loadHandler)
+                _instance = this;
             }
 
             private function loadHandler(e:JSON):void{
@@ -42,7 +44,7 @@
                 }
                 menuR.dataProvider = menuArr;
             }
-            private function handleSelection():void {
+            private function handleChangeEvent():void {
                 var idx:int = menuR.selectedIndex;
                 if(idx == selectedItemIndex)return;
                 selectedItemIndex = idx;
@@ -54,7 +56,7 @@
                 obj.title = name;
                 obj.url = url;
                 obj.type = type;
-                obj.addx = addx
+                obj.addx = addx;
                 switch (type) {
                     case ("toc"):
                         DsEvent.instance.dispatch(DsEvent.FETCH_DATA_EVENT, obj);
@@ -69,7 +71,34 @@
                         // Handle Action 4
                         break;
                 }
-                
+                   
+            }
+            
+            /*public static function fireEventListener(obj:Object):void {
+                var type:String = obj.type;
+                switch (type) {
+                    case ("toc"):
+                        DsEvent.instance.dispatch(DsEvent.FETCH_DATA_EVENT, obj);
+                        break;
+                    case "clean":
+                        DsEvent.instance.dispatch(DsEvent.CLEAR_UI_EVENT, "clean");
+                        break;
+                    case "extui":
+                        DsEvent.instance.dispatch(DsEvent.UI_COMPONENT_EVENT, obj);
+                        break;
+                    case "Action 4":
+                        // Handle Action 4
+                        break;
+                }   
+            }*/
+
+            public static function set menuSelectedIndex(value:int):void {
+                _instance.menuR.selectedIndex = value;
+                _instance.handleChangeEvent();
+            }
+
+            public static function get menuSelectedIndex():int {
+                return _instance.menuR.selectedIndex;
             }
 
         

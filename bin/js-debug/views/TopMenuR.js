@@ -88,6 +88,13 @@ goog.inherits(views.TopMenuR, org.apache.royale.jewel.Drawer);
 
 /**
  * @private
+ * @type {views.TopMenuR}
+ */
+views.TopMenuR._instance = null;
+
+
+/**
+ * @private
  * @type {Object}
  */
 views.TopMenuR.prototype.views_TopMenuR_CbData = null;
@@ -106,6 +113,7 @@ views.TopMenuR.prototype.views_TopMenuR_selectedItemIndex = -1;
 views.TopMenuR.prototype.views_TopMenuR_init = function() {
   var /** @type {com.model.ServiceLoader} */ sldr = new com.model.ServiceLoader();
   sldr.loadJData("config/product.json", org.apache.royale.utils.Language.closure(this.views_TopMenuR_loadHandler, this, 'views_TopMenuR_loadHandler'));
+  views.TopMenuR._instance = this;
 };
 
 
@@ -136,7 +144,7 @@ views.TopMenuR.prototype.views_TopMenuR_loadHandler = function(e) {
 /**
  * @private
  */
-views.TopMenuR.prototype.views_TopMenuR_handleSelection = function() {
+views.TopMenuR.prototype.views_TopMenuR_handleChangeEvent = function() {
   var /** @type {number} */ idx = this.menuR.selectedIndex;
   if (idx == this.views_TopMenuR_selectedItemIndex)
     return;
@@ -166,7 +174,42 @@ views.TopMenuR.prototype.views_TopMenuR_handleSelection = function() {
 };
 
 
+;
+
+
+;
+
+
+
+
+
 /**
+ * @nocollapse
+ * @export
+ * @type {number}
+ */
+views.TopMenuR.menuSelectedIndex;
+
+
+views.TopMenuR.get__menuSelectedIndex = function() {
+  return views.TopMenuR._instance.menuR.selectedIndex;
+};
+
+
+views.TopMenuR.set__menuSelectedIndex = function(value) {
+  views.TopMenuR._instance.menuR.selectedIndex = value;
+  views.TopMenuR._instance.views_TopMenuR_handleChangeEvent();
+};
+
+
+Object.defineProperties(views.TopMenuR, /** @lends {views.TopMenuR} */ {
+/**
+ * @type {number}
+ */
+menuSelectedIndex: {
+get: views.TopMenuR.get__menuSelectedIndex,
+set: views.TopMenuR.set__menuSelectedIndex}}
+);/**
  * @export
  * @param {org.apache.royale.events.Event} event
  */
@@ -182,7 +225,7 @@ views.TopMenuR.prototype.$EH_12_0 = function(event)
  */
 views.TopMenuR.prototype.$EH_12_1 = function(event)
 {
-  this.views_TopMenuR_handleSelection();
+  this.views_TopMenuR_handleChangeEvent();
 };
 
 
@@ -262,6 +305,7 @@ views.TopMenuR.prototype.ROYALE_REFLECTION_INFO = function () {
   return {
     accessors: function () {
       return {
+        '|menuSelectedIndex': { type: 'int', access: 'readwrite', declaredBy: 'views.TopMenuR'},
         'menuR': { type: 'com.unhurdle.spectrum.ActionMenu', access: 'readwrite', declaredBy: 'views.TopMenuR'}
       };
     },
@@ -277,6 +321,12 @@ views.TopMenuR.prototype.ROYALE_REFLECTION_INFO = function () {
  * @type {number}
  */
 views.TopMenuR.prototype.ROYALE_COMPILE_FLAGS = 9;
+/**
+ * Provide reflection support for distinguishing dynamic fields on class object (static)
+ * @const
+ * @type {Array<string>}
+ */
+views.TopMenuR.prototype.ROYALE_INITIAL_STATICS = Object.keys(views.TopMenuR);
 
 
 

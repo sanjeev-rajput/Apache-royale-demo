@@ -2,7 +2,7 @@
 <j:View xmlns:fx="http://ns.adobe.com/mxml/2009"
     xmlns:j="library://ns.apache.org/royale/jewel"
     xmlns:sp="library://ns.unhurdle.com/spectrum"
-    initComplete="init()" percentWidth="100" percentHeight="100">    
+    initComplete="init()" percentWidth="100" percentHeight="100" style="background:transparent" >    
     
     <fx:Script>
         <![CDATA[
@@ -10,20 +10,30 @@
             import org.apache.royale.jewel.Button;
             import org.apache.royale.core.StyledUIBase;
             import org.apache.royale.jewel.Label;
+            import com.controller.PopupManager;
+            import com.unhurdle.spectrum.HDivider;
+            import org.apache.royale.events.MouseEvent;
+            import views.TopMenuR;
             
 
 
-            
+            private static var selectedBtn:Button;
             private var CbData:Object;
             private function init():void {
                 CbData = Config.productJson;
                 for each(var i:Object in CbData){
                     if(i.type == "disabled") {
-                        addSection(i.label)
+                        addTitle(i.label)
+                    }
+                    if(i.type == "divider"){
+                        addDivider();
                     }
                     if(i.type != "divider" && i.type != "disabled") {
                         addButton(i.label);
                     }
+                }
+                if(selectedBtn){
+                    console.log("selectedBtn: " + selectedBtn.text);
                 }
                 
             }
@@ -31,28 +41,64 @@
             private function addButton(title:String):void {
                 var item:Button = new Button();
                 item.text = title;
-                item.emphasis = StyledUIBase.PRIMARY;
+                item.addEventListener(MouseEvent.CLICK, navEventHandler);
                 navList.addElement(item);
+                item.emphasis = StyledUIBase.PRIMARY;
+                if(selectedBtn)selectedBtn.emphasis = StyledUIBase.PRIMARY;
+
+                if(TopMenuR.menuSelectedIndex == navList.getElementIndex(item)) {
+                    selectedBtn = item;
+                }
+                if(selectedBtn && selectedBtn.text == item.text) {
+                    selectedBtn = item;
+                } 
+                
+                if(selectedBtn)selectedBtn.emphasis = StyledUIBase.SECONDARY;
             }
 
-            private function addSection(title:String):void {
+            private function addDivider():void {
+                var hr:HDivider = new HDivider();
+                navList.addElement(hr);
+            }
+
+            private function addTitle(title:String):void {
                 var item:Label = new Label();
                 item.text = title;
                 item.className = "appNavLabel";
-                item.percentWidth = 100;
-                item.emphasis = StyledUIBase.SECONDARY;
                 navList.addElement(item);
             }
+
+            private function navEventHandler(e:MouseEvent):void {
+                var btn:Button = e.currentTarget as Button;
+                selectedBtn = btn;
+                var idx:int = navList.getElementIndex(btn);
+                TopMenuR.menuSelectedIndex = idx;
+                popupCloseHandler();
+            }
+            
+            private function popupCloseHandler():void {
+				PopupManager.getInstance().reomovePopup();
+			}
+
 
 
 
         ]]>
     </fx:Script>
-    <j:Group id="navList" height="100%" width="100%" style="padding:10px">
-        <j:beads>
-            <j:TileHorizontalLayout verticalGap="10" localId="nlist" waitForSize="true" itemsHorizontalAlign="itemsSpaceAround"/>
-            <j:ScrollingViewport/>
-        </j:beads>
-    </j:Group>
+
+    <j:VGroup width="100%" itemsVerticalAlign="itemsTop" itemsHorizontalAlign="itemsCenter" className="imgPopup">
+        <j:HGroup percentWidth="100" itemsVerticalAlign="itemsTop" className="imgPopupTitle">
+            <j:Label text="App Navigation (Sitemap)"/>
+            <j:Spacer width="100%"/>
+            <j:ImageIcon src="img/close.png" width="30" click="popupCloseHandler()" className="imgPopupXicon"/>
+        </j:HGroup>
+    
+        <j:Group id="navList" height="100%" width="100%" style="padding:10px" className="imgPopup, appNavItemLayout">
+            <j:beads>
+                <j:GridCellLayout localId="nlist" tabletVisible="true" />
+                <j:ScrollingViewport/>
+            </j:beads>
+        </j:Group>
+    </j:VGroup>
     
 </j:View>
