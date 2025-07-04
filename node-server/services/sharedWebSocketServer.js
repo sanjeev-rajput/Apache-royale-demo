@@ -10,11 +10,22 @@ export function setupSharedWebSocketServer(server) {
     const clients = new Set();
     const userMap = new Map(); // ws -> userInfo
     let userCounter = 1;
+    const MAX_CLIENTS = 3;
+
     const eventSource = new EventSource.EventSource('https://stream.wikimedia.org/v2/stream/recentchange');
 
     console.log('🔁 Wikipedia stream connected');
 
     wss.on('connection', (ws) => {
+        if (clients.size >= MAX_CLIENTS) {
+            ws.send(JSON.stringify({
+                type: 'error',
+                message: `🚫 Room is full (max ${MAX_CLIENTS} users). Try again later.`
+            }));
+            ws.close();
+            console.warn('❌ Connection rejected due to max clients reached');
+            return;
+        }
         console.log('🧩 New WebSocket client connected');
         let subscribedToWiki = false;
         clients.add(ws);
@@ -25,7 +36,6 @@ export function setupSharedWebSocketServer(server) {
             type: 'welcome',
             userId: userId
         }));
-
         
 
         ws.on('message', (message) => {
@@ -36,6 +46,14 @@ export function setupSharedWebSocketServer(server) {
             console.error('Invalid JSON:', message);
             return;
         }
+        if (data.type === 'video-offer' || data.type === 'video-answer' || data.type === 'ice-candidate') {
+            const targetClient = Array.from(clients).find(client => userMap.get(client)?.id === data.target);
+            if (targetClient && targetClient.readyState === WebSocket.OPEN) {
+                data.sender = userMap.get(ws)?.id;
+                targetClient.send(JSON.stringify(data));
+            }
+        }
+
 
         if (data.type === 'subscribe_collabaration') {
             const userInfo = userMap.get(ws);
@@ -85,16 +103,34 @@ export function setupSharedWebSocketServer(server) {
             clients.delete(ws);
             userMap.delete(ws);
             broadcastUserList();
+            if (userId) {
+                broadcastToAll({ type: 'user_disconnected', userId });
+                console.log(userid)
+            }
             eventSource.removeEventListener('message', onWikiEvent);
         });
     });
 
     function broadcastUserList() {
         const users = Array.from(userMap.values()).map(u => u.id);
-        const msg = JSON.stringify({ type: 'user_list', users });
+        const msg = JSON.stringify({
+        type: 'user_list',
+        users,
+        count: users.length,
+        max: MAX_CLIENTS
+        });
         for (const client of clients) {
             if (client.readyState === client.OPEN) {
             client.send(msg);
+            }
+        }
+    }
+
+    function broadcastToAll(data) {
+        const msg = JSON.stringify(data);
+        for (const client of clients) {
+            if (client.readyState === client.OPEN) {
+                client.send(msg);
             }
         }
     }

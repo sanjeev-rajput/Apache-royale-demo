@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"VideoItem.js",
+"lineCount":172,
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAM4B,wDAAAA,4DAAsB,GAAG,K;;;;;;;AACzB,wDAAAC,qDAAc,GAAG,I;;;;;;;AACjB,wDAAAC,qDAAc,GAAG,I;;;;;;;AACjB,wDAAAC,mDAAa,GAAG,K;;;;;;;AAChB,wDAAAC,0DAAoB,GAAG,K;;;;;;AAClB,wDAAAC,kDAAjB,WAAqBA,CAAC,C,CAAO,C;EACzB,KAAAL,4DAAc,GAAG,IAAI,C;EACrB,KAAAM,oDAAM,CAAC,CAAC,C;AAGZ,C;;;;;;;;AAEgB,wDAAA,aAAhB,WAA6BC,CAAC,MAAa,EAAE,MAAa,EAAE,IAAkB,C,CAAO,C;EAAzB,4CAAa,KAAb,C;EACxD,KAAAN,qDAAO,GAAG,MAAM,C;EAChB,KAAAC,qDAAO,GAAG,MAAM,C;EAChB,KAAAC,mDAAK,GAAG,IAAI,C;EACZ,KAAAC,0DAAY,GAAG,IAAI,C;EACnB,KAAAE,oDAAM,CAAC,CAAC,C;AACZ,C;;;;;;;;;AAMiB,wDAAAA,oDAAjB,WAAuBA,CAAC,C,CAAO,C;EAC3B,IAAI,KAAAF,0DAAY,IAAI,KAAAJ,4DAAc,EAAE,C;IAChC,KAAA,GAAG,CAAC,IAAI,GAAG,KAAAC,qDAAO,G,CAAI,KAAAE,mDAAK,GAAG,QAAQ,GAAG,E,CAAE,C;IAC3C,KAAA,GAAG,CAAC,MAAM,GAAG,KAAAD,qDAAO,C;EACxB,C;AACJ,C;;;;;;;;;;;;;;8EAT0BM,CAAC,C,CAAQ,C;EAC/B,OAAO,KAAAP,qDAAO,C;AAClB,C;;;;;;;;;;;;;;;EA1BO,KAAAI,kDAAI,CAAA;",
+"sources":["../../../../../src/views/actionitemviews/collaboration/VideoItem.mxml"],
+"names":["_isinitialized","_userId","_stream","_isMe","_isvideoData","init","initUi","videoItemData","userId"]
+}

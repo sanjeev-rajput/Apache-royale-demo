@@ -8,29 +8,70 @@
             import views.actionitemviews.websocket.SocketService;
             import org.apache.royale.collections.ArrayList;
             import views.actionitemviews.collaboration.MessageItem;     
+            import views.actionitemviews.collaboration.VideoItem;
             
             
             private var _socketService:SocketService;
             private var myUserId:String;
+
+
+            private var localStream:Object;
+            private var webcamInitialized:Boolean = false;
+            private var myLocalStream:Object = null;
+            private var peerConnections:Object = {}; // userId -> RTCPeerConnection
+
             private function init():void {
                 _socketService = new SocketService();
                 _socketService.addCAllBackFunction(onSocketData);
                 _socketService.connectWebSocket(SocketService.SUBSCRIBE_COLLABARATION)
-                
+            }
+
+            private function updateUserList():void {
+                if (userList.dataProvider && userList.dataProvider.length > 0) {
+                    var ulist:ArrayList = userList.dataProvider as ArrayList;
+                    var idx:int = ulist.getItemIndex(myUserId);
+                    if(idx >= 0) {
+                        ulist.setItemAt( myUserId + " (You)", idx);
+                    }
+                    userList.dataProvider = ulist
+                }
             }
 
            private function onSocketData(data:Object):void {
                 var changeData:Object = JSON.parse(JSON.stringify(data));
+                if (data.type == "video-offer") {
+                    handleOffer(data.sender, data.offer);
+                }
+                else if (data.type == "video-answer") {
+                    peerConnections[data.sender].setRemoteDescription(new RTCSessionDescription(data.answer));
+                }
+                else if (data.type == "ice-candidate") {
+                    peerConnections[data.sender].addIceCandidate(new RTCIceCandidate(data.candidate));
+                }
                 
-                if (data.type == "welcome") {
+                else if (data.type == "welcome") {
                     myUserId = data.userId;
                     initChatItemUI(myUserId, "Welcome to the collaboration room! You are: " + myUserId);
+                    updateUserList();
                 } 
                 else if (data.type == "user_list") {
                     userList.dataProvider = new ArrayList(data.users);
+                    usrNos.text = "Connected Users: " + data.count + "/" + data.max;
+                    updateUserList();
+
                 } 
                 else if (data.type == "subscribe_collabaration") {
                     initChatItemUI(data.sender, data.text);
+                }
+                else if (data.type == "error") {
+                    initChatItemUI("System", data.message); // Display error in chat
+                    input.disabled = true; // Optionally disable input
+                }else if (data.type == "user_disconnected") {
+                    removePeerVideo(data.userId);
+                    if (peerConnections[data.userId]) {
+                        peerConnections[data.userId].close();
+                        delete peerConnections[data.userId];
+                    }
                 }
                 outputContainer.element.scrollTop = outputContainer.element.scrollHeight; // Auto-scroll to the bottom
 
@@ -56,6 +97,148 @@
                 }
             }
 
+            private function onShareWebcam():void {
+                var flag:Boolean = shareCamBtn.checked;
+                if(flag)onStartWebcam()
+                if(!flag)onStopWebcam()
+            }
+
+            private function onStartWebcam():void {
+                if (webcamInitialized)return;
+                COMPILE::JS {
+                    var constraints:Object = { video: true, audio: false };
+                    navigator.mediaDevices.getUserMedia(constraints as MediaStreamConstraints)
+                        .then(function(stream:Object):void {
+                            localStream = stream;
+                            myLocalStream = stream; // ✅ critical line
+                            webcamInitialized = true;
+                            shareCamBtn.onLabel = "Webcam on";
+                            shareCamBtn.checked = true;
+                            addVideoStream(myUserId, stream, true);
+
+                            _socketService.sendToSocket({
+                                type: "share_webcam",
+                                userId: myUserId
+                            });
+                        }).catch(function(err:*):void {
+                            console.error("Webcam access denied", err);
+                            shareCamBtn.onLabel = "Webcam off";
+                            shareCamBtn.checked = false;
+                        });
+                }
+            }
+
+            private function onStopWebcam():void {
+                COMPILE::JS {
+                    if (localStream) {
+                        localStream.getTracks().forEach(function(track:*):void {
+                            track.stop();
+                        });
+                        localStream = null;
+                        webcamInitialized = false;
+                        shareCamBtn.checked = false;
+                        shareCamBtn.offLabel = "Share off";
+                    }
+
+                    // Inform other users (optional cleanup)
+                    for (var id:String in peerConnections) {
+                        peerConnections[id].close();
+                    }
+                    peerConnections = {};
+                }
+            }
+
+
+
+            private function addVideoStream(userId:String, stream:Object, isMe:Boolean=false):void {
+                // Initiate connection with each peer
+                for each (var otherId:String in userList.dataProvider.source) {
+                    if (otherId != myUserId && !peerConnections[otherId]) {
+                        createPeerConnection(otherId, true);
+                    }
+                }
+
+                var vidItem:VideoItem = new VideoItem();
+                vidItem.videoItemData(userId, stream, isMe);
+                uVidContainer.addElement(vidItem); // Assuming uVidContainer exists in your MXML
+            }
+
+
+            private function createPeerConnection(userId:String, isInitiator:Boolean):void {
+                COMPILE::JS {
+                    var config:Object = {
+                        iceServers: [{ urls: "stun:stun.l.google.com:19302" }]
+                    };
+
+                    var pc:* = new RTCPeerConnection(config);
+                    peerConnections[userId] = pc;
+
+                    myLocalStream.getTracks().forEach(function(track:*):void {
+                        pc.addTrack(track, myLocalStream);
+                    });
+
+                    pc.onicecandidate = function(event:*):void {
+                        if (event.candidate) {
+                            _socketService.sendToSocket({
+                                type: "ice-candidate",
+                                target: userId,
+                                candidate: event.candidate
+                            });
+                        }
+                    };
+
+                    pc.ontrack = function(event:*):void {
+                        trace("🎥 Received remote track from", userId);
+                        addVideoStream(userId, event.streams[0]);
+                    };
+
+                    if (isInitiator) {
+                        pc.createOffer().then(function(offer:*):void {
+                            pc.setLocalDescription(offer);
+                            _socketService.sendToSocket({
+                                type: "video-offer",
+                                target: userId,
+                                offer: offer
+                            });
+                        });
+                    }
+                }
+            }
+
+            private function handleOffer(sender:String, offer:Object):void {
+                COMPILE::JS {
+                    createPeerConnection(sender, false);
+                    var pc:* = peerConnections[sender];
+
+                    pc.setRemoteDescription(new RTCSessionDescription(offer)).then(function():* {
+                        return pc.createAnswer();
+                    }).then(function(answer:*):* {
+                        pc.setLocalDescription(answer);
+                        _socketService.sendToSocket({
+                            type: "video-answer",
+                            target: sender,
+                            answer: answer
+                        });
+                    }).catch(function(error:*):void {
+                        console.error("❌ Error handling offer from", sender, ":", error);
+                    });
+                }
+            }
+            private function removePeerVideo(userId:String):void {
+                console.log("removePeerVideo "+ userId)
+                for (var i:int = 0; i < uVidContainer.numElements; i++) {
+                    var vidItem:VideoItem = uVidContainer.getElementAt(i) as VideoItem;
+                    console.log(vidItem.userId, userId)
+                    if (vidItem && vidItem.userId == userId) {
+                        uVidContainer.removeElement(vidItem);
+                        break;
+                    }
+                }
+            }
+
+
+
+
         ]]>
     </fx:Script>
     <j:HGroup height="100%" width="100%" gap="1" >
@@ -67,9 +250,15 @@
             </j:VGroup>
             <sp:TextField id="input" width="100%" onEnter="onInputChange()" placeholder = "Type your message here..." style="resize:none"/>    
         </j:VGroup>
-        <j:VGroup style="border:1px dashed gray;" width="15%" height="100%" itemsVerticalAlign="itemsTop" gap="5">
-            <sp:Label text="Connected Users:" width="100%"/>
-            <j:List id="userList" width="100%" height="100%" />
+        <j:VGroup style="border:1px dashed gray;" width="15%" height="100%" itemsVerticalAlign="itemsTop" gap="1">
+            <sp:Label id="usrNos" text="Connected Users:" width="100%"/>
+            <j:List id="userList" width="100%" height="50%" />
+            <sp:Switch id="shareCamBtn" offLabel="Toggle Off" onLabel="Toggle On" click="onShareWebcam()"/>
+            <j:VGroup id="uVidContainer" width="100%" height="50%">
+                <j:beads>
+                    <j:ScrollingViewport/>
+                </j:beads>
+            </j:VGroup>
         </j:VGroup>
     </j:HGroup>
     

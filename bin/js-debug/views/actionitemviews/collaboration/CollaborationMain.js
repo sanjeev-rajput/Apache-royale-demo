@@ -8,7 +8,7 @@
  */
 
 goog.provide('views.actionitemviews.collaboration.CollaborationMain');
-/* Royale Dependency List: org.apache.royale.jewel.HGroup,org.apache.royale.jewel.supportClasses.scrollbar.ScrollingViewport,com.unhurdle.spectrum.TextField,com.unhurdle.spectrum.Label,org.apache.royale.jewel.List,org.apache.royale.collections.ArrayList,org.apache.royale.events.Event,org.apache.royale.events.ValueEvent,views.actionitemviews.collaboration.MessageItem,views.actionitemviews.websocket.SocketService,XML*/
+/* Royale Dependency List: org.apache.royale.jewel.HGroup,org.apache.royale.jewel.supportClasses.scrollbar.ScrollingViewport,com.unhurdle.spectrum.TextField,com.unhurdle.spectrum.Label,org.apache.royale.jewel.List,com.unhurdle.spectrum.Switch,org.apache.royale.collections.ArrayList,org.apache.royale.events.Event,org.apache.royale.events.MouseEvent,org.apache.royale.events.ValueEvent,views.actionitemviews.collaboration.MessageItem,views.actionitemviews.collaboration.VideoItem,views.actionitemviews.websocket.SocketService,XML*/
 
 goog.require('org.apache.royale.jewel.VGroup');
 
@@ -21,6 +21,7 @@ goog.require('org.apache.royale.jewel.VGroup');
 views.actionitemviews.collaboration.CollaborationMain = function() {
   views.actionitemviews.collaboration.CollaborationMain.base(this, 'constructor');
   
+  this.views_actionitemviews_collaboration_CollaborationMain_peerConnections = {};
   /**
    * @private
    * @type {org.apache.royale.jewel.HGroup}
@@ -61,13 +62,31 @@ views.actionitemviews.collaboration.CollaborationMain = function() {
    * @private
    * @type {com.unhurdle.spectrum.Label}
    */
-  this.$ID_13_2;
+  this.usrNos_;
   
   /**
    * @private
    * @type {org.apache.royale.jewel.List}
    */
   this.userList_;
+  
+  /**
+   * @private
+   * @type {com.unhurdle.spectrum.Switch}
+   */
+  this.shareCamBtn_;
+  
+  /**
+   * @private
+   * @type {org.apache.royale.jewel.VGroup}
+   */
+  this.uVidContainer_;
+  
+  /**
+   * @private
+   * @type {org.apache.royale.jewel.supportClasses.scrollbar.ScrollingViewport}
+   */
+  this.$ID_13_2;
   
   /**
    * @private
@@ -120,6 +139,34 @@ views.actionitemviews.collaboration.CollaborationMain.prototype.views_actionitem
 
 /**
  * @private
+ * @type {Object}
+ */
+views.actionitemviews.collaboration.CollaborationMain.prototype.views_actionitemviews_collaboration_CollaborationMain_localStream = null;
+
+
+/**
+ * @private
+ * @type {boolean}
+ */
+views.actionitemviews.collaboration.CollaborationMain.prototype.views_actionitemviews_collaboration_CollaborationMain_webcamInitialized = false;
+
+
+/**
+ * @private
+ * @type {Object}
+ */
+views.actionitemviews.collaboration.CollaborationMain.prototype.views_actionitemviews_collaboration_CollaborationMain_myLocalStream = null;
+
+
+/**
+ * @private
+ * @type {Object}
+ */
+views.actionitemviews.collaboration.CollaborationMain.prototype.views_actionitemviews_collaboration_CollaborationMain_peerConnections = null;
+
+
+/**
+ * @private
  */
 views.actionitemviews.collaboration.CollaborationMain.prototype.views_actionitemviews_collaboration_CollaborationMain_init = function() {
   this.views_actionitemviews_collaboration_CollaborationMain__socketService = new views.actionitemviews.websocket.SocketService();
@@ -130,17 +177,50 @@ views.actionitemviews.collaboration.CollaborationMain.prototype.views_actionitem
 
 /**
  * @private
+ */
+views.actionitemviews.collaboration.CollaborationMain.prototype.views_actionitemviews_collaboration_CollaborationMain_updateUserList = function() {
+  if (this.userList.dataProvider && this.userList.dataProvider["length"] > 0) {
+    var /** @type {org.apache.royale.collections.ArrayList} */ ulist = this.userList.dataProvider;
+    var /** @type {number} */ idx = ulist.getItemIndex(this.views_actionitemviews_collaboration_CollaborationMain_myUserId);
+    if (idx >= 0) {
+      ulist.setItemAt(this.views_actionitemviews_collaboration_CollaborationMain_myUserId + " (You)", idx);
+    }
+    this.userList.dataProvider = ulist;
+  }
+};
+
+
+/**
+ * @private
  * @param {Object} data
  */
 views.actionitemviews.collaboration.CollaborationMain.prototype.views_actionitemviews_collaboration_CollaborationMain_onSocketData = function(data) {
   var /** @type {Object} */ changeData = JSON.parse(JSON.stringify(data));
-  if (data["type"] == "welcome") {
+  if (data["type"] == "video-offer") {
+    this.views_actionitemviews_collaboration_CollaborationMain_handleOffer(org.apache.royale.utils.Language.string(data["sender"]), data["offer"]);
+  } else if (data["type"] == "video-answer") {
+    this.views_actionitemviews_collaboration_CollaborationMain_peerConnections[data["sender"]]["setRemoteDescription"](new RTCSessionDescription(data["answer"]));
+  } else if (data["type"] == "ice-candidate") {
+    this.views_actionitemviews_collaboration_CollaborationMain_peerConnections[data["sender"]]["addIceCandidate"](new RTCIceCandidate(data["candidate"]));
+  } else if (data["type"] == "welcome") {
     this.views_actionitemviews_collaboration_CollaborationMain_myUserId = org.apache.royale.utils.Language.string(data["userId"]);
     this.views_actionitemviews_collaboration_CollaborationMain_initChatItemUI(this.views_actionitemviews_collaboration_CollaborationMain_myUserId, "Welcome to the collaboration room! You are: " + this.views_actionitemviews_collaboration_CollaborationMain_myUserId);
+    this.views_actionitemviews_collaboration_CollaborationMain_updateUserList();
   } else if (data["type"] == "user_list") {
     this.userList.dataProvider = new org.apache.royale.collections.ArrayList(data["users"]);
+    this.usrNos.text = "Connected Users: " + data["count"] + "/" + data["max"];
+    this.views_actionitemviews_collaboration_CollaborationMain_updateUserList();
   } else if (data["type"] == "subscribe_collabaration") {
     this.views_actionitemviews_collaboration_CollaborationMain_initChatItemUI(org.apache.royale.utils.Language.string(data["sender"]), org.apache.royale.utils.Language.string(data["text"]));
+  } else if (data["type"] == "error") {
+    this.views_actionitemviews_collaboration_CollaborationMain_initChatItemUI("System", org.apache.royale.utils.Language.string(data["message"]));
+    this.input.disabled = true;
+  } else if (data["type"] == "user_disconnected") {
+    this.views_actionitemviews_collaboration_CollaborationMain_removePeerVideo(org.apache.royale.utils.Language.string(data["userId"]));
+    if (this.views_actionitemviews_collaboration_CollaborationMain_peerConnections[data["userId"]]) {
+      this.views_actionitemviews_collaboration_CollaborationMain_peerConnections[data["userId"]]["close"]();
+      delete this.views_actionitemviews_collaboration_CollaborationMain_peerConnections[data["userId"]];
+    }
   }
   this.outputContainer.element.scrollTop = this.outputContainer.element.scrollHeight;
 };
@@ -175,6 +255,155 @@ views.actionitemviews.collaboration.CollaborationMain.prototype.views_actionitem
 
 
 /**
+ * @private
+ */
+views.actionitemviews.collaboration.CollaborationMain.prototype.views_actionitemviews_collaboration_CollaborationMain_onShareWebcam = function() {
+  var /** @type {boolean} */ flag = this.shareCamBtn.checked;
+  if (flag)
+    this.views_actionitemviews_collaboration_CollaborationMain_onStartWebcam();
+  if (!flag)
+    this.views_actionitemviews_collaboration_CollaborationMain_onStopWebcam();
+};
+
+
+/**
+ * @private
+ */
+views.actionitemviews.collaboration.CollaborationMain.prototype.views_actionitemviews_collaboration_CollaborationMain_onStartWebcam = function() {
+  var self = this;
+  if (this.views_actionitemviews_collaboration_CollaborationMain_webcamInitialized)
+    return;
+  var /** @type {Object} */ constraints = {"video":true, "audio":false};
+  navigator.mediaDevices.getUserMedia(constraints).then(function(stream) {
+    self.views_actionitemviews_collaboration_CollaborationMain_localStream = stream;
+    self.views_actionitemviews_collaboration_CollaborationMain_myLocalStream = stream;
+    self.views_actionitemviews_collaboration_CollaborationMain_webcamInitialized = true;
+    self.shareCamBtn.onLabel = "Webcam on";
+    self.shareCamBtn.checked = true;
+    self.views_actionitemviews_collaboration_CollaborationMain_addVideoStream(self.views_actionitemviews_collaboration_CollaborationMain_myUserId, stream, true);
+    self.views_actionitemviews_collaboration_CollaborationMain__socketService.sendToSocket({"type":"share_webcam", "userId":self.views_actionitemviews_collaboration_CollaborationMain_myUserId});
+  })["catch"](function(err) {
+    console.error("Webcam access denied", err);
+    self.shareCamBtn.onLabel = "Webcam off";
+    self.shareCamBtn.checked = false;
+  });
+};
+
+
+/**
+ * @private
+ */
+views.actionitemviews.collaboration.CollaborationMain.prototype.views_actionitemviews_collaboration_CollaborationMain_onStopWebcam = function() {
+  var self = this;
+  if (this.views_actionitemviews_collaboration_CollaborationMain_localStream) {
+    this.views_actionitemviews_collaboration_CollaborationMain_localStream["getTracks"]()["forEach"](function(track) {
+      track["stop"]();
+    });
+    this.views_actionitemviews_collaboration_CollaborationMain_localStream = null;
+    this.views_actionitemviews_collaboration_CollaborationMain_webcamInitialized = false;
+    this.shareCamBtn.checked = false;
+    this.shareCamBtn.offLabel = "Share off";
+  }
+  for (var /** @type {string} */ id in this.views_actionitemviews_collaboration_CollaborationMain_peerConnections) {
+    this.views_actionitemviews_collaboration_CollaborationMain_peerConnections[id]["close"]();
+  }
+  this.views_actionitemviews_collaboration_CollaborationMain_peerConnections = {};
+};
+
+
+/**
+ * @private
+ * @param {string} userId
+ * @param {Object} stream
+ * @param {boolean=} isMe
+ */
+views.actionitemviews.collaboration.CollaborationMain.prototype.views_actionitemviews_collaboration_CollaborationMain_addVideoStream = function(userId, stream, isMe) {
+  isMe = typeof isMe !== 'undefined' ? isMe : false;
+  var foreachiter0_target = this.userList.dataProvider["source"];
+  for (var foreachiter0 in foreachiter0_target) 
+  {
+  var otherId = foreachiter0_target[foreachiter0];
+  {
+    if (otherId != this.views_actionitemviews_collaboration_CollaborationMain_myUserId && !this.views_actionitemviews_collaboration_CollaborationMain_peerConnections[otherId]) {
+      this.views_actionitemviews_collaboration_CollaborationMain_createPeerConnection(otherId, true);
+    }
+  }}
+  
+  var /** @type {views.actionitemviews.collaboration.VideoItem} */ vidItem = new views.actionitemviews.collaboration.VideoItem();
+  vidItem.videoItemData(userId, stream, isMe);
+  this.uVidContainer.addElement(vidItem);
+};
+
+
+/**
+ * @private
+ * @param {string} userId
+ * @param {boolean} isInitiator
+ */
+views.actionitemviews.collaboration.CollaborationMain.prototype.views_actionitemviews_collaboration_CollaborationMain_createPeerConnection = function(userId, isInitiator) {
+  var self = this;
+  var /** @type {Object} */ config = {"iceServers":[{"urls":"stun:stun.l.google.com:19302"}]};
+  var /** @type {*} */ pc = new RTCPeerConnection(config);
+  this.views_actionitemviews_collaboration_CollaborationMain_peerConnections[userId] = pc;
+  this.views_actionitemviews_collaboration_CollaborationMain_myLocalStream["getTracks"]()["forEach"](function(track) {
+    pc["addTrack"](track, self.views_actionitemviews_collaboration_CollaborationMain_myLocalStream);
+  });
+  pc["onicecandidate"] = function(event) {
+    if (event["candidate"]) {
+      self.views_actionitemviews_collaboration_CollaborationMain__socketService.sendToSocket({"type":"ice-candidate", "target":userId, "candidate":event["candidate"]});
+    }
+  };
+  pc["ontrack"] = function(event) {
+    org.apache.royale.utils.Language.trace("🎥 Received remote track from", userId);
+    self.views_actionitemviews_collaboration_CollaborationMain_addVideoStream(userId, event["streams"][0]);
+  };
+  if (isInitiator) {
+    pc["createOffer"]()["then"](function(offer) {
+      pc["setLocalDescription"](offer);
+      self.views_actionitemviews_collaboration_CollaborationMain__socketService.sendToSocket({"type":"video-offer", "target":userId, "offer":offer});
+    });
+  }
+};
+
+
+/**
+ * @private
+ * @param {string} sender
+ * @param {Object} offer
+ */
+views.actionitemviews.collaboration.CollaborationMain.prototype.views_actionitemviews_collaboration_CollaborationMain_handleOffer = function(sender, offer) {
+  var self = this;
+  this.views_actionitemviews_collaboration_CollaborationMain_createPeerConnection(sender, false);
+  var /** @type {*} */ pc = this.views_actionitemviews_collaboration_CollaborationMain_peerConnections[sender];
+  pc["setRemoteDescription"](new RTCSessionDescription(offer))["then"](function() {
+    return pc["createAnswer"]();
+  })["then"](function(answer) {
+    pc["setLocalDescription"](answer);
+    self.views_actionitemviews_collaboration_CollaborationMain__socketService.sendToSocket({"type":"video-answer", "target":sender, "answer":answer});
+  })["catch"](function(error) {
+    console.error("❌ Error handling offer from", sender, ":", error);
+  });
+};
+
+
+/**
+ * @private
+ * @param {string} userId
+ */
+views.actionitemviews.collaboration.CollaborationMain.prototype.views_actionitemviews_collaboration_CollaborationMain_removePeerVideo = function(userId) {
+  console.log("removePeerVideo " + userId);
+  for (var /** @type {number} */ i = 0; i < this.uVidContainer.numElements; i++) {
+    var /** @type {views.actionitemviews.collaboration.VideoItem} */ vidItem = this.uVidContainer.getElementAt(i);
+    console.log(vidItem.userId, userId);
+    if (vidItem && vidItem.userId == userId) {
+      this.uVidContainer.removeElement(vidItem);
+      break;
+    }
+  }
+};
+
+
+/**
  * @export
  * @param {org.apache.royale.events.Event} event
  */
@@ -191,6 +420,16 @@ views.actionitemviews.collaboration.CollaborationMain.prototype.$EH_13_0 = funct
 views.actionitemviews.collaboration.CollaborationMain.prototype.$EH_13_1 = function(event)
 {
   this.views_actionitemviews_collaboration_CollaborationMain_onInputChange();
+};
+
+
+/**
+ * @export
+ * @param {org.apache.royale.events.MouseEvent} event
+ */
+views.actionitemviews.collaboration.CollaborationMain.prototype.$EH_13_2 = function(event)
+{
+  this.views_actionitemviews_collaboration_CollaborationMain_onShareWebcam();
 };
 
 
@@ -221,6 +460,19 @@ Object.defineProperties(views.actionitemviews.collaboration.CollaborationMain.pr
       }
     }
   },
+  usrNos: {
+    /** @this {views.actionitemviews.collaboration.CollaborationMain} */
+    get: function() {
+      return this.usrNos_;
+    },
+    /** @this {views.actionitemviews.collaboration.CollaborationMain} */
+    set: function(value) {
+      if (value != this.usrNos_) {
+        this.usrNos_ = value;
+        this.dispatchEvent(org.apache.royale.events.ValueChangeEvent.createUpdateEvent(this, 'usrNos', null, value));
+      }
+    }
+  },
   userList: {
     /** @this {views.actionitemviews.collaboration.CollaborationMain} */
     get: function() {
@@ -231,6 +483,32 @@ Object.defineProperties(views.actionitemviews.collaboration.CollaborationMain.pr
       if (value != this.userList_) {
         this.userList_ = value;
         this.dispatchEvent(org.apache.royale.events.ValueChangeEvent.createUpdateEvent(this, 'userList', null, value));
+      }
+    }
+  },
+  shareCamBtn: {
+    /** @this {views.actionitemviews.collaboration.CollaborationMain} */
+    get: function() {
+      return this.shareCamBtn_;
+    },
+    /** @this {views.actionitemviews.collaboration.CollaborationMain} */
+    set: function(value) {
+      if (value != this.shareCamBtn_) {
+        this.shareCamBtn_ = value;
+        this.dispatchEvent(org.apache.royale.events.ValueChangeEvent.createUpdateEvent(this, 'shareCamBtn', null, value));
+      }
+    }
+  },
+  uVidContainer: {
+    /** @this {views.actionitemviews.collaboration.CollaborationMain} */
+    get: function() {
+      return this.uVidContainer_;
+    },
+    /** @this {views.actionitemviews.collaboration.CollaborationMain} */
+    set: function(value) {
+      if (value != this.uVidContainer_) {
+        this.uVidContainer_ = value;
+        this.dispatchEvent(org.apache.royale.events.ValueChangeEvent.createUpdateEvent(this, 'uVidContainer', null, value));
       }
     }
   },
@@ -345,15 +623,15 @@ Object.defineProperties(views.actionitemviews.collaboration.CollaborationMain.pr
             'itemsTop',
             'gap',
             true,
-            5,
+            1,
             0,
             0,
             [
               com.unhurdle.spectrum.Label,
               3,
-              '_id',
+              'id',
               true,
-              '$ID_13_2',
+              'usrNos',
               'text',
               true,
               'Connected Users:',
@@ -373,7 +651,49 @@ Object.defineProperties(views.actionitemviews.collaboration.CollaborationMain.pr
               100.0,
               'percentHeight',
               true,
+              50.0,
+              0,
+              0,
+              null,
+              com.unhurdle.spectrum.Switch,
+              3,
+              'id',
+              true,
+              'shareCamBtn',
+              'offLabel',
+              true,
+              'Toggle Off',
+              'onLabel',
+              true,
+              'Toggle On',
+              0,
+              1,
+              'click',
+              this.$EH_13_2,
+              null,
+              org.apache.royale.jewel.VGroup,
+              4,
+              'id',
+              true,
+              'uVidContainer',
+              'percentWidth',
+              true,
               100.0,
+              'percentHeight',
+              true,
+              50.0,
+              'beads',
+              null,
+              [
+                org.apache.royale.jewel.supportClasses.scrollbar.ScrollingViewport,
+                1,
+                '_id',
+                true,
+                '$ID_13_2',
+                0,
+                0,
+                null
+              ],
               0,
               0,
               null
@@ -409,7 +729,10 @@ views.actionitemviews.collaboration.CollaborationMain.prototype.ROYALE_REFLECTIO
       return {
         'outputContainer': { type: 'org.apache.royale.jewel.VGroup', access: 'readwrite', declaredBy: 'views.actionitemviews.collaboration.CollaborationMain'},
         'input': { type: 'com.unhurdle.spectrum.TextField', access: 'readwrite', declaredBy: 'views.actionitemviews.collaboration.CollaborationMain'},
-        'userList': { type: 'org.apache.royale.jewel.List', access: 'readwrite', declaredBy: 'views.actionitemviews.collaboration.CollaborationMain'}
+        'usrNos': { type: 'com.unhurdle.spectrum.Label', access: 'readwrite', declaredBy: 'views.actionitemviews.collaboration.CollaborationMain'},
+        'userList': { type: 'org.apache.royale.jewel.List', access: 'readwrite', declaredBy: 'views.actionitemviews.collaboration.CollaborationMain'},
+        'shareCamBtn': { type: 'com.unhurdle.spectrum.Switch', access: 'readwrite', declaredBy: 'views.actionitemviews.collaboration.CollaborationMain'},
+        'uVidContainer': { type: 'org.apache.royale.jewel.VGroup', access: 'readwrite', declaredBy: 'views.actionitemviews.collaboration.CollaborationMain'}
       };
     },
     methods: function () {

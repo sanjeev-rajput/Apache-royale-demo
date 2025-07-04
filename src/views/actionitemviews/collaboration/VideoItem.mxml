@@ -1,0 +1,43 @@
+<j:VGroup xmlns:fx="http://ns.adobe.com/mxml/2009"
+         xmlns:j="library://ns.apache.org/royale/jewel" xmlns:html="library://ns.apache.org/royale/html"
+         initComplete="init()" gap="0" width="200" height="100">
+
+         <fx:Script>
+            <![CDATA[
+                private var _isinitialized:Boolean = false;
+                private var _userId:String = null;
+                private var _stream:Object = null;
+                private var _isMe:Boolean = false;
+                private var _isvideoData:Boolean = false;
+                private function init():void {
+                    _isinitialized = true;
+                    initUi();
+                    // Initialize the video player or any other setup if needed
+                    
+                }
+
+                public function videoItemData(userId:String, stream:Object, isMe:Boolean=false):void {
+                    _userId = userId;
+                    _stream = stream;
+                    _isMe = isMe;
+                    _isvideoData = true;
+                    initUi();
+                }
+
+                public function get userId():String{
+                    return _userId;
+                }
+
+                private function initUi():void {
+                    if (_isvideoData && _isinitialized) {
+                        uId.text = _userId + (_isMe ? " (You)" : "");
+                        vid.source = _stream; // Assuming stream has a url property
+                    }
+                }
+                
+            ]]>
+         </fx:Script>
+
+         <j:Label id="uId" text="Video Item" />
+         <html:Video id="vid" width="200" height="100" autoplay="true"/>
+</j:VGroup>
