@@ -8,7 +8,7 @@
  */
 
 goog.provide('views.ProductIndexing');
-/* Royale Dependency List: org.apache.royale.jewel.VGroup,org.apache.royale.jewel.HGroup,views.TopMenuL,org.apache.royale.jewel.Label,views.TopMenuR,org.apache.royale.jewel.FooterBar,com.unhurdle.spectrum.Label,org.apache.royale.jewel.Container,com.event.DsEvent,com.unhurdle.spectrum.Toast,org.apache.royale.events.Event,views.actionitemviews.ai.AiMain,views.actionitemviews.basicdrawing.BasicDrawingMain,views.actionitemviews.collaboration.CollaborationMain,views.actionitemviews.games.Game,views.actionitemviews.pexels.pexelsVideoStream,views.actionitemviews.searchlist.SearchListMain,views.actionitemviews.shoppingcart.ShoppingMain,views.actionitemviews.toc.TocAndPgnation,views.actionitemviews.websocket.WikiSocketMain,XML*/
+/* Royale Dependency List: org.apache.royale.jewel.VGroup,org.apache.royale.jewel.HGroup,views.TopMenuL,org.apache.royale.jewel.Label,views.TopMenuR,org.apache.royale.jewel.FooterBar,com.unhurdle.spectrum.Label,org.apache.royale.jewel.Container,com.unhurdle.spectrum.ImageAsset,com.event.DsEvent,com.unhurdle.spectrum.Toast,org.apache.royale.events.Event,views.actionitemviews.ai.AiMain,views.actionitemviews.basicdrawing.BasicDrawingMain,views.actionitemviews.collaboration.CollaborationMain,views.actionitemviews.games.Game,views.actionitemviews.pexels.pexelsVideoStream,views.actionitemviews.searchlist.SearchListMain,views.actionitemviews.shoppingcart.ShoppingMain,views.actionitemviews.toc.TocAndPgnation,views.actionitemviews.websocket.WikiSocketMain,XML*/
 
 goog.require('org.apache.royale.jewel.ResponsiveView');
 
@@ -26,7 +26,7 @@ views.ProductIndexing = function() {
    * @private
    * @type {org.apache.royale.jewel.VGroup}
    */
-  this.$ID_12_6;
+  this.$ID_12_7;
   
   /**
    * @private
@@ -75,6 +75,12 @@ views.ProductIndexing = function() {
    * @type {org.apache.royale.jewel.Container}
    */
   this.vg_;
+  
+  /**
+   * @private
+   * @type {com.unhurdle.spectrum.ImageAsset}
+   */
+  this.$ID_12_5;
   
   /**
    * @private
@@ -324,7 +330,7 @@ Object.defineProperties(views.ProductIndexing.prototype, /** @lends {views.Produ
           4,
           '_id',
           true,
-          '$ID_12_6',
+          '$ID_12_7',
           'percentWidth',
           true,
           100,
@@ -450,7 +456,22 @@ Object.defineProperties(views.ProductIndexing.prototype, /** @lends {views.Produ
             100,
             0,
             0,
-            null
+            [
+              com.unhurdle.spectrum.ImageAsset,
+              3,
+              '_id',
+              true,
+              '$ID_12_5',
+              'src',
+              true,
+              'img/apache-royale-logo.png',
+              'className',
+              true,
+              'royale-logo',
+              0,
+              0,
+              null
+            ]
           ]
         ];
         if (arr)

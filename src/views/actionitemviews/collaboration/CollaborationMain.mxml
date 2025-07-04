@@ -52,8 +52,7 @@
                         text: msg
                     });
                     input.text = ""; // Clear the box
-                    
-
+                    input.focus();
                 }
             }
 
@@ -66,7 +65,7 @@
                     <j:ScrollingViewport/>
                 </j:beads>
             </j:VGroup>
-            <sp:TextArea id="input" width="100%" onEnter="onInputChange()" style="resize:none"/>    
+            <sp:TextField id="input" width="100%" onEnter="onInputChange()" placeholder = "Type your message here..." style="resize:none"/>    
         </j:VGroup>
         <j:VGroup style="border:1px dashed gray;" width="15%" height="100%" itemsVerticalAlign="itemsTop" gap="5">
             <sp:Label text="Connected Users:" width="100%"/>

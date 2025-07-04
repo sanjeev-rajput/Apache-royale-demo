@@ -184,7 +184,6 @@ goog.require('com.unhurdle.spectrum.ImageAsset');
 goog.require('org.apache.royale.geom.Matrix');
 goog.require('org.apache.royale.binding.ContainerDataBinding');
 goog.require('views.actionitemviews.collaboration.CollaborationMain');
-goog.require('com.unhurdle.spectrum.TextArea');
 goog.require('views.actionitemviews.games.keybordgame.Controller');
 goog.require('org.apache.royale.events.KeyboardEvent');
 goog.require('org.apache.royale.events.utils.NavigationKeys');

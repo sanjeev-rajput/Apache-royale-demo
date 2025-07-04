@@ -5,7 +5,7 @@
         xmlns:js="library://ns.apache.org/royale/basic" 
         xmlns:j="library://ns.apache.org/royale/jewel" 
         xmlns:views="views.*" xmlns:actionitemviews="views.actionitemviews.*" 
-        xmlns:drawing="com.comp.drawing.*"
+        xmlns:drawing="com.comp.drawing.*" xmlns:welcomepage="views.welcomepage.*"
         initComplete="initComplete()">
 
     <fx:Script>
@@ -142,6 +142,7 @@
             </j:FooterBar>
         <j:Container localId="vg" percentWidth="100" percentHeight="100">
         <!-- <actionitemviews:Socket/> -->
+            <sp:ImageAsset src="img/apache-royale-logo.png" className="royale-logo" />
         </j:Container>
         </j:VGroup>
 </j:ResponsiveView>

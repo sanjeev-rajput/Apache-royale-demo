@@ -8,7 +8,7 @@
  */
 
 goog.provide('views.actionitemviews.collaboration.CollaborationMain');
-/* Royale Dependency List: org.apache.royale.jewel.HGroup,org.apache.royale.jewel.supportClasses.scrollbar.ScrollingViewport,com.unhurdle.spectrum.TextArea,com.unhurdle.spectrum.Label,org.apache.royale.jewel.List,org.apache.royale.collections.ArrayList,org.apache.royale.events.Event,org.apache.royale.events.ValueEvent,views.actionitemviews.collaboration.MessageItem,views.actionitemviews.websocket.SocketService,XML*/
+/* Royale Dependency List: org.apache.royale.jewel.HGroup,org.apache.royale.jewel.supportClasses.scrollbar.ScrollingViewport,com.unhurdle.spectrum.TextField,com.unhurdle.spectrum.Label,org.apache.royale.jewel.List,org.apache.royale.collections.ArrayList,org.apache.royale.events.Event,org.apache.royale.events.ValueEvent,views.actionitemviews.collaboration.MessageItem,views.actionitemviews.websocket.SocketService,XML*/
 
 goog.require('org.apache.royale.jewel.VGroup');
 
@@ -47,7 +47,7 @@ views.actionitemviews.collaboration.CollaborationMain = function() {
   
   /**
    * @private
-   * @type {com.unhurdle.spectrum.TextArea}
+   * @type {com.unhurdle.spectrum.TextField}
    */
   this.input_;
   
@@ -169,6 +169,7 @@ views.actionitemviews.collaboration.CollaborationMain.prototype.views_actionitem
   if (this.views_actionitemviews_collaboration_CollaborationMain__socketService && msg.length > 0) {
     this.views_actionitemviews_collaboration_CollaborationMain__socketService.sendToSocket({"type":views.actionitemviews.websocket.SocketService.SUBSCRIBE_COLLABARATION, "text":msg});
     this.input.text = "";
+    this.input.focus();
   }
 };
 
@@ -305,14 +306,17 @@ Object.defineProperties(views.actionitemviews.collaboration.CollaborationMain.pr
               0,
               0,
               null,
-              com.unhurdle.spectrum.TextArea,
-              3,
+              com.unhurdle.spectrum.TextField,
+              4,
               'id',
               true,
               'input',
               'percentWidth',
               true,
               100.0,
+              'placeholder',
+              true,
+              'Type your message here...',
               'style',
               true,
               'resize:none',
@@ -404,7 +408,7 @@ views.actionitemviews.collaboration.CollaborationMain.prototype.ROYALE_REFLECTIO
     accessors: function () {
       return {
         'outputContainer': { type: 'org.apache.royale.jewel.VGroup', access: 'readwrite', declaredBy: 'views.actionitemviews.collaboration.CollaborationMain'},
-        'input': { type: 'com.unhurdle.spectrum.TextArea', access: 'readwrite', declaredBy: 'views.actionitemviews.collaboration.CollaborationMain'},
+        'input': { type: 'com.unhurdle.spectrum.TextField', access: 'readwrite', declaredBy: 'views.actionitemviews.collaboration.CollaborationMain'},
         'userList': { type: 'org.apache.royale.jewel.List', access: 'readwrite', declaredBy: 'views.actionitemviews.collaboration.CollaborationMain'}
       };
     },

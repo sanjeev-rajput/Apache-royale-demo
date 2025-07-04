@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"GridLayout.js",
-"lineCount":106,
-"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Jewel/src/main/royale",
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;AA0CkB,gDAAhB,WAA0BA,CAAC,C,CAC3B,C;4EACQ,C;AACR,C;;;;;;;;;AAKoB,iDAAA,iBAAwB,GAAG,aAAa,C;;;;;;;;;;;;;;AAYnC,2DAAA,iBAAzB,WAA0CC,CAAC,KAAkB,C,CAC7D,C;EAD2C,+CAAc,IAAd,C;4FAEjB,C;EAEzB,KAAA,aAAa,CAAC,YAAY,CAAC,QAAQ,CAAC,C;EACpC,KAAA,aAAa,CAAC,YAAY,CAAC,MAAM,CAAC,C;EAIlC,KAAAC,uDAAM,CAAC,KAAAC,qDAAI,CAAC,C;AAEb,C;;;;;;;AAEY,2DAAAA,qDAAY,C;;;;;;;AAkCP,2DAAAD,uDAAjB,WAAuBE,CAAC,KAAa,C,CACrC,C;EACC,KAAK,GAAG,KAAA,aAAa,CAAC,QAAQ,CAAC,KAAK,CAAC,GAAG,KAAA,aAAa,CAAC,WAAW,CAAC,KAAK,CAAC,C;AACzE,C;;;;;;;;AAoDyB,2DAAA,MAAzB,WAA+BC,CAAC,C,CAChC,C;;EAiCc,OAAO,IAAI,C;AAEzB,C;;;;;;;;;;;8EAlHuBC,CAAC,C,CAClB,C;EACI,OAAO,KAAAH,qDAAI,C;AACf,C;;;8EAKiBG,CAAC,KAAa,C,CACrC,C;EACC,IAAI,KAAAH,qDAAI,IAAI,KAAK,EACR,C;IAGP,IAAG,KAAA,aAAa,C;MACf,KAAAD,uDAAM,CAAC,KAAK,CAAC,C;IAEd,KAAAC,qDAAI,GAAG,KAAK,C;EAEL,CAAA;",
-"sources":["org/apache/royale/jewel/beads/layouts/GridLayout.as"],
-"names":["GridLayout.GridLayout","GridLayout.beadsAddedHandler","setGap","_gap","GridLayout.setGap","GridLayout.layout","GridLayout.gap"]
-}

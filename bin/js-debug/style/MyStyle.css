@@ -293,7 +293,7 @@
   border-radius: 5px;
 }
 .collaborativeContainer{
-  padding-bottom: 25px;
+  padding-bottom: 30px;
 }
 .chatBox, .chatBoxMe  {
   width: auto;
@@ -343,3 +343,28 @@
 .appNavItemLayout{
   padding: 10px;
 }
+
+
+/*Apache royale welcome page [start]*/
+  .royale-logo {
+    width: 60px;
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    animation: dropInLogo 1s ease-out 1s forwards, bounce 1s infinite 2s;
+  }
+
+  @keyframes dropInLogo {
+    to {
+      top: -20px;
+      opacity: 1;
+    }
+  }
+
+  @keyframes bounce {
+    0%, 100% { transform: translateX(-50%) translateY(0); }
+    50% { transform: translateX(-50%) translateY(10px); }
+  }
+  /*Apache royale welcome page [end]*/
