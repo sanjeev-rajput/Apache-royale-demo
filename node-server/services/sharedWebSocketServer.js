@@ -1,5 +1,7 @@
-import { WebSocketServer } from 'ws';
+import WebSocket, { WebSocketServer } from 'ws';
 import { createRequire } from 'module';
+
+
 
 const require = createRequire(import.meta.url);
 const EventSource = require('eventsource');
@@ -52,6 +54,12 @@ export function setupSharedWebSocketServer(server) {
                 data.sender = userMap.get(ws)?.id;
                 targetClient.send(JSON.stringify(data));
             }
+        }else if (data.type === 'user_disconnected') {
+            const userInfo = userMap.get(ws);
+            if (userInfo) {
+                broadcastToAll({ type: 'user_disconnected', userId: userInfo.id });
+                console.log('📢 Manual disconnect triggered by UI for:', userInfo.id);
+            }
         }
 
 
@@ -100,13 +108,17 @@ export function setupSharedWebSocketServer(server) {
 
         ws.on('close', () => {
             console.log('❌ Client disconnected');
+            const userInfo = userMap.get(ws);
+            const userId = userInfo?.id;
+
+            if (userId) {
+                console.log('📢 Broadcasting user_disconnected for', userId);
+                broadcastToAll({ type: 'user_disconnected', userId });
+            }
+
             clients.delete(ws);
             userMap.delete(ws);
             broadcastUserList();
-            if (userId) {
-                broadcastToAll({ type: 'user_disconnected', userId });
-                console.log(userid)
-            }
             eventSource.removeEventListener('message', onWikiEvent);
         });
     });
@@ -128,9 +140,15 @@ export function setupSharedWebSocketServer(server) {
 
     function broadcastToAll(data) {
         const msg = JSON.stringify(data);
+        console.log("📡 Sending to all clients:", msg);
+
         for (const client of clients) {
             if (client.readyState === client.OPEN) {
-                client.send(msg);
+                try {
+                    client.send(msg);
+                } catch (err) {
+                    console.error("⚠️ Failed to send:", err);
+                }
             }
         }
     }
