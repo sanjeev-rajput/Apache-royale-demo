@@ -8,7 +8,7 @@
  */
 
 goog.provide('views.actionitemviews.websocket.SocketService');
-/* Royale Dependency List: com.model.Config,org.apache.royale.utils.Language,XML*/
+/* Royale Dependency List: com.model.Config,com.util.AppAlert,org.apache.royale.utils.Language,XML*/
 
 
 
@@ -87,7 +87,7 @@ views.actionitemviews.websocket.SocketService.prototype.addCAllBackFunction = fu
 views.actionitemviews.websocket.SocketService.prototype.connectWebSocket = function(type) {
   this.views_actionitemviews_websocket_SocketService__subscribeType = type;
   if (this.views_actionitemviews_websocket_SocketService__callBackFunction == null) {
-    console.error("CallBack function is not set");
+    com.util.AppAlert.show(com.util.AppAlert.ERROR, "CallBack function is not set");
     return;
   }
   this.views_actionitemviews_websocket_SocketService_ws = new WebSocket(this.views_actionitemviews_websocket_SocketService__url);
@@ -150,7 +150,7 @@ views.actionitemviews.websocket.SocketService.prototype.views_actionitemviews_we
  * @param {*} e
  */
 views.actionitemviews.websocket.SocketService.prototype.views_actionitemviews_websocket_SocketService_connectionErrorEvtHandler = function(e) {
-  console.error('WebSocket error:', e);
+  com.util.AppAlert.show(com.util.AppAlert.ERROR, 'WebSocket error: <br>' + e);
 };
 
 

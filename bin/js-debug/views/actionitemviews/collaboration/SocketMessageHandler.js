@@ -8,7 +8,7 @@
  */
 
 goog.provide('views.actionitemviews.collaboration.SocketMessageHandler');
-/* Royale Dependency List: com.unhurdle.spectrum.Label,com.unhurdle.spectrum.TextField,org.apache.royale.collections.ArrayList,org.apache.royale.core.UIBase,org.apache.royale.jewel.VGroup,views.actionitemviews.collaboration.MessageItem,XML*/
+/* Royale Dependency List: com.unhurdle.spectrum.TextField,com.util.AppAlert,org.apache.royale.jewel.VGroup,views.actionitemviews.collaboration.MessageItem,XML*/
 
 
 
@@ -19,8 +19,8 @@ goog.provide('views.actionitemviews.collaboration.SocketMessageHandler');
  * @param {org.apache.royale.jewel.VGroup} output
  */
 views.actionitemviews.collaboration.SocketMessageHandler = function(input, output) {
-  this.views_actionitemviews_collaboration_SocketMessageHandler_outputContainer = output;
   this.views_actionitemviews_collaboration_SocketMessageHandler_inputField = input;
+  this.views_actionitemviews_collaboration_SocketMessageHandler_outputContainer = output;
 };
 
 
@@ -33,23 +33,9 @@ views.actionitemviews.collaboration.SocketMessageHandler.prototype.views_actioni
 
 /**
  * @private
- * @type {org.apache.royale.core.UIBase}
+ * @type {org.apache.royale.jewel.VGroup}
  */
 views.actionitemviews.collaboration.SocketMessageHandler.prototype.views_actionitemviews_collaboration_SocketMessageHandler_outputContainer = null;
-
-
-/**
- * @private
- * @type {org.apache.royale.collections.ArrayList}
- */
-views.actionitemviews.collaboration.SocketMessageHandler.prototype.views_actionitemviews_collaboration_SocketMessageHandler_userList = null;
-
-
-/**
- * @private
- * @type {com.unhurdle.spectrum.Label}
- */
-views.actionitemviews.collaboration.SocketMessageHandler.prototype.views_actionitemviews_collaboration_SocketMessageHandler_usrNosLabel = null;
 
 
 /**
@@ -60,32 +46,48 @@ views.actionitemviews.collaboration.SocketMessageHandler.prototype.views_actioni
 
 
 /**
- * @package
  * @param {Object} data
  */
-views.actionitemviews.collaboration.SocketMessageHandler.prototype.handleWelcome = function(data) {
+views.actionitemviews.collaboration.SocketMessageHandler.prototype.process = function(data) {
+  if (data["type"] == "welcome") {
+    this.views_actionitemviews_collaboration_SocketMessageHandler_myUserId = org.apache.royale.utils.Language.string(data["userId"]);
+    this.views_actionitemviews_collaboration_SocketMessageHandler_handleWelcome(data);
+  } else if (data["type"] == "subscribe_collabaration") {
+    this.views_actionitemviews_collaboration_SocketMessageHandler_handleChatMessage(org.apache.royale.utils.Language.string(data["sender"]), org.apache.royale.utils.Language.string(data["text"]));
+  } else if (data["type"] == "error") {
+    this.views_actionitemviews_collaboration_SocketMessageHandler_handleError(org.apache.royale.utils.Language.string(data["message"]));
+  }
+};
+
+
+/**
+ * @private
+ * @param {Object} data
+ */
+views.actionitemviews.collaboration.SocketMessageHandler.prototype.views_actionitemviews_collaboration_SocketMessageHandler_handleWelcome = function(data) {
   this.views_actionitemviews_collaboration_SocketMessageHandler_myUserId = org.apache.royale.utils.Language.string(data["userId"]);
   this.views_actionitemviews_collaboration_SocketMessageHandler_appendMessage(this.views_actionitemviews_collaboration_SocketMessageHandler_myUserId, "Welcome to the collaboration room! You are: " + this.views_actionitemviews_collaboration_SocketMessageHandler_myUserId);
 };
 
 
 /**
- * @package
+ * @private
  * @param {string} sender
  * @param {string} message
  */
-views.actionitemviews.collaboration.SocketMessageHandler.prototype.handleChatMessage = function(sender, message) {
+views.actionitemviews.collaboration.SocketMessageHandler.prototype.views_actionitemviews_collaboration_SocketMessageHandler_handleChatMessage = function(sender, message) {
   this.views_actionitemviews_collaboration_SocketMessageHandler_appendMessage(sender, message);
 };
 
 
 /**
- * @package
+ * @private
  * @param {string} message
  */
-views.actionitemviews.collaboration.SocketMessageHandler.prototype.handleError = function(message) {
+views.actionitemviews.collaboration.SocketMessageHandler.prototype.views_actionitemviews_collaboration_SocketMessageHandler_handleError = function(message) {
   this.views_actionitemviews_collaboration_SocketMessageHandler_appendMessage("System", message);
   this.views_actionitemviews_collaboration_SocketMessageHandler_inputField.disabled = true;
+  com.util.AppAlert.show(com.util.AppAlert.ERROR, message);
 };
 
 
@@ -130,7 +132,8 @@ views.actionitemviews.collaboration.SocketMessageHandler.prototype.ROYALE_REFLEC
   return {
     methods: function () {
       return {
-        'SocketMessageHandler': { type: '', declaredBy: 'views.actionitemviews.collaboration.SocketMessageHandler', parameters: function () { return [ 'com.unhurdle.spectrum.TextField', false ,'org.apache.royale.jewel.VGroup', false ]; }}
+        'SocketMessageHandler': { type: '', declaredBy: 'views.actionitemviews.collaboration.SocketMessageHandler', parameters: function () { return [ 'com.unhurdle.spectrum.TextField', false ,'org.apache.royale.jewel.VGroup', false ]; }},
+        'process': { type: 'void', declaredBy: 'views.actionitemviews.collaboration.SocketMessageHandler', parameters: function () { return [ 'Object', false ]; }}
       };
     }
   };

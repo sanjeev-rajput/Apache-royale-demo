@@ -14,7 +14,7 @@
         private var _socketService:SocketService;
         private var _socketMsgHandler:SocketMessageHandler;
         private var _socketVideoHandler:SocketVideoHandler;
-        public var myUserId:String;
+        private var myUserId:String;
 
         private function init():void {
             _socketService = new SocketService();
@@ -33,36 +33,24 @@
                     ulist.setItemAt(myUserId + " (You)", idx);
                 }
                 userList.dataProvider = ulist;
-                _socketVideoHandler.setUserList(userList)
             }
         }
 
 
         private function onSocketData(data:Object):void {
-            // - video section
-            if (data.type == "video-offer") {
-                _socketVideoHandler.handleOffer(data.sender, data.offer);
-            } else if (data.type == "video-answer") {
-                _socketVideoHandler.handleAnswer(data.sender, data.answer);
-            } else if (data.type == "ice-candidate") {
-                _socketVideoHandler.handleCandidate(data.sender, data.candidate);
-            // - init welcome section    
-            } else if (data.type == "welcome") {
+            if (data.type == "welcome") {
                 myUserId = data.userId;
                 _socketVideoHandler.setMyUserId(myUserId)
-                _socketMsgHandler.handleWelcome(data);
+                _socketMsgHandler.process(data);
                 updateUserList();
             } else if (data.type == "user_list") {
                 userList.dataProvider = new ArrayList(data.users);
                 usrNos.text = "Connected Users: " + data.count + "/" + data.max;
                 updateUserList();
-            } else if (data.type == "subscribe_collabaration") {
-                _socketMsgHandler.handleChatMessage(data.sender, data.text);
-            // - error section
-            } else if (data.type == "error") {
-                _socketMsgHandler.handleError(data.message);
-            } else if (data.type == "user_disconnected") {
-                _socketVideoHandler.removePeerVideo(data.userId);
+            }else if (_socketVideoHandler.isVideoMessage(data.type)) {
+                _socketVideoHandler.process(data);
+            } else {
+                _socketMsgHandler.process(data);
             }
         }
 

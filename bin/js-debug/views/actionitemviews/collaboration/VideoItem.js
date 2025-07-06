@@ -8,30 +8,30 @@
  */
 
 goog.provide('views.actionitemviews.collaboration.VideoItem');
-/* Royale Dependency List: org.apache.royale.jewel.Label,org.apache.royale.html.elements.Video,org.apache.royale.events.Event,XML*/
+/* Royale Dependency List: org.apache.royale.html.elements.Video,org.apache.royale.jewel.Label,org.apache.royale.events.Event,XML*/
 
-goog.require('org.apache.royale.jewel.VGroup');
+goog.require('org.apache.royale.jewel.Container');
 
 
 
 /**
  * @constructor
- * @extends {org.apache.royale.jewel.VGroup}
+ * @extends {org.apache.royale.jewel.Container}
  */
 views.actionitemviews.collaboration.VideoItem = function() {
   views.actionitemviews.collaboration.VideoItem.base(this, 'constructor');
   
   /**
    * @private
-   * @type {org.apache.royale.jewel.Label}
-   */
-  this.uId_;
-  
-  /**
-   * @private
    * @type {org.apache.royale.html.elements.Video}
    */
   this.vid_;
+  
+  /**
+   * @private
+   * @type {org.apache.royale.jewel.Label}
+   */
+  this.uId_;
   
   /**
    * @private
@@ -46,24 +46,21 @@ views.actionitemviews.collaboration.VideoItem = function() {
   this.mxmldp;
 
   this.generateMXMLAttributes([
-    3,
-    'gap',
+    2,
+    'percentWidth',
     true,
-    0,
-    'width',
-    true,
-    200,
+    100.0,
     'height',
     true,
     100,
     0,
     1,
     'initComplete',
-    this.$EH_13_0
+    this.$EH_11_0
   ]);
   
 };
-goog.inherits(views.actionitemviews.collaboration.VideoItem, org.apache.royale.jewel.VGroup);
+goog.inherits(views.actionitemviews.collaboration.VideoItem, org.apache.royale.jewel.Container);
 
 
 
@@ -72,7 +69,7 @@ goog.inherits(views.actionitemviews.collaboration.VideoItem, org.apache.royale.j
  * @private
  * @type {boolean}
  */
-views.actionitemviews.collaboration.VideoItem.prototype.views_actionitemviews_collaboration_VideoItem__isinitialized = false;
+views.actionitemviews.collaboration.VideoItem.prototype.views_actionitemviews_collaboration_VideoItem__isInitialized = false;
 
 
 /**
@@ -98,17 +95,10 @@ views.actionitemviews.collaboration.VideoItem.prototype.views_actionitemviews_co
 
 /**
  * @private
- * @type {boolean}
- */
-views.actionitemviews.collaboration.VideoItem.prototype.views_actionitemviews_collaboration_VideoItem__isvideoData = false;
-
-
-/**
- * @private
  */
 views.actionitemviews.collaboration.VideoItem.prototype.views_actionitemviews_collaboration_VideoItem_init = function() {
-  this.views_actionitemviews_collaboration_VideoItem__isinitialized = true;
-  this.views_actionitemviews_collaboration_VideoItem_initUi();
+  this.views_actionitemviews_collaboration_VideoItem__isInitialized = true;
+  this.views_actionitemviews_collaboration_VideoItem_updateUI();
 };
 
 
@@ -122,8 +112,9 @@ views.actionitemviews.collaboration.VideoItem.prototype.videoItemData = function
   this.views_actionitemviews_collaboration_VideoItem__userId = userId;
   this.views_actionitemviews_collaboration_VideoItem__stream = stream;
   this.views_actionitemviews_collaboration_VideoItem__isMe = isMe;
-  this.views_actionitemviews_collaboration_VideoItem__isvideoData = true;
-  this.views_actionitemviews_collaboration_VideoItem_initUi();
+  if (this.views_actionitemviews_collaboration_VideoItem__isInitialized) {
+    this.views_actionitemviews_collaboration_VideoItem_updateUI();
+  }
 };
 
 
@@ -131,13 +122,28 @@ views.actionitemviews.collaboration.VideoItem.prototype.videoItemData = function
 
 
 /**
+ * @param {boolean} on
+ */
+views.actionitemviews.collaboration.VideoItem.prototype.toggleCamera = function(on) {
+  if (this.vid) {
+    this.vid.visible = on;
+  }
+  on ? this.uId.className = "chatVidLblOn" : this.uId.className = "chatVidLblOff";
+  this.uId.text = this.views_actionitemviews_collaboration_VideoItem__userId + (this.views_actionitemviews_collaboration_VideoItem__isMe ? " (You)" : "") + (on ? "" : " (Camera Off)");
+  this.uId.x = (this.width - this.uId.width) / 2;
+};
+
+
+/**
  * @private
  */
-views.actionitemviews.collaboration.VideoItem.prototype.views_actionitemviews_collaboration_VideoItem_initUi = function() {
-  if (this.views_actionitemviews_collaboration_VideoItem__isvideoData && this.views_actionitemviews_collaboration_VideoItem__isinitialized) {
-    this.uId.text = this.views_actionitemviews_collaboration_VideoItem__userId + (this.views_actionitemviews_collaboration_VideoItem__isMe ? " (You)" : "");
+views.actionitemviews.collaboration.VideoItem.prototype.views_actionitemviews_collaboration_VideoItem_updateUI = function() {
+  if (this.views_actionitemviews_collaboration_VideoItem__stream && this.vid) {
     this.vid.source = this.views_actionitemviews_collaboration_VideoItem__stream;
+    this.vid.visible = true;
+    this.uId.x = (this.width - this.uId.width) / 2;
   }
+  this.uId.text = this.views_actionitemviews_collaboration_VideoItem__userId + (this.views_actionitemviews_collaboration_VideoItem__isMe ? " (You)" : "");
 };
 
 
@@ -167,26 +173,13 @@ get: views.actionitemviews.collaboration.VideoItem.prototype.get__userId}}
  * @export
  * @param {org.apache.royale.events.Event} event
  */
-views.actionitemviews.collaboration.VideoItem.prototype.$EH_13_0 = function(event)
+views.actionitemviews.collaboration.VideoItem.prototype.$EH_11_0 = function(event)
 {
   this.views_actionitemviews_collaboration_VideoItem_init();
 };
 
 
 Object.defineProperties(views.actionitemviews.collaboration.VideoItem.prototype, /** @lends {views.actionitemviews.collaboration.VideoItem.prototype} */ {
-  uId: {
-    /** @this {views.actionitemviews.collaboration.VideoItem} */
-    get: function() {
-      return this.uId_;
-    },
-    /** @this {views.actionitemviews.collaboration.VideoItem} */
-    set: function(value) {
-      if (value != this.uId_) {
-        this.uId_ = value;
-        this.dispatchEvent(org.apache.royale.events.ValueChangeEvent.createUpdateEvent(this, 'uId', null, value));
-      }
-    }
-  },
   vid: {
     /** @this {views.actionitemviews.collaboration.VideoItem} */
     get: function() {
@@ -200,6 +193,19 @@ Object.defineProperties(views.actionitemviews.collaboration.VideoItem.prototype,
       }
     }
   },
+  uId: {
+    /** @this {views.actionitemviews.collaboration.VideoItem} */
+    get: function() {
+      return this.uId_;
+    },
+    /** @this {views.actionitemviews.collaboration.VideoItem} */
+    set: function(value) {
+      if (value != this.uId_) {
+        this.uId_ = value;
+        this.dispatchEvent(org.apache.royale.events.ValueChangeEvent.createUpdateEvent(this, 'uId', null, value));
+      }
+    }
+  },
   'MXMLDescriptor': {
     /** @this {views.actionitemviews.collaboration.VideoItem} */
     get: function() {
@@ -209,31 +215,46 @@ Object.defineProperties(views.actionitemviews.collaboration.VideoItem.prototype,
         var arr = views.actionitemviews.collaboration.VideoItem.superClass_.get__MXMLDescriptor.apply(this);
         /** @type {Array} */
         var mxmldd = [
-          org.apache.royale.jewel.Label,
-          2,
-          'id',
-          true,
-          'uId',
-          'text',
-          true,
-          'Video Item',
-          0,
-          0,
-          null,
           org.apache.royale.html.elements.Video,
-          4,
+          6,
           'id',
           true,
           'vid',
-          'width',
+          'percentWidth',
           true,
-          200,
+          100.0,
           'height',
           true,
           100,
           'autoplay',
           true,
           true,
+          'x',
+          true,
+          0,
+          'y',
+          true,
+          0,
+          0,
+          0,
+          null,
+          org.apache.royale.jewel.Label,
+          5,
+          'id',
+          true,
+          'uId',
+          'text',
+          true,
+          'Video Item',
+          'className',
+          true,
+          'chatVidLblOn',
+          'x',
+          true,
+          0,
+          'y',
+          true,
+          0,
           0,
           0,
           null
@@ -266,13 +287,14 @@ views.actionitemviews.collaboration.VideoItem.prototype.ROYALE_REFLECTION_INFO =
     accessors: function () {
       return {
         'userId': { type: 'String', access: 'readonly', declaredBy: 'views.actionitemviews.collaboration.VideoItem'},
-        'uId': { type: 'org.apache.royale.jewel.Label', access: 'readwrite', declaredBy: 'views.actionitemviews.collaboration.VideoItem'},
-        'vid': { type: 'org.apache.royale.html.elements.Video', access: 'readwrite', declaredBy: 'views.actionitemviews.collaboration.VideoItem'}
+        'vid': { type: 'org.apache.royale.html.elements.Video', access: 'readwrite', declaredBy: 'views.actionitemviews.collaboration.VideoItem'},
+        'uId': { type: 'org.apache.royale.jewel.Label', access: 'readwrite', declaredBy: 'views.actionitemviews.collaboration.VideoItem'}
       };
     },
     methods: function () {
       return {
         'videoItemData': { type: 'void', declaredBy: 'views.actionitemviews.collaboration.VideoItem', parameters: function () { return [ 'String', false ,'Object', false ,'Boolean', true ]; }},
+        'toggleCamera': { type: 'void', declaredBy: 'views.actionitemviews.collaboration.VideoItem', parameters: function () { return [ 'Boolean', false ]; }},
         'VideoItem': { type: '', declaredBy: 'views.actionitemviews.collaboration.VideoItem'}
       };
     }

@@ -60,7 +60,22 @@ export function setupSharedWebSocketServer(server) {
                 broadcastToAll({ type: 'user_disconnected', userId: userInfo.id });
                 console.log('📢 Manual disconnect triggered by UI for:', userInfo.id);
             }
+        }else if (data.type === 'share_webcam') {
+            const userInfo = userMap.get(ws);
+            if (userInfo) {
+                const broadcastData = {
+                    type: 'share_webcam',
+                    userId: userInfo.id
+                };
+                for (const client of clients) {
+                    if (client !== ws && client.readyState === WebSocket.OPEN) {
+                        client.send(JSON.stringify(broadcastData));
+                    }
+                }
+                console.log(`📢 share_webcam broadcasted by ${userInfo.id}`);
+            }
         }
+
 
 
         if (data.type === 'subscribe_collabaration') {

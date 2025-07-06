@@ -8,7 +8,7 @@
  */
 
 goog.provide('com.model.ServiceLoader');
-/* Royale Dependency List: XML,com.unhurdle.spectrum.Alert,com.util.preloader.DsPreloader,org.apache.royale.debugging.throwError,org.apache.royale.events.Event,org.apache.royale.net.HTTPConstants,org.apache.royale.net.HTTPService,org.apache.royale.utils.Language*/
+/* Royale Dependency List: XML,com.unhurdle.spectrum.Alert,com.util.AppAlert,com.util.preloader.DsPreloader,org.apache.royale.debugging.throwError,org.apache.royale.events.Event,org.apache.royale.net.HTTPConstants,org.apache.royale.net.HTTPService,org.apache.royale.utils.Language*/
 
 
 
@@ -167,7 +167,7 @@ com.model.ServiceLoader.prototype.com_model_ServiceLoader_completeJdataHandler =
  */
 com.model.ServiceLoader.prototype.com_model_ServiceLoader_errorEventHandler = function(event) {
   com.util.preloader.DsPreloader.instance.remvoePreloader("serviceLoader");
-  org.apache.royale.utils.Language.trace("errorEventHandler ERROR!!!" + event.target);
+  com.util.AppAlert.show(com.util.AppAlert.ERROR, "errorEventHandler ERROR!!! <br>" + event.target);
   if (this.com_model_ServiceLoader__errorCallback != null)
     this.com_model_ServiceLoader__errorCallback(event);
 };

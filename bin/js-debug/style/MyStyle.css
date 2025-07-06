@@ -329,7 +329,14 @@
         margin: 40px auto;
     }
 }
+.chatVidLblOn{
+  color: yellow;
+}
+.chatVidLblOff{
+color: black;
+}
 
+/*AppNavigationMain.mxml*/
 .appNavigationMain{
   padding: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -368,3 +375,7 @@
     50% { transform: translateX(-50%) translateY(10px); }
   }
   /*Apache royale welcome page [end]*/
+
+  .appAlert{
+    color: red;
+  }

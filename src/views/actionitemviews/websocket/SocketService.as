@@ -3,6 +3,7 @@ package views.actionitemviews.websocket
 
 
     import com.model.Config;
+    import com.util.AppAlert;
 
     public class SocketService{
 
@@ -26,7 +27,7 @@ package views.actionitemviews.websocket
         public function connectWebSocket(type:String):void{  
             _subscribeType = type;
             if(_callBackFunction == null){
-                console.error("CallBack function is not set");
+                AppAlert.show(AppAlert.ERROR, "CallBack function is not set");
                 return;
             }
             ws = new WebSocket(_url); 
@@ -63,7 +64,7 @@ package views.actionitemviews.websocket
         }
 
         private function connectionErrorEvtHandler(e:*):void {
-            console.error('WebSocket error:', e);
+            AppAlert.show(AppAlert.ERROR, 'WebSocket error: <br>' +  e);
         }
 
         public function get connected():Boolean {

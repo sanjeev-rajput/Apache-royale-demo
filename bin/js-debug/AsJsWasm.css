@@ -449,6 +449,10 @@ hr {
 }
 
 
+.Alert {
+}
+
+
 .jewel.badge {
         border-radius: 500em;
         color: #808080;
@@ -3325,6 +3329,10 @@ hr {
         background-color: transparent;
         min-height: 34px;
         padding: 0px;
+}
+
+
+.TitleBar {
 }
 
 

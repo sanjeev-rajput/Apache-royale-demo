@@ -6,6 +6,7 @@ package com.model{
     import com.util.preloader.DsPreloader;
     import com.unhurdle.spectrum.Alert;
     import org.apache.royale.debugging.throwError;
+    import com.util.AppAlert;
 
     public class ServiceLoader{
 
@@ -73,7 +74,7 @@ package com.model{
 
         private function errorEventHandler(event:Event):void{
            DsPreloader.instance.remvoePreloader("serviceLoader");
-           trace("errorEventHandler ERROR!!!" + event.target)
+           AppAlert.show(AppAlert.ERROR, "errorEventHandler ERROR!!! <br>" + event.target)
            if(_errorCallback !=null)_errorCallback(event);
         }
 

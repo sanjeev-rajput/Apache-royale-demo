@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"State.js",
+"lineCount":106,
+"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Core/src/main/royale",
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;;;AA6CkB,8BAAhB,WAAqBA,CAAC,UAAwB,C,CAC9C,C;EADsB,8DAAoB,IAApB,C;EAEd,C;AACR,C;;;;;;;AAEkB,yCAAAC,oCAAY,C;;;;;;;AAoBZ,yCAAAC,2CAAmB,C;;;;;;;AAoBnB,yCAAAC,yCAAgB,C;;;;;;;;;;;6DA9BJC,CAAC,C,CACzB,C;EACI,OAAO,KAAAH,oCAAK,C;AAChB,C;;;6DACwBG,CAAC,KAAY,C,CACrC,C;EACI,KAAAH,oCAAK,GAAG,KAAK,C;AACjB,C;;;;;;;;;;;oEAc+BI,CAAC,C,CAChC,C;EACI,OAAO,KAAAH,2CAAY,C;AACvB,C;;;oEAC+BG,CAAC,KAAY,C,CAC5C,C;EACI,KAAAH,2CAAY,GAAG,KAAK,C;AACxB,C;;;;;;;;;;;kEAY6BI,CAAC,C,CAC9B,C;EACI,OAAO,KAAAH,yCAAU,C;AACrB,C;;;kEAC6BG,CAAC,KAAW,C,CACzC,C;EACI,KAAAH,yCAAU,GAAG,KAAK,CAAA;",
+"sources":["org/apache/royale/states/State.as"],
+"names":["State.State","_name","_stateGroups","_overrides","State.name","State.stateGroups","State.overrides"]
+}

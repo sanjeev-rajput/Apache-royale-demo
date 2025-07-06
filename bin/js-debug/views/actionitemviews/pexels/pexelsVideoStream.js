@@ -8,7 +8,7 @@
  */
 
 goog.provide('views.actionitemviews.pexels.pexelsVideoStream');
-/* Royale Dependency List: org.apache.royale.jewel.HGroup,org.apache.royale.jewel.VideoPlayer,org.apache.royale.jewel.VGroup,org.apache.royale.html.elements.I,com.unhurdle.spectrum.Search,com.unhurdle.spectrum.TextField,com.model.ServiceLoader,org.apache.royale.events.Event,org.apache.royale.events.MouseEvent,XML*/
+/* Royale Dependency List: org.apache.royale.jewel.HGroup,org.apache.royale.jewel.VideoPlayer,org.apache.royale.jewel.VGroup,org.apache.royale.html.elements.I,com.unhurdle.spectrum.Search,com.unhurdle.spectrum.TextField,com.model.ServiceLoader,com.util.AppAlert,org.apache.royale.events.Event,org.apache.royale.events.MouseEvent,XML*/
 
 goog.require('org.apache.royale.jewel.Group');
 
@@ -211,7 +211,7 @@ views.actionitemviews.pexels.pexelsVideoStream.prototype.views_actionitemviews_p
  * @param {org.apache.royale.events.Event} event
  */
 views.actionitemviews.pexels.pexelsVideoStream.prototype.views_actionitemviews_pexels_pexelsVideoStream_onError = function(event) {
-  org.apache.royale.utils.Language.trace("Error loading videos: " + event);
+  com.util.AppAlert.show(com.util.AppAlert.ERROR, "Error loading videos: <br>" + event);
 };
 
 

@@ -3,7 +3,7 @@ package views.actionitemviews.collaboration {
     import views.actionitemviews.collaboration.VideoItem;
     import views.actionitemviews.websocket.SocketService;
     import org.apache.royale.jewel.VGroup;
-    import org.apache.royale.jewel.List;
+    import com.util.AppAlert;
 
     public class SocketVideoHandler {
 
@@ -16,7 +16,6 @@ package views.actionitemviews.collaboration {
         private var uVidContainer:VGroup;
         private var shareCamBtn:Switch;
         private var socketService:SocketService;
-        private var userList:List;
 
         public function SocketVideoHandler(uVidContainer:VGroup, shareCamBtn:Switch, socketService:SocketService) {
             this.uVidContainer = uVidContainer;
@@ -25,13 +24,41 @@ package views.actionitemviews.collaboration {
             this.peerConnections = {};
         }
 
-        public function setUserList(lst:List):void {
-            userList = lst;
-        }
-
         public function setMyUserId(id:String):void {
             this.myUserId = id;
         }
+
+        public function isVideoMessage(type:String):Boolean {
+            return type == "video-offer" || type == "video-answer" || type == "ice-candidate" || type == "share_webcam" || type == "user_disconnected";
+        }
+
+        public function process(data:Object):void {
+            switch (data.type) {
+                case "video-offer":
+                    handleOffer(data.sender, data.offer);
+                    break;
+                case "video-answer":
+                    handleAnswer(data.sender, data.answer);
+                    break;
+                case "ice-candidate":
+                    handleCandidate(data.sender, data.candidate);
+                    break;
+                case "share_webcam":
+                    if (data.userId != myUserId)
+                        createPeerConnection(data.userId, true);
+                    break;
+                case "user_disconnected":
+                    toggleCameraVisibility(data.userId, false);
+                    break;
+            }
+        }
+
+        private function updateCamButtonState(on:Boolean):void {
+            shareCamBtn.checked = on;
+            webcamInitialized = on ? true : false;
+            shareCamBtn.onLabel = on ? "Webcam on" : "Webcam off";
+        }
+
 
         public function onStartWebcam():void {
             if (webcamInitialized) return;
@@ -41,10 +68,10 @@ package views.actionitemviews.collaboration {
                 .then(function(stream:Object):void {
                     localStream = stream;
                     myLocalStream = stream;
-                    webcamInitialized = true;
-                    shareCamBtn.onLabel = "Webcam on";
-                    shareCamBtn.checked = true;
-
+                    // webcamInitialized = true;
+                    // shareCamBtn.onLabel = "Webcam on";
+                    // shareCamBtn.checked = true;
+                    updateCamButtonState(true);
                     addVideoStream(myUserId, stream, true);
 
                     socketService.sendToSocket({
@@ -53,9 +80,10 @@ package views.actionitemviews.collaboration {
                     });
 
                 }).catch(function(err:*):void {
-                    console.error("Webcam access denied", err);
-                    shareCamBtn.onLabel = "Webcam off";
-                    shareCamBtn.checked = false;
+                    AppAlert.show(AppAlert.ERROR, "Webcam access denied <br>" + err);
+                    updateCamButtonState(false);
+                    // shareCamBtn.onLabel = "Webcam off";
+                    // shareCamBtn.checked = false;
                 });
         }
 
@@ -66,9 +94,10 @@ package views.actionitemviews.collaboration {
                 });
                 localStream = null;
                 myLocalStream = null;
-                webcamInitialized = false;
-                shareCamBtn.checked = false;
-                shareCamBtn.offLabel = "Webcam off";
+                updateCamButtonState(false);
+                // webcamInitialized = false;
+                // shareCamBtn.checked = false;
+                // shareCamBtn.offLabel = "Webcam off";
             }
 
             // Inform backend to broadcast disconnect
@@ -85,7 +114,7 @@ package views.actionitemviews.collaboration {
             peerConnections = {};
         }
 
-        public function handleOffer(sender:String, offer:Object):void {
+        private function handleOffer(sender:String, offer:Object):void {
             createPeerConnection(sender, false);
             var pc:* = peerConnections[sender];
 
@@ -99,19 +128,19 @@ package views.actionitemviews.collaboration {
                     answer: answer
                 });
             }).catch(function(error:*):void {
-                console.error("❌ Error handling offer from", sender, ":", error);
+                AppAlert.show(AppAlert.ERROR, "❌ Error handling offer from \n"+ sender + ":" + error);
             });
         }
 
-        public function handleAnswer(sender:String, answer:Object):void {
+        private function handleAnswer(sender:String, answer:Object):void {
             peerConnections[sender].setRemoteDescription(new RTCSessionDescription(answer));
         }
 
-        public function handleCandidate(sender:String, candidate:Object):void {
+        private function handleCandidate(sender:String, candidate:Object):void {
             peerConnections[sender].addIceCandidate(new RTCIceCandidate(candidate as RTCIceCandidateInit));
         }
 
-        public function createPeerConnection(userId:String, isInitiator:Boolean):void {
+        private function createPeerConnection(userId:String, isInitiator:Boolean):void {
             var config:Object = {
                 iceServers: [ { urls: "stun:stun.l.google.com:19302" } ]
             };
@@ -119,9 +148,14 @@ package views.actionitemviews.collaboration {
             var pc:* = new RTCPeerConnection(config);
             peerConnections[userId] = pc;
 
-            myLocalStream.getTracks().forEach(function(track:*):void {
+            if (myLocalStream) {
+                myLocalStream.getTracks().forEach(function(track:*):void {
                 pc.addTrack(track, myLocalStream);
             });
+            } else {
+                AppAlert.show(AppAlert.WARNING, "⚠️ No local stream available for user: " + myUserId);
+            }
+
 
             pc.onicecandidate = function(event:*):void {
                 if (event.candidate) {
@@ -150,18 +184,38 @@ package views.actionitemviews.collaboration {
             }
         }
 
-        public function addVideoStream(userId:String, stream:Object, isMe:Boolean = false):void {
-            for each (var otherId:String in userList.dataProvider.source) {
-                if (otherId != myUserId && !peerConnections[otherId]) {
-                    createPeerConnection(otherId, true);
-                }
+        private function addVideoStream(userId:String, stream:Object, isMe:Boolean = false):void {
+            var existingItem:VideoItem = findVideoItem(userId);
+
+            if (existingItem) {
+                existingItem.videoItemData(userId, stream, isMe); // update stream
+                existingItem.toggleCamera(true); // ensure it's visible
+            } else {
+                var vidItem:VideoItem = new VideoItem();
+                vidItem.videoItemData(userId, stream, isMe);
+                uVidContainer.addElement(vidItem);
             }
-            var vidItem:VideoItem = new VideoItem();
-            vidItem.videoItemData(userId, stream, isMe);
-            uVidContainer.addElement(vidItem);
         }
 
-        public function removePeerVideo(userId:String):void {
+
+        private function findVideoItem(userId:String):VideoItem {
+            for (var i:int = 0; i < uVidContainer.numElements; i++) {
+                var vid:VideoItem = uVidContainer.getElementAt(i) as VideoItem;
+                if (vid && vid.userId == userId) {
+                    return vid;
+                }
+            }
+            return null;
+        }
+
+        private function toggleCameraVisibility(userId:String, on:Boolean):void {
+            var vidItem:VideoItem = findVideoItem(userId);
+            if (vidItem) {
+                vidItem.toggleCamera(on);
+            }
+        }
+
+        private function removePeerVideo(userId:String):void {
             for (var i:int = 0; i < uVidContainer.numElements; i++) {
                 var vidItem:VideoItem = uVidContainer.getElementAt(i) as VideoItem;
                 if (vidItem && vidItem.userId == userId) {

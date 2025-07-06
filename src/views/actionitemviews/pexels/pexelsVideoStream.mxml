@@ -11,6 +11,7 @@
         <![CDATA[
             import com.model.ServiceLoader;
             import org.apache.royale.jewel.VideoPlayer;
+            import com.util.AppAlert;
 
             private var httpService:ServiceLoader;
             private var query:String = "nature"; // Default search query
@@ -59,7 +60,7 @@
             }
 
             private function onError(event:Event):void {
-                trace("Error loading videos: " + event);
+                AppAlert.show(AppAlert.ERROR, "Error loading videos: <br>" + event);
             }
 
             private function showVideo(index:int):void {

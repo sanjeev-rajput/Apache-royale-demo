@@ -13,6 +13,7 @@
             import views.actionitemviews.searchlist.LstModel;
             import views.actionitemviews.searchlist.LstItem;
             import com.util.AsJsUtil;
+            import com.util.AppAlert;
             
             
 
@@ -53,7 +54,7 @@
             }
 
             private function failHandler(error:Object):void {
-                trace("Failed to load data"+error);
+                AppAlert.show(AppAlert.ERROR, "Failed to load data<br>"+error);
             }
 
             private function populateListUiItems():void{

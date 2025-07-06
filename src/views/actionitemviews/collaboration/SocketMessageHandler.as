@@ -1,39 +1,46 @@
 // SocketMessageHandler.as
 package views.actionitemviews.collaboration {
     import views.actionitemviews.collaboration.MessageItem;
-    import org.apache.royale.collections.ArrayList;
-    import org.apache.royale.html.TextInput;
-    import org.apache.royale.core.UIBase;
-    import com.unhurdle.spectrum.Label;
-    import com.unhurdle.spectrum.TextField;
     import org.apache.royale.jewel.VGroup;
+    import com.unhurdle.spectrum.TextField;
+    import com.util.AppAlert;
 
     public class SocketMessageHandler {
 
         private var myUserId:String;
-        private var outputContainer:UIBase;
-        private var userList:ArrayList;
-        private var usrNosLabel:Label;
+        private var outputContainer:VGroup;
         private var inputField:TextField;
 
         public function SocketMessageHandler(input:TextField, output:VGroup) {
-            this.outputContainer = output;
             this.inputField = input;
+            this.outputContainer = output;
         }
 
-        internal function handleWelcome(data:Object):void {
+        public function process(data:Object):void {
+            if (data.type == "welcome") {
+                myUserId = data.userId;
+                handleWelcome(data);
+            } else if (data.type == "subscribe_collabaration") {
+                handleChatMessage(data.sender, data.text);
+            } else if (data.type == "error") {
+                handleError(data.message);
+            }
+        }
+
+        private function handleWelcome(data:Object):void {
             myUserId = data.userId;
             appendMessage(myUserId, "Welcome to the collaboration room! You are: " + myUserId);
         }
 
 
-        internal function handleChatMessage(sender:String, message:String):void {
+        private function handleChatMessage(sender:String, message:String):void {
             appendMessage(sender, message);
         }
 
-        internal function handleError(message:String):void {
+        private function handleError(message:String):void {
             appendMessage("System", message);
             inputField.disabled = true;
+            AppAlert.show(AppAlert.ERROR, message)
         }
 
         private function appendMessage(userId:String, msg:String):void {

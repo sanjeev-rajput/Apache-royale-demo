@@ -144,9 +144,10 @@ views.actionitemviews.collaboration.CollaborationMain.prototype.views_actionitem
 
 
 /**
+ * @private
  * @type {string}
  */
-views.actionitemviews.collaboration.CollaborationMain.prototype.myUserId = null;
+views.actionitemviews.collaboration.CollaborationMain.prototype.views_actionitemviews_collaboration_CollaborationMain_myUserId = null;
 
 
 /**
@@ -167,12 +168,11 @@ views.actionitemviews.collaboration.CollaborationMain.prototype.views_actionitem
 views.actionitemviews.collaboration.CollaborationMain.prototype.views_actionitemviews_collaboration_CollaborationMain_updateUserList = function() {
   if (this.userList.dataProvider && this.userList.dataProvider["length"] > 0) {
     var /** @type {org.apache.royale.collections.ArrayList} */ ulist = this.userList.dataProvider;
-    var /** @type {number} */ idx = ulist.getItemIndex(this.myUserId);
+    var /** @type {number} */ idx = ulist.getItemIndex(this.views_actionitemviews_collaboration_CollaborationMain_myUserId);
     if (idx >= 0) {
-      ulist.setItemAt(this.myUserId + " (You)", idx);
+      ulist.setItemAt(this.views_actionitemviews_collaboration_CollaborationMain_myUserId + " (You)", idx);
     }
     this.userList.dataProvider = ulist;
-    this.views_actionitemviews_collaboration_CollaborationMain__socketVideoHandler.setUserList(this.userList);
   }
 };
 
@@ -182,27 +182,19 @@ views.actionitemviews.collaboration.CollaborationMain.prototype.views_actionitem
  * @param {Object} data
  */
 views.actionitemviews.collaboration.CollaborationMain.prototype.views_actionitemviews_collaboration_CollaborationMain_onSocketData = function(data) {
-  if (data["type"] == "video-offer") {
-    this.views_actionitemviews_collaboration_CollaborationMain__socketVideoHandler.handleOffer(org.apache.royale.utils.Language.string(data["sender"]), data["offer"]);
-  } else if (data["type"] == "video-answer") {
-    this.views_actionitemviews_collaboration_CollaborationMain__socketVideoHandler.handleAnswer(org.apache.royale.utils.Language.string(data["sender"]), data["answer"]);
-  } else if (data["type"] == "ice-candidate") {
-    this.views_actionitemviews_collaboration_CollaborationMain__socketVideoHandler.handleCandidate(org.apache.royale.utils.Language.string(data["sender"]), data["candidate"]);
-  } else if (data["type"] == "welcome") {
-    this.myUserId = org.apache.royale.utils.Language.string(data["userId"]);
-    this.views_actionitemviews_collaboration_CollaborationMain__socketVideoHandler.setMyUserId(this.myUserId);
-    this.views_actionitemviews_collaboration_CollaborationMain__socketMsgHandler.handleWelcome(data);
+  if (data["type"] == "welcome") {
+    this.views_actionitemviews_collaboration_CollaborationMain_myUserId = org.apache.royale.utils.Language.string(data["userId"]);
+    this.views_actionitemviews_collaboration_CollaborationMain__socketVideoHandler.setMyUserId(this.views_actionitemviews_collaboration_CollaborationMain_myUserId);
+    this.views_actionitemviews_collaboration_CollaborationMain__socketMsgHandler.process(data);
     this.views_actionitemviews_collaboration_CollaborationMain_updateUserList();
   } else if (data["type"] == "user_list") {
     this.userList.dataProvider = new org.apache.royale.collections.ArrayList(data["users"]);
     this.usrNos.text = "Connected Users: " + data["count"] + "/" + data["max"];
     this.views_actionitemviews_collaboration_CollaborationMain_updateUserList();
-  } else if (data["type"] == "subscribe_collabaration") {
-    this.views_actionitemviews_collaboration_CollaborationMain__socketMsgHandler.handleChatMessage(org.apache.royale.utils.Language.string(data["sender"]), org.apache.royale.utils.Language.string(data["text"]));
-  } else if (data["type"] == "error") {
-    this.views_actionitemviews_collaboration_CollaborationMain__socketMsgHandler.handleError(org.apache.royale.utils.Language.string(data["message"]));
-  } else if (data["type"] == "user_disconnected") {
-    this.views_actionitemviews_collaboration_CollaborationMain__socketVideoHandler.removePeerVideo(org.apache.royale.utils.Language.string(data["userId"]));
+  } else if (this.views_actionitemviews_collaboration_CollaborationMain__socketVideoHandler.isVideoMessage(org.apache.royale.utils.Language.string(data["type"]))) {
+    this.views_actionitemviews_collaboration_CollaborationMain__socketVideoHandler.process(data);
+  } else {
+    this.views_actionitemviews_collaboration_CollaborationMain__socketMsgHandler.process(data);
   }
 };
 
@@ -555,11 +547,6 @@ views.actionitemviews.collaboration.CollaborationMain.prototype.ROYALE_CLASS_INF
  */
 views.actionitemviews.collaboration.CollaborationMain.prototype.ROYALE_REFLECTION_INFO = function () {
   return {
-    variables: function () {
-      return {
-        'myUserId': { type: 'String', get_set: function (/** views.actionitemviews.collaboration.CollaborationMain */ inst, /** * */ v) {return v !== undefined ? inst.myUserId = v : inst.myUserId;}}
-      };
-    },
     accessors: function () {
       return {
         'outputContainer': { type: 'org.apache.royale.jewel.VGroup', access: 'readwrite', declaredBy: 'views.actionitemviews.collaboration.CollaborationMain'},

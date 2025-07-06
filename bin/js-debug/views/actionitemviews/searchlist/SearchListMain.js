@@ -8,7 +8,7 @@
  */
 
 goog.provide('views.actionitemviews.searchlist.SearchListMain');
-/* Royale Dependency List: org.apache.royale.jewel.VGroup,org.apache.royale.jewel.HGroup,org.apache.royale.jewel.Label,org.apache.royale.jewel.Spacer,org.apache.royale.jewel.ImageIcon,org.apache.royale.jewel.Image,com.unhurdle.spectrum.Picker,org.apache.royale.html.supportClasses.ScrollingViewport,com.controller.PopupManager,com.model.ServiceLoader,com.util.AsJsUtil,org.apache.royale.events.Event,org.apache.royale.events.MouseEvent,views.actionitemviews.searchlist.LstItem,views.actionitemviews.searchlist.LstModel,XML*/
+/* Royale Dependency List: org.apache.royale.jewel.VGroup,org.apache.royale.jewel.HGroup,org.apache.royale.jewel.Label,org.apache.royale.jewel.Spacer,org.apache.royale.jewel.ImageIcon,org.apache.royale.jewel.Image,com.unhurdle.spectrum.Picker,org.apache.royale.html.supportClasses.ScrollingViewport,com.controller.PopupManager,com.model.ServiceLoader,com.util.AppAlert,com.util.AsJsUtil,org.apache.royale.events.Event,org.apache.royale.events.MouseEvent,views.actionitemviews.searchlist.LstItem,views.actionitemviews.searchlist.LstModel,XML*/
 
 goog.require('org.apache.royale.jewel.View');
 
@@ -178,7 +178,7 @@ views.actionitemviews.searchlist.SearchListMain.prototype.views_actionitemviews_
  * @param {Object} error
  */
 views.actionitemviews.searchlist.SearchListMain.prototype.views_actionitemviews_searchlist_SearchListMain_failHandler = function(error) {
-  org.apache.royale.utils.Language.trace("Failed to load data" + error);
+  com.util.AppAlert.show(com.util.AppAlert.ERROR, "Failed to load data<br>" + error);
 };
 
 
