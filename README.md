@@ -69,6 +69,7 @@ Features to explore:
 - AI chat with selectable models
 - Real-time collaboration with WebSocket
 - live streaming with wiki change and pixel video
+- read data streaming e.g. live stock with node reandom wak socket 
 - Component-driven pagination and dynamic content
 
 ---
