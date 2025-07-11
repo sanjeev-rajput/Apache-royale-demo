@@ -10,7 +10,7 @@ export function setupSharedWebSocketServer(server) {
     const clients = new Set();
     const userMap = new Map();
     let userCounter = 1;
-    const MAX_CLIENTS = 3;
+    const MAX_CLIENTS = 10;
 
     const eventSource = new EventSource.EventSource('https://stream.wikimedia.org/v2/stream/recentchange');
     console.log('🔁 Wikipedia stream connected');

@@ -320,6 +320,7 @@ goog.require('org.apache.royale.html.accessories.RestrictTextInputBead');
 goog.require('views.actionitemviews.stockSocket.StockItemT');
 goog.require('org.apache.royale.core.SimpleCSSStyles');
 goog.require('com.unhurdle.spectrum.Container');
+goog.require('views.actionitemviews.websocket.SocketServiceHelper');
 goog.require('com.util.DictionaryUtil');
 goog.require('views.actionitemviews.stockSocket.StockItemG');
 goog.require('org.apache.royale.html.supportClasses.VScrollViewport');

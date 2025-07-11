@@ -245,7 +245,6 @@ views.actionitemviews.stockSocket.StockSocketMain.prototype.views_actionitemview
   sItem["iIndex"] = this.views_actionitemviews_stockSocket_StockSocketMain__socketItemCounter++;
   var /** @type {org.apache.royale.jewel.Group} */ container = (this.views_actionitemviews_stockSocket_StockSocketMain__layoutType == views.actionitemviews.stockSocket.StockSocketMain.GRID) ? this.sGitemCtr : this.sTitemCtr;
   container.addElement(/* implicit cast */ org.apache.royale.utils.Language.as(sItem, org.apache.royale.core.IChild, true));
-  container.element.scrollTop = container.element.scrollHeight;
   this.views_actionitemviews_stockSocket_StockSocketMain_itemMap.set(org.apache.royale.utils.Language.string(d["symbol"]), sItem);
 };
 

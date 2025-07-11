@@ -8,7 +8,7 @@
  */
 
 goog.provide('views.actionitemviews.websocket.SocketService');
-/* Royale Dependency List: com.model.Config,com.util.AppAlert,org.apache.royale.utils.Language,XML*/
+/* Royale Dependency List: com.model.Config,com.util.AppAlert,views.actionitemviews.websocket.SocketServiceHelper,org.apache.royale.utils.Language,XML*/
 
 
 
@@ -51,6 +51,20 @@ views.actionitemviews.websocket.SocketService.prototype.views_actionitemviews_we
 
 
 /**
+ * @private
+ * @type {Function}
+ */
+views.actionitemviews.websocket.SocketService.prototype.views_actionitemviews_websocket_SocketService__statusUpdateCallback = null;
+
+
+/**
+ * @private
+ * @type {boolean}
+ */
+views.actionitemviews.websocket.SocketService._isFirstConnect = true;
+
+
+/**
  * @nocollapse
  * @const
  * @type {string}
@@ -89,6 +103,14 @@ views.actionitemviews.websocket.SocketService.prototype.views_actionitemviews_we
 
 
 /**
+ * @param {Function} callback
+ */
+views.actionitemviews.websocket.SocketService.prototype.setStatusUpdateCallback = function(callback) {
+  this.views_actionitemviews_websocket_SocketService__statusUpdateCallback = callback;
+};
+
+
+/**
  * @param {Function} callBackFunction
  */
 views.actionitemviews.websocket.SocketService.prototype.addCAllBackFunction = function(callBackFunction) {
@@ -103,6 +125,12 @@ views.actionitemviews.websocket.SocketService.prototype.addCAllBackFunction = fu
 views.actionitemviews.websocket.SocketService.prototype.connectWebSocket = function(type, obj) {
   type = typeof type !== 'undefined' ? type : null;
   obj = typeof obj !== 'undefined' ? obj : null;
+  if (views.actionitemviews.websocket.SocketService._isFirstConnect) {
+    views.actionitemviews.websocket.SocketService._isFirstConnect = false;
+    views.actionitemviews.websocket.SocketServiceHelper.showWakeUpMessage();
+  }
+  if (this.views_actionitemviews_websocket_SocketService__statusUpdateCallback != null)
+    this.views_actionitemviews_websocket_SocketService__statusUpdateCallback("✅ Connected successfully.");
   if (type)
     this.views_actionitemviews_websocket_SocketService__subscribeType = type;
   if (obj)
@@ -141,6 +169,9 @@ views.actionitemviews.websocket.SocketService.prototype.disconnectWebSocket = fu
  * @private
  */
 views.actionitemviews.websocket.SocketService.prototype.views_actionitemviews_websocket_SocketService_connectionOpenEvtHandler = function() {
+  this.views_actionitemviews_websocket_SocketService__isConnected = true;
+  views.actionitemviews.websocket.SocketServiceHelper.showConnectedMessage();
+  this.views_actionitemviews_websocket_SocketService_subscribeWs();
   console.log('Connected to the WebSocket server');
   this.views_actionitemviews_websocket_SocketService__isConnected = true;
   this.views_actionitemviews_websocket_SocketService_subscribeWs();
@@ -247,6 +278,7 @@ views.actionitemviews.websocket.SocketService.prototype.ROYALE_REFLECTION_INFO =
     methods: function () {
       return {
         'SocketService': { type: 'void', declaredBy: 'views.actionitemviews.websocket.SocketService'},
+        'setStatusUpdateCallback': { type: 'void', declaredBy: 'views.actionitemviews.websocket.SocketService', parameters: function () { return [ 'Function', false ]; }},
         'addCAllBackFunction': { type: 'void', declaredBy: 'views.actionitemviews.websocket.SocketService', parameters: function () { return [ 'Function', false ]; }},
         'connectWebSocket': { type: 'void', declaredBy: 'views.actionitemviews.websocket.SocketService', parameters: function () { return [ 'String', true ,'Object', true ]; }},
         'disconnectWebSocket': { type: 'void', declaredBy: 'views.actionitemviews.websocket.SocketService'},
