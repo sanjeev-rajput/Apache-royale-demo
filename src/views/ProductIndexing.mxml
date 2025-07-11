@@ -23,6 +23,7 @@
             import views.actionitemviews.ai.AiMain;
             import views.actionitemviews.shoppingcart.ShoppingMain;
             import views.actionitemviews.collaboration.CollaborationMain;
+            import views.actionitemviews.stockSocket.StockSocketMain;
             private var mgmtObj:Array = new Array();
                         
             private function initComplete():void {
@@ -88,6 +89,12 @@
                     mgmtObj.push(uiComp);
                     return;
                 }
+                if(compName == 'Live Stock'){
+                    uiComp = new StockSocketMain() as Group;
+                    vg.addElement(uiComp);
+                    mgmtObj.push(uiComp);
+                    return;
+                }
                 if(compName == 'Pexels Video Streams'){
                     uiComp = new pexelsVideoStream();
                     vg.addElement(uiComp);
@@ -120,6 +127,8 @@
                 if(mgmtObj.length>0){
                     for each(var i:Object in mgmtObj){
                         if(i is Game) Game(i).disposeMe();
+                        if(i is StockSocketMain) StockSocketMain(i).disposeMe();
+                        if(i is CollaborationMain) CollaborationMain(i).disposeMe();
                     }
                     mgmtObj = new Array();
                 }

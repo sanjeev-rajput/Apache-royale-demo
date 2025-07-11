@@ -67,6 +67,21 @@ views.actionitemviews.websocket.SocketService.SUBSCRIBE_COLLABARATION = "subscri
 
 
 /**
+ * @nocollapse
+ * @const
+ * @type {string}
+ */
+views.actionitemviews.websocket.SocketService.SUBSCRIBE_STOCK = "subscribe_stock";
+
+
+/**
+ * @private
+ * @type {Object}
+ */
+views.actionitemviews.websocket.SocketService.prototype.views_actionitemviews_websocket_SocketService__subscribeWithObj = null;
+
+
+/**
  * @private
  * @type {string}
  */
@@ -82,12 +97,22 @@ views.actionitemviews.websocket.SocketService.prototype.addCAllBackFunction = fu
 
 
 /**
- * @param {string} type
+ * @param {string=} type
+ * @param {Object=} obj
  */
-views.actionitemviews.websocket.SocketService.prototype.connectWebSocket = function(type) {
-  this.views_actionitemviews_websocket_SocketService__subscribeType = type;
+views.actionitemviews.websocket.SocketService.prototype.connectWebSocket = function(type, obj) {
+  type = typeof type !== 'undefined' ? type : null;
+  obj = typeof obj !== 'undefined' ? obj : null;
+  if (type)
+    this.views_actionitemviews_websocket_SocketService__subscribeType = type;
+  if (obj)
+    this.views_actionitemviews_websocket_SocketService__subscribeWithObj = obj;
   if (this.views_actionitemviews_websocket_SocketService__callBackFunction == null) {
     com.util.AppAlert.show(com.util.AppAlert.ERROR, "CallBack function is not set");
+    return;
+  }
+  if (this.views_actionitemviews_websocket_SocketService__isConnected && this.views_actionitemviews_websocket_SocketService_ws) {
+    this.views_actionitemviews_websocket_SocketService_subscribeWs();
     return;
   }
   this.views_actionitemviews_websocket_SocketService_ws = new WebSocket(this.views_actionitemviews_websocket_SocketService__url);
@@ -101,7 +126,14 @@ views.actionitemviews.websocket.SocketService.prototype.connectWebSocket = funct
 /**
  */
 views.actionitemviews.websocket.SocketService.prototype.disconnectWebSocket = function() {
-  this.views_actionitemviews_websocket_SocketService_ws.close();
+  if (this.views_actionitemviews_websocket_SocketService_ws) {
+    this.views_actionitemviews_websocket_SocketService_ws.removeEventListener('open', org.apache.royale.utils.Language.closure(this.views_actionitemviews_websocket_SocketService_connectionOpenEvtHandler, this, 'views_actionitemviews_websocket_SocketService_connectionOpenEvtHandler'));
+    this.views_actionitemviews_websocket_SocketService_ws.removeEventListener('message', org.apache.royale.utils.Language.closure(this.views_actionitemviews_websocket_SocketService_connectionMessageEvtHandler, this, 'views_actionitemviews_websocket_SocketService_connectionMessageEvtHandler'));
+    this.views_actionitemviews_websocket_SocketService_ws.removeEventListener('close', org.apache.royale.utils.Language.closure(this.views_actionitemviews_websocket_SocketService_connectionCloseEvtHandler, this, 'views_actionitemviews_websocket_SocketService_connectionCloseEvtHandler'));
+    this.views_actionitemviews_websocket_SocketService_ws.removeEventListener('error', org.apache.royale.utils.Language.closure(this.views_actionitemviews_websocket_SocketService_connectionErrorEvtHandler, this, 'views_actionitemviews_websocket_SocketService_connectionErrorEvtHandler'));
+    this.views_actionitemviews_websocket_SocketService_ws.close();
+    this.views_actionitemviews_websocket_SocketService_ws = null;
+  }
 };
 
 
@@ -119,10 +151,13 @@ views.actionitemviews.websocket.SocketService.prototype.views_actionitemviews_we
  * @private
  */
 views.actionitemviews.websocket.SocketService.prototype.views_actionitemviews_websocket_SocketService_subscribeWs = function() {
+  console.log(this.views_actionitemviews_websocket_SocketService__subscribeWithObj);
   if (this.views_actionitemviews_websocket_SocketService__subscribeType == views.actionitemviews.websocket.SocketService.SUBSCRIBE_WIKI)
     this.views_actionitemviews_websocket_SocketService_ws.send(JSON.stringify({"type":this.views_actionitemviews_websocket_SocketService__subscribeType}));
   if (this.views_actionitemviews_websocket_SocketService__subscribeType == views.actionitemviews.websocket.SocketService.SUBSCRIBE_COLLABARATION)
     this.views_actionitemviews_websocket_SocketService_ws.send(JSON.stringify({"type":this.views_actionitemviews_websocket_SocketService__subscribeType, "shape":'rect'}));
+  if (this.views_actionitemviews_websocket_SocketService__subscribeType == views.actionitemviews.websocket.SocketService.SUBSCRIBE_STOCK)
+    this.views_actionitemviews_websocket_SocketService_ws.send(JSON.stringify({"type":this.views_actionitemviews_websocket_SocketService__subscribeType, "length":this.views_actionitemviews_websocket_SocketService__subscribeWithObj["length"]}));
 };
 
 
@@ -158,7 +193,11 @@ views.actionitemviews.websocket.SocketService.prototype.views_actionitemviews_we
  * @param {Object} obj
  */
 views.actionitemviews.websocket.SocketService.prototype.sendToSocket = function(obj) {
-  this.views_actionitemviews_websocket_SocketService_ws.send(JSON.stringify(obj));
+  if (this.views_actionitemviews_websocket_SocketService_ws && this.views_actionitemviews_websocket_SocketService_ws.readyState == 1) {
+    this.views_actionitemviews_websocket_SocketService_ws.send(JSON.stringify(obj));
+  } else {
+    com.util.AppAlert.show(com.util.AppAlert.ERROR, "WebSocket is not open. Cannot send message.");
+  }
 };
 
 
@@ -209,7 +248,7 @@ views.actionitemviews.websocket.SocketService.prototype.ROYALE_REFLECTION_INFO =
       return {
         'SocketService': { type: 'void', declaredBy: 'views.actionitemviews.websocket.SocketService'},
         'addCAllBackFunction': { type: 'void', declaredBy: 'views.actionitemviews.websocket.SocketService', parameters: function () { return [ 'Function', false ]; }},
-        'connectWebSocket': { type: 'void', declaredBy: 'views.actionitemviews.websocket.SocketService', parameters: function () { return [ 'String', false ]; }},
+        'connectWebSocket': { type: 'void', declaredBy: 'views.actionitemviews.websocket.SocketService', parameters: function () { return [ 'String', true ,'Object', true ]; }},
         'disconnectWebSocket': { type: 'void', declaredBy: 'views.actionitemviews.websocket.SocketService'},
         'sendToSocket': { type: 'void', declaredBy: 'views.actionitemviews.websocket.SocketService', parameters: function () { return [ 'Object', false ]; }}
       };

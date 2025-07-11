@@ -8,7 +8,7 @@
  */
 
 goog.provide('views.ProductIndexing');
-/* Royale Dependency List: org.apache.royale.jewel.VGroup,org.apache.royale.jewel.HGroup,views.TopMenuL,org.apache.royale.jewel.Label,views.TopMenuR,org.apache.royale.jewel.FooterBar,com.unhurdle.spectrum.Label,org.apache.royale.jewel.Container,com.unhurdle.spectrum.ImageAsset,com.event.DsEvent,com.unhurdle.spectrum.Toast,org.apache.royale.events.Event,views.actionitemviews.ai.AiMain,views.actionitemviews.basicdrawing.BasicDrawingMain,views.actionitemviews.collaboration.CollaborationMain,views.actionitemviews.games.Game,views.actionitemviews.pexels.pexelsVideoStream,views.actionitemviews.searchlist.SearchListMain,views.actionitemviews.shoppingcart.ShoppingMain,views.actionitemviews.toc.TocAndPgnation,views.actionitemviews.websocket.WikiSocketMain,XML*/
+/* Royale Dependency List: org.apache.royale.jewel.VGroup,org.apache.royale.jewel.HGroup,views.TopMenuL,org.apache.royale.jewel.Label,views.TopMenuR,org.apache.royale.jewel.FooterBar,com.unhurdle.spectrum.Label,org.apache.royale.jewel.Container,com.unhurdle.spectrum.ImageAsset,com.event.DsEvent,com.unhurdle.spectrum.Toast,org.apache.royale.events.Event,views.actionitemviews.ai.AiMain,views.actionitemviews.basicdrawing.BasicDrawingMain,views.actionitemviews.collaboration.CollaborationMain,views.actionitemviews.games.Game,views.actionitemviews.pexels.pexelsVideoStream,views.actionitemviews.searchlist.SearchListMain,views.actionitemviews.shoppingcart.ShoppingMain,views.actionitemviews.stockSocket.StockSocketMain,views.actionitemviews.toc.TocAndPgnation,views.actionitemviews.websocket.WikiSocketMain,XML*/
 
 goog.require('org.apache.royale.jewel.ResponsiveView');
 
@@ -194,6 +194,12 @@ views.ProductIndexing.prototype.views_ProductIndexing_addUiComponent = function(
     this.views_ProductIndexing_mgmtObj.push(uiComp);
     return;
   }
+  if (compName == 'Live Stock') {
+    uiComp = new views.actionitemviews.stockSocket.StockSocketMain();
+    this.vg.addElement(uiComp);
+    this.views_ProductIndexing_mgmtObj.push(uiComp);
+    return;
+  }
   if (compName == 'Pexels Video Streams') {
     uiComp = new views.actionitemviews.pexels.pexelsVideoStream();
     this.vg.addElement(uiComp);
@@ -234,6 +240,10 @@ views.ProductIndexing.prototype.views_ProductIndexing_clearUi = function() {
     {
       if (org.apache.royale.utils.Language.is(i, views.actionitemviews.games.Game))
         org.apache.royale.utils.Language.as(i, views.actionitemviews.games.Game, true).disposeMe();
+      if (org.apache.royale.utils.Language.is(i, views.actionitemviews.stockSocket.StockSocketMain))
+        org.apache.royale.utils.Language.as(i, views.actionitemviews.stockSocket.StockSocketMain, true).disposeMe();
+      if (org.apache.royale.utils.Language.is(i, views.actionitemviews.collaboration.CollaborationMain))
+        org.apache.royale.utils.Language.as(i, views.actionitemviews.collaboration.CollaborationMain, true).disposeMe();
     }}
     
     this.views_ProductIndexing_mgmtObj = new Array();

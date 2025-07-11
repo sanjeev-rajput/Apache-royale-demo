@@ -74,6 +74,10 @@
                 _socketVideoHandler.onStopWebcam();
             }
         }
+
+        public function disposeMe():void {
+            _socketService.disconnectWebSocket();
+        }
     ]]>
 </fx:Script>
 

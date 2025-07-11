@@ -1,0 +1,73 @@
+<j:HGroup xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:js="library://ns.apache.org/royale/basic"
+        xmlns:j="library://ns.apache.org/royale/jewel"
+        initComplete="init()" itemsVerticalAlign="itemsCenter" className="stockItemT" gap="10">
+        <j:beads>
+            <js:ContainerDataBinding/>
+        </j:beads>
+
+    <fx:Script>
+        <![CDATA[
+            
+            private var _sData:Object = null;
+            private var _isInitlized:Boolean = false;
+
+            private var _sId:String = null;
+            [Bindable]
+            private var _symbol:String;
+            [Bindable]
+            private var _price:String;
+            [Bindable]
+            private var _time:String;
+            [Bindable]
+            private var _iIndex:String;
+            
+
+
+            private function init():void {
+                _isInitlized = true;
+
+            }
+
+            public function set sData(d:Object):void {
+                // Skip update if values haven't changed
+                if (_sData && _sData.price == d.price && _sData.timestamp == d.timestamp) return;
+
+                _sData = d;
+                _sId = _sData.symbol;
+
+                // Update UI-bound properties
+                _symbol = _sData.symbol;
+                _time = _sData.timestamp;
+                _price = _sData.price;
+
+                // Highlight class animation
+                if (!_isInitlized) return;
+                indicator.addClass("stockIndicatorHighlight");
+                setTimeout(function():void {
+                    indicator.removeClass("stockIndicatorHighlight");
+                }, 300);
+            }
+
+
+            public function get sId():String {
+                return _sId;
+            }
+
+            public function set iIndex(i:int):void{
+                _iIndex = i.toString() + ".";
+            }
+
+            
+        ]]>
+    </fx:Script>
+        <j:VGroup id="indxCtr" itemsVerticalAlign="itemsCenter" gap="0">
+            <j:Label text="{_iIndex}" style="font-weight: bolder;" />
+            <j:Label id="indicator" text="&#x2022;" style="font-weight: bolder; color:white; font-size:50; opacity:0.1"/>
+        </j:VGroup>
+        <j:VGroup gap="5">
+            <j:Label text="{_symbol}" />
+            <j:Label text="{_price}" />
+            <j:Label text="{_time}" />
+        </j:VGroup>
+</j:HGroup>

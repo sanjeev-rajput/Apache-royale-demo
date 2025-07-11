@@ -16,6 +16,8 @@ package views.actionitemviews.websocket
 
         public static const SUBSCRIBE_WIKI:String="subscribe_wiki";
         public static const SUBSCRIBE_COLLABARATION:String = "subscribe_collabaration";
+        public static const SUBSCRIBE_STOCK:String="subscribe_stock";
+        private var _subscribeWithObj:Object = null;
         private var _subscribeType:String = null;
         public function SocketService():void {
         }
@@ -24,13 +26,19 @@ package views.actionitemviews.websocket
             _callBackFunction = callBackFunction;
         }
 
-        public function connectWebSocket(type:String):void{  
-            _subscribeType = type;
+        public function connectWebSocket(type:String=null, obj:Object=null):void{  
+            if(type)_subscribeType = type;
+            if(obj)_subscribeWithObj = obj;
             if(_callBackFunction == null){
                 AppAlert.show(AppAlert.ERROR, "CallBack function is not set");
                 return;
             }
-            ws = new WebSocket(_url); 
+            // ✅ Avoid reconnecting if already connected
+            if (_isConnected && ws) {
+                subscribeWs(); // Just send subscription message again
+                return;
+            }
+            ws = new WebSocket(_url);
             ws.addEventListener('open', connectionOpenEvtHandler);
             ws.addEventListener('message', connectionMessageEvtHandler);
             ws.addEventListener('close', connectionCloseEvtHandler);
@@ -38,7 +46,14 @@ package views.actionitemviews.websocket
         }
 
         public function disconnectWebSocket():void {
-            ws.close();
+            if (ws) {
+                ws.removeEventListener('open', connectionOpenEvtHandler);
+                ws.removeEventListener('message', connectionMessageEvtHandler);
+                ws.removeEventListener('close', connectionCloseEvtHandler);
+                ws.removeEventListener('error', connectionErrorEvtHandler);
+                ws.close();
+                ws = null;
+            }
         }
 
         private function connectionOpenEvtHandler():void {
@@ -48,13 +63,14 @@ package views.actionitemviews.websocket
         }
 
         private function subscribeWs():void {
+            console.log(_subscribeWithObj)
             if(_subscribeType == SUBSCRIBE_WIKI)ws.send(JSON.stringify({type: _subscribeType}));
             if(_subscribeType == SUBSCRIBE_COLLABARATION)ws.send(JSON.stringify({type: _subscribeType,shape: 'rect'}));
+            if(_subscribeType == SUBSCRIBE_STOCK)ws.send(JSON.stringify({type: _subscribeType, length :_subscribeWithObj.length}));
         }
 
         private function connectionMessageEvtHandler(e:*):void {
             var data:Object = JSON.parse(e.data);
-            //console.log("Message from server:", data);
             _callBackFunction(data);
         }
 
@@ -70,10 +86,22 @@ package views.actionitemviews.websocket
         public function get connected():Boolean {
             return _isConnected;
         }
-
+        /*
+        WebSocket.readyState has the following states:
+        0: CONNECTING
+        1: OPEN ✅
+        2: CLOSING
+        3: CLOSED
+        */
         public function sendToSocket(obj:Object):void {
-            ws.send(JSON.stringify(obj));
+            if (ws && ws.readyState == 1) {
+                ws.send(JSON.stringify(obj));
+            } else {
+                AppAlert.show(AppAlert.ERROR, "WebSocket is not open. Cannot send message.");
+                // Optional: Retry later or queue the message
+            }
         }
+
 
     }
     

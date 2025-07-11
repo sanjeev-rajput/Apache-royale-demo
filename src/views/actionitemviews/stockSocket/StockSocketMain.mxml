@@ -1,0 +1,127 @@
+<j:VGroup xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:j="library://ns.apache.org/royale/jewel"
+        xmlns:js="library://ns.apache.org/royale/basic"
+        xmlns:sp="library://ns.unhurdle.com/spectrum" 
+        xmlns:spectrum="com.unhurdle.spectrum.*" 
+        initComplete="init()"
+        width="100%" height="100%">
+
+    <j:beads>
+        <js:ContainerDataBinding/>
+    </j:beads>
+
+    <fx:Script>
+        <![CDATA[
+            import views.actionitemviews.websocket.SocketService;
+            import com.util.DictionaryUtil;
+            import org.apache.royale.events.Event;
+            import com.unhurdle.spectrum.Switch;
+            import org.apache.royale.events.MouseEvent;
+            import com.unhurdle.spectrum.Radio;
+            import views.actionitemviews.stockSocket.StockItemG;
+            import views.actionitemviews.stockSocket.StockItemT;
+            import org.apache.royale.jewel.Group;
+
+            private var _socketService:SocketService;
+            private var itemMap:DictionaryUtil = new DictionaryUtil();
+            private var _recordSets:int = 100;
+            [Bindable] private var _actionStat:Boolean = false;
+            private var _socketItemCounter:int = 1;
+            private static const GRID:String = "grid";
+            private static const TILE:String = "tile";
+            private var _layoutType:String = GRID;
+
+            private function init():void {
+                _socketService = new SocketService();
+                _socketService.addCAllBackFunction(onSocketData);
+            }
+
+            private function onSocketData(data:Object):void {
+                if (data.type == "stock_update") {
+                    for each (var item:Object in data.payload) {
+                        checkAndAddStockItem(item);
+                    }
+                }
+            }
+
+            private function checkAndAddStockItem(d:Object):void {
+                var existingItem:* = itemMap.get(d.symbol);
+                if (existingItem) {
+                    existingItem.sData = d;
+                    return;
+                }
+
+                var sItem:* = (_layoutType == GRID) ? new StockItemG() : new StockItemT();
+                sItem.sData = d;
+                sItem.iIndex = _socketItemCounter++;
+
+                var container:Group = (_layoutType == GRID) ? sGitemCtr : sTitemCtr;
+                container.addElement(sItem);
+                //container.element.scrollTop = container.element.scrollHeight;
+
+                itemMap.set(d.symbol, sItem);
+            }
+
+            private function switchEventHandler(e:Event):void {
+                var btn:Switch = Switch(e.target);
+                if (btn == switchBtn100) _recordSets = 100;
+                else if (btn == switchBtn500) _recordSets = 500;
+                else if (btn == switchBtn1000) _recordSets = 1000;
+
+                _actionStat = btn.checked;
+                btn.disabled = false;
+
+                if (btn.checked) {
+                    _socketItemCounter=1;
+                    _socketService.connectWebSocket(SocketService.SUBSCRIBE_STOCK, { length: _recordSets });
+                } else {
+                    _socketService.sendToSocket({ type: "unsubscribe_stock" });
+                }
+            }
+
+            private function layoutEventHandler(e:MouseEvent):void {
+                var rBtn:Radio = Radio(e.target);
+                var newLayout:String = (rBtn == gridV) ? GRID : TILE;
+
+                if (_layoutType == newLayout) return;
+                _layoutType = newLayout;
+
+                sGitemCtr.visible = (_layoutType == GRID);
+                sTitemCtr.visible = (_layoutType == TILE);
+
+                var clearContainer:Group = (_layoutType == GRID) ? sTitemCtr : sGitemCtr;
+                while (clearContainer.numElements) {
+                    clearContainer.removeElement(clearContainer.getElementAt(0));
+                }
+            }
+
+            public function disposeMe():void {
+                _socketService.sendToSocket({ type: "unsubscribe_stock" });
+                _socketService.disconnectWebSocket();
+            }
+        ]]>
+    </fx:Script>
+
+    <j:HGroup width="100%" gap="20" className="stockControls" itemsHorizontalAlign="itemsCenter">
+        <sp:Radio id="gridV" radioName="viewType" text="Grid Layout" checked="true" disabled="{_actionStat}" click="layoutEventHandler(event)"/>
+        <sp:Radio id="tileV" radioName="viewType" text="Tile Layout" disabled="{_actionStat}" click="layoutEventHandler(event)"/>
+        <sp:VDivider size="medium"/>
+        <sp:Switch id="switchBtn100" leftLabel="100 Data Set" change="switchEventHandler(event)" disabled="{_actionStat}"/>
+        <sp:Switch id="switchBtn500" leftLabel="500 Data Set" change="switchEventHandler(event)" disabled="{_actionStat}"/>
+        <sp:Switch id="switchBtn1000" leftLabel="1000 Data Set" change="switchEventHandler(event)" disabled="{_actionStat}"/>
+    </j:HGroup>
+
+    <j:VGroup id="sGitemCtr" width="100%" height="100%">
+        <j:beads>
+            <j:ScrollingViewport/>
+        </j:beads>
+    </j:VGroup>
+
+    <j:Group id="sTitemCtr" height="100%" width="100%" style="padding:10px" visible="false">
+        <j:beads>
+            <j:TileHorizontalLayout localId="plist" waitForSize="true"/>
+            <j:ScrollingViewport/>
+        </j:beads>
+    </j:Group>
+
+</j:VGroup>

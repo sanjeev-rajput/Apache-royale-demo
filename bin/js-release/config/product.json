@@ -106,6 +106,13 @@
       "pid":"p12"
     },
     {
+      "label": "Live Stock",
+      "type": "extui",
+      "url": "na",
+      "addx":"NA",
+      "pid":"p12"
+    },
+    {
       "label": "Pexels Video Streams",
       "type": "extui",
       "url": "na",

@@ -1,22 +1,22 @@
 import WebSocket, { WebSocketServer } from 'ws';
 import { createRequire } from 'module';
-
-
+import { setupStockTickerHandler } from './stockTickerHandler.js';
 
 const require = createRequire(import.meta.url);
 const EventSource = require('eventsource');
 
 export function setupSharedWebSocketServer(server) {
-
     const wss = new WebSocketServer({ server });
     const clients = new Set();
-    const userMap = new Map(); // ws -> userInfo
+    const userMap = new Map();
     let userCounter = 1;
     const MAX_CLIENTS = 3;
 
     const eventSource = new EventSource.EventSource('https://stream.wikimedia.org/v2/stream/recentchange');
-
     console.log('🔁 Wikipedia stream connected');
+
+    // Stock handler shared map
+    const stockSubscribers = new Set();
 
     wss.on('connection', (ws) => {
         if (clients.size >= MAX_CLIENTS) {
@@ -28,112 +28,116 @@ export function setupSharedWebSocketServer(server) {
             console.warn('❌ Connection rejected due to max clients reached');
             return;
         }
+
         console.log('🧩 New WebSocket client connected');
-        let subscribedToWiki = false;
         clients.add(ws);
+
         const userId = `user_${userCounter++}`;
         userMap.set(ws, { id: userId });
         broadcastUserList();
-        ws.send(JSON.stringify({
-            type: 'welcome',
-            userId: userId
-        }));
-        
 
-        ws.on('message', (message) => {
-        let data;
-        try {
-            data = JSON.parse(message);
-        } catch (err) {
-            console.error('Invalid JSON:', message);
-            return;
-        }
-        if (data.type === 'video-offer' || data.type === 'video-answer' || data.type === 'ice-candidate') {
-            const targetClient = Array.from(clients).find(client => userMap.get(client)?.id === data.target);
-            if (targetClient && targetClient.readyState === WebSocket.OPEN) {
-                data.sender = userMap.get(ws)?.id;
-                targetClient.send(JSON.stringify(data));
+        ws.send(JSON.stringify({ type: 'welcome', userId }));
+
+        let subscribedToWiki = false;
+        setupStockTickerHandler(ws); // handles its own message subscription
+
+        ws.on('message', (msg) => {
+            let data;
+            try {
+                data = JSON.parse(msg);
+            } catch (e) {
+                console.error('Invalid message received:', msg);
+                return;
             }
-        }else if (data.type === 'user_disconnected') {
-            const userInfo = userMap.get(ws);
-            if (userInfo) {
-                broadcastToAll({ type: 'user_disconnected', userId: userInfo.id });
-                console.log('📢 Manual disconnect triggered by UI for:', userInfo.id);
+
+            // Stock subscription (already handled in handler, but we log)
+            if (data.type === 'subscribe_stock') {
+                console.log(`📈 Client ${userId} subscribed to stock updates`);
+                return; // handled inside stockTickerHandler
             }
-        }else if (data.type === 'share_webcam') {
-            const userInfo = userMap.get(ws);
-            if (userInfo) {
+
+            // Collaboration drawing broadcast
+            if (data.type === 'subscribe_collabaration') {
                 const broadcastData = {
-                    type: 'share_webcam',
-                    userId: userInfo.id
+                    type: 'subscribe_collabaration',
+                    text: data.text,
+                    sender: userId
                 };
+                for (const client of clients) {
+                    if (client.readyState === WebSocket.OPEN) {
+                        client.send(JSON.stringify(broadcastData));
+                    }
+                }
+                return;
+            }
+
+            // Wiki subscription flag
+            if (data.type === 'subscribe_wiki') {
+                subscribedToWiki = true;
+                return;
+            }
+
+            // WebRTC messages (video, ICE)
+            if (['video-offer', 'video-answer', 'ice-candidate'].includes(data.type)) {
+                const targetClient = Array.from(clients).find(client => userMap.get(client)?.id === data.target);
+                if (targetClient && targetClient.readyState === WebSocket.OPEN) {
+                    data.sender = userId;
+                    targetClient.send(JSON.stringify(data));
+                }
+                return;
+            }
+
+            // Webcam sharing
+            if (data.type === 'share_webcam') {
+                const broadcastData = { type: 'share_webcam', userId };
                 for (const client of clients) {
                     if (client !== ws && client.readyState === WebSocket.OPEN) {
                         client.send(JSON.stringify(broadcastData));
                     }
                 }
-                console.log(`📢 share_webcam broadcasted by ${userInfo.id}`);
+                console.log(`📢 share_webcam broadcasted by ${userId}`);
+                return;
             }
-        }
 
-
-
-        if (data.type === 'subscribe_collabaration') {
-            const userInfo = userMap.get(ws);
-            const broadcastData = {
-                type: 'subscribe_collabaration',
-                text: data.text,
-                sender: userInfo.id
-            };
-            for (const client of clients) {
-                if (client.readyState === ws.OPEN) {
-                client.send(JSON.stringify(broadcastData));
-                }
+            // Manual UI disconnect
+            if (data.type === 'user_disconnected') {
+                broadcastToAll({ type: 'user_disconnected', userId });
+                console.log('📢 Manual disconnect by', userId);
+                return;
             }
-        } else if (data.type === 'subscribe_wiki') {
-            // Mark this client as interested in Wikipedia stream
-            subscribedToWiki = true;
-        } else {
-            console.warn('Unknown message type:', data.type);
-        }
+
+            console.warn('⚠️ Unknown message type:', data.type);
         });
 
-        // Send wiki events only to interested clients
+        // Wikipedia stream forwarding
         const onWikiEvent = (event) => {
-        if (!subscribedToWiki) return;
-
-        try {
-            const change = JSON.parse(event.data);
-            const wikiData = {
-            type: 'wiki_update',
-            title: change.title,
-            user: change.user,
-            changeType: change.type,
-            timestamp: change.timestamp,
-            comment: change.comment,
-            wiki: change.wiki,
-            };
-            ws.send(JSON.stringify(wikiData));
-        } catch (err) {
-            console.error('Error parsing Wikipedia event:', err);
-        }
+            if (!subscribedToWiki) return;
+            try {
+                const change = JSON.parse(event.data);
+                const wikiData = {
+                    type: 'wiki_update',
+                    title: change.title,
+                    user: change.user,
+                    changeType: change.type,
+                    timestamp: change.timestamp,
+                    comment: change.comment,
+                    wiki: change.wiki,
+                };
+                ws.send(JSON.stringify(wikiData));
+            } catch (err) {
+                console.error('Error parsing Wikipedia event:', err);
+            }
         };
-
         eventSource.addEventListener('message', onWikiEvent);
 
         ws.on('close', () => {
-            console.log('❌ Client disconnected');
-            const userInfo = userMap.get(ws);
-            const userId = userInfo?.id;
-
-            if (userId) {
-                console.log('📢 Broadcasting user_disconnected for', userId);
-                broadcastToAll({ type: 'user_disconnected', userId });
-            }
+            console.log(`❌ Client ${userId} disconnected`);
+            broadcastToAll({ type: 'user_disconnected', userId });
 
             clients.delete(ws);
             userMap.delete(ws);
             broadcastUserList();
+
             eventSource.removeEventListener('message', onWikiEvent);
         });
     });
@@ -141,24 +145,22 @@ export function setupSharedWebSocketServer(server) {
     function broadcastUserList() {
         const users = Array.from(userMap.values()).map(u => u.id);
         const msg = JSON.stringify({
-        type: 'user_list',
-        users,
-        count: users.length,
-        max: MAX_CLIENTS
+            type: 'user_list',
+            users,
+            count: users.length,
+            max: MAX_CLIENTS
         });
         for (const client of clients) {
-            if (client.readyState === client.OPEN) {
-            client.send(msg);
+            if (client.readyState === WebSocket.OPEN) {
+                client.send(msg);
             }
         }
     }
 
     function broadcastToAll(data) {
         const msg = JSON.stringify(data);
-        console.log("📡 Sending to all clients:", msg);
-
         for (const client of clients) {
-            if (client.readyState === client.OPEN) {
+            if (client.readyState === WebSocket.OPEN) {
                 try {
                     client.send(msg);
                 } catch (err) {
@@ -167,7 +169,4 @@ export function setupSharedWebSocketServer(server) {
             }
         }
     }
-
-
-    console.log('✅ Unified WebSocket server ready');
 }

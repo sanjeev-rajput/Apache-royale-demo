@@ -226,6 +226,13 @@ views.actionitemviews.collaboration.CollaborationMain.prototype.views_actionitem
 
 
 /**
+ */
+views.actionitemviews.collaboration.CollaborationMain.prototype.disposeMe = function() {
+  this.views_actionitemviews_collaboration_CollaborationMain__socketService.disconnectWebSocket();
+};
+
+
+/**
  * @export
  * @param {org.apache.royale.events.Event} event
  */
@@ -559,6 +566,7 @@ views.actionitemviews.collaboration.CollaborationMain.prototype.ROYALE_REFLECTIO
     },
     methods: function () {
       return {
+        'disposeMe': { type: 'void', declaredBy: 'views.actionitemviews.collaboration.CollaborationMain'},
         'CollaborationMain': { type: '', declaredBy: 'views.actionitemviews.collaboration.CollaborationMain'}
       };
     }

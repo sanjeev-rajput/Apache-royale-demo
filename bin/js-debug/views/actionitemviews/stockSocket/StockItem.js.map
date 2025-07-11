@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"StockItem.js",
+"lineCount":315,
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAWwB,sDAAAA,kDAAa,GAAG,I;;;;;;;AAChB,sDAAAC,wDAAoB,GAAG,K;;;;;;;AAEvB,sDAAAC,gDAAW,GAAG,I;;;;;;;AAEd,sDAAAC,mD;;;;;;;AAEA,sDAAAC,kD;;;;;;;AAEA,sDAAAC,iD;;;;;;;AAEA,sDAAAC,mD;;;;;;AAIK,sDAAAC,gDAAjB,WAAqBA,CAAC,C,CAAO,C;EACzB,KAAAN,wDAAY,GAAG,IAAI,C;AAEvB,C;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2EAEyBO,CAAC,CAAQ,C,CAAO,C;;EAErC,IAAI,KAAAR,kDAAM,IAAI,KAAAA,kDAAY,SAAA,IAAI,CAAO,SAAA,IAAI,KAAAA,kDAAgB,aAAA,IAAI,CAAW,aAAA,C;IAAE,MAAM,C;EAEhF,KAAAA,kDAAM,GAAG,CAAC,C;EACV,KAAAE,gDAAI,G,wCAAG,KAAAF,kDAAa,U,CAAA,C;EAGpB,KAAAG,mDAAO,G,wCAAG,KAAAH,kDAAa,U,CAAA,C;EACvB,KAAAK,iDAAK,G,wCAAG,KAAAL,kDAAgB,a,CAAA,C;EACxB,KAAAI,kDAAM,G,wCAAG,KAAAJ,kDAAY,S,CAAA,C;EAGrB,IAAI,CAAC,KAAAC,wDAAY,C;IAAE,MAAM,C;EACzB,IAAI,CAAC,QAAQ,CAAC,oBAAoB,CAAC,C;EACnC,UAAU,CAAC,QAAQ,CAAC,C,CAAO,C;IACvB,KAAA,WAAW,CAAC,oBAAoB,CAAC,C;EACrC,CAAA,EAAG,GAFyG,CAErG,C;AACX,C;;;;;;;;;;;yEAGuBQ,CAAC,C,CAAS,C;EAC7B,OAAO,KAAAP,gDAAI,C;AACf,C;;;;;;;;;;;4EAE0BQ,CAAC,CAAK,C,CAAM,C;EAClC,KAAAJ,mDAAO,GAAG,CAAC,CAAC,QAAQ,CAAC,CAAC,C;AAC1B,C;;;;;;;;;;;;;;;;;;;;;;;;;EAvDU,KAAAC,gDAAI,CAAA;",
+"sources":["../../../../../src/views/actionitemviews/stockSocket/StockItem.mxml"],
+"names":["_sData","_isInitlized","_sId","_symbol","_price","_time","_iIndex","init","sData","sId","iIndex"]
+}

@@ -1,0 +1,68 @@
+<j:HGroup xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:js="library://ns.apache.org/royale/basic"
+        xmlns:j="library://ns.apache.org/royale/jewel"
+        width="100%"initComplete="init()" itemsHorizontalAlign="itemsSpaceBetween" className="stockItemG">
+        <j:beads>
+            <js:ContainerDataBinding/>
+        </j:beads>
+
+    <fx:Script>
+        <![CDATA[
+            
+            private var _sData:Object = null;
+            private var _isInitlized:Boolean = false;
+
+            private var _sId:String = null;
+            [Bindable]
+            private var _symbol:String;
+            [Bindable]
+            private var _price:String;
+            [Bindable]
+            private var _time:String;
+            [Bindable]
+            private var _iIndex:String;
+            
+
+
+            private function init():void {
+                _isInitlized = true;
+
+            }
+
+            public function set sData(d:Object):void {
+                // Skip update if values haven't changed
+                if (_sData && _sData.price == d.price && _sData.timestamp == d.timestamp) return;
+
+                _sData = d;
+                _sId = _sData.symbol;
+
+                // Update UI-bound properties
+                _symbol = _sData.symbol;
+                _time = _sData.timestamp;
+                _price = _sData.price;
+
+                // Highlight class animation
+                if (!_isInitlized) return;
+                this.addClass("stockItemHighlight");
+                setTimeout(function():void {
+                    removeClass("stockItemHighlight");
+                }, 200);
+            }
+
+
+            public function get sId():String {
+                return _sId;
+            }
+
+            public function set iIndex(i:int):void{
+                _iIndex = i.toString() + ".";
+            }
+
+            
+        ]]>
+    </fx:Script>
+        <j:Label text="{_iIndex}" style="font-weight: bolder;"/>
+        <j:Label text="{_symbol}" />
+        <j:Label text="{_price}" />
+        <j:Label text="{_time}" />
+</j:HGroup>

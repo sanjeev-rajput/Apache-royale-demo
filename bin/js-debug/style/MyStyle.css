@@ -168,8 +168,7 @@
 @keyframes highlight {
   from {
     background-color: yellow;
-  }
-  
+  }  
 }
 
 .drawingCanvas{
@@ -379,3 +378,34 @@ color: black;
   .appAlert{
     color: red;
   }
+
+.stockItemHighlight{
+  animation: highlight 500ms;
+}
+@keyframes highlight {
+  from {
+    background-color: lightgreen;
+  }  
+}
+
+.stockIndicatorHighlight{
+  animation: highlighti 500ms;
+}
+@keyframes highlighti {
+  from {
+    opacity: 1.0;
+    color:red;
+  }  
+}
+.stockItemG{
+  padding: 10px;
+  border-bottom: 1px solid lightgray;
+}
+.stockItemT{
+  padding: 10px;
+  border: 1px solid lightgray;
+}
+.stockControls{
+  padding: 10px;
+  border-bottom: 3px solid darkgray;
+}
