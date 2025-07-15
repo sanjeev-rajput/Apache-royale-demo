@@ -4,15 +4,15 @@ package com.model{
     import org.apache.royale.net.HTTPConstants;
     import org.apache.royale.events.Event;
     import com.util.preloader.DsPreloader;
-    import com.unhurdle.spectrum.Alert;
     import org.apache.royale.debugging.throwError;
     import com.util.AppAlert;
+    import com.util.ServerColdStartManager;
 
     public class ServiceLoader{
 
         private var _callBack:Function;
         private var _errorCallback:Function;
-        private var _service:HTTPService;
+        private var _service:HTTPService=null;
         public static const DATA_TYPE_JSON:String = "json";
         public static const DATA_TYPE_TEXT:String = "text";
         public static const DATA_TYPE_XML:String = "xml";
@@ -21,12 +21,26 @@ package com.model{
         private var _contentType:String=null;
         private var _reqData:*;
         private var _headers:Array;
+        private static var _isFirstConnect:Boolean = true;
+
 
         public function ServiceLoader():void {
             _service = new HTTPService();
         }
 
+        private function isServerReq(url:String):Boolean {
+            if (url.indexOf("api/") != -1) {
+                return true;
+            }else{
+                return false;
+            }
+        }
+
         public function loadJData(url:String, callBack:Function, dataType:String=DATA_TYPE_JSON, errCallBack:Function=null, randUrl:Boolean=true):void{
+            if(isServerReq(url) && _isFirstConnect) {
+                ServerColdStartManager.showWakeUpMessage();
+                _isFirstConnect = false;
+            }
             _callBack = callBack;
             if (_callBack == null) {
                 throwError('Callback function cannot be null');
@@ -56,14 +70,12 @@ package com.model{
         }
 
         private function completeJdataHandler(event:Event):void{
+            if(isServerReq(_service.url)) {
+                ServerColdStartManager.showConnectedMessage();
+            }
             DsPreloader.instance.remvoePreloader("serviceLoader");
             if(_service.status == 0){
-                var err:Alert = new Alert();
-                err.status = Alert.ERROR;
-                err.showOverlay = true;
-                err.header = "Network Error"
-                err.content = "Unable to connect!!! Pelase check you network (internet) connection !!!"
-                err.show();
+                AppAlert.show(AppAlert.ERROR, "Unable to connect!!! Pelase check you network (internet) connection !!!")
                 return;
             }
             
@@ -98,6 +110,13 @@ package com.model{
 
         public function set headers(value:Array):void {
            _headers = value;
+        }
+
+        public function cancel():void {
+            if(_service) {
+                _service.dispose();
+                _service = null;
+            }
         }
 
 

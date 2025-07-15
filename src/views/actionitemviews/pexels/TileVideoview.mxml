@@ -1,0 +1,83 @@
+<j:Group xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:js="library://ns.apache.org/royale/basic"
+        xmlns:j="library://ns.apache.org/royale/jewel"
+        initComplete="init()" height="100%" width="100%">
+        
+        
+    <fx:Script>
+        <![CDATA[
+
+            import views.actionitemviews.pexels.VideoStreamController;
+            import org.apache.royale.jewel.VideoPlayer;
+            private var _viewType:String = "Tile View"; // Tile View || Scroll View
+            private var _playerWidth:int = 320;
+            private var _playerHeight:int = 180;
+            private var _isinitlized:Boolean = false;
+            private var videoCtrl:VideoStreamController = new VideoStreamController("technology", 20);
+
+            private function init():void {
+                vidCtr.percentHeight=90;
+                videoCtrl.fetchNextPage(onVideosLoaded);
+                vidCtr.element.addEventListener("scrollend", onScrolling);
+            }
+
+            public function set viewType(v:String):void{
+                _viewType = v;
+                if(v == "Scroll View"){
+                    _playerHeight = 600;
+                    _playerWidth = 800;
+                }
+                if(v == "Tile View"){
+                    _playerHeight = 180;
+                    _playerWidth = 320;
+                }
+                if(!_isinitlized)return;
+
+                for(var i:int=0; i< vidCtr.numElements; i++){
+                    var pl:VideoPlayer = vidCtr.getElementAt(i) as VideoPlayer
+                    pl.setWidthAndHeight(_playerWidth, _playerHeight)
+                }
+            }
+
+            private function onScrolling():void {
+                var scrollMax:Number = vidCtr.height + vidCtr.element.scrollTop;
+                if (vidCtr.element.scrollHeight - scrollMax <= 1) {
+                    videoCtrl.fetchNextPage(onVideosLoaded);
+                }
+            }
+
+            private function onVideosLoaded(data:Object):void {
+                for each (var video:Object in data) {
+                    var link:String = videoCtrl.getBestVideoUrl(video);
+                    if (link) {
+                        var player:VideoPlayer = videoCtrl.createVideoPlayer(link, _playerWidth, _playerHeight)
+                        vidCtr.addElement(player);
+                    }
+                }
+                _isinitlized = true;
+            }
+
+            private function removeAllElements():void{
+                while(vidCtr.numElements){
+                    vidCtr.removeElement(vidCtr.getElementAt(0));
+                }
+            }
+
+            public function disposeMe():void {
+                // Remove keyboard event listener
+                vidCtr.removeEventListener("scrollend", onScrolling);
+                // Clear all video elements
+                removeAllElements();
+                videoCtrl.dispose();
+            }
+
+        ]]>
+    </fx:Script>
+
+    <j:Group id="vidCtr" width="100%" >
+        <j:beads>
+            <j:TileHorizontalLayout localId="zyz" waitForSize="true" itemsHorizontalAlign="itemsSpaceAround" verticalGap="20" horizontalGap="20"/>
+            <j:ScrollingViewport/>
+        </j:beads>
+    </j:Group>
+</j:Group>

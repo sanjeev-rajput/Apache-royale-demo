@@ -8,7 +8,7 @@
  */
 
 goog.provide('views.actionitemviews.stockSocket.StockItemG');
-/* Royale Dependency List: org.apache.royale.binding.ContainerDataBinding,org.apache.royale.jewel.Label,org.apache.royale.events.Event,org.apache.royale.events.ValueChangeEvent,XML*/
+/* Royale Dependency List: org.apache.royale.binding.ContainerDataBinding,org.apache.royale.jewel.Label,com.util.DsUtil,org.apache.royale.events.Event,org.apache.royale.events.ValueChangeEvent,XML*/
 
 goog.require('org.apache.royale.jewel.HGroup');
 
@@ -256,7 +256,7 @@ views.actionitemviews.stockSocket.StockItemG.prototype.set__sData = function(d) 
   this.views_actionitemviews_stockSocket_StockItemG__sData = d;
   this.views_actionitemviews_stockSocket_StockItemG__sId = org.apache.royale.utils.Language.string(this.views_actionitemviews_stockSocket_StockItemG__sData["symbol"]);
   this.views_actionitemviews_stockSocket_StockItemG__symbol = org.apache.royale.utils.Language.string(this.views_actionitemviews_stockSocket_StockItemG__sData["symbol"]);
-  this.views_actionitemviews_stockSocket_StockItemG__time = org.apache.royale.utils.Language.string(this.views_actionitemviews_stockSocket_StockItemG__sData["timestamp"]);
+  this.views_actionitemviews_stockSocket_StockItemG__time = com.util.DsUtil.formatDateTime(org.apache.royale.utils.Language.string(this.views_actionitemviews_stockSocket_StockItemG__sData["timestamp"]));
   this.views_actionitemviews_stockSocket_StockItemG__price = org.apache.royale.utils.Language.string(this.views_actionitemviews_stockSocket_StockItemG__sData["price"]);
   if (!this.views_actionitemviews_stockSocket_StockItemG__isInitlized)
     return;

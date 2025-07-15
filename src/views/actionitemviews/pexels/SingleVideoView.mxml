@@ -1,0 +1,101 @@
+<j:Group xmlns:fx="http://ns.adobe.com/mxml/2009"
+         xmlns:j="library://ns.apache.org/royale/jewel"
+         xmlns:html="library://ns.apache.org/royale/html"
+         width="100%" height="100%" initComplete="init()">
+
+    <fx:Script>
+        <![CDATA[
+            import org.apache.royale.events.KeyboardEvent;
+            import org.apache.royale.jewel.VideoPlayer;
+            import views.actionitemviews.pexels.VideoStreamController;
+            import org.apache.royale.events.KeyboardEvent;
+
+            private var videoCtrl:VideoStreamController = new VideoStreamController();
+            private var videoUrls:Array = [];
+            private var currentIndex:int = 0;
+            private var player:VideoPlayer;
+
+
+            private function init():void {
+                vidCtr.setFocus(true)//focus = this; // make sure we receive keyboard input
+                //vidCtr.height = this.height-30;
+                vidCtr.percentHeight = 90
+                vidCtr.addEventListener(KeyboardEvent.KEY_DOWN, onKeyDown)
+                fetchVideos();
+            }
+
+            private function fetchVideos():void {
+                videoCtrl.fetchNextPage(onVideosLoaded);
+            }
+
+            private function onVideosLoaded(data:Object):void {
+                for each (var video:Object in data) {
+                    var link:String = videoCtrl.getBestVideoUrl(video);
+                    if (link) videoUrls.push(link);
+                }
+                showVideo(currentIndex);
+            }
+
+            private function showVideo(index:int):void {
+                if (index < 0 || index >= videoUrls.length) return;
+
+                if (!player) {
+                    player = videoCtrl.createVideoPlayer(videoUrls[index]);
+                    vidCtr.addElement(player);
+                } else {
+                    player.pause(); // optional: stop previous video
+                    player.src = videoUrls[index];
+                }
+
+                player.play();
+
+                if (index >= videoUrls.length - 2) {
+                    fetchVideos();
+                }
+            }
+            private function onKeyDown(event:KeyboardEvent):void {
+                if(event.key == 'ArrowDown')changeVideo('ArrowDown');
+                if(event.key == 'ArrowUp')changeVideo('ArrowUp');
+
+            }
+
+            private function changeVideo(e:String):void {
+                if (e == 'ArrowDown') {
+                    if (currentIndex < videoUrls.length - 1) {
+                        currentIndex++;
+                        showVideo(currentIndex);
+                    }
+                } else if (e == 'ArrowUp') {
+                    if (currentIndex > 0) {
+                        currentIndex--;
+                        showVideo(currentIndex);
+                    }
+                }
+            }
+
+            public function disposeMe():void {
+                // Remove keyboard event listener
+                vidCtr.removeEventListener(KeyboardEvent.KEY_DOWN, onKeyDown);
+                if (player) {
+                    player.pause();
+                    player.src = null;
+                    vidCtr.removeElement(player);
+                    player = null;
+                }
+                // Reset variables
+                videoUrls = [];
+                currentIndex = 0;
+                // Optionally reset or nullify the controller (if reused, skip this)
+                vidCtr.dispose();
+            }
+
+        ]]>
+    </fx:Script>
+     <j:HGroup width="100%" height="100%" gap="10" itemsVerticalAlign="itemsCenter" itemsHorizontalAlign="itemsCenter">
+        <j:VGroup id="vidCtr" width="640" height="360"/>
+        <j:VGroup height="360">
+            <html:I class="fa fa-sort-up" click="changeVideo('ArrowUp')" style="font-size:48px"/>
+            <html:I class="fa fa-sort-down" click="changeVideo('ArrowDown')" style="font-size:48px"/>
+        </j:VGroup>
+    </j:HGroup>
+</j:Group>

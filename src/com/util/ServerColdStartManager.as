@@ -1,16 +1,16 @@
-package views.actionitemviews.websocket {
+package com.util {
     import com.unhurdle.spectrum.Toast;
     import org.apache.royale.utils.Timer;
     import org.apache.royale.events.Event;
 
-    public class SocketServiceHelper {
+    public class ServerColdStartManager {
         private static var toast:Toast;
         private static var timer:Timer;
         private static var countdown:int = 60;
+        private static var isNodeStarted:Boolean = false;
 
         public static function showWakeUpMessage():void {
-            if (toast) return; // Already showing
-
+            if (toast || isNodeStarted) return; // Already showing or connected
             toast = new Toast();
             toast.text = "Waking up server... please wait (60s)";
             toast.flavor = Toast.INFO;
@@ -29,9 +29,11 @@ package views.actionitemviews.websocket {
         }
 
         public static function showConnectedMessage():void {
+            if(isNodeStarted) return;
             stopCountdown();
+            isNodeStarted = true;
             if (toast) {
-                toast.text = "Connected!";
+                toast.text = "✅ Connected successfully.";
                 toast.flavor = Toast.SUCCESS;
                 setTimeout(function():void {
                     toast.hide()

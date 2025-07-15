@@ -4,6 +4,7 @@ package views.actionitemviews.websocket
 
     import com.model.Config;
     import com.util.AppAlert;
+    import com.util.ServerColdStartManager;
 
     public class SocketService{
 
@@ -13,7 +14,6 @@ package views.actionitemviews.websocket
         private var _url:String = Config.wsUrl;
         private var _isConnected:Boolean = false;
         private var _callBackFunction:Function=null;
-        private var _statusUpdateCallback:Function = null;
         private static var _isFirstConnect:Boolean = true;
 
 
@@ -24,9 +24,6 @@ package views.actionitemviews.websocket
         private var _subscribeType:String = null;
         public function SocketService():void {
         }
-        public function setStatusUpdateCallback(callback:Function):void {
-            _statusUpdateCallback = callback;
-        }
 
         
         public function addCAllBackFunction(callBackFunction:Function):void {
@@ -36,10 +33,9 @@ package views.actionitemviews.websocket
         public function connectWebSocket(type:String=null, obj:Object=null):void{  
             if (_isFirstConnect) {
                 _isFirstConnect = false;
-                SocketServiceHelper.showWakeUpMessage();
+                ServerColdStartManager.showWakeUpMessage();
             }
 
-            if (_statusUpdateCallback != null) _statusUpdateCallback("✅ Connected successfully.");
             if(type)_subscribeType = type;
             if(obj)_subscribeWithObj = obj;
             if(_callBackFunction == null){
@@ -71,11 +67,9 @@ package views.actionitemviews.websocket
 
         private function connectionOpenEvtHandler():void {
              _isConnected = true;
-            SocketServiceHelper.showConnectedMessage();
+            ServerColdStartManager.showConnectedMessage();
             subscribeWs();
             console.log('Connected to the WebSocket server');
-            _isConnected=true;
-            subscribeWs();
         }
 
         private function subscribeWs():void {

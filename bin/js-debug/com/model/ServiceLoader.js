@@ -8,7 +8,7 @@
  */
 
 goog.provide('com.model.ServiceLoader');
-/* Royale Dependency List: XML,com.unhurdle.spectrum.Alert,com.util.AppAlert,com.util.preloader.DsPreloader,org.apache.royale.debugging.throwError,org.apache.royale.events.Event,org.apache.royale.net.HTTPConstants,org.apache.royale.net.HTTPService,org.apache.royale.utils.Language*/
+/* Royale Dependency List: XML,com.util.AppAlert,com.util.ServerColdStartManager,com.util.preloader.DsPreloader,org.apache.royale.debugging.throwError,org.apache.royale.events.Event,org.apache.royale.net.HTTPConstants,org.apache.royale.net.HTTPService,org.apache.royale.utils.Language*/
 
 
 
@@ -102,6 +102,27 @@ com.model.ServiceLoader.prototype.com_model_ServiceLoader__headers = null;
 
 
 /**
+ * @private
+ * @type {boolean}
+ */
+com.model.ServiceLoader._isFirstConnect = true;
+
+
+/**
+ * @private
+ * @param {string} url
+ * @return {boolean}
+ */
+com.model.ServiceLoader.prototype.com_model_ServiceLoader_isServerReq = function(url) {
+  if (url.indexOf("api/") != -1) {
+    return true;
+  } else {
+    return false;
+  }
+};
+
+
+/**
  * @param {string} url
  * @param {Function} callBack
  * @param {string=} dataType
@@ -112,6 +133,10 @@ com.model.ServiceLoader.prototype.loadJData = function(url, callBack, dataType, 
   dataType = typeof dataType !== 'undefined' ? dataType : com.model.ServiceLoader.DATA_TYPE_JSON;
   errCallBack = typeof errCallBack !== 'undefined' ? errCallBack : null;
   randUrl = typeof randUrl !== 'undefined' ? randUrl : true;
+  if (this.com_model_ServiceLoader_isServerReq(url) && com.model.ServiceLoader._isFirstConnect) {
+    com.util.ServerColdStartManager.showWakeUpMessage();
+    com.model.ServiceLoader._isFirstConnect = false;
+  }
   this.com_model_ServiceLoader__callBack = callBack;
   if (this.com_model_ServiceLoader__callBack == null) {
     org.apache.royale.debugging.throwError('Callback function cannot be null');
@@ -142,14 +167,12 @@ com.model.ServiceLoader.prototype.loadJData = function(url, callBack, dataType, 
  * @param {org.apache.royale.events.Event} event
  */
 com.model.ServiceLoader.prototype.com_model_ServiceLoader_completeJdataHandler = function(event) {
+  if (this.com_model_ServiceLoader_isServerReq(this.com_model_ServiceLoader__service.url)) {
+    com.util.ServerColdStartManager.showConnectedMessage();
+  }
   com.util.preloader.DsPreloader.instance.remvoePreloader("serviceLoader");
   if (this.com_model_ServiceLoader__service.status == 0) {
-    var /** @type {com.unhurdle.spectrum.Alert} */ err = new com.unhurdle.spectrum.Alert();
-    err.status = com.unhurdle.spectrum.Alert.ERROR;
-    err.showOverlay = true;
-    err.header = "Network Error";
-    err.content = "Unable to connect!!! Pelase check you network (internet) connection !!!";
-    err.show();
+    com.util.AppAlert.show(com.util.AppAlert.ERROR, "Unable to connect!!! Pelase check you network (internet) connection !!!");
     return;
   }
   if (this.com_model_ServiceLoader__dataType == com.model.ServiceLoader.DATA_TYPE_JSON)
@@ -180,6 +203,16 @@ com.model.ServiceLoader.prototype.sendReqData = function() {
     this.com_model_ServiceLoader__service.send();
   } else {
     org.apache.royale.utils.Language.trace("Service not initialized.");
+  }
+};
+
+
+/**
+ */
+com.model.ServiceLoader.prototype.cancel = function() {
+  if (this.com_model_ServiceLoader__service) {
+    this.com_model_ServiceLoader__service.dispose();
+    this.com_model_ServiceLoader__service = null;
   }
 };
 
@@ -296,7 +329,8 @@ com.model.ServiceLoader.prototype.ROYALE_REFLECTION_INFO = function () {
       return {
         'ServiceLoader': { type: 'void', declaredBy: 'com.model.ServiceLoader'},
         'loadJData': { type: 'void', declaredBy: 'com.model.ServiceLoader', parameters: function () { return [ 'String', false ,'Function', false ,'String', true ,'Function', true ,'Boolean', true ]; }},
-        'sendReqData': { type: 'void', declaredBy: 'com.model.ServiceLoader'}
+        'sendReqData': { type: 'void', declaredBy: 'com.model.ServiceLoader'},
+        'cancel': { type: 'void', declaredBy: 'com.model.ServiceLoader'}
       };
     }
   };

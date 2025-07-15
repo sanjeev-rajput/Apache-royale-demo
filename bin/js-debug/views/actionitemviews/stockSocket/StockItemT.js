@@ -8,7 +8,7 @@
  */
 
 goog.provide('views.actionitemviews.stockSocket.StockItemT');
-/* Royale Dependency List: org.apache.royale.binding.ContainerDataBinding,org.apache.royale.jewel.VGroup,org.apache.royale.jewel.Label,org.apache.royale.events.Event,org.apache.royale.events.ValueChangeEvent,XML*/
+/* Royale Dependency List: org.apache.royale.binding.ContainerDataBinding,org.apache.royale.jewel.VGroup,org.apache.royale.jewel.Label,com.unhurdle.spectrum.StatusLight,com.util.DsUtil,org.apache.royale.events.Event,org.apache.royale.events.ValueChangeEvent,XML*/
 
 goog.require('org.apache.royale.jewel.HGroup');
 
@@ -41,7 +41,7 @@ views.actionitemviews.stockSocket.StockItemT = function() {
   
   /**
    * @private
-   * @type {org.apache.royale.jewel.Label}
+   * @type {com.unhurdle.spectrum.StatusLight}
    */
   this.indicator_;
   
@@ -274,14 +274,14 @@ views.actionitemviews.stockSocket.StockItemT.prototype.set__sData = function(d) 
   this.views_actionitemviews_stockSocket_StockItemT__sData = d;
   this.views_actionitemviews_stockSocket_StockItemT__sId = org.apache.royale.utils.Language.string(this.views_actionitemviews_stockSocket_StockItemT__sData["symbol"]);
   this.views_actionitemviews_stockSocket_StockItemT__symbol = org.apache.royale.utils.Language.string(this.views_actionitemviews_stockSocket_StockItemT__sData["symbol"]);
-  this.views_actionitemviews_stockSocket_StockItemT__time = org.apache.royale.utils.Language.string(this.views_actionitemviews_stockSocket_StockItemT__sData["timestamp"]);
+  this.views_actionitemviews_stockSocket_StockItemT__time = com.util.DsUtil.formatDateTime(org.apache.royale.utils.Language.string(this.views_actionitemviews_stockSocket_StockItemT__sData["timestamp"]));
   this.views_actionitemviews_stockSocket_StockItemT__price = org.apache.royale.utils.Language.string(this.views_actionitemviews_stockSocket_StockItemT__sData["price"]);
   if (!this.views_actionitemviews_stockSocket_StockItemT__isInitlized)
     return;
-  this.indicator.addClass("stockIndicatorHighlight");
+  this.indicator.alpha = 1;
   setTimeout(function() {
-    self.indicator.removeClass("stockIndicatorHighlight");
-  }, 300);
+    self.indicator.alpha = 0;
+  }, 800);
 };
 
 
@@ -374,7 +374,7 @@ Object.defineProperties(views.actionitemviews.stockSocket.StockItemT.prototype, 
         /** @type {Array} */
         var mxmldd = [
           org.apache.royale.jewel.VGroup,
-          3,
+          4,
           'id',
           true,
           'indxCtr',
@@ -384,6 +384,9 @@ Object.defineProperties(views.actionitemviews.stockSocket.StockItemT.prototype, 
           'gap',
           true,
           0,
+          'itemsHorizontalAlign',
+          true,
+          'itemsCenter',
           0,
           0,
           [
@@ -398,17 +401,20 @@ Object.defineProperties(views.actionitemviews.stockSocket.StockItemT.prototype, 
             0,
             0,
             null,
-            org.apache.royale.jewel.Label,
-            3,
+            com.unhurdle.spectrum.StatusLight,
+            4,
             'id',
             true,
             'indicator',
-            'text',
+            'status',
             true,
-            '•',
+            'celery',
+            'alpha',
+            true,
+            0,
             'style',
             true,
-            'font-weight: bolder; color:white; font-size:50; opacity:0.1',
+            'font-weight: bolder;',
             0,
             0,
             null
@@ -530,7 +536,7 @@ views.actionitemviews.stockSocket.StockItemT.prototype.ROYALE_REFLECTION_INFO = 
         'sId': { type: 'String', access: 'readonly', declaredBy: 'views.actionitemviews.stockSocket.StockItemT'},
         'iIndex': { type: 'int', access: 'writeonly', declaredBy: 'views.actionitemviews.stockSocket.StockItemT'},
         'indxCtr': { type: 'org.apache.royale.jewel.VGroup', access: 'readwrite', declaredBy: 'views.actionitemviews.stockSocket.StockItemT'},
-        'indicator': { type: 'org.apache.royale.jewel.Label', access: 'readwrite', declaredBy: 'views.actionitemviews.stockSocket.StockItemT'}
+        'indicator': { type: 'com.unhurdle.spectrum.StatusLight', access: 'readwrite', declaredBy: 'views.actionitemviews.stockSocket.StockItemT'}
       };
     },
     methods: function () {

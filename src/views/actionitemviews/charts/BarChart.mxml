@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<j:View xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:j="library://ns.apache.org/royale/jewel"
+            xmlns:sp="library://ns.unhurdle.com/spectrum" 
+        xmlns:js="library://ns.apache.org/royale/basic">
+        
+
+    <fx:Script>
+        <![CDATA[
+            import org.apache.royale.collections.ArrayList;
+
+            // Sample data for the bar chart
+            [Bindable]
+            public var chartData:ArrayList = new ArrayList([
+                { category: "Category A", value: 10 },
+                { category: "Category B", value: 25 },
+                { category: "Category C", value: 15 },
+                { category: "Category D", value: 30 }
+            ]);
+        ]]>
+    </fx:Script>
+    
+
+   <sp:Menu> 
+     <sp:dataProvider> 
+        <sp:MenuItem text="Deselect"/> 
+        <sp:MenuItem text="Select Inverse"/> 
+        <sp:MenuItem text="Feather..."/> 
+        <sp:MenuItem text="hello" subMenu="[aaa,Select Inverse]"  >
+        </sp:MenuItem> 
+        <sp:MenuItem text="Save Selection"></sp:MenuItem> 
+        
+        <sp:MenuItem disabled="true" text="Make Work Path"/> 
+     </sp:dataProvider> 
+</sp:Menu>
+</j:View>

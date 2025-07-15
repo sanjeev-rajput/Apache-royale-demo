@@ -1,6 +1,7 @@
 <j:HGroup xmlns:fx="http://ns.adobe.com/mxml/2009"
         xmlns:js="library://ns.apache.org/royale/basic"
         xmlns:j="library://ns.apache.org/royale/jewel"
+        xmlns:sp="library://ns.unhurdle.com/spectrum" 
         initComplete="init()" itemsVerticalAlign="itemsCenter" className="stockItemT" gap="10">
         <j:beads>
             <js:ContainerDataBinding/>
@@ -8,6 +9,8 @@
 
     <fx:Script>
         <![CDATA[
+            import com.util.DsUtil;
+
             
             private var _sData:Object = null;
             private var _isInitlized:Boolean = false;
@@ -38,15 +41,17 @@
 
                 // Update UI-bound properties
                 _symbol = _sData.symbol;
-                _time = _sData.timestamp;
+                _time = DsUtil.formatDateTime(_sData.timestamp);
                 _price = _sData.price;
 
                 // Highlight class animation
                 if (!_isInitlized) return;
-                indicator.addClass("stockIndicatorHighlight");
+                //indicator.addClass("stockIndicatorHighlight");
+                indicator.alpha=1;
                 setTimeout(function():void {
-                    indicator.removeClass("stockIndicatorHighlight");
-                }, 300);
+                    //indicator.removeClass("stockIndicatorHighlight");
+                    indicator.alpha=0;
+                }, 800);
             }
 
 
@@ -61,9 +66,10 @@
             
         ]]>
     </fx:Script>
-        <j:VGroup id="indxCtr" itemsVerticalAlign="itemsCenter" gap="0">
+        <j:VGroup id="indxCtr" itemsVerticalAlign="itemsCenter" gap="0" itemsHorizontalAlign="itemsCenter">
             <j:Label text="{_iIndex}" style="font-weight: bolder;" />
-            <j:Label id="indicator" text="&#x2022;" style="font-weight: bolder; color:white; font-size:50; opacity:0.1"/>
+            <!-- <j:Label id="indicator" text="&#x2022;" style="font-weight: bolder; color:white; font-size:50; opacity:0.1"/> -->
+        <sp:StatusLight id="indicator" status="celery" alpha="0" style="font-weight: bolder;"/>
         </j:VGroup>
         <j:VGroup gap="5">
             <j:Label text="{_symbol}" />

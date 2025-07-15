@@ -2,7 +2,6 @@
         xmlns:j="library://ns.apache.org/royale/jewel"
         xmlns:js="library://ns.apache.org/royale/basic"
         xmlns:sp="library://ns.unhurdle.com/spectrum" 
-        xmlns:spectrum="com.unhurdle.spectrum.*" 
         initComplete="init()"
         width="100%" height="100%">
 
@@ -119,7 +118,7 @@
 
     <j:Group id="sTitemCtr" height="100%" width="100%" style="padding:10px" visible="false">
         <j:beads>
-            <j:TileHorizontalLayout localId="plist" waitForSize="true"/>
+            <j:TileHorizontalLayout localId="plist" waitForSize="true" itemsHorizontalAlign="itemsSpaceAround"/>
             <j:ScrollingViewport/>
         </j:beads>
     </j:Group>

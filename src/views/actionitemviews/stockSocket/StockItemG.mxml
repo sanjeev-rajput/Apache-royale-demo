@@ -8,6 +8,8 @@
 
     <fx:Script>
         <![CDATA[
+            import com.util.DsUtil;
+
             
             private var _sData:Object = null;
             private var _isInitlized:Boolean = false;
@@ -38,7 +40,7 @@
 
                 // Update UI-bound properties
                 _symbol = _sData.symbol;
-                _time = _sData.timestamp;
+                _time = DsUtil.formatDateTime(_sData.timestamp);
                 _price = _sData.price;
 
                 // Highlight class animation

@@ -171,6 +171,26 @@ com.util.DsUtil.truncateString = function(str, num) {
 
 
 /**
+ * @nocollapse
+ * @param {string} utcString
+ * @return {string}
+ */
+com.util.DsUtil.formatDateTime = function(utcString) {
+  function pad(n) {
+    return (n < 10 ? "0" + n : "" + n);
+  };
+  var /** @type {*} */ jsDate = new Date(utcString);
+  var /** @type {number} */ year = (jsDate["getFullYear"]()) >> 0;
+  var /** @type {number} */ month = (jsDate["getMonth"]() + 1) >> 0;
+  var /** @type {number} */ day = (jsDate["getDate"]()) >> 0;
+  var /** @type {number} */ hours = (jsDate["getHours"]()) >> 0;
+  var /** @type {number} */ minutes = (jsDate["getMinutes"]()) >> 0;
+  var /** @type {number} */ seconds = (jsDate["getSeconds"]()) >> 0;
+  return year + "-" + pad(month) + "-" + pad(day) + " ; " + pad(hours) + "." + pad(minutes) + ":" + pad(seconds);
+};
+
+
+/**
  * Metadata
  *
  * @type {Object.<string, Array.<Object>>}
@@ -194,7 +214,8 @@ com.util.DsUtil.prototype.ROYALE_REFLECTION_INFO = function () {
         '|csvFileToJsonObj': { type: 'Array', declaredBy: 'com.util.DsUtil', parameters: function () { return [ 'Object', false ]; }},
         '|csvFileToArrayObj': { type: 'Array', declaredBy: 'com.util.DsUtil', parameters: function () { return [ 'Object', false ]; }},
         '|remvoeNewlineAndTab': { type: 'String', declaredBy: 'com.util.DsUtil', parameters: function () { return [ 'String', false ]; }},
-        '|truncateString': { type: 'String', declaredBy: 'com.util.DsUtil', parameters: function () { return [ 'String', false ,'int', true ]; }}
+        '|truncateString': { type: 'String', declaredBy: 'com.util.DsUtil', parameters: function () { return [ 'String', false ,'int', true ]; }},
+        '|formatDateTime': { type: 'String', declaredBy: 'com.util.DsUtil', parameters: function () { return [ 'String', false ]; }}
       };
     }
   };

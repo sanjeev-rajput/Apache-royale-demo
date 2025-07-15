@@ -1,0 +1,80 @@
+<j:VGroup xmlns:fx="http://ns.adobe.com/mxml/2009"
+    xmlns:j="library://ns.apache.org/royale/jewel"
+    xmlns:sp="library://ns.unhurdle.com/spectrum" 
+    initComplete="init()" height="100%" width="100%">
+
+    <fx:Script>
+        <![CDATA[
+            import org.apache.royale.events.Event;
+            import org.apache.royale.jewel.SwitchRadio;
+            
+            import views.actionitemviews.pexels.SingleVideoView;
+            import org.apache.royale.jewel.Group;
+            import views.actionitemviews.pexels.TileVideoview;
+            private var videoView:Group;
+            private var viewType:String = "S" // S || T
+
+            private function init():void {
+                videoView = new SingleVideoView();
+                this.addElement(videoView);
+            }
+
+            private function viewChangeEvent(e:Event):void {
+                var selectedItem:String = (e.target as SwitchRadio).selectedValue as String;
+
+                switch(selectedItem){
+                    case "One View":{
+                        if(videoView && viewType == "S") return;
+                        disposeMe();
+                        videoView = new SingleVideoView();
+                        this.addElement(videoView);
+                        viewType = "S";
+                        break;
+                    }
+                    case "Tile View":{
+                        if(videoView && viewType == "S")disposeMe();
+                        manageTileAndScrollView(selectedItem)
+                        break;
+                    }
+                    case "Scroll View":{
+                        if(videoView && viewType == "S")disposeMe();
+                        manageTileAndScrollView(selectedItem)
+                        break;
+                    }
+                }
+            }
+
+            private function manageTileAndScrollView(v:String):void {
+                if(videoView){
+                    TileVideoview(videoView).viewType = v;
+                }else{
+                    videoView = new TileVideoview();
+                    TileVideoview(videoView).viewType = v;
+                    this.addElement(videoView)
+                }
+                viewType = "T";
+            }
+
+            private function clearView():void {
+                this.removeElement(videoView);
+                videoView = null;
+            }
+
+            public function disposeMe():void {
+                if(videoView){
+                    (videoView is SingleVideoView) ? SingleVideoView(videoView).disposeMe() : TileVideoview(videoView).disposeMe();
+                    this.removeElement(videoView);
+                    videoView = null;
+                }
+            }
+        ]]>
+    </fx:Script>
+    <j:HGroup itemsHorizontalAlign="itemsCenter" width="100%" gap="10" className="streamVideoMain">
+        <j:SwitchRadio text="One View" groupName="radios2" value="One View" selected="true" change="viewChangeEvent(event)"/>
+        <sp:VDivider size="medium"/>
+        <j:SwitchRadio text="Tile View" groupName="radios2" value="Tile View" change="viewChangeEvent(event)"/>
+        <j:SwitchRadio text="Scroll View" groupName="radios2" value="Scroll View" change="viewChangeEvent(event)"/>
+    </j:HGroup>
+    
+        
+</j:VGroup>

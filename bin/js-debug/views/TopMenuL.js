@@ -52,13 +52,7 @@ views.TopMenuL = function() {
   this.mxmldp;
 
   this.generateMXMLAttributes([
-    4,
-    'x',
-    true,
-    0,
-    'y',
-    true,
-    0,
+    2,
     'style',
     true,
     'background:transparent; border: none;',

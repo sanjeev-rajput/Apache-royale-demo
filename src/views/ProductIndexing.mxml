@@ -16,7 +16,6 @@
             import views.actionitemviews.toc.TocAndPgnation;
             import org.apache.royale.jewel.Group;
             import views.actionitemviews.games.Game;
-            import views.actionitemviews.pexels.pexelsVideoStream;
             import views.actionitemviews.basicdrawing.BasicDrawingMain;
             import views.actionitemviews.searchlist.SearchListMain;
             import views.actionitemviews.websocket.WikiSocketMain;
@@ -24,6 +23,7 @@
             import views.actionitemviews.shoppingcart.ShoppingMain;
             import views.actionitemviews.collaboration.CollaborationMain;
             import views.actionitemviews.stockSocket.StockSocketMain;
+            import views.actionitemviews.pexels.PexelVideoStreamMain;
             private var mgmtObj:Array = new Array();
                         
             private function initComplete():void {
@@ -96,7 +96,7 @@
                     return;
                 }
                 if(compName == 'Pexels Video Streams'){
-                    uiComp = new pexelsVideoStream();
+                    uiComp = new PexelVideoStreamMain();
                     vg.addElement(uiComp);
                     mgmtObj.push(uiComp);
                     return;
@@ -111,6 +111,9 @@
                     var sLstComp:SearchListMain = new SearchListMain();
                     sLstComp.showCloseBtn = false;
                     vg.addElement(sLstComp);
+                    return;
+                }
+                if(compName == 'Chart'){
                     return;
                 }
                 
@@ -129,6 +132,7 @@
                         if(i is Game) Game(i).disposeMe();
                         if(i is StockSocketMain) StockSocketMain(i).disposeMe();
                         if(i is CollaborationMain) CollaborationMain(i).disposeMe();
+                        //if(i is pexelsVideoStream) pexelsVideoStream(i).disposeMe();
                     }
                     mgmtObj = new Array();
                 }

@@ -128,5 +128,23 @@ package com.util
                 return str;
             }
         }
+        public static function formatDateTime(utcString:String):String {
+            var jsDate:* = new Date(utcString); // JS Date object
+            var year:int = jsDate.getFullYear();
+            var month:int = jsDate.getMonth() + 1; // Month is 0-indexed
+            var day:int = jsDate.getDate();
+            var hours:int = jsDate.getHours();
+            var minutes:int = jsDate.getMinutes();
+            var seconds:int = jsDate.getSeconds();
+
+            // Pad with leading zero if needed
+            function pad(n:int):String {
+                return (n < 10 ? "0" + n : "" + n);
+            }
+
+            return year + "-" + pad(month) + "-" + pad(day) +
+                " ; " + pad(hours) + "." + pad(minutes) + ":" + pad(seconds);
+        }
+
     }
 }
