@@ -150,7 +150,7 @@
   ],
   "config":[
     {
-      "env": "LIVE",
+      "env": "LOCAL",
       "appVersion": "1.0.0"
     }
   ]
