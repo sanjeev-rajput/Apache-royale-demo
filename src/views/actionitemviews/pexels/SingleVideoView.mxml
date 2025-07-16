@@ -14,14 +14,18 @@
             private var videoUrls:Array = [];
             private var currentIndex:int = 0;
             private var player:VideoPlayer;
-
+            private var _search:String=null;
 
             private function init():void {
                 vidCtr.setFocus(true)//focus = this; // make sure we receive keyboard input
-                //vidCtr.height = this.height-30;
+                if(_search)videoCtrl.reset(_search)
                 vidCtr.percentHeight = 90
                 vidCtr.addEventListener(KeyboardEvent.KEY_DOWN, onKeyDown)
                 fetchVideos();
+            }
+
+            public function set searchQuery(s:String):void {
+                _search = s;
             }
 
             private function fetchVideos():void {

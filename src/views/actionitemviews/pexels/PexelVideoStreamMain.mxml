@@ -5,21 +5,25 @@
 
     <fx:Script>
         <![CDATA[
-            import org.apache.royale.events.Event;
-            import org.apache.royale.jewel.SwitchRadio;
             
             import views.actionitemviews.pexels.SingleVideoView;
             import org.apache.royale.jewel.Group;
             import views.actionitemviews.pexels.TileVideoview;
+            import org.apache.royale.jewel.SwitchRadio;
+            import org.apache.royale.events.Event;
             private var videoView:Group;
             private var viewType:String = "S" // S || T
+            private var evt:Event = null;
+            private var _search:String = "Technology"
 
             private function init():void {
                 videoView = new SingleVideoView();
+                SingleVideoView(videoView).searchQuery = _search
                 this.addElement(videoView);
             }
 
             private function viewChangeEvent(e:Event):void {
+                if(evt == null)evt = e;
                 var selectedItem:String = (e.target as SwitchRadio).selectedValue as String;
 
                 switch(selectedItem){
@@ -27,6 +31,7 @@
                         if(videoView && viewType == "S") return;
                         disposeMe();
                         videoView = new SingleVideoView();
+                        SingleVideoView(videoView).searchQuery = _search
                         this.addElement(videoView);
                         viewType = "S";
                         break;
@@ -50,6 +55,7 @@
                 }else{
                     videoView = new TileVideoview();
                     TileVideoview(videoView).viewType = v;
+                    TileVideoview(videoView).searchQuery = _search
                     this.addElement(videoView)
                 }
                 viewType = "T";
@@ -67,13 +73,20 @@
                     videoView = null;
                 }
             }
+
+            private function onSearch():void {
+                _search = vidSearch.text;
+                clearView();
+                (evt) ? viewChangeEvent(evt) : init();
+            }
         ]]>
     </fx:Script>
     <j:HGroup itemsHorizontalAlign="itemsCenter" width="100%" gap="10" className="streamVideoMain">
         <j:SwitchRadio text="One View" groupName="radios2" value="One View" selected="true" change="viewChangeEvent(event)"/>
-        <sp:VDivider size="medium"/>
         <j:SwitchRadio text="Tile View" groupName="radios2" value="Tile View" change="viewChangeEvent(event)"/>
         <j:SwitchRadio text="Scroll View" groupName="radios2" value="Scroll View" change="viewChangeEvent(event)"/>
+        <sp:VDivider size="medium"/>
+        <sp:Search id="vidSearch" placeholder="Technology" search="onSearch()"/>
     </j:HGroup>
     
         

@@ -109,12 +109,24 @@ views.actionitemviews.pexels.TileVideoview.prototype.views_actionitemviews_pexel
 
 /**
  * @private
+ * @type {string}
+ */
+views.actionitemviews.pexels.TileVideoview.prototype.views_actionitemviews_pexels_TileVideoview__search = null;
+
+
+/**
+ * @private
  */
 views.actionitemviews.pexels.TileVideoview.prototype.views_actionitemviews_pexels_TileVideoview_init = function() {
   this.vidCtr.percentHeight = 90;
+  if (this.views_actionitemviews_pexels_TileVideoview__search)
+    this.views_actionitemviews_pexels_TileVideoview_videoCtrl.reset(this.views_actionitemviews_pexels_TileVideoview__search);
   this.views_actionitemviews_pexels_TileVideoview_videoCtrl.fetchNextPage(org.apache.royale.utils.Language.closure(this.views_actionitemviews_pexels_TileVideoview_onVideosLoaded, this, 'views_actionitemviews_pexels_TileVideoview_onVideosLoaded'));
   this.vidCtr.element.addEventListener("scrollend", org.apache.royale.utils.Language.closure(this.views_actionitemviews_pexels_TileVideoview_onScrolling, this, 'views_actionitemviews_pexels_TileVideoview_onScrolling'));
 };
+
+
+;
 
 
 ;
@@ -179,6 +191,19 @@ views.actionitemviews.pexels.TileVideoview.prototype.disposeMe = function() {
  * @export
  * @type {string}
  */
+views.actionitemviews.pexels.TileVideoview.prototype.searchQuery;
+
+
+views.actionitemviews.pexels.TileVideoview.prototype.set__searchQuery = function(s) {
+  this.views_actionitemviews_pexels_TileVideoview__search = s;
+};
+
+
+/**
+ * @nocollapse
+ * @export
+ * @type {string}
+ */
 views.actionitemviews.pexels.TileVideoview.prototype.viewType;
 
 
@@ -202,6 +227,11 @@ views.actionitemviews.pexels.TileVideoview.prototype.set__viewType = function(v)
 
 
 Object.defineProperties(views.actionitemviews.pexels.TileVideoview.prototype, /** @lends {views.actionitemviews.pexels.TileVideoview.prototype} */ {
+/**
+ * @type {string}
+ */
+searchQuery: {
+set: views.actionitemviews.pexels.TileVideoview.prototype.set__searchQuery},
 /**
  * @type {string}
  */
@@ -324,6 +354,7 @@ views.actionitemviews.pexels.TileVideoview.prototype.ROYALE_REFLECTION_INFO = fu
   return {
     accessors: function () {
       return {
+        'searchQuery': { type: 'String', access: 'writeonly', declaredBy: 'views.actionitemviews.pexels.TileVideoview'},
         'viewType': { type: 'String', access: 'writeonly', declaredBy: 'views.actionitemviews.pexels.TileVideoview'},
         'vidCtr': { type: 'org.apache.royale.jewel.Group', access: 'readwrite', declaredBy: 'views.actionitemviews.pexels.TileVideoview'},
         'zyz': { type: 'org.apache.royale.jewel.beads.layouts.TileHorizontalLayout', access: 'readwrite', declaredBy: 'views.actionitemviews.pexels.TileVideoview'}

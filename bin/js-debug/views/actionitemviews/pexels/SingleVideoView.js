@@ -115,13 +115,25 @@ views.actionitemviews.pexels.SingleVideoView.prototype.views_actionitemviews_pex
 
 /**
  * @private
+ * @type {string}
+ */
+views.actionitemviews.pexels.SingleVideoView.prototype.views_actionitemviews_pexels_SingleVideoView__search = null;
+
+
+/**
+ * @private
  */
 views.actionitemviews.pexels.SingleVideoView.prototype.views_actionitemviews_pexels_SingleVideoView_init = function() {
   this.vidCtr.setFocus(true);
+  if (this.views_actionitemviews_pexels_SingleVideoView__search)
+    this.views_actionitemviews_pexels_SingleVideoView_videoCtrl.reset(this.views_actionitemviews_pexels_SingleVideoView__search);
   this.vidCtr.percentHeight = 90;
   this.vidCtr.addEventListener(org.apache.royale.events.KeyboardEvent.KEY_DOWN, org.apache.royale.utils.Language.closure(this.views_actionitemviews_pexels_SingleVideoView_onKeyDown, this, 'views_actionitemviews_pexels_SingleVideoView_onKeyDown'));
   this.views_actionitemviews_pexels_SingleVideoView_fetchVideos();
 };
+
+
+;
 
 
 /**
@@ -219,7 +231,29 @@ views.actionitemviews.pexels.SingleVideoView.prototype.disposeMe = function() {
 };
 
 
+
+
+
 /**
+ * @nocollapse
+ * @export
+ * @type {string}
+ */
+views.actionitemviews.pexels.SingleVideoView.prototype.searchQuery;
+
+
+views.actionitemviews.pexels.SingleVideoView.prototype.set__searchQuery = function(s) {
+  this.views_actionitemviews_pexels_SingleVideoView__search = s;
+};
+
+
+Object.defineProperties(views.actionitemviews.pexels.SingleVideoView.prototype, /** @lends {views.actionitemviews.pexels.SingleVideoView.prototype} */ {
+/**
+ * @type {string}
+ */
+searchQuery: {
+set: views.actionitemviews.pexels.SingleVideoView.prototype.set__searchQuery}}
+);/**
  * @export
  * @param {org.apache.royale.events.Event} event
  */
@@ -382,6 +416,7 @@ views.actionitemviews.pexels.SingleVideoView.prototype.ROYALE_REFLECTION_INFO = 
   return {
     accessors: function () {
       return {
+        'searchQuery': { type: 'String', access: 'writeonly', declaredBy: 'views.actionitemviews.pexels.SingleVideoView'},
         'vidCtr': { type: 'org.apache.royale.jewel.VGroup', access: 'readwrite', declaredBy: 'views.actionitemviews.pexels.SingleVideoView'}
       };
     },

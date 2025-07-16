@@ -8,7 +8,7 @@
  */
 
 goog.provide('views.actionitemviews.pexels.PexelVideoStreamMain');
-/* Royale Dependency List: org.apache.royale.jewel.HGroup,org.apache.royale.jewel.SwitchRadio,com.unhurdle.spectrum.VDivider,org.apache.royale.events.Event,views.actionitemviews.pexels.SingleVideoView,views.actionitemviews.pexels.TileVideoview,XML*/
+/* Royale Dependency List: org.apache.royale.jewel.HGroup,org.apache.royale.jewel.SwitchRadio,com.unhurdle.spectrum.VDivider,com.unhurdle.spectrum.Search,org.apache.royale.events.Event,views.actionitemviews.pexels.SingleVideoView,views.actionitemviews.pexels.TileVideoview,XML*/
 
 goog.require('org.apache.royale.jewel.VGroup');
 
@@ -35,7 +35,7 @@ views.actionitemviews.pexels.PexelVideoStreamMain = function() {
   
   /**
    * @private
-   * @type {com.unhurdle.spectrum.VDivider}
+   * @type {org.apache.royale.jewel.SwitchRadio}
    */
   this.$ID_13_1;
   
@@ -47,9 +47,15 @@ views.actionitemviews.pexels.PexelVideoStreamMain = function() {
   
   /**
    * @private
-   * @type {org.apache.royale.jewel.SwitchRadio}
+   * @type {com.unhurdle.spectrum.VDivider}
    */
   this.$ID_13_3;
+  
+  /**
+   * @private
+   * @type {com.unhurdle.spectrum.Search}
+   */
+  this.vidSearch_;
   
   /**
    * @private
@@ -99,9 +105,24 @@ views.actionitemviews.pexels.PexelVideoStreamMain.prototype.views_actionitemview
 
 /**
  * @private
+ * @type {org.apache.royale.events.Event}
+ */
+views.actionitemviews.pexels.PexelVideoStreamMain.prototype.views_actionitemviews_pexels_PexelVideoStreamMain_evt = null;
+
+
+/**
+ * @private
+ * @type {string}
+ */
+views.actionitemviews.pexels.PexelVideoStreamMain.prototype.views_actionitemviews_pexels_PexelVideoStreamMain__search = "Technology";
+
+
+/**
+ * @private
  */
 views.actionitemviews.pexels.PexelVideoStreamMain.prototype.views_actionitemviews_pexels_PexelVideoStreamMain_init = function() {
   this.views_actionitemviews_pexels_PexelVideoStreamMain_videoView = new views.actionitemviews.pexels.SingleVideoView();
+  org.apache.royale.utils.Language.as(this.views_actionitemviews_pexels_PexelVideoStreamMain_videoView, views.actionitemviews.pexels.SingleVideoView, true).searchQuery = this.views_actionitemviews_pexels_PexelVideoStreamMain__search;
   this.addElement(this.views_actionitemviews_pexels_PexelVideoStreamMain_videoView);
 };
 
@@ -111,6 +132,8 @@ views.actionitemviews.pexels.PexelVideoStreamMain.prototype.views_actionitemview
  * @param {org.apache.royale.events.Event} e
  */
 views.actionitemviews.pexels.PexelVideoStreamMain.prototype.views_actionitemviews_pexels_PexelVideoStreamMain_viewChangeEvent = function(e) {
+  if (this.views_actionitemviews_pexels_PexelVideoStreamMain_evt == null)
+    this.views_actionitemviews_pexels_PexelVideoStreamMain_evt = e;
   var /** @type {string} */ selectedItem = e.target.selectedValue;
   switch (selectedItem) {
     case "One View":
@@ -118,6 +141,7 @@ views.actionitemviews.pexels.PexelVideoStreamMain.prototype.views_actionitemview
         return;
       this.disposeMe();
       this.views_actionitemviews_pexels_PexelVideoStreamMain_videoView = new views.actionitemviews.pexels.SingleVideoView();
+      org.apache.royale.utils.Language.as(this.views_actionitemviews_pexels_PexelVideoStreamMain_videoView, views.actionitemviews.pexels.SingleVideoView, true).searchQuery = this.views_actionitemviews_pexels_PexelVideoStreamMain__search;
       this.addElement(this.views_actionitemviews_pexels_PexelVideoStreamMain_videoView);
       this.views_actionitemviews_pexels_PexelVideoStreamMain_viewType = "S";
       break;
@@ -145,6 +169,7 @@ views.actionitemviews.pexels.PexelVideoStreamMain.prototype.views_actionitemview
   } else {
     this.views_actionitemviews_pexels_PexelVideoStreamMain_videoView = new views.actionitemviews.pexels.TileVideoview();
     org.apache.royale.utils.Language.as(this.views_actionitemviews_pexels_PexelVideoStreamMain_videoView, views.actionitemviews.pexels.TileVideoview, true).viewType = v;
+    org.apache.royale.utils.Language.as(this.views_actionitemviews_pexels_PexelVideoStreamMain_videoView, views.actionitemviews.pexels.TileVideoview, true).searchQuery = this.views_actionitemviews_pexels_PexelVideoStreamMain__search;
     this.addElement(this.views_actionitemviews_pexels_PexelVideoStreamMain_videoView);
   }
   this.views_actionitemviews_pexels_PexelVideoStreamMain_viewType = "T";
@@ -168,6 +193,16 @@ views.actionitemviews.pexels.PexelVideoStreamMain.prototype.disposeMe = function
     this.removeElement(this.views_actionitemviews_pexels_PexelVideoStreamMain_videoView);
     this.views_actionitemviews_pexels_PexelVideoStreamMain_videoView = null;
   }
+};
+
+
+/**
+ * @private
+ */
+views.actionitemviews.pexels.PexelVideoStreamMain.prototype.views_actionitemviews_pexels_PexelVideoStreamMain_onSearch = function() {
+  this.views_actionitemviews_pexels_PexelVideoStreamMain__search = this.vidSearch.text;
+  this.views_actionitemviews_pexels_PexelVideoStreamMain_clearView();
+  this.views_actionitemviews_pexels_PexelVideoStreamMain_evt ? this.views_actionitemviews_pexels_PexelVideoStreamMain_viewChangeEvent(this.views_actionitemviews_pexels_PexelVideoStreamMain_evt) : this.views_actionitemviews_pexels_PexelVideoStreamMain_init();
 };
 
 
@@ -211,7 +246,30 @@ views.actionitemviews.pexels.PexelVideoStreamMain.prototype.$EH_13_3 = function(
 };
 
 
+/**
+ * @export
+ * @param {org.apache.royale.events.Event} event
+ */
+views.actionitemviews.pexels.PexelVideoStreamMain.prototype.$EH_13_4 = function(event)
+{
+  this.views_actionitemviews_pexels_PexelVideoStreamMain_onSearch();
+};
+
+
 Object.defineProperties(views.actionitemviews.pexels.PexelVideoStreamMain.prototype, /** @lends {views.actionitemviews.pexels.PexelVideoStreamMain.prototype} */ {
+  vidSearch: {
+    /** @this {views.actionitemviews.pexels.PexelVideoStreamMain} */
+    get: function() {
+      return this.vidSearch_;
+    },
+    /** @this {views.actionitemviews.pexels.PexelVideoStreamMain} */
+    set: function(value) {
+      if (value != this.vidSearch_) {
+        this.vidSearch_ = value;
+        this.dispatchEvent(org.apache.royale.events.ValueChangeEvent.createUpdateEvent(this, 'vidSearch', null, value));
+      }
+    }
+  },
   'MXMLDescriptor': {
     /** @this {views.actionitemviews.pexels.PexelVideoStreamMain} */
     get: function() {
@@ -263,22 +321,11 @@ Object.defineProperties(views.actionitemviews.pexels.PexelVideoStreamMain.protot
             'change',
             this.$EH_13_1,
             null,
-            com.unhurdle.spectrum.VDivider,
-            2,
-            '_id',
-            true,
-            '$ID_13_1',
-            'size',
-            true,
-            'medium',
-            0,
-            0,
-            null,
             org.apache.royale.jewel.SwitchRadio,
             4,
             '_id',
             true,
-            '$ID_13_2',
+            '$ID_13_1',
             'text',
             true,
             'Tile View',
@@ -297,7 +344,7 @@ Object.defineProperties(views.actionitemviews.pexels.PexelVideoStreamMain.protot
             4,
             '_id',
             true,
-            '$ID_13_3',
+            '$ID_13_2',
             'text',
             true,
             'Scroll View',
@@ -311,6 +358,30 @@ Object.defineProperties(views.actionitemviews.pexels.PexelVideoStreamMain.protot
             1,
             'change',
             this.$EH_13_3,
+            null,
+            com.unhurdle.spectrum.VDivider,
+            2,
+            '_id',
+            true,
+            '$ID_13_3',
+            'size',
+            true,
+            'medium',
+            0,
+            0,
+            null,
+            com.unhurdle.spectrum.Search,
+            2,
+            'id',
+            true,
+            'vidSearch',
+            'placeholder',
+            true,
+            'Technology',
+            0,
+            1,
+            'search',
+            this.$EH_13_4,
             null
           ]
         ];
@@ -339,6 +410,11 @@ views.actionitemviews.pexels.PexelVideoStreamMain.prototype.ROYALE_CLASS_INFO = 
  */
 views.actionitemviews.pexels.PexelVideoStreamMain.prototype.ROYALE_REFLECTION_INFO = function () {
   return {
+    accessors: function () {
+      return {
+        'vidSearch': { type: 'com.unhurdle.spectrum.Search', access: 'readwrite', declaredBy: 'views.actionitemviews.pexels.PexelVideoStreamMain'}
+      };
+    },
     methods: function () {
       return {
         'disposeMe': { type: 'void', declaredBy: 'views.actionitemviews.pexels.PexelVideoStreamMain'},

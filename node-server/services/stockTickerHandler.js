@@ -56,10 +56,6 @@ export function setupStockTickerHandler(ws) {
         const len = Math.max(1, Math.min(data.length || 100, 1000)); // cap to 1000
         const symbols = Array.from({ length: len }, (_, i) => `SYM${i + 1}`);
 
-         // 🔁 Always reset: remove old mapping and force new one
-        symbolMap.delete(ws);
-        listeners.delete(ws);
-
         // Store symbols and subscription info
         symbolMap.set(ws, symbols);
         listeners.set(ws, { subscribed: true, length: len });
@@ -70,18 +66,6 @@ export function setupStockTickerHandler(ws) {
             stockPrices[sym] = 100 + Math.random() * 1000;
           }
         }
-              // ✅ Immediately send initial payload
-        const initialPayload = symbols.map(symbol => ({
-          symbol,
-          price: +stockPrices[symbol].toFixed(2),
-          timestamp: new Date().toISOString()
-        }));
-
-        ws.send(JSON.stringify({
-          type: 'stock_update',
-          payload: initialPayload
-        }));
-        
 
         console.log(`📈 Subscribed client to ${len} stock symbols`);
       }

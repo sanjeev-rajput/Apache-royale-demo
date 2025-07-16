@@ -14,11 +14,17 @@
             private var _playerHeight:int = 180;
             private var _isinitlized:Boolean = false;
             private var videoCtrl:VideoStreamController = new VideoStreamController("technology", 20);
+            private var _search:String = null;
 
             private function init():void {
                 vidCtr.percentHeight=90;
+                if(_search)videoCtrl.reset(_search)
                 videoCtrl.fetchNextPage(onVideosLoaded);
                 vidCtr.element.addEventListener("scrollend", onScrolling);
+            }
+
+            public function set searchQuery(s:String):void {
+                _search = s;
             }
 
             public function set viewType(v:String):void{
