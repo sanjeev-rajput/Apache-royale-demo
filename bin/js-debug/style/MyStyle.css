@@ -400,10 +400,12 @@ color: black;
 .stockItemG{
   padding: 10px;
   border-bottom: 1px solid lightgray;
+  cursor: pointer;
 }
 .stockItemT{
   padding: 10px;
   border: 1px solid lightgray;
+  cursor: pointer;
 }
 .stockControls{
   padding: 10px;

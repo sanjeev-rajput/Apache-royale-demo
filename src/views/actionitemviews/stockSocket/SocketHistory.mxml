@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<j:VGroup xmlns:fx="http://ns.adobe.com/mxml/2009"
+    xmlns:j="library://ns.apache.org/royale/jewel"
+    xmlns:sp="library://ns.unhurdle.com/spectrum" xmlns:html="library://ns.apache.org/royale/html" 
+    initComplete="init()" percentWidth="100" percentHeight="100">
+
+
+    <j:HGroup percentWidth="100" itemsVerticalAlign="itemsTop" className="imgPopupTitle">
+        <j:Label id="popuoTitle" text=""/>
+        <j:Spacer width="100%"/>
+        <j:ImageIcon src="img/close.png" width="30" click="closeHandler()"/>
+    </j:HGroup>
+        <fx:Script>
+            <![CDATA[
+                import com.controller.PopupManager;
+                import com.util.AsJsUtil;
+                import com.extjavascript.charts.ChartToJs;
+                private var _data:Array;
+                private var _title:String;
+                private var _isInitilized:Boolean = false;
+                private var _chartCanvas:*;
+
+                private function init():void {
+                    if(!_data)return;
+                    for each(var i:Object in _data){
+                        //popuoTitle.text += i.time + " :: " + i.price
+                    }
+                    addCanvas();
+                    populateChart();
+                }
+
+                public function set data(d:Array):void {
+                    _data = d;
+                }
+
+                public function set title(t:String):void {
+                    _title = t;
+                }
+
+                private function closeHandler():void {
+				    PopupManager.getInstance().reomovePopup()
+			    }
+
+                private function populateChart():void {
+                    var labels:Array = new Array();
+                    var counter:int=1;
+                    for(var i:int=0; i<=_data.length; i++){
+                        labels.push(counter);
+                        counter++;
+                    }
+
+                    new ChartToJs.chartObj(_chartCanvas, {
+                    type: "line",
+                    data: {
+                        labels: labels,
+                        datasets: [{
+                        label: 'Price',
+                        pointBackgroundColor: "rgba(0,0,255,1)",
+                        data: _data
+                        }]
+                    }});
+                    popuoTitle.text = _title;
+                }
+
+                private function addCanvas():void {
+                    _chartCanvas = this.element.appendChild(AsJsUtil.createCanvas());
+                    _chartCanvas.id = "chartArea"
+                    _chartCanvas.height = 200;
+                    _chartCanvas.width = 300;
+                    
+                    // Access native context
+                    
+                }
+            ]]>
+        </fx:Script>
+</j:VGroup>

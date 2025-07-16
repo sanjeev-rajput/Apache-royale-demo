@@ -72,6 +72,7 @@
 
                 if (btn.checked) {
                     _socketItemCounter=1;
+                    itemMap.clear();
                     _socketService.connectWebSocket(SocketService.SUBSCRIBE_STOCK, { length: _recordSets });
                 } else {
                     _socketService.sendToSocket({ type: "unsubscribe_stock" });

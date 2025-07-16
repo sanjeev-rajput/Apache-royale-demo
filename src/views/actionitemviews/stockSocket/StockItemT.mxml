@@ -2,7 +2,8 @@
         xmlns:js="library://ns.apache.org/royale/basic"
         xmlns:j="library://ns.apache.org/royale/jewel"
         xmlns:sp="library://ns.unhurdle.com/spectrum" 
-        initComplete="init()" itemsVerticalAlign="itemsCenter" className="stockItemT" gap="10">
+        initComplete="init()" itemsVerticalAlign="itemsCenter" className="stockItemT" gap="10"
+        click="clickEventHandler()">
         <j:beads>
             <js:ContainerDataBinding/>
         </j:beads>
@@ -10,10 +11,13 @@
     <fx:Script>
         <![CDATA[
             import com.util.DsUtil;
+            import com.controller.PopupManager;
+            import org.apache.royale.core.UIBase;
 
             
             private var _sData:Object = null;
             private var _isInitlized:Boolean = false;
+            private var _dataHistory:Array = new Array();
 
             private var _sId:String = null;
             [Bindable]
@@ -43,15 +47,13 @@
                 _symbol = _sData.symbol;
                 _time = DsUtil.formatDateTime(_sData.timestamp);
                 _price = _sData.price;
+                _dataHistory.push(_price);
 
-                // Highlight class animation
                 if (!_isInitlized) return;
-                //indicator.addClass("stockIndicatorHighlight");
                 indicator.alpha=1;
                 setTimeout(function():void {
-                    //indicator.removeClass("stockIndicatorHighlight");
                     indicator.alpha=0;
-                }, 800);
+                }, 500);
             }
 
 
@@ -61,6 +63,13 @@
 
             public function set iIndex(i:int):void{
                 _iIndex = i.toString() + ".";
+            }
+
+            private function clickEventHandler():void {
+                var p:SocketHistory = new SocketHistory();
+                p.data = _dataHistory;
+                p.title = _symbol;
+                PopupManager.getInstance().createPopup(p, this.parent as UIBase )
             }
 
             

@@ -1,7 +1,8 @@
 <j:HGroup xmlns:fx="http://ns.adobe.com/mxml/2009"
         xmlns:js="library://ns.apache.org/royale/basic"
         xmlns:j="library://ns.apache.org/royale/jewel"
-        width="100%"initComplete="init()" itemsHorizontalAlign="itemsSpaceBetween" className="stockItemG">
+        width="100%"initComplete="init()" itemsHorizontalAlign="itemsSpaceBetween" className="stockItemG"
+        click="clickEventHandler()">
         <j:beads>
             <js:ContainerDataBinding/>
         </j:beads>
@@ -9,10 +10,14 @@
     <fx:Script>
         <![CDATA[
             import com.util.DsUtil;
+            import com.controller.PopupManager;
+            import views.actionitemviews.stockSocket.SocketHistory;
+            import org.apache.royale.core.UIBase;
 
             
             private var _sData:Object = null;
             private var _isInitlized:Boolean = false;
+            private var _dataHistory:Array = new Array();
 
             private var _sId:String = null;
             [Bindable]
@@ -42,6 +47,8 @@
                 _symbol = _sData.symbol;
                 _time = DsUtil.formatDateTime(_sData.timestamp);
                 _price = _sData.price;
+                _dataHistory.push(_price);
+                
 
                 // Highlight class animation
                 if (!_isInitlized) return;
@@ -58,6 +65,13 @@
 
             public function set iIndex(i:int):void{
                 _iIndex = i.toString() + ".";
+            }
+
+            private function clickEventHandler():void {
+                var p:SocketHistory = new SocketHistory();
+                p.data = _dataHistory;
+                p.title = _symbol;
+                PopupManager.getInstance().createPopup(p, this.parent as UIBase )
             }
 
             

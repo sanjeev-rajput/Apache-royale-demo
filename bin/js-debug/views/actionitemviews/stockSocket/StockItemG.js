@@ -8,7 +8,7 @@
  */
 
 goog.provide('views.actionitemviews.stockSocket.StockItemG');
-/* Royale Dependency List: org.apache.royale.binding.ContainerDataBinding,org.apache.royale.jewel.Label,com.util.DsUtil,org.apache.royale.events.Event,org.apache.royale.events.ValueChangeEvent,XML*/
+/* Royale Dependency List: org.apache.royale.binding.ContainerDataBinding,org.apache.royale.jewel.Label,com.controller.PopupManager,com.util.DsUtil,org.apache.royale.events.Event,org.apache.royale.events.MouseEvent,org.apache.royale.events.ValueChangeEvent,views.actionitemviews.stockSocket.SocketHistory,XML*/
 
 goog.require('org.apache.royale.jewel.HGroup');
 
@@ -21,6 +21,7 @@ goog.require('org.apache.royale.jewel.HGroup');
 views.actionitemviews.stockSocket.StockItemG = function() {
   views.actionitemviews.stockSocket.StockItemG.base(this, 'constructor');
   
+  this.views_actionitemviews_stockSocket_StockItemG__dataHistory = new Array();
   /**
    * @private
    * @type {org.apache.royale.binding.ContainerDataBinding}
@@ -87,9 +88,11 @@ views.actionitemviews.stockSocket.StockItemG = function() {
       null
     ],
     0,
-    1,
+    2,
     'initComplete',
-    this.$EH_13_0
+    this.$EH_13_0,
+    'click',
+    this.$EH_13_1
   ]);
   
 };
@@ -110,6 +113,13 @@ views.actionitemviews.stockSocket.StockItemG.prototype.views_actionitemviews_sto
  * @type {boolean}
  */
 views.actionitemviews.stockSocket.StockItemG.prototype.views_actionitemviews_stockSocket_StockItemG__isInitlized = false;
+
+
+/**
+ * @private
+ * @type {Array}
+ */
+views.actionitemviews.stockSocket.StockItemG.prototype.views_actionitemviews_stockSocket_StockItemG__dataHistory = null;
 
 
 /**
@@ -162,6 +172,17 @@ views.actionitemviews.stockSocket.StockItemG.prototype.views_actionitemviews_sto
 
 
 ;
+
+
+/**
+ * @private
+ */
+views.actionitemviews.stockSocket.StockItemG.prototype.views_actionitemviews_stockSocket_StockItemG_clickEventHandler = function() {
+  var /** @type {views.actionitemviews.stockSocket.SocketHistory} */ p = new views.actionitemviews.stockSocket.SocketHistory();
+  p.data = this.views_actionitemviews_stockSocket_StockItemG__dataHistory;
+  p.title = this.views_actionitemviews_stockSocket_StockItemG__symbol;
+  com.controller.PopupManager.getInstance().createPopup(p, this.parent);
+};
 
 
 Object.defineProperties(views.actionitemviews.stockSocket.StockItemG.prototype, /** @lends {views.actionitemviews.stockSocket.StockItemG.prototype} */ {
@@ -258,6 +279,7 @@ views.actionitemviews.stockSocket.StockItemG.prototype.set__sData = function(d) 
   this.views_actionitemviews_stockSocket_StockItemG__symbol = org.apache.royale.utils.Language.string(this.views_actionitemviews_stockSocket_StockItemG__sData["symbol"]);
   this.views_actionitemviews_stockSocket_StockItemG__time = com.util.DsUtil.formatDateTime(org.apache.royale.utils.Language.string(this.views_actionitemviews_stockSocket_StockItemG__sData["timestamp"]));
   this.views_actionitemviews_stockSocket_StockItemG__price = org.apache.royale.utils.Language.string(this.views_actionitemviews_stockSocket_StockItemG__sData["price"]);
+  this.views_actionitemviews_stockSocket_StockItemG__dataHistory.push(this.views_actionitemviews_stockSocket_StockItemG__price);
   if (!this.views_actionitemviews_stockSocket_StockItemG__isInitlized)
     return;
   this.addClass("stockItemHighlight");
@@ -316,6 +338,16 @@ set: views.actionitemviews.stockSocket.StockItemG.prototype.set__iIndex}}
 views.actionitemviews.stockSocket.StockItemG.prototype.$EH_13_0 = function(event)
 {
   this.views_actionitemviews_stockSocket_StockItemG_init();
+};
+
+
+/**
+ * @export
+ * @param {org.apache.royale.events.MouseEvent} event
+ */
+views.actionitemviews.stockSocket.StockItemG.prototype.$EH_13_1 = function(event)
+{
+  this.views_actionitemviews_stockSocket_StockItemG_clickEventHandler();
 };
 
 

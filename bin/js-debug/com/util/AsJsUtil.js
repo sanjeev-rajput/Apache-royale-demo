@@ -45,6 +45,16 @@ com.util.AsJsUtil.scrollIntoView = function(elementId) {
 
 
 /**
+ * @nocollapse
+ * @return {HTMLElement}
+ */
+com.util.AsJsUtil.createCanvas = function() {
+  var /** @type {*} */ el = document.createElement("canvas");
+  return /* implicit cast */ org.apache.royale.utils.Language.as(el, HTMLElement, true);
+};
+
+
+/**
  * Metadata
  *
  * @type {Object.<string, Array.<Object>>}
@@ -63,7 +73,8 @@ com.util.AsJsUtil.prototype.ROYALE_REFLECTION_INFO = function () {
     methods: function () {
       return {
         '|copyToClipboard': { type: 'void', declaredBy: 'com.util.AsJsUtil', parameters: function () { return [ 'String', false ]; }},
-        '|scrollIntoView': { type: 'void', declaredBy: 'com.util.AsJsUtil', parameters: function () { return [ 'String', false ]; }}
+        '|scrollIntoView': { type: 'void', declaredBy: 'com.util.AsJsUtil', parameters: function () { return [ 'String', false ]; }},
+        '|createCanvas': { type: 'HTMLElement', declaredBy: 'com.util.AsJsUtil'}
       };
     }
   };

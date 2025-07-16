@@ -24,6 +24,14 @@ package com.util{
             }
         }
 
+        public static function createCanvas():HTMLElement{
+            COMPILE::JS
+            {
+                var el:* = document.createElement("canvas");
+                return el;
+            }
+        }
+
     }
 
 }

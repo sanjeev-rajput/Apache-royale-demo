@@ -35,7 +35,6 @@ package com.controller{
             _instance.modal = true;
             ui.addElement(_instance);
             _instance.open = true;
-            trace(_instance)
         }
         
         public function reomovePopup():void {

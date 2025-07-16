@@ -62,7 +62,6 @@ com.controller.PopupManager.prototype.createPopup = function(popup, ui, w, h) {
   com.controller.PopupManager._instance.modal = true;
   ui.addElement(com.controller.PopupManager._instance);
   com.controller.PopupManager._instance.open = true;
-  org.apache.royale.utils.Language.trace(com.controller.PopupManager._instance);
 };
 
 

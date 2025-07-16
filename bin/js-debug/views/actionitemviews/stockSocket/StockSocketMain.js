@@ -265,6 +265,7 @@ views.actionitemviews.stockSocket.StockSocketMain.prototype.views_actionitemview
   btn.disabled = false;
   if (btn.checked) {
     this.views_actionitemviews_stockSocket_StockSocketMain__socketItemCounter = 1;
+    this.views_actionitemviews_stockSocket_StockSocketMain_itemMap.clear();
     this.views_actionitemviews_stockSocket_StockSocketMain__socketService.connectWebSocket(views.actionitemviews.websocket.SocketService.SUBSCRIBE_STOCK, {"length":this.views_actionitemviews_stockSocket_StockSocketMain__recordSets});
   } else {
     this.views_actionitemviews_stockSocket_StockSocketMain__socketService.sendToSocket({"type":"unsubscribe_stock"});
