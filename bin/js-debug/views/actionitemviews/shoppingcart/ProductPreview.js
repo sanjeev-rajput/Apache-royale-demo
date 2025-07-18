@@ -8,7 +8,7 @@
  */
 
 goog.provide('views.actionitemviews.shoppingcart.ProductPreview');
-/* Royale Dependency List: org.apache.royale.jewel.VGroup,org.apache.royale.jewel.HGroup,org.apache.royale.html.elements.H3,org.apache.royale.jewel.Spacer,org.apache.royale.jewel.ImageIcon,org.apache.royale.jewel.supportClasses.scrollbar.ScrollingViewport,org.apache.royale.jewel.Image,org.apache.royale.jewel.Label,org.apache.royale.html.elements.Hr,com.controller.PopupManager,org.apache.royale.events.Event,org.apache.royale.events.MouseEvent,XML*/
+/* Royale Dependency List: org.apache.royale.jewel.VGroup,org.apache.royale.jewel.HGroup,org.apache.royale.html.elements.H3,org.apache.royale.jewel.ImageIcon,org.apache.royale.jewel.supportClasses.scrollbar.ScrollingViewport,org.apache.royale.jewel.Image,org.apache.royale.jewel.Label,org.apache.royale.html.elements.Hr,com.controller.PopupManager,org.apache.royale.events.Event,org.apache.royale.events.MouseEvent,XML*/
 
 goog.require('org.apache.royale.jewel.View');
 
@@ -25,13 +25,13 @@ views.actionitemviews.shoppingcart.ProductPreview = function() {
    * @private
    * @type {org.apache.royale.jewel.VGroup}
    */
-  this.$ID_11_7;
+  this.$ID_11_6;
   
   /**
    * @private
    * @type {org.apache.royale.jewel.HGroup}
    */
-  this.$ID_11_2;
+  this.$ID_11_1;
   
   /**
    * @private
@@ -41,27 +41,21 @@ views.actionitemviews.shoppingcart.ProductPreview = function() {
   
   /**
    * @private
-   * @type {org.apache.royale.jewel.Spacer}
+   * @type {org.apache.royale.jewel.ImageIcon}
    */
   this.$ID_11_0;
   
   /**
    * @private
-   * @type {org.apache.royale.jewel.ImageIcon}
-   */
-  this.$ID_11_1;
-  
-  /**
-   * @private
    * @type {org.apache.royale.jewel.VGroup}
    */
-  this.$ID_11_6;
+  this.$ID_11_5;
   
   /**
    * @private
    * @type {org.apache.royale.jewel.supportClasses.scrollbar.ScrollingViewport}
    */
-  this.$ID_11_3;
+  this.$ID_11_2;
   
   /**
    * @private
@@ -79,13 +73,13 @@ views.actionitemviews.shoppingcart.ProductPreview = function() {
    * @private
    * @type {org.apache.royale.html.elements.Hr}
    */
-  this.$ID_11_4;
+  this.$ID_11_3;
   
   /**
    * @private
    * @type {org.apache.royale.jewel.HGroup}
    */
-  this.$ID_11_5;
+  this.$ID_11_4;
   
   /**
    * @private
@@ -150,7 +144,7 @@ views.actionitemviews.shoppingcart.ProductPreview.prototype.views_actionitemview
   if (!this.views_actionitemviews_shoppingcart_ProductPreview__data)
     return;
   this.views_actionitemviews_shoppingcart_ProductPreview__initialized = true;
-  this.name.text = org.apache.royale.utils.Language.string(this.views_actionitemviews_shoppingcart_ProductPreview__data["title"]);
+  this.name.innerHTML = org.apache.royale.utils.Language.string(this.views_actionitemviews_shoppingcart_ProductPreview__data["title"]);
   this.description.html = org.apache.royale.utils.Language.string(this.views_actionitemviews_shoppingcart_ProductPreview__data["description"]);
   this.price.text = "Price $" + this.views_actionitemviews_shoppingcart_ProductPreview__data["price"]["toFixed"](2);
   this.img.src = 'img/shopping/' + this.views_actionitemviews_shoppingcart_ProductPreview__data["filename"];
@@ -301,7 +295,7 @@ Object.defineProperties(views.actionitemviews.shoppingcart.ProductPreview.protot
           2,
           '_id',
           true,
-          '$ID_11_7',
+          '$ID_11_6',
           'className',
           true,
           'shoppingProductPreview',
@@ -312,16 +306,16 @@ Object.defineProperties(views.actionitemviews.shoppingcart.ProductPreview.protot
             4,
             '_id',
             true,
-            '$ID_11_2',
+            '$ID_11_1',
             'percentWidth',
             true,
             100.0,
             'itemsVerticalAlign',
             true,
             'itemsCenter',
-            'height',
+            'itemsHorizontalAlign',
             true,
-            40,
+            'itemsSpaceBetween',
             0,
             0,
             [
@@ -339,22 +333,11 @@ Object.defineProperties(views.actionitemviews.shoppingcart.ProductPreview.protot
               0,
               0,
               null,
-              org.apache.royale.jewel.Spacer,
-              2,
-              '_id',
-              true,
-              '$ID_11_0',
-              'percentWidth',
-              true,
-              100.0,
-              0,
-              0,
-              null,
               org.apache.royale.jewel.ImageIcon,
               3,
               '_id',
               true,
-              '$ID_11_1',
+              '$ID_11_0',
               'src',
               true,
               'img/close.png',
@@ -371,7 +354,7 @@ Object.defineProperties(views.actionitemviews.shoppingcart.ProductPreview.protot
             2,
             '_id',
             true,
-            '$ID_11_6',
+            '$ID_11_5',
             'beads',
             null,
             [
@@ -379,7 +362,7 @@ Object.defineProperties(views.actionitemviews.shoppingcart.ProductPreview.protot
               1,
               '_id',
               true,
-              '$ID_11_3',
+              '$ID_11_2',
               0,
               0,
               null
@@ -388,10 +371,13 @@ Object.defineProperties(views.actionitemviews.shoppingcart.ProductPreview.protot
             0,
             [
               org.apache.royale.jewel.Image,
-              1,
+              2,
               'id',
               true,
               'img',
+              'className',
+              true,
+              'shoppingImgPreview',
               0,
               0,
               null,
@@ -413,7 +399,7 @@ Object.defineProperties(views.actionitemviews.shoppingcart.ProductPreview.protot
               2,
               '_id',
               true,
-              '$ID_11_4',
+              '$ID_11_3',
               'percentWidth',
               true,
               100.0,
@@ -424,7 +410,7 @@ Object.defineProperties(views.actionitemviews.shoppingcart.ProductPreview.protot
               3,
               '_id',
               true,
-              '$ID_11_5',
+              '$ID_11_4',
               'itemsHorizontalAlign',
               true,
               'itemsSpaceBetween',

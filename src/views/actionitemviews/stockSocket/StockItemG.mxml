@@ -1,7 +1,7 @@
 <j:HGroup xmlns:fx="http://ns.adobe.com/mxml/2009"
         xmlns:js="library://ns.apache.org/royale/basic"
-        xmlns:j="library://ns.apache.org/royale/jewel"
-        width="100%"initComplete="init()" itemsHorizontalAlign="itemsSpaceBetween" className="stockItemG"
+        xmlns:j="library://ns.apache.org/royale/jewel" xmlns:html="library://ns.apache.org/royale/html"
+        width="100%" initComplete="init()" gap="10" itemsVerticalAlign="itemsCenter" itemsHorizontalAlign="itemsSpaceAround" className="stockItemG"
         click="clickEventHandler()">
         <j:beads>
             <js:ContainerDataBinding/>
@@ -13,11 +13,19 @@
             import com.controller.PopupManager;
             import views.actionitemviews.stockSocket.SocketHistory;
             import org.apache.royale.core.UIBase;
+            import com.event.DsEvent;
+            import com.util.AsJsUtil;
+            import com.extjavascript.charts.ChartToJs;
 
             
             private var _sData:Object = null;
             private var _isInitlized:Boolean = false;
+
             private var _dataHistory:Array = new Array();
+            private var _tCounter:Array = new Array();
+            
+            private var _canvHisDataUi:* = null;
+            private var _chart:*;
 
             private var _sId:String = null;
             [Bindable]
@@ -33,7 +41,8 @@
 
             private function init():void {
                 _isInitlized = true;
-
+                createHistoricDataCanvas();
+                DsEvent.instance.addEventListener(DsEvent.HISTORIC_DATA, historicDataEventHandler);
             }
 
             public function set sData(d:Object):void {
@@ -47,15 +56,25 @@
                 _symbol = _sData.symbol;
                 _time = DsUtil.formatDateTime(_sData.timestamp);
                 _price = _sData.price;
+                
                 _dataHistory.push(_price);
+                _tCounter.push(_dataHistory.length);
                 
 
                 // Highlight class animation
                 if (!_isInitlized) return;
+                _chart.data.datasets.data=_dataHistory
+                _chart.data.labels=_tCounter;
+                _chart.update();
+
                 this.addClass("stockItemHighlight");
                 setTimeout(function():void {
                     removeClass("stockItemHighlight");
                 }, 200);
+            }
+
+            public function get sData():Object {
+                return _sData;
             }
 
 
@@ -74,6 +93,48 @@
                 PopupManager.getInstance().createPopup(p, this.parent as UIBase )
             }
 
+            private function historicDataEventHandler(e:Object):void {
+                chartContainer.visible = Boolean(e.data);
+                Boolean(e.data) ? chartContainer.percentWidth = 100 : chartContainer.percentWidth = 1;
+                
+            }
+
+            private function createHistoricDataCanvas():void {
+                if(_canvHisDataUi == null){
+                    _canvHisDataUi = AsJsUtil.createCanvas();
+                    chartContainer.element.appendChild(_canvHisDataUi);
+                }
+                _chart = new ChartToJs.chartObj(_canvHisDataUi, {
+                    type: "line",
+                    data: {
+                        datasets: [{
+                        data: _dataHistory,
+                        borderWidth: .2
+                        }],
+                        labels: _tCounter
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false, // Allows the chart to fill the container without maintaining aspect ratio
+                        scales: {
+                            y: {
+                                display: false
+                            },
+                            x: {
+                                display: false
+                            }
+                        },
+                    plugins: {
+                        legend: {
+                            display: false // Hides the legend entirely
+                        },
+                        datalabels: {
+                            display: false
+                         }
+                    }
+            }});
+            }
+
             
         ]]>
     </fx:Script>
@@ -81,4 +142,5 @@
         <j:Label text="{_symbol}" />
         <j:Label text="{_price}" />
         <j:Label text="{_time}" />
+        <html:Div id="chartContainer" height="50" visible="false" />
 </j:HGroup>

@@ -8,7 +8,7 @@
  */
 
 goog.provide('views.actionitemviews.stockSocket.StockSocketMain');
-/* Royale Dependency List: org.apache.royale.binding.ContainerDataBinding,org.apache.royale.jewel.HGroup,com.unhurdle.spectrum.Radio,com.unhurdle.spectrum.VDivider,com.unhurdle.spectrum.Switch,org.apache.royale.jewel.supportClasses.scrollbar.ScrollingViewport,org.apache.royale.jewel.Group,org.apache.royale.jewel.beads.layouts.TileHorizontalLayout,com.util.DictionaryUtil,org.apache.royale.events.Event,org.apache.royale.events.MouseEvent,org.apache.royale.events.ValueChangeEvent,views.actionitemviews.stockSocket.StockItemG,views.actionitemviews.stockSocket.StockItemT,views.actionitemviews.websocket.SocketService,org.apache.royale.core.IChild,XML*/
+/* Royale Dependency List: org.apache.royale.binding.ContainerDataBinding,org.apache.royale.jewel.HGroup,com.unhurdle.spectrum.Radio,com.unhurdle.spectrum.VDivider,com.unhurdle.spectrum.Switch,org.apache.royale.jewel.supportClasses.scrollbar.ScrollingViewport,org.apache.royale.jewel.Group,org.apache.royale.jewel.beads.layouts.TileHorizontalLayout,com.event.DsEvent,com.util.DictionaryUtil,org.apache.royale.events.Event,org.apache.royale.events.MouseEvent,org.apache.royale.events.ValueChangeEvent,views.actionitemviews.stockSocket.StockItemG,views.actionitemviews.stockSocket.StockItemT,views.actionitemviews.websocket.SocketService,org.apache.royale.core.IChild,XML*/
 
 goog.require('org.apache.royale.jewel.VGroup');
 
@@ -33,7 +33,7 @@ views.actionitemviews.stockSocket.StockSocketMain = function() {
    * @private
    * @type {org.apache.royale.jewel.HGroup}
    */
-  this.$ID_13_2;
+  this.$ID_13_3;
   
   /**
    * @private
@@ -73,6 +73,18 @@ views.actionitemviews.stockSocket.StockSocketMain = function() {
   
   /**
    * @private
+   * @type {com.unhurdle.spectrum.VDivider}
+   */
+  this.$ID_13_2;
+  
+  /**
+   * @private
+   * @type {com.unhurdle.spectrum.Switch}
+   */
+  this.switchHistoryOnOff_;
+  
+  /**
+   * @private
    * @type {org.apache.royale.jewel.VGroup}
    */
   this.sGitemCtr_;
@@ -81,7 +93,7 @@ views.actionitemviews.stockSocket.StockSocketMain = function() {
    * @private
    * @type {org.apache.royale.jewel.supportClasses.scrollbar.ScrollingViewport}
    */
-  this.$ID_13_3;
+  this.$ID_13_4;
   
   /**
    * @private
@@ -99,7 +111,7 @@ views.actionitemviews.stockSocket.StockSocketMain = function() {
    * @private
    * @type {org.apache.royale.jewel.supportClasses.scrollbar.ScrollingViewport}
    */
-  this.$ID_13_5;
+  this.$ID_13_6;
   
   /**
    * @private
@@ -255,7 +267,12 @@ views.actionitemviews.stockSocket.StockSocketMain.prototype.views_actionitemview
  */
 views.actionitemviews.stockSocket.StockSocketMain.prototype.views_actionitemviews_stockSocket_StockSocketMain_switchEventHandler = function(e) {
   var /** @type {com.unhurdle.spectrum.Switch} */ btn = org.apache.royale.utils.Language.as(e.target, com.unhurdle.spectrum.Switch, true);
-  if (btn == this.switchBtn100)
+  if (btn == this.switchHistoryOnOff) {
+    com.event.DsEvent.instance.dispatch(com.event.DsEvent.HISTORIC_DATA, btn.checked);
+    console.log("disp[atching event");
+    return;
+  }
+  else if (btn == this.switchBtn100)
     this.views_actionitemviews_stockSocket_StockSocketMain__recordSets = 100;
   else if (btn == this.switchBtn500)
     this.views_actionitemviews_stockSocket_StockSocketMain__recordSets = 500;
@@ -285,6 +302,8 @@ views.actionitemviews.stockSocket.StockSocketMain.prototype.views_actionitemview
   this.views_actionitemviews_stockSocket_StockSocketMain__layoutType = newLayout;
   this.sGitemCtr.visible = (this.views_actionitemviews_stockSocket_StockSocketMain__layoutType == views.actionitemviews.stockSocket.StockSocketMain.GRID);
   this.sTitemCtr.visible = (this.views_actionitemviews_stockSocket_StockSocketMain__layoutType == views.actionitemviews.stockSocket.StockSocketMain.TILE);
+  this.switchHistoryOnOff.disabled = (newLayout == views.actionitemviews.stockSocket.StockSocketMain.TILE);
+  this.switchHistoryOnOff.checked = false;
   var /** @type {org.apache.royale.jewel.Group} */ clearContainer = (this.views_actionitemviews_stockSocket_StockSocketMain__layoutType == views.actionitemviews.stockSocket.StockSocketMain.GRID) ? this.sTitemCtr : this.sGitemCtr;
   while (clearContainer.numElements) {
     clearContainer.removeElement(clearContainer.getElementAt(0));
@@ -380,6 +399,16 @@ views.actionitemviews.stockSocket.StockSocketMain.prototype.$EH_13_5 = function(
 };
 
 
+/**
+ * @export
+ * @param {org.apache.royale.events.Event} event
+ */
+views.actionitemviews.stockSocket.StockSocketMain.prototype.$EH_13_6 = function(event)
+{
+  this.views_actionitemviews_stockSocket_StockSocketMain_switchEventHandler(event);
+};
+
+
 Object.defineProperties(views.actionitemviews.stockSocket.StockSocketMain.prototype, /** @lends {views.actionitemviews.stockSocket.StockSocketMain.prototype} */ {
   gridV: {
     /** @this {views.actionitemviews.stockSocket.StockSocketMain} */
@@ -446,6 +475,19 @@ Object.defineProperties(views.actionitemviews.stockSocket.StockSocketMain.protot
       }
     }
   },
+  switchHistoryOnOff: {
+    /** @this {views.actionitemviews.stockSocket.StockSocketMain} */
+    get: function() {
+      return this.switchHistoryOnOff_;
+    },
+    /** @this {views.actionitemviews.stockSocket.StockSocketMain} */
+    set: function(value) {
+      if (value != this.switchHistoryOnOff_) {
+        this.switchHistoryOnOff_ = value;
+        this.dispatchEvent(org.apache.royale.events.ValueChangeEvent.createUpdateEvent(this, 'switchHistoryOnOff', null, value));
+      }
+    }
+  },
   sGitemCtr: {
     /** @this {views.actionitemviews.stockSocket.StockSocketMain} */
     get: function() {
@@ -498,7 +540,7 @@ Object.defineProperties(views.actionitemviews.stockSocket.StockSocketMain.protot
           5,
           '_id',
           true,
-          '$ID_13_2',
+          '$ID_13_3',
           'percentWidth',
           true,
           100.0,
@@ -598,6 +640,36 @@ Object.defineProperties(views.actionitemviews.stockSocket.StockSocketMain.protot
             1,
             'change',
             this.$EH_13_5,
+            null,
+            com.unhurdle.spectrum.VDivider,
+            2,
+            '_id',
+            true,
+            '$ID_13_2',
+            'size',
+            true,
+            'medium',
+            0,
+            0,
+            null,
+            com.unhurdle.spectrum.Switch,
+            4,
+            'id',
+            true,
+            'switchHistoryOnOff',
+            'offLabel',
+            true,
+            'Data history off',
+            'onLabel',
+            true,
+            'Data history on',
+            'checked',
+            true,
+            false,
+            0,
+            1,
+            'change',
+            this.$EH_13_6,
             null
           ],
           org.apache.royale.jewel.VGroup,
@@ -618,7 +690,7 @@ Object.defineProperties(views.actionitemviews.stockSocket.StockSocketMain.protot
             1,
             '_id',
             true,
-            '$ID_13_3',
+            '$ID_13_4',
             0,
             0,
             null
@@ -664,7 +736,7 @@ Object.defineProperties(views.actionitemviews.stockSocket.StockSocketMain.protot
             1,
             '_id',
             true,
-            '$ID_13_5',
+            '$ID_13_6',
             0,
             0,
             null
@@ -737,6 +809,7 @@ views.actionitemviews.stockSocket.StockSocketMain.prototype.ROYALE_REFLECTION_IN
         'switchBtn100': { type: 'com.unhurdle.spectrum.Switch', access: 'readwrite', declaredBy: 'views.actionitemviews.stockSocket.StockSocketMain'},
         'switchBtn500': { type: 'com.unhurdle.spectrum.Switch', access: 'readwrite', declaredBy: 'views.actionitemviews.stockSocket.StockSocketMain'},
         'switchBtn1000': { type: 'com.unhurdle.spectrum.Switch', access: 'readwrite', declaredBy: 'views.actionitemviews.stockSocket.StockSocketMain'},
+        'switchHistoryOnOff': { type: 'com.unhurdle.spectrum.Switch', access: 'readwrite', declaredBy: 'views.actionitemviews.stockSocket.StockSocketMain'},
         'sGitemCtr': { type: 'org.apache.royale.jewel.VGroup', access: 'readwrite', declaredBy: 'views.actionitemviews.stockSocket.StockSocketMain'},
         'sTitemCtr': { type: 'org.apache.royale.jewel.Group', access: 'readwrite', declaredBy: 'views.actionitemviews.stockSocket.StockSocketMain'},
         'plist': { type: 'org.apache.royale.jewel.beads.layouts.TileHorizontalLayout', access: 'readwrite', declaredBy: 'views.actionitemviews.stockSocket.StockSocketMain'}

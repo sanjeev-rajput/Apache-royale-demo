@@ -56,6 +56,10 @@
                 }, 500);
             }
 
+            public function get sData():Object {
+                return _sData;
+            }
+
 
             public function get sId():String {
                 return _sId;

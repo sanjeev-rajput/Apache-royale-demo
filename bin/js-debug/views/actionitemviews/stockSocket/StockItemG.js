@@ -8,7 +8,7 @@
  */
 
 goog.provide('views.actionitemviews.stockSocket.StockItemG');
-/* Royale Dependency List: org.apache.royale.binding.ContainerDataBinding,org.apache.royale.jewel.Label,com.controller.PopupManager,com.util.DsUtil,org.apache.royale.events.Event,org.apache.royale.events.MouseEvent,org.apache.royale.events.ValueChangeEvent,views.actionitemviews.stockSocket.SocketHistory,XML*/
+/* Royale Dependency List: org.apache.royale.binding.ContainerDataBinding,org.apache.royale.jewel.Label,org.apache.royale.html.elements.Div,com.controller.PopupManager,com.event.DsEvent,com.extjavascript.charts.ChartToJs,com.util.AsJsUtil,com.util.DsUtil,org.apache.royale.events.Event,org.apache.royale.events.MouseEvent,org.apache.royale.events.ValueChangeEvent,views.actionitemviews.stockSocket.SocketHistory,XML*/
 
 goog.require('org.apache.royale.jewel.HGroup');
 
@@ -22,6 +22,7 @@ views.actionitemviews.stockSocket.StockItemG = function() {
   views.actionitemviews.stockSocket.StockItemG.base(this, 'constructor');
   
   this.views_actionitemviews_stockSocket_StockItemG__dataHistory = new Array();
+  this.views_actionitemviews_stockSocket_StockItemG__tCounter = new Array();
   /**
    * @private
    * @type {org.apache.royale.binding.ContainerDataBinding}
@@ -54,6 +55,12 @@ views.actionitemviews.stockSocket.StockItemG = function() {
   
   /**
    * @private
+   * @type {org.apache.royale.html.elements.Div}
+   */
+  this.chartContainer_;
+  
+  /**
+   * @private
    * @type {Array}
    */
   this.mxmldd;
@@ -65,13 +72,19 @@ views.actionitemviews.stockSocket.StockItemG = function() {
   this.mxmldp;
 
   this.generateMXMLAttributes([
-    4,
+    6,
     'percentWidth',
     true,
     100.0,
+    'gap',
+    true,
+    10,
+    'itemsVerticalAlign',
+    true,
+    'itemsCenter',
     'itemsHorizontalAlign',
     true,
-    'itemsSpaceBetween',
+    'itemsSpaceAround',
     'className',
     true,
     'stockItemG',
@@ -124,6 +137,27 @@ views.actionitemviews.stockSocket.StockItemG.prototype.views_actionitemviews_sto
 
 /**
  * @private
+ * @type {Array}
+ */
+views.actionitemviews.stockSocket.StockItemG.prototype.views_actionitemviews_stockSocket_StockItemG__tCounter = null;
+
+
+/**
+ * @private
+ * @type {*}
+ */
+views.actionitemviews.stockSocket.StockItemG.prototype.views_actionitemviews_stockSocket_StockItemG__canvHisDataUi = null;
+
+
+/**
+ * @private
+ * @type {*}
+ */
+views.actionitemviews.stockSocket.StockItemG.prototype.views_actionitemviews_stockSocket_StockItemG__chart = undefined;
+
+
+/**
+ * @private
  * @type {string}
  */
 views.actionitemviews.stockSocket.StockItemG.prototype.views_actionitemviews_stockSocket_StockItemG__sId = null;
@@ -162,7 +196,12 @@ views.actionitemviews.stockSocket.StockItemG.prototype.views_actionitemviews_sto
  */
 views.actionitemviews.stockSocket.StockItemG.prototype.views_actionitemviews_stockSocket_StockItemG_init = function() {
   this.views_actionitemviews_stockSocket_StockItemG__isInitlized = true;
+  this.views_actionitemviews_stockSocket_StockItemG_createHistoricDataCanvas();
+  com.event.DsEvent.instance.addEventListener(com.event.DsEvent.HISTORIC_DATA, org.apache.royale.utils.Language.closure(this.views_actionitemviews_stockSocket_StockItemG_historicDataEventHandler, this, 'views_actionitemviews_stockSocket_StockItemG_historicDataEventHandler'));
 };
+
+
+;
 
 
 ;
@@ -182,6 +221,28 @@ views.actionitemviews.stockSocket.StockItemG.prototype.views_actionitemviews_sto
   p.data = this.views_actionitemviews_stockSocket_StockItemG__dataHistory;
   p.title = this.views_actionitemviews_stockSocket_StockItemG__symbol;
   com.controller.PopupManager.getInstance().createPopup(p, this.parent);
+};
+
+
+/**
+ * @private
+ * @param {Object} e
+ */
+views.actionitemviews.stockSocket.StockItemG.prototype.views_actionitemviews_stockSocket_StockItemG_historicDataEventHandler = function(e) {
+  this.chartContainer.visible = Boolean(e["data"]);
+  Boolean(e["data"]) ? this.chartContainer.percentWidth = 100 : this.chartContainer.percentWidth = 1;
+};
+
+
+/**
+ * @private
+ */
+views.actionitemviews.stockSocket.StockItemG.prototype.views_actionitemviews_stockSocket_StockItemG_createHistoricDataCanvas = function() {
+  if (this.views_actionitemviews_stockSocket_StockItemG__canvHisDataUi == null) {
+    this.views_actionitemviews_stockSocket_StockItemG__canvHisDataUi = com.util.AsJsUtil.createCanvas();
+    this.chartContainer.element.appendChild(/* implicit cast */ org.apache.royale.utils.Language.as(this.views_actionitemviews_stockSocket_StockItemG__canvHisDataUi, Node, true));
+  }
+  this.views_actionitemviews_stockSocket_StockItemG__chart = new com.extjavascript.charts.ChartToJs.chartObj(this.views_actionitemviews_stockSocket_StockItemG__canvHisDataUi, {"type":"line", "data":{"datasets":[{"data":this.views_actionitemviews_stockSocket_StockItemG__dataHistory, "borderWidth":.2}], "labels":this.views_actionitemviews_stockSocket_StockItemG__tCounter}, "options":{"responsive":true, "maintainAspectRatio":false, "scales":{"y":{"display":false}, "x":{"display":false}}, "plugins":{"legend":{"display":false}, "datalabels":{"display":false}}}});
 };
 
 
@@ -270,6 +331,11 @@ if (value != this.views_actionitemviews_stockSocket_StockItemG__time_) {
 views.actionitemviews.stockSocket.StockItemG.prototype.sData;
 
 
+views.actionitemviews.stockSocket.StockItemG.prototype.get__sData = function() {
+  return this.views_actionitemviews_stockSocket_StockItemG__sData;
+};
+
+
 views.actionitemviews.stockSocket.StockItemG.prototype.set__sData = function(d) {
   var self = this;
   if (this.views_actionitemviews_stockSocket_StockItemG__sData && this.views_actionitemviews_stockSocket_StockItemG__sData["price"] == d["price"] && this.views_actionitemviews_stockSocket_StockItemG__sData["timestamp"] == d["timestamp"])
@@ -280,8 +346,12 @@ views.actionitemviews.stockSocket.StockItemG.prototype.set__sData = function(d) 
   this.views_actionitemviews_stockSocket_StockItemG__time = com.util.DsUtil.formatDateTime(org.apache.royale.utils.Language.string(this.views_actionitemviews_stockSocket_StockItemG__sData["timestamp"]));
   this.views_actionitemviews_stockSocket_StockItemG__price = org.apache.royale.utils.Language.string(this.views_actionitemviews_stockSocket_StockItemG__sData["price"]);
   this.views_actionitemviews_stockSocket_StockItemG__dataHistory.push(this.views_actionitemviews_stockSocket_StockItemG__price);
+  this.views_actionitemviews_stockSocket_StockItemG__tCounter.push(this.views_actionitemviews_stockSocket_StockItemG__dataHistory.length);
   if (!this.views_actionitemviews_stockSocket_StockItemG__isInitlized)
     return;
+  this.views_actionitemviews_stockSocket_StockItemG__chart["data"]["datasets"]["data"] = this.views_actionitemviews_stockSocket_StockItemG__dataHistory;
+  this.views_actionitemviews_stockSocket_StockItemG__chart["data"]["labels"] = this.views_actionitemviews_stockSocket_StockItemG__tCounter;
+  this.views_actionitemviews_stockSocket_StockItemG__chart["update"]();
   this.addClass("stockItemHighlight");
   setTimeout(function() {
     self.removeClass("stockItemHighlight");
@@ -320,6 +390,7 @@ Object.defineProperties(views.actionitemviews.stockSocket.StockItemG.prototype, 
  * @type {Object}
  */
 sData: {
+get: views.actionitemviews.stockSocket.StockItemG.prototype.get__sData,
 set: views.actionitemviews.stockSocket.StockItemG.prototype.set__sData},
 /**
  * @type {string}
@@ -352,6 +423,19 @@ views.actionitemviews.stockSocket.StockItemG.prototype.$EH_13_1 = function(event
 
 
 Object.defineProperties(views.actionitemviews.stockSocket.StockItemG.prototype, /** @lends {views.actionitemviews.stockSocket.StockItemG.prototype} */ {
+  chartContainer: {
+    /** @this {views.actionitemviews.stockSocket.StockItemG} */
+    get: function() {
+      return this.chartContainer_;
+    },
+    /** @this {views.actionitemviews.stockSocket.StockItemG} */
+    set: function(value) {
+      if (value != this.chartContainer_) {
+        this.chartContainer_ = value;
+        this.dispatchEvent(org.apache.royale.events.ValueChangeEvent.createUpdateEvent(this, 'chartContainer', null, value));
+      }
+    }
+  },
   'MXMLDescriptor': {
     /** @this {views.actionitemviews.stockSocket.StockItemG} */
     get: function() {
@@ -393,6 +477,20 @@ Object.defineProperties(views.actionitemviews.stockSocket.StockItemG.prototype, 
           '_id',
           true,
           '$ID_13_4',
+          0,
+          0,
+          null,
+          org.apache.royale.html.elements.Div,
+          3,
+          'id',
+          true,
+          'chartContainer',
+          'height',
+          true,
+          50,
+          'visible',
+          true,
+          false,
           0,
           0,
           null
@@ -473,9 +571,10 @@ views.actionitemviews.stockSocket.StockItemG.prototype.ROYALE_REFLECTION_INFO = 
   return {
     accessors: function () {
       return {
-        'sData': { type: 'Object', access: 'writeonly', declaredBy: 'views.actionitemviews.stockSocket.StockItemG'},
+        'sData': { type: 'Object', access: 'readwrite', declaredBy: 'views.actionitemviews.stockSocket.StockItemG'},
         'sId': { type: 'String', access: 'readonly', declaredBy: 'views.actionitemviews.stockSocket.StockItemG'},
-        'iIndex': { type: 'int', access: 'writeonly', declaredBy: 'views.actionitemviews.stockSocket.StockItemG'}
+        'iIndex': { type: 'int', access: 'writeonly', declaredBy: 'views.actionitemviews.stockSocket.StockItemG'},
+        'chartContainer': { type: 'org.apache.royale.html.elements.Div', access: 'readwrite', declaredBy: 'views.actionitemviews.stockSocket.StockItemG'}
       };
     },
     methods: function () {

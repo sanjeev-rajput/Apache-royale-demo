@@ -12,7 +12,7 @@
             private function init():void {
                 if (!_data) return;
                 _initialized = true;
-                name.text = _data.title;
+                name.innerHTML = _data.title;
                 description.html = _data.description;
                 price.text = "Price $" + _data.price.toFixed(2);
                 img.src = 'img/shopping/'+_data.filename;
@@ -46,16 +46,16 @@
     </fx:Script>
 
         <j:VGroup className="shoppingProductPreview">
-            <j:HGroup width="100%" itemsVerticalAlign="itemsCenter" height="40">
+            <j:HGroup width="100%" itemsVerticalAlign="itemsCenter" itemsHorizontalAlign="itemsSpaceBetween">
                 <html:H3 id="name" text="Jewel Card" width="100%"/>
-                <j:Spacer width="100%"/>
+                <!-- <j:Spacer width="100%"/> -->
                 <j:ImageIcon src="img/close.png" width="30" click="closeHandler()"/>
             </j:HGroup>
             <j:VGroup>
                 <j:beads>
                 <j:ScrollingViewport/>
                 </j:beads>
-                <j:Image id="img"/>
+                <j:Image id="img" className="shoppingImgPreview"/>
                 <j:Label id="description" text="A simple t-shirt made from organic cotton." multiline="true"/>
                 <html:Hr width="100%"/>
                 <j:HGroup itemsHorizontalAlign="itemsSpaceBetween" width="100%">

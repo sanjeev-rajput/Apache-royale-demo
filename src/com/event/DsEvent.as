@@ -9,6 +9,7 @@ package com.event {
         public static const CLEAR_UI_EVENT:String = "clearuievent";
         public static const UI_COMPONENT_EVENT:String = "uicomponentevent";
         public static const TOC_DATA_TABLE_EVENT:String = "tocdatatableevent"
+        public static const HISTORIC_DATA:String = "historicStockDataEvent"
         private static var _instance:DsEvent = null;
         private function DsEvent(forcer : SingletonEnforcer):void{ }
 

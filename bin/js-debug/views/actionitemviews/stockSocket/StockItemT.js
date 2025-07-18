@@ -192,6 +192,9 @@ views.actionitemviews.stockSocket.StockItemT.prototype.views_actionitemviews_sto
 ;
 
 
+;
+
+
 /**
  * @private
  */
@@ -288,6 +291,11 @@ if (value != this.views_actionitemviews_stockSocket_StockItemT__time_) {
 views.actionitemviews.stockSocket.StockItemT.prototype.sData;
 
 
+views.actionitemviews.stockSocket.StockItemT.prototype.get__sData = function() {
+  return this.views_actionitemviews_stockSocket_StockItemT__sData;
+};
+
+
 views.actionitemviews.stockSocket.StockItemT.prototype.set__sData = function(d) {
   var self = this;
   if (this.views_actionitemviews_stockSocket_StockItemT__sData && this.views_actionitemviews_stockSocket_StockItemT__sData["price"] == d["price"] && this.views_actionitemviews_stockSocket_StockItemT__sData["timestamp"] == d["timestamp"])
@@ -338,6 +346,7 @@ Object.defineProperties(views.actionitemviews.stockSocket.StockItemT.prototype, 
  * @type {Object}
  */
 sData: {
+get: views.actionitemviews.stockSocket.StockItemT.prototype.get__sData,
 set: views.actionitemviews.stockSocket.StockItemT.prototype.set__sData},
 /**
  * @type {string}
@@ -564,7 +573,7 @@ views.actionitemviews.stockSocket.StockItemT.prototype.ROYALE_REFLECTION_INFO = 
   return {
     accessors: function () {
       return {
-        'sData': { type: 'Object', access: 'writeonly', declaredBy: 'views.actionitemviews.stockSocket.StockItemT'},
+        'sData': { type: 'Object', access: 'readwrite', declaredBy: 'views.actionitemviews.stockSocket.StockItemT'},
         'sId': { type: 'String', access: 'readonly', declaredBy: 'views.actionitemviews.stockSocket.StockItemT'},
         'iIndex': { type: 'int', access: 'writeonly', declaredBy: 'views.actionitemviews.stockSocket.StockItemT'},
         'indxCtr': { type: 'org.apache.royale.jewel.VGroup', access: 'readwrite', declaredBy: 'views.actionitemviews.stockSocket.StockItemT'},

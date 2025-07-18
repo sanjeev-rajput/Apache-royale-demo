@@ -20,6 +20,7 @@
             import views.actionitemviews.stockSocket.StockItemG;
             import views.actionitemviews.stockSocket.StockItemT;
             import org.apache.royale.jewel.Group;
+            import com.event.DsEvent;
 
             private var _socketService:SocketService;
             private var itemMap:DictionaryUtil = new DictionaryUtil();
@@ -63,7 +64,12 @@
 
             private function switchEventHandler(e:Event):void {
                 var btn:Switch = Switch(e.target);
-                if (btn == switchBtn100) _recordSets = 100;
+                if(btn == switchHistoryOnOff){
+                    DsEvent.instance.dispatch(DsEvent.HISTORIC_DATA, btn.checked);
+                    console.log("disp[atching event");
+                    return;
+                }
+                else if (btn == switchBtn100) _recordSets = 100;
                 else if (btn == switchBtn500) _recordSets = 500;
                 else if (btn == switchBtn1000) _recordSets = 1000;
 
@@ -88,6 +94,8 @@
 
                 sGitemCtr.visible = (_layoutType == GRID);
                 sTitemCtr.visible = (_layoutType == TILE);
+                switchHistoryOnOff.disabled = (newLayout == TILE);
+                switchHistoryOnOff.checked = false;
 
                 var clearContainer:Group = (_layoutType == GRID) ? sTitemCtr : sGitemCtr;
                 while (clearContainer.numElements) {
@@ -109,6 +117,9 @@
         <sp:Switch id="switchBtn100" leftLabel="100 Data Set" change="switchEventHandler(event)" disabled="{_actionStat}"/>
         <sp:Switch id="switchBtn500" leftLabel="500 Data Set" change="switchEventHandler(event)" disabled="{_actionStat}"/>
         <sp:Switch id="switchBtn1000" leftLabel="1000 Data Set" change="switchEventHandler(event)" disabled="{_actionStat}"/>
+        <sp:VDivider size="medium"/>
+        <sp:Switch id="switchHistoryOnOff" offLabel="Data history off" onLabel="Data history on" checked="false" change="switchEventHandler(event)"/>
+
     </j:HGroup>
 
     <j:VGroup id="sGitemCtr" width="100%" height="100%">

@@ -75,6 +75,14 @@ com.event.DsEvent.TOC_DATA_TABLE_EVENT = "tocdatatableevent";
 
 
 /**
+ * @nocollapse
+ * @const
+ * @type {string}
+ */
+com.event.DsEvent.HISTORIC_DATA = "historicStockDataEvent";
+
+
+/**
  * @private
  * @type {com.event.DsEvent}
  */
