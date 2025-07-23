@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"Strong.js",
+"lineCount":38,
+"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/HTML/src/main/royale",
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;AAiDkB,sCAAhB,WAAsBA,CAAC,C,CACvB,C;kEACQ,C;AACR,C;;;;;;;;AAGkC,iDAAA,aAA5B,WAAyCC,CAAC,C,CAC1C,C;EACL,OAAO,+CAAmB,CAAC,IAAI,EAAC,QAAQ,CAAC,CAAA;",
+"sources":["org/apache/royale/html/elements/Strong.as"],
+"names":["Strong.Strong","Strong.createElement"]
+}

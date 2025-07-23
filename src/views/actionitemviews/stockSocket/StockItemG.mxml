@@ -109,7 +109,7 @@
                     data: {
                         datasets: [{
                         data: _dataHistory,
-                        borderWidth: .2
+                        borderWidth: .5
                         }],
                         labels: _tCounter
                     },

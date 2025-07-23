@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"TextButton.js",
+"lineCount":83,
+"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Basic/src/main/royale",
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;AA+CkB,iCAAhB,WAA0BA,CAAC,C,CAC3B,C;6DACQ,C;AACR,C;;;;;;;;;AA8E4B,4CAAA,aAA5B,WAAyCC,CAAC,C,CAC1C,C;yEACsB,C;EACrB,KAAA,SAAS,GAAG,YAAY,C;EACxB,OAAO,KAAA,OAAO,C;AACf,C;;;;;;;;;;;gEAzEwBC,CAAC,C,CACzB,C;;EAOc,OAAO,KAAA,OAAO,CAAC,WAAW,C;AAExC,C;;;gEAKwBA,CAAC,KAAY,C,CACrC,C;;EAOc,IAAI,CAAC,OAAO,CAAC,WAAW,GAAG,KAAK,C;EAChC,IAAI,CAAC,aAAa,CAAC,YAAY,CAAC,C;AAE9C,C;;;;;;;;;;;gEAUwBC,CAAC,C,CACzB,C;;EAOc,OAAO,KAAA,OAAO,CAAC,SAAS,C;AAEtC,C;;;gEAKwBA,CAAC,KAAY,C,CACrC,C;;EAOc,IAAI,CAAC,OAAO,CAAC,SAAS,GAAG,KAAK,C;EAC9B,IAAI,CAAC,aAAa,CAAC,YAAY,CAAC,CAAA;",
+"sources":["org/apache/royale/html/TextButton.as"],
+"names":["TextButton.TextButton","TextButton.createElement","TextButton.text","TextButton.html"]
+}

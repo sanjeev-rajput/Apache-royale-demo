@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"ColorModel.js",
+"lineCount":71,
+"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Basic/src/main/royale",
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AA8CkB,8CAAhB,WAA0BA,CAAC,C;;;;;;;;;;AATf,yDAAAC,qD,IAAW,C;;;;;;;;;;;+EAaGC,CAAC,KAAa,C,CACxC,C;AACA,C;;;;;;;;;;;8EAW+BC,CAAC,C,CAChC,C;EACC,OAAO,KAAAF,qDAAM,C;AACd,C;;;8EAKyBE,CAAC,KAAY,C,CACtC,C;EACC,KAAAF,qDAAM,G,CAAG,K,OAAK,C;EACd,KAAA,aAAa,CAAC,IAAI,8BAAK,CAAC,QAAQ,CAAC,CAAC,CAAA;",
+"sources":["org/apache/royale/html/beads/models/ColorModel.as"],
+"names":["ColorModel.ColorModel","_color","ColorModel.strand","ColorModel.color"]
+}

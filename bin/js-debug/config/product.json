@@ -127,6 +127,20 @@
       "pid":"p14"
     },
     {
+      "label": "React & Royale",
+      "type": "extui",
+      "url": "na",
+      "addx":"NA",
+      "pid":"p15"
+    },
+    {
+      "label": "",
+      "type": "divider",
+      "url": "NA",
+      "addx":"NA",
+      "pid":"p16"
+    },
+    {
       "label": "AI - Chatbots",
       "type": "extui",
       "url": "na",

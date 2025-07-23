@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+  <div id="react-container"></div>
+
+  <script type="text/babel">
+    function SimpleClock() {
+      const [time, setTime] = React.useState(new Date().toUTCString());
+
+      React.useEffect(() => {
+        const interval = setInterval(() => {
+          setTime(new Date().toUTCString());
+        }, 1000);
+        return () => clearInterval(interval);
+      }, []);
+
+      return <h2>{time}</h2>;
+    }
+
+    const root = ReactDOM.createRoot(document.getElementById('react-container'));
+    root.render(<SimpleClock />);
+  </script>
+</body>
+</html>

@@ -8,7 +8,7 @@
  */
 
 goog.provide('views.ProductIndexing');
-/* Royale Dependency List: org.apache.royale.jewel.VGroup,org.apache.royale.jewel.HGroup,views.TopMenuL,org.apache.royale.jewel.Label,views.TopMenuR,org.apache.royale.jewel.FooterBar,com.unhurdle.spectrum.Label,org.apache.royale.jewel.Container,com.unhurdle.spectrum.ImageAsset,com.event.DsEvent,com.unhurdle.spectrum.Toast,org.apache.royale.events.Event,views.actionitemviews.ai.AiMain,views.actionitemviews.basicdrawing.BasicDrawingMain,views.actionitemviews.collaboration.CollaborationMain,views.actionitemviews.games.Game,views.actionitemviews.pexels.PexelVideoStreamMain,views.actionitemviews.searchlist.SearchListMain,views.actionitemviews.shoppingcart.ShoppingMain,views.actionitemviews.stockSocket.StockSocketMain,views.actionitemviews.toc.TocAndPgnation,views.actionitemviews.websocket.WikiSocketMain,XML*/
+/* Royale Dependency List: org.apache.royale.jewel.VGroup,org.apache.royale.jewel.HGroup,views.TopMenuL,org.apache.royale.jewel.Label,views.TopMenuR,org.apache.royale.jewel.FooterBar,com.unhurdle.spectrum.Label,org.apache.royale.jewel.Container,com.unhurdle.spectrum.ImageAsset,com.event.DsEvent,com.unhurdle.spectrum.Toast,org.apache.royale.events.Event,views.actionitemviews.ai.AiMain,views.actionitemviews.basicdrawing.BasicDrawingMain,views.actionitemviews.collaboration.CollaborationMain,views.actionitemviews.games.Game,views.actionitemviews.pexels.PexelVideoStreamMain,views.actionitemviews.reactandroyale.ReactAndRoyale,views.actionitemviews.searchlist.SearchListMain,views.actionitemviews.shoppingcart.ShoppingMain,views.actionitemviews.stockSocket.StockSocketMain,views.actionitemviews.toc.TocAndPgnation,views.actionitemviews.websocket.WikiSocketMain,XML*/
 
 goog.require('org.apache.royale.jewel.ResponsiveView');
 
@@ -216,6 +216,11 @@ views.ProductIndexing.prototype.views_ProductIndexing_addUiComponent = function(
     var /** @type {views.actionitemviews.searchlist.SearchListMain} */ sLstComp = new views.actionitemviews.searchlist.SearchListMain();
     sLstComp.showCloseBtn = false;
     this.vg.addElement(sLstComp);
+    return;
+  }
+  if (compName == 'React & Royale') {
+    uiComp = new views.actionitemviews.reactandroyale.ReactAndRoyale();
+    this.vg.addElement(uiComp);
     return;
   }
   if (compName == 'Chart') {

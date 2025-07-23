@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"Button.js",
+"lineCount":41,
+"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Basic/src/main/royale",
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;AAyLkB,6BAAhB,WAAsBA,CAAC,C,CACvB,C;yDACQ,C;AACR,C;;;;;;;;;AAM4B,wCAAA,aAA5B,WAAyCC,CAAC,C,CAC1C,C;qEACsB,C;EACrB,KAAA,SAAS,GAAG,QAAQ,C;EACpB,OAAO,KAAA,OAAO,CAAA;",
+"sources":["org/apache/royale/html/Button.as"],
+"names":["Button.Button","Button.createElement"]
+}

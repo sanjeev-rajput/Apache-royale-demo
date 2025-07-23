@@ -242,7 +242,7 @@ views.actionitemviews.stockSocket.StockItemG.prototype.views_actionitemviews_sto
     this.views_actionitemviews_stockSocket_StockItemG__canvHisDataUi = com.util.AsJsUtil.createCanvas();
     this.chartContainer.element.appendChild(/* implicit cast */ org.apache.royale.utils.Language.as(this.views_actionitemviews_stockSocket_StockItemG__canvHisDataUi, Node, true));
   }
-  this.views_actionitemviews_stockSocket_StockItemG__chart = new com.extjavascript.charts.ChartToJs.chartObj(this.views_actionitemviews_stockSocket_StockItemG__canvHisDataUi, {"type":"line", "data":{"datasets":[{"data":this.views_actionitemviews_stockSocket_StockItemG__dataHistory, "borderWidth":.2}], "labels":this.views_actionitemviews_stockSocket_StockItemG__tCounter}, "options":{"responsive":true, "maintainAspectRatio":false, "scales":{"y":{"display":false}, "x":{"display":false}}, "plugins":{"legend":{"display":false}, "datalabels":{"display":false}}}});
+  this.views_actionitemviews_stockSocket_StockItemG__chart = new com.extjavascript.charts.ChartToJs.chartObj(this.views_actionitemviews_stockSocket_StockItemG__canvHisDataUi, {"type":"line", "data":{"datasets":[{"data":this.views_actionitemviews_stockSocket_StockItemG__dataHistory, "borderWidth":.5}], "labels":this.views_actionitemviews_stockSocket_StockItemG__tCounter}, "options":{"responsive":true, "maintainAspectRatio":false, "scales":{"y":{"display":false}, "x":{"display":false}}, "plugins":{"legend":{"display":false}, "datalabels":{"display":false}}}});
 };
 
 

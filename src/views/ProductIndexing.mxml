@@ -24,6 +24,8 @@
             import views.actionitemviews.collaboration.CollaborationMain;
             import views.actionitemviews.stockSocket.StockSocketMain;
             import views.actionitemviews.pexels.PexelVideoStreamMain;
+            
+            import views.actionitemviews.reactandroyale.ReactAndRoyale;
             private var mgmtObj:Array = new Array();
                         
             private function initComplete():void {
@@ -111,6 +113,11 @@
                     var sLstComp:SearchListMain = new SearchListMain();
                     sLstComp.showCloseBtn = false;
                     vg.addElement(sLstComp);
+                    return;
+                }
+                if(compName == 'React & Royale'){
+                    uiComp = new ReactAndRoyale();
+                    vg.addElement(uiComp);
                     return;
                 }
                 if(compName == 'Chart'){

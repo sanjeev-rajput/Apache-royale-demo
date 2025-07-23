@@ -54,7 +54,7 @@
                 var sItem:* = (_layoutType == GRID) ? new StockItemG() : new StockItemT();
                 sItem.sData = d;
                 sItem.iIndex = _socketItemCounter++;
-
+                
                 var container:Group = (_layoutType == GRID) ? sGitemCtr : sTitemCtr;
                 container.addElement(sItem);
                 //container.element.scrollTop = container.element.scrollHeight;

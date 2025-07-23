@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<j:HGroup xmlns:fx="http://ns.adobe.com/mxml/2009"
+         xmlns:j="library://ns.apache.org/royale/jewel"
+         xmlns:sp="library://ns.unhurdle.com/spectrum" xmlns:="library://ns.apache.org/royale/html"
+         initComplete="init()" percentWidth="100" percentHeight="100" gap="50" 
+         itemsVerticalAlign="itemsTop" itemsHorizontalAlign="itemsSpaceAround">
+
+    <fx:Script>
+        <![CDATA[
+        
+        private function init():void {
+            var divId:String = clockHtml.element.id;
+            window["ReactCompController"].mountLiveClock("clockHtml", { color: "black" });
+            window.addEventListener("react-to-royale", handleReactMessage);
+        }
+
+        private function clrPkrEventHandler():void {
+           var evt:* = new window["CustomEvent"]("royale-to-react", { detail: { color: clrPkr.appliedColor.hexString } });
+            window.dispatchEvent(evt);
+        }
+
+        private function handleReactMessage(evt:*):void {
+            emTxt.text =  evt.detail.message +'\n\r'+ evt.detail.time;
+        }
+
+        ]]>
+    </fx:Script>
+        
+    <sp:Well>
+        <Strong text="Apache Royale main coonainer"/>
+        <Br/>
+        <j:View id="clockHtml"/>
+        <sp:HDivider/>
+        <Span text="Below is Apache Royale text showing clock as string passed from react component"/>
+        <sp:Well>
+            <Em id="emTxt"></Em>
+            <Br/>
+            <sp:ColorPicker id="clrPkr" showApplyButtons="false" showAlphaControls="false" colorChanged="clrPkrEventHandler()" colorValue="black"/>
+            <Br/>
+            <Span text="Change react clock color from Apache Roayale color picker component"/>
+        </sp:Well>
+    </sp:Well>
+        
+
+</j:HGroup>
