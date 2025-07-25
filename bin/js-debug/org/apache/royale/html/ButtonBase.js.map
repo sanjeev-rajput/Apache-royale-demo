@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ButtonBase.js",
-"lineCount":41,
-"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Basic/src/main/royale",
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAiFoC,4CAAA,aAA5B,WAAyCA,CAAC,C,CAC1C,C;EACL,+CAAmB,CAAC,IAAI,EAAC,QAAQ,CAAC,C;EACzB,KAAA,OAAO,CAAC,YAAY,CAAC,MAAM,EAAE,QAAQ,CAAC,C;EAMtC,OAAO,KAAA,OAAO,CAAA;",
-"sources":["org/apache/royale/html/ButtonBase.as"],
-"names":["ButtonBase.createElement"]
-}

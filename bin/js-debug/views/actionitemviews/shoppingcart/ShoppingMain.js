@@ -446,9 +446,9 @@ Object.defineProperties(views.actionitemviews.shoppingcart.ShoppingMain.prototyp
             'percentWidth',
             true,
             100.0,
-            'style',
+            'className',
             true,
-            'padding:10px',
+            'shoptingProductList',
             'beads',
             null,
             [
@@ -552,7 +552,7 @@ Object.defineProperties(views.actionitemviews.shoppingcart.ShoppingMain.prototyp
             100.0,
             'style',
             true,
-            'border:1px dashed gray;',
+            'border:1px dashed gray',
             'beads',
             null,
             [

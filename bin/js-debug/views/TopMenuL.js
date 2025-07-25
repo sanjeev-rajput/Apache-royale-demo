@@ -8,30 +8,18 @@
  */
 
 goog.provide('views.TopMenuL');
-/* Royale Dependency List: org.apache.royale.jewel.beads.controls.drawer.ResponsiveDrawer,org.apache.royale.jewel.supportClasses.drawer.DrawerContent,com.unhurdle.spectrum.ActionMenu,com.controller.PopupManager,com.unhurdle.spectrum.data.MenuItem,org.apache.royale.events.CloseEvent,org.apache.royale.events.Event,views.actionitemviews.ImgPopuop,views.actionitemviews.appnavigation.AppNavigationMain,views.actionitemviews.draganddrop.DragAndDropMain,views.actionitemviews.searchlist.SearchListMain,XML*/
+/* Royale Dependency List: com.unhurdle.spectrum.ActionMenu,com.controller.PopupManager,com.unhurdle.spectrum.data.MenuItem,org.apache.royale.events.CloseEvent,org.apache.royale.events.Event,views.actionitemviews.ImgPopuop,views.actionitemviews.appnavigation.AppNavigationMain,views.actionitemviews.draganddrop.DragAndDropMain,views.actionitemviews.searchlist.SearchListMain,XML*/
 
-goog.require('org.apache.royale.jewel.Drawer');
+goog.require('org.apache.royale.jewel.Container');
 
 
 
 /**
  * @constructor
- * @extends {org.apache.royale.jewel.Drawer}
+ * @extends {org.apache.royale.jewel.Container}
  */
 views.TopMenuL = function() {
   views.TopMenuL.base(this, 'constructor');
-  
-  /**
-   * @private
-   * @type {org.apache.royale.jewel.beads.controls.drawer.ResponsiveDrawer}
-   */
-  this.$ID_12_0;
-  
-  /**
-   * @private
-   * @type {org.apache.royale.jewel.supportClasses.drawer.DrawerContent}
-   */
-  this.$ID_12_2;
   
   /**
    * @private
@@ -53,32 +41,20 @@ views.TopMenuL = function() {
 
   this.generateMXMLAttributes([
     2,
-    'style',
+    'width',
     true,
-    'background:transparent; border: none;',
-    'beads',
-    null,
-    [
-      org.apache.royale.jewel.beads.controls.drawer.ResponsiveDrawer,
-      2,
-      '_id',
-      true,
-      '$ID_12_0',
-      'auto',
-      true,
-      true,
-      0,
-      0,
-      null
-    ],
+    100,
+    'percentHeight',
+    true,
+    100.0,
     0,
     1,
     'initComplete',
-    this.$EH_12_0
+    this.$EH_11_0
   ]);
   
 };
-goog.inherits(views.TopMenuL, org.apache.royale.jewel.Drawer);
+goog.inherits(views.TopMenuL, org.apache.royale.jewel.Container);
 
 
 
@@ -141,7 +117,7 @@ views.TopMenuL.prototype.views_TopMenuL_closeHandler = function(event) {
  * @export
  * @param {org.apache.royale.events.Event} event
  */
-views.TopMenuL.prototype.$EH_12_0 = function(event)
+views.TopMenuL.prototype.$EH_11_0 = function(event)
 {
   this.views_TopMenuL_init();
 };
@@ -151,7 +127,7 @@ views.TopMenuL.prototype.$EH_12_0 = function(event)
  * @export
  * @param {org.apache.royale.events.Event} event
  */
-views.TopMenuL.prototype.$EH_12_1 = function(event)
+views.TopMenuL.prototype.$EH_11_1 = function(event)
 {
   this.views_TopMenuL_handleSelection();
 };
@@ -180,34 +156,25 @@ Object.defineProperties(views.TopMenuL.prototype, /** @lends {views.TopMenuL.pro
         var arr = views.TopMenuL.superClass_.get__MXMLDescriptor.apply(this);
         /** @type {Array} */
         var mxmldd = [
-          org.apache.royale.jewel.supportClasses.drawer.DrawerContent,
-          1,
+          com.unhurdle.spectrum.ActionMenu,
+          4,
           '_id',
           true,
-          '$ID_12_2',
+          'menuL',
+          'text',
+          true,
+          'L',
+          'quiet',
+          true,
+          true,
+          'dataProvider',
+          true,
+          ['Popup Examples','Image Gallery','Drag and Drop','List and Search','App Navigation'],
           0,
-          0,
-          [
-            com.unhurdle.spectrum.ActionMenu,
-            4,
-            '_id',
-            true,
-            'menuL',
-            'text',
-            true,
-            'L',
-            'quiet',
-            true,
-            true,
-            'dataProvider',
-            true,
-            ['Popup Examples','Image Gallery','Drag and Drop','List and Search','App Navigation'],
-            0,
-            1,
-            'change',
-            this.$EH_12_1,
-            null
-          ]
+          1,
+          'change',
+          this.$EH_11_1,
+          null
         ];
         if (arr)
           this.mxmldd = arr.concat(mxmldd);

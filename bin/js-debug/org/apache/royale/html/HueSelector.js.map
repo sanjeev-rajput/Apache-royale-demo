@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"HueSelector.js",
-"lineCount":35,
-"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Basic/src/main/royale",
-"mappings":"A;;;;;;;;;;;;;;;;;;;;AAwCkB,kCAAhB,WAA2BA,CAAC,C,CAC5B,C;8DACQ,C;EACP,KAAA,SAAS,GAAG,aAAa,C;EACzB,KAAA,OAAO,GAAG,CAAC,C;EACX,KAAA,OAAO,GAAG,GAAG,C;EACb,KAAA,KAAK,GAAG,oIAAoI,C;AAC7I,C;;;;;;;;AATY,6CAAAC,yCAAAA;",
-"sources":["org/apache/royale/html/HueSelector.as"],
-"names":["HueSelector.HueSelector","_color"]
-}

@@ -150,10 +150,10 @@
     </fx:Script>
         <j:VGroup percentWidth="100" itemsVerticalAlign="itemsCenter" itemsHorizontalAlign="itemsCenter">
         <j:HGroup percentWidth="100" className="actionHgroup"
-        itemsVerticalAlign="itemsCenter" itemsHorizontalAlign="itemsSpaceAround">
-            <views:TopMenuL />
+        itemsVerticalAlign="itemsCenter" itemsHorizontalAlign="itemsSpaceAround" height="40">
+            <views:TopMenuL  width="50"/>
             <j:Label id="title" text="Make an action using 'L' and 'R' menu"/>
-            <views:TopMenuR />
+            <views:TopMenuR width="50" />
         </j:HGroup>
             <j:FooterBar percentWidth="100" x="0" localId="footerUi" className="footerBarText">
                 <j:HGroup localId="pgNationCtr" itemsHorizontalAlign="itemsSpaceAround" itemsVerticalAlign="itemsCenter" 

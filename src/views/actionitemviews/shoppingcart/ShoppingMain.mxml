@@ -32,7 +32,7 @@
                     </js:FontAwesomeToggleIcon>
                 </j:HGroup>
 
-                <j:Group id="productList" height="100%" width="100%" style="padding:10px">
+                <j:Group id="productList" height="100%" width="100%" className="shoptingProductList">
                     <j:beads>
                         <j:TileHorizontalLayout localId="plist" waitForSize="true"/>
                         <j:ScrollingViewport/>
@@ -44,7 +44,7 @@
                     <j:Image src="img/shopping/shopping-cart.png" height="30"/>
                     <j:Label text="Drop items here" className="shopProductLbl textAlignCenter" width="100%"/>
                 </j:HGroup>
-                <j:Group id="cartArea" width="100%" height="100%" style="border:1px dashed gray;">
+                <j:Group id="cartArea" width="100%" height="100%" style="border:1px dashed gray">
                     <j:beads>
                         <j:TileHorizontalLayout localId="clist" waitForSize="true"/>
                         <j:ScrollingViewport/>

@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ColorSpectrum.js",
-"lineCount":75,
-"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Basic/src/main/royale",
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;AAsDkB,mDAAhB,WAA6BA,CAAC,C,CAC9B,C;+EACQ,C;EACP,KAAA,KAAK,CAAC,gBAAgB,CAAC,wBAAwB,E,yCAAE,K,+CAAkB,CAAC,C;AACrE,C;;;;;;;;;;;;;AA+CgB,8DAAA,kBAAhB,WAAkCC,CAAC,KAAW,C,CAC9C,C;EACC,KAAA,aAAa,CAAC,IAAI,8BAAK,CAAO,+BAAA,MAAM,CAAC,CAAC,C;AACvC,C;;;;;;;;;;;uFAzC6BC,CAAC,C,CAC9B,C;EACC,OAAO,oCAAoB,KAAA,KAApB,EAAA,0CAAA,OAA0B,CAAC,SAAS,C;AAC5C,C;;;uFAS6BA,CAAC,KAAY,C,CAC1C,C;EACC,oCAAoB,KAAA,KAApB,EAAA,0CAAA,OAA0B,CAAC,SAAS,GAAG,KAAK,C;AAC7C,C;;;;;;;;;;;8FAUoCC,CAAC,C,CACrC,C;EACC,OAAO,oCAAoB,KAAA,KAApB,EAAA,0CAAA,OAA0B,CAAC,gBAAgB,CAAA;",
-"sources":["org/apache/royale/html/supportClasses/ColorSpectrum.as"],
-"names":["ColorSpectrum.ColorSpectrum","ColorSpectrum.colorChangeHandler","ColorSpectrum.baseColor","ColorSpectrum.hsvModifiedColor"]
-}

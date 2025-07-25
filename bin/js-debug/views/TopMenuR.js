@@ -8,30 +8,18 @@
  */
 
 goog.provide('views.TopMenuR');
-/* Royale Dependency List: org.apache.royale.jewel.beads.controls.drawer.ResponsiveDrawer,org.apache.royale.jewel.supportClasses.drawer.DrawerContent,com.unhurdle.spectrum.ActionMenu,com.event.DsEvent,com.model.Config,com.model.ServiceLoader,com.unhurdle.spectrum.data.MenuItem,org.apache.royale.events.Event,XML*/
+/* Royale Dependency List: com.unhurdle.spectrum.ActionMenu,com.event.DsEvent,com.model.Config,com.model.ServiceLoader,com.unhurdle.spectrum.data.MenuItem,org.apache.royale.events.Event,XML*/
 
-goog.require('org.apache.royale.jewel.Drawer');
+goog.require('org.apache.royale.jewel.Container');
 
 
 
 /**
  * @constructor
- * @extends {org.apache.royale.jewel.Drawer}
+ * @extends {org.apache.royale.jewel.Container}
  */
 views.TopMenuR = function() {
   views.TopMenuR.base(this, 'constructor');
-  
-  /**
-   * @private
-   * @type {org.apache.royale.jewel.beads.controls.drawer.ResponsiveDrawer}
-   */
-  this.$ID_12_0;
-  
-  /**
-   * @private
-   * @type {org.apache.royale.jewel.supportClasses.drawer.DrawerContent}
-   */
-  this.$ID_12_2;
   
   /**
    * @private
@@ -53,32 +41,20 @@ views.TopMenuR = function() {
 
   this.generateMXMLAttributes([
     2,
-    'style',
+    'width',
     true,
-    'background:transparent; border: none;',
-    'beads',
-    null,
-    [
-      org.apache.royale.jewel.beads.controls.drawer.ResponsiveDrawer,
-      2,
-      '_id',
-      true,
-      '$ID_12_0',
-      'auto',
-      true,
-      true,
-      0,
-      0,
-      null
-    ],
+    100,
+    'percentHeight',
+    true,
+    100.0,
     0,
     1,
     'initComplete',
-    this.$EH_12_0
+    this.$EH_11_0
   ]);
   
 };
-goog.inherits(views.TopMenuR, org.apache.royale.jewel.Drawer);
+goog.inherits(views.TopMenuR, org.apache.royale.jewel.Container);
 
 
 
@@ -210,7 +186,7 @@ set: views.TopMenuR.set__menuSelectedIndex}}
  * @export
  * @param {org.apache.royale.events.Event} event
  */
-views.TopMenuR.prototype.$EH_12_0 = function(event)
+views.TopMenuR.prototype.$EH_11_0 = function(event)
 {
   this.views_TopMenuR_init();
 };
@@ -220,7 +196,7 @@ views.TopMenuR.prototype.$EH_12_0 = function(event)
  * @export
  * @param {org.apache.royale.events.Event} event
  */
-views.TopMenuR.prototype.$EH_12_1 = function(event)
+views.TopMenuR.prototype.$EH_11_1 = function(event)
 {
   this.views_TopMenuR_handleChangeEvent();
 };
@@ -249,31 +225,22 @@ Object.defineProperties(views.TopMenuR.prototype, /** @lends {views.TopMenuR.pro
         var arr = views.TopMenuR.superClass_.get__MXMLDescriptor.apply(this);
         /** @type {Array} */
         var mxmldd = [
-          org.apache.royale.jewel.supportClasses.drawer.DrawerContent,
-          1,
+          com.unhurdle.spectrum.ActionMenu,
+          3,
           '_id',
           true,
-          '$ID_12_2',
+          'menuR',
+          'text',
+          true,
+          'R',
+          'quiet',
+          true,
+          true,
           0,
-          0,
-          [
-            com.unhurdle.spectrum.ActionMenu,
-            3,
-            '_id',
-            true,
-            'menuR',
-            'text',
-            true,
-            'R',
-            'quiet',
-            true,
-            true,
-            0,
-            1,
-            'change',
-            this.$EH_12_1,
-            null
-          ]
+          1,
+          'change',
+          this.$EH_11_1,
+          null
         ];
         if (arr)
           this.mxmldd = arr.concat(mxmldd);

@@ -26,6 +26,8 @@
   }
 .actionHgroup{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 4px;
+  min-width: 320px;
   }
 .accSectionHeader{
   color: red;
@@ -245,6 +247,10 @@
   padding-top: 20px;
 }
 
+.shoptingProductList{
+  padding: 10px;
+  padding-bottom: 40px;
+}
 .shoppingItem{
   align-items: center;
   border: solid 1px lightgray;

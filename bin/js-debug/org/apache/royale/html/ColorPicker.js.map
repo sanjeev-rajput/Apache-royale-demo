@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ColorPicker.js",
-"lineCount":49,
-"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Basic/src/main/royale",
-"mappings":"A;;;;;;;;;;;;;;;;;;;;AA2CkB,kCAAhB,WAA2BA,CAAC,C,CAC5B,C;8DACQ,C;EAEE,KAAA,SAAS,GAAG,aAAa,C;AACnC,C;;;;;;;;AANY,6CAAAC,yC,IAAW,C;;;;;;;;;;;kEASEC,CAAC,C,CAC1B,C;EACC,OAAa,oCAAL,KAAA,KAAK,EAAI,kCAAJ,CAAe,CAAE,KAAK,C;AACpC,C;;;kEAEyBA,CAAC,KAAY,C,CACtC,C;EACO,oCAAL,KAAA,KAAK,EAAI,kCAAJ,CAAe,CAAE,KAAK,GAAG,KAAK,CAAA;",
-"sources":["org/apache/royale/html/ColorPicker.as"],
-"names":["ColorPicker.ColorPicker","_color","ColorPicker.color"]
-}

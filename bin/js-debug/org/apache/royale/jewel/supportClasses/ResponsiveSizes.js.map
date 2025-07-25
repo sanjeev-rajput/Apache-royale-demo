@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ResponsiveSizes.js",
-"lineCount":105,
-"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Jewel/src/main/royale",
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;AA2DkB,sDAAhB,WAA+BA,CAAC,C;;;;;;;;;AApBN,uDAAA,KAAY,GAAG,OAAO,C;;;;;;;;AAC5B,uDAAA,MAAa,GAAG,QAAQ,C;;;;;;;;AACxB,uDAAA,OAAc,GAAG,SAAS,C;;;;;;;;AAC1B,uDAAA,UAAiB,GAAG,YAAY,C;;;;;;;;AAChC,uDAAA,IAAW,GAAG,MAAM,C;;;;;;;;AAEd,uDAAA,gBAAuB,GAAG,CAAC,C;;;;;;;;AACjC,uDAAA,iBAAwB,GAAG,GAAG,C;;;;;;;;AAC9B,uDAAA,kBAAyB,GAAG,GAAG,C;;;;;;;;AAC/B,uDAAA,qBAA4B,GAAG,IAAI,C;;;;;;;;AACnC,uDAAA,eAAsB,GAAG,IAAA;",
-"sources":["org/apache/royale/jewel/supportClasses/ResponsiveSizes.as"],
-"names":["ResponsiveSizes.ResponsiveSizes"]
-}
