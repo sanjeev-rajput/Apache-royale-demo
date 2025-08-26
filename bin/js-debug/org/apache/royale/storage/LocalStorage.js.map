@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"LocalStorage.js",
+"lineCount":134,
+"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Storage/src/main/royale",
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;AAoDiB,sCAAhB,WAA4BA,CAAC,C,CAC7B,C;EACC,KAAAC,sDAAe,GAAiE,oCAAhD,qCAAA,UAAU,CAAC,WAAW,CAAC,IAAI,EAAE,kBAAkB,CAAC,EAAI,qCAAJ,CAAe,C;AAChG,C;;;;;;;AAKY,iDAAAA,sDAA2B,C;;;;;;;;;;;;;AAWvB,iDAAA,gBAAhB,WAAgCC,CAAC,C,CACjC,C;EACC,OAAO,KAAAD,sDAAe,CAAC,gBAAgB,CAAC,CAAC,C;AAC1C,C;;;;;;;;;;;;;;;AAWgB,iDAAA,OAAhB,WAAuBE,CAAC,GAAU,EAAE,KAAY,C,CAChD,C;EAGC,IAAiB,sBAAb,aAAoB,GAAG,KAAK,CAAC,QAAQ,CAAC,CAAC,C;EAC3C,OAAO,KAAAF,sDAAe,CAAC,OAAO,CAAC,GAAG,EAAE,aAAa,CAAC,C;AACnD,C;;;;;;;;;;;;;;;;AAagB,iDAAA,OAAhB,WAAuBG,CAAC,GAAU,C,CAClC,C;EACC,IAAS,sBAAL,KAAY,GAAG,KAAAH,sDAAe,CAAC,OAAO,CAAC,GAAG,CAAC,C;EAG/C,OAAO,KAAK,C;AACb,C;;;;;;;;;;;;;;;;AAagB,iDAAA,UAAhB,WAA0BI,CAAC,GAAU,C,CACrC,C;EACC,OAAO,KAAAJ,sDAAe,CAAC,UAAU,CAAC,GAAG,CAAC,C;AACvC,C;;;;;;;;;;;;;;AAWgB,iDAAA,OAAhB,WAAuBK,CAAC,GAAU,C,CAClC,C;EACC,OAAO,KAAAL,sDAAe,CAAC,OAAO,CAAC,GAAG,CAAC,C;AACpC,C;;;;;;;;;;;;AAWgB,iDAAA,KAAhB,WAAqBM,CAAC,C,CACtB,C;EACC,KAAAN,sDAAe,CAAC,KAAK,CAAC,CAAC,CAAA;",
+"sources":["org/apache/royale/storage/LocalStorage.as"],
+"names":["LocalStorage.LocalStorage","storageProvider","LocalStorage.storageAvailable","LocalStorage.setItem","LocalStorage.getItem","LocalStorage.removeItem","LocalStorage.hasItem","LocalStorage.clear"]
+}

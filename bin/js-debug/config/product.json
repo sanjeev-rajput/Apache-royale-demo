@@ -4,162 +4,145 @@
       "label": "Fetch Data - local",
       "type": "disabled",
       "url": "NA",
-      "addx":"NA",
-      "pid":"p1"
+      "addx":"NA"
     },
     {
       "label": "Data & Pagination - 1",
       "type": "toc",
       "url": "toc-dr-1.csv",
-      "addx":"NA",
-      "pid":"p2"
+      "addx":"NA"
     },
     {
       "label": "Data & Pagination - 2",
       "type": "toc",
       "url": "toc-dr-2.csv",
-      "addx":"showpgtools",
-      "pid":"p3"
+      "addx":"showpgtools"
     },
     {
       "label": "",
       "type": "divider",
       "url": "NA",
-      "addx":"NA",
-      "pid":"p3"
+      "addx":"NA"
     },
     {
       "label": "Fetch Data - 3rd party",
       "type": "disabled",
       "url": "NA",
-      "addx":"NA",
-      "pid":"p3"
+      "addx":"NA"
     },
     {
       "label": "Load & Filter Data",
       "type": "extui",
       "url": "NA",
-      "addx":"NA",
-      "pid":"p4"
+      "addx":"NA"
     },
     {
       "label": "",
       "type": "divider",
       "url": "NA",
-      "addx":"NA",
-      "pid":"p5"
+      "addx":"NA"
     },
     {
       "label": "Static interactivity",
       "type": "disabled",
       "url": "NA",
-      "addx":"NA",
-      "pid":"p6"
+      "addx":"NA"
     },
     {
       "label": "Basic Drawing",
       "type": "extui",
       "url": "na",
-      "addx":"NA",
-      "pid":"p6"
+      "addx":"NA"
     },
     {
       "label": "Fun n Game",
       "type": "extui",
       "url": "na",
-      "addx":"NA",
-      "pid":"p7"
+      "addx":"NA"
     },
     {
       "label": "Shopping Cart",
       "type": "extui",
       "url": "na",
-      "addx":"NA",
-      "pid":"p8"
+      "addx":"NA"
     },
     {
       "label": "",
       "type": "divider",
       "url": "NA",
-      "addx":"NA",
-      "pid":"p9"
+      "addx":"NA"
     },
     {
       "label": "Web socket",
       "type": "disabled",
       "url": "NA",
-      "addx":"NA",
-      "pid":"p10"
+      "addx":"NA"
     },
     {
       "label": "Collaborative Chat",
       "type": "extui",
       "url": "na",
-      "addx":"NA",
-      "pid":"p11"
+      "addx":"NA"
     },
     {
       "label": "Wiki Live Streams",
       "type": "extui",
       "url": "na",
-      "addx":"NA",
-      "pid":"p12"
+      "addx":"NA"
     },
     {
       "label": "Live Stock",
       "type": "extui",
       "url": "na",
-      "addx":"NA",
-      "pid":"p12"
+      "addx":"NA"
     },
     {
       "label": "Pexels Video Streams",
       "type": "extui",
       "url": "na",
-      "addx":"NA",
-      "pid":"p13"
+      "addx":"NA"
     },
     {
       "label": "",
       "type": "divider",
       "url": "NA",
-      "addx":"NA",
-      "pid":"p14"
+      "addx":"NA"
+    },
+    {
+      "label": "Utils",
+      "type": "disabled",
+      "url": "NA",
+      "addx":"NA"
     },
     {
       "label": "React & Royale",
       "type": "extui",
       "url": "na",
-      "addx":"NA",
-      "pid":"p15"
+      "addx":"NA"
     },
     {
       "label": "",
       "type": "divider",
       "url": "NA",
-      "addx":"NA",
-      "pid":"p16"
+      "addx":"NA"
     },
     {
       "label": "AI - Chatbots",
       "type": "extui",
       "url": "na",
-      "addx":"NA",
-      "pid":"p15"
+      "addx":"NA"
     },
     {
       "label": "",
       "type": "divider",
       "url": "NA",
-      "addx":"NA",
-      "pid":"p16"
+      "addx":"NA"
     },
     {
       "label": "CLEAN UI",
       "type": "clean",
       "url": "NA",
-      "addx":"NA",
-      "pid":"p17"
+      "addx":"NA"
     }
   ],
   "config":[

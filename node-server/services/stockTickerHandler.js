@@ -17,7 +17,7 @@ function getRandomSubset(arr, n) {
 }
 
 // ✅ Send periodic updates to all subscribed clients
-setInterval(() => {
+/*setInterval(() => {
   for (const [ws, info] of listeners) {
     if (!info.subscribed || ws.readyState !== ws.OPEN) continue;
 
@@ -41,7 +41,47 @@ setInterval(() => {
       payload
     }));
   }
-}, 1000);
+}, 1000);*/
+
+
+
+function scheduleStockUpdates() {
+  const delay = Math.floor(Math.random() * (1000 - 5 + 1)) + 5; // 5–1000 ms
+
+  setTimeout(() => {
+    for (const [ws, info] of listeners) {
+      if (!info.subscribed || ws.readyState !== ws.OPEN) continue;
+
+      const clientSymbols = symbolMap.get(ws);
+      if (!clientSymbols || clientSymbols.length === 0) continue;
+
+      const countToUpdate = Math.floor(Math.random() * 6) + 5; // 5–10 updates
+      const randomSymbols = getRandomSubset(clientSymbols, countToUpdate);
+
+      const payload = randomSymbols.map(symbol => {
+        stockPrices[symbol] = randomWalk(stockPrices[symbol] || 100);
+        return {
+          symbol,
+          price: +stockPrices[symbol].toFixed(2),
+          timestamp: new Date().toISOString()
+        };
+      });
+
+      ws.send(JSON.stringify({
+        type: 'stock_update',
+        payload
+      }));
+    }
+
+    // 🔁 reschedule with a new random delay
+    scheduleStockUpdates();
+
+  }, delay);
+}
+
+// 🚀 start random updates
+scheduleStockUpdates();
+
 
 // ✅ WebSocket message handler
 export function setupStockTickerHandler(ws) {

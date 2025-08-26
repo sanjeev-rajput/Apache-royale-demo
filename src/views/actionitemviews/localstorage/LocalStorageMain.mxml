@@ -1,0 +1,47 @@
+<j:VGroup xmlns:fx="http://ns.adobe.com/mxml/2009"
+    xmlns:j="library://ns.apache.org/royale/jewel"
+    xmlns:sp="library://ns.unhurdle.com/spectrum"
+    initComplete="init()" height="100%" width="100%">
+    
+
+    <fx:Script>
+        <![CDATA[
+            import org.apache.royale.storage.LocalStorage;
+            import org.apache.royale.collections.ArrayList;
+            import org.apache.royale.collections.ArrayList;
+
+            private var _lso:LocalStorage = new LocalStorage()
+            private const ROYALE_LS:String = "RoyaleUsaserInfo";
+            private var _lsObj:ArrayList = new ArrayList();
+            private function init():void {
+                if(_lso.hasItem(ROYALE_LS)){
+                    var obj:Object = _lso.getItem(ROYALE_LS);
+                    console.log(_lso.getItem(ROYALE_LS), obj, obj.usr, obj.age);
+
+
+                }
+            }
+
+            private function addLsObject():void {
+                var obj:Object = new Object();
+                obj.usr = usr.text;
+                obj.age = age.text;
+                _lsObj.addItem(obj);
+                _lso.setItem(ROYALE_LS, obj)
+            }
+        ]]>
+    </fx:Script>
+    <j:HGroup height="40" width="100%" itemsHorizontalAlign="itemsCenter" itemsVerticalAlign="itemsCenter">
+        <j:Image src="assets/icons/user-128.svg" height="20" width="20"/>
+        <sp:TextField localId="usr" placeholder="Name" restrict="A-Z, a-z"/>
+        <sp:TextField localId="age" placeholder="Age" restrict="0-9"/>
+        <j:IconButton click="addLsObject()">
+            <j:icon>
+                <j:ImageIcon src="assets/icons/add-user.svg"/>
+            </j:icon>
+        </j:IconButton>
+    </j:HGroup>
+    <j:VGroup localId="ctrLsItem">
+    </j:VGroup>
+
+</j:VGroup>

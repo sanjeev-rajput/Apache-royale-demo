@@ -26,6 +26,7 @@
             import views.actionitemviews.pexels.PexelVideoStreamMain;
             
             import views.actionitemviews.reactandroyale.ReactAndRoyale;
+            import views.actionitemviews.localstorage.LocalStorageMain;
             private var mgmtObj:Array = new Array();
                         
             private function initComplete():void {
@@ -117,6 +118,11 @@
                 }
                 if(compName == 'React & Royale'){
                     uiComp = new ReactAndRoyale();
+                    vg.addElement(uiComp);
+                    return;
+                }
+                if(compName == 'Local Storage'){
+                    uiComp = new LocalStorageMain();
                     vg.addElement(uiComp);
                     return;
                 }
