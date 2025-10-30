@@ -197,7 +197,11 @@ views.actionitemviews.websocket.SocketService.prototype.views_actionitemviews_we
  * @param {*} e
  */
 views.actionitemviews.websocket.SocketService.prototype.views_actionitemviews_websocket_SocketService_connectionErrorEvtHandler = function(e) {
-  com.util.AppAlert.show(com.util.AppAlert.ERROR, 'WebSocket error: <br>' + e);
+  com.util.AppAlert.show(com.util.AppAlert.ERROR, 'WebSocket error: <br>' + e["message"]);
+  views.actionitemviews.websocket.SocketService._isFirstConnect = true;
+  this.views_actionitemviews_websocket_SocketService__isConnected = false;
+  com.util.ServerColdStartManager.reset();
+  this.views_actionitemviews_websocket_SocketService__callBackFunction({"type":"error", "message":e["message"]});
 };
 
 
@@ -208,7 +212,6 @@ views.actionitemviews.websocket.SocketService.prototype.sendToSocket = function(
   if (this.views_actionitemviews_websocket_SocketService_ws && this.views_actionitemviews_websocket_SocketService_ws.readyState == 1) {
     this.views_actionitemviews_websocket_SocketService_ws.send(JSON.stringify(obj));
   } else {
-    com.util.AppAlert.show(com.util.AppAlert.ERROR, "WebSocket is not open. Cannot send message.");
   }
 };
 

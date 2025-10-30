@@ -239,6 +239,11 @@ views.actionitemviews.stockSocket.StockSocketMain.prototype.views_actionitemview
     }}
     
   }
+  if (data["type"] == "error") {
+    this.views_actionitemviews_stockSocket_StockSocketMain__actionStat = false;
+    var /** @type {com.unhurdle.spectrum.Switch} */ sw = this["switchBtn" + this.views_actionitemviews_stockSocket_StockSocketMain__recordSets];
+    sw.checked = false;
+  }
 };
 
 

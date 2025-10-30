@@ -90,7 +90,11 @@ package views.actionitemviews.websocket
         }
 
         private function connectionErrorEvtHandler(e:*):void {
-            AppAlert.show(AppAlert.ERROR, 'WebSocket error: <br>' +  e);
+            AppAlert.show(AppAlert.ERROR, 'WebSocket error: <br>' +  e.message);
+            _isFirstConnect = true;
+            _isConnected = false;
+            ServerColdStartManager.reset();
+            _callBackFunction({type: "error", message: e.message});
         }
 
         public function get connected():Boolean {
@@ -107,7 +111,7 @@ package views.actionitemviews.websocket
             if (ws && ws.readyState == 1) {
                 ws.send(JSON.stringify(obj));
             } else {
-                AppAlert.show(AppAlert.ERROR, "WebSocket is not open. Cannot send message.");
+                //AppAlert.show(AppAlert.ERROR, "WebSocket is not open. Cannot send message.");
                 // Optional: Retry later or queue the message
             }
         }

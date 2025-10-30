@@ -145,6 +145,7 @@
                         if(i is Game) Game(i).disposeMe();
                         if(i is StockSocketMain) StockSocketMain(i).disposeMe();
                         if(i is CollaborationMain) CollaborationMain(i).disposeMe();
+                        if(i is WikiSocketMain) WikiSocketMain(i).disposeMe();
                         //if(i is pexelsVideoStream) pexelsVideoStream(i).disposeMe();
                     }
                     mgmtObj = new Array();

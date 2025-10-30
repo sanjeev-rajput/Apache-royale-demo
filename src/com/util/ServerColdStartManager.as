@@ -48,5 +48,17 @@ package com.util {
                 timer = null;
             }
         }
+
+        public static function reset():void {
+            isNodeStarted = false;
+            if (toast) {
+                toast.hide();
+                toast = null;
+            }
+            if (timer) {
+                timer.stop();
+                timer = null;
+            }
+        }
     }
 }

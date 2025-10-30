@@ -109,6 +109,22 @@ com.util.ServerColdStartManager.stopCountdown = function() {
 
 
 /**
+ * @nocollapse
+ */
+com.util.ServerColdStartManager.reset = function() {
+  com.util.ServerColdStartManager.isNodeStarted = false;
+  if (com.util.ServerColdStartManager.toast) {
+    com.util.ServerColdStartManager.toast.hide();
+    com.util.ServerColdStartManager.toast = null;
+  }
+  if (com.util.ServerColdStartManager.timer) {
+    com.util.ServerColdStartManager.timer.stop();
+    com.util.ServerColdStartManager.timer = null;
+  }
+};
+
+
+/**
  * Metadata
  *
  * @type {Object.<string, Array.<Object>>}
@@ -127,7 +143,8 @@ com.util.ServerColdStartManager.prototype.ROYALE_REFLECTION_INFO = function () {
     methods: function () {
       return {
         '|showWakeUpMessage': { type: 'void', declaredBy: 'com.util.ServerColdStartManager'},
-        '|showConnectedMessage': { type: 'void', declaredBy: 'com.util.ServerColdStartManager'}
+        '|showConnectedMessage': { type: 'void', declaredBy: 'com.util.ServerColdStartManager'},
+        '|reset': { type: 'void', declaredBy: 'com.util.ServerColdStartManager'}
       };
     }
   };

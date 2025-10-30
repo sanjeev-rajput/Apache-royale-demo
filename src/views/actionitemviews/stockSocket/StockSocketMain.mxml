@@ -42,6 +42,11 @@
                         checkAndAddStockItem(item);
                     }
                 }
+                if(data.type == "error"){
+                    _actionStat = false;
+                    var sw:Switch = this["switchBtn"+_recordSets] as Switch;
+                    sw.checked = false;
+                }
             }
 
             private function checkAndAddStockItem(d:Object):void {

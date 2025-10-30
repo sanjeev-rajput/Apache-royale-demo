@@ -8,7 +8,6 @@
         <![CDATA[
             import views.actionitemviews.websocket.SocketService;
             import views.actionitemviews.websocket.SocketEventUi;
-            import com.util.AsJsUtil;
 
             private var _socketService:SocketService;
             private var _maxItems:int = 100;
@@ -22,13 +21,16 @@
             private function switchEventHandler():void {
                 if(switchBtn.checked) {
                     _socketService.connectWebSocket(SocketService.SUBSCRIBE_WIKI)
-                    
                 } else {
                     _socketService.disconnectWebSocket();
                 }
             }
 
             private function onSocketData(data:Object):void {
+                if(data.type == "error"){
+                    switchBtn.checked = false;
+                    return;
+                }
                 var changeData:Object = data//JSON.parse(data);
                 var eventUi:SocketEventUi = new SocketEventUi();
                 eventUi.id = "eventUi" + counter++;
@@ -39,6 +41,10 @@
                     ctr.removeElement(ctr.getElementAt(ctr.numElements - 1));
                 }
                 ctr.element.scrollTop = ctr.element.scrollHeight; // Auto-scroll to the bottom
+            }
+            
+            public function disposeMe():void {
+                _socketService.disconnectWebSocket();
             }
 
         ]]>

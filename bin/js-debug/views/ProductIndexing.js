@@ -257,6 +257,8 @@ views.ProductIndexing.prototype.views_ProductIndexing_clearUi = function() {
         org.apache.royale.utils.Language.as(i, views.actionitemviews.stockSocket.StockSocketMain, true).disposeMe();
       if (org.apache.royale.utils.Language.is(i, views.actionitemviews.collaboration.CollaborationMain))
         org.apache.royale.utils.Language.as(i, views.actionitemviews.collaboration.CollaborationMain, true).disposeMe();
+      if (org.apache.royale.utils.Language.is(i, views.actionitemviews.websocket.WikiSocketMain))
+        org.apache.royale.utils.Language.as(i, views.actionitemviews.websocket.WikiSocketMain, true).disposeMe();
     }}
     
     this.views_ProductIndexing_mgmtObj = new Array();

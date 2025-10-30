@@ -226,13 +226,16 @@ Object.defineProperties(views.TopMenuR.prototype, /** @lends {views.TopMenuR.pro
         /** @type {Array} */
         var mxmldd = [
           com.unhurdle.spectrum.ActionMenu,
-          3,
+          4,
           '_id',
           true,
           'menuR',
           'text',
           true,
           'R',
+          'alignRight',
+          true,
+          true,
           'quiet',
           true,
           true,

@@ -3,7 +3,7 @@
              xmlns:sp="library://ns.unhurdle.com/spectrum"
              width="100" height="100%" initComplete="init()">
 
-    <sp:ActionMenu text="R" localId="menuR" quiet="true" change="handleChangeEvent()"/>
+    <sp:ActionMenu text="R" alignRight="true" localId="menuR" quiet="true" change="handleChangeEvent()"/>
 
     <fx:Script>
         <![CDATA[

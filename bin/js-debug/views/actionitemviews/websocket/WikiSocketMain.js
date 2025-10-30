@@ -121,6 +121,10 @@ views.actionitemviews.websocket.WikiSocketMain.prototype.views_actionitemviews_w
  * @param {Object} data
  */
 views.actionitemviews.websocket.WikiSocketMain.prototype.views_actionitemviews_websocket_WikiSocketMain_onSocketData = function(data) {
+  if (data["type"] == "error") {
+    this.switchBtn.checked = false;
+    return;
+  }
   var /** @type {Object} */ changeData = data;
   var /** @type {views.actionitemviews.websocket.SocketEventUi} */ eventUi = new views.actionitemviews.websocket.SocketEventUi();
   eventUi.id = "eventUi" + this.views_actionitemviews_websocket_WikiSocketMain_counter++;
@@ -130,6 +134,13 @@ views.actionitemviews.websocket.WikiSocketMain.prototype.views_actionitemviews_w
     this.ctr.removeElement(this.ctr.getElementAt((this.ctr.numElements - 1) >> 0));
   }
   this.ctr.element.scrollTop = this.ctr.element.scrollHeight;
+};
+
+
+/**
+ */
+views.actionitemviews.websocket.WikiSocketMain.prototype.disposeMe = function() {
+  this.views_actionitemviews_websocket_WikiSocketMain__socketService.disconnectWebSocket();
 };
 
 
@@ -285,6 +296,7 @@ views.actionitemviews.websocket.WikiSocketMain.prototype.ROYALE_REFLECTION_INFO 
     },
     methods: function () {
       return {
+        'disposeMe': { type: 'void', declaredBy: 'views.actionitemviews.websocket.WikiSocketMain'},
         'WikiSocketMain': { type: '', declaredBy: 'views.actionitemviews.websocket.WikiSocketMain'}
       };
     }
