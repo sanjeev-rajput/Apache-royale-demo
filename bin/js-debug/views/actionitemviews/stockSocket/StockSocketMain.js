@@ -8,9 +8,11 @@
  */
 
 goog.provide('views.actionitemviews.stockSocket.StockSocketMain');
-/* Royale Dependency List: org.apache.royale.binding.ContainerDataBinding,org.apache.royale.jewel.HGroup,com.unhurdle.spectrum.Radio,com.unhurdle.spectrum.VDivider,com.unhurdle.spectrum.Switch,org.apache.royale.jewel.supportClasses.scrollbar.ScrollingViewport,org.apache.royale.jewel.Group,org.apache.royale.jewel.beads.layouts.TileHorizontalLayout,com.event.DsEvent,com.util.DictionaryUtil,org.apache.royale.events.Event,org.apache.royale.events.MouseEvent,org.apache.royale.events.ValueChangeEvent,views.actionitemviews.stockSocket.StockItemG,views.actionitemviews.stockSocket.StockItemT,views.actionitemviews.websocket.SocketService,org.apache.royale.core.IChild,XML*/
+/* Royale Dependency List: org.apache.royale.binding.ContainerDataBinding,org.apache.royale.jewel.HGroup,com.unhurdle.spectrum.Radio,com.unhurdle.spectrum.Picker,com.unhurdle.spectrum.data.MenuItem,org.apache.royale.jewel.Spacer,com.unhurdle.spectrum.Switch,com.unhurdle.spectrum.TooltipBead,org.apache.royale.jewel.ToggleButton,org.apache.royale.icons.MaterialToggleIcon,org.apache.royale.jewel.beads.controls.ToolTip,org.apache.royale.jewel.supportClasses.scrollbar.ScrollingViewport,org.apache.royale.jewel.Group,org.apache.royale.jewel.beads.layouts.TileHorizontalLayout,com.event.DsEvent,com.util.DictionaryUtil,org.apache.royale.events.Event,org.apache.royale.events.MouseEvent,org.apache.royale.events.ValueChangeEvent,views.actionitemviews.stockSocket.StockItemG,views.actionitemviews.stockSocket.StockItemT,views.actionitemviews.websocket.SocketService,org.apache.royale.core.IChild,XML*/
+/* Royale Static Dependency List: MaterialIconType*/
 
 goog.require('org.apache.royale.jewel.VGroup');
+goog.require('MaterialIconType');
 
 
 
@@ -33,7 +35,7 @@ views.actionitemviews.stockSocket.StockSocketMain = function() {
    * @private
    * @type {org.apache.royale.jewel.HGroup}
    */
-  this.$ID_13_3;
+  this.$ID_13_6;
   
   /**
    * @private
@@ -49,7 +51,31 @@ views.actionitemviews.stockSocket.StockSocketMain = function() {
   
   /**
    * @private
-   * @type {com.unhurdle.spectrum.VDivider}
+   * @type {com.unhurdle.spectrum.Picker}
+   */
+  this.dataSetPicker_;
+  
+  /**
+   * @private
+   * @type {com.unhurdle.spectrum.data.MenuItem}
+   */
+  this.switchBtn100_;
+  
+  /**
+   * @private
+   * @type {com.unhurdle.spectrum.data.MenuItem}
+   */
+  this.switchBtn500_;
+  
+  /**
+   * @private
+   * @type {com.unhurdle.spectrum.data.MenuItem}
+   */
+  this.switchBtn1000_;
+  
+  /**
+   * @private
+   * @type {org.apache.royale.jewel.Spacer}
    */
   this.$ID_13_1;
   
@@ -57,31 +83,31 @@ views.actionitemviews.stockSocket.StockSocketMain = function() {
    * @private
    * @type {com.unhurdle.spectrum.Switch}
    */
-  this.switchBtn100_;
+  this.switchHistoryOnOff_;
   
   /**
    * @private
-   * @type {com.unhurdle.spectrum.Switch}
-   */
-  this.switchBtn500_;
-  
-  /**
-   * @private
-   * @type {com.unhurdle.spectrum.Switch}
-   */
-  this.switchBtn1000_;
-  
-  /**
-   * @private
-   * @type {com.unhurdle.spectrum.VDivider}
+   * @type {com.unhurdle.spectrum.TooltipBead}
    */
   this.$ID_13_2;
   
   /**
    * @private
-   * @type {com.unhurdle.spectrum.Switch}
+   * @type {org.apache.royale.jewel.ToggleButton}
    */
-  this.switchHistoryOnOff_;
+  this.$ID_13_5;
+  
+  /**
+   * @private
+   * @type {org.apache.royale.icons.MaterialToggleIcon}
+   */
+  this.$ID_13_3;
+  
+  /**
+   * @private
+   * @type {org.apache.royale.jewel.beads.controls.ToolTip}
+   */
+  this.$ID_13_4;
   
   /**
    * @private
@@ -93,7 +119,7 @@ views.actionitemviews.stockSocket.StockSocketMain = function() {
    * @private
    * @type {org.apache.royale.jewel.supportClasses.scrollbar.ScrollingViewport}
    */
-  this.$ID_13_4;
+  this.$ID_13_7;
   
   /**
    * @private
@@ -111,7 +137,7 @@ views.actionitemviews.stockSocket.StockSocketMain = function() {
    * @private
    * @type {org.apache.royale.jewel.supportClasses.scrollbar.ScrollingViewport}
    */
-  this.$ID_13_6;
+  this.$ID_13_9;
   
   /**
    * @private
@@ -270,27 +296,40 @@ views.actionitemviews.stockSocket.StockSocketMain.prototype.views_actionitemview
  * @private
  * @param {org.apache.royale.events.Event} e
  */
-views.actionitemviews.stockSocket.StockSocketMain.prototype.views_actionitemviews_stockSocket_StockSocketMain_switchEventHandler = function(e) {
-  var /** @type {com.unhurdle.spectrum.Switch} */ btn = org.apache.royale.utils.Language.as(e.target, com.unhurdle.spectrum.Switch, true);
-  if (btn == this.switchHistoryOnOff) {
-    com.event.DsEvent.instance.dispatch(com.event.DsEvent.HISTORIC_DATA, btn.checked);
-    console.log("disp[atching event");
-    return;
-  }
-  else if (btn == this.switchBtn100)
+views.actionitemviews.stockSocket.StockSocketMain.prototype.views_actionitemviews_stockSocket_StockSocketMain_dataPickerChangeHandler = function(e) {
+  var /** @type {com.unhurdle.spectrum.data.MenuItem} */ btn = org.apache.royale.utils.Language.as(e.target, com.unhurdle.spectrum.data.MenuItem, true);
+  if (btn == this.switchBtn100)
     this.views_actionitemviews_stockSocket_StockSocketMain__recordSets = 100;
-  else if (btn == this.switchBtn500)
+  if (btn == this.switchBtn500)
     this.views_actionitemviews_stockSocket_StockSocketMain__recordSets = 500;
-  else if (btn == this.switchBtn1000)
+  if (btn == this.switchBtn1000)
     this.views_actionitemviews_stockSocket_StockSocketMain__recordSets = 1000;
-  this.views_actionitemviews_stockSocket_StockSocketMain__actionStat = btn.checked;
-  btn.disabled = false;
-  if (btn.checked) {
-    this.views_actionitemviews_stockSocket_StockSocketMain__socketItemCounter = 1;
-    this.views_actionitemviews_stockSocket_StockSocketMain_itemMap.clear();
+};
+
+
+/**
+ * @private
+ * @param {org.apache.royale.events.Event} e
+ */
+views.actionitemviews.stockSocket.StockSocketMain.prototype.views_actionitemviews_stockSocket_StockSocketMain_showHideHistoryData = function(e) {
+  com.event.DsEvent.instance.dispatch(com.event.DsEvent.HISTORIC_DATA, org.apache.royale.utils.Language.as(e.target, com.unhurdle.spectrum.Switch, true).checked);
+};
+
+
+/**
+ * @private
+ * @param {boolean} startIt
+ */
+views.actionitemviews.stockSocket.StockSocketMain.prototype.views_actionitemviews_stockSocket_StockSocketMain_startStopSocketConnection = function(startIt) {
+  if (startIt) {
+    this.views_actionitemviews_stockSocket_StockSocketMain_clearStockUI();
+    if (this.dataSetPicker.selectedIndex == -1)
+      this.dataSetPicker.selectedIndex = 0;
     this.views_actionitemviews_stockSocket_StockSocketMain__socketService.connectWebSocket(views.actionitemviews.websocket.SocketService.SUBSCRIBE_STOCK, {"length":this.views_actionitemviews_stockSocket_StockSocketMain__recordSets});
+    this.views_actionitemviews_stockSocket_StockSocketMain__actionStat = true;
   } else {
     this.views_actionitemviews_stockSocket_StockSocketMain__socketService.sendToSocket({"type":"unsubscribe_stock"});
+    this.views_actionitemviews_stockSocket_StockSocketMain__actionStat = false;
   }
 };
 
@@ -309,7 +348,17 @@ views.actionitemviews.stockSocket.StockSocketMain.prototype.views_actionitemview
   this.sTitemCtr.visible = (this.views_actionitemviews_stockSocket_StockSocketMain__layoutType == views.actionitemviews.stockSocket.StockSocketMain.TILE);
   this.switchHistoryOnOff.disabled = (newLayout == views.actionitemviews.stockSocket.StockSocketMain.TILE);
   this.switchHistoryOnOff.checked = false;
-  var /** @type {org.apache.royale.jewel.Group} */ clearContainer = (this.views_actionitemviews_stockSocket_StockSocketMain__layoutType == views.actionitemviews.stockSocket.StockSocketMain.GRID) ? this.sTitemCtr : this.sGitemCtr;
+  this.views_actionitemviews_stockSocket_StockSocketMain_clearStockUI();
+};
+
+
+/**
+ * @private
+ */
+views.actionitemviews.stockSocket.StockSocketMain.prototype.views_actionitemviews_stockSocket_StockSocketMain_clearStockUI = function() {
+  this.views_actionitemviews_stockSocket_StockSocketMain_itemMap.clear();
+  this.views_actionitemviews_stockSocket_StockSocketMain__socketItemCounter = 1;
+  var /** @type {org.apache.royale.jewel.Group} */ clearContainer = (this.views_actionitemviews_stockSocket_StockSocketMain__layoutType == views.actionitemviews.stockSocket.StockSocketMain.GRID) ? this.sGitemCtr : this.sTitemCtr;
   while (clearContainer.numElements) {
     clearContainer.removeElement(clearContainer.getElementAt(0));
   }
@@ -380,7 +429,7 @@ views.actionitemviews.stockSocket.StockSocketMain.prototype.$EH_13_2 = function(
  */
 views.actionitemviews.stockSocket.StockSocketMain.prototype.$EH_13_3 = function(event)
 {
-  this.views_actionitemviews_stockSocket_StockSocketMain_switchEventHandler(event);
+  this.views_actionitemviews_stockSocket_StockSocketMain_dataPickerChangeHandler(event);
 };
 
 
@@ -390,27 +439,17 @@ views.actionitemviews.stockSocket.StockSocketMain.prototype.$EH_13_3 = function(
  */
 views.actionitemviews.stockSocket.StockSocketMain.prototype.$EH_13_4 = function(event)
 {
-  this.views_actionitemviews_stockSocket_StockSocketMain_switchEventHandler(event);
+  this.views_actionitemviews_stockSocket_StockSocketMain_showHideHistoryData(event);
 };
 
 
 /**
  * @export
- * @param {org.apache.royale.events.Event} event
+ * @param {org.apache.royale.events.MouseEvent} event
  */
 views.actionitemviews.stockSocket.StockSocketMain.prototype.$EH_13_5 = function(event)
 {
-  this.views_actionitemviews_stockSocket_StockSocketMain_switchEventHandler(event);
-};
-
-
-/**
- * @export
- * @param {org.apache.royale.events.Event} event
- */
-views.actionitemviews.stockSocket.StockSocketMain.prototype.$EH_13_6 = function(event)
-{
-  this.views_actionitemviews_stockSocket_StockSocketMain_switchEventHandler(event);
+  this.views_actionitemviews_stockSocket_StockSocketMain_startStopSocketConnection(!this.views_actionitemviews_stockSocket_StockSocketMain__actionStat);
 };
 
 
@@ -438,6 +477,19 @@ Object.defineProperties(views.actionitemviews.stockSocket.StockSocketMain.protot
       if (value != this.tileV_) {
         this.tileV_ = value;
         this.dispatchEvent(org.apache.royale.events.ValueChangeEvent.createUpdateEvent(this, 'tileV', null, value));
+      }
+    }
+  },
+  dataSetPicker: {
+    /** @this {views.actionitemviews.stockSocket.StockSocketMain} */
+    get: function() {
+      return this.dataSetPicker_;
+    },
+    /** @this {views.actionitemviews.stockSocket.StockSocketMain} */
+    set: function(value) {
+      if (value != this.dataSetPicker_) {
+        this.dataSetPicker_ = value;
+        this.dispatchEvent(org.apache.royale.events.ValueChangeEvent.createUpdateEvent(this, 'dataSetPicker', null, value));
       }
     }
   },
@@ -545,7 +597,7 @@ Object.defineProperties(views.actionitemviews.stockSocket.StockSocketMain.protot
           5,
           '_id',
           true,
-          '$ID_13_3',
+          '$ID_13_6',
           'percentWidth',
           true,
           100.0,
@@ -571,7 +623,7 @@ Object.defineProperties(views.actionitemviews.stockSocket.StockSocketMain.protot
             'viewType',
             'text',
             true,
-            'Grid Layout',
+            'Grid',
             'checked',
             true,
             true,
@@ -590,91 +642,143 @@ Object.defineProperties(views.actionitemviews.stockSocket.StockSocketMain.protot
             'viewType',
             'text',
             true,
-            'Tile Layout',
+            'Tile',
             0,
             1,
             'click',
             this.$EH_13_2,
             null,
-            com.unhurdle.spectrum.VDivider,
-            2,
-            '_id',
-            true,
-            '$ID_13_1',
-            'size',
-            true,
-            'medium',
-            0,
-            0,
-            null,
-            com.unhurdle.spectrum.Switch,
-            2,
+            com.unhurdle.spectrum.Picker,
+            3,
             'id',
             true,
-            'switchBtn100',
-            'leftLabel',
+            'dataSetPicker',
+            'placeholder',
             true,
-            '100 Data Set',
+            'Select data set',
+            'dataProvider',
+            null,
+            [
+              com.unhurdle.spectrum.data.MenuItem,
+              2,
+              'id',
+              true,
+              'switchBtn100',
+              'text',
+              true,
+              '100 Data Set',
+              0,
+              0,
+              null,
+              com.unhurdle.spectrum.data.MenuItem,
+              2,
+              'id',
+              true,
+              'switchBtn500',
+              'text',
+              true,
+              '500 Data Set',
+              0,
+              0,
+              null,
+              com.unhurdle.spectrum.data.MenuItem,
+              2,
+              'id',
+              true,
+              'switchBtn1000',
+              'text',
+              true,
+              '1000 Data Set',
+              0,
+              0,
+              null
+            ],
             0,
             1,
             'change',
             this.$EH_13_3,
             null,
-            com.unhurdle.spectrum.Switch,
-            2,
-            'id',
-            true,
-            'switchBtn500',
-            'leftLabel',
-            true,
-            '500 Data Set',
-            0,
-            1,
-            'change',
-            this.$EH_13_4,
-            null,
-            com.unhurdle.spectrum.Switch,
-            2,
-            'id',
-            true,
-            'switchBtn1000',
-            'leftLabel',
-            true,
-            '1000 Data Set',
-            0,
-            1,
-            'change',
-            this.$EH_13_5,
-            null,
-            com.unhurdle.spectrum.VDivider,
+            org.apache.royale.jewel.Spacer,
             2,
             '_id',
             true,
-            '$ID_13_2',
-            'size',
+            '$ID_13_1',
+            'width',
             true,
-            'medium',
+            20,
             0,
             0,
             null,
             com.unhurdle.spectrum.Switch,
-            4,
+            5,
             'id',
             true,
             'switchHistoryOnOff',
             'offLabel',
             true,
-            'Data history off',
+            'off',
             'onLabel',
             true,
-            'Data history on',
+            'on ',
             'checked',
             true,
             false,
+            'beads',
+            null,
+            [
+              com.unhurdle.spectrum.TooltipBead,
+              2,
+              '_id',
+              true,
+              '$ID_13_2',
+              'toolTip',
+              true,
+              'Show/Hide Historic Data',
+              0,
+              0,
+              null
+            ],
             0,
             1,
             'change',
-            this.$EH_13_6,
+            this.$EH_13_4,
+            null,
+            org.apache.royale.jewel.ToggleButton,
+            3,
+            '_id',
+            true,
+            '$ID_13_5',
+            'icon',
+            false,
+            [
+              org.apache.royale.icons.MaterialToggleIcon,
+              1,
+              '_id',
+              true,
+              '$ID_13_3',
+              0,
+              0,
+              null
+            ],
+            'beads',
+            null,
+            [
+              org.apache.royale.jewel.beads.controls.ToolTip,
+              2,
+              '_id',
+              true,
+              '$ID_13_4',
+              'toolTip',
+              true,
+              'start/stop socket connection',
+              0,
+              0,
+              null
+            ],
+            0,
+            1,
+            'click',
+            this.$EH_13_5,
             null
           ],
           org.apache.royale.jewel.VGroup,
@@ -695,7 +799,7 @@ Object.defineProperties(views.actionitemviews.stockSocket.StockSocketMain.protot
             1,
             '_id',
             true,
-            '$ID_13_4',
+            '$ID_13_7',
             0,
             0,
             null
@@ -741,7 +845,7 @@ Object.defineProperties(views.actionitemviews.stockSocket.StockSocketMain.protot
             1,
             '_id',
             true,
-            '$ID_13_6',
+            '$ID_13_9',
             0,
             0,
             null
@@ -763,7 +867,7 @@ Object.defineProperties(views.actionitemviews.stockSocket.StockSocketMain.protot
  * @export
  */
 views.actionitemviews.stockSocket.StockSocketMain.prototype._bindings = [
-5,
+6,
 /** @this {views.actionitemviews.stockSocket.StockSocketMain} */
 function() { return this.views_actionitemviews_stockSocket_StockSocketMain__actionStat; },
 null,
@@ -775,20 +879,22 @@ null,
 /** @this {views.actionitemviews.stockSocket.StockSocketMain} */
 function() { return this.views_actionitemviews_stockSocket_StockSocketMain__actionStat; },
 null,
-["switchBtn100", "disabled"],
+["dataSetPicker", "disabled"],
 /** @this {views.actionitemviews.stockSocket.StockSocketMain} */
 function() { return this.views_actionitemviews_stockSocket_StockSocketMain__actionStat; },
 null,
-["switchBtn500", "disabled"],
-/** @this {views.actionitemviews.stockSocket.StockSocketMain} */
-function() { return this.views_actionitemviews_stockSocket_StockSocketMain__actionStat; },
+["$ID_13_5", "selected"],
+["MaterialIconType", "START"],
 null,
-["switchBtn1000", "disabled"],
+["$ID_13_3", "text"],
+["MaterialIconType", "STOP"],
+null,
+["$ID_13_3", "selectedText"],
 0,
 2,
 "_actionStat",
 "valueChange",
-[0,1,2,3,4],
+[0,1,2,3],
 function() { return this.views_actionitemviews_stockSocket_StockSocketMain__actionStat; },
 null];
 /**
@@ -811,9 +917,10 @@ views.actionitemviews.stockSocket.StockSocketMain.prototype.ROYALE_REFLECTION_IN
       return {
         'gridV': { type: 'com.unhurdle.spectrum.Radio', access: 'readwrite', declaredBy: 'views.actionitemviews.stockSocket.StockSocketMain'},
         'tileV': { type: 'com.unhurdle.spectrum.Radio', access: 'readwrite', declaredBy: 'views.actionitemviews.stockSocket.StockSocketMain'},
-        'switchBtn100': { type: 'com.unhurdle.spectrum.Switch', access: 'readwrite', declaredBy: 'views.actionitemviews.stockSocket.StockSocketMain'},
-        'switchBtn500': { type: 'com.unhurdle.spectrum.Switch', access: 'readwrite', declaredBy: 'views.actionitemviews.stockSocket.StockSocketMain'},
-        'switchBtn1000': { type: 'com.unhurdle.spectrum.Switch', access: 'readwrite', declaredBy: 'views.actionitemviews.stockSocket.StockSocketMain'},
+        'dataSetPicker': { type: 'com.unhurdle.spectrum.Picker', access: 'readwrite', declaredBy: 'views.actionitemviews.stockSocket.StockSocketMain'},
+        'switchBtn100': { type: 'com.unhurdle.spectrum.data.MenuItem', access: 'readwrite', declaredBy: 'views.actionitemviews.stockSocket.StockSocketMain'},
+        'switchBtn500': { type: 'com.unhurdle.spectrum.data.MenuItem', access: 'readwrite', declaredBy: 'views.actionitemviews.stockSocket.StockSocketMain'},
+        'switchBtn1000': { type: 'com.unhurdle.spectrum.data.MenuItem', access: 'readwrite', declaredBy: 'views.actionitemviews.stockSocket.StockSocketMain'},
         'switchHistoryOnOff': { type: 'com.unhurdle.spectrum.Switch', access: 'readwrite', declaredBy: 'views.actionitemviews.stockSocket.StockSocketMain'},
         'sGitemCtr': { type: 'org.apache.royale.jewel.VGroup', access: 'readwrite', declaredBy: 'views.actionitemviews.stockSocket.StockSocketMain'},
         'sTitemCtr': { type: 'org.apache.royale.jewel.Group', access: 'readwrite', declaredBy: 'views.actionitemviews.stockSocket.StockSocketMain'},

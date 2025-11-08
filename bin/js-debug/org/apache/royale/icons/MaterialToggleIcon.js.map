@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"MaterialToggleIcon.js",
+"lineCount":102,
+"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Icons/src/main/royale",
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAyCwB,0CAAhB,WAAkCA,CAAC,C,CACnC,C;sEACW,C;AACX,C;;;;;;;;AAEY,qDAAAC,oDAAiB,GAAG,KAAK,C;;;;;;;AAwBzB,qDAAAC,wDAAoB,GAAG,EAAE,C;;;;;;AAyBpB,qDAAAC,2DAAjB,WAAiCC,CAAC,C,CAClC,C;EAGI,KAAA,QAAQ,CAAC,WAAW,GAAG,KAAAH,oDAAS,GAAG,KAAAC,wDAAa,GAAG,KAAA,KAAK,C;AAE5D,C;;;;;;;;;;;6EA7C4BG,CAAC,C,CAC7B,C;EACI,OAAO,KAAAJ,oDAAS,C;AACpB,C;;;6EAK4BI,CAAC,KAAa,C,CAC1C,C;EACI,KAAAJ,oDAAS,GAAG,KAAK,C;EACjB,KAAAE,2DAAgB,CAAC,CAAC,C;AACtB,C;;;;;;;;;;;iFAW0BG,CAAC,C,CACjC,C;EACU,OAAO,KAAAJ,wDAAa,C;AAC9B,C;;;iFACsCI,CAAC,KAAY,C,CACnD,C;EACU,KAAAJ,wDAAa,GAAG,KAAK,C;EACrB,KAAAC,2DAAgB,CAAC,CAAC,C;AAC5B,C;;;yEAEuCI,CAAC,KAAY,C,CACpD,C;EACU,KAAA,KAAK,GAAG,KAAK,C;EACb,KAAAJ,2DAAgB,CAAC,CAAC,C;AAC5B,C;;;6EAkB8CK,CAAC,C,CACzC,C;EACI,OAAO,KAAA,QAAQ,GAAG,KAAA,YAAY,GAAG,KAAA,IAAI,CAAA;",
+"sources":["org/apache/royale/icons/MaterialToggleIcon.as"],
+"names":["MaterialToggleIcon.MaterialToggleIcon","_selected","_selectedText","internalSelected","MaterialToggleIcon.internalSelected","MaterialToggleIcon.selected","MaterialToggleIcon.selectedText","MaterialToggleIcon.text","MaterialToggleIcon.iconText"]
+}

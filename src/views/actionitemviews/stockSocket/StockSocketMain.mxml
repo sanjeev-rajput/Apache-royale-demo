@@ -21,6 +21,7 @@
             import views.actionitemviews.stockSocket.StockItemT;
             import org.apache.royale.jewel.Group;
             import com.event.DsEvent;
+            import com.unhurdle.spectrum.data.MenuItem;
 
             private var _socketService:SocketService;
             private var itemMap:DictionaryUtil = new DictionaryUtil();
@@ -67,26 +68,26 @@
                 itemMap.set(d.symbol, sItem);
             }
 
-            private function switchEventHandler(e:Event):void {
-                var btn:Switch = Switch(e.target);
-                if(btn == switchHistoryOnOff){
-                    DsEvent.instance.dispatch(DsEvent.HISTORIC_DATA, btn.checked);
-                    console.log("disp[atching event");
-                    return;
-                }
-                else if (btn == switchBtn100) _recordSets = 100;
-                else if (btn == switchBtn500) _recordSets = 500;
-                else if (btn == switchBtn1000) _recordSets = 1000;
+            private function dataPickerChangeHandler(e:Event):void {
+                var btn:MenuItem = MenuItem(e.target);
+                if (btn == switchBtn100) _recordSets = 100;
+                if (btn == switchBtn500) _recordSets = 500;
+                if (btn == switchBtn1000) _recordSets = 1000;
+            }
 
-                _actionStat = btn.checked;
-                btn.disabled = false;
+            private function showHideHistoryData(e:Event):void {
+                 DsEvent.instance.dispatch(DsEvent.HISTORIC_DATA, Switch(e.target).checked);
+            }
 
-                if (btn.checked) {
-                    _socketItemCounter=1;
-                    itemMap.clear();
+            private function startStopSocketConnection(startIt:Boolean):void {
+                if (startIt) {
+                    clearStockUI();
+                    if(dataSetPicker.selectedIndex == -1) dataSetPicker.selectedIndex = 0;
                     _socketService.connectWebSocket(SocketService.SUBSCRIBE_STOCK, { length: _recordSets });
+                    _actionStat = true;
                 } else {
                     _socketService.sendToSocket({ type: "unsubscribe_stock" });
+                    _actionStat = false;
                 }
             }
 
@@ -101,8 +102,14 @@
                 sTitemCtr.visible = (_layoutType == TILE);
                 switchHistoryOnOff.disabled = (newLayout == TILE);
                 switchHistoryOnOff.checked = false;
+                clearStockUI();
+                
+            }
 
-                var clearContainer:Group = (_layoutType == GRID) ? sTitemCtr : sGitemCtr;
+            private function clearStockUI():void {
+                itemMap.clear();
+                _socketItemCounter = 1;
+                var clearContainer:Group = (_layoutType == GRID) ? sGitemCtr:sTitemCtr ;
                 while (clearContainer.numElements) {
                     clearContainer.removeElement(clearContainer.getElementAt(0));
                 }
@@ -116,14 +123,32 @@
     </fx:Script>
 
     <j:HGroup width="100%" gap="20" className="stockControls" itemsHorizontalAlign="itemsCenter">
-        <sp:Radio id="gridV" radioName="viewType" text="Grid Layout" checked="true" disabled="{_actionStat}" click="layoutEventHandler(event)"/>
-        <sp:Radio id="tileV" radioName="viewType" text="Tile Layout" disabled="{_actionStat}" click="layoutEventHandler(event)"/>
-        <sp:VDivider size="medium"/>
-        <sp:Switch id="switchBtn100" leftLabel="100 Data Set" change="switchEventHandler(event)" disabled="{_actionStat}"/>
-        <sp:Switch id="switchBtn500" leftLabel="500 Data Set" change="switchEventHandler(event)" disabled="{_actionStat}"/>
-        <sp:Switch id="switchBtn1000" leftLabel="1000 Data Set" change="switchEventHandler(event)" disabled="{_actionStat}"/>
-        <sp:VDivider size="medium"/>
-        <sp:Switch id="switchHistoryOnOff" offLabel="Data history off" onLabel="Data history on" checked="false" change="switchEventHandler(event)"/>
+        <sp:Radio id="gridV" radioName="viewType" text="Grid" checked="true" disabled="{_actionStat}" click="layoutEventHandler(event)"/>
+        <sp:Radio id="tileV" radioName="viewType" text="Tile" disabled="{_actionStat}" click="layoutEventHandler(event)"/>
+
+        <sp:Picker id="dataSetPicker" placeholder="Select data set" change="dataPickerChangeHandler(event)" disabled="{_actionStat}">
+            <sp:dataProvider>
+                <fx:Array>
+                    <sp:MenuItem id="switchBtn100" text="100 Data Set"/>
+                    <sp:MenuItem id="switchBtn500" text="500 Data Set"/>
+                    <sp:MenuItem id="switchBtn1000" text="1000 Data Set"/>
+                </fx:Array>
+            </sp:dataProvider>
+        </sp:Picker>
+        <j:Spacer width="20"/>
+        <sp:Switch id="switchHistoryOnOff" offLabel="off" onLabel="on " checked="false" change="showHideHistoryData(event)">
+            <sp:beads>
+                <sp:TooltipBead toolTip="Show/Hide Historic Data"/>
+            </sp:beads>
+        </sp:Switch>
+        <j:ToggleButton click="startStopSocketConnection(!_actionStat)" selected="{_actionStat}">
+            <j:icon>
+                <js:MaterialToggleIcon text="{MaterialIconType.START}" selectedText="{MaterialIconType.STOP}" />
+            </j:icon>
+            <j:beads>
+                <j:ToolTip toolTip="start/stop socket connection"/>
+            </j:beads>
+        </j:ToggleButton>
 
     </j:HGroup>
 

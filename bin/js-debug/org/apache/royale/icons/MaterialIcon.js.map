@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"MaterialIcon.js",
+"lineCount":44,
+"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Icons/src/main/royale",
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAgDwB,oCAAhB,WAA4BA,CAAC,C,CAC7B,C;gEACW,C;EAKP,KAAA,SAAS,GAAG,yBAAyB,C;AACzC,C;;;;mEAUiCC,CAAC,KAAY,C,CACpD,C;0EACuB,K,EAAK,C;EAIlB,KAAA,QAAQ,CAAC,WAAW,GAAG,KAAA,KAAK,CAAA;",
+"sources":["org/apache/royale/icons/MaterialIcon.as"],
+"names":["MaterialIcon.MaterialIcon","MaterialIcon.text"]
+}
