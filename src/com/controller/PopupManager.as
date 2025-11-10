@@ -25,14 +25,13 @@ package com.controller{
         }
 
         
-        public function createPopup(popup:Object, ui:UIBase, w:int=490, h:int=392):void {
+        public function createPopup(popup:Object, ui:UIBase):void {
             // Logic to show the popup based on the type
             //trace("Showing popup of type: " + popupType);
             //fe.imgUrl = "https://picsum.photos/" + getRndNum(300, 500) + "/" + getRndNum(500, 800)
-			popup.width = w;
-			popup.height = h;
             _instance.content = popup as UIBase;
             _instance.modal = true;
+            _instance.className = "popup-centered";
             ui.addElement(_instance);
             _instance.open = true;
         }

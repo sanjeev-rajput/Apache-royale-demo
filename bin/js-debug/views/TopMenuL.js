@@ -76,16 +76,16 @@ views.TopMenuL.prototype.views_TopMenuL_handleSelection = function() {
   var /** @type {string} */ selectedAction = this.menuL.selectedItem["label"];
   switch (selectedAction) {
     case "Image Gallery":
-      this.views_TopMenuL_createprogrammaticPopup(new views.actionitemviews.ImgPopuop(), 490, 392);
+      this.views_TopMenuL_createprogrammaticPopup(new views.actionitemviews.ImgPopuop());
       break;
     case "Drag and Drop":
-      this.views_TopMenuL_createprogrammaticPopup(new views.actionitemviews.draganddrop.DragAndDropMain(), 640, 480);
+      this.views_TopMenuL_createprogrammaticPopup(new views.actionitemviews.draganddrop.DragAndDropMain());
       break;
     case "List and Search":
-      this.views_TopMenuL_createprogrammaticPopup(new views.actionitemviews.searchlist.SearchListMain(), 490, 392);
+      this.views_TopMenuL_createprogrammaticPopup(new views.actionitemviews.searchlist.SearchListMain());
       break;
     case "App Navigation":
-      this.views_TopMenuL_createprogrammaticPopup(new views.actionitemviews.appnavigation.AppNavigationMain(), 640, 480);
+      this.views_TopMenuL_createprogrammaticPopup(new views.actionitemviews.appnavigation.AppNavigationMain());
       break;
   }
 };
@@ -94,11 +94,9 @@ views.TopMenuL.prototype.views_TopMenuL_handleSelection = function() {
 /**
  * @private
  * @param {org.apache.royale.jewel.View} ui
- * @param {number} w
- * @param {number} h
  */
-views.TopMenuL.prototype.views_TopMenuL_createprogrammaticPopup = function(ui, w, h) {
-  com.controller.PopupManager.getInstance().createPopup(ui, this, w, h);
+views.TopMenuL.prototype.views_TopMenuL_createprogrammaticPopup = function(ui) {
+  com.controller.PopupManager.getInstance().createPopup(ui, this);
   com.controller.PopupManager.getInstance().addEventListener(org.apache.royale.events.CloseEvent.CLOSE, org.apache.royale.utils.Language.closure(this.views_TopMenuL_closeHandler, this, 'views_TopMenuL_closeHandler'));
 };
 

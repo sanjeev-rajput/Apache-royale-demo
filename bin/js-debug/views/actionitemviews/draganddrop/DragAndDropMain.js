@@ -112,10 +112,16 @@ views.actionitemviews.draganddrop.DragAndDropMain = function() {
   this.mxmldp;
 
   this.generateMXMLAttributes([
-    1,
+    3,
     'style',
     true,
     'background:transparent',
+    'percentWidth',
+    true,
+    100.0,
+    'percentHeight',
+    true,
+    100.0,
     0,
     1,
     'initComplete',

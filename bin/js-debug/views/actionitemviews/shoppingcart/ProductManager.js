@@ -158,7 +158,7 @@ views.actionitemviews.shoppingcart.ProductManager.prototype.views_actionitemview
   if (product) {
     var /** @type {views.actionitemviews.shoppingcart.ProductPreview} */ p = new views.actionitemviews.shoppingcart.ProductPreview();
     p.data = product.data;
-    com.controller.PopupManager.getInstance().createPopup(p, this.views_actionitemviews_shoppingcart_ProductManager__view.parent, 640, 480);
+    com.controller.PopupManager.getInstance().createPopup(p, this.views_actionitemviews_shoppingcart_ProductManager__view.parent);
   }
 };
 

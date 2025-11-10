@@ -158,8 +158,7 @@ views.actionitemviews.stockSocket.SocketHistory.prototype.views_actionitemviews_
 views.actionitemviews.stockSocket.SocketHistory.prototype.views_actionitemviews_stockSocket_SocketHistory_addCanvas = function() {
   this.views_actionitemviews_stockSocket_SocketHistory__chartCanvas = this.element.appendChild(com.util.AsJsUtil.createCanvas());
   this.views_actionitemviews_stockSocket_SocketHistory__chartCanvas["id"] = "chartArea";
-  this.views_actionitemviews_stockSocket_SocketHistory__chartCanvas["height"] = 200;
-  this.views_actionitemviews_stockSocket_SocketHistory__chartCanvas["width"] = 300;
+  this.views_actionitemviews_stockSocket_SocketHistory__chartCanvas["className"] = "canvas-chartjs-render";
 };
 
 

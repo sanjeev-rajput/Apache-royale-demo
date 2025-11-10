@@ -65,11 +65,10 @@
                 private function addCanvas():void {
                     _chartCanvas = this.element.appendChild(AsJsUtil.createCanvas());
                     _chartCanvas.id = "chartArea"
-                    _chartCanvas.height = 200;
-                    _chartCanvas.width = 300;
-                    
-                    // Access native context
-                    
+                    //_chartCanvas.height = "100%";
+                    //_chartCanvas.width = "100%";
+                    _chartCanvas.className = "canvas-chartjs-render";
+    
                 }
             ]]>
         </fx:Script>

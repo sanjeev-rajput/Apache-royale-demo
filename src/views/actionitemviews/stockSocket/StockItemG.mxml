@@ -90,7 +90,7 @@
                 var p:SocketHistory = new SocketHistory();
                 p.data = _dataHistory;
                 p.title = _symbol;
-                PopupManager.getInstance().createPopup(p, this.parent as UIBase )
+                PopupManager.getInstance().createPopup(p, this.parent as UIBase);
             }
 
             private function historicDataEventHandler(e:Object):void {

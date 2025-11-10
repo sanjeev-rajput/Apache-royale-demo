@@ -50,16 +50,11 @@ com.controller.PopupManager.getInstance = function() {
 /**
  * @param {Object} popup
  * @param {org.apache.royale.core.UIBase} ui
- * @param {number=} w
- * @param {number=} h
  */
-com.controller.PopupManager.prototype.createPopup = function(popup, ui, w, h) {
-  w = typeof w !== 'undefined' ? w : 490;
-  h = typeof h !== 'undefined' ? h : 392;
-  popup["width"] = w;
-  popup["height"] = h;
+com.controller.PopupManager.prototype.createPopup = function(popup, ui) {
   com.controller.PopupManager._instance.content = popup;
   com.controller.PopupManager._instance.modal = true;
+  com.controller.PopupManager._instance.className = "popup-centered";
   ui.addElement(com.controller.PopupManager._instance);
   com.controller.PopupManager._instance.open = true;
 };
@@ -93,7 +88,7 @@ com.controller.PopupManager.prototype.ROYALE_REFLECTION_INFO = function () {
     methods: function () {
       return {
         '|getInstance': { type: 'com.controller.PopupManager', declaredBy: 'com.controller.PopupManager'},
-        'createPopup': { type: 'void', declaredBy: 'com.controller.PopupManager', parameters: function () { return [ 'Object', false ,'org.apache.royale.core.UIBase', false ,'int', true ,'int', true ]; }},
+        'createPopup': { type: 'void', declaredBy: 'com.controller.PopupManager', parameters: function () { return [ 'Object', false ,'org.apache.royale.core.UIBase', false ]; }},
         'reomovePopup': { type: 'void', declaredBy: 'com.controller.PopupManager'}
       };
     }

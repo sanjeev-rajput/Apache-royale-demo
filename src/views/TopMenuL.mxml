@@ -27,23 +27,23 @@
                 var selectedAction:String = menuL.selectedItem.label as String;
                 switch (selectedAction) {
                     case "Image Gallery":
-                        createprogrammaticPopup(new ImgPopuop(), 490, 392);
+                        createprogrammaticPopup(new ImgPopuop());
                         break;
                     case "Drag and Drop":
-                        createprogrammaticPopup(new DragAndDropMain(), 640, 480);
+                        createprogrammaticPopup(new DragAndDropMain());
                         break;
                     case "List and Search":
-                        createprogrammaticPopup(new SearchListMain(), 490, 392);
+                        createprogrammaticPopup(new SearchListMain());
                         break;
                     case "App Navigation":
-                        createprogrammaticPopup(new AppNavigationMain(), 640, 480);
+                        createprogrammaticPopup(new AppNavigationMain());
                         break;
                 }
                 
             }
 
-		private function createprogrammaticPopup(ui:View, w:int, h:int):void{
-                PopupManager.getInstance().createPopup(ui, this, w, h)
+		private function createprogrammaticPopup(ui:View):void{
+                PopupManager.getInstance().createPopup(ui, this)
                 PopupManager.getInstance().addEventListener(CloseEvent.CLOSE, closeHandler);
 		}
 

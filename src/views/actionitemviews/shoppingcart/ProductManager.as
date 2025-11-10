@@ -89,7 +89,7 @@ package views.actionitemviews.shoppingcart {
             if (product) {
                 var p:ProductPreview = new ProductPreview();
                 p.data = product.data;
-                PopupManager.getInstance().createPopup(p, _view.parent as UIBase, 640, 480)
+                PopupManager.getInstance().createPopup(p, _view.parent as UIBase)
             }
         }
 
