@@ -3,9 +3,6 @@ package views.actionitemviews.shoppingcart {
 
     import org.apache.royale.jewel.Group;
     import org.apache.royale.debugging.throwError;
-    import org.apache.royale.events.MouseEvent;
-    import com.controller.PopupManager;
-    import org.apache.royale.core.UIBase;
     
 
     public class ProductManager {
@@ -56,7 +53,6 @@ package views.actionitemviews.shoppingcart {
             for each (var product:Object in products) {
                 var p:Product = new Product();
                 p.data = product;
-                p.addEventListener(MouseEvent.CLICK, pClickHandler);
                 _view.addElement(p);
             }
         }
@@ -82,15 +78,6 @@ package views.actionitemviews.shoppingcart {
                 _view.removeElement(_view.getElementAt(0));
             }
             renderProductList(_view)
-        }
-
-        private function pClickHandler(event:MouseEvent):void {
-            var product:Product = event.currentTarget as Product;
-            if (product) {
-                var p:ProductPreview = new ProductPreview();
-                p.data = product.data;
-                PopupManager.getInstance().createPopup(p, _view.parent as UIBase)
-            }
         }
 
         public function getProductById(id:String):Product {

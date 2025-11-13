@@ -1,9 +1,12 @@
 <j:Card xmlns:fx="http://ns.adobe.com/mxml/2009"
     xmlns:j="library://ns.apache.org/royale/jewel" 
-    xmlns:html="library://ns.apache.org/royale/html"
+    xmlns:html="library://ns.apache.org/royale/html" xmlns:js="library://ns.apache.org/royale/basic"
     initComplete="init()" className="shoppingItem" itemsHorizontalAlign="itemsCenter" gap="2" >
     <fx:Script>
         <![CDATA[
+            import org.apache.royale.core.UIBase;
+            import com.controller.PopupManager;
+
             
             private var _data:Object=null;
             private var _initialized:Boolean = false;
@@ -38,12 +41,22 @@
             public function get data():Object {
                 return _data;
             }
+
+            private function imgPreviewClickHandler():void {
+                var p:ProductPreview = new ProductPreview();
+                p.data = data;
+                PopupManager.getInstance().createPopup(p, parent as UIBase)
+            }
             
 
         ]]>
     </fx:Script>
     <j:CardPrimaryContent gap="0" itemsHorizontalAlign="itemsCenter">
-        <j:Image id="img" height="200" width="150"  className="shoppingProductImg"/>
+        <j:Image id="img" height="200" width="150"  className="shoppingProductImg">
+        <j:beads>
+            <j:Disabled/>
+        </j:beads>
+        </j:Image>
     </j:CardPrimaryContent>
     <j:VGroup>
         <j:Label id="name" text="Jewel Simple Card" width="200" className="shopProductLbl"/>
@@ -55,6 +68,11 @@
         </j:Label>
         <j:HGroup itemsHorizontalAlign="itemsSpaceBetween" width="100%">
             <j:Label id="price" text="Jewel Simple Card" className="shopProductLbl"/>
+            <js:FontAwesomeIcon typeNames="fa fa-eye" style="font-size:16px; color:gray" click="imgPreviewClickHandler()">
+                <js:beads>
+                    <j:ToolTip toolTip="Preview"/>
+                </js:beads>
+            </js:FontAwesomeIcon>
             <j:Label id="qt" className="shopProductLbl"/>
         </j:HGroup>
     </j:VGroup>

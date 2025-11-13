@@ -8,7 +8,7 @@
  */
 
 goog.provide('views.actionitemviews.shoppingcart.ProductManager');
-/* Royale Dependency List: com.controller.PopupManager,org.apache.royale.core.UIBase,org.apache.royale.debugging.throwError,org.apache.royale.events.MouseEvent,org.apache.royale.jewel.Group,views.actionitemviews.shoppingcart.CartItem,views.actionitemviews.shoppingcart.Product,views.actionitemviews.shoppingcart.ProductPreview,org.apache.royale.utils.Language,XML*/
+/* Royale Dependency List: org.apache.royale.debugging.throwError,org.apache.royale.jewel.Group,views.actionitemviews.shoppingcart.CartItem,views.actionitemviews.shoppingcart.Product,XML*/
 
 
 
@@ -112,7 +112,6 @@ views.actionitemviews.shoppingcart.ProductManager.prototype.renderProductList = 
   {
     var /** @type {views.actionitemviews.shoppingcart.Product} */ p = new views.actionitemviews.shoppingcart.Product();
     p.data = product;
-    p.addEventListener(org.apache.royale.events.MouseEvent.CLICK, org.apache.royale.utils.Language.closure(this.views_actionitemviews_shoppingcart_ProductManager_pClickHandler, this, 'views_actionitemviews_shoppingcart_ProductManager_pClickHandler'));
     this.views_actionitemviews_shoppingcart_ProductManager__view.addElement(p);
   }}
   
@@ -146,20 +145,6 @@ views.actionitemviews.shoppingcart.ProductManager.prototype.shortProductListBy =
     this.views_actionitemviews_shoppingcart_ProductManager__view.removeElement(this.views_actionitemviews_shoppingcart_ProductManager__view.getElementAt(0));
   }
   this.renderProductList(this.views_actionitemviews_shoppingcart_ProductManager__view);
-};
-
-
-/**
- * @private
- * @param {org.apache.royale.events.MouseEvent} event
- */
-views.actionitemviews.shoppingcart.ProductManager.prototype.views_actionitemviews_shoppingcart_ProductManager_pClickHandler = function(event) {
-  var /** @type {views.actionitemviews.shoppingcart.Product} */ product = event.currentTarget;
-  if (product) {
-    var /** @type {views.actionitemviews.shoppingcart.ProductPreview} */ p = new views.actionitemviews.shoppingcart.ProductPreview();
-    p.data = product.data;
-    com.controller.PopupManager.getInstance().createPopup(p, this.views_actionitemviews_shoppingcart_ProductManager__view.parent);
-  }
 };
 
 

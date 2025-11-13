@@ -8,7 +8,7 @@
  */
 
 goog.provide('views.actionitemviews.shoppingcart.Product');
-/* Royale Dependency List: org.apache.royale.jewel.supportClasses.card.CardPrimaryContent,org.apache.royale.jewel.Image,org.apache.royale.jewel.VGroup,org.apache.royale.jewel.Label,org.apache.royale.jewel.beads.controls.ToolTip,org.apache.royale.jewel.HGroup,org.apache.royale.events.Event,XML*/
+/* Royale Dependency List: org.apache.royale.jewel.supportClasses.card.CardPrimaryContent,org.apache.royale.jewel.Image,org.apache.royale.jewel.beads.controls.Disabled,org.apache.royale.jewel.VGroup,org.apache.royale.jewel.Label,org.apache.royale.jewel.beads.controls.ToolTip,org.apache.royale.jewel.HGroup,org.apache.royale.icons.FontAwesomeIcon,com.controller.PopupManager,org.apache.royale.events.Event,org.apache.royale.events.MouseEvent,views.actionitemviews.shoppingcart.ProductPreview,XML*/
 
 goog.require('org.apache.royale.jewel.Card');
 
@@ -25,7 +25,7 @@ views.actionitemviews.shoppingcart.Product = function() {
    * @private
    * @type {org.apache.royale.jewel.supportClasses.card.CardPrimaryContent}
    */
-  this.$ID_15_0;
+  this.$ID_15_1;
   
   /**
    * @private
@@ -35,9 +35,15 @@ views.actionitemviews.shoppingcart.Product = function() {
   
   /**
    * @private
+   * @type {org.apache.royale.jewel.beads.controls.Disabled}
+   */
+  this.$ID_15_0;
+  
+  /**
+   * @private
    * @type {org.apache.royale.jewel.VGroup}
    */
-  this.$ID_15_3;
+  this.$ID_15_6;
   
   /**
    * @private
@@ -55,19 +61,31 @@ views.actionitemviews.shoppingcart.Product = function() {
    * @private
    * @type {org.apache.royale.jewel.beads.controls.ToolTip}
    */
-  this.$ID_15_1;
+  this.$ID_15_2;
   
   /**
    * @private
    * @type {org.apache.royale.jewel.HGroup}
    */
-  this.$ID_15_2;
+  this.$ID_15_5;
   
   /**
    * @private
    * @type {org.apache.royale.jewel.Label}
    */
   this.price_;
+  
+  /**
+   * @private
+   * @type {org.apache.royale.icons.FontAwesomeIcon}
+   */
+  this.$ID_15_4;
+  
+  /**
+   * @private
+   * @type {org.apache.royale.jewel.beads.controls.ToolTip}
+   */
+  this.$ID_15_3;
   
   /**
    * @private
@@ -153,6 +171,16 @@ views.actionitemviews.shoppingcart.Product.prototype.views_actionitemviews_shopp
 ;
 
 
+/**
+ * @private
+ */
+views.actionitemviews.shoppingcart.Product.prototype.views_actionitemviews_shoppingcart_Product_imgPreviewClickHandler = function() {
+  var /** @type {views.actionitemviews.shoppingcart.ProductPreview} */ p = new views.actionitemviews.shoppingcart.ProductPreview();
+  p.data = this.data;
+  com.controller.PopupManager.getInstance().createPopup(p, this.parent);
+};
+
+
 
 
 
@@ -192,6 +220,16 @@ set: views.actionitemviews.shoppingcart.Product.prototype.set__data}}
 views.actionitemviews.shoppingcart.Product.prototype.$EH_15_0 = function(event)
 {
   this.views_actionitemviews_shoppingcart_Product_init();
+};
+
+
+/**
+ * @export
+ * @param {org.apache.royale.events.MouseEvent} event
+ */
+views.actionitemviews.shoppingcart.Product.prototype.$EH_15_1 = function(event)
+{
+  this.views_actionitemviews_shoppingcart_Product_imgPreviewClickHandler();
 };
 
 
@@ -274,7 +312,7 @@ Object.defineProperties(views.actionitemviews.shoppingcart.Product.prototype, /*
           3,
           '_id',
           true,
-          '$ID_15_0',
+          '$ID_15_1',
           'gap',
           true,
           0,
@@ -285,7 +323,7 @@ Object.defineProperties(views.actionitemviews.shoppingcart.Product.prototype, /*
           0,
           [
             org.apache.royale.jewel.Image,
-            4,
+            5,
             'id',
             true,
             'img',
@@ -298,6 +336,18 @@ Object.defineProperties(views.actionitemviews.shoppingcart.Product.prototype, /*
             'className',
             true,
             'shoppingProductImg',
+            'beads',
+            null,
+            [
+              org.apache.royale.jewel.beads.controls.Disabled,
+              1,
+              '_id',
+              true,
+              '$ID_15_0',
+              0,
+              0,
+              null
+            ],
             0,
             0,
             null
@@ -306,7 +356,7 @@ Object.defineProperties(views.actionitemviews.shoppingcart.Product.prototype, /*
           1,
           '_id',
           true,
-          '$ID_15_3',
+          '$ID_15_6',
           0,
           0,
           [
@@ -351,7 +401,7 @@ Object.defineProperties(views.actionitemviews.shoppingcart.Product.prototype, /*
               1,
               '_id',
               true,
-              '$ID_15_1',
+              '$ID_15_2',
               0,
               0,
               null
@@ -363,7 +413,7 @@ Object.defineProperties(views.actionitemviews.shoppingcart.Product.prototype, /*
             3,
             '_id',
             true,
-            '$ID_15_2',
+            '$ID_15_5',
             'itemsHorizontalAlign',
             true,
             'itemsSpaceBetween',
@@ -386,6 +436,37 @@ Object.defineProperties(views.actionitemviews.shoppingcart.Product.prototype, /*
               'shopProductLbl',
               0,
               0,
+              null,
+              org.apache.royale.icons.FontAwesomeIcon,
+              4,
+              '_id',
+              true,
+              '$ID_15_4',
+              'typeNames',
+              true,
+              'fa fa-eye',
+              'style',
+              true,
+              'font-size:16px; color:gray',
+              'beads',
+              null,
+              [
+                org.apache.royale.jewel.beads.controls.ToolTip,
+                2,
+                '_id',
+                true,
+                '$ID_15_3',
+                'toolTip',
+                true,
+                'Preview',
+                0,
+                0,
+                null
+              ],
+              0,
+              1,
+              'click',
+              this.$EH_15_1,
               null,
               org.apache.royale.jewel.Label,
               2,
@@ -417,7 +498,7 @@ views.actionitemviews.shoppingcart.Product.prototype._bindings = [
 1,
 ["description", "text"],
 null,
-["$ID_15_1", "toolTip"],
+["$ID_15_2", "toolTip"],
 0,
 2,
 "description",
