@@ -8,15 +8,15 @@
  */
 
 goog.provide('views.actionitemviews.pexels.SingleVideoView');
-/* Royale Dependency List: org.apache.royale.jewel.HGroup,org.apache.royale.jewel.VGroup,org.apache.royale.html.elements.I,org.apache.royale.events.Event,org.apache.royale.events.KeyboardEvent,org.apache.royale.events.MouseEvent,views.actionitemviews.pexels.VideoStreamController,XML*/
+/* Royale Dependency List: org.apache.royale.html.elements.I,org.apache.royale.events.Event,org.apache.royale.events.KeyboardEvent,org.apache.royale.events.MouseEvent,views.actionitemviews.pexels.VideoStreamController,XML*/
 
-goog.require('org.apache.royale.jewel.Group');
+goog.require('org.apache.royale.jewel.VGroup');
 
 
 
 /**
  * @constructor
- * @extends {org.apache.royale.jewel.Group}
+ * @extends {org.apache.royale.jewel.VGroup}
  */
 views.actionitemviews.pexels.SingleVideoView = function() {
   views.actionitemviews.pexels.SingleVideoView.base(this, 'constructor');
@@ -25,9 +25,9 @@ views.actionitemviews.pexels.SingleVideoView = function() {
   this.views_actionitemviews_pexels_SingleVideoView_videoUrls = [];
   /**
    * @private
-   * @type {org.apache.royale.jewel.HGroup}
+   * @type {org.apache.royale.html.elements.I}
    */
-  this.$ID_10_3;
+  this.$ID_13_0;
   
   /**
    * @private
@@ -37,21 +37,9 @@ views.actionitemviews.pexels.SingleVideoView = function() {
   
   /**
    * @private
-   * @type {org.apache.royale.jewel.VGroup}
-   */
-  this.$ID_10_2;
-  
-  /**
-   * @private
    * @type {org.apache.royale.html.elements.I}
    */
-  this.$ID_10_0;
-  
-  /**
-   * @private
-   * @type {org.apache.royale.html.elements.I}
-   */
-  this.$ID_10_1;
+  this.$ID_13_1;
   
   /**
    * @private
@@ -66,21 +54,27 @@ views.actionitemviews.pexels.SingleVideoView = function() {
   this.mxmldp;
 
   this.generateMXMLAttributes([
-    2,
+    4,
     'percentWidth',
     true,
     100.0,
     'percentHeight',
     true,
     100.0,
+    'itemsHorizontalAlign',
+    true,
+    'itemsCenter',
+    'itemsVerticalAlign',
+    true,
+    'itemsCenter',
     0,
     1,
     'initComplete',
-    this.$EH_10_0
+    this.$EH_13_0
   ]);
   
 };
-goog.inherits(views.actionitemviews.pexels.SingleVideoView, org.apache.royale.jewel.Group);
+goog.inherits(views.actionitemviews.pexels.SingleVideoView, org.apache.royale.jewel.VGroup);
 
 
 
@@ -127,7 +121,6 @@ views.actionitemviews.pexels.SingleVideoView.prototype.views_actionitemviews_pex
   this.vidCtr.setFocus(true);
   if (this.views_actionitemviews_pexels_SingleVideoView__search)
     this.views_actionitemviews_pexels_SingleVideoView_videoCtrl.reset(this.views_actionitemviews_pexels_SingleVideoView__search);
-  this.vidCtr.percentHeight = 90;
   this.vidCtr.addEventListener(org.apache.royale.events.KeyboardEvent.KEY_DOWN, org.apache.royale.utils.Language.closure(this.views_actionitemviews_pexels_SingleVideoView_onKeyDown, this, 'views_actionitemviews_pexels_SingleVideoView_onKeyDown'));
   this.views_actionitemviews_pexels_SingleVideoView_fetchVideos();
 };
@@ -257,7 +250,7 @@ set: views.actionitemviews.pexels.SingleVideoView.prototype.set__searchQuery}}
  * @export
  * @param {org.apache.royale.events.Event} event
  */
-views.actionitemviews.pexels.SingleVideoView.prototype.$EH_10_0 = function(event)
+views.actionitemviews.pexels.SingleVideoView.prototype.$EH_13_0 = function(event)
 {
   this.views_actionitemviews_pexels_SingleVideoView_init();
 };
@@ -267,7 +260,7 @@ views.actionitemviews.pexels.SingleVideoView.prototype.$EH_10_0 = function(event
  * @export
  * @param {org.apache.royale.events.MouseEvent} event
  */
-views.actionitemviews.pexels.SingleVideoView.prototype.$EH_10_1 = function(event)
+views.actionitemviews.pexels.SingleVideoView.prototype.$EH_13_1 = function(event)
 {
   this.views_actionitemviews_pexels_SingleVideoView_changeVideo('ArrowUp');
 };
@@ -277,7 +270,7 @@ views.actionitemviews.pexels.SingleVideoView.prototype.$EH_10_1 = function(event
  * @export
  * @param {org.apache.royale.events.MouseEvent} event
  */
-views.actionitemviews.pexels.SingleVideoView.prototype.$EH_10_2 = function(event)
+views.actionitemviews.pexels.SingleVideoView.prototype.$EH_13_2 = function(event)
 {
   this.views_actionitemviews_pexels_SingleVideoView_changeVideo('ArrowDown');
 };
@@ -306,88 +299,46 @@ Object.defineProperties(views.actionitemviews.pexels.SingleVideoView.prototype, 
         var arr = views.actionitemviews.pexels.SingleVideoView.superClass_.get__MXMLDescriptor.apply(this);
         /** @type {Array} */
         var mxmldd = [
-          org.apache.royale.jewel.HGroup,
-          6,
+          org.apache.royale.html.elements.I,
+          3,
           '_id',
           true,
-          '$ID_10_3',
-          'percentWidth',
+          '$ID_13_0',
+          'class',
           true,
-          100.0,
-          'percentHeight',
+          'fa fa-sort-up',
+          'style',
           true,
-          100.0,
-          'gap',
+          'font-size:48px',
+          0,
+          1,
+          'click',
+          this.$EH_13_1,
+          null,
+          org.apache.royale.jewel.VGroup,
+          1,
+          'id',
           true,
-          10,
-          'itemsVerticalAlign',
-          true,
-          'itemsCenter',
-          'itemsHorizontalAlign',
-          true,
-          'itemsCenter',
+          'vidCtr',
           0,
           0,
-          [
-            org.apache.royale.jewel.VGroup,
-            3,
-            'id',
-            true,
-            'vidCtr',
-            'width',
-            true,
-            640,
-            'height',
-            true,
-            360,
-            0,
-            0,
-            null,
-            org.apache.royale.jewel.VGroup,
-            2,
-            '_id',
-            true,
-            '$ID_10_2',
-            'height',
-            true,
-            360,
-            0,
-            0,
-            [
-              org.apache.royale.html.elements.I,
-              3,
-              '_id',
-              true,
-              '$ID_10_0',
-              'class',
-              true,
-              'fa fa-sort-up',
-              'style',
-              true,
-              'font-size:48px',
-              0,
-              1,
-              'click',
-              this.$EH_10_1,
-              null,
-              org.apache.royale.html.elements.I,
-              3,
-              '_id',
-              true,
-              '$ID_10_1',
-              'class',
-              true,
-              'fa fa-sort-down',
-              'style',
-              true,
-              'font-size:48px',
-              0,
-              1,
-              'click',
-              this.$EH_10_2,
-              null
-            ]
-          ]
+          null,
+          org.apache.royale.html.elements.I,
+          3,
+          '_id',
+          true,
+          '$ID_13_1',
+          'class',
+          true,
+          'fa fa-sort-down',
+          'style',
+          true,
+          'font-size:48px',
+          0,
+          1,
+          'click',
+          this.$EH_13_2,
+          null
         ];
         if (arr)
           this.mxmldd = arr.concat(mxmldd);

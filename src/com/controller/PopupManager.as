@@ -8,6 +8,7 @@ package com.controller{
 
     public class PopupManager extends PopUp{
         private static var _instance:PopupManager;
+        private var _ui:UIBase
         
         private function PopupManager(){
             // Constructor code
@@ -33,6 +34,7 @@ package com.controller{
             _instance.modal = true;
             _instance.className = "popup-centered";
             ui.addElement(_instance);
+            _ui = ui;
             _instance.open = true;
         }
         
@@ -40,6 +42,7 @@ package com.controller{
             // Logic to hide the currently displayed popup
             _instance.dispatchEvent(new Event(CloseEvent.CLOSE));
             _instance.open = false;
+            _ui.removeElement(_instance);
             trace("Hiding current popup");
         }
     }

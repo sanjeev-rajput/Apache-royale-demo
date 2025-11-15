@@ -1,7 +1,7 @@
 <j:VGroup xmlns:fx="http://ns.adobe.com/mxml/2009"
     xmlns:j="library://ns.apache.org/royale/jewel"
     xmlns:sp="library://ns.unhurdle.com/spectrum" 
-    initComplete="init()" height="100%" width="100%">
+    initComplete="init()" height="100%" width="100%" itemsHorizontalAlign="itemsCenter">
 
     <fx:Script>
         <![CDATA[
@@ -82,12 +82,11 @@
         ]]>
     </fx:Script>
     <j:HGroup itemsHorizontalAlign="itemsCenter" width="100%" gap="10" className="streamVideoMain">
-        <j:SwitchRadio text="One View" groupName="radios2" value="One View" selected="true" change="viewChangeEvent(event)"/>
-        <j:SwitchRadio text="Tile View" groupName="radios2" value="Tile View" change="viewChangeEvent(event)"/>
-        <j:SwitchRadio text="Scroll View" groupName="radios2" value="Scroll View" change="viewChangeEvent(event)"/>
-        <sp:VDivider size="medium"/>
-        <sp:Search id="vidSearch" placeholder="Technology" search="onSearch()"/>
+        <j:Label text="View Mode:"/>
+        <j:SwitchRadio text="One" groupName="radios2" value="One View" selected="true" change="viewChangeEvent(event)"/>
+        <j:SwitchRadio text="Tile" groupName="radios2" value="Tile View" change="viewChangeEvent(event)"/>
+        <j:SwitchRadio text="Scroll" groupName="radios2" value="Scroll View" change="viewChangeEvent(event)"/>
     </j:HGroup>
-    
+    <sp:Search id="vidSearch" placeholder="Technology" search="onSearch()"/>
         
 </j:VGroup>

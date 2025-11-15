@@ -8,7 +8,7 @@
  */
 
 goog.provide('views.actionitemviews.pexels.PexelVideoStreamMain');
-/* Royale Dependency List: org.apache.royale.jewel.HGroup,org.apache.royale.jewel.SwitchRadio,com.unhurdle.spectrum.VDivider,com.unhurdle.spectrum.Search,org.apache.royale.events.Event,views.actionitemviews.pexels.SingleVideoView,views.actionitemviews.pexels.TileVideoview,XML*/
+/* Royale Dependency List: org.apache.royale.jewel.HGroup,org.apache.royale.jewel.Label,org.apache.royale.jewel.SwitchRadio,com.unhurdle.spectrum.Search,org.apache.royale.events.Event,views.actionitemviews.pexels.SingleVideoView,views.actionitemviews.pexels.TileVideoview,XML*/
 
 goog.require('org.apache.royale.jewel.VGroup');
 
@@ -29,7 +29,7 @@ views.actionitemviews.pexels.PexelVideoStreamMain = function() {
   
   /**
    * @private
-   * @type {org.apache.royale.jewel.SwitchRadio}
+   * @type {org.apache.royale.jewel.Label}
    */
   this.$ID_13_0;
   
@@ -47,7 +47,7 @@ views.actionitemviews.pexels.PexelVideoStreamMain = function() {
   
   /**
    * @private
-   * @type {com.unhurdle.spectrum.VDivider}
+   * @type {org.apache.royale.jewel.SwitchRadio}
    */
   this.$ID_13_3;
   
@@ -70,13 +70,16 @@ views.actionitemviews.pexels.PexelVideoStreamMain = function() {
   this.mxmldp;
 
   this.generateMXMLAttributes([
-    2,
+    3,
     'percentHeight',
     true,
     100.0,
     'percentWidth',
     true,
     100.0,
+    'itemsHorizontalAlign',
+    true,
+    'itemsCenter',
     0,
     1,
     'initComplete',
@@ -299,14 +302,25 @@ Object.defineProperties(views.actionitemviews.pexels.PexelVideoStreamMain.protot
           0,
           0,
           [
-            org.apache.royale.jewel.SwitchRadio,
-            5,
+            org.apache.royale.jewel.Label,
+            2,
             '_id',
             true,
             '$ID_13_0',
             'text',
             true,
-            'One View',
+            'View Mode:',
+            0,
+            0,
+            null,
+            org.apache.royale.jewel.SwitchRadio,
+            5,
+            '_id',
+            true,
+            '$ID_13_1',
+            'text',
+            true,
+            'One',
             'groupName',
             true,
             'radios2',
@@ -325,10 +339,10 @@ Object.defineProperties(views.actionitemviews.pexels.PexelVideoStreamMain.protot
             4,
             '_id',
             true,
-            '$ID_13_1',
+            '$ID_13_2',
             'text',
             true,
-            'Tile View',
+            'Tile',
             'groupName',
             true,
             'radios2',
@@ -344,10 +358,10 @@ Object.defineProperties(views.actionitemviews.pexels.PexelVideoStreamMain.protot
             4,
             '_id',
             true,
-            '$ID_13_2',
+            '$ID_13_3',
             'text',
             true,
-            'Scroll View',
+            'Scroll',
             'groupName',
             true,
             'radios2',
@@ -358,32 +372,21 @@ Object.defineProperties(views.actionitemviews.pexels.PexelVideoStreamMain.protot
             1,
             'change',
             this.$EH_13_3,
-            null,
-            com.unhurdle.spectrum.VDivider,
-            2,
-            '_id',
-            true,
-            '$ID_13_3',
-            'size',
-            true,
-            'medium',
-            0,
-            0,
-            null,
-            com.unhurdle.spectrum.Search,
-            2,
-            'id',
-            true,
-            'vidSearch',
-            'placeholder',
-            true,
-            'Technology',
-            0,
-            1,
-            'search',
-            this.$EH_13_4,
             null
-          ]
+          ],
+          com.unhurdle.spectrum.Search,
+          2,
+          'id',
+          true,
+          'vidSearch',
+          'placeholder',
+          true,
+          'Technology',
+          0,
+          1,
+          'search',
+          this.$EH_13_4,
+          null
         ];
         if (arr)
           this.mxmldd = arr.concat(mxmldd);

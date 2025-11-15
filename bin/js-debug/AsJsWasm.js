@@ -171,7 +171,6 @@ goog.require('com.unhurdle.spectrum.TextNode');
 goog.require('org.apache.royale.events.CloseEvent');
 goog.require('org.apache.royale.core.ILabelFunction');
 goog.require('views.actionitemviews.games.keybordgame.KeyGame');
-goog.require('com.unhurdle.spectrum.VDivider');
 goog.require('org.apache.royale.debugging.assertType');
 goog.require('org.apache.royale.jewel.supportClasses.card.CardPrimaryContent');
 goog.require('views.actionitemviews.websocket.SocketService');

@@ -36,6 +36,13 @@ com.controller.PopupManager._instance = null;
 
 
 /**
+ * @private
+ * @type {org.apache.royale.core.UIBase}
+ */
+com.controller.PopupManager.prototype.com_controller_PopupManager__ui = null;
+
+
+/**
  * @nocollapse
  * @return {com.controller.PopupManager}
  */
@@ -56,6 +63,7 @@ com.controller.PopupManager.prototype.createPopup = function(popup, ui) {
   com.controller.PopupManager._instance.modal = true;
   com.controller.PopupManager._instance.className = "popup-centered";
   ui.addElement(com.controller.PopupManager._instance);
+  this.com_controller_PopupManager__ui = ui;
   com.controller.PopupManager._instance.open = true;
 };
 
@@ -65,6 +73,7 @@ com.controller.PopupManager.prototype.createPopup = function(popup, ui) {
 com.controller.PopupManager.prototype.reomovePopup = function() {
   com.controller.PopupManager._instance.dispatchEvent(new org.apache.royale.events.Event(org.apache.royale.events.CloseEvent.CLOSE));
   com.controller.PopupManager._instance.open = false;
+  this.com_controller_PopupManager__ui.removeElement(com.controller.PopupManager._instance);
   org.apache.royale.utils.Language.trace("Hiding current popup");
 };
 

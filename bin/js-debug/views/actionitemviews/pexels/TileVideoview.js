@@ -83,14 +83,14 @@ views.actionitemviews.pexels.TileVideoview.prototype.views_actionitemviews_pexel
  * @private
  * @type {number}
  */
-views.actionitemviews.pexels.TileVideoview.prototype.views_actionitemviews_pexels_TileVideoview__playerWidth = 320;
+views.actionitemviews.pexels.TileVideoview.prototype.views_actionitemviews_pexels_TileVideoview__playerWidth = 0;
 
 
 /**
  * @private
  * @type {number}
  */
-views.actionitemviews.pexels.TileVideoview.prototype.views_actionitemviews_pexels_TileVideoview__playerHeight = 180;
+views.actionitemviews.pexels.TileVideoview.prototype.views_actionitemviews_pexels_TileVideoview__playerHeight = 0;
 
 
 /**
@@ -210,8 +210,8 @@ views.actionitemviews.pexels.TileVideoview.prototype.viewType;
 views.actionitemviews.pexels.TileVideoview.prototype.set__viewType = function(v) {
   this.views_actionitemviews_pexels_TileVideoview__viewType = v;
   if (v == "Scroll View") {
-    this.views_actionitemviews_pexels_TileVideoview__playerHeight = 600;
-    this.views_actionitemviews_pexels_TileVideoview__playerWidth = 800;
+    this.views_actionitemviews_pexels_TileVideoview__playerHeight = 0;
+    this.views_actionitemviews_pexels_TileVideoview__playerWidth = 0;
   }
   if (v == "Tile View") {
     this.views_actionitemviews_pexels_TileVideoview__playerHeight = 180;

@@ -143,11 +143,16 @@ views.actionitemviews.pexels.VideoStreamController.prototype.getBestVideoUrl = f
  */
 views.actionitemviews.pexels.VideoStreamController.prototype.createVideoPlayer = function(link, width, height) {
   var self = this;
-  width = typeof width !== 'undefined' ? width : 640;
-  height = typeof height !== 'undefined' ? height : 360;
+  width = typeof width !== 'undefined' ? width : 0;
+  height = typeof height !== 'undefined' ? height : 0;
   var /** @type {org.apache.royale.jewel.VideoPlayer} */ player = new org.apache.royale.jewel.VideoPlayer();
-  player.width = width;
-  player.height = height;
+  if (width > 0 || height > 0) {
+    player.width = width;
+    player.height = height;
+  } else {
+    player.percentWidth = 100;
+    player.percentHeight = 100;
+  }
   player.src = link;
   player.autoplay = false;
   player.controls = true;

@@ -1,7 +1,7 @@
-<j:Group xmlns:fx="http://ns.adobe.com/mxml/2009"
+<j:VGroup xmlns:fx="http://ns.adobe.com/mxml/2009"
          xmlns:j="library://ns.apache.org/royale/jewel"
          xmlns:html="library://ns.apache.org/royale/html"
-         width="100%" height="100%" initComplete="init()">
+         width="100%" height="100%" initComplete="init()" itemsHorizontalAlign="itemsCenter" itemsVerticalAlign="itemsCenter">
 
     <fx:Script>
         <![CDATA[
@@ -19,7 +19,6 @@
             private function init():void {
                 vidCtr.setFocus(true)//focus = this; // make sure we receive keyboard input
                 if(_search)videoCtrl.reset(_search)
-                vidCtr.percentHeight = 90
                 vidCtr.addEventListener(KeyboardEvent.KEY_DOWN, onKeyDown)
                 fetchVideos();
             }
@@ -95,11 +94,7 @@
 
         ]]>
     </fx:Script>
-     <j:HGroup width="100%" height="100%" gap="10" itemsVerticalAlign="itemsCenter" itemsHorizontalAlign="itemsCenter">
-        <j:VGroup id="vidCtr" width="640" height="360"/>
-        <j:VGroup height="360">
-            <html:I class="fa fa-sort-up" click="changeVideo('ArrowUp')" style="font-size:48px"/>
-            <html:I class="fa fa-sort-down" click="changeVideo('ArrowDown')" style="font-size:48px"/>
-        </j:VGroup>
-    </j:HGroup>
-</j:Group>
+    <html:I class="fa fa-sort-up" click="changeVideo('ArrowUp')" style="font-size:48px"/>
+    <j:VGroup id="vidCtr"/>
+    <html:I class="fa fa-sort-down" click="changeVideo('ArrowDown')" style="font-size:48px"/>
+</j:VGroup>

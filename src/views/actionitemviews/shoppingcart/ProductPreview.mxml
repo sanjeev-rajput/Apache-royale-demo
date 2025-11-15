@@ -1,7 +1,7 @@
 <j:View xmlns:fx="http://ns.adobe.com/mxml/2009"
     xmlns:j="library://ns.apache.org/royale/jewel" 
     xmlns:html="library://ns.apache.org/royale/html"
-    initComplete="init()" style="background:transparent" percentWidth="70" percentHeight="70">
+    initComplete="init()" style="background:transparent" percentWidth="100" percentHeight="100">
     <fx:Script>
         <![CDATA[
             import com.controller.PopupManager;
@@ -51,12 +51,12 @@
                 <!-- <j:Spacer width="100%"/> -->
                 <j:ImageIcon src="img/close.png" width="30" click="closeHandler()"/>
             </j:HGroup>
-            <j:VGroup>
+            <j:VGroup itemsHorizontalAlign="itemsCenter">
                 <j:beads>
                 <j:ScrollingViewport/>
                 </j:beads>
                 <j:Image id="img" className="shoppingImgPreview"/>
-                <j:Label id="description" text="A simple t-shirt made from organic cotton." multiline="true"/>
+                <j:Label id="description" text="A simple t-shirt made from organic cotton." multiline="true" width="85%"/>
                 <html:Hr width="100%"/>
                 <j:HGroup itemsHorizontalAlign="itemsSpaceBetween" width="100%">
                     <j:Label id="price" text="Jewel Simple Card" className="shopProductLbl"/>

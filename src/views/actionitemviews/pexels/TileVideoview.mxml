@@ -10,8 +10,8 @@
             import views.actionitemviews.pexels.VideoStreamController;
             import org.apache.royale.jewel.VideoPlayer;
             private var _viewType:String = "Tile View"; // Tile View || Scroll View
-            private var _playerWidth:int = 320;
-            private var _playerHeight:int = 180;
+            private var _playerWidth:int = 0;
+            private var _playerHeight:int = 0;
             private var _isinitlized:Boolean = false;
             private var videoCtrl:VideoStreamController = new VideoStreamController("technology", 20);
             private var _search:String = null;
@@ -30,8 +30,8 @@
             public function set viewType(v:String):void{
                 _viewType = v;
                 if(v == "Scroll View"){
-                    _playerHeight = 600;
-                    _playerWidth = 800;
+                    _playerHeight = 0;
+                    _playerWidth = 0;
                 }
                 if(v == "Tile View"){
                     _playerHeight = 180;

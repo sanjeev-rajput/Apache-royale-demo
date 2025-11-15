@@ -72,10 +72,15 @@ package views.actionitemviews.pexels {
             return best ? best.link : null;
         }
 
-        public function createVideoPlayer(link:String, width:int = 640, height:int = 360):VideoPlayer {
+        public function createVideoPlayer(link:String, width:int = 0, height:int = 0):VideoPlayer {
             var player:VideoPlayer = new VideoPlayer();
-            player.width = width;
-            player.height = height;
+            if(width > 0 || height > 0){
+                player.width = width;
+                player.height = height;
+            }else{
+                player.percentWidth = 100;
+                player.percentHeight = 100;
+            }
             player.src = link;
             player.autoplay = false;
             player.controls = true;
