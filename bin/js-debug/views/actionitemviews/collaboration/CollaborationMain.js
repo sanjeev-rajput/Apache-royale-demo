@@ -8,9 +8,11 @@
  */
 
 goog.provide('views.actionitemviews.collaboration.CollaborationMain');
-/* Royale Dependency List: org.apache.royale.jewel.HGroup,org.apache.royale.jewel.supportClasses.scrollbar.ScrollingViewport,com.unhurdle.spectrum.TextField,com.unhurdle.spectrum.Label,org.apache.royale.jewel.List,com.unhurdle.spectrum.Switch,org.apache.royale.collections.ArrayList,org.apache.royale.events.Event,org.apache.royale.events.MouseEvent,org.apache.royale.events.ValueEvent,views.actionitemviews.collaboration.SocketMessageHandler,views.actionitemviews.collaboration.SocketVideoHandler,views.actionitemviews.websocket.SocketService,XML*/
+/* Royale Dependency List: org.apache.royale.binding.ContainerDataBinding,org.apache.royale.jewel.HGroup,org.apache.royale.jewel.supportClasses.scrollbar.ScrollingViewport,com.unhurdle.spectrum.TextField,org.apache.royale.icons.MaterialIcon,com.unhurdle.spectrum.Label,org.apache.royale.jewel.List,com.unhurdle.spectrum.Switch,org.apache.royale.collections.ArrayList,org.apache.royale.events.Event,org.apache.royale.events.MouseEvent,org.apache.royale.events.ValueChangeEvent,org.apache.royale.events.ValueEvent,views.actionitemviews.collaboration.SocketMessageHandler,views.actionitemviews.collaboration.SocketVideoHandler,views.actionitemviews.websocket.SocketService,XML*/
+/* Royale Static Dependency List: MaterialIconType*/
 
 goog.require('org.apache.royale.jewel.VGroup');
+goog.require('MaterialIconType');
 
 
 
@@ -21,17 +23,24 @@ goog.require('org.apache.royale.jewel.VGroup');
 views.actionitemviews.collaboration.CollaborationMain = function() {
   views.actionitemviews.collaboration.CollaborationMain.base(this, 'constructor');
   
+  this.views_actionitemviews_collaboration_CollaborationMain_camIconTypeNames_ = MaterialIconType.VIDEOCAM_OFF;
+  /**
+   * @private
+   * @type {org.apache.royale.binding.ContainerDataBinding}
+   */
+  this.$ID_13_0;
+  
   /**
    * @private
    * @type {org.apache.royale.jewel.HGroup}
    */
-  this.$ID_13_4;
+  this.$ID_13_9;
   
   /**
    * @private
    * @type {org.apache.royale.jewel.VGroup}
    */
-  this.$ID_13_1;
+  this.$ID_13_2;
   
   /**
    * @private
@@ -43,7 +52,7 @@ views.actionitemviews.collaboration.CollaborationMain = function() {
    * @private
    * @type {org.apache.royale.jewel.supportClasses.scrollbar.ScrollingViewport}
    */
-  this.$ID_13_0;
+  this.$ID_13_1;
   
   /**
    * @private
@@ -54,6 +63,18 @@ views.actionitemviews.collaboration.CollaborationMain = function() {
   /**
    * @private
    * @type {org.apache.royale.jewel.VGroup}
+   */
+  this.$ID_13_8;
+  
+  /**
+   * @private
+   * @type {org.apache.royale.jewel.HGroup}
+   */
+  this.$ID_13_4;
+  
+  /**
+   * @private
+   * @type {org.apache.royale.icons.MaterialIcon}
    */
   this.$ID_13_3;
   
@@ -71,9 +92,21 @@ views.actionitemviews.collaboration.CollaborationMain = function() {
   
   /**
    * @private
+   * @type {org.apache.royale.jewel.HGroup}
+   */
+  this.$ID_13_6;
+  
+  /**
+   * @private
    * @type {com.unhurdle.spectrum.Switch}
    */
   this.shareCamBtn_;
+  
+  /**
+   * @private
+   * @type {org.apache.royale.icons.MaterialIcon}
+   */
+  this.$ID_13_5;
   
   /**
    * @private
@@ -85,7 +118,7 @@ views.actionitemviews.collaboration.CollaborationMain = function() {
    * @private
    * @type {org.apache.royale.jewel.supportClasses.scrollbar.ScrollingViewport}
    */
-  this.$ID_13_2;
+  this.$ID_13_7;
   
   /**
    * @private
@@ -100,7 +133,7 @@ views.actionitemviews.collaboration.CollaborationMain = function() {
   this.mxmldp;
 
   this.generateMXMLAttributes([
-    3,
+    4,
     'percentWidth',
     true,
     100.0,
@@ -110,6 +143,18 @@ views.actionitemviews.collaboration.CollaborationMain = function() {
     'className',
     true,
     'collaborativeContainer',
+    'beads',
+    null,
+    [
+      org.apache.royale.binding.ContainerDataBinding,
+      1,
+      '_id',
+      true,
+      '$ID_13_0',
+      0,
+      0,
+      null
+    ],
     0,
     1,
     'initComplete',
@@ -152,6 +197,13 @@ views.actionitemviews.collaboration.CollaborationMain.prototype.views_actionitem
 
 /**
  * @private
+ * @type {string}
+ */
+views.actionitemviews.collaboration.CollaborationMain.prototype.views_actionitemviews_collaboration_CollaborationMain_camIconTypeNames_ = null;
+
+
+/**
+ * @private
  */
 views.actionitemviews.collaboration.CollaborationMain.prototype.views_actionitemviews_collaboration_CollaborationMain_init = function() {
   this.views_actionitemviews_collaboration_CollaborationMain__socketService = new views.actionitemviews.websocket.SocketService();
@@ -189,7 +241,7 @@ views.actionitemviews.collaboration.CollaborationMain.prototype.views_actionitem
     this.views_actionitemviews_collaboration_CollaborationMain_updateUserList();
   } else if (data["type"] == "user_list") {
     this.userList.dataProvider = new org.apache.royale.collections.ArrayList(data["users"]);
-    this.usrNos.text = "Connected Users: " + data["count"] + "/" + data["max"];
+    this.usrNos.text = ": " + data["count"] + "/" + data["max"];
     this.views_actionitemviews_collaboration_CollaborationMain_updateUserList();
   } else if (this.views_actionitemviews_collaboration_CollaborationMain__socketVideoHandler.isVideoMessage(org.apache.royale.utils.Language.string(data["type"]))) {
     this.views_actionitemviews_collaboration_CollaborationMain__socketVideoHandler.process(data);
@@ -219,8 +271,10 @@ views.actionitemviews.collaboration.CollaborationMain.prototype.views_actionitem
   var /** @type {boolean} */ flag = this.shareCamBtn.checked;
   if (flag) {
     this.views_actionitemviews_collaboration_CollaborationMain__socketVideoHandler.onStartWebcam();
+    this.views_actionitemviews_collaboration_CollaborationMain_camIconTypeNames = MaterialIconType.VIDEOCAM;
   } else {
     this.views_actionitemviews_collaboration_CollaborationMain__socketVideoHandler.onStopWebcam();
+    this.views_actionitemviews_collaboration_CollaborationMain_camIconTypeNames = MaterialIconType.VIDEOCAM_OFF;
   }
 };
 
@@ -232,7 +286,27 @@ views.actionitemviews.collaboration.CollaborationMain.prototype.disposeMe = func
 };
 
 
+Object.defineProperties(views.actionitemviews.collaboration.CollaborationMain.prototype, /** @lends {views.actionitemviews.collaboration.CollaborationMain.prototype} */ {
 /**
+ * @private
+ * @type {string}
+ */
+views_actionitemviews_collaboration_CollaborationMain_camIconTypeNames: {
+/** @this {views.actionitemviews.collaboration.CollaborationMain} */
+  get: function() {
+  return this.views_actionitemviews_collaboration_CollaborationMain_camIconTypeNames_;
+  },
+
+/** @this {views.actionitemviews.collaboration.CollaborationMain} */
+set: function(value) {
+if (value != this.views_actionitemviews_collaboration_CollaborationMain_camIconTypeNames_) {
+    var oldValue = this.views_actionitemviews_collaboration_CollaborationMain_camIconTypeNames_;
+    this.views_actionitemviews_collaboration_CollaborationMain_camIconTypeNames_ = value;
+    this.dispatchEvent(org.apache.royale.events.ValueChangeEvent.createUpdateEvent(
+         this, "camIconTypeNames", oldValue, value));
+}
+}}}
+);/**
  * @export
  * @param {org.apache.royale.events.Event} event
  */
@@ -354,7 +428,7 @@ Object.defineProperties(views.actionitemviews.collaboration.CollaborationMain.pr
           4,
           '_id',
           true,
-          '$ID_13_4',
+          '$ID_13_9',
           'percentHeight',
           true,
           100.0,
@@ -371,7 +445,7 @@ Object.defineProperties(views.actionitemviews.collaboration.CollaborationMain.pr
             3,
             '_id',
             true,
-            '$ID_13_1',
+            '$ID_13_2',
             'percentWidth',
             true,
             85.0,
@@ -405,7 +479,7 @@ Object.defineProperties(views.actionitemviews.collaboration.CollaborationMain.pr
                 1,
                 '_id',
                 true,
-                '$ID_13_0',
+                '$ID_13_1',
                 0,
                 0,
                 null
@@ -434,16 +508,19 @@ Object.defineProperties(views.actionitemviews.collaboration.CollaborationMain.pr
               null
             ],
             org.apache.royale.jewel.VGroup,
-            6,
+            7,
             '_id',
             true,
-            '$ID_13_3',
+            '$ID_13_8',
             'style',
             true,
             'border:1px dashed gray;',
             'percentWidth',
             true,
             15.0,
+            'minWidth',
+            true,
+            200,
             'percentHeight',
             true,
             100.0,
@@ -456,20 +533,46 @@ Object.defineProperties(views.actionitemviews.collaboration.CollaborationMain.pr
             0,
             0,
             [
-              com.unhurdle.spectrum.Label,
+              org.apache.royale.jewel.HGroup,
               3,
-              'id',
+              '_id',
               true,
-              'usrNos',
-              'text',
-              true,
-              'Connected Users:',
+              '$ID_13_4',
               'percentWidth',
               true,
               100.0,
+              'itemsHorizontalAlign',
+              true,
+              'itemsLeft',
               0,
               0,
-              null,
+              [
+                org.apache.royale.icons.MaterialIcon,
+                1,
+                '_id',
+                true,
+                '$ID_13_3',
+                0,
+                0,
+                null,
+                com.unhurdle.spectrum.Label,
+                4,
+                'id',
+                true,
+                'usrNos',
+                'text',
+                true,
+                ': ',
+                'color',
+                true,
+                'white',
+                'style',
+                true,
+                'color:black',
+                0,
+                0,
+                null
+              ],
               org.apache.royale.jewel.List,
               3,
               'id',
@@ -484,22 +587,45 @@ Object.defineProperties(views.actionitemviews.collaboration.CollaborationMain.pr
               0,
               0,
               null,
-              com.unhurdle.spectrum.Switch,
-              3,
-              'id',
+              org.apache.royale.jewel.HGroup,
+              5,
+              '_id',
               true,
-              'shareCamBtn',
-              'offLabel',
+              '$ID_13_6',
+              'itemsVerticalAlign',
               true,
-              'Webcam Off',
-              'onLabel',
+              'itemsCenter',
+              'itemsHorizontalAlign',
               true,
-              'Webcam On',
+              'itemsCenter',
+              'percentWidth',
+              true,
+              100.0,
+              'gap',
+              true,
+              5,
               0,
-              1,
-              'click',
-              this.$EH_13_2,
-              null,
+              0,
+              [
+                com.unhurdle.spectrum.Switch,
+                1,
+                'id',
+                true,
+                'shareCamBtn',
+                0,
+                1,
+                'click',
+                this.$EH_13_2,
+                null,
+                org.apache.royale.icons.MaterialIcon,
+                1,
+                '_id',
+                true,
+                '$ID_13_5',
+                0,
+                0,
+                null
+              ],
               org.apache.royale.jewel.VGroup,
               4,
               'id',
@@ -518,7 +644,7 @@ Object.defineProperties(views.actionitemviews.collaboration.CollaborationMain.pr
                 1,
                 '_id',
                 true,
-                '$ID_13_2',
+                '$ID_13_7',
                 0,
                 0,
                 null
@@ -538,6 +664,25 @@ Object.defineProperties(views.actionitemviews.collaboration.CollaborationMain.pr
     }
   }
 });
+/**
+ * @export
+ */
+views.actionitemviews.collaboration.CollaborationMain.prototype._bindings = [
+2,
+["MaterialIconType", "PEOPLE"],
+null,
+["$ID_13_3", "text"],
+/** @this {views.actionitemviews.collaboration.CollaborationMain} */
+function() { return this.views_actionitemviews_collaboration_CollaborationMain_camIconTypeNames; },
+null,
+["$ID_13_5", "text"],
+0,
+2,
+"camIconTypeNames",
+"valueChange",
+1,
+function() { return this.views_actionitemviews_collaboration_CollaborationMain_camIconTypeNames; },
+null];
 /**
  * Metadata
  *

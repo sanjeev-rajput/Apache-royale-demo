@@ -132,7 +132,6 @@ views.actionitemviews.collaboration.SocketVideoHandler.prototype.process = funct
 views.actionitemviews.collaboration.SocketVideoHandler.prototype.views_actionitemviews_collaboration_SocketVideoHandler_updateCamButtonState = function(on) {
   this.views_actionitemviews_collaboration_SocketVideoHandler_shareCamBtn.checked = on;
   this.views_actionitemviews_collaboration_SocketVideoHandler_webcamInitialized = on ? true : false;
-  this.views_actionitemviews_collaboration_SocketVideoHandler_shareCamBtn.onLabel = on ? "Webcam on" : "Webcam off";
 };
 
 

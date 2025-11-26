@@ -1,8 +1,11 @@
 <j:VGroup xmlns:fx="http://ns.adobe.com/mxml/2009"
     xmlns:j="library://ns.apache.org/royale/jewel"
-    xmlns:sp="library://ns.unhurdle.com/spectrum"
+    xmlns:sp="library://ns.unhurdle.com/spectrum" xmlns:js="library://ns.apache.org/royale/basic" xmlns:html="library://ns.apache.org/royale/html"
     initComplete="init()" width="100%" height="100%" className="collaborativeContainer">
-
+    <j:beads>
+        <js:ContainerDataBinding/>
+    </j:beads>
+    
     <fx:Script>
     <![CDATA[
         import views.actionitemviews.websocket.SocketService;
@@ -15,6 +18,7 @@
         private var _socketMsgHandler:SocketMessageHandler;
         private var _socketVideoHandler:SocketVideoHandler;
         private var myUserId:String;
+        [Bindable] private var camIconTypeNames:String = MaterialIconType.VIDEOCAM_OFF;
 
         private function init():void {
             _socketService = new SocketService();
@@ -45,7 +49,7 @@
                 updateUserList();
             } else if (data.type == "user_list") {
                 userList.dataProvider = new ArrayList(data.users);
-                usrNos.text = "Connected Users: " + data.count + "/" + data.max;
+                usrNos.text = ": " + data.count + "/" + data.max;
                 updateUserList();
             }else if (_socketVideoHandler.isVideoMessage(data.type)) {
                 _socketVideoHandler.process(data);
@@ -70,8 +74,11 @@
             var flag:Boolean = shareCamBtn.checked;
             if (flag) {
                 _socketVideoHandler.onStartWebcam();
+                camIconTypeNames = MaterialIconType.VIDEOCAM;
+                
             } else {
                 _socketVideoHandler.onStopWebcam();
+                camIconTypeNames = MaterialIconType.VIDEOCAM_OFF;
             }
         }
 
@@ -90,10 +97,16 @@
             </j:VGroup>
             <sp:TextField id="input" width="100%" onEnter="onInputChange()" placeholder="Type your message here..." style="resize:none"/>
         </j:VGroup>
-        <j:VGroup style="border:1px dashed gray;" width="15%" height="100%" itemsVerticalAlign="itemsTop" gap="1">
-            <sp:Label id="usrNos" text="Connected Users:" width="100%"/>
+        <j:VGroup style="border:1px dashed gray;" width="15%" minWidth="200" height="100%" itemsVerticalAlign="itemsTop" gap="1">
+            <j:HGroup width="100%" itemsHorizontalAlign="itemsLeft" >
+                <js:MaterialIcon text="{MaterialIconType.PEOPLE}"/>
+                <sp:Label id="usrNos" text=": " color="white" style="color:black"/>
+            </j:HGroup>
             <j:List id="userList" width="100%" height="50%"/>
-            <sp:Switch id="shareCamBtn" offLabel="Webcam Off" onLabel="Webcam On" click="onShareWebcam()"/>
+            <j:HGroup itemsVerticalAlign="itemsCenter" itemsHorizontalAlign="itemsCenter" width="100%" gap="5">
+                <sp:Switch id="shareCamBtn" click="onShareWebcam()"/>
+                <js:MaterialIcon text="{camIconTypeNames}"/>
+            </j:HGroup>
             <j:VGroup id="uVidContainer" width="100%" height="50%">
                 <j:beads>
                     <j:ScrollingViewport/>

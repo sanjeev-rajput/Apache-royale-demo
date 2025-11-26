@@ -56,7 +56,8 @@ package views.actionitemviews.collaboration {
         private function updateCamButtonState(on:Boolean):void {
             shareCamBtn.checked = on;
             webcamInitialized = on ? true : false;
-            shareCamBtn.onLabel = on ? "Webcam on" : "Webcam off";
+            //shareCamBtn.onLabel = on ? "Webcam on" : "Webcam off";
+            
         }
 
 
