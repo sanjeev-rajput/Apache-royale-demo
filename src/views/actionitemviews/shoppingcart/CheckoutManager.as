@@ -46,6 +46,8 @@ package views.actionitemviews.shoppingcart{
             var db:Disabled = Disabled(_btnChkout.getBeadByType(Disabled))
 
             totalPrice == 0 ? db.disabled = true : db.disabled =false ;
+            totalPrice == 0 ? _btnChkout.style = "color:null; cursor:null;" : _btnChkout.style = "color:red; cursor:pointer;";
+            
         }
 
         public function checkout():void {

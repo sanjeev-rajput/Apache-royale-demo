@@ -79,7 +79,8 @@ package views.actionitemviews.toc {
                 pgNationSelectedPage = pgNation.getCurrentPage();
                 renderAccUi(arrList[pgNation.getCurrentPage()-1] as Array)  
             })
-            pgNation.setTotalPages(arrList.length)
+            //pgNation.setTotalPages(arrList.length)
+            pgNation.setTotalPages(5)
             pgNation.setCurrentPage(1);
         }
 
@@ -104,7 +105,7 @@ package views.actionitemviews.toc {
                 }
                 var content:AccordionContent = new AccordionContent();
                 content.className = "accItem tocText";
-                content.height = 50;
+                //content.height = 50;
                 //content.text = i+1 +".  |  " + data[i]["Topic"] + " :: " + data[i]["Subtopic"] + " :: " + data[i]["Activity Type"] + " :: " + data[i]["Activity Name"];
                 var tb:tableData = new tableData();
                 var objModel:Object = new Object();

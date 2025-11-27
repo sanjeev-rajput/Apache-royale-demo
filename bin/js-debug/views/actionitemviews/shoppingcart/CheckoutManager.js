@@ -66,6 +66,7 @@ views.actionitemviews.shoppingcart.CheckoutManager.prototype.updaPriceTotal = fu
   this.views_actionitemviews_shoppingcart_CheckoutManager__priceLbl.html = "Total: $" + totalPrice.toFixed(2);
   var /** @type {org.apache.royale.jewel.beads.controls.Disabled} */ db = org.apache.royale.utils.Language.as(this.views_actionitemviews_shoppingcart_CheckoutManager__btnChkout.getBeadByType(org.apache.royale.jewel.beads.controls.Disabled), org.apache.royale.jewel.beads.controls.Disabled, true);
   totalPrice == 0 ? db.disabled = true : db.disabled = false;
+  totalPrice == 0 ? this.views_actionitemviews_shoppingcart_CheckoutManager__btnChkout.style = "color:null; cursor:null;" : this.views_actionitemviews_shoppingcart_CheckoutManager__btnChkout.style = "color:red; cursor:pointer;";
 };
 
 

@@ -161,7 +161,7 @@ views.actionitemviews.toc.TocAndPgnation.prototype.views_actionitemviews_toc_Toc
     self.views_actionitemviews_toc_TocAndPgnation_pgNationSelectedPage = self.views_actionitemviews_toc_TocAndPgnation_pgNation.getCurrentPage();
     self.views_actionitemviews_toc_TocAndPgnation_renderAccUi(arrList.getItemAt((self.views_actionitemviews_toc_TocAndPgnation_pgNation.getCurrentPage() - 1) >> 0));
   });
-  this.views_actionitemviews_toc_TocAndPgnation_pgNation.setTotalPages(arrList.length);
+  this.views_actionitemviews_toc_TocAndPgnation_pgNation.setTotalPages(5);
   this.views_actionitemviews_toc_TocAndPgnation_pgNation.setCurrentPage(1);
 };
 
@@ -193,7 +193,6 @@ views.actionitemviews.toc.TocAndPgnation.prototype.views_actionitemviews_toc_Toc
     }
     var /** @type {com.unhurdle.spectrum.AccordionContent} */ content = new com.unhurdle.spectrum.AccordionContent();
     content.className = "accItem tocText";
-    content.height = 50;
     var /** @type {views.actionitemviews.toc.tableData} */ tb = new views.actionitemviews.toc.tableData();
     var /** @type {Object} */ objModel = new Object();
     objModel["dataSet"] = data[i];

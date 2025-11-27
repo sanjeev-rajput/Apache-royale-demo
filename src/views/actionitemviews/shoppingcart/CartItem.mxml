@@ -55,7 +55,6 @@
         </j:BarSection>
         <j:BarSection itemsHorizontalAlign="itemsRight">
             <html:I class="fa-solid fa-xmark" click="cartItemQtyHandler(CartItem.ITEM_REMOVED)"/>
-            <!-- <j:Image src="img/xmark.svg" height="20" width="20" click="cartItemQtyHandler(CartItem.ITEM_REMOVED)"/> -->
         </j:BarSection>
     </j:CardHeader>
     <j:Image id="img" height="100" className="shoppingProductImg"/>

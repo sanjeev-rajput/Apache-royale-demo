@@ -8,9 +8,11 @@
  */
 
 goog.provide('views.actionitemviews.shoppingcart.ShoppingMain');
-/* Royale Dependency List: org.apache.royale.jewel.VGroup,org.apache.royale.icons.FontAwesomeToggleIcon,org.apache.royale.jewel.beads.controls.ToolTip,org.apache.royale.jewel.Label,org.apache.royale.jewel.Group,org.apache.royale.jewel.beads.layouts.TileHorizontalLayout,org.apache.royale.jewel.supportClasses.scrollbar.ScrollingViewport,org.apache.royale.jewel.Image,org.apache.royale.jewel.Button,org.apache.royale.events.Event,views.actionitemviews.shoppingcart.Controller,XML*/
+/* Royale Dependency List: org.apache.royale.binding.ContainerDataBinding,org.apache.royale.jewel.VGroup,org.apache.royale.icons.FontAwesomeToggleIcon,org.apache.royale.jewel.beads.controls.ToolTip,org.apache.royale.jewel.Label,org.apache.royale.jewel.Group,org.apache.royale.jewel.beads.layouts.TileHorizontalLayout,org.apache.royale.jewel.supportClasses.scrollbar.ScrollingViewport,org.apache.royale.icons.MaterialIcon,org.apache.royale.events.Event,views.actionitemviews.shoppingcart.Controller,XML*/
+/* Royale Static Dependency List: MaterialIconType*/
 
 goog.require('org.apache.royale.jewel.HGroup');
+goog.require('MaterialIconType');
 
 
 
@@ -23,15 +25,21 @@ views.actionitemviews.shoppingcart.ShoppingMain = function() {
   
   /**
    * @private
+   * @type {org.apache.royale.binding.ContainerDataBinding}
+   */
+  this.$ID_13_0;
+  
+  /**
+   * @private
    * @type {org.apache.royale.jewel.VGroup}
    */
-  this.$ID_13_6;
+  this.$ID_13_7;
   
   /**
    * @private
    * @type {org.apache.royale.jewel.HGroup}
    */
-  this.$ID_13_3;
+  this.$ID_13_4;
   
   /**
    * @private
@@ -43,13 +51,13 @@ views.actionitemviews.shoppingcart.ShoppingMain = function() {
    * @private
    * @type {org.apache.royale.jewel.beads.controls.ToolTip}
    */
-  this.$ID_13_0;
+  this.$ID_13_1;
   
   /**
    * @private
    * @type {org.apache.royale.jewel.Label}
    */
-  this.$ID_13_1;
+  this.$ID_13_2;
   
   /**
    * @private
@@ -61,7 +69,7 @@ views.actionitemviews.shoppingcart.ShoppingMain = function() {
    * @private
    * @type {org.apache.royale.jewel.beads.controls.ToolTip}
    */
-  this.$ID_13_2;
+  this.$ID_13_3;
   
   /**
    * @private
@@ -79,31 +87,31 @@ views.actionitemviews.shoppingcart.ShoppingMain = function() {
    * @private
    * @type {org.apache.royale.jewel.supportClasses.scrollbar.ScrollingViewport}
    */
-  this.$ID_13_5;
+  this.$ID_13_6;
   
   /**
    * @private
    * @type {org.apache.royale.jewel.VGroup}
    */
-  this.$ID_13_12;
+  this.$ID_13_13;
   
   /**
    * @private
    * @type {org.apache.royale.jewel.HGroup}
    */
-  this.$ID_13_9;
+  this.$ID_13_10;
   
   /**
    * @private
-   * @type {org.apache.royale.jewel.Image}
+   * @type {org.apache.royale.icons.MaterialIcon}
    */
-  this.$ID_13_7;
+  this.$ID_13_8;
   
   /**
    * @private
    * @type {org.apache.royale.jewel.Label}
    */
-  this.$ID_13_8;
+  this.$ID_13_9;
   
   /**
    * @private
@@ -121,7 +129,7 @@ views.actionitemviews.shoppingcart.ShoppingMain = function() {
    * @private
    * @type {org.apache.royale.jewel.supportClasses.scrollbar.ScrollingViewport}
    */
-  this.$ID_13_11;
+  this.$ID_13_12;
   
   /**
    * @private
@@ -131,7 +139,7 @@ views.actionitemviews.shoppingcart.ShoppingMain = function() {
   
   /**
    * @private
-   * @type {org.apache.royale.jewel.Button}
+   * @type {org.apache.royale.icons.MaterialIcon}
    */
   this.btnCheckout_;
   
@@ -154,13 +162,25 @@ views.actionitemviews.shoppingcart.ShoppingMain = function() {
   this.mxmldp;
 
   this.generateMXMLAttributes([
-    2,
+    3,
     'percentHeight',
     true,
     100.0,
     'percentWidth',
     true,
     100.0,
+    'beads',
+    null,
+    [
+      org.apache.royale.binding.ContainerDataBinding,
+      1,
+      '_id',
+      true,
+      '$ID_13_0',
+      0,
+      0,
+      null
+    ],
     0,
     1,
     'initComplete',
@@ -185,6 +205,7 @@ views.actionitemviews.shoppingcart.ShoppingMain.prototype.views_actionitemviews_
  */
 views.actionitemviews.shoppingcart.ShoppingMain.prototype.views_actionitemviews_shoppingcart_ShoppingMain_initApp = function() {
   this.views_actionitemviews_shoppingcart_ShoppingMain__controller = new views.actionitemviews.shoppingcart.Controller(this);
+  this.cartArea.percentHeight = 100;
 };
 
 
@@ -329,7 +350,7 @@ Object.defineProperties(views.actionitemviews.shoppingcart.ShoppingMain.prototyp
           2,
           '_id',
           true,
-          '$ID_13_6',
+          '$ID_13_7',
           'percentHeight',
           true,
           100.0,
@@ -340,7 +361,7 @@ Object.defineProperties(views.actionitemviews.shoppingcart.ShoppingMain.prototyp
             4,
             '_id',
             true,
-            '$ID_13_3',
+            '$ID_13_4',
             'itemsHorizontalAlign',
             true,
             'itemsSpaceAround',
@@ -371,7 +392,7 @@ Object.defineProperties(views.actionitemviews.shoppingcart.ShoppingMain.prototyp
                 3,
                 '_id',
                 true,
-                '$ID_13_0',
+                '$ID_13_1',
                 'toolTip',
                 true,
                 'sort by price',
@@ -389,7 +410,7 @@ Object.defineProperties(views.actionitemviews.shoppingcart.ShoppingMain.prototyp
               3,
               '_id',
               true,
-              '$ID_13_1',
+              '$ID_13_2',
               'text',
               true,
               'Drag item from here',
@@ -417,7 +438,7 @@ Object.defineProperties(views.actionitemviews.shoppingcart.ShoppingMain.prototyp
                 3,
                 '_id',
                 true,
-                '$ID_13_2',
+                '$ID_13_3',
                 'toolTip',
                 true,
                 'sort by quantity',
@@ -467,7 +488,7 @@ Object.defineProperties(views.actionitemviews.shoppingcart.ShoppingMain.prototyp
               1,
               '_id',
               true,
-              '$ID_13_5',
+              '$ID_13_6',
               0,
               0,
               null
@@ -480,7 +501,7 @@ Object.defineProperties(views.actionitemviews.shoppingcart.ShoppingMain.prototyp
           2,
           '_id',
           true,
-          '$ID_13_12',
+          '$ID_13_13',
           'percentHeight',
           true,
           100.0,
@@ -488,10 +509,10 @@ Object.defineProperties(views.actionitemviews.shoppingcart.ShoppingMain.prototyp
           0,
           [
             org.apache.royale.jewel.HGroup,
-            4,
+            5,
             '_id',
             true,
-            '$ID_13_9',
+            '$ID_13_10',
             'gap',
             true,
             1,
@@ -501,20 +522,17 @@ Object.defineProperties(views.actionitemviews.shoppingcart.ShoppingMain.prototyp
             'itemsVerticalAlign',
             true,
             'itemsCenter',
+            'itemsHorizontalAlign',
+            true,
+            'itemsSpaceAround',
             0,
             0,
             [
-              org.apache.royale.jewel.Image,
-              3,
+              org.apache.royale.icons.MaterialIcon,
+              1,
               '_id',
               true,
-              '$ID_13_7',
-              'src',
-              true,
-              'img/shopping/shopping-cart.png',
-              'height',
-              true,
-              30,
+              '$ID_13_8',
               0,
               0,
               null,
@@ -522,7 +540,7 @@ Object.defineProperties(views.actionitemviews.shoppingcart.ShoppingMain.prototyp
               4,
               '_id',
               true,
-              '$ID_13_8',
+              '$ID_13_9',
               'text',
               true,
               'Drop items here',
@@ -537,14 +555,11 @@ Object.defineProperties(views.actionitemviews.shoppingcart.ShoppingMain.prototyp
               null
             ],
             org.apache.royale.jewel.Group,
-            5,
+            4,
             'id',
             true,
             'cartArea',
             'percentWidth',
-            true,
-            100.0,
-            'percentHeight',
             true,
             100.0,
             'style',
@@ -571,7 +586,7 @@ Object.defineProperties(views.actionitemviews.shoppingcart.ShoppingMain.prototyp
               1,
               '_id',
               true,
-              '$ID_13_11',
+              '$ID_13_12',
               0,
               0,
               null
@@ -580,7 +595,7 @@ Object.defineProperties(views.actionitemviews.shoppingcart.ShoppingMain.prototyp
             0,
             null,
             org.apache.royale.jewel.HGroup,
-            4,
+            5,
             'id',
             true,
             'checkoutArea',
@@ -593,17 +608,17 @@ Object.defineProperties(views.actionitemviews.shoppingcart.ShoppingMain.prototyp
             'itemsHorizontalAlign',
             true,
             'itemsSpaceBetween',
+            'style',
+            true,
+            'padding-bottom:40px',
             0,
             0,
             [
-              org.apache.royale.jewel.Button,
-              2,
+              org.apache.royale.icons.MaterialIcon,
+              1,
               'id',
               true,
               'btnCheckout',
-              'text',
-              true,
-              'Checkout ➡️ ',
               0,
               0,
               null,
@@ -634,6 +649,18 @@ Object.defineProperties(views.actionitemviews.shoppingcart.ShoppingMain.prototyp
   }
 });
 /**
+ * @export
+ */
+views.actionitemviews.shoppingcart.ShoppingMain.prototype._bindings = [
+2,
+["MaterialIconType", "SHOPPING_BASKET"],
+null,
+["$ID_13_8", "text"],
+["MaterialIconType", "SHOPPING_CART_CHECKOUT"],
+null,
+["btnCheckout", "text"]
+];
+/**
  * Metadata
  *
  * @type {Object.<string, Array.<Object>>}
@@ -658,7 +685,7 @@ views.actionitemviews.shoppingcart.ShoppingMain.prototype.ROYALE_REFLECTION_INFO
         'cartArea': { type: 'org.apache.royale.jewel.Group', access: 'readwrite', declaredBy: 'views.actionitemviews.shoppingcart.ShoppingMain'},
         'clist': { type: 'org.apache.royale.jewel.beads.layouts.TileHorizontalLayout', access: 'readwrite', declaredBy: 'views.actionitemviews.shoppingcart.ShoppingMain'},
         'checkoutArea': { type: 'org.apache.royale.jewel.HGroup', access: 'readwrite', declaredBy: 'views.actionitemviews.shoppingcart.ShoppingMain'},
-        'btnCheckout': { type: 'org.apache.royale.jewel.Button', access: 'readwrite', declaredBy: 'views.actionitemviews.shoppingcart.ShoppingMain'},
+        'btnCheckout': { type: 'org.apache.royale.icons.MaterialIcon', access: 'readwrite', declaredBy: 'views.actionitemviews.shoppingcart.ShoppingMain'},
         'totalLabel': { type: 'org.apache.royale.jewel.Label', access: 'readwrite', declaredBy: 'views.actionitemviews.shoppingcart.ShoppingMain'}
       };
     },

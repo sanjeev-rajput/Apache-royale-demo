@@ -6,7 +6,7 @@
                 <j:ToolTip toolTip="Arrange row" className="toolTip"/>
             </j:beads>
         </j:ImageIcon>
-         <html:Span localId="txt" percentWidth="100">some tex</html:Span>
+         <html:Span localId="txt" percentWidth="100" style="word-wrap: break-word;">some text</html:Span>
         <j:ImageIcon id="ifrmBrn" src="img/icons8-click-24.png" click="iframeLoadEventHandler()" className="launchBtn launchBtnImg">
             <j:beads>
                 <j:ToolTip toolTip="Click to open" className="toolTip"/>
