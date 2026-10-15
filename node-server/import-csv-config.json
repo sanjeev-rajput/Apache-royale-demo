@@ -1,0 +1,8 @@
+
+{
+  "csvDirectory": "../src/config",
+  "files": [
+    "toc-dr-1.csv",
+    "toc-dr-2.csv"
+  ]
+}

@@ -263,7 +263,3 @@ views.actionitemviews.collaboration.MessageItem.prototype.ROYALE_REFLECTION_INFO
  * @type {number}
  */
 views.actionitemviews.collaboration.MessageItem.prototype.ROYALE_COMPILE_FLAGS = 9;
-
-
-
-//# sourceMappingURL=./MessageItem.js.map

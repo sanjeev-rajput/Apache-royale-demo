@@ -14,6 +14,7 @@
             import views.actionitemviews.searchlist.LstItem;
             import com.util.AsJsUtil;
             import com.util.AppAlert;
+            import org.apache.royale.net.URLRequestHeader;
             
             
 
@@ -38,7 +39,9 @@
                     return
                 }
                 var svr:ServiceLoader = new ServiceLoader();
-                svr.loadJData("https://restcountries.com/v3.1/independent?status=true", dataLoadHandler, ServiceLoader.DATA_TYPE_JSON, failHandler, false)
+                svr.headers = [ new URLRequestHeader('Authorization', 'rc_live_a353a6901d4942ada490c8a40c0c2b7d')];
+                //svr.loadJData("https://restcountries.com/v3.1/independent?status=true", dataLoadHandler, ServiceLoader.DATA_TYPE_JSON, failHandler, false)
+                svr.loadJData("https://api.restcountries.com/countries/v5?limit=100", dataLoadHandler, ServiceLoader.DATA_TYPE_JSON, failHandler, false)
             }
 
             private function dataLoadHandler(obj:JSON):void{
@@ -46,7 +49,10 @@
                     throw new Error("Data not found")
                 }
                 if(LstModel.instance.listData == null){
-                    LstModel.instance.listData = obj;
+                    console.log("Data loaded from server", obj)
+                    console.log("Data loaded from server", obj['data'].objects)
+                    
+                    LstModel.instance.listData = obj['data'].objects;
                     cLst.dataProvider = LstModel.instance.getCountryDetailsByKey('name');
                 }
                 populateListUiItems();

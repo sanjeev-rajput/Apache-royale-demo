@@ -946,7 +946,3 @@ views.actionitemviews.stockSocket.StockSocketMain.prototype.ROYALE_COMPILE_FLAGS
  * @type {Array<string>}
  */
 views.actionitemviews.stockSocket.StockSocketMain.prototype.ROYALE_INITIAL_STATICS = Object.keys(views.actionitemviews.stockSocket.StockSocketMain);
-
-
-
-//# sourceMappingURL=./StockSocketMain.js.map

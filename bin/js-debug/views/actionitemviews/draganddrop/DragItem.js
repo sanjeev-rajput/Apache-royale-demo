@@ -156,7 +156,3 @@ views.actionitemviews.draganddrop.DragItem.prototype.ROYALE_REFLECTION_INFO = fu
  * @type {number}
  */
 views.actionitemviews.draganddrop.DragItem.prototype.ROYALE_COMPILE_FLAGS = 9;
-
-
-
-//# sourceMappingURL=./DragItem.js.map

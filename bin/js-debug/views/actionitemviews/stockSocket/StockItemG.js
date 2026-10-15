@@ -204,6 +204,27 @@ views.actionitemviews.stockSocket.StockItemG.prototype.views_actionitemviews_sto
 ;
 
 
+/**
+ * @private
+ */
+views.actionitemviews.stockSocket.StockItemG.prototype.views_actionitemviews_stockSocket_StockItemG_highlightPnL = function() {
+  if (this.views_actionitemviews_stockSocket_StockItemG__dataHistory.length < 2)
+    return;
+  if (this.views_actionitemviews_stockSocket_StockItemG__dataHistory[0] < this.views_actionitemviews_stockSocket_StockItemG__dataHistory[this.views_actionitemviews_stockSocket_StockItemG__dataHistory.length - 1]) {
+    if (this.containsClass("stockItemLossColor")) {
+      this.removeClass("stockItemLossColor");
+    }
+    this.addClass("stockItemProfitColor");
+  }
+  if (this.views_actionitemviews_stockSocket_StockItemG__dataHistory[0] > this.views_actionitemviews_stockSocket_StockItemG__dataHistory[this.views_actionitemviews_stockSocket_StockItemG__dataHistory.length - 1]) {
+    if (this.containsClass("stockItemProfitColor")) {
+      this.removeClass("stockItemProfitColor");
+    }
+    this.addClass("stockItemLossColor");
+  }
+};
+
+
 ;
 
 
@@ -356,6 +377,7 @@ views.actionitemviews.stockSocket.StockItemG.prototype.set__sData = function(d) 
   setTimeout(function() {
     self.removeClass("stockItemHighlight");
   }, 200);
+  this.views_actionitemviews_stockSocket_StockItemG_highlightPnL();
 };
 
 
@@ -589,7 +611,3 @@ views.actionitemviews.stockSocket.StockItemG.prototype.ROYALE_REFLECTION_INFO = 
  * @type {number}
  */
 views.actionitemviews.stockSocket.StockItemG.prototype.ROYALE_COMPILE_FLAGS = 9;
-
-
-
-//# sourceMappingURL=./StockItemG.js.map

@@ -173,6 +173,8 @@ com.model.ServiceLoader.prototype.com_model_ServiceLoader_completeJdataHandler =
   com.util.preloader.DsPreloader.instance.remvoePreloader("serviceLoader");
   if (this.com_model_ServiceLoader__service.status == 0) {
     com.util.AppAlert.show(com.util.AppAlert.ERROR, "Unable to connect!!! Pelase check you network (internet) connection !!!");
+    if (this.com_model_ServiceLoader__errorCallback != null)
+      this.com_model_ServiceLoader__errorCallback(event);
     return;
   }
   if (this.com_model_ServiceLoader__dataType == com.model.ServiceLoader.DATA_TYPE_JSON)
@@ -346,5 +348,3 @@ com.model.ServiceLoader.prototype.ROYALE_COMPILE_FLAGS = 9;
  * @type {Array<string>}
  */
 com.model.ServiceLoader.prototype.ROYALE_INITIAL_STATICS = Object.keys(com.model.ServiceLoader);
-
-//# sourceMappingURL=./ServiceLoader.js.map

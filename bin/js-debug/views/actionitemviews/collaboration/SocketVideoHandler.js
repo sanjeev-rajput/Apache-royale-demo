@@ -352,5 +352,3 @@ views.actionitemviews.collaboration.SocketVideoHandler.prototype.ROYALE_REFLECTI
  * @type {number}
  */
 views.actionitemviews.collaboration.SocketVideoHandler.prototype.ROYALE_COMPILE_FLAGS = 9;
-
-//# sourceMappingURL=./SocketVideoHandler.js.map

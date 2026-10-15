@@ -384,7 +384,3 @@ views.actionitemviews.pexels.SingleVideoView.prototype.ROYALE_REFLECTION_INFO = 
  * @type {number}
  */
 views.actionitemviews.pexels.SingleVideoView.prototype.ROYALE_COMPILE_FLAGS = 9;
-
-
-
-//# sourceMappingURL=./SingleVideoView.js.map

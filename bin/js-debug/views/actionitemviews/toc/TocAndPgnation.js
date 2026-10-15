@@ -226,7 +226,7 @@ views.actionitemviews.toc.TocAndPgnation.prototype.views_actionitemviews_toc_Toc
  */
 views.actionitemviews.toc.TocAndPgnation.prototype.views_actionitemviews_toc_TocAndPgnation_tocItemClickHanler = function(e) {
   var /** @type {views.actionitemviews.toc.tableData} */ accContent = e.currentTarget;
-  views.ContentLoaderIframe.instance.loadPage(accContent.model['url']);
+  views.ContentLoaderIframe.instance.loadPage(org.apache.royale.utils.Language.string(accContent.model['url']));
   e.preventDefault();
 };
 
@@ -297,5 +297,3 @@ views.actionitemviews.toc.TocAndPgnation.prototype.ROYALE_COMPILE_FLAGS = 9;
  * @type {Array<string>}
  */
 views.actionitemviews.toc.TocAndPgnation.prototype.ROYALE_INITIAL_STATICS = Object.keys(views.actionitemviews.toc.TocAndPgnation);
-
-//# sourceMappingURL=./TocAndPgnation.js.map

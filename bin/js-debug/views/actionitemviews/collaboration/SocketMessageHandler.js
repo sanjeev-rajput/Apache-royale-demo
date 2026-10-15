@@ -143,5 +143,3 @@ views.actionitemviews.collaboration.SocketMessageHandler.prototype.ROYALE_REFLEC
  * @type {number}
  */
 views.actionitemviews.collaboration.SocketMessageHandler.prototype.ROYALE_COMPILE_FLAGS = 9;
-
-//# sourceMappingURL=./SocketMessageHandler.js.map

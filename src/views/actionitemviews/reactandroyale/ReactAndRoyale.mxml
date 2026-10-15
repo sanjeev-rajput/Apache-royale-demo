@@ -2,7 +2,7 @@
 <j:HGroup xmlns:fx="http://ns.adobe.com/mxml/2009"
          xmlns:j="library://ns.apache.org/royale/jewel"
          xmlns:sp="library://ns.unhurdle.com/spectrum" xmlns:="library://ns.apache.org/royale/html"
-         initComplete="init()" percentWidth="100" percentHeight="100" gap="50" 
+         initComplete="init()" percentWidth="100" percentHeight="100" gap="10" 
          itemsVerticalAlign="itemsTop" itemsHorizontalAlign="itemsSpaceAround">
 
     <fx:Script>

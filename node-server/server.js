@@ -1,12 +1,13 @@
-import http from 'http';
-import app from './app.js';
-import { setupSharedWebSocketServer } from './services/sharedWebSocketServer.js';
+import http from "node:http";
+import app from "./app.js";
+import { setupSharedWebSocketServer } from "./services/sharedWebSocketServer.js";
 
-const PORT = 3000;
+const PORT = Number(process.env.PORT || 3000);
 const server = http.createServer(app);
 
-setupSharedWebSocketServer(server); // ONE WebSocketServer only
+// Keep the existing shared WebSocket setup; the catalog loads from CSV on demand.
+setupSharedWebSocketServer(server);
 
 server.listen(PORT, () => {
-  console.log(`✅ Server running at http://localhost:${PORT}`);
+  console.log(`Server running at http://localhost:${PORT}`);
 });

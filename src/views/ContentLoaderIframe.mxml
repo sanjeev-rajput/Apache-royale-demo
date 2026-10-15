@@ -22,9 +22,9 @@
                 return _instance;
             }
 
-            public function loadPage(data:Object):void{
+            public function loadPage(url:String):void{
                 this.visible=true;
-                iFrm.src = data.url;
+                iFrm.src = 'assets/content/'+url;
                 DsEvent.instance.dispatch(DsEvent.IFRAMEOPENED)
             }
             

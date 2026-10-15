@@ -358,5 +358,92 @@ package com.util
 			}
 			return str;
 		}
+
+		public static function markdownToHtml(value:String):String
+            {
+                if (value == null)
+                    return "";
+
+                var safe:String = escapeHTML(value);
+                var lines:Array = safe.split(/\r?\n/);
+                var output:String = "";
+                var inList:Boolean = false;
+
+                for each (var line:String in lines)
+                {
+                    var trimmed:String = line.replace(/^\s+|\s+$/g, "");
+
+                    // Close an open bullet list when the next line is not a bullet.
+                    if (inList && !/^\-\s+/.test(trimmed))
+                    {
+                        output += "</ul>";
+                        inList = false;
+                    }
+
+                    // Headings
+                    if (/^###\s+/.test(trimmed))
+                    {
+                        output += "<h4>" +
+                            trimmed.replace(/^###\s+/, "") +
+                            "</h4>";
+                    }
+                    else if (/^##\s+/.test(trimmed))
+                    {
+                        output += "<h3>" +
+                            trimmed.replace(/^##\s+/, "") +
+                            "</h3>";
+                    }
+                    else if (/^#\s+/.test(trimmed))
+                    {
+                        output += "<h2>" +
+                            trimmed.replace(/^#\s+/, "") +
+                            "</h2>";
+                    }
+                    // Bullet list items
+                    else if (/^\-\s+/.test(trimmed))
+                    {
+                        if (!inList)
+                        {
+                            output += "<ul>";
+                            inList = true;
+                        }
+
+                        output += "<li>" +
+                            trimmed.replace(/^\-\s+/, "") +
+                            "</li>";
+                    }
+                    // Empty line
+                    else if (trimmed == "")
+                    {
+                        output += "<br/>";
+                    }
+                    // Normal text
+                    else
+                    {
+                        output += trimmed + "<br/>";
+                    }
+                }
+
+                if (inList)
+                    output += "</ul>";
+
+                // Bold and italic formatting
+                output = output.replace(/\*\*(.+?)\*\*/g, "<b>$1</b>");
+                output = output.replace(/\*(.+?)\*/g, "<i>$1</i>");
+
+                return output;
+            }
+
+		public static function escapeHTML(value:String):String
+            {
+                if (value == null)
+                    return "";
+
+                return value
+                    .replace(/&/g, "&amp;")
+                    .replace(/</g, "&lt;")
+                    .replace(/>/g, "&gt;")
+                    .replace(/"/g, "&quot;");
+            }
 	}
 }

@@ -137,5 +137,3 @@ views.actionitemviews.shoppingcart.Controller.prototype.ROYALE_REFLECTION_INFO =
  * @type {number}
  */
 views.actionitemviews.shoppingcart.Controller.prototype.ROYALE_COMPILE_FLAGS = 9;
-
-//# sourceMappingURL=./Controller.js.map

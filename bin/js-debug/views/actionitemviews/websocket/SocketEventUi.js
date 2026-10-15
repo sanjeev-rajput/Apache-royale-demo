@@ -310,7 +310,3 @@ views.actionitemviews.websocket.SocketEventUi.prototype.ROYALE_REFLECTION_INFO =
  * @type {number}
  */
 views.actionitemviews.websocket.SocketEventUi.prototype.ROYALE_COMPILE_FLAGS = 9;
-
-
-
-//# sourceMappingURL=./SocketEventUi.js.map

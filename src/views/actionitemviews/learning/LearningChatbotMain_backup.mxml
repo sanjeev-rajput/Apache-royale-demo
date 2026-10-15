@@ -1,0 +1,609 @@
+
+<j:Group xmlns:fx="http://ns.adobe.com/mxml/2009"
+         xmlns:j="library://ns.apache.org/royale/jewel"
+         xmlns:sp="library://ns.unhurdle.com/spectrum"
+         xmlns:html="library://ns.apache.org/royale/html"
+         xmlns="library://ns.apache.org/royale/html"
+         width="100%"
+         height="100%">
+
+    <fx:Script>
+        <![CDATA[
+            import org.apache.royale.events.Event;
+            import com.model.ServiceLoader;
+            import com.model.Config;
+            import views.ContentLoaderIframe;
+            import org.apache.royale.html.HTMLText;
+
+            private var httpService:ServiceLoader;
+            private var sUrl:String = Config.apiBaseUrl;
+
+            // Conversation state
+            private var currentTopic:String = "";
+            private var currentGrade:String = "";
+            private var waitingForGrade:Boolean = false;
+            private var filterByGrade:Boolean = false;
+
+            // Catalog results
+            private var allResults:Array = [];
+            private var lastResults:Array = [];
+
+            // --------------------------------------------------
+            // Send message
+            // --------------------------------------------------
+
+            private function sendMessage():void
+            {
+                var message:String = questionInput.text;
+
+                if (!message ||
+                    message.replace(/^\s+|\s+$/g, "") == "")
+                {
+                    return;
+                }
+
+                questionInput.text = "";
+                addChatMessage("You", message);
+
+                processMessage(message);
+            }
+
+            // --------------------------------------------------
+            // Conversation routing
+            // --------------------------------------------------
+
+            private function processMessage(message:String):void
+            {
+                var text:String = message.toLowerCase();
+
+                var gradeMatch:Array =
+                    text.match(/(?:class|grade)\s*(\d+)/i);
+
+                // See all classes for the current topic
+                if (text.indexOf("all classes") >= 0 ||
+                    text.indexOf("all grades") >= 0 ||
+                    text.indexOf("every class") >= 0)
+                {
+                    if (currentTopic != "")
+                    {
+                        currentGrade = "";
+                        waitingForGrade = false;
+                        filterByGrade = false;
+
+                        addChatMessage(
+                            "Tutor",
+                            "Sure! I'll show matching activities " +
+                            "across all available classes."
+                        );
+
+                        searchLearning();
+                    }
+                    else
+                    {
+                        addChatMessage(
+                            "Tutor",
+                            "What topic would you like to explore?"
+                        );
+                    }
+
+                    return;
+                }
+
+                // Ask to change class
+                if (text.indexOf("another class") >= 0 ||
+                    text.indexOf("different class") >= 0 ||
+                    text.indexOf("change class") >= 0 ||
+                    text.indexOf("try another class") >= 0)
+                {
+                    if (currentTopic != "")
+                    {
+                        waitingForGrade = true;
+
+                        addChatMessage(
+                            "Tutor",
+                            "Which class would you like to explore? " +
+                            "For example, Class 1 or Class 3. " +
+                            "You can also type 'all classes'."
+                        );
+                    }
+
+                    return;
+                }
+
+                // Student answers the class question
+                if (waitingForGrade)
+                {
+                    if (gradeMatch != null)
+                    {
+                        currentGrade = gradeMatch[1];
+                        waitingForGrade = false;
+                        filterByGrade = true;
+
+                        addChatMessage(
+                            "Tutor",
+                            "Thanks! I'll look for " +
+                            currentTopic +
+                            " activities for Class " +
+                            currentGrade + "."
+                        );
+
+                        searchLearning();
+                        return;
+                    }
+
+                    addChatMessage(
+                        "Tutor",
+                        "Please tell me your class, for example " +
+                        "Class 2, or type 'all classes'."
+                    );
+
+                    return;
+                }
+
+                // Student changes to a specific class
+                if (gradeMatch != null && currentTopic != "")
+                {
+                    currentGrade = gradeMatch[1];
+                    filterByGrade = true;
+
+                    addChatMessage(
+                        "Tutor",
+                        "Let's look for " + currentTopic +
+                        " activities in Class " +
+                        currentGrade + "."
+                    );
+
+                    searchLearning();
+                    return;
+                }
+
+                // Follow-up: show more
+                if (text.indexOf("more") >= 0 &&
+                    currentTopic != "")
+                {
+                    addChatMessage(
+                        "Tutor",
+                        "I've shown the activities returned " +
+                        "by the current catalog search. You can " +
+                        "explore another class or see all classes."
+                    );
+
+                    addSuggestedAction(
+                        "See all classes",
+                        "all classes"
+                    );
+
+                    addSuggestedAction(
+                        "Try another class",
+                        "another class"
+                    );
+
+                    return;
+                }
+
+                // Follow-up: what next?
+                if (text.indexOf("what next") >= 0 ||
+                    text.indexOf("what should i do") >= 0)
+                {
+                    addChatMessage(
+                        "Tutor",
+                        "You can load an activity, explore " +
+                        "another class, or see all activities " +
+                        "for " + currentTopic + "."
+                    );
+
+                    addSuggestedAction(
+                        "See all classes",
+                        "all classes"
+                    );
+
+                    addSuggestedAction(
+                        "Try another class",
+                        "another class"
+                    );
+
+                    return;
+                }
+
+                // Show current topic results again
+                if (text.indexOf("show results") >= 0 ||
+                    text.indexOf("show activities") >= 0)
+                {
+                    if (currentTopic != "")
+                        searchLearning();
+
+                    return;
+                }
+
+                // Otherwise treat this as a new topic
+                currentTopic = extractTopic(message);
+                currentGrade = "";
+                filterByGrade = false;
+
+                if (currentTopic == "")
+                {
+                    addChatMessage(
+                        "Tutor",
+                        "What would you like to learn about?"
+                    );
+                    return;
+                }
+
+                waitingForGrade = true;
+
+                addChatMessage(
+                    "Tutor",
+                    "I'd be happy to help you learn about " +
+                    currentTopic + ". I'll show matching " +
+                    "activities across classes first. " +
+                    "Which class are you in? Tell me your " +
+                    "class for a refined result."
+                );
+
+                // Search immediately instead of making the
+                // student wait before seeing any results.
+                searchLearning();
+            }
+
+            // --------------------------------------------------
+            // Topic extraction
+            // --------------------------------------------------
+
+            private function extractTopic(message:String):String
+            {
+                var topic:String = message;
+
+                topic = topic.replace(
+                    /^\s*i\s+want\s+to\s+learn\s+about\s+/i, ""
+                );
+
+                topic = topic.replace(
+                    /^\s*i\s+want\s+to\s+learn\s+/i, ""
+                );
+
+                topic = topic.replace(
+                    /^\s*teach\s+me\s+about\s+/i, ""
+                );
+
+                topic = topic.replace(
+                    /^\s*learn\s+about\s+/i, ""
+                );
+
+                topic = topic.replace(
+                    /^\s*what\s+is\s+/i, ""
+                );
+
+                topic = topic.replace(
+                    /^\s*explain\s+/i, ""
+                );
+
+                topic = topic.replace(
+                    /^\s*["']|["']\s*$/g, ""
+                );
+
+                return topic.replace(/^\s+|\s+$/g, "");
+            }
+
+            // --------------------------------------------------
+            // Search catalog
+            // --------------------------------------------------
+
+            private function searchLearning():void
+            {
+                if (currentTopic == "")
+                    return;
+
+                addChatMessage(
+                    "Tutor",
+                    "Searching learning activities..."
+                );
+
+                questionInput.disabled = true;
+                askButton.disabled = true;
+
+                httpService = new ServiceLoader();
+                httpService.reqMethod = "GET";
+
+                var requestUrl:String =
+                    sUrl + "learning/search?q=" +
+                    encodeURIComponent(currentTopic);
+
+                httpService.loadJData(
+                    requestUrl,
+                    dataLoadEventHandler,
+                    ServiceLoader.DATA_TYPE_JSON,
+                    errorEventHandler,
+                    false
+                );
+            }
+
+            // --------------------------------------------------
+            // Search results
+            // --------------------------------------------------
+
+            private function dataLoadEventHandler(d:Object):void
+            {
+                if (d == null || d.results == null)
+                {
+                    addChatMessage(
+                        "Tutor",
+                        "I couldn't find matching activities."
+                    );
+
+                    finishRequest();
+                    return;
+                }
+
+                allResults = [];
+
+                for each (var item:Object in d.results)
+                {
+                    allResults.push(item);
+                }
+
+                lastResults = [];
+
+                if (filterByGrade && currentGrade != "")
+                {
+                    for each (var gradeItem:Object in allResults)
+                    {
+                        if (matchesGrade(gradeItem))
+                            lastResults.push(gradeItem);
+                    }
+                }
+                else
+                {
+                    lastResults = allResults.concat();
+                }
+
+                if (lastResults.length == 0 &&
+                    filterByGrade &&
+                    currentGrade != "")
+                {
+                    addChatMessage(
+                        "Tutor",
+                        "I couldn't find an exact match for " +
+                        currentTopic + " in Class " +
+                        currentGrade +
+                        ". I did find activities from other " +
+                        "classes. You could use them for revision " +
+                        "or explore another class."
+                    );
+
+                    for each (var otherItem:Object in allResults)
+                    {
+                        addActivity(otherItem);
+                    }
+
+                    addSuggestedAction(
+                        "See all classes",
+                        "all classes"
+                    );
+
+                    addSuggestedAction(
+                        "Try another class",
+                        "another class"
+                    );
+                }
+                else if (lastResults.length == 0)
+                {
+                    addChatMessage(
+                        "Tutor",
+                        "I couldn't find matching activities " +
+                        "for " + currentTopic +
+                        ". Try another topic or phrase."
+                    );
+                }
+                else
+                {
+                    addChatMessage(
+                        "Tutor",
+                        "I found " + lastResults.length +
+                        " matching activities" +
+                        (filterByGrade
+                            ? " for Class " + currentGrade
+                            : " across available classes") +
+                        ". Choose an activity to begin."
+                    );
+
+                    for each (var result:Object in lastResults)
+                    {
+                        addActivity(result);
+                    }
+
+                    addSuggestedAction(
+                        "See all classes",
+                        "all classes"
+                    );
+
+                    addSuggestedAction(
+                        "Try another class",
+                        "another class"
+                    );
+                }
+
+                finishRequest();
+            }
+
+            // --------------------------------------------------
+            // Grade matching
+            // --------------------------------------------------
+
+            private function matchesGrade(item:Object):Boolean
+            {
+                if (currentGrade == "")
+                    return true;
+
+                if (item.grade == null)
+                    return false;
+
+                var gradeText:String = String(item.grade);
+                var match:Array = gradeText.match(/\d+/);
+
+                if (match == null)
+                    return false;
+
+                return match[0] == currentGrade;
+            }
+
+            // --------------------------------------------------
+            // Chat messages
+            // --------------------------------------------------
+
+            private function addChatMessage(
+                speaker:String,
+                message:String
+            ):void
+            {
+                var label:HTMLText = new HTMLText();
+
+                label.percentWidth = 100;
+                label.html =
+                    "<b>" + escapeHTML(speaker) + ":</b> " +
+                    escapeHTML(message);
+
+                resultsContainer.addElement(label);
+            }
+
+            private function escapeHTML(value:String):String
+            {
+                return value
+                    .replace(/&/g, "&amp;")
+                    .replace(/</g, "&lt;")
+                    .replace(/>/g, "&gt;")
+                    .replace(/"/g, "&quot;");
+            }
+
+            // --------------------------------------------------
+            // Activity cards
+            // --------------------------------------------------
+
+            private function addActivity(item:Object):void
+            {
+                var activity:VGroup = new VGroup();
+                activity.percentWidth = 100;
+                activity.gap = 4;
+
+                var detailsLabel:HTMLText = new HTMLText();
+
+                detailsLabel.html =
+                    "<b>" +
+                    escapeHTML(String(item.activityName)) +
+                    "</b><br/>" +
+                    "Class: " +
+                    escapeHTML(String(item.grade)) +
+                    " | Topic: " +
+                    escapeHTML(String(item.topic)) +
+                    " | Subtopic: " +
+                    escapeHTML(String(item.subtopic)) +
+                    (item.activityType != null
+                        ? "<br/>Activity Type: " +
+                          escapeHTML(String(item.activityType))
+                        : "");
+
+                activity.addElement(detailsLabel);
+
+                var loadButton:Button = new Button();
+                loadButton.text = "Load Module";
+
+                loadButton.addEventListener(
+                    "click",
+                    function(event:Object):void
+                    {
+                        loadModule(item);
+                    }
+                );
+
+                activity.addElement(loadButton);
+                resultsContainer.addElement(activity);
+
+                var separator:Label = new Label();
+                separator.text = "--------------------------------";
+                resultsContainer.addElement(separator);
+            }
+
+            private function loadModule(item:Object):void
+            {
+                ContentLoaderIframe.instance.loadPage(item.location);
+            }
+
+            // --------------------------------------------------
+            // Suggested action buttons
+            // --------------------------------------------------
+
+            private function addSuggestedAction(
+                labelText:String,
+                message:String
+            ):void
+            {
+                var actionButton:Button = new Button();
+                actionButton.text = labelText;
+
+                actionButton.addEventListener(
+                    "click",
+                    function(event:Object):void
+                    {
+                        addChatMessage("You", message);
+                        processMessage(message);
+                    }
+                );
+
+                resultsContainer.addElement(actionButton);
+            }
+
+            // --------------------------------------------------
+            // Utilities
+            // --------------------------------------------------
+
+            private function finishRequest():void
+            {
+                questionInput.disabled = false;
+                askButton.disabled = false;
+                questionInput.focus();
+            }
+
+            private function errorEventHandler(
+                event:Event
+            ):void
+            {
+                addChatMessage(
+                    "Tutor",
+                    "Unable to load learning activities. " +
+                    "Please try again."
+                );
+
+                trace(event.toString());
+                finishRequest();
+            }
+
+            private function onKeyDown():void
+            {
+                sendMessage();
+            }
+        ]]>
+    </fx:Script>
+
+    <j:VGroup gap="5" width="100%" height="95%">
+        <j:VGroup id="resultsContainer" height="100%" width="100%" gap="5">
+            <j:beads>
+                <j:ScrollingViewport/>
+            </j:beads>
+            <j:Label text="Tutor: Hello! What would you like to learn today?"/>
+        </j:VGroup>
+
+        <j:Label text="Learning Chatbot"/>
+        <j:Label text="What would you like to learn today?"/>
+        <j:HGroup width="100%" gap="8">
+            <sp:TextField
+                id="questionInput"
+                width="400"
+                placeholder="e.g. I want to learn about Alphabet"
+                onEnter="onKeyDown()"/>
+            <sp:Button
+                id="askButton"
+                text="Ask"
+                click="sendMessage()"/>
+        </j:HGroup>
+
+    </j:VGroup>
+</j:Group>

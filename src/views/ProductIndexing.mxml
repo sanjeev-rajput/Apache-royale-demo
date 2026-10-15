@@ -27,6 +27,8 @@
             
             import views.actionitemviews.reactandroyale.ReactAndRoyale;
             import views.actionitemviews.localstorage.LocalStorageMain;
+            import views.actionitemviews.googleauth.GoogleAuthLogin;
+            import views.actionitemviews.learning.LearningChatbotMain;
             private var mgmtObj:Array = new Array();
                         
             private function initComplete():void {
@@ -121,11 +123,17 @@
                     vg.addElement(uiComp);
                     return;
                 }
-                if(compName == 'Local Storage'){
-                    uiComp = new LocalStorageMain();
+
+                if (compName == 'Learning Chatbot') {
+                    uiComp = new LearningChatbotMain();
                     vg.addElement(uiComp);
                     return;
-                }
+            }
+                // if(compName == 'Auth2.0'){
+                //     uiComp = new GoogleAuthLogin();
+                //     vg.addElement(uiComp);
+                //     return;
+                // }
                 if(compName == 'Chart'){
                     return;
                 }

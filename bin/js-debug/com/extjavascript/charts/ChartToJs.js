@@ -80,5 +80,3 @@ com.extjavascript.charts.ChartToJs.prototype.ROYALE_COMPILE_FLAGS = 9;
  * @type {Array<string>}
  */
 com.extjavascript.charts.ChartToJs.prototype.ROYALE_INITIAL_STATICS = Object.keys(com.extjavascript.charts.ChartToJs);
-
-//# sourceMappingURL=./ChartToJs.js.map

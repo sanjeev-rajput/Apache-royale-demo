@@ -107,7 +107,7 @@
                 <sp:Switch id="shareCamBtn" click="onShareWebcam()"/>
                 <js:MaterialIcon text="{camIconTypeNames}"/>
             </j:HGroup>
-            <j:VGroup id="uVidContainer" width="100%" height="50%">
+            <j:VGroup id="uVidContainer" width="100%" height="50%" gap="5">
                 <j:beads>
                     <j:ScrollingViewport/>
                 </j:beads>

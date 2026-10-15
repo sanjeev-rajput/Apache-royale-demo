@@ -395,5 +395,3 @@ views.actionitemviews.games.mousegame.Controller.prototype.ROYALE_REFLECTION_INF
  * @type {number}
  */
 views.actionitemviews.games.mousegame.Controller.prototype.ROYALE_COMPILE_FLAGS = 9;
-
-//# sourceMappingURL=./Controller.js.map

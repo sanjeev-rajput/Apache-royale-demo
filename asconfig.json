@@ -3,7 +3,7 @@
     "compilerOptions": {
         "debug": false,
         "targets": ["JSRoyale"],
-        "source-map": true,
+        "source-map": false,
         "js-library-path": [
             "../Apache-royale-demo/target",
             "libs"

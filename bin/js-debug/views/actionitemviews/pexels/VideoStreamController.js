@@ -215,5 +215,3 @@ views.actionitemviews.pexels.VideoStreamController.prototype.ROYALE_REFLECTION_I
  * @type {number}
  */
 views.actionitemviews.pexels.VideoStreamController.prototype.ROYALE_COMPILE_FLAGS = 9;
-
-//# sourceMappingURL=./VideoStreamController.js.map

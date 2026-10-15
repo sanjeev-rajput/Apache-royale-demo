@@ -84,5 +84,3 @@ views.actionitemviews.basicdrawing.ExportHelper.prototype.ROYALE_COMPILE_FLAGS =
  * @type {Array<string>}
  */
 views.actionitemviews.basicdrawing.ExportHelper.prototype.ROYALE_INITIAL_STATICS = Object.keys(views.actionitemviews.basicdrawing.ExportHelper);
-
-//# sourceMappingURL=./ExportHelper.js.map

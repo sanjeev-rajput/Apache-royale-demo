@@ -76,7 +76,9 @@ package com.model{
             DsPreloader.instance.remvoePreloader("serviceLoader");
             if(_service.status == 0){
                 AppAlert.show(AppAlert.ERROR, "Unable to connect!!! Pelase check you network (internet) connection !!!")
+                if(_errorCallback !=null)_errorCallback(event);
                 return;
+
             }
             
            if(_dataType == DATA_TYPE_JSON) _callBack(JSON.parse(_service.data));

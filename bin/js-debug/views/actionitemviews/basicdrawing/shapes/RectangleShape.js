@@ -252,5 +252,3 @@ views.actionitemviews.basicdrawing.shapes.RectangleShape.prototype.ROYALE_REFLEC
  * @type {number}
  */
 views.actionitemviews.basicdrawing.shapes.RectangleShape.prototype.ROYALE_COMPILE_FLAGS = 9;
-
-//# sourceMappingURL=./RectangleShape.js.map

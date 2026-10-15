@@ -8,7 +8,7 @@
  */
 
 goog.provide('views.ProductIndexing');
-/* Royale Dependency List: org.apache.royale.jewel.VGroup,org.apache.royale.jewel.HGroup,views.TopMenuL,org.apache.royale.jewel.Label,views.TopMenuR,org.apache.royale.jewel.FooterBar,com.unhurdle.spectrum.Label,org.apache.royale.jewel.Container,com.unhurdle.spectrum.ImageAsset,com.event.DsEvent,com.unhurdle.spectrum.Toast,org.apache.royale.events.Event,views.actionitemviews.ai.AiMain,views.actionitemviews.basicdrawing.BasicDrawingMain,views.actionitemviews.collaboration.CollaborationMain,views.actionitemviews.games.Game,views.actionitemviews.localstorage.LocalStorageMain,views.actionitemviews.pexels.PexelVideoStreamMain,views.actionitemviews.reactandroyale.ReactAndRoyale,views.actionitemviews.searchlist.SearchListMain,views.actionitemviews.shoppingcart.ShoppingMain,views.actionitemviews.stockSocket.StockSocketMain,views.actionitemviews.toc.TocAndPgnation,views.actionitemviews.websocket.WikiSocketMain,XML*/
+/* Royale Dependency List: org.apache.royale.jewel.VGroup,org.apache.royale.jewel.HGroup,views.TopMenuL,org.apache.royale.jewel.Label,views.TopMenuR,org.apache.royale.jewel.FooterBar,com.unhurdle.spectrum.Label,org.apache.royale.jewel.Container,com.unhurdle.spectrum.ImageAsset,com.event.DsEvent,com.unhurdle.spectrum.Toast,org.apache.royale.events.Event,views.actionitemviews.ai.AiMain,views.actionitemviews.basicdrawing.BasicDrawingMain,views.actionitemviews.collaboration.CollaborationMain,views.actionitemviews.games.Game,views.actionitemviews.learning.LearningChatbotMain,views.actionitemviews.pexels.PexelVideoStreamMain,views.actionitemviews.reactandroyale.ReactAndRoyale,views.actionitemviews.searchlist.SearchListMain,views.actionitemviews.shoppingcart.ShoppingMain,views.actionitemviews.stockSocket.StockSocketMain,views.actionitemviews.toc.TocAndPgnation,views.actionitemviews.websocket.WikiSocketMain,XML*/
 
 goog.require('org.apache.royale.jewel.ResponsiveView');
 
@@ -223,8 +223,8 @@ views.ProductIndexing.prototype.views_ProductIndexing_addUiComponent = function(
     this.vg.addElement(uiComp);
     return;
   }
-  if (compName == 'Local Storage') {
-    uiComp = new views.actionitemviews.localstorage.LocalStorageMain();
+  if (compName == 'Learning Chatbot') {
+    uiComp = new views.actionitemviews.learning.LearningChatbotMain();
     this.vg.addElement(uiComp);
     return;
   }
@@ -554,7 +554,3 @@ views.ProductIndexing.prototype.ROYALE_REFLECTION_INFO = function () {
  * @type {number}
  */
 views.ProductIndexing.prototype.ROYALE_COMPILE_FLAGS = 9;
-
-
-
-//# sourceMappingURL=./ProductIndexing.js.map

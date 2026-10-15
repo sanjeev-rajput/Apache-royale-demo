@@ -1,0 +1,344 @@
+<j:VGroup xmlns:fx="http://ns.adobe.com/mxml/2009"
+         xmlns:j="library://ns.apache.org/royale/jewel"
+         xmlns:sp="library://ns.unhurdle.com/spectrum"
+         xmlns:html="library://ns.apache.org/royale/html"
+         xmlns="library://ns.apache.org/royale/html"
+         width="100%"
+         height="100%"
+         itemsHorizontalAlign="itemsCenter" itemsVerticalAlign="itemsCenter" gap="1"
+         initComplete="initializeChat()" >
+
+    <fx:Script>
+        <![CDATA[
+            import org.apache.royale.events.Event;
+            import com.model.ServiceLoader;
+            import com.model.Config;
+            import views.ContentLoaderIframe;
+            import org.apache.royale.html.HTMLText;
+            import com.unhurdle.spectrum.Button;
+            import views.actionitemviews.learning.AiResponse;
+            
+
+
+            private var httpService:ServiceLoader;
+            private var sUrl:String = Config.apiBaseUrl;
+
+            // One conversation ID is reused for the lifetime of this chatbot.
+            // Node owns the actual conversation state.
+            private var conversationId:String = "";
+
+            // --------------------------------------------------
+            // Entry point
+            // --------------------------------------------------
+
+            private function sendMessage():void
+            {
+                var message:String = questionInput.text;
+
+                if (!message ||
+                    message.replace(/^\s+|\s+$/g, "") == "")
+                {
+                    return;
+                }
+
+                questionInput.text = "";
+                addChatMessage("You", message);
+
+                sendToChat(message);
+            }
+
+            // --------------------------------------------------
+            // Node chat API
+            // --------------------------------------------------
+
+            private function sendToChat(message:String):void
+            {
+                questionInput.disabled = true;
+                askButton.disabled = true;
+                try{
+                    httpService = new ServiceLoader();
+                    httpService.reqMethod = "POST";
+                    httpService.contentType = "application/json";
+
+                    // ServiceLoader.loadJData() accepts five parameters.
+                    // POST data is supplied through reqData.
+                    var requestData:Object = {
+                        conversationId: conversationId,
+                        message: message
+                    };
+                    httpService.reqData = JSON.stringify(requestData);
+                    var requestUrl:String = sUrl + "chat";
+                    httpService.loadJData(
+                        requestUrl,
+                        chatDataLoadEventHandler,
+                        ServiceLoader.DATA_TYPE_JSON,
+                        errorEventHandler,
+                        false
+                    );
+                }catch(err:Error){
+                    trace("sendToChat ERROR: " + err.message);
+                    addChatMessage(
+                        "Tutor",
+                        "Unable to send your question. Please try again."
+                    );
+                    finishRequest();
+                }
+
+                
+            }
+
+            private function chatDataLoadEventHandler(d:Object):void
+            {
+                if (d == null)
+                {
+                    addChatMessage(
+                        "Tutor",
+                        "I didn't receive a response from the learning service."
+                    );
+
+                    finishRequest();
+                    return;
+                }
+
+                // Node creates/returns the conversation ID.
+                if (d.conversationId != null &&
+                    String(d.conversationId) != "")
+                {
+                    conversationId = String(d.conversationId);
+                }
+
+                // The conversation interpreter is now responsible for
+                // generating the tutor response.
+                if (d.reply != null &&
+                    String(d.reply) != "")
+                {
+                    addChatMessage(
+                        "Tutor",
+                        String(d.reply)
+                    );
+                }
+
+                // Node also owns result filtering and pagination.
+                // Royale only renders the returned activities.
+                if (d.results != null)
+                {
+                    for each (var item:Object in d.results)
+                    {
+                        addActivity(item);
+                    }
+                }
+
+                finishRequest();
+            }
+
+            // --------------------------------------------------
+            // Chat messages
+            // --------------------------------------------------
+
+            private function addChatMessage(speaker:String, message:String):void
+            {
+                var label:HTMLText = new HTMLText();
+
+                label.percentWidth = 100;
+
+                label.html =
+                    "<b>" + escapeHTML(speaker) + ":</b> " +
+                    markdownToHtml(message);
+
+                resultsContainer.addElement(label);
+            }
+
+            
+            private function markdownToHtml(value:String):String
+            {
+                if (value == null)
+                    return "";
+
+                var safe:String = escapeHTML(value);
+                var lines:Array = safe.split(/\r?\n/);
+                var output:String = "";
+                var inList:Boolean = false;
+
+                for each (var line:String in lines)
+                {
+                    var trimmed:String = line.replace(/^\s+|\s+$/g, "");
+
+                    // Close an open bullet list when the next line is not a bullet.
+                    if (inList && !/^\-\s+/.test(trimmed))
+                    {
+                        output += "</ul>";
+                        inList = false;
+                    }
+
+                    // Headings
+                    if (/^###\s+/.test(trimmed))
+                    {
+                        output += "<h4>" +
+                            trimmed.replace(/^###\s+/, "") +
+                            "</h4>";
+                    }
+                    else if (/^##\s+/.test(trimmed))
+                    {
+                        output += "<h3>" +
+                            trimmed.replace(/^##\s+/, "") +
+                            "</h3>";
+                    }
+                    else if (/^#\s+/.test(trimmed))
+                    {
+                        output += "<h2>" +
+                            trimmed.replace(/^#\s+/, "") +
+                            "</h2>";
+                    }
+                    // Bullet list items
+                    else if (/^\-\s+/.test(trimmed))
+                    {
+                        if (!inList)
+                        {
+                            output += "<ul>";
+                            inList = true;
+                        }
+
+                        output += "<li>" +
+                            trimmed.replace(/^\-\s+/, "") +
+                            "</li>";
+                    }
+                    // Empty line
+                    else if (trimmed == "")
+                    {
+                        output += "<br/>";
+                    }
+                    // Normal text
+                    else
+                    {
+                        output += trimmed + "<br/>";
+                    }
+                }
+
+                if (inList)
+                    output += "</ul>";
+
+                // Bold and italic formatting
+                output = output.replace(/\*\*(.+?)\*\*/g, "<b>$1</b>");
+                output = output.replace(/\*(.+?)\*/g, "<i>$1</i>");
+
+                return output;
+            }
+
+            private function escapeHTML(value:String):String
+            {
+                if (value == null)
+                    return "";
+
+                return value
+                    .replace(/&/g, "&amp;")
+                    .replace(/</g, "&lt;")
+                    .replace(/>/g, "&gt;")
+                    .replace(/"/g, "&quot;");
+            }
+
+            // --------------------------------------------------
+            // Activity cards
+            // --------------------------------------------------
+
+            private function addActivity(item:Object):void
+            {
+                if (item == null)
+                    return;
+                var detailsUi:AiResponse = new AiResponse();
+                detailsUi.aiResponse = item;
+                resultsContainer.addElement(detailsUi);
+                
+            }
+
+            private function loadModule(item:Object):void
+            {
+                if (item == null ||
+                    item.location == null ||
+                    String(item.location) == "")
+                {
+                    addChatMessage(
+                        "Tutor",
+                        "This activity does not have a module location."
+                    );
+                    return;
+                }
+
+                ContentLoaderIframe.instance.loadPage(
+                    String(item.location)
+                );
+            }
+
+            // --------------------------------------------------
+            // Utilities
+            // --------------------------------------------------
+
+            private function finishRequest():void
+            {
+                questionInput.disabled = false;
+                askButton.disabled = false;
+                questionInput.focus();
+            }
+
+            private function errorEventHandler(
+                event:Event
+            ):void
+            {
+                addChatMessage(
+                    "Tutor",
+                    "Unable to connect to the learning service. " +
+                    "Please try again."
+                );
+
+                trace(event.toString());
+                finishRequest();
+            }
+
+            private function onKeyDown():void
+            {
+                sendMessage();
+            }
+
+            // --------------------------------------------------
+            // Initialization
+            // --------------------------------------------------
+
+            private function initializeChat():void
+            {
+                // Keep one stable ID for this browser-side chat session.
+                conversationId =
+                    "chat-" +
+                    String(new Date().time) +
+                    "-" +
+                    String(int(Math.random() * 1000000));
+
+                trace(
+                    "Learning chatbot conversationId: " +
+                    conversationId
+                );
+            }
+        ]]>
+    </fx:Script>
+
+    
+    <j:VGroup id="resultsContainer" gap="1" height="80%" width="100%">
+    <j:Label text="Learning Chatbot"/>
+    <j:Label text="What would you like to learn today?"/>
+        <j:beads>
+            <j:ScrollingViewport/>
+        </j:beads>
+    </j:VGroup>
+    
+    <j:HGroup id="qryCtr" width="80%" itemsVerticalAlign="itemsCenter">
+        <sp:TextField id="questionInput" placeholder="e.g. I want to learn about Alphabet" width="100%"
+        onEnter="onKeyDown()"/>
+        <sp:Button id="askButton" className="chatbot-text-button" text="ask"
+            click="sendMessage()"/>
+    </j:HGroup>
+
+    <fx:Declarations>
+        <!--
+            Initialize the conversation ID when the component is created.
+        -->
+    </fx:Declarations>
+
+</j:VGroup>

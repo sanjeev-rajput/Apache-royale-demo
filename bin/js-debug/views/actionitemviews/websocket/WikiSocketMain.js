@@ -307,7 +307,3 @@ views.actionitemviews.websocket.WikiSocketMain.prototype.ROYALE_REFLECTION_INFO 
  * @type {number}
  */
 views.actionitemviews.websocket.WikiSocketMain.prototype.ROYALE_COMPILE_FLAGS = 9;
-
-
-
-//# sourceMappingURL=./WikiSocketMain.js.map

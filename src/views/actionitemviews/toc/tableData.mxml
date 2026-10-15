@@ -74,7 +74,7 @@
             }
 
             private function iframeLoadEventHandler():void{
-                ContentLoaderIframe.instance.loadPage(data['url']);
+                ContentLoaderIframe.instance.loadPage(data['Location']);
             }
 
             private function copyToClipBoard(event:Event):void{

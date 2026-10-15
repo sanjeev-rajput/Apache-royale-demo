@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"URLRequestHeader.js",
+"lineCount":41,
+"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Network/src/main/royale",
+"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;AA8DwB,sCAAhB,WAAgCA,CAAC,IAAW,EAAE,KAAY,C,CAC1D,C;EACL,IAAI,CAAC,IAAI,GAAG,IAAI,C;EAChB,IAAI,CAAC,KAAK,GAAG,KAAK,C;AACb,C;;;;;;AAzBK,iDAAA,IAAW,C;;;;;;AAUL,iDAAA,KAAA;",
+"sources":["org/apache/royale/net/URLRequestHeader.as"],
+"names":["URLRequestHeader.URLRequestHeader"]
+}

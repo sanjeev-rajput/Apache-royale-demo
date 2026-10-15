@@ -439,7 +439,3 @@ views.actionitemviews.appnavigation.AppNavigationMain.prototype.ROYALE_COMPILE_F
  * @type {Array<string>}
  */
 views.actionitemviews.appnavigation.AppNavigationMain.prototype.ROYALE_INITIAL_STATICS = Object.keys(views.actionitemviews.appnavigation.AppNavigationMain);
-
-
-
-//# sourceMappingURL=./AppNavigationMain.js.map

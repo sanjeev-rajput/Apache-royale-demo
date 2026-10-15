@@ -8,7 +8,7 @@
  */
 
 goog.provide('views.actionitemviews.searchlist.SearchListMain');
-/* Royale Dependency List: org.apache.royale.jewel.VGroup,org.apache.royale.jewel.HGroup,org.apache.royale.jewel.Label,org.apache.royale.jewel.Spacer,org.apache.royale.jewel.ImageIcon,org.apache.royale.jewel.Image,com.unhurdle.spectrum.Picker,org.apache.royale.html.supportClasses.ScrollingViewport,com.controller.PopupManager,com.model.ServiceLoader,com.util.AppAlert,com.util.AsJsUtil,org.apache.royale.events.Event,org.apache.royale.events.MouseEvent,views.actionitemviews.searchlist.LstItem,views.actionitemviews.searchlist.LstModel,XML*/
+/* Royale Dependency List: org.apache.royale.jewel.VGroup,org.apache.royale.jewel.HGroup,org.apache.royale.jewel.Label,org.apache.royale.jewel.Spacer,org.apache.royale.jewel.ImageIcon,org.apache.royale.jewel.Image,com.unhurdle.spectrum.Picker,org.apache.royale.html.supportClasses.ScrollingViewport,com.controller.PopupManager,com.model.ServiceLoader,com.util.AppAlert,com.util.AsJsUtil,org.apache.royale.events.Event,org.apache.royale.events.MouseEvent,org.apache.royale.net.URLRequestHeader,views.actionitemviews.searchlist.LstItem,views.actionitemviews.searchlist.LstModel,XML*/
 
 goog.require('org.apache.royale.jewel.View');
 
@@ -153,7 +153,8 @@ views.actionitemviews.searchlist.SearchListMain.prototype.views_actionitemviews_
     return;
   }
   var /** @type {com.model.ServiceLoader} */ svr = new com.model.ServiceLoader();
-  svr.loadJData("https://restcountries.com/v3.1/independent?status=true", org.apache.royale.utils.Language.closure(this.views_actionitemviews_searchlist_SearchListMain_dataLoadHandler, this, 'views_actionitemviews_searchlist_SearchListMain_dataLoadHandler'), com.model.ServiceLoader.DATA_TYPE_JSON, org.apache.royale.utils.Language.closure(this.views_actionitemviews_searchlist_SearchListMain_failHandler, this, 'views_actionitemviews_searchlist_SearchListMain_failHandler'), false);
+  svr.headers = [new org.apache.royale.net.URLRequestHeader('Authorization', 'rc_live_a353a6901d4942ada490c8a40c0c2b7d')];
+  svr.loadJData("https://api.restcountries.com/countries/v5?limit=100", org.apache.royale.utils.Language.closure(this.views_actionitemviews_searchlist_SearchListMain_dataLoadHandler, this, 'views_actionitemviews_searchlist_SearchListMain_dataLoadHandler'), com.model.ServiceLoader.DATA_TYPE_JSON, org.apache.royale.utils.Language.closure(this.views_actionitemviews_searchlist_SearchListMain_failHandler, this, 'views_actionitemviews_searchlist_SearchListMain_failHandler'), false);
 };
 
 
@@ -166,7 +167,9 @@ views.actionitemviews.searchlist.SearchListMain.prototype.views_actionitemviews_
     throw new Error("Data not found");
   }
   if (views.actionitemviews.searchlist.LstModel.instance.listData == null) {
-    views.actionitemviews.searchlist.LstModel.instance.listData = obj;
+    console.log("Data loaded from server", obj);
+    console.log("Data loaded from server", obj['data']["objects"]);
+    views.actionitemviews.searchlist.LstModel.instance.listData = obj['data']["objects"];
     this.cLst.dataProvider = views.actionitemviews.searchlist.LstModel.instance.getCountryDetailsByKey('name');
   }
   this.views_actionitemviews_searchlist_SearchListMain_populateListUiItems();
@@ -526,7 +529,3 @@ views.actionitemviews.searchlist.SearchListMain.prototype.ROYALE_REFLECTION_INFO
  * @type {number}
  */
 views.actionitemviews.searchlist.SearchListMain.prototype.ROYALE_COMPILE_FLAGS = 9;
-
-
-
-//# sourceMappingURL=./SearchListMain.js.map

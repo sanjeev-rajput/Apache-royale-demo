@@ -133,6 +133,12 @@
       "addx":"NA"
     },
     {
+      "label": "Auth2.0",
+      "type": "extui",
+      "url": "na",
+      "addx":"NA"
+    },
+    {
       "label": "",
       "type": "divider",
       "url": "NA",

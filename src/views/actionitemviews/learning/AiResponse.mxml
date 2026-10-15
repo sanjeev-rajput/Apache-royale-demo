@@ -1,0 +1,70 @@
+<j:VGroup xmlns:fx="http://ns.adobe.com/mxml/2009"
+    xmlns:j="library://ns.apache.org/royale/jewel"
+    xmlns:sp="library://ns.unhurdle.com/spectrum" 
+    xmlns:html="library://ns.apache.org/royale/html"
+    initComplete="init()" className="chatBoatChatUi" width="100%">
+
+    <fx:Script>
+        <![CDATA[
+            import com.util.StringUtil;
+            import views.ContentLoaderIframe;
+
+
+            private var _aiResponse:Object;
+            private function init():void{
+                if (_aiResponse != null){
+                    renderResponse();
+                }
+            }
+
+            public function set aiResponse(item:Object):void{
+                _aiResponse = item;
+                if (response != null){
+                    renderResponse();
+                }
+            }
+
+            private function renderResponse():void{
+                if (response == null || _aiResponse == null)
+                    return;
+                var item:Object = _aiResponse;
+                var activityName:String =
+                    item.activityName != null
+                        ? String(item.activityName)
+                        : "Learning Activity";
+
+                var grade:String =
+                    item.grade != null
+                        ? String(item.grade)
+                        : "";
+
+                var topic:String =
+                    item.topic != null
+                        ? String(item.topic)
+                        : "";
+
+                var subtopic:String =
+                    item.subtopic != null
+                        ? String(item.subtopic)
+                        : "";
+
+                var activityType:String =
+                    item.activityType != null
+                        ? String(item.activityType)
+                        : "";
+
+                response.innerHTML = StringUtil.escapeHTML(activityName) + "  ⬆️ <br>" +
+                    "Class: " + StringUtil.escapeHTML(grade) +
+                    " | Topic: " + StringUtil.escapeHTML(topic) +
+                    " | Subtopic: " + StringUtil.escapeHTML(subtopic) +
+                    " | Activity Type: " +
+                    StringUtil.escapeHTML(activityType);
+            }
+
+            private function loadModule():void{
+                ContentLoaderIframe.instance.loadPage(_aiResponse.location)
+            }
+        ]]>
+    </fx:Script>
+    <html:Span id="response" width="100%" class="chatBotAns chatbot-text-button" text="..." click="loadModule()"/>
+</j:VGroup>

@@ -37,9 +37,15 @@ package views.actionitemviews.searchlist
         private function setAllCountryDetails():void {
             for each(var i:Object in listData){
                 var cDetails:Object = new Object();
-                cDetails.flag = i.flags.png;
-                cDetails.name = i.name.common;
-                cDetails.capital = i.capital;
+                cDetails.flag = i.flag.url_png;
+                cDetails.name = i['names'].common;
+                if(i.capitals && i.capitals.length > 0) {
+                    cDetails.capital = i.capitals[0]['name'];
+                } else {
+                    cDetails.capital = "N/A";
+                }
+
+
                 cDetails.region = i.region;
                 //cDetails.languages = i.languages;
                 _allCountryDetails.push(cDetails);

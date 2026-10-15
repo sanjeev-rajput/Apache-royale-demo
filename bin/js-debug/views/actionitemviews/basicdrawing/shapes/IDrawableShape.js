@@ -93,5 +93,3 @@ views.actionitemviews.basicdrawing.shapes.IDrawableShape.prototype.ROYALE_REFLEC
  * @type {number}
  */
 views.actionitemviews.basicdrawing.shapes.IDrawableShape.prototype.ROYALE_COMPILE_FLAGS = 9;
-
-//# sourceMappingURL=./IDrawableShape.js.map

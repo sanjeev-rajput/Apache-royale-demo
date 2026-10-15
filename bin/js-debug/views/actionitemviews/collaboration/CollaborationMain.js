@@ -627,7 +627,7 @@ Object.defineProperties(views.actionitemviews.collaboration.CollaborationMain.pr
                 null
               ],
               org.apache.royale.jewel.VGroup,
-              4,
+              5,
               'id',
               true,
               'uVidContainer',
@@ -637,6 +637,9 @@ Object.defineProperties(views.actionitemviews.collaboration.CollaborationMain.pr
               'percentHeight',
               true,
               50.0,
+              'gap',
+              true,
+              5,
               'beads',
               null,
               [
@@ -722,7 +725,3 @@ views.actionitemviews.collaboration.CollaborationMain.prototype.ROYALE_REFLECTIO
  * @type {number}
  */
 views.actionitemviews.collaboration.CollaborationMain.prototype.ROYALE_COMPILE_FLAGS = 9;
-
-
-
-//# sourceMappingURL=./CollaborationMain.js.map

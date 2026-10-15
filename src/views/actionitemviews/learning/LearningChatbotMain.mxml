@@ -1,0 +1,342 @@
+<j:VGroup xmlns:fx="http://ns.adobe.com/mxml/2009"
+         xmlns:j="library://ns.apache.org/royale/jewel"
+         xmlns:sp="library://ns.unhurdle.com/spectrum"
+         xmlns:html="library://ns.apache.org/royale/html"
+         xmlns="library://ns.apache.org/royale/html" xmlns:learning="views.actionitemviews.learning.*"
+         width="100%"
+         height="100%"
+         itemsHorizontalAlign="itemsCenter" itemsVerticalAlign="itemsCenter" gap="1"
+         initComplete="initializeChat()" >
+
+    <fx:Script>
+        <![CDATA[
+            import org.apache.royale.events.Event;
+            import com.model.ServiceLoader;
+            import com.model.Config;
+            import views.ContentLoaderIframe;
+            import org.apache.royale.html.HTMLText;
+            import com.unhurdle.spectrum.Button;
+            import views.actionitemviews.learning.AiResponse;
+            import com.util.StringUtil;
+            import views.actionitemviews.learning.ImportExportChat;
+            
+
+
+            private var httpService:ServiceLoader;
+            private var sUrl:String = Config.apiBaseUrl;
+
+            // One conversation ID is reused for the lifetime of this chatbot.
+            // Node owns the actual conversation state.
+            private var conversationId:String = "";
+
+            // Ordered transcript: chat messages and learning-module cards.
+            private var transcriptEntries:Array = [];
+            private var transcriptElements:Array = [];
+            private var importExportHelper:ImportExportChat = new ImportExportChat();
+
+            // --------------------------------------------------
+            // Entry point
+            // --------------------------------------------------
+
+            private function sendMessage():void
+            {
+                var message:String = questionInput.text;
+
+                if (!message ||
+                    message.replace(/^\s+|\s+$/g, "") == "")
+                {
+                    return;
+                }
+
+                questionInput.text = "";
+                addChatMessage("You", message);
+
+                sendToChat(message);
+            }
+
+            // --------------------------------------------------
+            // Node chat API
+            // --------------------------------------------------
+
+            private function sendToChat(message:String):void
+            {
+                questionInput.disabled = true;
+                askButton.disabled = true;
+                try{
+                    httpService = new ServiceLoader();
+                    httpService.reqMethod = "POST";
+                    httpService.contentType = "application/json";
+
+                    // ServiceLoader.loadJData() accepts five parameters.
+                    // POST data is supplied through reqData.
+                    var requestData:Object = {
+                        conversationId: conversationId,
+                        message: message
+                    };
+                    httpService.reqData = JSON.stringify(requestData);
+                    var requestUrl:String = sUrl + "chat";
+                    httpService.loadJData(
+                        requestUrl,
+                        chatDataLoadEventHandler,
+                        ServiceLoader.DATA_TYPE_JSON,
+                        errorEventHandler,
+                        false
+                    );
+                }catch(err:Error){
+                    trace("sendToChat ERROR: " + err.message);
+                    addChatMessage(
+                        "Tutor",
+                        "Unable to send your question. Please try again."
+                    );
+                    finishRequest();
+                }
+
+                
+            }
+
+            private function chatDataLoadEventHandler(d:Object):void
+            {
+                if (d == null)
+                {
+                    addChatMessage(
+                        "Tutor",
+                        "I didn't receive a response from the learning service."
+                    );
+
+                    finishRequest();
+                    return;
+                }
+
+                // Node creates/returns the conversation ID.
+                if (d.conversationId != null &&
+                    String(d.conversationId) != "")
+                {
+                    conversationId = String(d.conversationId);
+                }
+
+                // The conversation interpreter is now responsible for
+                // generating the tutor response.
+                if (d.reply != null &&
+                    String(d.reply) != "")
+                {
+                    addChatMessage(
+                        "Tutor",
+                        String(d.reply)
+                    );
+                }
+
+                // Node also owns result filtering and pagination.
+                // Royale only renders the returned activities.
+                if (d.results != null)
+                {
+                    for each (var item:Object in d.results)
+                    {
+                        addActivity(item);
+                    }
+                }
+
+                finishRequest();
+            }
+
+            // --------------------------------------------------
+            // Chat messages
+            // --------------------------------------------------
+
+            private function addChatMessage(speaker:String, message:String):void
+            {
+                transcriptEntries.push({
+                    type: "message",
+                    speaker: speaker,
+                    message: message
+                });
+                renderChatMessage(speaker, message);
+            }
+
+            private function renderChatMessage(speaker:String, message:String):void
+            {
+                var label:HTMLText = new HTMLText();
+                label.percentWidth = 100;
+                label.html =
+                    "<b>" + StringUtil.escapeHTML(speaker) + ":</b> " +
+                    StringUtil.markdownToHtml(message);
+                resultsContainer.addElement(label);
+                transcriptElements.push(label);
+            }
+
+            private function restoreTranscript(entries:Array):void
+            {
+                trace("Restoring transcript with " + String(entries.length) + " entries.");
+                // Remove only transcript elements. Keep the title and prompt labels.
+                for (var i:int = transcriptElements.length - 1; i >= 0; i--)
+                {
+                    resultsContainer.removeElement(transcriptElements[i]);
+                }
+                transcriptElements = [];
+                transcriptEntries = [];
+
+                for each (var entry:Object in entries)
+                {
+                    if (entry == null)
+                        continue;
+
+                    var entryType:String = entry.type == null ? "message" : String(entry.type);
+                    if (entryType == "module" && entry.item != null)
+                    {
+                        var savedItem:Object = entry.item;
+                        transcriptEntries.push({ type: "module", item: savedItem });
+                        renderActivity(savedItem);
+                    }
+                    else if (entry.speaker != null && entry.message != null)
+                    {
+                        var speaker:String = String(entry.speaker);
+                        var message:String = String(entry.message);
+                        transcriptEntries.push({
+                            type: "message",
+                            speaker: speaker,
+                            message: message
+                        });
+                        renderChatMessage(speaker, message);
+                    }
+                }
+
+                // A restored transcript is visual history, not a restored server session.
+                conversationId = "chat-" + String(new Date().time) + "-" +
+                    String(int(Math.random() * 1000000));
+            }
+
+            // --------------------------------------------------
+            // Activity cards
+            // --------------------------------------------------
+
+            private function addActivity(item:Object):void
+            {
+                if (item == null)
+                    return;
+
+                // Save the complete activity payload so its card can be rebuilt on import.
+                transcriptEntries.push({ type: "module", item: item });
+                renderActivity(item);
+            }
+
+            private function renderActivity(item:Object):void
+            {
+                if (item == null)
+                    return;
+                var detailsUi:AiResponse = new AiResponse();
+                detailsUi.aiResponse = item;
+                resultsContainer.addElement(detailsUi);
+                transcriptElements.push(detailsUi);
+            }
+
+            private function loadModule(item:Object):void
+            {
+                if (item == null ||
+                    item.location == null ||
+                    String(item.location) == "")
+                {
+                    addChatMessage(
+                        "Tutor",
+                        "This activity does not have a module location."
+                    );
+                    return;
+                }
+
+                ContentLoaderIframe.instance.loadPage(
+                    String(item.location)
+                );
+            }
+
+            private function finishRequest():void
+            {
+                questionInput.disabled = false;
+                askButton.disabled = false;
+                questionInput.focus();
+            }
+
+            private function errorEventHandler(
+                event:Event
+            ):void
+            {
+                addChatMessage(
+                    "Tutor",
+                    "Unable to connect to the learning service. " +
+                    "Please try again."
+                );
+
+                trace(event.toString());
+                finishRequest();
+            }
+
+            private function onKeyDown():void
+            {
+                sendMessage();
+            }
+
+            // --------------------------------------------------
+            // Initialization
+            // --------------------------------------------------
+
+            private function initializeChat():void
+            {
+                // Keep one stable ID for this browser-side chat session.
+                conversationId =
+                    "chat-" +
+                    String(new Date().time) +
+                    "-" +
+                    String(int(Math.random() * 1000000));
+
+                trace(
+                    "Learning chatbot conversationId: " +
+                    conversationId
+                );
+            }
+
+            private function handleSelection(event:Event):void{
+                var menu:ActionMenu = event.currentTarget as ActionMenu;
+                if (menu == null)
+                    return;
+
+                var selected:String = String(menu.selectedItem.label);
+                if (selected == "Export")
+                {
+                    importExportHelper.exportChatJson(conversationId, transcriptEntries);
+                }
+                if (selected == "Import")
+                {
+                    trace("Importing JSON transcript...");
+                    importExportHelper.importJsonFile(restoreTranscript);
+                }
+                else if (selected == "Clear")
+                {
+                    restoreTranscript([]);
+                }
+                menu.selectedIndex = -1;
+            }
+        ]]>
+    </fx:Script>
+
+    
+    <j:VGroup id="resultsContainer" gap="1" height="80%" width="100%">
+    <j:Label text="Learning Chatbot"/>
+    <j:Label text="What would you like to learn today?"/>
+        <j:beads>
+            <j:ScrollingViewport/>
+        </j:beads>
+    </j:VGroup>
+    <j:HGroup id="qryCtr" width="80%" itemsVerticalAlign="itemsCenter">
+        <sp:TextField id="questionInput" placeholder="e.g. I want to learn about Alphabet" width="100%"
+        onEnter="onKeyDown()"/>
+        <sp:Button id="askButton" className="chatbot-text-button" text="ask"
+            click="sendMessage()"/>
+        <sp:ButtonGroup vertical="true" style="align-items:flex-start;">
+            <sp:ActionMenu quiet="true" dataProvider="[Export, Import, Clear]" change="handleSelection(event)"/>
+        </sp:ButtonGroup>
+    </j:HGroup>
+
+    <fx:Declarations>
+        <!--
+            Initialize the conversation ID when the component is created.
+        -->
+    </fx:Declarations>
+
+</j:VGroup>

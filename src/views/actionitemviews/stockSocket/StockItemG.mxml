@@ -71,6 +71,23 @@
                 setTimeout(function():void {
                     removeClass("stockItemHighlight");
                 }, 200);
+                highlightPnL();
+            }
+
+            private function highlightPnL():void {
+                if(_dataHistory.length <2) return;
+                if(_dataHistory[0] < _dataHistory[_dataHistory.length -1]){
+                    if(this.containsClass("stockItemLossColor")){
+                        this.removeClass("stockItemLossColor");
+                    }
+                    this.addClass("stockItemProfitColor");
+                } 
+                if(_dataHistory[0] > _dataHistory[_dataHistory.length -1]){
+                    if(this.containsClass("stockItemProfitColor")){
+                        this.removeClass("stockItemProfitColor");
+                    }
+                    this.addClass("stockItemLossColor");
+                    }
             }
 
             public function get sData():Object {

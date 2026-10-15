@@ -281,5 +281,3 @@ views.actionitemviews.websocket.SocketService.prototype.ROYALE_COMPILE_FLAGS = 9
  * @type {Array<string>}
  */
 views.actionitemviews.websocket.SocketService.prototype.ROYALE_INITIAL_STATICS = Object.keys(views.actionitemviews.websocket.SocketService);
-
-//# sourceMappingURL=./SocketService.js.map

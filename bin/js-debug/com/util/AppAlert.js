@@ -94,5 +94,3 @@ com.util.AppAlert.prototype.ROYALE_COMPILE_FLAGS = 9;
  * @type {Array<string>}
  */
 com.util.AppAlert.prototype.ROYALE_INITIAL_STATICS = Object.keys(com.util.AppAlert);
-
-//# sourceMappingURL=./AppAlert.js.map

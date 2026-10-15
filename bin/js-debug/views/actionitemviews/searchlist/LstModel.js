@@ -64,9 +64,13 @@ views.actionitemviews.searchlist.LstModel.prototype.views_actionitemviews_search
   var i = foreachiter0_target[foreachiter0];
   {
     var /** @type {Object} */ cDetails = new Object();
-    cDetails["flag"] = i["flags"]["png"];
-    cDetails["name"] = i["name"]["common"];
-    cDetails["capital"] = i["capital"];
+    cDetails["flag"] = i["flag"]["url_png"];
+    cDetails["name"] = i['names']["common"];
+    if (i["capitals"] && i["capitals"]["length"] > 0) {
+      cDetails["capital"] = i["capitals"][0]['name'];
+    } else {
+      cDetails["capital"] = "N/A";
+    }
     cDetails["region"] = i["region"];
     this.views_actionitemviews_searchlist_LstModel__allCountryDetails.push(cDetails);
     org.apache.royale.utils.Language.sortOn(this.views_actionitemviews_searchlist_LstModel__allCountryDetails, 'name');
@@ -188,5 +192,3 @@ views.actionitemviews.searchlist.LstModel.prototype.ROYALE_COMPILE_FLAGS = 9;
  * @type {Array<string>}
  */
 views.actionitemviews.searchlist.LstModel.prototype.ROYALE_INITIAL_STATICS = Object.keys(views.actionitemviews.searchlist.LstModel);
-
-//# sourceMappingURL=./LstModel.js.map

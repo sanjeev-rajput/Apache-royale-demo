@@ -550,7 +550,3 @@ views.actionitemviews.draganddrop.DragAndDropMain.prototype.ROYALE_REFLECTION_IN
  * @type {number}
  */
 views.actionitemviews.draganddrop.DragAndDropMain.prototype.ROYALE_COMPILE_FLAGS = 9;
-
-
-
-//# sourceMappingURL=./DragAndDropMain.js.map

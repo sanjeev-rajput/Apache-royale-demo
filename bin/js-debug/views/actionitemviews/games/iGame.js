@@ -49,5 +49,3 @@ views.actionitemviews.games.iGame.prototype.ROYALE_REFLECTION_INFO = function ()
  * @type {number}
  */
 views.actionitemviews.games.iGame.prototype.ROYALE_COMPILE_FLAGS = 9;
-
-//# sourceMappingURL=./iGame.js.map

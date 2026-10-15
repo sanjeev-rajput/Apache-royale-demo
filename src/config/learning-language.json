@@ -1,0 +1,84 @@
+
+{
+  "version": 1,
+  "intentRules": [
+    {
+      "id": "learn_topic",
+      "priority": 100,
+      "intent": "learn",
+      "phrases": [
+        "i want to learn",
+        "i would like to learn",
+        "teach me",
+        "help me with",
+        "show me activities about"
+      ]
+    },
+    {
+      "id": "practice_topic",
+      "priority": 100,
+      "intent": "practice",
+      "phrases": [
+        "i want to practice",
+        "give me practice questions",
+        "quiz me on",
+        "test me on"
+      ]
+    },
+    {
+      "id": "explain_topic",
+      "priority": 100,
+      "intent": "explain",
+      "phrases": [
+        "explain",
+        "what is",
+        "what are",
+        "tell me about",
+        "describe"
+      ]
+    },
+    {
+      "id": "show_more",
+      "priority": 200,
+      "intent": "more",
+      "phrases": [
+        "show more",
+        "more activities",
+        "another activity",
+        "show me another one"
+      ]
+    },
+    {
+      "id": "show_all_classes",
+      "priority": 200,
+      "intent": "show_all_classes",
+      "phrases": [
+        "show activities for all classes",
+        "show all classes",
+        "activities across classes"
+      ]
+    },
+    {
+      "id": "change_class",
+      "priority": 200,
+      "intent": "change_grade",
+      "phrases": [
+        "another class",
+        "different class",
+        "change class"
+      ]
+    }
+  ],
+  "conversationMessages": {
+    "welcome": "Hello! What would you like to learn today?",
+    "askForTopic": "Tell me what you'd like to learn, or mention your class. For example: “I want to learn about fractions” or “Class 4.”",
+    "askForGrade": "I found activities related to {topic}. Which class are you in?",
+    "noActivities": "I couldn't find an exact match for {topic}. Which class are you in? I can also try searching with a different topic name.",
+    "activitiesFound": "Here are activities about {topic} for {grade}.",
+    "activitiesAcrossClasses": "Here are activities about {topic} across classes.",
+    "noActivitiesForGrade": "I couldn't find activities about {topic} for {grade}.",
+    "noRelatedActivities": "I couldn't find activities about {topic} for {grade}, and I don't have related activities to show. Would you like to try another topic?",
+    "askForDifferentClass": "Which class would you like to explore? For example, Class 3 or Class 5.",
+    "noMoreActivities": "That’s all the activities I found for this search."
+  }
+}

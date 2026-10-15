@@ -115,7 +115,7 @@ views.actionitemviews.reactandroyale.ReactAndRoyale = function() {
     100,
     'gap',
     true,
-    50,
+    10,
     'itemsVerticalAlign',
     true,
     'itemsTop',
@@ -394,7 +394,3 @@ views.actionitemviews.reactandroyale.ReactAndRoyale.prototype.ROYALE_REFLECTION_
  * @type {number}
  */
 views.actionitemviews.reactandroyale.ReactAndRoyale.prototype.ROYALE_COMPILE_FLAGS = 9;
-
-
-
-//# sourceMappingURL=./ReactAndRoyale.js.map

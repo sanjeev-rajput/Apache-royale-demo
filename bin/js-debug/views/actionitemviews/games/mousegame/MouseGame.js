@@ -307,7 +307,3 @@ views.actionitemviews.games.mousegame.MouseGame.prototype.ROYALE_REFLECTION_INFO
  * @type {number}
  */
 views.actionitemviews.games.mousegame.MouseGame.prototype.ROYALE_COMPILE_FLAGS = 9;
-
-
-
-//# sourceMappingURL=./MouseGame.js.map

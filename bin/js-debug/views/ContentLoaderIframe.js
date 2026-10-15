@@ -81,11 +81,11 @@ views.ContentLoaderIframe.prototype.views_ContentLoaderIframe_init = function() 
 
 
 /**
- * @param {Object} data
+ * @param {string} url
  */
-views.ContentLoaderIframe.prototype.loadPage = function(data) {
+views.ContentLoaderIframe.prototype.loadPage = function(url) {
   this.visible = true;
-  this.iFrm.src = org.apache.royale.utils.Language.string(data["url"]);
+  this.iFrm.src = 'assets/content/' + url;
   com.event.DsEvent.instance.dispatch(com.event.DsEvent.IFRAMEOPENED);
 };
 
@@ -253,7 +253,7 @@ views.ContentLoaderIframe.prototype.ROYALE_REFLECTION_INFO = function () {
     },
     methods: function () {
       return {
-        'loadPage': { type: 'void', declaredBy: 'views.ContentLoaderIframe', parameters: function () { return [ 'Object', false ]; }},
+        'loadPage': { type: 'void', declaredBy: 'views.ContentLoaderIframe', parameters: function () { return [ 'String', false ]; }},
         'disposeMe': { type: 'void', declaredBy: 'views.ContentLoaderIframe'},
         'visibleState': { type: 'Boolean', declaredBy: 'views.ContentLoaderIframe'},
         'ContentLoaderIframe': { type: '', declaredBy: 'views.ContentLoaderIframe'}
@@ -272,7 +272,3 @@ views.ContentLoaderIframe.prototype.ROYALE_COMPILE_FLAGS = 9;
  * @type {Array<string>}
  */
 views.ContentLoaderIframe.prototype.ROYALE_INITIAL_STATICS = Object.keys(views.ContentLoaderIframe);
-
-
-
-//# sourceMappingURL=./ContentLoaderIframe.js.map

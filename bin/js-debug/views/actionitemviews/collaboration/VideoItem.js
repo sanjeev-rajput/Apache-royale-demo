@@ -47,9 +47,9 @@ views.actionitemviews.collaboration.VideoItem = function() {
 
   this.generateMXMLAttributes([
     2,
-    'percentWidth',
+    'width',
     true,
-    100.0,
+    150,
     'height',
     true,
     100,
@@ -220,9 +220,9 @@ Object.defineProperties(views.actionitemviews.collaboration.VideoItem.prototype,
           'id',
           true,
           'vid',
-          'percentWidth',
+          'width',
           true,
-          100.0,
+          100,
           'height',
           true,
           100,
@@ -305,7 +305,3 @@ views.actionitemviews.collaboration.VideoItem.prototype.ROYALE_REFLECTION_INFO =
  * @type {number}
  */
 views.actionitemviews.collaboration.VideoItem.prototype.ROYALE_COMPILE_FLAGS = 9;
-
-
-
-//# sourceMappingURL=./VideoItem.js.map

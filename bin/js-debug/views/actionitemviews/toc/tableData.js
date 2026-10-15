@@ -185,7 +185,7 @@ views.actionitemviews.toc.tableData.prototype.views_actionitemviews_toc_tableDat
  * @private
  */
 views.actionitemviews.toc.tableData.prototype.views_actionitemviews_toc_tableData_iframeLoadEventHandler = function() {
-  views.ContentLoaderIframe.instance.loadPage(this.views_actionitemviews_toc_tableData_data['url']);
+  views.ContentLoaderIframe.instance.loadPage(org.apache.royale.utils.Language.string(this.views_actionitemviews_toc_tableData_data['Location']));
 };
 
 
@@ -617,7 +617,3 @@ views.actionitemviews.toc.tableData.prototype.ROYALE_COMPILE_FLAGS = 9;
  * @type {Array<string>}
  */
 views.actionitemviews.toc.tableData.prototype.ROYALE_INITIAL_STATICS = Object.keys(views.actionitemviews.toc.tableData);
-
-
-
-//# sourceMappingURL=./tableData.js.map

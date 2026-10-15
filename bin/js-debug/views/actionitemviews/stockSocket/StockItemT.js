@@ -186,6 +186,27 @@ views.actionitemviews.stockSocket.StockItemT.prototype.views_actionitemviews_sto
 ;
 
 
+/**
+ * @private
+ */
+views.actionitemviews.stockSocket.StockItemT.prototype.views_actionitemviews_stockSocket_StockItemT_highlightPnL = function() {
+  if (this.views_actionitemviews_stockSocket_StockItemT__dataHistory.length < 2)
+    return;
+  if (this.views_actionitemviews_stockSocket_StockItemT__dataHistory[0] < this.views_actionitemviews_stockSocket_StockItemT__dataHistory[this.views_actionitemviews_stockSocket_StockItemT__dataHistory.length - 1]) {
+    if (this.indxCtr.containsClass("stockItemLossColor")) {
+      this.indxCtr.removeClass("stockItemLossColor");
+    }
+    this.indxCtr.addClass("stockItemProfitColor");
+  }
+  if (this.views_actionitemviews_stockSocket_StockItemT__dataHistory[0] > this.views_actionitemviews_stockSocket_StockItemT__dataHistory[this.views_actionitemviews_stockSocket_StockItemT__dataHistory.length - 1]) {
+    if (this.indxCtr.containsClass("stockItemProfitColor")) {
+      this.indxCtr.removeClass("stockItemProfitColor");
+    }
+    this.indxCtr.addClass("stockItemLossColor");
+  }
+};
+
+
 ;
 
 
@@ -312,6 +333,7 @@ views.actionitemviews.stockSocket.StockItemT.prototype.set__sData = function(d) 
   setTimeout(function() {
     self.indicator.alpha = 0;
   }, 500);
+  this.views_actionitemviews_stockSocket_StockItemT_highlightPnL();
 };
 
 
@@ -592,7 +614,3 @@ views.actionitemviews.stockSocket.StockItemT.prototype.ROYALE_REFLECTION_INFO = 
  * @type {number}
  */
 views.actionitemviews.stockSocket.StockItemT.prototype.ROYALE_COMPILE_FLAGS = 9;
-
-
-
-//# sourceMappingURL=./StockItemT.js.map

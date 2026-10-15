@@ -216,7 +216,3 @@ views.TopMenuL.prototype.ROYALE_REFLECTION_INFO = function () {
  * @type {number}
  */
 views.TopMenuL.prototype.ROYALE_COMPILE_FLAGS = 9;
-
-
-
-//# sourceMappingURL=./TopMenuL.js.map

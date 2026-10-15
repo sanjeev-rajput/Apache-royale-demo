@@ -373,7 +373,3 @@ views.actionitemviews.pexels.TileVideoview.prototype.ROYALE_REFLECTION_INFO = fu
  * @type {number}
  */
 views.actionitemviews.pexels.TileVideoview.prototype.ROYALE_COMPILE_FLAGS = 9;
-
-
-
-//# sourceMappingURL=./TileVideoview.js.map

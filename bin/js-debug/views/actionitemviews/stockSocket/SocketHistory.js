@@ -346,7 +346,3 @@ views.actionitemviews.stockSocket.SocketHistory.prototype.ROYALE_REFLECTION_INFO
  * @type {number}
  */
 views.actionitemviews.stockSocket.SocketHistory.prototype.ROYALE_COMPILE_FLAGS = 9;
-
-
-
-//# sourceMappingURL=./SocketHistory.js.map
