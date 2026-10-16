@@ -248,9 +248,41 @@ views.actionitemviews.learning.LearningChatbotMain.prototype.views_actionitemvie
 views.actionitemviews.learning.LearningChatbotMain.prototype.views_actionitemviews_learning_LearningChatbotMain_renderChatMessage = function(speaker, message) {
   var /** @type {org.apache.royale.html.HTMLText} */ label = new org.apache.royale.html.HTMLText();
   label.percentWidth = 100;
-  label.html = "<b>" + com.util.StringUtil.escapeHTML(speaker) + ":</b> " + com.util.StringUtil.markdownToHtml(message);
+  var /** @type {string} */ messageHtml = this.views_actionitemviews_learning_LearningChatbotMain_renderMessageHtml(message);
+  label.html = "<b>" + com.util.StringUtil.escapeHTML(speaker) + ":</b> " + messageHtml;
   this.resultsContainer.addElement(label);
   this.views_actionitemviews_learning_LearningChatbotMain_transcriptElements.push(label);
+};
+
+
+/**
+ * @private
+ * @param {string} message
+ * @return {string}
+ */
+views.actionitemviews.learning.LearningChatbotMain.prototype.views_actionitemviews_learning_LearningChatbotMain_renderMessageHtml = function(message) {
+  var /** @type {Array} */ markers = ["⚠️ **Please note:**", "⚠️ **AI-generated content notice:**"];
+  var /** @type {number} */ warningStart = -1;
+  var /** @type {string} */ warningMarker = "";
+  var foreachiter1_target = markers;
+  for (var foreachiter1 in foreachiter1_target) 
+  {
+  var marker = foreachiter1_target[foreachiter1];
+  {
+    var /** @type {number} */ index = (message.indexOf(marker)) >> 0;
+    if (index >= 0 && (warningStart < 0 || index < warningStart)) {
+      warningStart = index;
+      warningMarker = marker;
+    }
+  }}
+  
+  if (warningStart < 0)
+    return com.util.StringUtil.markdownToHtml(message);
+  var /** @type {string} */ mainText = message.substring(0, warningStart);
+  var /** @type {string} */ warningText = message.substring(warningStart + warningMarker.length);
+  var /** @type {string} */ warningTitle = warningMarker.indexOf("Please note") >= 0 ? "⚠️ Please note:" : "⚠️ AI-generated content notice:";
+  var /** @type {string} */ warningHtml = "<p style=\"background-color:#FFF2B2;" + "color:#B71C1C;" + "font-size:0.85em;" + "padding:8px 10px;" + "margin-top:0px;" + "border:1px solid #E5C84B;" + "border-radius:4px;\">" + "<b>" + warningTitle + "</b>" + com.util.StringUtil.markdownToHtml(warningText) + "</p>";
+  return com.util.StringUtil.markdownToHtml(mainText) + warningHtml;
 };
 
 
@@ -265,10 +297,10 @@ views.actionitemviews.learning.LearningChatbotMain.prototype.views_actionitemvie
   }
   this.views_actionitemviews_learning_LearningChatbotMain_transcriptElements = [];
   this.views_actionitemviews_learning_LearningChatbotMain_transcriptEntries = [];
-  var foreachiter1_target = entries;
-  for (var foreachiter1 in foreachiter1_target) 
+  var foreachiter2_target = entries;
+  for (var foreachiter2 in foreachiter2_target) 
   {
-  var entry = foreachiter1_target[foreachiter1];
+  var entry = foreachiter2_target[foreachiter2];
   {
     if (entry == null)
       continue;

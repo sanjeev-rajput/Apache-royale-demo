@@ -3,7 +3,7 @@ import winkNLP from "wink-nlp";
 import model from "wink-eng-lite-web-model";
 
 import { searchLearningCatalog, getLearningCatalog } from "./learningCatalog.js";
-import { getConversationMessage } from "./learningLanguageConfig.js";
+import { getConversationMessage, getLearningLanguageConfig } from "./learningLanguageConfig.js";
 
 const nlp = winkNLP(model);
 const its = nlp.its;
@@ -158,37 +158,36 @@ function getTopicFromMessage(message) {
     .replace(/\b(?:class|grade|standard|std)\s+(nursery|one|first|two|second|three|third|four|fourth|five|fifth|six|sixth|seven|seventh|eight|eighth|nine|ninth|ten|tenth)\b/g, " ")
     .replace(/\b(?:i am in|im in|i study in|studying in|im studying in|i am studying in)\s+(nursery|one|first|two|second|three|third|four|fourth|five|fifth|six|sixth|seven|seventh|eight|eighth|nine|ninth|ten|tenth|\d{1,2})\b/g, " ");
 
-  // Longer phrases must be removed first (e.g. "can you teach me about").
-  const requestPhrases = [
-    "i would like to learn about", "i would like to learn",
-    "i want to learn about", "i want to learn",
-    "can you teach me about", "can you teach me",
-    "i want activities about", "i need help with", "help me with",
-    "teach me about", "teach me", "learn about", "learn",
-    "activities about", "show me", "i want to study", "study about"
-  ].sort((a, b) => b.length - a.length);
+  // Language phrases and stop words are configured in learning-language.json.
+  const languageRules = getLearningLanguageConfig().languageRules || {};
+  const requestPhrases = Array.isArray(languageRules.requestPhrases)
+    ? [...languageRules.requestPhrases].sort((a, b) => b.length - a.length)
+    : [];
 
   for (const phrase of requestPhrases) {
-    text = text.replace(new RegExp(`\\b${phrase.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\b`, "g"), " ");
+    const escaped = String(phrase).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    text = text.replace(new RegExp(`\\b${escaped}\\b`, "g"), " ");
   }
 
-  // These words describe the request, not the subject being requested.
-  text = text.replace(/\b(please|today|tonight|now|then|about|the|a|an|for|my|what|which|how|me|i|want|to|learn|show|more|some|anything|something|anything|activity|activities|exercise|exercises|in|on|can|you|teach|lets|let|us|yes|ok|okay)\b/g, " ");
+  const stopWords = Array.isArray(languageRules.stopWords) ? languageRules.stopWords : [];
+  if (stopWords.length) {
+    const escapedWords = stopWords
+      .map(word => String(word).replace(/[.*+?^${}()|[\]\\]/g, "\\$&"))
+      .sort((a, b) => b.length - a.length);
+    text = text.replace(new RegExp(`\\b(?:${escapedWords.join("|")})\\b`, "g"), " ");
+  }
   return text.replace(/\s+/g, " ").trim();
 }
 
 function findSemanticCatalogTopic(message) {
   const text = normalize(message);
-  const aliases = [
-    { phrases: ["words that name things", "words that name people places and things", "naming words"], subtopic: "Nouns" },
-    { phrases: ["action words", "words that show action", "words that tell what someone does"], subtopic: "Verbs" },
-    { phrases: ["describing words", "words that describe nouns", "words that tell us more about a noun"], subtopic: "Adjectives" },
-    { phrases: ["words that replace nouns", "words used instead of nouns"], subtopic: "Pronouns" }
-  ];
+  const aliases = getLearningLanguageConfig().languageRules?.semanticAliases || [];
   const catalog = getLearningCatalog();
+
   for (const alias of aliases) {
+    if (!alias || !Array.isArray(alias.phrases) || !alias.canonicalSubtopic) continue;
     if (alias.phrases.some(phrase => text.includes(normalize(phrase)))) {
-      const item = catalog.find(entry => normalize(entry.subtopic) === normalize(alias.subtopic));
+      const item = catalog.find(entry => normalize(entry.subtopic) === normalize(alias.canonicalSubtopic));
       if (item) return { kind: "subtopic", value: item.subtopic, item, length: normalize(item.subtopic).length };
     }
   }
@@ -198,25 +197,39 @@ function findSemanticCatalogTopic(message) {
 function findAliasedCatalogTopic(message) {
   const text = normalize(message);
   const catalog = getLearningCatalog();
-  const aliases = [
-    { patterns: [/\bnumber\b/, /\bnumbers\b/, /\bcounting\b/, /\bnumeracy\b/], kind: "subtopic", value: "Numbers" },
-    { patterns: [/\balphabet\b/, /\balphabets\b/, /\bletters\b/, /\babc\b/], kind: "subtopic", value: "My Alphabet" },
-    { patterns: [/\bwords\b/, /\bvocabulary\b/], kind: "topic", value: "Vocabulary" }
-  ];
+  const aliases = getLearningLanguageConfig().languageRules?.catalogAliases || [];
 
   for (const alias of aliases) {
-    if (!alias.patterns.some(pattern => pattern.test(text))) continue;
-    const item = catalog.find(entry => normalize(entry[alias.kind]) === normalize(alias.value));
-    if (item) return { kind: alias.kind, value: item[alias.kind], item, length: normalize(item[alias.kind]).length };
+    if (!alias || !Array.isArray(alias.phrases) || !alias.canonicalField || !alias.canonicalValue) continue;
+    const hasPhrase = alias.phrases.some(phrase => {
+      const escaped = normalize(phrase).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+      return escaped && new RegExp(`\\b${escaped}\\b`).test(text);
+    });
+    if (!hasPhrase) continue;
+    const item = catalog.find(entry => normalize(entry[alias.canonicalField]) === normalize(alias.canonicalValue));
+    if (item) return { kind: alias.canonicalField, value: item[alias.canonicalField], item, length: normalize(item[alias.canonicalField]).length };
   }
   return null;
 }
 
 function detectBroadSubject(message) {
   const text = normalize(message);
-  if (/\b(math|maths|mathematics|arithmetic)\b/.test(text)) return "Maths";
-  if (/\b(english|language|reading|writing|grammar|phonics|vocabulary)\b/.test(text) &&
-      /\b(anything|something|teach|learn|study|subject|topic|help|want|like)\b/.test(text)) return "English";
+  const subjects = getLearningLanguageConfig().languageRules?.broadSubjects || [];
+  for (const subject of subjects) {
+    if (!subject?.name || !Array.isArray(subject.phrases)) continue;
+    const matches = subject.phrases.some(phrase => {
+      const escaped = normalize(phrase).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+      return escaped && new RegExp(`\\b${escaped}\\b`).test(text);
+    });
+    if (!matches) continue;
+
+    const context = subject.requestContextPhrases;
+    if (!Array.isArray(context) || !context.length) return subject.name;
+    if (context.some(phrase => {
+      const escaped = normalize(phrase).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+      return escaped && new RegExp(`\\b${escaped}\\b`).test(text);
+    })) return subject.name;
+  }
   return "";
 }
 
@@ -226,8 +239,9 @@ function getSubjectRecommendations(subject, grade = "") {
     // The current catalog contains English/literacy topics, not a Maths topic.
     return [];
   }
-  const literacyTopics = new Set(["grammar", "phonics", "writing", "vocabulary", "reading", "rhymes"]);
-  return catalog.filter(item => literacyTopics.has(normalize(item.topic)));
+  const configuredTopics = getLearningLanguageConfig().languageRules?.recommendationTopics || [];
+  const recommendationTopics = new Set(configuredTopics.map(normalize));
+  return catalog.filter(item => recommendationTopics.has(normalize(item.topic)));
 }
 
 function filterResultsToGrade(results, grade) {
@@ -329,13 +343,21 @@ function searchForLearningRequest(message, detectedGrade, aiIntent = null) {
   }
 
   // Define every value used in the returned object.
+  // If descriptive search found real CSV rows without an exact semantic match,
+  // use the matched row's canonical topic/subtopic in the response.
+  const firstMatchedItem = results[0] || null;
+
   const topic =
     matchedCatalogItem?.topic ||
-    (matchedKind === "topic" ? requestedTerm : "");
+    (matchedKind === "topic" ? requestedTerm : "") ||
+    firstMatchedItem?.topic ||
+    requestedTerm;
 
   const subtopic =
     matchedCatalogItem?.subtopic ||
-    (matchedKind === "subtopic" ? requestedTerm : "");
+    (matchedKind === "subtopic" ? requestedTerm : "") ||
+    firstMatchedItem?.subtopic ||
+    "";
 
   return {
     topic,
@@ -630,7 +652,8 @@ export function handleLearningChat({
   if (learningRequest) {
     state.topic = learningRequest.topic;
     state.subtopic = learningRequest.subtopic || "";
-    state.grade = detectedGrade || learningRequest.grade || state.grade || "";
+    // A new topic should not inherit the previous topic's class.
+    state.grade = detectedGrade || learningRequest.grade || "";
     const requestGrade = state.grade;
     state.waitingForGrade = !requestGrade;
 

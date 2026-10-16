@@ -156,12 +156,65 @@
             {
                 var label:HTMLText = new HTMLText();
                 label.percentWidth = 100;
+
+                var messageHtml:String = renderMessageHtml(message);
                 label.html =
                     "<b>" + StringUtil.escapeHTML(speaker) + ":</b> " +
-                    StringUtil.markdownToHtml(message);
+                    messageHtml;
+
                 resultsContainer.addElement(label);
                 transcriptElements.push(label);
             }
+
+            // Render the AI-fallback consent notice as a compact warning panel.
+            // All other tutor messages continue through the existing Markdown renderer.
+            
+            private function renderMessageHtml(message:String):String
+            {
+                var markers:Array = [
+                    "⚠️ **Please note:**",
+                    "⚠️ **AI-generated content notice:**"
+                ];
+
+                var warningStart:int = -1;
+                var warningMarker:String = "";
+
+                for each (var marker:String in markers)
+                {
+                    var index:int = message.indexOf(marker);
+                    if (index >= 0 && (warningStart < 0 || index < warningStart))
+                    {
+                        warningStart = index;
+                        warningMarker = marker;
+                    }
+                }
+
+                if (warningStart < 0)
+                    return StringUtil.markdownToHtml(message);
+
+                var mainText:String = message.substring(0, warningStart);
+                var warningText:String =
+                    message.substring(warningStart + warningMarker.length);
+
+                var warningTitle:String = warningMarker.indexOf("Please note") >= 0
+                    ? "⚠️ Please note:"
+                    : "⚠️ AI-generated content notice:";
+
+                var warningHtml:String =
+                    "<p style=\"background-color:#FFF2B2;" +
+                    "color:#B71C1C;" +
+                    "font-size:0.85em;" +
+                    "padding:8px 10px;" +
+                    "margin-top:0px;" +
+                    "border:1px solid #E5C84B;" +
+                    "border-radius:4px;\">" +
+                    "<b>" + warningTitle + "</b>" +
+                    StringUtil.markdownToHtml(warningText) +
+                    "</p>";
+
+                return StringUtil.markdownToHtml(mainText) + warningHtml;
+            }
+
 
             private function restoreTranscript(entries:Array):void
             {

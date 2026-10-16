@@ -1,6 +1,6 @@
-
 {
   "version": 1,
+  "aiFallbackEnabled": true,
   "intentRules": [
     {
       "id": "learn_topic",
@@ -80,5 +80,207 @@
     "noRelatedActivities": "I couldn't find activities about {topic} for {grade}, and I don't have related activities to show. Would you like to try another topic?",
     "askForDifferentClass": "Which class would you like to explore? For example, Class 3 or Class 5.",
     "noMoreActivities": "That’s all the activities I found for this search."
+  },
+  "languageRules": {
+    "requestPhrases": [
+      "i would like to learn about",
+      "i would like to learn",
+      "i want to learn about",
+      "i want to learn",
+      "can you teach me about",
+      "can you teach me",
+      "i want activities about",
+      "i need help with",
+      "help me with",
+      "teach me about",
+      "teach me",
+      "learn about",
+      "learn",
+      "activities about",
+      "show me",
+      "i want to study",
+      "study about"
+    ],
+    "stopWords": [
+      "please",
+      "today",
+      "tonight",
+      "now",
+      "then",
+      "about",
+      "the",
+      "a",
+      "an",
+      "for",
+      "my",
+      "what",
+      "which",
+      "how",
+      "me",
+      "i",
+      "want",
+      "to",
+      "learn",
+      "show",
+      "more",
+      "some",
+      "anything",
+      "something",
+      "activity",
+      "activities",
+      "exercise",
+      "exercises",
+      "in",
+      "on",
+      "can",
+      "you",
+      "teach",
+      "lets",
+      "let",
+      "us",
+      "yes",
+      "ok",
+      "okay"
+    ],
+    "semanticAliases": [
+      {
+        "phrases": [
+          "words that name things",
+          "words that name people places and things",
+          "naming words"
+        ],
+        "canonicalSubtopic": "Nouns"
+      },
+      {
+        "phrases": [
+          "action words",
+          "words that show action",
+          "words that tell what someone does"
+        ],
+        "canonicalSubtopic": "Verbs"
+      },
+      {
+        "phrases": [
+          "describing words",
+          "words that describe nouns",
+          "words that tell us more about a noun"
+        ],
+        "canonicalSubtopic": "Adjectives"
+      },
+      {
+        "phrases": [
+          "words that replace nouns",
+          "words used instead of nouns"
+        ],
+        "canonicalSubtopic": "Pronouns"
+      }
+    ],
+    "catalogAliases": [
+      {
+        "phrases": [
+          "number",
+          "numbers",
+          "counting",
+          "numeracy"
+        ],
+        "canonicalField": "subtopic",
+        "canonicalValue": "Numbers"
+      },
+      {
+        "phrases": [
+          "alphabet",
+          "alphabets",
+          "letters",
+          "abc"
+        ],
+        "canonicalField": "subtopic",
+        "canonicalValue": "My Alphabet"
+      },
+      {
+        "phrases": [
+          "noun",
+          "nouns"
+        ],
+        "canonicalField": "subtopic",
+        "canonicalValue": "Nouns"
+      },
+      {
+        "phrases": [
+          "verb",
+          "verbs",
+          "action words"
+        ],
+        "canonicalField": "subtopic",
+        "canonicalValue": "Verbs"
+      },
+      {
+        "phrases": [
+          "adjective",
+          "adjectives",
+          "describing words"
+        ],
+        "canonicalField": "subtopic",
+        "canonicalValue": "Adjectives"
+      },
+      {
+        "phrases": [
+          "pronoun",
+          "pronouns"
+        ],
+        "canonicalField": "subtopic",
+        "canonicalValue": "Pronouns"
+      },
+      {
+        "phrases": [
+          "words",
+          "vocabulary"
+        ],
+        "canonicalField": "topic",
+        "canonicalValue": "Vocabulary"
+      }
+    ],
+    "broadSubjects": [
+      {
+        "name": "Maths",
+        "phrases": [
+          "math",
+          "maths",
+          "mathematics",
+          "arithmetic"
+        ]
+      },
+      {
+        "name": "English",
+        "phrases": [
+          "english",
+          "language",
+          "reading",
+          "writing",
+          "grammar",
+          "phonics",
+          "vocabulary"
+        ],
+        "requestContextPhrases": [
+          "anything",
+          "something",
+          "teach",
+          "learn",
+          "study",
+          "subject",
+          "topic",
+          "help",
+          "want",
+          "like"
+        ]
+      }
+    ],
+    "recommendationTopics": [
+      "grammar",
+      "phonics",
+      "writing",
+      "vocabulary",
+      "reading",
+      "rhymes"
+    ]
   }
 }

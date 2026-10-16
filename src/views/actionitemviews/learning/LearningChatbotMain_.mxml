@@ -2,7 +2,7 @@
          xmlns:j="library://ns.apache.org/royale/jewel"
          xmlns:sp="library://ns.unhurdle.com/spectrum"
          xmlns:html="library://ns.apache.org/royale/html"
-         xmlns="library://ns.apache.org/royale/html"
+         xmlns="library://ns.apache.org/royale/html" xmlns:learning="views.actionitemviews.learning.*"
          width="100%"
          height="100%"
          itemsHorizontalAlign="itemsCenter" itemsVerticalAlign="itemsCenter" gap="1"
@@ -17,6 +17,8 @@
             import org.apache.royale.html.HTMLText;
             import com.unhurdle.spectrum.Button;
             import views.actionitemviews.learning.AiResponse;
+            import com.util.StringUtil;
+            import views.actionitemviews.learning.ImportExportChat;
             
 
 
@@ -26,6 +28,11 @@
             // One conversation ID is reused for the lifetime of this chatbot.
             // Node owns the actual conversation state.
             private var conversationId:String = "";
+
+            // Ordered transcript: chat messages and learning-module cards.
+            private var transcriptEntries:Array = [];
+            private var transcriptElements:Array = [];
+            private var importExportHelper:ImportExportChat = new ImportExportChat();
 
             // --------------------------------------------------
             // Entry point
@@ -137,103 +144,64 @@
 
             private function addChatMessage(speaker:String, message:String):void
             {
-                var label:HTMLText = new HTMLText();
-
-                label.percentWidth = 100;
-
-                label.html =
-                    "<b>" + escapeHTML(speaker) + ":</b> " +
-                    markdownToHtml(message);
-
-                resultsContainer.addElement(label);
+                transcriptEntries.push({
+                    type: "message",
+                    speaker: speaker,
+                    message: message
+                });
+                renderChatMessage(speaker, message);
             }
 
-            
-            private function markdownToHtml(value:String):String
+            private function renderChatMessage(speaker:String, message:String):void
             {
-                if (value == null)
-                    return "";
+                var label:HTMLText = new HTMLText();
+                label.percentWidth = 100;
+                label.html =
+                    "<b>" + StringUtil.escapeHTML(speaker) + ":</b> " +
+                    StringUtil.markdownToHtml(message);
+                resultsContainer.addElement(label);
+                transcriptElements.push(label);
+            }
 
-                var safe:String = escapeHTML(value);
-                var lines:Array = safe.split(/\r?\n/);
-                var output:String = "";
-                var inList:Boolean = false;
-
-                for each (var line:String in lines)
+            private function restoreTranscript(entries:Array):void
+            {
+                trace("Restoring transcript with " + String(entries.length) + " entries.");
+                // Remove only transcript elements. Keep the title and prompt labels.
+                for (var i:int = transcriptElements.length - 1; i >= 0; i--)
                 {
-                    var trimmed:String = line.replace(/^\s+|\s+$/g, "");
+                    resultsContainer.removeElement(transcriptElements[i]);
+                }
+                transcriptElements = [];
+                transcriptEntries = [];
 
-                    // Close an open bullet list when the next line is not a bullet.
-                    if (inList && !/^\-\s+/.test(trimmed))
-                    {
-                        output += "</ul>";
-                        inList = false;
-                    }
+                for each (var entry:Object in entries)
+                {
+                    if (entry == null)
+                        continue;
 
-                    // Headings
-                    if (/^###\s+/.test(trimmed))
+                    var entryType:String = entry.type == null ? "message" : String(entry.type);
+                    if (entryType == "module" && entry.item != null)
                     {
-                        output += "<h4>" +
-                            trimmed.replace(/^###\s+/, "") +
-                            "</h4>";
+                        var savedItem:Object = entry.item;
+                        transcriptEntries.push({ type: "module", item: savedItem });
+                        renderActivity(savedItem);
                     }
-                    else if (/^##\s+/.test(trimmed))
+                    else if (entry.speaker != null && entry.message != null)
                     {
-                        output += "<h3>" +
-                            trimmed.replace(/^##\s+/, "") +
-                            "</h3>";
-                    }
-                    else if (/^#\s+/.test(trimmed))
-                    {
-                        output += "<h2>" +
-                            trimmed.replace(/^#\s+/, "") +
-                            "</h2>";
-                    }
-                    // Bullet list items
-                    else if (/^\-\s+/.test(trimmed))
-                    {
-                        if (!inList)
-                        {
-                            output += "<ul>";
-                            inList = true;
-                        }
-
-                        output += "<li>" +
-                            trimmed.replace(/^\-\s+/, "") +
-                            "</li>";
-                    }
-                    // Empty line
-                    else if (trimmed == "")
-                    {
-                        output += "<br/>";
-                    }
-                    // Normal text
-                    else
-                    {
-                        output += trimmed + "<br/>";
+                        var speaker:String = String(entry.speaker);
+                        var message:String = String(entry.message);
+                        transcriptEntries.push({
+                            type: "message",
+                            speaker: speaker,
+                            message: message
+                        });
+                        renderChatMessage(speaker, message);
                     }
                 }
 
-                if (inList)
-                    output += "</ul>";
-
-                // Bold and italic formatting
-                output = output.replace(/\*\*(.+?)\*\*/g, "<b>$1</b>");
-                output = output.replace(/\*(.+?)\*/g, "<i>$1</i>");
-
-                return output;
-            }
-
-            private function escapeHTML(value:String):String
-            {
-                if (value == null)
-                    return "";
-
-                return value
-                    .replace(/&/g, "&amp;")
-                    .replace(/</g, "&lt;")
-                    .replace(/>/g, "&gt;")
-                    .replace(/"/g, "&quot;");
+                // A restored transcript is visual history, not a restored server session.
+                conversationId = "chat-" + String(new Date().time) + "-" +
+                    String(int(Math.random() * 1000000));
             }
 
             // --------------------------------------------------
@@ -244,10 +212,20 @@
             {
                 if (item == null)
                     return;
+
+                // Save the complete activity payload so its card can be rebuilt on import.
+                transcriptEntries.push({ type: "module", item: item });
+                renderActivity(item);
+            }
+
+            private function renderActivity(item:Object):void
+            {
+                if (item == null)
+                    return;
                 var detailsUi:AiResponse = new AiResponse();
                 detailsUi.aiResponse = item;
                 resultsContainer.addElement(detailsUi);
-                
+                transcriptElements.push(detailsUi);
             }
 
             private function loadModule(item:Object):void
@@ -267,10 +245,6 @@
                     String(item.location)
                 );
             }
-
-            // --------------------------------------------------
-            // Utilities
-            // --------------------------------------------------
 
             private function finishRequest():void
             {
@@ -316,6 +290,28 @@
                     conversationId
                 );
             }
+
+            private function handleSelection(event:Event):void{
+                var menu:ActionMenu = event.currentTarget as ActionMenu;
+                if (menu == null)
+                    return;
+
+                var selected:String = String(menu.selectedItem.label);
+                if (selected == "Export")
+                {
+                    importExportHelper.exportChatJson(conversationId, transcriptEntries);
+                }
+                if (selected == "Import")
+                {
+                    trace("Importing JSON transcript...");
+                    importExportHelper.importJsonFile(restoreTranscript);
+                }
+                else if (selected == "Clear")
+                {
+                    restoreTranscript([]);
+                }
+                menu.selectedIndex = -1;
+            }
         ]]>
     </fx:Script>
 
@@ -327,12 +323,14 @@
             <j:ScrollingViewport/>
         </j:beads>
     </j:VGroup>
-    
     <j:HGroup id="qryCtr" width="80%" itemsVerticalAlign="itemsCenter">
         <sp:TextField id="questionInput" placeholder="e.g. I want to learn about Alphabet" width="100%"
         onEnter="onKeyDown()"/>
         <sp:Button id="askButton" className="chatbot-text-button" text="ask"
             click="sendMessage()"/>
+        <sp:ButtonGroup vertical="true" style="align-items:flex-start;">
+            <sp:ActionMenu quiet="true" dataProvider="[Export, Import, Clear]" change="handleSelection(event)"/>
+        </sp:ButtonGroup>
     </j:HGroup>
 
     <fx:Declarations>

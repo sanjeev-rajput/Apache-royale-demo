@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "catalogs": [
+    {
+      "id": "english-core-1",
+      "file": "toc-dr-1.csv",
+      "enabled": true,
+      "subject": "English"
+    },
+    {
+      "id": "english-core-2",
+      "file": "toc-dr-2.csv",
+      "enabled": true,
+      "subject": "English"
+    }
+  ],
+  "schema": {
+    "columns": [
+      "Grade",
+      "Topic",
+      "Subtopic",
+      "Activity Type",
+      "Activity Name",
+      "Description",
+      "Location",
+      "keywords"
+    ],
+    "keywordsColumn": 8,
+    "keywordsFormat": "Comma-separated values in one quoted CSV field"
+  }
+}
