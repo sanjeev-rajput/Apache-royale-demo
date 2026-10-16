@@ -149,7 +149,7 @@ function isGreeting(text) {
   return /^(hi|hello|hey|good morning|good afternoon|good evening)\b/.test(text);
 }
 
-function getTopicFromMessage(message) {
+function getTopicFromMessage(message, subject = "") {
   let text = normalize(message);
 
   // Remove grade references before extracting the actual learning topic.
@@ -157,6 +157,12 @@ function getTopicFromMessage(message) {
     .replace(/\b(?:class|grade|standard|std)\s*(?:number\s*)?\d{1,2}\b/g, " ")
     .replace(/\b(?:class|grade|standard|std)\s+(nursery|one|first|two|second|three|third|four|fourth|five|fifth|six|sixth|seven|seventh|eight|eighth|nine|ninth|ten|tenth)\b/g, " ")
     .replace(/\b(?:i am in|im in|i study in|studying in|im studying in|i am studying in)\s+(nursery|one|first|two|second|three|third|four|fourth|five|fifth|six|sixth|seven|seventh|eight|eighth|nine|ninth|ten|tenth|\d{1,2})\b/g, " ");
+
+  // Remove the detected subject before extracting the actual topic phrase.
+  if (subject) {
+    const escapedSubject = normalize(subject).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    if (escapedSubject) text = text.replace(new RegExp(`\\b${escapedSubject}\\b`, "g"), " ");
+  }
 
   // Language phrases and stop words are configured in learning-language.json.
   const languageRules = getLearningLanguageConfig().languageRules || {};
@@ -179,10 +185,10 @@ function getTopicFromMessage(message) {
   return text.replace(/\s+/g, " ").trim();
 }
 
-function findSemanticCatalogTopic(message) {
+function findSemanticCatalogTopic(message, subject = "") {
   const text = normalize(message);
   const aliases = getLearningLanguageConfig().languageRules?.semanticAliases || [];
-  const catalog = getLearningCatalog();
+  const catalog = getLearningCatalog().filter(entry => !subject || normalize(entry.subject) === normalize(subject));
 
   for (const alias of aliases) {
     if (!alias || !Array.isArray(alias.phrases) || !alias.canonicalSubtopic) continue;
@@ -194,9 +200,9 @@ function findSemanticCatalogTopic(message) {
   return null;
 }
 
-function findAliasedCatalogTopic(message) {
+function findAliasedCatalogTopic(message, subject = "") {
   const text = normalize(message);
-  const catalog = getLearningCatalog();
+  const catalog = getLearningCatalog().filter(entry => !subject || normalize(entry.subject) === normalize(subject));
   const aliases = getLearningLanguageConfig().languageRules?.catalogAliases || [];
 
   for (const alias of aliases) {
@@ -233,15 +239,68 @@ function detectBroadSubject(message) {
   return "";
 }
 
-function getSubjectRecommendations(subject, grade = "") {
-  const catalog = getLearningCatalog();
-  if (subject === "Maths") {
-    // The current catalog contains English/literacy topics, not a Maths topic.
-    return [];
+function detectCatalogSubject(message) {
+  const text = normalize(message);
+  const catalogSubjects = [...new Set(getLearningCatalog().map(item => item.subject).filter(Boolean))];
+  const configuredSubjects = getLearningLanguageConfig().languageRules?.broadSubjects || [];
+  const candidates = [];
+
+  for (const name of catalogSubjects) {
+    candidates.push({ name, phrases: [name] });
   }
-  const configuredTopics = getLearningLanguageConfig().languageRules?.recommendationTopics || [];
-  const recommendationTopics = new Set(configuredTopics.map(normalize));
-  return catalog.filter(item => recommendationTopics.has(normalize(item.topic)));
+  // Configured subjects must be recognized even when their catalog is not
+  // registered yet. This is important for the AI fallback path: in
+  // "learn fractions in Maths", "Maths" must be removed from the topic query.
+  for (const configured of configuredSubjects) {
+    if (!configured?.name || !Array.isArray(configured.phrases)) continue;
+    const registeredName = catalogSubjects.find(name => normalize(name) === normalize(configured.name));
+    candidates.push({ name: registeredName || configured.name, phrases: [configured.name, ...configured.phrases] });
+  }
+
+  // Keep common school subjects detectable if languageRules has not yet been
+  // populated with broadSubjects. Registered catalog names take precedence.
+  const defaultSubjects = [
+    { name: "Maths", phrases: ["maths", "math", "mathematics"] },
+    { name: "Science", phrases: ["science"] },
+    { name: "English", phrases: ["english"] },
+    { name: "Hindi", phrases: ["hindi"] },
+    { name: "Social Science", phrases: ["social science", "social studies"] },
+    { name: "EVS", phrases: ["evs", "environmental studies"] },
+    { name: "Computer Science", phrases: ["computer science", "computers"] }
+  ];
+  for (const fallback of defaultSubjects) {
+    const registeredName = catalogSubjects.find(name => normalize(name) === normalize(fallback.name));
+    const configured = configuredSubjects.find(item => normalize(item?.name) === normalize(fallback.name));
+    const phrases = configured?.phrases || fallback.phrases;
+    candidates.push({ name: registeredName || configured?.name || fallback.name, phrases: [fallback.name, ...phrases] });
+  }
+
+  const matches = [];
+  for (const candidate of candidates) {
+    for (const phrase of candidate.phrases) {
+      const normalizedPhrase = normalize(phrase);
+      const escaped = normalizedPhrase.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+      if (escaped && new RegExp(`\\b${escaped}\\b`).test(text)) {
+        matches.push({ name: candidate.name, length: normalizedPhrase.length });
+      }
+    }
+  }
+  matches.sort((a, b) => b.length - a.length);
+  return matches[0]?.name || "";
+}
+
+function getSubjectRecommendations(subject, grade = "") {
+  const catalog = getLearningCatalog().filter(item => normalize(item.subject) === normalize(subject));
+  if (!catalog.length) return [];
+
+  // Keep the existing curated English recommendations. Other subjects can
+  // recommend all of their registered catalog entries until their own rules exist.
+  if (normalize(subject) === "english") {
+    const configuredTopics = getLearningLanguageConfig().languageRules?.recommendationTopics || [];
+    const recommendationTopics = new Set(configuredTopics.map(normalize));
+    return catalog.filter(item => recommendationTopics.has(normalize(item.topic)));
+  }
+  return catalog;
 }
 
 function filterResultsToGrade(results, grade) {
@@ -250,12 +309,12 @@ function filterResultsToGrade(results, grade) {
   return results.filter(item => normalize(item.grade) === wanted);
 }
 
-function findCatalogTopic(message) {
-  const aliased = findAliasedCatalogTopic(message);
+function findCatalogTopic(message, subject = "") {
+  const aliased = findAliasedCatalogTopic(message, subject);
   if (aliased) return aliased;
 
   const text = normalize(message);
-  const catalog = getLearningCatalog();
+  const catalog = getLearningCatalog().filter(item => !subject || normalize(item.subject) === normalize(subject));
 
   // Prefer an exact catalog topic or subtopic phrase found in the message.
   const candidates = [];
@@ -272,11 +331,11 @@ function findCatalogTopic(message) {
   return candidates[0] || null;
 }
 
-function searchForLearningRequest(message, detectedGrade, aiIntent = null) {
+function searchForLearningRequest(message, detectedGrade, aiIntent = null, subject = "") {
   // A class-only reply must use the topic already stored in conversation state.
   if (isGradeOnlyMessage(message)) return null;
 
-  const catalog = getLearningCatalog();
+  const catalog = getLearningCatalog().filter(item => !subject || normalize(item.subject) === normalize(subject));
   const normalizeValue = value => normalize(value || "");
 
   let requestedTerm = "";
@@ -314,9 +373,9 @@ function searchForLearningRequest(message, detectedGrade, aiIntent = null) {
 
   // Prefer known aliases and catalog phrases in the user's message.
   const catalogMatch =
-  findAliasedCatalogTopic(message) ||
-  findCatalogTopic(message) ||
-  findSemanticCatalogTopic(message);
+  findAliasedCatalogTopic(message, subject) ||
+  findCatalogTopic(message, subject) ||
+  findSemanticCatalogTopic(message, subject);
 
   if (!requestedTerm && catalogMatch) {
     requestedTerm = catalogMatch.value;
@@ -326,7 +385,7 @@ function searchForLearningRequest(message, detectedGrade, aiIntent = null) {
 
   // Otherwise, extract the requested phrase from the message.
   if (!requestedTerm) {
-    requestedTerm = getTopicFromMessage(message);
+    requestedTerm = getTopicFromMessage(message, subject);
   }
 
   if (!requestedTerm) return null;
@@ -334,6 +393,7 @@ function searchForLearningRequest(message, detectedGrade, aiIntent = null) {
   // Search across the descriptive CSV fields using the requested phrase.
   let results = searchLearningCatalog({
     q: requestedTerm,
+    subject,
     limit: 100
   });
 
@@ -363,6 +423,7 @@ function searchForLearningRequest(message, detectedGrade, aiIntent = null) {
     topic,
     subtopic,
     grade: detectedGrade || null,
+    subject: subject || matchedCatalogItem?.subject || firstMatchedItem?.subject || "",
     results
   };
 }
@@ -386,6 +447,7 @@ function makeActivityResponse(results) {
     activityName: item.activityName,
     description: item.description,
     location: item.location,
+    subject: item.subject || "",
     source: item.source
   }));
 }
@@ -418,6 +480,7 @@ export function handleLearningChat({
   let state = conversations.get(id) || {
     topic: "",
     subtopic: "",
+    subject: "",
     grade: "",
     waitingForGrade: false,
 
@@ -444,6 +507,7 @@ export function handleLearningChat({
       intent: extra.intent || "unknown",
       topic: state.topic,
       subtopic: state.subtopic || "",
+      subject: state.subject || "",
       grade: state.grade,
       waitingForGrade: state.waitingForGrade,
       results: makeActivityResponse(results),
@@ -486,20 +550,23 @@ export function handleLearningChat({
   }
 
   // Detect grade and catalog topic together, e.g. "Grammar for Class 1".
+  const requestedSubject = detectCatalogSubject(originalMessage);
   const detectedGrade = extractGrade(originalMessage) ||
-    (aiIntent?.intent === "learn" ? searchForLearningRequest(originalMessage, "", aiIntent)?.grade || "" : "");
-  const newLearningRequest = searchForLearningRequest(originalMessage, detectedGrade, aiIntent);
+    (aiIntent?.intent === "learn" ? searchForLearningRequest(originalMessage, "", aiIntent, requestedSubject)?.grade || "" : "");
+  const newLearningRequest = searchForLearningRequest(originalMessage, detectedGrade, aiIntent, requestedSubject);
   
   const isNewTopicWithGrade = Boolean(
     detectedGrade && newLearningRequest && !isGradeOnlyMessage(originalMessage)
   );
-  const broadSubject = detectBroadSubject(originalMessage);
+  const broadSubject = detectBroadSubject(originalMessage) ||
+    (requestedSubject && !getTopicFromMessage(originalMessage, requestedSubject) ? requestedSubject : "");
 
   // Broad subject requests are recommendations, not literal keyword searches.
   // Only return resources that actually exist in the catalog.
-  if (broadSubject) {
+  if (broadSubject && !newLearningRequest) {
     state.topic = broadSubject;
     state.subtopic = "";
+    state.subject = broadSubject;
     if (detectedGrade) state.grade = detectedGrade;
     const recommendations = getSubjectRecommendations(broadSubject);
     const visibleRecommendations = state.grade
@@ -511,20 +578,15 @@ export function handleLearningChat({
     state.waitingForGrade = !state.grade;
     conversations.set(id, state);
 
-    if (broadSubject === "Maths") {
-      return respond(
-        "I don't currently have Maths activities in my learning catalog. You can tell me a specific Maths topic, or explore the English activities available here.",
-        [],
-        { intent: "subject_not_available", requestedSubject: "Maths", total: 0 }
-      );
-    }
+    const hasRecommendations = visibleRecommendations.length > 0;
+    const reply = hasRecommendations
+      ? `Here are learning activities for ${broadSubject}${state.grade ? ` (${state.grade})` : ""}. You can choose one or ask for a specific topic.`
+      : `I couldn't find activities for ${broadSubject}${state.grade ? ` in ${state.grade}` : ""} in the current catalog. You can ask for a specific topic or try another subject.`;
 
     return respond(
-      visibleRecommendations.length
-        ? `Of course! Here are some English learning activities${state.grade ? ` for ${state.grade}` : ""}. You can choose one, or tell me whether you prefer reading, phonics, grammar, writing or vocabulary.`
-        : `I'd be happy to help with English. I couldn't find matching catalog activities${state.grade ? ` for ${state.grade}` : ""}. Would you like to try another class or explore a different topic?`,
+      reply,
       visibleRecommendations.slice(0, state.shownCount),
-      { intent: "subject_recommendations", requestedSubject: "English", total: visibleRecommendations.length }
+      { intent: hasRecommendations ? "subject_recommendations" : "subject_not_available", requestedSubject: broadSubject, total: visibleRecommendations.length }
     );
   }
 
@@ -652,6 +714,7 @@ export function handleLearningChat({
   if (learningRequest) {
     state.topic = learningRequest.topic;
     state.subtopic = learningRequest.subtopic || "";
+    state.subject = learningRequest.subject || requestedSubject || "";
     // A new topic should not inherit the previous topic's class.
     state.grade = detectedGrade || learningRequest.grade || "";
     const requestGrade = state.grade;
@@ -708,10 +771,11 @@ export function handleLearningChat({
 export function getLearningConversationContext(conversationId) {
   const id = String(conversationId || "").trim();
   const state = conversations.get(id);
-  if (!state) return { topic: "", subtopic: "", grade: "" };
+  if (!state) return { topic: "", subtopic: "", subject: "", grade: "" };
   return {
     topic: state.topic || "",
     subtopic: state.subtopic || "",
+    subject: state.subject || "",
     grade: state.grade || ""
   };
 }
