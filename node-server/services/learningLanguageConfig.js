@@ -103,3 +103,37 @@ export function matchConfiguredIntent(message) {
   return candidates[0] || null;
 }
 
+/**
+ * Returns the configuration for a named AI feature.
+ * Missing or invalid configuration means the feature is disabled.
+ */
+export function getAiFeatureConfig(name) {
+  const config = getLearningLanguageConfig();
+  const features = config.aiFeatures;
+
+  if (!features || typeof features !== "object" || Array.isArray(features)) {
+    return null;
+  }
+
+  const feature = features[name];
+
+  if (!feature || typeof feature !== "object" || Array.isArray(feature)) {
+    return null;
+  }
+
+  return feature;
+}
+
+/**
+ * Checks whether an AI feature is enabled globally and
+ * for the requested interaction mode.
+ */
+export function isAiFeatureEnabled(name, mode = "normalChat") {
+  const feature = getAiFeatureConfig(name);
+
+  if (!feature || feature.enabled !== true) {
+    return false;
+  }
+
+  return feature[mode] === true;
+}

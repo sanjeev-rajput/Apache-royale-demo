@@ -9,13 +9,13 @@
     {
       "label": "Data & Pagination - 1",
       "type": "toc",
-      "url": "toc-dr-1.csv",
+      "url": "English.csv",
       "addx":"NA"
     },
     {
       "label": "Data & Pagination - 2",
       "type": "toc",
-      "url": "toc-dr-2.csv",
+      "url": "Math.csv",
       "addx":"showpgtools"
     },
     {

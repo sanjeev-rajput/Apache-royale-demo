@@ -24,7 +24,7 @@
 
             public function loadPage(url:String):void{
                 this.visible=true;
-                iFrm.src = 'assets/content/'+url;
+                iFrm.src = decodeURIComponent('assets/content/'+url).replace(/"/g, "");
                 DsEvent.instance.dispatch(DsEvent.IFRAMEOPENED)
             }
             

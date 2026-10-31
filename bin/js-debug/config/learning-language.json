@@ -1,6 +1,19 @@
 {
   "version": 1,
   "aiFallbackEnabled": true,
+  "aiFeatures": {
+  "misconceptionDetection": {
+    "enabled": true,
+    "normalChat": true,
+    "quizMode": true,
+    "maxFollowUpQuestions": 2
+  },
+  "deepDive": {
+    "enabled": false,
+    "normalChat": true,
+    "quizMode": false
+  }
+  },
   "intentRules": [
     {
       "id": "learn_topic",

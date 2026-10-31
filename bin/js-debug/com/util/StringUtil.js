@@ -343,51 +343,184 @@ com.util.StringUtil.removeWord = function(str, wordToSeach) {
 
 
 /**
+ * Converts the tutor's Markdown into HTML for Royale HTMLText.
+ * TeX delimiters are preserved so MathJax can typeset them after insertion.
  * @nocollapse
  * @param {string} value
  * @return {string}
  */
 com.util.StringUtil.markdownToHtml = function(value) {
-  if (value == null)
+  if (value == null || value == "")
     return "";
-  var /** @type {string} */ safe = com.util.StringUtil.escapeHTML(value);
-  var /** @type {Array} */ lines = safe.split(/\u000d?\u000a/);
+  var /** @type {Array} */ mathExpressions = [];
+  var /** @type {string} */ protectedValue = com.util.StringUtil.protectMathExpressions(value, mathExpressions);
+  var /** @type {string} */ safe = com.util.StringUtil.escapeHTML(protectedValue);
+  var /** @type {Array} */ lines = safe.replace(/\u000d\u000a/g, "\n").replace(/\u000d/g, "\n").split("\n");
   var /** @type {string} */ output = "";
-  var /** @type {boolean} */ inList = false;
+  var /** @type {string} */ paragraph = "";
+  var /** @type {boolean} */ paragraphHardBreak = false;
+  var /** @type {string} */ listType = "";
   var foreachiter0_target = lines;
   for (var foreachiter0 in foreachiter0_target) 
   {
-  var line = foreachiter0_target[foreachiter0];
+  var rawLine = foreachiter0_target[foreachiter0];
   {
-    var /** @type {string} */ trimmed = line.replace(/^\s+|\s+$/g, "");
-    if (inList && !/^\-\s+/.test(trimmed)) {
-      output += "</ul>";
-      inList = false;
+    var /** @type {string} */ line = rawLine.replace(/^\s+|\s+$/g, "");
+    var /** @type {boolean} */ hardBreak = /\\$/.test(line);
+    if (hardBreak)
+      line = line.replace(/\\$/, "");
+    var /** @type {string} */ nextListType = "";
+    if (/^[-*+]\s+/.test(line))
+      nextListType = "ul";
+    else if (/^\d+\.\s+/.test(line))
+      nextListType = "ol";
+    if (line == "" || nextListType != "" || /^#{1,4}\s+/.test(line) || /^&gt;\s?/.test(line) || /^(-{3,}|\*{3,}|_{3,})$/.test(line)) {
+      output += com.util.StringUtil.closeParagraph(paragraph);
+      paragraph = "";
+      paragraphHardBreak = false;
     }
-    if (/^###\s+/.test(trimmed)) {
-      output += "<h4>" + trimmed.replace(/^###\s+/, "") + "</h4>";
-    } else if (/^##\s+/.test(trimmed)) {
-      output += "<h3>" + trimmed.replace(/^##\s+/, "") + "</h3>";
-    } else if (/^#\s+/.test(trimmed)) {
-      output += "<h2>" + trimmed.replace(/^#\s+/, "") + "</h2>";
-    } else if (/^\-\s+/.test(trimmed)) {
-      if (!inList) {
-        output += "<ul>";
-        inList = true;
+    if (listType != "" && nextListType != listType) {
+      output += "</" + listType + ">";
+      listType = "";
+    }
+    if (line == "")
+      continue;
+    if (nextListType != "") {
+      if (listType == "") {
+        listType = nextListType;
+        output += "<" + listType + ">";
       }
-      output += "<li>" + trimmed.replace(/^\-\s+/, "") + "</li>";
-    } else if (trimmed == "") {
-      output += "<br/>";
-    } else {
-      output += trimmed + "<br/>";
+      var /** @type {string} */ itemText = nextListType == "ul" ? line.replace(/^[-*+]\s+/, "") : line.replace(/^\d+\.\s+/, "");
+      output += "<li>" + com.util.StringUtil.formatInlineMarkdown(itemText, mathExpressions) + "</li>";
+      continue;
     }
+    if (/^#{1,4}\s+/.test(line)) {
+      var /** @type {Object} */ headingMatch = /^(#{1,4})\s+(.*)$/.exec(line);
+      var /** @type {number} */ headingLevel = (String(headingMatch[1]).length + 1) >> 0;
+      output += "<h" + headingLevel + ">" + com.util.StringUtil.formatInlineMarkdown(String(headingMatch[2]), mathExpressions) + "</h" + headingLevel + ">";
+      continue;
+    }
+    if (/^&gt;\s?/.test(line)) {
+      output += "<blockquote><p>" + com.util.StringUtil.formatInlineMarkdown(line.replace(/^&gt;\s?/, ""), mathExpressions) + "</p></blockquote>";
+      continue;
+    }
+    if (/^(-{3,}|\*{3,}|_{3,})$/.test(line)) {
+      output += "<hr/>";
+      continue;
+    }
+    var /** @type {string} */ formattedLine = com.util.StringUtil.formatInlineMarkdown(line, mathExpressions);
+    if (paragraph == "")
+      paragraph = formattedLine;
+    else
+      paragraph += (paragraphHardBreak ? "<br/>" : " ") + formattedLine;
+    paragraphHardBreak = hardBreak;
   }}
   
-  if (inList)
-    output += "</ul>";
-  output = output.replace(/\*\*(.+?)\*\*/g, "<b>$1</b>");
-  output = output.replace(/\*(.+?)\*/g, "<i>$1</i>");
+  output += com.util.StringUtil.closeParagraph(paragraph);
+  if (listType != "")
+    output += "</" + listType + ">";
   return output;
+};
+
+
+/**
+ * @private
+ * @param {string} value
+ * @return {string}
+ */
+com.util.StringUtil.closeParagraph = function(value) {
+  return value == "" ? "" : "<p>" + value + "</p>";
+};
+
+
+/** Protects \(...\), \[...\] and $$...$$ before HTML escaping. 
+ * @private
+ * @param {string} value
+ * @param {Array} expressions
+ * @return {string}
+ */
+com.util.StringUtil.protectMathExpressions = function(value, expressions) {
+  var /** @type {string} */ expression = null;
+  var /** @type {string} */ result = "";
+  var /** @type {number} */ index = 0;
+  while (index < value.length) {
+    var /** @type {string} */ opening = "";
+    var /** @type {string} */ closing = "";
+    if (value.substr(index, 2) == "$$") {
+      opening = "$$";
+      closing = "$$";
+    } else if (value.substr(index, 2) == "\\[") {
+      opening = "\\[";
+      closing = "\\]";
+    } else if (value.substr(index, 2) == "\\(") {
+      opening = "\\(";
+      closing = "\\)";
+    } else if (value.charAt(index) == "$" && (index == 0 || value.charAt(index - 1) != "$")) {
+      var /** @type {number} */ singleDollarEnd = (value.indexOf("$", index + 1)) >> 0;
+      if (singleDollarEnd > index + 1 && value.charAt(singleDollarEnd + 1) != "$") {
+        var /** @type {string} */ singleDollarContent = value.substring(index + 1, singleDollarEnd);
+        if (singleDollarContent.indexOf("\\") >= 0) {
+          opening = "$";
+          closing = "$";
+        }
+      }
+    }
+    if (opening != "") {
+      var /** @type {number} */ contentStart = (index + opening.length) >> 0;
+      var /** @type {number} */ closingIndex = (value.indexOf(closing, contentStart)) >> 0;
+      if (closingIndex >= contentStart) {
+        //var /** @type {string} */ expression = null;
+        if (opening == "$") {
+          var /** @type {string} */ texContent = value.substring(contentStart, closingIndex);
+          expression = "\\(" + texContent + "\\)";
+        } else {
+          expression = value.substring(index, closingIndex + closing.length);
+        }
+        var /** @type {string} */ token = "MATHJAXTOKEN" + expressions.length + "END";
+        expressions.push(expression);
+        result += token;
+        index = (closingIndex + closing.length) >> 0;
+        continue;
+      }
+    }
+    result += value.charAt(index);
+    index++;
+  }
+  return result;
+};
+
+
+/**
+ * @private
+ * @param {string} value
+ * @param {Array} mathExpressions
+ * @return {string}
+ */
+com.util.StringUtil.formatInlineMarkdown = function(value, mathExpressions) {
+  var /** @type {Object} */ codeMatch = null;
+  var /** @type {string} */ result = value;
+  var /** @type {Array} */ codeSegments = [];
+  //var /** @type {Object} */ codeMatch = null;
+  var /** @type {number} */ codeIndex = 0;
+  while ((codeMatch = /`([^`]+)`/.exec(result)) != null) {
+    var /** @type {string} */ codeToken = "CODESEGMENT" + codeIndex + "END";
+    codeSegments.push("<code>" + codeMatch[1] + "</code>");
+    result = result.replace(codeMatch[0], codeToken);
+    codeIndex++;
+  }
+  result = result.replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
+  result = result.replace(/__(.+?)__/g, "<strong>$1</strong>");
+  result = result.replace(/~~(.+?)~~/g, "<del>$1</del>");
+  result = result.replace(/\*(.+?)\*/g, "<em>$1</em>");
+  result = result.replace(/_(.+?)_/g, "<em>$1</em>");
+  for (var /** @type {number} */ i = 0; i < codeSegments.length; i++)
+    result = result.replace("CODESEGMENT" + i + "END", codeSegments[i]);
+  for (var /** @type {number} */ m = 0; m < mathExpressions.length; m++) {
+    var /** @type {string} */ mathToken = "MATHJAXTOKEN" + m + "END";
+    var /** @type {string} */ mathHtml = "<span class=\"mathjax\">" + com.util.StringUtil.escapeHTML(String(mathExpressions[m])) + "</span>";
+    result = result.replace(mathToken, mathHtml);
+  }
+  return result;
 };
 
 

@@ -248,31 +248,10 @@ function detectCatalogSubject(message) {
   for (const name of catalogSubjects) {
     candidates.push({ name, phrases: [name] });
   }
-  // Configured subjects must be recognized even when their catalog is not
-  // registered yet. This is important for the AI fallback path: in
-  // "learn fractions in Maths", "Maths" must be removed from the topic query.
   for (const configured of configuredSubjects) {
     if (!configured?.name || !Array.isArray(configured.phrases)) continue;
-    const registeredName = catalogSubjects.find(name => normalize(name) === normalize(configured.name));
-    candidates.push({ name: registeredName || configured.name, phrases: [configured.name, ...configured.phrases] });
-  }
-
-  // Keep common school subjects detectable if languageRules has not yet been
-  // populated with broadSubjects. Registered catalog names take precedence.
-  const defaultSubjects = [
-    { name: "Maths", phrases: ["maths", "math", "mathematics"] },
-    { name: "Science", phrases: ["science"] },
-    { name: "English", phrases: ["english"] },
-    { name: "Hindi", phrases: ["hindi"] },
-    { name: "Social Science", phrases: ["social science", "social studies"] },
-    { name: "EVS", phrases: ["evs", "environmental studies"] },
-    { name: "Computer Science", phrases: ["computer science", "computers"] }
-  ];
-  for (const fallback of defaultSubjects) {
-    const registeredName = catalogSubjects.find(name => normalize(name) === normalize(fallback.name));
-    const configured = configuredSubjects.find(item => normalize(item?.name) === normalize(fallback.name));
-    const phrases = configured?.phrases || fallback.phrases;
-    candidates.push({ name: registeredName || configured?.name || fallback.name, phrases: [fallback.name, ...phrases] });
+    if (!catalogSubjects.some(name => normalize(name) === normalize(configured.name))) continue;
+    candidates.push({ name: catalogSubjects.find(name => normalize(name) === normalize(configured.name)), phrases: configured.phrases });
   }
 
   const matches = [];
@@ -332,98 +311,32 @@ function findCatalogTopic(message, subject = "") {
 }
 
 function searchForLearningRequest(message, detectedGrade, aiIntent = null, subject = "") {
-  // A class-only reply must use the topic already stored in conversation state.
+  // A class-only reply updates the existing conversation; it is not a new search.
   if (isGradeOnlyMessage(message)) return null;
 
-  const catalog = getLearningCatalog().filter(item => !subject || normalize(item.subject) === normalize(subject));
-  const normalizeValue = value => normalize(value || "");
-
-  let requestedTerm = "";
-  let matchedCatalogItem = null;
-  let matchedKind = "";
-
-  // First, use the AI intent to identify a matching catalog topic or subtopic.
-  if (aiIntent?.intent === "learn") {
-    const aiSubtopic = normalizeValue(aiIntent.subtopic);
-    const aiTopic = normalizeValue(aiIntent.topic);
-
-    if (aiSubtopic) {
-      matchedCatalogItem = catalog.find(item =>
-        normalizeValue(item.subtopic) === aiSubtopic &&
-        (!aiTopic || normalizeValue(item.topic) === aiTopic)
-      ) || null;
-
-      if (matchedCatalogItem) {
-        requestedTerm = matchedCatalogItem.subtopic;
-        matchedKind = "subtopic";
-      }
-    }
-
-    if (!requestedTerm && aiTopic) {
-      matchedCatalogItem = catalog.find(item =>
-        normalizeValue(item.topic) === aiTopic
-      ) || null;
-
-      if (matchedCatalogItem) {
-        requestedTerm = matchedCatalogItem.topic;
-        matchedKind = "topic";
-      }
-    }
-  }
-
-  // Prefer known aliases and catalog phrases in the user's message.
-  const catalogMatch =
-  findAliasedCatalogTopic(message, subject) ||
-  findCatalogTopic(message, subject) ||
-  findSemanticCatalogTopic(message, subject);
-
-  if (!requestedTerm && catalogMatch) {
-    requestedTerm = catalogMatch.value;
-    matchedCatalogItem = catalogMatch.item;
-    matchedKind = catalogMatch.kind;
-  }
-
-  // Otherwise, extract the requested phrase from the message.
-  if (!requestedTerm) {
-    requestedTerm = getTopicFromMessage(message, subject);
-  }
-
+  // Keep topic interpretation data-driven: extract the learner's phrase, then
+  // let the catalog decide which rows match across its searchable CSV fields.
+  // AI intents and semantic/catalog aliases must not replace the learner's term.
+  const requestedTerm = getTopicFromMessage(message, subject);
   if (!requestedTerm) return null;
 
-  // Search across the descriptive CSV fields using the requested phrase.
   let results = searchLearningCatalog({
     q: requestedTerm,
     subject,
     limit: 100
   });
 
-  // Restrict results to the detected class when one is available.
   if (detectedGrade) {
     results = filterByGrade(results, detectedGrade);
   }
 
-  // Define every value used in the returned object.
-  // If descriptive search found real CSV rows without an exact semantic match,
-  // use the matched row's canonical topic/subtopic in the response.
-  const firstMatchedItem = results[0] || null;
-
-  const topic =
-    matchedCatalogItem?.topic ||
-    (matchedKind === "topic" ? requestedTerm : "") ||
-    firstMatchedItem?.topic ||
-    requestedTerm;
-
-  const subtopic =
-    matchedCatalogItem?.subtopic ||
-    (matchedKind === "subtopic" ? requestedTerm : "") ||
-    firstMatchedItem?.subtopic ||
-    "";
-
   return {
-    topic,
-    subtopic,
+    // Keep the learner's query as the display label instead of substituting a
+    // topic from an arbitrary matching row (for example, "Numbers 1 to 5").
+    topic: requestedTerm,
+    subtopic: "",
     grade: detectedGrade || null,
-    subject: subject || matchedCatalogItem?.subject || firstMatchedItem?.subject || "",
+    subject: subject || results[0]?.subject || "",
     results
   };
 }

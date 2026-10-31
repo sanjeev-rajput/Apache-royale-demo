@@ -5,7 +5,14 @@ import dotenv from "dotenv";
 import { handleLearningChat, getLearningConversationContext } from "../services/conversationInterpreter.js";
 import { handlePracticeMessage } from "../services/interactiveLearning.js";
 import { getLearningCatalog } from "../services/learningCatalog.js";
-import { matchConfiguredIntent, getConversationMessage, isAiFallbackEnabled } from "../services/learningLanguageConfig.js";
+import {
+  matchConfiguredIntent,
+  getConversationMessage,
+  isAiFallbackEnabled,
+  isAiFeatureEnabled
+} from "../services/learningLanguageConfig.js";
+import { analyzeMisconception } from "../services/misconceptionDetector.js";
+import { createOllamaJsonGenerator } from "../services/ollamaJsonAdapter.js";
 
 dotenv.config();
 
@@ -20,6 +27,22 @@ const OLLAMA_ENABLED = process.env.OLLAMA_ENABLED !== "false";
 // Short-lived conversation history for AI explanations.
 const aiConversations = new Map();
 const MAX_HISTORY_MESSAGES = 10;
+const MAX_DIAGNOSTIC_SESSIONS = 500;
+const DIAGNOSTIC_SESSION_TTL_MS = 30 * 60 * 1000;
+
+// Each conversation can have at most one active normal-chat concept check.
+// This in-memory store is suitable for the single-instance POC. A multi-instance
+// deployment can move this state to Redis or another shared session store.
+const pendingMisconceptionChecks = new Map();
+
+const generateStructuredResponse = createOllamaJsonGenerator({
+  model: OLLAMA_MODEL,
+  url: OLLAMA_URL,
+  temperature: 0,
+  maxTokens: 450,
+  timeoutMs: 60000,
+  think: false
+});
 
 // Identify messages that ask for an explanation or educational answer.
 function isEducationalQuestion(message) {
@@ -121,6 +144,9 @@ ${context || "No specific topic or class is selected."}
     body: JSON.stringify({
       model: OLLAMA_MODEL,
       stream: false,
+      // Qwen 3.5 enables thinking by default. Disable it for this
+      // user-facing explanation request so the answer is returned in content.
+      think: false,
       options: { temperature: 0.4, num_predict: 500 },
       messages
     }),
@@ -162,6 +188,8 @@ async function recognizeLearningIntent(message) {
     body: JSON.stringify({
       model: OLLAMA_MODEL,
       stream: false,
+      // Keep intent recognition consistent with the Qwen 3.5 JSON adapter.
+      think: false,
       format: "json",
       options: { temperature: 0 },
       messages: [
@@ -198,6 +226,169 @@ async function recognizeLearningIntent(message) {
   };
 }
 
+function getPendingDiagnostic(conversationKey) {
+  const pending = pendingMisconceptionChecks.get(conversationKey);
+  if (!pending) return null;
+
+  if (Date.now() - pending.updatedAt > DIAGNOSTIC_SESSION_TTL_MS) {
+    pendingMisconceptionChecks.delete(conversationKey);
+    return null;
+  }
+
+  return pending;
+}
+
+function savePendingDiagnostic(conversationKey, state) {
+  // Remove expired entries and keep the POC's process memory bounded.
+  for (const [key, value] of pendingMisconceptionChecks) {
+    if (Date.now() - value.updatedAt > DIAGNOSTIC_SESSION_TTL_MS) {
+      pendingMisconceptionChecks.delete(key);
+    }
+  }
+
+  if (!pendingMisconceptionChecks.has(conversationKey) &&
+      pendingMisconceptionChecks.size >= MAX_DIAGNOSTIC_SESSIONS) {
+    const oldestKey = pendingMisconceptionChecks.keys().next().value;
+    if (oldestKey) pendingMisconceptionChecks.delete(oldestKey);
+  }
+
+  pendingMisconceptionChecks.set(conversationKey, {
+    ...state,
+    updatedAt: Date.now()
+  });
+}
+
+async function generateConceptCheck({ topic, subtopic, grade, explanation }) {
+  const response = await generateStructuredResponse({
+    systemPrompt: `You are a K-12 tutor creating one short concept-check question after an explanation.\n\nCreate a question that checks whether the learner understands the central concept, rather than testing memorization or an unrelated detail. Adapt the wording to the supplied grade. The question must be answerable from the explanation and context. Do not include the answer in the question. Return one JSON object only with exactly these string fields: question, expectedAnswer. Keep the question concise and the expected answer brief.`,
+    userPayload: {
+      topic: topic || subtopic || "",
+      subtopic: subtopic || "",
+      grade: grade || "",
+      explanation: String(explanation || "").slice(0, 5000)
+    }
+  });
+
+  const question = typeof response?.question === "string"
+    ? response.question.trim().slice(0, 700)
+    : "";
+  const expectedAnswer = typeof response?.expectedAnswer === "string"
+    ? response.expectedAnswer.trim().slice(0, 1200)
+    : "";
+
+  if (!question || !expectedAnswer) {
+    throw new Error("The AI did not return a valid concept-check question and expected answer.");
+  }
+
+  return { question, expectedAnswer };
+}
+
+function formatDiagnosticCompletion(result) {
+  if (result.outcome === "misconception_detected") {
+    return `Thanks for explaining your thinking. I noticed a possible misunderstanding: ${result.misconception}\n\nLet's revisit this idea together. You can ask me to explain it in another way.`;
+  }
+
+  if (result.outcome === "no_misconception") {
+    return `Well done! Your response shows a good understanding of this concept.\n\n${result.evidence || "Keep practising and explaining your thinking."}`;
+  }
+
+  return "Thanks for working through that question. I couldn't confidently identify your understanding from the answers so far. We can revisit the concept with another example whenever you're ready.";
+}
+
+async function handlePendingMisconceptionAnswer({ conversationKey, conversationId, message }) {
+  const pending = getPendingDiagnostic(conversationKey);
+  if (!pending) return null;
+
+  // Let a clearly new tutoring/learning request start normally instead of
+  // treating it as an answer to the outstanding concept-check question.
+  if (/^(skip|skip this|not now|continue|cancel)$/i.test(message.trim()) ||
+      isEducationalQuestion(message) || isLearningRequest(message)) {
+    pendingMisconceptionChecks.delete(conversationKey);
+    if (/^(skip|skip this|not now|continue|cancel)$/i.test(message.trim())) {
+      return {
+        conversationId,
+        reply: "No problem. We can continue without this concept check. What would you like to explore next?",
+        intent: "misconception_check_skipped",
+        results: [],
+        llm: { enabled: true, explanationProvider: null, explanationModel: null, mode: "misconception_check_skipped" }
+      };
+    }
+    return null;
+  }
+
+  const diagnosticHistory = [...pending.history];
+  if (pending.studentAnswer && pending.followUpQuestion) {
+    diagnosticHistory.push({
+      question: pending.question,
+      studentAnswer: pending.studentAnswer,
+      followUpQuestion: pending.followUpQuestion,
+      followUpAnswer: message
+    });
+  }
+
+  const result = await analyzeMisconception({
+    generateStructuredResponse,
+    mode: "normalChat",
+    grade: pending.grade,
+    topic: pending.topic,
+    question: pending.question,
+    expectedAnswer: pending.expectedAnswer,
+    studentAnswer: message,
+    conversationHistory: diagnosticHistory,
+    followUpCount: pending.followUpCount
+  });
+
+  if (result.followUpQuestion && !result.diagnosticComplete) {
+    savePendingDiagnostic(conversationKey, {
+      ...pending,
+      studentAnswer: message,
+      history: diagnosticHistory,
+      followUpQuestion: result.followUpQuestion,
+      followUpCount: result.nextFollowUpCount
+    });
+
+    return {
+      conversationId,
+      reply: result.followUpQuestion,
+      intent: "misconception_follow_up",
+      topic: pending.topic,
+      subtopic: pending.subtopic,
+      grade: pending.grade,
+      waitingForGrade: false,
+      results: [],
+      diagnostic: {
+        status: "in_progress",
+        outcome: result.outcome,
+        confidence: result.confidence,
+        followUpCount: result.nextFollowUpCount,
+        remainingFollowUps: Math.max(0, result.maxFollowUpQuestions - result.nextFollowUpCount)
+      },
+      llm: { enabled: true, explanationProvider: "ollama", explanationModel: OLLAMA_MODEL, mode: "misconception_diagnostic" }
+    };
+  }
+
+  pendingMisconceptionChecks.delete(conversationKey);
+  return {
+    conversationId,
+    reply: formatDiagnosticCompletion(result),
+    intent: "misconception_diagnostic_complete",
+    topic: pending.topic,
+    subtopic: pending.subtopic,
+    grade: pending.grade,
+    waitingForGrade: false,
+    results: [],
+    diagnostic: {
+      status: "complete",
+      outcome: result.outcome,
+      confidence: result.confidence,
+      misconception: result.misconception,
+      evidence: result.evidence,
+      followUpCount: result.followUpCount
+    },
+    llm: { enabled: true, explanationProvider: "ollama", explanationModel: OLLAMA_MODEL, mode: "misconception_diagnostic" }
+  };
+}
+
 // POST /api/chat
 router.post("/", async (req, res) => {
   try {
@@ -214,6 +405,23 @@ router.post("/", async (req, res) => {
     }
 
     const conversationKey = String(conversationId || "").trim();
+
+    if (conversationKey && OLLAMA_ENABLED &&
+        isAiFeatureEnabled("misconceptionDetection", "normalChat")) {
+      try {
+        const diagnosticReply = await handlePendingMisconceptionAnswer({
+          conversationKey,
+          conversationId,
+          message
+        });
+        if (diagnosticReply) return res.json(diagnosticReply);
+      } catch (error) {
+        console.error("Misconception diagnostic failed:", error.message);
+        pendingMisconceptionChecks.delete(conversationKey);
+        // Preserve ordinary tutoring when the optional diagnostic fails.
+      }
+    }
+
     const pendingExplanation = conversationKey && isAiFallbackEnabled()
       ? pendingAiExplanations.get(conversationKey)
       : null;
@@ -426,7 +634,39 @@ router.post("/", async (req, res) => {
           grade: body.grade
         });
 
-        body.reply = explanation;
+        body.reply = `${explanation}${AI_ACCURACY_NOTICE}`;
+
+        // Add one AI-generated concept check after the explanation. The
+        // expected answer stays server-side and is never sent to the learner.
+        if (conversationKey &&
+            isAiFeatureEnabled("misconceptionDetection", "normalChat")) {
+          try {
+            const conceptCheck = await generateConceptCheck({
+              topic: body.topic,
+              subtopic: body.subtopic,
+              grade: body.grade,
+              explanation
+            });
+
+            savePendingDiagnostic(conversationKey, {
+              question: conceptCheck.question,
+              expectedAnswer: conceptCheck.expectedAnswer,
+              topic: body.topic || body.subtopic || "",
+              subtopic: body.subtopic || "",
+              grade: body.grade || "",
+              studentAnswer: "",
+              followUpQuestion: "",
+              followUpCount: 0,
+              history: []
+            });
+
+            body.reply += `\n\n**Quick check:** ${conceptCheck.question}\n\n_Reply with your answer, or type **skip** to continue._`;
+            body.diagnostic = { status: "awaiting_answer", type: "concept_check" };
+          } catch (diagnosticError) {
+            console.error("Concept-check generation failed:", diagnosticError.message);
+            // A diagnostic failure must not suppress a successful explanation.
+          }
+        }
       } catch (error) {
         console.error("AI explanation failed:", error.message);
         // Keep the interpreter's original reply as a fallback.

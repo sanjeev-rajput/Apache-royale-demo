@@ -359,81 +359,192 @@ package com.util
 			return str;
 		}
 
+		/**
+		 * Converts the tutor's Markdown into HTML for Royale HTMLText.
+		 * TeX delimiters are preserved so MathJax can typeset them after insertion.
+		 */
 		public static function markdownToHtml(value:String):String
-            {
-                if (value == null)
-                    return "";
+		{
+			if (value == null || value == "") return "";
 
-                var safe:String = escapeHTML(value);
-                var lines:Array = safe.split(/\r?\n/);
-                var output:String = "";
-                var inList:Boolean = false;
+			var mathExpressions:Array = [];
+			var protectedValue:String = protectMathExpressions(value, mathExpressions);
+			var safe:String = escapeHTML(protectedValue);
+			var lines:Array = safe.replace(/\r\n/g, "\n").replace(/\r/g, "\n").split("\n");
+			var output:String = "";
+			var paragraph:String = "";
+			var paragraphHardBreak:Boolean = false;
+			var listType:String = "";
 
-                for each (var line:String in lines)
-                {
-                    var trimmed:String = line.replace(/^\s+|\s+$/g, "");
+			for each (var rawLine:String in lines)
+			{
+				var line:String = rawLine.replace(/^\s+|\s+$/g, "");
+				var hardBreak:Boolean = /\\$/.test(line);
+				if (hardBreak) line = line.replace(/\\$/, "");
 
-                    // Close an open bullet list when the next line is not a bullet.
-                    if (inList && !/^\-\s+/.test(trimmed))
-                    {
-                        output += "</ul>";
-                        inList = false;
-                    }
+				var nextListType:String = "";
+				if (/^[-*+]\s+/.test(line)) nextListType = "ul";
+				else if (/^\d+\.\s+/.test(line)) nextListType = "ol";
 
-                    // Headings
-                    if (/^###\s+/.test(trimmed))
-                    {
-                        output += "<h4>" +
-                            trimmed.replace(/^###\s+/, "") +
-                            "</h4>";
-                    }
-                    else if (/^##\s+/.test(trimmed))
-                    {
-                        output += "<h3>" +
-                            trimmed.replace(/^##\s+/, "") +
-                            "</h3>";
-                    }
-                    else if (/^#\s+/.test(trimmed))
-                    {
-                        output += "<h2>" +
-                            trimmed.replace(/^#\s+/, "") +
-                            "</h2>";
-                    }
-                    // Bullet list items
-                    else if (/^\-\s+/.test(trimmed))
-                    {
-                        if (!inList)
-                        {
-                            output += "<ul>";
-                            inList = true;
-                        }
+				if (line == "" || nextListType != "" || /^#{1,4}\s+/.test(line) ||
+					/^&gt;\s?/.test(line) || /^(-{3,}|\*{3,}|_{3,})$/.test(line))
+				{
+					output += closeParagraph(paragraph);
+					paragraph = "";
+					paragraphHardBreak = false;
+				}
 
-                        output += "<li>" +
-                            trimmed.replace(/^\-\s+/, "") +
-                            "</li>";
-                    }
-                    // Empty line
-                    else if (trimmed == "")
-                    {
-                        output += "<br/>";
-                    }
-                    // Normal text
-                    else
-                    {
-                        output += trimmed + "<br/>";
-                    }
-                }
+				if (listType != "" && nextListType != listType)
+				{
+					output += "</" + listType + ">";
+					listType = "";
+				}
+				if (line == "") continue;
 
-                if (inList)
-                    output += "</ul>";
+				if (nextListType != "")
+				{
+					if (listType == "")
+					{
+						listType = nextListType;
+						output += "<" + listType + ">";
+					}
+					var itemText:String = nextListType == "ul"
+						? line.replace(/^[-*+]\s+/, "")
+						: line.replace(/^\d+\.\s+/, "");
+					output += "<li>" + formatInlineMarkdown(itemText, mathExpressions) + "</li>";
+					continue;
+				}
 
-                // Bold and italic formatting
-                output = output.replace(/\*\*(.+?)\*\*/g, "<b>$1</b>");
-                output = output.replace(/\*(.+?)\*/g, "<i>$1</i>");
+				if (/^#{1,4}\s+/.test(line))
+				{
+					var headingMatch:Object = /^(#{1,4})\s+(.*)$/.exec(line);
+					var headingLevel:int = String(headingMatch[1]).length + 1;
+					output += "<h" + headingLevel + ">" +
+						formatInlineMarkdown(String(headingMatch[2]), mathExpressions) +
+						"</h" + headingLevel + ">";
+					continue;
+				}
+				if (/^&gt;\s?/.test(line))
+				{
+					output += "<blockquote><p>" +
+						formatInlineMarkdown(line.replace(/^&gt;\s?/, ""), mathExpressions) +
+						"</p></blockquote>";
+					continue;
+				}
+				if (/^(-{3,}|\*{3,}|_{3,})$/.test(line))
+				{
+					output += "<hr/>";
+					continue;
+				}
 
-                return output;
-            }
+				var formattedLine:String = formatInlineMarkdown(line, mathExpressions);
+				if (paragraph == "") paragraph = formattedLine;
+				else paragraph += (paragraphHardBreak ? "<br/>" : " ") + formattedLine;
+				paragraphHardBreak = hardBreak;
+			}
 
+			output += closeParagraph(paragraph);
+			if (listType != "") output += "</" + listType + ">";
+			return output;
+		}
+
+		private static function closeParagraph(value:String):String
+		{
+			return value == "" ? "" : "<p>" + value + "</p>";
+		}
+
+		/** Protects \(...\), \[...\] and $$...$$ before HTML escaping. */
+		private static function protectMathExpressions(value:String, expressions:Array):String
+		{
+			var result:String = "";
+			var index:int = 0;
+			while (index < value.length)
+			{
+				var opening:String = "";
+				var closing:String = "";
+				if (value.substr(index, 2) == "$$") { opening = "$$"; closing = "$$"; }
+				else if (value.substr(index, 2) == "\\[") { opening = "\\["; closing = "\\]"; }
+				else if (value.substr(index, 2) == "\\(") { opening = "\\("; closing = "\\)"; }
+				// Qwen sometimes emits inline TeX as $...$.
+				// Accept it only when it contains a TeX command, avoiding currency such as $5.
+				else if (value.charAt(index) == "$" &&
+					(index == 0 || value.charAt(index - 1) != "$"))
+				{
+					var singleDollarEnd:int = value.indexOf("$", index + 1);
+					if (singleDollarEnd > index + 1 &&
+						value.charAt(singleDollarEnd + 1) != "$")
+					{
+						var singleDollarContent:String =
+							value.substring(index + 1, singleDollarEnd);
+						if (singleDollarContent.indexOf("\\") >= 0)
+						{
+							opening = "$";
+							closing = "$";
+						}
+					}
+				}
+
+				if (opening != "")
+				{
+					var contentStart:int = index + opening.length;
+					var closingIndex:int = value.indexOf(closing, contentStart);
+					if (closingIndex >= contentStart)
+					{
+						var expression:String;
+						if (opening == "$")
+						{
+							// Convert single-dollar TeX to the configured MathJax inline delimiter.
+						var texContent:String = value.substring(contentStart, closingIndex);
+						expression = "\\(" + texContent + "\\)";
+					}
+					else
+					{
+						expression = value.substring(index, closingIndex + closing.length);
+					}
+					var token:String = "MATHJAXTOKEN" + expressions.length + "END";
+						expressions.push(expression);
+						result += token;
+						index = closingIndex + closing.length;
+						continue;
+					}
+				}
+				result += value.charAt(index);
+				index++;
+			}
+			return result;
+		}
+
+		private static function formatInlineMarkdown(value:String, mathExpressions:Array):String
+		{
+			var result:String = value;
+			var codeSegments:Array = [];
+			var codeMatch:Object;
+			var codeIndex:int = 0;
+			while ((codeMatch = /`([^`]+)`/.exec(result)) != null)
+			{
+				var codeToken:String = "CODESEGMENT" + codeIndex + "END";
+				codeSegments.push("<code>" + codeMatch[1] + "</code>");
+				result = result.replace(codeMatch[0], codeToken);
+				codeIndex++;
+			}
+
+			result = result.replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
+			result = result.replace(/__(.+?)__/g, "<strong>$1</strong>");
+			result = result.replace(/~~(.+?)~~/g, "<del>$1</del>");
+			result = result.replace(/\*(.+?)\*/g, "<em>$1</em>");
+			result = result.replace(/_(.+?)_/g, "<em>$1</em>");
+
+			for (var i:int = 0; i < codeSegments.length; i++)
+				result = result.replace("CODESEGMENT" + i + "END", codeSegments[i]);
+			for (var m:int = 0; m < mathExpressions.length; m++)
+			{
+				var mathToken:String = "MATHJAXTOKEN" + m + "END";
+				var mathHtml:String = "<span class=\"mathjax\">" +
+					escapeHTML(String(mathExpressions[m])) + "</span>";
+				result = result.replace(mathToken, mathHtml);
+			}
+			return result;
+		}
 		public static function escapeHTML(value:String):String
             {
                 if (value == null)

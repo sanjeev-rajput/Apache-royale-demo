@@ -91,9 +91,14 @@ function loadCsv(filename, metadata = {}) {
         activityName: record["activity name"] || "",
         description: record.description || "",
         location: record.location || "",
-        // Keywords are optional during migration; new CSVs should include the
-        // eighth column and quote its comma-separated values as one CSV field.
-        keywords: record.keywords || "",
+        // Keywords are optional. Normalize comma-separated values in memory:
+        // trim each token and discard empty tokens (including trailing commas).
+        // The source CSV is never modified.
+        keywords: (record.keywords || "")
+          .split(",")
+          .map(keyword => keyword.trim())
+          .filter(Boolean)
+          .join(", "),
         subject: metadata.subject || "",
         catalogId: metadata.id || "",
         source: filename
@@ -206,16 +211,23 @@ export function searchLearningCatalog({
 
   const scoreQuery = item => {
     if (!query) return 0;
-    const exactFields = [item.topic, item.subtopic].map(value => value.toLowerCase());
+    const exactFields = [item.topic, item.subtopic]
+      .map(value => String(value || "").toLowerCase().trim())
+      .filter(Boolean);
     if (exactFields.some(value => value === query)) return 100;
-    if (exactFields.some(value => value.includes(query) || query.includes(value))) return 80;
+    // A catalog field must contain the learner's query to count as a partial
+    // match. Do not treat a short/blank field contained in the query as a hit.
+    if (exactFields.some(value => value.includes(query))) return 80;
 
     const keywords = String(item.keywords || "")
       .split(",")
       .map(value => value.trim().toLowerCase())
       .filter(Boolean);
     if (keywords.some(value => value === query)) return 70;
-    if (keywords.some(value => value.includes(query) || query.includes(value))) return 60;
+    // Reverse containment is useful for a phrase such as "Pythagoras theorem"
+    // matching the CSV keyword "Pythagoras Theorem", but ignore short tokens
+    // that would create unrelated matches (for example, "the").
+    if (keywords.some(value => value.includes(query) || (value.length >= 5 && query.includes(value)))) return 60;
 
     if ([item.activityName].some(value => value.toLowerCase().includes(query))) return 40;
     if ([item.description].some(value => value.toLowerCase().includes(query))) return 30;

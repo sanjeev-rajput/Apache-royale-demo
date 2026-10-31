@@ -55,6 +55,9 @@ async function askOllama({ model, url, messages, temperature = 0.3, maxTokens = 
     body: JSON.stringify({
       model,
       stream: false,
+      // Qwen 3.5 may put reasoning in message.thinking and leave content empty.
+      // Disable thinking for structured quiz generation and answer evaluation.
+      think: false,
       format: "json",
       options: { temperature, num_predict: maxTokens },
       messages
