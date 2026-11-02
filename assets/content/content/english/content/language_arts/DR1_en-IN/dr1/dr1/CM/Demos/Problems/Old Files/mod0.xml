@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<module
+	url = "Demos/Problems/Mod0.swf" 
+	params = "Demos/Problems/problems.xml" >
+
+	<preCache>
+		<resource url = "Demos/Problems/Mod0.swf" />
+	</preCache>
+
+	<intro>
+		<resource url = "Demos/Problems/my.swf" />
+		<resource url = "Demos/Problems/name.swf" />
+		<resource url = "Pause1.5" />
+		<resource url = "Demos/Problems/is.swf" />
+		<resource url = "Demos/Problems/taylor.swf" />
+	</intro>
+	<intro targetClip="animHostClip">
+		<resource url = "Demos/Problems/fishAnim.swf" />
+	</intro>
+
+
+	<help>
+		<resource url = "Demos/Problems/my.swf" />
+		<resource url = "Demos/Problems/name.swf" />
+	</help>
+	<help>
+		<resource url = "Demos/Problems/is.swf" />
+		<resource url = "Demos/Problems/taylor.swf" />
+	</help>
+</module>

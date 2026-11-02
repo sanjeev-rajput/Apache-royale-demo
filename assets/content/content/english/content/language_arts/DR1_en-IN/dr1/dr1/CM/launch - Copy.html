@@ -1,0 +1,112 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- Application: lms -->
+<!-- Page: LegacyShell -->
+<!-- Generated: Fri Aug 07 15:23:37 EEST 2009 -->
+<!-- Bobfuscate_html_source_code from http://snapbuilder.com/code_snippet_generator/obfuscate_html_source_code/ -->
+<html>
+<head>
+<meta name="generator" content="Tapestry Application Framework, version 3.0.3"/>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+<meta name="viewport" content="user-scalable=no"/>
+<title></title>
+<script src="rfl/ruffle.js"></script>
+<meta HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE"/>
+<meta HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE"/>
+
+<style type="text/css">html, body { height: 100%;margin-top: 0px;margin-left: 0px;margin-right: 0px;margin-bottom: 0px }
+	
+	#flashContent {
+		--splash-screen-background:#000066;
+		--logo-display:none;
+		}
+</style>
+</head>
+
+<body background-color="#000066">
+
+<script type="text/javascript">function setBrowser() { }</script><script src="flashobject.js" type="text/javascript"></script>
+<div id="flashContent" style="height: 100%;">Flash Content</div>
+
+<script type="text/javascript">
+fullURL = document.URL;
+//alert(fullURL+"::"+document.URL);
+argsini=fullURL.split('?');
+args=argsini[1].split(',');
+
+var fo = new FlashObject('CMMain.swf', 'CMMain', '100%', '100%', '6', '#000066');
+
+if (args[0]!='course1.swf' && args[0]!='course2.swf')
+{
+fo.addParam('FlashVars', 'FromBrowser=1&USERID='+args[1]+'&AssignmentID=&API=/servlet/LegacyContentListener&ACTIVITYURL='+args[0]);
+}
+else {
+fo.addParam('FlashVars', 'FromBrowser=1&MenuURL=Menus/'+args[0]+'&USERID='+args[1]);
+
+}
+
+
+
+
+
+//fo.addParam('FlashVars', 'FromBrowser=1&USERID='+args[1]+'&AssignmentID=&API=/servlet/LegacyContentListener');
+
+
+fo.addParam('Base', '.');
+fo.addParam('allowScriptAccess', 'always'); 
+
+fo.write('flashContent');
+
+/*window.RufflePlayer.config = {
+	fontSources: ["rufont.swf"],
+        defaultFonts: {
+           sans: ['Arial']
+       }
+	   }*/
+</script>
+<!--<script disable-devtool-auto src='https://cdn.jsdelivr.net/npm/disable-devtool'></script>-->
+
+<script>
+
+window.RufflePlayer.config = {
+    // Options affecting the whole page
+    "publicPath": undefined,
+    "polyfills": true,
+
+    // Options affecting files only
+    "allowScriptAccess": true, // Polyfill elements have a different default value, see the allowScriptAccess section
+    "autoplay": "auto",
+    "unmuteOverlay": "visible",
+    "backgroundColor": null,
+    "wmode": "window",
+    "letterbox": "fullscreen",
+    "warnOnUnsupportedContent": false,
+    "contextMenu": "off",
+    "showSwfDownload": false,
+    "upgradeToHttps": window.location.protocol === "https:",
+    "maxExecutionDuration": 15,
+    "logLevel": "error",
+    "base": null,
+    "menu": true,
+    "salign": "",
+    "forceAlign": false,
+    "scale": "showAll",
+    "forceScale": false,
+    "frameRate": null,
+    "quality": "high",
+    "splashScreen": true,
+    "preferredRenderer": null,
+    "openUrlMode": "allow",
+    "allowNetworking": "all",
+    "favorFlash": false,
+    "socketProxy": [],
+    "fontSources": [],
+    "defaultFonts": {},
+    "credentialAllowList": [],
+    "playerRuntime": "flashPlayer",
+};
+</script>
+</body>
+
+</html>
+<!-- Render time: ~ 0 ms -->
+

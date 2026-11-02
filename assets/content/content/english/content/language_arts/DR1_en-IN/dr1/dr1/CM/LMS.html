@@ -1,0 +1,165 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE>Ye Olde LMS Proxy</TITLE>
+
+<!-- prevent caching in NS. NS tends to mangle cached code -->
+<META HTTP-EQUIV="expires" CONTENT="0">
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+
+</HEAD>
+
+<BODY>
+
+<script language="JavaScript" type="text/javascript">
+
+//<!--
+
+var IsIE = navigator.appName.indexOf("Microsoft") != -1;
+var IsNetscape = !IsIE;
+var IsMac = navigator.platform.indexOf("MacPPC") != -1;
+var IsWin = !IsMac;
+var IsNS6 = navigator.appVersion.substr(0, 1) > "4";
+
+var flashWindow;
+
+//sniffer stuff
+var downLoadPromptPage = "download.html";	// send user to Macromedia
+var majorVersionRequired = 6;					// minimum version required
+var minorVersionRequired = 47;		// minimum version required
+
+
+//version booleans
+var flash6Installed = false;
+var flash7Installed = false;
+var flash8Installed = false;
+var flash9Installed = false;
+//****
+
+function openFlashWindow(redirectURL)
+{
+	//open the flash player window, fullscreen, no chrome
+	if(IsIE)
+	{
+		//d'oh - scrollbars=yes causes NO SCROLLBARS on IE/Win!
+		flashWindow = window.open(redirectURL, "flashWindow", "fullscreen=yes, scrollbars=no, left=0, top=0");
+
+		//d'oh - IE/Mac can't take a hint and size to full screen
+		if(IsMac)
+		{
+			flashWindow.resizeTo(window.screen.width - 10, window.screen.height);
+		}
+	}
+	else
+	{
+		//allow for bug in NS4x that computes height of task bar incorrectly
+		var ah = IsNS6 ? window.screen.availHeight : window.screen.availHeight - 32;
+		var aw = IsNS6 ? window.screen.availWidth : window.screen.availWidth - 10;
+		if(IsNS6)
+			flashWindow = window.open(redirectURL, 'flashWindow', 'toolbar=0,outerWidth=' + aw + ',outerHeight=' + ah + ',screenX=0,screenY=0');
+		else
+			flashWindow = window.open(redirectURL, 'flashWindow', 'toolbar=0,innerWidth=' + aw + ',innerHeight=' + ah + ',screenX=0,screenY=0');
+	}
+}
+//-->
+</script> 
+
+
+<SCRIPT LANGUAGE="JavaScript1.1" type="text/javascript">
+//<!--
+
+//IE/Win - find Flash by creating objects
+var isIE = (navigator.appVersion.indexOf("MSIE") != -1) ? true : false;
+var isWin = (navigator.appVersion.indexOf("Windows") != -1) ? true : false;
+
+// write vbscript detection
+if(isIE && isWin)
+{
+	document.write('<SCR' + 'IPT LANGUAGE=VBScript\> \n');
+	document.write('on error resume next \n');
+	document.write('flash6Installed = (IsObject(CreateObject("ShockwaveFlash.ShockwaveFlash.6"))) \n');	
+	document.write('flash7Installed = (IsObject(CreateObject("ShockwaveFlash.ShockwaveFlash.7"))) \n');	
+	document.write('flash8Installed = (IsObject(CreateObject("ShockwaveFlash.ShockwaveFlash.8"))) \n');	
+	document.write('flash9Installed = (IsObject(CreateObject("ShockwaveFlash.ShockwaveFlash.9"))) \n');	
+	document.write('</SCR' + 'IPT\> \n'); // break up end tag so it doesn't end our script
+}
+
+// -->
+</SCRIPT>
+
+
+<SCRIPT LANGUAGE="JavaScript" type="text/javascript">
+//<!--
+
+// NS and IE/Mac - use javascript detection using navigator.plugins array
+// NS and IE/Mac - use javascript detection using navigator.plugins array
+function detectFlash()
+{	
+	if(navigator.plugins && navigator.plugins["Shockwave Flash"])
+	{
+		var flashDescription = navigator.plugins["Shockwave Flash"].description;
+
+		// plugin-description looks like 'Shockwave Flash 5.0 r5'
+		// get the major version & minor versions
+		var majorVersion = parseInt(flashDescription.charAt(flashDescription.indexOf(".") - 1));
+		var subVersion = parseInt(flashDescription.charAt(flashDescription.indexOf(".") + 1));
+		var minorStr = flashDescription.substring(flashDescription.indexOf("r") + 1);
+		var minorVersion = parseInt(minorStr);
+
+		//set the booleans
+		flash6Installed = majorVersion == 6 ? true : false;
+		flash7Installed = majorVersion == 7 ? true : false;
+		flash8Installed = majorVersion == 8 ? true : false;
+		flash9Installed = majorVersion == 9 ? true : false;
+		
+		if(flash6Installed && subVersion == 0)
+		{
+			if(minorVersion < minorVersionRequired)
+			{
+				flash6Installed = false;
+				downLoadPromptPage = "downloadIEMac.html";
+			}
+		}
+	}
+
+
+	// set actualVersion to highest detected version
+	var actualVersion = 0;
+	if(flash6Installed) actualVersion = 6;
+	if(flash7Installed) actualVersion = 7;
+	if(flash8Installed) actualVersion = 8;
+	if(flash9Installed) actualVersion = 9;
+	//alert("version = " + actualVersion);
+	
+	//go to download prompt page if required version not present
+	if (actualVersion < majorVersionRequired)
+		window.location = downLoadPromptPage;
+}
+
+
+//run the detection function
+detectFlash();
+	
+// -->
+</SCRIPT>
+
+<P><A href="JavaScript:openFlashWindow('CMTestMenu.html')">Run Test Menu</A></P>
+<P><A href="JavaScript:openFlashWindow('CMMenu1.html')">Run Freeplay Menu Course 1</A></P>
+<P><A href="JavaScript:openFlashWindow('CMMenu2.html')">Run Freeplay Menu Course 2</A></P>
+<P><A href="JavaScript:openFlashWindow('CMModlist.html')">Run Modlist</A></P>
+<BR>
+<P><A href="JavaScript:openFlashWindow('CMTestAssign1.html')">Build & Run Test Assignment Course 1</A></P>
+<P><A href="JavaScript:openFlashWindow('CMTestAssign2.html')">Build & Run Test Assignment Course 2</A></P>
+<BR>
+<P><A href="JavaScript:openFlashWindow('CMModlist1.html')">Run Test Assignment 1</A></P>
+<P><A href="JavaScript:openFlashWindow('CMModlist2.html')">Run Test Assignment 2</A></P>
+<P><A href="JavaScript:openFlashWindow('CMModlist3.html')">Run Test Assignment 3</A></P>
+<P><A href="JavaScript:openFlashWindow('CMModlist4.html')">Run Test Assignment 4</A></P>
+<P><A href="JavaScript:openFlashWindow('CMModlist5.html')">Run Test Assignment 5</A></P>
+<P><A href="JavaScript:openFlashWindow('CMModlist6.html')">Run Test Assignment 6</A></P>
+<P><A href="JavaScript:openFlashWindow('CMModlist7.html')">Run Test Assignment 7</A></P>
+<P><A href="JavaScript:openFlashWindow('CMModlist8.html')">Run Test Assignment 8</A></P>
+<P><A href="JavaScript:openFlashWindow('CMModlist9.html')">Run Test Assignment 9</A></P>
+
+</BODY>
+</HTML>

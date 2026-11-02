@@ -1,0 +1,43 @@
+<problemSet correctToAdvance="3">
+	<level index="1" correctToAdvance="2" >
+		<intro>
+			<resource url = "Demos/MediaController/is.swf" />
+			<resource url = "Demos/MediaController/is.swf" />
+			<resource url = "Demos/MediaController/is.swf" />
+		</intro>
+		<intro>
+			<resource url = "Demos/MediaController/my.swf" />
+			<resource url = "Demos/MediaController/my.swf" />
+			<resource url = "Demos/MediaController/my.swf" />
+		</intro>
+		<exit>
+			<resource url = "Demos/MediaController/my.swf" />
+			<resource url = "Demos/MediaController/my.swf" />
+			<resource url = "Demos/MediaController/my.swf" />
+		</exit>
+		<problem id="101" index="1" url = "P101.xml" />
+		<problem id="102" index="2" url = "P102.xml" />
+		<problem id="103" index="3" url = "P103.xml" />
+		<problem id="104" index="4" url = "P104.xml" />
+		<problem id="105" index="5" url = "P105.xml" />
+	</level>
+	<level index="3" >
+		<problem id="305" index="5" url = "P305.xml" />
+		<problem id="301" index="1" url = "P301.xml" />
+		<problem id="304" index="4" url = "P304.xml" />
+		<problem id="302" index="2" url = "P302.xml" />
+		<problem id="303" index="3" url = "P303.xml" />
+	</level>
+	<level index="2" >
+		<intro>
+			<resource url = "Demos/MediaController/name.swf" />
+			<resource url = "Demos/MediaController/name.swf" />
+			<resource url = "Demos/MediaController/name.swf" />
+		</intro>
+		<problem id="202" index="2" url = "P202.xml" />
+		<problem id="201" index="1" url = "P201.xml" />
+		<problem id="203" index="3" url = "P203.xml" />
+		<problem id="205" index="5" url = "P205.xml" />
+		<problem id="204" index="4" url = "P204.xml" />
+	</level>
+</problemSet>

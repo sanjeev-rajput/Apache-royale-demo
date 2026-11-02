@@ -1,0 +1,11 @@
+<problem id="103">
+<data><FONT NAME="1r" COLOR="#000000" SIZE="24" HSPACE="large" VSPACE="large">
+<BLOCK X="170" Y="140" WIDTH="400" HEIGHT="140">
+<P ALIGN="left"><SPEAK NAME="sn07_00986.swf"/>
+<SND NAME="sn07_a_letter.swf"/><B>A</B>, <SND NAME="sn07_my.swf"/>my <SND NAME="sn07_name.swf"/>name <SND NAME="sn07_is.swf"/>is <SND NAME="sn07_anna.swf"/>Anna, </P>
+<P><SND NAME="sn07_and.swf"/>And <SND NAME="sn07_my.swf"/>my <SND NAME="sn07_friends.swf"/>friend’s <SND NAME="sn07_name.swf"/>name <SND NAME="sn07_is.swf"/>is <SND NAME="sn07_ashley.swf"/>Ashley. </P>
+<P><SND NAME="sn07_we.swf"/>We <SND NAME="sn07_live.swf"/>live <SND NAME="sn07_in.swf"/>in <SND NAME="sn07_alabama.swf"/>Alabama, </P>
+<P><SND NAME="sn07_and.swf"/>And <SND NAME="sn07_we.swf"/>we <SND NAME="sn07_like.swf"/>like <SND NAME="sn07_apples.swf"/>apples. </P>
+</BLOCK></FONT><FONT NAME="1r" COLOR="#000000" SIZE="24" HSPACE="large" VSPACE="large"></FONT></data>
+<help><resource url = "Demos/MediaController/my.swf" /></help>
+</problem> 

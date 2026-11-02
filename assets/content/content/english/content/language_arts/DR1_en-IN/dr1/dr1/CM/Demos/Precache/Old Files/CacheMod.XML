@@ -1,0 +1,7 @@
+<module
+	url = "Demos/Precache/CacheMod.swf" id = "129" >
+	<preCache>
+		<resource url = "Demos/Precache/CacheMod.swf" />
+	</preCache>
+</module>
+  

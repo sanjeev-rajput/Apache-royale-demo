@@ -88,7 +88,24 @@
 	<script src="react/EventBridge.js"></script>
 
 
+	<!-- MathJax 3: locally hosted TeX-to-CHTML renderer. -->
+	<script>
+	  window.MathJax = {
+	    startup: { typeset: false },
+	    tex: {
+	      // Avoid single-dollar delimiters because they conflict with currency.
+	      inlineMath: [['\\(', '\\)']],
+	      displayMath: [['\\[', '\\]'], ['$$', '$$']],
+	      processEscapes: true
+	    },
+	    options: {
+	      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+	    }
+	  };
+	</script>
+	<script async src="assets/libs/mathjax/es5/tex-chtml.js"></script>
 	<!--<script disable-devtool-auto src='libs/DevTools.js'></script>-->
+
   <script type="text/javascript">
  var script = document.createElement("script");
  script.setAttribute("src", "https://cdnjs.cloudflare.com/ajax/libs/dialog-polyfill/0.4.9/dialog-polyfill.min.js");
@@ -127,5 +144,71 @@
 	</script>
 
 
+  <!-- Typeset MathJax expressions added dynamically by Royale HTMLText. -->
+  <script>
+    (function () {
+      if (!window.MutationObserver || !document.body) return;
+
+      var pending = [];
+      var scheduled = false;
+
+      function isMathJaxOutput(node) {
+        if (!node || node.nodeType !== 1) return false;
+        if (node.matches && node.matches('mjx-container, .MathJax')) return true;
+        return !!(node.closest && node.closest('mjx-container, .MathJax'));
+      }
+
+      function queueForTypesetting(node) {
+        if (!node) return;
+        var element = node.nodeType === 1 ? node : node.parentElement;
+        if (!element || isMathJaxOutput(element)) return;
+        if (pending.indexOf(element) === -1) pending.push(element);
+        if (scheduled) return;
+        scheduled = true;
+        Promise.resolve().then(function () {
+          scheduled = false;
+          var targets = pending.splice(0, pending.length);
+          if (window.MathJax && window.MathJax.typesetPromise && targets.length) {
+            window.MathJax.typesetPromise(targets).catch(function (error) {
+              console.warn('MathJax typesetting failed:', error);
+            });
+          }
+        });
+      }
+
+      var observer = new MutationObserver(function (mutations) {
+        mutations.forEach(function (mutation) {
+          if (mutation.type === 'characterData') {
+            queueForTypesetting(mutation.target);
+            return;
+          }
+          Array.prototype.forEach.call(mutation.addedNodes, queueForTypesetting);
+        });
+      });
+
+      observer.observe(document.body, {
+        childList: true,
+        characterData: true,
+        subtree: true
+      });
+
+      // The MathJax script is asynchronous; typeset existing content when ready.
+      var mathJaxWaitAttempts = 0;
+      var waitForMathJax = window.setInterval(function () {
+        mathJaxWaitAttempts++;
+        if (window.MathJax && window.MathJax.startup && window.MathJax.startup.promise) {
+          window.clearInterval(waitForMathJax);
+          window.MathJax.startup.promise.then(function () {
+            return window.MathJax.typesetPromise([document.body]);
+          }).catch(function (error) {
+            console.warn('MathJax startup/typesetting failed:', error);
+          });
+        } else if (mathJaxWaitAttempts >= 200) {
+          window.clearInterval(waitForMathJax);
+          console.warn('MathJax did not load. Check assets/libs/mathjax/es5/tex-chtml.js.');
+        }
+      }, 50);
+    })();
+  </script>
 </body>
 </html>

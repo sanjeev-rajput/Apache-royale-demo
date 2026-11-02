@@ -1,0 +1,15 @@
+<problem id="102">
+	<data>howdy2</data>
+	<help>
+	<resource url = "Demos/MediaController/is.swf" />
+	<resource url = "Demos/MediaController/name.swf" />
+	<resource url = "Demos/MediaController/taylor.swf" />
+	<resource url = "Demos/MediaController/my.swf" />
+	</help>
+	<intro> 
+	<resource url = "Demos/MediaController/taylor.swf" />
+	<resource url = "Demos/MediaController/is.swf" />
+	<resource url = "Demos/MediaController/my.swf" />
+	<resource url = "Demos/MediaController/name.swf" />
+	</intro>
+</problem>

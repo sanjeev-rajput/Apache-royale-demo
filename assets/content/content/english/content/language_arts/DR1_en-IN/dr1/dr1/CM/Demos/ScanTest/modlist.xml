@@ -1,0 +1,4 @@
+<modlist version = "1.0">
+	<module url = "Demos/ScanTest/ScanData.swf" />
+	<module url = "Demos/ScanTest/DDScanData.swf" />
+</modlist>

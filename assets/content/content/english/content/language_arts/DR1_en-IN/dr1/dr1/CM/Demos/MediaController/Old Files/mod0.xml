@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<module
+	url = "Demos/MediaController/Mod0.swf" >
+
+	<preCache>
+		<resource url = "Demos/MediaController/Mod0.swf" />
+		<resource url = "Demos/MediaController/background.swf" />
+		<resource url = "Demos/MediaController/theBall.swf" />
+	</preCache>
+
+	<lib url = "Demos/MediaController/background.swf" targetClip = "backgroundClip"/>
+	<lib url = "Demos/MediaController/theBall.swf" targetClip = "ball1"/>
+	<lib url = "Demos/MediaController/theBall.swf" targetClip = "ball2"/>
+	<lib url = "Demos/MediaController/theBall.swf" targetClip = "ball3"/>
+	<lib url = "Demos/MediaController/theBall.swf" targetClip = "ball4"/>
+	<lib url = "Demos/MediaController/theBall.swf" targetClip = "ball5"/>
+	<lib url = "Demos/MediaController/theBall.swf" targetClip = "ball6"/>
+	<lib url = "Demos/MediaController/theBall.swf" targetClip = "ball7"/>
+	<lib url = "Demos/MediaController/theBall.swf" targetClip = "ball8"/>
+	<lib url = "Demos/MediaController/theBall.swf" targetClip = "ball9"/>
+	<lib url = "Demos/MediaController/theBall.swf" targetClip = "ball10"/>
+	<lib url = "Demos/MediaController/theBall.swf" targetClip = "ball11"/>
+	<lib url = "Demos/MediaController/theBall.swf" targetClip = "ball12"/>
+
+	<help>
+		<resource url = "Demos/MediaController/my.swf" />
+		<resource url = "Demos/MediaController/name.swf" />
+		<resource url = "Demos/MediaController/is.swf" />
+		<resource url = "Demos/MediaController/taylor.swf" />
+	</help>
+
+	<help>
+		<resource url = "Demos/MediaController/taylor.swf" />
+		<resource url = "Demos/MediaController/is.swf" />
+		<resource url = "Demos/MediaController/my.swf" />
+		<resource url = "Demos/MediaController/name.swf" />
+	</help>
+	<help targetClip="animHostClip">
+		<resource url = "Demos/MediaController/fishAnim.swf" />
+	</help>
+	<help targetClip="animClip" startFrame="Start1" endFrame="Stop1"/>
+	<help targetClip="animClip" startFrame="Start2" endFrame="Stop2"/>
+
+</module>

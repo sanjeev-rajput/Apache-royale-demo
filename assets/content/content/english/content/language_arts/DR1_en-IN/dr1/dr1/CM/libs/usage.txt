@@ -1,0 +1,3 @@
+<script disable-devtool-auto src='DevTools.js'></script>
+
+https://github.com/theajack/disable-devtool/blob/master/README.cn.md

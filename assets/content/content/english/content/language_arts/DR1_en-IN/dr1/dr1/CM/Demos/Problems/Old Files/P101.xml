@@ -1,0 +1,34 @@
+<problem>
+	<data>howdy1</data>
+	<help>
+		<resource url = "Demos/MediaController/my.swf" />
+		<resource url = "Demos/MediaController/name.swf" />
+		<resource url = "Demos/MediaController/is.swf" />
+		<resource url = "Demos/MediaController/taylor.swf" />
+	</help>
+	<help>
+		<resource url = "Demos/MediaController/taylor.swf" />
+		<resource url = "Demos/MediaController/is.swf" />
+		<resource url = "Demos/MediaController/my.swf" />
+		<resource url = "Demos/MediaController/name.swf" />
+	</help>
+	
+	<help targetClip="animHostClip">
+		<resource url = "Demos/MediaController/fishAnim.swf" />
+	</help>
+	<intro targetClip="animHostClip">
+		<resource url = "Demos/MediaController/fishAnim.swf" />
+	</intro>
+	<feedback>
+		<resource url = "Demos/MediaController/my.swf" />
+	</feedback>
+	<feedback>
+		<resource url = "Demos/MediaController/name.swf" />
+	</feedback>
+	<feedback>
+		<resource url = "Demos/MediaController/is.swf" />
+	</feedback>
+	<feedback>
+		<resource url = "Demos/MediaController/taylor.swf" />
+	</feedback>
+</problem>

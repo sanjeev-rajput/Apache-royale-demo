@@ -1,0 +1,160 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE>Destination Reading Activity Index</TITLE>
+
+<!-- prevent caching in NS. NS tends to mangle cached code -->
+<META HTTP-EQUIV="expires" CONTENT="0">
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+
+</HEAD>
+
+<script language="JavaScript" type="text/javascript">
+
+//<!--
+
+var IsIE = navigator.appName.indexOf("Microsoft") != -1;
+var IsNetscape = !IsIE;
+var IsMac = navigator.platform.indexOf("MacPPC") != -1;
+var IsWin = !IsMac;
+
+//sniffer stuff
+var downLoadPromptPage = "download.html";	// send user to Macromedia
+var versionRequired = 5;					// minimum version required
+
+//version booleans
+var flash5Installed = false;
+var flash6Installed = false;
+//****
+
+var activityURL;
+var flashWindow;
+
+//called back by flashWindow when stop button
+//is clicked
+function OnFlashClose()
+{
+	//close the flashWindow
+	flashWindow.close();
+	flashWindow = null;
+}
+
+function openFlashWindow(actURL)
+{
+	//set global activity URL var which is read by flashWindow
+	activityURL = actURL;
+
+	//open the flash player window, fullscreen, no chrome
+	if(IsIE)
+	{
+		//d'oh - scrollbars=yes causes NO SCROLLBARS on IE/Win!
+		flashWindow = window.open("CMMain1.html", "flashWindow", "fullscreen=yes, scrollbars=yes, left=0, top=0");
+
+		//d'oh - IE/Mac can't take a hint and size to full screen
+		if(IsMac)
+		{
+			flashWindow.resizeTo(window.screen.width - 10, window.screen.height);
+		}
+	}
+	else
+	{
+		if(IsMac)
+		{
+			var ah = window.screen.availHeight * .96;
+			var aw = window.screen.availWidth - 10;
+
+			//embed the Flash movie in this doc
+			flashWindow = window.open('CMMain1.html', 'flashWindow', 'toolbar=0,innerWidth=' + aw + ',innerHeight=' + ah + ',screenX=0,screenY=0');
+			if(window.document.URL.substring(0, 4) ==  'http')
+				flashWindow.location.reload();
+		}
+		else
+		{
+			var ah = window.screen.availHeight;
+			var aw = window.screen.availWidth - 10;
+			flashWindow = window.open("CMMain1.html", "flashWindow", "innerHeight=" + ah + ",innerWidth=" + aw + ",screenX=0,screenY=0");
+		}
+	}
+}
+
+//-->
+</script> 
+
+<SCRIPT LANGUAGE="JavaScript1.1" type="text/javascript">
+//<!--
+
+//IE/Win - find Flash by creating objects
+var isIE = (navigator.appVersion.indexOf("MSIE") != -1) ? true : false;
+var isWin = (navigator.appVersion.indexOf("Windows") != -1) ? true : false;
+
+// write vbscript detection
+if(isIE && isWin)
+{
+	document.write('<SCR' + 'IPT LANGUAGE=VBScript\> \n');
+	document.write('on error resume next \n');
+	document.write('flash5Installed = (IsObject(CreateObject("ShockwaveFlash.ShockwaveFlash.5"))) \n');	
+	document.write('flash6Installed = (IsObject(CreateObject("ShockwaveFlash.ShockwaveFlash.6"))) \n');	
+	document.write('</SCR' + 'IPT\> \n'); // break up end tag so it doesn't end our script
+}
+
+// -->
+</SCRIPT>
+
+
+<SCRIPT LANGUAGE="JavaScript" type="text/javascript">
+//<!--
+
+// NS and IE/Mac - use javascript detection using navigator.plugins array
+function detectFlash()
+{	
+	if(navigator.plugins && navigator.plugins["Shockwave Flash"])
+	{
+		var flashDescription = navigator.plugins["Shockwave Flash"].description;
+
+		// plugin-description looks like 'Shockwave Flash 5.0 r5'
+		// get the major version & minor versions
+		var majorVersion = parseInt(flashDescription.charAt(flashDescription.indexOf(".") - 1));
+		var minorVersion = parseInt(flashDescription.charAt(flashDescription.indexOf("r") + 1));
+
+		//set the booleans
+		flash5Installed = majorVersion == 5 ? true : false;
+		flash6Installed = majorVersion == 6 ? true : false;
+	}
+
+
+	// set actualVersion to highest detected version
+	var actualVersion = 0;
+	if(flash5Installed) actualVersion = 5;
+	if(flash6Installed) actualVersion = 6;
+
+	//alert("version = " + actualVersion);
+	
+	//go to download prompt page if required version not present
+	if (actualVersion < versionRequired)
+		window.location = downLoadPromptPage;
+}
+
+
+//run the detection function
+detectFlash();
+	
+// -->
+</SCRIPT>
+
+
+
+<BODY>
+<P><A href="JavaScript:openFlashWindow('')">Use modlist.xml</A></P>
+<P><A href="JavaScript:openFlashWindow('ACTIVITY_SWF')">ACTIVITY_DESCRIPTION (rACTIVITY_ID)</A></P>
+
+
+<p>&nbsp;</p>
+<P><b><font size="5">Engineering Assist</font></b></P>
+<P><A href="JavaScript:openFlashWindow('../PC/onstage/k_04213_r282.swf')">On Stage</A></P>
+<P><A href="JavaScript:openFlashWindow('../TextEntry/Postcard/dummy_prob.swf')">Postcard</A></P>	
+<P><A href="JavaScript:openFlashWindow('../TextEntry/WritersPad/dummy_prob_k1.swf')">Writers Pad k-1</A></P>	
+<P><A href="JavaScript:openFlashWindow('../TextEntry/WritersPad/dummy_prob_23.swf')">Writers Pad 2-3</A></P>	
+
+
+</BODY>
+</HTML>

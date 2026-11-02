@@ -9,13 +9,13 @@
     {
       "label": "Data & Pagination - 1",
       "type": "toc",
-      "url": "toc-dr-1.csv",
+      "url": "English.csv",
       "addx":"NA"
     },
     {
       "label": "Data & Pagination - 2",
       "type": "toc",
-      "url": "toc-dr-2.csv",
+      "url": "Math.csv",
       "addx":"showpgtools"
     },
     {
@@ -133,6 +133,18 @@
       "addx":"NA"
     },
     {
+    "label": "AI K-12 Learning",
+    "type": "extui",
+    "url": "na",
+    "addx": "NA"
+    },
+    {
+      "label": "Auth2.0",
+      "type": "extui",
+      "url": "na",
+      "addx":"NA"
+    },
+    {
       "label": "",
       "type": "divider",
       "url": "NA",
@@ -147,7 +159,7 @@
   ],
   "config":[
     {
-      "env": "LIVE",
+      "env": "LOCAL",
       "appVersion": "1.0.0"
     }
   ]

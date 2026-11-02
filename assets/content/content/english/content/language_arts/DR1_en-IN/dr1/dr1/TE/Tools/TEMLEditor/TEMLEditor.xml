@@ -1,0 +1,15 @@
+<module
+	url = "../TE/Tools/TEMLEditor/TEMLinterface.swf"
+	params = "">
+
+	<preCache>
+		<resource url = "../TE/Tools/TEMLEditor/TEMLinterface.swf" />
+		<resource url = "../TE/TEngine.swf" />
+		<resource url = "../TE/TModule.swf" />
+	</preCache>
+
+	<lib url = "../TE/TEngine.swf" refVar = "libTE" />
+<!--
+	Note that there are no references to ../TE/TModule.swf here!
+-->
+</module>

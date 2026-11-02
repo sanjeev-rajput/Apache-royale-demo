@@ -1,0 +1,26 @@
+
+font issue
+
+
+dstpb:http://dsportal/schcontent/player/index.php?module=english/content/language_arts/DR1_en-IN/dr1/dr1/cm/launch.html?../RT/Stories/x_a017.swf,sanjeev#-!-#&loid=1593&user=78&hbpath=aHR0cDovL2RzcG9ydGFsL3BvcnRhbC9zY2g=
+
+http://192.168.18.11:8081/temp/test-run/ruffle/DR1_en-IN/dr1/dr1/CM/launch.html?../RT/Stories/x_a017.swf,sanjeev 
+
+
+
+fixed
+
+font style issue still remains
+dstpb:http://dsportal/schcontent/player/index.php?module=english/content/language_arts/DR1_en-IN/dr1/dr1/cm/launch.html?../RT/Stories/x_a014.swf#-!-#&loid=1593&user=78&hbpath=aHR0cDovL2RzcG9ydGFsL3BvcnRhbC9zY2g=
+http://192.168.18.11:8081/temp/test-run/ruffle/DR1_en-IN/dr1/dr1/CM/launch.html?../RT/Stories/x_a014.swf,sanjeev
+
+
+interactivity - font still remain issue
+dstpb:http://dsportal/schcontent/player/index.php?module=english/content/language_arts/DR1_en-IN/dr1/dr1/cm/launch.html?../DD/SortingTables/x_a209.swf,sanjeev#-!-#&loid=1593&user=78&hbpath=aHR0cDovL2RzcG9ydGFsL3BvcnRhbC9zY2g=
+http://192.168.18.11:8081/temp/test-run/ruffle/DR1_en-IN/dr1/dr1/CM/launch.html?../DD/SortingTables/x_a209.swf,sanjeev
+
+
+
+
+
+

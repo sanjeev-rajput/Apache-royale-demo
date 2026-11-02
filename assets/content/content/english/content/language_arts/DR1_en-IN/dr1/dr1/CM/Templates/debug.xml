@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<debug version = "1.0">
+<!--	states
+	-1 off         (gray)
+	 0 high level  (red)
+	 1 med level   (yellow)
+	 2 low level   (green)
+-->
+<!-- list of persistent debug categories -->
+	<category name = "id1" state = "-1" />
+	<category name = "id2" state = "-1" />
+</debug>
+
+

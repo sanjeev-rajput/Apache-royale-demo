@@ -1,0 +1,10 @@
+<module
+	url = "../Motion%20Lib/Demos/MotionMod.swf">
+
+	<preCache>
+		<resource url = "../Motion%20Lib/Demos/MotionMod.swf" />
+	</preCache>
+
+	<lib url = "../Motion%20Lib/MotionLib.swf" refVar = "m_motionLib"/>
+</module>
+  

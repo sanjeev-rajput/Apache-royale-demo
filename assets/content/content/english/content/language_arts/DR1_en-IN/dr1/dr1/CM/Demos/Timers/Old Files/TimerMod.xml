@@ -1,0 +1,8 @@
+<module
+	url = "Demos/Timers/TimerMod.swf">
+
+	<preCache>
+		<resource url = "Demos/Timers/TimerMod.swf" />
+	</preCache>
+</module>
+  

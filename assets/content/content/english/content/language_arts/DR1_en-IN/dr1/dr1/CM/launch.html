@@ -1,0 +1,60 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- Application: lms -->
+<!-- Page: LegacyShell -->
+<!-- Generated: Fri Aug 07 15:23:37 EEST 2009 -->
+<html>
+<head>
+<meta name="generator" content="Tapestry Application Framework, version 3.0.3"/>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+<meta name="viewport" content="user-scalable=no"/>
+<title></title>
+<script src="../../../../../../../../rfl/ruffle.js"></script>
+<script language="JavaScript" src="../../../../../../../../rfl/preloader.js"></script>
+<meta HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE"/>
+<meta HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE"/>
+
+<style type="text/css">html, body { height: 100%;margin-top: 0px;margin-left: 0px;margin-right: 0px;margin-bottom: 0px; }</style>
+</head>
+
+<body>
+
+</script>
+<script type="text/javascript">function setBrowser() { }</script>
+<script src="flashobject.js" type="text/javascript"></script>
+<div id="flashContent" style="height: 100%; background-color: #000066;">Flash Content</div>
+
+<script type="text/javascript">
+fullURL = document.URL;
+argsini=fullURL.split('?');
+args=argsini[1].split(',');
+
+var fo = new FlashObject('CMMain.swf', 'CMMain', '100%', '100%', '6', '#000066');
+
+if (args[0]!='course1.swf' && args[0]!='course2.swf'){
+    fo.addParam('FlashVars', 'FromBrowser=1&USERID='+args[1]+'&AssignmentID=&API=/servlet/LegacyContentListener&ACTIVITYURL='+args[0]);
+}
+else {
+    fo.addParam('FlashVars', 'FromBrowser=1&MenuURL=Menus/'+args[0]+'&USERID='+args[1]);
+}
+fo.addParam('Base', '.');
+fo.addParam('allowScriptAccess', 'always'); 
+fo.write('flashContent');
+
+    window.RufflePlayer = window.RufflePlayer || {};
+    window.RufflePlayer.config = {
+    // Merge with any existing config, such as the user's extension config. Options you set below will have priority.
+    ...window.RufflePlayer.config,
+
+    // Options affecting the whole page
+    "autoplay": "on",
+    "unmuteOverlay": "hidden",
+    "contextMenu": "off",
+    "splashScreen": false
+    }
+    
+</script>
+</body>
+
+</html>
+<!-- Render time: ~ 0 ms -->
+
