@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"Disabled.js",
-"lineCount":86,
-"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/MaterialDesignLite/src/main/royale",
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;AA0CkB,oCAAhB,WAAwBA,CAAC,C;;;;;;;;AAIb,+CAAAC,8CAAiB,GAAG,IAAI,C;;;;;;;AAuBxB,+CAAAC,4CAAe,C;;;;;;AAyBV,+CAAAC,+CAAjB,WAA2BC,CAAC,C,CAC5B,C;EACC,IAAQ,6CAAJ,IAAW,GAAU,oCAAP,KAAAF,4CAAO,EAAI,6BAAJ,CAAU,C;EAEnC,IAAI,IAAI,EACC,C;IACI,KAAAD,8CAAS,GACrB,IAAI,CAAC,OAAO,CAAC,YAAY,CAAC,UAAU,EAAE,EAAE,CAAC,GACzC,IAAI,CAAC,OAAO,CAAC,eAAe,CAAC,UAAU,CAAC,C;EAChC,C;AACV,C;;;;;;;;;;;uEAjDkCI,CAAC,C,CAC7B,C;EACI,OAAO,KAAAJ,8CAAS,C;AACpB,C;;;uEAC4BI,CAAC,KAAa,C,CAC1C,C;EACI,KAAAJ,8CAAS,GAAG,KAAK,C;EAIb,KAAAE,+CAAU,CAAC,CAAC,C;AAEpB,C;;;;;;;;;;;qEAcoBG,CAAC,KAAa,C,CACxC,C;EACC,KAAAJ,4CAAO,GAAG,KAAK,C;EAEf,IAAQ,6CAAJ,IAAW,GAAQ,oCAAL,KAAK,EAAI,6BAAJ,CAAU,C;EAIhC,KAAAC,+CAAU,CAAC,CAAC,CAAA;",
-"sources":["org/apache/royale/mdl/beads/Disabled.as"],
-"names":["Disabled.Disabled","_disabled","_strand","updateHost","Disabled.updateHost","Disabled.disabled","Disabled.strand"]
-}

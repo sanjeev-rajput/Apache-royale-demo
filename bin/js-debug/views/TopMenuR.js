@@ -10,13 +10,13 @@
 goog.provide('views.TopMenuR');
 /* Royale Dependency List: com.unhurdle.spectrum.ActionMenu,com.event.DsEvent,com.model.Config,com.model.ServiceLoader,com.unhurdle.spectrum.data.MenuItem,org.apache.royale.events.Event,XML*/
 
-goog.require('org.apache.royale.jewel.Container');
+goog.require('org.apache.royale.html.elements.Div');
 
 
 
 /**
  * @constructor
- * @extends {org.apache.royale.jewel.Container}
+ * @extends {org.apache.royale.html.elements.Div}
  */
 views.TopMenuR = function() {
   views.TopMenuR.base(this, 'constructor');
@@ -50,11 +50,11 @@ views.TopMenuR = function() {
     0,
     1,
     'initComplete',
-    this.$EH_11_0
+    this.$EH_12_0
   ]);
   
 };
-goog.inherits(views.TopMenuR, org.apache.royale.jewel.Container);
+goog.inherits(views.TopMenuR, org.apache.royale.html.elements.Div);
 
 
 
@@ -186,7 +186,7 @@ set: views.TopMenuR.set__menuSelectedIndex}}
  * @export
  * @param {org.apache.royale.events.Event} event
  */
-views.TopMenuR.prototype.$EH_11_0 = function(event)
+views.TopMenuR.prototype.$EH_12_0 = function(event)
 {
   this.views_TopMenuR_init();
 };
@@ -196,7 +196,7 @@ views.TopMenuR.prototype.$EH_11_0 = function(event)
  * @export
  * @param {org.apache.royale.events.Event} event
  */
-views.TopMenuR.prototype.$EH_11_1 = function(event)
+views.TopMenuR.prototype.$EH_12_1 = function(event)
 {
   this.views_TopMenuR_handleChangeEvent();
 };
@@ -226,13 +226,10 @@ Object.defineProperties(views.TopMenuR.prototype, /** @lends {views.TopMenuR.pro
         /** @type {Array} */
         var mxmldd = [
           com.unhurdle.spectrum.ActionMenu,
-          4,
+          3,
           '_id',
           true,
           'menuR',
-          'text',
-          true,
-          'R',
           'alignRight',
           true,
           true,
@@ -242,7 +239,7 @@ Object.defineProperties(views.TopMenuR.prototype, /** @lends {views.TopMenuR.pro
           0,
           1,
           'change',
-          this.$EH_11_1,
+          this.$EH_12_1,
           null
         ];
         if (arr)

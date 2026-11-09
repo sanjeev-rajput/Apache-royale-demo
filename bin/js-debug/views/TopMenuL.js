@@ -10,13 +10,13 @@
 goog.provide('views.TopMenuL');
 /* Royale Dependency List: com.unhurdle.spectrum.ActionMenu,com.controller.PopupManager,com.unhurdle.spectrum.data.MenuItem,org.apache.royale.events.CloseEvent,org.apache.royale.events.Event,views.actionitemviews.ImgPopuop,views.actionitemviews.appnavigation.AppNavigationMain,views.actionitemviews.draganddrop.DragAndDropMain,views.actionitemviews.searchlist.SearchListMain,XML*/
 
-goog.require('org.apache.royale.jewel.Container');
+goog.require('org.apache.royale.html.elements.Div');
 
 
 
 /**
  * @constructor
- * @extends {org.apache.royale.jewel.Container}
+ * @extends {org.apache.royale.html.elements.Div}
  */
 views.TopMenuL = function() {
   views.TopMenuL.base(this, 'constructor');
@@ -50,11 +50,11 @@ views.TopMenuL = function() {
     0,
     1,
     'initComplete',
-    this.$EH_11_0
+    this.$EH_12_0
   ]);
   
 };
-goog.inherits(views.TopMenuL, org.apache.royale.jewel.Container);
+goog.inherits(views.TopMenuL, org.apache.royale.html.elements.Div);
 
 
 
@@ -115,7 +115,7 @@ views.TopMenuL.prototype.views_TopMenuL_closeHandler = function(event) {
  * @export
  * @param {org.apache.royale.events.Event} event
  */
-views.TopMenuL.prototype.$EH_11_0 = function(event)
+views.TopMenuL.prototype.$EH_12_0 = function(event)
 {
   this.views_TopMenuL_init();
 };
@@ -125,7 +125,7 @@ views.TopMenuL.prototype.$EH_11_0 = function(event)
  * @export
  * @param {org.apache.royale.events.Event} event
  */
-views.TopMenuL.prototype.$EH_11_1 = function(event)
+views.TopMenuL.prototype.$EH_12_1 = function(event)
 {
   this.views_TopMenuL_handleSelection();
 };
@@ -155,13 +155,10 @@ Object.defineProperties(views.TopMenuL.prototype, /** @lends {views.TopMenuL.pro
         /** @type {Array} */
         var mxmldd = [
           com.unhurdle.spectrum.ActionMenu,
-          4,
+          3,
           '_id',
           true,
           'menuL',
-          'text',
-          true,
-          'L',
           'quiet',
           true,
           true,
@@ -171,7 +168,7 @@ Object.defineProperties(views.TopMenuL.prototype, /** @lends {views.TopMenuL.pro
           0,
           1,
           'change',
-          this.$EH_11_1,
+          this.$EH_12_1,
           null
         ];
         if (arr)

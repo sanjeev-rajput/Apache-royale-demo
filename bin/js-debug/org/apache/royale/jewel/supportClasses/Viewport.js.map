@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"Viewport.js",
-"lineCount":91,
-"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Jewel/src/main/royale",
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;AAiDkB,+CAAhB,WAAwBA,CAAC,C,CACzB,C;2EACiB,C;AACjB,C;;;;;;;;;;;;;;;;;;;AAiC4B,0DAAA,cAA5B,WAA0CC,CAAC,C,CAC3C,C;EACC,KAAA,WAAW,CAAC,OAAO,CAAC,SAAS,CAAC,GAAG,CAAC,UAAU,CAAC,C;EAE7C,IAAG,KAAAC,4DAAY,C;IACd,KAAA,WAAW,CAAC,OAAO,CAAC,SAAS,CAAC,GAAG,CAAC,SAAS,CAAC,C;EAC7C,I;IACC,KAAA,WAAW,CAAC,OAAO,CAAC,SAAS,CAAC,MAAM,CAAC,SAAS,CAAC,C;AACjD,C;;;;;;;AAEY,0DAAAA,4DAAoB,GAAG,IAAI,C;;;gFApCJC,CAAC,KAAa,C,CACjD,C;EACC,KAAA,OAAO,GAAG,KAAK,C;EAEf,KAAA,WAAW,GAAG,iDAAyB,CAAC,mCAAY,EAAE,cAAc,EAAE,KAAA,OAAO,CAAW,C;EAExF,IAAI,CAAC,KAAA,WAAW,C;IACf,KAAA,WAAW,GAAG,KAAe,C;EAE9B,KAAA,WAAW,CAAC,gBAAgB,CAAC,cAAc,E,yCAAE,K,uCAAc,CAAC,C;AAC7D,C;;;;;;;;;;;qFAuC+BC,CAAC,C,CAChC,C;EACC,OAAO,KAAAF,4DAAY,C;AACpB,C;;;qFACkCE,CAAC,KAAa,C,CAChD,C;EACC,IAAG,KAAAF,4DAAY,IAAI,KAAK,EACxB,C;IACC,KAAAA,4DAAY,GAAG,KAAK,C;IAGpB,IAAG,KAAA,WAAW,C;MACb,KAAA,cAAc,CAAC,CAAC,C;EAElB,CAAA;",
-"sources":["org/apache/royale/jewel/supportClasses/Viewport.as"],
-"names":["Viewport.Viewport","Viewport.setScrollStyle","_clipContent","Viewport.strand","Viewport.clipContent"]
-}

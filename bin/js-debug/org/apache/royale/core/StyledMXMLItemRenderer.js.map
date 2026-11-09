@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"StyledMXMLItemRenderer.js",
-"lineCount":82,
-"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Basic/src/main/royale",
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AA6CkB,6CAAhB,WAAsCA,CAAC,C,CACvC,C;yEACQ,C;EACE,KAAA,SAAS,GAAG,EAAE,C;AACxB,C;;;;;;;;AAEkB,wDAAAC,oEAA6C,C;;;;;;;;;;;;;;AA4BtC,wDAAA,aAAzB,WAAsCC,CAAC,C,CACvC,C;qFACsB,C;EAErB,IAAI,KAAA,qBAAqB,IAA8B,oCAA1B,KAAA,qBAAqB,CAAC,IAAI,EAAI,iCAAJ,CAAa,IAA+B,oCAA1B,KAAA,qBAAqB,CAAC,IAAI,EAAI,iCAAJ,CAAa,CAAE,QAAQ,EAC1H,C;IACC,KAAA,QAAQ,GAA8B,oCAA1B,KAAA,qBAAqB,CAAC,IAAI,EAAI,iCAAJ,CAAa,CAAE,QAAQ,C;EAC9D,C,CAAE,KACF,C;IACC,KAAA,QAAQ,GAAgB,oCAAA,OAAO,C;EAChC,C;AACD,C;;;;;;;;;;;6FA9B+CC,CAAC,C,CAC1C,C;EACI,OAAO,KAAAF,oEAAsB,C;AACjC,C;;;6FACyCE,CAAC,KAA4B,C,CACtE,C;EACI,KAAAF,oEAAsB,GAAG,KAAK,CAAA;",
-"sources":["org/apache/royale/core/StyledMXMLItemRenderer.as"],
-"names":["StyledMXMLItemRenderer.StyledMXMLItemRenderer","_itemRendererOwnerView","StyledMXMLItemRenderer.addedToParent","StyledMXMLItemRenderer.itemRendererOwnerView"]
-}

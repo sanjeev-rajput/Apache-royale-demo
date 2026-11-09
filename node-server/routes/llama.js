@@ -68,7 +68,7 @@ router.post('/', async (req, res) => {
         'X-Title': 'Royale-Chat',
       },
       body: JSON.stringify({
-        model: 'deepseek/deepseek-chat-v3-0324:free',
+        model: 'google/gemma-4-26b-a4b-it:free',
         messages: conversationHistory,
       }),
     });

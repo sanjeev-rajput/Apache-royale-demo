@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ImageModel.js",
-"lineCount":79,
-"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Jewel/src/main/royale",
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;;;AA4CkB,+CAAhB,WAA0BA,CAAC,C,CAC3B,C;2EACQ,C;AACR,C;;;;;;;;AAEY,0DAAAC,uDAAe,C;;;;;;;AAeb,0DAAA,IAAW,C;;;;;;;;;;;gFALCC,CAAC,KAAa,C,CACxC,C;EACC,KAAAD,uDAAO,GAAG,KAAK,C;AAChB,C;;;;;;;;;;;6EAcuBE,CAAC,C,CACxB,C;EACC,OAAO,KAAA,IAAI,C;AACZ,C;;;6EACuBA,CAAC,KAAY,C,CACpC,C;EACC,IAAI,KAAK,IAAI,KAAA,IAAI,EAAE,C;IAClB,KAAA,IAAI,GAAG,KAAK,C;IACZ,KAAA,aAAa,CAAE,IAAI,8BAAK,CAAC,YAAY,CAAE,CAAC,C;EACzC,CAAA;",
-"sources":["org/apache/royale/jewel/beads/models/ImageModel.as"],
-"names":["ImageModel.ImageModel","_strand","ImageModel.strand","ImageModel.url"]
-}

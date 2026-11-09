@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"Viewport.js",
-"lineCount":133,
-"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Basic/src/main/royale",
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAwDkB,8CAAhB,WAAwBA,CAAC,C;;;;;;;;;;AAIX,yDAAA,WAAkB,C;;;;;;;AAelB,yDAAA,OAAe,C;;;;;;;AA0CV,yDAAA,cAAnB,WAAiCC,CAAC,C,CAClC,C;EACC,KAAA,WAAW,CAAC,OAAO,CAAC,KAAK,CAAC,QAAQ,GAAG,QAAQ,C;AAC9C,C;;;;;;;;;;;;;AAUsB,yDAAA,WAAhB,WAA2BC,CAAC,CAAQ,EAAE,CAAQ,C,CAC9C,C;;AAKA,C;;;;;;;;;;;;;AAUU,yDAAA,iCAAhB,WAAiDC,CAAC,KAAY,EAAE,MAAa,C,CAC7E,C;;AAOA,C;;;;;;;;;;;;AAUgB,yDAAA,gCAAhB,WAAgDC,CAAC,WAAgB,C,CACjE,C;;AAUA,C;;;;;;;;;;;oFAzGqCC,CAAC,C,CAChC,C;EACI,OAAO,KAAA,WAAW,C;AACtB,C;;;;;;;;;;;+EA0BoBC,CAAC,KAAa,C,CACxC,C;EACC,KAAA,OAAO,GAAG,KAAK,C;EAEf,IAAK,sBAAD,CAAO,GAAiB,qCAAA,UAAU,CAAC,QAAQ,CAAC,KAAK,EAAE,cAAc,CAAC,C;EACtE,IAAI,CAAC,EACL,C;IACC,KAAA,WAAW,GAAG,IAAI,CAAC,CAAC,CAAW,C;EAChC,C;EAEA,IAAI,CAAC,KAAA,WAAW,C;IACf,KAAA,WAAW,GAAG,KAAe,C;EAC9B,KAAA,cAAc,CAAC,CAAC,CAAA;",
-"sources":["org/apache/royale/html/supportClasses/Viewport.as"],
-"names":["Viewport.Viewport","Viewport.setScrollStyle","Viewport.setPosition","Viewport.layoutViewportBeforeContentLayout","Viewport.layoutViewportAfterContentLayout","Viewport.contentView","Viewport.strand"]
-}

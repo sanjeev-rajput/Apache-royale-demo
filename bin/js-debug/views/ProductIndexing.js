@@ -8,7 +8,7 @@
  */
 
 goog.provide('views.ProductIndexing');
-/* Royale Dependency List: org.apache.royale.jewel.VGroup,org.apache.royale.jewel.HGroup,views.TopMenuL,org.apache.royale.jewel.Label,views.TopMenuR,org.apache.royale.jewel.FooterBar,com.unhurdle.spectrum.Label,org.apache.royale.jewel.Container,com.unhurdle.spectrum.ImageAsset,com.event.DsEvent,com.unhurdle.spectrum.Toast,org.apache.royale.events.Event,views.actionitemviews.ai.AiMain,views.actionitemviews.basicdrawing.BasicDrawingMain,views.actionitemviews.collaboration.CollaborationMain,views.actionitemviews.games.Game,views.actionitemviews.learning.LearningChatbotMain,views.actionitemviews.pexels.PexelVideoStreamMain,views.actionitemviews.reactandroyale.ReactAndRoyale,views.actionitemviews.searchlist.SearchListMain,views.actionitemviews.shoppingcart.ShoppingMain,views.actionitemviews.stockSocket.StockSocketMain,views.actionitemviews.toc.TocAndPgnation,views.actionitemviews.websocket.WikiSocketMain,XML*/
+/* Royale Dependency List: org.apache.royale.jewel.VGroup,org.apache.royale.jewel.HGroup,views.TopMenuL,org.apache.royale.jewel.Label,views.TopMenuR,org.apache.royale.jewel.FooterBar,com.unhurdle.spectrum.Label,org.apache.royale.jewel.Container,com.unhurdle.spectrum.ImageAsset,com.event.DsEvent,com.unhurdle.spectrum.Toast,org.apache.royale.events.Event,views.actionitemviews.ai.AiMain,views.actionitemviews.basicdrawing.BasicDrawingMain,views.actionitemviews.collaboration.CollaborationMain,views.actionitemviews.games.Game,views.actionitemviews.learning.LearningChatbotMain,views.actionitemviews.multilingual.MultilingualTutorMain,views.actionitemviews.pexels.PexelVideoStreamMain,views.actionitemviews.reactandroyale.ReactAndRoyale,views.actionitemviews.searchlist.SearchListMain,views.actionitemviews.shoppingcart.ShoppingMain,views.actionitemviews.stockSocket.StockSocketMain,views.actionitemviews.toc.TocAndPgnation,views.actionitemviews.websocket.WikiSocketMain,XML*/
 
 goog.require('org.apache.royale.jewel.ResponsiveView');
 
@@ -117,6 +117,20 @@ views.ProductIndexing.prototype.views_ProductIndexing_mgmtObj = null;
 
 /**
  * @private
+ * @type {views.actionitemviews.learning.LearningChatbotMain}
+ */
+views.ProductIndexing.prototype.views_ProductIndexing_learningChatbot = null;
+
+
+/**
+ * @private
+ * @type {views.actionitemviews.multilingual.MultilingualTutorMain}
+ */
+views.ProductIndexing.prototype.views_ProductIndexing_multilingualTutor = null;
+
+
+/**
+ * @private
  */
 views.ProductIndexing.prototype.views_ProductIndexing_initComplete = function() {
   var /** @type {com.unhurdle.spectrum.Toast} */ t = new com.unhurdle.spectrum.Toast();
@@ -129,6 +143,8 @@ views.ProductIndexing.prototype.views_ProductIndexing_initComplete = function() 
   com.event.DsEvent.instance.addEventListener(com.event.DsEvent.FETCH_DATA_EVENT, org.apache.royale.utils.Language.closure(this.views_ProductIndexing_fetchDataEventHandler, this, 'views_ProductIndexing_fetchDataEventHandler'));
   com.event.DsEvent.instance.addEventListener(com.event.DsEvent.CLEAR_UI_EVENT, org.apache.royale.utils.Language.closure(this.views_ProductIndexing_clearUi, this, 'views_ProductIndexing_clearUi'));
   com.event.DsEvent.instance.addEventListener(com.event.DsEvent.UI_COMPONENT_EVENT, org.apache.royale.utils.Language.closure(this.views_ProductIndexing_addUiComponent, this, 'views_ProductIndexing_addUiComponent'));
+  com.event.DsEvent.instance.addEventListener(com.event.DsEvent.OPEN_MULTILINGUAL_TUTOR_EVENT, org.apache.royale.utils.Language.closure(this.views_ProductIndexing_openMultilingualTutor, this, 'views_ProductIndexing_openMultilingualTutor'));
+  com.event.DsEvent.instance.addEventListener(com.event.DsEvent.CLOSE_MULTILINGUAL_TUTOR_EVENT, org.apache.royale.utils.Language.closure(this.views_ProductIndexing_closeMultilingualTutor, this, 'views_ProductIndexing_closeMultilingualTutor'));
 };
 
 
@@ -154,7 +170,7 @@ views.ProductIndexing.prototype.views_ProductIndexing_fetchDataEventHandler = fu
   this.views_ProductIndexing_clearUi();
   var /** @type {views.actionitemviews.toc.TocAndPgnation} */ tocPg = new views.actionitemviews.toc.TocAndPgnation(this.vg, this.pgNationCtr);
   tocPg.loadAndUpdateAccData(obj);
-  this.title.text = org.apache.royale.utils.Language.string(obj["data"]["title"]);
+  this.title.html = org.apache.royale.utils.Language.string(obj["data"]["title"]);
 };
 
 
@@ -166,6 +182,7 @@ views.ProductIndexing.prototype.views_ProductIndexing_addUiComponent = function(
   var /** @type {org.apache.royale.jewel.Group} */ uiComp = null;
   this.views_ProductIndexing_clearUi();
   var /** @type {string} */ compName = org.apache.royale.utils.Language.string(obj["data"]["title"]);
+  this.title.html = compName;
   //var /** @type {org.apache.royale.jewel.Group} */ uiComp = null;
   if (compName == 'Basic Drawing') {
     uiComp = new views.actionitemviews.basicdrawing.BasicDrawingMain();
@@ -223,9 +240,11 @@ views.ProductIndexing.prototype.views_ProductIndexing_addUiComponent = function(
     this.vg.addElement(uiComp);
     return;
   }
-  if (compName == 'Learning Chatbot') {
-    uiComp = new views.actionitemviews.learning.LearningChatbotMain();
+  if (compName == 'AI K-12 Learning') {
+    this.views_ProductIndexing_learningChatbot = new views.actionitemviews.learning.LearningChatbotMain();
+    uiComp = this.views_ProductIndexing_learningChatbot;
     this.vg.addElement(uiComp);
+    this.views_ProductIndexing_mgmtObj.push(uiComp);
     return;
   }
   if (compName == 'Chart') {
@@ -236,15 +255,51 @@ views.ProductIndexing.prototype.views_ProductIndexing_addUiComponent = function(
 
 /**
  * @private
+ * @param {Object} obj
+ */
+views.ProductIndexing.prototype.views_ProductIndexing_openMultilingualTutor = function(obj) {
+  if (this.views_ProductIndexing_multilingualTutor != null)
+    return;
+  if (this.views_ProductIndexing_learningChatbot == null)
+    return;
+  this.views_ProductIndexing_learningChatbot.visible = false;
+  this.views_ProductIndexing_multilingualTutor = new views.actionitemviews.multilingual.MultilingualTutorMain();
+  this.vg.addElement(this.views_ProductIndexing_multilingualTutor);
+  this.title.html = "Multilingual Tutor";
+};
+
+
+/**
+ * @private
+ * @param {Object} obj
+ */
+views.ProductIndexing.prototype.views_ProductIndexing_closeMultilingualTutor = function(obj) {
+  if (this.views_ProductIndexing_multilingualTutor != null) {
+    this.vg.removeElement(this.views_ProductIndexing_multilingualTutor);
+    this.views_ProductIndexing_multilingualTutor = null;
+  }
+  if (this.views_ProductIndexing_learningChatbot != null)
+    this.views_ProductIndexing_learningChatbot.visible = true;
+  this.title.html = "AI K-12 Learning";
+};
+
+
+/**
+ * @private
  */
 views.ProductIndexing.prototype.views_ProductIndexing_clearUi = function() {
+  if (this.views_ProductIndexing_multilingualTutor != null) {
+    this.views_ProductIndexing_multilingualTutor.disposeMe();
+    this.views_ProductIndexing_multilingualTutor = null;
+  }
+  this.views_ProductIndexing_learningChatbot = null;
   while (this.vg.numElements > 0) {
     this.vg.removeElement(this.vg.getElementAt(0));
   }
   while (this.pgNationCtr.numElements > 0) {
     this.pgNationCtr.removeElement(this.pgNationCtr.getElementAt(0));
   }
-  this.title.text = "Make an action using 'L' and 'R' menu";
+  this.title.html = "Use &#8226;&#8226;&#8226; icon to access menu";
   if (this.views_ProductIndexing_mgmtObj.length > 0) {
     var foreachiter0_target = this.views_ProductIndexing_mgmtObj;
     for (var foreachiter0 in foreachiter0_target) 
@@ -259,6 +314,8 @@ views.ProductIndexing.prototype.views_ProductIndexing_clearUi = function() {
         org.apache.royale.utils.Language.as(i, views.actionitemviews.collaboration.CollaborationMain, true).disposeMe();
       if (org.apache.royale.utils.Language.is(i, views.actionitemviews.websocket.WikiSocketMain))
         org.apache.royale.utils.Language.as(i, views.actionitemviews.websocket.WikiSocketMain, true).disposeMe();
+      if (org.apache.royale.utils.Language.is(i, views.actionitemviews.learning.LearningChatbotMain))
+        org.apache.royale.utils.Language.as(i, views.actionitemviews.learning.LearningChatbotMain, true).disposeMe();
     }}
     
     this.views_ProductIndexing_mgmtObj = new Array();
@@ -392,13 +449,16 @@ Object.defineProperties(views.ProductIndexing.prototype, /** @lends {views.Produ
             0,
             [
               views.TopMenuL,
-              2,
+              3,
               '_id',
               true,
               '$ID_12_0',
               'width',
               true,
               50,
+              'style',
+              true,
+              'bottom:50px',
               0,
               0,
               null,
@@ -407,9 +467,9 @@ Object.defineProperties(views.ProductIndexing.prototype, /** @lends {views.Produ
               'id',
               true,
               'title',
-              'text',
+              'html',
               true,
-              'Make an action using \'L\' and \'R\' menu',
+              'Use ••• icon to access menu',
               0,
               0,
               null,

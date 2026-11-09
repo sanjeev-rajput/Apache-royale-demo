@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"SelectionDataItemRendererFactoryForCollectionView.js",
-"lineCount":75,
-"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Basic/src/main/royale",
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;AAgCkB,8EAAhB,WAAiEA,CAAC,MAAoB,C,CACtF,C;EADkE,kDAAgB,IAAhB,C;2GAE3D,M,CAAO,C;AACd,C;;;;;;;;;;AAM4B,yFAAA,gBAA5B,WAA4CC,CAAC,KAAqB,C,CAClE,C;2HACwB,K,EAAM,C;EAG7B,IAAoB,oCAAjB,KAAA,iBAAiB,EAAI,sCAAJ,CAAmB,EAAE,C;IACxC,IAAI,KAAK,CAAC,KAAK,IAAoB,KAAA,iBAAkB,CAAC,aAAa,EAAE,C;MACpD,KAAA,iBAAkB,CAAC,aAAa,G,CAAmB,KAAA,iBAAkB,CAAC,aAAa,GAAG,C,MAAC,C;IACxG,C;EACD,C;AACD,C;;;;;;;;;AAM4B,yFAAA,kBAA5B,WAA8CC,CAAC,KAAqB,C,CACpE,C;6HAC0B,K,EAAM,C;EAG/B,IAAoB,oCAAjB,KAAA,iBAAiB,EAAI,sCAAJ,CAAmB,EAAE,C;IACxC,IAAI,KAAK,CAAC,KAAK,GAAmB,KAAA,iBAAkB,CAAC,aAAa,EAClE,C;MACiB,KAAA,iBAAkB,CAAC,aAAa,G,CAAmB,KAAA,iBAAkB,CAAC,aAAa,GAAG,C,MAAC,C;IACxG,C,CACA,SAAS,KAAK,CAAC,KAAK,IAAoB,KAAA,iBAAkB,CAAC,aAAa,EACxE,C;MACiB,KAAA,iBAAkB,CAAC,aAAa,GAAG,EAAE,C;IACtD,C;EACD,C;AACD,C;;;;;;;;;AAM4B,yFAAA,kBAA5B,WAA8CC,CAAC,KAAqB,C,CACpE,C;6HAC0B,K,EAAM,C;EAE/B,IAAoB,oCAAjB,KAAA,iBAAiB,EAAI,sCAAJ,CAAmB,EAAE,C;IACxC,IAAI,KAAK,CAAC,KAAK,IAAoB,KAAA,iBAAkB,CAAC,aAAa,EAAE,C;MAGpE,oCAAiB,KAAA,iBAAjB,EAAA,yCAAA,OAAmC,CAAC,aAAa,CAAC,IAAI,8BAAK,CAAC,sBAAsB,CAAC,CAAC,C;IACrF,C;EACD,CAAA;",
-"sources":["org/apache/royale/html/beads/SelectionDataItemRendererFactoryForCollectionView.as"],
-"names":["SelectionDataItemRendererFactoryForCollectionView.SelectionDataItemRendererFactoryForCollectionView","SelectionDataItemRendererFactoryForCollectionView.itemAddedHandler","SelectionDataItemRendererFactoryForCollectionView.itemRemovedHandler","SelectionDataItemRendererFactoryForCollectionView.itemUpdatedHandler"]
-}

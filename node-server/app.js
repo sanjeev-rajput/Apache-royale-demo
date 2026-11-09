@@ -10,6 +10,7 @@ import pexelsVideoRoutes from './routes/pexelsVideoStream.js';
 import learningRoutes from './routes/learning.js';
 import { fileURLToPath } from 'url';
 //import voiceTranslateRoutes from './routes/voiceTranslate.js';
+import multilingualRoutes from './routes/multilingual.js';
 
 
 
@@ -36,12 +37,13 @@ app.use(bodyParser.json());
 app.use(express.json());
 
 // Mount routes
-app.use('/api/chat', chatRoutes);
 app.use('/api/vision', visionRoutes);
 app.use('/api/llama', llamaRoutes);
 app.use('/api/pexels', pexelsVideoRoutes);
 app.use('/api/learning', learningRoutes);
+app.use('/api/chat', chatRoutes);
 //app.use('/api/voice', voiceTranslateRoutes);
+app.use('/api/multilingual', multilingualRoutes);
 
 
 export default app;

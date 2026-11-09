@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"AlertController.js",
-"lineCount":66,
-"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Jewel/src/main/royale",
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;AAkDkB,yDAAhB,WAA+BA,CAAC,C;;;;;;;;AAId,oEAAAC,iEAAe,C;;;;;;;;AAgCV,oEAAAC,2EAAjB,WAAkCC,CAAC,KAAgB,C,CACnD,C;EACL,IAAQ,6CAAJ,IAAW,GAAS,oCAAN,KAAA,MAAM,EAAI,6BAAJ,CAAU,C;;EASlC,QAAQ,CAAC,IAAI,CAAC,SAAS,CAAC,MAAM,CAAC,UAAU,CAAC,C;EAC1C,IAAI,CAAC,OAAO,CAAC,aAAa,CAAC,WAAW,CAAC,IAAI,CAAC,OAAO,CAAC,C;AAE/C,C;;;;;;;;;;;0FApC0BC,CAAC,C,CAC3B,C;EACI,OAAO,KAAAH,iEAAO,C;AAClB,C;;;0FAU0BG,CAAC,KAAa,C,CACxC,C;EACI,KAAAH,iEAAO,GAAG,KAAK,C;EACf,oCAAiB,KAAjB,EAAA,yCAAA,OAAuB,CAAC,gBAAgB,CAAC,OAAO,E,yCAAE,K,iKAAiB,CAAC,CAAA;",
-"sources":["org/apache/royale/jewel/beads/controllers/AlertController.as"],
-"names":["AlertController.AlertController","_strand","alertCloseHandler","AlertController.alertCloseHandler","AlertController.strand"]
-}

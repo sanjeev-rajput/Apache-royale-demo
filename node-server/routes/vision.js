@@ -22,7 +22,7 @@ router.post('/', async (req, res) => {
         'X-Title': 'Royale-ImageVision'
       },
       body: JSON.stringify({
-        model: 'opengvlab/internvl3-14b:free',
+        model: 'openrouter/free',
         messages: [
           {
             role: 'user',

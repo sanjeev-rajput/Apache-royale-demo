@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ClassSelectorListSelectableItemRendererBead.js",
-"lineCount":55,
-"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Jewel/src/main/royale",
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;AA2CkB,uFAAhB,WAA2DA,CAAC,C;;;;;;;;;;AAI9C,kGAAA,EAA4B,C;;;;;;;AAYX,kGAAA,cAAzB,WAAuCC,CAAC,C,CACxC,C;EACL,IAAI,CAAC,KAAA,QAAQ,EACb,C;IACC,KAAA,EAAE,CAAC,WAAW,CAAC,SAAS,EAAE,KAAA,OAAO,CAAC,C;EACnC,C;EAEA,KAAA,EAAE,CAAC,WAAW,CAAC,UAAU,EAAE,KAAA,QAAQ,CAAC,C;AAC/B,C;;;wHAlB6BC,CAAC,KAAa,C,CACjD,C;+HACgB,K,EAAK,C;EACpB,KAAA,EAAE,GAAQ,oCAAL,KAAK,EAAI,iDAAJ,CAA6B,C;EACvC,KAAA,EAAE,CAAC,QAAQ,CAAC,YAAY,CAAC,CAAA;",
-"sources":["org/apache/royale/jewel/beads/itemRenderers/ClassSelectorListSelectableItemRendererBead.as"],
-"names":["ClassSelectorListSelectableItemRendererBead.ClassSelectorListSelectableItemRendererBead","ClassSelectorListSelectableItemRendererBead.updateRenderer","ClassSelectorListSelectableItemRendererBead.strand"]
-}

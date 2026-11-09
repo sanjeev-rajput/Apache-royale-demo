@@ -233,7 +233,7 @@ views.actionitemviews.ai.AiMain.prototype.views_actionitemviews_ai_AiMain_initMd
   this.views_actionitemviews_ai_AiMain_httpService.reqMethod = "POST";
   this.views_actionitemviews_ai_AiMain_httpService.contentType = "application/json";
   this.views_actionitemviews_ai_AiMain_httpService.reqData = JSON.stringify({"prompt":"Tell me a fun fact about space."});
-  this.views_actionitemviews_ai_AiMain_httpService.loadJData(this.views_actionitemviews_ai_AiMain_sUrl + 'Llama', org.apache.royale.utils.Language.closure(this.views_actionitemviews_ai_AiMain_dataLoadEventHandler, this, 'views_actionitemviews_ai_AiMain_dataLoadEventHandler'), com.model.ServiceLoader.DATA_TYPE_JSON, org.apache.royale.utils.Language.closure(this.views_actionitemviews_ai_AiMain_errorEventHander, this, 'views_actionitemviews_ai_AiMain_errorEventHander'), false);
+  this.views_actionitemviews_ai_AiMain_httpService.loadJData(this.views_actionitemviews_ai_AiMain_sUrl + 'llama', org.apache.royale.utils.Language.closure(this.views_actionitemviews_ai_AiMain_dataLoadEventHandler, this, 'views_actionitemviews_ai_AiMain_dataLoadEventHandler'), com.model.ServiceLoader.DATA_TYPE_JSON, org.apache.royale.utils.Language.closure(this.views_actionitemviews_ai_AiMain_errorEventHander, this, 'views_actionitemviews_ai_AiMain_errorEventHander'), false);
 };
 
 

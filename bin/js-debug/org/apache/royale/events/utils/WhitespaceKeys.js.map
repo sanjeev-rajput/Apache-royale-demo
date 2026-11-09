@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"WhitespaceKeys.js",
-"lineCount":43,
-"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Core/src/main/royale",
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;AAoC4B,8CAAA,KAAY,GAAG,OAAO,C;;;;;;;;AAKtB,8CAAA,GAAU,GAAG,KAAK,C;;;;;;;;AAKlB,8CAAA,KAAY,GAAG,GAAA;",
-"sources":["org/apache/royale/events/utils/WhitespaceKeys.as"],
-"names":[]
-}

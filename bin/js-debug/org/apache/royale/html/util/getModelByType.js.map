@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"getModelByType.js",
-"lineCount":27,
-"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Basic/src/main/royale",
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;0CA4BC,WAA8BA,CAAC,MAAc,EAAC,IAAU,C,CACxD,C;EACC,IAAmB,sBAAf,eAAgC,GAAG,MAA0B,C;EACjE,IAAwB,oCAArB,eAAe,CAAC,KAAK,EAAI,IAAJ,CAAQ,C;IAC/B,OAAO,eAAe,CAAC,KAAmB,C;EAE3C,OAAO,MAAM,CAAC,aAAa,CAAC,IAAI,CAAe,CAAA;",
-"sources":["org/apache/royale/html/util/getModelByType.as"],
-"names":["getModelByType"]
-}

@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"DataContainer.js",
-"lineCount":88,
-"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Jewel/src/main/royale",
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AA2EkB,qCAAhB,WAA6BA,CAAC,C,CAC9B,C;iEACQ,C;EACE,KAAA,SAAS,GAAG,qBAAqB,C;AAC3C,C;;;;;;;;;;;;0EAa8BC,CAAC,C,CAC/B,C;EACC,OAA0B,KAAA,KAAM,CAAC,UAAU,C;AAC5C,C;;;0EAI8BA,CAAC,KAAY,C,CAC3C,C;EAC6B,KAAA,KAAM,CAAC,UAAU,GAAG,KAAK,C;AACtD,C;;;;;;;;;;;4EAYsCC,CAAC,C,CACjC,C;EACI,OAA0B,KAAA,KAAM,CAAC,YAAY,C;AACjD,C;;;4EAIgCA,CAAC,KAAY,C,CAC7C,C;EACuB,KAAA,KAAM,CAAC,YAAY,GAAG,KAAK,C;AAClD,C;;;;;;;;;;;iFAW+BC,CAAC,C,CACtC,C;EACC,IAAa,kFAAT,SAAgC,GAAG,0CAAc,CAAC,IAAI,EAAC,kEAAsB,CAA2B,C;EAC5G,IAAI,SAAS,IAAI,IAAI,EAAE,C;IACtB,SAAS,GAAG,IAAI,0DAAqB,CAAC,CAAC,C;IACvC,KAAA,OAAO,CAAC,SAAS,CAAC,C;EACnB,C;EACA,OAAO,SAAS,CAAA;",
-"sources":["org/apache/royale/jewel/DataContainer.as"],
-"names":["DataContainer.DataContainer","DataContainer.labelField","DataContainer.dataProvider","DataContainer.presentationModel"]
-}

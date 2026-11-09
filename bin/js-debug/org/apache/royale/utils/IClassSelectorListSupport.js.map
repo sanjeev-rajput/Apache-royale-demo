@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"IClassSelectorListSupport.js",
-"lineCount":92,
-"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Core/src/main/royale",
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;+EAyCmBA,CAAC,IAAW,C;;;;;;;;;;;;;;;;kFAeTC,CAAC,IAAW,C;;;;;;;;;;;;;;;kFAaZC,CAAC,IAAW,EAAE,KAAa,C;;;;;;;;;;;;;;;oFAazBC,CAAC,IAAW,C;;;;;;;;;;;;;;;mFAaPC,CAAC,QAAe,EAAE,QAAA;",
-"sources":["org/apache/royale/utils/IClassSelectorListSupport.as"],
-"names":["addClass","removeClass","toggleClass","containsClass","replaceClass"]
-}

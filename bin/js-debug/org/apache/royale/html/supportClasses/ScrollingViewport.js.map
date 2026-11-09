@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ScrollingViewport.js",
-"lineCount":96,
-"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Basic/src/main/royale",
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAsEkB,uDAAhB,WAAiCA,CAAC,C,CAClC,C;mFACQ,C;AACR,C;;;;;;;;;;AAwB4B,kEAAA,cAA5B,WAA0CC,CAAC,C,CAC3C,C;EACC,KAAA,WAAW,CAAC,OAAO,CAAC,KAAK,CAAC,QAAQ,GAAG,MAAM,C;EAC3C,KAAA,gBAAgB,CAAC,CAAC,C;AACnB,C;;;;;;;;;AAOmB,kEAAA,gBAAnB,WAAmCC,CAAC,C,CACpC,C;EACC,IAAG,KAAA,OAAO,IAAI,KAAA,WAAW,EACzB,C;IACC,KAAA,WAAW,CAAC,aAAa,GAAG,GAAG,C;IAC/B,KAAA,WAAW,CAAC,YAAY,GAAG,GAAG,C;IAC9B,KAAA,WAAW,CAAC,OAAO,CAAC,KAAK,CAAC,QAAQ,GAAG,UAAU,C;EAChD,C;AAED,C;;;;;;;;;;;wGA1C0CC,CAAC,C,CAC3C,C;EACC,OAAO,KAAA,WAAW,CAAC,OAAO,CAAC,SAAS,C;AACrC,C;;;wGAC0CA,CAAC,KAAY,C,CACvD,C;EACC,KAAA,WAAW,CAAC,OAAO,CAAC,SAAS,GAAG,KAAK,C;AACtC,C;;;;;;;;;;;0GAE4CC,CAAC,C,CAC7C,C;EACC,OAAO,KAAA,WAAW,CAAC,OAAO,CAAC,UAAU,C;AACtC,C;;;0GAC4CA,CAAC,KAAY,C,CACzD,C;EACC,KAAA,WAAW,CAAC,OAAO,CAAC,UAAU,GAAG,KAAK,CAAA;",
-"sources":["org/apache/royale/html/supportClasses/ScrollingViewport.as"],
-"names":["ScrollingViewport.ScrollingViewport","ScrollingViewport.setScrollStyle","ScrollingViewport.adaptContentArea","ScrollingViewport.verticalScrollPosition","ScrollingViewport.horizontalScrollPosition"]
-}

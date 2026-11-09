@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ListSingleSelectionMouseController.js",
-"lineCount":63,
-"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Jewel/src/main/royale",
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;AAuDkB,4EAAhB,WAAkDA,CAAC,C;;;;;;;;;;AAgCjB,uFAAA,eAA5B,WAA2CC,CAAC,KAAsB,C,CACxE,C;EACoB,oCAAT,KAAA,SAAS,EAAI,yDAAJ,CAAwB,CAAE,aAAa,GAAG,IAAI,C;wHAClC,K,EAAM,C;EAClB,oCAAT,KAAA,SAAS,EAAI,yDAAJ,CAAwB,CAAE,aAAa,GAAG,KAAK,C;AACnE,C;;;;;;;;;AAMyB,uFAAA,kBAAnB,WAAqCC,CAAC,KAAW,C,CAAM,C;EACnD,oCAAiB,KAAA,OAAjB,EAAA,yCAAA,OAAyB,CAAC,aAAa,CAAC,IAAI,8BAAK,CAAC,KAAK,CAAC,IAAI,CAAC,CAAC,C;AAClE,C;;;6GA7B6BC,CAAC,KAAa,C,CACjD,C;oHACgB,K,EAAK,C;EAGpB,IAAa,oCAAT,KAAA,SAAS,EAAI,yDAAJ,CAAwB,IAAI,C,CAAuB,KAAA,SAAU,CAAC,a,CAAa,EAAG,C;IACxD,KAAA,SAAU,CAAC,UAAU,GAAoB,KAAM,C;EAClF,C,CACS,KAAK,C;IACI,KAAA,SAAU,CAAC,gBAAgB,CAAC,sBAAsB,E,yCAAE,K,+CAAkB,CAAC,C;IACvE,KAAA,SAAU,CAAC,gBAAgB,CAAC,kBAAkB,E,yCAAE,K,+CAAkB,CAAC,C;IACvD,KAAA,SAAU,CAAC,gBAAgB,CAAC,qBAAqB,E,yCAAE,K,+CAAkB,CAAC,C;EAC3F,CAAA;",
-"sources":["org/apache/royale/jewel/beads/controllers/ListSingleSelectionMouseController.as"],
-"names":["ListSingleSelectionMouseController.ListSingleSelectionMouseController","ListSingleSelectionMouseController.selectedHandler","ListSingleSelectionMouseController.modelChangeHandler","ListSingleSelectionMouseController.strand"]
-}

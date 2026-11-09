@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"EditingKeys.js",
-"lineCount":115,
-"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Core/src/main/royale",
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;AAoC4B,2CAAA,SAAgB,GAAG,WAAW,C;;;;;;;;AAK9B,2CAAA,KAAY,GAAG,OAAO,C;;;;;;;;AAKtB,2CAAA,IAAW,GAAG,MAAM,C;;;;;;;;AAKpB,2CAAA,aAAoB,GAAG,OAAO,C;;;;;;;;AAK9B,2CAAA,GAAU,GAAG,KAAK,C;;;;;;;;AAKlB,2CAAA,MAAa,GAAG,QAAQ,C;;;;;;;;AAKxB,2CAAA,SAAgB,GAAG,UAAU,C;;;;;;;;AAK7B,2CAAA,gBAAuB,GAAG,OAAO,C;;;;;;;;AAKjC,2CAAA,MAAa,GAAG,QAAQ,C;;;;;;;;AAKxB,2CAAA,KAAY,GAAG,OAAO,C;;;;;;;;AAKtB,2CAAA,IAAW,GAAG,MAAM,C;;;;;;;;AAKpB,2CAAA,IAAW,GAAG,MAAA;",
-"sources":["org/apache/royale/events/utils/EditingKeys.as"],
-"names":[]
-}

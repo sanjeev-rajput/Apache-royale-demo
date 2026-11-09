@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"TextNodeContainerBase.js",
-"lineCount":80,
-"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/HTML/src/main/royale",
-"mappings":"A;;;;;;;;;;;;;;;;;;;;AA0BwB,4CAAhB,WAAqCA,CAAC,C,CACtC,C;wEACW,C;AACX,C;;;;;;;;AAEY,uDAAAC,kDAAY,GAAG,EAAE,C;;;;;;;AA+Bf,uDAAA,QAAa,C;;;;;;;;;;;2EArBTC,CAAC,C,CACzB,C;EACU,OAAO,KAAAD,kDAAK,C;AACtB,C;;;2EACwBC,CAAC,KAAY,C,CACrC,C;EACU,KAAAD,kDAAK,GAAG,KAAK,C;EAIT,IAAG,KAAA,QAAQ,IAAI,IAAI,EACnB,C;IACI,KAAA,QAAQ,GAAG,QAAQ,CAAC,cAAc,CAAC,EAAE,CAAS,C;IAC9C,KAAA,OAAO,CAAC,WAAW,CAAC,KAAA,QAAQ,CAAC,C;EACjC,C;EAEA,KAAA,QAAQ,CAAC,SAAS,GAAG,KAAK,C;AAExC,C;;;;;;;;;;;gFAgB6BE,CAAC,C,CAC9B,C;;EAOE,OAAO,KAAA,OAAO,CAAC,SAAS,C;AAE1B,C;;;gFAC6BA,CAAC,KAAY,C,CAC1C,C;;EAQE,KAAA,OAAO,CAAC,SAAS,GAAG,KAAK,CAAA;",
-"sources":["org/apache/royale/html/TextNodeContainerBase.as"],
-"names":["TextNodeContainerBase.TextNodeContainerBase","_text","TextNodeContainerBase.text","TextNodeContainerBase.innerHTML"]
-}

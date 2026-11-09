@@ -1,9 +1,7 @@
-<j:Container xmlns:fx="http://ns.adobe.com/mxml/2009"
-             xmlns:j="library://ns.apache.org/royale/jewel"
-             xmlns:sp="library://ns.unhurdle.com/spectrum"
+<html:Div xmlns:fx="http://ns.adobe.com/mxml/2009"
+             xmlns:sp="library://ns.unhurdle.com/spectrum" xmlns:html="library://ns.apache.org/royale/html"
              width="100" height="100%" initComplete="init()">
-
-    <sp:ActionMenu text="R" alignRight="true" localId="menuR" quiet="true" change="handleChangeEvent()"/>
+    <sp:ActionMenu alignRight="true" localId="menuR" quiet="true" change="handleChangeEvent()"/>
 
     <fx:Script>
         <![CDATA[
@@ -96,4 +94,4 @@
         
         ]]>
     </fx:Script>
-</j:Container>
+</html:Div>

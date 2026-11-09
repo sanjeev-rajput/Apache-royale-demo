@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"StringItemRenderer.js",
-"lineCount":125,
-"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Jewel/src/main/royale",
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AA2DkB,wDAAhB,WAAkCA,CAAC,C,CACnC,C;oFACQ,C;EAEE,KAAA,SAAS,GAAG,mBAAmB,C;;EAWxC,KAAAC,kEAAS,GAAG,IAAI,gDAAS,CAAC,CAAC,C;EAC3B,KAAA,OAAO,CAAC,KAAAA,kEAAS,CAAC,C;AACnB,C;;;;;;;;AAEY,mEAAAA,kEAAmB,C;;;;;;;;AAwGG,mEAAA,aAA5B,WAAyCC,CAAC,C,CAC1C,C;EACL,OAAO,+CAAmB,CAAC,IAAI,EAAC,MAAM,CAAC,C;AAKlC,C;;;;;;;AAKM,mEAAAC,+EAA6C,C;;;;;;;;;;;uFA5EjCC,CAAC,C,CACzB,C;;EAOc,OAAO,IAAI,CAAC,OAAO,CAAC,WAAW,C;AAE7C,C;;;uFACwBA,CAAC,KAAY,C,CACrC,C;;EAOc,IAAI,CAAC,OAAO,CAAC,WAAW,GAAG,KAAK,C;AAE9C,C;;;;;;;;;;;wFAUyBC,CAAC,C,CAC1B,C;EACC,OAAO,KAAAJ,kEAAS,CAAC,KAAK,C;AACvB,C;;;wFACyBI,CAAC,KAAY,C,CACtC,C;EACC,KAAAJ,kEAAS,CAAC,KAAK,GAAG,KAAK,C;AACxB,C;;;uFAaiCK,CAAC,KAAY,C,CAC9C,C;8FACc,K,EAAK,C;EACT,KAAA,IAAI,GAAG,4CAAgB,CAAC,IAAI,EAAE,KAAK,CAAC,C;AAC9C,C;;;;;;;;;;;wGA8ByCC,CAAC,C,CAC1C,C;EACC,OAAO,KAAAJ,+EAAsB,C;AAC9B,C;;;wGACyCI,CAAC,KAA4B,C,CACtE,C;EACC,KAAAJ,+EAAsB,GAAG,KAAK,CAAA;",
-"sources":["org/apache/royale/jewel/itemRenderers/StringItemRenderer.as"],
-"names":["StringItemRenderer.StringItemRenderer","textAlign","StringItemRenderer.createElement","_itemRendererOwnerView","StringItemRenderer.text","StringItemRenderer.align","StringItemRenderer.data","StringItemRenderer.itemRendererOwnerView"]
-}

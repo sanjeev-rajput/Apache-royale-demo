@@ -19,10 +19,14 @@
             import views.actionitemviews.learning.AiResponse;
             import com.util.StringUtil;
             import views.actionitemviews.learning.ImportExportChat;
+            import org.apache.royale.utils.callLater;
+            import com.event.DsEvent;
+            import com.unhurdle.spectrum.BarLoader;
             
 
 
             private var httpService:ServiceLoader;
+            private var thinkingLabel:BarLoader;
             private var sUrl:String = Config.apiBaseUrl;
 
             // One conversation ID is reused for the lifetime of this chatbot.
@@ -62,6 +66,7 @@
             {
                 questionInput.disabled = true;
                 askButton.disabled = true;
+                showThinkingIndicator();
                 try{
                     httpService = new ServiceLoader();
                     httpService.reqMethod = "POST";
@@ -152,18 +157,59 @@
                 renderChatMessage(speaker, message);
             }
 
+            // Return true when the reader is already close to the bottom.
+            // This lets the chat follow new content without interrupting someone
+            // who has scrolled up to read an earlier message.
+            private function isNearBottom():Boolean
+            {
+                if (resultsContainer == null || resultsContainer.element == null)
+                    return true;
+
+                var viewport:Object = resultsContainer.element;
+
+                var remaining:Number =
+                    Number(viewport.scrollHeight) -
+                    Number(viewport.scrollTop) -
+                    Number(viewport.clientHeight);
+
+                return remaining <= 80;
+            }
+
+            // Run after the component has updated its layout.
+            private function scrollToBottom():void
+            {
+                if (resultsContainer == null || resultsContainer.element == null)
+                    return;
+
+                var viewport:Object = resultsContainer.element;
+                viewport.scrollTop = viewport.scrollHeight;
+            }
+
             private function renderChatMessage(speaker:String, message:String):void
             {
+                // Always follow a newly sent user message. For tutor messages,
+                // follow only when the reader was already near the bottom.
+                var shouldScroll:Boolean =
+                    (speaker == "You") || isNearBottom();
+
                 var label:HTMLText = new HTMLText();
                 label.percentWidth = 100;
 
                 var messageHtml:String = renderMessageHtml(message);
+                var labelColor:String = speaker == "You" ? "#DCEEFF" : "#E2F3E5";
+
                 label.html =
-                    "<b>" + StringUtil.escapeHTML(speaker) + ":</b> " +
-                    messageHtml;
+                    "<span style='background-color:" + labelColor +
+                    "; color:#222222; padding:3px 8px; border-radius:4px;'>" +
+                    "<b>" + StringUtil.escapeHTML(speaker) + ":</b>" +
+                    "</span> " +
+                messageHtml;
 
                 resultsContainer.addElement(label);
                 transcriptElements.push(label);
+
+                if (shouldScroll)
+                    callLater(scrollToBottom);
             }
 
             // Render the AI-fallback consent notice as a compact warning panel.
@@ -275,10 +321,15 @@
             {
                 if (item == null)
                     return;
+
+                var shouldScroll:Boolean = isNearBottom();
+
                 var detailsUi:AiResponse = new AiResponse();
                 detailsUi.aiResponse = item;
                 resultsContainer.addElement(detailsUi);
                 transcriptElements.push(detailsUi);
+
+                if (shouldScroll)callLater(scrollToBottom);
             }
 
             private function loadModule(item:Object):void
@@ -299,8 +350,35 @@
                 );
             }
 
+            private function showThinkingIndicator():void
+            {
+                hideThinkingIndicator();
+
+                var shouldScroll:Boolean = isNearBottom();
+
+                thinkingLabel = new BarLoader();
+                thinkingLabel.label="Thinking...";
+                thinkingLabel.showPercentage="false" 
+                thinkingLabel.small="true" 
+                thinkingLabel.indeterminate="true"
+                resultsContainer.addElement(thinkingLabel);
+
+                if (shouldScroll)callLater(scrollToBottom);
+            }
+
+            private function hideThinkingIndicator():void
+            {
+                if (thinkingLabel != null)
+                {
+                    //if (resultsContainer.contains(thinkingLabel))
+                    resultsContainer.removeElement(thinkingLabel);
+                    thinkingLabel = null;
+                }
+            }
+
             private function finishRequest():void
             {
+                hideThinkingIndicator();
                 questionInput.disabled = false;
                 askButton.disabled = false;
                 questionInput.focus();
@@ -331,6 +409,7 @@
 
             private function initializeChat():void
             {
+                document.body.classList.add("chatbot-page");
                 // Keep one stable ID for this browser-side chat session.
                 conversationId =
                     "chat-" +
@@ -344,46 +423,47 @@
                 );
             }
 
-            private function handleSelection(event:Event):void{
+            private function multiLingualSelection(event:Event):void {
                 var menu:ActionMenu = event.currentTarget as ActionMenu;
                 if (menu == null)
                     return;
-
                 var selected:String = String(menu.selectedItem.label);
-                if (selected == "Export")
-                {
-                    importExportHelper.exportChatJson(conversationId, transcriptEntries);
-                }
-                if (selected == "Import")
-                {
-                    trace("Importing JSON transcript...");
-                    importExportHelper.importJsonFile(restoreTranscript);
-                }
-                else if (selected == "Clear")
-                {
-                    restoreTranscript([]);
+                if (selected == "Multilingual Tutor") {
+                    DsEvent.instance.dispatch(DsEvent.OPEN_MULTILINGUAL_TUTOR_EVENT);
                 }
                 menu.selectedIndex = -1;
+            }
+
+            public function conversationActions():void {
+                trace("conversationActions");
+            }
+            public function disposeMe():void {
+                document.body.classList.remove("chatbot-page");
             }
         ]]>
     </fx:Script>
 
-    
-    <j:VGroup id="resultsContainer" gap="1" height="80%" width="100%">
-    <j:Label text="Learning Chatbot"/>
-    <j:Label text="What would you like to learn today?"/>
+    <j:HGroup width="100%" className="conversation-toolbar" itemsVerticalAlign="itemsCenter">
+        <sp:Button text="Import" click="importExportHelper.importJsonFile(restoreTranscript)" className="new-conversation-btn"/>
+        <sp:Button text="Export" click="importExportHelper.exportChatJson(conversationId,transcriptEntries);" className="new-conversation-btn"/>
+        <sp:Button text="Clear" click="restoreTranscript([])" className="clear-conversation-btn"/>
+        <j:Spacer/>
+        <j:Label id="selectedLang" className="language-label"/>
+    </j:HGroup>
+    <j:VGroup id="resultsContainer" height="100%" width="100%" gap="1">
+        <j:Label text="Learning Chatbot"/>
+        <j:Label text="What would you like to learn today?"/>
         <j:beads>
             <j:ScrollingViewport/>
         </j:beads>
     </j:VGroup>
-    <j:HGroup id="qryCtr" width="80%" itemsVerticalAlign="itemsCenter">
+    <j:HGroup id="qryCtr" width="80%" itemsVerticalAlign="itemsCenter" className="AiPromptContainer">
         <sp:TextField id="questionInput" placeholder="e.g. I want to learn about Alphabet" width="100%"
         onEnter="onKeyDown()"/>
         <sp:Button id="askButton" className="chatbot-text-button" text="ask"
             click="sendMessage()"/>
-        <sp:ButtonGroup vertical="true" style="align-items:flex-start;">
-            <sp:ActionMenu quiet="true" dataProvider="[Export, Import, Clear]" change="handleSelection(event)"/>
-        </sp:ButtonGroup>
+        <sp:ActionMenu quiet="true" dataProvider="[Multilingual Tutor]" change="multiLingualSelection(event)"/>
+        
     </j:HGroup>
 
     <fx:Declarations>

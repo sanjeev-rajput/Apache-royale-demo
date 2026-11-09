@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"IBorderPaddingMarginValuesImpl.js",
-"lineCount":125,
-"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Core/src/main/royale",
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;0FA6CgCA,CAAC,UAAkB,EAAE,KAAmB,C;;;;;;;;;;;;;2FAU7CC,CAAC,UAAkB,EAAE,KAAmB,C;;;;;;;;;;;;;;;4FAUjCC,CAAC,UAAkB,EAAE,SAAsB,EAAE,UAAuB,EAAE,KAAmB,C;;;;;;;;;;;;;;;;qGAWhFC,CAAC,UAAkB,EAAE,SAAsB,EAAE,UAAuB,EAAE,KAAmB,C;;;;;;;;;;;;;;;;;qFAYzGC,CAAC,UAAkB,EAAE,SAAsB,EAAE,UAAuB,EAAE,KAAmB,C;;;;;;;;;;;;;;;uFAUvFC,CAAC,UAAkB,EAAE,SAAsB,EAAE,UAAuB,EAAE,KAAmB,C;;;;;;;;;;;;;;;qGAU3EC,CAAC,UAAkB,EAAE,SAAsB,EAAE,UAAuB,EAAE,KAAA;",
-"sources":["org/apache/royale/core/IBorderPaddingMarginValuesImpl.as"],
-"names":["getBorderStyles","getBorderMetrics","getPaddingMetrics","getBorderAndPaddingMetrics","getMargins","getPositions","getBorderPaddingAndMargins"]
-}

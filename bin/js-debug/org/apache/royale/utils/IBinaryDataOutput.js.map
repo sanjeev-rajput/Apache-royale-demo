@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"IBinaryDataOutput.js",
-"lineCount":71,
-"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Core/src/main/royale",
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;8EAwB4BA,CAAC,KAAgB,EAAC,MAAe,EAAC,MAAe,C;;;;;2EAUpDC,CAAC,KAAa,C;;;;;wEACjBC,CAAC,KAAS,C;;;;;yEACTC,CAAC,KAAS,C;;;;;uEACZC,CAAC,KAAS,C;;;;;+EACFC,CAAC,KAAU,C;;;;;yEAEjBC,CAAC,KAAY,C;;;;;0EACZC,CAAC,KAAY,C;;;;;uEAEhBC,CAAC,KAAY,C;;;;;4EACRC,CAAC,KAAA;",
-"sources":["org/apache/royale/utils/IBinaryDataOutput.as"],
-"names":["writeBinaryData","writeBoolean","writeByte","writeShort","writeInt","writeUnsignedInt","writeFloat","writeDouble","writeUTF","writeUTFBytes"]
-}

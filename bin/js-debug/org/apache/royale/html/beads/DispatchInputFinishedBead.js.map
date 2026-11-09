@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"DispatchInputFinishedBead.js",
-"lineCount":82,
-"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Basic/src/main/royale",
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;AA6DmB,sDAAhB,WAAyCA,CAAC,C;;;;;;;;;AAItB,uDAAA,cAAqB,GAAG,eAAe,C;;;;;;;AAI7C,iEAAA,OAAe,C;;;;;;;;;AAwDV,iEAAA,cAAnB,WAAiCC,CAAE,KAAoB,C,CACvD,C;EACC,IAAI,KAAK,CAAC,GAAG,IAAmB,8CAAA,KAAK,EACrC,C;IACC,uCAAe,CAAC,KAAA,OAAO,EAAC,uDAAA,cAAc,CAAC,C;EACxC,C;AACD,C;;;;;;;;;AAQiB,iEAAAC,sEAAjB,WAAgCC,CAAE,KAAa,C,CAC/C,C;EACE,uCAAe,CAAC,KAAA,OAAO,EAAC,uDAAA,cAAc,CAAC,C;AACzC,C;;;;;;;;;;;uFA9D0BC,CAAC,KAAa,C,CACxC,C;EACC,KAAA,OAAO,GAAG,KAAK,C;;EAUD,YAAA,MAAM,CAAE,KAAA,OAA0B,CAAE,OAAO,EAAE,SAAS,E,yCAAE,K,uCAAc,CAAC,C;EACvE,YAAA,MAAM,CAAE,KAAA,OAA0B,CAAE,OAAO,EAAE,UAAU,E,yCAAE,K,uJAAe,CAAC,CAAA;",
-"sources":["org/apache/royale/html/beads/DispatchInputFinishedBead.as"],
-"names":["DispatchInputFinishedBead.DispatchInputFinishedBead","DispatchInputFinishedBead.keydownHandler","focusoutHandler","DispatchInputFinishedBead.focusoutHandler","DispatchInputFinishedBead.strand"]
-}

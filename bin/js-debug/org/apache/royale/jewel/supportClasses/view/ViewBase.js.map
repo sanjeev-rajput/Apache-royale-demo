@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ViewBase.js",
-"lineCount":87,
-"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Jewel/src/main/royale",
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AA8DkB,oDAAhB,WAAwBA,CAAC,C,CACzB,C;gFACQ,C;AACR,C;;;;;;;;AAEY,+DAAAC,sEAAwB,C;;;;;;;;;;;+FAYAC,CAAC,C,CACrC,C;EACC,OAAO,KAAAD,sEAAiB,C;AACzB,C;;;+FAI0CC,CAAC,KAAY,C,CACjD,C;EACI,KAAAD,sEAAiB,GAAG,KAAK,C;EACzB,iCAAS,CAAC,IAAI,EAAC,cAAc,CAAC,C;AAClC,C;;;;;;;;;;;0FAU+BE,CAAC,C,CAChC,C;EACI,OAAO,IAAI,C;AACf,C;;;;;;;;;;;wFAK6BC,CAAC,C,CAC9B,C;EACI,OAAO,IAAI,CAAA;",
-"sources":["org/apache/royale/jewel/supportClasses/view/ViewBase.as"],
-"names":["ViewBase.ViewBase","_applicationModel","ViewBase.applicationModel","ViewBase.popUpParent","ViewBase.popUpHost"]
-}

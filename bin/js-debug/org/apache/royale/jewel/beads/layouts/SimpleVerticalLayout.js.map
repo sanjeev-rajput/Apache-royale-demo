@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"SimpleVerticalLayout.js",
-"lineCount":72,
-"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Jewel/src/main/royale",
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;AAsDkB,0DAAhB,WAAoCA,CAAC,C,CACrC,C;sFACQ,C;AACR,C;;;;;;;;;AAKoB,2DAAA,iBAAwB,GAAG,iBAAiB,C;;;;;;;;;;;;;;AAavC,qEAAA,iBAAzB,WAA0CC,CAAC,KAAkB,C,CAC7D,C;EAD2C,+CAAc,IAAd,C;sGAEjB,C;EAEzB,KAAA,aAAa,CAAC,YAAY,CAAC,QAAQ,CAAC,C;EACpC,KAAA,aAAa,CAAC,YAAY,CAAC,UAAU,CAAC,C;AACvC,C;;;;;;;;;;;;;AAWyB,qEAAA,MAAzB,WAA+BC,CAAC,C,CAChC,C;;EA+FE,OAAO,IAAI,CAAA;",
-"sources":["org/apache/royale/jewel/beads/layouts/SimpleVerticalLayout.as"],
-"names":["SimpleVerticalLayout.SimpleVerticalLayout","SimpleVerticalLayout.beadsAddedHandler","SimpleVerticalLayout.layout"]
-}

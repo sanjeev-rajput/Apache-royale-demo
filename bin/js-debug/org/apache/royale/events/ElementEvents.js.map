@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ElementEvents.js",
-"lineCount":27,
-"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Core/src/main/royale",
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;AAuDsB,uCAAA,aAAoB,GAAG,CAC1C,OAAO,CAAE,CAAC,EACV,UAAU,CAAE,CAAC,EACb,QAAQ,CAAE,CAAC,EACX,OAAO,CAAE,CAAC,EACV,SAAS,CAAE,CAAC,EACZ,MAAM,CAAE,CAAC,EACT,YAAY,CAAE,CAAC,EACf,YAAY,CAAE,CAAC,EACf,WAAW,CAAE,CAAC,EACd,UAAU,CAAE,CAAC,EACb,SAAS,CAAE,CAAC,EACZ,WAAW,CAAE,CAAC,EACd,WAAW,CAAE,CAAC,EACd,UAAU,CAAE,CAAC,EACb,SAAS,CAAE,CAAC,EACZ,OAAO,CAAE,CACV,CAAA;",
-"sources":["org/apache/royale/events/ElementEvents.as"],
-"names":[]
-}

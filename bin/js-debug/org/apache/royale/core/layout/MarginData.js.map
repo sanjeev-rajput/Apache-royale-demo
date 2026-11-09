@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"MarginData.js",
-"lineCount":48,
-"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Core/src/main/royale",
-"mappings":"A;;;;;;;;;;;;;;;;;;;;AAgCqB,wCAAhB,WAA0BA,CAAC,C;;;;;;;;;;AAIZ,mDAAAC,8CAAa,C;;;;;;;;;;;uEAEDC,CAAC,C,CACzB,C;EACI,OAAO,KAAAD,8CAAK,C;AAChB,C;;;uEACwBC,CAAC,KAAa,C,CACtC,C;EACI,KAAAD,8CAAK,GAAG,KAAK,CAAA;",
-"sources":["org/apache/royale/core/layout/MarginData.as"],
-"names":["MarginData.MarginData","_auto","MarginData.auto"]
-}

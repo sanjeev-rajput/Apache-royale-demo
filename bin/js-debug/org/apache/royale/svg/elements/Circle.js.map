@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"Circle.js",
-"lineCount":86,
-"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/HTML/src/main/royale",
-"mappings":"A;;;;;;;;;;;;;;;;;;;;AAiCoB,qCAAhB,WAAsBA,CAAC,C,CACvB,C;iEACS,C;AACT,C;;;;;;;;AAC4B,gDAAA,aAA5B,WAAyCC,CAAC,C,CAAoB,C;EAC5D,OAAO,kDAAsB,CAAC,IAAI,EAAE,QAAQ,CAAC,C;AAC/C,C;;;;;;;;;;;kEACsBC,CAAC,C,CAAQ,C;EAC7B,OAAO,KAAA,OAAO,CAAC,YAAY,CAAC,IAAI,CAAC,C;AACnC,C;;;kEACsBA,CAAC,KAAY,C,CAAM,C;EACvC,KAAA,OAAO,CAAC,YAAY,CAAC,IAAI,EAAC,KAAK,CAAC,C;AAClC,C;;;;;;;;;;;kEACsBC,CAAC,C,CAAQ,C;EAC7B,OAAO,KAAA,OAAO,CAAC,YAAY,CAAC,IAAI,CAAC,C;AACnC,C;;;kEACsBA,CAAC,KAAY,C,CAAM,C;EACvC,KAAA,OAAO,CAAC,YAAY,CAAC,IAAI,EAAC,KAAK,CAAC,C;AAClC,C;;;;;;;;;;;iEACqBC,CAAC,C,CAAQ,C;EAC5B,OAAO,KAAA,OAAO,CAAC,YAAY,CAAC,GAAG,CAAC,C;AAClC,C;;;iEACqBA,CAAC,KAAY,C,CAAM,C;EACtC,KAAA,OAAO,CAAC,YAAY,CAAC,GAAG,EAAC,KAAK,CAAC,CAAA;",
-"sources":["org/apache/royale/svg/elements/Circle.as"],
-"names":["Circle.Circle","Circle.createElement","Circle.cx","Circle.cy","Circle.r"]
-}

@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"DataItemRendererFactoryBase.js",
-"lineCount":112,
-"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Basic/src/main/royale",
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAgDkB,wDAAhB,WAA2CA,CAAC,MAAkB,C,CAC9D,C;EAD4C,kDAAc,IAAd,C;qFAErC,M,CAAO,C;AACd,C;;;;;;;;;;;;;;;;;;;AAqB4B,mEAAA,yBAA5B,WAAqDC,CAAC,KAAW,C,CACjE,C;EACC,KAAA,sBAAsB,CAAC,KAAA,SAAS,CAAC,C;EAEjC,IAAG,CAAC,KAAA,iBAAiB,C;IACpB,MAAM,C;EAEP,KAAA,sBAAsB,CAAC,KAAA,SAAS,CAAC,C;EAEjC,KAAA,wBAAwB,CAAC,CAAC,C;AAC3B,C;;;;;;;;;;;AAoBmB,mEAAA,sBAAnB,WAAyCC,CAAC,SAAgC,C,CAC1E,C;EACC,IAAK,sBAAD,CAAK,GAAG,KAAA,kBAAkB,C;EAC9B,KAAK,IAAK,sBAAD,CAAK,GAAG,CAAC,EAAE,CAAC,GAAG,CAAC,EAAE,CAAC,EAAE,EAC9B,C;IACC,IAAM,sBAAF,EAAuB,GAAG,KAAA,mBAAmB,CAAC,kBAAkB,CAAC,CAAyB,C;IAE9F,SAAS,CAAC,eAAe,CAAC,EAAE,EAAE,KAAK,CAAC,C;IACpC,IAAQ,sBAAJ,IAAW,GAAG,KAAA,SAAS,CAAC,CAAC,CAAC,C;IAC7B,KAAA,uBAA0D,CAAE,6BAA6B,CAAC,EAAE,EAAE,IAAI,EAAE,CAAC,CAAC,C;IACvG,EAAE,CAAC,IAAI,GAAG,IAAI,C;EACf,C;AACD,C;;;;;;AAEmB,mEAAA,wBAAnB,WAA2CC,CAAC,C,CAC5C,C;EACC,uCAAe,CAAC,KAAA,OAAO,EAAC,cAAc,CAAC,C;AACxC,C;;;;;;;;;;4FAlEgCC,CAAC,C,CACjC,C;EACC,IAAQ,sDAAJ,IAAc,GAAyC,oCAA9B,oCAAP,KAAA,OAAO,EAAI,2CAAJ,CAAwB,CAAE,IAAI,EAAI,sCAAJ,CAAa,C;EACxE,OAAO,IAAI,CAAC,SAAS,C;AACtB,C;;;;;;;;;;oGA+BwCC,CAAC,C,CACzC,C;EACC,IAAI,CAAC,KAAA,iBAAiB,IAAI,CAAC,KAAA,iBAAiB,CAAC,YAAY,C;IACxD,OAAO,KAAK,C;EAEb,OAAO,IAAI,CAAA;",
-"sources":["org/apache/royale/html/beads/DataItemRendererFactoryBase.as"],
-"names":["DataItemRendererFactoryBase.DataItemRendererFactoryBase","DataItemRendererFactoryBase.dataProviderChangeHandler","DataItemRendererFactoryBase.createAllItemRenderers","DataItemRendererFactoryBase.dispatchItemCreatedEvent","DataItemRendererFactoryBase.dataGroup","DataItemRendererFactoryBase.dataProviderExist"]
-}

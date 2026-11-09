@@ -73,7 +73,7 @@
                 httpService.reqMethod = "POST";
                 httpService.contentType = "application/json"; 
                 httpService.reqData = JSON.stringify({ prompt: "Tell me a fun fact about space." });
-                httpService.loadJData(sUrl+'Llama', dataLoadEventHandler, ServiceLoader.DATA_TYPE_JSON, errorEventHander, false)
+                httpService.loadJData(sUrl+'llama', dataLoadEventHandler, ServiceLoader.DATA_TYPE_JSON, errorEventHander, false)
             }
 
 

@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"TextModel.js",
-"lineCount":111,
-"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Jewel/src/main/royale",
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAiDkB,8CAAhB,WAAyBA,CAAC,C;;;;;;;;;;AAId,yDAAAC,sDAAe,C;;;;;;;AAef,yDAAAC,oDAAY,C;;;;;;;AA8BZ,yDAAAC,oDAAY,C;;;;;;;;;;;+EAnCEC,CAAC,KAAa,C,CACxC,C;EACC,KAAAH,sDAAO,GAAG,KAAK,C;AAChB,C;;;;;;;;;;;6EAa8BI,CAAC,C,CAC/B,C;EACC,OAAO,KAAAH,oDAAK,C;AACb,C;;;6EAKwBG,CAAC,KAAY,C,CACrC,C;EACU,IAAI,KAAK,IAAI,IAAI,C;IACb,KAAK,GAAG,EAAE,C;EACvB,IAAI,KAAK,IAAI,KAAAH,oDAAK,EAClB,C;IACC,KAAAA,oDAAK,GAAG,KAAK,C;IACb,KAAA,aAAa,CAAC,IAAI,8BAAK,CAAC,YAAY,CAAC,CAAC,C;EACvC,C;AACD,C;;;;;;;;;;;6EAawBI,CAAC,C,CACzB,C;EACC,OAAO,KAAAH,oDAAK,C;AACb,C;;;6EAKwBG,CAAC,KAAY,C,CACrC,C;EACC,IAAI,KAAK,IAAI,KAAAH,oDAAK,EAClB,C;IACC,KAAAA,oDAAK,GAAG,KAAK,C;IACb,KAAA,aAAa,CAAC,IAAI,8BAAK,CAAC,YAAY,CAAC,CAAC,C;EACvC,CAAA;",
-"sources":["org/apache/royale/jewel/beads/models/TextModel.as"],
-"names":["TextModel.TextModel","_strand","_text","_html","TextModel.strand","TextModel.text","TextModel.html"]
-}

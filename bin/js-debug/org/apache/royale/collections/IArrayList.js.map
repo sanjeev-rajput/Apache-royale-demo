@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"IArrayList.js",
-"lineCount":134,
-"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Collections/src/main/royale",
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;qEAuEkBA,CAAC,C;;;;;;;;;;;;0EAUIC,CAAC,IAAW,C;;;;;;;;;;;qEAUjBC,CAAC,IAAW,C;;;;;;;;;;;;uEAUVC,CAAC,IAAW,EAAE,KAAS,C;;;;;;;;;;;;;;uEAWvBC,CAAC,IAAW,EAAE,KAAS,C;;;;;;;;;;;;wEAUtBC,CAAC,IAAW,C;;;;;;;;;;;;;0EAWVC,CAAC,KAAS,C;;uEAUbC,CAAC,C;;;;;;;;;;;yEAUCC,CAAC,IAAW,C;;;;;;;;;;;2EAUVC,CAAC,KAAA;",
-"sources":["org/apache/royale/collections/IArrayList.as"],
-"names":["toArray","getItemIndex","addItem","addItemAt","setItemAt","removeItem","removeItemAt","removeAll","itemUpdated","itemUpdatedAt"]
-}

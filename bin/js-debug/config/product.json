@@ -127,10 +127,22 @@
       "addx":"NA"
     },
     {
+      "label": "AI",
+      "type": "disabled",
+      "url": "NA",
+      "addx":"NA"
+    },
+    {
       "label": "AI - Chatbots",
       "type": "extui",
       "url": "na",
       "addx":"NA"
+    },
+    {
+    "label": "AI K-12 Learning",
+    "type": "extui",
+    "url": "na",
+    "addx": "NA"
     },
     {
       "label": "Auth2.0",
@@ -145,14 +157,14 @@
       "addx":"NA"
     },
     {
-    "label": "Learning Chatbot",
-    "type": "extui",
-    "url": "na",
-    "addx": "NA"
-    },
-    {
       "label": "CLEAN UI",
       "type": "clean",
+      "url": "NA",
+      "addx":"NA"
+    },
+    {
+      "label": "",
+      "type": "divider",
       "url": "NA",
       "addx":"NA"
     }

@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"Spacer.js",
-"lineCount":29,
-"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Jewel/src/main/royale",
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;AAyCkB,8BAAhB,WAAsBA,CAAC,C,CACvB,C;0DACQ,C;EAEE,KAAA,SAAS,GAAG,cAAc,CAAA;",
-"sources":["org/apache/royale/jewel/Spacer.as"],
-"names":["Spacer.Spacer"]
-}

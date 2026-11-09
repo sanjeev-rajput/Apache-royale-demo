@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"IDataOutput.js",
-"lineCount":26,
-"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Core/src/main/royale",
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;wEAgC4BA,CAAC,MAAA;",
-"sources":["org/apache/royale/utils/net/IDataOutput.as"],
-"names":["writeObject"]
-}

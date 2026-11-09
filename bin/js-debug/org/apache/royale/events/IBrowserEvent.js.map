@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"IBrowserEvent.js",
-"lineCount":23,
-"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Core/src/main/royale",
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;qEA4B0BA,CAAC,KAAA;",
-"sources":["org/apache/royale/events/IBrowserEvent.as"],
-"names":["wrapEvent"]
-}

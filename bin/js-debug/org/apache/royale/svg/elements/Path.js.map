@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"Path.js",
-"lineCount":50,
-"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/HTML/src/main/royale",
-"mappings":"A;;;;;;;;;;;;;;;;;;;;AAiCoB,mCAAhB,WAAoBA,CAAC,C,CACrB,C;+DACS,C;AACT,C;;;;;;;;AAC4B,8CAAA,aAA5B,WAAyCC,CAAC,C,CAAoB,C;EAC5D,OAAO,kDAAsB,CAAC,IAAI,EAAE,MAAM,CAAC,C;AAC7C,C;;;;;;;;;;;+DAEqBC,CAAC,C,CAAQ,C;EAC7B,OAAO,KAAA,OAAO,CAAC,YAAY,CAAC,GAAG,CAAC,C;AACjC,C;;;+DACqBA,CAAC,KAAY,C,CAAM,C;EACvC,KAAA,OAAO,CAAC,YAAY,CAAC,GAAG,EAAC,KAAK,CAAC,CAAA;",
-"sources":["org/apache/royale/svg/elements/Path.as"],
-"names":["Path.Path","Path.createElement","Path.d"]
-}

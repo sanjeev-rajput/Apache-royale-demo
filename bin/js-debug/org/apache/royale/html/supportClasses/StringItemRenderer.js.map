@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"StringItemRenderer.js",
-"lineCount":79,
-"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Basic/src/main/royale",
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAwDkB,wDAAhB,WAAkCA,CAAC,C,CACnC,C;oFACQ,C;EAEE,KAAA,SAAS,GAAG,oBAAoB,C;;AAU1C,C;;;;;;;;;AAiFyB,mEAAA,YAAnB,WAA+BC,CAAC,KAAY,C,CAC5C,C;EACI,OAAO,4CAAgB,CAAC,IAAI,EAAC,KAAK,CAAC,C;AACvC,C;;;;;;;;AAS4B,mEAAA,aAA5B,WAAyCC,CAAC,C,CAC1C,C;EACL,OAAO,+CAAmB,CAAC,IAAI,EAAC,MAAM,CAAC,C;AAKlC,C;;;;;;;;;;;uFA5DkBC,CAAC,C,CACzB,C;;EAOc,OAAO,IAAI,CAAC,OAAO,CAAC,WAAW,C;AAE7C,C;;;uFAEwBA,CAAC,KAAY,C,CACrC,C;;EAOc,IAAI,CAAC,OAAO,CAAC,WAAW,GAAG,KAAK,C;AAE9C,C;;;uFAaiCC,CAAC,KAAY,C,CAC9C,C;8FACc,K,EAAK,C;EACT,KAAA,IAAI,GAAG,KAAA,YAAY,CAAC,KAAK,CAAC,CAAA;",
-"sources":["org/apache/royale/html/supportClasses/StringItemRenderer.as"],
-"names":["StringItemRenderer.StringItemRenderer","StringItemRenderer.dataToString","StringItemRenderer.createElement","StringItemRenderer.text","StringItemRenderer.data"]
-}

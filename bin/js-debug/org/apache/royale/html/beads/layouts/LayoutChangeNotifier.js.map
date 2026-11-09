@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"LayoutChangeNotifier.js",
-"lineCount":69,
-"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Basic/src/main/royale",
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;AA4CkB,yDAAhB,WAAoCA,CAAC,C;;;;;;;;;;AAKnB,oEAAAC,gEAAQ,GAAG,SAAS,C;;;;;;;;;;;gGAWAC,CAAC,KAAY,C,CAC7C,C;EACI,KAAAD,gEAAM,GAAG,KAAK,C;AAClB,C;;;;;;;;;;;mGAY6BE,CAAC,KAAY,C,CAChD,C;EACC,IAAI,KAAAF,gEAAM,KAAK,KAAK,EACX,C;IACI,KAAAA,gEAAM,GAAG,KAAK,C;IACd,IAAW,oCAAP,KAAA,OAAO,EAAI,gCAAJ,CAAa,C;MACV,KAAA,OAAQ,CAAC,IAAI,CAAC,aAAa,CAAC,IAAI,8BAAK,CAAC,cAAc,CAAC,CAAC,C,CACpE,KAAK,C;MAChB,IAAI,KAAA,OAAO,C;QACK,uCAAe,CAAC,KAAA,OAAO,EAAE,cAAc,CAAC,C;IACzD,C;EACQ,CAAA;",
-"sources":["org/apache/royale/html/beads/layouts/LayoutChangeNotifier.as"],
-"names":["LayoutChangeNotifier.LayoutChangeNotifier","_value","LayoutChangeNotifier.initialValue","LayoutChangeNotifier.watchedProperty"]
-}

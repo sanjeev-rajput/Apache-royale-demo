@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"ResponsiveView.js",
-"lineCount":29,
-"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Jewel/src/main/royale",
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;AAiDkB,sCAAhB,WAA8BA,CAAC,C,CAC/B,C;kEACQ,C;EAEE,KAAA,SAAS,GAAG,iBAAiB,CAAA;",
-"sources":["org/apache/royale/jewel/ResponsiveView.as"],
-"names":["ResponsiveView.ResponsiveView"]
-}

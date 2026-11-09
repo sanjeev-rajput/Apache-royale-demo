@@ -8,7 +8,7 @@
  */
 
 goog.provide('views.actionitemviews.learning.LearningChatbotMain');
-/* Royale Dependency List: org.apache.royale.jewel.Label,org.apache.royale.jewel.supportClasses.scrollbar.ScrollingViewport,org.apache.royale.jewel.HGroup,com.unhurdle.spectrum.TextField,com.unhurdle.spectrum.Button,com.unhurdle.spectrum.ButtonGroup,com.unhurdle.spectrum.ActionMenu,com.model.Config,com.model.ServiceLoader,com.util.StringUtil,org.apache.royale.events.Event,org.apache.royale.events.MouseEvent,org.apache.royale.events.ValueEvent,org.apache.royale.html.HTMLText,views.ContentLoaderIframe,views.actionitemviews.learning.AiResponse,views.actionitemviews.learning.ImportExportChat,org.apache.royale.core.IChild,XML*/
+/* Royale Dependency List: org.apache.royale.jewel.HGroup,com.unhurdle.spectrum.Button,org.apache.royale.jewel.Spacer,org.apache.royale.jewel.Label,org.apache.royale.jewel.supportClasses.scrollbar.ScrollingViewport,com.unhurdle.spectrum.TextField,com.unhurdle.spectrum.ActionMenu,com.event.DsEvent,com.model.Config,com.model.ServiceLoader,com.unhurdle.spectrum.BarLoader,com.util.StringUtil,org.apache.royale.events.Event,org.apache.royale.events.MouseEvent,org.apache.royale.events.ValueEvent,org.apache.royale.html.HTMLText,org.apache.royale.utils.callLater,views.ContentLoaderIframe,views.actionitemviews.learning.AiResponse,views.actionitemviews.learning.ImportExportChat,org.apache.royale.core.IChild,XML*/
 
 goog.require('org.apache.royale.jewel.VGroup');
 
@@ -27,6 +27,42 @@ views.actionitemviews.learning.LearningChatbotMain = function() {
   this.views_actionitemviews_learning_LearningChatbotMain_importExportHelper = new views.actionitemviews.learning.ImportExportChat();
   /**
    * @private
+   * @type {org.apache.royale.jewel.HGroup}
+   */
+  this.$ID_13_4;
+  
+  /**
+   * @private
+   * @type {com.unhurdle.spectrum.Button}
+   */
+  this.$ID_13_0;
+  
+  /**
+   * @private
+   * @type {com.unhurdle.spectrum.Button}
+   */
+  this.$ID_13_1;
+  
+  /**
+   * @private
+   * @type {com.unhurdle.spectrum.Button}
+   */
+  this.$ID_13_2;
+  
+  /**
+   * @private
+   * @type {org.apache.royale.jewel.Spacer}
+   */
+  this.$ID_13_3;
+  
+  /**
+   * @private
+   * @type {org.apache.royale.jewel.Label}
+   */
+  this.selectedLang_;
+  
+  /**
+   * @private
    * @type {org.apache.royale.jewel.VGroup}
    */
   this.resultsContainer_;
@@ -35,19 +71,19 @@ views.actionitemviews.learning.LearningChatbotMain = function() {
    * @private
    * @type {org.apache.royale.jewel.Label}
    */
-  this.$ID_13_0;
+  this.$ID_13_5;
   
   /**
    * @private
    * @type {org.apache.royale.jewel.Label}
    */
-  this.$ID_13_1;
+  this.$ID_13_6;
   
   /**
    * @private
    * @type {org.apache.royale.jewel.supportClasses.scrollbar.ScrollingViewport}
    */
-  this.$ID_13_2;
+  this.$ID_13_7;
   
   /**
    * @private
@@ -69,15 +105,9 @@ views.actionitemviews.learning.LearningChatbotMain = function() {
   
   /**
    * @private
-   * @type {com.unhurdle.spectrum.ButtonGroup}
-   */
-  this.$ID_13_4;
-  
-  /**
-   * @private
    * @type {com.unhurdle.spectrum.ActionMenu}
    */
-  this.$ID_13_3;
+  this.$ID_13_8;
   
   /**
    * @private
@@ -125,6 +155,13 @@ goog.inherits(views.actionitemviews.learning.LearningChatbotMain, org.apache.roy
  * @type {com.model.ServiceLoader}
  */
 views.actionitemviews.learning.LearningChatbotMain.prototype.views_actionitemviews_learning_LearningChatbotMain_httpService = null;
+
+
+/**
+ * @private
+ * @type {com.unhurdle.spectrum.BarLoader}
+ */
+views.actionitemviews.learning.LearningChatbotMain.prototype.views_actionitemviews_learning_LearningChatbotMain_thinkingLabel = null;
 
 
 /**
@@ -183,6 +220,7 @@ views.actionitemviews.learning.LearningChatbotMain.prototype.views_actionitemvie
 views.actionitemviews.learning.LearningChatbotMain.prototype.views_actionitemviews_learning_LearningChatbotMain_sendToChat = function(message) {
   this.questionInput.disabled = true;
   this.askButton.disabled = true;
+  this.views_actionitemviews_learning_LearningChatbotMain_showThinkingIndicator();
   try {
     this.views_actionitemviews_learning_LearningChatbotMain_httpService = new com.model.ServiceLoader();
     this.views_actionitemviews_learning_LearningChatbotMain_httpService.reqMethod = "POST";
@@ -242,16 +280,44 @@ views.actionitemviews.learning.LearningChatbotMain.prototype.views_actionitemvie
 
 /**
  * @private
+ * @return {boolean}
+ */
+views.actionitemviews.learning.LearningChatbotMain.prototype.views_actionitemviews_learning_LearningChatbotMain_isNearBottom = function() {
+  if (this.resultsContainer == null || this.resultsContainer.element == null)
+    return true;
+  var /** @type {Object} */ viewport = this.resultsContainer.element;
+  var /** @type {number} */ remaining = Number(viewport["scrollHeight"]) - Number(viewport["scrollTop"]) - Number(viewport["clientHeight"]);
+  return remaining <= 80;
+};
+
+
+/**
+ * @private
+ */
+views.actionitemviews.learning.LearningChatbotMain.prototype.views_actionitemviews_learning_LearningChatbotMain_scrollToBottom = function() {
+  if (this.resultsContainer == null || this.resultsContainer.element == null)
+    return;
+  var /** @type {Object} */ viewport = this.resultsContainer.element;
+  viewport["scrollTop"] = viewport["scrollHeight"];
+};
+
+
+/**
+ * @private
  * @param {string} speaker
  * @param {string} message
  */
 views.actionitemviews.learning.LearningChatbotMain.prototype.views_actionitemviews_learning_LearningChatbotMain_renderChatMessage = function(speaker, message) {
+  var /** @type {boolean} */ shouldScroll = (speaker == "You") || this.views_actionitemviews_learning_LearningChatbotMain_isNearBottom();
   var /** @type {org.apache.royale.html.HTMLText} */ label = new org.apache.royale.html.HTMLText();
   label.percentWidth = 100;
   var /** @type {string} */ messageHtml = this.views_actionitemviews_learning_LearningChatbotMain_renderMessageHtml(message);
-  label.html = "<b>" + com.util.StringUtil.escapeHTML(speaker) + ":</b> " + messageHtml;
+  var /** @type {string} */ labelColor = speaker == "You" ? "#DCEEFF" : "#E2F3E5";
+  label.html = "<span style='background-color:" + labelColor + "; color:#222222; padding:3px 8px; border-radius:4px;'>" + "<b>" + com.util.StringUtil.escapeHTML(speaker) + ":</b>" + "</span> " + messageHtml;
   this.resultsContainer.addElement(label);
   this.views_actionitemviews_learning_LearningChatbotMain_transcriptElements.push(label);
+  if (shouldScroll)
+    org.apache.royale.utils.callLater(org.apache.royale.utils.Language.closure(this.views_actionitemviews_learning_LearningChatbotMain_scrollToBottom, this, 'views_actionitemviews_learning_LearningChatbotMain_scrollToBottom'));
 };
 
 
@@ -340,10 +406,13 @@ views.actionitemviews.learning.LearningChatbotMain.prototype.views_actionitemvie
 views.actionitemviews.learning.LearningChatbotMain.prototype.views_actionitemviews_learning_LearningChatbotMain_renderActivity = function(item) {
   if (item == null)
     return;
+  var /** @type {boolean} */ shouldScroll = this.views_actionitemviews_learning_LearningChatbotMain_isNearBottom();
   var /** @type {views.actionitemviews.learning.AiResponse} */ detailsUi = new views.actionitemviews.learning.AiResponse();
   detailsUi.aiResponse = item;
   this.resultsContainer.addElement(detailsUi);
   this.views_actionitemviews_learning_LearningChatbotMain_transcriptElements.push(detailsUi);
+  if (shouldScroll)
+    org.apache.royale.utils.callLater(org.apache.royale.utils.Language.closure(this.views_actionitemviews_learning_LearningChatbotMain_scrollToBottom, this, 'views_actionitemviews_learning_LearningChatbotMain_scrollToBottom'));
 };
 
 
@@ -363,7 +432,36 @@ views.actionitemviews.learning.LearningChatbotMain.prototype.views_actionitemvie
 /**
  * @private
  */
+views.actionitemviews.learning.LearningChatbotMain.prototype.views_actionitemviews_learning_LearningChatbotMain_showThinkingIndicator = function() {
+  this.views_actionitemviews_learning_LearningChatbotMain_hideThinkingIndicator();
+  var /** @type {boolean} */ shouldScroll = this.views_actionitemviews_learning_LearningChatbotMain_isNearBottom();
+  this.views_actionitemviews_learning_LearningChatbotMain_thinkingLabel = new com.unhurdle.spectrum.BarLoader();
+  this.views_actionitemviews_learning_LearningChatbotMain_thinkingLabel.label = "Thinking...";
+  this.views_actionitemviews_learning_LearningChatbotMain_thinkingLabel.showPercentage = !!("false");
+  this.views_actionitemviews_learning_LearningChatbotMain_thinkingLabel.small = !!("true");
+  this.views_actionitemviews_learning_LearningChatbotMain_thinkingLabel.indeterminate = !!("true");
+  this.resultsContainer.addElement(this.views_actionitemviews_learning_LearningChatbotMain_thinkingLabel);
+  if (shouldScroll)
+    org.apache.royale.utils.callLater(org.apache.royale.utils.Language.closure(this.views_actionitemviews_learning_LearningChatbotMain_scrollToBottom, this, 'views_actionitemviews_learning_LearningChatbotMain_scrollToBottom'));
+};
+
+
+/**
+ * @private
+ */
+views.actionitemviews.learning.LearningChatbotMain.prototype.views_actionitemviews_learning_LearningChatbotMain_hideThinkingIndicator = function() {
+  if (this.views_actionitemviews_learning_LearningChatbotMain_thinkingLabel != null) {
+    this.resultsContainer.removeElement(this.views_actionitemviews_learning_LearningChatbotMain_thinkingLabel);
+    this.views_actionitemviews_learning_LearningChatbotMain_thinkingLabel = null;
+  }
+};
+
+
+/**
+ * @private
+ */
 views.actionitemviews.learning.LearningChatbotMain.prototype.views_actionitemviews_learning_LearningChatbotMain_finishRequest = function() {
+  this.views_actionitemviews_learning_LearningChatbotMain_hideThinkingIndicator();
   this.questionInput.disabled = false;
   this.askButton.disabled = false;
   this.questionInput.focus();
@@ -393,6 +491,7 @@ views.actionitemviews.learning.LearningChatbotMain.prototype.views_actionitemvie
  * @private
  */
 views.actionitemviews.learning.LearningChatbotMain.prototype.views_actionitemviews_learning_LearningChatbotMain_initializeChat = function() {
+  document.body.classList.add("chatbot-page");
   this.views_actionitemviews_learning_LearningChatbotMain_conversationId = "chat-" + String(new Date().getTime()) + "-" + String(org.apache.royale.utils.Language._int(Math.random() * 1000000));
   org.apache.royale.utils.Language.trace("Learning chatbot conversationId: " + this.views_actionitemviews_learning_LearningChatbotMain_conversationId);
 };
@@ -402,21 +501,29 @@ views.actionitemviews.learning.LearningChatbotMain.prototype.views_actionitemvie
  * @private
  * @param {org.apache.royale.events.Event} event
  */
-views.actionitemviews.learning.LearningChatbotMain.prototype.views_actionitemviews_learning_LearningChatbotMain_handleSelection = function(event) {
+views.actionitemviews.learning.LearningChatbotMain.prototype.views_actionitemviews_learning_LearningChatbotMain_multiLingualSelection = function(event) {
   var /** @type {com.unhurdle.spectrum.ActionMenu} */ menu = event.currentTarget;
   if (menu == null)
     return;
   var /** @type {string} */ selected = String(menu.selectedItem["label"]);
-  if (selected == "Export") {
-    this.views_actionitemviews_learning_LearningChatbotMain_importExportHelper.exportChatJson(this.views_actionitemviews_learning_LearningChatbotMain_conversationId, this.views_actionitemviews_learning_LearningChatbotMain_transcriptEntries);
-  }
-  if (selected == "Import") {
-    org.apache.royale.utils.Language.trace("Importing JSON transcript...");
-    this.views_actionitemviews_learning_LearningChatbotMain_importExportHelper.importJsonFile(org.apache.royale.utils.Language.closure(this.views_actionitemviews_learning_LearningChatbotMain_restoreTranscript, this, 'views_actionitemviews_learning_LearningChatbotMain_restoreTranscript'));
-  } else if (selected == "Clear") {
-    this.views_actionitemviews_learning_LearningChatbotMain_restoreTranscript([]);
+  if (selected == "Multilingual Tutor") {
+    com.event.DsEvent.instance.dispatch(com.event.DsEvent.OPEN_MULTILINGUAL_TUTOR_EVENT);
   }
   menu.selectedIndex = -1;
+};
+
+
+/**
+ */
+views.actionitemviews.learning.LearningChatbotMain.prototype.conversationActions = function() {
+  org.apache.royale.utils.Language.trace("conversationActions");
+};
+
+
+/**
+ */
+views.actionitemviews.learning.LearningChatbotMain.prototype.disposeMe = function() {
+  document.body.classList.remove("chatbot-page");
 };
 
 
@@ -432,11 +539,11 @@ views.actionitemviews.learning.LearningChatbotMain.prototype.$EH_13_0 = function
 
 /**
  * @export
- * @param {org.apache.royale.events.ValueEvent} event
+ * @param {org.apache.royale.events.MouseEvent} event
  */
 views.actionitemviews.learning.LearningChatbotMain.prototype.$EH_13_1 = function(event)
 {
-  this.views_actionitemviews_learning_LearningChatbotMain_onKeyDown();
+  this.views_actionitemviews_learning_LearningChatbotMain_importExportHelper.importJsonFile(org.apache.royale.utils.Language.closure(this.views_actionitemviews_learning_LearningChatbotMain_restoreTranscript, this, 'views_actionitemviews_learning_LearningChatbotMain_restoreTranscript'));
 };
 
 
@@ -446,6 +553,36 @@ views.actionitemviews.learning.LearningChatbotMain.prototype.$EH_13_1 = function
  */
 views.actionitemviews.learning.LearningChatbotMain.prototype.$EH_13_2 = function(event)
 {
+  this.views_actionitemviews_learning_LearningChatbotMain_importExportHelper.exportChatJson(this.views_actionitemviews_learning_LearningChatbotMain_conversationId, this.views_actionitemviews_learning_LearningChatbotMain_transcriptEntries);
+};
+
+
+/**
+ * @export
+ * @param {org.apache.royale.events.MouseEvent} event
+ */
+views.actionitemviews.learning.LearningChatbotMain.prototype.$EH_13_3 = function(event)
+{
+  this.views_actionitemviews_learning_LearningChatbotMain_restoreTranscript([]);
+};
+
+
+/**
+ * @export
+ * @param {org.apache.royale.events.ValueEvent} event
+ */
+views.actionitemviews.learning.LearningChatbotMain.prototype.$EH_13_4 = function(event)
+{
+  this.views_actionitemviews_learning_LearningChatbotMain_onKeyDown();
+};
+
+
+/**
+ * @export
+ * @param {org.apache.royale.events.MouseEvent} event
+ */
+views.actionitemviews.learning.LearningChatbotMain.prototype.$EH_13_5 = function(event)
+{
   this.views_actionitemviews_learning_LearningChatbotMain_sendMessage();
 };
 
@@ -454,13 +591,26 @@ views.actionitemviews.learning.LearningChatbotMain.prototype.$EH_13_2 = function
  * @export
  * @param {org.apache.royale.events.Event} event
  */
-views.actionitemviews.learning.LearningChatbotMain.prototype.$EH_13_3 = function(event)
+views.actionitemviews.learning.LearningChatbotMain.prototype.$EH_13_6 = function(event)
 {
-  this.views_actionitemviews_learning_LearningChatbotMain_handleSelection(event);
+  this.views_actionitemviews_learning_LearningChatbotMain_multiLingualSelection(event);
 };
 
 
 Object.defineProperties(views.actionitemviews.learning.LearningChatbotMain.prototype, /** @lends {views.actionitemviews.learning.LearningChatbotMain.prototype} */ {
+  selectedLang: {
+    /** @this {views.actionitemviews.learning.LearningChatbotMain} */
+    get: function() {
+      return this.selectedLang_;
+    },
+    /** @this {views.actionitemviews.learning.LearningChatbotMain} */
+    set: function(value) {
+      if (value != this.selectedLang_) {
+        this.selectedLang_ = value;
+        this.dispatchEvent(org.apache.royale.events.ValueChangeEvent.createUpdateEvent(this, 'selectedLang', null, value));
+      }
+    }
+  },
   resultsContainer: {
     /** @this {views.actionitemviews.learning.LearningChatbotMain} */
     get: function() {
@@ -522,20 +672,105 @@ Object.defineProperties(views.actionitemviews.learning.LearningChatbotMain.proto
         var arr = views.actionitemviews.learning.LearningChatbotMain.superClass_.get__MXMLDescriptor.apply(this);
         /** @type {Array} */
         var mxmldd = [
+          org.apache.royale.jewel.HGroup,
+          4,
+          '_id',
+          true,
+          '$ID_13_4',
+          'percentWidth',
+          true,
+          100.0,
+          'className',
+          true,
+          'conversation-toolbar',
+          'itemsVerticalAlign',
+          true,
+          'itemsCenter',
+          0,
+          0,
+          [
+            com.unhurdle.spectrum.Button,
+            3,
+            '_id',
+            true,
+            '$ID_13_0',
+            'text',
+            true,
+            'Import',
+            'className',
+            true,
+            'new-conversation-btn',
+            0,
+            1,
+            'click',
+            this.$EH_13_1,
+            null,
+            com.unhurdle.spectrum.Button,
+            3,
+            '_id',
+            true,
+            '$ID_13_1',
+            'text',
+            true,
+            'Export',
+            'className',
+            true,
+            'new-conversation-btn',
+            0,
+            1,
+            'click',
+            this.$EH_13_2,
+            null,
+            com.unhurdle.spectrum.Button,
+            3,
+            '_id',
+            true,
+            '$ID_13_2',
+            'text',
+            true,
+            'Clear',
+            'className',
+            true,
+            'clear-conversation-btn',
+            0,
+            1,
+            'click',
+            this.$EH_13_3,
+            null,
+            org.apache.royale.jewel.Spacer,
+            1,
+            '_id',
+            true,
+            '$ID_13_3',
+            0,
+            0,
+            null,
+            org.apache.royale.jewel.Label,
+            2,
+            'id',
+            true,
+            'selectedLang',
+            'className',
+            true,
+            'language-label',
+            0,
+            0,
+            null
+          ],
           org.apache.royale.jewel.VGroup,
           5,
           'id',
           true,
           'resultsContainer',
-          'gap',
-          true,
-          1,
           'percentHeight',
           true,
-          80.0,
+          100.0,
           'percentWidth',
           true,
           100.0,
+          'gap',
+          true,
+          1,
           'beads',
           null,
           [
@@ -543,7 +778,7 @@ Object.defineProperties(views.actionitemviews.learning.LearningChatbotMain.proto
             1,
             '_id',
             true,
-            '$ID_13_2',
+            '$ID_13_7',
             0,
             0,
             null
@@ -555,7 +790,7 @@ Object.defineProperties(views.actionitemviews.learning.LearningChatbotMain.proto
             2,
             '_id',
             true,
-            '$ID_13_0',
+            '$ID_13_5',
             'text',
             true,
             'Learning Chatbot',
@@ -566,7 +801,7 @@ Object.defineProperties(views.actionitemviews.learning.LearningChatbotMain.proto
             2,
             '_id',
             true,
-            '$ID_13_1',
+            '$ID_13_6',
             'text',
             true,
             'What would you like to learn today?',
@@ -575,7 +810,7 @@ Object.defineProperties(views.actionitemviews.learning.LearningChatbotMain.proto
             null
           ],
           org.apache.royale.jewel.HGroup,
-          3,
+          4,
           'id',
           true,
           'qryCtr',
@@ -585,6 +820,9 @@ Object.defineProperties(views.actionitemviews.learning.LearningChatbotMain.proto
           'itemsVerticalAlign',
           true,
           'itemsCenter',
+          'className',
+          true,
+          'AiPromptContainer',
           0,
           0,
           [
@@ -602,7 +840,7 @@ Object.defineProperties(views.actionitemviews.learning.LearningChatbotMain.proto
             0,
             1,
             'onEnter',
-            this.$EH_13_1,
+            this.$EH_13_4,
             null,
             com.unhurdle.spectrum.Button,
             3,
@@ -618,39 +856,24 @@ Object.defineProperties(views.actionitemviews.learning.LearningChatbotMain.proto
             0,
             1,
             'click',
-            this.$EH_13_2,
+            this.$EH_13_5,
             null,
-            com.unhurdle.spectrum.ButtonGroup,
+            com.unhurdle.spectrum.ActionMenu,
             3,
             '_id',
             true,
-            '$ID_13_4',
-            'vertical',
+            '$ID_13_8',
+            'quiet',
             true,
             true,
-            'style',
+            'dataProvider',
             true,
-            'align-items:flex-start;',
+            ['Multilingual Tutor'],
             0,
-            0,
-            [
-              com.unhurdle.spectrum.ActionMenu,
-              3,
-              '_id',
-              true,
-              '$ID_13_3',
-              'quiet',
-              true,
-              true,
-              'dataProvider',
-              true,
-              ['Export','Import','Clear'],
-              0,
-              1,
-              'change',
-              this.$EH_13_3,
-              null
-            ]
+            1,
+            'change',
+            this.$EH_13_6,
+            null
           ]
         ];
         if (arr)
@@ -680,6 +903,7 @@ views.actionitemviews.learning.LearningChatbotMain.prototype.ROYALE_REFLECTION_I
   return {
     accessors: function () {
       return {
+        'selectedLang': { type: 'org.apache.royale.jewel.Label', access: 'readwrite', declaredBy: 'views.actionitemviews.learning.LearningChatbotMain'},
         'resultsContainer': { type: 'org.apache.royale.jewel.VGroup', access: 'readwrite', declaredBy: 'views.actionitemviews.learning.LearningChatbotMain'},
         'qryCtr': { type: 'org.apache.royale.jewel.HGroup', access: 'readwrite', declaredBy: 'views.actionitemviews.learning.LearningChatbotMain'},
         'questionInput': { type: 'com.unhurdle.spectrum.TextField', access: 'readwrite', declaredBy: 'views.actionitemviews.learning.LearningChatbotMain'},
@@ -688,6 +912,8 @@ views.actionitemviews.learning.LearningChatbotMain.prototype.ROYALE_REFLECTION_I
     },
     methods: function () {
       return {
+        'conversationActions': { type: 'void', declaredBy: 'views.actionitemviews.learning.LearningChatbotMain'},
+        'disposeMe': { type: 'void', declaredBy: 'views.actionitemviews.learning.LearningChatbotMain'},
         'LearningChatbotMain': { type: '', declaredBy: 'views.actionitemviews.learning.LearningChatbotMain'}
       };
     }

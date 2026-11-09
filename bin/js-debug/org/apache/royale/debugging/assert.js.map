@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"assert.js",
-"lineCount":24,
-"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Core/src/main/royale",
-"mappings":"A;;;;;;;;;;;;;;;;;;;kCA4BI,WAAsBA,CAAC,SAAiB,EAAC,OAAc,C,CACvD,C;;EAQQ,IAAG,IAAI,CAAC,KAAK,IAAI,CAAC,SAAS,EAC3B,C;IACI,MAAM,IAAI,KAAK,CAAC,UAAU,GAAG,OAAO,CAAC,C;EACzC,CAAA;",
-"sources":["org/apache/royale/debugging/assert.as"],
-"names":["assert"]
-}

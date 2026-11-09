@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"List.js",
-"lineCount":102,
-"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Basic/src/main/royale",
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;AA4EkB,2BAAhB,WAAoBA,CAAC,C,CACrB,C;uDACQ,C;EACE,KAAA,SAAS,IAAI,OAAO,C;AAC9B,C;;;;;;;;;;;;mEAauCC,CAAC,C,CACxC,C;EACC,OAAuB,KAAA,KAAM,CAAC,aAAa,C;AAC5C,C;;;mEAIiCA,CAAC,KAAS,C,CAC3C,C;EACiB,KAAA,KAAM,CAAC,aAAa,GAAG,KAAK,C;AAC7C,C;;;;;;;;;;;mEAWuCC,CAAC,C,CACxC,C;EACC,OAAsB,KAAA,KAAM,CAAC,aAAa,C;AAC3C,C;;;mEAIiCA,CAAC,KAAS,C,CAC3C,C;EACgB,KAAA,KAAM,CAAC,aAAa,GAAG,KAAK,C;AAC5C,C;;;;;;;;;;;+DAW6BC,CAAC,C,CAC9B,C;EACC,OAAQ,KAAA,iBAA2C,CAAE,SAAS,C;AAC/D,C;;;+DAI6BA,CAAC,KAAY,C,CAC1C,C;EACE,KAAA,iBAA2C,CAAE,SAAS,GAAG,KAAK,C;AAChE,C;;;;;;;;;;;kEAagCC,CAAC,C,CACjC,C;EACC,OAAuB,KAAA,KAAM,CAAC,YAAY,C;AAC3C,C;;;kEAIgCA,CAAC,KAAY,C,CAC7C,C;EACiB,KAAA,KAAM,CAAC,YAAY,GAAG,KAAK,CAAA;",
-"sources":["org/apache/royale/html/List.as"],
-"names":["List.List","List.selectedIndex","List.rollOverIndex","List.rowHeight","List.selectedItem"]
-}

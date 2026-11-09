@@ -83,6 +83,22 @@ com.event.DsEvent.HISTORIC_DATA = "historicStockDataEvent";
 
 
 /**
+ * @nocollapse
+ * @const
+ * @type {string}
+ */
+com.event.DsEvent.OPEN_MULTILINGUAL_TUTOR_EVENT = "openMultilingualTutorEvent";
+
+
+/**
+ * @nocollapse
+ * @const
+ * @type {string}
+ */
+com.event.DsEvent.CLOSE_MULTILINGUAL_TUTOR_EVENT = "closeMultilingualTutorEvent";
+
+
+/**
  * @private
  * @type {com.event.DsEvent}
  */

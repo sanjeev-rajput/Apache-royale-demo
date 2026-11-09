@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"IModalDisplay.js",
-"lineCount":26,
-"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Basic/src/main/royale",
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;2EA8BiBA,CAAC,MAAiB,C;;2EAClBC,CAAAA;",
-"sources":["org/apache/royale/html/beads/plugin/IModalDisplay.as"],
-"names":["show","hide"]
-}

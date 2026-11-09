@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"DataContainerBase.js",
-"lineCount":77,
-"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Basic/src/main/royale",
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAwDkB,wCAAhB,WAAiCA,CAAC,C,CAClC,C;oEACQ,C;AACR,C;;;;;;;;AAMY,mDAAAC,uDAAsB,C;;;;;;;AAKT,mDAAA,aAAzB,WAAsCC,CAAC,C,CACvC,C;EACC,IAAI,CAAC,KAAAD,uDAAc,EACnB,C;IACe,qCAAA,UAAU,CAAC,IAAI,CAAC,IAAI,CAAC,C;IACnC,KAAAA,uDAAc,GAAG,IAAI,C;EACtB,C;gFAEqB,C;EAErB,iCAAS,CAAC,IAAI,EAAC,cAAc,CAAC,C;AAC/B,C;;;;;;;AAyBY,mDAAAE,sDAAsB,GAAG,IAAI,C;;;;;;;;;;;+EAUTC,CAAC,C,CACjC,C;EACC,OAAO,KAAAD,sDAAa,C;AACrB,C;;;+EACgCC,CAAC,KAAc,C,CAC/C,C;EACC,KAAAD,sDAAa,GAAG,KAAK,CAAA;",
-"sources":["org/apache/royale/core/DataContainerBase.as"],
-"names":["DataContainerBase.DataContainerBase","_DCinitialized","DataContainerBase.addedToParent","_itemRenderer","DataContainerBase.itemRenderer"]
-}

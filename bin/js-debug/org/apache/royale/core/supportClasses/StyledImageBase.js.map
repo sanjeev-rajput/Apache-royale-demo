@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"StyledImageBase.js",
-"lineCount":69,
-"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Basic/src/main/royale",
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAgDkB,qDAAhB,WAA+BA,CAAC,C,CAChC,C;iFACQ,C;AACR,C;;;;;;;AA+BgB,gEAAA,cAAhB,WAA8BC,CAAC,kBAAyB,C,CACxD,C;AAEA,C;;;;;;;;;;;mFAvBuBC,CAAC,C,CACxB,C;EACC,OAAQ,KAAA,KAAoB,CAAE,GAAG,C;AAClC,C;;;mFAIuBA,CAAC,KAAY,C,CACpC,C;EACE,KAAA,KAAoB,CAAE,GAAG,GAAG,KAAK,C;AACnC,C;;;;;;;;;;;4FAGgCC,CAAC,C,CACjC,C;EACC,OAAO,IAAI,CAAA;",
-"sources":["org/apache/royale/core/supportClasses/StyledImageBase.as"],
-"names":["StyledImageBase.StyledImageBase","StyledImageBase.applyImageData","StyledImageBase.src","StyledImageBase.imageElement"]
-}

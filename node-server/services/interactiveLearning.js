@@ -48,29 +48,24 @@ function parseJson(text) {
   return JSON.parse(cleaned);
 }
 
-async function askOllama({ model, url, messages, temperature = 0.3, maxTokens = 350 }) {
-  const response = await fetch(url, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({
-      model,
-      stream: false,
-      // Qwen 3.5 may put reasoning in message.thinking and leave content empty.
-      // Disable thinking for structured quiz generation and answer evaluation.
-      think: false,
-      format: "json",
-      options: { temperature, num_predict: maxTokens },
-      messages
-    }),
-    signal: AbortSignal.timeout(60000)
-  });
-  if (!response.ok) throw new Error(`Ollama practice request failed: ${response.status}`);
-  const data = await response.json();
-  const content = data.message?.content;
-  if (typeof content !== "string" || !content.trim()) {
-    throw new Error("Ollama returned an empty practice response");
+async function askLlm({ generateStructuredResponse, messages, temperature = 0.3, maxTokens = 350 }) {
+  if (typeof generateStructuredResponse !== "function") {
+    throw new Error("No structured-response provider was supplied to interactive practice.");
   }
-  return parseJson(content);
+
+  const systemPrompt = messages.find(item => item.role === "system")?.content || "";
+  const userMessage = messages.find(item => item.role === "user")?.content || "{}";
+  let userPayload;
+  try { userPayload = JSON.parse(userMessage); }
+  catch { userPayload = { message: userMessage }; }
+
+  return generateStructuredResponse({
+    systemPrompt,
+    userPayload,
+    temperature,
+    maxTokens,
+    timeoutMs: 60000
+  });
 }
 
 function validateDeterministicAnswer(question, options, answer, explanation, topic) {
@@ -101,7 +96,7 @@ function validateDeterministicAnswer(question, options, answer, explanation, top
 }
 
 async function generateQuestion(session, config) {
-  const result = await askOllama({
+  const result = await askLlm({
     ...config,
     temperature: 0.5,
     maxTokens: 400,
@@ -123,7 +118,7 @@ async function generateQuestion(session, config) {
   let answer = String(result.answer || "").trim();
   let explanation = String(result.explanation || "").trim();
   if (!question || options.length !== 3 || !answer || !options.some(option => normalize(option) === normalize(answer))) {
-    throw new Error("Ollama returned an invalid practice question");
+    throw new Error("AI provider returned an invalid practice question");
   }
 
   const validated = validateDeterministicAnswer(question, options, answer, explanation, session.topic);
@@ -165,10 +160,10 @@ async function evaluateAnswer(session, message, config) {
   let correct = normalize(selected) === normalize(current.answer);
   let feedback = correct ? "Well done! That's correct! 🎉" : "Not quite! That's okay—let's learn together.";
 
-  // Ask Ollama to recognize equivalent wording for free-text answers.
+  // Ask the configured AI provider to recognize equivalent wording for free-text answers.
   if (!optionMatch && !correct) {
     try {
-      const result = await askOllama({
+      const result = await askLlm({
         ...config,
         temperature: 0,
         maxTokens: 180,
@@ -192,7 +187,7 @@ async function evaluateAnswer(session, message, config) {
       if (typeof result.correct === "boolean") correct = result.correct;
       if (typeof result.feedback === "string" && result.feedback.trim()) feedback = result.feedback.trim();
     } catch (error) {
-      console.error("Ollama answer evaluation failed:", error.message);
+      console.error("AI answer evaluation failed:", error.message);
     }
   }
 
@@ -228,15 +223,14 @@ export async function handlePracticeMessage({
   conversationId,
   message,
   context = {},
-  model = "qwen2.5:3b-instruct",
-  url = "http://localhost:11434/api/chat"
+  generateStructuredResponse
 }) {
   const id = String(conversationId || "").trim();
   if (!id) return null;
 
   const text = normalize(message);
   const existing = sessions.get(id);
-  const config = { model, url };
+  const config = { generateStructuredResponse };
 
   if (/\b(stop quiz|end quiz|stop practice|end practice|quit quiz|cancel quiz)\b/.test(text)) {
     if (!existing) return null;

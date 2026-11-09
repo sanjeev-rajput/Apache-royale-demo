@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"splitAndTrim.js",
-"lineCount":45,
-"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Core/src/main/royale",
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2CAqCI,WAA4BA,CAAC,KAAY,EAAE,SAAgB,C,CAC3D,C;EACI,IAAI,KAAK,IAAI,EAAE,IAAI,KAAK,IAAI,IAAI,EAChC,C;IACI,IAAS,qBAAL,KAAW,GAAG,KAAK,CAAC,KAAK,CAAC,SAAS,CAAC,C;IAExC,IAAO,sBAAH,GAAO,G,CAAG,KAAK,CAAC,M,MAAM,C;IAC1B,KAAK,IAAK,sBAAD,CAAK,GAAG,CAAC,EAAE,CAAC,GAAG,GAAG,EAAE,CAAC,EAAE,EAChC,C;MACI,KAAK,CAAC,CAAC,CAAC,GAAG,mCAAI,C,wCAAC,KAAK,CAAC,CAAC,C,CAAC,CAAC,C;IAC7B,C;IACA,OAAO,KAAK,C;EAChB,C;EAEA,OAAO,CAAC,CAAC,CAAA;",
-"sources":["org/apache/royale/utils/string/splitAndTrim.as"],
-"names":["splitAndTrim"]
-}

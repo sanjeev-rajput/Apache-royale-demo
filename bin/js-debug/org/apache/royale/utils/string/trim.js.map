@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"trim.js",
-"lineCount":29,
-"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Core/src/main/royale",
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;mCA6BI,WAAoBA,CAAC,GAAU,C,CAC/B,C;EACI,kCAAM,CAAC,GAAG,IAAI,IAAI,EAAC,iCAAiC,CAAC,C;;EAoBjD,OAAO,GAAG,CAAC,IAAI,CAAC,CAAC,CAAA;",
-"sources":["org/apache/royale/utils/string/trim.as"],
-"names":["trim"]
-}

@@ -26,10 +26,11 @@
             import views.actionitemviews.pexels.PexelVideoStreamMain;
             
             import views.actionitemviews.reactandroyale.ReactAndRoyale;
-            import views.actionitemviews.localstorage.LocalStorageMain;
-            import views.actionitemviews.googleauth.GoogleAuthLogin;
             import views.actionitemviews.learning.LearningChatbotMain;
+            import views.actionitemviews.multilingual.MultilingualTutorMain;
             private var mgmtObj:Array = new Array();
+            private var learningChatbot:LearningChatbotMain;
+            private var multilingualTutor:MultilingualTutorMain;
                         
             private function initComplete():void {
                 var t:Toast = new Toast();
@@ -43,6 +44,8 @@
                 DsEvent.instance.addEventListener(DsEvent.FETCH_DATA_EVENT, fetchDataEventHandler);
                 DsEvent.instance.addEventListener(DsEvent.CLEAR_UI_EVENT, clearUi);
                 DsEvent.instance.addEventListener(DsEvent.UI_COMPONENT_EVENT, addUiComponent);
+                DsEvent.instance.addEventListener(DsEvent.OPEN_MULTILINGUAL_TUTOR_EVENT,openMultilingualTutor);
+                DsEvent.instance.addEventListener(DsEvent.CLOSE_MULTILINGUAL_TUTOR_EVENT,closeMultilingualTutor);
 
             }
 
@@ -59,13 +62,13 @@
                     clearUi();
                     var tocPg:TocAndPgnation = new TocAndPgnation(vg, pgNationCtr);
                     tocPg.loadAndUpdateAccData(obj);
-                    title.text = obj.data.title;
+                    title.html = obj.data.title;
             }
 
             private function addUiComponent(obj:Object):void{
                 clearUi();
-                //var drawingComp:DrawingCanvasComponent = new DrawingCanvasComponent();
                 var compName:String = obj.data.title;
+                title.html = compName;
                 var uiComp:Group;
                 if(compName == 'Basic Drawing'){
                     uiComp = new BasicDrawingMain();
@@ -123,12 +126,13 @@
                     vg.addElement(uiComp);
                     return;
                 }
-
-                if (compName == 'Learning Chatbot') {
-                    uiComp = new LearningChatbotMain();
+                if (compName == 'AI K-12 Learning') {
+                    learningChatbot = new LearningChatbotMain();
+                    uiComp = learningChatbot;
                     vg.addElement(uiComp);
+                    mgmtObj.push(uiComp);
                     return;
-            }
+                }
                 // if(compName == 'Auth2.0'){
                 //     uiComp = new GoogleAuthLogin();
                 //     vg.addElement(uiComp);
@@ -140,21 +144,54 @@
                 
             }
 
+            private function openMultilingualTutor(obj:Object):void {
+
+                // Avoid creating duplicate instances.
+                if (multilingualTutor != null)
+                    return;
+
+                if (learningChatbot == null)
+                    return;
+
+                // Preserve the existing chatbot instance.
+                learningChatbot.visible = false;
+                multilingualTutor = new MultilingualTutorMain();
+                vg.addElement(multilingualTutor);
+                title.html = "Multilingual Tutor";
+            }
+
+            private function closeMultilingualTutor(obj:Object):void {
+                if (multilingualTutor != null) {
+                    vg.removeElement(multilingualTutor);
+                    multilingualTutor = null;
+                }
+                // Restore the original AI Learning component.
+                if (learningChatbot != null) learningChatbot.visible = true;
+                
+                title.html = "AI K-12 Learning";
+            }
+
             private function clearUi():void{
+                if (multilingualTutor != null) {
+                    multilingualTutor.disposeMe();
+                    multilingualTutor = null;
+                }
+                learningChatbot = null;
+
                 while(vg.numElements>0){
                     vg.removeElement(vg.getElementAt(0));
                 }
                 while (pgNationCtr.numElements > 0) {
                     pgNationCtr.removeElement(pgNationCtr.getElementAt(0));
                 }
-                title.text = "Make an action using 'L' and 'R' menu";
+                title.html = "Use &#8226;&#8226;&#8226; icon to access menu";
                 if(mgmtObj.length>0){
                     for each(var i:Object in mgmtObj){
                         if(i is Game) Game(i).disposeMe();
                         if(i is StockSocketMain) StockSocketMain(i).disposeMe();
                         if(i is CollaborationMain) CollaborationMain(i).disposeMe();
                         if(i is WikiSocketMain) WikiSocketMain(i).disposeMe();
-                        //if(i is pexelsVideoStream) pexelsVideoStream(i).disposeMe();
+                        if (i is LearningChatbotMain)LearningChatbotMain(i).disposeMe();
                     }
                     mgmtObj = new Array();
                 }
@@ -166,15 +203,15 @@
         <j:VGroup percentWidth="100" itemsVerticalAlign="itemsCenter" itemsHorizontalAlign="itemsCenter">
         <j:HGroup percentWidth="100" className="actionHgroup"
         itemsVerticalAlign="itemsCenter" itemsHorizontalAlign="itemsSpaceAround" height="40">
-            <views:TopMenuL  width="50"/>
-            <j:Label id="title" text="Make an action using 'L' and 'R' menu"/>
-            <views:TopMenuR width="50" />
+            <views:TopMenuL  width="50" style="bottom:50px"/>
+            <j:Label html="Use &#8226;&#8226;&#8226; icon to access menu" id="title" />
+            <views:TopMenuR width="50"/>
         </j:HGroup>
-            <j:FooterBar percentWidth="100" x="0" localId="footerUi" className="footerBarText">
-                <j:HGroup localId="pgNationCtr" itemsHorizontalAlign="itemsSpaceAround" itemsVerticalAlign="itemsCenter" 
-                className="paginatiocontainer"/>
-                <sp:Label x="0" id="copyRightLbl" percentWidth="100" text="Copyright © 2022 - 2024 All rights reserved. " />
-            </j:FooterBar>
+        <j:FooterBar percentWidth="100" x="0" localId="footerUi" className="footerBarText">
+            <j:HGroup localId="pgNationCtr" itemsHorizontalAlign="itemsSpaceAround" itemsVerticalAlign="itemsCenter" 
+            className="paginatiocontainer"/>
+            <sp:Label x="0" id="copyRightLbl" percentWidth="100" text="Copyright © 2022 - 2024 All rights reserved. " />
+        </j:FooterBar>
         <j:Container localId="vg" percentWidth="100" percentHeight="100">
         <!-- <actionitemviews:Socket/> -->
             <sp:ImageAsset src="img/apache-royale-logo.png" className="royale-logo" />

@@ -12,17 +12,15 @@ import {
   isAiFeatureEnabled
 } from "../services/learningLanguageConfig.js";
 import { analyzeMisconception } from "../services/misconceptionDetector.js";
-import { createOllamaJsonGenerator } from "../services/ollamaJsonAdapter.js";
+import { generateText, generateStructuredResponse, getLlmConfig } from "../services/llmProvider.js";
 
 dotenv.config();
 
 const router = express.Router();
 
-// Local Ollama model used for learning-intent recognition.
-const OLLAMA_MODEL = process.env.OLLAMA_MODEL || "qwen2.5:3b-instruct";
-const OLLAMA_URL =
-  process.env.OLLAMA_URL || "http://localhost:11434/api/chat";
-const OLLAMA_ENABLED = process.env.OLLAMA_ENABLED !== "false";
+// Select the AI provider in one place with AI_PROVIDER=ollama or AI_PROVIDER=openrouter.
+const AI_ENABLED = process.env.AI_ENABLED !== "false";
+const { provider: AI_PROVIDER, model: AI_MODEL } = getLlmConfig();
 
 // Short-lived conversation history for AI explanations.
 const aiConversations = new Map();
@@ -35,14 +33,6 @@ const DIAGNOSTIC_SESSION_TTL_MS = 30 * 60 * 1000;
 // deployment can move this state to Redis or another shared session store.
 const pendingMisconceptionChecks = new Map();
 
-const generateStructuredResponse = createOllamaJsonGenerator({
-  model: OLLAMA_MODEL,
-  url: OLLAMA_URL,
-  temperature: 0,
-  maxTokens: 450,
-  timeoutMs: 60000,
-  think: false
-});
 
 // Identify messages that ask for an explanation or educational answer.
 function isEducationalQuestion(message) {
@@ -138,31 +128,12 @@ ${context || "No specific topic or class is selected."}
     { role: "user", content: message }
   ];
 
-  const response = await fetch(OLLAMA_URL, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({
-      model: OLLAMA_MODEL,
-      stream: false,
-      // Qwen 3.5 enables thinking by default. Disable it for this
-      // user-facing explanation request so the answer is returned in content.
-      think: false,
-      options: { temperature: 0.4, num_predict: 500 },
-      messages
-    }),
-    signal: AbortSignal.timeout(60000)
+  const reply = await generateText({
+    messages,
+    temperature: 0.4,
+    maxTokens: 500,
+    timeoutMs: 60000
   });
-
-  if (!response.ok) {
-    throw new Error(`Ollama explanation request failed: ${response.status}`);
-  }
-
-  const data = await response.json();
-  const reply = data.message?.content;
-
-  if (typeof reply !== "string" || !reply.trim()) {
-    throw new Error("Ollama returned an empty explanation");
-  }
 
   const updatedHistory = [
     ...history,
@@ -176,47 +147,19 @@ ${context || "No specific topic or class is selected."}
 }
 
 
-// Ask the local Ollama model to interpret the student's wording, not to invent catalog results.
+// Ask the configured AI provider to interpret the student's wording, not to invent catalog results.
 async function recognizeLearningIntent(message) {
   const catalog = getLearningCatalog();
   const topics = [...new Set(catalog.map(item => item.topic).filter(Boolean))];
   const subtopics = [...new Set(catalog.map(item => item.subtopic).filter(Boolean))];
 
-  const response = await fetch(OLLAMA_URL, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({
-      model: OLLAMA_MODEL,
-      stream: false,
-      // Keep intent recognition consistent with the Qwen 3.5 JSON adapter.
-      think: false,
-      format: "json",
-      options: { temperature: 0 },
-      messages: [
-        {
-          role: "system",
-          content: `Interpret a student's learning request. Return a JSON object with keys intent, topic, subtopic, grade. Use intent="learn" for a request to learn/find activities, otherwise intent="other". Choose topic/subtopic only from these catalog values; if none fits, use empty strings. Grade must be Nursery or Class 1 through Class 12, or empty. Do not invent catalog entries.\nCatalog topics: ${JSON.stringify(topics)}\nCatalog subtopics: ${JSON.stringify(subtopics)}\nExample: {"intent":"learn","topic":"Grammar","subtopic":"Nouns","grade":"Class 1"}`
-        },
-        { role: "user", content: message }
-      ]
-    }),
-    signal: AbortSignal.timeout(30000)
+  const parsed = await generateStructuredResponse({
+    systemPrompt: `Interpret a student's learning request. Return a JSON object with keys intent, topic, subtopic, grade. Use intent="learn" for a request to learn/find activities, otherwise intent="other". Choose topic/subtopic only from these catalog values; if none fits, use empty strings. Grade must be Nursery or Class 1 through Class 12, or empty. Do not invent catalog entries.\nCatalog topics: ${JSON.stringify(topics)}\nCatalog subtopics: ${JSON.stringify(subtopics)}\nExample: {"intent":"learn","topic":"Grammar","subtopic":"Nouns","grade":"Class 1"}`,
+    userPayload: { message },
+    temperature: 0,
+    maxTokens: 350,
+    timeoutMs: 30000
   });
-
-  if (!response.ok) {
-    throw new Error(`Ollama intent request failed: ${response.status}`);
-  }
-
-  const data = await response.json();
-  const raw = data.message?.content;
-  if (typeof raw !== "string" || !raw.trim()) {
-    throw new Error("Ollama returned an empty intent response");
-  }
-
-  const cleaned = raw.trim()
-    .replace(/^```(?:json)?\s*/i, "")
-    .replace(/\s*```$/, "");
-  const parsed = JSON.parse(cleaned);
 
   return {
     intent: parsed.intent === "learn" ? "learn" : "other",
@@ -363,7 +306,7 @@ async function handlePendingMisconceptionAnswer({ conversationKey, conversationI
         followUpCount: result.nextFollowUpCount,
         remainingFollowUps: Math.max(0, result.maxFollowUpQuestions - result.nextFollowUpCount)
       },
-      llm: { enabled: true, explanationProvider: "ollama", explanationModel: OLLAMA_MODEL, mode: "misconception_diagnostic" }
+      llm: { enabled: true, explanationProvider: AI_PROVIDER, explanationModel: AI_MODEL, mode: "misconception_diagnostic" }
     };
   }
 
@@ -385,9 +328,11 @@ async function handlePendingMisconceptionAnswer({ conversationKey, conversationI
       evidence: result.evidence,
       followUpCount: result.followUpCount
     },
-    llm: { enabled: true, explanationProvider: "ollama", explanationModel: OLLAMA_MODEL, mode: "misconception_diagnostic" }
+    llm: { enabled: true, explanationProvider: AI_PROVIDER, explanationModel: AI_MODEL, mode: "misconception_diagnostic" }
   };
 }
+
+
 
 // POST /api/chat
 router.post("/", async (req, res) => {
@@ -406,7 +351,7 @@ router.post("/", async (req, res) => {
 
     const conversationKey = String(conversationId || "").trim();
 
-    if (conversationKey && OLLAMA_ENABLED &&
+    if (conversationKey && AI_ENABLED &&
         isAiFeatureEnabled("misconceptionDetection", "normalChat")) {
       try {
         const diagnosticReply = await handlePendingMisconceptionAnswer({
@@ -437,10 +382,10 @@ router.post("/", async (req, res) => {
       if (consent === "yes") {
         pendingAiExplanations.delete(conversationKey);
 
-        if (!OLLAMA_ENABLED) {
+        if (!AI_ENABLED) {
           return res.json({
             conversationId,
-            reply: "AI explanations are currently unavailable because the local AI service is disabled. You can still explore activities in the learning catalog.",
+            reply: "AI explanations are currently unavailable because the AI service is disabled. You can still explore activities in the learning catalog.",
             intent: "ai_fallback_unavailable",
             topic: pendingExplanation.topic,
             subtopic: "",
@@ -473,8 +418,8 @@ router.post("/", async (req, res) => {
               enabled: true,
               intentProvider: null,
               intentModel: null,
-              explanationProvider: "ollama",
-              explanationModel: OLLAMA_MODEL,
+              explanationProvider: AI_PROVIDER,
+              explanationModel: AI_MODEL,
               mode: "consented_ai_fallback"
             }
           });
@@ -501,7 +446,7 @@ router.post("/", async (req, res) => {
           grade: pendingExplanation.grade || "",
           waitingForGrade: false,
           results: [],
-          llm: { enabled: OLLAMA_ENABLED, mode: "ai_fallback_declined" }
+          llm: { enabled: AI_ENABLED, mode: "ai_fallback_declined" }
         });
       }
 
@@ -510,14 +455,13 @@ router.post("/", async (req, res) => {
     }
 
     // Interactive practice is handled separately from catalog search and tutoring chat.
-    if (OLLAMA_ENABLED) {
+    if (AI_ENABLED) {
       try {
         const practiceResult = await handlePracticeMessage({
           conversationId,
           message,
           context: getLearningConversationContext(conversationId),
-          model: OLLAMA_MODEL,
-          url: OLLAMA_URL
+          generateStructuredResponse
         });
         if (practiceResult?.handled) {
           return res.json({
@@ -533,9 +477,9 @@ router.post("/", async (req, res) => {
               enabled: true,
               intentProvider: null,
               intentModel: null,
-              explanationProvider: "ollama",
-              explanationModel: OLLAMA_MODEL,
-              mode: "local_interactive_practice"
+              explanationProvider: AI_PROVIDER,
+              explanationModel: AI_MODEL,
+              mode: "provider_interactive_practice"
             }
           });
         }
@@ -547,7 +491,7 @@ router.post("/", async (req, res) => {
       }
     }
 
-    // Prefer SME-configured intent rules. Use Ollama only when no configured
+    // Prefer SME-configured intent rules. Use the configured AI provider only when no configured
     // rule matches, so common intents can be maintained without code changes.
     let aiIntent = null;
     let configuredIntent = null;
@@ -567,11 +511,11 @@ router.post("/", async (req, res) => {
         subtopic: "",
         grade: ""
       };
-    } else if (OLLAMA_ENABLED) {
+    } else if (AI_ENABLED) {
       try {
         aiIntent = await recognizeLearningIntent(message);
       } catch (error) {
-        console.error("Local AI intent recognition failed:", error.message);
+        console.error("AI intent recognition failed:", error.message);
       }
     }
 
@@ -588,7 +532,7 @@ router.post("/", async (req, res) => {
     const body = { ...result.body };
 
     // If a learning request has no catalog activity, ask permission before
-    // using Ollama as a fallback. Do not invent activities or URLs.
+    // using the configured AI provider as a fallback. Do not invent activities or URLs.
     const requestedTopic = body.subtopic || body.topic || extractRequestedTopic(message);
     if (
       isAiFallbackEnabled() &&
@@ -613,7 +557,7 @@ router.post("/", async (req, res) => {
       return res.json({
         ...body,
         llm: {
-          enabled: OLLAMA_ENABLED,
+          enabled: AI_ENABLED,
           intentProvider: null,
           intentModel: null,
           explanationProvider: null,
@@ -623,8 +567,8 @@ router.post("/", async (req, res) => {
       });
     }
 
-    // Use local Ollama for educational explanations, not for catalog routing.
-    if (OLLAMA_ENABLED && isEducationalQuestion(message)) {
+    // Use the configured AI provider for educational explanations, not for catalog routing.
+    if (AI_ENABLED && isEducationalQuestion(message)) {
       try {
         const explanation = await generateExplanation({
           conversationId,
@@ -676,18 +620,18 @@ router.post("/", async (req, res) => {
     return res.json({
       ...body,
       llm: {
-        enabled: OLLAMA_ENABLED,
-        intentProvider: OLLAMA_ENABLED ? "ollama" : null,
-        intentModel: OLLAMA_ENABLED ? OLLAMA_MODEL : null,
-        explanationProvider: OLLAMA_ENABLED && isEducationalQuestion(message)
-          ? "ollama" : null,
-        explanationModel: OLLAMA_ENABLED && isEducationalQuestion(message)
-          ? OLLAMA_MODEL : null,
-        mode: OLLAMA_ENABLED && isEducationalQuestion(message)
-          ? "local_intent_and_explanation"
+        enabled: AI_ENABLED,
+        intentProvider: AI_ENABLED ? AI_PROVIDER : null,
+        intentModel: AI_ENABLED ? AI_MODEL : null,
+        explanationProvider: AI_ENABLED && isEducationalQuestion(message)
+          ? AI_PROVIDER : null,
+        explanationModel: AI_ENABLED && isEducationalQuestion(message)
+          ? AI_MODEL : null,
+        mode: AI_ENABLED && isEducationalQuestion(message)
+          ? "provider_intent_and_explanation"
           : aiIntent?.intent === "learn"
-            ? "local_intent_and_catalog"
-            : OLLAMA_ENABLED ? "local_intent" : "not_used"
+            ? "provider_intent_and_catalog"
+            : AI_ENABLED ? "provider_intent" : "not_used"
       }
     });
   } catch (error) {
@@ -698,5 +642,6 @@ router.post("/", async (req, res) => {
     });
   }
 });
+console.log("CHAT API HIT - AI_PROVIDER:", process.env.AI_PROVIDER);
 
 export default router;

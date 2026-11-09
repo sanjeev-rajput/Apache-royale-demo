@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"loadBeadFromValuesManager.js",
-"lineCount":44,
-"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Core/src/main/royale",
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;iDAoCC,WAAyCA,CAAC,gBAAsB,EAAE,oBAA2B,EAAE,MAAc,C,CAC7G,C;EACC,IAAU,sBAAN,MAAY,GAAG,MAAM,CAAC,aAAa,CAAC,gBAAgB,CAAC,C;EACzD,IAAI,CAAC,MAAM,EACX,C;IACC,IAAK,sBAAD,CAAO,G,6BAAiB,qCAAA,UAAU,CAAC,QAAQ,CAAC,MAAM,EAAE,oBAAoB,C,CAAU,C;IACtF,IAAI,CAAC,EACL,C;MAGiB,IAAK,wBAAD,CAAU,G,0BAAG,C,CAAa,C;MAC9B,MAAM,GAAG,IAAI,CAAC,CAAC,CAAU,C;;MAMzC,IAAI,MAAM,C;QACT,MAAM,CAAC,OAAO,CAAC,MAAM,CAAC,C;IACxB,C;EACD,C;EACA,OAAO,MAAM,CAAA;",
-"sources":["org/apache/royale/utils/loadBeadFromValuesManager.as"],
-"names":["loadBeadFromValuesManager"]
-}

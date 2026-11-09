@@ -1,9 +1,0 @@
-{
-"version":3,
-"file":"Strand.js",
-"lineCount":128,
-"sourceRoot":"file:///e:/softwares/apache-royale-0.9.12-bin-js/royale-asjs/frameworks/projects/Core/src/main/royale",
-"mappings":"A;;;;;;;;;;;;;;;;;;;;;;;;;;;;AA4CkB,6BAAhB,WAAsBA,CAAC,C,CACvB,C;yDACQ,C;AACR,C;;;;;;;;AAEY,wCAAAC,iCAAU,C;;;;;;AAqCX,wCAAA,KAAW,C;;;;;;;AAEV,wCAAAC,oCAAqB,C;;;;;;;;;;;;AAUjB,wCAAA,OAAhB,WAAuBC,CAAC,IAAU,C,CAClC,C;EACC,IAAI,CAAC,KAAAD,oCAAM,C;IACV,KAAAA,oCAAM,G,EAAqB,C;EAC5B,KAAAA,oCAAM,CAAC,IAAI,CAAC,IAAI,CAAC,C;EACjB,IAAI,CAAC,MAAM,GAAG,IAAI,C;AACnB,C;;;;;;;;;;;;;AAUgB,wCAAA,aAAhB,WAA6BE,CAAC,gBAAsB,C,CACpD,C;EAC6B,0BAAA,KAAAF,oCAAA,C;EAA5B,KAA4B,gBAAJ,IAAI,mBAAM,E;;EAAxB,WAAkB,kC;EAC5B,C;IACC,IAAQ,oCAAJ,IAAI,EAAI,gBAAJ,CAAoB,C;MAC3B,OAAO,IAAI,C;EACb,C;;EACA,OAAO,IAAI,C;AACZ,C;;;;;;;;;;;;;AAUgB,wCAAA,UAAhB,WAA0BG,CAAC,KAAW,C,CACtC,C;EAYC,OAAO,2CAAmB,CAAC,KAAAH,oCAAM,EAAC,KAAK,EAAE,KAAK,CAAC,C;AAChD,C;;;;;;;;;;;0DAvFsBI,CAAC,C,CACvB,C;EACC,OAAO,KAAAL,iCAAG,C;AACX,C;;;0DACsBK,CAAC,KAAY,C,CACnC,C;EACC,IAAI,KAAAL,iCAAG,IAAI,KAAK,EAChB,C;IACC,KAAAA,iCAAG,GAAG,KAAK,C;IACC,uCAAe,CAAC,IAAI,EAAC,WAAW,CAAC,C;EAC9C,CAAA;",
-"sources":["org/apache/royale/core/Strand.as"],
-"names":["Strand.Strand","_id","_beads","Strand.addBead","Strand.getBeadByType","Strand.removeBead","Strand.id"]
-}

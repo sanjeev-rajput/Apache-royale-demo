@@ -446,3 +446,11 @@ color: black;
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+/*chatbot*/
+.chatbot-text-button {
+      display: inline-block; 
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+    }
