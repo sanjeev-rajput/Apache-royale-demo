@@ -1,4 +1,0 @@
-*.env
-*.key
-client_secret_apps.googleusercontent.com.json
-/bin/js-debug/assets/content
