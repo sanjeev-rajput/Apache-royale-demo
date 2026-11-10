@@ -127,6 +127,12 @@
       "addx":"NA"
     },
     {
+      "label": "AI",
+      "type": "disabled",
+      "url": "NA",
+      "addx":"NA"
+    },
+    {
       "label": "AI - Chatbots",
       "type": "extui",
       "url": "na",
@@ -155,11 +161,17 @@
       "type": "clean",
       "url": "NA",
       "addx":"NA"
+    },
+    {
+      "label": "",
+      "type": "divider",
+      "url": "NA",
+      "addx":"NA"
     }
   ],
   "config":[
     {
-      "env": "LIVE",
+      "env": "LOCAL",
       "appVersion": "1.0.0"
     }
   ]

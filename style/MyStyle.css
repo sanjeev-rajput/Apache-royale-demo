@@ -454,3 +454,63 @@ color: black;
       cursor: pointer;
       transition: all 0.2s ease-in-out;
     }
+body.chatbot-page {
+    overflow: hidden;
+}
+
+/* Multilingual Tutor Toolbar */
+.conversation-toolbar {
+    width: 100%;
+    min-height: 56px;
+    padding: 8px 10px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #eeeeee;
+}
+
+/* multilingual New Conversation - Spectrum */
+button.spectrum-Button.new-conversation-btn {
+    background-color: #d9f3e3 !important;
+    border-color: #d9f3e3 !important;
+    color: #07883e !important;
+    border-radius: 20px !important;
+    min-width: 65px;
+    height: 28px;
+    padding: 3px 12px !important;
+    box-shadow: none !important;
+}
+
+button.spectrum-Button.new-conversation-btn .spectrum-Button-label {
+    color: #07883e !important;
+}
+
+/* Clear Conversation - Spectrum */
+button.spectrum-Button.clear-conversation-btn {
+    background-color: #ffdddd !important;
+    border-color: #ffdddd !important;
+    color: #e04444 !important;
+    border-radius: 20px !important;
+    min-width: 65px;
+    height: 28px;
+    padding: 3px 12px !important;
+    box-shadow: none !important;
+}
+
+button.spectrum-Button.clear-conversation-btn .spectrum-Button-label {
+    color: #e04444 !important;
+}
+
+/* Language Indicator */
+.language-label {
+    margin-left: auto;
+    color: #777777;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.AiPromptContainer{
+  padding-bottom: 30px;
+}
+
+.spectrum-Popover.spectrum-Popover--bottom.is-open {
+    z-index: 9999 !important;
+}
