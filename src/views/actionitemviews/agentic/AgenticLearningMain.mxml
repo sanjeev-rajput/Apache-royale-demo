@@ -1,0 +1,337 @@
+<j:VGroup xmlns:fx="http://ns.adobe.com/mxml/2009"
+          xmlns:j="library://ns.apache.org/royale/jewel"
+          xmlns:sp="library://ns.unhurdle.com/spectrum"
+          width="100%"
+          height="100%"
+          itemsHorizontalAlign="itemsCenter"
+          itemsVerticalAlign="itemsCenter"
+          gap="1"
+          initComplete="initializeAgent()">
+
+    <fx:Script>
+        <![CDATA[
+            import org.apache.royale.events.Event;
+            import org.apache.royale.html.HTMLText;
+            import com.util.StringUtil;
+            import com.model.Config;
+            import com.model.ServiceLoader;
+            import com.unhurdle.spectrum.BarLoader;
+            import views.actionitemviews.learning.AiResponse;
+
+            // Agentic Learning owns its own conversation state.
+            private var conversationHistory:Array = [];
+            private var requestInProgress:Boolean = false;
+            private var serviceLoader:ServiceLoader;
+            private var thinkingLabel:BarLoader;
+
+            private function initializeAgent():void
+            {
+                trace("Agentic Learning initialized.");
+                document.body.classList.add("chatbot-page");
+                addAgentMessage(
+                    "Agent",
+                    "Welcome to Agentic Learning. What would you like to learn today?"
+                );
+            }
+
+            private function sendMessage():void
+            {
+                if (requestInProgress)
+                    return;
+
+                var message:String = questionInput.text;
+
+                if (message == null ||
+                    message.replace(/^\s+|\s+$/g, "") == "")
+                {
+                    return;
+                }
+
+                questionInput.text = "";
+                addAgentMessage("You", message);
+
+                conversationHistory.push({
+                    role: "user",
+                    content: message
+                });
+
+                requestInProgress = true;
+                askButton.disabled = true;
+                questionInput.disabled = true;
+                showThinkingIndicator();
+
+                var requestData:Object = {
+                    message: message,
+                    history: conversationHistory
+                };
+
+                serviceLoader = new ServiceLoader();
+                serviceLoader.reqMethod = "POST";
+                serviceLoader.contentType = "application/json";
+                serviceLoader.reqData = JSON.stringify(requestData);
+
+                var apiUrl:String = Config.apiBaseUrl + "agent";
+
+                serviceLoader.loadJData(
+                    apiUrl,
+                    handleAgentResponse,
+                    ServiceLoader.DATA_TYPE_JSON,
+                    handleAgentError,
+                    false
+                );
+            }
+
+            private function handleAgentResponse(response:Object):void
+            {
+                finishRequest();
+
+                if (response == null || response.success != true)
+                {
+                    addAgentMessage(
+                        "Agent",
+                        "I couldn't process that request. Please try again."
+                    );
+                    return;
+                }
+
+                var reply:String = response.reply == null
+                    ? "I couldn't generate a response."
+                    : String(response.reply);
+
+                // Activity launch links are rendered as the same clickable
+                // activity cards used by the AI Learning component.
+                var visibleReply:String = removeActivityLinkLine(reply);
+
+                conversationHistory.push({
+                    role: "assistant",
+                    content: reply
+                });
+
+                addAgentMessage(
+                    "Agent",
+                    visibleReply,
+                    response.showAiWarning === true
+                );
+
+                if (response.results != null)
+                {
+                    for each (var item:Object in response.results)
+                    {
+                        addActivity(item);
+                    }
+                }
+            }
+
+            // The backend may mention an activity URL in its prose.
+            // Hide that line because the activity is shown as a clickable card.
+            private function removeActivityLinkLine(message:String):String
+            {
+                var lines:Array = message.split(/\\r?\\n/);
+                var visibleLines:Array = [];
+
+                for each (var line:String in lines)
+                {
+                    if (line.toLowerCase().indexOf(
+                        "you can find this activity here:"
+                    ) >= 0)
+                    {
+                        continue;
+                    }
+
+                    visibleLines.push(line);
+                }
+
+                return visibleLines.join("\\n").replace(
+                    /^\\s+|\\s+$/g,
+                    ""
+                );
+            }
+
+            // Match AI Learning's existing clickable activity-card implementation.
+            private function addActivity(item:Object):void
+            {
+                if (item == null)
+                    return;
+
+                var detailsUi:AiResponse = new AiResponse();
+                detailsUi.aiResponse = item;
+                resultsContainer.addElement(detailsUi);
+            }
+
+            private function handleAgentError(event:Event):void
+            {
+                finishRequest();
+
+                addAgentMessage(
+                    "Agent",
+                    "Sorry, something went wrong while contacting the learning agent. Please try again."
+                );
+
+                trace("Agentic Learning API request failed.");
+            }
+
+            private function finishRequest():void
+            {
+                requestInProgress = false;
+                hideThinkingIndicator();
+                askButton.disabled = false;
+                questionInput.disabled = false;
+            }
+
+            private function showThinkingIndicator():void
+            {
+                hideThinkingIndicator();
+
+                thinkingLabel = new BarLoader();
+                thinkingLabel.label = "Thinking...";
+                thinkingLabel.showPercentage = "false";
+                thinkingLabel.small = "true";
+                thinkingLabel.indeterminate = "true";
+
+                resultsContainer.addElement(thinkingLabel);
+            }
+
+            private function hideThinkingIndicator():void
+            {
+                if (thinkingLabel != null)
+                {
+                    resultsContainer.removeElement(thinkingLabel);
+                    thinkingLabel = null;
+                }
+            }
+
+            private function addAgentMessage(
+                speaker:String,
+                message:String,
+                showAiWarning:Boolean = false
+            ):void
+            {
+                var label:HTMLText = new HTMLText();
+                label.percentWidth = 100;
+
+                var labelColor:String =
+                    speaker == "You" ? "#DCEEFF" : "#E2F3E5";
+
+                label.html =
+                    "<span style='background-color:" + labelColor +
+                    "; color:#222222; padding:3px 8px; border-radius:4px;'>" +
+                    "<b>" + StringUtil.escapeHTML(speaker) + ":</b>" +
+                    "</span> " +
+                    renderMessageHtml(message, showAiWarning);
+
+                resultsContainer.addElement(label);
+            }
+
+            // Match the compact AI-generated warning used by AI K-12 Learning.
+            // Catalogue-only replies do not display this notice.
+            private function renderMessageHtml(
+                message:String,
+                showAiWarning:Boolean
+            ):String
+            {
+                var mainHtml:String = StringUtil.markdownToHtml(message);
+
+                if (!showAiWarning)
+                    return mainHtml;
+
+                var warningHtml:String =
+                    "<p style=\"background-color:#FFF2B2;" +
+                    "color:#B71C1C;" +
+                    "font-size:0.85em;" +
+                    "padding:8px 10px;" +
+                    "margin-top:0px;" +
+                    "border:1px solid #E5C84B;" +
+                    "border-radius:4px;\">" +
+                    "<b>⚠️ AI-generated content notice:</b> " +
+                    "This response was generated by AI and may contain inaccuracies. " +
+                    "Please check important learning information with your teacher." +
+                    "</p>";
+
+                return mainHtml + warningHtml;
+            }
+
+            private function createNewConversation():void
+            {
+                if (requestInProgress)
+                    return;
+
+                conversationHistory = [];
+                clearVisibleConversation();
+
+                addAgentMessage(
+                    "Agent",
+                    "A new learning session has started. What would you like to learn?"
+                );
+            }
+
+            private function clearCurrentConversation():void
+            {
+                if (requestInProgress)
+                    return;
+
+                conversationHistory = [];
+                clearVisibleConversation();
+
+                addAgentMessage(
+                    "Agent",
+                    "Conversation cleared. Ask me anything when you're ready."
+                );
+            }
+
+            private function clearVisibleConversation():void
+            {
+                hideThinkingIndicator();
+
+                while (resultsContainer.numElements > 0)
+                {
+                    resultsContainer.removeElement(
+                        resultsContainer.getElementAt(0)
+                    );
+                }
+            }
+
+            public function disposeMe():void
+            {
+                document.body.classList.remove("chatbot-page");
+                trace("Agentic Learning disposed.");
+            }
+        ]]>
+    </fx:Script>
+
+    <j:HGroup width="100%"
+              className="conversation-toolbar"
+              itemsVerticalAlign="itemsCenter">
+        <sp:Button text="New"
+                   click="createNewConversation()"
+                   className="new-conversation-btn"/>
+        <sp:Button text="Clear"
+                   click="clearCurrentConversation()"
+                   className="clear-conversation-btn"/>
+        <j:Spacer/>
+        <j:Label text="AI Learning Agent"
+                 className="language-label"/>
+    </j:HGroup>
+
+    <j:VGroup id="resultsContainer"
+              width="100%"
+              height="100%"
+              gap="1">
+        <j:Label width="100%"
+                 text="Your intelligent, goal-driven learning companion."/>
+        <j:beads>
+            <j:ScrollingViewport/>
+        </j:beads>
+    </j:VGroup>
+
+    <j:HGroup width="80%"
+              itemsVerticalAlign="itemsCenter"
+              className="AiPromptContainer">
+        <sp:TextField id="questionInput"
+                      width="100%"
+                      placeholder="What would you like to learn?"
+                      onEnter="sendMessage()"/>
+        <sp:Button id="askButton"
+                   text="Ask"
+                   click="sendMessage()"/>
+    </j:HGroup>
+</j:VGroup>

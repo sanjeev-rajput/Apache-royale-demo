@@ -94,11 +94,19 @@ function loadCsv(filename, metadata = {}) {
         // Keywords are optional. Normalize comma-separated values in memory:
         // trim each token and discard empty tokens (including trailing commas).
         // The source CSV is never modified.
-        keywords: (record.keywords || "")
+        /*keywords: (record.keywords || "")
           .split(",")
           .map(keyword => keyword.trim())
           .filter(Boolean)
           .join(", "),
+        subject: metadata.subject || "",
+        catalogId: metadata.id || "",
+        source: filename*/
+        //changes are done as per the agentic learning requirement to keep the keywords as is in the csv file and not to modify it in any way.
+        keywords: record.keywords || "",
+        // Agentic Learning uses this identifier to load SME-owned guidance.
+        instructionProfileId: record.instructionprofileid || "",
+
         subject: metadata.subject || "",
         catalogId: metadata.id || "",
         source: filename

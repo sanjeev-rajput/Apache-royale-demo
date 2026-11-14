@@ -1,0 +1,36 @@
+{
+  "configVersion": "1.1",
+  "scope": "profile",
+  "appliesTo": {
+    "instructionProfileId": "english_middle_instruction"
+  },
+  "responseGuidelines": {
+    "language": "English",
+    "languageLevel": "Middle-school learner; precise vocabulary with clear explanations",
+    "tone": "Encouraging and supportive",
+    "explanation": {
+      "useSimpleVocabulary": false,
+      "includeExamples": true
+    },
+    "practiceQuestions": {
+      "difficulty": "moderate",
+      "showAnswersImmediately": false,
+      "includeHints": true
+    }
+  },
+  "qualityGuidelines": [
+    "Use grammatically correct English.",
+    "Use examples and vocabulary appropriate to the learner's grade band.",
+    "Explain the language concept in a clear sequence and include suitable examples."
+  ],
+  "assessmentGuidelines": [
+    "Keep tasks clear and suitable for the specified grade band.",
+    "Do not present an answer as a question prompt."
+  ],
+  "metadata": {
+    "owner": "SME",
+    "status": "draft",
+    "version": "1.0",
+    "notes": "Initial profile inferred from catalogue row subject, grade band and activity type. SME review and approval required."
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "configVersion": "1.1",
+  "scope": "profile",
+  "appliesTo": {
+    "instructionProfileId": "math_middle_practice"
+  },
+  "responseGuidelines": {
+    "language": "English",
+    "languageLevel": "Middle-school mathematical reasoning",
+    "tone": "Patient and encouraging",
+    "explanation": {
+      "useSimpleVocabulary": false,
+      "includeExamples": true
+    },
+    "practiceQuestions": {
+      "difficulty": "moderate",
+      "showAnswersImmediately": false,
+      "includeHints": true
+    }
+  },
+  "qualityGuidelines": [
+    "Use mathematically consistent notation and calculations.",
+    "Explain procedures in a logical sequence appropriate to the grade band.",
+    "Practice tasks should have clear instructions and one unambiguous expected result."
+  ],
+  "assessmentGuidelines": [
+    "Keep tasks clear and suitable for the specified grade band.",
+    "Do not present an answer as a question prompt."
+  ],
+  "metadata": {
+    "owner": "SME",
+    "status": "draft",
+    "version": "1.0",
+    "notes": "Initial profile inferred from catalogue row subject, grade band and activity type. SME review and approval required."
+  }
+}

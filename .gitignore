@@ -1,10 +1,9 @@
 *.env
 *.key
 client_secret_apps.googleusercontent.com.json
-/bin/js-debug/assets/content
 
 node-server/node_modules/
-
 node_modules/
 
 /bin/js-debug/
+/bin/js-release/assets/content/

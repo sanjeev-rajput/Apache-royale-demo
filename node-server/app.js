@@ -11,6 +11,7 @@ import learningRoutes from './routes/learning.js';
 import { fileURLToPath } from 'url';
 //import voiceTranslateRoutes from './routes/voiceTranslate.js';
 import multilingualRoutes from './routes/multilingual.js';
+import agentRoutes from './routes/agent.js';
 
 
 
@@ -44,6 +45,7 @@ app.use('/api/learning', learningRoutes);
 app.use('/api/chat', chatRoutes);
 //app.use('/api/voice', voiceTranslateRoutes);
 app.use('/api/multilingual', multilingualRoutes);
+app.use('/api/agent', agentRoutes);
 
 
 export default app;

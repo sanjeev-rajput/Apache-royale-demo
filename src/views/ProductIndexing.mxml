@@ -28,6 +28,7 @@
             import views.actionitemviews.reactandroyale.ReactAndRoyale;
             import views.actionitemviews.learning.LearningChatbotMain;
             import views.actionitemviews.multilingual.MultilingualTutorMain;
+            import views.actionitemviews.agentic.AgenticLearningMain;
             private var mgmtObj:Array = new Array();
             private var learningChatbot:LearningChatbotMain;
             private var multilingualTutor:MultilingualTutorMain;
@@ -131,6 +132,11 @@
                     uiComp = learningChatbot;
                     vg.addElement(uiComp);
                     mgmtObj.push(uiComp);
+                    return;
+                }
+                if (compName == 'Agentic Learning') {
+                    uiComp = new AgenticLearningMain();
+                    vg.addElement(uiComp);
                     return;
                 }
                 // if(compName == 'Auth2.0'){
