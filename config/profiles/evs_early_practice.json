@@ -1,0 +1,37 @@
+{
+  "configVersion": "1.1",
+  "scope": "profile",
+  "appliesTo": {
+    "instructionProfileId": "evs_early_practice"
+  },
+  "responseGuidelines": {
+    "language": "English",
+    "languageLevel": "Simple, concrete language",
+    "tone": "Curious, supportive and encouraging",
+    "explanation": {
+      "useSimpleVocabulary": true,
+      "includeExamples": true
+    },
+    "practiceQuestions": {
+      "difficulty": "very-easy",
+      "showAnswersImmediately": false,
+      "includeHints": true
+    }
+  },
+  "qualityGuidelines": [
+    "Use familiar examples from the learner's surroundings where appropriate.",
+    "Distinguish observable facts from simplified explanations.",
+    "Use age-appropriate environmental studies vocabulary.",
+    "Use clear observation or concept-checking tasks."
+  ],
+  "assessmentGuidelines": [
+    "Keep tasks clear and suitable for the specified grade band.",
+    "Do not present an answer as a question prompt."
+  ],
+  "metadata": {
+    "owner": "SME",
+    "status": "draft",
+    "version": "1.0",
+    "notes": "Initial profile inferred from catalogue row subject, grade band and activity type. SME review and approval required."
+  }
+}

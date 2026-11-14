@@ -145,6 +145,12 @@
     "addx": "NA"
     },
     {
+    "label": "Agentic Learning",
+    "type": "extui",
+    "url": "na",
+    "addx": "NA"
+    },
+    {
       "label": "Auth2.0",
       "type": "extui",
       "url": "na",
@@ -172,7 +178,7 @@
   "config":[
     {
       "env": "LIVE",
-      "appVersion": "1.1.0"
+      "appVersion": "1.0.0"
     }
   ]
 }
