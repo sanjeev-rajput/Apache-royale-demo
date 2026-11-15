@@ -1,0 +1,50 @@
+$secureKey = Read-Host "Paste your OpenRouter API key" -AsSecureString
+$ptr = [Runtime.InteropServices.Marshal]::SecureStringToBSTR($secureKey)
+
+try {
+    $apiKey = [Runtime.InteropServices.Marshal]::PtrToStringBSTR($ptr)
+
+    $response = Invoke-RestMethod `
+        -Uri "https://openrouter.ai/api/v1/key" `
+        -Method GET `
+        -Headers @{
+            Authorization = "Bearer $apiKey"
+            "Content-Type" = "application/json"
+        }
+
+    Write-Host "`n========== OPENROUTER ACCOUNT DETAILS ==========" -ForegroundColor Cyan
+
+    $data = $response.data
+
+    Write-Host "`nKey label:              $($data.label)"
+    Write-Host "Management key:         $($data.is_management_key)"
+    Write-Host "Provisioning key:       $($data.is_provisioning_key)"
+    Write-Host "Credit limit:           $($data.limit)"
+    Write-Host "Remaining credit limit: $($data.limit_remaining)"
+    Write-Host "Limit reset:            $($data.limit_reset)"
+    Write-Host "Total usage:            $($data.usage)"
+    Write-Host "Daily usage:            $($data.usage_daily)"
+    Write-Host "Weekly usage:           $($data.usage_weekly)"
+    Write-Host "Monthly usage:          $($data.usage_monthly)"
+
+    Write-Host "`n========== RATE LIMIT DETAILS ==========" -ForegroundColor Cyan
+    $data.rate_limit | Format-List *
+
+    Write-Host "`n========== COMPLETE RESPONSE ==========" -ForegroundColor Cyan
+    $data | ConvertTo-Json -Depth 10
+}
+catch {
+    Write-Host "`nAPI REQUEST FAILED:" -ForegroundColor Red
+    Write-Host $_.Exception.Message
+
+    if ($_.ErrorDetails.Message) {
+        Write-Host $_.ErrorDetails.Message
+    }
+}
+finally {
+    if ($ptr -ne [IntPtr]::Zero) {
+        [Runtime.InteropServices.Marshal]::ZeroFreeBSTR($ptr)
+    }
+
+    Remove-Variable apiKey -ErrorAction SilentlyContinue
+}

@@ -17,12 +17,18 @@
             import com.model.ServiceLoader;
             import com.unhurdle.spectrum.BarLoader;
             import views.actionitemviews.learning.AiResponse;
+            import org.apache.royale.utils.Timer;
 
             // Agentic Learning owns its own conversation state.
             private var conversationHistory:Array = [];
             private var requestInProgress:Boolean = false;
             private var serviceLoader:ServiceLoader;
             private var thinkingLabel:BarLoader;
+            private var statusTimer:Timer;
+            private var statusLoader:ServiceLoader;
+            private var currentRequestId:String;
+            private var statusRequestInProgress:Boolean = false;
+            private var requestCounter:int = 0;
 
             private function initializeAgent():void
             {
@@ -60,9 +66,12 @@
                 questionInput.disabled = true;
                 showThinkingIndicator();
 
+                currentRequestId = String(new Date().time) + "-" + String(++requestCounter);
+
                 var requestData:Object = {
                     message: message,
-                    history: conversationHistory
+                    history: conversationHistory,
+                    requestId: currentRequestId
                 };
 
                 serviceLoader = new ServiceLoader();
@@ -79,6 +88,61 @@
                     handleAgentError,
                     false
                 );
+
+                startStatusPolling();
+            }
+
+            private function startStatusPolling():void
+            {
+                stopStatusPolling();
+                statusTimer = new Timer(1200);
+                statusTimer.addEventListener(Timer.TIMER, pollAgentStatus);
+                statusTimer.start();
+            }
+
+            private function pollAgentStatus(event:Timer):void
+            {
+                if (!requestInProgress || statusRequestInProgress || currentRequestId == null)
+                    return;
+
+                statusRequestInProgress = true;
+                statusLoader = new ServiceLoader();
+                statusLoader.reqMethod = "GET";
+                statusLoader.loadJData(
+                    Config.apiBaseUrl + "agent/status/" + currentRequestId,
+                    handleAgentStatus,
+                    ServiceLoader.DATA_TYPE_JSON,
+                    handleAgentStatusError,
+                    false
+                );
+            }
+
+            private function handleAgentStatus(response:Object):void
+            {
+                statusRequestInProgress = false;
+                if (response == null || !requestInProgress || thinkingLabel == null)
+                    return;
+
+                if (response.message != null)
+                    thinkingLabel.label = String(response.message);
+            }
+
+            private function handleAgentStatusError(event:Event):void
+            {
+                statusRequestInProgress = false;
+                // Status polling is advisory; the main Agent request remains authoritative.
+            }
+
+            private function stopStatusPolling():void
+            {
+                if (statusTimer != null)
+                {
+                    statusTimer.stop();
+                    statusTimer.removeEventListener(Timer.TIMER, pollAgentStatus);
+                    statusTimer = null;
+                }
+                statusRequestInProgress = false;
+                statusLoader = null;
             }
 
             private function handleAgentResponse(response:Object):void
@@ -87,10 +151,15 @@
 
                 if (response == null || response.success != true)
                 {
-                    addAgentMessage(
-                        "Agent",
-                        "I couldn't process that request. Please try again."
-                    );
+                    var failureMessage:String = response != null && response.message != null
+                        ? String(response.message)
+                        : "The learning agent could not complete this request. Please try again.";
+
+                    addAgentMessage("Agent", failureMessage);
+                    trace("Agentic Learning request failed. code=" +
+                        (response != null ? response.errorCode : "NO_RESPONSE") +
+                        ", source=" +
+                        (response != null ? response.errorSource : "unknown"));
                     return;
                 }
 
@@ -164,15 +233,16 @@
 
                 addAgentMessage(
                     "Agent",
-                    "Sorry, something went wrong while contacting the learning agent. Please try again."
+                    "Agentic Learning could not reach the backend service. This may be a network, server-availability or deployment issue. Please try again shortly."
                 );
 
-                trace("Agentic Learning API request failed.");
+                trace("Agentic Learning API transport request failed.");
             }
 
             private function finishRequest():void
             {
                 requestInProgress = false;
+                stopStatusPolling();
                 hideThinkingIndicator();
                 askButton.disabled = false;
                 questionInput.disabled = false;
@@ -292,6 +362,7 @@
 
             public function disposeMe():void
             {
+                stopStatusPolling();
                 document.body.classList.remove("chatbot-page");
                 trace("Agentic Learning disposed.");
             }

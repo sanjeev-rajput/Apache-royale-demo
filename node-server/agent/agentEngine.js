@@ -1,11 +1,7 @@
-import {
-  generateText,
-  generateStructuredResponse
-} from "../services/llmProvider.js";
+import { createAgentLlmSession } from "./agentLlmResilience.js";
 
 import { executeAgentTool } from "./agentTools.js";
 import { AGENT_ACTIONS, PLANNER_PROMPT } from "./agentPlanner.js";
-import { loadInstructionsForCatalogueResults } from "./agentConfigLoader.js";
 
 const MAX_AGENT_STEPS = 4;
 const MAX_HISTORY_MESSAGES = 8;
@@ -144,86 +140,38 @@ function buildFiltersReply(filters) {
   ].join("\n\n");
 }
 
-function normalizeSearchText(value) {
-  return String(value || "")
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, " ")
-    .trim()
-    .replace(/\s+/g, " ");
-}
-
-function findDeterministicallyRelevantIndexes(searchArguments, results) {
-  if (!Array.isArray(results) || results.length === 0) return [];
-
-  const query = normalizeSearchText(searchArguments?.q || searchArguments?.topic);
-  if (!query) return [];
-
-  // Exact concept matches in structured catalogue fields take priority over
-  // an LLM relevance judgement. This prevents a valid CSV activity from
-  // disappearing merely because the assessment model returns no indexes.
-  const searchableFields = [
-    "topic",
-    "subtopic",
-    "activityName",
-    "keywords",
-    "description"
-  ];
-
-  const indexes = [];
-  results.forEach((item, index) => {
-    const fields = searchableFields.map(field => normalizeSearchText(item?.[field]));
-    if (fields.some(value => value && (` ${value} `).includes(` ${query} `))) {
-      indexes.push(index);
-    }
-  });
-
-  return indexes;
-}
-
-async function assessCatalogueFit(message, history, results, searchArguments = {}) {
+async function assessCatalogueFit(message, history, results, llm) {
   if (!Array.isArray(results) || results.length === 0) {
     return { catalogueSatisfiesRequest: false, relevantResultIndexes: [], reason: "No catalogue results." };
   }
 
-  const deterministicIndexes = findDeterministicallyRelevantIndexes(searchArguments, results);
-
   let assessment;
   try {
-    assessment = await generateStructuredResponse({
+    assessment = await llm.generateStructuredResponse({
       systemPrompt: CATALOGUE_FIT_PROMPT,
       userPayload: { learnerMessage: message, conversationHistory: history, catalogueResults: results },
       temperature: 0,
       maxTokens: 300
     });
   } catch (error) {
-    console.warn("[Agent Catalogue Fit] Assessment failed; retaining deterministic catalogue matches:", error.message);
-    return {
-      catalogueSatisfiesRequest: false,
-      relevantResultIndexes: deterministicIndexes,
-      reason: "Catalogue relevance was established from exact catalogue-field matches; fulfilment could not be verified."
-    };
+    console.warn("[Agent Catalogue Fit] Assessment failed; using LLM fallback:", error.message);
+    return { catalogueSatisfiesRequest: false, relevantResultIndexes: [], reason: "Catalogue suitability could not be verified." };
   }
 
-  const assessedIndexes = Array.isArray(assessment?.relevantResultIndexes)
+  const indexes = Array.isArray(assessment?.relevantResultIndexes)
     ? assessment.relevantResultIndexes.filter(index =>
         Number.isInteger(index) && index >= 0 && index < results.length)
     : [];
 
-  // Exact matches to the planner's search concept are authoritative for
-  // relevance. The LLM assessment is still used to decide completeness.
-  // Semantic assessment indexes are a fallback when no exact match exists.
-  const relevantIndexes = deterministicIndexes.length
-    ? deterministicIndexes
-    : assessedIndexes;
-
   return {
-    catalogueSatisfiesRequest: assessment?.catalogueSatisfiesRequest === true && relevantIndexes.length > 0,
-    relevantResultIndexes: relevantIndexes,
+    catalogueSatisfiesRequest: assessment?.catalogueSatisfiesRequest === true && indexes.length > 0,
+    relevantResultIndexes: indexes,
     reason: typeof assessment?.reason === "string" ? assessment.reason : ""
   };
 }
 
-export async function runLearningAgent({ message, history = [] }) {
+export async function runLearningAgent({ message, history = [], onLlmStatus }) {
+  const llm = createAgentLlmSession({ onStatus: onLlmStatus });
   if (!message || typeof message !== "string" || !message.trim()) {
     throw new Error("A valid learner message is required.");
   }
@@ -238,7 +186,7 @@ export async function runLearningAgent({ message, history = [] }) {
   // CSV-first agent loop: plan -> search/observe -> plan again.
   for (let step = 1; step <= MAX_AGENT_STEPS; step += 1) {
     plannerSteps = step;
-    const rawPlan = await generateStructuredResponse({
+    const rawPlan = await llm.generateStructuredResponse({
       systemPrompt: PLANNER_PROMPT,
       userPayload: buildPlannerPayload(learnerMessage, recentHistory, observations, step),
       temperature: 0,
@@ -296,12 +244,7 @@ export async function runLearningAgent({ message, history = [] }) {
   const rawResults = latestSearch ? parseObservationResult(latestSearch) : [];
   const catalogueResults = Array.isArray(rawResults) ? rawResults : [];
 
-  const fit = await assessCatalogueFit(
-    learnerMessage,
-    recentHistory,
-    catalogueResults,
-    latestSearch?.arguments || {}
-  );
+  const fit = await assessCatalogueFit(learnerMessage, recentHistory, catalogueResults, llm);
   const relevantResults = fit.relevantResultIndexes.map(index => catalogueResults[index]);
 
   // If the catalogue completely fulfils the request, no user-facing LLM prose
@@ -332,14 +275,9 @@ additional resources, but never claim they contain a requested quiz, question
 count or explanation unless the CSV data proves that. Follow the learner's
 requested grade, number of questions and format exactly.`;
 
-  const smeInstructions = await loadInstructionsForCatalogueResults(relevantResults);
-  const systemPrompt = smeInstructions
-    ? `${AGENT_SYSTEM_PROMPT}\n\n${smeInstructions}`
-    : AGENT_SYSTEM_PROMPT;
-
-  const reply = await generateText({
+  const reply = await llm.generateText({
     messages: [
-      { role: "system", content: systemPrompt },
+      { role: "system", content: AGENT_SYSTEM_PROMPT },
       ...recentHistory,
       { role: "user", content: responseContext }
     ],

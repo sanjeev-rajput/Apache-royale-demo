@@ -1,10 +1,16 @@
 import dotenv from "dotenv";
 dotenv.config();
 
-const provider = String(process.env.AI_PROVIDER || "ollama").trim().toLowerCase();
-if (!["ollama", "openrouter"].includes(provider)) {
-  throw new Error(`Unsupported AI_PROVIDER: ${provider}. Use "ollama" or "openrouter".`);
+// APP_ENV is the single source of truth for backend environment selection.
+// LOCAL always uses Ollama; LIVE always uses OpenRouter.
+const appEnvironment = String(process.env.APP_ENV || "").trim().toUpperCase();
+if (!["LOCAL", "LIVE"].includes(appEnvironment)) {
+  throw new Error(
+    `Invalid or missing APP_ENV: "${appEnvironment}". Set APP_ENV=LOCAL or APP_ENV=LIVE.`
+  );
 }
+
+const provider = appEnvironment === "LOCAL" ? "ollama" : "openrouter";
 const timeoutDefault = Number(process.env.AI_TIMEOUT_MS || 60000);
 
 const config = provider === "openrouter"
@@ -21,8 +27,9 @@ const config = provider === "openrouter"
     };
 
 if (config.provider === "openrouter" && !config.apiKey) {
-  console.warn("AI_PROVIDER is openrouter, but OPENROUTER_API_KEY is not configured.");
+  console.warn("APP_ENV=LIVE selects OpenRouter, but OPENROUTER_API_KEY is not configured.");
 }
+console.log(`[LLM] APP_ENV=${appEnvironment}; provider=${config.provider}; model=${config.model}`);
 
 function parseJson(content) {
   const cleaned = String(content || "")
@@ -67,10 +74,11 @@ async function requestOllama(messages, options) {
 }
 
 async function requestOpenRouter(messages, options) {
+  const requestedModel = options.model || config.model;
   if (!config.apiKey) throw new Error("OPENROUTER_API_KEY is not configured.");
 
   const body = {
-    model: config.model,
+    model: requestedModel,
     messages,
     temperature: options.temperature,
     max_tokens: options.maxTokens
@@ -96,12 +104,18 @@ async function requestOpenRouter(messages, options) {
   if (!response.ok || data.error) {
     const message = data.error?.message || `HTTP ${response.status}`;
     const metadata = data.error?.metadata ? `; metadata: ${JSON.stringify(data.error.metadata)}` : "";
-    throw new Error(`OpenRouter request failed (${response.status}): ${message}${metadata}`);
+    const error = new Error(`OpenRouter request failed (${response.status}): ${message}${metadata}`);
+    error.modelId = data?.model || requestedModel;
+    error.status = response.status;
+    throw error;
   }
 
   const content = data.choices?.[0]?.message?.content;
   if (typeof content !== "string" || !content.trim()) {
-    throw new Error("OpenRouter returned empty message content.");
+    const error = new Error("OpenRouter returned empty message content.");
+    error.modelId = data?.model || requestedModel;
+    error.status = response.status;
+    throw error;
   }
   return content.trim();
 }
@@ -110,8 +124,8 @@ export function getLlmConfig() {
   return { provider: config.provider, model: config.model };
 }
 
-export async function generateText({ messages, temperature = 0.4, maxTokens = 500, timeoutMs = timeoutDefault }) {
-  const options = { temperature, maxTokens, timeoutMs, json: false };
+export async function generateText({ messages, temperature = 0.4, maxTokens = 500, timeoutMs = timeoutDefault, model }) {
+  const options = { temperature, maxTokens, timeoutMs, json: false, model };
   return config.provider === "openrouter"
     ? requestOpenRouter(messages, options)
     : requestOllama(messages, options);
@@ -122,13 +136,14 @@ export async function generateStructuredResponse({
   userPayload,
   temperature = 0,
   maxTokens = 450,
-  timeoutMs = timeoutDefault
+  timeoutMs = timeoutDefault,
+  model
 }) {
   const messages = [
     { role: "system", content: `${systemPrompt}\nReturn one valid JSON object only. Do not include Markdown fences or commentary.` },
     { role: "user", content: typeof userPayload === "string" ? userPayload : JSON.stringify(userPayload) }
   ];
-  const options = { temperature, maxTokens, timeoutMs, json: true };
+  const options = { temperature, maxTokens, timeoutMs, json: true, model };
   const content = config.provider === "openrouter"
     ? await requestOpenRouter(messages, options)
     : await requestOllama(messages, options);
