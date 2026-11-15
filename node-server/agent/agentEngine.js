@@ -2,6 +2,10 @@ import { createAgentLlmSession } from "./agentLlmResilience.js";
 
 import { executeAgentTool } from "./agentTools.js";
 import { AGENT_ACTIONS, PLANNER_PROMPT } from "./agentPlanner.js";
+import {
+  findDeterministicallyRelevantIndexes,
+  mergeCatalogueResultIndexes
+} from "./catalogueRelevance.js";
 
 const MAX_AGENT_STEPS = 4;
 const MAX_HISTORY_MESSAGES = 8;
@@ -245,7 +249,27 @@ export async function runLearningAgent({ message, history = [], onLlmStatus }) {
   const catalogueResults = Array.isArray(rawResults) ? rawResults : [];
 
   const fit = await assessCatalogueFit(learnerMessage, recentHistory, catalogueResults, llm);
-  const relevantResults = fit.relevantResultIndexes.map(index => catalogueResults[index]);
+
+  // The LLM assesses whether the catalogue fully fulfils the request, but its
+  // relevance list is not the sole authority for whether a real CSV activity
+  // is returned. Independently retain clear topic matches from catalogue data.
+  const deterministicIndexes = findDeterministicallyRelevantIndexes(
+    learnerMessage,
+    catalogueResults
+  );
+  const relevantIndexes = mergeCatalogueResultIndexes(
+    fit.relevantResultIndexes,
+    deterministicIndexes,
+    catalogueResults.length
+  );
+  const relevantResults = relevantIndexes.map(index => catalogueResults[index]);
+
+  if (deterministicIndexes.length > 0) {
+    console.log(
+      `[Agent Catalogue Relevance] deterministic matches=${deterministicIndexes.length}; ` +
+      `LLM matches=${fit.relevantResultIndexes.length}; retained=${relevantResults.length}`
+    );
+  }
 
   // If the catalogue completely fulfils the request, no user-facing LLM prose
   // is needed. This keeps the result genuinely catalogue-sourced and warning-free.
