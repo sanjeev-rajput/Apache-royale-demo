@@ -189,6 +189,16 @@
                         addActivity(item);
                     }
                 }
+
+                // YouTube recommendations are supplementary and are always
+                // displayed after all CSV catalogue activity cards.
+                if (response.videos != null)
+                {
+                    for each (var video:Object in response.videos)
+                    {
+                        addYouTubeVideo(video);
+                    }
+                }
             }
 
             // The backend may mention an activity URL in its prose.
@@ -225,6 +235,17 @@
                 var detailsUi:AiResponse = new AiResponse();
                 detailsUi.aiResponse = item;
                 resultsContainer.addElement(detailsUi);
+            }
+
+            // Render each optional YouTube result in its own independent card.
+            private function addYouTubeVideo(video:Object):void
+            {
+                if (video == null || video.videoId == null)
+                    return;
+
+                var videoCard:YouTubeVideoCard = new YouTubeVideoCard();
+                videoCard.video = video;
+                resultsContainer.addElement(videoCard);
             }
 
             private function handleAgentError(event:Event):void

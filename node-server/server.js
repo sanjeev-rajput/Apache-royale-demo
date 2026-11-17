@@ -1,3 +1,6 @@
+// Load environment variables before application modules.
+import "./services/env.js";
+
 import http from "node:http";
 import app from "./app.js";
 import { setupSharedWebSocketServer } from "./services/sharedWebSocketServer.js";

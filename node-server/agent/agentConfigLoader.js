@@ -1,13 +1,11 @@
 import fs from "node:fs/promises";
 import path from "node:path";
-import { fileURLToPath } from "node:url";
+import { getConfigPath } from "../services/configPath.js";
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
 
 // Agent reads only SME-authored profile JSON. CSV catalogue data is supplied
 // by the existing learningCatalog.js service and is never loaded here.
-const PROFILE_DIR = path.resolve(__dirname, "../../src/config/profiles");
+const PROFILE_DIR = getConfigPath("profiles");
 
 function safeProfileId(value) {
   const id = String(value || "").trim();

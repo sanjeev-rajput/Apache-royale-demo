@@ -1,7 +1,5 @@
 import express from 'express';
 import fetch from 'node-fetch';
-import dotenv from 'dotenv';
-dotenv.config();
 
 const router = express.Router();
 const OPENROUTER_API_KEY = process.env.OPENROUTER_API_KEY;

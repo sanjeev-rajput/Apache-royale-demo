@@ -27,6 +27,24 @@
                 iFrm.src = decodeURIComponent('assets/content/'+url).replace(/"/g, "");
                 DsEvent.instance.dispatch(DsEvent.IFRAMEOPENED)
             }
+
+            public function loadExternalPage(url:String):void{
+                if (url == null || url.replace(/^\s+|\s+$/g, "") == "")
+                    return;
+
+                // Allow only YouTube's privacy-enhanced embed URLs.
+                if (url.indexOf("https://www.youtube-nocookie.com/embed/") != 0)
+                {
+                    trace("[ContentLoaderIframe] Invalid external URL: " + url);
+                    return;
+                }
+
+                this.visible = true;
+                iFrm.src = url;
+
+                DsEvent.instance.dispatch(DsEvent.IFRAMEOPENED);
+            }
+
             
             public function disposeMe():void{
                 iFrm.src = "ht-pages/loading.html";

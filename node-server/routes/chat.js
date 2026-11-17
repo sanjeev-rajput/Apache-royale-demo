@@ -1,6 +1,5 @@
 
 import express from "express";
-import dotenv from "dotenv";
 
 import { handleLearningChat, getLearningConversationContext } from "../services/conversationInterpreter.js";
 import { handlePracticeMessage } from "../services/interactiveLearning.js";
@@ -14,7 +13,6 @@ import {
 import { analyzeMisconception } from "../services/misconceptionDetector.js";
 import { generateText, generateStructuredResponse, getLlmConfig } from "../services/llmProvider.js";
 
-dotenv.config();
 
 const router = express.Router();
 

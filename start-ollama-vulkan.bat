@@ -1,14 +1,21 @@
 @echo off
 setlocal
 
-rem Enable Intel integrated GPU selection and the Vulkan backend for this
-rem Ollama server process only. These settings do not modify Windows globally.
+rem Stop any existing Ollama background processes so new GPU settings apply
+taskkill /f /im ollama.exe >nul 2>&1
+taskkill /f /im "ollama app.exe" >nul 2>&1
+
+rem Enable Intel integrated GPU selection and the Vulkan backend
 set OLLAMA_IGPU_ENABLE=1
 set OLLAMA_VULKAN=1
 
-echo Starting Ollama with Intel integrated GPU and Vulkan enabled...
-echo Keep this window open while using Ollama.
+rem Keep the model loaded in memory for 10 minutes between Node requests
+set OLLAMA_KEEP_ALIVE=10m
+
+echo Starting Ollama server with Intel integrated GPU and Vulkan enabled...
+echo Keep this window open while running your Node.js app.
 echo Press Ctrl+C to stop the Ollama server.
+echo.
 
 ollama serve
 

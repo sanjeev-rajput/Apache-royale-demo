@@ -1,10 +1,7 @@
 import fs from "node:fs";
-import path from "node:path";
-import { fileURLToPath } from "node:url";
+import { getConfigPath } from "./configPath.js";
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-const configPath = path.resolve(__dirname, "../../src/config/learning-language.json");
+const configPath = getConfigPath("learning-language.json");
 
 let cachedConfig = null;
 let cachedMtime = 0;

@@ -1,6 +1,11 @@
+// Complete updated agentEngine.js — copy this file over agent/agentEngine.js
+// Includes SME profile integration and planner-only structured observation compaction.
+
 import { createAgentLlmSession } from "./agentLlmResilience.js";
 
 import { executeAgentTool } from "./agentTools.js";
+import { searchYouTubeVideos } from "../services/youtubeService.js";
+import { loadInstructionsForCatalogueResults } from "./agentConfigLoader.js";
 import { AGENT_ACTIONS, PLANNER_PROMPT } from "./agentPlanner.js";
 import {
   findDeterministicallyRelevantIndexes,
@@ -13,6 +18,11 @@ const MAX_OBSERVATION_CHARS = 16000;
 
 const AGENT_SYSTEM_PROMPT = `
 You are Agentic Learning, a friendly, age-appropriate K-12 learning companion.
+
+For a learner who asks to learn or understand a topic, teach the topic yourself
+even when matching CSV catalogue activities exist. Start with a short, grade-
+appropriate explanation, give simple examples, and then provide three practice
+questions unless the learner requests a different number or format.
 
 When the CSV catalogue does not fully satisfy the learner's request, create the
 missing educational content yourself. This may include explanations, examples,
@@ -97,10 +107,48 @@ function makeCallKey(action, args) {
 }
 
 function compactObservation(value) {
-  const serialized = JSON.stringify(value);
-  return serialized.length > MAX_OBSERVATION_CHARS
-    ? `${serialized.slice(0, MAX_OBSERVATION_CHARS)}...[truncated]`
-    : serialized;
+  // Catalogue observations sent to the planner need only descriptive fields.
+  // The complete catalogue records remain untouched in the internal observations.
+  if (Array.isArray(value)) {
+    const fieldLimits = {
+      grade: 40,
+      subject: 60,
+      topic: 120,
+      subtopic: 120,
+      activityType: 60,
+      activityName: 180,
+      keywords: 240,
+      description: 360
+    };
+
+    const fields = Object.keys(fieldLimits);
+    const compactResults = value.slice(0, 10).map(item => {
+      const compactItem = {};
+
+      for (const field of fields) {
+        const text = String(item?.[field] ?? "");
+        compactItem[field] = text.slice(0, fieldLimits[field]);
+      }
+
+      return compactItem;
+    });
+
+    let serialized = JSON.stringify(compactResults);
+
+    // Drop trailing planner-only records if the payload is still too large.
+    while (
+      serialized.length > MAX_OBSERVATION_CHARS &&
+      compactResults.length > 1
+    ) {
+      compactResults.pop();
+      serialized = JSON.stringify(compactResults);
+    }
+
+    return serialized;
+  }
+
+  // Filter observations and other non-array values remain valid JSON.
+  return JSON.stringify(value);
 }
 
 function buildPlannerPayload(message, history, observations, step) {
@@ -109,17 +157,44 @@ function buildPlannerPayload(message, history, observations, step) {
     conversationHistory: history,
     step,
     maximumSteps: MAX_AGENT_STEPS,
-    toolObservations: observations
+    // Compact only the copy sent to the planner. Internal observations retain
+    // the complete catalogue records for relevance, SME profiles and cards.
+    toolObservations: observations.map(observation => ({
+      ...observation,
+      ...(observation.result !== undefined
+        ? { result: compactObservation(observation.result) }
+        : {})
+    }))
   };
 }
 
 function parseObservationResult(observation) {
-  if (!observation || typeof observation.result !== "string") return null;
+  if (!observation || observation.result == null) return null;
+
+  // Internal observations now retain their original objects.
+  if (typeof observation.result !== "string") {
+    return observation.result;
+  }
+
   try {
     return JSON.parse(observation.result);
   } catch {
     return null;
   }
+}
+
+function isTeachingRequest(message) {
+  // A request to learn a subject needs teaching prose, not just catalogue cards.
+  // Explicit activity-discovery requests can still use the catalogue-only path.
+  const text = String(message || "").trim();
+
+  const activityDiscoveryRequest =
+    /\b(find|show|list|browse|search for)\b.{0,40}\b(activities|resources|videos)\b/i.test(text) ||
+    /\b(what|which)\b.{0,30}\b(activities|resources)\b.{0,30}\b(available|in the catalogue)\b/i.test(text);
+
+  if (activityDiscoveryRequest) return false;
+
+  return /\b(learn|teach me|explain|understand|practice|practise|quiz|test me|lesson|study|how does|what is|what are)\b/i.test(text);
 }
 
 function buildCatalogueOnlyReply(results) {
@@ -174,6 +249,37 @@ async function assessCatalogueFit(message, history, results, llm) {
   };
 }
 
+async function attachYouTubeVideos(response, learnerMessage, searchObservation) {
+  // Only search YouTube when the existing planner performed a learning
+  // catalogue search. Greetings and general conversations remain unchanged.
+  if (!searchObservation) {
+    return { ...response, videos: [] };
+  }
+
+  try {
+    const searchArgs = searchObservation.arguments || {};
+    const topic = searchArgs.q || searchArgs.topic || learnerMessage;
+
+    const videos = await searchYouTubeVideos({
+      topic,
+      grade: searchArgs.grade || "",
+      subject: searchArgs.subject || "",
+      limit: 5
+    });
+
+    console.log(`[Agent YouTube] Attached ${videos.length} videos.`);
+
+    return {
+      ...response,
+      videos: Array.isArray(videos) ? videos : []
+    };
+  } catch (error) {
+    // Optional video discovery must never fail the learning response.
+    console.warn("[Agent YouTube] Optional search failed:", error.message);
+    return { ...response, videos: [] };
+  }
+}
+
 export async function runLearningAgent({ message, history = [], onLlmStatus }) {
   const llm = createAgentLlmSession({ onStatus: onLlmStatus });
   if (!message || typeof message !== "string" || !message.trim()) {
@@ -213,8 +319,13 @@ export async function runLearningAgent({ message, history = [], onLlmStatus }) {
 
     try {
       const result = await executeAgentTool(plan.action, plan.arguments);
-      observations.push({ step, action: plan.action, arguments: plan.arguments,
-        result: compactObservation(result) });
+
+      observations.push({
+        step,
+        action: plan.action,
+        arguments: plan.arguments,
+        result
+      });
     } catch (error) {
       observations.push({ step, action: plan.action, arguments: plan.arguments,
         error: error.message || "Tool execution failed." });
@@ -271,10 +382,13 @@ export async function runLearningAgent({ message, history = [], onLlmStatus }) {
     );
   }
 
-  // If the catalogue completely fulfils the request, no user-facing LLM prose
-  // is needed. This keeps the result genuinely catalogue-sourced and warning-free.
-  if (fit.catalogueSatisfiesRequest) {
-    return {
+  // Catalogue-only replies are appropriate for activity-discovery requests.
+  // A teaching request must still receive an explanation and practice questions,
+  // even when matching catalogue activities exist.
+  const teachingRequest = isTeachingRequest(learnerMessage);
+
+  if (fit.catalogueSatisfiesRequest && !teachingRequest) {
+    const response = {
       reply: buildCatalogueOnlyReply(relevantResults),
       action: AGENT_ACTIONS.SEARCH,
       results: relevantResults,
@@ -282,10 +396,16 @@ export async function runLearningAgent({ message, history = [], onLlmStatus }) {
       showAiWarning: false,
       agent: { steps: plannerSteps, maxSteps: MAX_AGENT_STEPS, completed: true }
     };
+
+    return attachYouTubeVideos(response, learnerMessage, latestSearch);
   }
 
   // Catalogue had no suitable match or only partially met the request:
   // generate the missing explanation/exercise/etc. with the LLM.
+  const smeInstructions = relevantResults.length
+    ? await loadInstructionsForCatalogueResults(relevantResults)
+    : "";
+
   const responseContext = `Learner message: ${learnerMessage}
 
 Relevant CSV catalogue results (these may be empty):
@@ -294,14 +414,24 @@ ${JSON.stringify(relevantResults, null, 2)}
 Catalogue fit assessment: ${fit.reason || "The catalogue did not fully satisfy the request."}
 
 Fulfil the learner's complete request using your own educational knowledge
-where needed. If relevant catalogue activities are supplied, mention them as
-additional resources, but never claim they contain a requested quiz, question
-count or explanation unless the CSV data proves that. Follow the learner's
-requested grade, number of questions and format exactly.`;
+where needed. For a request to learn or understand a topic, provide a short
+explanation first, then simple examples, then three practice questions unless
+the learner specifies a different number or format. Do this even if the
+catalogue fit assessment says that catalogue activities satisfy the request.
+The application displays the supplied CSV activities separately as activity
+cards, so focus this written reply on teaching and do not duplicate the card
+list. Never claim that a CSV activity contains a quiz, question count or
+explanation unless the CSV data proves that. Follow the learner's requested
+grade, number of questions and format exactly.`;
 
   const reply = await llm.generateText({
     messages: [
-      { role: "system", content: AGENT_SYSTEM_PROMPT },
+      {
+        role: "system",
+        content: smeInstructions
+          ? `${AGENT_SYSTEM_PROMPT}\n\n${smeInstructions}`
+          : AGENT_SYSTEM_PROMPT
+      },
       ...recentHistory,
       { role: "user", content: responseContext }
     ],
@@ -309,7 +439,7 @@ requested grade, number of questions and format exactly.`;
     maxTokens: 900
   });
 
-  return {
+  const response = {
     reply,
     action: latestSearch ? AGENT_ACTIONS.SEARCH : finalAction,
     results: relevantResults,
@@ -317,4 +447,6 @@ requested grade, number of questions and format exactly.`;
     showAiWarning: true,
     agent: { steps: plannerSteps, maxSteps: MAX_AGENT_STEPS, completed: true }
   };
+
+  return attachYouTubeVideos(response, learnerMessage, latestSearch);
 }

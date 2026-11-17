@@ -1,6 +1,3 @@
-import dotenv from "dotenv";
-dotenv.config();
-
 // APP_ENV is the single source of truth for backend environment selection.
 // LOCAL always uses Ollama; LIVE always uses OpenRouter.
 const appEnvironment = String(process.env.APP_ENV || "").trim().toUpperCase();
