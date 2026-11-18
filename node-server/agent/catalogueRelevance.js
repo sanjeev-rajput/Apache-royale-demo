@@ -1,142 +1,211 @@
-const STOP_WORDS = new Set([
-  "a", "an", "and", "are", "as", "at", "be", "by", "can", "for", "from",
-  "give", "help", "i", "in", "is", "it", "me", "of", "on", "or", "please",
-  "show", "some", "teach", "the", "to", "want", "what", "with", "you",
-  "find", "search", "activity", "activities", "content", "learn", "learning",
-  "about", "related", "resource", "resources", "lesson", "lessons", "class",
-  "grade", "standard", "std", "my", "this", "that", "these", "those"
+// Isolated generic catalogue relevance prototype v3.
+// No imports from, or modifications to, the AI K12 application.
+// Learner-facing policy: display direct + strong related matches only.
+// Numerical scores are deliberately not part of this API or its output.
+
+// Isolated generic catalogue relevance prototype v4.
+// Adds concept-aware matching: modifiers are retained, conjunctions create
+// separate concepts, and partial coverage is not promoted to a direct match.
+
+const FIELD_ALIASES = Object.freeze({
+  'Topic': ['topic', 'Topic'],
+  'Subtopic': ['subtopic', 'Subtopic'],
+  'Activity Name': ['activityName', 'activity_name', 'Activity Name'],
+  'Keywords': ['keywords', 'Keywords'],
+  'Description': ['description', 'Description']
+});
+const SUPPORT_FIELDS = Object.freeze(['Keywords', 'Description']);
+const ALL_FIELDS = Object.freeze(Object.keys(FIELD_ALIASES));
+function readField(record, field) {
+  for (const key of FIELD_ALIASES[field] || [field]) {
+    if (record?.[key] !== undefined && record?.[key] !== null) return record[key];
+  }
+  return '';
+}
+
+const REQUEST_TERMS = new Set([
+  'a','an','the','i','me','my','we','you','your','to','for','of','on','in','at','and','or',
+  'please','want','would','like','learn','learning','teach','teaching','show','find','search',
+  'give','provide','tell','explain','explanation','understand','about','some','with','help',
+  'practice','practise','question','questions','quiz','test','lesson','activity','activities',
+  'resource','resources','video','videos','importance','important','meaning','examples',
+  'example','class','grade','student','students','it','its','this','that','what','how','when',
+  'where','why','can','could','will','would','me','is','are','was','were','be','being','do',
+  'does','did','has','have','had','but','from','into','explain','explanation','teach','teaches',
+  'use','uses','using','used','learns','learning'
 ]);
 
-const SUBJECT_ALIASES = new Map([
-  ["math", "mathematics"], ["maths", "mathematics"], ["mathematics", "mathematics"],
-  ["science", "science"], ["english", "english"], ["hindi", "hindi"],
-  ["evs", "evs"], ["environmental", "evs"], ["social", "social"],
-  ["sst", "social"], ["computer", "computer"], ["computers", "computer"]
-]);
-
-export function normalizeSearchText(value) {
-  return String(value ?? "")
-    .normalize("NFKD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .toLowerCase()
-    .replace(/&/g, " and ")
-    .replace(/[^a-z0-9]+/g, " ")
-    .trim()
-    .split(/\s+/)
-    .filter(Boolean)
-    .map(token => {
-      if (token.length > 4 && token.endsWith("ies")) return `${token.slice(0, -3)}y`;
-      if (token.length > 3 && token.endsWith("s") && !token.endsWith("ss")) return token.slice(0, -1);
-      return token;
-    })
-    .join(" ");
+function normalizeToken(token) {
+  let value = String(token).normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+  if (value.length > 4 && value.endsWith('ies')) value = value.slice(0, -3) + 'y';
+  else if (value.length > 3 && value.endsWith('s') && !value.endsWith('ss')) value = value.slice(0, -1);
+  return value;
 }
-
-function getMessageTokens(message) {
-  const normalized = normalizeSearchText(message);
-  return [...new Set(normalized.split(" ").filter(token =>
-    token && !STOP_WORDS.has(token) && !/^\d+$/.test(token)))];
+function tokenize(value) {
+  return String(value ?? '').toLowerCase().replace(/[^\p{L}\p{N}]+/gu, ' ').trim()
+    .split(/\s+/).filter(Boolean).map(normalizeToken);
 }
-
-function getRequestedGrade(message) {
-  const text = String(message ?? "").toLowerCase();
-  const match = text.match(/\b(?:class|grade|standard|std)\s*(?:[-:]\s*)?(\d{1,2})\b/) ||
-    text.match(/\b(\d{1,2})(?:st|nd|rd|th)\s+grade\b/);
-  return match ? Number(match[1]) : null;
+function splitConcepts(query) {
+  return String(query ?? '').split(/\s+(?:and|or|also)\s+|[,/&+]+/i).map(part => part.trim()).filter(Boolean);
 }
-
-function getGradeNumber(value) {
-  const text = String(value ?? "").toLowerCase();
-  const match = text.match(/\b(?:class|grade|standard|std)\s*(?:[-:]\s*)?(\d{1,2})\b/) ||
-    text.match(/\b(\d{1,2})(?:st|nd|rd|th)?\b/);
-  return match ? Number(match[1]) : null;
+function termsForConcept(concept) {
+  return [...new Set(tokenize(concept).filter(term =>
+    term.length > 1 && !REQUEST_TERMS.has(term) && !/^\d+$/.test(term)
+  ))];
 }
-
-function getRequestedSubjects(tokens) {
-  return new Set(tokens.map(token => SUBJECT_ALIASES.get(token)).filter(Boolean));
+export function extractCatalogueTopicTerms(query) {
+  return [...new Set(splitConcepts(query).flatMap(termsForConcept))];
 }
-
-function getFieldText(result, fields) {
-  return fields.map(field => result?.[field]).filter(value =>
-    value !== null && value !== undefined && value !== "").join(" ");
+export function extractGrade(query) {
+  const match = String(query ?? '').match(/\b(?:class|grade)\s*(\d{1,2})\b/i);
+  return match ? `class${match[1]}` : '';
 }
-
-function hasSubjectConflict(messageSubjects, result) {
-  if (!messageSubjects.size) return false;
-  const subjectText = normalizeSearchText(result?.subject);
-  if (!subjectText) return false;
-  const resultSubjects = new Set(subjectText.split(" ").map(token => SUBJECT_ALIASES.get(token)).filter(Boolean));
-  return resultSubjects.size > 0 && ![...messageSubjects].some(subject => resultSubjects.has(subject));
+function normalizedGrade(value) { return String(value ?? '').toLowerCase().replace(/\s+/g, ''); }
+function fieldTokens(record, field) { return new Set(tokenize(readField(record, field))); }
+function phrasePresent(record, field, terms) {
+  if (!terms.length) return false;
+  const haystack = tokenize(readField(record, field));
+  // Ordered phrase matching tolerates punctuation but not intervening words.
+  for (let i = 0; i <= haystack.length - terms.length; i++) {
+    if (terms.every((term, offset) => haystack[i + offset] === term)) return true;
+  }
+  return false;
 }
-
+function conceptEvidence(record, terms) {
+  const fields = {};
+  for (const field of ALL_FIELDS) {
+    const tokens = fieldTokens(record, field);
+    fields[field] = terms.filter(term => tokens.has(term));
+  }
+  const primaryCovered = ['Topic', 'Activity Name'].some(field => terms.every(term => fields[field].includes(term)));
+  const titlePhrase = phrasePresent(record, 'Activity Name', terms);
+  const topicPhrase = phrasePresent(record, 'Topic', terms);
+  const subtopicCorroborated = terms.every(term => fields.Subtopic.includes(term)) && (titlePhrase || SUPPORT_FIELDS.some(field => terms.every(term => fields[field].includes(term))));
+  const anyCovered = ALL_FIELDS.some(field => terms.every(term => fields[field].includes(term)));
+  const directEvidence = primaryCovered || titlePhrase || topicPhrase || subtopicCorroborated;
+  const matchedTerms = [...new Set(ALL_FIELDS.flatMap(field => fields[field]))];
+  return { fields, primaryCovered, titlePhrase, topicPhrase, subtopicCorroborated, directEvidence, anyCovered, matchedTerms };
+}
+function recordIdentity(record) {
+  return [record?.Grade, record?.Topic, record?.Subtopic, record?.['Activity Name'], record?.Location]
+    .map(value => String(value ?? '').trim().toLowerCase()).join('|');
+}
+function evaluateOne(concepts, record) {
+  const active = concepts.filter(c => c.terms.length);
+  if (!active.length) return { classification: 'unmatched', reason: 'No meaningful topic terms were found.', evidence: [], coveredConcepts: [], missingConcepts: [] };
+  const results = active.map(concept => ({
+    label: concept.label,
+    terms: concept.terms,
+    ...conceptEvidence(record, concept.terms)
+  }));
+  const covered = results.filter(r => r.directEvidence || r.anyCovered);
+  const directCovered = results.filter(r => r.directEvidence);
+  const fullCoverage = covered.length === active.length;
+  const allDirect = directCovered.length === active.length;
+  const anyDirect = directCovered.length > 0;
+  const matchedFields = ALL_FIELDS.filter(field => results.some(r => r.fields[field].length));
+  let classification = 'unmatched';
+  let reason = 'No meaningful catalogue-field evidence.';
+  if (anyDirect) {
+    classification = 'direct';
+    reason = allDirect
+      ? 'The resource directly matches every requested concept in its title or catalogue taxonomy.'
+      : 'The resource directly matches at least one requested concept; overall request coverage is reported separately.';
+  } else if (fullCoverage) {
+    classification = 'weak_related';
+    reason = 'The resource matches only part of a multi-concept request or lacks specific title/taxonomy evidence.';
+  } else if (matchedFields.length) {
+    classification = 'weak_related';
+    reason = 'Some requested terms appear in supporting catalogue fields, but the concept is not established.';
+  }
+  return {
+    classification, reason,
+    evidence: matchedFields.map(field => ({ field, matchedTerms: [...new Set(results.flatMap(r => r.fields[field]))] })),
+    coveredConcepts: covered.map(r => r.label),
+    missingConcepts: results.filter(r => !covered.includes(r)).map(r => r.label),
+    _conceptCount: active.length,
+    _coveredCount: covered.length,
+    _subtopic: String(readField(record, 'Subtopic') ?? '').trim().toLowerCase(),
+    _supportFieldCount: SUPPORT_FIELDS.filter(field => matchedFields.includes(field)).length,
+    _supportTerms: [...new Set(SUPPORT_FIELDS.flatMap(field => results.flatMap(r => r.fields[field])))]
+  };
+}
 /**
- * Find catalogue rows whose own descriptive fields support the learner's topic.
- * The catalogue search has already applied its normal filters; this is a
- * conservative safety net for rows the LLM fit assessor may omit.
+ * Evaluates catalogue records and applies the agreed display policy.
+ * Returns direct, strongRelated, weakRelated, unmatched and recommended groups.
+ * No numerical relevance scores are produced or exposed.
  */
-export function findDeterministicallyRelevantIndexes(message, results) {
-  if (!Array.isArray(results) || results.length === 0) return [];
-
-  const tokens = getMessageTokens(message);
-  if (tokens.length === 0) return [];
-
-  const requestedGrade = getRequestedGrade(message);
-  const requestedSubjects = getRequestedSubjects(tokens);
-  const topicTokens = tokens.filter(token => !SUBJECT_ALIASES.has(token));
-  if (topicTokens.length === 0) return [];
-
-  const weightedFields = [
-    { fields: ["topic"], weight: 5 },
-    { fields: ["subtopic"], weight: 4 },
-    { fields: ["activityName", "activity_name", "name"], weight: 4 },
-    { fields: ["keywords", "keyword"], weight: 4 },
-    { fields: ["description"], weight: 1 }
-  ];
-
-  const matches = [];
-  results.forEach((result, index) => {
-    if (!result || typeof result !== "object") return;
-
-    if (requestedGrade !== null) {
-      const resultGrade = getGradeNumber(result.grade ?? result.class ?? result.standard);
-      if (resultGrade !== null && resultGrade !== requestedGrade) return;
-    }
-    if (hasSubjectConflict(requestedSubjects, result)) return;
-
-    let score = 0;
-    const matchedTokens = new Set();
-    for (const field of weightedFields) {
-      const text = normalizeSearchText(getFieldText(result, field.fields));
-      if (!text) continue;
-      const fieldTokens = new Set(text.split(" "));
-      for (const token of topicTokens) {
-        if (fieldTokens.has(token)) {
-          score += field.weight;
-          matchedTokens.add(token);
-        }
-      }
-    }
-
-    // Require at least one topic token in a meaningful catalogue field.
-    // A single exact topic/name/keyword hit is sufficient; descriptions alone
-    // are deliberately not enough to avoid retaining loosely related rows.
-    if (matchedTokens.size > 0 && score >= 3.5) {
-      matches.push({ index, score, matchedCount: matchedTokens.size });
-    }
+export function evaluateCatalogueRelevance(query, records, options = {}) {
+  const sourceRecords = Array.isArray(records) ? records : [];
+  const concepts = splitConcepts(query).map(raw => { const terms = termsForConcept(raw); return { label: terms.join(' '), terms }; }).filter(c => c.terms.length);
+  const queryTerms = [...new Set(concepts.flatMap(c => c.terms))];
+  const requestedGrade = normalizedGrade(options.grade || extractGrade(query));
+  const evaluated = sourceRecords.map((record, index) => {
+    const grade = normalizedGrade(record?.grade ?? record?.Grade ?? record?.class ?? record?.standard);
+    const gradeMismatch = Boolean(requestedGrade && grade && grade !== requestedGrade);
+    return { index, record, gradeMismatch, ...evaluateOne(concepts, record) };
   });
-
-  return matches
-    .sort((a, b) => b.score - a.score || b.matchedCount - a.matchedCount || a.index - b.index)
-    .map(item => item.index);
+  const gradeEligible = evaluated.filter(item => !item.gradeMismatch);
+  const direct = gradeEligible.filter(item => item.classification === 'direct');
+  const weakRelated = gradeEligible.filter(item => item.classification === 'weak_related');
+  const directSubtopics = new Set(direct.map(item => normalizeToken(item._subtopic)).filter(Boolean));
+  const strongRelated = [];
+  const remainingWeak = [];
+  for (const item of weakRelated) {
+    const sharesDirectNeighbourhood = Boolean(item._subtopic && directSubtopics.has(normalizeToken(item._subtopic)));
+    const corroboratedSupport = item._supportFieldCount >= 2 && item._supportTerms.length >= 2;
+    if (item._conceptCount === 1 && sharesDirectNeighbourhood && item._supportFieldCount > 0) {
+      item.classification = 'strong_related';
+      item.reason = 'The activity shares a catalogue subtopic with direct matches and has supporting evidence.';
+      strongRelated.push(item);
+    } else if (item._conceptCount === 1 && corroboratedSupport && item._coveredCount > 0) {
+      item.classification = 'strong_related';
+      item.reason = 'Multiple catalogue fields corroborate the requested concept.';
+      strongRelated.push(item);
+    } else remainingWeak.push(item);
+  }
+  const unmatched = gradeEligible.filter(item => item.classification === 'unmatched');
+  const sort = list => list.sort((a, b) => a.index - b.index);
+  sort(direct); sort(strongRelated); sort(remainingWeak);
+  const recommended = [
+    ...direct.map(item => ({ ...publicItem(item), displayLabel: 'Direct match' })),
+    ...strongRelated.map(item => ({ ...publicItem(item), displayLabel: 'Related activity' }))
+  ];
+  const requestedConcepts = concepts.map(c => c.label);
+  const coveredConcepts = requestedConcepts.filter(label => direct.some(item => item.coveredConcepts.includes(label)) || strongRelated.some(item => item.coveredConcepts.includes(label)));
+  return {
+    query, queryTerms, requestedConcepts, coveredConcepts,
+    missingConcepts: requestedConcepts.filter(label => !coveredConcepts.includes(label)),
+    requestedGrade: requestedGrade || null, total: evaluated.length,
+    direct: direct.map(publicItem), strongRelated: strongRelated.map(publicItem),
+    weakRelated: remainingWeak.map(publicItem), unmatchedCount: unmatched.length,
+    gradeExcludedCount: evaluated.length - gradeEligible.length, recommended
+  };
 }
 
-/** Keep the LLM's judgement, while independently retaining deterministic matches. */
-export function mergeCatalogueResultIndexes(llmIndexes, deterministicIndexes, resultCount) {
-  const validLlmIndexes = Array.isArray(llmIndexes)
-    ? llmIndexes.filter(index => Number.isInteger(index) && index >= 0 && index < resultCount)
-    : [];
-  const validDeterministicIndexes = Array.isArray(deterministicIndexes)
-    ? deterministicIndexes.filter(index => Number.isInteger(index) && index >= 0 && index < resultCount)
-    : [];
-  return [...new Set([...validLlmIndexes, ...validDeterministicIndexes])];
+function publicItem(item) {
+  return {
+    index: item.index,
+    record: item.record,
+    classification: item.classification,
+    reason: item.reason,
+    evidence: item.evidence,
+    coveredConcepts: item.coveredConcepts,
+    missingConcepts: item.missingConcepts
+  };
+}
+
+/** Small presentation adapter for a Royale/API response. */
+export function buildLearnerRecommendations(result) {
+  return (result?.recommended ?? []).map(item => ({
+    ...item.record,
+    relevanceLabel: item.displayLabel
+  }));
+}
+
+/** Returns only indexes approved by the direct + strong-related display policy. */
+export function getRecommendedCatalogueIndexes(result) {
+  return [...new Set((result?.recommended ?? [])
+    .map(item => item.index)
+    .filter(index => Number.isInteger(index) && index >= 0))];
 }

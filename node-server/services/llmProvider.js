@@ -104,14 +104,30 @@ async function requestOpenRouter(messages, options) {
     const error = new Error(`OpenRouter request failed (${response.status}): ${message}${metadata}`);
     error.modelId = data?.model || requestedModel;
     error.status = response.status;
+    error.metadata = data.error?.metadata || null;
+    error.providerMessage = message;
+    error.rateLimitReset = response.headers.get("X-RateLimit-Reset");
     throw error;
   }
 
-  const content = data.choices?.[0]?.message?.content;
+  const choice = data.choices?.[0];
+  const finishReason = choice?.finish_reason || null;
+  const content = choice?.message?.content;
+  if (finishReason === "length") {
+    const error = new Error(`OpenRouter output was truncated (finish_reason=length; requested max_tokens=${options.maxTokens}).`);
+    error.modelId = data?.model || requestedModel;
+    error.status = response.status;
+    error.finishReason = finishReason;
+    error.failureType = "output_truncated";
+    error.maxTokens = options.maxTokens;
+    throw error;
+  }
   if (typeof content !== "string" || !content.trim()) {
     const error = new Error("OpenRouter returned empty message content.");
     error.modelId = data?.model || requestedModel;
     error.status = response.status;
+    error.finishReason = finishReason;
+    error.failureType = "empty_content";
     throw error;
   }
   return content.trim();
@@ -141,12 +157,21 @@ export async function generateStructuredResponse({
     { role: "user", content: typeof userPayload === "string" ? userPayload : JSON.stringify(userPayload) }
   ];
   const options = { temperature, maxTokens, timeoutMs, json: true, model };
-  const content = config.provider === "openrouter"
-    ? await requestOpenRouter(messages, options)
-    : await requestOllama(messages, options);
+  let content;
+  try {
+    content = config.provider === "openrouter"
+      ? await requestOpenRouter(messages, options)
+      : await requestOllama(messages, options);
+  } catch (error) {
+    throw error;
+  }
 
   try { return parseJson(content); }
-  catch (error) {
-    throw new Error(`The ${config.provider} model returned invalid JSON: ${content.slice(0, 500)}`);
+  catch (cause) {
+    const error = new Error(`The ${config.provider} model returned invalid JSON: ${content.slice(0, 500)}`);
+    error.modelId = model || config.model;
+    error.failureType = "invalid_json";
+    error.cause = cause;
+    throw error;
   }
 }

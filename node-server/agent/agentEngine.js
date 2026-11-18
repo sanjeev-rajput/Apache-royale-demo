@@ -1,15 +1,15 @@
 // Complete updated agentEngine.js — copy this file over agent/agentEngine.js
 // Includes SME profile integration and planner-only structured observation compaction.
 
-import { createAgentLlmSession } from "./agentLlmResilience.js";
+import { createAgentLlmSession, AgentLlmUnavailableError } from "./agentLlmResilience.js";
 
 import { executeAgentTool } from "./agentTools.js";
 import { searchYouTubeVideos } from "../services/youtubeService.js";
 import { loadInstructionsForCatalogueResults } from "./agentConfigLoader.js";
 import { AGENT_ACTIONS, PLANNER_PROMPT } from "./agentPlanner.js";
 import {
-  findDeterministicallyRelevantIndexes,
-  mergeCatalogueResultIndexes
+  evaluateCatalogueRelevance,
+  getRecommendedCatalogueIndexes
 } from "./catalogueRelevance.js";
 
 const MAX_AGENT_STEPS = 4;
@@ -233,6 +233,9 @@ async function assessCatalogueFit(message, history, results, llm) {
       maxTokens: 300
     });
   } catch (error) {
+    // An account-level 429 is request-wide: do not continue to another LLM
+    // operation after the provider has told us the account limit is exhausted.
+    if (error instanceof AgentLlmUnavailableError && error.accountLimit) throw error;
     console.warn("[Agent Catalogue Fit] Assessment failed; using LLM fallback:", error.message);
     return { catalogueSatisfiesRequest: false, relevantResultIndexes: [], reason: "Catalogue suitability could not be verified." };
   }
@@ -280,7 +283,7 @@ async function attachYouTubeVideos(response, learnerMessage, searchObservation) 
   }
 }
 
-export async function runLearningAgent({ message, history = [], onLlmStatus }) {
+async function runLearningAgentInternal({ message, history = [], onLlmStatus }) {
   const llm = createAgentLlmSession({ onStatus: onLlmStatus });
   if (!message || typeof message !== "string" || !message.trim()) {
     throw new Error("A valid learner message is required.");
@@ -361,33 +364,32 @@ export async function runLearningAgent({ message, history = [], onLlmStatus }) {
 
   const fit = await assessCatalogueFit(learnerMessage, recentHistory, catalogueResults, llm);
 
-  // The LLM assesses whether the catalogue fully fulfils the request, but its
-  // relevance list is not the sole authority for whether a real CSV activity
-  // is returned. Independently retain clear topic matches from catalogue data.
-  const deterministicIndexes = findDeterministicallyRelevantIndexes(
-    learnerMessage,
-    catalogueResults
-  );
-  const relevantIndexes = mergeCatalogueResultIndexes(
-    fit.relevantResultIndexes,
-    deterministicIndexes,
-    catalogueResults.length
-  );
+  // v4 is the sole authority for learner-facing catalogue cards. The LLM fit
+  // assessor remains useful for deciding whether a catalogue-only reply is
+  // sufficient, but its indexes cannot bypass the agreed relevance policy.
+  const relevance = evaluateCatalogueRelevance(learnerMessage, catalogueResults);
+  const relevantIndexes = getRecommendedCatalogueIndexes(relevance);
   const relevantResults = relevantIndexes.map(index => catalogueResults[index]);
+  const approvedFitIndexes = fit.relevantResultIndexes.filter(index =>
+    relevantIndexes.includes(index)
+  );
+  const catalogueSatisfiesRequest =
+    fit.catalogueSatisfiesRequest === true &&
+    approvedFitIndexes.length > 0 &&
+    relevance.missingConcepts.length === 0;
 
-  if (deterministicIndexes.length > 0) {
-    console.log(
-      `[Agent Catalogue Relevance] deterministic matches=${deterministicIndexes.length}; ` +
-      `LLM matches=${fit.relevantResultIndexes.length}; retained=${relevantResults.length}`
-    );
-  }
+  console.log(
+    `[Agent Catalogue Relevance v4] direct=${relevance.direct.length}; ` +
+    `strongRelated=${relevance.strongRelated.length}; weakInternal=${relevance.weakRelated.length}; ` +
+    `recommended=${relevantResults.length}; missingConcepts=${JSON.stringify(relevance.missingConcepts)}`
+  );
 
   // Catalogue-only replies are appropriate for activity-discovery requests.
   // A teaching request must still receive an explanation and practice questions,
   // even when matching catalogue activities exist.
   const teachingRequest = isTeachingRequest(learnerMessage);
 
-  if (fit.catalogueSatisfiesRequest && !teachingRequest) {
+  if (catalogueSatisfiesRequest && !teachingRequest) {
     const response = {
       reply: buildCatalogueOnlyReply(relevantResults),
       action: AGENT_ACTIONS.SEARCH,
@@ -412,6 +414,8 @@ Relevant CSV catalogue results (these may be empty):
 ${JSON.stringify(relevantResults, null, 2)}
 
 Catalogue fit assessment: ${fit.reason || "The catalogue did not fully satisfy the request."}
+Topic coverage: ${relevance.coveredConcepts.join(", ") || "No requested concepts established."}
+Missing topic concepts: ${relevance.missingConcepts.join(", ") || "None."}
 
 Fulfil the learner's complete request using your own educational knowledge
 where needed. For a request to learn or understand a topic, provide a short
@@ -449,4 +453,37 @@ grade, number of questions and format exactly.`;
   };
 
   return attachYouTubeVideos(response, learnerMessage, latestSearch);
+}
+
+
+// Convert provider exhaustion into a normal learner-facing response instead of
+// allowing a provider exception to become an unhandled request failure.
+export async function runLearningAgent(args) {
+  try {
+    return await runLearningAgentInternal(args);
+  } catch (error) {
+    if (!(error instanceof AgentLlmUnavailableError)) throw error;
+
+    console.warn("[Agent LLM] Request could not continue:", {
+      failureType: error.failureType,
+      accountLimit: error.accountLimit,
+      attempts: error.attempts,
+      attemptedModels: error.attemptedModels
+    });
+
+    return {
+      reply: error.message,
+      action: AGENT_ACTIONS.ANSWER,
+      results: [],
+      videos: [],
+      contentSource: "unavailable",
+      showAiWarning: true,
+      agent: { steps: 0, maxSteps: MAX_AGENT_STEPS, completed: false },
+      warning: {
+        code: error.code,
+        source: error.source,
+        accountLimit: error.accountLimit
+      }
+    };
+  }
 }
