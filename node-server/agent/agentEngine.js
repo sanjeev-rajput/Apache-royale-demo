@@ -98,12 +98,43 @@ function normalizePlan(plan) {
   return { action, arguments: args };
 }
 
+function normalizeComparableValue(value, field) {
+  if (typeof value !== "string") return value;
+
+  let normalized = value
+    .trim()
+    .toLowerCase()
+    .replace(/\\s+/g, " ")
+    .replace(/[.!?]+$/g, "");
+
+  // Common subject aliases are equivalent for duplicate detection only.
+  // The original arguments are still passed unchanged to the catalogue.
+  if (field === "subject") {
+    const subjectAliases = new Map([
+      ["maths", "mathematics"],
+      ["math", "mathematics"]
+    ]);
+    normalized = subjectAliases.get(normalized) || normalized;
+  }
+
+  return normalized;
+}
+
 function makeCallKey(action, args) {
   const stableArgs = Object.keys(args || {}).sort().reduce((out, key) => {
-    out[key] = args[key];
+    out[key] = normalizeComparableValue(args[key], key);
     return out;
   }, {});
   return `${action}:${JSON.stringify(stableArgs)}`;
+}
+
+function hasSuccessfulSearch(observations) {
+  return observations.some(item =>
+    item.action === AGENT_ACTIONS.SEARCH &&
+    item.result !== undefined &&
+    item.result !== null &&
+    !item.error
+  );
 }
 
 function compactObservation(value) {
@@ -230,7 +261,7 @@ async function assessCatalogueFit(message, history, results, llm) {
       systemPrompt: CATALOGUE_FIT_PROMPT,
       userPayload: { learnerMessage: message, conversationHistory: history, catalogueResults: results },
       temperature: 0,
-      maxTokens: 300
+      maxTokens: 500
     });
   } catch (error) {
     // An account-level 429 is request-wide: do not continue to another LLM
@@ -240,15 +271,20 @@ async function assessCatalogueFit(message, history, results, llm) {
     return { catalogueSatisfiesRequest: false, relevantResultIndexes: [], reason: "Catalogue suitability could not be verified." };
   }
 
-  const indexes = Array.isArray(assessment?.relevantResultIndexes)
-    ? assessment.relevantResultIndexes.filter(index =>
-        Number.isInteger(index) && index >= 0 && index < results.length)
-    : [];
+  const schemaValid = assessment &&
+    typeof assessment.catalogueSatisfiesRequest === "boolean" &&
+    Array.isArray(assessment.relevantResultIndexes) &&
+    assessment.relevantResultIndexes.every(index => Number.isInteger(index));
+  if (!schemaValid) {
+    console.warn("[Agent Catalogue Fit] Structured response did not match the expected schema; using safe fallback.");
+    return { catalogueSatisfiesRequest: false, relevantResultIndexes: [], reason: "Catalogue suitability could not be verified." };
+  }
 
+  const indexes = assessment.relevantResultIndexes.filter(index => index >= 0 && index < results.length);
   return {
-    catalogueSatisfiesRequest: assessment?.catalogueSatisfiesRequest === true && indexes.length > 0,
+    catalogueSatisfiesRequest: assessment.catalogueSatisfiesRequest && indexes.length > 0,
     relevantResultIndexes: indexes,
-    reason: typeof assessment?.reason === "string" ? assessment.reason : ""
+    reason: typeof assessment.reason === "string" ? assessment.reason : ""
   };
 }
 
@@ -295,16 +331,68 @@ async function runLearningAgentInternal({ message, history = [], onLlmStatus }) 
   const executedCalls = new Set();
   let finalAction = AGENT_ACTIONS.ANSWER;
   let plannerSteps = 0;
+  let plannerFallbackUsed = false;
 
   // CSV-first agent loop: plan -> search/observe -> plan again.
   for (let step = 1; step <= MAX_AGENT_STEPS; step += 1) {
     plannerSteps = step;
-    const rawPlan = await llm.generateStructuredResponse({
-      systemPrompt: PLANNER_PROMPT,
-      userPayload: buildPlannerPayload(learnerMessage, recentHistory, observations, step),
-      temperature: 0,
-      maxTokens: 300
-    });
+    let rawPlan;
+    try {
+      rawPlan = await llm.generateStructuredResponse({
+        systemPrompt: PLANNER_PROMPT,
+        userPayload: buildPlannerPayload(learnerMessage, recentHistory, observations, step),
+        temperature: 0,
+        maxTokens: 700
+      });
+    } catch (error) {
+      if (error instanceof AgentLlmUnavailableError && error.accountLimit) throw error;
+      if (["empty_content"].includes(error.failureType)) throw error;
+
+      console.warn("[Agent Planner] Structured output unavailable; using deterministic catalogue fallback:", {
+        failureType: error.failureType || "structured_generation_error",
+        modelId: error.modelId || null,
+        finishReason: error.finishReason || null,
+        maxTokens: error.maxTokens || null,
+        rawContentLength: typeof error.rawContent === "string" ? error.rawContent.length : 0
+      });
+
+      // Never execute an action parsed from malformed or truncated planner JSON.
+      // Search the original learner request as plain text instead.
+      const fallbackArgs = { q: learnerMessage };
+      const callKey = makeCallKey(AGENT_ACTIONS.SEARCH, fallbackArgs);
+      if (!executedCalls.has(callKey)) {
+        executedCalls.add(callKey);
+        try {
+          const result = await executeAgentTool(AGENT_ACTIONS.SEARCH, fallbackArgs);
+          observations.push({ step, action: AGENT_ACTIONS.SEARCH, arguments: fallbackArgs, result });
+          finalAction = AGENT_ACTIONS.SEARCH;
+        } catch (toolError) {
+          observations.push({ step, action: AGENT_ACTIONS.SEARCH, arguments: fallbackArgs,
+            error: toolError.message || "Deterministic catalogue fallback failed." });
+        }
+      }
+      plannerFallbackUsed = true;
+      break;
+    }
+
+    const schemaValid = rawPlan &&
+      typeof rawPlan === "object" && !Array.isArray(rawPlan) &&
+      Object.values(AGENT_ACTIONS).includes(rawPlan.action) &&
+      rawPlan.arguments && typeof rawPlan.arguments === "object" && !Array.isArray(rawPlan.arguments);
+    if (!schemaValid) {
+      console.warn("[Agent Planner] Structured response failed schema validation; using deterministic catalogue fallback.");
+      const fallbackArgs = { q: learnerMessage };
+      try {
+        const result = await executeAgentTool(AGENT_ACTIONS.SEARCH, fallbackArgs);
+        observations.push({ step, action: AGENT_ACTIONS.SEARCH, arguments: fallbackArgs, result });
+        finalAction = AGENT_ACTIONS.SEARCH;
+      } catch (toolError) {
+        observations.push({ step, action: AGENT_ACTIONS.SEARCH, arguments: fallbackArgs,
+          error: toolError.message || "Deterministic catalogue fallback failed." });
+      }
+      plannerFallbackUsed = true;
+      break;
+    }
 
     const plan = normalizePlan(rawPlan);
     finalAction = plan.action;
@@ -312,10 +400,19 @@ async function runLearningAgentInternal({ message, history = [], onLlmStatus }) 
 
     if (plan.action === AGENT_ACTIONS.ANSWER) break;
 
+    // A successful search already provides the catalogue records needed for
+    // relevance evaluation. A subsequent filter lookup adds no value to this
+    // learning request and would consume another tool call.
+    if (plan.action === AGENT_ACTIONS.FILTERS && hasSuccessfulSearch(observations)) {
+      console.log("[Agent Planner] Skipping getLearningFilters: catalogue search already completed.");
+      finalAction = AGENT_ACTIONS.ANSWER;
+      break;
+    }
+
     const callKey = makeCallKey(plan.action, plan.arguments);
     if (executedCalls.has(callKey)) {
-      observations.push({ action: plan.action, arguments: plan.arguments,
-        error: "This exact tool request was already executed. Use its prior result." });
+      console.log("[Agent Planner] Skipping duplicate/equivalent tool call:", callKey);
+      finalAction = AGENT_ACTIONS.ANSWER;
       break;
     }
     executedCalls.add(callKey);
@@ -449,7 +546,7 @@ grade, number of questions and format exactly.`;
     results: relevantResults,
     contentSource: relevantResults.length ? "mixed" : "llm",
     showAiWarning: true,
-    agent: { steps: plannerSteps, maxSteps: MAX_AGENT_STEPS, completed: true }
+    agent: { steps: plannerSteps, maxSteps: MAX_AGENT_STEPS, completed: true, plannerFallbackUsed }
   };
 
   return attachYouTubeVideos(response, learnerMessage, latestSearch);

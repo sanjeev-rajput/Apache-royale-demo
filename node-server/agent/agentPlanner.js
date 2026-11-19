@@ -30,11 +30,21 @@ CSV-FIRST RULES:
   is unknown, call getLearningFilters and use its exact values.
 - Do not add null or empty optional arguments.
 - Search broadly enough to allow the catalogue to return relevant resources.
+- For one learning concept at a specified grade/subject, make one appropriately
+  scoped catalogue search. Do not request filters after a successful search.
+- Use getLearningFilters when the learner explicitly asks what grades, subjects,
+  topics or activity types are available, or when a required catalogue label
+  genuinely cannot be determined before searching.
+- Do not repeat a search with a spelling or common subject alias for the same
+  request (for example, "Mathematics" and "Maths"). The application also blocks
+  equivalent repeated tool calls.
+- For multiple distinct learning concepts, search each distinct concept only
+  when needed. Do not split one concept into near-duplicate searches.
 - Review observations before choosing the next action. Do not repeat an
-  identical tool call.
-- Choose only one action per call. Once catalogue discovery is complete, use
-  answer so the system can decide whether the CSV content fulfils the request
-  or an LLM fallback is required.
+  identical or equivalent tool call.
+- Choose only one action per call. Once the necessary catalogue discovery is
+  complete, use answer so the system can decide whether the CSV content fulfils
+  the request or an LLM fallback is required.
 
 Return one JSON object:
 {"action":"searchLearningContent|getLearningFilters|answer","arguments":{}}

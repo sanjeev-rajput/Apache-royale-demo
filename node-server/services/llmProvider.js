@@ -64,8 +64,23 @@ async function requestOllama(messages, options) {
   catch { throw new Error("Ollama returned an invalid JSON response envelope."); }
 
   const content = data.message?.content;
+  const metadata = {
+    provider: "ollama",
+    modelId: data.model || config.model,
+    finishReason: data.done_reason || null,
+    promptTokens: data.prompt_eval_count ?? null,
+    completionTokens: data.eval_count ?? null,
+    totalDuration: data.total_duration ?? null
+  };
   if (typeof content !== "string" || !content.trim()) {
-    throw new Error("Ollama returned empty message content.");
+    const error = new Error("Ollama returned empty message content.");
+    Object.assign(error, metadata, { failureType: "empty_content", rawContent: content ?? "" });
+    throw error;
+  }
+  if (options.json && ["length", "max_tokens"].includes(String(data.done_reason || "").toLowerCase())) {
+    const error = new Error(`Ollama output may be truncated (done_reason=${data.done_reason}).`);
+    Object.assign(error, metadata, { failureType: "output_truncated", maxTokens: options.maxTokens, rawContent: content });
+    throw error;
   }
   return content.trim();
 }
@@ -115,11 +130,16 @@ async function requestOpenRouter(messages, options) {
   const content = choice?.message?.content;
   if (finishReason === "length") {
     const error = new Error(`OpenRouter output was truncated (finish_reason=length; requested max_tokens=${options.maxTokens}).`);
-    error.modelId = data?.model || requestedModel;
-    error.status = response.status;
-    error.finishReason = finishReason;
-    error.failureType = "output_truncated";
-    error.maxTokens = options.maxTokens;
+    Object.assign(error, {
+      modelId: data?.model || requestedModel,
+      status: response.status,
+      finishReason,
+      failureType: "output_truncated",
+      maxTokens: options.maxTokens,
+      rawContent: typeof content === "string" ? content : "",
+      usage: data.usage || null,
+      provider: "openrouter"
+    });
     throw error;
   }
   if (typeof content !== "string" || !content.trim()) {
@@ -128,6 +148,9 @@ async function requestOpenRouter(messages, options) {
     error.status = response.status;
     error.finishReason = finishReason;
     error.failureType = "empty_content";
+    error.rawContent = typeof content === "string" ? content : "";
+    error.usage = data.usage || null;
+    error.provider = "openrouter";
     throw error;
   }
   return content.trim();
@@ -170,7 +193,9 @@ export async function generateStructuredResponse({
   catch (cause) {
     const error = new Error(`The ${config.provider} model returned invalid JSON: ${content.slice(0, 500)}`);
     error.modelId = model || config.model;
+    error.provider = config.provider;
     error.failureType = "invalid_json";
+    error.rawContent = content;
     error.cause = cause;
     throw error;
   }

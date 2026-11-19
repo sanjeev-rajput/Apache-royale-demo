@@ -44,6 +44,12 @@ export class AgentLlmUnavailableError extends Error {
     this.attemptedModels = attemptedModels;
     this.accountLimit = options.accountLimit === true;
     this.failureType = cause?.failureType || (this.accountLimit ? "account_rate_limit" : "provider_unavailable");
+    this.rawContent = cause?.rawContent ?? null;
+    this.finishReason = cause?.finishReason ?? null;
+    this.modelId = cause?.modelId ?? null;
+    this.maxTokens = cause?.maxTokens ?? null;
+    this.provider = cause?.provider ?? null;
+    this.usage = cause?.usage ?? null;
   }
 }
 
@@ -99,6 +105,11 @@ export function createAgentLlmSession({ onStatus } = {}) {
         return result;
       } catch (error) {
         lastError = error;
+        // Structured output that arrived but cannot be safely consumed is handed
+        // to the agent for deterministic fallback. Empty responses still retry.
+        if (structured && ["invalid_json", "output_truncated"].includes(error.failureType)) {
+          throw error;
+        }
         if (isAccountLevelRateLimit(error)) {
           const unavailable = new AgentLlmUnavailableError(
             operation, attemptsUsed, error,
@@ -115,7 +126,7 @@ export function createAgentLlmSession({ onStatus } = {}) {
 
         // Empty content and invalid JSON indicate a model-specific unusable
         // response. Exclude that model for this server runtime.
-        if (["empty_content", "invalid_json"].includes(error.failureType)) {
+        if (["empty_content"].includes(error.failureType)) {
           runtimeState.failedModels.add(model);
           runtimeState.failedModels.add(failedModel);
         }
