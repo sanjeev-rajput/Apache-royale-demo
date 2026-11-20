@@ -1,4 +1,4 @@
-$secureKey = Read-Host "Paste your OpenRouter API key" -AsSecureString
+$secureKey = Read-Host "enter open router key" -AsSecureString
 $ptr = [Runtime.InteropServices.Marshal]::SecureStringToBSTR($secureKey)
 
 try {

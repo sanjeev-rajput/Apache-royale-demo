@@ -514,3 +514,164 @@ button.spectrum-Button.clear-conversation-btn .spectrum-Button-label {
 .spectrum-Popover.spectrum-Popover--bottom.is-open {
     z-index: 9999 !important;
 }
+
+/* Assessment Agent - appended styles; existing styles above are unchanged */
+/* Assessment Agent - missing container styles */
+
+.assessment-panel {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.assessment-content {
+    width: 95%;
+    box-sizing: border-box;
+}
+.assessment-shell {
+    width: 100%;
+    max-width: 860px;
+    margin: 18px auto;
+    padding: 22px;
+    box-sizing: border-box;
+    background: #ffffff;
+    border: 1px solid #e5e9ef;
+    border-radius: 14px;
+    box-shadow: 0 3px 14px rgba(25, 42, 70, 0.07);
+    color: #263445;
+}
+
+.assessment-heading {
+    color: #1f344d;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.assessment-title {
+    color: #263445;
+    font-size: 18px;
+    font-weight: 700;
+    padding-top: 4px;
+}
+
+.assessment-instructions,
+.assessment-submit-hint {
+    color: #687789;
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 8px;
+}
+
+.assessment-question-card {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 17px 18px;
+    margin: 5px 0;
+    background: #fbfcfe;
+    border: 1px solid #e3e9f0;
+    border-radius: 10px;
+}
+
+.assessment-question-number {
+    color: #64748b;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.assessment-question-prompt {
+    color: #1e293b;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin: 3px 0 9px;
+}
+
+.assessment-option {
+    width: 100%;
+    min-height: 38px;
+    padding: 7px 10px;
+    margin: 2px 0;
+    box-sizing: border-box;
+    color: #344256;
+    background: #ffffff;
+    border: 1px solid #e7ebf0;
+    border-radius: 7px;
+    font-size: 14px;
+}
+
+.assessment-option:hover {
+    background: #f1f6fc;
+    border-color: #b8cce2;
+}
+
+.assessment-answer-correct {
+    color: #167447;
+    font-weight: 700;
+    margin-top: 12px;
+}
+
+.assessment-answer-incorrect {
+    color: #b54747;
+    font-weight: 700;
+    margin-top: 12px;
+}
+
+.assessment-answer-explanation {
+    color: #526174;
+    font-size: 13px;
+    line-height: 1.5;
+    padding: 3px 0 9px;
+    border-bottom: 1px solid #edf0f4;
+}
+
+.assessment-overall-feedback {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 16px;
+    padding: 16px 18px;
+    color: #263b53;
+    background: #f0f6fc;
+    border: 1px solid #d8e6f4;
+    border-left: 4px solid #4b83b8;
+    border-radius: 9px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+@media only screen and (max-width: 600px) {
+    .assessment-shell {
+        padding: 14px;
+        margin: 10px auto;
+    }
+    .assessment-question-card {
+        padding: 13px;
+    }
+}
+
+
+
+/* Assessment Agent - Spectrum Radio overrides (appended; existing rules untouched) */
+.assessment-option-radio {
+    display: block;
+    width: 100%;
+    margin: 5px 0;
+    padding: 8px 10px;
+    box-sizing: border-box;
+    border: 1px solid #e7ebf0;
+    border-radius: 7px;
+    background: #ffffff;
+    color: #344256;
+}
+
+.assessment-option-radio:hover {
+    background: #f1f6fc;
+    border-color: #b8cce2;
+}
+
+.assessment-option-radio .spectrum-Radio-label {
+    color: #344256;
+    font-size: 14px;
+}

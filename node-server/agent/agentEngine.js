@@ -59,12 +59,81 @@ Rules:
   CSV fields and description.
 `;
 
+function buildAssessmentContext(learnerMessage, searchObservation, catalogueResults) {
+  const args = searchObservation?.arguments || {};
+  const firstResult = Array.isArray(catalogueResults) ? catalogueResults[0] : null;
+  const gradeMatch = String(learnerMessage || "").match(/\b(?:class|grade)\s*(\d{1,2})\b/i);
+  const topic = String(
+    args.subtopic || args.topic || args.q ||
+    firstResult?.subtopic || firstResult?.topic || ""
+  ).trim();
+  const grade = String(args.grade || firstResult?.grade ||
+    (gradeMatch ? `${/^class/i.test(gradeMatch[0]) ? "Class" : "Grade"} ${gradeMatch[1]}` : "")
+  ).trim();
+  const subject = String(args.subject || firstResult?.subject || "").trim();
+  const instructionProfileId = String(firstResult?.instructionProfileId || "").trim();
+
+  if (!topic) return null;
+
+  return {
+    topic,
+    grade,
+    subject,
+    language: "English",
+    instructionProfileId,
+    learningContext: String(learnerMessage || "").slice(0, 1000)
+  };
+}
+
 function cleanHistory(history) {
   if (!Array.isArray(history)) return [];
   return history
     .filter(item => item && ["user", "assistant"].includes(item.role) &&
       typeof item.content === "string")
     .slice(-MAX_HISTORY_MESSAGES);
+}
+
+function buildDeterministicSearchArgs(message) {
+  const original = String(message || "").trim();
+  let query = original.toLowerCase();
+
+  // Extract grade separately so it does not become part of the catalogue text
+  // query. Preserve the original grade label style used by the CSV catalogue.
+  let grade = "";
+  const gradeMatch = query.match(/\b(class|grade)\s*(\d{1,2})\b/i);
+  if (gradeMatch) {
+    grade = `${gradeMatch[1].toLowerCase() === "class" ? "Class" : "Grade"} ${gradeMatch[2]}`;
+    query = query.replace(gradeMatch[0], " ");
+  }
+
+  // Remove instruction clauses and common request framing. This is especially
+  // important when a free model truncates planner JSON and the deterministic
+  // fallback is responsible for searching the catalogue.
+  query = query
+    .replace(/[.!?;].*$/s, " ")
+    .replace(/,\s*(?:i|we)\s+(?:only\s+)?(?:want|would like|need).*/i, " ")
+    .replace(/^\s*(?:please\s+)?(?:can you\s+)?/i, "")
+    .replace(/^\s*(?:(?:i|we)\s+)?(?:want|would like|need|wish)\s+to\s+/i, "")
+    .replace(/^\s*(?:show|find|list|search|browse)\s+(?:me\s+)?(?:the\s+)?/i, "")
+    .replace(/^\s*(?:available\s+)?(?:learning\s+)?(?:activities|resources|videos)\s+(?:for|about|on)\s+/i, "")
+    .replace(/^\s*(?:learn|study|understand|explain|teach me|practice|practise|explore)\s+/i, "")
+    .replace(/\s+(?:for|in)\s+(?:class|grade)\s*\d{1,2}\b.*$/i, " ")
+    .replace(/\s+(?:for|in)\s*$/i, " ")
+    .replace(/\s+/g, " ")
+    .replace(/^[\s,:-]+|[\s,:-]+$/g, "")
+    .trim();
+
+  // Remove residual conversational filler without destroying meaningful
+  // multi-word concepts such as "fractions and decimals".
+  query = query
+    .replace(/\b(i|we|want|would|like|need|please|me|to|learn|study|understand|explain|teach|show|find|list|browse|search|available|learning|activities|activity|resources|resource|only|explore|catalogue|catalog|lesson)\b/gi, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+
+  // Keep the fallback safe: never send an empty required query to the tool.
+  if (!query) query = original;
+
+  return { q: query, ...(grade ? { grade } : {}) };
 }
 
 function normalizePlan(plan) {
@@ -358,12 +427,13 @@ async function runLearningAgentInternal({ message, history = [], onLlmStatus }) 
 
       // Never execute an action parsed from malformed or truncated planner JSON.
       // Search the original learner request as plain text instead.
-      const fallbackArgs = { q: learnerMessage };
+      const fallbackArgs = buildDeterministicSearchArgs(learnerMessage);
       const callKey = makeCallKey(AGENT_ACTIONS.SEARCH, fallbackArgs);
       if (!executedCalls.has(callKey)) {
         executedCalls.add(callKey);
         try {
           const result = await executeAgentTool(AGENT_ACTIONS.SEARCH, fallbackArgs);
+          console.log(`[Agent Catalogue Search] fallback returned=${Array.isArray(result) ? result.length : "not-array"}; q=${JSON.stringify(fallbackArgs.q)}; grade=${JSON.stringify(fallbackArgs.grade || "")}`);
           observations.push({ step, action: AGENT_ACTIONS.SEARCH, arguments: fallbackArgs, result });
           finalAction = AGENT_ACTIONS.SEARCH;
         } catch (toolError) {
@@ -381,9 +451,10 @@ async function runLearningAgentInternal({ message, history = [], onLlmStatus }) 
       rawPlan.arguments && typeof rawPlan.arguments === "object" && !Array.isArray(rawPlan.arguments);
     if (!schemaValid) {
       console.warn("[Agent Planner] Structured response failed schema validation; using deterministic catalogue fallback.");
-      const fallbackArgs = { q: learnerMessage };
+      const fallbackArgs = buildDeterministicSearchArgs(learnerMessage);
       try {
         const result = await executeAgentTool(AGENT_ACTIONS.SEARCH, fallbackArgs);
+        console.log(`[Agent Catalogue Search] fallback returned=${Array.isArray(result) ? result.length : "not-array"}; q=${JSON.stringify(fallbackArgs.q)}; grade=${JSON.stringify(fallbackArgs.grade || "")}`);
         observations.push({ step, action: AGENT_ACTIONS.SEARCH, arguments: fallbackArgs, result });
         finalAction = AGENT_ACTIONS.SEARCH;
       } catch (toolError) {
@@ -419,6 +490,9 @@ async function runLearningAgentInternal({ message, history = [], onLlmStatus }) 
 
     try {
       const result = await executeAgentTool(plan.action, plan.arguments);
+      if (plan.action === AGENT_ACTIONS.SEARCH) {
+        console.log(`[Agent Catalogue Search] returned=${Array.isArray(result) ? result.length : "not-array"}`);
+      }
 
       observations.push({
         step,
@@ -491,6 +565,7 @@ async function runLearningAgentInternal({ message, history = [], onLlmStatus }) 
       reply: buildCatalogueOnlyReply(relevantResults),
       action: AGENT_ACTIONS.SEARCH,
       results: relevantResults,
+      assessmentContext: buildAssessmentContext(learnerMessage, latestSearch, catalogueResults),
       contentSource: "catalogue",
       showAiWarning: false,
       agent: { steps: plannerSteps, maxSteps: MAX_AGENT_STEPS, completed: true }
@@ -544,6 +619,7 @@ grade, number of questions and format exactly.`;
     reply,
     action: latestSearch ? AGENT_ACTIONS.SEARCH : finalAction,
     results: relevantResults,
+    assessmentContext: buildAssessmentContext(learnerMessage, latestSearch, catalogueResults),
     contentSource: relevantResults.length ? "mixed" : "llm",
     showAiWarning: true,
     agent: { steps: plannerSteps, maxSteps: MAX_AGENT_STEPS, completed: true, plannerFallbackUsed }

@@ -12,7 +12,7 @@ import { fileURLToPath } from 'url';
 //import voiceTranslateRoutes from './routes/voiceTranslate.js';
 import multilingualRoutes from './routes/multilingual.js';
 import agentRoutes from './routes/agent.js';
-
+import assessmentRoutes from './routes/assessment.js';
 
 
 
@@ -41,6 +41,8 @@ app.use(express.json());
 app.use('/api/vision', visionRoutes);
 app.use('/api/llama', llamaRoutes);
 app.use('/api/pexels', pexelsVideoRoutes);
+// Assessment endpoints must be registered before the general learning route.
+app.use('/api/learning/assessment', assessmentRoutes);
 app.use('/api/learning', learningRoutes);
 app.use('/api/chat', chatRoutes);
 //app.use('/api/voice', voiceTranslateRoutes);

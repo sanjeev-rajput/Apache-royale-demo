@@ -199,6 +199,29 @@
                         addYouTubeVideo(video);
                     }
                 }
+                if (response.assessmentContext != null)
+                {
+                    var assessmentPanel:AssessmentPanel = new AssessmentPanel();
+                    assessmentPanel.assessmentContext = response.assessmentContext;
+                    assessmentPanel.addEventListener(
+                        "assessmentDeclined",
+                        handleAssessmentDeclined
+                    );
+                    resultsContainer.addElement(assessmentPanel);
+                }
+            }
+
+            private function handleAssessmentDeclined(event:Event):void
+            {
+                var panel:AssessmentPanel = event.target as AssessmentPanel;
+                if (panel != null)
+                {
+                    panel.removeEventListener(
+                        "assessmentDeclined",
+                        handleAssessmentDeclined
+                    );
+                    resultsContainer.removeElement(panel);
+                }
             }
 
             // The backend may mention an activity URL in its prose.

@@ -1,0 +1,372 @@
+<j:VGroup xmlns:fx="http://ns.adobe.com/mxml/2009"
+          xmlns:j="library://ns.apache.org/royale/jewel"
+          xmlns:sp="library://ns.unhurdle.com/spectrum"
+          xmlns:html="library://ns.apache.org/royale/html"
+          width="100%"
+          className="assessment-panel"
+          gap="1"
+          initComplete="initializePanel()">
+
+    <fx:Script>
+        <![CDATA[
+            import org.apache.royale.events.Event;
+            import org.apache.royale.html.HTMLText;
+            import com.unhurdle.spectrum.Radio;
+            import org.apache.royale.jewel.VGroup;
+            import com.model.Config;
+            import com.model.ServiceLoader;
+            import com.util.StringUtil;
+
+            private var _assessmentContext:Object;
+            private var attemptId:String;
+            private var questions:Array = [];
+            private var selectedAnswers:Object = {};
+            private var requestLoader:ServiceLoader;
+            private var requestInProgress:Boolean = false;
+            private var optionRadios:Array = [];
+            private var assessmentSubmitted:Boolean = false;
+
+            public function set assessmentContext(value:Object):void
+            {
+                _assessmentContext = value;
+                if (yesButton != null)
+                    yesButton.disabled = (_assessmentContext == null);
+            }
+
+            public function get assessmentContext():Object
+            {
+                return _assessmentContext;
+            }
+
+            private function initializePanel():void
+            {
+                yesButton.disabled = (_assessmentContext == null);
+                assessmentContent.visible = false;
+                submitButton.visible = false;
+                submitButton.disabled = true;
+            }
+
+            private function declineAssessment():void
+            {
+                dispatchEvent(new Event("assessmentDeclined"));
+            }
+
+            private function addText(value:String):void
+            {
+                var label:HTMLText = new HTMLText();
+                label.percentWidth = 100;
+                label.html = StringUtil.escapeHTML(value);
+                assessmentContent.addElement(label);
+            }
+
+            private function clearAssessmentContent():void
+            {
+                while (assessmentContent.numElements > 0)
+                {
+                    assessmentContent.removeElement(
+                        assessmentContent.getElementAt(0)
+                    );
+                }
+            }
+
+            private function generateAssessment():void
+            {
+                if (requestInProgress || _assessmentContext == null)
+                    return;
+
+                requestInProgress = true;
+                yesButton.disabled = true;
+                noButton.disabled = true;
+                assessmentContent.visible = true;
+                submitButton.visible = false;
+                clearAssessmentContent();
+                addText("Generating your five-question assessment...");
+
+                requestLoader = new ServiceLoader();
+                requestLoader.reqMethod = "POST";
+                requestLoader.contentType = "application/json";
+                requestLoader.reqData = JSON.stringify({ context: _assessmentContext });
+                requestLoader.loadJData(
+                    Config.apiBaseUrl + "learning/assessment/generate",
+                    handleGeneratedAssessment,
+                    ServiceLoader.DATA_TYPE_JSON,
+                    handleAssessmentError,
+                    false
+                );
+            }
+
+            private function handleGeneratedAssessment(response:Object):void
+            {
+                requestInProgress = false;
+                clearAssessmentContent();
+
+                if (response == null || response.success != true ||
+                    response.assessment == null || response.attemptId == null)
+                {
+                    addText(response != null && response.message != null
+                        ? String(response.message)
+                        : "The assessment could not be generated. Please try again.");
+                    yesButton.text = "Try again";
+                    yesButton.disabled = false;
+                    noButton.disabled = false;
+                    return;
+                }
+
+                invitationPrompt.visible = false;
+                yesButton.visible = false;
+                noButton.visible = false;
+                assessmentSubmitted = false;
+                optionRadios = [];
+
+                attemptId = String(response.attemptId);
+                questions = response.assessment.questions as Array;
+                selectedAnswers = {};
+
+                var assessmentTitle:HTMLText = new HTMLText();
+                assessmentTitle.percentWidth = 100;
+                assessmentTitle.html = "<b>" + StringUtil.escapeHTML(String(response.assessment.title)) + "</b>";
+                assessmentTitle.className = "assessment-title";
+                assessmentContent.addElement(assessmentTitle);
+
+                var instructions:HTMLText = new HTMLText();
+                instructions.percentWidth = 100;
+                instructions.html = StringUtil.escapeHTML(String(response.assessment.instructions));
+                instructions.className = "assessment-instructions";
+                assessmentContent.addElement(instructions);
+
+                var questionNumber:int = 0;
+                for each (var question:Object in questions)
+                {
+                    questionNumber++;
+                    var questionCard:VGroup = new VGroup();
+                    questionCard.percentWidth = 100;
+                    questionCard.gap = 1;
+                    questionCard.className = "assessment-question-card";
+                    assessmentContent.addElement(questionCard);
+
+                    var questionHeading:HTMLText = new HTMLText();
+                    questionHeading.percentWidth = 100;
+                    questionHeading.html = "<b>Question " + questionNumber + "</b>";
+                    questionHeading.className = "assessment-question-number";
+                    questionCard.addElement(questionHeading);
+
+                    var prompt:HTMLText = new HTMLText();
+                    prompt.percentWidth = 100;
+                    prompt.html = StringUtil.escapeHTML(String(question.prompt));
+                    prompt.className = "assessment-question-prompt";
+                    questionCard.addElement(prompt);
+
+                    for each (var option:Object in question.options)
+                    {
+                        var optionRadio:Radio = new Radio();
+                        optionRadio.percentWidth = 100;
+                        optionRadio.text = String(option.id) + ".  " + String(option.text);
+                        optionRadio.radioName = "assessment_" + String(question.id);
+                        optionRadio.className = "assessment-option-radio";
+                        optionRadio.addEventListener("change", createOptionHandler(
+                            String(question.id), String(option.id)
+                        ));
+                        optionRadios.push(optionRadio);
+                        questionCard.addElement(optionRadio);
+                    }
+                }
+
+                submitButton.visible = true;
+                submitButton.disabled = true;
+                var submitHint:HTMLText = new HTMLText();
+                submitHint.percentWidth = 100;
+                submitHint.html = "Choose one answer for each question, then submit.";
+                submitHint.className = "assessment-submit-hint";
+                assessmentContent.addElement(submitHint);
+            }
+
+            private function createOptionHandler(
+                questionId:String,
+                optionId:String
+            ):Function
+            {
+                return function(event:Event):void
+                {
+                    if (assessmentSubmitted || requestInProgress)
+                        return;
+
+                    selectedAnswers[questionId] = optionId;
+                    updateSubmitAvailability();
+                };
+            }
+
+            private function updateSubmitAvailability():void
+            {
+                var answeredCount:int = 0;
+                for each (var question:Object in questions)
+                {
+                    if (selectedAnswers.hasOwnProperty(String(question.id)) &&
+                        selectedAnswers[String(question.id)] != null)
+                    {
+                        answeredCount++;
+                    }
+                }
+
+                submitButton.disabled =
+                    assessmentSubmitted ||
+                    requestInProgress ||
+                    answeredCount != questions.length;
+            }
+
+            private function setOptionsDisabled(value:Boolean):void
+            {
+                for each (var optionRadio:Radio in optionRadios)
+                {
+                    optionRadio.disabled = value;
+                }
+            }
+
+            private function submitAssessment():void
+            {
+                if (requestInProgress || attemptId == null ||
+                    questions.length == 0 ||
+                    submitButton.disabled)
+                    return;
+
+                var answers:Array = [];
+                for each (var question:Object in questions)
+                {
+                    answers.push({
+                        questionId: String(question.id),
+                        selectedOptionId: selectedAnswers.hasOwnProperty(String(question.id))
+                            ? selectedAnswers[String(question.id)]
+                            : null
+                    });
+                }
+
+                requestInProgress = true;
+                assessmentSubmitted = true;
+                submitButton.disabled = true;
+                setOptionsDisabled(true);
+
+                requestLoader = new ServiceLoader();
+                requestLoader.reqMethod = "POST";
+                requestLoader.contentType = "application/json";
+                requestLoader.reqData = JSON.stringify({
+                    attemptId: attemptId,
+                    answers: answers
+                });
+                requestLoader.loadJData(
+                    Config.apiBaseUrl + "learning/assessment/submit",
+                    handleAssessmentResult,
+                    ServiceLoader.DATA_TYPE_JSON,
+                    handleAssessmentError,
+                    false
+                );
+            }
+
+            private function handleAssessmentResult(response:Object):void
+            {
+                requestInProgress = false;
+                submitButton.disabled = true;
+
+                if (response == null || response.success != true)
+                {
+                    assessmentSubmitted = false;
+                    setOptionsDisabled(false);
+                    updateSubmitAvailability();
+                    addText(response != null && response.message != null
+                        ? String(response.message)
+                        : "Your answers could not be submitted.");
+                    return;
+                }
+
+                addText("Your score: " + String(response.score) + " / " +
+                    String(response.total) + " (" + String(response.percentage) + "%)");
+
+                for each (var item:Object in response.questionResults)
+                {
+                    var status:String = item.isCorrect === true ? "Correct" : "Not quite";
+                    var resultLine:HTMLText = new HTMLText();
+                    resultLine.percentWidth = 100;
+                    resultLine.html = "<b>" + StringUtil.escapeHTML(status + " — " + String(item.correctAnswer)) + "</b>";
+                    resultLine.className = item.isCorrect === true
+                        ? "assessment-answer-correct"
+                        : "assessment-answer-incorrect";
+                    assessmentContent.addElement(resultLine);
+
+                    var explanation:HTMLText = new HTMLText();
+                    explanation.percentWidth = 100;
+                    explanation.html = StringUtil.escapeHTML(String(item.explanation));
+                    explanation.className = "assessment-answer-explanation";
+                    assessmentContent.addElement(explanation);
+                }
+
+                var percentage:Number = Number(response.percentage);
+                var performanceMessage:String = getPerformanceMessage(percentage);
+                var resultSummary:HTMLText = new HTMLText();
+                resultSummary.percentWidth = 100;
+                resultSummary.html = "<b>Overall feedback</b><br/>" +
+                    StringUtil.escapeHTML(performanceMessage);
+                resultSummary.className = "assessment-overall-feedback";
+                assessmentContent.addElement(resultSummary);
+
+                attemptId = null;
+            }
+
+
+            private function getPerformanceMessage(percentage:Number):String
+            {
+                if (percentage >= 80)
+                    return "Excellent work! You have demonstrated a strong understanding of this topic.";
+                if (percentage >= 60)
+                    return "Good effort! You understand many of the key ideas. Review the questions you missed to strengthen your learning.";
+                if (percentage >= 40)
+                    return "You're making progress. Review the explanations and practise the topic again.";
+                return "Keep practising! Review the explanations and try another assessment to build your understanding.";
+            }
+
+            private function handleAssessmentError(event:Event):void
+            {
+                requestInProgress = false;
+
+                if (attemptId == null)
+                {
+                    yesButton.text = "Try again";
+                    yesButton.disabled = false;
+                    noButton.disabled = false;
+                }
+                else
+                {
+                    // Submission failed before the server confirmed a result.
+                    // Preserve the learner's selections and allow a safe retry.
+                    assessmentSubmitted = false;
+                    setOptionsDisabled(false);
+                    updateSubmitAvailability();
+                }
+
+                addText("The assessment service could not be reached. Please try again.");
+            }
+        ]]>
+    </fx:Script>
+
+    <j:VGroup width="100%" gap="2" className="assessment-shell">
+        <j:Label id="invitationPrompt"
+                 text="Would you like to check your knowledge based on the learning?"
+                 className="assessment-heading"/>
+        <j:HGroup width="100%" gap="2" className="assessment-invitation-actions">
+            <sp:Button id="yesButton"
+                       text="Yes"
+                       disabled="true"
+                       click="generateAssessment()"/>
+            <sp:Button id="noButton"
+                       text="No"
+                       click="declineAssessment()"/>
+        </j:HGroup>
+        <j:VGroup id="assessmentContent"
+                  width="95%"
+                  gap="2"
+                  visible="false"
+                  className="assessment-content"/>
+        <sp:Button id="submitButton"
+                   text="Submit answers"
+                   visible="false"
+                   disabled="true"
+                   click="submitAssessment()"/>
+    </j:VGroup>
+</j:VGroup>
