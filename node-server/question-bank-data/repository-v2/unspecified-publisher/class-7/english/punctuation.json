@@ -1,0 +1,408 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-22T03:27:30.758Z",
+  "classification": {
+    "class": "Class 7",
+    "subject": "English",
+    "topic": "Punctuation"
+  },
+  "publisher": "unspecified-publisher",
+  "source": {
+    "file": "class7/Final/Eng_Class_7_Assess_QB_21_Punctuation/Eng_Class_7_Assess_QB_21_Punctuation.xlsx",
+    "sheet": "Templates"
+  },
+  "questionType": "MCQ",
+  "questionCount": 15,
+  "questions": [
+    {
+      "id": "unspecified-publisher-class-7-english-punctuation-1",
+      "sourceRow": 2,
+      "question": "Identify the correct punctuation of the sentence given below. <br> On saturday, may 18, my Brother ted and i won a Fact quiz against our parents.",
+      "options": [
+        "On saturday, may 18, my brother Ted and I won a Fact Quiz against our parents.",
+        "On SaturdayMay 18, my brother Ted and I won a Fact Quiz ,against our parents.",
+        "On Saturday, May 18, My Brother Ted and I won a Fact Quiz against our parents.",
+        "On Saturday, May 18, my brother Ted and I won a fact quiz against our parents."
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Application of Punctuation Marks"
+      ],
+      "resource": "Grammar Plus",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-punctuation-2",
+      "sourceRow": 3,
+      "question": "Identify the correct punctuation of the sentence given below. <br> Ted’s world history I and spanish courses came in handy, and so did my geography class.",
+      "options": [
+        "Ted’s World History I and Spanish courses came in handy, and so, did my geography class.",
+        "Ted’s World History I and Spanish courses came in handy, and so did my Geography class.",
+        "Ted’s World History, I and Spanish courses came in handy and so did my Geography Class.",
+        "Ted’s world History I and Spanish courses, came in handy, and so did my geography class."
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Application of Punctuation Marks"
+      ],
+      "resource": "Grammar Plus",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-punctuation-3",
+      "sourceRow": 4,
+      "question": "Identify the correct punctuation of the sentence given below. <br> Mom and dad couldn’t remember that the first united states satellite was explorer I.",
+      "options": [
+        "Mom and Dad couldn’t remember that the first United States satellite was Explorer I.",
+        "Mom and Dad couldn’t remember that, the First United States Satellite was Explorer I.",
+        "Mom and dad couldn’t remember that the first United States satellite was explorer I.",
+        "Mom and Dad, couldn’t remember that ,the First United States satellite was Explorer I."
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Application of Punctuation Marks"
+      ],
+      "resource": "Grammar Plus",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-punctuation-4",
+      "sourceRow": 5,
+      "question": "Identify the correct punctuation of the sentence given below. <br> can you believe we knew that kleenex tissues were first used as gas-mask filters during world war I?",
+      "options": [
+        "Can you believe we knew that kleenex tissues were First used as Gas-Mask filters during World War I?",
+        "Can you believe we knew that Kleenex Tissues were first used as gas-mask filters during world war I?",
+        "Can you believe we knew that Kleenex tissues were first used as gas-mask filters during World War I?",
+        "Can you believe, we knew that Kleenex Tissues, were First used as Gas-Mask Filters during world war I?"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Application of Punctuation Marks"
+      ],
+      "resource": "Grammar Plus",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-punctuation-5",
+      "sourceRow": 6,
+      "question": "Identify the correct punctuation of the sentence given below. <br> Louis armstrong was born in new orleans in august 1901.",
+      "options": [
+        "Louis Armstrong was born in New Orleans in August 1901.",
+        "Louis Armstrong was born in newOrleans, in August 1901.",
+        "Louis Armstrong was Born in New Orleans, in August 1901.",
+        "Louis Armstrong, was born in New Orleans, in August 1901."
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Application of Punctuation Marks"
+      ],
+      "resource": "Grammar Plus",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-punctuation-6",
+      "sourceRow": 7,
+      "question": "Identify the correct punctuation of the sentence given below. <br> While growing up he played the trumpet on the Paddleboats that sailed the mississippi river.",
+      "options": [
+        "While growing up, he played the Trumpet on the paddleboats that sailed the Mississippi river.",
+        "While growing up, he played the Trumpet on the Paddleboats that sailed the Mississippi River.",
+        "While growing up, he played the trumpet on the paddleboats that sailed the Mississippi River.",
+        "While growing up, he played the trumpet on the Paddleboats that Sailed the Mississippi River."
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Application of Punctuation Marks"
+      ],
+      "resource": "Grammar Plus",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-punctuation-7",
+      "sourceRow": 8,
+      "question": "Identify the correct punctuation of the sentence given below. <br> Later he played in a band in chicago called the Creole jazz band.",
+      "options": [
+        "Later he played, in a band in Chicago called the creole jazz band.",
+        "Later, he played in a band in Chicago called the Creole Jazz Band.",
+        "later he played in a band in Chicago called the Creole Jazz band.",
+        "Later he played in a Band in Chicago , called the Creole Jazz Band."
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Application of Punctuation Marks"
+      ],
+      "resource": "Grammar Plus",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-punctuation-8",
+      "sourceRow": 9,
+      "question": "Identify the correct punctuation of the sentence given below. <br> The band’s pianist Lil hardin became mrs.armstrong in 1924.",
+      "options": [
+        "The band’s Pianist, Lil Hardin, became mrs.Armstrong in 1924.",
+        "The band’s pianist, Lil Hardin, became mrsArmstrong in 1924.",
+        "The Band’s Pianist, Lil Hardin, became MrsArmstrong in 1924.",
+        "The band’s pianist, Lil Hardin, became Mrs. Armstrong in 1924."
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Application of Punctuation Marks"
+      ],
+      "resource": "Grammar Plus",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-punctuation-9",
+      "sourceRow": 10,
+      "question": "Identify the correct punctuation of the sentence given below. <br> He wrote the classic Jazz songs “dippermouth blues” and “wild man blues.”",
+      "options": [
+        "He wrote the Classic Jazz songs “Dippermouthblues” and “Wild man blues.”",
+        "He wrote, the classic Jazz Songs “DippermouthBlues” and “Wild Man Blues.”",
+        "He wrote the classic jazz songs “DippermouthBlues” and “Wild Man Blues.”",
+        "He wrote, the classic jazz songs, “DippermouthBlues” and “Wild Man Blues.”"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Application of Punctuation Marks"
+      ],
+      "resource": "Grammar Plus",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-punctuation-10",
+      "sourceRow": 11,
+      "question": "Identify the sentence with correct punctuation.",
+      "options": [
+        "This poem's style is really difficult; it's impossible to say what its meaning is.",
+        "This poem's style is really difficult. Its impossible to say what its meaning is?",
+        "This poem's style is really difficult.it's impossible to say what its meaning is?",
+        "This poem's style is really difficult, it's impossible to say what its meaning is"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Application of Punctuation Marks"
+      ],
+      "resource": "Saraswati Publications",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-punctuation-11",
+      "sourceRow": 12,
+      "question": "Identify the sentence with correct punctuation.",
+      "options": [
+        "He as the eagle a symbol of power and his wife as the dove a symbol of peace and gentleness will come together.",
+        "He as the eagle a symbol of power, and his wife, as the dove a symbol of peace and gentleness will come together.",
+        "He, as the eagle, a symbol of power; and his wife, as the dove, a symbol of peace and gentleness,will come together.",
+        "He as the eagle a symbol of power. And his wife, as the dove a symbol of peace and gentleness; will come together."
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Application of Punctuation Marks"
+      ],
+      "resource": "Saraswati Publications",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-punctuation-12",
+      "sourceRow": 13,
+      "question": "Identify the sentence with correct punctuation.",
+      "options": [
+        "Much of what this short story proposes to teach us, is already part of our lives.",
+        "Much of what this short story proposes to teach us is already part of our lives.",
+        "Much of what this short story proposes to teach us, is already part of our lives.",
+        "Much of what, this short story proposes to teach us, is already part of our lives."
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Application of Punctuation Marks"
+      ],
+      "resource": "Saraswati Publications",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-punctuation-13",
+      "sourceRow": 14,
+      "question": "Identify the sentence with correct punctuation.",
+      "options": [
+        "The human mind is never stationary, it advances or it retrogrades.",
+        "The human mind, is never stationary, it advances or it retrogrades.",
+        "The human mind is never stationary. It advances or it retrogrades.",
+        "The human mind is never stationary; it advances or it retrogrades."
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Application of Punctuation Marks"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-punctuation-14",
+      "sourceRow": 15,
+      "question": "Identify the sentence with correct punctuation.",
+      "options": [
+        "There is a slavery that no legislation can abolish-the slavery of caste.",
+        "There is a slavery that, No Legislation can abolish the slavery of caste.",
+        "There is a slavery that,“No legislation can abolish the slavery of caste.”",
+        "There is a slavery that no legislation can abolish the slavery of caste."
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Application of Punctuation Marks"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-punctuation-15",
+      "sourceRow": 16,
+      "question": "Identify the sentence with correct punctuation.",
+      "options": [
+        "In the old Persian stories,Turan, the land of darkness, is opposed to Iran, the land of light.",
+        "In the old Persian stories Turan, the land of darkness, is opposed to Iran, the land of light.",
+        "In the old Persian stories:Turan, the land of darkness is opposed to Iran the land of light.",
+        "In the old Persian stories Turan; the land of darkness; is opposed to Iran the land of light."
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Application of Punctuation Marks"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    }
+  ]
+}

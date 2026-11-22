@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-22T03:27:30.235Z",
+  "classification": {
+    "class": "Class 6",
+    "subject": "English",
+    "topic": "Dir & Indir Speech"
+  },
+  "publisher": "unspecified-publisher",
+  "source": {
+    "file": "Class6/Final/Eng_Class_06_Assess_QB_16_Dir_&_Indir_Speech/Eng_Class_06_Assess_QB_16_Dir_&_Indir_Speech.xlsx",
+    "sheet": "name topic"
+  },
+  "questionType": "MCQ",
+  "questionCount": 4,
+  "questions": [
+    {
+      "id": "unspecified-publisher-class-6-english-dir-indir-speech-13",
+      "sourceRow": 14,
+      "question": "Fill in the blanks with the correct answer to complete each sentence in indirect speech.<br><br> Direct Speech - Anjali said, “I have read many books by Ruskin Bond.”<br> Indirect Speech - Anjali said that _______________ had read many books by Ruskin Bond.",
+      "options": [
+        "they",
+        "we",
+        "she"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Conversion from Direct to Indirect Speech"
+      ],
+      "resource": "Practice Questions in DG",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-dir-indir-speech-14",
+      "sourceRow": 15,
+      "question": "Fill in the blanks wit the correct answer to complete each sentence in indirect speech.<br><br> Direct Speech - Sunil said, “Our house is at the corner of the street.” <br> Indirect Speech - Sunil said that ____________________ house was at the corner of the street.",
+      "options": [
+        "our",
+        "their",
+        "my"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Conversion from Direct to Indirect Speech"
+      ],
+      "resource": "Practice Questions in DG",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-dir-indir-speech-15",
+      "sourceRow": 16,
+      "question": "Fill in the blanks with the correct answer to complete each sentence in indirect speech.<br><br> Direct Speech -“We want to play football”, the children said.<br> Indirect Speech - The children said that ____________________ wanted to play football.",
+      "options": [
+        "they",
+        "we",
+        "he"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Conversion from Direct to Indirect Speech"
+      ],
+      "resource": "Practice Questions in DG",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-dir-indir-speech-16",
+      "sourceRow": 17,
+      "question": "Fill in the blanks with the correct answer to complete each sentence in indirect speech.<br><br> Direct Speech - Ritu said, “All the novels on the top shelf are mine.” <br> Indirect Speech - Ritu said that all the novels on the top shelf were _________________________.",
+      "options": [
+        "her",
+        "mine",
+        "hers"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Conversion from Direct to Indirect Speech"
+      ],
+      "resource": "Practice Questions in DG",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    }
+  ]
+}

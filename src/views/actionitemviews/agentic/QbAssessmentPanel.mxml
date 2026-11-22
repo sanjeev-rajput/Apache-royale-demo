@@ -1,0 +1,536 @@
+<j:VGroup xmlns:fx="http://ns.adobe.com/mxml/2009"
+          xmlns:j="library://ns.apache.org/royale/jewel"
+          xmlns:sp="library://ns.unhurdle.com/spectrum"
+          xmlns:html="library://ns.apache.org/royale/html"
+          width="100%"
+          className="assessment-panel"
+          gap="1"
+          initComplete="initializePanel()">
+
+<fx:Script>
+        <![CDATA[
+            import org.apache.royale.events.Event;
+            import org.apache.royale.html.HTMLText;
+            import com.unhurdle.spectrum.Radio;
+            import com.unhurdle.spectrum.Button;
+            import com.unhurdle.spectrum.Label;
+            import org.apache.royale.jewel.VGroup;
+            import com.model.Config;
+            import com.model.ServiceLoader;
+            import com.util.StringUtil;
+
+            private var requestLoader:ServiceLoader;
+            private var requestInProgress:Boolean = false;
+            private var classes:Array = [];
+            private var selectedClass:Object;
+            private var selectedSubject:Object;
+            private var selectedTopic:Object;
+            private var selectedQuestionCount:int = 0;
+            private var attemptId:String;
+            private var questions:Array = [];
+            private var selectedAnswers:Object = {};
+            private var optionRadios:Array = [];
+            private var assessmentSubmitted:Boolean = false;
+
+            private function initializePanel():void
+            {
+                loadTopics();
+            }
+
+            private function addStatus(message:String):void
+            {
+                statusLabel.text = message;
+            }
+
+            private function clearGroup(group:VGroup):void
+            {
+                while (group.numElements > 0)
+                    group.removeElement(group.getElementAt(0));
+            }
+
+            private function clearSelectionContent():void
+            {
+                while (selectionContent.numElements > 0)
+                    selectionContent.removeElement(selectionContent.getElementAt(0));
+            }
+
+            private function loadTopics():void
+            {
+                if (requestInProgress) return;
+                requestInProgress = true;
+                addStatus("Loading publisher question banks...");
+                requestLoader = new ServiceLoader();
+                requestLoader.reqMethod = "GET";
+                requestLoader.loadJData(
+                    Config.apiBaseUrl + "learning/question-bank/topics",
+                    handleTopicsLoaded,
+                    ServiceLoader.DATA_TYPE_JSON,
+                    handleRequestError,
+                    false
+                );
+            }
+
+            private function handleTopicsLoaded(response:Object):void
+            {
+                requestInProgress = false;
+                clearSelectionContent();
+                if (response == null || response.success != true || response.classes == null)
+                {
+                    addStatus(response != null && response.message != null
+                        ? String(response.message)
+                        : "The question bank could not be loaded.");
+                    return;
+                }
+                classes = response.classes as Array;
+                if (classes == null || classes.length == 0)
+                {
+                    addStatus("No scored MCQ question banks are currently available.");
+                    return;
+                }
+                addStatus("Choose a class to begin Question Bank Practice.");
+                addChoiceLabels(classes, "className", selectClass);
+            }
+
+            private function addChoiceLabels(
+                items:Array,
+                labelField:String,
+                callback:Function
+            ):void
+            {
+                for each (var item:Object in items)
+                {
+                    var choiceLabel:Label = new Label();
+                    choiceLabel.text = String(item[labelField]);
+                    choiceLabel.color = "orange";
+                    choiceLabel.className = "qb-selection-link";
+                    choiceLabel.addEventListener("rollOver", handleChoiceRollOver);
+                    choiceLabel.addEventListener("rollOut", handleChoiceRollOut);
+                    choiceLabel.addEventListener("click", createSelectionHandler(item, callback));
+                    selectionContent.addElement(choiceLabel);
+                }
+            }
+
+            private function createSelectionHandler(item:Object, callback:Function):Function
+            {
+                return function(event:Event):void
+                {
+                    if (!requestInProgress) callback(item);
+                };
+            }
+
+            private function handleChoiceRollOver(event:Event):void
+            {
+                var choice:Label = event.currentTarget as Label;
+                if (choice != null) choice.color = "#c46a16";
+            }
+
+            private function handleChoiceRollOut(event:Event):void
+            {
+                var choice:Label = event.currentTarget as Label;
+                if (choice != null) choice.color = "orange";
+            }
+
+            private function selectClass(item:Object):void
+            {
+                selectedClass = item;
+                selectedSubject = null;
+                selectedTopic = null;
+                selectedQuestionCount = 0;
+                clearSelectionContent();
+                addBreadcrumb();
+                addStatus("Choose a subject.");
+                addChoiceLabels(item.subjects as Array, "subjectName", selectSubject);
+            }
+
+            private function selectSubject(item:Object):void
+            {
+                selectedSubject = item;
+                selectedTopic = null;
+                selectedQuestionCount = 0;
+                clearSelectionContent();
+                addBreadcrumb();
+                addStatus("Choose a topic.");
+                addChoiceLabels(item.topics as Array, "topicName", selectTopic);
+                addBackButton("Back to classes", showClasses);
+            }
+
+            private function selectTopic(item:Object):void
+            {
+                selectedTopic = item;
+                selectedQuestionCount = 0;
+                clearSelectionContent();
+                addBreadcrumb();
+                addStatus("Choose the number of questions.");
+                var counts:Array = [5, 10, 15, 20, 25, 30];
+                var addedMax:Boolean = false;
+                for each (var count:int in counts)
+                {
+                    if (count <= int(item.questionCount))
+                    {
+                        addCountButton(count);
+                        if (count == int(item.questionCount)) addedMax = true;
+                    }
+                }
+                if (!addedMax) addCountButton(int(item.questionCount));
+                addBackButton("Back to topics", showTopics);
+            }
+
+            private function addBreadcrumb():void
+            {
+                var trail:HTMLText = new HTMLText();
+                trail.percentWidth = 100;
+                var value:String = "";
+                if (selectedClass != null) value += String(selectedClass.className);
+                if (selectedSubject != null) value += "  ›  " + String(selectedSubject.subjectName);
+                if (selectedTopic != null) value += "  ›  " + String(selectedTopic.topicName);
+                trail.html = "<b>" + StringUtil.escapeHTML(value) + "</b>";
+                trail.className = "qb-selection-breadcrumb";
+                selectionContent.addElement(trail);
+            }
+            private function addCountButton(count:int):void
+            {
+                var button:Button = new Button();
+                button.text = String(count) + " questions";
+                button.addEventListener("click", createCountHandler(count));
+                selectionContent.addElement(button);
+            }
+
+            private function createCountHandler(count:int):Function
+            {
+                return function(event:Event):void
+                {
+                    selectedQuestionCount = count;
+                    startAssessment();
+                };
+            }
+
+            private function addBackButton(label:String, callback:Function):void
+            {
+                var backLabel:Label = new Label();
+                backLabel.text = label;
+                backLabel.color = "#080808";
+                backLabel.className = "qb-selection-link qb-selection-back";
+                backLabel.addEventListener("click", function(event:Event):void
+                {
+                    if (!requestInProgress) callback();
+                });
+                selectionContent.addElement(backLabel);
+            }
+
+            private function showClasses():void
+            {
+                selectedClass = null;
+                selectedSubject = null;
+                selectedTopic = null;
+                clearSelectionContent();
+                addStatus("Choose a class.");
+                addChoiceLabels(classes, "className", selectClass);
+            }
+
+            private function showTopics():void
+            {
+                selectedTopic = null;
+                clearSelectionContent();
+                addBreadcrumb();
+                addStatus("Choose a topic.");
+                addChoiceLabels(selectedSubject.topics as Array, "topicName", selectTopic);
+                addBackButton("Back to classes", showClasses);
+            }
+
+            private function startAssessment():void
+            {
+                if (requestInProgress || selectedClass == null || selectedSubject == null || selectedTopic == null || selectedQuestionCount < 1)
+                    return;
+                requestInProgress = true;
+                selectionContent.visible = false;
+                assessmentContent.visible = true;
+                submitButton.visible = false;
+                clearGroup(assessmentContent);
+                addStatus("Preparing your publisher question-bank assessment...");
+
+                requestLoader = new ServiceLoader();
+                requestLoader.reqMethod = "POST";
+                requestLoader.contentType = "application/json";
+                requestLoader.reqData = JSON.stringify({
+                    classId: selectedClass.classId,
+                    subjectId: selectedSubject.subjectId,
+                    topicId: selectedTopic.topicId,
+                    questionCount: selectedQuestionCount
+                });
+                requestLoader.loadJData(
+                    Config.apiBaseUrl + "learning/question-bank/assessment/start",
+                    handleAssessmentStarted,
+                    ServiceLoader.DATA_TYPE_JSON,
+                    handleRequestError,
+                    false
+                );
+            }
+
+            private function handleAssessmentStarted(response:Object):void
+            {
+                requestInProgress = false;
+                if (response == null || response.success != true || response.assessment == null || response.attemptId == null)
+                {
+                    selectionContent.visible = true;
+                    assessmentContent.visible = false;
+                    addStatus(response != null && response.message != null
+                        ? String(response.message)
+                        : "The question-bank assessment could not be started.");
+                    return;
+                }
+                attemptId = String(response.attemptId);
+                questions = response.assessment.questions as Array;
+                selectedAnswers = {};
+                optionRadios = [];
+                assessmentSubmitted = false;
+                addStatus("Question Bank Practice — " + String(response.assessment.title));
+
+                var title:HTMLText = new HTMLText();
+                title.percentWidth = 100;
+                title.html = "<b>" + StringUtil.escapeHTML(String(response.assessment.title)) + "</b>";
+                assessmentContent.addElement(title);
+
+                var instructions:HTMLText = new HTMLText();
+                instructions.percentWidth = 100;
+                instructions.html = StringUtil.escapeHTML(String(response.assessment.instructions));
+                assessmentContent.addElement(instructions);
+
+                var number:int = 0;
+                for each (var question:Object in questions)
+                {
+                    number++;
+                    var card:VGroup = new VGroup();
+                    card.percentWidth = 100;
+                    card.gap = 1;
+                    card.className = "assessment-question-card";
+                    assessmentContent.addElement(card);
+
+                    var heading:HTMLText = new HTMLText();
+                    heading.percentWidth = 100;
+                    heading.html = "<b>Question " + number + "</b>";
+                    heading.className = "assessment-question-number";
+                    card.addElement(heading);
+
+                    var prompt:HTMLText = new HTMLText();
+                    prompt.percentWidth = 100;
+                    prompt.html = safeQuestionHtml(String(question.prompt));
+                    prompt.className = "assessment-question-prompt";
+                    card.addElement(prompt);
+
+                    for each (var option:Object in question.options)
+                    {
+                        var radio:Radio = new Radio();
+                        radio.percentWidth = 100;
+                        radio.text = String(option.id) + ".  " + String(option.text);
+                        radio.className = "assessment-option-radio";
+                        radio.radioName = "qb_assessment_" + String(question.id);
+                        radio.addEventListener("change", createOptionHandler(String(question.id), String(option.id)));
+                        optionRadios.push(radio);
+                        card.addElement(radio);
+                    }
+                }
+                submitButton.visible = true;
+                submitButton.disabled = true;
+                var hint:HTMLText = new HTMLText();
+                hint.percentWidth = 100;
+                hint.html = "Choose one answer for each question, then submit.";
+                assessmentContent.addElement(hint);
+            }
+
+            private function safeQuestionHtml(value:String):String
+            {
+                var escaped:String = StringUtil.escapeHTML(value);
+                escaped = escaped.replace(/&lt;br\s*\/??&gt;/gi, "<br/>");
+                escaped = escaped.replace(/\r?\n/g, "<br/>");
+                return escaped;
+            }
+
+            private function createOptionHandler(questionId:String, optionId:String):Function
+            {
+                return function(event:Event):void
+                {
+                    if (assessmentSubmitted || requestInProgress) return;
+                    selectedAnswers[questionId] = optionId;
+                    updateSubmitAvailability();
+                };
+            }
+
+            private function updateSubmitAvailability():void
+            {
+                var answered:int = 0;
+                for each (var question:Object in questions)
+                {
+                    if (selectedAnswers.hasOwnProperty(String(question.id)) && selectedAnswers[String(question.id)] != null)
+                        answered++;
+                }
+                submitButton.disabled = assessmentSubmitted || requestInProgress || answered != questions.length;
+            }
+
+            private function setOptionsDisabled(value:Boolean):void
+            {
+                for each (var radio:Radio in optionRadios) radio.disabled = value;
+            }
+
+            private function submitAssessment():void
+            {
+                if (requestInProgress || attemptId == null || questions.length == 0 || submitButton.disabled) return;
+                var answers:Array = [];
+                for each (var question:Object in questions)
+                {
+                    answers.push({
+                        questionId: String(question.id),
+                        selectedOptionId: selectedAnswers.hasOwnProperty(String(question.id)) ? selectedAnswers[String(question.id)] : null
+                    });
+                }
+                requestInProgress = true;
+                assessmentSubmitted = true;
+                submitButton.disabled = true;
+                setOptionsDisabled(true);
+                requestLoader = new ServiceLoader();
+                requestLoader.reqMethod = "POST";
+                requestLoader.contentType = "application/json";
+                requestLoader.reqData = JSON.stringify({ attemptId: attemptId, answers: answers });
+                requestLoader.loadJData(
+                    Config.apiBaseUrl + "learning/question-bank/assessment/submit",
+                    handleAssessmentResult,
+                    ServiceLoader.DATA_TYPE_JSON,
+                    handleRequestError,
+                    false
+                );
+            }
+
+            private function handleAssessmentResult(response:Object):void
+            {
+                requestInProgress = false;
+                if (response == null || response.success != true)
+                {
+                    assessmentSubmitted = false;
+                    setOptionsDisabled(false);
+                    updateSubmitAvailability();
+                    addStatus(response != null && response.message != null ? String(response.message) : "Your answers could not be submitted.");
+                    return;
+                }
+                submitButton.visible = false;
+                addStatus("Practice completed — review your answers and feedback below.");
+
+                var scoreLine:HTMLText = new HTMLText();
+                scoreLine.percentWidth = 100;
+                scoreLine.html = "<b>Your score: " + StringUtil.escapeHTML(String(response.score) + " / " +
+                    String(response.total) + " (" + String(response.percentage) + "%)") + "</b>";
+                scoreLine.className = "assessment-score";
+                assessmentContent.addElement(scoreLine);
+
+                for each (var item:Object in response.questionResults)
+                {
+                    var status:HTMLText = new HTMLText();
+                    status.percentWidth = 100;
+                    status.html = "<b>" + StringUtil.escapeHTML((item.isCorrect === true ? "Correct" : "Not quite") +
+                        " — " + String(item.correctAnswer)) + " (" + String(item.score) + "/" + String(item.totalMarks) + ")</b>";
+                    status.className = item.isCorrect === true ? "assessment-answer-correct" : "assessment-answer-incorrect";
+                    assessmentContent.addElement(status);
+
+                    var feedback:HTMLText = new HTMLText();
+                    feedback.percentWidth = 100;
+                    feedback.html = StringUtil.escapeHTML(item.feedback != null && String(item.feedback).length > 0
+                        ? String(item.feedback)
+                        : (item.isCorrect === true
+                            ? "Well done. You selected the publisher's correct answer."
+                            : "Review the correct answer and revisit this topic to strengthen your understanding."));
+                    feedback.className = "assessment-answer-explanation";
+                    assessmentContent.addElement(feedback);
+                }
+
+                var percentage:Number = Number(response.percentage);
+                var summary:HTMLText = new HTMLText();
+                summary.percentWidth = 100;
+                summary.html = "<b>Overall feedback</b><br/>" + StringUtil.escapeHTML(getPerformanceMessage(percentage));
+                summary.className = "assessment-overall-feedback";
+                assessmentContent.addElement(summary);
+
+                addResultAction("Try another practice", startAssessment);
+                addResultAction("Choose another topic", returnToTopicSelection);
+                addResultAction("Choose another class", returnToClassSelection);
+                attemptId = null;
+            }
+
+            private function getPerformanceMessage(percentage:Number):String
+            {
+                if (percentage >= 80)
+                    return "Excellent work! You have demonstrated a strong understanding of this topic.";
+                if (percentage >= 60)
+                    return "Good effort! You understand many of the key ideas. Review the questions you missed to strengthen your learning.";
+                if (percentage >= 40)
+                    return "You're making progress. Review the explanations and practise the topic again.";
+                return "Keep practising! Review the explanations and try another practice to build your understanding.";
+            }
+
+            private function addResultAction(label:String, callback:Function):void
+            {
+                var button:Button = new Button();
+                button.text = label;
+                button.percentWidth = 100;
+                button.className = "qb-result-action";
+                button.addEventListener("click", function(event:Event):void
+                {
+                    if (!requestInProgress) callback();
+                });
+                assessmentContent.addElement(button);
+            }
+
+            private function returnToTopicSelection():void
+            {
+                selectedTopic = null;
+                selectedQuestionCount = 0;
+                attemptId = null;
+                questions = [];
+                selectedAnswers = {};
+                assessmentSubmitted = false;
+                submitButton.visible = false;
+                assessmentContent.visible = false;
+                selectionContent.visible = true;
+                showTopics();
+            }
+
+            private function returnToClassSelection():void
+            {
+                selectedClass = null;
+                selectedSubject = null;
+                selectedTopic = null;
+                selectedQuestionCount = 0;
+                attemptId = null;
+                questions = [];
+                selectedAnswers = {};
+                assessmentSubmitted = false;
+                submitButton.visible = false;
+                assessmentContent.visible = false;
+                selectionContent.visible = true;
+                showClasses();
+            }
+
+            private function handleRequestError(event:Event):void
+            {
+                requestInProgress = false;
+                if (attemptId == null)
+                {
+                    selectionContent.visible = true;
+                    assessmentContent.visible = false;
+                }
+                else
+                {
+                    assessmentSubmitted = false;
+                    setOptionsDisabled(false);
+                    updateSubmitAvailability();
+                }
+                addStatus("The question-bank service could not be reached. Please try again.");
+            }
+        ]]>
+    </fx:Script>
+
+    <j:VGroup width="100%" gap="2" className="assessment-shell">
+        <html:Text text="Question Bank Practice" className="assessment-heading"/>
+        <html:Text id="statusLabel" text="Loading question banks..."/>
+        <html:Div id="selectionContent" className="qb-selection-content"/>
+        <j:VGroup id="assessmentContent" width="100%" gap="2" visible="false" className="assessment-content"/>
+        <sp:Button id="submitButton" text="Submit answers" visible="false" disabled="true" click="submitAssessment()"/>
+    </j:VGroup>
+</j:VGroup>

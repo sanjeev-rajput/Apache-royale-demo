@@ -1,7 +1,7 @@
 # Apache Royale Agentic Learning Project — Context & Handover
 
 **Document purpose:** A durable project reference for continuing development across ChatGPT conversations or clients.  
-**Last updated:** 20 November 2026  
+**Last updated:** 22 November 2026  
 **Project root:** `E:\projects\Apache-royale-demo`
 
 > This document records the architecture, decisions, working practices, and known status established in prior discussions. It is not a substitute for the source code. When implementation details matter, inspect the current files in the repository and verify that they still match this document.
@@ -466,3 +466,65 @@ Source inspection completed for the uploaded snapshot. No application source cod
 
 ### Next step
 Present the proposed exact files and route-mounting approach to the user for approval before implementation. If the user approves, create only the isolated module and the minimal integration changes listed above, then run focused Node syntax/unit tests. Royale compilation must be reported separately and must not be claimed unless actually run.
+
+## 14. Publisher Question Bank Practice — implementation and UI status (22 November 2026)
+
+### Feature purpose and separation
+The application now has two distinct practice modes following the teaching response:
+- **AI-Generated Practice** — the existing AI assessment flow, retained in `AiAssessmentPanel.mxml`.
+- **Question Bank Practice** — publisher-provided MCQs, handled separately in `QbAssessmentPanel.mxml`.
+
+Keep these providers independent. Do not refactor the AI assessment flow to accommodate publisher Question Bank behaviour, and do not mix publisher answer-key/scoring rules into the AI assessment implementation.
+
+### Publisher Question Bank data and scope
+- Initial supported question type is MCQ only.
+- Publisher `score` determines marks; do not invent marks for unscored questions.
+- Correct answer keys remain server-side until submission; the server calculates the result.
+- Previously processed v2 repository: 64 Excel workbooks; 511 MCQs retained; FIB/TOF/OTHER excluded from the initial MCQ practice scope. See the earlier project conversation/source data for the full ingestion report; verify the current data directory before relying on file-level details.
+- User-reported data output: `E:\projects\Question-bank-data\Englishepository-v2`.
+
+### Question Bank API paths used by the Royale panel
+The current QB panel calls:
+- `GET learning/question-bank/topics`
+- `POST learning/question-bank/assessment/start`
+- `POST learning/question-bank/assessment/submit`
+
+The full API prefix is supplied through `Config.apiBaseUrl` (in the current application this is the learning API namespace). Inspect current route mounting before changing endpoints or payloads.
+
+### Confirmed learner flow
+- The teaching response and its learning resources are shown first.
+- The learner can choose AI-Generated Practice or Question Bank Practice.
+- The Question Bank path allows selection of class, subject, topic, and question count before starting an assessment.
+- QB submission shows publisher-based score/review/feedback.
+- The learner can continue learning and return to the practice invitation to choose another practice path.
+- Keep only one active practice panel at a time.
+
+### Royale components and UI decisions
+- `AiAssessmentPanel.mxml` remains the AI assessment component.
+- `QbAssessmentPanel.mxml` is the separate publisher Question Bank component.
+- The question-card UI in QB should reuse the same assessment CSS classes as the AI panel (question number, prompt, and radio option styling) from the shared `MyStyle.css`; do not duplicate those assessment styles in a component-local `<fx:Style>` block.
+- Class/subject/topic selection was explored separately from the question-card design. Jewel `Grid`/`GridCell` and `TileHorizontalLayout` were considered, but the user preferred the cleaner Spectrum Royale `Label` approach.
+- Current preferred selection approach: Spectrum `Label` controls placed directly in a simple HTML `Div`, without `Grid`, `GridCell`, or `TileHorizontalLayout`. Use clickable labels with pointer cursor and rollover/rollout behaviour. The back-navigation label remains visually grey; class/subject/topic choices use orange text with a hover colour change.
+- The user is satisfied with the current visual direction and explicitly wants to stop spending time on selection UI design for now, leaving further visual polish to the designer. Do not continue redesigning this UI unless asked.
+- Recent patch `qb-spectrum-label-orange-update.zip` was prepared with `QbAssessmentPanel.mxml`, `MyStyle.css`, and README. It assigns the Spectrum Label `color` property and uses `rollOver`/`rollOut` handlers for selectable labels; back navigation stays grey. The user said the result looks okay. Verify the actual working-tree files before assuming that exact patch is installed.
+
+### Integration behaviour and preservation requirements
+- `AgenticLearningMain.mxml` should manage a single active practice panel and switch between AI and QB modes.
+- The AI invitation's Yes action opens the practice-mode choices; choosing AI calls the existing AI generator, while choosing QB switches to `QbAssessmentPanel`.
+- QB completion can return the learner to the practice invitation through the continue-learning action.
+- Preserve all existing selection callbacks, question-count selection, QB API request/response handling, question rendering, answer submission, scoring, and feedback when making a UI-only change.
+- Do not change Node routes, assessment semantics, scoring, or the AI panel as part of visual/layout work.
+
+### Verification status and caveats
+- Several focused patch archives were prepared during the UI iteration. MXML XML well-formedness and source-string checks were performed for those patch versions.
+- Apache Royale compilation and full browser runtime testing were not performed by the assistant for the prepared patches. The user's visual feedback confirms the UI direction was reviewed in the browser, but it does not establish a successful clean compile or verify every interaction.
+- The latest Spectrum Label colour patch should be treated as the current intended UI direction, not as proof that the user's working tree exactly matches the generated archive.
+- Before any further code change, inspect the user's current `QbAssessmentPanel.mxml`, `AiAssessmentPanel.mxml`, `AgenticLearningMain.mxml`, and loaded `MyStyle.css`. Do not base a patch on an older uploaded snapshot without comparing it to the current files.
+
+### Current status and next work
+As of 22 November 2026:
+- The separate AI and publisher Question Bank practice flows have been integrated at the UI level and iteratively reviewed.
+- The Question Bank selection UI direction is accepted for now; further design refinements are deferred to the designer.
+- No further selection-layout redesign should be initiated unless requested.
+
+**Next step:** Ask the user what functionality they want to work on next. First inspect the relevant current source files, explain the smallest proposed change, and preserve all unrelated UI and functionality.

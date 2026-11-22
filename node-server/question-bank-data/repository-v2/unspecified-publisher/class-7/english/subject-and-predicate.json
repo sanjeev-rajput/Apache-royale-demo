@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-22T03:27:30.376Z",
+  "classification": {
+    "class": "Class 7",
+    "subject": "English",
+    "topic": "Subject and Predicate"
+  },
+  "publisher": "unspecified-publisher",
+  "source": {
+    "file": "class7/Final/Eng_Class_7_Assess_QB_02_Subject_and_Predicate/Eng_Class_7_Assess_QB_02_Subject_and_Predicate.xlsx",
+    "sheet": "Templates"
+  },
+  "questionType": "MCQ",
+  "questionCount": 5,
+  "questions": [
+    {
+      "id": "unspecified-publisher-class-7-english-subject-and-predicate-8",
+      "sourceRow": 9,
+      "question": "Identify the correct Subject in the sentence given below.<br> The cackling of geese saved Rome.",
+      "options": [
+        "Geese",
+        "The cackling of geese",
+        "saved Rome"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Subject and Predicate"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-subject-and-predicate-9",
+      "sourceRow": 10,
+      "question": "Identify the correct Predicate in the sentence given below.<br> All matter is indestructible.",
+      "options": [
+        "is indestructible",
+        "All matter is",
+        "All matter"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Subject and Predicate"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-subject-and-predicate-10",
+      "sourceRow": 11,
+      "question": "Identify the correct Predicate in the sentence given below.<br> A barking sound the shepherd hears.",
+      "options": [
+        "the shepherd",
+        "A barking sound hears",
+        "barking sound the shepherd"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Difficult",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Subject and Predicate"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-subject-and-predicate-11",
+      "sourceRow": 12,
+      "question": "Identify the correct Subject in the sentence given below.<br> Up went the balloon.",
+      "options": [
+        "Up went",
+        "Went the balloon",
+        "the balloon"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Subject and Predicate"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-subject-and-predicate-12",
+      "sourceRow": 13,
+      "question": "Identify the correct Predicate in the sentence given below.<br> The naked everyday he clad.",
+      "options": [
+        "The naked",
+        "The naked everyday clad",
+        "everyday he clad"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Difficult",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Subject and Predicate"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    }
+  ]
+}

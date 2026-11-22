@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-22T03:27:30.702Z",
+  "classification": {
+    "class": "Class 7",
+    "subject": "English",
+    "topic": "Conjunctions"
+  },
+  "publisher": "unspecified-publisher",
+  "source": {
+    "file": "class7/Final/Eng_Class_7_Assess_QB_18_Conjunctions/Eng_Class_7_Assess_QB_18_Conjunctions.xlsx",
+    "sheet": "Templates"
+  },
+  "questionType": "MCQ",
+  "questionCount": 6,
+  "questions": [
+    {
+      "id": "unspecified-publisher-class-7-english-conjunctions-1",
+      "sourceRow": 2,
+      "question": "Identify the conjunction in the sentence given below.<br> He deserved to succeed, for he worked hard.",
+      "options": [
+        "to",
+        "he",
+        "for"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Conjunctions"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-conjunctions-2",
+      "sourceRow": 3,
+      "question": "Identify the conjunction in the sentence given below.<br> We can travel by land or water.",
+      "options": [
+        "by",
+        "or",
+        "can"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Conjunctions"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-conjunctions-3",
+      "sourceRow": 4,
+      "question": "Identify the conjunction in the sentence given below.<br> I shall go, whether you come or not.",
+      "options": [
+        "whether",
+        "shall",
+        "you"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Conjunctions"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-conjunctions-4",
+      "sourceRow": 5,
+      "question": "Identify the conjunction in the sentence given below.<br> Unless you tell me the truth, I shall punish you.",
+      "options": [
+        "me",
+        "Unless",
+        "you"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Conjunctions"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-conjunctions-5",
+      "sourceRow": 6,
+      "question": "Identify the conjunction in the sentence given below.<br> I hear that your brother is in London.",
+      "options": [
+        "is",
+        "in",
+        "that"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Conjunctions"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-conjunctions-6",
+      "sourceRow": 7,
+      "question": "Identify the conjunction in the sentence given below.<br> Blessed are the merciful, for they shall obtain mercy.",
+      "options": [
+        "for",
+        "are",
+        "they"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Conjunctions"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    }
+  ]
+}

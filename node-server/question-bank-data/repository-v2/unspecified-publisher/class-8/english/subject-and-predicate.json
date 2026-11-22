@@ -1,0 +1,268 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-22T03:27:30.832Z",
+  "classification": {
+    "class": "Class 8",
+    "subject": "English",
+    "topic": "Subject and Predicate"
+  },
+  "publisher": "unspecified-publisher",
+  "source": {
+    "file": "Class8/Final/English_Class 8_Assess_QB_02_Subject and Predicate/English_Class 8_Assess_QB_2_Subject and Predicate.xlsx",
+    "sheet": "Templates"
+  },
+  "questionType": "MCQ",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "unspecified-publisher-class-8-english-subject-and-predicate-1",
+      "sourceRow": 2,
+      "question": "Identify the predicate in the sentence given below.<br> Borrowed garments never fit well.",
+      "options": [
+        "Borrowed garments",
+        "never fit well",
+        "garments never fit well"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Subject and Predicate"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-english-subject-and-predicate-2",
+      "sourceRow": 3,
+      "question": "Identify the predicate in the sentence given below.<br> Islamabad is the capital of Pakistan.",
+      "options": [
+        "Islamabad is",
+        "capital of Pakistan",
+        "is the capital of Pakistan"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Subject and Predicate"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-english-subject-and-predicate-3",
+      "sourceRow": 4,
+      "question": "Identify the subject in the sentence given below.<br> A guilty conscience needs no excuse.",
+      "options": [
+        "A guilty conscience",
+        "A guilty conscience needs",
+        "conscience needs"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Difficult",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Subject and Predicate"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-english-subject-and-predicate-4",
+      "sourceRow": 5,
+      "question": "Identify the subject in the sentence given below.<br> The beautiful rainbow soon faded away.",
+      "options": [
+        "beautiful rainbow",
+        "The beautiful rainbow",
+        "rainbow soon faded away"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Subject and Predicate"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-english-subject-and-predicate-5",
+      "sourceRow": 6,
+      "question": "Identify the predicate in the sentence given below.<br> A sick room should be well aired.",
+      "options": [
+        "should be well aired",
+        "room well aired",
+        "A sick room"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Subject and Predicate"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-english-subject-and-predicate-6",
+      "sourceRow": 7,
+      "question": "Identify the subject in the sentence given below.<br> The dewdrops glitter in the sunshine.",
+      "options": [
+        "dewdrops glitter",
+        "in the sunshine",
+        "The dewdrops"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Subject and Predicate"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-english-subject-and-predicate-7",
+      "sourceRow": 8,
+      "question": "Identify the predicate in the sentence given below.<br> I shot an arrow into the air.",
+      "options": [
+        "shot an arrow into the air",
+        "arrow into the air",
+        "I shot an arrow"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Subject and Predicate"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-english-subject-and-predicate-8",
+      "sourceRow": 9,
+      "question": "Identify the predicate in the sentence given below.<br> All roads lead to Rome.",
+      "options": [
+        "All roads",
+        "roads lead to Rome",
+        "lead to Rome"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Subject and Predicate"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-english-subject-and-predicate-9",
+      "sourceRow": 10,
+      "question": "Identify the predicate in the sentence given below.<br> The class read several tall tales about this adventurous frontiersman.",
+      "options": [
+        "this adventurous frontiersman",
+        "read several tall tales about this adventurous frontiersman.",
+        "The class read"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Difficult",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Subject and Predicate"
+      ],
+      "resource": "HRW",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-english-subject-and-predicate-10",
+      "sourceRow": 11,
+      "question": "Identify the subject in the sentence given below.<br> In English class the highlight of the day was the discussion of Amitabh Bachchan.",
+      "options": [
+        "the highlight of the day",
+        "Amitabh Bachchan",
+        "In English class"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Subject and Predicate"
+      ],
+      "resource": "HRW",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    }
+  ]
+}

@@ -1,0 +1,368 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-22T03:27:30.569Z",
+  "classification": {
+    "class": "Class 7",
+    "subject": "English",
+    "topic": "Determiners"
+  },
+  "publisher": "unspecified-publisher",
+  "source": {
+    "file": "class7/Final/Eng_Class_7_Assess_QB_11_Determiners/Eng_Class_7_Assess_QB_11_Determiners.xlsx",
+    "sheet": "Templates"
+  },
+  "questionType": "MCQ",
+  "questionCount": 14,
+  "questions": [
+    {
+      "id": "unspecified-publisher-class-7-english-determiners-1",
+      "sourceRow": 2,
+      "question": "Fill in the blanks with appropriate determiners.<br> Vineeta has _________ toffees.",
+      "options": [
+        "little",
+        "a few",
+        "much"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Determiners"
+      ],
+      "resource": "Madhuban",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-determiners-2",
+      "sourceRow": 3,
+      "question": "Fill in the blanks with appropriate determiners.<br> Kirti doesn't have _________ cash.",
+      "options": [
+        "few",
+        "any",
+        "some"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Determiners"
+      ],
+      "resource": "Madhuban",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-determiners-3",
+      "sourceRow": 4,
+      "question": "Fill in the blanks with appropriate determiners.<br> Neetu will give us _________ news.",
+      "options": [
+        "few",
+        "many",
+        "some"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Determiners"
+      ],
+      "resource": "Madhuban",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-determiners-4",
+      "sourceRow": 5,
+      "question": "Fill in the blanks with appropriate determiners.<br> There is _________ juice in the refrigerator.",
+      "options": [
+        "many",
+        "any",
+        "some"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Determiners"
+      ],
+      "resource": "Madhuban",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-determiners-5",
+      "sourceRow": 6,
+      "question": "Fill in the blanks with appropriate determiners.<br> There isn't _________ milk.",
+      "options": [
+        "few",
+        "any",
+        "many"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Determiners"
+      ],
+      "resource": "Madhuban",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-determiners-6",
+      "sourceRow": 7,
+      "question": "Fill in the blanks with appropriate determiners.<br> There aren't _________ boys in my neighbourhood.",
+      "options": [
+        "some",
+        "much",
+        "many"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Determiners"
+      ],
+      "resource": "Madhuban",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-determiners-7",
+      "sourceRow": 8,
+      "question": "Fill in the blanks with appropriate determiners.<br> Ankur won't give me _________ help.",
+      "options": [
+        "some",
+        "much",
+        "many"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Determiners"
+      ],
+      "resource": "Madhuban",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-determiners-8",
+      "sourceRow": 9,
+      "question": "Fill in the blanks with appropriate determiners.<br> Vinay must do _________ work tonight.",
+      "options": [
+        "some",
+        "few",
+        "little"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Determiners"
+      ],
+      "resource": "Madhuban",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-determiners-9",
+      "sourceRow": 10,
+      "question": "Fill in the blanks with appropriate determiners.<br> My cousin can't speak _________ Hindi.",
+      "options": [
+        "much",
+        "any",
+        "some"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Determiners"
+      ],
+      "resource": "Madhuban",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-determiners-10",
+      "sourceRow": 11,
+      "question": "Fill in the blanks with appropriate determiners.<br> Her daughter can speak _________ Japanese.",
+      "options": [
+        "any",
+        "little",
+        "many"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Determiners"
+      ],
+      "resource": "Madhuban",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-determiners-11",
+      "sourceRow": 12,
+      "question": "Fill in the blanks with appropriate determiners.<br> We can't speak _________ Hindi or Spanish.",
+      "options": [
+        "some",
+        "either",
+        "neither"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Difficult",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Determiners"
+      ],
+      "resource": "Madhuban",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-determiners-12",
+      "sourceRow": 13,
+      "question": "Fill in the blanks with appropriate determiners.<br> I should learn _________ other language.",
+      "options": [
+        "some",
+        "any",
+        "few"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Determiners"
+      ],
+      "resource": "Madhuban",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-determiners-13",
+      "sourceRow": 14,
+      "question": "Fill in the blanks with appropriate determiners.<br> __________ youngsters went to see the concert.",
+      "options": [
+        "Any",
+        "Many",
+        "Much"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Difficult",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Determiners"
+      ],
+      "resource": "Madhuban",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-determiners-14",
+      "sourceRow": 15,
+      "question": "Fill in the blanks with appropriate determiners.<br> Anita should eat __________ fresh food.",
+      "options": [
+        "some",
+        "any",
+        "many"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Difficult",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Determiners"
+      ],
+      "resource": "Madhuban",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    }
+  ]
+}

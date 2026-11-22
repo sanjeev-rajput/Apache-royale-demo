@@ -1,0 +1,418 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-22T03:27:30.194Z",
+  "classification": {
+    "class": "Class 6",
+    "subject": "English",
+    "topic": "Prepositions"
+  },
+  "publisher": "unspecified-publisher",
+  "source": {
+    "file": "Class6/Final/Eng_Class_06_Assess_QB_14_Prepositions/Eng_Class_06_Assess_QB_14_Prepositions.xlsx",
+    "sheet": "name topic"
+  },
+  "questionType": "MCQ",
+  "questionCount": 16,
+  "questions": [
+    {
+      "id": "unspecified-publisher-class-6-english-prepositions-7",
+      "sourceRow": 8,
+      "question": "Identify the suitable preposition. Fill in the blanks with the correct answer.<br> I shall do it _____________ pleasure.",
+      "options": [
+        "along",
+        "with",
+        "across"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Prepositions"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-prepositions-8",
+      "sourceRow": 9,
+      "question": "Identify the suitable preposition. Fill in the blanks with the correct answer.<br> I am sorry_____________ what I have done.",
+      "options": [
+        "as",
+        "of",
+        "for"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Prepositions"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Remembering",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-prepositions-9",
+      "sourceRow": 10,
+      "question": "Identify the suitable preposition. Fill in the blanks with the correct answer.<br> Oh God! Keep me _____________ sin.",
+      "options": [
+        "on",
+        "in",
+        "off"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Prepositions"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-prepositions-10",
+      "sourceRow": 11,
+      "question": "Identify the suitable preposition. Fill in the blanks with the correct answer.<br> He broke the jug _____________a hundred pieces.",
+      "options": [
+        "in",
+        "into",
+        "along"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Prepositions"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Remembering",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-prepositions-11",
+      "sourceRow": 12,
+      "question": "Identify the suitable preposition. Fill in the blanks with the correct answer.<br> I have been working hard _____________arithmetic.",
+      "options": [
+        "in",
+        "on",
+        "at"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Prepositions"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-prepositions-12",
+      "sourceRow": 13,
+      "question": "Identify the suitable preposition. Fill in the blanks with the correct answer.<br> There is nothing new _____________the sun.",
+      "options": [
+        "about",
+        "on",
+        "under"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Prepositions"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Remembering",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-prepositions-13",
+      "sourceRow": 14,
+      "question": "Identify the suitable preposition. Fill in the blanks with the correct answer.<br> Do not cry _____________spilt milk.",
+      "options": [
+        "over",
+        "on",
+        "for"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Prepositions"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-prepositions-14",
+      "sourceRow": 15,
+      "question": "Identify the suitable preposition. Fill in the blanks with the correct answer.<br> You boys, must settle it _____________yourselves.",
+      "options": [
+        "with",
+        "to",
+        "by"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Prepositions"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-prepositions-15",
+      "sourceRow": 16,
+      "question": "Identify the suitable preposition. Fill in the blanks with the correct answer.<br> The public has been cautioned _____________pickpockets.",
+      "options": [
+        "from",
+        "of",
+        "about"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Prepositions"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-prepositions-16",
+      "sourceRow": 17,
+      "question": "Identify the suitable preposition. Fill in the blanks with the correct answer.<br> I must start _________ dawn to reach the station in time.",
+      "options": [
+        "in",
+        "on",
+        "at"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Prepositions"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-prepositions-17",
+      "sourceRow": 18,
+      "question": "Identify the suitable preposition. Fill in the blanks with the correct answer.<br> The mail train is due _________ 3 P.M.",
+      "options": [
+        "at",
+        "on",
+        "for"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Prepositions"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Remembering",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-prepositions-18",
+      "sourceRow": 19,
+      "question": "Identify the suitable preposition. Fill in the blanks with the correct answer.<br> Human sacrifices were practised_________ the Nagas.",
+      "options": [
+        "by",
+        "of",
+        "in"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Prepositions"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Remembering",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-prepositions-19",
+      "sourceRow": 20,
+      "question": "Identify the suitable preposition. Fill in the blanks with the correct answer.<br> _________rice they also had curry.",
+      "options": [
+        "Along",
+        "Besides",
+        "With"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Difficult",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Prepositions"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Remembering",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-prepositions-20",
+      "sourceRow": 21,
+      "question": "Identify the suitable preposition. Fill in the blanks with the correct answer.<br> The fever has taken a turn for the better_________ yesterday.",
+      "options": [
+        "than",
+        "since",
+        "besides"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Prepositions"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-prepositions-21",
+      "sourceRow": 22,
+      "question": "Identify the suitable preposition. Fill in the blanks with the correct answer.<br> I saw him felling a big tree _________ a hatchet.",
+      "options": [
+        "along",
+        "for",
+        "with"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Prepositions"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-prepositions-22",
+      "sourceRow": 23,
+      "question": "Identify the suitable preposition. Fill in the blanks with the correct answer.<br> Nobody_________ you knows the truth.",
+      "options": [
+        "than",
+        "except",
+        "off"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Prepositions"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    }
+  ]
+}

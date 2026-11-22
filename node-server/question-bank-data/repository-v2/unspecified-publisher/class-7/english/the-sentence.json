@@ -1,0 +1,278 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-22T03:27:30.357Z",
+  "classification": {
+    "class": "Class 7",
+    "subject": "English",
+    "topic": "The Sentence"
+  },
+  "publisher": "unspecified-publisher",
+  "source": {
+    "file": "class7/Final/Eng_Class_7_Assess_QB_01_The_Sentence/Eng_Class_7_Assess_QB_01_The_Sentence.xlsx",
+    "sheet": "Templates"
+  },
+  "questionType": "MCQ",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "unspecified-publisher-class-7-english-the-sentence-1",
+      "sourceRow": 2,
+      "question": "Identify the type of the given sentence.<br> Named for the Roman goddess Juno",
+      "options": [
+        "Statement",
+        "Phrase",
+        "Declarative",
+        "Imperative"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Types of Sentences"
+      ],
+      "resource": "HRW",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-the-sentence-2",
+      "sourceRow": 3,
+      "question": "Identify the type of the given sentence.<br> Please bring me that calendar.",
+      "options": [
+        "Statement",
+        "Phrase",
+        "Declarative",
+        "Imperative"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Types of Sentences"
+      ],
+      "resource": "HRW",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-the-sentence-3",
+      "sourceRow": 4,
+      "question": "Identify the type of the given sentence.<br> When will we plan the birthday party for Julio?",
+      "options": [
+        "Statement",
+        "Phrase",
+        "Interrogative",
+        "Imperative"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Types of Sentences"
+      ],
+      "resource": "HRW",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-the-sentence-4",
+      "sourceRow": 5,
+      "question": "Identify the type of the given sentence.<br> How exciting it was to win a gold medal!",
+      "options": [
+        "Statement",
+        "Phrase",
+        "Declarative",
+        "Imperative"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Types of Sentences"
+      ],
+      "resource": "HRW",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-the-sentence-5",
+      "sourceRow": 6,
+      "question": "Identify the type of the given sentence.<br> After Emily and Rosa climbed slowly up the side of the hill",
+      "options": [
+        "Statement",
+        "Phrase",
+        "Declarative",
+        "Imperative"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Difficult",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Types of Sentences"
+      ],
+      "resource": "HRW",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-the-sentence-6",
+      "sourceRow": 7,
+      "question": "Identify the type of the given sentence.<br> As a hawk soared gracefully over the valley",
+      "options": [
+        "Statement",
+        "Phrase",
+        "Declarative",
+        "Imperative"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Types of Sentences"
+      ],
+      "resource": "HRW",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-the-sentence-7",
+      "sourceRow": 8,
+      "question": "Identify the type of the given sentence.<br> Waiting for fifteen minutes in the rain",
+      "options": [
+        "Statement",
+        "Phrase",
+        "Declarative",
+        "Imperative"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Types of Sentences"
+      ],
+      "resource": "HRW",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-the-sentence-8",
+      "sourceRow": 9,
+      "question": "Identify the type of the given sentence.<br> I promise that I won't forget about our next appointment.",
+      "options": [
+        "Statement",
+        "Phrase",
+        "Declarative",
+        "Imperative"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Types of Sentences"
+      ],
+      "resource": "HRW",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-the-sentence-9",
+      "sourceRow": 10,
+      "question": "Identify the type of the given sentence.<br> Put down your pencils and pass your papers forward.",
+      "options": [
+        "Statement",
+        "Phrase",
+        "Declarative",
+        "Imperative"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Types of Sentences"
+      ],
+      "resource": "HRW",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-the-sentence-10",
+      "sourceRow": 11,
+      "question": "Identify the type of the given sentence.<br> Would you volunteer?",
+      "options": [
+        "Statement",
+        "Phrase",
+        "Declarative",
+        "Imperative"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Types of Sentences"
+      ],
+      "resource": "HRW",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    }
+  ]
+}

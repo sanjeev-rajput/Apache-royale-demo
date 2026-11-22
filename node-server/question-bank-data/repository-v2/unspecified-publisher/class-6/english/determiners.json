@@ -1,0 +1,278 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-22T03:27:30.044Z",
+  "classification": {
+    "class": "Class 6",
+    "subject": "English",
+    "topic": "Determiners"
+  },
+  "publisher": "unspecified-publisher",
+  "source": {
+    "file": "Class6/Final/Eng_Class_06_Assess_QB_08_Determiners/Eng_Class_06_Assess_QB_08_Determiners.xlsx",
+    "sheet": "name topic"
+  },
+  "questionType": "MCQ",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "unspecified-publisher-class-6-english-determiners-1",
+      "sourceRow": 2,
+      "question": "Identify the suitable determiner. Fill in the blanks with the correct answer.<br> Have you been to Germany? Yes, I have been there _________ times.",
+      "options": [
+        "little",
+        "a little",
+        "few",
+        "a few"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Difficult",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Determiners"
+      ],
+      "resource": "Rita Wilson",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-determiners-2",
+      "sourceRow": 3,
+      "question": "Identify the suitable determiner. Fill in the blanks with the correct answer.<br> Jennifer is not a good teacher. She has_________ patience.",
+      "options": [
+        "little",
+        "a little",
+        "few",
+        "a few"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Determiners"
+      ],
+      "resource": "Rita Wilson",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-determiners-3",
+      "sourceRow": 4,
+      "question": "Identify the suitable determiner. Fill in the blanks with the correct answer.<br> \"Would you like ______ more sugar in your coffee?\" \"Yes, please, _________.",
+      "options": [
+        "little",
+        "a little",
+        "few",
+        "a few"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Determiners"
+      ],
+      "resource": "Rita Wilson",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-determiners-4",
+      "sourceRow": 5,
+      "question": "Identify the suitable determiner. Fill in the blanks with the correct answer.<br> This museum is not very famous so _____ _________ people come here.",
+      "options": [
+        "little",
+        "a little",
+        "few",
+        "a few"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Determiners"
+      ],
+      "resource": "Rita Wilson",
+      "bloomsTaxonomy": "Remembering",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-determiners-5",
+      "sourceRow": 6,
+      "question": "Identify the suitable determiner. Fill in the blanks with the correct answer.<br> My lawyer gave me _________ advice.",
+      "options": [
+        "some",
+        "a little",
+        "few",
+        "a few"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Determiners"
+      ],
+      "resource": "Rita Wilson",
+      "bloomsTaxonomy": "Remembering",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-determiners-6",
+      "sourceRow": 7,
+      "question": "Identify the suitable determiner. Fill in the blanks with the correct answer.<br> Mr. Sinha is busy these days. He has _________ free time.",
+      "options": [
+        "few",
+        "little",
+        "any",
+        "a few"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Determiners"
+      ],
+      "resource": "Rita Wilson",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-determiners-7",
+      "sourceRow": 8,
+      "question": "Identify the suitable determiner. Fill in the blanks with the correct answer.<br> Did you click _______________ photographs when you were in London?",
+      "options": [
+        "few",
+        "much",
+        "any",
+        "many"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Difficult",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Determiners"
+      ],
+      "resource": "Rita Wilson",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-determiners-8",
+      "sourceRow": 9,
+      "question": "Identify the suitable determiner. Fill in the blanks with the correct answer.<br> The market was very crowded. There were too _______________ people.",
+      "options": [
+        "few",
+        "much",
+        "little",
+        "many"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Determiners"
+      ],
+      "resource": "Rita Wilson",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-determiners-9",
+      "sourceRow": 10,
+      "question": "Identify the suitable determiner. Fill in the blanks with the correct answer.<br> There are _______________ old buildings in Delhi.",
+      "options": [
+        "much",
+        "few",
+        "little",
+        "a few"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Determiners"
+      ],
+      "resource": "Rita Wilson",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-determiners-10",
+      "sourceRow": 11,
+      "question": "Identify the suitable determiner. Fill in the blanks with the correct answer.<br> I am free today. I don't have _______________ to do.",
+      "options": [
+        "much",
+        "many",
+        "little",
+        "any"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Determiners"
+      ],
+      "resource": "Rita Wilson",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    }
+  ]
+}

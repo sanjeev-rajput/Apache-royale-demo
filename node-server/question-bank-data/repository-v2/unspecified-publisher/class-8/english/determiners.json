@@ -1,0 +1,330 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-22T03:27:30.979Z",
+  "classification": {
+    "class": "Class 8",
+    "subject": "English",
+    "topic": "Determiners"
+  },
+  "publisher": "unspecified-publisher",
+  "source": {
+    "file": "Class8/Final/English_Class 8_Assess_QB_10_Determiners/Eng_Class 8_Assess_QB_10_Determiners.xlsx",
+    "sheet": "Templates"
+  },
+  "questionType": "MCQ",
+  "questionCount": 12,
+  "questions": [
+    {
+      "id": "unspecified-publisher-class-8-english-determiners-1",
+      "sourceRow": 2,
+      "question": "Identify the suitable determiner. Fill in the blanks with the correct answer.<br> I love to see _______ movie of Katrina Kaif.",
+      "options": [
+        "either",
+        "every",
+        "neither",
+        "each"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Determiners"
+      ],
+      "resource": "Saraswati Publications",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-english-determiners-2",
+      "sourceRow": 3,
+      "question": "Identify the suitable determiner. Fill in the blanks with the correct answer.<br> _______ of the students was called for the rehearsal one by one.",
+      "options": [
+        "Either",
+        "Every",
+        "Neither",
+        "Each"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Determiners"
+      ],
+      "resource": "Saraswati Publications",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-english-determiners-3",
+      "sourceRow": 4,
+      "question": "Identify the suitable determiner. Fill in the blanks with the correct answer.<br> Both shirts are equally good. You can buy _______ shirt.",
+      "options": [
+        "either",
+        "every",
+        "neither",
+        "each"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Determiners"
+      ],
+      "resource": "Saraswati Publications",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-english-determiners-4",
+      "sourceRow": 5,
+      "question": "Identify the suitable determiner. Fill in the blanks with the correct answer.<br> _______ word of your story is touching.",
+      "options": [
+        "Either",
+        "Each",
+        "Neither",
+        "Every"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Determiners"
+      ],
+      "resource": "Saraswati Publications",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-english-determiners-5",
+      "sourceRow": 6,
+      "question": "Identify the suitable determiner. Fill in the blanks with the correct answer.<br> _______ Sunday I go to the nearby temple.",
+      "options": [
+        "Either",
+        "Every",
+        "Neither",
+        "Each"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Determiners"
+      ],
+      "resource": "Saraswati Publications",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-english-determiners-6",
+      "sourceRow": 7,
+      "question": "Identify the suitable determiner. Fill in the blanks with the correct answer.<br> _______ boy was proven guilty. Both were acquitted by the court.",
+      "options": [
+        "Either",
+        "Every",
+        "Neither",
+        "Each"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Determiners"
+      ],
+      "resource": "Saraswati Publications",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-english-determiners-7",
+      "sourceRow": 8,
+      "question": "Identify the suitable determiner. Fill in the blanks with correct answer.<br> Give me _______ tea.",
+      "options": [
+        "several",
+        "much",
+        "some",
+        "few"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Determiners"
+      ],
+      "resource": "Saraswati Publications",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-english-determiners-8",
+      "sourceRow": 9,
+      "question": "Identify the suitable determiner. Fill in the blanks with correct answer.<br> There is _______ salt in the soup.",
+      "options": [
+        "several",
+        "any",
+        "some",
+        "many"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Determiners"
+      ],
+      "resource": "Saraswati Publications",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-english-determiners-9",
+      "sourceRow": 10,
+      "question": "Identify the suitable determiner. Fill in the blanks with correct answer.<br> Children were given _______ toffees.",
+      "options": [
+        "several",
+        "any",
+        "neither",
+        "much"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Determiners"
+      ],
+      "resource": "Saraswati Publications",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-english-determiners-10",
+      "sourceRow": 11,
+      "question": "Identify the suitable determiner. Fill in the blanks with correct answer.<br> I haven't received _______ message from him so far.",
+      "options": [
+        "any",
+        "some",
+        "few",
+        "much"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Determiners"
+      ],
+      "resource": "Saraswati Publications",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-english-determiners-11",
+      "sourceRow": 12,
+      "question": "Identify the suitable determiner. Fill in the blanks with correct answer.<br> _______ trees have been cut down to broaden the roads.",
+      "options": [
+        "Several",
+        "Any",
+        "Little",
+        "Many"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Determiners"
+      ],
+      "resource": "Saraswati Publications",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-english-determiners-12",
+      "sourceRow": 13,
+      "question": "Identify the suitable determiner. Fill in the blanks with correct answer.<br> Pass him _______ rice. His plate is empty.",
+      "options": [
+        "some",
+        "few",
+        "much",
+        "many"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Determiners"
+      ],
+      "resource": "Saraswati Publications",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    }
+  ]
+}

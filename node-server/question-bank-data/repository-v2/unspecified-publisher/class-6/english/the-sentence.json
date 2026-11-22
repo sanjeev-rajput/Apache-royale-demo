@@ -1,0 +1,278 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-22T03:27:29.841Z",
+  "classification": {
+    "class": "Class 6",
+    "subject": "English",
+    "topic": "The Sentence"
+  },
+  "publisher": "unspecified-publisher",
+  "source": {
+    "file": "Class6/Final/Eng_Class_06_Assess_QB_01_The_Sentence/Eng_Class_06_Assess_QB_01_The_Sentence.xlsx",
+    "sheet": "name topic"
+  },
+  "questionType": "MCQ",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "unspecified-publisher-class-6-english-the-sentence-1",
+      "sourceRow": 2,
+      "question": "Identify the type of sentence. Why did the chicken cross the road?",
+      "options": [
+        "Imperative",
+        "Assertive",
+        "Interrogative",
+        "Exclamatory"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Types of Sentences"
+      ],
+      "resource": "HSP",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-the-sentence-2",
+      "sourceRow": 3,
+      "question": "Identify the type of sentence. That's an old joke.",
+      "options": [
+        "Imperative",
+        "Assertive",
+        "Interrogative",
+        "Exclamatory"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Types of Sentences"
+      ],
+      "resource": "HSP",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-the-sentence-3",
+      "sourceRow": 4,
+      "question": "Identify the type of sentence. Look the audience in the eye.",
+      "options": [
+        "Imperative",
+        "Assertive",
+        "Interrogative",
+        "Exclamatory"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Difficult",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Types of Sentences"
+      ],
+      "resource": "HSP",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-the-sentence-4",
+      "sourceRow": 5,
+      "question": "Name the type of sentence. How do comedians learn to tell jokes?",
+      "options": [
+        "Imperative",
+        "Assertive",
+        "Interrogative",
+        "Exclamatory"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Types of Sentences"
+      ],
+      "resource": "HSP",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-the-sentence-5",
+      "sourceRow": 6,
+      "question": "Name the type of sentence. That joke is so funny.",
+      "options": [
+        "Imperative",
+        "Assertive",
+        "Interrogative",
+        "Exclamatory"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Difficult",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Types of Sentences"
+      ],
+      "resource": "HSP",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-the-sentence-6",
+      "sourceRow": 7,
+      "question": "Name the type of sentence. Fetch me a glass of fresh orange juice.",
+      "options": [
+        "Imperative",
+        "Assertive",
+        "Interrogative",
+        "Exclamatory"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Types of Sentences"
+      ],
+      "resource": "Rita Wilson",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-the-sentence-7",
+      "sourceRow": 8,
+      "question": "Choose the correct sentence type. Pay your fees immediately.",
+      "options": [
+        "Imperative",
+        "Assertive",
+        "Interrogative",
+        "Exclamatory"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Types of Sentences"
+      ],
+      "resource": "Rita Wilson",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-the-sentence-8",
+      "sourceRow": 9,
+      "question": "Choose the correct sentence type. Rama goes to school.",
+      "options": [
+        "Imperative",
+        "Assertive",
+        "Interrogative",
+        "Exclamatory"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Types of Sentences"
+      ],
+      "resource": "Saraswati Publications",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-the-sentence-9",
+      "sourceRow": 10,
+      "question": "Choose the correct sentence type. How brave the soldiers are!",
+      "options": [
+        "Imperative",
+        "Assertive",
+        "Interrogative",
+        "Exclamatory"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Types of Sentences"
+      ],
+      "resource": "Saraswati Publications",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-the-sentence-10",
+      "sourceRow": 11,
+      "question": "Choose the correct sentence type. Be neither a borrower nor a lender.",
+      "options": [
+        "Imperative",
+        "Assertive",
+        "Interrogative",
+        "Exclamatory"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Types of Sentences"
+      ],
+      "resource": "Saraswati Publications",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    }
+  ]
+}

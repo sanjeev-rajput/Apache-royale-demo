@@ -1,0 +1,393 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-22T03:27:30.151Z",
+  "classification": {
+    "class": "Class 6",
+    "subject": "English",
+    "topic": "Act & Pass Voice"
+  },
+  "publisher": "unspecified-publisher",
+  "source": {
+    "file": "Class6/Final/Eng_Class_06_Assess_QB_12_Act_&_Pass_Voice/Eng_Class_06_Assess_QB_12_Act_&_Pass_Voice.xlsx",
+    "sheet": "name topic"
+  },
+  "questionType": "MCQ",
+  "questionCount": 15,
+  "questions": [
+    {
+      "id": "unspecified-publisher-class-6-english-act-pass-voice-1",
+      "sourceRow": 2,
+      "question": "Identify the correct verb to convert the sentence from Active to Passive Voice. Fill in the blanks with the correct answer.<br> Bad weather delayed Hari’s flight.<br> Hari’s flight __________ by bad weather.",
+      "options": [
+        "is delayed",
+        "was delayed",
+        "has been delayed"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Conversion from Active to Passive Voice"
+      ],
+      "resource": "DG Portal",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-act-pass-voice-2",
+      "sourceRow": 3,
+      "question": "Identify the correct verb to convert the sentence from Active to Passive Voice. Fill in the blanks with the correct answer.<br> The janitor sweeps the floor every day.<br> The floor ___________ by the janitor every day.",
+      "options": [
+        "was swept",
+        "will be swept",
+        "is swept"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Conversion from Active to Passive Voice"
+      ],
+      "resource": "DG Portal",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-act-pass-voice-3",
+      "sourceRow": 4,
+      "question": "Identify the correct verb to convert the sentence from Active to Passive Voice. Fill in the blanks with the correct answer.<br> We were planning the festival for the first time.<br> The festival ___________ by us for the first time.",
+      "options": [
+        "was being planned",
+        "is being planned",
+        "will be planned"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Conversion from Active to Passive Voice"
+      ],
+      "resource": "DG Portal",
+      "bloomsTaxonomy": "Remembering",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-act-pass-voice-4",
+      "sourceRow": 5,
+      "question": "Identify the correct verb to convert the sentence from Active to Passive Voice. Fill in the blanks with the correct answer.<br> This plant needs a lot of care.<br> A lot of care ___________ for this plant.",
+      "options": [
+        "was needed",
+        "is being needed",
+        "is needed"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Conversion from Active to Passive Voice"
+      ],
+      "resource": "DG Portal",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-act-pass-voice-5",
+      "sourceRow": 6,
+      "question": "Identify the correct verb to convert the sentence from Active to Passive Voice. Fill in the blanks with the correct answer.<br> The class will organise a presentation tomorrow.<br> A presentation __________ by the class tomorrow.",
+      "options": [
+        "will be organised",
+        "is being organised",
+        "was organised"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Difficult",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Conversion from Active to Passive Voice"
+      ],
+      "resource": "DG Portal",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-act-pass-voice-6",
+      "sourceRow": 7,
+      "question": "Identify the correct verb to convert the sentence from Active to Passive Voice. Fill in the blanks with the correct answer.<br> The children are playing a game outside.<br> A game ____________ by the children outside.",
+      "options": [
+        "will be played",
+        "is being played",
+        "is played"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Conversion from Active to Passive Voice"
+      ],
+      "resource": "DG Portal",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-act-pass-voice-7",
+      "sourceRow": 8,
+      "question": "Identify the correct verb to convert the sentence from Active to Passive Voice. Fill in the blanks with the correct answer.<br> Kali is bringing your parcel home.<br> Your parcel __________ home by Kali.",
+      "options": [
+        "is brought",
+        "will be brought",
+        "is being brought"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Conversion from Active to Passive Voice"
+      ],
+      "resource": "DG Portal",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-act-pass-voice-8",
+      "sourceRow": 9,
+      "question": "Identify the correct verb to convert the sentence from Active to Passive Voice. Fill in the blanks with the correct answer.<br> Shirin was singing a happy song this morning.<br> A happy song _________ by Shirin this morning.",
+      "options": [
+        "is being sung",
+        "was being sung",
+        "was sung"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Conversion from Active to Passive Voice"
+      ],
+      "resource": "DG Portal",
+      "bloomsTaxonomy": "Remembering",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-act-pass-voice-9",
+      "sourceRow": 10,
+      "question": "Identify the correct verb to convert the sentence from Active to Passive Voice. Fill in the blanks with the correct answer.<br> All the guests enjoyed the party.<br> The party ___________ by all the guests.",
+      "options": [
+        "was enjoyed",
+        "was being enjoyed",
+        "is being enjoyed"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Conversion from Active to Passive Voice"
+      ],
+      "resource": "DG Portal",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-act-pass-voice-10",
+      "sourceRow": 11,
+      "question": "Identify the correct verb to convert the sentence from Active to Passive Voice. Fill in the blanks with the correct answer.<br> Many things will be discussed by the teachers at the meeting.<br> The teachers ________ many things at the meeting.",
+      "options": [
+        "will discuss",
+        "discuss",
+        "are discussing"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Conversion from Passive to Active Voice"
+      ],
+      "resource": "DG Portal",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-act-pass-voice-11",
+      "sourceRow": 12,
+      "question": "Identify the correct verb to convert the sentence from Active to Passive Voice. Fill in the blanks with the correct answer.<br> The cycle race was won by Anil.<br> Anil ________ the cycle race.",
+      "options": [
+        "will win",
+        "was winning",
+        "won"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Conversion from Passive to Active Voice"
+      ],
+      "resource": "DG Portal",
+      "bloomsTaxonomy": "Remembering",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-act-pass-voice-12",
+      "sourceRow": 13,
+      "question": "Identify the correct verb to convert the sentence from Active to Passive Voice. Fill in the blanks with the correct answer.<br> The room is being painted by Smriti today.<br> Smriti _________ the room today.",
+      "options": [
+        "painted",
+        "is painting",
+        "will be painting"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Conversion from Passive to Active Voice"
+      ],
+      "resource": "DG Portal",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-act-pass-voice-13",
+      "sourceRow": 14,
+      "question": "Identify the correct verb to convert the sentence from Active to Passive Voice. Fill in the blanks with the correct answer.<br> My favourite song was played by the band.<br> The band _______ my favourite song.",
+      "options": [
+        "was playing",
+        "played",
+        "is playing"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Conversion from Passive to Active Voice"
+      ],
+      "resource": "DG Portal",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-act-pass-voice-14",
+      "sourceRow": 15,
+      "question": "Identify the correct verb to convert the sentence from Active to Passive Voice. Fill in the blanks with the correct answer.<br> Details of the competition will be published by the local newspaper.<br> The local newspaper _________ details of the competition.",
+      "options": [
+        "will publish",
+        "is publishing",
+        "publishes"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Conversion from Passive to Active Voice"
+      ],
+      "resource": "DG Portal",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-act-pass-voice-15",
+      "sourceRow": 16,
+      "question": "Identify the correct verb to convert the sentence from Active to Passive Voice. Fill in the blanks with the correct answer.<br> The crime scene is being examined by the police.<br> The police ___________ the crime scene.",
+      "options": [
+        "examined",
+        "will be examining",
+        "are examining"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Conversion from Passive to Active Voice"
+      ],
+      "resource": "DG Portal",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    }
+  ]
+}

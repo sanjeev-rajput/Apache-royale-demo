@@ -1,0 +1,434 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-22T03:27:30.256Z",
+  "classification": {
+    "class": "Class 6",
+    "subject": "English",
+    "topic": "Punctuation"
+  },
+  "publisher": "unspecified-publisher",
+  "source": {
+    "file": "Class6/Final/Eng_Class_06_Assess_QB_17_Punctuation/Eng_Class_06_Assess_QB_17_Punctuation.xlsx",
+    "sheet": "name topic"
+  },
+  "questionType": "MCQ",
+  "questionCount": 16,
+  "questions": [
+    {
+      "id": "unspecified-publisher-class-6-english-punctuation-1",
+      "sourceRow": 2,
+      "question": "Which of the following uses the correct punctuation?",
+      "options": [
+        "One day I collided with a man, who was in a hurry, and broke my glasses.",
+        "One day, I collided with a man, who was in a hurry, and broke my glasses.",
+        "One day, I collided with a man who was in a hurry, and broke my glasses.",
+        "One day I collided with a man, who was in a hurry and broke my glasses."
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Application of Punctuation Marks"
+      ],
+      "resource": "Practice Questions in DG",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-punctuation-2",
+      "sourceRow": 3,
+      "question": "Which of the following uses the correct punctuation?",
+      "options": [
+        "He apologised, and said, “I am Dr. Prasad. May, I invite you to my clinic for a new pair of glasses?”",
+        "He apologised and said- “I am Dr. Prasad. May I invite you to my clinic, for a new pair of glasses.”",
+        "He apologised and said, “I am Dr. Prasad. May I invite you to my clinic for a new pair of glasses?”",
+        "He apologised and said, I am Dr. Prasad! May I invite you to my clinic for a new pair of glasses."
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Application of Punctuation Marks"
+      ],
+      "resource": "Practice Questions in DG",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-punctuation-3",
+      "sourceRow": 4,
+      "question": "Which of the following uses the correct punctuation?",
+      "options": [
+        "Taken aback by his concern, I replied - “Yes, I will. Where is your clinic?”",
+        "Taken aback, by his concern I replied “Yes. I will. Where is your clinic?”",
+        "Taken aback by his concern“ I replied- Yes. I will. Where is your clinic?”",
+        "Taken aback by his concern I replied –Yes! I will. Where is your clinic?"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Application of Punctuation Marks"
+      ],
+      "resource": "Practice Questions in DG",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-punctuation-4",
+      "sourceRow": 5,
+      "question": "Which of the following uses the correct punctuation?",
+      "options": [
+        "He replied that “his clinic was at 16 Pashupaty Colony Akbar Marg” which, was not far from my house.",
+        "He replied that -his clinic was at 16 Pashupaty Colony Akbar Marg, which, was not far from my house.",
+        "He replied that his clinic was at- 16 Pashupaty Colony, Akbar Marg which, was not far from my house.",
+        "He replied that his clinic was at 16 ,Pashupaty Colony, Akbar Marg, which was not far from my house."
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Application of Punctuation Marks"
+      ],
+      "resource": "Practice Questions in DG",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-punctuation-5",
+      "sourceRow": 6,
+      "question": "Which of the following uses the correct punctuation?",
+      "options": [
+        "I visited his clinic, and got my new pair of glasses, which are even better than the ones I had before.",
+        "I visited his clinic and got my new pair of glasses, which are even better than the ones I had before!",
+        "“I visited his clinic and got my new pair of glasses”, which are even better than the ones I had before!",
+        "“I visited his clinic and got my new pair of glasses, which are even better than the ones” I had before!"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Application of Punctuation Marks"
+      ],
+      "resource": "Practice Questions in DG",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-punctuation-6",
+      "sourceRow": 7,
+      "question": "Which of the following uses the correct punctuation?",
+      "options": [
+        "Where am I supposed to go?askedLalita.",
+        "“Where am I supposed to go?” asked Lalita.",
+        "“Where am I supposed to go? Asked Lalita”.",
+        "Where am I supposed to go? - asked Lalita."
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Application of Punctuation Marks"
+      ],
+      "resource": "Practice Questions in DG",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-punctuation-7",
+      "sourceRow": 8,
+      "question": "Which of the following uses the correct punctuation?",
+      "options": [
+        "Puneet replied - This is the way to your room.",
+        "Puneet replied: This is the way to your room!",
+        "Puneet replied; This is the way to your room",
+        "Puneet replied, “This is the way to your room.”"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Application of Punctuation Marks"
+      ],
+      "resource": "Practice Questions in DG",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-punctuation-8",
+      "sourceRow": 9,
+      "question": "Which of the following uses the correct punctuation?",
+      "options": [
+        "Lalita exclaimed, “Wow! My room is next to yours”.",
+        "Lalita asked, Wow, My room is next to yours!",
+        "Lalita asked: “Wow”! My room is next to yours.",
+        "Lalita asked- Wow! “My room is next to yours”."
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Application of Punctuation Marks"
+      ],
+      "resource": "Practice Questions in DG",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-punctuation-9",
+      "sourceRow": 10,
+      "question": "Which of the following uses the correct punctuation?",
+      "options": [
+        "Puneet replied- We will surely have a great time!",
+        "Puneet replied- “We will surely have a great time.”",
+        "Puneet replied, “We will surely have a great time!”",
+        "Puneet replied, - We will surely have a great time!"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Difficult",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Application of Punctuation Marks"
+      ],
+      "resource": "Practice Questions in DG",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-punctuation-10",
+      "sourceRow": 11,
+      "question": "Which of the following uses the correct punctuation?",
+      "options": [
+        "Lalita said, “Wish I had come earlier. We could have had more time together”.",
+        "Lalita said, “Wish I had come earlier! We could have had more time together”.",
+        "Lalita said – Wish! I had come earlier. We could have had more time together.",
+        "Lalita said; “Wish I had come earlier; We could have had more time together”."
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Difficult",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Application of Punctuation Marks"
+      ],
+      "resource": "Practice Questions in DG",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-punctuation-11",
+      "sourceRow": 12,
+      "question": "Which of the following uses the correct punctuation?",
+      "options": [
+        "Puneet asked, “Did you bring your sleeping bag? We will be camping out.”",
+        "Puneet asked - “Did you bring your sleeping bag”? We will be camping out.",
+        "Puneet asked: Did you bring your sleeping bag? We will be camping out.",
+        "Puneet asked, “Did you bring your sleeping bag,We will be camping out.”"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Difficult",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Application of Punctuation Marks"
+      ],
+      "resource": "Practice Questions in DG",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-punctuation-12",
+      "sourceRow": 13,
+      "question": "Which of the following uses the hyphens and dashes correctly?",
+      "options": [
+        "The age group in this class is 12-14 years.",
+        "The age group in this class is 12_14 years.",
+        "The age group in this class is 12 -14 years.",
+        "The age group in this class is 12–14 years."
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Application of Punctuation Marks"
+      ],
+      "resource": "Practice Questions in DG",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-punctuation-13",
+      "sourceRow": 14,
+      "question": "Which of the following uses the hyphens and dashes correctly?",
+      "options": [
+        "Parul is a very hardworking student.",
+        "Parul is a very hard— working student.",
+        "Parul is a very hard_ working student.",
+        "Parul is a very hard-working student."
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Application of Punctuation Marks"
+      ],
+      "resource": "Practice Questions in DG",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-punctuation-14",
+      "sourceRow": 15,
+      "question": "Which of the following uses the hyphens and dashes correctly?",
+      "options": [
+        "The book tells us about well known historical figures like— Mahatma Gandhi and Jagdish Chandra Bose.",
+        "The book tells us about well known historical figures like - Mahatma Gandhi and Jagdish Chandra Bose.",
+        "The book tells us about well known historical figures like–Mahatma Gandhi and Jagdish Chandra Bose.",
+        "The book tells us about well known historical figures like Mahatma Gandhi and Jagdish Chandra Bose."
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Application of Punctuation Marks"
+      ],
+      "resource": "Practice Questions in DG",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-punctuation-15",
+      "sourceRow": 16,
+      "question": "Which of the following uses the hyphens and dashes correctly?",
+      "options": [
+        "It’s difficult to exercise self-control in a difficult situation.",
+        "It’s difficult to exercise self—control in a difficult situation.",
+        "It’s difficult to exercise self ― control in a difficult situation.",
+        "It’s difficult to exercise self–control in a difficult situation."
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Application of Punctuation Marks"
+      ],
+      "resource": "Practice Questions in DG",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-punctuation-16",
+      "sourceRow": 17,
+      "question": "Which of the following uses the hyphens and dashes correctly?",
+      "options": [
+        "I found the most important part of the plot on page fiftynine.",
+        "I found the most important part of the plot on page fifty-nine.",
+        "I found the most important part of the plot on page fifty - nine.",
+        "I found the most important part of the plot on page fifty—nine."
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Application of Punctuation Marks"
+      ],
+      "resource": "Practice Questions in DG",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    }
+  ]
+}

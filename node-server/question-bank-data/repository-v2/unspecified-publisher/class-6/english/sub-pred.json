@@ -1,0 +1,268 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-22T03:27:29.888Z",
+  "classification": {
+    "class": "Class 6",
+    "subject": "English",
+    "topic": "Sub & Pred"
+  },
+  "publisher": "unspecified-publisher",
+  "source": {
+    "file": "Class6/Final/Eng_Class_06_Assess_QB_02_Sub_&_Pred/Eng_Class_06_Assess_QB_02_Sub_&_Pred.xlsx",
+    "sheet": "name topic"
+  },
+  "questionType": "MCQ",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "unspecified-publisher-class-6-english-sub-pred-1",
+      "sourceRow": 2,
+      "question": "Identify the predicate in the sentence given below.<br> The boy stood on the burning deck.",
+      "options": [
+        "burning deck",
+        "stood on the burning deck",
+        "deck"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Difficult",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Subject and Predicate"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-sub-pred-2",
+      "sourceRow": 3,
+      "question": "Identify the subject in the sentence given below.<br> The singing of the birds delights us.",
+      "options": [
+        "The singing of the birds",
+        "birds",
+        "birds delights us"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Subject and Predicate"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-sub-pred-3",
+      "sourceRow": 4,
+      "question": "Identify the predicate in the sentence given below.<br> Edison invented the phonograph.",
+      "options": [
+        "the phonograph",
+        "invented the phonograph",
+        "Edison invented"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Subject and Predicate"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-sub-pred-4",
+      "sourceRow": 5,
+      "question": "Identify the predicate in the sentence given below.<br> We should profit by experience.",
+      "options": [
+        "should profit by experience",
+        "profit by experience",
+        "by experience"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Subject and Predicate"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-sub-pred-5",
+      "sourceRow": 6,
+      "question": "Identify the subject in the sentence given below.<br> No man could serve two masters.",
+      "options": [
+        "No man could",
+        "two masters",
+        "No man"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Subject and Predicate"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-sub-pred-6",
+      "sourceRow": 7,
+      "question": "Identify the subject in the sentence given below.<br> Lazy Raman failed in the exam.",
+      "options": [
+        "Raman",
+        "Lazy Raman",
+        "in the exam"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Subject and Predicate"
+      ],
+      "resource": "Saraswati Publications",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-sub-pred-7",
+      "sourceRow": 8,
+      "question": "Identify the subject in the sentence given below.<br> Mr. Singh, our Maths teacher, is a man of principles.",
+      "options": [
+        "Mr. Singh",
+        "our Maths teacher",
+        "Mr. Singh, our Maths teacher"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Difficult",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Subject and Predicate"
+      ],
+      "resource": "Saraswati Publications",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": "HOTS"
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-sub-pred-8",
+      "sourceRow": 9,
+      "question": "Identify the subject in the sentence given below.<br> A desire to win is necessary for one’s success.",
+      "options": [
+        "A desire to win",
+        "win is necessary for",
+        "for one’s success"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Difficult",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Subject and Predicate"
+      ],
+      "resource": "Saraswati Publications",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-sub-pred-9",
+      "sourceRow": 10,
+      "question": "Identify the subject in the sentence given below.<br> A rich businessman donated generously.",
+      "options": [
+        "donated generously",
+        "A rich businessman",
+        "businessman"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Subject and Predicate"
+      ],
+      "resource": "Saraswati Publications",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-sub-pred-10",
+      "sourceRow": 11,
+      "question": "Identify the subject in the sentence given below.<br> She sang the National Anthem melodiously.",
+      "options": [
+        "National Anthem melodiously",
+        "sang the National Anthem melodiously",
+        "She"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Subject and Predicate"
+      ],
+      "resource": "Saraswati Publications",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    }
+  ]
+}

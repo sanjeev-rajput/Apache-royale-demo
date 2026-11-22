@@ -1,0 +1,274 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-22T03:27:30.997Z",
+  "classification": {
+    "class": "Class 8",
+    "subject": "English",
+    "topic": "Articles"
+  },
+  "publisher": "unspecified-publisher",
+  "source": {
+    "file": "Class8/Final/English_Class 8_Assess_QB_11_Articles/Eng_Class 8_Assess_QB_11_Articles.xlsx",
+    "sheet": "Templates"
+  },
+  "questionType": "MCQ",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "unspecified-publisher-class-8-english-articles-1",
+      "sourceRow": 2,
+      "question": "Identify the suitable article. Fill in the blanks with the correct answer.<br> ___________able man has not always a distinguished look.",
+      "options": [
+        "A",
+        "An",
+        "The",
+        "No article required"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Correct Articles"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-english-articles-2",
+      "sourceRow": 3,
+      "question": "Identify the suitable article. Fill in the blanks with the correct answer.<br> ___________reindeer is a native of Norway.",
+      "options": [
+        "A",
+        "An",
+        "The",
+        "No article required"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Correct Articles"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-english-articles-3",
+      "sourceRow": 4,
+      "question": "Identify the suitable article. Fill in the blanks with the correct answer.<br> Rustum is___________young Parsee.",
+      "options": [
+        "a",
+        "an",
+        "the",
+        "no article required"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Correct Articles"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-english-articles-4",
+      "sourceRow": 5,
+      "question": "Identify the suitable article. Fill in the blanks with the correct answer.<br> Aladdin had__________wonderful lamp.",
+      "options": [
+        "A",
+        "An",
+        "The",
+        "No article required"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Correct Articles"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-english-articles-5",
+      "sourceRow": 6,
+      "question": "Identify the suitable article. Fill in the blanks with the correct answer.<br> __________sun shines brightly.",
+      "options": [
+        "A",
+        "An",
+        "The",
+        "No article required"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Correct Articles"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-english-articles-6",
+      "sourceRow": 7,
+      "question": "Identify the suitable article. Fill in the blanks with the correct answer.<br> John got__________best present.",
+      "options": [
+        "a",
+        "an",
+        "the",
+        "No article required"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Correct Articles"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-english-articles-7",
+      "sourceRow": 8,
+      "question": "Identify the suitable article. Fill in the blanks with the correct answer.<br> My mother wants to buy____________",
+      "options": [
+        "a bread",
+        "a loaf of bread",
+        "a loaf bread"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Correct Articles"
+      ],
+      "resource": "Rita Wilson",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-english-articles-8",
+      "sourceRow": 9,
+      "question": "Identify the suitable article. Fill in the blanks with the correct answer.<br> _____________produced at our factory in Udaipur.",
+      "options": [
+        "Good is",
+        "Good are",
+        "The goods are"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Correct Articles"
+      ],
+      "resource": "Rita Wilson",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-english-articles-9",
+      "sourceRow": 10,
+      "question": "Identify the suitable article. Fill in the blanks with the correct answer.<br> ______________make houses of snow and ice.",
+      "options": [
+        "An Eskimos",
+        "The Eskimos",
+        "A Eskimos"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Correct Articles"
+      ],
+      "resource": "SME Supplied Question",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-english-articles-10",
+      "sourceRow": 11,
+      "question": "Identify the suitable article. Fill in the blanks with the correct answer.<br> I was reading Science fiction at home when suddenly_____________rang.",
+      "options": [
+        "a doorbell",
+        "an doorbell",
+        "the doorbell"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Correct Articles"
+      ],
+      "resource": "Rita Wilson",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    }
+  ]
+}

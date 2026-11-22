@@ -1,0 +1,193 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-22T03:27:30.065Z",
+  "classification": {
+    "class": "Class 6",
+    "subject": "English",
+    "topic": "Articles"
+  },
+  "publisher": "unspecified-publisher",
+  "source": {
+    "file": "Class6/Final/Eng_Class_06_Assess_QB_09_Articles/Eng_Class_06_Assess_QB_09_Articles.xlsx",
+    "sheet": "name topic"
+  },
+  "questionType": "MCQ",
+  "questionCount": 7,
+  "questions": [
+    {
+      "id": "unspecified-publisher-class-6-english-articles-9",
+      "sourceRow": 10,
+      "question": "Identify the suitable article. Fill in the blanks with the correct answer.<br> Copper is ________ useful metal.",
+      "options": [
+        "a",
+        "an",
+        "the"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Difficult",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Correct Articles"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-articles-10",
+      "sourceRow": 11,
+      "question": "Identify the suitable article. Fill in the blanks with the correct answer.<br> An honest man speaks ________ truth.",
+      "options": [
+        "a",
+        "an",
+        "the"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Correct Articles"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-articles-11",
+      "sourceRow": 12,
+      "question": "Identify the suitable article. Fill in the blanks with the correct answer.<br> Banaras is ________ holy city.",
+      "options": [
+        "a",
+        "an",
+        "the"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Correct Articles"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-articles-12",
+      "sourceRow": 13,
+      "question": "Identify the suitable article. Fill in the blanks with the correct answer.<br> He returned after ________ hour.",
+      "options": [
+        "a",
+        "an",
+        "the"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Correct Articles"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-articles-13",
+      "sourceRow": 14,
+      "question": "Identify the suitable article. Fill in the blanks with the correct answer.<br> Yesterday ________ European called at my office.",
+      "options": [
+        "a",
+        "an",
+        "the"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Difficult",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Correct Articles"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-articles-14",
+      "sourceRow": 15,
+      "question": "Identify the suitable article. Fill in the blanks with the correct answer.<br> The guide knows ________ way.",
+      "options": [
+        "a",
+        "an",
+        "the"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Correct Articles"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-articles-15",
+      "sourceRow": 16,
+      "question": "Identify the suitable article. Fill in the blanks with the correct answer.<br> Bhoomi is ________ most intelligent girl of the class.",
+      "options": [
+        "a",
+        "an",
+        "the"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Correct Articles"
+      ],
+      "resource": "Saraswati Publications",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    }
+  ]
+}

@@ -1,0 +1,268 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-22T03:27:30.337Z",
+  "classification": {
+    "class": "Class 6",
+    "subject": "English",
+    "topic": "Common Errors"
+  },
+  "publisher": "unspecified-publisher",
+  "source": {
+    "file": "Class6/Final/Eng_Class_06_Assess_QB_21_Common_Errors/Eng_Class_06_Assess_QB_21_Common_Errors.xlsx",
+    "sheet": "name topic"
+  },
+  "questionType": "MCQ",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "unspecified-publisher-class-6-english-common-errors-8",
+      "sourceRow": 9,
+      "question": "Identify and fill in the blanks using the correct answer.<br><br> The Guptas have just had ___________ house painted.",
+      "options": [
+        "they’re",
+        "their",
+        "there"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Correct Words"
+      ],
+      "resource": "Practice Questions in DG",
+      "bloomsTaxonomy": "Remembering",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-common-errors-9",
+      "sourceRow": 10,
+      "question": "Identify and fill in the blanks using the correct answer.<br><br> Chennai has humid weather; it rains a lot ________.",
+      "options": [
+        "they’re",
+        "their",
+        "there"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Correct Words"
+      ],
+      "resource": "Practice Questions in DG",
+      "bloomsTaxonomy": "Remembering",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-common-errors-10",
+      "sourceRow": 11,
+      "question": "Identify and fill in the blanks using the correct answer.<br><br> The teacher asked Rima, “Will _______ elder brother give a talk to the class on the planet system?”",
+      "options": [
+        "your",
+        "you’re",
+        "you"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Correct Words"
+      ],
+      "resource": "Practice Questions in DG",
+      "bloomsTaxonomy": "Remembering",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-common-errors-11",
+      "sourceRow": 12,
+      "question": "Identify and fill in the blanks using the correct answer.<br><br> Bina advised Rahul, “You must study hard if ________ interested in winning the scholarship”.",
+      "options": [
+        "your",
+        "you’re",
+        "you"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Correct Words"
+      ],
+      "resource": "Practice Questions in DG",
+      "bloomsTaxonomy": "Remembering",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-common-errors-12",
+      "sourceRow": 13,
+      "question": "Identify and fill in the blanks using the correct answer.<br><br> There is always ___________noise in the market on Sunday.",
+      "options": [
+        "many",
+        "a lot of",
+        "more"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Correct Words"
+      ],
+      "resource": "Practice Questions in DG",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-common-errors-13",
+      "sourceRow": 14,
+      "question": "Identify and fill in the blanks using the correct answer.<br><br> This building has been here for ____ years.",
+      "options": [
+        "many",
+        "a lot of",
+        "more"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Correct Words"
+      ],
+      "resource": "Practice Questions in DG",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-common-errors-14",
+      "sourceRow": 15,
+      "question": "Identify and fill in the blanks using the correct answer.<br><br> There are ____ clothes that are really comfortable in summertime.",
+      "options": [
+        "little",
+        "few",
+        "a few"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Correct Words"
+      ],
+      "resource": "Practice Questions in DG",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-common-errors-15",
+      "sourceRow": 16,
+      "question": "Identify and fill in the blanks using the correct answer.<br><br> There is ____milk to make masala chai today.",
+      "options": [
+        "a little",
+        "few",
+        "some"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Correct Words"
+      ],
+      "resource": "Practice Questions in DG",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-common-errors-16",
+      "sourceRow": 17,
+      "question": "Identify and fill in the blanks using the correct answer.<br><br> The children did ____ practice for the school play.",
+      "options": [
+        "many",
+        "a lot of",
+        "much"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Correct Words"
+      ],
+      "resource": "Practice Questions in DG",
+      "bloomsTaxonomy": "Remembering",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-common-errors-17",
+      "sourceRow": 18,
+      "question": "Identify and fill in the blanks using the correct answer.<br><br> The fruit seller sells ________________ kilos of bananas every day.",
+      "options": [
+        "many",
+        "a lot of",
+        "much"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Correct Words"
+      ],
+      "resource": "Practice Questions in DG",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    }
+  ]
+}

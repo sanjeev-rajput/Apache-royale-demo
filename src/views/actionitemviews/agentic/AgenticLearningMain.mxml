@@ -18,6 +18,7 @@
             import com.unhurdle.spectrum.BarLoader;
             import views.actionitemviews.learning.AiResponse;
             import org.apache.royale.utils.Timer;
+            import org.apache.royale.jewel.VGroup;
 
             // Agentic Learning owns its own conversation state.
             private var conversationHistory:Array = [];
@@ -26,9 +27,16 @@
             private var thinkingLabel:BarLoader;
             private var statusTimer:Timer;
             private var statusLoader:ServiceLoader;
+            private var resourceLoaders:Array = [];
             private var currentRequestId:String;
             private var statusRequestInProgress:Boolean = false;
             private var requestCounter:int = 0;
+            private var lastLearnerMessage:String;
+
+            private var latestAssessmentContext:Object;
+            private var activePracticePanel:Object;
+            private var activePracticeParent:Object;
+            private var resourceSequence:int = 0;
 
             private function initializeAgent():void
             {
@@ -54,6 +62,7 @@
                 }
 
                 questionInput.text = "";
+                lastLearnerMessage = message;
                 addAgentMessage("You", message);
 
                 conversationHistory.push({
@@ -153,13 +162,11 @@
                 {
                     var failureMessage:String = response != null && response.message != null
                         ? String(response.message)
-                        : "The learning agent could not complete this request. Please try again.";
-
+                        : "The learning explanation could not be generated. Please try again.";
                     addAgentMessage("Agent", failureMessage);
-                    trace("Agentic Learning request failed. code=" +
-                        (response != null ? response.errorCode : "NO_RESPONSE") +
-                        ", source=" +
-                        (response != null ? response.errorSource : "unknown"));
+                    trace("Agentic Learning explanation failed. code=" +
+                        (response != null ? response.errorCode : "NO_RESPONSE"));
+                    loadLearningResources(lastLearnerMessage);
                     return;
                 }
 
@@ -167,108 +174,267 @@
                     ? "I couldn't generate a response."
                     : String(response.reply);
 
-                // Activity launch links are rendered as the same clickable
-                // activity cards used by the AI Learning component.
-                var visibleReply:String = removeActivityLinkLine(reply);
+                // Display the LLM's returned text as-is. Resource cards are
+                // fetched and rendered by a separate deterministic API call.
+                if (response.llmAvailable !== false)
+                {
+                    conversationHistory.push({ role: "assistant", content: reply });
+                }
+                addAgentMessage("Agent", reply, response.showAiWarning === true);
+                loadLearningResources(lastLearnerMessage);
+            }
 
-                conversationHistory.push({
-                    role: "assistant",
-                    content: reply
-                });
+            private function loadLearningResources(message:String):void
+            {
+                if (message == null || message.replace(/^\s+|\s+$/g, "") == "")
+                    return;
 
-                addAgentMessage(
-                    "Agent",
-                    visibleReply,
-                    response.showAiWarning === true
+                var sequence:int = ++resourceSequence;
+                var resourceContainer:VGroup = new VGroup();
+                resourceContainer.percentWidth = 100;
+                resourceContainer.gap = 1;
+                resultsContainer.addElement(resourceContainer);
+
+                var loader:ServiceLoader = new ServiceLoader();
+                resourceLoaders.push(loader);
+                loader.reqMethod = "POST";
+                loader.contentType = "application/json";
+                loader.reqData = JSON.stringify({ message: message });
+                loader.loadJData(
+                    Config.apiBaseUrl + "agent/resources",
+                    function(response:Object):void
+                    {
+                        releaseResourceLoader(loader);
+                        handleLearningResources(response, resourceContainer, sequence, message);
+                    },
+                    ServiceLoader.DATA_TYPE_JSON,
+                    function(event:Event):void
+                    {
+                        releaseResourceLoader(loader);
+                        handleLearningResourcesError(resourceContainer, message, sequence);
+                    },
+                    false
                 );
+            }
+
+            private function releaseResourceLoader(loader:ServiceLoader):void
+            {
+                var index:int = resourceLoaders.indexOf(loader);
+                if (index >= 0)
+                    resourceLoaders.splice(index, 1);
+            }
+
+            private function handleLearningResources(
+                response:Object,
+                target:VGroup,
+                sequence:int,
+                message:String
+            ):void
+            {
+                if (response == null || response.success != true)
+                {
+                    handleLearningResourcesError(target, message, sequence);
+                    return;
+                }
 
                 if (response.results != null)
                 {
                     for each (var item:Object in response.results)
-                    {
-                        addActivity(item);
-                    }
+                        addActivity(item, target);
                 }
 
-                // YouTube recommendations are supplementary and are always
-                // displayed after all CSV catalogue activity cards.
-                if (response.videos != null)
+                if (sequence == resourceSequence)
+                    latestAssessmentContext = response.assessmentContext;
+
+                var catalogueAvailable:Boolean = response.availability != null &&
+                    response.availability.catalogue === true;
+                // Start YouTube only after the CSV results have been appended.
+                // It is a separate request and cannot delay activity-card display.
+                loadLearningVideos(message, target, sequence, catalogueAvailable);
+            }
+
+            private function handleLearningResourcesError(
+                target:VGroup,
+                message:String,
+                sequence:int
+            ):void
+            {
+                if (sequence == resourceSequence)
+                    latestAssessmentContext = null;
+                loadLearningVideos(message, target, sequence, false);
+            }
+
+            private function loadLearningVideos(
+                message:String,
+                target:VGroup,
+                sequence:int,
+                catalogueAvailable:Boolean
+            ):void
+            {
+                var loader:ServiceLoader = new ServiceLoader();
+                resourceLoaders.push(loader);
+                loader.reqMethod = "POST";
+                loader.contentType = "application/json";
+                loader.reqData = JSON.stringify({ message: message });
+                loader.loadJData(
+                    Config.apiBaseUrl + "agent/videos",
+                    function(response:Object):void
+                    {
+                        releaseResourceLoader(loader);
+                        handleLearningVideos(response, target, sequence, catalogueAvailable);
+                    },
+                    ServiceLoader.DATA_TYPE_JSON,
+                    function(event:Event):void
+                    {
+                        releaseResourceLoader(loader);
+                        handleLearningVideosError(target, sequence, catalogueAvailable);
+                    },
+                    false
+                );
+            }
+
+            private function handleLearningVideos(
+                response:Object,
+                target:VGroup,
+                sequence:int,
+                catalogueAvailable:Boolean
+            ):void
+            {
+                var youtubeAvailable:Boolean = response != null && response.success == true &&
+                    response.availability != null && response.availability.youtube === true;
+                if (response != null && response.success == true && response.videos != null)
                 {
                     for each (var video:Object in response.videos)
-                    {
-                        addYouTubeVideo(video);
-                    }
+                        addYouTubeVideo(video, target);
                 }
-                if (response.assessmentContext != null)
+
+                if (target.numElements == 0 && !catalogueAvailable && !youtubeAvailable)
                 {
-                    var assessmentPanel:AssessmentPanel = new AssessmentPanel();
-                    assessmentPanel.assessmentContext = response.assessmentContext;
-                    assessmentPanel.addEventListener(
-                        "assessmentDeclined",
-                        handleAssessmentDeclined
-                    );
-                    resultsContainer.addElement(assessmentPanel);
+                    var unavailable:HTMLText = new HTMLText();
+                    unavailable.percentWidth = 100;
+                    unavailable.html = "I couldn't retrieve learning activities or videos right now. Please try again later.";
+                    target.addElement(unavailable);
                 }
+
+                if (sequence == resourceSequence && latestAssessmentContext != null)
+                    showPracticeInvitation(target);
+            }
+
+            private function handleLearningVideosError(
+                target:VGroup,
+                sequence:int,
+                catalogueAvailable:Boolean
+            ):void
+            {
+                if (target.numElements == 0 && !catalogueAvailable)
+                {
+                    var unavailable:HTMLText = new HTMLText();
+                    unavailable.percentWidth = 100;
+                    unavailable.html = "Learning resources are temporarily unavailable. Please try again later.";
+                    target.addElement(unavailable);
+                }
+                if (sequence == resourceSequence && latestAssessmentContext != null)
+                    showPracticeInvitation(target);
+            }
+
+            private function removeActivePracticePanel():void
+            {
+                if (activePracticePanel == null)
+                    return;
+
+                if (activePracticePanel is AiAssessmentPanel)
+                {
+                    var aiPanel:AiAssessmentPanel = activePracticePanel as AiAssessmentPanel;
+                    aiPanel.removeEventListener("assessmentDeclined", handleAssessmentDeclined);
+                    aiPanel.removeEventListener("questionBankSelected", handleQuestionBankSelected);
+                    if (activePracticeParent is VGroup)
+                        VGroup(activePracticeParent).removeElement(aiPanel);
+                    else
+                        resultsContainer.removeElement(aiPanel);
+                }
+                else if (activePracticePanel is QbAssessmentPanel)
+                {
+                    var qbPanel:QbAssessmentPanel = activePracticePanel as QbAssessmentPanel;
+                    qbPanel.removeEventListener("qbPracticeCompleted", handleQbPracticeCompleted);
+                    if (activePracticeParent is VGroup)
+                        VGroup(activePracticeParent).removeElement(qbPanel);
+                    else
+                        resultsContainer.removeElement(qbPanel);
+                }
+
+                activePracticePanel = null;
+                activePracticeParent = null;
+            }
+
+            private function showPracticeInvitation(target:VGroup = null):void
+            {
+                removeActivePracticePanel();
+                if (latestAssessmentContext == null)
+                    return;
+
+                var panel:AiAssessmentPanel = new AiAssessmentPanel();
+                panel.assessmentContext = latestAssessmentContext;
+                panel.addEventListener("assessmentDeclined", handleAssessmentDeclined);
+                panel.addEventListener("questionBankSelected", handleQuestionBankSelected);
+                activePracticePanel = panel;
+                activePracticeParent = target;
+                if (target != null)
+                    target.addElement(panel);
+                else
+                    resultsContainer.addElement(panel);
             }
 
             private function handleAssessmentDeclined(event:Event):void
             {
-                var panel:AssessmentPanel = event.target as AssessmentPanel;
-                if (panel != null)
-                {
-                    panel.removeEventListener(
-                        "assessmentDeclined",
-                        handleAssessmentDeclined
-                    );
-                    resultsContainer.removeElement(panel);
-                }
+                removeActivePracticePanel();
             }
 
-            // The backend may mention an activity URL in its prose.
-            // Hide that line because the activity is shown as a clickable card.
-            private function removeActivityLinkLine(message:String):String
+            private function handleQuestionBankSelected(event:Event):void
             {
-                var lines:Array = message.split(/\\r?\\n/);
-                var visibleLines:Array = [];
+                var target:VGroup = activePracticeParent as VGroup;
+                removeActivePracticePanel();
+                var panel:QbAssessmentPanel = new QbAssessmentPanel();
+                panel.addEventListener("qbPracticeCompleted", handleQbPracticeCompleted);
+                activePracticePanel = panel;
+                activePracticeParent = target;
+                if (target != null)
+                    target.addElement(panel);
+                else
+                    resultsContainer.addElement(panel);
+            }
 
-                for each (var line:String in lines)
-                {
-                    if (line.toLowerCase().indexOf(
-                        "you can find this activity here:"
-                    ) >= 0)
-                    {
-                        continue;
-                    }
-
-                    visibleLines.push(line);
-                }
-
-                return visibleLines.join("\\n").replace(
-                    /^\\s+|\\s+$/g,
-                    ""
-                );
+            private function handleQbPracticeCompleted(event:Event):void
+            {
+                var target:VGroup = activePracticeParent as VGroup;
+                showPracticeInvitation(target);
             }
 
             // Match AI Learning's existing clickable activity-card implementation.
-            private function addActivity(item:Object):void
+            private function addActivity(item:Object, target:VGroup = null):void
             {
                 if (item == null)
                     return;
 
                 var detailsUi:AiResponse = new AiResponse();
                 detailsUi.aiResponse = item;
-                resultsContainer.addElement(detailsUi);
+                if (target != null)
+                    target.addElement(detailsUi);
+                else
+                    resultsContainer.addElement(detailsUi);
             }
 
             // Render each optional YouTube result in its own independent card.
-            private function addYouTubeVideo(video:Object):void
+            private function addYouTubeVideo(video:Object, target:VGroup = null):void
             {
                 if (video == null || video.videoId == null)
                     return;
 
                 var videoCard:YouTubeVideoCard = new YouTubeVideoCard();
                 videoCard.video = video;
-                resultsContainer.addElement(videoCard);
+                if (target != null)
+                    target.addElement(videoCard);
+                else
+                    resultsContainer.addElement(videoCard);
             }
 
             private function handleAgentError(event:Event):void
@@ -277,10 +443,10 @@
 
                 addAgentMessage(
                     "Agent",
-                    "Agentic Learning could not reach the backend service. This may be a network, server-availability or deployment issue. Please try again shortly."
+                    "I’m unable to generate your learning explanation right now. Please try again shortly."
                 );
-
-                trace("Agentic Learning API transport request failed.");
+                loadLearningResources(lastLearnerMessage);
+                trace("Agentic Learning explanation API transport request failed; resource retrieval was started independently.");
             }
 
             private function finishRequest():void
@@ -427,7 +593,7 @@
                  className="language-label"/>
     </j:HGroup>
 
-    <j:VGroup id="resultsContainer"
+    <j:VGroup id="resultsContainer" className="Agentic-resultsContainer"
               width="100%"
               height="100%"
               gap="1">

@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-22T03:27:31.035Z",
+  "classification": {
+    "class": "Class 8",
+    "subject": "English",
+    "topic": "Tenses"
+  },
+  "publisher": "unspecified-publisher",
+  "source": {
+    "file": "Class8/Final/English_Class 8_Assess_QB_13_Tenses/English_Class 8_Assess_QB_13_Tenses.xlsx",
+    "sheet": "Templates"
+  },
+  "questionType": "MCQ",
+  "questionCount": 6,
+  "questions": [
+    {
+      "id": "unspecified-publisher-class-8-english-tenses-1",
+      "sourceRow": 2,
+      "question": "Identify the tense of the sentence given below.<br> I have been buying the supplies all week.",
+      "options": [
+        "Present Perfect Tense",
+        "Past Perfect Continuous Tense",
+        "Past Perfect Tense",
+        "Present Perfect Continuous Tense"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Types of Tenses"
+      ],
+      "resource": "HRW",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-english-tenses-2",
+      "sourceRow": 3,
+      "question": "Identify the tense of the sentence given below.<br> Sherry and I have registered for our own booth at the craft fair.",
+      "options": [
+        "Present Perfect Continuous Tense",
+        "Present Perfect Tense",
+        "Past Perfect Continuous Tense",
+        "Past Perfect Tense"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Types of Tenses"
+      ],
+      "resource": "HRW",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-english-tenses-3",
+      "sourceRow": 4,
+      "question": "Identify the tense of the sentence given below.<br> We have been making dozens of interesting and useful items this month.",
+      "options": [
+        "Present Perfect Continuous Tense",
+        "Present Perfect Tense",
+        "Past Perfect Continuous Tense",
+        "Past Perfect Tense"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Types of Tenses"
+      ],
+      "resource": "HRW",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-english-tenses-4",
+      "sourceRow": 5,
+      "question": "Identify the tense of the sentence given below.<br> We will sell them at reasonable prices.",
+      "options": [
+        "Future Perfect Continuous Tense",
+        "Future Perfect Tense",
+        "Simple Future Tense",
+        "Future Continuous Tense"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Types of Tenses"
+      ],
+      "resource": "HRW",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-english-tenses-5",
+      "sourceRow": 6,
+      "question": "Identify the tense of the sentence given below.<br> Sherry is designing the banner for our booth.",
+      "options": [
+        "Present Perfect Continuous Tense",
+        "Present Continuous Tense",
+        "Present Perfect Tense",
+        "Simple Present Tense"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Types of Tenses"
+      ],
+      "resource": "HRW",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-english-tenses-6",
+      "sourceRow": 7,
+      "question": "Identify the tense of the sentence given below.<br> We will have earned a nice profit by the end of the craft fair.",
+      "options": [
+        "Future Perfect Continuous Tense",
+        "Simple Future Tense",
+        "Future Continuous Tense",
+        "Future Perfect Tense"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Types of Tenses"
+      ],
+      "resource": "HRW",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    }
+  ]
+}

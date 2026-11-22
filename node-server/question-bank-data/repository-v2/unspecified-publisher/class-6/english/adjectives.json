@@ -1,0 +1,304 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-22T03:27:29.979Z",
+  "classification": {
+    "class": "Class 6",
+    "subject": "English",
+    "topic": "Adjectives"
+  },
+  "publisher": "unspecified-publisher",
+  "source": {
+    "file": "Class6/Final/Eng_Class_06_Assess_QB_05_Adjectives/Eng_Class_06_Assess_QB_05_Adjectives.xlsx",
+    "sheet": "name topic"
+  },
+  "questionType": "MCQ",
+  "questionCount": 11,
+  "questions": [
+    {
+      "id": "unspecified-publisher-class-6-english-adjectives-1",
+      "sourceRow": 2,
+      "question": "Identify the type of the underlined adjective in the sentence given below.<br> The ship sustained heavy damage.",
+      "options": [
+        "Adjectives of Quality",
+        "Demonstrative Adjective",
+        "Possessive Adjectives",
+        "Adjectives of Quantity"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Adjectives and Their Types"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-adjectives-2",
+      "sourceRow": 3,
+      "question": "Identify the type of the underlined adjective in the sentence given below.<br> Every man has his duties.",
+      "options": [
+        "Demonstrative Adjective",
+        "Possessive Adjectives",
+        "Adjectives of Quantity",
+        "Adjectives of Number"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Adjectives and Their Types"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-adjectives-3",
+      "sourceRow": 4,
+      "question": "Identify the type of the underlined adjective in the sentence given below.<br> Say the same thing twice over.",
+      "options": [
+        "Adjectives of Quality",
+        "Demonstrative Adjective",
+        "Interrogative Adjectives",
+        "Adjectives of Quantity"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Adjectives and Their Types"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-adjectives-4",
+      "sourceRow": 5,
+      "question": "Identify the type of the underlined adjective in the sentence given below.<br> He is a man of few words.",
+      "options": [
+        "Adjectives of Quality",
+        "Possessive Adjectives",
+        "Adjectives of Quantity",
+        "Adjectives of Number"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Adjectives and Their Types"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-adjectives-5",
+      "sourceRow": 6,
+      "question": "Identify the type of the underlined adjective in the sentence given below.<br> Neither party is quite in the right.",
+      "options": [
+        "Adjectives of Quality",
+        "Possessive Adjectives",
+        "Adjectives of Quantity",
+        "Adjectives of Number"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Adjectives and Their Types"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-adjectives-6",
+      "sourceRow": 7,
+      "question": "Identify the type of the underlined adjectives in the sentence given below.<br> There should not be much talk and little work.",
+      "options": [
+        "Adjectives of Quality",
+        "Possessive Adjectives",
+        "Adjectives of Quantity",
+        "Adjectives of Number"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Adjectives and Their Types"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-adjectives-7",
+      "sourceRow": 8,
+      "question": "Identify the type of the underlined adjective in the sentence given below.<br> My uncle lives in the next house.",
+      "options": [
+        "Adjectives of Quality",
+        "Possessive Adjectives",
+        "Adjectives of Quantity",
+        "Adjectives of Number"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Adjectives and Their Types"
+      ],
+      "resource": "SME Supplied Questions",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-adjectives-8",
+      "sourceRow": 9,
+      "question": "Identify the type of the underlined adjective in the sentence given below.<br> Manav and his friend took part in the relay race.",
+      "options": [
+        "Adjectives of Quality",
+        "Possessive Adjectives",
+        "Adjectives of Quantity",
+        "Adjectives of Number"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Adjectives and Their Types"
+      ],
+      "resource": "SME Supplied Questions",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-adjectives-9",
+      "sourceRow": 10,
+      "question": "Identify the type of the underlined adjective in the sentence given below.<br> My cottage is amidst the hills.",
+      "options": [
+        "Adjectives of Quality",
+        "Possessive Adjectives",
+        "Adjectives of Quantity",
+        "Adjectives of Number"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Adjectives and Their Types"
+      ],
+      "resource": "SME Supplied Questions",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-adjectives-10",
+      "sourceRow": 11,
+      "question": "Identify the type of the underlined adjective in the sentence given below.<br> We must do our duty.",
+      "options": [
+        "Adjectives of Quality",
+        "Possessive Adjectives",
+        "Adjectives of Quantity",
+        "Adjectives of Number"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Adjectives and Their Types"
+      ],
+      "resource": "SME Supplied Questions",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-adjectives-11",
+      "sourceRow": 12,
+      "question": "Identify the type of the underlined adjective in the sentence given below.<br> May I borrow your gown for the evening?",
+      "options": [
+        "Adjectives of Quality",
+        "Possessive Adjectives",
+        "Adjectives of Quantity",
+        "Adjectives of Number"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Adjectives and Their Types"
+      ],
+      "resource": "SME Supplied Questions",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    }
+  ]
+}

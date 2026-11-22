@@ -1,0 +1,278 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-22T03:27:30.550Z",
+  "classification": {
+    "class": "Class 7",
+    "subject": "English",
+    "topic": "Adverbs"
+  },
+  "publisher": "unspecified-publisher",
+  "source": {
+    "file": "class7/Final/Eng_Class_7_Assess_QB_10_Adverbs/Eng_Class_7_Assess_QB_10_Adverbs.xlsx",
+    "sheet": "Templates"
+  },
+  "questionType": "MCQ",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "unspecified-publisher-class-7-english-adverbs-1",
+      "sourceRow": 2,
+      "question": "Identify types of adverbs in the sentence given below.<br> His health is no worse than before.",
+      "options": [
+        "no - Adverb of Frequency, before - Adverb of Time",
+        "no - Adverb of Negation, before - Adverb of Time",
+        "no - Adverb of Quantity, before - Adverb of Manner",
+        "no - Adverb of Reason, before - Adverb of Frequency"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Adverbs and Their Types"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-adverbs-2",
+      "sourceRow": 3,
+      "question": "Identify types of adverbs in the sentence given below.<br> Wisdom is too high for a fool.",
+      "options": [
+        "too - Adverb of Manner",
+        "too - Adverb of Quality",
+        "too - Adverb of Reason",
+        "too - Adverb of Quantity"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Adverbs and Their Types"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-adverbs-3",
+      "sourceRow": 4,
+      "question": "Identify types of adverbs in the sentence given below.<br> The door burst open and in they came.",
+      "options": [
+        "burst - Adverb of Manner",
+        "in - Adverb of Place",
+        "burst - Adverb of Frequency",
+        "in - Adverb of Manner"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Adverbs and Their Types"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-adverbs-4",
+      "sourceRow": 5,
+      "question": "Identify types of adverbs in the sentence given below.<br> He needs to do it.",
+      "options": [
+        "needs - Adverb of Affirmation",
+        "needs - Adverb of Quality",
+        "needs - Adverb of Quantity",
+        "needs - Adverb of Manner"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Adverbs and Their Types"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-adverbs-5",
+      "sourceRow": 6,
+      "question": "Identify types of adverbs in the sentence given below.<br> Do not walk so fast.",
+      "options": [
+        "so - Adverb of Degree,fast - Adverb of Manner",
+        "not - Adverb of Manner",
+        "so - Adverb of Affirmation,fast - Adverb of Quality",
+        "so - Adverb of Affirmation,not - Adverb of Negation"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Adverbs and Their Types"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-adverbs-6",
+      "sourceRow": 7,
+      "question": "Identify types of adverbs in the sentence given below.<br> Order the carriage round.",
+      "options": [
+        "round - Adverb of Quality",
+        "round - Adverb of Degree",
+        "round - Adverb of Quantity",
+        "round - Adverb of Place"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Adverbs and Their Types"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-adverbs-7",
+      "sourceRow": 8,
+      "question": "Identify types of adverbs in the sentence given below.<br> He usually comes to my house in the evenings.",
+      "options": [
+        "usually - Adverb of Quality",
+        "usually - Adverb of Degree",
+        "usually - Adverb of Frequency",
+        "usually - Adverb of Place"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Adverbs and Their Types"
+      ],
+      "resource": "Saraswati Publications",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-adverbs-8",
+      "sourceRow": 9,
+      "question": "Identify types of adverbs in the sentence given below.<br> The rain has not stopped yet.",
+      "options": [
+        "yet - Adverb of Quality",
+        "yet - Adverb of Place",
+        "yet - Adverb of Degree",
+        "yet - Adverb of Frequency"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Adverbs and Their Types"
+      ],
+      "resource": "Saraswati Publications",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-adverbs-9",
+      "sourceRow": 10,
+      "question": "Identify types of adverbs in the sentence given below.<br> They worked hard in the field whole day.",
+      "options": [
+        "hard- Adverb of Manner",
+        "hard - Adverb of Degree, whole - Adverb of Manner",
+        "hard - Adverb of Manner, whole day - Adverb of Time",
+        "hard - Adverb of Manner, field - Adverb of Place, whole day - Adverb of Time"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Difficult",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Adverbs and Their Types"
+      ],
+      "resource": "Saraswati Publications",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-adverbs-10",
+      "sourceRow": 11,
+      "question": "Identify types of adverbs in the sentence given below.<br> I am terribly sorry.",
+      "options": [
+        "terribly - Adverb of Manner",
+        "terribly - Adverb of Place",
+        "terribly - Adverb of Degree",
+        "terribly - Adverb of Frequency"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Adverbs and Their Types"
+      ],
+      "resource": "Saraswati Publications",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    }
+  ]
+}

@@ -1,0 +1,243 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-22T03:27:29.915Z",
+  "classification": {
+    "class": "Class 6",
+    "subject": "English",
+    "topic": "Nouns"
+  },
+  "publisher": "unspecified-publisher",
+  "source": {
+    "file": "Class6/Final/Eng_Class_06_Assess_QB_03_Nouns/Eng_Class_06_Assess_QB_03_Nouns.xlsx",
+    "sheet": "name topic"
+  },
+  "questionType": "MCQ",
+  "questionCount": 9,
+  "questions": [
+    {
+      "id": "unspecified-publisher-class-6-english-nouns-1",
+      "sourceRow": 2,
+      "question": "Identify nouns and their types in the given sentence.<br> The giant formations produce feelings of awe in many visitors.",
+      "options": [
+        "formations - Common Noun, visitors - Common Noun, awe - Abstract Noun",
+        "awe - Common Noun, Abstract Noun",
+        "formations - Collective Noun, visitors - Common Noun"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Nouns and Their Types"
+      ],
+      "resource": "HRW",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-nouns-2",
+      "sourceRow": 3,
+      "question": "Identify nouns and their types in the given sentence.<br> A distinguishing characteristic of these fish is blindness.",
+      "options": [
+        "distinguishing, blindness - Abstract Noun",
+        "distinguishing - Common Noun , blindness - Abstract Noun",
+        "fish, blindness - Common Noun"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Nouns and Their Types"
+      ],
+      "resource": "HRW",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-nouns-3",
+      "sourceRow": 4,
+      "question": "Identify nouns and their types in the given sentence.<br> When tiny animals such as amphipods move, the blindfish senses the movement.",
+      "options": [
+        "blindfish - Common Noun",
+        "amphipods - Proper Noun",
+        "animals, blindfish - Common Noun, amphipods - Common Noun"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Nouns and Their Types"
+      ],
+      "resource": "HRW",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-nouns-4",
+      "sourceRow": 5,
+      "question": "Identify nouns and their types in the given sentence.<br> These young fish stop moving when they feel something swimming nearby.",
+      "options": [
+        "fish - Common Noun",
+        "Amphipods - Proper Noun",
+        "animals - Common Noun, amphipods - Proper Noun"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Nouns and Their Types"
+      ],
+      "resource": "HRW",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-nouns-5",
+      "sourceRow": 6,
+      "question": "Identify nouns and their types in the given sentence.<br> The Rashtrapati Bhawan is the official residence of the President of India.",
+      "options": [
+        "Rashtrapati- Proper Noun , Bhawan- Common Noun , President- Proper Noun , India - Proper Noun",
+        "Rashtrapati Bhawan- Proper Noun, President - Proper Noun , India- Proper Noun, residence - Common Noun",
+        "Rashtrapati - Proper Noun , Bhawan- Common Noun , President- Proper Noun , India -Proper Noun, official - Abstract Noun, residence - Common Noun"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Difficult",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Nouns and Their Types"
+      ],
+      "resource": "Rita Wilson",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-nouns-6",
+      "sourceRow": 7,
+      "question": "Identify nouns and their types in the given sentence.<br> The dwarf and the fairy spoke to the witch.",
+      "options": [
+        "dwarf - Proper Noun, fairy - Abstract Noun, witch - Common Noun",
+        "dwarf - Common Noun, fairy -Material Noun, witch -Abstract Noun",
+        "dwarf - Common Noun, fairy - Common Noun, witch - Common Noun"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Nouns and Their Types"
+      ],
+      "resource": "Rita Wilson",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-nouns-7",
+      "sourceRow": 8,
+      "question": "Identify nouns and their types in the given sentence.<br> Mr. Smith is on the board of directors of the company.",
+      "options": [
+        "Mr. Smith - Proper Noun, board - Collective Noun, directors ,company - Common Noun",
+        "Mr. Smith - Proper Noun, board,directors,company - Collective Noun",
+        "Mr. Smith - Proper Noun, board, directors - Collective Noun ,company - Common Noun"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Nouns and Their Types"
+      ],
+      "resource": "Rita Wilson",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-nouns-8",
+      "sourceRow": 9,
+      "question": "Identify nouns and their types in the given sentence.<br> Mercury is the only liquid metal.",
+      "options": [
+        "Mercury, liquid - Material Noun, metal - Common Noun",
+        "Mercury - Material Noun, liquid - Common Noun, metal - Collective Noun",
+        "Mercury - Material Noun, metal - Common Noun"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Nouns and Their Types"
+      ],
+      "resource": "Rita Wilson",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-nouns-9",
+      "sourceRow": 10,
+      "question": "Identify nouns and their types in the given sentence.<br> Gold and silver are precious metals loved by all.",
+      "options": [
+        "Gold, silver- Material Noun, metals - Collective Noun, loved - Abstract Noun",
+        "Gold, silver - Material Noun, metals - Common Noun",
+        "Gold, silver - Material Noun, metals - Common Noun, precious - Abstract Noun"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Nouns and Their Types"
+      ],
+      "resource": "Rita Wilson",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    }
+  ]
+}

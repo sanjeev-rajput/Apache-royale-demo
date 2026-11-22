@@ -1,0 +1,393 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-22T03:27:30.173Z",
+  "classification": {
+    "class": "Class 6",
+    "subject": "English",
+    "topic": "Modals"
+  },
+  "publisher": "unspecified-publisher",
+  "source": {
+    "file": "Class6/Final/Eng_Class_06_Assess_QB_13_Modals/Eng_Class_06_Assess_QB_13_Modals.xlsx",
+    "sheet": "name topic"
+  },
+  "questionType": "MCQ",
+  "questionCount": 15,
+  "questions": [
+    {
+      "id": "unspecified-publisher-class-6-english-modals-1",
+      "sourceRow": 2,
+      "question": "Identify the suitable modal. Fill in the blanks with the correct answer.<br> I don't think I _____________ be able to go.",
+      "options": [
+        "shall",
+        "should",
+        "can"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Modals"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-modals-2",
+      "sourceRow": 3,
+      "question": "Identify the suitable modal. Fill in the blanks with the correct answer.<br> I wish you ___________ tell me.",
+      "options": [
+        "should",
+        "would",
+        "must"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Modals"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-modals-3",
+      "sourceRow": 4,
+      "question": "Identify the suitable modal. Fill in the blanks with correct the answer.<br> ________________ I assist you?",
+      "options": [
+        "Shall",
+        "Will",
+        "Would"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Difficult",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Modals"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-modals-4",
+      "sourceRow": 5,
+      "question": "Identify the suitable modal. Fill in the blanks with the correct answer.<br> You ________________ to pay your debts.",
+      "options": [
+        "ought",
+        "should",
+        "must"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Difficult",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Modals"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-modals-5",
+      "sourceRow": 6,
+      "question": "Identify the suitable modal. Fill in the blanks with the correct answer.<br> He said I ________________ use his telephone at any time.",
+      "options": [
+        "can",
+        "might",
+        "should"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Modals"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-modals-6",
+      "sourceRow": 7,
+      "question": "Identify the suitable modal. Fill in the blanks with correct answer.<br> He ______________ not ask for a rise, for fear of losing his job.",
+      "options": [
+        "need",
+        "dare",
+        "would"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Difficult",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Modals"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-modals-7",
+      "sourceRow": 8,
+      "question": "Identify the suitable modal. Fill in the blanks with the correct answer.<br> ________________you show me the way to the station?",
+      "options": [
+        "Shall",
+        "Might",
+        "Could"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Modals"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-modals-8",
+      "sourceRow": 9,
+      "question": "Identify the suitable modal. Fill in the blanks with the correct answer.<br> To save my life, I ran fast and ____________reach safely.",
+      "options": [
+        "would",
+        "could",
+        "was able to"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Modals"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-modals-9",
+      "sourceRow": 10,
+      "question": "Identify the suitable modal. Fill in the blanks with the correct answer.<br> The Prime Minister _____________make a statement tomorrow.",
+      "options": [
+        "would",
+        "need",
+        "might"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Modals"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-modals-10",
+      "sourceRow": 11,
+      "question": "Identify the suitable modal. Fill in the blanks with the correct answer.<br> I was afraid that if I asked him again he ________refuse.",
+      "options": [
+        "can",
+        "may",
+        "might"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Difficult",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Modals"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-modals-14",
+      "sourceRow": 15,
+      "question": "Read the sentence given below and identify what the modal 'can' expresses.<br> You can borrow my camera.",
+      "options": [
+        "Possibility",
+        "Permission",
+        "Ability"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Usage of Modals"
+      ],
+      "resource": "Rita Wilson",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-modals-15",
+      "sourceRow": 16,
+      "question": "Read the sentence given below and identify what the modal 'can' expresses.<br> My brother can lift this heavy box.",
+      "options": [
+        "Possibility",
+        "Permission",
+        "Ability"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Modals"
+      ],
+      "resource": "Rita Wilson",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-modals-16",
+      "sourceRow": 17,
+      "question": "Read the sentence given below and identify what the modal 'can' expresses.<br> He can eat as much as he wishes.",
+      "options": [
+        "Possibility",
+        "Permission",
+        "Ability"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Modals"
+      ],
+      "resource": "Rita Wilson",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-modals-17",
+      "sourceRow": 18,
+      "question": "Read the sentence given below and identify what the modal 'can' expresses.<br> Computers can handle most of our problems.",
+      "options": [
+        "Possibility",
+        "Permission",
+        "Ability"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Modals"
+      ],
+      "resource": "Rita Wilson",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-modals-18",
+      "sourceRow": 19,
+      "question": "Read the sentence given below and identify what the modal 'can' expresses.<br> This news can be true.",
+      "options": [
+        "Possibility",
+        "Permission",
+        "Ability"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Modals"
+      ],
+      "resource": "Rita Wilson",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    }
+  ]
+}

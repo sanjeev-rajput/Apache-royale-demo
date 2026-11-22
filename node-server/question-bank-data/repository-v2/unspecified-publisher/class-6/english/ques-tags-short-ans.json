@@ -1,0 +1,193 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-22T03:27:30.297Z",
+  "classification": {
+    "class": "Class 6",
+    "subject": "English",
+    "topic": "Ques Tags & Short Ans"
+  },
+  "publisher": "unspecified-publisher",
+  "source": {
+    "file": "Class6/Final/Eng_Class_06_Assess_QB_19_Ques_Tags_&_Short_Ans/Eng_Class_06_Assess_QB_19_Ques_Tags_&_Short_Ans.xlsx",
+    "sheet": "name topic"
+  },
+  "questionType": "MCQ",
+  "questionCount": 7,
+  "questions": [
+    {
+      "id": "unspecified-publisher-class-6-english-ques-tags-short-ans-11",
+      "sourceRow": 12,
+      "question": "Identify the appropriate question tags to the sentence given below.<br><br> Fill in the blank with the appropriate question tag. You like him, _____________?",
+      "options": [
+        "isn’t you",
+        "don’t you",
+        "won’t you"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Correct Question Tags"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-ques-tags-short-ans-12",
+      "sourceRow": 13,
+      "question": "Identify the appropriate question tags to the sentence given below.<br><br> Fill in the blank with the appropriate question tag. Kishore will come, _____________?",
+      "options": [
+        "isn’t he",
+        "won’t he",
+        "don’t he"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Correct Question Tags"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-ques-tags-short-ans-13",
+      "sourceRow": 14,
+      "question": "Identify the appropriate question tags to the sentence given below.<br><br> Fill in the blank with the appropriate question tag. We must hurry, _____________?",
+      "options": [
+        "mustn’t we",
+        "won’t we",
+        "isn’t we"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Correct Question Tags"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-ques-tags-short-ans-14",
+      "sourceRow": 15,
+      "question": "Identify the appropriate question tags to the sentence given below.<br><br> Fill in the blank with the appropriate question tag. I didn't hurt you, _____________?",
+      "options": [
+        "do I",
+        "did I",
+        "does I"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Correct Question Tags"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-ques-tags-short-ans-15",
+      "sourceRow": 16,
+      "question": "Identify the appropriate question tags to the sentence given below.<br><br> Fill in the blank with the appropriate question tag. You aren't going out, _____________?",
+      "options": [
+        "aren’t you",
+        "are you",
+        "do you"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Correct Question Tags"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-ques-tags-short-ans-16",
+      "sourceRow": 17,
+      "question": "Identify the appropriate question tags to the sentence given below.<br><br> Fill in the blank with the appropriate question tag. They have sold the house,__________?",
+      "options": [
+        "have they",
+        "has they",
+        "haven’t they"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Correct Question Tags"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-ques-tags-short-ans-17",
+      "sourceRow": 18,
+      "question": "Identify the appropriate question tags to the sentence given below.<br><br> Fill in the blank with the appropriate question tag. They will go home soon, ____________?",
+      "options": [
+        "won’t they",
+        "don’t they",
+        "hasn’t they"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Correct Question Tags"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    }
+  ]
+}

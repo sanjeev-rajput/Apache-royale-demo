@@ -1,0 +1,408 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-22T03:27:31.110Z",
+  "classification": {
+    "class": "Class 8",
+    "subject": "English",
+    "topic": "Conjunctions"
+  },
+  "publisher": "unspecified-publisher",
+  "source": {
+    "file": "Class8/Final/English_Class 8_Assess_QB_17_Conjunctions/Eng_Class 8_Assess_QB_17_Conjunctions.xlsx",
+    "sheet": "Templates"
+  },
+  "questionType": "MCQ",
+  "questionCount": 15,
+  "questions": [
+    {
+      "id": "unspecified-publisher-class-8-english-conjunctions-1",
+      "sourceRow": 2,
+      "question": "Identify the suitable conjunction. Fill in the blanks with the correct answer.<br> Inconsistency consists in a change of conduct_____________ there is no change of circumstances which justify it.",
+      "options": [
+        "if",
+        "when",
+        "so",
+        "so that"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Difficult",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Conjunctions"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-english-conjunctions-2",
+      "sourceRow": 3,
+      "question": "Identify the suitable conjunction. Fill in the blanks with the correct answer.<br> Just laws are no restraint upon the freedom of the good,____________the good man desires nothing which a just lay, will interfere with.",
+      "options": [
+        "if",
+        "with",
+        "or",
+        "for"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Difficult",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Conjunctions"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-english-conjunctions-3",
+      "sourceRow": 4,
+      "question": "Identify the suitable conjunction. Fill in the blanks with the correct answer.<br> He that is slow to anger is better__________ the mighty.",
+      "options": [
+        "then",
+        "with",
+        "than",
+        "alongwith"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Conjunctions"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-english-conjunctions-4",
+      "sourceRow": 5,
+      "question": "Identify the suitable conjunction. Fill in the blanks with the correct answer.<br> Of his voyage little is known,____________that he amused himself with books and with his pen.",
+      "options": [
+        "except",
+        "until",
+        "unless",
+        "though"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Conjunctions"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-english-conjunctions-5",
+      "sourceRow": 6,
+      "question": "Identify the suitable conjunction. Fill in the blanks with the correct answer.<br> A gentleman made it a rule in reading to skip over all sentences__________he spied a note of admiration at the end.",
+      "options": [
+        "till",
+        "until",
+        "unless",
+        "that"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Difficult",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Conjunctions"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-english-conjunctions-6",
+      "sourceRow": 7,
+      "question": "Identify the suitable conjunction. Fill in the blanks with the correct answer.<br> ___________I were personally your enemy, I might pity and forgive you.",
+      "options": [
+        "Whether",
+        "If",
+        "Unless",
+        "So"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Conjunctions"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-english-conjunctions-7",
+      "sourceRow": 8,
+      "question": "Identify the suitable conjunction. Fill in the blanks with the correct answer.<br> ____________somewhat pompous, he was an entertaining companion.",
+      "options": [
+        "Though",
+        "If",
+        "Whether",
+        "Until"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Conjunctions"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-english-conjunctions-8",
+      "sourceRow": 9,
+      "question": "Identify the suitable conjunction. Fill in the blanks with the correct answer.<br> \"Mr. Johnson\", said I, \"I do indeed come from Scotland,__________I cannot help it.\"",
+      "options": [
+        "if",
+        "or",
+        "and",
+        "but"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Conjunctions"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-english-conjunctions-9",
+      "sourceRow": 10,
+      "question": "Identify the suitable conjunction. Fill in the blanks with the correct answer.<br> It is the common doom of man___________he must eat his bread by the sweat of his brow.",
+      "options": [
+        "than",
+        "that",
+        "and",
+        "so"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Conjunctions"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-english-conjunctions-10",
+      "sourceRow": 11,
+      "question": "Identify the suitable conjunction. Fill in the blanks with the correct answer.<br> I like political changes,___________such changes are made as the result, not of passion, but of deliberation and reason.",
+      "options": [
+        "and",
+        "so",
+        "until",
+        "when"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Conjunctions"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-english-conjunctions-11",
+      "sourceRow": 12,
+      "question": "Identify the suitable conjunction. Fill in the blanks with the correct answer.<br> The man who eats in a hurry loses both the pleasure of eating____________the profit of digestion.",
+      "options": [
+        "if",
+        "with",
+        "and",
+        "So"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Conjunctions"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-english-conjunctions-12",
+      "sourceRow": 13,
+      "question": "Identify the suitable conjunction. Fill in the blanks with the correct answer.<br> A regular bath in the morning,____________with very feeble and delicate subjects, has always an invigorating effect.",
+      "options": [
+        "except",
+        "for",
+        "with",
+        "so"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Difficult",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Conjunctions"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-english-conjunctions-13",
+      "sourceRow": 14,
+      "question": "Identify the suitable conjunction. Fill in the blanks with the correct answer.<br> Every good tree bringeth forth good fruit,__________a corrupt tree bringeth forth evil fruit.",
+      "options": [
+        "for",
+        "or",
+        "while",
+        "so"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Conjunctions"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-english-conjunctions-14",
+      "sourceRow": 15,
+      "question": "Identify the suitable conjunction. Fill in the blanks with the correct answer.<br> Small service is true service _________ it lasts.",
+      "options": [
+        "and",
+        "if",
+        "unless",
+        "so"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Conjunctions"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-english-conjunctions-15",
+      "sourceRow": 16,
+      "question": "Identify the suitable conjunction. Fill in the blanks with the correct answer.<br> There are many truths of which the full meaning cannot be realised __________ personal experience has brought it home.",
+      "options": [
+        "until",
+        "If",
+        "for",
+        "with"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Conjunctions"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    }
+  ]
+}

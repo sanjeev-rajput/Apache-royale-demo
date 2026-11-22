@@ -675,3 +675,46 @@ button.spectrum-Button.clear-conversation-btn .spectrum-Button-label {
     color: #344256;
     font-size: 14px;
 }
+
+/* Question Bank Practice selection styles — shared globally */
+.qb-selection-link {
+            display: inline-block;
+            width: auto;
+            color: #2563eb;
+            cursor: pointer;
+            padding: 0.35rem 0.55rem;
+            border-radius: 0.25rem;
+            transition: color 120ms ease, background-color 120ms ease,
+                        text-decoration-color 120ms ease;
+        }
+        .qb-selection-link:hover {
+            color: #1d4ed8;
+            background-color: #eaf2ff;
+            text-decoration: underline;
+        }
+        .qb-selection-link:active {
+            color: #1e40af;
+            background-color: #dbeafe;
+        }
+        .qb-selection-link:focus {
+            outline: 2px solid #93c5fd;
+            outline-offset: 2px;
+        }
+        .qb-selection-breadcrumb {
+            color: #555555;
+            padding: 0.25rem 0;
+        }
+
+/* Question Bank Spectrum Labels: cursor and inline spacing */
+.qb-selection-content {
+    width: 100%;
+    line-height: 2.1;
+}
+
+.qb-selection-link {
+    cursor: pointer;
+}
+
+.qb-selection-back {
+    cursor: pointer;
+}

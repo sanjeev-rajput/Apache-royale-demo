@@ -1,0 +1,434 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-22T03:27:31.165Z",
+  "classification": {
+    "class": "Class 8",
+    "subject": "English",
+    "topic": "Punctuation"
+  },
+  "publisher": "unspecified-publisher",
+  "source": {
+    "file": "Class8/Final/English_Class 8_Assess_QB_20_Punctuation/Eng_Class 8_Assess_QB_20_Punctuation.xlsx",
+    "sheet": "Templates"
+  },
+  "questionType": "MCQ",
+  "questionCount": 16,
+  "questions": [
+    {
+      "id": "unspecified-publisher-class-8-english-punctuation-1",
+      "sourceRow": 2,
+      "question": "Identify the correct punctuation of the sentence given below.<br> It’s been a long, cold winter, sighed Kathy.",
+      "options": [
+        "“It’s been a long, cold winter,” sighed Kathy.",
+        "“It’s been a long - cold winter, “sighed Kathy.",
+        "It’s been a long, cold winter, “sighed Kathy.”",
+        "“It’s been a long, cold winter, “sighed Kathy."
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Application of Punctuation Marks"
+      ],
+      "resource": "Grammar Plus",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-english-punctuation-2",
+      "sourceRow": 3,
+      "question": "Identify the correct punctuation of the sentence given below.<br> He jumped into the taxi and yelled, Follow that car!",
+      "options": [
+        "He jumped into the taxi and yelled - Follow that car.",
+        "He jumped into the taxi and yelled, “Follow that car!”",
+        "He jumped into the taxi and yelled, Follow that car!",
+        "He jumped into the taxi and yelled - “Follow that car!”"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Application of Punctuation Marks"
+      ],
+      "resource": "Grammar Plus",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-english-punctuation-3",
+      "sourceRow": 4,
+      "question": "Identify the correct punctuation of the sentence given below.<br> How many of you, Mrs. Martinez asked, have studied a foreign language?",
+      "options": [
+        "“How many of you,” Mrs. Martinez asked, “have studied a foreign language?”",
+        "How many of you, Mrs. Martinez asked, “have studied a foreign language!”",
+        "“How many of you,” Mrs. Martinez asked, “have studied a foreign language.”",
+        "“How many of you;” Mrs. Martinez asked; “have studied a foreign language?”"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Application of Punctuation Marks"
+      ],
+      "resource": "Grammar Plus",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-english-punctuation-4",
+      "sourceRow": 5,
+      "question": "Identify the correct punctuation of the sentence given below.<br> Max said Leave me out of this?",
+      "options": [
+        "Max said, Leave me out of this.",
+        "Max said, “Leave me out of this.”",
+        "Max said - Leave me out of this?",
+        "Max said; “Leave me out of this!”"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Application of Punctuation Marks"
+      ],
+      "resource": "Grammar Plus",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-english-punctuation-5",
+      "sourceRow": 6,
+      "question": "Identify the correct punctuation of the sentence given below.<br> I therefore walked back by the horseway which was five miles round.",
+      "options": [
+        "I, therefore walked back by the horseway, which was five miles round.",
+        "I ,therefore, walked back by the horseway which was, five miles round.",
+        "I, therefore, walked back by the horseway, which was five miles round.",
+        "I therefore, walked back by the horseway which was, five miles round."
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Application of Punctuation Marks"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-english-punctuation-6",
+      "sourceRow": 7,
+      "question": "Identify the correct punctuation of the sentence given below.<br> History it has been said is the essence of innumerable biographies.",
+      "options": [
+        "History it has been said is the essence of innumerable biographies.",
+        "History, it has been said, is the essence of innumerable biographies.",
+        "History, it has been said is the essence, of innumerable biographies.",
+        "History, it has been said ,is the essence of , innumerable biographies."
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Application of Punctuation Marks"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-english-punctuation-7",
+      "sourceRow": 8,
+      "question": "Identify the correct punctuation of the sentence given below.<br> All that I am all that I hope to be I owe to my angel mother.",
+      "options": [
+        "All that I am, all that I hope to be, I owe to my angel mother.",
+        "All that, I am all that I hope to be I owe, to my angel mother.",
+        "All that, I am, all that I hope, to be I owe to my angel mother.",
+        "All that, I am, all that I hope to be, I owe to my angel mother."
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Application of Punctuation Marks"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-english-punctuation-8",
+      "sourceRow": 9,
+      "question": "Which of the following uses the correct punctuation?",
+      "options": [
+        "Hector's mother is a painter she told him about Grandma Moses.",
+        "Hector's mother is a painter; she told him about Grandma Moses.",
+        "Hector's mother is a painter ,she told him about Grandma Moses.",
+        "Hector's mother is a painter: she told him about Grandma Moses."
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Application of Punctuation Marks"
+      ],
+      "resource": "HRW",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-english-punctuation-9",
+      "sourceRow": 10,
+      "question": "Which of the following uses the correct punctuation?",
+      "options": [
+        "Some people like folk art, others like abstract art.",
+        "Some people like folk art: others like abstract art.",
+        "Some people like folk art- others like abstract art.",
+        "Some people like folk art; others like abstract art."
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Application of Punctuation Marks"
+      ],
+      "resource": "HRW",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-english-punctuation-10",
+      "sourceRow": 11,
+      "question": "Which of the following uses the correct punctuation?",
+      "options": [
+        "I like checkers, charades, and dominoes, and he likes chess.",
+        "I like checkers, charades, and dominoes; and; he likes chess.",
+        "I like checkers, charades, and dominoes; and he likes chess.",
+        "I like : checkers, charades, and dominoes and he likes chess."
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Application of Punctuation Marks"
+      ],
+      "resource": "HRW",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-english-punctuation-11",
+      "sourceRow": 12,
+      "question": "Which of the following uses the correct punctuation?",
+      "options": [
+        "My brothers were born on March 10, 1984; July 28, 1986; and September 4, 1991.",
+        "My brothers were born on - March 10, 1984, July 28, 1986, and September 4, 1991.",
+        "My brothers were born on: March 10, 1984, July 28, 1986, and September 4, 1991.",
+        "My brothers were born on March 10, 1984, July 28, 1986; and September 4, 1991."
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Application of Punctuation Marks"
+      ],
+      "resource": "HRW",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-english-punctuation-12",
+      "sourceRow": 13,
+      "question": "Which of the following uses the correct punctuation?",
+      "options": [
+        "“I would rather die,” he exclaimed, “than join the oppressors of my country.”",
+        "“I would rather die.” he exclaimed, “than join the oppressors of my country.”",
+        "“I would rather die,” he exclaimed, “than join the oppressors of my country!”",
+        "“I would rather die,” he exclaimed than join the oppressors of my country.”"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Application of Punctuation Marks"
+      ],
+      "resource": "HRW",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-english-punctuation-13",
+      "sourceRow": 14,
+      "question": "Which of the following uses the correct punctuation?",
+      "options": [
+        "Carol titled her essay \"Time: How to Make the Most of It.\"",
+        "Carol titled her essay \"Time - How to Make the Most of It.\"",
+        "Carol titled her essay \"Time How to Make the Most of It.\"",
+        "Carol titled her essay \"Time; How to Make the Most of It.\""
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Application of Punctuation Marks"
+      ],
+      "resource": "HRW",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-english-punctuation-14",
+      "sourceRow": 15,
+      "question": "Which of the following uses the correct punctuation?",
+      "options": [
+        "I cheered when I crossed the finish line, it was my first victory.",
+        "I cheered when I crossed the finish line it was my first victory.",
+        "I cheered when I crossed the finish line; it was my first victory.",
+        "I cheered when I crossed the finish line: it was my first victory."
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Application of Punctuation Marks"
+      ],
+      "resource": "HRW",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-english-punctuation-15",
+      "sourceRow": 16,
+      "question": "Which of the following uses the correct punctuation?",
+      "options": [
+        "The team leaders are Janet, Terrence, and Phil, Roy will fill in if one of them is absent.",
+        "The team leaders are Janet, Terrence, and Phil; Roy will fill in if one of them is absent.",
+        "The team leaders are Janet, Terrence, and Phil Roy will fill in if one of them is absent.",
+        "The team leaders are Janet, Terrence, and Phil- Roy will fill in if one of them is absent."
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Application of Punctuation Marks"
+      ],
+      "resource": "HRW",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-english-punctuation-16",
+      "sourceRow": 17,
+      "question": "Which of the following uses the correct punctuation?",
+      "options": [
+        "I sent valentine cards to three people: Monica, my stepmom; Bertie, my pen pal; and Kat, a close friend.",
+        "I sent valentine cards to three people Monica, my stepmom, Bertie, my pen pal, and Kat, a close friend.",
+        "I sent valentine cards to three people- Monica, my stepmom, Bertie, my pen pal, and Kat, a close friend.",
+        "I sent valentine cards to three people: Monica; my stepmom; Bertie; my pen pal; and Kat; a close friend."
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Application of Punctuation Marks"
+      ],
+      "resource": "HRW",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    }
+  ]
+}

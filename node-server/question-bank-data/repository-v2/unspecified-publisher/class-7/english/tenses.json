@@ -1,0 +1,512 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-22T03:27:30.628Z",
+  "classification": {
+    "class": "Class 7",
+    "subject": "English",
+    "topic": "Tenses"
+  },
+  "publisher": "unspecified-publisher",
+  "source": {
+    "file": "class7/Final/Eng_Class_7_Assess_QB_14_Tenses/Eng_Class_7_Assess_QB_14_Tenses.xlsx",
+    "sheet": "Templates"
+  },
+  "questionType": "MCQ",
+  "questionCount": 19,
+  "questions": [
+    {
+      "id": "unspecified-publisher-class-7-english-tenses-1",
+      "sourceRow": 2,
+      "question": "Identify the tense of the sentence given below.<br> Channel 5 News has reported on the flood.",
+      "options": [
+        "Past Perfect Tense",
+        "Present Perfect Tense",
+        "Simple Present Tense",
+        "Present Perfect Continuous Tense"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Types of Tenses"
+      ],
+      "resource": "Grammar Plus",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-tenses-2",
+      "sourceRow": 3,
+      "question": "Identify the tense of the sentence given below.<br> Channel 5 News is reporting on the flood.",
+      "options": [
+        "Past Perfect Tense",
+        "Present Perfect Tense",
+        "Simple Present Tense",
+        "Present Continuous Tense"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Types of Tenses"
+      ],
+      "resource": "Grammar Plus",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-tenses-3",
+      "sourceRow": 4,
+      "question": "Identify the tense of the sentence given below.<br> We will do our research on Friday.",
+      "options": [
+        "Simple Future Tense",
+        "Future Perfect Tense",
+        "Simple Present Tense",
+        "Present Continuous Tense"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Types of Tenses"
+      ],
+      "resource": "Grammar Plus",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-tenses-4",
+      "sourceRow": 5,
+      "question": "Identify the tense of the sentence given below.<br> We will have done our research on Friday.",
+      "options": [
+        "Simple Future Tense",
+        "Future Perfect Continuous Tense",
+        "Future Perfect Tense",
+        "Simple Present Tense"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Types of Tenses"
+      ],
+      "resource": "Grammar Plus",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-tenses-5",
+      "sourceRow": 6,
+      "question": "Identify the tense of the sentence given below.<br> Jane had studied thoroughly for the test.",
+      "options": [
+        "Simple Past Tense",
+        "Present Perfect Continuous Tense",
+        "Past Perfect Tense",
+        "Simple Present Tense"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Types of Tenses"
+      ],
+      "resource": "Grammar Plus",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-tenses-6",
+      "sourceRow": 7,
+      "question": "Identify the tense of the sentence given below.<br> Jane did study thoroughly for the test.",
+      "options": [
+        "Simple Past Tense",
+        "Present Perfect Continuous Tense",
+        "Past Perfect Tense",
+        "Simple Present Tense"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Types of Tenses"
+      ],
+      "resource": "Grammar Plus",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-tenses-7",
+      "sourceRow": 8,
+      "question": "Identify the tense of the sentence given below.<br> The band had finished the concert, but the audience called for another set.",
+      "options": [
+        "Simple Past Tense",
+        "Present Perfect Tense",
+        "Past Perfect Tense",
+        "Simple Present Tense"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Types of Tenses"
+      ],
+      "resource": "Grammar Plus",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-tenses-8",
+      "sourceRow": 9,
+      "question": "Identify the tense of the sentence given below.<br> The class will be reading a play.",
+      "options": [
+        "Simple Future Tense",
+        "Present Perfect Tense",
+        "Past Perfect Tense",
+        "Future Continuous Tense"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Types of Tenses"
+      ],
+      "resource": "Grammar Plus",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-tenses-9",
+      "sourceRow": 10,
+      "question": "Identify the tense of the sentence given below.<br> I have been stung by a bee.",
+      "options": [
+        "Simple Past Tense",
+        "Present Perfect Tense",
+        "Past Perfect Tense",
+        "Simple Present Tense"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Types of Tenses"
+      ],
+      "resource": "Grammar Plus",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-tenses-10",
+      "sourceRow": 11,
+      "question": "Identify the correct form of the verb and fill the blanks with the correct answers.<br> It is natural that William speaks English well because he _______ the language all his life.",
+      "options": [
+        "was speaking",
+        "has been speaking",
+        "spoke",
+        "speak"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Application of Correct Form of Verbs"
+      ],
+      "resource": "Rita Wilson",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-tenses-11",
+      "sourceRow": 12,
+      "question": "Identify the correct form of the verb and fill the blanks with the correct answers.<br> Today's weather report _______ that there will be heavy rain tonight.",
+      "options": [
+        "says",
+        "has been saying",
+        "is saying",
+        "said"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Application of Correct Form of Verbs"
+      ],
+      "resource": "Rita Wilson",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-tenses-12",
+      "sourceRow": 13,
+      "question": "Identify the correct form of the verb and fill the blanks with the correct answers.<br> The rain having stopped we _______ to continue our trip.",
+      "options": [
+        "were deciding",
+        "had to decide",
+        "had been deciding",
+        "decided"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Application of Correct Form of Verbs"
+      ],
+      "resource": "Rita Wilson",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-tenses-13",
+      "sourceRow": 14,
+      "question": "Identify the correct form of the verb and fill the blanks with the correct answers.<br> Jimmy's car crashed into a huge banyan tree during the storm last night. Luckily, he was not driving fast, otherwise he probably _______.",
+      "options": [
+        "would be killed",
+        "would have been killed",
+        "killed",
+        "will killed"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Application of Correct Form of Verbs"
+      ],
+      "resource": "Rita Wilson",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-tenses-14",
+      "sourceRow": 15,
+      "question": "Identify the correct form of the verb and fill the blanks with the correct answers.<br> Mr. Abhyankar has been unwell for the last few days. He _______ down for more than a week.",
+      "options": [
+        "will laid",
+        "lays",
+        "has been lying",
+        "was lying"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Application of Correct Form of Verbs"
+      ],
+      "resource": "Rita Wilson",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-tenses-15",
+      "sourceRow": 16,
+      "question": "Identify the correct form of the verb and fill the blanks with the correct answers.<br> Due to recession, we _______ to work so hard the whole of last year.",
+      "options": [
+        "do not have",
+        "haven't been having",
+        "did not have",
+        "weren't have"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Difficult",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Application of Correct Form of Verbs"
+      ],
+      "resource": "Rita Wilson",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-tenses-16",
+      "sourceRow": 17,
+      "question": "Identify the correct form of the verb and fill the blanks with the correct answers.<br> Mr. Singhal is a very kind and understanding person. He would help you if you _______him.",
+      "options": [
+        "ask",
+        "will only be asking",
+        "will ask",
+        "asked"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Difficult",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Application of Correct Form of Verbs"
+      ],
+      "resource": "Rita Wilson",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-tenses-17",
+      "sourceRow": 18,
+      "question": "Identify the correct form of the verb and fill the blanks with the correct answers.<br> If you are suffering from an infectious disease, you _______ the lives of many people.",
+      "options": [
+        "would have been endangering",
+        "endangered",
+        "will endanger",
+        "have endanger"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Difficult",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Application of Correct Form of Verbs"
+      ],
+      "resource": "Rita Wilson",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-tenses-18",
+      "sourceRow": 19,
+      "question": "Identify the correct form of the verb and fill the blanks with the correct answers.<br> The Romans were wonderful builders and their castles and abbeys _______ to last for ever.",
+      "options": [
+        "has been meant",
+        "were meaning",
+        "are meaning",
+        "were meant"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Application of Correct Form of Verbs"
+      ],
+      "resource": "Rita Wilson",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-tenses-19",
+      "sourceRow": 20,
+      "question": "Identify the correct form of the verb and fill the blanks with the correct answers.<br> That house facing the east appears to _______ recently.",
+      "options": [
+        "was painted",
+        "have been painted",
+        "is painting",
+        "having had painted"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Application of Correct Form of Verbs"
+      ],
+      "resource": "Rita Wilson",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    }
+  ]
+}

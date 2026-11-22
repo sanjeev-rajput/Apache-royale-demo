@@ -1,0 +1,378 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-22T03:27:30.023Z",
+  "classification": {
+    "class": "Class 6",
+    "subject": "English",
+    "topic": "Adverbs"
+  },
+  "publisher": "unspecified-publisher",
+  "source": {
+    "file": "Class6/Final/Eng_Class_06_Assess_QB_07_Adverbs/Eng_Class_06_Assess_QB_07_Adverbs.xlsx",
+    "sheet": "name topic"
+  },
+  "questionType": "MCQ",
+  "questionCount": 14,
+  "questions": [
+    {
+      "id": "unspecified-publisher-class-6-english-adverbs-13",
+      "sourceRow": 14,
+      "question": "Identify the suitable adverb. Fill in the blanks with the correct answer.<br> Visitors couldn't go ____________ outside the viewing area.",
+      "options": [
+        "nowhere",
+        "anywhere",
+        "somewhere"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Application of Adverbs"
+      ],
+      "resource": "HSP",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-adverbs-14",
+      "sourceRow": 15,
+      "question": "Fill in the blanks using the correct answer from the bracket.<br> Nobody would ____________ believe the things robots can do.",
+      "options": [
+        "ever",
+        "never",
+        "rarely"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Application of Adverbs"
+      ],
+      "resource": "HSP",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-adverbs-15",
+      "sourceRow": 16,
+      "question": "Fill in the blanks using the correct answer from the bracket.<br> The results hadn't been reported in ____________ newspapers.",
+      "options": [
+        "no",
+        "any",
+        "none"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Application of Adverbs"
+      ],
+      "resource": "HSP",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-adverbs-16",
+      "sourceRow": 17,
+      "question": "Fill in the blanks using the correct answer from the bracket.<br> No previous experiment ____________ even come close to this.",
+      "options": [
+        "had",
+        "hadn’t",
+        "like"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Application of Adverbs"
+      ],
+      "resource": "HSP",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-adverbs-17",
+      "sourceRow": 18,
+      "question": "Identify the adverb and its type in the sentence given below.<br> I was very impressed by her grasp of things.",
+      "options": [
+        "grasp - Adverb of Degree",
+        "grasp- Adverb of Manner",
+        "very-Adverb of Degree",
+        "very - Adverb of Quantity"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Adverbs and Their Types"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-adverbs-18",
+      "sourceRow": 19,
+      "question": "Identify the adverb and its type in the sentence given below.<br> Too many cooks spoil the broth.",
+      "options": [
+        "Too - Adverb of Degree",
+        "many - Adverb of Quantity",
+        "Too - Adverb of Frequency",
+        "many - Adverb of Frequency"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Adverbs and Their Types"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-adverbs-19",
+      "sourceRow": 20,
+      "question": "Identify the adverb and its type in the sentence given below.<br> That is well said.",
+      "options": [
+        "That- Adverb of Quantity",
+        "well- Adverb of Manner",
+        "well- Adverb of Quality",
+        "That- Adverb of Place"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Adverbs and Their Types"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-adverbs-20",
+      "sourceRow": 21,
+      "question": "Identify the adverb and its type in the sentence given below.<br> Once or twice we have met alone.",
+      "options": [
+        "Once, twice- Adverb of Frequency",
+        "Once, twice- Adverb of Quantity",
+        "alone- Adverb of Manner",
+        "Once- Adverb of Quantity"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Difficult",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Adverbs and Their Types"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-adverbs-21",
+      "sourceRow": 22,
+      "question": "Identify the adverb and its type in the sentence given below.<br> The railway station is far off.",
+      "options": [
+        "far off- Adverb of Place",
+        "far- Adverb of Degree",
+        "off- Adverb of Manner",
+        "far- Adverb of Quality"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Difficult",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Adverbs and Their Types"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-adverbs-22",
+      "sourceRow": 23,
+      "question": "Identify the adverb and its type in the sentence given below.<br> I surely expect him tomorrow.",
+      "options": [
+        "surely- Adverb of Affirmation",
+        "expect- Adverb of Degree",
+        "surely- Adverb of Quality",
+        "tomorrow- Adverb of Time"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Difficult",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Adverbs and Their Types"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-adverbs-23",
+      "sourceRow": 24,
+      "question": "Identify the adverb and its type in the sentence given below.<br> He could not speak, he was so angry.",
+      "options": [
+        "so- Adverb of Degree",
+        "not- Adverb of Negation",
+        "so- Adverb of Manner",
+        "could- Adverb of Time"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Difficult",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Adverbs and Their Types"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-adverbs-24",
+      "sourceRow": 25,
+      "question": "Identify the adverb and its type in the sentence given below.<br> You are far too hasty.",
+      "options": [
+        "far- Adverb of Degree",
+        "far- Adverb of Place",
+        "too- Adverb of Degree",
+        "too- Adverb of Quantity"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Difficult",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Adverbs and Their Types"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-adverbs-25",
+      "sourceRow": 26,
+      "question": "Identify the adverb and its type in the sentence given below.<br> I see things differently now.",
+      "options": [
+        "differently- Adverb of Manner",
+        "differently- Adverb of Quantity",
+        "now- Adverb of Place",
+        "now- Adverb of Time"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Difficult",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Adverbs and Their Types"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-adverbs-26",
+      "sourceRow": 27,
+      "question": "Identify the adverb and its type in the sentence given below.<br> Order the carriage round.",
+      "options": [
+        "round- Adverb of Degree",
+        "Order- Adverb of Place",
+        "round- Adverb of Place",
+        "Order- Adverb of Quantity"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Adverbs and Their Types"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    }
+  ]
+}

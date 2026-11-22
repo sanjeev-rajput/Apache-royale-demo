@@ -1,0 +1,268 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-22T03:27:31.054Z",
+  "classification": {
+    "class": "Class 8",
+    "subject": "English",
+    "topic": "Active and Passive Voice"
+  },
+  "publisher": "unspecified-publisher",
+  "source": {
+    "file": "Class8/Final/English_Class 8_Assess_QB_14_Active_and_ Passive_Voice/English_Class 8_Assess_QB_14_Active_and_Passive_Voice.xlsx",
+    "sheet": "Templates"
+  },
+  "questionType": "MCQ",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "unspecified-publisher-class-8-english-active-and-passive-voice-1",
+      "sourceRow": 2,
+      "question": "Fill in the blanks with the correct answer.<br> Joseph is going out to _______________.",
+      "options": [
+        "his hair be cut",
+        "have his hair cut",
+        "have his hair being cut"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Active/ Passive Form"
+      ],
+      "resource": "Rita Wilson",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-english-active-and-passive-voice-2",
+      "sourceRow": 3,
+      "question": "Fill in the blanks with the correct answer.<br> Some film actors _______________ be difficult to work with.",
+      "options": [
+        "say",
+        "are said",
+        "are said to"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Active/ Passive Form"
+      ],
+      "resource": "Rita Wilson",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-english-active-and-passive-voice-3",
+      "sourceRow": 4,
+      "question": "Fill in the blanks with the correct answer.<br> The novel I have just read _______________by Robert Daniel.",
+      "options": [
+        "was written",
+        "wrote",
+        "written"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Active/ Passive Form"
+      ],
+      "resource": "Rita Wilson",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-english-active-and-passive-voice-4",
+      "sourceRow": 5,
+      "question": "Fill in the blanks with the correct answer.<br> My family can't go here because the road is _______________.",
+      "options": [
+        "being repaired",
+        "been repaired",
+        "repaired"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Active/ Passive Form"
+      ],
+      "resource": "Rita Wilson",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-english-active-and-passive-voice-5",
+      "sourceRow": 6,
+      "question": "Identify the voice of the sentence given below.<br> Oliver has borrowed several books from the library.",
+      "options": [
+        "Active Voice",
+        "Passive Voice",
+        "Neither Active nor Passive Voice"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Active or Passive Voice"
+      ],
+      "resource": "Grammar Plus",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-english-active-and-passive-voice-6",
+      "sourceRow": 7,
+      "question": "Identify the voice of the sentence given below.<br> Important data was gathered during the expedition.",
+      "options": [
+        "Active Voice",
+        "Passive Voice",
+        "Neither Active nor Passive Voice"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Active or Passive Voice"
+      ],
+      "resource": "Grammar Plus",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-english-active-and-passive-voice-7",
+      "sourceRow": 8,
+      "question": "Identify the voice of the sentence given below.<br> Before nap time, the children were read a story.",
+      "options": [
+        "Active Voice",
+        "Passive Voice",
+        "Neither Active nor Passive Voice"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Difficult",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Active or Passive Voice"
+      ],
+      "resource": "Grammar Plus",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-english-active-and-passive-voice-8",
+      "sourceRow": 9,
+      "question": "Identify the voice of the sentence given below.<br> Old medical instruments are collected by my cousin Maria.",
+      "options": [
+        "Active Voice",
+        "Passive Voice",
+        "Neither Active nor Passive Voice"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Active or Passive Voice"
+      ],
+      "resource": "Grammar Plus",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-english-active-and-passive-voice-9",
+      "sourceRow": 10,
+      "question": "Identify the voice of the sentence given below.<br> We have visited that museum before.",
+      "options": [
+        "Active Voice",
+        "Passive Voice",
+        "Neither Active nor Passive Voice"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Active or Passive Voice"
+      ],
+      "resource": "Grammar Plus",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-english-active-and-passive-voice-10",
+      "sourceRow": 11,
+      "question": "Identify the voice of the sentence given below.<br> The fire station on the town square was built in 1904.",
+      "options": [
+        "Active Voice",
+        "Passive Voice",
+        "Neither Active nor Passive Voice"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Difficult",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Active or Passive Voice"
+      ],
+      "resource": "Grammar Plus",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    }
+  ]
+}

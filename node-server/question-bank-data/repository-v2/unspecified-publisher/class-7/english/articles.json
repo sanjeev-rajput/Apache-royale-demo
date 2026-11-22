@@ -1,0 +1,330 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-22T03:27:30.588Z",
+  "classification": {
+    "class": "Class 7",
+    "subject": "English",
+    "topic": "Articles"
+  },
+  "publisher": "unspecified-publisher",
+  "source": {
+    "file": "class7/Final/Eng_Class_7_Assess_QB_12_Articles/Eng_Class_7_Assess_QB_12_Articles.xlsx",
+    "sheet": "Templates"
+  },
+  "questionType": "MCQ",
+  "questionCount": 12,
+  "questions": [
+    {
+      "id": "unspecified-publisher-class-7-english-articles-1",
+      "sourceRow": 2,
+      "question": "Identify the appropriate article to complete the sentence given below.<br> I am going to watch _________ movie on Saturday.",
+      "options": [
+        "a",
+        "an",
+        "the",
+        "no article required"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Correct Articles"
+      ],
+      "resource": "Grammar Plus",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-articles-2",
+      "sourceRow": 3,
+      "question": "Identify the appropriate article to complete the sentence given below. <br> I do not take _________ rice in the afternoon.",
+      "options": [
+        "a",
+        "an",
+        "the",
+        "no article required"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Correct Articles"
+      ],
+      "resource": "Grammar Plus",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-articles-3",
+      "sourceRow": 4,
+      "question": "Identify the appropriate article to complete the sentence given below. <br> My mother buys _________ gold every year.",
+      "options": [
+        "a",
+        "an",
+        "the",
+        "no article required"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Correct Articles"
+      ],
+      "resource": "Grammar Plus",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-articles-4",
+      "sourceRow": 5,
+      "question": "Identify the appropriate article to complete the sentence given below. <br> The swimmers found _________ pot of gold at the harbour.",
+      "options": [
+        "a",
+        "an",
+        "the",
+        "no article required"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Correct Articles"
+      ],
+      "resource": "Grammar Plus",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-articles-5",
+      "sourceRow": 6,
+      "question": "Identify the appropriate article to complete the sentence given below. <br> My father gave my mother _________ gold ring for their anniversary.",
+      "options": [
+        "a",
+        "an",
+        "the",
+        "no article required"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Correct Articles"
+      ],
+      "resource": "Grammar Plus",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-articles-6",
+      "sourceRow": 7,
+      "question": "Identify the appropriate article to complete the sentence given below. <br> I first met him_________ year ago.",
+      "options": [
+        "a",
+        "an",
+        "the",
+        "no article required"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Correct Articles"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-articles-7",
+      "sourceRow": 8,
+      "question": "Identify the appropriate article to complete the sentence given below. <br> Sanskrit is _________ easy language.",
+      "options": [
+        "a",
+        "an",
+        "the",
+        "no article required"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Correct Articles"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-articles-8",
+      "sourceRow": 9,
+      "question": "Identify the appropriate article to complete the sentence given below. <br> You are _________ fool to say that.",
+      "options": [
+        "a",
+        "an",
+        "the",
+        "no article required"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Correct Articles"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-articles-9",
+      "sourceRow": 10,
+      "question": "Identify the appropriate article to complete the sentence given below. <br> Who is _________ girl sitting there?",
+      "options": [
+        "a",
+        "an",
+        "the",
+        "no article required"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Correct Articles"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-articles-10",
+      "sourceRow": 11,
+      "question": "Identify the appropriate article to complete the sentence given below. <br> Mumbai is _________ very costly place to live in.",
+      "options": [
+        "a",
+        "an",
+        "the",
+        "no article required"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Correct Articles"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-articles-11",
+      "sourceRow": 12,
+      "question": "Identify the appropriate article to complete the sentence given below. <br> If you see him, give him _______ message she asked you to.",
+      "options": [
+        "a",
+        "an",
+        "the",
+        "no article required"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Correct Articles"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-articles-12",
+      "sourceRow": 13,
+      "question": "Identify the appropriate article to complete the sentence given below. <br> Man, you are _________ wonderful animal.",
+      "options": [
+        "a",
+        "an",
+        "the",
+        "no article required"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Correct Articles"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    }
+  ]
+}

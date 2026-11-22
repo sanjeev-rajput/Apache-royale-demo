@@ -25,12 +25,13 @@
             private var requestInProgress:Boolean = false;
             private var optionRadios:Array = [];
             private var assessmentSubmitted:Boolean = false;
+            private var preparedAssessment:Object;
 
             public function set assessmentContext(value:Object):void
             {
                 _assessmentContext = value;
                 if (yesButton != null)
-                    yesButton.disabled = (_assessmentContext == null);
+                    yesButton.disabled = false;
             }
 
             public function get assessmentContext():Object
@@ -40,7 +41,7 @@
 
             private function initializePanel():void
             {
-                yesButton.disabled = (_assessmentContext == null);
+                yesButton.disabled = false;
                 assessmentContent.visible = false;
                 submitButton.visible = false;
                 submitButton.disabled = true;
@@ -49,6 +50,26 @@
             private function declineAssessment():void
             {
                 dispatchEvent(new Event("assessmentDeclined"));
+            }
+
+            private function showPracticeModes():void
+            {
+                yesButton.visible = false;
+                noButton.visible = false;
+                invitationPrompt.text = "Checking AI practice availability...";
+                generateAssessment();
+            }
+
+            private function chooseAiPractice():void
+            {
+                practiceModeActions.visible = false;
+                invitationPrompt.visible = false;
+                displayPreparedAssessment();
+            }
+
+            private function chooseQuestionBankPractice():void
+            {
+                dispatchEvent(new Event("questionBankSelected"));
             }
 
             private function addText(value:String):void
@@ -71,16 +92,20 @@
 
             private function generateAssessment():void
             {
-                if (requestInProgress || _assessmentContext == null)
+                if (requestInProgress)
                     return;
 
+                if (_assessmentContext == null)
+                {
+                    showQuestionBankOnly("AI-generated practice is not available for this request.");
+                    return;
+                }
+
                 requestInProgress = true;
-                yesButton.disabled = true;
-                noButton.disabled = true;
                 assessmentContent.visible = true;
                 submitButton.visible = false;
                 clearAssessmentContent();
-                addText("Generating your five-question assessment...");
+                addText("Checking whether AI-generated practice is available...");
 
                 requestLoader = new ServiceLoader();
                 requestLoader.reqMethod = "POST";
@@ -103,18 +128,54 @@
                 if (response == null || response.success != true ||
                     response.assessment == null || response.attemptId == null)
                 {
-                    addText(response != null && response.message != null
+                    showQuestionBankOnly(response != null && response.message != null
                         ? String(response.message)
-                        : "The assessment could not be generated. Please try again.");
-                    yesButton.text = "Try again";
-                    yesButton.disabled = false;
-                    noButton.disabled = false;
+                        : "AI-generated practice is unavailable right now.");
                     return;
                 }
 
-                invitationPrompt.visible = false;
+                // A valid five-question assessment is the capability check.
+                // Keep the prepared attempt server-side until the learner chooses AI practice.
+                preparedAssessment = response;
+                assessmentContent.visible = false;
+                invitationPrompt.text = "How would you like to practise?";
+                invitationPrompt.visible = true;
+                practiceModeActions.visible = true;
+                aiPracticeButton.visible = true;
+                questionBankButton.visible = true;
+            }
+
+            private function showQuestionBankOnly(message:String):void
+            {
+                requestInProgress = false;
+                preparedAssessment = null;
+                attemptId = null;
+                invitationPrompt.text = "AI-generated practice is unavailable right now. You can continue with Question Bank Practice.";
+                invitationPrompt.visible = true;
                 yesButton.visible = false;
                 noButton.visible = false;
+                practiceModeActions.visible = true;
+                aiPracticeButton.visible = false;
+                questionBankButton.visible = true;
+                assessmentContent.visible = true;
+                submitButton.visible = false;
+                clearAssessmentContent();
+                if (message != null && message.length > 0)
+                    addText(message);
+            }
+
+            private function displayPreparedAssessment():void
+            {
+                if (preparedAssessment == null)
+                {
+                    showQuestionBankOnly("The prepared AI assessment is no longer available. Please use Question Bank Practice.");
+                    return;
+                }
+
+                var response:Object = preparedAssessment;
+                preparedAssessment = null;
+                assessmentContent.visible = true;
+                clearAssessmentContent();
                 assessmentSubmitted = false;
                 optionRadios = [];
 
@@ -327,9 +388,8 @@
 
                 if (attemptId == null)
                 {
-                    yesButton.text = "Try again";
-                    yesButton.disabled = false;
-                    noButton.disabled = false;
+                    showQuestionBankOnly("The AI assessment service could not be reached. Please use Question Bank Practice for now.");
+                    return;
                 }
                 else
                 {
@@ -350,13 +410,12 @@
                  text="Would you like to check your knowledge based on the learning?"
                  className="assessment-heading"/>
         <j:HGroup width="100%" gap="2" className="assessment-invitation-actions">
-            <sp:Button id="yesButton"
-                       text="Yes"
-                       disabled="true"
-                       click="generateAssessment()"/>
-            <sp:Button id="noButton"
-                       text="No"
-                       click="declineAssessment()"/>
+            <sp:Button id="yesButton" text="Yes" disabled="true" click="showPracticeModes()"/>
+            <sp:Button id="noButton" text="No" click="declineAssessment()"/>
+        </j:HGroup>
+        <j:HGroup id="practiceModeActions" width="100%" gap="2" visible="false">
+            <sp:Button id="aiPracticeButton" text="AI-Generated Practice" click="chooseAiPractice()"/>
+            <sp:Button id="questionBankButton" text="Question Bank Practice" click="chooseQuestionBankPractice()"/>
         </j:HGroup>
         <j:VGroup id="assessmentContent"
                   width="95%"

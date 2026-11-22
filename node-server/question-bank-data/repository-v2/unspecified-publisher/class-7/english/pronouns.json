@@ -1,0 +1,427 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-22T03:27:30.446Z",
+  "classification": {
+    "class": "Class 7",
+    "subject": "English",
+    "topic": "Pronouns"
+  },
+  "publisher": "unspecified-publisher",
+  "source": {
+    "file": "class7/Final/Eng_Class_7_Assess_QB_05_Pronouns/Eng_Class_7_Assess_QB_05_Pronouns.xlsx",
+    "sheet": "Templates"
+  },
+  "questionType": "MCQ",
+  "questionCount": 16,
+  "questions": [
+    {
+      "id": "unspecified-publisher-class-7-english-pronouns-1",
+      "sourceRow": 2,
+      "question": "Identify the appropriate pronoun and fill in the blanks with the correct answer.<br> This is all #DASH# I wanted to say.",
+      "options": [
+        "whom",
+        "but",
+        "that"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Pronouns"
+      ],
+      "resource": "Saraswati Publications",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-pronouns-2",
+      "sourceRow": 3,
+      "question": "Identify the appropriate pronoun and fill in the blanks using the correct answer.<br> The old street dog #DASH# was lame, died yesterday.",
+      "options": [
+        "whom",
+        "which",
+        "that"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Pronouns"
+      ],
+      "resource": "Saraswati Publications",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-pronouns-3",
+      "sourceRow": 4,
+      "question": "Identify the appropriate pronoun and fill in the blanks using the correct answer.<br> Listen to #DASH# the teacher says.",
+      "options": [
+        "what",
+        "but",
+        "that"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Pronouns"
+      ],
+      "resource": "Saraswati Publications",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-pronouns-4",
+      "sourceRow": 5,
+      "question": "Identify the appropriate pronoun and fill in the blanks using the correct answer.<br> He is the union leader #DASH# I have been speaking about.",
+      "options": [
+        "whose",
+        "whom",
+        "who"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Pronouns"
+      ],
+      "resource": "Saraswati Publications",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-pronouns-5",
+      "sourceRow": 6,
+      "question": "Identify the appropriate pronoun and fill in the blanks using the correct answer.<br> The shop at the end of the lane is #DASH#.",
+      "options": [
+        "theirs",
+        "their",
+        "them"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Pronouns"
+      ],
+      "resource": "Saraswati Publications",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-pronouns-6",
+      "sourceRow": 7,
+      "question": "Identify the appropriate pronoun and fill in the blanks using the correct answer.<br> Kalpi says that the video game is #DASH#.",
+      "options": [
+        "our",
+        "hers",
+        "her"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Pronouns"
+      ],
+      "resource": "Saraswati Publications",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-pronouns-7",
+      "sourceRow": 8,
+      "question": "Identify the appropriate pronoun and fill in the blanks using the correct answer.<br> If you can do your homework, so can we do #DASH#.",
+      "options": [
+        "our",
+        "mine",
+        "ours"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Pronouns"
+      ],
+      "resource": "Saraswati Publications",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-pronouns-8",
+      "sourceRow": 9,
+      "question": "Identify the types of pronouns in the sentence given below.<br> These are Elberta peaches, which are very popular in the United States.",
+      "options": [
+        "These - Demonstrative Pronoun, which - Interrogative Pronoun",
+        "These - Indefinite Pronoun, which - Interrogative Pronoun",
+        "These - Demonstrative Pronoun, which - Relative Pronoun",
+        "These - Relative Pronoun, which - Reflexive Pronoun"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Types of Pronouns"
+      ],
+      "resource": "HRW",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-pronouns-9",
+      "sourceRow": 10,
+      "question": "Identify the types of pronouns in the sentence given below.<br> Nobody really knows where the fruit came from originally.",
+      "options": [
+        "Nobody - Relative Pronoun, where - Reflexive Pronoun",
+        "Nobody - Indefinite Pronoun, where - Interrogative Pronoun",
+        "Nobody - Relative Pronoun, where - Interrogative Pronoun",
+        "Nobody - Indefinite Pronoun"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Types of Pronouns"
+      ],
+      "resource": "HRW",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-pronouns-10",
+      "sourceRow": 11,
+      "question": "Identify the types of pronouns in the sentence given below.<br> Who started the story?",
+      "options": [
+        "Who - Interrogative Pronoun",
+        "Who - Relative Pronoun",
+        "Who - Reflexive Pronoun",
+        "Who - Personal Pronoun"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Types of Pronouns"
+      ],
+      "resource": "HRW",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-pronouns-11",
+      "sourceRow": 12,
+      "question": "Identify the types of pronouns in the sentence given below.<br> One of them was particularly beautiful.",
+      "options": [
+        "One - Relative Pronoun, them - Reflexive Pronoun",
+        "them - Personal Pronoun",
+        "One - Indefinite Pronoun, them - Possessive Pronoun",
+        "One - Indefinite Pronoun, them - Personal Pronoun"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Types of Pronouns"
+      ],
+      "resource": "HRW",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-pronouns-12",
+      "sourceRow": 13,
+      "question": "Identify the types of pronouns in the sentence given below.<br> He soon found himself at the forefront of commercial peach production in Georgia.",
+      "options": [
+        "He - Possessive Pronoun, himself - Possessive Pronoun",
+        "He - Personal Pronoun, himself - Reflexive Pronoun",
+        "He - Personal Pronoun, himself - Personal Pronoun",
+        "He - Personal Pronoun, himself - Possessive Pronoun"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Types of Pronouns"
+      ],
+      "resource": "HRW",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-pronouns-13",
+      "sourceRow": 14,
+      "question": "Identify the types of pronouns in the sentence given below.<br> Who is the boy who wore the red wig in the first act?",
+      "options": [
+        "Who - Interrogative Pronoun, who - Possessive Pronoun",
+        "Who - Interrogative Pronoun, who - Relative Pronoun",
+        "Who - Reflexive Pronoun, who - Possessive Pronoun",
+        "Who - Interrogative Pronoun, who - Interrogative Pronoun"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Difficult",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Types of Pronouns"
+      ],
+      "resource": "HRW",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-pronouns-14",
+      "sourceRow": 15,
+      "question": "Identify the types of pronouns in the sentence given below.<br> Everyone who enters the lab must wear a coverall.",
+      "options": [
+        "Everyone - Interrogative Pronoun, who - Interrogative Pronoun",
+        "Everyone - Indefinite Pronoun, who - Interrogative Pronoun",
+        "Everyone - Indefinite Pronoun, who - Relative Pronoun",
+        "Everyone - Relative Pronoun, who - Relative Pronoun"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Types of Pronouns"
+      ],
+      "resource": "HRW",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-pronouns-15",
+      "sourceRow": 16,
+      "question": "Identify the types of pronouns in the sentence given below.<br> Jamal called the house, but no one answered.",
+      "options": [
+        "No one - Indefinite Pronoun",
+        "No one - Relative Pronoun",
+        "No one - Personal Pronoun",
+        "No one - Reflexive Pronoun"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Types of Pronouns"
+      ],
+      "resource": "HRW",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-pronouns-16",
+      "sourceRow": 17,
+      "question": "Identify the types of pronouns in the sentence given below.<br> Please put away the boxes that are on the floor, and then help Marvin move this.",
+      "options": [
+        "that - Relative Pronoun, this - Relative Pronoun",
+        "that - Demonstrative Pronoun, this - Relative Pronoun",
+        "that - Demonstrative Pronoun, this - Demonstrative Pronoun",
+        "that - Relative Pronoun, this - Demonstrative Pronoun"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Difficult",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Types of Pronouns"
+      ],
+      "resource": "HRW",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    }
+  ]
+}

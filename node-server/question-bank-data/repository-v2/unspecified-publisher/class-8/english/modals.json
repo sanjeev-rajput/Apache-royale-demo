@@ -1,0 +1,268 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-22T03:27:31.073Z",
+  "classification": {
+    "class": "Class 8",
+    "subject": "English",
+    "topic": "Modals"
+  },
+  "publisher": "unspecified-publisher",
+  "source": {
+    "file": "Class8/Final/English_Class 8_Assess_QB_15_Modals/Eng_Class 8_Assess_QB_15_Modals.xlsx",
+    "sheet": "Templates"
+  },
+  "questionType": "MCQ",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "unspecified-publisher-class-8-english-modals-1",
+      "sourceRow": 2,
+      "question": "Identify the correct modal. Fill in the blanks with the correct answer.<br> If you went to bed for an hour you __________ feel better.",
+      "options": [
+        "can",
+        "might",
+        "could"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify the Correct Modal"
+      ],
+      "resource": "Rita Wilson",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-english-modals-2",
+      "sourceRow": 3,
+      "question": "Identify the correct modal. Fill in the blanks with the correct answer.<br> We __________ go climbing in the Aravallis next winter.",
+      "options": [
+        "ought to",
+        "need to",
+        "needn't"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify the Correct Modal"
+      ],
+      "resource": "Rita Wilson",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-english-modals-3",
+      "sourceRow": 4,
+      "question": "Identify the correct modal. Fill in the blanks with the correct answer.<br> You __________ come and have lunch with us sometime.",
+      "options": [
+        "can",
+        "must",
+        "might"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify the Correct Modal"
+      ],
+      "resource": "Rita Wilson",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-english-modals-4",
+      "sourceRow": 5,
+      "question": "Identify the correct modal. Fill in the blanks with the correct answer.<br> I __________read French when I was a child.",
+      "options": [
+        "could",
+        "may",
+        "should"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify the Correct Modal"
+      ],
+      "resource": "Rita Wilson",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-english-modals-5",
+      "sourceRow": 6,
+      "question": "Identify the correct modal. Fill in the blanks with the correct answer.<br> Polly __________ come with me tomorrow.",
+      "options": [
+        "should",
+        "must",
+        "Might"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Difficult",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify the Correct Modal"
+      ],
+      "resource": "Rita Wilson",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-english-modals-11",
+      "sourceRow": 12,
+      "question": "Identify the correct modal. Fill in the blanks with correct answer.<br> You ___________ for me; I could have found the way all right.",
+      "options": [
+        "couldn't wait",
+        "didn't need to wait",
+        "need't have waited"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify the Correct Modal"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-english-modals-12",
+      "sourceRow": 13,
+      "question": "Identify the correct modal. Fill in the blanks with the correct answer.<br> She ___________ sit outside her garden gate, looking at the passing traffic.",
+      "options": [
+        "shall",
+        "will",
+        "dare"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Difficult",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify the Correct Modal"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-english-modals-13",
+      "sourceRow": 14,
+      "question": "Identify the correct modal. Fill in the blanks with the correct answer.<br> I ___________ on Thursday. But on Thursday I had a terrible cold, so I decided to wait till Saturday.",
+      "options": [
+        "am to leave",
+        "would leave",
+        "was to have left"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify the Correct Modal"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-english-modals-14",
+      "sourceRow": 15,
+      "question": "Identify the correct modal. Fill in the blanks with the correct answer.<br> ___________ I carry the box into the house for you?",
+      "options": [
+        "Shall",
+        "Will",
+        "Would"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify the Correct Modal"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-english-modals-15",
+      "sourceRow": 16,
+      "question": "Identify the correct modal. Fill in the blanks with the correct answer.<br> He ___________ come, but I should be surprised.",
+      "options": [
+        "will",
+        "can",
+        "might"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify the Correct Modal"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    }
+  ]
+}

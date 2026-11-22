@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-22T03:27:30.413Z",
+  "classification": {
+    "class": "Class 7",
+    "subject": "English",
+    "topic": "Nouns"
+  },
+  "publisher": "unspecified-publisher",
+  "source": {
+    "file": "class7/Final/Eng_Class_7_Assess_QB_04_Nouns/Eng_Class_7_Assess_QB_04_Nouns.xlsx",
+    "sheet": "Templates"
+  },
+  "questionType": "MCQ",
+  "questionCount": 6,
+  "questions": [
+    {
+      "id": "unspecified-publisher-class-7-english-nouns-9",
+      "sourceRow": 10,
+      "question": "Identify the types of nouns in the sentence given below. <br> Cleanliness is next to godliness.",
+      "options": [
+        "Cleanliness - Common Noun, godliness - Abstract Noun",
+        "Cleanliness - Abstract Noun, godliness - Abstract Noun",
+        "Cleanliness - Common Noun, godliness - Common Noun",
+        "Cleanliness - Proper Noun, godliness - Abstract Noun"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Nouns and Their Types"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-nouns-10",
+      "sourceRow": 11,
+      "question": "Identify the types of nouns in the sentence given below. <br> I recognized your voice at once.",
+      "options": [
+        "voice - Common Noun, recognised - Abstract Noun",
+        "once - Abstract Noun, recognised - Abstract Noun",
+        "voice - Common Noun",
+        "once - Common Noun, recognised - Common Noun"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Nouns and Their Types"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-nouns-11",
+      "sourceRow": 12,
+      "question": "Identify the types of nouns in the sentence given below. <br> Never tell a lie.",
+      "options": [
+        "Never - Proper Noun, tell - Collective Noun",
+        "lie - Abstract Noun, never- Abstract Noun",
+        "lie - Abstract Noun",
+        "Never - Common Noun, lie - Common Noun"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Nouns and Their Types"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-nouns-12",
+      "sourceRow": 13,
+      "question": "Identify the types of nouns in the sentence given below. <br> Solomon was famous for his wisdom.",
+      "options": [
+        "Solomon - Proper Noun, famous - Collective Noun",
+        "wisdom - Abstract Noun, famous - Abstract Noun",
+        "wisdom - Abstract Noun, Solomon - Proper Noun",
+        "Solomon - Common Noun, wisdom - Common Noun"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Nouns and Their Types"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-nouns-13",
+      "sourceRow": 14,
+      "question": "Identify the types of nouns in the sentence given below. <br> The streets of some of our cities are noted for their crookedness.",
+      "options": [
+        "streets - Common Noun, cities - Common Noun, crookedness - Abstract Noun",
+        "streets - Common Noun, cities - Common Noun, crookedness - Collective Noun",
+        "streets - Common Noun, cities - Collective Noun, crookedness- Abstract Noun",
+        "streets - Common Noun, cities - Common Noun, crookedness- Common Noun"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Nouns and Their Types"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-nouns-14",
+      "sourceRow": 15,
+      "question": "Identify the types of nouns in the sentence given below. <br> What is your verdict, gentleman of the jury?",
+      "options": [
+        "verdict - Common Noun, gentlemen - Common Noun, jury - Common Noun",
+        "verdict - Collective Noun, gentlemen - Common Noun, jury - Abstract Noun",
+        "verdict - Abstract Noun, gentlemen - Common Noun, jury - Common Noun",
+        "verdict - Abstract Noun, gentlemen - Common Noun, jury - Collective Noun"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Nouns and Their Types"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-22T03:27:30.924Z",
+  "classification": {
+    "class": "Class 8",
+    "subject": "English",
+    "topic": "Verbs"
+  },
+  "publisher": "unspecified-publisher",
+  "source": {
+    "file": "Class8/Final/English_Class 8_Assess_QB_07_Verbs/Eng_Class 8_Assess_QB_07_Verbs.xlsx",
+    "sheet": "Templates"
+  },
+  "questionType": "MCQ",
+  "questionCount": 4,
+  "questions": [
+    {
+      "id": "unspecified-publisher-class-8-english-verbs-5",
+      "sourceRow": 6,
+      "question": "Identify the correct vigorous verb to complete the sentence below.<br> The surprise visit by her favourite aunt ___________ Noor.",
+      "options": [
+        "pleased",
+        "delighted",
+        "shocked"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Vigorous Verbs"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Remembering",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-english-verbs-6",
+      "sourceRow": 7,
+      "question": "Identify the correct vigorous verb to complete the sentence below.<br> The frightened horse __________ across the paddock.",
+      "options": [
+        "bolted",
+        "jogged",
+        "strolled"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Difficult",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Vigorous Verbs"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Remembering",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-english-verbs-7",
+      "sourceRow": 8,
+      "question": "Identify the correct vigorous verb to complete the sentence below.<br> We could hear Father’s old car as it ____________ down the lane.",
+      "options": [
+        "sped",
+        "rattled",
+        "trembled"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Vigorous Verbs"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Remembering",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-english-verbs-8",
+      "sourceRow": 9,
+      "question": "Identify the correct vigorous verb to complete the sentence below.<br> Everyone took shelter as the rain began to ______ down.",
+      "options": [
+        "drip",
+        "trickle",
+        "pour"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Vigorous Verbs"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Remembering",
+      "smeComments": null,
+      "specialCategory": null
+    }
+  ]
+}

@@ -1,0 +1,268 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-22T03:27:30.214Z",
+  "classification": {
+    "class": "Class 6",
+    "subject": "English",
+    "topic": "Conjunctions"
+  },
+  "publisher": "unspecified-publisher",
+  "source": {
+    "file": "Class6/Final/Eng_Class_06_Assess_QB_15_Conjunctions/Eng_Class_06_Assess_QB_15_Conjunctions.xlsx",
+    "sheet": "name topic"
+  },
+  "questionType": "MCQ",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "unspecified-publisher-class-6-english-conjunctions-1",
+      "sourceRow": 2,
+      "question": "Identify the suitable conjunction. Fill in the blanks using the correct answer.<br><br> You will not succeed ______________ you work harder.",
+      "options": [
+        "until",
+        "unless",
+        "till"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Conjunctions"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-conjunctions-2",
+      "sourceRow": 3,
+      "question": "Identify the suitable conjunction. Fill in the blanks using the correct answer.<br><br> _____ you are called, you come in at once.",
+      "options": [
+        "still",
+        "either",
+        "When"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Conjunctions"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-conjunctions-3",
+      "sourceRow": 4,
+      "question": "Identify the suitable conjunction. Fill in the blanks using the correct answer.<br><br> I cannot give you any money, ________ I have none.",
+      "options": [
+        "for",
+        "if",
+        "either"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Conjunctions"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-conjunctions-4",
+      "sourceRow": 5,
+      "question": "Identify the suitable conjunction. Fill in the blanks using the correct answer.<br><br> He fled ___________he would be killed.",
+      "options": [
+        "must",
+        "and",
+        "or"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Conjunctions"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-conjunctions-5",
+      "sourceRow": 6,
+      "question": "Identify the suitable conjunction. Fill in the blanks using the correct answer.<br><br> I will stay ______________ you return.",
+      "options": [
+        "unless",
+        "but",
+        "until"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Difficult",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Conjunctions"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-conjunctions-6",
+      "sourceRow": 7,
+      "question": "Identify the suitable conjunction. Fill in the blanks using the correct answer.<br><br> Tom runs fast ___Harry runs faster.",
+      "options": [
+        "whether",
+        "for",
+        "but"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Conjunctions"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-conjunctions-7",
+      "sourceRow": 8,
+      "question": "Identify the suitable conjunction. Fill in the blanks using the correct answer.<br><br> Is that story true ______________false?",
+      "options": [
+        "or",
+        "but",
+        "and"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Conjunctions"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-conjunctions-8",
+      "sourceRow": 9,
+      "question": "Identify the suitable conjunction. Fill in the blanks using the correct answer.<br><br> He asked ________________he might have a holiday.",
+      "options": [
+        "but",
+        "so",
+        "if"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Conjunctions"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-conjunctions-9",
+      "sourceRow": 10,
+      "question": "Identify the suitable conjunction. Fill in the blanks using the correct answer.<br><br> Give me to drink, ___________I shall die of thirst.",
+      "options": [
+        "or",
+        "else",
+        "if"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Difficult",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Conjunctions"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-conjunctions-10",
+      "sourceRow": 11,
+      "question": "Identify the suitable conjunction. Fill in the blanks using the correct answer.<br><br> Either you are mistaken, _________I am.",
+      "options": [
+        "though",
+        "must",
+        "or"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Difficult",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Conjunctions"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    }
+  ]
+}

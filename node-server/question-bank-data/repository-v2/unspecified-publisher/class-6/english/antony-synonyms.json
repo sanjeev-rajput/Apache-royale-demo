@@ -1,0 +1,268 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-22T03:27:30.317Z",
+  "classification": {
+    "class": "Class 6",
+    "subject": "English",
+    "topic": "Antony & Synonyms"
+  },
+  "publisher": "unspecified-publisher",
+  "source": {
+    "file": "Class6/Final/Eng_Class_06_Assess_QB_20_Antony_&_Synonyms/Eng_Class_06_Assess_QB_20_Antony_&_Synonyms.xlsx",
+    "sheet": "name topic"
+  },
+  "questionType": "MCQ",
+  "questionCount": 10,
+  "questions": [
+    {
+      "id": "unspecified-publisher-class-6-english-antony-synonyms-6",
+      "sourceRow": 7,
+      "question": "Identify the word that is most nearly opposite in meaning to the word<br><br> DETERIORATE",
+      "options": [
+        "Worsen",
+        "Fade",
+        "Upgrade"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify the Correct Antonyms"
+      ],
+      "resource": "SME Provided Questions",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-antony-synonyms-7",
+      "sourceRow": 8,
+      "question": "Identify the word that is nearly opposite in meaning to the word<br><br> CONSERVE",
+      "options": [
+        "Protect",
+        "Squander",
+        "Keep"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify the Correct Antonyms"
+      ],
+      "resource": "SME Provided Questions",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-antony-synonyms-8",
+      "sourceRow": 9,
+      "question": "Identify the word that is nearly opposite in meaning to the word<br><br> EFFICIENT",
+      "options": [
+        "Unproductive",
+        "Capable",
+        "Competent"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify the Correct Antonyms"
+      ],
+      "resource": "SME Provided Questions",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-antony-synonyms-9",
+      "sourceRow": 10,
+      "question": "Identify the word that is nearly opposite in meaning to the word<br><br> ARROGANT",
+      "options": [
+        "Haughty",
+        "Overconfident",
+        "Modest"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify the Correct Antonyms"
+      ],
+      "resource": "SME Provided Questions",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-antony-synonyms-10",
+      "sourceRow": 11,
+      "question": "Identify the word that is nearly opposite in meaning to the word<br><br> PROSPER",
+      "options": [
+        "Fail",
+        "Succeed",
+        "Thrive"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify the Correct Antonyms"
+      ],
+      "resource": "SME Provided Questions",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-antony-synonyms-11",
+      "sourceRow": 12,
+      "question": "Identify the word that is nearest in meaning to the word<br> <br> SCARE",
+      "options": [
+        "Brave",
+        "Frighten",
+        "Courageous"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify the Correct Synonyms"
+      ],
+      "resource": "SME Provided Questions",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-antony-synonyms-12",
+      "sourceRow": 13,
+      "question": "Identify the word that is nearest in meaning to the word<br><br> EXTRAVAGANT",
+      "options": [
+        "spendthrift",
+        "frugal",
+        "thrifty"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Difficult",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify the Correct Synonyms"
+      ],
+      "resource": "SME Provided Questions",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-antony-synonyms-13",
+      "sourceRow": 14,
+      "question": "Identify the word that is nearest in meaning to the word<br> <br> LENIENT",
+      "options": [
+        "Mild",
+        "Strict",
+        "Severe"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify the Correct Synonyms"
+      ],
+      "resource": "SME Provided Questions",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-antony-synonyms-14",
+      "sourceRow": 15,
+      "question": "Identify the word that is nearest in meaning to the word<br> <br> PRIDE",
+      "options": [
+        "Vanity",
+        "Humility",
+        "Shame"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Difficult",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify the Correct Synonyms"
+      ],
+      "resource": "SME Provided Questions",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-6-english-antony-synonyms-15",
+      "sourceRow": 16,
+      "question": "Identify the word that is nearest in meaning to the word<br> <br> SAVAGE",
+      "options": [
+        "Tame",
+        "Civilised",
+        "Wild"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify the Correct Synonyms"
+      ],
+      "resource": "SME Provided Questions",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    }
+  ]
+}

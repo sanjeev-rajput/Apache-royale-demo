@@ -13,6 +13,7 @@ import { fileURLToPath } from 'url';
 import multilingualRoutes from './routes/multilingual.js';
 import agentRoutes from './routes/agent.js';
 import assessmentRoutes from './routes/assessment.js';
+import questionBankRoutes from './routes/questionBank.js';
 
 
 
@@ -43,6 +44,7 @@ app.use('/api/llama', llamaRoutes);
 app.use('/api/pexels', pexelsVideoRoutes);
 // Assessment endpoints must be registered before the general learning route.
 app.use('/api/learning/assessment', assessmentRoutes);
+app.use('/api/learning/question-bank', questionBankRoutes);
 app.use('/api/learning', learningRoutes);
 app.use('/api/chat', chatRoutes);
 //app.use('/api/voice', voiceTranslateRoutes);

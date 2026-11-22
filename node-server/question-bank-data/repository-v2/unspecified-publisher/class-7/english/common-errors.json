@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-22T03:27:30.795Z",
+  "classification": {
+    "class": "Class 7",
+    "subject": "English",
+    "topic": "Common Errors"
+  },
+  "publisher": "unspecified-publisher",
+  "source": {
+    "file": "class7/Final/Eng_Class_7_Assess_QB_23_Common_Errors/Grade 7_Common Errors.xlsx",
+    "sheet": "Templates"
+  },
+  "questionType": "MCQ",
+  "questionCount": 4,
+  "questions": [
+    {
+      "id": "unspecified-publisher-class-7-english-common-errors-11",
+      "sourceRow": 12,
+      "question": "Which of the following sentence means that football is the one sport that Jayant plays with his friends?",
+      "options": [
+        "Jayant only plays football with his friends.",
+        "Only Jayant plays football with his friends.",
+        "Jayant plays football only with his friends.",
+        "Jayant plays only football with his friends."
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Grammatically Correct Sentences"
+      ],
+      "resource": "DG Portal",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-common-errors-12",
+      "sourceRow": 13,
+      "question": "Which of the following sentence means that Mani did nothing else but lay on a sofa?",
+      "options": [
+        "Only Mani lay lazily on the sofa in the living room.",
+        "Mani only lay lazily on the sofa in the living room.",
+        "Mani lay lazily on the only sofa in the living room.",
+        "Mani lay lazily on the sofa in the living room."
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Grammatically Correct Sentences"
+      ],
+      "resource": "DG Portal",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-common-errors-13",
+      "sourceRow": 14,
+      "question": "Identify the sentences that use “like” correctly.",
+      "options": [
+        "I must visit the hospital to see what my sick uncle is like.",
+        "Like most of my friends, I listen to music regularly.",
+        "Because I have never been to Goa, like I don’t know how it is.",
+        "I can, like, select this if you want."
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Grammatically Correct Sentences"
+      ],
+      "resource": "DG Portal",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-common-errors-14",
+      "sourceRow": 15,
+      "question": "Identify the sentences that are correct.",
+      "options": [
+        "Whether it is raining, I will still go to hockey practice.",
+        "We need to decide whether we should leave today or tomorrow.",
+        "This film is not as good like the one I saw last week.",
+        "I am going to the cinema, even if Meena goes or not."
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Grammatically Correct Sentences"
+      ],
+      "resource": "DG Portal",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    }
+  ]
+}

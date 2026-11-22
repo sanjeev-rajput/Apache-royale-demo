@@ -1,0 +1,403 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-22T03:27:30.474Z",
+  "classification": {
+    "class": "Class 7",
+    "subject": "English",
+    "topic": "Adjectives"
+  },
+  "publisher": "unspecified-publisher",
+  "source": {
+    "file": "class7/Final/Eng_Class_7_Assess_QB_06_Adjectives/Eng_Class_7_Assess_QB_06_Adjectives.xlsx",
+    "sheet": "Templates"
+  },
+  "questionType": "MCQ",
+  "questionCount": 15,
+  "questions": [
+    {
+      "id": "unspecified-publisher-class-7-english-adjectives-1",
+      "sourceRow": 2,
+      "question": "Identify the types of adjectives in the sentence given below.<br> A live ass is better than a dead lion.",
+      "options": [
+        "Live- Adjective of Quality, better- Demonstrative Adjective",
+        "Live- Adjective of Quality, dead- Adjective of Quality, better - Adjective of Quality",
+        "Live- Adjective of Quality, better- Adjective of Quality",
+        "Live- Adjective of Quality, better- Emphasizing Adjective"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Adjectives and Their Types"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-adjectives-2",
+      "sourceRow": 3,
+      "question": "Identify the types of adjectives in the sentence given below.<br> What time is it?",
+      "options": [
+        "What - Adjective of Quality, it - Demonstrative Adjective",
+        "What - Interrogative Adjective, it - Demonstrative Adjective",
+        "What -ExclamatoryAdjective, it - Demonstrative Adjective",
+        "What - Interrogative Adjective"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Adjectives and Their Types"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-adjectives-3",
+      "sourceRow": 4,
+      "question": "Identify the types of adjectives in the sentence given below.<br> I saw it with my own eyes.",
+      "options": [
+        "own - Adjective of Quality, it - Demonstrative Adjective",
+        "own - Emphasizing Adjective, it - Demonstrative Adjective",
+        "own - Emphasizing Adjective",
+        "own-Demonstrative Adjective"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Adjectives and Their Types"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-adjectives-4",
+      "sourceRow": 5,
+      "question": "Identify the types of adjectives in the sentence given below.<br> I like the little peddler who has a crooked nose.",
+      "options": [
+        "little - Adjective of Quantity, crooked - Adjective of Quality",
+        "like - Emphasizing Adjective, who - Interrogative Adjective",
+        "little - Emphasizing Adjective, cooked - Adjective of Quality",
+        "who - Interrogative Adjective, crooked - Demonstrative Adjective"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Difficult",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Adjectives and Their Types"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-adjectives-5",
+      "sourceRow": 6,
+      "question": "Identify the types of adjectives in the sentence given below.<br> That is the very thing we want.",
+      "options": [
+        "That - Demonstrative Adjective, very - Emphasizing Adjective",
+        "very - Emphasizing Adjective",
+        "That - Adjective of Quality, thing - Adjective of Quality",
+        "That - Adjective of Quantity, thing - Adjective of Quality"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Adjectives and Their Types"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-adjectives-6",
+      "sourceRow": 7,
+      "question": "Identify the correct form of adjectives. Fill in the blanks using the correct answer.<br> Sind is the ____________ part of Pakistan.",
+      "options": [
+        "most dry",
+        "driest",
+        "dry"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Degrees of Comparison"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-adjectives-7",
+      "sourceRow": 8,
+      "question": "Identify the correct form of adjectives. Fill in the blanks using the correct answer.<br> I think he requires a____________ diet.",
+      "options": [
+        "most nutritious",
+        "more nutritious",
+        "nutritious"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Degrees of Comparison"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-adjectives-8",
+      "sourceRow": 9,
+      "question": "Identify the correct form of adjectives. Fill in the blanks using the correct answer.<br> It was the________________ moment of his life.",
+      "options": [
+        "proudest",
+        "proud",
+        "most proud"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Difficult",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Degrees of Comparison"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-adjectives-9",
+      "sourceRow": 10,
+      "question": "Identify the correct form of adjectives. Fill in the blanks using the correct answer.<br> That is the _______________ price I can take.",
+      "options": [
+        "less",
+        "least",
+        "lesser"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Degrees of Comparison"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-adjectives-10",
+      "sourceRow": 11,
+      "question": "Identify the correct form of adjectives. Fill in the blanks using the correct answer.<br> Honour is _______________ to him than life.",
+      "options": [
+        "dearest",
+        "dearer",
+        "dear"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Degrees of Comparison"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-adjectives-17",
+      "sourceRow": 18,
+      "question": "Identify the types of the underlined adjectives in the sentence given below.<br> We are sisters. Our hobbies are painting and music.",
+      "options": [
+        "Adjectives of Quality",
+        "Possessive Adjectives",
+        "Adjectives of Quantity",
+        "Adjective of Number"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Adjectives and Their Types"
+      ],
+      "resource": "SME Supplied Questions",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-adjectives-18",
+      "sourceRow": 19,
+      "question": "Identify the types of the underlined adjectives in the sentence given below.<br> These are my friends. Their names are Tanya and Payal.",
+      "options": [
+        "Adjectives of Quality",
+        "Possessive Adjectives",
+        "Adjectives of Quantity",
+        "Adjective of Number"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Adjectives and Their Types"
+      ],
+      "resource": "SME Supplied Questions",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-adjectives-19",
+      "sourceRow": 20,
+      "question": "Identify the types of the underlined adjectives in the sentence given below.<br> I will come to your house in the evening.",
+      "options": [
+        "Adjectives of Quality",
+        "Possessive Adjectives",
+        "Adjectives of Quantity",
+        "Adjective of Number"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Adjectives and Their Types"
+      ],
+      "resource": "SME Supplied Questions",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-adjectives-20",
+      "sourceRow": 21,
+      "question": "Identify the types of the underlined adjectives in the sentence given below.<br> Mother is taking the sick dog to the vet.",
+      "options": [
+        "Adjectives of Quality",
+        "Possessive Adjectives",
+        "Adjectives of Quantity",
+        "Adjective of Number"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Adjectives and Their Types"
+      ],
+      "resource": "SME Supplied Questions",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-english-adjectives-21",
+      "sourceRow": 22,
+      "question": "Identify the types of the underlined adjectives in the sentence given below.<br> Rawat’s have new neighbours. Their new neighbours are very cordial.",
+      "options": [
+        "Adjectives of Quality",
+        "Possessive Adjectives",
+        "Adjectives of Quantity",
+        "Adjective of Number"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Adjectives and Their Types"
+      ],
+      "resource": "SME Supplied Questions",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    }
+  ]
+}

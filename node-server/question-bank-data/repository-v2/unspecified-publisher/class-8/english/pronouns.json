@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-22T03:27:30.887Z",
+  "classification": {
+    "class": "Class 8",
+    "subject": "English",
+    "topic": "Pronouns"
+  },
+  "publisher": "unspecified-publisher",
+  "source": {
+    "file": "Class8/Final/English_Class 8_Assess_QB_05_Pronouns/Eng_Class 8_Assess_QB_05_Pronouns.xlsx",
+    "sheet": "Templates"
+  },
+  "questionType": "MCQ",
+  "questionCount": 6,
+  "questions": [
+    {
+      "id": "unspecified-publisher-class-8-english-pronouns-11",
+      "sourceRow": 12,
+      "question": "Identify types of pronouns in the sentence given below.<br> I myself head the committee.",
+      "options": [
+        "Personal Pronoun",
+        "Emphatic Pronoun",
+        "Reflexive Pronoun",
+        "Distributive Pronoun"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Types of Pronouns"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-english-pronouns-12",
+      "sourceRow": 13,
+      "question": "Identify types of pronouns inthe sentence given below.<br> Acquit yourselves like men",
+      "options": [
+        "Personal Pronoun",
+        "Emphatic Pronoun",
+        "Reflexive Pronoun",
+        "Distributive Pronoun"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Types of Pronouns"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-english-pronouns-13",
+      "sourceRow": 14,
+      "question": "Identify types of pronouns inthe sentence given below.<br> All such people ought to be avoided.",
+      "options": [
+        "Demonstrative Pronoun",
+        "Emphatic Pronoun",
+        "Indefinite Pronoun",
+        "Distributive Pronoun"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Types of Pronouns"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-english-pronouns-14",
+      "sourceRow": 15,
+      "question": "Identify types of pronouns inthe sentence given below.<br> Few escaped unhurt.",
+      "options": [
+        "Personal Pronoun",
+        "Demonstrative Pronoun",
+        "Reflexive Pronoun",
+        "Indefinite Pronoun"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Types of Pronouns"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-english-pronouns-15",
+      "sourceRow": 16,
+      "question": "Identify types of pronouns inthe sentence given below.<br> Rama is the boy who did it.",
+      "options": [
+        "Personal Pronoun",
+        "Demonstrative Pronoun",
+        "Reflexive Pronoun",
+        "Relative Pronoun"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Types of Pronouns"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-english-pronouns-16",
+      "sourceRow": 17,
+      "question": "Identify types of pronouns inthe sentence given below.<br> I am young.",
+      "options": [
+        "Personal Pronoun",
+        "Demonstrative Pronoun",
+        "Reflexive Pronoun",
+        "Indefinite Pronoun"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identify Types of Pronouns"
+      ],
+      "resource": "Wren and Martin",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    }
+  ]
+}
