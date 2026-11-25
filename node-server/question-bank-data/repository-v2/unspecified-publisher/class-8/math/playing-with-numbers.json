@@ -1,0 +1,538 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-24T11:45:03.466Z",
+  "classification": {
+    "class": "Class 8",
+    "subject": "Math",
+    "topic": "Playing with Numbers"
+  },
+  "publisher": "unspecified-publisher",
+  "source": {
+    "file": "Class8/Final/Math_Class8_Assess_QB_16_Playing_with_Numbers/Math_Class 8_Assess_QB_16_Playing_with_Numbers.xlsx",
+    "sheet": "filename"
+  },
+  "questionType": "MCQ",
+  "questionCount": 20,
+  "questions": [
+    {
+      "id": "unspecified-publisher-class-8-math-playing-with-numbers-13",
+      "sourceRow": 14,
+      "question": "What is the general form of the number 49125?",
+      "options": [
+        "10000 × 4 + 1000 × 9 + 100 × 2 + 10 × 1 + 5",
+        "10000 × 9 + 1000 × 4 + 100 × 1 + 10 × 2 + 5",
+        "10000 × 9 + 1000 × 4 + 100 × 5 + 10 × 2 + 1",
+        "10000 × 4 + 1000 × 9 + 100 × 1 + 10 × 2 + 5"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Numbers in General Form"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-playing-with-numbers-14",
+      "sourceRow": 15,
+      "question": "Which of the following numbers always divide the difference between a two digit number and the number formed by reversing it digits?",
+      "options": [
+        "5",
+        "7",
+        "9",
+        "11"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Tests of Divisibility"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": "HOTS"
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-playing-with-numbers-15",
+      "sourceRow": 16,
+      "question": "What is the sum of the digits represented by P and Q if the sum of QPP and 926 is 1Q0Q and each letter represents one digit only?",
+      "options": [
+        "0",
+        "3",
+        "7",
+        "10"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Games and Puzzles with Numbers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-playing-with-numbers-16",
+      "sourceRow": 17,
+      "question": "On subtracting a three digit number Z4X from another three digit number XZ3, Akriti gets 1Y5. What are the respective values of X, Y and Z?",
+      "options": [
+        "8, 2 and 7",
+        "2, 8 and 7",
+        "8, 7 and 2",
+        "7, 8 and 2"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Games and Puzzles with Numbers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-playing-with-numbers-17",
+      "sourceRow": 18,
+      "question": "If a six digit number 87P64Q is exactly divisible by 9 and 10, then what is the value of the expression 3P – 2Q?",
+      "options": [
+        "0",
+        "2",
+        "4",
+        "6"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Tests of Divisibility"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": "HOTS"
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-playing-with-numbers-18",
+      "sourceRow": 19,
+      "question": "If a six digit number 4123AB is exactly divisible by 2, 5 and 9, then what is the value of the expression (A2 + 2A – B)?",
+      "options": [
+        "80",
+        "64",
+        "16",
+        "10"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Tests of Divisibility"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": "HOTS"
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-playing-with-numbers-19",
+      "sourceRow": 20,
+      "question": "The general form of which number is 10000 × 6 + 1000 × 5 + 10 × 4 + 9?",
+      "options": [
+        "60549",
+        "65409",
+        "65049",
+        "60459"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Numbers in General Form"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-playing-with-numbers-20",
+      "sourceRow": 21,
+      "question": "What are the respective values of 3x and 2y for which the number 37x73y if divisible by 15, where y > x?",
+      "options": [
+        "3 and 5",
+        "6 and 10",
+        "15 and 6",
+        "5 and 3"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Tests of Divisibility"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-playing-with-numbers-21",
+      "sourceRow": 22,
+      "question": "What is the value of x – y if 879x1 and 567y8 is divisible by 3 and 6 respectively?",
+      "options": [
+        "–1",
+        "1",
+        "2",
+        "3"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Tests of Divisibility"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-playing-with-numbers-22",
+      "sourceRow": 23,
+      "question": "Which of the following numbers is divisible by 15?",
+      "options": [
+        "8245",
+        "9559",
+        "9555",
+        "9755"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Tests of Divisibility"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-playing-with-numbers-23",
+      "sourceRow": 24,
+      "question": "Which of the following numbers is not divisible by 3?",
+      "options": [
+        "42",
+        "309",
+        "108",
+        "719"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Tests of Divisibility"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-playing-with-numbers-24",
+      "sourceRow": 25,
+      "question": "Which of the following numbers is divisible by 9?",
+      "options": [
+        "38",
+        "157",
+        "514",
+        "936"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Tests of Divisibility"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-playing-with-numbers-25",
+      "sourceRow": 26,
+      "question": "Two three-digit numbers 982 and 4p3 when added give a four digit number 13q5, which is divisible by 9. What is the sum of p and 2q?",
+      "options": [
+        "11",
+        "15",
+        "19",
+        "17"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Tests of Divisibility"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-playing-with-numbers-26",
+      "sourceRow": 27,
+      "question": "What are the values of the letters A, B, C and D respectively if we obtain 6,666 on subtracting 5C7D from 1A3B5?",
+      "options": [
+        "2, 4, 9 and 6",
+        "2, 4, 6 and 9",
+        "9, 4, 6 and 2",
+        "4, 2, 6 and 9"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Games and Puzzles with Numbers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": "HOTS"
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-playing-with-numbers-27",
+      "sourceRow": 28,
+      "question": "What should come in place of a in the number series 32, 31, 60, 177, 704, 3515, a?",
+      "options": [
+        "21090",
+        "21054",
+        "21084",
+        "21000"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Games and Puzzles with Numbers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": "HOTS"
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-playing-with-numbers-28",
+      "sourceRow": 29,
+      "question": "In a row of boys, P sits to the left of Q and is at the fifteenth position from the left while the position of Q is fourth from right. There are three boys between P and Q. If R sits immediately next o the left of P, what is the position of R from the right?",
+      "options": [
+        "9th",
+        "10th",
+        "11th",
+        "12th"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Games and Puzzles with Numbers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": "HOTS"
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-playing-with-numbers-29",
+      "sourceRow": 30,
+      "question": "What is the value of x in the number series 2, 6, 30, 210, 1890, x?",
+      "options": [
+        "20790",
+        "20970",
+        "24570",
+        "24750"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Games and Puzzles with Numbers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": "HOTS"
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-playing-with-numbers-30",
+      "sourceRow": 31,
+      "question": "What is the generalized form of 34078?",
+      "options": [
+        "10000 × 3 + 100 × 4 + 10 × 7 + 8",
+        "10000 × 3 + 1000 × 4 + 100 × 7 + 8",
+        "10000 × 3 + 1000 × 4 + 10 × 7 + 8",
+        "10000 × 3 + 1000 × 7 + 10 × 4 + 8"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Numbers in General Form"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-playing-with-numbers-31",
+      "sourceRow": 32,
+      "question": "Maths_8_Playing with Numbers_q31.jpg",
+      "options": [
+        "5",
+        "8",
+        "15",
+        "56"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Games and Puzzles with Numbers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-playing-with-numbers-32",
+      "sourceRow": 33,
+      "question": "Maths_8_Playing with Numbers_q32.jpg",
+      "options": [
+        "218",
+        "220",
+        "222",
+        "224"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Games and Puzzles with Numbers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    }
+  ]
+}

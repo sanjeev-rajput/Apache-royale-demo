@@ -1,0 +1,1058 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-24T11:45:02.640Z",
+  "classification": {
+    "class": "Class 7",
+    "subject": "Math",
+    "topic": "Fractions and Decimals"
+  },
+  "publisher": "unspecified-publisher",
+  "source": {
+    "file": "Class7/Final/Math_Class 7_Assess_QB_02_Fractions_and_Decimals/Int_Math_Class 7_Assess_QB_02_Fractions_and_Decimals.xlsx",
+    "sheet": "filename"
+  },
+  "questionType": "MCQ",
+  "questionCount": 40,
+  "questions": [
+    {
+      "id": "unspecified-publisher-class-7-math-fractions-and-decimals-15",
+      "sourceRow": 16,
+      "question": "Maths_7_Fractions_and_Decimals_q15.jpg",
+      "options": [
+        "Maths_7_Fractions_and_Decimals_q15_o1.jpg",
+        "Maths_7_Fractions_and_Decimals_q15_o2.jpg",
+        "Maths_7_Fractions_and_Decimals_q15_o3.jpg",
+        "Maths_7_Fractions_and_Decimals_q15_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Revision of Fractions and Decimals"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-fractions-and-decimals-16",
+      "sourceRow": 17,
+      "question": "Which of the following products is not equal to 1?",
+      "options": [
+        "Maths_7_Fractions_and_Decimals_q16_o1.jpg",
+        "Maths_7_Fractions_and_Decimals_q16_o2.jpg",
+        "Maths_7_Fractions_and_Decimals_q16_o3.jpg",
+        "Maths_7_Fractions_and_Decimals_q16_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Multiplication of Fractions"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-fractions-and-decimals-17",
+      "sourceRow": 18,
+      "question": "Maths_7_Fractions_and_Decimals_q17.jpg",
+      "options": [
+        "Maths_7_Fractions_and_Decimals_q17_o1.jpg",
+        "Maths_7_Fractions_and_Decimals_q17_o2.jpg",
+        "Maths_7_Fractions_and_Decimals_q17_o3.jpg",
+        "Maths_7_Fractions_and_Decimals_q17_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Multiplication of Fractions"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-fractions-and-decimals-18",
+      "sourceRow": 19,
+      "question": "Maths_7_Fractions_and_Decimals_q18.jpg",
+      "options": [
+        "Maths_7_Fractions_and_Decimals_q18_o1.jpg",
+        "Maths_7_Fractions_and_Decimals_q18_o2.jpg",
+        "Maths_7_Fractions_and_Decimals_q18_o3.jpg",
+        "Maths_7_Fractions_and_Decimals_q18_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Multiplication of Fractions"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-fractions-and-decimals-19",
+      "sourceRow": 20,
+      "question": "The height of a bamboo plant is 2.40 m. If it grows 1.2 times, then what is its new height?",
+      "options": [
+        "3.60 m",
+        "2.00 m",
+        "3.42 m",
+        "2.88 m"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Multiplication of Decimal Numbers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-fractions-and-decimals-20",
+      "sourceRow": 21,
+      "question": "Maths_7_Fractions_and_Decimals_q20.jpg",
+      "options": [
+        "Maths_7_Fractions_and_Decimals_q20_o1.jpg",
+        "Maths_7_Fractions_and_Decimals_q20_o2.jpg",
+        "Maths_7_Fractions_and_Decimals_q20_o3.jpg",
+        "Maths_7_Fractions_and_Decimals_q20_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Multiplication of Fractions"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-fractions-and-decimals-21",
+      "sourceRow": 22,
+      "question": "By how much, in metres, is 3489 cm is greater than 6124 mm?",
+      "options": [
+        "2.8766 m",
+        "28.766 m",
+        "34.276 m",
+        "3.4276 m"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Division of Decimal Numbers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-fractions-and-decimals-22",
+      "sourceRow": 23,
+      "question": "One tetra-pack of juice contains 450 millilitres of fruit juice. How many litres of fruit juice is there in 9 tetra-packs?",
+      "options": [
+        "40.500 litres",
+        "4.050 litres",
+        "0.405 litres",
+        "405.00 litres"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Division of Decimal Numbers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-fractions-and-decimals-23",
+      "sourceRow": 24,
+      "question": "The product of two decimals is 425.25. If one of them is 3.5, then what is the other number?",
+      "options": [
+        "12.15",
+        "1.215",
+        "0.1215",
+        "121.50"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Division of Decimal Numbers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-fractions-and-decimals-24",
+      "sourceRow": 25,
+      "question": "A book case is 2.38 m tall and the height of each shelf is 34 cm. How many shelves are there?",
+      "options": [
+        "17",
+        "70",
+        "8",
+        "7"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Division of Decimal Numbers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-fractions-and-decimals-25",
+      "sourceRow": 26,
+      "question": "The product of two decimals is 175.50. If one of them is 22.5, then what is the other number?",
+      "options": [
+        "0.078",
+        "0.78",
+        "7.8",
+        "0.078"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Division of Decimal Numbers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-fractions-and-decimals-26",
+      "sourceRow": 27,
+      "question": "Maths_7_Fractions_and_Decimals_q26.jpg",
+      "options": [
+        "10 hours",
+        "20 hours",
+        "15 hours",
+        "8 hours"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Multiplication of Fractions"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-fractions-and-decimals-27",
+      "sourceRow": 28,
+      "question": "Maths_7_Fractions_and_Decimals_q27.jpg",
+      "options": [
+        "300",
+        "375",
+        "325",
+        "400"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Multiplication of Fractions"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-fractions-and-decimals-28",
+      "sourceRow": 29,
+      "question": "Maths_7_Fractions_and_Decimals_q28.jpg",
+      "options": [
+        "15 litres",
+        "20 litres",
+        "5 litres",
+        "10 litres"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Multiplication of Fractions"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-fractions-and-decimals-29",
+      "sourceRow": 30,
+      "question": "Maths_7_Fractions_and_Decimals_q29.jpg",
+      "options": [
+        "Maths_7_Fractions_and_Decimals_q29_o1.jpg",
+        "Maths_7_Fractions_and_Decimals_q29_o2.jpg",
+        "Maths_7_Fractions_and_Decimals_q29_o3.jpg",
+        "Maths_7_Fractions_and_Decimals_q29_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Multiplication of Fractions"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-fractions-and-decimals-30",
+      "sourceRow": 31,
+      "question": "What fraction is 35 years of 1 century?",
+      "options": [
+        "Maths_7_Fractions_and_Decimals_q30_o1.jpg",
+        "Maths_7_Fractions_and_Decimals_q30_o2.jpg",
+        "Maths_7_Fractions_and_Decimals_q30_o3.jpg",
+        "Maths_7_Fractions_and_Decimals_q30_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Division of Fractions"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-fractions-and-decimals-31",
+      "sourceRow": 32,
+      "question": "Maths_7_Fractions_and_Decimals_q31.jpg",
+      "options": [
+        "Maths_7_Fractions_and_Decimals_q31_o1.jpg",
+        "Maths_7_Fractions_and_Decimals_q31_o2.jpg",
+        "Maths_7_Fractions_and_Decimals_q31_o3.jpg",
+        "Maths_7_Fractions_and_Decimals_q31_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Division of Fractions"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-fractions-and-decimals-32",
+      "sourceRow": 33,
+      "question": "How many fourths are there in 3?",
+      "options": [
+        "12",
+        "3",
+        "4",
+        "0"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Division of Fractions"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-fractions-and-decimals-33",
+      "sourceRow": 34,
+      "question": "Maths_7_Fractions_and_Decimals_q33.jpg",
+      "options": [
+        "13",
+        "104",
+        "26",
+        "13"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Division of Fractions"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-fractions-and-decimals-34",
+      "sourceRow": 35,
+      "question": "Maths_7_Fractions_and_Decimals_q34.jpg",
+      "options": [
+        "Maths_7_Fractions_and_Decimals_q34_o1.jpg",
+        "Maths_7_Fractions_and_Decimals_q34_o2.jpg",
+        "Maths_7_Fractions_and_Decimals_q34_o3.jpg",
+        "Maths_7_Fractions_and_Decimals_q34_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Revision of Fractions and Decimals"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-fractions-and-decimals-35",
+      "sourceRow": 36,
+      "question": "Maths_7_Fractions_and_Decimals_q35.jpg",
+      "options": [
+        "Maths_7_Fractions_and_Decimals_q35_o1.jpg",
+        "Maths_7_Fractions_and_Decimals_q35_o2.jpg",
+        "Maths_7_Fractions_and_Decimals_q35_o3.jpg",
+        "Maths_7_Fractions_and_Decimals_q35_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Division of Fractions"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-fractions-and-decimals-36",
+      "sourceRow": 37,
+      "question": "Maths_7_Fractions_and_Decimals_q36.jpg",
+      "options": [
+        "2.05",
+        "4.1",
+        "4",
+        "5.1"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Revision of Fractions and Decimals"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-fractions-and-decimals-37",
+      "sourceRow": 38,
+      "question": "0.005 × 0.05x = 0.000025. The value of x is",
+      "options": [
+        "0.1",
+        "0.01",
+        "0.001",
+        "1"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Multiplication of Decimal Numbers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-fractions-and-decimals-38",
+      "sourceRow": 39,
+      "question": "The product of 1.05 × 0.002 × 0.00 × 2.7 × 0.03 is",
+      "options": [
+        "1",
+        "0.001701",
+        "0.0001701",
+        "0"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Multiplication of Decimal Numbers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-fractions-and-decimals-39",
+      "sourceRow": 40,
+      "question": "0.005 ÷ 0.5 is equal to",
+      "options": [
+        "0.001",
+        "0.01",
+        "1",
+        "10"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Division of Decimal Numbers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-fractions-and-decimals-40",
+      "sourceRow": 41,
+      "question": "9.2005 × 1000 is equal to",
+      "options": [
+        "92.005",
+        "9200.5",
+        "920.05",
+        "0.92005"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Multiplication of Decimal Numbers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-fractions-and-decimals-41",
+      "sourceRow": 42,
+      "question": "Solve the equation x – 5.89 = 2.3.",
+      "options": [
+        "x = 8.19",
+        "x = 3.59",
+        "x = –8.19",
+        "x = –3.59"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Revision of Fractions and Decimals"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-fractions-and-decimals-42",
+      "sourceRow": 43,
+      "question": "The product of two decimals is 46.2775. If one of them is 5.35, then the second one is",
+      "options": [
+        "2.65",
+        "8.65",
+        "9.05",
+        "8.05"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Division of Decimal Numbers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-fractions-and-decimals-43",
+      "sourceRow": 44,
+      "question": "Jiya jogged 4.8 km each day for 21 days last month. How many kilometres did she jog last month?",
+      "options": [
+        "100.8 km",
+        "94.5 km",
+        "100 km",
+        "96 km"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Multiplication of Decimal Numbers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-fractions-and-decimals-44",
+      "sourceRow": 45,
+      "question": "Maths_7_Fractions_and_Decimals_q44.jpg",
+      "options": [
+        "Maths_7_Fractions_and_Decimals_q44_o1.jpg",
+        "Maths_7_Fractions_and_Decimals_q44_o2.jpg",
+        "Maths_7_Fractions_and_Decimals_q44_o3.jpg",
+        "Maths_7_Fractions_and_Decimals_q44_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Multiplication of Decimal Numbers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-fractions-and-decimals-45",
+      "sourceRow": 46,
+      "question": "Maths_7_Fractions_and_Decimals_q45.jpg",
+      "options": [
+        "5",
+        "2",
+        "1",
+        "4"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Revision of Fractions and Decimals"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-fractions-and-decimals-46",
+      "sourceRow": 47,
+      "question": "Maths_7_Fractions_and_Decimals_q46.jpg",
+      "options": [
+        "Maths_7_Fractions_and_Decimals_q46_o1.jpg",
+        "Maths_7_Fractions_and_Decimals_q46_o2.jpg",
+        "Maths_7_Fractions_and_Decimals_q46_o3.jpg",
+        "Maths_7_Fractions_and_Decimals_q46_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Revision of Fractions and Decimals"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-fractions-and-decimals-47",
+      "sourceRow": 48,
+      "question": "Which of the following products is not equal to 1?",
+      "options": [
+        "Maths_7_Fractions_and_Decimals_q47_o1.jpg",
+        "Maths_7_Fractions_and_Decimals_q47_o2.jpg",
+        "Maths_7_Fractions_and_Decimals_q47_o3.jpg",
+        "Maths_7_Fractions_and_Decimals_q47_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Multiplication of Fractions"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-fractions-and-decimals-48",
+      "sourceRow": 49,
+      "question": "The product of two mixed numbers is always:",
+      "options": [
+        "Less than 1",
+        "Equal to 1",
+        "Greater than 1",
+        "None of these"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Multiplication of Fractions"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-fractions-and-decimals-49",
+      "sourceRow": 50,
+      "question": "Which of the following are not a pair of reciprocals?",
+      "options": [
+        "Maths_7_Fractions_and_Decimals_q49_o1.jpg",
+        "Maths_7_Fractions_and_Decimals_q49_o2.jpg",
+        "Maths_7_Fractions_and_Decimals_q49_o3.jpg",
+        "Maths_7_Fractions_and_Decimals_q49_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Revision of Fractions and Decimals"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-fractions-and-decimals-50",
+      "sourceRow": 51,
+      "question": "Maths_7_Fractions_and_Decimals_q50.jpg",
+      "options": [
+        "Maths_7_Fractions_and_Decimals_q50_o1.jpg",
+        "Maths_7_Fractions_and_Decimals_q50_o2.jpg",
+        "Maths_7_Fractions_and_Decimals_q50_o3.jpg",
+        "Maths_7_Fractions_and_Decimals_q50_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Division of Fractions"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-fractions-and-decimals-51",
+      "sourceRow": 52,
+      "question": "Maths_7_Fractions_and_Decimals_q51.jpg",
+      "options": [
+        "Maths_7_Fractions_and_Decimals_q51_o1.jpg",
+        "Maths_7_Fractions_and_Decimals_q51_o2.jpg",
+        "Maths_7_Fractions_and_Decimals_q51_o3.jpg",
+        "Maths_7_Fractions_and_Decimals_q51_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Multiplication of Fractions"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-fractions-and-decimals-52",
+      "sourceRow": 53,
+      "question": "Maths_7_Fractions_and_Decimals_q52.jpg",
+      "options": [
+        "Maths_7_Fractions_and_Decimals_q52_o1.jpg",
+        "Maths_7_Fractions_and_Decimals_q52_o2.jpg",
+        "Maths_7_Fractions_and_Decimals_q52_o3.jpg",
+        "Maths_7_Fractions_and_Decimals_q52_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Revision of Fractions and Decimals"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-fractions-and-decimals-53",
+      "sourceRow": 54,
+      "question": "Maths_7_Fractions_and_Decimals_q53.jpg",
+      "options": [
+        "128 cm",
+        "168 cm",
+        "144 cm",
+        "96 cm"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Multiplication of Fractions"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-fractions-and-decimals-54",
+      "sourceRow": 55,
+      "question": "Maths_7_Fractions_and_Decimals_q54.jpg",
+      "options": [
+        "14",
+        "16",
+        "18",
+        "20"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Division of Fractions"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    }
+  ]
+}

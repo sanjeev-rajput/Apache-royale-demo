@@ -1,0 +1,1084 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-24T11:45:02.855Z",
+  "classification": {
+    "class": "Class 7",
+    "subject": "Math",
+    "topic": "Comparing Quantities"
+  },
+  "publisher": "unspecified-publisher",
+  "source": {
+    "file": "Class7/Final/Math_Class 7_Assess_QB_08_Comparing_Quantities/Int_Math_Class 7_Assess_QB_08_Comparing_Quantities.xlsx",
+    "sheet": "filename"
+  },
+  "questionType": "MCQ",
+  "questionCount": 38,
+  "questions": [
+    {
+      "id": "unspecified-publisher-class-7-math-comparing-quantities-20",
+      "sourceRow": 21,
+      "question": "Which of the following ratios is the smallest?",
+      "options": [
+        "5 : 8",
+        "5 : 12",
+        "1 : 4",
+        "2 : 3"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Equivalent Ratio"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-comparing-quantities-21",
+      "sourceRow": 22,
+      "question": "Maths_7_Comparing_Quantities_q21.jpg",
+      "options": [
+        "5%",
+        "10%",
+        "15%",
+        "20%"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Conversion to Percentage"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-comparing-quantities-22",
+      "sourceRow": 23,
+      "question": "Maths_7_Comparing_Quantities_q22.jpg",
+      "options": [
+        "0.1",
+        "2.5%",
+        "25%",
+        "20%"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Conversion to Percentage"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-comparing-quantities-23",
+      "sourceRow": 24,
+      "question": "If 3X = 5Y and 4Y = 6Z, then what is the ratio between X and Z?",
+      "options": [
+        "5 : 2",
+        "3 : 5",
+        "2 : 5",
+        "4 : 5"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Equivalent Ratio"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-comparing-quantities-24",
+      "sourceRow": 25,
+      "question": "The ratio between two numbers is 3 : 5 and their sum is 40. The larger of two numbers is",
+      "options": [
+        "15",
+        "20",
+        "25",
+        "40"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Equivalent Ratio"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-comparing-quantities-25",
+      "sourceRow": 26,
+      "question": "Which ratio is different from the others?",
+      "options": [
+        "Maths_7_Comparing_Quantities_q25_o1.jpg",
+        "Maths_7_Comparing_Quantities_q25_o2.jpg",
+        "Maths_7_Comparing_Quantities_q25_o3.jpg",
+        "Maths_7_Comparing_Quantities_q25_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Equivalent Ratio"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-comparing-quantities-26",
+      "sourceRow": 27,
+      "question": "If a : b = 3 : 7, find the value of (5a + b) : (4a + 5b).",
+      "options": [
+        "15 : 44",
+        "22 : 35",
+        "15 : 49",
+        "22 : 47"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Equivalent Ratio"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-comparing-quantities-27",
+      "sourceRow": 28,
+      "question": "Maths_7_Comparing_Quantities_q27.jpg",
+      "options": [
+        "Maths_7_Comparing_Quantities_q27_o1.jpg",
+        "Maths_7_Comparing_Quantities_q27_o2.jpg",
+        "Maths_7_Comparing_Quantities_q27_o3.jpg",
+        "Maths_7_Comparing_Quantities_q27_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Word Problems on Ratio",
+        "Percentages",
+        "Simple Interest",
+        "Profits-Loss"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-comparing-quantities-28",
+      "sourceRow": 29,
+      "question": "A sum of ` 53 is divided among A, B, C in such a way that A gets ` 7 more than what B gets and B gets ` 8 more than what C gets. The ratio of their shares is",
+      "options": [
+        "16 : 9 : 18",
+        "25 : 18 : 10",
+        "18 : 25 : 10",
+        "15 : 8 : 30"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Word Problems on Ratio",
+        "Percentages",
+        "Simple Interest",
+        "Profits-Loss"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-comparing-quantities-29",
+      "sourceRow": 30,
+      "question": "In a proportion, the extremes are 11 and 35. If one of the mean is 7, then the other mean is",
+      "options": [
+        "55",
+        "45",
+        "11",
+        "35"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Equivalent Ratio"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-comparing-quantities-30",
+      "sourceRow": 31,
+      "question": "In a school there are 650 students. The ratio of the boys to that of the girls is 9 : 4. How many more girls should join the school so that the ratio becomes 3 : 2?",
+      "options": [
+        "25",
+        "60",
+        "50",
+        "100"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Word Problems on Ratio",
+        "Percentages",
+        "Simple Interest",
+        "Profits-Loss"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-comparing-quantities-31",
+      "sourceRow": 32,
+      "question": "There are 56 teachers in a school. Out of them, 42 are lady teachers and the rest are male teachers. The ratio of lady teachers to male teachers is",
+      "options": [
+        "2 : 1",
+        "1 : 2",
+        "1 : 3",
+        "3 : 1"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Word Problems on Ratio",
+        "Percentages",
+        "Simple Interest",
+        "Profits-Loss"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-comparing-quantities-32",
+      "sourceRow": 33,
+      "question": "In the word MARATHON the ratio of consonants to vowels is",
+      "options": [
+        "5 : 3",
+        "3 : 5",
+        "5 : 8",
+        "3 : 8"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Word Problems on Ratio",
+        "Percentages",
+        "Simple Interest",
+        "Profits-Loss"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-comparing-quantities-33",
+      "sourceRow": 34,
+      "question": "The class library has 7 English story books, 11 Hindi story books, 15 art books, 10 encyclopaedias, and 5 health books. What is the ratio of story books to all books in simplest form?",
+      "options": [
+        "7 : 48",
+        "11 : 48",
+        "3 : 8",
+        "3 : 48"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Word Problems on Ratio",
+        "Percentages",
+        "Simple Interest",
+        "Profits-Loss"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-comparing-quantities-34",
+      "sourceRow": 35,
+      "question": "Per cent means",
+      "options": [
+        "per thousand",
+        "per hundred",
+        "per ten",
+        "per 1"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Concept of Percentage"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-comparing-quantities-35",
+      "sourceRow": 36,
+      "question": "0.25 as per cent is equal to",
+      "options": [
+        "25%",
+        "2.5%",
+        "0.25%",
+        "0.025%"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Concept of Percentage"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-comparing-quantities-36",
+      "sourceRow": 37,
+      "question": "15% of 300 apples were bad. How many apples were bad?",
+      "options": [
+        "50 apples",
+        "55 apples",
+        "45 apples",
+        "25 apples"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Word Problems on Ratio",
+        "Percentages",
+        "Simple Interest",
+        "Profits-Loss"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-comparing-quantities-37",
+      "sourceRow": 38,
+      "question": "The equivalent fraction of 40% in simplest form is",
+      "options": [
+        "Maths_7_Comparing_Quantities_q37_o1.jpg",
+        "Maths_7_Comparing_Quantities_q37_o2.jpg",
+        "Maths_7_Comparing_Quantities_q37_o3.jpg",
+        "Maths_7_Comparing_Quantities_q37_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Conversion to Percentage"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-comparing-quantities-38",
+      "sourceRow": 39,
+      "question": "Maths_7_Comparing_Quantities_q38.jpg",
+      "options": [
+        "40%",
+        "10%",
+        "50%",
+        "90%"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Word Problems on Ratio",
+        "Percentages",
+        "Simple Interest",
+        "Profits-Loss"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-comparing-quantities-39",
+      "sourceRow": 40,
+      "question": "Soniya correctly answered 76% of the questions on her science test. What fraction of the test questions did she answer correctly? Write your answer in simplest form.",
+      "options": [
+        "Maths_7_Comparing_Quantities_q39_o1.jpg",
+        "Maths_7_Comparing_Quantities_q39_o2.jpg",
+        "Maths_7_Comparing_Quantities_q39_o3.jpg",
+        "Maths_7_Comparing_Quantities_q39_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Conversion to Percentage"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-comparing-quantities-40",
+      "sourceRow": 41,
+      "question": "A shopkeeper ordered 300 T-shirts to sell at the school fair. Out of those T-shirts, 40% are white, 25% are black, 20% are blue, 10% are green, and 5% are red. How many black T-shirts did the shopkeeper order? Also, how many red T-shirts did he order?",
+      "options": [
+        "75; 15",
+        "15; 75",
+        "120; 15",
+        "60; 15"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Word Problems on Ratio",
+        "Percentages",
+        "Simple Interest",
+        "Profits-Loss"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-comparing-quantities-41",
+      "sourceRow": 42,
+      "question": "In a survey of 800 teenagers, 586 said they earned some of their own money. What per cent of the teenagers surveyed did not earn money?",
+      "options": [
+        "0.25",
+        "0.2675",
+        "0.3",
+        "None of these"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Word Problems on Ratio",
+        "Percentages",
+        "Simple Interest",
+        "Profits-Loss"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-comparing-quantities-42",
+      "sourceRow": 43,
+      "question": "A transaction is said to be in a profit if:",
+      "options": [
+        "C.P. > S.P.",
+        "C.P. < S.P.",
+        "C.P. = S. P.",
+        "None of these"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Word Problems on Ratio",
+        "Percentages",
+        "Simple Interest",
+        "Profits-Loss"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-comparing-quantities-43",
+      "sourceRow": 44,
+      "question": "Maths_7_Comparing_Quantities_q43.jpg",
+      "options": [
+        "C.P. – S.P.",
+        "C.P. + S.P.",
+        "S.P. – C.P.",
+        "None of these"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Word Problems on Ratio",
+        "Percentages",
+        "Simple Interest",
+        "Profits-Loss"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-comparing-quantities-44",
+      "sourceRow": 45,
+      "question": "Maths_7_Comparing_Quantities_q44.jpg",
+      "options": [
+        "Maths_7_Comparing_Quantities_q44_o1.jpg",
+        "Maths_7_Comparing_Quantities_q44_o2.jpg",
+        "Maths_7_Comparing_Quantities_q44_o3.jpg",
+        "Maths_7_Comparing_Quantities_q44_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Word Problems on Ratio",
+        "Percentages",
+        "Simple Interest",
+        "Profits-Loss"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-comparing-quantities-45",
+      "sourceRow": 46,
+      "question": "The cost price of 20 articles is the same as the selling price of x articles. If the profit is 25%, then the value of x is:",
+      "options": [
+        "15",
+        "16",
+        "18",
+        "25"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Word Problems on Ratio",
+        "Percentages",
+        "Simple Interest",
+        "Profits-Loss"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-comparing-quantities-46",
+      "sourceRow": 47,
+      "question": "Maths_7_Comparing_Quantities_q46.jpg",
+      "options": [
+        "Maths_7_Comparing_Quantities_q46_o1.jpg",
+        "Maths_7_Comparing_Quantities_q46_o2.jpg",
+        "Maths_7_Comparing_Quantities_q46_o3.jpg",
+        "Maths_7_Comparing_Quantities_q46_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Word Problems on Ratio",
+        "Percentages",
+        "Simple Interest",
+        "Profits-Loss"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-comparing-quantities-47",
+      "sourceRow": 48,
+      "question": "Maths_7_Comparing_Quantities_q47.jpg",
+      "options": [
+        "Maths_7_Comparing_Quantities_q47_o1.jpg",
+        "Maths_7_Comparing_Quantities_q47_o2.jpg",
+        "Maths_7_Comparing_Quantities_q47_o3.jpg",
+        "Maths_7_Comparing_Quantities_q47_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Word Problems on Ratio",
+        "Percentages",
+        "Simple Interest",
+        "Profits-Loss"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-comparing-quantities-48",
+      "sourceRow": 49,
+      "question": "The shopkeeper #DASH# the overhead expenses to the cost price before he sells the goods.",
+      "options": [
+        "adds",
+        "subtracts",
+        "multiply",
+        "divide"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Word Problems on Ratio",
+        "Percentages",
+        "Simple Interest",
+        "Profits-Loss"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-comparing-quantities-49",
+      "sourceRow": 50,
+      "question": "Maths_7_Comparing_Quantities_q49.jpg",
+      "options": [
+        "30%",
+        "36%",
+        "45%",
+        "50%"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Word Problems on Ratio",
+        "Percentages",
+        "Simple Interest",
+        "Profits-Loss"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-comparing-quantities-50",
+      "sourceRow": 51,
+      "question": "The additional money paid by a borrower to the lender after a specific time period is called as",
+      "options": [
+        "interest",
+        "principal",
+        "amount",
+        "rate"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Word Problems on Ratio",
+        "Percentages",
+        "Simple Interest",
+        "Profits-Loss"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-comparing-quantities-51",
+      "sourceRow": 52,
+      "question": "When the interest paid after every time period is same, then it is called as",
+      "options": [
+        "interest",
+        "simple interest",
+        "amount",
+        "rate of interest"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Word Problems on Ratio",
+        "Percentages",
+        "Simple Interest",
+        "Profits-Loss"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-comparing-quantities-52",
+      "sourceRow": 53,
+      "question": "Maths_7_Comparing_Quantities_q52.jpg",
+      "options": [
+        "Maths_7_Comparing_Quantities_q52_o1.jpg",
+        "Maths_7_Comparing_Quantities_q52_o2.jpg",
+        "Maths_7_Comparing_Quantities_q52_o3.jpg",
+        "Maths_7_Comparing_Quantities_q52_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Word Problems on Ratio",
+        "Percentages",
+        "Simple Interest",
+        "Profits-Loss"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-comparing-quantities-53",
+      "sourceRow": 54,
+      "question": "Maths_7_Comparing_Quantities_q53.jpg",
+      "options": [
+        "15%",
+        "13.5%",
+        "12.25%",
+        "10%"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Word Problems on Ratio",
+        "Percentages",
+        "Simple Interest",
+        "Profits-Loss"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-comparing-quantities-54",
+      "sourceRow": 55,
+      "question": "Maths_7_Comparing_Quantities_q54.jpg",
+      "options": [
+        "21 years",
+        "20 years",
+        "19 years",
+        "15 years"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Word Problems on Ratio",
+        "Percentages",
+        "Simple Interest",
+        "Profits-Loss"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-comparing-quantities-55",
+      "sourceRow": 56,
+      "question": "Maths_7_Comparing_Quantities_q55.jpg",
+      "options": [
+        "Maths_7_Comparing_Quantities_q55_o1.jpg",
+        "Maths_7_Comparing_Quantities_q55_o2.jpg",
+        "Maths_7_Comparing_Quantities_q55_o3.jpg",
+        "Maths_7_Comparing_Quantities_q55_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Word Problems on Ratio",
+        "Percentages",
+        "Simple Interest",
+        "Profits-Loss"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-comparing-quantities-56",
+      "sourceRow": 57,
+      "question": "The rate of interest by which a given amount of money is doubled in 5 years is:",
+      "options": [
+        "25%",
+        "10%",
+        "30%",
+        "20%"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Word Problems on Ratio",
+        "Percentages",
+        "Simple Interest",
+        "Profits-Loss"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-comparing-quantities-57",
+      "sourceRow": 58,
+      "question": "Maths_7_Comparing_Quantities_q57.jpg",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Word Problems on Ratio",
+        "Percentages",
+        "Simple Interest",
+        "Profits-Loss"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    }
+  ]
+}

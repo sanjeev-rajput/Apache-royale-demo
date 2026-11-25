@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-24T11:45:02.900Z",
+  "classification": {
+    "class": "Class 7",
+    "subject": "Math",
+    "topic": "Practical Geometry"
+  },
+  "publisher": "unspecified-publisher",
+  "source": {
+    "file": "Class7/Final/Math_Class 7_Assess_QB_10_Practical_Geometry/Int_Math_Class 7_Assess_QB_10_Practical_Geometry.xlsx",
+    "sheet": "filename"
+  },
+  "questionType": "MCQ",
+  "questionCount": 4,
+  "questions": [
+    {
+      "id": "unspecified-publisher-class-7-math-practical-geometry-6",
+      "sourceRow": 7,
+      "question": "Which of the following triangles can be constructed?",
+      "options": [
+        "A triangle PQR with the measurement of angles P and R as 70o and 120o respectively and PQ = 10 cm",
+        "A triangle ABC with the measurement of angles C and A as 30o and 120o respectively and AB = 9 cm",
+        "A triangle PQR with the measurement of angles R and Q as 60o and 120o respectively and PQ = 2 cm",
+        "A triangle ABC with the measurement of angles A and B as 89o and 108o respectively and BC = 4 cm"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Construction of Triangles"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-practical-geometry-7",
+      "sourceRow": 8,
+      "question": "Maths_7_Practical_Geometry_q7.jpg",
+      "options": [
+        "Ritu",
+        "Sneha",
+        "Rupinder",
+        "Amit"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Construction of Triangles"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": "HOTS"
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-practical-geometry-8",
+      "sourceRow": 9,
+      "question": "Which of the following triangles are constructed properly?",
+      "options": [
+        "Maths_7_Practical_Geometry_q8_o1.jpg",
+        "Maths_7_Practical_Geometry_q8_o2.jpg",
+        "Maths_7_Practical_Geometry_q8_o3.jpg",
+        "Maths_7_Practical_Geometry_q8_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Construction of Triangles"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": "HOTS"
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-practical-geometry-9",
+      "sourceRow": 10,
+      "question": "What should be the maximum side length in order to construct a triangle if two of its side lengths are 3.6 cm and 7.2 cm?",
+      "options": [
+        "10.5 cm",
+        "10.6 cm",
+        "10.7 cm",
+        "10.8 cm"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Construction of Triangles"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    }
+  ]
+}

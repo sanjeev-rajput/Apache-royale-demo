@@ -1,0 +1,292 @@
+<j:VGroup xmlns:fx="http://ns.adobe.com/mxml/2009"
+          xmlns:j="library://ns.apache.org/royale/jewel"
+          width="100%"
+          itemsHorizontalAlign="itemsStretch"
+          itemsVerticalAlign="itemsStretch"
+          gap="1"
+          initComplete="initializePanel()">
+
+    <fx:Script>
+        <![CDATA[
+            import org.apache.royale.events.Event;
+            import org.apache.royale.html.HTMLText;
+            import org.apache.royale.html.Image;
+            import com.util.StringUtil;
+            import com.unhurdle.spectrum.Button;
+            import com.unhurdle.spectrum.Radio;
+            import org.apache.royale.jewel.VGroup;
+
+            public var onSubmit:Function;
+            public var onValidationMessage:Function;
+            public var classId:String = "";
+            public var subjectId:String = "";
+            public var apiBaseUrl:String = "";
+
+            private var _assessment:Object;
+            private var practiceQuestions:Array = [];
+            private var practiceAnswers:Object = {};
+            private var practiceRadios:Array = [];
+            private var submitButton:Button;
+            private var initialized:Boolean = false;
+
+            public function set assessment(value:Object):void
+            {
+                _assessment = value;
+                if (initialized)
+                    renderPanel();
+            }
+
+            public function get assessment():Object
+            {
+                return _assessment;
+            }
+
+            private function initializePanel():void
+            {
+                initialized = true;
+                renderPanel();
+            }
+
+            private function renderPanel():void
+            {
+                while (numElements > 0)
+                    removeElement(getElementAt(0));
+
+                practiceQuestions = _assessment != null
+                    ? _assessment.questions as Array : null;
+                practiceAnswers = {};
+                practiceRadios = [];
+                submitButton = null;
+
+                if (practiceQuestions == null || practiceQuestions.length == 0)
+                    return;
+
+                var title:HTMLText = new HTMLText();
+                title.percentWidth = 100;
+                title.html = "<b>" + StringUtil.escapeHTML(String(_assessment.title || "Practice")) + "</b>";
+                title.className = "assessment-title";
+                addElement(title);
+
+                var instructions:HTMLText = new HTMLText();
+                instructions.percentWidth = 100;
+                instructions.html = StringUtil.escapeHTML(String(_assessment.instructions || "Choose one answer for each question."));
+                instructions.className = "assessment-instructions";
+                addElement(instructions);
+
+                var questionNo:int = 0;
+                for each (var question:Object in practiceQuestions)
+                {
+                    questionNo++;
+                    var card:VGroup = new VGroup();
+                    card.percentWidth = 100;
+                    card.gap = 1;
+                    card.className = "assessment-question-card";
+                    addElement(card);
+
+                    var heading:HTMLText = new HTMLText();
+                    heading.percentWidth = 100;
+                    heading.html = "<b>Question " + questionNo + "</b>";
+                    heading.className = "assessment-question-number";
+                    card.addElement(heading);
+
+                    var promptValue:String = question.prompt == null ? "" : String(question.prompt);
+                    var promptImageUrl:String = getQuestionImageUrl(promptValue);
+                    if (promptImageUrl != null)
+                    {
+                        var questionImage:Image = new Image();
+                        questionImage.src = promptImageUrl;
+                        questionImage.className = "assessment-question-image";
+                        card.addElement(questionImage);
+                    }
+                    else
+                    {
+                        var prompt:HTMLText = new HTMLText();
+                        prompt.percentWidth = 100;
+                        prompt.html = safeQuestionHtml(promptValue);
+                        prompt.className = "assessment-question-prompt";
+                        card.addElement(prompt);
+                    }
+
+                    var options:Array = question.options as Array;
+                    if (options == null) continue;
+                    for each (var option:Object in options)
+                    {
+                        var optionValue:String = option.text == null ? "" : String(option.text);
+                        var optionImageUrl:String = getQuestionImageUrl(optionValue);
+                        var radio:Radio = new Radio();
+                        radio.percentWidth = 100;
+                        radio.text = String(option.id) + (optionImageUrl != null ? "." : ".  " + optionValue);
+                        radio.className = "assessment-option-radio";
+                        radio.radioName = "adaptive_" + String(question.id);
+                        radio.addEventListener("change", createAnswerHandler(String(question.id), String(option.id)));
+                        practiceRadios.push(radio);
+                        card.addElement(radio);
+
+                        if (optionImageUrl != null)
+                        {
+                            var optionImage:Image = new Image();
+                            optionImage.src = optionImageUrl;
+                            optionImage.className = "assessment-option-image";
+                            card.addElement(optionImage);
+                        }
+                    }
+                }
+
+                var hint:HTMLText = new HTMLText();
+                hint.percentWidth = 100;
+                hint.html = "Choose one answer for each question, then submit.";
+                hint.className = "assessment-submit-hint";
+                addElement(hint);
+
+                submitButton = new Button();
+                submitButton.text = "Submit answers";
+                submitButton.addEventListener("click", handleSubmitClick);
+                addElement(submitButton);
+            }
+
+            private function getQuestionImageUrl(value:String):String
+            {
+                var fileName:String = getQuestionImageFileName(value);
+                if (fileName.length == 0 || classId == "" || subjectId == "")
+                    return null;
+
+                var baseUrl:String = String(apiBaseUrl || "");
+                baseUrl = baseUrl.replace(new RegExp("/api/?$", "i"), "/");
+                if (baseUrl.charAt(baseUrl.length - 1) != "/")
+                    baseUrl += "/";
+
+                return baseUrl + "question-bank-assets/" +
+                    encodeURIComponent(classId) + "/" +
+                    encodeURIComponent(subjectId) +
+                    "/icon/" + encodeURIComponent(fileName);
+            }
+
+            private function getQuestionImageFileName(value:String):String
+            {
+                if (value == null) return "";
+                var candidate:String = value.replace(/\\/g, "/");
+                candidate = candidate.substring(candidate.lastIndexOf("/") + 1);
+                candidate = candidate.replace(/^\s+|\s+$/g, "");
+                candidate = candidate.replace(/^[A-Za-z]\.\s*/, "");
+                if (/^[A-Za-z0-9_ .-]+\.(jpg|jpeg|png|gif)$/i.test(candidate))
+                    return candidate;
+                return "";
+            }
+
+            private function safeQuestionHtml(value:String):String
+            {
+                var escaped:String = StringUtil.escapeHTML(value);
+                escaped = escaped.split("&lt;br&gt;").join("<br/>");
+                escaped = escaped.split("&lt;br/&gt;").join("<br/>");
+                escaped = escaped.split("&lt;br /&gt;").join("<br/>");
+                escaped = escaped.replace(/\r?\n/g, "<br/>");
+                return escaped;
+            }
+
+            private function createAnswerHandler(questionId:String, optionId:String):Function
+            {
+                return function(event:Event):void
+                {
+                    practiceAnswers[questionId] = optionId;
+                };
+            }
+
+            private function handleSubmitClick(event:Event):void
+            {
+                var answers:Array = [];
+                for each (var question:Object in practiceQuestions)
+                {
+                    var questionId:String = String(question.id);
+                    if (!practiceAnswers.hasOwnProperty(questionId))
+                    {
+                        if (onValidationMessage != null)
+                            onValidationMessage("Please answer every question before submitting.");
+                        return;
+                    }
+                    answers.push({
+                        questionId: questionId,
+                        selectedOptionId: practiceAnswers[questionId]
+                    });
+                }
+                if (onSubmit != null)
+                    onSubmit(answers);
+            }
+
+            public function getQuestionPrompt(questionId:String):String
+            {
+                if (practiceQuestions == null) return "";
+                for each (var question:Object in practiceQuestions)
+                {
+                    if (String(question.id) == questionId)
+                        return question.prompt == null ? "" : String(question.prompt);
+                }
+                return "";
+            }
+
+            public function getQuestionPromptImageUrl(questionId:String):String
+            {
+                return getQuestionImageUrl(getQuestionPrompt(questionId));
+            }
+
+            public function getOptionText(questionId:String, optionId:String):String
+            {
+                if (practiceQuestions == null) return "";
+                for each (var question:Object in practiceQuestions)
+                {
+                    if (String(question.id) != questionId) continue;
+                    var options:Array = question.options as Array;
+                    if (options == null) return "";
+                    for each (var option:Object in options)
+                    {
+                        if (String(option.id) == optionId)
+                            return option.text == null ? "" : String(option.text);
+                    }
+                    return "";
+                }
+                return "";
+            }
+
+            public function getOptionImageUrl(questionId:String, optionId:String):String
+            {
+                return getQuestionImageUrl(getOptionText(questionId, optionId));
+            }
+
+            public function getCorrectAnswer(questionId:String, optionId:String):String
+            {
+                if (practiceQuestions == null)
+                    return "";
+
+                for each (var question:Object in practiceQuestions)
+                {
+                    if (String(question.id) != questionId)
+                        continue;
+
+                    var options:Array = question.options as Array;
+                    if (options == null)
+                        return "";
+
+                    for each (var option:Object in options)
+                    {
+                        if (String(option.id) == optionId)
+                            return option.text == null ? "" : String(option.text);
+                    }
+                    return "";
+                }
+                return "";
+            }
+
+            public function getCorrectAnswerImageUrl(questionId:String, optionId:String):String
+            {
+                return getQuestionImageUrl(getCorrectAnswer(questionId, optionId));
+            }
+
+            public function setSubmissionPending(value:Boolean):void
+            {
+                for each (var radio:Radio in practiceRadios)
+                    radio.disabled = value;
+                if (submitButton != null)
+                    submitButton.disabled = value;
+            }
+        ]]>
+    </fx:Script>
+</j:VGroup>

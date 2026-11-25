@@ -1,0 +1,850 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-24T11:45:02.829Z",
+  "classification": {
+    "class": "Class 7",
+    "subject": "Math",
+    "topic": "Congruence of Triangles"
+  },
+  "publisher": "unspecified-publisher",
+  "source": {
+    "file": "Class7/Final/Math_Class 7_Assess_QB_07_Congruence_of_Triangles/Int_Math_Class 7_Assess_QB_07_Congruence_of_Triangles.xlsx",
+    "sheet": "filename"
+  },
+  "questionType": "MCQ",
+  "questionCount": 32,
+  "questions": [
+    {
+      "id": "unspecified-publisher-class-7-math-congruence-of-triangles-14",
+      "sourceRow": 15,
+      "question": "Maths_7_Congruence_of_Triangles_q14.jpg",
+      "options": [
+        "Maths_7_Congruence_of_Triangles_q14_o1.jpg",
+        "Maths_7_Congruence_of_Triangles_q14_o2.jpg",
+        "Maths_7_Congruence_of_Triangles_q14_o3.jpg",
+        "Maths_7_Congruence_of_Triangles_q14_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Congruence of Various Types of Triangles"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-congruence-of-triangles-15",
+      "sourceRow": 16,
+      "question": "Which of the following shapes are not congruent to other shapes?",
+      "options": [
+        "Maths_7_Congruence_of_Triangles_q15_o1.jpg",
+        "Maths_7_Congruence_of_Triangles_q15_o2.jpg",
+        "Maths_7_Congruence_of_Triangles_q15_o3.jpg",
+        "Maths_7_Congruence_of_Triangles_q15_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Congruence of Plane Figures and Line Segments"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-congruence-of-triangles-16",
+      "sourceRow": 17,
+      "question": "Which of the following shapes are not congruent to other shapes?",
+      "options": [
+        "Maths_7_Congruence_of_Triangles_q16_o1.jpg",
+        "Maths_7_Congruence_of_Triangles_q16_o2.jpg",
+        "Maths_7_Congruence_of_Triangles_q16_o3.jpg",
+        "Maths_7_Congruence_of_Triangles_q16_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Congruence of Plane Figures and Line Segments"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-congruence-of-triangles-17",
+      "sourceRow": 18,
+      "question": "Which of the following figures are not congruent to other figures?",
+      "options": [
+        "Maths_7_Congruence_of_Triangles_q17_o1.jpg",
+        "Maths_7_Congruence_of_Triangles_q17_o2.jpg",
+        "Maths_7_Congruence_of_Triangles_q17_o3.jpg",
+        "Maths_7_Congruence_of_Triangles_q17_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Congruence of Plane Figures and Line Segments"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-congruence-of-triangles-18",
+      "sourceRow": 19,
+      "question": "Which of the following line segments are congruent to other line segments?",
+      "options": [
+        "Maths_7_Congruence_of_Triangles_q18_o1.jpg",
+        "Maths_7_Congruence_of_Triangles_q18_o2.jpg",
+        "Maths_7_Congruence_of_Triangles_q18_o3.jpg",
+        "Maths_7_Congruence_of_Triangles_q18_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Congruence of Plane Figures and Line Segments"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-congruence-of-triangles-19",
+      "sourceRow": 20,
+      "question": "Maths_7_Congruence_of_Triangles_q19.jpg",
+      "options": [
+        "PQ",
+        "QR",
+        "PR",
+        "None of these"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Congruence of Various Types of Triangles"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-congruence-of-triangles-20",
+      "sourceRow": 21,
+      "question": "Maths_7_Congruence_of_Triangles_q20.jpg",
+      "options": [
+        "ASA Rule",
+        "SSS Rule",
+        "RHS Rule",
+        "SAS Rule"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Congruence of Various Types of Triangles"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-congruence-of-triangles-21",
+      "sourceRow": 22,
+      "question": "The triangles ABC and DEF are congruent to each other by ASA rule. Which of the following additional information is required if BC = EF?",
+      "options": [
+        "Maths_7_Congruence_of_Triangles_q21_o1.jpg",
+        "Maths_7_Congruence_of_Triangles_q21_o2.jpg",
+        "Maths_7_Congruence_of_Triangles_q21_o3.jpg",
+        "Maths_7_Congruence_of_Triangles_q21_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Congruence of Various Types of Triangles"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-congruence-of-triangles-22",
+      "sourceRow": 23,
+      "question": "The triangles MNO and WXY are congruent to each other by SAS rule. Which of the following additional information is required if MN = WX and OM = YW?",
+      "options": [
+        "Maths_7_Congruence_of_Triangles_q22_o1.jpg",
+        "Maths_7_Congruence_of_Triangles_q22_o2.jpg",
+        "Maths_7_Congruence_of_Triangles_q22_o3.jpg",
+        "Maths_7_Congruence_of_Triangles_q22_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Congruence of Various Types of Triangles"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-congruence-of-triangles-23",
+      "sourceRow": 24,
+      "question": "Which of the following congruence criterion is used to show triangles ABC and PQR congruent if AB = PQ, QR = BC and CA = RP?",
+      "options": [
+        "SSS Rule",
+        "SAS Rule",
+        "RHS Rule",
+        "ASA Rule"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Congruence of Various Types of Triangles"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-congruence-of-triangles-24",
+      "sourceRow": 25,
+      "question": "Which of the following side is included between the angles P and R of triangle PQR?",
+      "options": [
+        "PQ",
+        "QR",
+        "PR",
+        "None of the above"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Congruence of Angles"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-congruence-of-triangles-25",
+      "sourceRow": 26,
+      "question": "Maths_7_Congruence_of_Triangles_q25.jpg",
+      "options": [
+        "Shape 1 and Shape 2",
+        "Shape 1 and Shape 3",
+        "Shape 4 and Shape 5",
+        "Shape 5 and Shape 6"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Congruence of Plane Figures and Line Segments"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-congruence-of-triangles-26",
+      "sourceRow": 27,
+      "question": "Which of the following triangles are not congruent to each other?",
+      "options": [
+        "Maths_7_Congruence_of_Triangles_q26_o1.jpg",
+        "Maths_7_Congruence_of_Triangles_q26_o2.jpg",
+        "Maths_7_Congruence_of_Triangles_q26_o3.jpg",
+        "Maths_7_Congruence_of_Triangles_q26_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Congruence of Various Types of Triangles"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-congruence-of-triangles-27",
+      "sourceRow": 28,
+      "question": "Maths_7_Congruence_of_Triangles_q27.jpg",
+      "options": [
+        "Maths_7_Congruence_of_Triangles_q27_o1.jpg",
+        "Maths_7_Congruence_of_Triangles_q27_o2.jpg",
+        "Maths_7_Congruence_of_Triangles_q27_o3.jpg",
+        "Maths_7_Congruence_of_Triangles_q27_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Congruence of Various Types of Triangles"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-congruence-of-triangles-28",
+      "sourceRow": 29,
+      "question": "Maths_7_Congruence_of_Triangles_q28.jpg",
+      "options": [
+        "70°",
+        "60°",
+        "50°",
+        "20°"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Congruence of Various Types of Triangles"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-congruence-of-triangles-29",
+      "sourceRow": 30,
+      "question": "Which of the following are congruent to their respective triangles?",
+      "options": [
+        "Maths_7_Congruence_of_Triangles_q29_o1.jpg",
+        "Maths_7_Congruence_of_Triangles_q29_o2.jpg",
+        "Maths_7_Congruence_of_Triangles_q29_o3.jpg",
+        "Maths_7_Congruence_of_Triangles_q29_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Congruence of Various Types of Triangles"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-congruence-of-triangles-30",
+      "sourceRow": 31,
+      "question": "Maths_7_Congruence_of_Triangles_q30.jpg",
+      "options": [
+        "Maths_7_Congruence_of_Triangles_q30_o1.jpg",
+        "Maths_7_Congruence_of_Triangles_q30_o2.jpg",
+        "Maths_7_Congruence_of_Triangles_q30_o3.jpg",
+        "Maths_7_Congruence_of_Triangles_q30_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Congruence of Various Types of Triangles"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-congruence-of-triangles-31",
+      "sourceRow": 32,
+      "question": "Maths_7_Congruence_of_Triangles_q31.jpg",
+      "options": [
+        "40o",
+        "50o",
+        "60o",
+        "30o"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Congruence of Various Types of Triangles"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-congruence-of-triangles-32",
+      "sourceRow": 33,
+      "question": "Maths_7_Congruence_of_Triangles_q32.jpg",
+      "options": [
+        "Maths_7_Congruence_of_Triangles_q32_o1.jpg",
+        "Maths_7_Congruence_of_Triangles_q32_o2.jpg",
+        "Maths_7_Congruence_of_Triangles_q32_o3.jpg",
+        "Maths_7_Congruence_of_Triangles_q32_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Congruence of Various Types of Triangles"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-congruence-of-triangles-33",
+      "sourceRow": 34,
+      "question": "Maths_7_Congruence_of_Triangles_q33.jpg",
+      "options": [
+        "Maths_7_Congruence_of_Triangles_q33_o1.jpg",
+        "Maths_7_Congruence_of_Triangles_q33_o2.jpg",
+        "Maths_7_Congruence_of_Triangles_q33_o3.jpg",
+        "Maths_7_Congruence_of_Triangles_q33_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Congruence of Various Types of Triangles"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-congruence-of-triangles-34",
+      "sourceRow": 35,
+      "question": "Maths_7_Congruence_of_Triangles_q34.jpg",
+      "options": [
+        "2 cm",
+        "3 cm",
+        "4 cm",
+        "5 cm"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Congruence of Various Types of Triangles"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-congruence-of-triangles-35",
+      "sourceRow": 36,
+      "question": "Maths_7_Congruence_of_Triangles_q35.jpg",
+      "options": [
+        "AB and AC",
+        "BC and AB",
+        "BC and AC",
+        "AB and BC"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Congruence of Various Types of Triangles"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-congruence-of-triangles-36",
+      "sourceRow": 37,
+      "question": "Maths_7_Congruence_of_Triangles_q36.jpg",
+      "options": [
+        "15°",
+        "30°",
+        "45°",
+        "60°"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Congruence of Angles"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-congruence-of-triangles-37",
+      "sourceRow": 38,
+      "question": "Maths_7_Congruence_of_Triangles_q37.jpg",
+      "options": [
+        "Maths_7_Congruence_of_Triangles_q37_o1.jpg",
+        "Maths_7_Congruence_of_Triangles_q37_o2.jpg",
+        "Maths_7_Congruence_of_Triangles_q37_o3.jpg",
+        "Maths_7_Congruence_of_Triangles_q37_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Congruence of Various Types of Triangles"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-congruence-of-triangles-38",
+      "sourceRow": 39,
+      "question": "Maths_7_Congruence_of_Triangles_q38.jpg",
+      "options": [
+        "28° and 28°",
+        "56° and 56°",
+        "28° and 62°",
+        "62° and 62°"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Congruence of Angles"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-congruence-of-triangles-39",
+      "sourceRow": 40,
+      "question": "Two plane figures are congruent, if they have:",
+      "options": [
+        "same shape",
+        "same size",
+        "same shape and size",
+        "None"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Congruence of Plane Figures and Line Segments"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-congruence-of-triangles-40",
+      "sourceRow": 41,
+      "question": "Which one is a correct statement?",
+      "options": [
+        "Two acute angles are always congruent.",
+        "Two obtuse angles are always congruent.",
+        "Two right angles are always congruent.",
+        "None"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Congruence of Angles"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-congruence-of-triangles-41",
+      "sourceRow": 42,
+      "question": "Maths_7_Congruence_of_Triangles_q41.jpg",
+      "options": [
+        "PQ",
+        "PR",
+        "QR",
+        "None"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Congruence of Various Types of Triangles"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-congruence-of-triangles-42",
+      "sourceRow": 43,
+      "question": "Maths_7_Congruence_of_Triangles_q42.jpg",
+      "options": [
+        "AC = DE",
+        "AB = DE",
+        "BC = EF",
+        "AB = DE and BC = EF"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Congruence of Various Types of Triangles"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-congruence-of-triangles-43",
+      "sourceRow": 44,
+      "question": "Maths_7_Congruence_of_Triangles_q43.jpg",
+      "options": [
+        "Maths_7_Congruence_of_Triangles_q43_o1.jpg",
+        "Maths_7_Congruence_of_Triangles_q43_o2.jpg",
+        "Maths_7_Congruence_of_Triangles_q43_o3.jpg",
+        "Maths_7_Congruence_of_Triangles_q43_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Congruence of Various Types of Triangles"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-congruence-of-triangles-44",
+      "sourceRow": 45,
+      "question": "Maths_7_Congruence_of_Triangles_q44.jpg",
+      "options": [
+        "Maths_7_Congruence_of_Triangles_q44_o1.jpg",
+        "Maths_7_Congruence_of_Triangles_q44_o2.jpg",
+        "Maths_7_Congruence_of_Triangles_q44_o3.jpg",
+        "Maths_7_Congruence_of_Triangles_q44_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Congruence of Various Types of Triangles"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-congruence-of-triangles-45",
+      "sourceRow": 46,
+      "question": "Maths_7_Congruence_of_Triangles_q45.jpg",
+      "options": [
+        "SAS congruency",
+        "ASA congruency",
+        "SSS congruency",
+        "RHS congruency"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Congruence of Various Types of Triangles"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    }
+  ]
+}

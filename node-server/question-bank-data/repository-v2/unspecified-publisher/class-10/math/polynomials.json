@@ -1,0 +1,1452 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-24T11:45:03.520Z",
+  "classification": {
+    "class": "Class 10",
+    "subject": "Math",
+    "topic": "Polynomials"
+  },
+  "publisher": "unspecified-publisher",
+  "source": {
+    "file": "Class10/Final/Math_Class_10_Assess_QB_02_Polynomials/Math_Class_10_Assess_QB_02_Polynomials.xlsx",
+    "sheet": "Maths_Grade_9_Ch-3"
+  },
+  "questionType": "MCQ",
+  "questionCount": 54,
+  "questions": [
+    {
+      "id": "unspecified-publisher-class-10-math-polynomials-1",
+      "sourceRow": 2,
+      "question": "How many zeroes can a polynomial with degree ‘n’ have?",
+      "options": [
+        "Always ‘n’ zeroes",
+        "(n + 2) zeroes",
+        "(n + 1) zeroes",
+        "Atmost ‘n’ zeroes"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Polynomials",
+        "Their Graphs and Zeroes"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": "Remembering",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-polynomials-2",
+      "sourceRow": 3,
+      "question": "Math_Class_10_Assess_QB_02_Polynomials_q2.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_02_Polynomials_q2_o1.jpg",
+        "Math_Class_10_Assess_QB_02_Polynomials_q2_o2.jpg",
+        "Math_Class_10_Assess_QB_02_Polynomials_q2_o3.jpg",
+        "Math_Class_10_Assess_QB_02_Polynomials_q2_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Polynomials",
+        "Their Graphs and Zeroes"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-polynomials-3",
+      "sourceRow": 4,
+      "question": "Which one of the graphs given below does not represent a quadratic polynomial?",
+      "options": [
+        "Math_Class_10_Assess_QB_02_Polynomials_q3_o1.jpg",
+        "Math_Class_10_Assess_QB_02_Polynomials_q3_o2.jpg",
+        "Math_Class_10_Assess_QB_02_Polynomials_q3_o3.jpg",
+        "Math_Class_10_Assess_QB_02_Polynomials_q3_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Polynomials",
+        "Their Graphs and Zeroes"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-polynomials-4",
+      "sourceRow": 5,
+      "question": "Math_Class_10_Assess_QB_02_Polynomials_q4.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_02_Polynomials_q4_o1.jpg",
+        "Math_Class_10_Assess_QB_02_Polynomials_q4_o2.jpg",
+        "Math_Class_10_Assess_QB_02_Polynomials_q4_o3.jpg",
+        "Math_Class_10_Assess_QB_02_Polynomials_q4_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Polynomials",
+        "Their Graphs and Zeroes"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-polynomials-5",
+      "sourceRow": 6,
+      "question": "Math_Class_10_Assess_QB_02_Polynomials_q5.jpg",
+      "options": [
+        "2",
+        "–2",
+        "4",
+        "–4"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Polynomials",
+        "Their Graphs and Zeroes"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-polynomials-6",
+      "sourceRow": 7,
+      "question": "The value of p, so that x3 – 3x2 + x + p, when divided by x – 2 leaves remainder 0, is",
+      "options": [
+        "2",
+        "–2",
+        "1",
+        "–1"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Polynomials",
+        "Their Graphs and Zeroes"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-polynomials-7",
+      "sourceRow": 8,
+      "question": "Math_Class_10_Assess_QB_02_Polynomials_q7.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_02_Polynomials_q7_o1.jpg",
+        "Math_Class_10_Assess_QB_02_Polynomials_q7_o2.jpg",
+        "Math_Class_10_Assess_QB_02_Polynomials_q7_o3.jpg",
+        "Math_Class_10_Assess_QB_02_Polynomials_q7_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Polynomials",
+        "Their Graphs and Zeroes"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-polynomials-8",
+      "sourceRow": 9,
+      "question": "The sum of the zeroes of a quadratic polynomial is –4, and their product is 3. The quadratic polynomial is",
+      "options": [
+        "x2 + 4x + 3",
+        "x2 – 4x + 3",
+        "x2 – 4x –3",
+        "x2 – 2x + 6"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Relationship between Zeroes and Coefficients of a Polynomial"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-polynomials-9",
+      "sourceRow": 10,
+      "question": "Math_Class_10_Assess_QB_02_Polynomials_q9.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_02_Polynomials_q9_o1.jpg",
+        "Math_Class_10_Assess_QB_02_Polynomials_q9_o2.jpg",
+        "Math_Class_10_Assess_QB_02_Polynomials_q9_o3.jpg",
+        "Math_Class_10_Assess_QB_02_Polynomials_q9_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Division Algorithm of Polynomials"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": "Analysing",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-polynomials-10",
+      "sourceRow": 11,
+      "question": "Math_Class_10_Assess_QB_02_Polynomials_q10.jpg",
+      "options": [
+        "1",
+        "0",
+        "–1",
+        "–2"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Polynomials",
+        "Their Graphs and Zeroes"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-polynomials-11",
+      "sourceRow": 12,
+      "question": "Math_Class_10_Assess_QB_02_Polynomials_q11.jpg",
+      "options": [
+        "3",
+        "5",
+        "–5",
+        "–3"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Relationship between Zeroes and Coefficients of a Polynomial"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-polynomials-12",
+      "sourceRow": 13,
+      "question": "Math_Class_10_Assess_QB_02_Polynomials_q12.jpg",
+      "options": [
+        "x2 + qx + p",
+        "x2 – px + q",
+        "qx2 + px + 1",
+        "px2 + qx + 1"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Relationship between Zeroes and Coefficients of a Polynomial"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-polynomials-13",
+      "sourceRow": 14,
+      "question": "Math_Class_10_Assess_QB_02_Polynomials_q13.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_02_Polynomials_q13_o1.jpg",
+        "Math_Class_10_Assess_QB_02_Polynomials_q13_o2.jpg",
+        "Math_Class_10_Assess_QB_02_Polynomials_q13_o3.jpg",
+        "Math_Class_10_Assess_QB_02_Polynomials_q13_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Relationship between Zeroes and Coefficients of a Polynomial"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-polynomials-14",
+      "sourceRow": 15,
+      "question": "Math_Class_10_Assess_QB_02_Polynomials_q14.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_02_Polynomials_q14_o1.jpg",
+        "Math_Class_10_Assess_QB_02_Polynomials_q14_o2.jpg",
+        "Math_Class_10_Assess_QB_02_Polynomials_q14_o3.jpg",
+        "Math_Class_10_Assess_QB_02_Polynomials_q14_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Relationship between Zeroes and Coefficients of a Polynomial"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-polynomials-15",
+      "sourceRow": 16,
+      "question": "Math_Class_10_Assess_QB_02_Polynomials_q15.jpg",
+      "options": [
+        "0",
+        "2",
+        "4",
+        "3"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Polynomials",
+        "Their Graphs and Zeroes"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-polynomials-16",
+      "sourceRow": 17,
+      "question": "If 1 is zero of the polynomial p(x) = ax2 – 3(a – l) x – 1, then the value of ‘a’ is",
+      "options": [
+        "1",
+        "–1",
+        "2",
+        "–2"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Polynomials",
+        "Their Graphs and Zeroes"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-polynomials-17",
+      "sourceRow": 18,
+      "question": "Math_Class_10_Assess_QB_02_Polynomials_q17.jpg",
+      "options": [
+        "–16",
+        "8",
+        "–2",
+        "–8"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Relationship between Zeroes and Coefficients of a Polynomial"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-polynomials-18",
+      "sourceRow": 19,
+      "question": "If one zero of 2x2 – 3x + k is reciprocal to the other, then the value of k is :",
+      "options": [
+        "Math_Class_10_Assess_QB_02_Polynomials_q18_o1.jpg",
+        "Math_Class_10_Assess_QB_02_Polynomials_q18_o2.jpg",
+        "Math_Class_10_Assess_QB_02_Polynomials_q18_o3.jpg",
+        "Math_Class_10_Assess_QB_02_Polynomials_q18_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Relationship between Zeroes and Coefficients of a Polynomial"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-polynomials-19",
+      "sourceRow": 20,
+      "question": "The number of polynomials having zeroes –2 and 5 is :",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "more than 3"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Polynomials",
+        "Their Graphs and Zeroes"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-polynomials-20",
+      "sourceRow": 21,
+      "question": "The value of p for which the polynomial x3 + 4x2 – px + 8 is exactly divisible by (x – 2) is",
+      "options": [
+        "0",
+        "3",
+        "16",
+        "12"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Polynomials",
+        "Their Graphs and Zeroes"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-polynomials-21",
+      "sourceRow": 22,
+      "question": "The quadratic polynomial whose sum of zeroes is 3 and product of zeroes is –2 is:",
+      "options": [
+        "x2 + 3x – 2",
+        "x2 – 2x + 3",
+        "x2 – 3x + 3",
+        "x2 – 3x – 2"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Relationship between Zeroes and Coefficients of a Polynomial"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-polynomials-22",
+      "sourceRow": 23,
+      "question": "If one of the zeroes of the quadratic polynomial (k – l) x2 + kx + l is –3, then the value of k is",
+      "options": [
+        "Math_Class_10_Assess_QB_02_Polynomials_q22_o1.jpg",
+        "Math_Class_10_Assess_QB_02_Polynomials_q22_o2.jpg",
+        "Math_Class_10_Assess_QB_02_Polynomials_q22_o3.jpg",
+        "Math_Class_10_Assess_QB_02_Polynomials_q22_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Polynomials",
+        "Their Graphs and Zeroes"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-polynomials-23",
+      "sourceRow": 24,
+      "question": "The number of zeroes for the polynomial y = p(x). If graph meet x-axis at 3 points is:",
+      "options": [
+        "3",
+        "1",
+        "2",
+        "0"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Polynomials",
+        "Their Graphs and Zeroes"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-polynomials-24",
+      "sourceRow": 25,
+      "question": "The degree of the polynomial (x + 1) (x2 – x – x4 +1) is :",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Polynomials",
+        "Their Graphs and Zeroes"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-polynomials-25",
+      "sourceRow": 26,
+      "question": "The quadratic polynomial having zeroes are 1 and –2 is :",
+      "options": [
+        "x2 – x + 2",
+        "x2 – x – 2",
+        "x2 + x – 2",
+        "x2 + x + 2"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Polynomials",
+        "Their Graphs and Zeroes"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-polynomials-26",
+      "sourceRow": 27,
+      "question": "The number of polynomials having zeroes as – 2 and 5 is:",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "More than 3"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Polynomials",
+        "Their Graphs and Zeroes"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-polynomials-27",
+      "sourceRow": 28,
+      "question": "If one zero of the quadratic polynomial x2 + 3x + k is 2, then the value of k is,",
+      "options": [
+        "10",
+        "–10",
+        "5",
+        "–5"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Polynomials",
+        "Their Graphs and Zeroes"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-polynomials-28",
+      "sourceRow": 29,
+      "question": "If one of the zeroes of the quadratic polynomial (k – 1)x2 + kx + 1 is – 3, then the value of k is,",
+      "options": [
+        "Math_Class_10_Assess_QB_02_Polynomials_q28_o1.jpg",
+        "Math_Class_10_Assess_QB_02_Polynomials_q28_o2.jpg",
+        "Math_Class_10_Assess_QB_02_Polynomials_q28_o3.jpg",
+        "Math_Class_10_Assess_QB_02_Polynomials_q28_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Polynomials",
+        "Their Graphs and Zeroes"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-polynomials-29",
+      "sourceRow": 30,
+      "question": "Math_Class_10_Assess_QB_02_Polynomials_q29.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_02_Polynomials_q29_o1.jpg",
+        "Math_Class_10_Assess_QB_02_Polynomials_q29_o2.jpg",
+        "Math_Class_10_Assess_QB_02_Polynomials_q29_o3.jpg",
+        "Math_Class_10_Assess_QB_02_Polynomials_q29_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Relationship between Zeroes and Coefficients of a Polynomial"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Analysing",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-polynomials-30",
+      "sourceRow": 31,
+      "question": "Math_Class_10_Assess_QB_02_Polynomials_q30.jpg",
+      "options": [
+        "1",
+        "6",
+        "4",
+        "0"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Relationship between Zeroes and Coefficients of a Polynomial"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Analysing",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-polynomials-31",
+      "sourceRow": 32,
+      "question": "Math_Class_10_Assess_QB_02_Polynomials_q31.jpg",
+      "options": [
+        "– 2",
+        "2",
+        "1",
+        "– 1"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Relationship between Zeroes and Coefficients of a Polynomial"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Analysing",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-polynomials-32",
+      "sourceRow": 33,
+      "question": "The quadratic polynomial having zeroes 3 and – 2 is,",
+      "options": [
+        "x2 – x – 6",
+        "x2 + x – 6",
+        "x2 + x + 6",
+        "x2 – x + 6"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Polynomials",
+        "Their Graphs and Zeroes"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-polynomials-33",
+      "sourceRow": 34,
+      "question": "If p(x) and g(x) are any two polynomial with g(x) ≠ 0, then we can find polynomial q(x) and r(x) such that p(x) = q(x) g (x) + r (x), where",
+      "options": [
+        "r (x) = 0 always",
+        "deg.r (x) < deg.q (x)",
+        "r (x) = 0 or deg r (x) < deg. q (x)",
+        "r (x) ≠ 0, always"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Division Algorithm of Polynomials"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Remembering",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-polynomials-34",
+      "sourceRow": 35,
+      "question": "For what value of k is the polynomial f(x) = 2x3 – kx2 + 5x + 9 exactly divisible by (x + 2)?",
+      "options": [
+        "Math_Class_10_Assess_QB_02_Polynomials_q34_o1.jpg",
+        "Math_Class_10_Assess_QB_02_Polynomials_q34_o2.jpg",
+        "Math_Class_10_Assess_QB_02_Polynomials_q34_o3.jpg",
+        "Math_Class_10_Assess_QB_02_Polynomials_q34_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Division Algorithm of Polynomials"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-polynomials-35",
+      "sourceRow": 36,
+      "question": "The product of the zeroes of the polynomial ax2 + bx + c is 6 and that of bx2 + cx + a is 8. What is the product of the zeroes of cx2 + ax + b ?",
+      "options": [
+        "Math_Class_10_Assess_QB_02_Polynomials_q35_o1.jpg",
+        "Math_Class_10_Assess_QB_02_Polynomials_q35_o2.jpg",
+        "Math_Class_10_Assess_QB_02_Polynomials_q35_o3.jpg",
+        "Math_Class_10_Assess_QB_02_Polynomials_q35_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Relationship between Zeroes and Coefficients of a Polynomial"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-polynomials-36",
+      "sourceRow": 37,
+      "question": "A quadratic polynomial, whose zeroes are – 3 and 4 is",
+      "options": [
+        "Math_Class_10_Assess_QB_02_Polynomials_q36_o1.jpg",
+        "Math_Class_10_Assess_QB_02_Polynomials_q36_o2.jpg",
+        "Math_Class_10_Assess_QB_02_Polynomials_q36_o3.jpg",
+        "Math_Class_10_Assess_QB_02_Polynomials_q36_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Polynomials",
+        "Their Graphs and Zeroes"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-polynomials-37",
+      "sourceRow": 38,
+      "question": "If the zeroes of the quadratic polynomial x2 + (a + 1) x + b are 2 and – 3, then",
+      "options": [
+        "a = – 7, b = – 1",
+        "a = 5, b = – 1",
+        "a = 2, b = – 6",
+        "a = 0, b = – 6"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Polynomials",
+        "Their Graphs and Zeroes"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-polynomials-38",
+      "sourceRow": 39,
+      "question": "If one of the zeroes of a quadratic polynomial of the form x2 + ax + b is the negative of the other, then it",
+      "options": [
+        "has no linear term and the constant term is negative.",
+        "has no linear term and the constant term is positive.",
+        "can have a linear term but the constant term is negative.",
+        "can have a linear term but the constant term is positive."
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Polynomials",
+        "Their Graphs and Zeroes"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-polynomials-39",
+      "sourceRow": 40,
+      "question": "The zeroes of the quadratic polynomial x2 + 99x + 127 are",
+      "options": [
+        "both positive",
+        "both negative",
+        "one positive and one negative",
+        "both equal"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Polynomials",
+        "Their Graphs and Zeroes"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-polynomials-40",
+      "sourceRow": 41,
+      "question": "Math_Class_10_Assess_QB_02_Polynomials_q40.jpg",
+      "options": [
+        "cannot both be positive",
+        "cannot both be negative",
+        "are always unequal",
+        "are always equal"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Polynomials",
+        "Their Graphs and Zeroes"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-polynomials-41",
+      "sourceRow": 42,
+      "question": "Math_Class_10_Assess_QB_02_Polynomials_q41.jpg",
+      "options": [
+        "a < 0, b > 0 and c > 0",
+        "a < 0, b < 0 and c < 0",
+        "a < 0, b < 0 and c > 0",
+        "a < 0, b > 0 and c < 0"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Polynomials",
+        "Their Graphs and Zeroes"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-polynomials-42",
+      "sourceRow": 43,
+      "question": "Math_Class_10_Assess_QB_02_Polynomials_q42.jpg",
+      "options": [
+        "x2 + qx + p",
+        "x2 – px + q",
+        "px2 + qx + 1",
+        "qx2 + px + 1"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Relationship between Zeroes and Coefficients of a Polynomial"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-polynomials-43",
+      "sourceRow": 44,
+      "question": "Math_Class_10_Assess_QB_02_Polynomials_q43.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_02_Polynomials_q43_o1.jpg",
+        "Math_Class_10_Assess_QB_02_Polynomials_q43_o2.jpg",
+        "Math_Class_10_Assess_QB_02_Polynomials_q43_o3.jpg",
+        "Math_Class_10_Assess_QB_02_Polynomials_q43_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Relationship between Zeroes and Coefficients of a Polynomial"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-polynomials-44",
+      "sourceRow": 45,
+      "question": "Math_Class_10_Assess_QB_02_Polynomials_q44.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_02_Polynomials_q44_o1.jpg",
+        "Math_Class_10_Assess_QB_02_Polynomials_q44_o2.jpg",
+        "Math_Class_10_Assess_QB_02_Polynomials_q44_o3.jpg",
+        "Math_Class_10_Assess_QB_02_Polynomials_q44_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Relationship between Zeroes and Coefficients of a Polynomial"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-polynomials-45",
+      "sourceRow": 46,
+      "question": "A polynomial of the form ax5 + bx3 + cx2 + dx + e has at most",
+      "options": [
+        "3 zeroes",
+        "5 zeroes",
+        "7 zeroes",
+        "11 zeroes"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Polynomials",
+        "Their Graphs and Zeroes"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-polynomials-46",
+      "sourceRow": 47,
+      "question": "The value of remainder, if x2 + (a + b) x + ab is divided by (x + a) is",
+      "options": [
+        "0",
+        "x + b",
+        "ab",
+        "– b"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Division Algorithm of Polynomials"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-polynomials-47",
+      "sourceRow": 48,
+      "question": "Using division algorithm, find the dividend, if divisor, quotient and remainder are (x – 3) , (x – 2) and 2 respectively.",
+      "options": [
+        "x2 – 5x + 6",
+        "x2 – 5x + 8",
+        "x2 + 5x + 8",
+        "x2 – 5x + 4"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Division Algorithm of Polynomials"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-polynomials-48",
+      "sourceRow": 49,
+      "question": "Math_Class_10_Assess_QB_02_Polynomials_q48.jpg",
+      "options": [
+        "a > 0, b > 0 and c > 0",
+        "a > 0, b < 0 and c > 0",
+        "a > 0, b < 0 and c < 0",
+        "a > 0, b > 0 and c < 0"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Polynomials",
+        "Their Graphs and Zeroes"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-polynomials-49",
+      "sourceRow": 50,
+      "question": "Math_Class_10_Assess_QB_02_Polynomials_q49.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_02_Polynomials_q49_o1.jpg",
+        "Math_Class_10_Assess_QB_02_Polynomials_q49_o2.jpg",
+        "Math_Class_10_Assess_QB_02_Polynomials_q49_o3.jpg",
+        "Math_Class_10_Assess_QB_02_Polynomials_q49_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Relationship between Zeroes and Coefficients of a Polynomial"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Analysing",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-polynomials-50",
+      "sourceRow": 51,
+      "question": "Math_Class_10_Assess_QB_02_Polynomials_q50.jpg",
+      "options": [
+        "1",
+        "0",
+        "– 1",
+        "2"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Relationship between Zeroes and Coefficients of a Polynomial"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Analysing",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-polynomials-51",
+      "sourceRow": 52,
+      "question": "If 1 is a zero of x3 – 7x + 6, then other zeroes are",
+      "options": [
+        "2, 3",
+        "– 2, – 3",
+        "2, – 3",
+        "– 2, 3"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Division Algorithm of Polynomials"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-polynomials-52",
+      "sourceRow": 53,
+      "question": "If the zeroes of the quadratic polynomial ax2 + bx + c, c ≠ 0 are equal, then",
+      "options": [
+        "c and a have opposite signs",
+        "c and b have opposite signs",
+        "c and a have same signs",
+        "c and b have same signs"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Polynomials",
+        "Their Graphs and Zeroes"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": "Exemplar"
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-polynomials-53",
+      "sourceRow": 54,
+      "question": "Which of the following is not the graph of a quadratic polynomial?",
+      "options": [
+        "Math_Class_10_Assess_QB_02_Polynomials_q53_o1.jpg",
+        "Math_Class_10_Assess_QB_02_Polynomials_q53_o2.jpg",
+        "Math_Class_10_Assess_QB_02_Polynomials_q53_o3.jpg",
+        "Math_Class_10_Assess_QB_02_Polynomials_q53_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Polynomials",
+        "Their Graphs and Zeroes"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": "Exemplar"
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-polynomials-54",
+      "sourceRow": 55,
+      "question": "Math_Class_10_Assess_QB_02_Polynomials_q54.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_02_Polynomials_q54_o1.jpg",
+        "Math_Class_10_Assess_QB_02_Polynomials_q54_o2.jpg",
+        "Math_Class_10_Assess_QB_02_Polynomials_q54_o3.jpg",
+        "Math_Class_10_Assess_QB_02_Polynomials_q54_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Relationship between Zeroes and Coefficients of a Polynomial"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    }
+  ]
+}

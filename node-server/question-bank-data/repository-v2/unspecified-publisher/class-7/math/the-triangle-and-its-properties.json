@@ -1,0 +1,814 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-24T11:45:02.800Z",
+  "classification": {
+    "class": "Class 7",
+    "subject": "Math",
+    "topic": "The Triangle and its Properties"
+  },
+  "publisher": "unspecified-publisher",
+  "source": {
+    "file": "Class7/Final/Math_Class 7_Assess_QB_06_The_Triangle_and_its_Properties/Int_Math_Class 7_Assess_QB_06_The_Triangle_and_its_Properties.xlsx",
+    "sheet": "filename"
+  },
+  "questionType": "MCQ",
+  "questionCount": 30,
+  "questions": [
+    {
+      "id": "unspecified-publisher-class-7-math-the-triangle-and-its-properties-15",
+      "sourceRow": 16,
+      "question": "Maths_7_The_Triangle_and_its_Properties_q15.jpg",
+      "options": [
+        "30°",
+        "45°",
+        "60°",
+        "90°"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Right-Angled Triangles and Pythagoras Property"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-the-triangle-and-its-properties-16",
+      "sourceRow": 17,
+      "question": "If any triangle forms a Pythagorean triplet, then which of the following angles is a must in that triangle?",
+      "options": [
+        "30°",
+        "45°",
+        "60°",
+        "90°"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Right-Angled Triangles and Pythagoras Property"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-the-triangle-and-its-properties-17",
+      "sourceRow": 18,
+      "question": "Maths_7_The_Triangle_and_its_Properties_q17.jpg",
+      "options": [
+        "30°",
+        "40°",
+        "90°",
+        "120°"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Median",
+        "Altitude",
+        "and Exterior Angle of a Triangle and it's Property"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-the-triangle-and-its-properties-18",
+      "sourceRow": 19,
+      "question": "Maths_7_The_Triangle_and_its_Properties_q18.jpg",
+      "options": [
+        "55°",
+        "60°",
+        "115°",
+        "180°"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Median",
+        "Altitude",
+        "and Exterior Angle of a Triangle and it's Property"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-the-triangle-and-its-properties-19",
+      "sourceRow": 20,
+      "question": "Maths_7_The_Triangle_and_its_Properties_q19.jpg",
+      "options": [
+        "70° and 20°",
+        "80° and 10°",
+        "80° and 10°",
+        "20° and 70°"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Median",
+        "Altitude",
+        "and Exterior Angle of a Triangle and it's Property"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-the-triangle-and-its-properties-20",
+      "sourceRow": 21,
+      "question": "Maths_7_The_Triangle_and_its_Properties_q20.jpg",
+      "options": [
+        "30°",
+        "60°",
+        "90°",
+        "120°"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Two Special Triangles: Equilateral and Isosceles"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-the-triangle-and-its-properties-21",
+      "sourceRow": 22,
+      "question": "Maths_7_The_Triangle_and_its_Properties_q21.jpg",
+      "options": [
+        "6 m",
+        "9 m",
+        "12 m",
+        "18 m"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Two Special Triangles: Equilateral and Isosceles"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-the-triangle-and-its-properties-22",
+      "sourceRow": 23,
+      "question": "Maths_7_The_Triangle_and_its_Properties_q22.jpg",
+      "options": [
+        "35°",
+        "70°",
+        "105°",
+        "110°"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Two Special Triangles: Equilateral and Isosceles"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-the-triangle-and-its-properties-23",
+      "sourceRow": 24,
+      "question": "If the base angle of an isosceles triangle is 55°, then what is the measure of the vertical angle?",
+      "options": [
+        "35°",
+        "55°",
+        "70°",
+        "125°"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Two Special Triangles: Equilateral and Isosceles"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-the-triangle-and-its-properties-24",
+      "sourceRow": 25,
+      "question": "Maths_7_The_Triangle_and_its_Properties_q24.jpg",
+      "options": [
+        "AD",
+        "AE",
+        "AF",
+        "AG"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Median",
+        "Altitude",
+        "and Exterior Angle of a Triangle and it's Property"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-the-triangle-and-its-properties-25",
+      "sourceRow": 26,
+      "question": "Maths_7_The_Triangle_and_its_Properties_q25.jpg",
+      "options": [
+        "2 cm",
+        "3 cm",
+        "4 cm",
+        "5 cm"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Sum of the Lengths of Two Sides of a Triangle"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-the-triangle-and-its-properties-26",
+      "sourceRow": 27,
+      "question": "Which of the following angles represent a Pythagoras triangle?",
+      "options": [
+        "Maths_7_The_Triangle_and_its_Properties_q26_o1.jpg",
+        "Maths_7_The_Triangle_and_its_Properties_q26_o2.jpg",
+        "Maths_7_The_Triangle_and_its_Properties_q26_o3.jpg",
+        "Maths_7_The_Triangle_and_its_Properties_q26_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Right-Angled Triangles and Pythagoras Property"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-the-triangle-and-its-properties-27",
+      "sourceRow": 28,
+      "question": "Maths_7_The_Triangle_and_its_Properties_q27.jpg",
+      "options": [
+        "44 cm",
+        "54 cm",
+        "64 cm",
+        "74 cm"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Two Special Triangles: Equilateral and Isosceles"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": "PSA"
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-the-triangle-and-its-properties-28",
+      "sourceRow": 29,
+      "question": "If the sides of a triangle are of length 7 cm and 3 cm, then which of the following must be the third side?",
+      "options": [
+        "> 10 cm",
+        "< 10 cm",
+        "= 10 cm",
+        "<= 10 cm"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Sum of the Lengths of Two Sides of a Triangle"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-the-triangle-and-its-properties-29",
+      "sourceRow": 30,
+      "question": "Maths_7_The_Triangle_and_its_Properties_q29.jpg",
+      "options": [
+        "30°",
+        "40°",
+        "70°",
+        "110°"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Angle Sum Property of a Triangle"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-the-triangle-and-its-properties-30",
+      "sourceRow": 31,
+      "question": "Maths_7_The_Triangle_and_its_Properties_q30.jpg",
+      "options": [
+        "150°",
+        "115°",
+        "151°",
+        "105°"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Angle Sum Property of a Triangle"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-the-triangle-and-its-properties-31",
+      "sourceRow": 32,
+      "question": "Which of the following represents the median and altitude of the triangle ABC?",
+      "options": [
+        "Maths_7_The_Triangle_and_its_Properties_q31_o1.jpg",
+        "Maths_7_The_Triangle_and_its_Properties_q31_o2.jpg",
+        "Maths_7_The_Triangle_and_its_Properties_q31_o3.jpg",
+        "Maths_7_The_Triangle_and_its_Properties_q31_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Median",
+        "Altitude",
+        "and Exterior Angle of a Triangle and it's Property"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-the-triangle-and-its-properties-32",
+      "sourceRow": 33,
+      "question": "In a triangle PQR, angle P is 100°, PS bisects angle P and PS is perpendicular to the side QR, then what is the measure of angle Q?",
+      "options": [
+        "40°",
+        "50°",
+        "90°",
+        "100°"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Angle Sum Property of a Triangle"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-the-triangle-and-its-properties-33",
+      "sourceRow": 34,
+      "question": "Triangle XYZ is an isosceles triangle with sides XY and XZ equal. If the vertical angle is 80°, then what is the measure of angle Z?",
+      "options": [
+        "30°",
+        "50°",
+        "70°",
+        "100°"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Angle Sum Property of a Triangle"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-the-triangle-and-its-properties-34",
+      "sourceRow": 35,
+      "question": "Maths_7_The_Triangle_and_its_Properties_q34.jpg",
+      "options": [
+        "33°",
+        "65°",
+        "115°",
+        "155°"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Two Special Triangles: Equilateral and Isosceles"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-the-triangle-and-its-properties-35",
+      "sourceRow": 36,
+      "question": "An exterior angle of triangle measures 114° and the two interior angles are equal in length. What is the measure of each of these angles?",
+      "options": [
+        "33°",
+        "57°",
+        "66°",
+        "114°"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Median",
+        "Altitude",
+        "and Exterior Angle of a Triangle and it's Property"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-the-triangle-and-its-properties-36",
+      "sourceRow": 37,
+      "question": "What is the perimeter of a rhombus with diagonals 12 cm and 16 cm?",
+      "options": [
+        "14 cm",
+        "20 cm",
+        "28 cm",
+        "40 cm"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Right-Angled Triangles and Pythagoras Property"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-the-triangle-and-its-properties-37",
+      "sourceRow": 38,
+      "question": "In which triangle, altitudes and medians can be same?",
+      "options": [
+        "isosceles triangle",
+        "equilateral triangle",
+        "scalene triangle",
+        "right angled triangle"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Median",
+        "Altitude",
+        "and Exterior Angle of a Triangle and it's Property"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-the-triangle-and-its-properties-38",
+      "sourceRow": 39,
+      "question": "The sum of the angles of a triangle is",
+      "options": [
+        "90º",
+        "270º",
+        "360º",
+        "180º"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Angle Sum Property of a Triangle"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-the-triangle-and-its-properties-39",
+      "sourceRow": 40,
+      "question": "In a right-angled triangle, the acute angles are in the ratio 2:1. The acute angles are:",
+      "options": [
+        "30º, 60º",
+        "40º, 20º",
+        "50º, 25º",
+        "45º, 45º"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Right-Angled Triangles and Pythagoras Property"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-the-triangle-and-its-properties-40",
+      "sourceRow": 41,
+      "question": "During a storm, a tree falls toward a house. The top of the tree leans against the house 45 m above the ground. The distance on the ground from the house to the base of the tree is 24 m. What is the height of the tree?",
+      "options": [
+        "45 m",
+        "42 m",
+        "48 m",
+        "51 m"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Right-Angled Triangles and Pythagoras Property"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-the-triangle-and-its-properties-41",
+      "sourceRow": 42,
+      "question": "The measure of the second angle in a triangle is four more than the measure of the first angle and the measure of the third angle is eight more than twice the measure of the first angle. What is the measure of each angle?",
+      "options": [
+        "30º, 80º and 70º",
+        "42º, 46º and 92º",
+        "40º, 50º and 90º",
+        "40º, 60º and 80º"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Angle Sum Property of a Triangle"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-the-triangle-and-its-properties-42",
+      "sourceRow": 43,
+      "question": "A rectangle is 26 m long and 18 m wide. What is the length of the diagonal of the rectangle to the nearest meter?",
+      "options": [
+        "Maths_7_The_Triangle_and_its_Properties_q42_o1.jpg",
+        "Maths_7_The_Triangle_and_its_Properties_q42_o2.jpg",
+        "Maths_7_The_Triangle_and_its_Properties_q42_o3.jpg",
+        "Maths_7_The_Triangle_and_its_Properties_q42_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Right-Angled Triangles and Pythagoras Property"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-the-triangle-and-its-properties-43",
+      "sourceRow": 44,
+      "question": "One of the exterior angles of a triangle is 125º and the interior opposite angles are in the ratio 2 : 3. The angles of the triangle are",
+      "options": [
+        "40º, 65º, 75º",
+        "65º, 35º, 80º",
+        "50º, 75º, 55º",
+        "45º, 40º, 95º"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Median",
+        "Altitude",
+        "and Exterior Angle of a Triangle and it's Property"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-the-triangle-and-its-properties-44",
+      "sourceRow": 45,
+      "question": "A rectangle has sides of length 8 cm and 6 cm. The length of its diagonals is",
+      "options": [
+        "5 cm",
+        "10 cm",
+        "6 cm",
+        "11 cm"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Right-Angled Triangles and Pythagoras Property"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    }
+  ]
+}

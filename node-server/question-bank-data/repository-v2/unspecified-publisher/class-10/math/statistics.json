@@ -1,0 +1,1890 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-24T11:45:03.844Z",
+  "classification": {
+    "class": "Class 10",
+    "subject": "Math",
+    "topic": "Statistics"
+  },
+  "publisher": "unspecified-publisher",
+  "source": {
+    "file": "Class10/Final/Math_Class_10_Assess_QB_14_Statistics/Math_Class_10_Assess_QB_14_Statistics.xlsx",
+    "sheet": "filename"
+  },
+  "questionType": "MCQ",
+  "questionCount": 72,
+  "questions": [
+    {
+      "id": "unspecified-publisher-class-10-math-statistics-1",
+      "sourceRow": 2,
+      "question": "Math_Class_10_Assess_QB_14_Statistics_q1.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_14_Statistics_q1_o1.jpg",
+        "Math_Class_10_Assess_QB_14_Statistics_q1_o2.jpg",
+        "Math_Class_10_Assess_QB_14_Statistics_q1_o3.jpg",
+        "Math_Class_10_Assess_QB_14_Statistics_q1_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Difficult",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Mean of Grouped Data"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-statistics-2",
+      "sourceRow": 3,
+      "question": "The arithmetic mean of 1, 2, 3, 4, ... , n is",
+      "options": [
+        "Math_Class_10_Assess_QB_14_Statistics_q2_o1.jpg",
+        "Math_Class_10_Assess_QB_14_Statistics_q2_o2.jpg",
+        "Math_Class_10_Assess_QB_14_Statistics_q2_o3.jpg",
+        "Math_Class_10_Assess_QB_14_Statistics_q2_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Mean of Grouped Data"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-statistics-3",
+      "sourceRow": 4,
+      "question": "Math_Class_10_Assess_QB_14_Statistics_q3.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_14_Statistics_q3_o1.jpg",
+        "Math_Class_10_Assess_QB_14_Statistics_q3_o2.jpg",
+        "Math_Class_10_Assess_QB_14_Statistics_q3_o3.jpg",
+        "Math_Class_10_Assess_QB_14_Statistics_q3_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Mean of Grouped Data"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-statistics-4",
+      "sourceRow": 5,
+      "question": "Which of the following is not a measure of central tendency?",
+      "options": [
+        "Mean",
+        "Median",
+        "Mode",
+        "Standard deviation"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Mode and Median of Grouped Data"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-statistics-5",
+      "sourceRow": 6,
+      "question": "Math_Class_10_Assess_QB_14_Statistics_q5.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_14_Statistics_q5_o1.jpg",
+        "Math_Class_10_Assess_QB_14_Statistics_q5_o2.jpg",
+        "Math_Class_10_Assess_QB_14_Statistics_q5_o3.jpg",
+        "Math_Class_10_Assess_QB_14_Statistics_q5_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Mean of Grouped Data"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-statistics-6",
+      "sourceRow": 7,
+      "question": "The less than ogive is a",
+      "options": [
+        "U-shaped curve",
+        "J-shaped curve",
+        "S-shaped curve",
+        "Bell shaped curve"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Cumulative Frequency Curve"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-statistics-7",
+      "sourceRow": 8,
+      "question": "In an ogive, on the x-axis we take",
+      "options": [
+        "Class mark",
+        "Any value from the class interval",
+        "Lower limit of class interval",
+        "Upper limit of class interval"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Cumulative Frequency Curve"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-statistics-8",
+      "sourceRow": 9,
+      "question": "The value of xi in the row data are arranged in order of increasing or decreasing magnitudes; then the middle most value in the arrangement is called",
+      "options": [
+        "Arithmetic mean",
+        "Median",
+        "Mode",
+        "Standard deviation"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Mode and Median of Grouped Data"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-statistics-9",
+      "sourceRow": 10,
+      "question": "The difference between the maximum and minimum observations in the data is",
+      "options": [
+        "Class interval",
+        "Frequency",
+        "Cumulative frequency",
+        "None of these"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Mode and Median of Grouped Data"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-statistics-10",
+      "sourceRow": 11,
+      "question": "The median of a given frequency distribution is found graphically with the help of",
+      "options": [
+        "Histogram",
+        "Frequency curve",
+        "Frequency polygon",
+        "Ogive"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Cumulative Frequency Curve"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-statistics-11",
+      "sourceRow": 12,
+      "question": "The arithmetric mean of 67 values is 35. If each of these values is multiplied by 4, then the mean of new values is",
+      "options": [
+        "120",
+        "140",
+        "160",
+        "none of these"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Mean of Grouped Data"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-statistics-12",
+      "sourceRow": 13,
+      "question": "Mode is",
+      "options": [
+        "Least frequent value",
+        "Middle most value",
+        "Most frequent value",
+        "None of these"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Mode and Median of Grouped Data"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-statistics-13",
+      "sourceRow": 14,
+      "question": "Math_Class_10_Assess_QB_14_Statistics_q13.jpg",
+      "options": [
+        "29.7° F",
+        "29.8° F",
+        "29.57° F",
+        "None of these"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Mean of Grouped Data"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-statistics-14",
+      "sourceRow": 15,
+      "question": "Math_Class_10_Assess_QB_14_Statistics_q14.jpg",
+      "options": [
+        "mean",
+        "mode",
+        "median",
+        "average"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Mean of Grouped Data"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-statistics-15",
+      "sourceRow": 16,
+      "question": "The median of Ist ten prime number is",
+      "options": [
+        "11",
+        "12",
+        "13",
+        "None of these"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Mode and Median of Grouped Data"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-statistics-16",
+      "sourceRow": 17,
+      "question": "If median = 15 and mean = 16, then the mode is",
+      "options": [
+        "12",
+        "11",
+        "10",
+        "13"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Mode and Median of Grouped Data"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-statistics-17",
+      "sourceRow": 18,
+      "question": "In statistical measures, which can be determined graphically",
+      "options": [
+        "median",
+        "mode",
+        "mean",
+        "all the above"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Cumulative Frequency Curve"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-statistics-18",
+      "sourceRow": 19,
+      "question": "If the value of mode and mean is 60 and 66 then the value of median is",
+      "options": [
+        "60",
+        "64",
+        "68",
+        "None of these"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Mode and Median of Grouped Data"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-statistics-19",
+      "sourceRow": 20,
+      "question": "Relationship between deviation and mean",
+      "options": [
+        "Math_Class_10_Assess_QB_14_Statistics_q19_o1.jpg",
+        "Math_Class_10_Assess_QB_14_Statistics_q19_o2.jpg",
+        "Math_Class_10_Assess_QB_14_Statistics_q19_o3.jpg",
+        "Math_Class_10_Assess_QB_14_Statistics_q19_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Mean of Grouped Data"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-statistics-20",
+      "sourceRow": 21,
+      "question": "The mean of five numbers is 18. If one number is excluded, then their mean is 16. The excluded number is",
+      "options": [
+        "24",
+        "26",
+        "30",
+        "None of these"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Mean of Grouped Data"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-statistics-21",
+      "sourceRow": 22,
+      "question": "If median = 5, mode = 6, the mean of the distribution is",
+      "options": [
+        "5.4",
+        "4",
+        "4.5",
+        "None of these"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Mode and Median of Grouped Data"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-statistics-22",
+      "sourceRow": 23,
+      "question": "When A = assumed mean, h = width of class interval, then di is",
+      "options": [
+        "Math_Class_10_Assess_QB_14_Statistics_q22_o1.jpg",
+        "Math_Class_10_Assess_QB_14_Statistics_q22_o2.jpg",
+        "Math_Class_10_Assess_QB_14_Statistics_q22_o3.jpg",
+        "Math_Class_10_Assess_QB_14_Statistics_q22_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Mean of Grouped Data"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-statistics-23",
+      "sourceRow": 24,
+      "question": "The average of 11 results is 50. If the average of the first six results is 49 and that of the last six is 52, then the sixth result is",
+      "options": [
+        "53",
+        "54",
+        "55",
+        "56"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Mean of Grouped Data"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-statistics-24",
+      "sourceRow": 25,
+      "question": "Math_Class_10_Assess_QB_14_Statistics_q24.jpg",
+      "options": [
+        "3",
+        "8",
+        "13",
+        "24"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Mean of Grouped Data"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-statistics-25",
+      "sourceRow": 26,
+      "question": "For what value of x, the mode of the following data is 8.<br> 4, 5, 6, 8, 5, 4, 8, 5, 6, x, 8",
+      "options": [
+        "5",
+        "6",
+        "8",
+        "4"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Mode and Median of Grouped Data"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-statistics-26",
+      "sourceRow": 27,
+      "question": "Math_Class_10_Assess_QB_14_Statistics_q26.jpg",
+      "options": [
+        "6.5",
+        "5",
+        "6",
+        "7"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Mode and Median of Grouped Data"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-statistics-27",
+      "sourceRow": 28,
+      "question": "Math_Class_10_Assess_QB_14_Statistics_q27.jpg",
+      "options": [
+        "310",
+        "315",
+        "320",
+        "330"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Mode and Median of Grouped Data"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": "Exemplar"
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-statistics-28",
+      "sourceRow": 29,
+      "question": "Math_Class_10_Assess_QB_14_Statistics_q28.jpg",
+      "options": [
+        "a + b = 104",
+        "a – b = 48",
+        "a + b = 114, a + 2b = 152",
+        "a = 76, b = 48"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Mean of Grouped Data"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-statistics-29",
+      "sourceRow": 30,
+      "question": "Math_Class_10_Assess_QB_14_Statistics_q29.jpg",
+      "options": [
+        "0",
+        "– 1",
+        "1",
+        "2"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Mean of Grouped Data"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-statistics-30",
+      "sourceRow": 31,
+      "question": "Math_Class_10_Assess_QB_14_Statistics_q30.jpg",
+      "options": [
+        "10",
+        "9",
+        "8",
+        "21"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Mean of Grouped Data"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-statistics-31",
+      "sourceRow": 32,
+      "question": "The graphs of ‘more than’ and ‘less than’ ogives intersect at the point (70, 45). The Median of the data is",
+      "options": [
+        "45",
+        "55",
+        "70",
+        "None of these"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Cumulative Frequency Curve"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-statistics-32",
+      "sourceRow": 33,
+      "question": "Math_Class_10_Assess_QB_14_Statistics_q32.jpg",
+      "options": [
+        "20-30",
+        "10-20",
+        "30-40",
+        "40-50"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Mode and Median of Grouped Data"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-statistics-33",
+      "sourceRow": 34,
+      "question": "Which of the following is NOT a measure of central tendency?",
+      "options": [
+        "Mean",
+        "Median",
+        "Mode",
+        "Standard Deviation"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Mode and Median of Grouped Data"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-statistics-34",
+      "sourceRow": 35,
+      "question": "Which one of the following can be obtained by drawing a Histogram?",
+      "options": [
+        "Mean",
+        "Median",
+        "Mode",
+        "Mean, Median and Mode"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Mode and Median of Grouped Data"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-statistics-35",
+      "sourceRow": 36,
+      "question": "Math_Class_10_Assess_QB_14_Statistics_q35.jpg",
+      "options": [
+        "60 and 80",
+        "60",
+        "40 and 60",
+        "80"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Mode and Median of Grouped Data"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-statistics-36",
+      "sourceRow": 37,
+      "question": "Math_Class_10_Assess_QB_14_Statistics_q36.jpg",
+      "options": [
+        "94",
+        "143",
+        "170",
+        "176"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Mode and Median of Grouped Data"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-statistics-37",
+      "sourceRow": 38,
+      "question": "Math_Class_10_Assess_QB_14_Statistics_q37.jpg",
+      "options": [
+        "50",
+        "25",
+        "79",
+        "80"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Cumulative Frequency Curve"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-statistics-38",
+      "sourceRow": 39,
+      "question": "Which of the following is correct?",
+      "options": [
+        "Mode = 3 Median – 2 Mean",
+        "3 Median = 2 Mode + Mean",
+        "2 Mean = Median – Mode",
+        "Mode = Median – mean"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Mode and Median of Grouped Data"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-statistics-39",
+      "sourceRow": 40,
+      "question": "The Mean of the first five prime numbers is",
+      "options": [
+        "7",
+        "7.6",
+        "5",
+        "5.6"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Mean of Grouped Data"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-statistics-57",
+      "sourceRow": 58,
+      "question": "Math_Class_10_Assess_QB_14_Statistics_q57.jpg",
+      "options": [
+        "5",
+        "40",
+        "80",
+        "15"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Cumulative Frequency Curve"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-statistics-58",
+      "sourceRow": 59,
+      "question": "Math_Class_10_Assess_QB_14_Statistics_q58.jpg",
+      "options": [
+        "10-20",
+        "20-30",
+        "30-40",
+        "50-60"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Mode and Median of Grouped Data"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-statistics-59",
+      "sourceRow": 60,
+      "question": "If mode of a data is 45, mean is 27, then median is :",
+      "options": [
+        "30",
+        "27",
+        "33",
+        "None"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Mode and Median of Grouped Data"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-statistics-60",
+      "sourceRow": 61,
+      "question": "For a symmetrical distribution, which is correct?",
+      "options": [
+        "Math_Class_10_Assess_QB_14_Statistics_q60_o1.jpg",
+        "Math_Class_10_Assess_QB_14_Statistics_q60_o2.jpg",
+        "Math_Class_10_Assess_QB_14_Statistics_q60_o3.jpg",
+        "Math_Class_10_Assess_QB_14_Statistics_q60_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Mode and Median of Grouped Data"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-statistics-61",
+      "sourceRow": 62,
+      "question": "The mean and median of a data are 14 and 15 respectively. The value of mode is",
+      "options": [
+        "16",
+        "17",
+        "13",
+        "18"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Mode and Median of Grouped Data"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-statistics-62",
+      "sourceRow": 63,
+      "question": "If mode of the following data is 7, then value of k in 2, 4, 6, 7, 5, 6, 10, 6, 7, 2k + 1, 9, 7, 13 is :",
+      "options": [
+        "3",
+        "7",
+        "4",
+        "2"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Mode and Median of Grouped Data"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-statistics-63",
+      "sourceRow": 64,
+      "question": "If mode = 80 and mean = 110 then the median is:",
+      "options": [
+        "110",
+        "120",
+        "100",
+        "90"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Mode and Median of Grouped Data"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-statistics-64",
+      "sourceRow": 65,
+      "question": "Math_Class_10_Assess_QB_14_Statistics_q64.jpg",
+      "options": [
+        "17",
+        "17.25",
+        "18",
+        "18.5"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Mode and Median of Grouped Data"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-statistics-65",
+      "sourceRow": 66,
+      "question": "The measure of central tendency is given by the x coordinate of the point of intersection of the more than ogive and less than ogive is :",
+      "options": [
+        "Mean",
+        "Median",
+        "Mode",
+        "All the above"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Cumulative Frequency Curve"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-statistics-66",
+      "sourceRow": 67,
+      "question": "Construction of a cumulative frequency table is useful in determining the",
+      "options": [
+        "mean",
+        "median",
+        "mode",
+        "all the above three measures"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Mode and Median of Grouped Data"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-statistics-67",
+      "sourceRow": 68,
+      "question": "The measures of central tendency which can’t be found graphically is :",
+      "options": [
+        "mean",
+        "median",
+        "mode",
+        "none of these"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Mode and Median of Grouped Data"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-statistics-68",
+      "sourceRow": 69,
+      "question": "Which of the following is not a measure of central tendency :",
+      "options": [
+        "Mean",
+        "Median",
+        "Range",
+        "Mode"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Mode and Median of Grouped Data"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-statistics-69",
+      "sourceRow": 70,
+      "question": "A data has 25 observations (arranged in descending order). Which observation represents the median?",
+      "options": [
+        "12th",
+        "13th",
+        "14th",
+        "15th"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Mode and Median of Grouped Data"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-statistics-70",
+      "sourceRow": 71,
+      "question": "For a given data with 50 observations the ‘Less than ogive’ and the ‘more than ogive’ intersect at (15.5, 20). The median of the data is :",
+      "options": [
+        "4.5",
+        "20",
+        "50",
+        "15.5"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Cumulative Frequency Curve"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-statistics-71",
+      "sourceRow": 72,
+      "question": "For a given data with 40 observations the less than ogive and the more than ogive interesect at (20.5, 15). The median of the data is :",
+      "options": [
+        "5.5",
+        "20.5",
+        "15",
+        "40"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Cumulative Frequency Curve"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-statistics-72",
+      "sourceRow": 73,
+      "question": "The Classmark of a Class Interval is",
+      "options": [
+        "Math_Class_10_Assess_QB_14_Statistics_q72_o1.jpg",
+        "Math_Class_10_Assess_QB_14_Statistics_q72_o2.jpg",
+        "Math_Class_10_Assess_QB_14_Statistics_q72_o3.jpg",
+        "Math_Class_10_Assess_QB_14_Statistics_q72_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Mode and Median of Grouped Data"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-statistics-73",
+      "sourceRow": 74,
+      "question": "Math_Class_10_Assess_QB_14_Statistics_q73.jpg",
+      "options": [
+        "0",
+        "– 1",
+        "1",
+        "2"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Mode and Median of Grouped Data"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-statistics-74",
+      "sourceRow": 75,
+      "question": "Math_Class_10_Assess_QB_14_Statistics_q74.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_14_Statistics_q74_o1.jpg",
+        "Math_Class_10_Assess_QB_14_Statistics_q74_o2.jpg",
+        "Math_Class_10_Assess_QB_14_Statistics_q74_o3.jpg",
+        "Math_Class_10_Assess_QB_14_Statistics_q74_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Mode and Median of Grouped Data"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-statistics-75",
+      "sourceRow": 76,
+      "question": "Mode is",
+      "options": [
+        "least frequent value",
+        "middle most value",
+        "most frequent value",
+        "None of these"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Mode and Median of Grouped Data"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-statistics-76",
+      "sourceRow": 77,
+      "question": "The algebraic sum of the deviations of a frequency distribution from its mean is",
+      "options": [
+        "always positive",
+        "always negative",
+        "0",
+        "a non-zero number"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Mode and Median of Grouped Data"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-statistics-77",
+      "sourceRow": 78,
+      "question": "Which of the following cannot be determined graphically?",
+      "options": [
+        "Mean",
+        "Median",
+        "Mode",
+        "None of these"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Cumulative Frequency Curve"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-statistics-78",
+      "sourceRow": 79,
+      "question": "Math_Class_10_Assess_QB_14_Statistics_q78.jpg",
+      "options": [
+        "11",
+        "71",
+        "82",
+        "130"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Mode and Median of Grouped Data"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-statistics-79",
+      "sourceRow": 80,
+      "question": "Math_Class_10_Assess_QB_14_Statistics_q79.jpg",
+      "options": [
+        "3",
+        "4",
+        "48",
+        "51"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Mode and Median of Grouped Data"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-statistics-80",
+      "sourceRow": 81,
+      "question": "The abscissa of the point of intersection of the less than type and of the more than type cumulative frequency curves of a grouped data gives its",
+      "options": [
+        "mean",
+        "median",
+        "mode",
+        "all the three above"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Mode and Median of Grouped Data"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-statistics-81",
+      "sourceRow": 82,
+      "question": "Math_Class_10_Assess_QB_14_Statistics_q81.jpg",
+      "options": [
+        "15",
+        "25",
+        "30",
+        "35"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Mode and Median of Grouped Data"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-statistics-82",
+      "sourceRow": 83,
+      "question": "Math_Class_10_Assess_QB_14_Statistics_q82.jpg",
+      "options": [
+        "17",
+        "17.5",
+        "18",
+        "18.5"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Mode and Median of Grouped Data"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-statistics-83",
+      "sourceRow": 84,
+      "question": "Math_Class_10_Assess_QB_14_Statistics_q83.jpg",
+      "options": [
+        "10-20",
+        "20-30",
+        "30-40",
+        "50-60"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Mode and Median of Grouped Data"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-statistics-84",
+      "sourceRow": 85,
+      "question": "Math_Class_10_Assess_QB_14_Statistics_q84.jpg",
+      "options": [
+        "0",
+        "19",
+        "20",
+        "38"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Mean of Grouped Data"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-statistics-85",
+      "sourceRow": 86,
+      "question": "Average of first ten prime numbers is :",
+      "options": [
+        "12.6",
+        "12.9",
+        "13.9",
+        "14.9"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Mean of Grouped Data"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-statistics-86",
+      "sourceRow": 87,
+      "question": "Math_Class_10_Assess_QB_14_Statistics_q86.jpg",
+      "options": [
+        "15",
+        "16",
+        "17",
+        "19"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Mean of Grouped Data"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-statistics-87",
+      "sourceRow": 88,
+      "question": "Math_Class_10_Assess_QB_14_Statistics_q87.jpg",
+      "options": [
+        "310",
+        "315",
+        "320",
+        "330"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Mean of Grouped Data"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-statistics-88",
+      "sourceRow": 89,
+      "question": "Math_Class_10_Assess_QB_14_Statistics_q88.jpg",
+      "options": [
+        "lower limits of the classes",
+        "upper limits of the classes",
+        "mid points of the classes",
+        "frequencies of the class marks"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Mean of Grouped Data"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-statistics-89",
+      "sourceRow": 90,
+      "question": "While computing mean of grouped data, we assume that the frequencies are",
+      "options": [
+        "evenly distributed over all the classes",
+        "centred at the classmarks of the classes",
+        "centred at the upper limits of the classes",
+        "centred at the lower limits of the classes"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Mean of Grouped Data"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    }
+  ]
+}

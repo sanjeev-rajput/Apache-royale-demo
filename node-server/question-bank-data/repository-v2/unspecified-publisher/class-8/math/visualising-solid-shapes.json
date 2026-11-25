@@ -1,0 +1,496 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-24T11:45:03.326Z",
+  "classification": {
+    "class": "Class 8",
+    "subject": "Math",
+    "topic": "Visualising Solid Shapes"
+  },
+  "publisher": "unspecified-publisher",
+  "source": {
+    "file": "Class8/Final/Math_Class8_Assess_QB_10_Visualising_Solid_Shapes/Math_Class 8_Assess_QB_10_Visualising_Solid_Shapes.xlsx",
+    "sheet": "filename"
+  },
+  "questionType": "MCQ",
+  "questionCount": 18,
+  "questions": [
+    {
+      "id": "unspecified-publisher-class-8-math-visualising-solid-shapes-9",
+      "sourceRow": 10,
+      "question": "Maths_8_Visualising_Solid_Shapes_q9.jpg",
+      "options": [
+        "Maths_8_Visualising_Solid_Shapes_q9_o1.jpg",
+        "Maths_8_Visualising_Solid_Shapes_q9_o2.jpg",
+        "Maths_8_Visualising_Solid_Shapes_q9_o3.jpg",
+        "Maths_8_Visualising_Solid_Shapes_q9_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Views of 3D-Shapes"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-visualising-solid-shapes-10",
+      "sourceRow": 11,
+      "question": "Piyush is building a prism using match-sticks and balls of clay. How many match-sticks does he need to build a pentagonal prism?",
+      "options": [
+        "13",
+        "15",
+        "18",
+        "20"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Faces",
+        "Edges and Vertices"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-visualising-solid-shapes-11",
+      "sourceRow": 12,
+      "question": "Maths_8_Visualising_Solid_Shapes_q11.jpg",
+      "options": [
+        "Maths_8_Visualising_Solid_Shapes_q11_o1.jpg",
+        "Maths_8_Visualising_Solid_Shapes_q11_o2.jpg",
+        "Maths_8_Visualising_Solid_Shapes_q11_o3.jpg",
+        "Maths_8_Visualising_Solid_Shapes_q11_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Views of 3D-Shapes"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-visualising-solid-shapes-12",
+      "sourceRow": 13,
+      "question": "Maths_8_Visualising_Solid_Shapes_q12.jpg",
+      "options": [
+        "Maths_8_Visualising_Solid_Shapes_q12_o1.jpg",
+        "Maths_8_Visualising_Solid_Shapes_q12_o2.jpg",
+        "Maths_8_Visualising_Solid_Shapes_q12_o3.jpg",
+        "Maths_8_Visualising_Solid_Shapes_q12_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Views of 3D-Shapes"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-visualising-solid-shapes-13",
+      "sourceRow": 14,
+      "question": "How many faces do the solid tetrahedrons has?",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Faces",
+        "Edges and Vertices"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-visualising-solid-shapes-14",
+      "sourceRow": 15,
+      "question": "Which of the following have 1 curved and 2 flat faces?",
+      "options": [
+        "Cylinder",
+        "Cuboid",
+        "Cube",
+        "Sphere"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Faces",
+        "Edges and Vertices"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-visualising-solid-shapes-15",
+      "sourceRow": 16,
+      "question": "Which of the following solids have 6 rectangle faces and 2 hexagonal faces?",
+      "options": [
+        "Rectangular Pyramid",
+        "Rectangular Prism",
+        "Hexagonal Pyramid",
+        "Hexagonal Prism"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Faces",
+        "Edges and Vertices"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-visualising-solid-shapes-16",
+      "sourceRow": 17,
+      "question": "Maths_8_Visualising_Solid_Shapes_q16.jpg",
+      "options": [
+        "5, 6 and 9",
+        "6, 9 and 5",
+        "5, 9 and 6",
+        "6, 5 and 9"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Faces",
+        "Edges and Vertices"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-visualising-solid-shapes-17",
+      "sourceRow": 18,
+      "question": "What is the common name of a square prism?",
+      "options": [
+        "Cuboid",
+        "Cube",
+        "Pyramid",
+        "Polygon"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Introduction to 2D and 3D Shapes"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-visualising-solid-shapes-18",
+      "sourceRow": 19,
+      "question": "How many faces does a rectangular pyramid have?",
+      "options": [
+        "7",
+        "6",
+        "5",
+        "4"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Faces",
+        "Edges and Vertices"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-visualising-solid-shapes-19",
+      "sourceRow": 20,
+      "question": "How many edges does a hexagonal prism have?",
+      "options": [
+        "10",
+        "12",
+        "15",
+        "18"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Faces",
+        "Edges and Vertices"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-visualising-solid-shapes-20",
+      "sourceRow": 21,
+      "question": "Which of the following solids have only one vertex?",
+      "options": [
+        "square pyramid",
+        "tetrahedron",
+        "cone",
+        "cylinder"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Faces",
+        "Edges and Vertices"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-visualising-solid-shapes-21",
+      "sourceRow": 22,
+      "question": "If the number of faces and vertices in a solid are 7 and 10 respectively, then how many edges do that solid have?",
+      "options": [
+        "13",
+        "15",
+        "17",
+        "19"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Faces",
+        "Edges and Vertices"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-visualising-solid-shapes-22",
+      "sourceRow": 23,
+      "question": "Maths_8_Visualising_Solid_Shapes_q22.jpg",
+      "options": [
+        "Maths_8_Visualising_Solid_Shapes_q22_o1.jpg",
+        "Maths_8_Visualising_Solid_Shapes_q22_o2.jpg",
+        "Maths_8_Visualising_Solid_Shapes_q22_o3.jpg",
+        "Maths_8_Visualising_Solid_Shapes_q22_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Views of 3D-Shapes"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-visualising-solid-shapes-23",
+      "sourceRow": 24,
+      "question": "Maths_8_Visualising_Solid_Shapes_q23.jpg",
+      "options": [
+        "Maths_8_Visualising_Solid_Shapes_q23_o1.jpg",
+        "Maths_8_Visualising_Solid_Shapes_q23_o2.jpg",
+        "Maths_8_Visualising_Solid_Shapes_q23_o3.jpg",
+        "Maths_8_Visualising_Solid_Shapes_q23_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Views of 3D-Shapes"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-visualising-solid-shapes-24",
+      "sourceRow": 25,
+      "question": "How many vertices does the regular octahedron have?",
+      "options": [
+        "6",
+        "8",
+        "10",
+        "12"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Faces",
+        "Edges and Vertices"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-visualising-solid-shapes-25",
+      "sourceRow": 26,
+      "question": "Maths_8_Visualising_Solid_Shapes_q25.jpg",
+      "options": [
+        "Maths_8_Visualising_Solid_Shapes_q25_o1.jpg",
+        "Maths_8_Visualising_Solid_Shapes_q25_o2.jpg",
+        "Maths_8_Visualising_Solid_Shapes_q25_o3.jpg",
+        "Maths_8_Visualising_Solid_Shapes_q25_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Views of 3D-Shapes"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-visualising-solid-shapes-26",
+      "sourceRow": 27,
+      "question": "Which of the following different plane shapes are required to draw the net of a triangular pyramid?",
+      "options": [
+        "3 triangles and 1 rectangle",
+        "4 triangles and 1 square",
+        "3 triangles only",
+        "4 triangles only"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Views of 3D-Shapes"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    }
+  ]
+}

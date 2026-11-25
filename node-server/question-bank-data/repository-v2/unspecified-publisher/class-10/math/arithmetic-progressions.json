@@ -1,0 +1,1630 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-24T11:45:03.604Z",
+  "classification": {
+    "class": "Class 10",
+    "subject": "Math",
+    "topic": "Arithmetic Progressions"
+  },
+  "publisher": "unspecified-publisher",
+  "source": {
+    "file": "Class10/Final/Math_Class_10_Assess_QB_05_Arithmetic_Progressions/Math_Class_10_Assess_QB_05_Arithmetic_Progressions.xlsx",
+    "sheet": "Maths_Grade_10_Ch-5"
+  },
+  "questionType": "MCQ",
+  "questionCount": 62,
+  "questions": [
+    {
+      "id": "unspecified-publisher-class-10-math-arithmetic-progressions-1",
+      "sourceRow": 2,
+      "question": "Which one of the following sequences does NOT form an AP?",
+      "options": [
+        "Math_Class_10_Assess_QB_05_Arithmetic_Progressions_q1_o1.jpg",
+        "Math_Class_10_Assess_QB_05_Arithmetic_Progressions_q1_o2.jpg",
+        "Math_Class_10_Assess_QB_05_Arithmetic_Progressions_q1_o3.jpg",
+        "Math_Class_10_Assess_QB_05_Arithmetic_Progressions_q1_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Basics of Arithmetic Progressions"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-arithmetic-progressions-2",
+      "sourceRow": 3,
+      "question": "If the nth term of an AP is 3n + 1, then its common difference is :",
+      "options": [
+        "–3",
+        "3",
+        "4",
+        "7"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "nth Term of an AP"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-arithmetic-progressions-3",
+      "sourceRow": 4,
+      "question": "If a8 = 37 and a13 = 62, then the AP is",
+      "options": [
+        "2, 7, 12, 17, …",
+        "3, 7, 11, 15, …",
+        "5, 9, 13, 17, …",
+        "4, 7, 10, 13, …"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "nth Term of an AP"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-arithmetic-progressions-4",
+      "sourceRow": 5,
+      "question": "Which term of the AP: 21, 18, 15, … is its first negative term?",
+      "options": [
+        "7th term",
+        "8th term",
+        "9th term",
+        "10th term"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "nth Term of an AP"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-arithmetic-progressions-5",
+      "sourceRow": 6,
+      "question": "If the sum of n terms of an AP is given by Sn = 4n2– 3n, then its nth term is",
+      "options": [
+        "8n – 5",
+        "8n – 7",
+        "9n – 7",
+        "9n – 8"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Sum to First n Terms of an AP"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": "Analysing",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-arithmetic-progressions-6",
+      "sourceRow": 7,
+      "question": "The sum of the terms of the AP : 1,–1, –3, –5, –7, …, –21 is",
+      "options": [
+        "120",
+        "110",
+        "–120",
+        "–110"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Sum to First n Terms of an AP"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-arithmetic-progressions-7",
+      "sourceRow": 8,
+      "question": "The 4th term from the end of the AP: 7, 13, 19, …, 133 is",
+      "options": [
+        "25",
+        "127",
+        "121",
+        "115"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "nth Term of an AP"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-arithmetic-progressions-8",
+      "sourceRow": 9,
+      "question": "The sum of the first n natural numbers is",
+      "options": [
+        "Math_Class_10_Assess_QB_05_Arithmetic_Progressions_q8_o1.jpg",
+        "Math_Class_10_Assess_QB_05_Arithmetic_Progressions_q8_o2.jpg",
+        "Math_Class_10_Assess_QB_05_Arithmetic_Progressions_q8_o3.jpg",
+        "Math_Class_10_Assess_QB_05_Arithmetic_Progressions_q8_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Sum to First n Terms of an AP"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": "Remembering",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-arithmetic-progressions-9",
+      "sourceRow": 10,
+      "question": "Which of the following is a term of the AP: 3, 10, 17, 24, …?",
+      "options": [
+        "50",
+        "94",
+        "117",
+        "All of these"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "nth Term of an AP"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-arithmetic-progressions-10",
+      "sourceRow": 11,
+      "question": "Math_Class_10_Assess_QB_05_Arithmetic_Progressions_q10.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_05_Arithmetic_Progressions_q10_o1.jpg",
+        "Math_Class_10_Assess_QB_05_Arithmetic_Progressions_q10_o2.jpg",
+        "Math_Class_10_Assess_QB_05_Arithmetic_Progressions_q10_o3.jpg",
+        "Math_Class_10_Assess_QB_05_Arithmetic_Progressions_q10_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "nth Term of an AP"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-arithmetic-progressions-11",
+      "sourceRow": 12,
+      "question": "The sum of all 2-digit multiples of seven is",
+      "options": [
+        "784",
+        "728",
+        "735",
+        "672"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Sum to First n Terms of an AP"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-arithmetic-progressions-12",
+      "sourceRow": 13,
+      "question": "The missing terms of the AP: –9,… , …, –24 are",
+      "options": [
+        "–19, –14",
+        "–18, –13",
+        "–14, –19",
+        "–13, –18"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Basics of Arithmetic Progressions"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-arithmetic-progressions-13",
+      "sourceRow": 14,
+      "question": "The terms 2k, 3k +2, and 5k +1 are in AP. Hence, the value of k is:",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Basics of Arithmetic Progressions"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-arithmetic-progressions-14",
+      "sourceRow": 15,
+      "question": "What is the sum of all natural numbers from 1 to 100?",
+      "options": [
+        "5050",
+        "55",
+        "4550",
+        "5150"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Sum to First n Terms of an AP"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-arithmetic-progressions-15",
+      "sourceRow": 16,
+      "question": "The 4th term from the end of A.P. – 11, – 8, – 5, …, 49 is",
+      "options": [
+        "37",
+        "40",
+        "43",
+        "58"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "nth Term of an AP"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-arithmetic-progressions-16",
+      "sourceRow": 17,
+      "question": "Which term of the AP 24, 21, 18,... is the first negative term?",
+      "options": [
+        "8th",
+        "9th",
+        "10th",
+        "12th"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "nth Term of an AP"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-arithmetic-progressions-17",
+      "sourceRow": 18,
+      "question": "Which term of an A.P: 21, 42, 63,... is 210?",
+      "options": [
+        "9th",
+        "10th",
+        "12th",
+        "11th"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "nth Term of an AP"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-arithmetic-progressions-18",
+      "sourceRow": 19,
+      "question": "What is the common difference of the A.P. in which a18 – a14 = 32?",
+      "options": [
+        "8",
+        "– 8",
+        "4",
+        "– 4"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "nth Term of an AP"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-arithmetic-progressions-19",
+      "sourceRow": 20,
+      "question": "The sequence of numbers – 10, – 6, – 2, 2, ... is",
+      "options": [
+        "an AP with d = – 16",
+        "an AP with d = 4",
+        "an AP with d = – 4",
+        "not an AP"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Basics of Arithmetic Progressions"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-arithmetic-progressions-20",
+      "sourceRow": 21,
+      "question": "For what value of p are 2p + 1, 13, 5p – 3, three consecutive terms of an A.P.?",
+      "options": [
+        "2",
+        "– 2",
+        "4",
+        "– 4"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Basics of Arithmetic Progressions"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-arithmetic-progressions-21",
+      "sourceRow": 22,
+      "question": "Which term of the A.P. 113, 108, 103, ... is the first negative term?",
+      "options": [
+        "22nd term",
+        "24th term",
+        "26th term",
+        "28th term"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "nth Term of an AP"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-arithmetic-progressions-22",
+      "sourceRow": 23,
+      "question": "15th term of the A.P. x – 7, x – 2, x + 3, ... is:",
+      "options": [
+        "x + 63",
+        "x + 73",
+        "x + 83",
+        "x + 53"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "nth Term of an AP"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-arithmetic-progressions-23",
+      "sourceRow": 24,
+      "question": "If p – 1, p + 3, 3p – 1 are in A.P. then p is equal to:",
+      "options": [
+        "4",
+        "– 4",
+        "2",
+        "– 2"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Basics of Arithmetic Progressions"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-arithmetic-progressions-24",
+      "sourceRow": 25,
+      "question": "Math_Class_10_Assess_QB_05_Arithmetic_Progressions_q24.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_05_Arithmetic_Progressions_q24_o1.jpg",
+        "Math_Class_10_Assess_QB_05_Arithmetic_Progressions_q24_o2.jpg",
+        "Math_Class_10_Assess_QB_05_Arithmetic_Progressions_q24_o3.jpg",
+        "Math_Class_10_Assess_QB_05_Arithmetic_Progressions_q24_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Basics of Arithmetic Progressions"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-arithmetic-progressions-25",
+      "sourceRow": 26,
+      "question": "Which term of the A.P. 100, 90, 80, ... is zero?",
+      "options": [
+        "5th",
+        "6th",
+        "10th",
+        "11th"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "nth Term of an AP"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-arithmetic-progressions-26",
+      "sourceRow": 27,
+      "question": "Which of the following is not an A.P.?",
+      "options": [
+        "Math_Class_10_Assess_QB_05_Arithmetic_Progressions_q26_o1.jpg",
+        "Math_Class_10_Assess_QB_05_Arithmetic_Progressions_q26_o2.jpg",
+        "Math_Class_10_Assess_QB_05_Arithmetic_Progressions_q26_o3.jpg",
+        "Math_Class_10_Assess_QB_05_Arithmetic_Progressions_q26_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Basics of Arithmetic Progressions"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-arithmetic-progressions-27",
+      "sourceRow": 28,
+      "question": "Which term of the A.P. 92, 88, 84, 80, ... is 0?",
+      "options": [
+        "23",
+        "32",
+        "22",
+        "24"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "nth Term of an AP"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-arithmetic-progressions-28",
+      "sourceRow": 29,
+      "question": "Which term of the A.P. 1, 4, 7 ... is 88?",
+      "options": [
+        "26",
+        "27",
+        "30",
+        "35"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "nth Term of an AP"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-arithmetic-progressions-29",
+      "sourceRow": 30,
+      "question": "Which term of the AP, 4, 9, 14, ... is 254?",
+      "options": [
+        "50th",
+        "51st",
+        "52nd",
+        "53rd"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "nth Term of an AP"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-arithmetic-progressions-30",
+      "sourceRow": 31,
+      "question": "Ist, 2nd and last terms of an AP are a, b and 2a respectively. Its sum is",
+      "options": [
+        "Math_Class_10_Assess_QB_05_Arithmetic_Progressions_q30_o1.jpg",
+        "Math_Class_10_Assess_QB_05_Arithmetic_Progressions_q30_o2.jpg",
+        "Math_Class_10_Assess_QB_05_Arithmetic_Progressions_q30_o3.jpg",
+        "Math_Class_10_Assess_QB_05_Arithmetic_Progressions_q30_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Sum to First n Terms of an AP"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Analysing",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-arithmetic-progressions-31",
+      "sourceRow": 32,
+      "question": "If the 2nd term of an AP is 2 and 7th term is 22, the sum of first 35 terms of the AP is",
+      "options": [
+        "2300",
+        "3210",
+        "2310",
+        "2301"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Sum to First n Terms of an AP"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-arithmetic-progressions-32",
+      "sourceRow": 33,
+      "question": "Math_Class_10_Assess_QB_05_Arithmetic_Progressions_q32.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_05_Arithmetic_Progressions_q32_o1.jpg",
+        "Math_Class_10_Assess_QB_05_Arithmetic_Progressions_q32_o2.jpg",
+        "Math_Class_10_Assess_QB_05_Arithmetic_Progressions_q32_o3.jpg",
+        "Math_Class_10_Assess_QB_05_Arithmetic_Progressions_q32_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "nth Term of an AP"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-arithmetic-progressions-33",
+      "sourceRow": 34,
+      "question": "The first term of an AP is 6 and its common difference is 5. Then the 10th term of an AP will be",
+      "options": [
+        "51",
+        "62",
+        "50",
+        "61"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "nth Term of an AP"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-arithmetic-progressions-34",
+      "sourceRow": 35,
+      "question": "The 4th term of an AP is 14 and its 12th term is 70. What is its first term?",
+      "options": [
+        "10",
+        "– 10",
+        "7",
+        "– 7"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "nth Term of an AP"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-arithmetic-progressions-35",
+      "sourceRow": 36,
+      "question": "For what value of n, the nth term of the series “3 + 10 + 17 + ...” and “63 + 65 + 67 + ...” are equal?",
+      "options": [
+        "n = 13",
+        "n = 14",
+        "n = 11",
+        "n = 10"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "nth Term of an AP"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Analysing",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-arithmetic-progressions-36",
+      "sourceRow": 37,
+      "question": "Math_Class_10_Assess_QB_05_Arithmetic_Progressions_q36.jpg",
+      "options": [
+        "p2",
+        "p3",
+        "p4",
+        "p"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Sum to First n Terms of an AP"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Analysing",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-arithmetic-progressions-37",
+      "sourceRow": 38,
+      "question": "The sum of 1st 100 natural numbers is",
+      "options": [
+        "4550",
+        "4780",
+        "5050",
+        "5150"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Sum to First n Terms of an AP"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-arithmetic-progressions-38",
+      "sourceRow": 39,
+      "question": "Which of the following sequences are in AP?",
+      "options": [
+        "Math_Class_10_Assess_QB_05_Arithmetic_Progressions_q38_o1.jpg",
+        "Math_Class_10_Assess_QB_05_Arithmetic_Progressions_q38_o2.jpg",
+        "Math_Class_10_Assess_QB_05_Arithmetic_Progressions_q38_o3.jpg",
+        "Math_Class_10_Assess_QB_05_Arithmetic_Progressions_q38_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Basics of Arithmetic Progressions"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-arithmetic-progressions-39",
+      "sourceRow": 40,
+      "question": "In a class auditorium, there are 45 students in the Ist row, 41 students in the 2nd row, 37 students in the 3rd row and 5 students in the last row. How many rows are there in the class auditorium?",
+      "options": [
+        "10",
+        "11",
+        "12",
+        "13"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "nth Term of an AP"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-arithmetic-progressions-40",
+      "sourceRow": 41,
+      "question": "The sum of all natural numbers between 250 and 1000, exactly divisible by 3, is",
+      "options": [
+        "156375",
+        "156735",
+        "156573",
+        "615375"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Sum to First n Terms of an AP"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Analysing",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-arithmetic-progressions-41",
+      "sourceRow": 42,
+      "question": "Find the value of k, if k, k + 2, 3k – 2 are three consecutive terms of an AP?",
+      "options": [
+        "k = 1",
+        "k = – 1",
+        "k = 3",
+        "k = – 3"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Basics of Arithmetic Progressions"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-arithmetic-progressions-42",
+      "sourceRow": 43,
+      "question": "Math_Class_10_Assess_QB_05_Arithmetic_Progressions_q42.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_05_Arithmetic_Progressions_q42_o1.jpg",
+        "Math_Class_10_Assess_QB_05_Arithmetic_Progressions_q42_o2.jpg",
+        "Math_Class_10_Assess_QB_05_Arithmetic_Progressions_q42_o3.jpg",
+        "Math_Class_10_Assess_QB_05_Arithmetic_Progressions_q42_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Sum to First n Terms of an AP"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Analysing",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-arithmetic-progressions-43",
+      "sourceRow": 44,
+      "question": "1 + 2 + 3 + ... + 1000 =",
+      "options": [
+        "500500",
+        "505000",
+        "500050",
+        "550000"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Sum to First n Terms of an AP"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-arithmetic-progressions-44",
+      "sourceRow": 45,
+      "question": "If the sums of first n, 2n and 3n terms of an AP are s1, s2, s3 respectively, then 3(s2 – s1) is equal to",
+      "options": [
+        "2s1",
+        "2s2",
+        "3s3",
+        "s3"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Sum to First n Terms of an AP"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-arithmetic-progressions-45",
+      "sourceRow": 46,
+      "question": "If 5 times the fifth term of AP is equal to 10 times the 10th term of the AP, then its 15th term is",
+      "options": [
+        "0",
+        "1",
+        "– 1",
+        "– 2"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "nth Term of an AP"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-arithmetic-progressions-46",
+      "sourceRow": 47,
+      "question": "If the sum of n terms of an AP is 3n2 + 5n , then which of its terms is 164?",
+      "options": [
+        "26th",
+        "27th",
+        "28th",
+        "29th"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Sum to First n Terms of an AP"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Analysing",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-arithmetic-progressions-47",
+      "sourceRow": 48,
+      "question": "If the ratio of sum of m terms of an AP to the sum of n terms of an AP is m2 : n2, then the ratio of its mth and nth terms is",
+      "options": [
+        "2m – 1 : 2n – 1",
+        "m – 1 : n – 1",
+        "2m + 1 : 2n + 1",
+        "m + 1 : n + 1"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Sum to First n Terms of an AP"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Analysing",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-arithmetic-progressions-48",
+      "sourceRow": 49,
+      "question": "The sum of first 24 terms of the AP a1, a2, a3 ... if it is known that a1 + a5 + a10 + a15 + a20 + a24 = 225, is equal to",
+      "options": [
+        "500",
+        "1000",
+        "900",
+        "800"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Sum to First n Terms of an AP"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Analysing",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-arithmetic-progressions-49",
+      "sourceRow": 50,
+      "question": "If 7th and 13th terms of an AP be 34 and 64 respectively, then its 18th term is",
+      "options": [
+        "87",
+        "88",
+        "89",
+        "90"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "nth Term of an AP"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Analysing",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-arithmetic-progressions-50",
+      "sourceRow": 51,
+      "question": "If a2(b + c), b2(c + a), c2(a + b) are in AP, then either a, b, c are in AP as",
+      "options": [
+        "ab + bc + ca = 0",
+        "a + b + c = 0",
+        "a – b – c = 0",
+        "a – b + c = 0"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Basics of Arithmetic Progressions"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Analysing",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-arithmetic-progressions-51",
+      "sourceRow": 52,
+      "question": "If a, a – 2 and 3a are in AP, then the value of a is",
+      "options": [
+        "– 3",
+        "– 2",
+        "3",
+        "2"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Basics of Arithmetic Progressions"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-arithmetic-progressions-52",
+      "sourceRow": 53,
+      "question": "Determine the AP whose 3rd term is 5 and 7th term is 9.",
+      "options": [
+        "3, 6, 9, ....",
+        "3, 4, 5, 6, 7, …",
+        "3, 7, 11, ....",
+        "3, 10, 17, ...."
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "nth Term of an AP"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Analysing",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-arithmetic-progressions-53",
+      "sourceRow": 54,
+      "question": "Math_Class_10_Assess_QB_05_Arithmetic_Progressions_q53.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_05_Arithmetic_Progressions_q53_o1.jpg",
+        "Math_Class_10_Assess_QB_05_Arithmetic_Progressions_q53_o2.jpg",
+        "Math_Class_10_Assess_QB_05_Arithmetic_Progressions_q53_o3.jpg",
+        "Math_Class_10_Assess_QB_05_Arithmetic_Progressions_q53_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "nth Term of an AP"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Analysing",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-arithmetic-progressions-54",
+      "sourceRow": 55,
+      "question": "Math_Class_10_Assess_QB_05_Arithmetic_Progressions_q54.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_05_Arithmetic_Progressions_q54_o1.jpg",
+        "Math_Class_10_Assess_QB_05_Arithmetic_Progressions_q54_o2.jpg",
+        "Math_Class_10_Assess_QB_05_Arithmetic_Progressions_q54_o3.jpg",
+        "Math_Class_10_Assess_QB_05_Arithmetic_Progressions_q54_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Basics of Arithmetic Progressions"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-arithmetic-progressions-55",
+      "sourceRow": 56,
+      "question": "If the ratio of the sums of n terms of two APs is (3n + 4) : (5n + 6), then the ratio of their 5th terms is",
+      "options": [
+        "Math_Class_10_Assess_QB_05_Arithmetic_Progressions_q55_o1.jpg",
+        "Math_Class_10_Assess_QB_05_Arithmetic_Progressions_q55_o2.jpg",
+        "Math_Class_10_Assess_QB_05_Arithmetic_Progressions_q55_o3.jpg",
+        "Math_Class_10_Assess_QB_05_Arithmetic_Progressions_q55_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Sum to First n Terms of an AP"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Analysing",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-arithmetic-progressions-56",
+      "sourceRow": 57,
+      "question": "The 11th term from the last term of the AP 10, 7, 4, …, – 62 is",
+      "options": [
+        "– 31",
+        "– 32",
+        "– 33",
+        "– 34"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "nth Term of an AP"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-arithmetic-progressions-57",
+      "sourceRow": 58,
+      "question": "If the pth term of an AP is q and qth term is p, the rth term is",
+      "options": [
+        "p + q + r",
+        "p + q – r",
+        "p – q – r",
+        "– p – q – r"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "nth Term of an AP"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Analysing",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-arithmetic-progressions-58",
+      "sourceRow": 59,
+      "question": "The 9th term of an A.P is 499 and 499th term is 9. The term which is equal to zero is",
+      "options": [
+        "504th",
+        "508th",
+        "502nd",
+        "501st"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "nth Term of an AP"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Analysing",
+      "smeComments": null,
+      "specialCategory": "Exemplar"
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-arithmetic-progressions-59",
+      "sourceRow": 60,
+      "question": "In an AP if a = 1, an = 20 and Sn = 399, then n is",
+      "options": [
+        "19",
+        "21",
+        "38",
+        "42"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Sum to First n Terms of an AP"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": "Exemplar"
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-arithmetic-progressions-60",
+      "sourceRow": 61,
+      "question": "Two APs have the same common difference. The first term of one of these is – 1 and that of the other is – 8. Then the difference between their 4th term is",
+      "options": [
+        "– 1",
+        "– 8",
+        "7",
+        "– 9"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Basics of Arithmetic Progressions"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": "Exemplar"
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-arithmetic-progressions-61",
+      "sourceRow": 62,
+      "question": "If the sum of three consecutive terms of an increasing A.P, is 51 and the product of the first and third of these terms is 273, then the third is",
+      "options": [
+        "30",
+        "19",
+        "21",
+        "31"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Difficult",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Sum to First n Terms of an AP"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Analysing",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-arithmetic-progressions-62",
+      "sourceRow": 63,
+      "question": "Math_Class_10_Assess_QB_05_Arithmetic_Progressions_q62.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_05_Arithmetic_Progressions_q62_o1.jpg",
+        "Math_Class_10_Assess_QB_05_Arithmetic_Progressions_q62_o2.jpg",
+        "Math_Class_10_Assess_QB_05_Arithmetic_Progressions_q62_o3.jpg",
+        "Math_Class_10_Assess_QB_05_Arithmetic_Progressions_q62_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Sum to First n Terms of an AP"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Analysing",
+      "smeComments": null,
+      "specialCategory": "Exemplar"
+    }
+  ]
+}

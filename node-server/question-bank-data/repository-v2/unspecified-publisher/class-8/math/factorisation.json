@@ -1,0 +1,573 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-24T11:45:03.422Z",
+  "classification": {
+    "class": "Class 8",
+    "subject": "Math",
+    "topic": "Factorisation"
+  },
+  "publisher": "unspecified-publisher",
+  "source": {
+    "file": "Class8/Final/Math_Class8_Assess_QB_14_Factorisation/Math_Class 8_Assess_QB_14_Factorisation.xlsx",
+    "sheet": "filename"
+  },
+  "questionType": "MCQ",
+  "questionCount": 21,
+  "questions": [
+    {
+      "id": "unspecified-publisher-class-8-math-factorisation-16",
+      "sourceRow": 17,
+      "question": "Which of the following can be the factorisation of ab(c2 + 1) + c(a2 + b2)?",
+      "options": [
+        "(ab + c)(bc + a)",
+        "(ca + b)(ab + c)",
+        "(bc + a)(ca + b)",
+        "(a2 + b2)(c + a)"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Factorisation Using Common Factors",
+        "Regrouping Terms and Identities"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-factorisation-17",
+      "sourceRow": 18,
+      "question": "The polynomial (x2 – y + xy – x) on factorisation reduces to which of the following factors?",
+      "options": [
+        "(x + y)(x2 + y2)",
+        "(x – y)(x + y)",
+        "(x + y)(x + 1)",
+        "(x + y)(x – 1)"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Factorisation Using Common Factors",
+        "Regrouping Terms and Identities"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-factorisation-18",
+      "sourceRow": 19,
+      "question": "The area of a square shaped lawn is 4x2 + 28x + 49. Which of the following expression represents the side of the square?",
+      "options": [
+        "(2x – 7)",
+        "(7 – 2x)",
+        "(2x + 7)",
+        "(2x2 + 7)"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Factorisation Using Common Factors",
+        "Regrouping Terms and Identities"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-factorisation-19",
+      "sourceRow": 20,
+      "question": "Which of the following is the difference of squares?",
+      "options": [
+        "49a2 – 125",
+        "81x2 – 225y2",
+        "8y2 – 49",
+        "9p2 + 25q2"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Factorisation Using Common Factors",
+        "Regrouping Terms and Identities"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-factorisation-20",
+      "sourceRow": 21,
+      "question": "What quotient we get on dividing 3p2q + 12pq by (p + 4)?",
+      "options": [
+        "3",
+        "pq",
+        "3pq",
+        "3p2q"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Division of Algebraic Expressions"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-factorisation-21",
+      "sourceRow": 22,
+      "question": "Maths_8_Factorisation_q21.jpg",
+      "options": [
+        "Maths_8_Factorisation_q21_o1.jpg",
+        "Maths_8_Factorisation_q21_o2.jpg",
+        "Maths_8_Factorisation_q21_o3.jpg",
+        "Maths_8_Factorisation_q21_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Division of Algebraic Expressions"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-factorisation-22",
+      "sourceRow": 23,
+      "question": "The volume of a cuboid is (x3 – 5x2 – 24x) m3. What would be its length if the breadth is x m and height is (x – 8) m?",
+      "options": [
+        "(x – 8) m",
+        "(x + 8) m",
+        "(x – 3) m",
+        "(x + 3) m"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Division of Polynomials"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-factorisation-23",
+      "sourceRow": 24,
+      "question": "Which of the following polynomials are not divided by (x – 3)?",
+      "options": [
+        "2x2 – x – 15",
+        "3x2 – 13x + 12",
+        "2x2 – 8x + 6",
+        "2x2 – 7x – 3"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Division of Polynomials"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-factorisation-24",
+      "sourceRow": 25,
+      "question": "The volume of a rectangular box is (x3 – 49x) m3. Which of the following are the dimensions of the rectangular box if the height is x m?",
+      "options": [
+        "(x – 49) (x + 49)",
+        "(x – 7) (x + 7)",
+        "(x – 7) (x - 7)",
+        "(x + 7) (x + 7)"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Division of Polynomials"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-factorisation-25",
+      "sourceRow": 26,
+      "question": "The area of a rectangular table is modeled by an expression (p2 + 6p – 16). If the length of the rectangular table is (p – 2), then what is its breadth?",
+      "options": [
+        "(p – 8)",
+        "(p + 8)",
+        "(p – 4)",
+        "(p + 4)"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Division of Algebraic Expressions"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-factorisation-26",
+      "sourceRow": 27,
+      "question": "During her art class, Akriti made a right angled shaped triangle using a card-board. The area of the card-board is (x2 + 5x – 24) inches2. What is its height if the dimension of its base is (x – 3) inches?",
+      "options": [
+        "(x + 16)",
+        "(x – 16)",
+        "2(x – 8)",
+        "2(x + 8)"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Division of Algebraic Expressions"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-factorisation-27",
+      "sourceRow": 28,
+      "question": "Which of the mathematical statements are correct?",
+      "options": [
+        "p(9p – 2) = 9p2 – 2",
+        "8y + 3y = 24y2",
+        "(3z)2 + 2z = 11z",
+        "9a – 5a + 7a – 11a = 0"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identifying Common Errors"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-factorisation-28",
+      "sourceRow": 29,
+      "question": "Maths_8_Factorisation_q28.jpg",
+      "options": [
+        "Rani",
+        "Sarita",
+        "Anju",
+        "Mansi"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Identifying Common Errors"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-factorisation-29",
+      "sourceRow": 30,
+      "question": "Maths_8_Factorisation_q29.jpg",
+      "options": [
+        "Saurab",
+        "Ankita",
+        "Lokesh",
+        "Ayushi"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Identifying Common Errors"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-factorisation-30",
+      "sourceRow": 31,
+      "question": "Jasmine is finding the value of the given algebraic expression x2 + 6x – 9 after substituting the value of x as –2. Following are the steps which Jasmine solved to find the value of the expression.<br>Step 1: (–2)2 + 6(–2) – 9<br>Step 2: 4 + 12 – 9<br>Step 3: 16 – 9<br>Step 4: 7<br>In which of the above steps Jasmine went wrong?",
+      "options": [
+        "Step 1",
+        "Step 2",
+        "Step 3",
+        "Step 4"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Identifying Common Errors"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-factorisation-31",
+      "sourceRow": 32,
+      "question": "If one of the factors of the expression x2 – ax + 5x – 5a is (x + 5), then what is the other factor?",
+      "options": [
+        "(x – a)",
+        "(5 – a)",
+        "(x2 – 5)",
+        "(x + a)"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Division of Polynomials"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-factorisation-32",
+      "sourceRow": 33,
+      "question": "(a + b)2 equals",
+      "options": [
+        "(a + b)(a + b)",
+        "(a – b)(a – b)",
+        "(a + b)(a – b)",
+        "2(a + b)"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Factorisation Using Common Factors",
+        "Regrouping Terms and Identities"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-factorisation-33",
+      "sourceRow": 34,
+      "question": "Highest common factor of 7p3q3 and 21p2q is",
+      "options": [
+        "p3q3",
+        "p2q",
+        "7p2q",
+        "7pq2"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Factorisation Using Common Factors",
+        "Regrouping Terms and Identities"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-factorisation-34",
+      "sourceRow": 35,
+      "question": "The highest common factor of 6a3b + 3a2b2 – 18ab3 is",
+      "options": [
+        "3ab",
+        "3a2b",
+        "3ab2",
+        "ab"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Factorisation Using Common Factors",
+        "Regrouping Terms and Identities"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-factorisation-35",
+      "sourceRow": 36,
+      "question": "Evaluate (205)2 – (195)2",
+      "options": [
+        "400",
+        "4000",
+        "100",
+        "None of these"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Factorisation Using Common Factors",
+        "Regrouping Terms and Identities"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-factorisation-36",
+      "sourceRow": 37,
+      "question": "Evaluate (2.6)2 – (0.6)2",
+      "options": [
+        "6.4",
+        "6",
+        "2.4",
+        "0.4"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Factorisation Using Common Factors",
+        "Regrouping Terms and Identities"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    }
+  ]
+}

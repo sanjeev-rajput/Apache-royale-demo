@@ -1,0 +1,783 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-24T11:45:03.349Z",
+  "classification": {
+    "class": "Class 8",
+    "subject": "Math",
+    "topic": "Mensuration"
+  },
+  "publisher": "unspecified-publisher",
+  "source": {
+    "file": "Class8/Final/Math_Class8_Assess_QB_11_Mensuration/Math_Class 8_Assess_QB_11_Mensuration.xlsx",
+    "sheet": "filename"
+  },
+  "questionType": "MCQ",
+  "questionCount": 29,
+  "questions": [
+    {
+      "id": "unspecified-publisher-class-8-math-mensuration-14",
+      "sourceRow": 15,
+      "question": "Maths_8_Mensuration_q14.jpg",
+      "options": [
+        "266.27 cm2",
+        "256.27 cm2",
+        "265.72 cm2",
+        "256.72 cm2"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Area of a General Quadrilateral and Polygon"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-mensuration-15",
+      "sourceRow": 16,
+      "question": "Maths_8_Mensuration_q15.jpg",
+      "options": [
+        "6 inches",
+        "8 inches",
+        "10 inches",
+        "14 inches"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Area of Trapeziums and Polygons"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-mensuration-16",
+      "sourceRow": 17,
+      "question": "The area of a rhombus is 1,080 cm2 and one of its diagonal is 72 cm. What is the length of the other diagonal?",
+      "options": [
+        "15 cm",
+        "20 cm",
+        "25 cm",
+        "30 cm"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Area of Trapeziums and Polygons"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-mensuration-17",
+      "sourceRow": 18,
+      "question": "The area of a trapezium is 378 cm2. If its parallel sides are in the ratio of 4 : 3, then what is the length of the longer parallel side if the perpendicular distance between them is 12 cm?",
+      "options": [
+        "18 cm",
+        "27 cm",
+        "36 cm",
+        "45 cm"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Area of Trapeziums and Polygons"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-mensuration-18",
+      "sourceRow": 19,
+      "question": "What is the area of a hexagon whose side is 4 cm?",
+      "options": [
+        "41.6 cm2",
+        "6.9 cm2",
+        "34.6 cm2",
+        "48.5 cm2"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Area of a General Quadrilateral and Polygon"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-mensuration-19",
+      "sourceRow": 20,
+      "question": "What is the area of a rhombus whose diagonals are 18 cm and 6.4 cm?",
+      "options": [
+        "115.2 cm2",
+        "230.4 cm2",
+        "57.6 cm2",
+        "12.2 cm2"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Area of Trapeziums and Polygons"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-mensuration-20",
+      "sourceRow": 21,
+      "question": "If the length of one diagonal of a rhombus is 3ab cm and area is 12a2b3 cm2, then what is the length of the other diagonal?",
+      "options": [
+        "4ab2 cm",
+        "6a3b4 cm",
+        "6a3b4 cm",
+        "8ab2 cm"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Area of Trapeziums and Polygons"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-mensuration-21",
+      "sourceRow": 22,
+      "question": "The perimeter of a rhombus is 40 cm, and the length of one diagonal is 16 cm. What is the area of the same rhombus?",
+      "options": [
+        "96 cm2",
+        "48 cm2",
+        "24 cm2",
+        "12 cm2"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Area of Trapeziums and Polygons"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-mensuration-22",
+      "sourceRow": 23,
+      "question": "If the edges of a cuboid are 6 cm, 8 cm and 24 cm, then what is the length of its diagonal?",
+      "options": [
+        "Maths_8_Mensuration_q22_o1.jpg",
+        "Maths_8_Mensuration_q22_o2.jpg",
+        "Maths_8_Mensuration_q22_o3.jpg",
+        "Maths_8_Mensuration_q22_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Surface Area of Cube",
+        "Cuboid and Cylinder"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-mensuration-23",
+      "sourceRow": 24,
+      "question": "A rectangular floor has an area of 120 ft2 and its perimeter is 46 feet. What is the length of the diagonal of the floor?",
+      "options": [
+        "18 ft",
+        "17 ft",
+        "16 ft",
+        "15 ft"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Area of a General Quadrilateral and Polygon"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-mensuration-24",
+      "sourceRow": 25,
+      "question": "Maths_8_Mensuration_q24.jpg",
+      "options": [
+        "1222 m2",
+        "1224 m2",
+        "1226 m2",
+        "1228 m2"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Area of Trapeziums and Polygons"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-mensuration-25",
+      "sourceRow": 26,
+      "question": "Maths_8_Mensuration_q25.jpg",
+      "options": [
+        "1 : 9",
+        "2 : 9",
+        "4 : 9",
+        "5 : 9"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Volume of Cube",
+        "Cuboid and Cylinder"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-mensuration-26",
+      "sourceRow": 27,
+      "question": "The volume of a rectangular card-board is 8 inch3 and height and width is 1 inch. If its volume is increased by 50% then what is the ratio of change in the surface area of the new card-board to the older one?",
+      "options": [
+        "17 : 8",
+        "8 : 25",
+        "8 : 17",
+        "25 : 8"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Surface Area of Cube",
+        "Cuboid and Cylinder"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": "HOTS"
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-mensuration-27",
+      "sourceRow": 28,
+      "question": "If a square and a rhombus stand on the same base, then what is the ratio of the areas of the square and the rhombus?",
+      "options": [
+        "Maths_8_Mensuration_q27_o1.jpg",
+        "Maths_8_Mensuration_q27_o2.jpg",
+        "Maths_8_Mensuration_q27_o3.jpg",
+        "Maths_8_Mensuration_q27_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Area of a General Quadrilateral and Polygon"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": "HOTS"
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-mensuration-28",
+      "sourceRow": 29,
+      "question": "One of the diagonals of a rhombus is double the other diagonal. If its area is 25 cm2, then what is the sum of the diagonals?",
+      "options": [
+        "10 cm",
+        "12 cm",
+        "15 cm",
+        "16 cm"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Area of a General Quadrilateral and Polygon"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-mensuration-29",
+      "sourceRow": 30,
+      "question": "One diagonal of a parallelogram is 70 cm and the perpendicular distance of this diagonal from either of the outlying vertices is 27 cm. What is the area of the parallelogram?",
+      "options": [
+        "1890 cm2",
+        "1800 cm2",
+        "1836 cm2",
+        "1980 cm2"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Area of a General Quadrilateral and Polygon"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-mensuration-30",
+      "sourceRow": 31,
+      "question": "If one side of a parallelogram is 18 cm and its distance from the opposite side is 8 m, then what is the area of the parallelogram?",
+      "options": [
+        "48 cm2",
+        "72 cm2",
+        "100 cm2",
+        "144 cm2"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Area of a General Quadrilateral and Polygon"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-mensuration-31",
+      "sourceRow": 32,
+      "question": "A 16 m by 24 m rectangular section of a wall is to be covered by square tiles that measure 2 m on each side. If the tiles are not cut, how many of them are needed to cover this section of the wall?",
+      "options": [
+        "192",
+        "96",
+        "384",
+        "64"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Area of a General Quadrilateral and Polygon"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-mensuration-32",
+      "sourceRow": 33,
+      "question": "How many bricks, each measuring 25 cm × 11.25 cm × 6 cm will be needed to build a wall 8 m × 6 m × 22.5 cm?",
+      "options": [
+        "5,600",
+        "6,000",
+        "6,400",
+        "7,200"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Volume of Cube",
+        "Cuboid and Cylinder"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-mensuration-33",
+      "sourceRow": 34,
+      "question": "A cube of lead with edges measuring 9 cm each is melted and formed into 27 equal cubes. What will be the length of the edges of the new cubes?",
+      "options": [
+        "1 cm",
+        "2 cm",
+        "3 cm",
+        "4 cm"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Volume of Cube",
+        "Cuboid and Cylinder"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-mensuration-34",
+      "sourceRow": 35,
+      "question": "Dimensions of a cuboid are 25 cm × 20 cm × 4 cm. The volume of a cube is half the volume of the cuboid. What is the total surface area of such a cube?",
+      "options": [
+        "400 cm2",
+        "600 cm2",
+        "800 cm2",
+        "1,200 cm2"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Surface Area of Cube",
+        "Cuboid and Cylinder"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": "HOTS"
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-mensuration-35",
+      "sourceRow": 36,
+      "question": "Maths_8_Mensuration_q35.jpg",
+      "options": [
+        "45 cm2",
+        "48 cm2",
+        "69 cm2",
+        "141 cm2"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Area of Trapeziums and Polygons"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": "HOTS"
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-mensuration-36",
+      "sourceRow": 37,
+      "question": "Maths_8_Mensuration_q36.jpg",
+      "options": [
+        "13 mm",
+        "14 mm",
+        "15 mm",
+        "None of these"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Area of a General Quadrilateral and Polygon"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-mensuration-37",
+      "sourceRow": 38,
+      "question": "The bases of a trapezium are 8 m and 6 m, while its altitude is 4 m. What is the area of the trapezium?",
+      "options": [
+        "4 m2",
+        "56 m2",
+        "28 m2",
+        "26 m2"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Area of Trapeziums and Polygons"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-mensuration-38",
+      "sourceRow": 39,
+      "question": "Find the surface area of a cuboid whose length is 10 cm, breadth is 8 cm and height is 5 cm.",
+      "options": [
+        "350 cm2",
+        "400 cm2",
+        "180 cm2",
+        "340 cm2"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Surface Area of Cube",
+        "Cuboid and Cylinder"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-mensuration-39",
+      "sourceRow": 40,
+      "question": "Find the surface area of a cube, whose edge is 8 cm.",
+      "options": [
+        "384 cm2",
+        "64 cm2",
+        "80 cm2",
+        "42 cm2"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Surface Area of Cube",
+        "Cuboid and Cylinder"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-mensuration-40",
+      "sourceRow": 41,
+      "question": "Find the volume of a cylinder, circumference of whose base is 110 cm and height = 20 cm.",
+      "options": [
+        "20000 cm3",
+        "19250 cm3",
+        "1925 cm3",
+        "None of these"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Volume of Cube",
+        "Cuboid and Cylinder"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-mensuration-41",
+      "sourceRow": 42,
+      "question": "Two circular cylinders of equal volume have heights in the ratio of 1 : 2. What is the ratio of their radii?",
+      "options": [
+        "Maths_8_Mensuration_q41_o1.jpg",
+        "Maths_8_Mensuration_q41_o2.jpg",
+        "Maths_8_Mensuration_q41_o3.jpg",
+        "Maths_8_Mensuration_q41_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Volume of Cube",
+        "Cuboid and Cylinder"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-mensuration-42",
+      "sourceRow": 43,
+      "question": "Which three-dimensional figure has one circular base and a lateral curved surface?",
+      "options": [
+        "Sphere",
+        "Cone",
+        "Cylinder",
+        "Hemi-sphere"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Surface Area of Cube",
+        "Cuboid and Cylinder"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    }
+  ]
+}

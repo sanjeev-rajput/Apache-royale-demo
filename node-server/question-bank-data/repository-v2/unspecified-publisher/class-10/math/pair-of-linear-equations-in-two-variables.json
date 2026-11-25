@@ -1,0 +1,1448 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-24T11:45:03.547Z",
+  "classification": {
+    "class": "Class 10",
+    "subject": "Math",
+    "topic": "Pair of Linear Equations in Two Variables"
+  },
+  "publisher": "unspecified-publisher",
+  "source": {
+    "file": "Class10/Final/Math_Class_10_Assess_QB_03_Pair_of_Linear_Equations_in_Two_Variables/Math_Class_10_Assess_QB_03_Pair_of_Linear_Equations_in_Two_Variables.xlsx",
+    "sheet": "Maths_Grade_10_Ch-3"
+  },
+  "questionType": "MCQ",
+  "questionCount": 55,
+  "questions": [
+    {
+      "id": "unspecified-publisher-class-10-math-pair-of-linear-equations-in-two-variables-1",
+      "sourceRow": 2,
+      "question": "The equation ax + by + c =0 represents a linear equation in two variables x and y, if a, b and c are real numbers and",
+      "options": [
+        "Math_Class_10_Assess_QB_03_Pair_of_Linear_Equations_in_Two_Variables_q1_o1.jpg",
+        "Math_Class_10_Assess_QB_03_Pair_of_Linear_Equations_in_Two_Variables_q1_o2.jpg",
+        "Math_Class_10_Assess_QB_03_Pair_of_Linear_Equations_in_Two_Variables_q1_o3.jpg",
+        "Math_Class_10_Assess_QB_03_Pair_of_Linear_Equations_in_Two_Variables_q1_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Algebraic Methods of Solving Pair of Linear Equations"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-pair-of-linear-equations-in-two-variables-2",
+      "sourceRow": 3,
+      "question": "The pair of linear equations having no solution, from the following equations is 2x – 5y = 4; 4x – 12y = 7; 6x – 15y = 8",
+      "options": [
+        "2x –5y = 4 ; 4x – 12y = 7",
+        "2x – 5y = 4 ; 6x –15y =8",
+        "4x – 12y = 7; 6x –15y =8",
+        "None of these"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Consistency of Pair of Linear Equations"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-pair-of-linear-equations-in-two-variables-3",
+      "sourceRow": 4,
+      "question": "Which of the following is a solution of the linear equation 2x – y = 7?",
+      "options": [
+        "(2, 3)",
+        "(3, 2)",
+        "(2 , –3)",
+        "(0 , 0)"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Algebraic Methods of Solving Pair of Linear Equations"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-pair-of-linear-equations-in-two-variables-4",
+      "sourceRow": 5,
+      "question": "Math_Class_10_Assess_QB_03_Pair_of_Linear_Equations_in_Two_Variables_q4.jpg",
+      "options": [
+        "(0, 2)",
+        "(3, –1)",
+        "(2, 0)",
+        "(–1, 3)"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Graphical Method of Solving Pair of Linear Equations"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-pair-of-linear-equations-in-two-variables-5",
+      "sourceRow": 6,
+      "question": "Math_Class_10_Assess_QB_03_Pair_of_Linear_Equations_in_Two_Variables_q5.jpg",
+      "options": [
+        "3 sq. units",
+        "18 sq. units",
+        "12 sq. units",
+        "9 sq. units"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Graphical Method of Solving Pair of Linear Equations"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": "Analysing",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-pair-of-linear-equations-in-two-variables-6",
+      "sourceRow": 7,
+      "question": "For what value of k will the following pair of linear equations have infinite solutions?<br> 2x + 3y = 1; (k + 2) x + (2k – 3) y = 7",
+      "options": [
+        "6",
+        "–6",
+        "–12",
+        "12"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Consistency of Pair of Linear Equations"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-pair-of-linear-equations-in-two-variables-7",
+      "sourceRow": 8,
+      "question": "The graphs of the linear equations x = 5 and x = –5 represent",
+      "options": [
+        "Parallel lines",
+        "Intersecting lines",
+        "Coincident lines",
+        "None of these"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Graphical Method of Solving Pair of Linear Equations"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-pair-of-linear-equations-in-two-variables-8",
+      "sourceRow": 9,
+      "question": "The sum of the digits of a two-digit number is 9. When it is subtracted from the number obtained by reversing the digits, the result is 45. The two digit number is",
+      "options": [
+        "72",
+        "27",
+        "63",
+        "18"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Algebraic Methods of Solving Pair of Linear Equations"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-pair-of-linear-equations-in-two-variables-9",
+      "sourceRow": 10,
+      "question": "Math_Class_10_Assess_QB_03_Pair_of_Linear_Equations_in_Two_Variables_q9.jpg",
+      "options": [
+        "8 and 22",
+        "22 and 8",
+        "12 and 18",
+        "10 and 20"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Algebraic Methods of Solving Pair of Linear Equations"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-pair-of-linear-equations-in-two-variables-10",
+      "sourceRow": 11,
+      "question": "Math_Class_10_Assess_QB_03_Pair_of_Linear_Equations_in_Two_Variables_q10.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_03_Pair_of_Linear_Equations_in_Two_Variables_q10_o1.jpg",
+        "Math_Class_10_Assess_QB_03_Pair_of_Linear_Equations_in_Two_Variables_q10_o2.jpg",
+        "Math_Class_10_Assess_QB_03_Pair_of_Linear_Equations_in_Two_Variables_q10_o3.jpg",
+        "Math_Class_10_Assess_QB_03_Pair_of_Linear_Equations_in_Two_Variables_q10_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Consistency of Pair of Linear Equations"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-pair-of-linear-equations-in-two-variables-11",
+      "sourceRow": 12,
+      "question": "If 9x + 8y = 11 and 8x + 9y = 14, then the value of (x – y) is",
+      "options": [
+        "Math_Class_10_Assess_QB_03_Pair_of_Linear_Equations_in_Two_Variables_q11_o1.jpg",
+        "Math_Class_10_Assess_QB_03_Pair_of_Linear_Equations_in_Two_Variables_q11_o2.jpg",
+        "Math_Class_10_Assess_QB_03_Pair_of_Linear_Equations_in_Two_Variables_q11_o3.jpg",
+        "Math_Class_10_Assess_QB_03_Pair_of_Linear_Equations_in_Two_Variables_q11_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Algebraic Methods of Solving Pair of Linear Equations"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": "Analysing",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-pair-of-linear-equations-in-two-variables-12",
+      "sourceRow": 13,
+      "question": "The pair of linear equations x – 3y = 3 and 3x – 9y = 2 are",
+      "options": [
+        "Consistent",
+        "Consistent dependent",
+        "Inconsistent",
+        "None of these"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Consistency of Pair of Linear Equations"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-pair-of-linear-equations-in-two-variables-13",
+      "sourceRow": 14,
+      "question": "The value of k for which the pair of linear equations 4x + 6y – 1 = 0 and 2x + ky – 7 = 0 represents parallel lines is",
+      "options": [
+        "k = 3",
+        "k = 2",
+        "k = 4",
+        "k = –2"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Consistency of Pair of Linear Equations"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-pair-of-linear-equations-in-two-variables-14",
+      "sourceRow": 15,
+      "question": "The pair of linear equations kx + 2y = 5 and 3x + y = 1 has unique solution if :",
+      "options": [
+        "Math_Class_10_Assess_QB_03_Pair_of_Linear_Equations_in_Two_Variables_q14_o1.jpg",
+        "Math_Class_10_Assess_QB_03_Pair_of_Linear_Equations_in_Two_Variables_q14_o2.jpg",
+        "Math_Class_10_Assess_QB_03_Pair_of_Linear_Equations_in_Two_Variables_q14_o3.jpg",
+        "Math_Class_10_Assess_QB_03_Pair_of_Linear_Equations_in_Two_Variables_q14_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Consistency of Pair of Linear Equations"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-pair-of-linear-equations-in-two-variables-15",
+      "sourceRow": 16,
+      "question": "One equation of a pair of dependent linear equations is –5x + 7y = 2, the second equation can be:",
+      "options": [
+        "10x + 14y + 4 = 0",
+        "–10x + 14y + 4 = 0",
+        "–10x – 14y + 4 = 0",
+        "10x – 14y = –4"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Consistency of Pair of Linear Equations"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-pair-of-linear-equations-in-two-variables-16",
+      "sourceRow": 17,
+      "question": "If x = a, y = b is the solution of the equations x – y = 2 and x + y = 4 , then the values of a and b are, respectively.",
+      "options": [
+        "3 and 5",
+        "5 and 3",
+        "3 and 1",
+        "–l and –3"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Algebraic Methods of Solving Pair of Linear Equations"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-pair-of-linear-equations-in-two-variables-17",
+      "sourceRow": 18,
+      "question": "The pair of linear equations –5x + 2y = 8 and 2x – 5y – 3 = 0 have",
+      "options": [
+        "no solution",
+        "one solution",
+        "two Solution",
+        "many solution"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Consistency of Pair of Linear Equations"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-pair-of-linear-equations-in-two-variables-18",
+      "sourceRow": 19,
+      "question": "The pair of equations y = 0 and y = – 7 has :",
+      "options": [
+        "one solution",
+        "two solutions",
+        "infinitely many solutions",
+        "no solution"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Algebraic Methods of Solving Pair of Linear Equations"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-pair-of-linear-equations-in-two-variables-19",
+      "sourceRow": 20,
+      "question": "The following pairs of linear equations 2x + 5y = 3 and 6x + 15y = 12 represent:",
+      "options": [
+        "Intersecting lines",
+        "Parallel lines",
+        "Coincident lines",
+        "None from a, b, c"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Consistency of Pair of Linear Equations"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-pair-of-linear-equations-in-two-variables-20",
+      "sourceRow": 21,
+      "question": "If the lines given by 3x + 2ky = 2 and 2x + 5y + 1 = 0 are parallel, then the value of k is:",
+      "options": [
+        "Math_Class_10_Assess_QB_03_Pair_of_Linear_Equations_in_Two_Variables_q20_o1.jpg",
+        "Math_Class_10_Assess_QB_03_Pair_of_Linear_Equations_in_Two_Variables_q20_o2.jpg",
+        "Math_Class_10_Assess_QB_03_Pair_of_Linear_Equations_in_Two_Variables_q20_o3.jpg",
+        "Math_Class_10_Assess_QB_03_Pair_of_Linear_Equations_in_Two_Variables_q20_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Consistency of Pair of Linear Equations"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-pair-of-linear-equations-in-two-variables-21",
+      "sourceRow": 22,
+      "question": "The graphical representation of the pair of equations x + 2y – 4 = 0 and 2x + 4y – 12 = 0 represents :",
+      "options": [
+        "Intersecting lines",
+        "Parallel lines",
+        "Coincident lines",
+        "On the above"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Graphical Method of Solving Pair of Linear Equations"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-pair-of-linear-equations-in-two-variables-22",
+      "sourceRow": 23,
+      "question": "If a pair of linear equations is consistent, then the lines will be :",
+      "options": [
+        "parallal",
+        "always coincident",
+        "intersecting or coincident",
+        "always intersecting"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Consistency of Pair of Linear Equations"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Remembering",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-pair-of-linear-equations-in-two-variables-23",
+      "sourceRow": 24,
+      "question": "The pair of linear equations x – 2y = 0 and 3x + 4y = 20 have :",
+      "options": [
+        "One solution",
+        "Two solutions",
+        "Many solutions",
+        "No solution"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Consistency of Pair of Linear Equations"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-pair-of-linear-equations-in-two-variables-24",
+      "sourceRow": 25,
+      "question": "The value of k for which the pair of equations kx – y = 2 and 6x – 2y = 3 has a unique solution :",
+      "options": [
+        "Math_Class_10_Assess_QB_03_Pair_of_Linear_Equations_in_Two_Variables_q24_o1.jpg",
+        "Math_Class_10_Assess_QB_03_Pair_of_Linear_Equations_in_Two_Variables_q24_o2.jpg",
+        "Math_Class_10_Assess_QB_03_Pair_of_Linear_Equations_in_Two_Variables_q24_o3.jpg",
+        "Math_Class_10_Assess_QB_03_Pair_of_Linear_Equations_in_Two_Variables_q24_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Consistency of Pair of Linear Equations"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-pair-of-linear-equations-in-two-variables-25",
+      "sourceRow": 26,
+      "question": "A number between 10 and 100 is eight times the sum of its digits. If 45 is subtracted from it, the digits are reversed. Then the number is",
+      "options": [
+        "27",
+        "72",
+        "92",
+        "none of these"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Algebraic Methods of Solving Pair of Linear Equations"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-pair-of-linear-equations-in-two-variables-26",
+      "sourceRow": 27,
+      "question": "The graph of the equation x + y = 10 is a",
+      "options": [
+        "vertical line",
+        "horizontal line",
+        "straight line",
+        "none of these"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Graphical Method of Solving Pair of Linear Equations"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-pair-of-linear-equations-in-two-variables-27",
+      "sourceRow": 28,
+      "question": "Two equations in two variables taken together are called",
+      "options": [
+        "simple equations",
+        "quadratic equations",
+        "simultaneous equations",
+        "none of these"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Graphical Method of Solving Pair of Linear Equations"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Remembering",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-pair-of-linear-equations-in-two-variables-28",
+      "sourceRow": 29,
+      "question": "Math_Class_10_Assess_QB_03_Pair_of_Linear_Equations_in_Two_Variables_q28.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_03_Pair_of_Linear_Equations_in_Two_Variables_q28_o1.jpg",
+        "Math_Class_10_Assess_QB_03_Pair_of_Linear_Equations_in_Two_Variables_q28_o2.jpg",
+        "Math_Class_10_Assess_QB_03_Pair_of_Linear_Equations_in_Two_Variables_q28_o3.jpg",
+        "Math_Class_10_Assess_QB_03_Pair_of_Linear_Equations_in_Two_Variables_q28_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Algebraic Methods of Solving Pair of Linear Equations"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-pair-of-linear-equations-in-two-variables-29",
+      "sourceRow": 30,
+      "question": "The solution of system of equations x + y = 9; 2x + y = 14 is:",
+      "options": [
+        "x = 2, y = 7",
+        "x = 4, y = 5",
+        "x = 5, y = 4",
+        "x = 6, y = 3"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Algebraic Methods of Solving Pair of Linear Equations"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-pair-of-linear-equations-in-two-variables-30",
+      "sourceRow": 31,
+      "question": "Math_Class_10_Assess_QB_03_Pair_of_Linear_Equations_in_Two_Variables_q30.jpg",
+      "options": [
+        "x = 4, y = 6",
+        "x = 6, y = 4",
+        "x = 8, y = 6",
+        "none of these"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Algebraic Methods of Solving Pair of Linear Equations"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-pair-of-linear-equations-in-two-variables-31",
+      "sourceRow": 32,
+      "question": "The equations x + 2y = 4 and 2x + y = 5:",
+      "options": [
+        "are inconsistent",
+        "are homogeneous linear equations",
+        "are consistent and have a unique solution",
+        "are consistent and have infinitely many solutions"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Consistency of Pair of Linear Equations"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-pair-of-linear-equations-in-two-variables-32",
+      "sourceRow": 33,
+      "question": "If 29x + 37y = 103 and 37x + 29y = 95, then:",
+      "options": [
+        "x = 1, y = 2",
+        "x = 2, y = 1",
+        "x = 2, y = 3",
+        "x = 3, y = 2"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Algebraic Methods of Solving Pair of Linear Equations"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-pair-of-linear-equations-in-two-variables-33",
+      "sourceRow": 34,
+      "question": "The system of equations cx + 3y = c – 3 and 12x + cy = c will have infinitely many solutions if the value of c is",
+      "options": [
+        "– 2",
+        "2",
+        "6",
+        "3"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Consistency of Pair of Linear Equations"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-pair-of-linear-equations-in-two-variables-34",
+      "sourceRow": 35,
+      "question": "A system of two linear equations in two variables is inconsistent, if their graphs:",
+      "options": [
+        "are coincident",
+        "intersect at a point",
+        "are parallel",
+        "none of these"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Graphical Method of Solving Pair of Linear Equations"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-pair-of-linear-equations-in-two-variables-35",
+      "sourceRow": 36,
+      "question": "For what value of k will the equations 2x + 32y + 3 = 0 and 3x + 48y + k = 0 represent coincident lines?",
+      "options": [
+        "Math_Class_10_Assess_QB_03_Pair_of_Linear_Equations_in_Two_Variables_q35_o1.jpg",
+        "Math_Class_10_Assess_QB_03_Pair_of_Linear_Equations_in_Two_Variables_q35_o2.jpg",
+        "Math_Class_10_Assess_QB_03_Pair_of_Linear_Equations_in_Two_Variables_q35_o3.jpg",
+        "Math_Class_10_Assess_QB_03_Pair_of_Linear_Equations_in_Two_Variables_q35_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Consistency of Pair of Linear Equations"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-pair-of-linear-equations-in-two-variables-36",
+      "sourceRow": 37,
+      "question": "If 37x + 53y = 320 and 53x + 37y = 400, then",
+      "options": [
+        "x = 2, y = 3",
+        "x = 5, y = 2.5",
+        "x = 6.5, y = 1.5",
+        "x = 8, y = 2"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Algebraic Methods of Solving Pair of Linear Equations"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-pair-of-linear-equations-in-two-variables-37",
+      "sourceRow": 38,
+      "question": "The system of equations kx + 3y = – 3, 12x + ky = – k will have infinitely many solutions, if the value of k is",
+      "options": [
+        "3",
+        "– 3",
+        "12",
+        "6"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Consistency of Pair of Linear Equations"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-pair-of-linear-equations-in-two-variables-38",
+      "sourceRow": 39,
+      "question": "If the system of equations 2x + 3y – 5 = 0 and 4x + ky – 10 = 0 has infinite number of solutions, then:",
+      "options": [
+        "Math_Class_10_Assess_QB_03_Pair_of_Linear_Equations_in_Two_Variables_q38_o1.jpg",
+        "Math_Class_10_Assess_QB_03_Pair_of_Linear_Equations_in_Two_Variables_q38_o2.jpg",
+        "Math_Class_10_Assess_QB_03_Pair_of_Linear_Equations_in_Two_Variables_q38_o3.jpg",
+        "Math_Class_10_Assess_QB_03_Pair_of_Linear_Equations_in_Two_Variables_q38_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Consistency of Pair of Linear Equations"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-pair-of-linear-equations-in-two-variables-39",
+      "sourceRow": 40,
+      "question": "The system of equations 2x + 3y = 7, 6x + 5y = 11 has",
+      "options": [
+        "no solution",
+        "infinitely many solutions",
+        "unique solution",
+        "three solutions"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Consistency of Pair of Linear Equations"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-pair-of-linear-equations-in-two-variables-40",
+      "sourceRow": 41,
+      "question": "If the system of equations 5x + ky = – 7 and x + 2y = 3 is inconsistent then",
+      "options": [
+        "Math_Class_10_Assess_QB_03_Pair_of_Linear_Equations_in_Two_Variables_q40_o1.jpg",
+        "Math_Class_10_Assess_QB_03_Pair_of_Linear_Equations_in_Two_Variables_q40_o2.jpg",
+        "Math_Class_10_Assess_QB_03_Pair_of_Linear_Equations_in_Two_Variables_q40_o3.jpg",
+        "Math_Class_10_Assess_QB_03_Pair_of_Linear_Equations_in_Two_Variables_q40_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Consistency of Pair of Linear Equations"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-pair-of-linear-equations-in-two-variables-41",
+      "sourceRow": 42,
+      "question": "If y = –1 in 3x + 2y = 4, then the value of x will be",
+      "options": [
+        "– 2",
+        "2",
+        "– 3",
+        "3"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Algebraic Methods of Solving Pair of Linear Equations"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-pair-of-linear-equations-in-two-variables-42",
+      "sourceRow": 43,
+      "question": "If the system of equations x + 2y + 7 = 0 and 2x + ky + 14 = 0 has infinitely many solutions, then",
+      "options": [
+        "Math_Class_10_Assess_QB_03_Pair_of_Linear_Equations_in_Two_Variables_q42_o1.jpg",
+        "Math_Class_10_Assess_QB_03_Pair_of_Linear_Equations_in_Two_Variables_q42_o2.jpg",
+        "Math_Class_10_Assess_QB_03_Pair_of_Linear_Equations_in_Two_Variables_q42_o3.jpg",
+        "Math_Class_10_Assess_QB_03_Pair_of_Linear_Equations_in_Two_Variables_q42_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Consistency of Pair of Linear Equations"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-pair-of-linear-equations-in-two-variables-43",
+      "sourceRow": 44,
+      "question": "If the value of x in the equation 2x + 3y = 13 is 2, the corresponding value of y will be",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Algebraic Methods of Solving Pair of Linear Equations"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-pair-of-linear-equations-in-two-variables-44",
+      "sourceRow": 45,
+      "question": "If the system of equations kx + 15y = 0 and 3x + 5y = 0 has a non-zero solution, then",
+      "options": [
+        "Math_Class_10_Assess_QB_03_Pair_of_Linear_Equations_in_Two_Variables_q44_o1.jpg",
+        "Math_Class_10_Assess_QB_03_Pair_of_Linear_Equations_in_Two_Variables_q44_o2.jpg",
+        "Math_Class_10_Assess_QB_03_Pair_of_Linear_Equations_in_Two_Variables_q44_o3.jpg",
+        "Math_Class_10_Assess_QB_03_Pair_of_Linear_Equations_in_Two_Variables_q44_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Consistency of Pair of Linear Equations"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-pair-of-linear-equations-in-two-variables-45",
+      "sourceRow": 46,
+      "question": "If in the equation x + 2y = 10, the value of x is – 2, then the value of y will be",
+      "options": [
+        "4",
+        "5",
+        "6",
+        "8"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Algebraic Methods of Solving Pair of Linear Equations"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-pair-of-linear-equations-in-two-variables-46",
+      "sourceRow": 47,
+      "question": "The graph of x = 5 is a line parallel to the",
+      "options": [
+        "x-axis",
+        "y-axis",
+        "both x and y axes",
+        "none of these"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Graphical Method of Solving Pair of Linear Equations"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-pair-of-linear-equations-in-two-variables-47",
+      "sourceRow": 48,
+      "question": "The graph of y = 1 is a line parallel to the",
+      "options": [
+        "x-axis",
+        "y-axis",
+        "both x and y axis",
+        "none of these"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Graphical Method of Solving Pair of Linear Equations"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-pair-of-linear-equations-in-two-variables-48",
+      "sourceRow": 49,
+      "question": "The sum of the digits of a two digit number is 8 and the difference between the number and that formed by reversing the digits is 18. Then the number is",
+      "options": [
+        "53",
+        "44",
+        "85",
+        "None of these"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Algebraic Methods of Solving Pair of Linear Equations"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-pair-of-linear-equations-in-two-variables-49",
+      "sourceRow": 50,
+      "question": "Math_Class_10_Assess_QB_03_Pair_of_Linear_Equations_in_Two_Variables_q49.jpg",
+      "options": [
+        "20°, 40°, 120°",
+        "30°, 60°, 90°",
+        "45°, 45°, 90°",
+        "110°, 40°, 50°"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Algebraic Methods of Solving Pair of Linear Equations"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-pair-of-linear-equations-in-two-variables-50",
+      "sourceRow": 51,
+      "question": "The course of an enemy submarine is plotted on a set of rectangular axes given by the equation 2x + 3y = 5. On the same axes, the course of destroyer is indicated by x – y = 10. The point (x, y) at which submarine can be destroyed is",
+      "options": [
+        "(–3, 7)",
+        "(3, –7)",
+        "(7, –3)",
+        "(–7, 3)"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Difficult",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Algebraic Methods of Solving Pair of Linear Equations"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-pair-of-linear-equations-in-two-variables-51",
+      "sourceRow": 52,
+      "question": "Math_Class_10_Assess_QB_03_Pair_of_Linear_Equations_in_Two_Variables_q51.jpg",
+      "options": [
+        "acute angled",
+        "obtuse angled",
+        "right angled",
+        "equilateral"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Algebraic Methods of Solving Pair of Linear Equations"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Analysing",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-pair-of-linear-equations-in-two-variables-52",
+      "sourceRow": 53,
+      "question": "Math_Class_10_Assess_QB_03_Pair_of_Linear_Equations_in_Two_Variables_q52.jpg",
+      "options": [
+        "35 and 15",
+        "35 and 20",
+        "15 and 35",
+        "25 and 25"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Difficult",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Algebraic Methods of Solving Pair of Linear Equations"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-pair-of-linear-equations-in-two-variables-53",
+      "sourceRow": 54,
+      "question": "The father’s age is six times his son’s age. Four years hence, the age of the father will be four times his son’s age. The present ages, in years, of the son and the father are, respectively.",
+      "options": [
+        "4 and 24",
+        "5 and 30",
+        "6 and 36",
+        "3 and 24"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Difficult",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Algebraic Methods of Solving Pair of Linear Equations"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": "Exemplar"
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-pair-of-linear-equations-in-two-variables-54",
+      "sourceRow": 55,
+      "question": "The sum of the digits of a two digit number is 9. If 27 is added to it, the digits of the number get reversed. The number is",
+      "options": [
+        "25",
+        "72",
+        "63",
+        "36"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Difficult",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Algebraic Methods of Solving Pair of Linear Equations"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": "Exemplar"
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-pair-of-linear-equations-in-two-variables-55",
+      "sourceRow": 56,
+      "question": "Math_Class_10_Assess_QB_03_Pair_of_Linear_Equations_in_Two_Variables_q55.jpg",
+      "options": [
+        "3",
+        "4",
+        "– 4",
+        "0"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Algebraic Methods of Solving Pair of Linear Equations"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Analysing",
+      "smeComments": null,
+      "specialCategory": null
+    }
+  ]
+}

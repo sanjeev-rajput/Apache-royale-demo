@@ -50,9 +50,8 @@ export async function runLearningAgent({ message, history = [], onLlmStatus } = 
     // Load the provider only when an explanation is requested. A missing or
     // misconfigured LLM must not prevent the Node server and resource routes
     // from starting.
-    const { createAgentLlmSession } = await import("./agentLlmResilience.js");
-    const llm = createAgentLlmSession({ onStatus: onLlmStatus });
-    const reply = await llm.generateText({
+    const { generateText, getLlmConfig } = await import("../services/llmProvider.js");
+    const reply = await generateText({
       messages: [
         {
           role: "system",
@@ -65,6 +64,11 @@ export async function runLearningAgent({ message, history = [], onLlmStatus } = 
       ],
       temperature: 0.4,
       maxTokens: 900
+    });
+    onLlmStatus?.({
+      state: "connected",
+      message: "AI connection is ready.",
+      model: getLlmConfig().model
     });
 
     return {

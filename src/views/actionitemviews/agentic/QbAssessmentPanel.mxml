@@ -11,6 +11,7 @@
         <![CDATA[
             import org.apache.royale.events.Event;
             import org.apache.royale.html.HTMLText;
+            import org.apache.royale.html.Image;
             import com.unhurdle.spectrum.Radio;
             import com.unhurdle.spectrum.Button;
             import com.unhurdle.spectrum.Label;
@@ -208,7 +209,6 @@
             {
                 var backLabel:Label = new Label();
                 backLabel.text = label;
-                backLabel.color = "#080808";
                 backLabel.className = "qb-selection-link qb-selection-back";
                 backLabel.addEventListener("click", function(event:Event):void
                 {
@@ -268,6 +268,10 @@
 
             private function handleAssessmentStarted(response:Object):void
             {
+                var debugLabel:HTMLText = new HTMLText();
+debugLabel.percentWidth = 100;
+debugLabel.html = "<b>DEBUG: NEW QbAssessmentPanel IS RUNNING</b>";
+assessmentContent.addElement(debugLabel);
                 requestInProgress = false;
                 if (response == null || response.success != true || response.assessment == null || response.attemptId == null)
                 {
@@ -311,22 +315,53 @@
                     heading.className = "assessment-question-number";
                     card.addElement(heading);
 
-                    var prompt:HTMLText = new HTMLText();
-                    prompt.percentWidth = 100;
-                    prompt.html = safeQuestionHtml(String(question.prompt));
-                    prompt.className = "assessment-question-prompt";
-                    card.addElement(prompt);
+                    var promptValue:String = question.prompt == null ? "" : String(question.prompt);
+                    var promptImageUrl:String = getQuestionImageUrl(promptValue);
+                    trace("QUESTION PROMPT: " + promptValue);
+                    trace("QUESTION IMAGE URL: " + promptImageUrl);
+
+                    if (promptImageUrl != null)
+                    {
+                        // Image prompts must use Royale's Image component.
+                        // HTMLText treats an image URL as text in this assessment view.
+                        var questionImage:Image = new Image();
+                        // Do not force the image to fill the card width.
+                        // CSS keeps its natural dimensions while limiting it to the available space.
+                        questionImage.src = promptImageUrl;
+                        questionImage.className = "assessment-question-image";
+                        card.addElement(questionImage);
+                    }
+                    else
+                    {
+                        var prompt:HTMLText = new HTMLText();
+                        prompt.percentWidth = 100;
+                        prompt.html = safeQuestionHtml(promptValue);
+                        prompt.className = "assessment-question-prompt";
+                        card.addElement(prompt);
+                    }
 
                     for each (var option:Object in question.options)
                     {
+                        var optionValue:String = option.text == null ? "" : String(option.text);
+                        var optionImageUrl:String = getQuestionImageUrl(optionValue);
+
                         var radio:Radio = new Radio();
                         radio.percentWidth = 100;
-                        radio.text = String(option.id) + ".  " + String(option.text);
+                        // Keep the answer ID in the radio label. Render image values separately.
+                        radio.text = String(option.id) + (optionImageUrl != null ? "." : ".  " + optionValue);
                         radio.className = "assessment-option-radio";
                         radio.radioName = "qb_assessment_" + String(question.id);
                         radio.addEventListener("change", createOptionHandler(String(question.id), String(option.id)));
                         optionRadios.push(radio);
                         card.addElement(radio);
+
+                        if (optionImageUrl != null)
+                        {
+                            var optionImage:Image = new Image();
+                            optionImage.src = optionImageUrl;
+                            optionImage.className = "assessment-option-image";
+                            card.addElement(optionImage);
+                        }
                     }
                 }
                 submitButton.visible = true;
@@ -343,6 +378,55 @@
                 escaped = escaped.replace(/&lt;br\s*\/??&gt;/gi, "<br/>");
                 escaped = escaped.replace(/\r?\n/g, "<br/>");
                 return escaped;
+            }
+
+            /**
+             * Returns an image URL only when the question prompt is an image filename.
+             * Supports values such as "Maths_8_Exponents_q16.jpg" and Windows paths.
+             */
+            private function getQuestionImageUrl(value:String):String
+            {
+                var fileName:String = getQuestionImageFileName(value);
+                if (fileName.length == 0) return null;
+
+                var baseUrl:String = String(Config.apiBaseUrl);
+                // Image assets are served from the server root, not from /api.
+                baseUrl = baseUrl.replace(new RegExp("/api/?$", "i"), "/");
+                if (baseUrl.charAt(baseUrl.length - 1) != "/")
+                    baseUrl += "/";
+
+                return baseUrl + "question-bank-assets/" +
+                    encodeURIComponent(String(selectedClass.classId)) + "/" +
+                    encodeURIComponent(String(selectedSubject.subjectId)) +
+                    "/icon/" + encodeURIComponent(fileName);
+            }
+
+            private function getQuestionImageFileName(value:String):String
+            {
+                if (value == null)
+                    return "";
+
+                var candidate:String = value.replace(/\\/g, "/");
+                candidate = candidate.substring(candidate.lastIndexOf("/") + 1);
+                candidate = candidate.replace(/^\s+|\s+$/g, "");
+                // Publisher option values can include a leading choice label, e.g. "A. image.jpg".
+                candidate = candidate.replace(/^[A-Za-z]\.\s*/, "");
+
+                var dotIndex:int = candidate.lastIndexOf(".");
+                if (dotIndex < 0)
+                    return "";
+
+                var extension:String = candidate.substring(dotIndex + 1).toLowerCase();
+
+                if (extension == "jpg" ||
+                    extension == "jpeg" ||
+                    extension == "png" ||
+                    extension == "gif")
+                {
+                    return candidate;
+                }
+
+                return "";
             }
 
             private function createOptionHandler(questionId:String, optionId:String):Function
@@ -422,12 +506,25 @@
 
                 for each (var item:Object in response.questionResults)
                 {
+                    var correctAnswerValue:String = item.correctAnswer == null ? "" : String(item.correctAnswer);
+                    var correctAnswerImageUrl:String = getQuestionImageUrl(correctAnswerValue);
+
                     var status:HTMLText = new HTMLText();
                     status.percentWidth = 100;
-                    status.html = "<b>" + StringUtil.escapeHTML((item.isCorrect === true ? "Correct" : "Not quite") +
-                        " — " + String(item.correctAnswer)) + " (" + String(item.score) + "/" + String(item.totalMarks) + ")</b>";
+                    status.html = "<b>" + StringUtil.escapeHTML(
+                        (item.isCorrect === true ? "Correct" : "Not quite") +
+                        (correctAnswerImageUrl != null ? " —" : " — " + correctAnswerValue) +
+                        " (" + String(item.score) + "/" + String(item.totalMarks) + ")") + "</b>";
                     status.className = item.isCorrect === true ? "assessment-answer-correct" : "assessment-answer-incorrect";
                     assessmentContent.addElement(status);
+
+                    if (correctAnswerImageUrl != null)
+                    {
+                        var correctAnswerImage:Image = new Image();
+                        correctAnswerImage.src = correctAnswerImageUrl;
+                        correctAnswerImage.className = "assessment-option-image";
+                        assessmentContent.addElement(correctAnswerImage);
+                    }
 
                     var feedback:HTMLText = new HTMLText();
                     feedback.percentWidth = 100;

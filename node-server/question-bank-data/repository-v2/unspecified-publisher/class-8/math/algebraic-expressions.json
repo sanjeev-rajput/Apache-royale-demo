@@ -1,0 +1,746 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-24T11:45:03.304Z",
+  "classification": {
+    "class": "Class 8",
+    "subject": "Math",
+    "topic": "Algebraic Expressions"
+  },
+  "publisher": "unspecified-publisher",
+  "source": {
+    "file": "Class8/Final/Math_Class8_Assess_QB_09_Algebraic_Expressions/Math_Class 8_Assess_QB_09_Algebraic_Expressions.xlsx",
+    "sheet": "filename"
+  },
+  "questionType": "MCQ",
+  "questionCount": 28,
+  "questions": [
+    {
+      "id": "unspecified-publisher-class-8-math-algebraic-expressions-13",
+      "sourceRow": 14,
+      "question": "Which of the following statements is true?",
+      "options": [
+        "29a4 – 11a2b2 + 19b5 is a binomial of degree 4",
+        "29a4 – 11a2b2 + 19b5 is a trinomial of degree 2",
+        "29a4 – 11a2b2 + 19b5 is a trinomial of degree 5",
+        "29a4 – 11a2b2 + 19b5 is a monomial of degree 5"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Introduction to Variables"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-algebraic-expressions-14",
+      "sourceRow": 15,
+      "question": "Which of the following is not equal to –6a2 – a?",
+      "options": [
+        "–(6a2 + a)",
+        "(3a2 – 5a) – (–5a2 – 4a)",
+        "(a2 + 8a) – (7a2 + 9a)",
+        "(2a2 – 3a + 1) – (8a2 – 2a + 1)"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Addition and Subtraction of Algebraic Expressions"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-algebraic-expressions-15",
+      "sourceRow": 16,
+      "question": "Maths_8_Algebraic_Expressions_q15.jpg",
+      "options": [
+        "7",
+        "9",
+        "11",
+        "16"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Introduction to Variables"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-algebraic-expressions-16",
+      "sourceRow": 17,
+      "question": "Which of the following products is equal to x2 – 5x + 6?",
+      "options": [
+        "(x + 2)(x + 3)",
+        "(x – 2)(x – 3)",
+        "(x + 2)(x – 3)",
+        "(x – 2)(x + 3)"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Multiplication of Monomial by a Monomial and Polynomial"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-algebraic-expressions-17",
+      "sourceRow": 18,
+      "question": "Which of the following is equivalent to (p – q)(p2 + pq + q2)?",
+      "options": [
+        "p3 + q3",
+        "p3 – 2p2q + 2pq2 – q3",
+        "p3 – q3",
+        "p3 + 2p2q – 2pq2 + q3"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Multiplication of a Polynomial by a Polynomial"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-algebraic-expressions-18",
+      "sourceRow": 19,
+      "question": "What is the coefficient of ‘a’ in the product of (5a – 7)(2a + 3)(7a – 8)?",
+      "options": [
+        "–155",
+        "–73",
+        "70",
+        "168"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Multiplication of a Polynomial by a Polynomial"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-algebraic-expressions-19",
+      "sourceRow": 20,
+      "question": "What is the result of (5 – p)2 – (5 + p)2?",
+      "options": [
+        "–25p2",
+        "–2p",
+        "25",
+        "–20p"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Application of Identities"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-algebraic-expressions-20",
+      "sourceRow": 21,
+      "question": "What is the product of (3x – 5)(3x – 5)?",
+      "options": [
+        "9x2 + 25",
+        "9x2 – 30x + 25",
+        "9x2 – 25",
+        "9x2 + 30x + 25"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Application of Identities"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-algebraic-expressions-21",
+      "sourceRow": 22,
+      "question": "Maths_8_Algebraic_Expressions_q21.jpg",
+      "options": [
+        "3.2",
+        "4.6",
+        "6.0",
+        "6.3"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Application of Identities"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-algebraic-expressions-22",
+      "sourceRow": 23,
+      "question": "What is the value of (–1.6p2q) × (–0.5 pqr2)?",
+      "options": [
+        "8p3q2r2",
+        "–0.08 p3q2r3",
+        "0.8p3q2r2",
+        "80p2q3r2"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Multiplication of Monomial by a Monomial and Polynomial"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-algebraic-expressions-23",
+      "sourceRow": 24,
+      "question": "Which of the following is a perfect square trinomial?",
+      "options": [
+        "a2 + 14a – 49",
+        "m2 + 6m – 9",
+        "x2 + 6x + 9",
+        "y2 – 4y – 4"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Application of Identities"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-algebraic-expressions-24",
+      "sourceRow": 25,
+      "question": "Maths_8_Algebraic_Expressions_q24.jpg",
+      "options": [
+        "5",
+        "7",
+        "9",
+        "11"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Application of Identities"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": "HOTS"
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-algebraic-expressions-25",
+      "sourceRow": 26,
+      "question": "What is the value of 49a2 + 112a + 64 if a = –1?",
+      "options": [
+        "1",
+        "225",
+        "15",
+        "0"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Application of Identities"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-algebraic-expressions-26",
+      "sourceRow": 27,
+      "question": "Which of the following expressions is equal to 10u2v(0.2uv – 0.7v)?",
+      "options": [
+        "20u3v2 – 7u2v2",
+        "2u3v2 – 10u2v2",
+        "2u3v2 – 0.7u2v2",
+        "2u3v2 – 7u2v2"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Multiplication of Monomial by a Monomial and Polynomial"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": "HOTS"
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-algebraic-expressions-27",
+      "sourceRow": 28,
+      "question": "What is the result of 42a2 – 8a(a – 1) – 7a(1 + 5a) + a(a – 1)?",
+      "options": [
+        "0",
+        "15a2",
+        "–16a",
+        "15a2 – 16a"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Addition and Subtraction of Algebraic Expressions"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-algebraic-expressions-28",
+      "sourceRow": 29,
+      "question": "What is the value of the expression 64x2 – 96xy + 36y2 if x = 0.2 and y = 0.3?",
+      "options": [
+        "40",
+        "4",
+        "0.4",
+        "0.04"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Application of Identities"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": "HOTS"
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-algebraic-expressions-29",
+      "sourceRow": 30,
+      "question": "Maths_8_Algebraic_Expressions_q29.jpg",
+      "options": [
+        "Maths_8_Algebraic_Expressions_q29_o1.jpg",
+        "Maths_8_Algebraic_Expressions_q29_o2.jpg",
+        "Maths_8_Algebraic_Expressions_q29_o3.jpg",
+        "Maths_8_Algebraic_Expressions_q29_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Application of Identities"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-algebraic-expressions-30",
+      "sourceRow": 31,
+      "question": "What is the coefficient of x2y3 in the expression x2(x – 3y2) – xy(y2 – 2xy) – x(y3 – 5x2)?",
+      "options": [
+        "–2",
+        "–1",
+        "0",
+        "6"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Multiplication of Monomial by a Monomial and Polynomial"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-algebraic-expressions-31",
+      "sourceRow": 32,
+      "question": "Maths_8_Algebraic_Expressions_q31.jpg",
+      "options": [
+        "–180",
+        "–36",
+        "36",
+        "180"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Multiplication of Monomial by a Monomial and Polynomial"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-algebraic-expressions-32",
+      "sourceRow": 33,
+      "question": "The length and width of a park is (x + 1) and (x – 1). A footpath is made outside the rectangular park such that the length and the width of the new park becomes (x + 4) and (x – 2). What is the area of the footpath put down outside the park?",
+      "options": [
+        "2x – 9",
+        "6x – 9",
+        "2x – 7",
+        "2x2 – 9"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Multiplication of Monomial by a Monomial and Polynomial"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-algebraic-expressions-33",
+      "sourceRow": 34,
+      "question": "Maths_8_Algebraic_Expressions_q33.jpg",
+      "options": [
+        "45",
+        "47",
+        "49",
+        "51"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Application of Identities"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": "HOTS"
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-algebraic-expressions-34",
+      "sourceRow": 35,
+      "question": "Sonal planted t fewer trees than Shelly. Shelly planted 32 trees. Which expression shows the trees Sonal planted by Sonal?",
+      "options": [
+        "32 – t",
+        "t – 32",
+        "t + 32",
+        "t"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Introduction to Variables"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-algebraic-expressions-35",
+      "sourceRow": 36,
+      "question": "Identify the degree of the polynomials. Encircle the correct answer.<br>20x6 + 10x4 – x",
+      "options": [
+        "2nd degree",
+        "7th degree",
+        "9th degree",
+        "6th degree"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Introduction to Variables"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-algebraic-expressions-36",
+      "sourceRow": 37,
+      "question": "Add the polynomials (5x2 − 3x + 7) + (2x3 + 5x2 + x + 5)",
+      "options": [
+        "2x3 +10x2 + 2x +12",
+        "2x3 +10x2 − 2x +12",
+        "2x3 + 2x2 + 5x + 71",
+        "7x3 + 2x2 + 7x + 5"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Addition and Subtraction of Algebraic Expressions"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-algebraic-expressions-37",
+      "sourceRow": 38,
+      "question": "Find the product of a2(b2 – c2) + b2(c2 – a2) + c2(a2 – b2)",
+      "options": [
+        "2a2b2 + 2a2c2 + 2b2c2",
+        "1",
+        "0",
+        "None of these"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Multiplication of Monomial by a Monomial and Polynomial"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-algebraic-expressions-38",
+      "sourceRow": 39,
+      "question": "Find the value of m, if 4m = (52)2 – (50)2",
+      "options": [
+        "102",
+        "4",
+        "204",
+        "51"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Application of Identities"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-algebraic-expressions-39",
+      "sourceRow": 40,
+      "question": "Find the value of (u2 + v2), if (u + v) = 20 and uv = 10.",
+      "options": [
+        "380",
+        "400",
+        "390",
+        "410"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Application of Identities"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-algebraic-expressions-40",
+      "sourceRow": 41,
+      "question": "If 3a + 5b = 21 and ab = 6, find the value of 9a2 + 25b2.",
+      "options": [
+        "251",
+        "261",
+        "361",
+        "350"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Application of Identities"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    }
+  ]
+}

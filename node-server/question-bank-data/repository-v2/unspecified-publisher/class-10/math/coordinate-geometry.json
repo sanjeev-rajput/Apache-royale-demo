@@ -1,0 +1,1812 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-24T11:45:03.660Z",
+  "classification": {
+    "class": "Class 10",
+    "subject": "Math",
+    "topic": "Coordinate Geometry"
+  },
+  "publisher": "unspecified-publisher",
+  "source": {
+    "file": "Class10/Final/Math_Class_10_Assess_QB_07_Coordinate_Geometry/Math_Class_10_Assess_QB_07_Coordinate_Geometry.xlsx",
+    "sheet": "Maths_Grade_9_Ch-7"
+  },
+  "questionType": "MCQ",
+  "questionCount": 69,
+  "questions": [
+    {
+      "id": "unspecified-publisher-class-10-math-coordinate-geometry-1",
+      "sourceRow": 2,
+      "question": "Distance between the points (5, – 3) and (8, 1) is",
+      "options": [
+        "5 units",
+        "6 units",
+        "25 units",
+        "none of these"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Distance Formula"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-coordinate-geometry-2",
+      "sourceRow": 3,
+      "question": "If the distance between the points (4, 0) and (0, x) is 5 units, then the value of x will be",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Distance Formula"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-coordinate-geometry-3",
+      "sourceRow": 4,
+      "question": "Three points are collinear if they lie on a",
+      "options": [
+        "line",
+        "plane",
+        "both (a) and (b)",
+        "none of these"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Area of a Triangle"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Remembering",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-coordinate-geometry-4",
+      "sourceRow": 5,
+      "question": "If the points (x, y), (2, 3) and (– 3, 4) are collinear, then",
+      "options": [
+        "x + y = 17",
+        "x – y = 17",
+        "x – 5y = 17",
+        "x + 5y = 17"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Area of a Triangle"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-coordinate-geometry-5",
+      "sourceRow": 6,
+      "question": "P is a point on x-axis at a distance of 3 units from y-axis to its right. The coordinates of P are",
+      "options": [
+        "(3, 0)",
+        "(0, 3)",
+        "(3, 3)",
+        "(– 3, 3)"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Distance Formula"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-coordinate-geometry-6",
+      "sourceRow": 7,
+      "question": "The distance of the point A (4, – 3) from the origin is",
+      "options": [
+        "1 unit",
+        "7 units",
+        "5 units",
+        "3 units"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Distance Formula"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-coordinate-geometry-7",
+      "sourceRow": 8,
+      "question": "The coordinates of two points are (6, 0) and (0, 8). The coordinates of the mid-points are",
+      "options": [
+        "(3, 4)",
+        "(6, 8)",
+        "(0, 0)",
+        "(4, 3)"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Section Formula"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-coordinate-geometry-8",
+      "sourceRow": 9,
+      "question": "What point on x-axis is equidistant from the points A (7, 6) and B(– 3, 4) ?",
+      "options": [
+        "(0, 4)",
+        "(– 4, 0)",
+        "(3, 0)",
+        "(0, 3)"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Distance Formula"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-coordinate-geometry-9",
+      "sourceRow": 10,
+      "question": "x-axis divides the join of A (2, – 3) and B (5, 6) in the ratio",
+      "options": [
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q9_o1.jpg",
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q9_o2.jpg",
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q9_o3.jpg",
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q9_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Section Formula"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-coordinate-geometry-10",
+      "sourceRow": 11,
+      "question": "If the distance of P (x, y) from A (5, 1) and B (– 1, 5) is same, then which of the following is true?",
+      "options": [
+        "3x = 4y",
+        "x = 2y",
+        "3x = 2y",
+        "x = 3y"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Distance Formula"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Analysing",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-coordinate-geometry-11",
+      "sourceRow": 12,
+      "question": "If P (– 1, 1) is the middle point of the line segment joining Q (– 3, b) and R (1, b + 4), then the value of b is",
+      "options": [
+        "1",
+        "– 1",
+        "2",
+        "0"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Section Formula"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-coordinate-geometry-12",
+      "sourceRow": 13,
+      "question": "The third vertex of an equilateral triangle whose other two vertices are (1, 1) and (– 1, – 1) respectively is",
+      "options": [
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q12_o1.jpg",
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q12_o2.jpg",
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q12_o3.jpg",
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q12_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Distance Formula"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Analysing",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-coordinate-geometry-13",
+      "sourceRow": 14,
+      "question": "The centroid of the triangle having vertices (7, 5), (5, 7) and (– 3, 3) is",
+      "options": [
+        "(3, – 5)",
+        "(– 3, 5)",
+        "(– 3, – 5)",
+        "(3, 5)"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Section Formula"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-coordinate-geometry-14",
+      "sourceRow": 15,
+      "question": "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q14.jpg",
+      "options": [
+        "(4, 3)",
+        "(4, 15)",
+        "(– 4, – 15)",
+        "(– 15, – 4)"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Section Formula"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-coordinate-geometry-15",
+      "sourceRow": 16,
+      "question": "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q15.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q15_o1.jpg",
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q15_o2.jpg",
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q15_o3.jpg",
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q15_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Section Formula"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Remembering",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-coordinate-geometry-16",
+      "sourceRow": 17,
+      "question": "The co-ordinates of the point which divides the line segment joining the points (3, 5) and (7, 9) internally in the ratio 2 : 3 are",
+      "options": [
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q16_o1.jpg",
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q16_o2.jpg",
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q16_o3.jpg",
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q16_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Section Formula"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-coordinate-geometry-17",
+      "sourceRow": 18,
+      "question": "The third vertex of a triangle having other two vertices (– 3, 1) , (0, – 2) and the co-ordinates of the centroid (0, 0) is",
+      "options": [
+        "(1, 3)",
+        "(3, 1)",
+        "(– 1, 3)",
+        "(– 1, – 3)"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Section Formula"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-coordinate-geometry-18",
+      "sourceRow": 19,
+      "question": "The area of quadrilateral having vertices (1, 2), (6, 2), (5, 3) and (3, 7) is",
+      "options": [
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q18_o1.jpg",
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q18_o2.jpg",
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q18_o3.jpg",
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q18_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Area of a Triangle"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Analysing",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-coordinate-geometry-19",
+      "sourceRow": 20,
+      "question": "Centre of a circle is at (– 1, 3) and one end of a diameter has co-ordinates (2, 5). The co-ordinates of the other end are",
+      "options": [
+        "(– 4, 1)",
+        "(1, – 4)",
+        "(4, – 1)",
+        "none of these"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Section Formula"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-coordinate-geometry-20",
+      "sourceRow": 21,
+      "question": "If two vertices of a parallelogram are (3, 2) and (– 1, 0) and the diagonals intersect at (2, – 5), then the other two vertices are",
+      "options": [
+        "(1, – 10), (5, – 12)",
+        "(1, – 12), (5, – 10)",
+        "(2, – 10), (5, – 12)",
+        "(1, – 10), (2, – 12)"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Distance Formula"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Analysing",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-coordinate-geometry-21",
+      "sourceRow": 22,
+      "question": "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q21.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q21_o1.jpg",
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q21_o2.jpg",
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q21_o3.jpg",
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q21_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Section Formula"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-coordinate-geometry-22",
+      "sourceRow": 23,
+      "question": "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q22.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q22_o1.jpg",
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q22_o2.jpg",
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q22_o3.jpg",
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q22_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Difficult",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Area of a Triangle"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Analysing",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-coordinate-geometry-23",
+      "sourceRow": 24,
+      "question": "Three consecutive vertices of a parallelogram are (1, – 2), (3, 6) and (5, 10). The co-ordinates of the fourth vertex are",
+      "options": [
+        "(– 3, 2)",
+        "(2, – 3)",
+        "(3, 2)",
+        "(– 2, – 3)"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Distance Formula"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Analysing",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-coordinate-geometry-24",
+      "sourceRow": 25,
+      "question": "The vertices of a parallelogram are (3, – 2), (4, 0), (6, – 3) and (5, – 5). The diagonals intersect at the point M. The co-ordinates of the point M are",
+      "options": [
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q24_o1.jpg",
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q24_o2.jpg",
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q24_o3.jpg",
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q24_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Section Formula"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Analysing",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-coordinate-geometry-25",
+      "sourceRow": 26,
+      "question": "The perimeter of the triangle formed by the points (0, 0), (1, 0) and (0, 1) is",
+      "options": [
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q25_o1.jpg",
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q25_o2.jpg",
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q25_o3.jpg",
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q25_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Distance Formula"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-coordinate-geometry-26",
+      "sourceRow": 27,
+      "question": "The area of the triangle formed by (a, b + c), (b, c + a), and (c, a + b) is",
+      "options": [
+        "a + b + c",
+        "abc",
+        "(a + b + c)2",
+        "0"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Difficult",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Area of a Triangle"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-coordinate-geometry-27",
+      "sourceRow": 28,
+      "question": "If the centroid of the triangle formed by the points (a, b), (b, c) and (c, a) is at the origin, then a3 + b3 + c3 =",
+      "options": [
+        "abc",
+        "0",
+        "a + b + c",
+        "3abc"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Section Formula"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Analysing",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-coordinate-geometry-28",
+      "sourceRow": 29,
+      "question": "The condition that the point (x, y) may lie on the line joining (3, 4) and (– 5, – 6) is",
+      "options": [
+        "5x + 4y + 1 = 0",
+        "5x – 4y + 1 = 0",
+        "5x – 4y – 1 = 0",
+        "5x + 4y – 1 = 0"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Area of a Triangle"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-coordinate-geometry-29",
+      "sourceRow": 30,
+      "question": "Determine the ratio in which the line 2x + y – 4 = 0 divides the line segment joining A (2, – 2) and B (3, 7).",
+      "options": [
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q29_o1.jpg",
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q29_o2.jpg",
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q29_o3.jpg",
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q29_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Section Formula"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Analysing",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-coordinate-geometry-30",
+      "sourceRow": 31,
+      "question": "The co-ordinates of the point which divides the join of points P (x1, y1) and Q (x2, y2) internally in the ratio m : n are",
+      "options": [
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q30_o1.jpg",
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q30_o2.jpg",
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q30_o3.jpg",
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q30_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Section Formula"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Remembering",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-coordinate-geometry-31",
+      "sourceRow": 32,
+      "question": "The points A (9, 0), B (9, 6), C (– 9, 6) and D (– 9, 0) are the vertices of a",
+      "options": [
+        "square",
+        "rectangle",
+        "rhombus",
+        "trapezium"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Distance Formula"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": "Exemplar"
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-coordinate-geometry-32",
+      "sourceRow": 33,
+      "question": "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q32.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q32_o1.jpg",
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q32_o2.jpg",
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q32_o3.jpg",
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q32_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Distance Formula"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Analysing",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-coordinate-geometry-33",
+      "sourceRow": 34,
+      "question": "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q33.jpg",
+      "options": [
+        "– 4",
+        "– 12",
+        "12",
+        "– 6"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Section Formula"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": "Exemplar"
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-coordinate-geometry-34",
+      "sourceRow": 35,
+      "question": "If the point P (2, 1) lies on the line segment joining points A (4, 2) and B (8, 4), then",
+      "options": [
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q34_o1.jpg",
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q34_o2.jpg",
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q34_o3.jpg",
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q34_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Section Formula"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": "Exemplar"
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-coordinate-geometry-35",
+      "sourceRow": 36,
+      "question": "The perpendicular bisector of the line segment joining the points A (1, 5) and B (4, 6) cuts the y-axis at",
+      "options": [
+        "(0, 13)",
+        "(0, – 13)",
+        "(0, 12)",
+        "(13, 0)"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Section Formula"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-coordinate-geometry-36",
+      "sourceRow": 37,
+      "question": "The vertices of a triangle are (0, 0), (3, 0) and (0, 4). The triangle is",
+      "options": [
+        "Equilateral",
+        "Isosceles",
+        "Right angled",
+        "None of these"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Distance Formula"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Analysing",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-coordinate-geometry-37",
+      "sourceRow": 38,
+      "question": "A point P on the x-axis is equidistant from the points A( 2 ,– 5) and B(– 2 , 9). The coordinates of P are",
+      "options": [
+        "(7, 0)",
+        "(0, 7)",
+        "( 0 , -7)",
+        "(-7, 0)"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Distance Formula"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Analysing",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-coordinate-geometry-38",
+      "sourceRow": 39,
+      "question": "The points (– 1, – 6) and (7, 2) are the end points of the diameter of a circle. The centre of the circle lies in the",
+      "options": [
+        "I Quadrant",
+        "II Quadrant",
+        "III Quadrant",
+        "IV Quadrant"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Section Formula"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-coordinate-geometry-39",
+      "sourceRow": 40,
+      "question": "The coordinates of a rectangle are (0, 0), (p, 0), (p, q) and (0, q). Its diagonals bisect each other at the point",
+      "options": [
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q39_o1.jpg",
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q39_o2.jpg",
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q39_o3.jpg",
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q39_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Section Formula"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Analysing",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-coordinate-geometry-40",
+      "sourceRow": 41,
+      "question": "For what value of k , are the points (– 3, 9) ,( 2, – 1) and (4, k ) collinear ?",
+      "options": [
+        "5",
+        "– 5",
+        "6",
+        "– 6"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Area of a Triangle"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-coordinate-geometry-41",
+      "sourceRow": 42,
+      "question": "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q41.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q41_o1.jpg",
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q41_o2.jpg",
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q41_o3.jpg",
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q41_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Section Formula"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-coordinate-geometry-42",
+      "sourceRow": 43,
+      "question": "The area of the triangle formed by joining the points (–2, 3) ,(8, 3) and (6 , 7) is",
+      "options": [
+        "40 sq. units",
+        "20 sq. units",
+        "16 sq. units",
+        "8 sq. units"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Area of a Triangle"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-coordinate-geometry-43",
+      "sourceRow": 44,
+      "question": "( 0, –1) , (2, 1) and (0, 3) are three vertices of a square, taken in order. The fourth vertex is",
+      "options": [
+        "(2, 1)",
+        "(–2, 1)",
+        "(2, –1)",
+        "(–2, –1)"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Distance Formula"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Analysing",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-coordinate-geometry-44",
+      "sourceRow": 45,
+      "question": "The point (p, 2) divides the join of the points (2, 5) and (–5, –2) internally in the ratio 3: 4. The value of p is",
+      "options": [
+        "2",
+        "–2",
+        "3",
+        "–1"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Section Formula"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-coordinate-geometry-45",
+      "sourceRow": 46,
+      "question": "The ratio in which the line x – y = 2, divides the line segment obtained by joining the points (3, –1) and (8, 9) is",
+      "options": [
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q45_o1.jpg",
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q45_o2.jpg",
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q45_o3.jpg",
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q45_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Section Formula"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-coordinate-geometry-64",
+      "sourceRow": 65,
+      "question": "If the points (k, 2k), (3k, 3k) and (3,1) are collinear, then k.",
+      "options": [
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q64_o1.jpg",
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q64_o2.jpg",
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q64_o3.jpg",
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q64_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Distance Formula"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-coordinate-geometry-65",
+      "sourceRow": 66,
+      "question": "If x is a positive integer such that the distance between points P (x, 2) and Q (3, – 6) is 10 units, then x =",
+      "options": [
+        "–3",
+        "3",
+        "9",
+        "0"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Distance Formula"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-coordinate-geometry-66",
+      "sourceRow": 67,
+      "question": "If A (2, 2), B (– 4, 4) and C (5, –8) are the vertices of a triangle, then the length of the median through vertex C is",
+      "options": [
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q66_o1.jpg",
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q66_o2.jpg",
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q66_o3.jpg",
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q66_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Distance Formula"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-coordinate-geometry-67",
+      "sourceRow": 68,
+      "question": "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q67.jpg",
+      "options": [
+        "–1",
+        "1",
+        "0",
+        "2"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Distance Formula"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-coordinate-geometry-68",
+      "sourceRow": 69,
+      "question": "The area of the triangle formed by (a, b + c), (b, c + a) and (c, a + b) so",
+      "options": [
+        "0",
+        "abc",
+        "(a + b + c)2",
+        "None of these"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Area of a Triangle"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-coordinate-geometry-69",
+      "sourceRow": 70,
+      "question": "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q69.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q69_o1.jpg",
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q69_o2.jpg",
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q69_o3.jpg",
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q69_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Distance Formula"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-coordinate-geometry-70",
+      "sourceRow": 71,
+      "question": "A line intersects the y-axis and x-axis at the points P and Q, respectively. If (2, – 5) is the mid-point of PQ, then the coordinates P and Q are, respectively.",
+      "options": [
+        "(0, – 5) and (2, 0)",
+        "(0, 10) and (– 4, 0)",
+        "(0, 4) and (– 10,0)",
+        "(0, – 10) and (4, 0)"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Section Formula"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-coordinate-geometry-71",
+      "sourceRow": 72,
+      "question": "If the distance between the points (4, p) and (1, 0) is 5, then the value of p is",
+      "options": [
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q71_o1.jpg",
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q71_o2.jpg",
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q71_o3.jpg",
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q71_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Distance Formula"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-coordinate-geometry-72",
+      "sourceRow": 73,
+      "question": "If the points A (1, 2), O (0, 0) and C (a, b) are collinear, then",
+      "options": [
+        "a = b",
+        "a = 2b",
+        "2a = b",
+        "a = – b"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Area of a Triangle"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-coordinate-geometry-73",
+      "sourceRow": 74,
+      "question": "The distance of the point P (2, 3) from the x-axis is",
+      "options": [
+        "2",
+        "3",
+        "1",
+        "5"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Distance Formula"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-coordinate-geometry-74",
+      "sourceRow": 75,
+      "question": "The distance between the points A (0, 6) and B (0, – 2) is",
+      "options": [
+        "6",
+        "8",
+        "4",
+        "2"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Distance Formula"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-coordinate-geometry-75",
+      "sourceRow": 76,
+      "question": "The distance of the point P (– 6, 8) from the origin is",
+      "options": [
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q75_o1.jpg",
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q75_o2.jpg",
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q75_o3.jpg",
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q75_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Distance Formula"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-coordinate-geometry-76",
+      "sourceRow": 77,
+      "question": "The distance between the points (0, 5) and (– 5, 0) is",
+      "options": [
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q76_o1.jpg",
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q76_o2.jpg",
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q76_o3.jpg",
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q76_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Distance Formula"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-coordinate-geometry-77",
+      "sourceRow": 78,
+      "question": "The points (– 4, 0), (4, 0), (0, 3) are the vertices of a",
+      "options": [
+        "right triangle",
+        "isosceles triangle",
+        "equilateral triangle",
+        "scalene triangle"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Distance Formula"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-coordinate-geometry-78",
+      "sourceRow": 79,
+      "question": "The point which divides the line segment joining the points (7, – 6) and (3, 4) in ratio 1 : 2 internally lies in the",
+      "options": [
+        "I quadrant",
+        "II quadrant",
+        "III quadrant",
+        "IV quadrant"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Section Formula"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-coordinate-geometry-79",
+      "sourceRow": 80,
+      "question": "The point which lies on the perpendicular bisector of the line segment joining the points A (– 2, – 5) and B (2, 5) is",
+      "options": [
+        "(0, 0)",
+        "(0, 2)",
+        "(2, 0)",
+        "(– 2, 0)"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Section Formula"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-coordinate-geometry-80",
+      "sourceRow": 81,
+      "question": "The fourth vertex D of a parallelogram ABCD whose three vertices are A (– 2, 3), B (6, 7) and C (8, 3) is",
+      "options": [
+        "(0, 1)",
+        "(0, – 1)",
+        "(– 1, 0)",
+        "(1, 0)"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Distance Formula"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-coordinate-geometry-81",
+      "sourceRow": 82,
+      "question": "If the point P (2, 1) lies on the line segment joining points A (4, 2) and B (8, 4), then",
+      "options": [
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q81_o1.jpg",
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q81_o2.jpg",
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q81_o3.jpg",
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q81_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Section Formula"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-coordinate-geometry-82",
+      "sourceRow": 83,
+      "question": "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q82.jpg",
+      "options": [
+        "– 4",
+        "– 12",
+        "12",
+        "– 6"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Section Formula"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-coordinate-geometry-83",
+      "sourceRow": 84,
+      "question": "The perpendicular bisector of the line segment joining the point A (1, 5) and B (4, 6) cuts the y-axis at",
+      "options": [
+        "(0, 13)",
+        "(0, – 13)",
+        "(0, 12)",
+        "(13, 0)"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Distance Formula"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-coordinate-geometry-84",
+      "sourceRow": 85,
+      "question": "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q84.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q84_o1.jpg",
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q84_o2.jpg",
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q84_o3.jpg",
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q84_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Distance Formula"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-coordinate-geometry-85",
+      "sourceRow": 86,
+      "question": "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q85.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q85_o1.jpg",
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q85_o2.jpg",
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q85_o3.jpg",
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q85_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Distance Formula"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-coordinate-geometry-86",
+      "sourceRow": 87,
+      "question": "The perimeter of a triangle with vertices (0, 4), (0, 0) and (3, 0) is",
+      "options": [
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q86_o1.jpg",
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q86_o2.jpg",
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q86_o3.jpg",
+        "Math_Class_10_Assess_QB_07_Coordinate_Geometry_q86_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Distance Formula"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-coordinate-geometry-87",
+      "sourceRow": 88,
+      "question": "The area of a triangle with vertices A (3, 0), B (7, 0) and C (8, 4) is",
+      "options": [
+        "14",
+        "28",
+        "8",
+        "6"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Area of a Triangle"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    }
+  ]
+}

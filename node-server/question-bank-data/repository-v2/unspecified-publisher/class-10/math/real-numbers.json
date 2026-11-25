@@ -1,0 +1,1578 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-24T11:45:03.493Z",
+  "classification": {
+    "class": "Class 10",
+    "subject": "Math",
+    "topic": "Real Numbers"
+  },
+  "publisher": "unspecified-publisher",
+  "source": {
+    "file": "Class10/Final/Math_Class_10_Assess_QB_01_Real_Numbers/Math_Class_10_Assess_QB_01_Real_Numbers.xlsx",
+    "sheet": "Maths_Grade_10_Ch-1"
+  },
+  "questionType": "MCQ",
+  "questionCount": 60,
+  "questions": [
+    {
+      "id": "unspecified-publisher-class-10-math-real-numbers-1",
+      "sourceRow": 2,
+      "question": "According to Euclid’s Division Lemma, for positive integers a and b, a = bq + r, if which of the following conditions is satisfied?",
+      "options": [
+        "Math_Class_10_Assess_QB_01_Real_Numbers_q1_o1.jpg",
+        "Math_Class_10_Assess_QB_01_Real_Numbers_q1_o2.jpg",
+        "Math_Class_10_Assess_QB_01_Real_Numbers_q1_o3.jpg",
+        "Math_Class_10_Assess_QB_01_Real_Numbers_q1_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Euclid's Division Lemma and Algorithm"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": "Remembering",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-real-numbers-2",
+      "sourceRow": 3,
+      "question": "Math_Class_10_Assess_QB_01_Real_Numbers_q2.jpg",
+      "options": [
+        "A rational number",
+        "An irrational number",
+        "A natural number",
+        "An integer"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Rational and Irrational Numbers"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-real-numbers-3",
+      "sourceRow": 4,
+      "question": "Math_Class_10_Assess_QB_01_Real_Numbers_q3.jpg",
+      "options": [
+        "Terminating",
+        "Non-terminating and repeating",
+        "Non-terminating and non-repeating",
+        "None of these"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Rational and Irrational Numbers"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-real-numbers-4",
+      "sourceRow": 5,
+      "question": "Which of the following has a non terminating non-repeating decimal expansion?",
+      "options": [
+        "Math_Class_10_Assess_QB_01_Real_Numbers_q4_o1.jpg",
+        "Math_Class_10_Assess_QB_01_Real_Numbers_q4_o2.jpg",
+        "Math_Class_10_Assess_QB_01_Real_Numbers_q4_o3.jpg",
+        "Math_Class_10_Assess_QB_01_Real_Numbers_q4_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Rational and Irrational Numbers"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-real-numbers-5",
+      "sourceRow": 6,
+      "question": "The HCF of 114 and 76 is of the form 114 – 76 p. The value of p is",
+      "options": [
+        "2",
+        "1",
+        "–1",
+        "–2"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "The Fundamental Theorem of Arithmetic"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-real-numbers-6",
+      "sourceRow": 7,
+      "question": "The HCF and LCM of two numbers are 9 and 360 respectively. If one number is 72, the other number is",
+      "options": [
+        "78",
+        "108",
+        "50",
+        "45"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "The Fundamental Theorem of Arithmetic"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-real-numbers-7",
+      "sourceRow": 8,
+      "question": "Math_Class_10_Assess_QB_01_Real_Numbers_q7.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_01_Real_Numbers_q7_o1.jpg",
+        "Math_Class_10_Assess_QB_01_Real_Numbers_q7_o2.jpg",
+        "Math_Class_10_Assess_QB_01_Real_Numbers_q7_o3.jpg",
+        "Math_Class_10_Assess_QB_01_Real_Numbers_q7_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Rational and Irrational Numbers"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-real-numbers-8",
+      "sourceRow": 9,
+      "question": "Math_Class_10_Assess_QB_01_Real_Numbers_q8.jpg",
+      "options": [
+        "A terminating decimal",
+        "A non-terminating recurring decimal",
+        "A non-terminating non-recurring decimal",
+        "None of these"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Rational and Irrational Numbers"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-real-numbers-9",
+      "sourceRow": 10,
+      "question": "Two racing cars complete one round of a circular track in 25 seconds and 24 seconds respectively. Starting at the same time and same direction, they will meet once again in",
+      "options": [
+        "5 minutes",
+        "6 minutes",
+        "10 minutes",
+        "12 minutes"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Difficult",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "The Fundamental Theorem of Arithmetic"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-real-numbers-10",
+      "sourceRow": 11,
+      "question": "Math_Class_10_Assess_QB_01_Real_Numbers_q10.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_01_Real_Numbers_q10_o1.jpg",
+        "Math_Class_10_Assess_QB_01_Real_Numbers_q10_o2.jpg",
+        "Math_Class_10_Assess_QB_01_Real_Numbers_q10_o3.jpg",
+        "Math_Class_10_Assess_QB_01_Real_Numbers_q10_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Rational and Irrational Numbers"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-real-numbers-11",
+      "sourceRow": 12,
+      "question": "The [HCF × LCM] for the numbers 50 and 20 is",
+      "options": [
+        "10",
+        "100",
+        "1000",
+        "50"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "The Fundamental Theorem of Arithmetic"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-real-numbers-12",
+      "sourceRow": 13,
+      "question": "Which of the following numbers has terminating decimal expansion ?",
+      "options": [
+        "Math_Class_10_Assess_QB_01_Real_Numbers_q12_o1.jpg",
+        "Math_Class_10_Assess_QB_01_Real_Numbers_q12_o2.jpg",
+        "Math_Class_10_Assess_QB_01_Real_Numbers_q12_o3.jpg",
+        "Math_Class_10_Assess_QB_01_Real_Numbers_q12_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Rational and Irrational Numbers"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-real-numbers-13",
+      "sourceRow": 14,
+      "question": "If least prime factor of ‘a’ is 3 and least prime factor of ‘b’ is 7, the least prime factor of (a + b) is:",
+      "options": [
+        "2",
+        "3",
+        "5",
+        "11"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "The Fundamental Theorem of Arithmetic"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-real-numbers-14",
+      "sourceRow": 15,
+      "question": "If a, b are coprime, then a2, b2 are :",
+      "options": [
+        "Coprime",
+        "Not coprime",
+        "Odd numbers",
+        "Even numbers"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "The Fundamental Theorem of Arithmetic"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-real-numbers-15",
+      "sourceRow": 16,
+      "question": "If the HCF of 65 and 117 is expressible in the form 65m – 117, then the value of m is :",
+      "options": [
+        "4",
+        "2",
+        "1",
+        "3"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "The Fundamental Theorem of Arithmetic"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-real-numbers-16",
+      "sourceRow": 17,
+      "question": "1192 – 1112 is:",
+      "options": [
+        "Prime number",
+        "Composite number",
+        "An odd prime number",
+        "An odd composite number"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "The Fundamental Theorem of Arithmetic"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-real-numbers-17",
+      "sourceRow": 18,
+      "question": "Which is not an Irrational number ?",
+      "options": [
+        "Math_Class_10_Assess_QB_01_Real_Numbers_q17_o1.jpg",
+        "Math_Class_10_Assess_QB_01_Real_Numbers_q17_o2.jpg",
+        "Math_Class_10_Assess_QB_01_Real_Numbers_q17_o3.jpg",
+        "Math_Class_10_Assess_QB_01_Real_Numbers_q17_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Rational and Irrational Numbers"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-real-numbers-18",
+      "sourceRow": 19,
+      "question": "Math_Class_10_Assess_QB_01_Real_Numbers_q18.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_01_Real_Numbers_q18_o1.jpg",
+        "Math_Class_10_Assess_QB_01_Real_Numbers_q18_o2.jpg",
+        "Math_Class_10_Assess_QB_01_Real_Numbers_q18_o3.jpg",
+        "Math_Class_10_Assess_QB_01_Real_Numbers_q18_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "The Fundamental Theorem of Arithmetic"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-real-numbers-19",
+      "sourceRow": 20,
+      "question": "Math_Class_10_Assess_QB_01_Real_Numbers_q19.jpg",
+      "options": [
+        "12",
+        "108",
+        "6",
+        "36"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "The Fundamental Theorem of Arithmetic"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-real-numbers-20",
+      "sourceRow": 21,
+      "question": "Math_Class_10_Assess_QB_01_Real_Numbers_q20.jpg",
+      "options": [
+        "550",
+        "1600",
+        "165",
+        "1625"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "The Fundamental Theorem of Arithmetic"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-real-numbers-21",
+      "sourceRow": 22,
+      "question": "If p, q are two co-prime numbers, then HCF (p, q) is :",
+      "options": [
+        "p",
+        "q",
+        "pq",
+        "1"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "The Fundamental Theorem of Arithmetic"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-real-numbers-22",
+      "sourceRow": 23,
+      "question": "Math_Class_10_Assess_QB_01_Real_Numbers_q22.jpg",
+      "options": [
+        "3 places",
+        "4 places",
+        "5 places",
+        "1 place"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Rational and Irrational Numbers"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-real-numbers-23",
+      "sourceRow": 24,
+      "question": "The product of the HCF and LCM of the smallest prime number and smallest composite number is :",
+      "options": [
+        "2",
+        "4",
+        "6",
+        "8"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "The Fundamental Theorem of Arithmetic"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-real-numbers-24",
+      "sourceRow": 25,
+      "question": "n2 – 1 is divisible by 8, if n is",
+      "options": [
+        "an integer",
+        "a natural number",
+        "an odd integer",
+        "an even integer"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Euclid's Division Lemma and Algorithm"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-real-numbers-25",
+      "sourceRow": 26,
+      "question": "Given that LCM (91, 26) = 182, then HCF (91, 26) is:",
+      "options": [
+        "13",
+        "26",
+        "7",
+        "9"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "The Fundamental Theorem of Arithmetic"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-real-numbers-26",
+      "sourceRow": 27,
+      "question": "How many prime factors are there in prime factorization of 5005.",
+      "options": [
+        "2",
+        "4",
+        "6",
+        "7"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "The Fundamental Theorem of Arithmetic"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-real-numbers-27",
+      "sourceRow": 28,
+      "question": "Math_Class_10_Assess_QB_01_Real_Numbers_q27.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_01_Real_Numbers_q27_o1.jpg",
+        "Math_Class_10_Assess_QB_01_Real_Numbers_q27_o2.jpg",
+        "Math_Class_10_Assess_QB_01_Real_Numbers_q27_o3.jpg",
+        "Math_Class_10_Assess_QB_01_Real_Numbers_q27_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Euclid's Division Lemma and Algorithm"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Remembering",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-real-numbers-28",
+      "sourceRow": 29,
+      "question": "For some integer m, every even integer is of the form.",
+      "options": [
+        "m",
+        "m + 1",
+        "2m",
+        "2m + 1"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Euclid's Division Lemma and Algorithm"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Remembering",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-real-numbers-29",
+      "sourceRow": 30,
+      "question": "Math_Class_10_Assess_QB_01_Real_Numbers_q29.jpg",
+      "options": [
+        "LCM (a, b) = HCF (b, r)",
+        "LCM (a, b) = LCM (b, r)",
+        "HCF (a, b) = LCM (b, r)",
+        "HCF (a, b) = HCF (b, r)"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Euclid's Division Lemma and Algorithm"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Remembering",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-real-numbers-30",
+      "sourceRow": 31,
+      "question": "For some integer q, every odd integer is of the form",
+      "options": [
+        "q",
+        "q + 1",
+        "2q",
+        "2q + 1"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Euclid's Division Lemma and Algorithm"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Remembering",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-real-numbers-31",
+      "sourceRow": 32,
+      "question": "If HCF (16, x ) = 8 and LCM (16, x) = 48, then the values of x is",
+      "options": [
+        "128",
+        "8",
+        "24",
+        "4"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "The Fundamental Theorem of Arithmetic"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-real-numbers-32",
+      "sourceRow": 33,
+      "question": "Math_Class_10_Assess_QB_01_Real_Numbers_q32.jpg",
+      "options": [
+        "an irrational number",
+        "a rational number",
+        "an integer",
+        "natural number"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Rational and Irrational Numbers"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-real-numbers-33",
+      "sourceRow": 34,
+      "question": "n2 – 1 is divisible by 8, if n is",
+      "options": [
+        "an integer",
+        "a natural numbers",
+        "an odd positive integer",
+        "an even positive integer"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Euclid's Division Lemma and Algorithm"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-real-numbers-34",
+      "sourceRow": 35,
+      "question": "According to the fundamental theorem of arithmetic if P (a prime number) divides b2, and b is positive then",
+      "options": [
+        "b divides P",
+        "b2 divides P",
+        "P2 divides b2",
+        "P divides b"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "The Fundamental Theorem of Arithmetic"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Remembering",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-real-numbers-35",
+      "sourceRow": 36,
+      "question": "HCF of 27 and 36 is",
+      "options": [
+        "7",
+        "9",
+        "18",
+        "108"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Euclid's Division Lemma and Algorithm"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-real-numbers-36",
+      "sourceRow": 37,
+      "question": "Math_Class_10_Assess_QB_01_Real_Numbers_q36.jpg",
+      "options": [
+        "Terminating decimal",
+        "Non terminating, non-repeating",
+        "Non-terminating, repeating",
+        "None of these"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Rational and Irrational Numbers"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-real-numbers-37",
+      "sourceRow": 38,
+      "question": "Math_Class_10_Assess_QB_01_Real_Numbers_q37.jpg",
+      "options": [
+        "terminating decimal",
+        "non-terminating repeating decimal",
+        "non-terminating non-repeating decimal",
+        "none of these"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Rational and Irrational Numbers"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-real-numbers-38",
+      "sourceRow": 39,
+      "question": "Square of any positive integer is of the form.",
+      "options": [
+        "3q + 1",
+        "3q",
+        "both a and b",
+        "none"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Euclid's Division Lemma and Algorithm"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-real-numbers-39",
+      "sourceRow": 40,
+      "question": "A terminating decimal when expressed in fractional form always have denominator in the form of",
+      "options": [
+        "Math_Class_10_Assess_QB_01_Real_Numbers_q39_o1.jpg",
+        "Math_Class_10_Assess_QB_01_Real_Numbers_q39_o2.jpg",
+        "Math_Class_10_Assess_QB_01_Real_Numbers_q39_o3.jpg",
+        "Math_Class_10_Assess_QB_01_Real_Numbers_q39_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Rational and Irrational Numbers"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Remembering",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-real-numbers-40",
+      "sourceRow": 41,
+      "question": "Product of any three consecutive numbers is always divisible by",
+      "options": [
+        "6",
+        "10",
+        "15",
+        "none"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Euclid's Division Lemma and Algorithm"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-real-numbers-41",
+      "sourceRow": 42,
+      "question": "The product of two consecutive natural numbers is always a",
+      "options": [
+        "even number",
+        "odd number",
+        "prime number",
+        "none of these"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Euclid's Division Lemma and Algorithm"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Remembering",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-real-numbers-42",
+      "sourceRow": 43,
+      "question": "Math_Class_10_Assess_QB_01_Real_Numbers_q42.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_01_Real_Numbers_q42_o1.jpg",
+        "Math_Class_10_Assess_QB_01_Real_Numbers_q42_o2.jpg",
+        "Math_Class_10_Assess_QB_01_Real_Numbers_q42_o3.jpg",
+        "Math_Class_10_Assess_QB_01_Real_Numbers_q42_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "The Fundamental Theorem of Arithmetic"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Remembering",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-real-numbers-43",
+      "sourceRow": 44,
+      "question": "The series of a well defined steps which gives a procedure form solving a type of problem is",
+      "options": [
+        "Logarithm",
+        "Lemma",
+        "Algorithm",
+        "None"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Euclid's Division Lemma and Algorithm"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Remembering",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-real-numbers-44",
+      "sourceRow": 45,
+      "question": "LCM × HCF is equal to",
+      "options": [
+        "product of two numbers",
+        "quotient of two numbers",
+        "addition of two numbers",
+        "none of these"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "The Fundamental Theorem of Arithmetic"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Remembering",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-real-numbers-45",
+      "sourceRow": 46,
+      "question": "Math_Class_10_Assess_QB_01_Real_Numbers_q45.jpg",
+      "options": [
+        "non-terminating decimal",
+        "terminating decimal",
+        "non-terminating repeating decimal",
+        "None of these"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Rational and Irrational Numbers"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-real-numbers-46",
+      "sourceRow": 47,
+      "question": "Math_Class_10_Assess_QB_01_Real_Numbers_q46.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_01_Real_Numbers_q46_o1.jpg",
+        "Math_Class_10_Assess_QB_01_Real_Numbers_q46_o2.jpg",
+        "Math_Class_10_Assess_QB_01_Real_Numbers_q46_o3.jpg",
+        "Math_Class_10_Assess_QB_01_Real_Numbers_q46_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Euclid's Division Lemma and Algorithm"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Remembering",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-real-numbers-47",
+      "sourceRow": 48,
+      "question": "The HCF of 30, 72 and 432 is",
+      "options": [
+        "4",
+        "2",
+        "3",
+        "6"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "The Fundamental Theorem of Arithmetic"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-real-numbers-48",
+      "sourceRow": 49,
+      "question": "If the HCF of 306 and 657 is 9, then LCM is",
+      "options": [
+        "23338",
+        "22338",
+        "22668",
+        "33228"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "The Fundamental Theorem of Arithmetic"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-real-numbers-49",
+      "sourceRow": 50,
+      "question": "If x2 = 5, then x is",
+      "options": [
+        "an irrational number",
+        "a rational number",
+        "an integer",
+        "prime number"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Rational and Irrational Numbers"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-real-numbers-50",
+      "sourceRow": 51,
+      "question": "The sum of a rational number and an irrational number is always",
+      "options": [
+        "a rational number",
+        "an irrational number",
+        "a natural number",
+        "an integer"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Rational and Irrational Numbers"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Remembering",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-real-numbers-51",
+      "sourceRow": 52,
+      "question": "Math_Class_10_Assess_QB_01_Real_Numbers_q51.jpg",
+      "options": [
+        "rational",
+        "irrational",
+        "real",
+        "All of a, b, c"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Rational and Irrational Numbers"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-real-numbers-52",
+      "sourceRow": 53,
+      "question": "The length of circumference of any circle is",
+      "options": [
+        "a rational number",
+        "an irrational number",
+        "a terminating decimal",
+        "an integer"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Rational and Irrational Numbers"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-real-numbers-53",
+      "sourceRow": 54,
+      "question": "When a number is divided by 6, its remainder always",
+      "options": [
+        "greater than 6",
+        "lies between 6 and 12",
+        "greater or equal to zero or less than 6",
+        "less than zero"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Euclid's Division Lemma and Algorithm"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-real-numbers-54",
+      "sourceRow": 55,
+      "question": "Math_Class_10_Assess_QB_01_Real_Numbers_q54.jpg",
+      "options": [
+        "rational number",
+        "irrational number",
+        "natural number",
+        "prime number"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Rational and Irrational Numbers"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-real-numbers-55",
+      "sourceRow": 56,
+      "question": "A real number 1.01001000100001... has",
+      "options": [
+        "terminating decimal",
+        "non-terminating repeating decimal",
+        "non-terminating non-repeating decimal",
+        "terminating but repeating decimal"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Rational and Irrational Numbers"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-real-numbers-56",
+      "sourceRow": 57,
+      "question": "Math_Class_10_Assess_QB_01_Real_Numbers_q56.jpg",
+      "options": [
+        "one decimal place",
+        "two decimal places",
+        "three decimal places",
+        "more than 3 decimal places"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Rational and Irrational Numbers"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": "Exemplar"
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-real-numbers-57",
+      "sourceRow": 58,
+      "question": "If the H.C.F. of 210 and 55 is expressible in the form 210 × 5 – 55y, then y =",
+      "options": [
+        "17",
+        "18",
+        "19",
+        "20"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Euclid's Division Lemma and Algorithm"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-real-numbers-58",
+      "sourceRow": 59,
+      "question": "It two positive integers ‘p’ and ‘q’ can be expressed as p = ab2 and q = a3b, where a, b being prime numbers, then LCM (p, q) is ______.",
+      "options": [
+        "ab",
+        "a2b2",
+        "a3b2",
+        "a3b3"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "The Fundamental Theorem of Arithmetic"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-real-numbers-59",
+      "sourceRow": 60,
+      "question": "The largest number which divides 70 and 125, leaving remainder 5 and 8 respectively is",
+      "options": [
+        "13",
+        "65",
+        "875",
+        "507"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Euclid's Division Lemma and Algorithm"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": "Exemplar"
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-real-numbers-60",
+      "sourceRow": 61,
+      "question": "If the least prime factor of ‘a’ is 3, the least prime factor of ‘b’ is 7, then the least prime factor of (a + b) is",
+      "options": [
+        "2",
+        "3",
+        "5",
+        "11"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "The Fundamental Theorem of Arithmetic"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    }
+  ]
+}

@@ -1,0 +1,701 @@
+{
+  "version": 2,
+  "generatedAt": "2026-11-22T03:27:31.166Z",
+  "classes": {
+    "class-6": {
+      "name": "Class 6",
+      "subjects": {
+        "english": {
+          "name": "English",
+          "topics": {
+            "the-sentence": {
+              "sourcePath": "Class6/Final/Eng_Class_06_Assess_QB_01_The_Sentence/Eng_Class_06_Assess_QB_01_The_Sentence.xlsx",
+              "sha256": "88a116ffb88a703e960efadef5706ffc6a1fc574c622e301db5b8d23429e5faf",
+              "status": "processed",
+              "output": "unspecified-publisher/class-6/english/the-sentence.json",
+              "questionCount": 10,
+              "processedAt": "2026-11-22T03:27:29.847Z"
+            },
+            "sub-pred": {
+              "sourcePath": "Class6/Final/Eng_Class_06_Assess_QB_02_Sub_&_Pred/Eng_Class_06_Assess_QB_02_Sub_&_Pred.xlsx",
+              "sha256": "0f7b90f964b9f24fd6e525dd62f44c8ffb0584e916dd3924e9dbb7945383a326",
+              "status": "processed",
+              "output": "unspecified-publisher/class-6/english/sub-pred.json",
+              "questionCount": 10,
+              "processedAt": "2026-11-22T03:27:29.888Z"
+            },
+            "nouns": {
+              "sourcePath": "Class6/Final/Eng_Class_06_Assess_QB_03_Nouns/Eng_Class_06_Assess_QB_03_Nouns.xlsx",
+              "sha256": "875054f9eb3713134cb624e6d581cb8cab5345a6ad19964e7f09a81cc5eab621",
+              "status": "processed",
+              "output": "unspecified-publisher/class-6/english/nouns.json",
+              "questionCount": 9,
+              "processedAt": "2026-11-22T03:27:29.915Z",
+              "skippedTypes": {
+                "FIB": 10
+              }
+            },
+            "pronouns": {
+              "sourcePath": "Class6/Final/Eng_Class_06_Assess_QB_04_Pronouns/Eng_Class_06_Assess_QB_04_Pronouns.xlsx",
+              "sha256": "0010ccddaeae61838bb56da8ff24d12c1560e107b23075e92b722b7298338cf3",
+              "status": "processed",
+              "output": "unspecified-publisher/class-6/english/pronouns.json",
+              "questionCount": 21,
+              "processedAt": "2026-11-22T03:27:29.954Z",
+              "skippedTypes": {
+                "FIB": 6
+              }
+            },
+            "adjectives": {
+              "sourcePath": "Class6/Final/Eng_Class_06_Assess_QB_05_Adjectives/Eng_Class_06_Assess_QB_05_Adjectives.xlsx",
+              "sha256": "f8632c4be8148b49f4c8d4257f5ee05e900e5afa559b393ee97514dddc9d7c8b",
+              "status": "processed",
+              "output": "unspecified-publisher/class-6/english/adjectives.json",
+              "questionCount": 11,
+              "processedAt": "2026-11-22T03:27:29.980Z",
+              "skippedTypes": {
+                "FIB": 8,
+                "OTHER": 3
+              }
+            },
+            "verbs": {
+              "sourcePath": "Class6/Final/Eng_Class_06_Assess_QB_06_Verbs/Eng_Class_06_Assess_QB_06_Verbs.xlsx",
+              "sha256": "aff0fda1997ee8f52b3a09237b02c46a587f9601fdfc0022851ecadecd14e185",
+              "status": "processed",
+              "output": "unspecified-publisher/class-6/english/verbs.json",
+              "questionCount": 10,
+              "processedAt": "2026-11-22T03:27:30.001Z"
+            },
+            "adverbs": {
+              "sourcePath": "Class6/Final/Eng_Class_06_Assess_QB_07_Adverbs/Eng_Class_06_Assess_QB_07_Adverbs.xlsx",
+              "sha256": "7a9971025aea8e5733ee00cd8f8ad68352c05418b83d72e77b57e1cbf91882cd",
+              "status": "processed",
+              "output": "unspecified-publisher/class-6/english/adverbs.json",
+              "questionCount": 14,
+              "processedAt": "2026-11-22T03:27:30.024Z",
+              "skippedTypes": {
+                "FIB": 12
+              }
+            },
+            "determiners": {
+              "sourcePath": "Class6/Final/Eng_Class_06_Assess_QB_08_Determiners/Eng_Class_06_Assess_QB_08_Determiners.xlsx",
+              "sha256": "4aab1fcfc93df363926b81043abd250d1acf2c1bb9660986d4021e910965cd65",
+              "status": "processed",
+              "output": "unspecified-publisher/class-6/english/determiners.json",
+              "questionCount": 10,
+              "processedAt": "2026-11-22T03:27:30.045Z",
+              "skippedTypes": {
+                "FIB": 4
+              }
+            },
+            "articles": {
+              "sourcePath": "Class6/Final/Eng_Class_06_Assess_QB_09_Articles/Eng_Class_06_Assess_QB_09_Articles.xlsx",
+              "sha256": "7c92a65ca4236124c2a1ad2d96f7c329d5cac14cabd250cac8af0d98230bfacf",
+              "status": "processed",
+              "output": "unspecified-publisher/class-6/english/articles.json",
+              "questionCount": 7,
+              "processedAt": "2026-11-22T03:27:30.066Z",
+              "skippedTypes": {
+                "FIB": 8
+              }
+            },
+            "sub-verb-agree": {
+              "sourcePath": "Class6/Final/Eng_Class_06_Assess_QB_10_Sub_Verb_Agree/Eng_Class_06_Assess_QB_10_Sub_Verb_Agree.xlsx",
+              "sha256": "339730670cfbf5ad0c0dbfa44e5bc191973c600ebaae001611750ce649cabd09",
+              "status": "warning",
+              "output": "unspecified-publisher/class-6/english/sub-verb-agree.json",
+              "questionCount": 0,
+              "processedAt": "2026-11-22T03:27:30.089Z",
+              "skippedTypes": {
+                "FIB": 38,
+                "TOF": 9
+              }
+            },
+            "tenses": {
+              "sourcePath": "Class6/Final/Eng_Class_06_Assess_QB_11_Tenses/Eng_Class_06_Assess_QB_11_Tenses.xlsx",
+              "sha256": "0a7b4ba698e71f752321dca5e8b8b4f7231d6b3cca38b5ac6ffe24d2ec014512",
+              "status": "processed",
+              "output": "unspecified-publisher/class-6/english/tenses.json",
+              "questionCount": 13,
+              "processedAt": "2026-11-22T03:27:30.126Z",
+              "skippedTypes": {
+                "FIB": 6
+              }
+            },
+            "act-pass-voice": {
+              "sourcePath": "Class6/Final/Eng_Class_06_Assess_QB_12_Act_&_Pass_Voice/Eng_Class_06_Assess_QB_12_Act_&_Pass_Voice.xlsx",
+              "sha256": "07b2c9b1fa6860e8afc819b0c96920db4fa8d8bc52f386b8654c7ecf49f8ea1c",
+              "status": "processed",
+              "output": "unspecified-publisher/class-6/english/act-pass-voice.json",
+              "questionCount": 15,
+              "processedAt": "2026-11-22T03:27:30.152Z",
+              "skippedTypes": {
+                "FIB": 5
+              }
+            },
+            "modals": {
+              "sourcePath": "Class6/Final/Eng_Class_06_Assess_QB_13_Modals/Eng_Class_06_Assess_QB_13_Modals.xlsx",
+              "sha256": "d44d9a0132ec2532df8ecf38980914e95bc7b4d399300d6011d59dc17d76a92a",
+              "status": "processed",
+              "output": "unspecified-publisher/class-6/english/modals.json",
+              "questionCount": 15,
+              "processedAt": "2026-11-22T03:27:30.174Z",
+              "skippedTypes": {
+                "FIB": 3
+              }
+            },
+            "prepositions": {
+              "sourcePath": "Class6/Final/Eng_Class_06_Assess_QB_14_Prepositions/Eng_Class_06_Assess_QB_14_Prepositions.xlsx",
+              "sha256": "afc90c0bd35fc4ddea1aeb2ca83b601383feb9e49501da8662384a2205520c8a",
+              "status": "processed",
+              "output": "unspecified-publisher/class-6/english/prepositions.json",
+              "questionCount": 16,
+              "processedAt": "2026-11-22T03:27:30.194Z",
+              "skippedTypes": {
+                "FIB": 6
+              }
+            },
+            "conjunctions": {
+              "sourcePath": "Class6/Final/Eng_Class_06_Assess_QB_15_Conjunctions/Eng_Class_06_Assess_QB_15_Conjunctions.xlsx",
+              "sha256": "48e72db26a5990699f372c99ce450b441a7bd3b723dcedd23410dd7daefd2998",
+              "status": "processed",
+              "output": "unspecified-publisher/class-6/english/conjunctions.json",
+              "questionCount": 10,
+              "processedAt": "2026-11-22T03:27:30.215Z"
+            },
+            "dir-indir-speech": {
+              "sourcePath": "Class6/Final/Eng_Class_06_Assess_QB_16_Dir_&_Indir_Speech/Eng_Class_06_Assess_QB_16_Dir_&_Indir_Speech.xlsx",
+              "sha256": "42b0cffbda3fc05fad15d9df31f97364d27b836e2072877eece79c10ef6b4fd0",
+              "status": "processed",
+              "output": "unspecified-publisher/class-6/english/dir-indir-speech.json",
+              "questionCount": 4,
+              "processedAt": "2026-11-22T03:27:30.236Z",
+              "skippedTypes": {
+                "FIB": 6,
+                "TOF": 6
+              }
+            },
+            "punctuation": {
+              "sourcePath": "Class6/Final/Eng_Class_06_Assess_QB_17_Punctuation/Eng_Class_06_Assess_QB_17_Punctuation.xlsx",
+              "sha256": "d1ba7f7e55df37b5ff8da17f7b1de1d23a1f010bf589fbc3e0863d26cbeace0c",
+              "status": "processed",
+              "output": "unspecified-publisher/class-6/english/punctuation.json",
+              "questionCount": 16,
+              "processedAt": "2026-11-22T03:27:30.257Z"
+            },
+            "apost-for-poss-plu-no": {
+              "sourcePath": "Class6/Final/Eng_Class_06_Assess_QB_18_Apost_for_Poss_&_Plu_No/Eng_Class_06_Assess_QB_18_Apost_for_Poss_&_Plu_No.xlsx",
+              "sha256": "c01d58642d0376a43823e05a8376babeb54c85f316012b947743bcff33979439",
+              "status": "warning",
+              "output": "unspecified-publisher/class-6/english/apost-for-poss-plu-no.json",
+              "questionCount": 0,
+              "processedAt": "2026-11-22T03:27:30.277Z",
+              "skippedTypes": {
+                "FIB": 19
+              }
+            },
+            "ques-tags-short-ans": {
+              "sourcePath": "Class6/Final/Eng_Class_06_Assess_QB_19_Ques_Tags_&_Short_Ans/Eng_Class_06_Assess_QB_19_Ques_Tags_&_Short_Ans.xlsx",
+              "sha256": "04ef1597e169599442ae1a2b8c8b7117b9c1e4e9b12dcded6931b595e6eef166",
+              "status": "processed",
+              "output": "unspecified-publisher/class-6/english/ques-tags-short-ans.json",
+              "questionCount": 7,
+              "processedAt": "2026-11-22T03:27:30.298Z",
+              "skippedTypes": {
+                "FIB": 10
+              }
+            },
+            "antony-synonyms": {
+              "sourcePath": "Class6/Final/Eng_Class_06_Assess_QB_20_Antony_&_Synonyms/Eng_Class_06_Assess_QB_20_Antony_&_Synonyms.xlsx",
+              "sha256": "fec19022fc1ab3f4bdd8a7f037bba3fe7b54f2b17348eb459b24c4ed2f1ec48f",
+              "status": "processed",
+              "output": "unspecified-publisher/class-6/english/antony-synonyms.json",
+              "questionCount": 10,
+              "processedAt": "2026-11-22T03:27:30.318Z",
+              "skippedTypes": {
+                "FIB": 5
+              }
+            },
+            "common-errors": {
+              "sourcePath": "Class6/Final/Eng_Class_06_Assess_QB_21_Common_Errors/Eng_Class_06_Assess_QB_21_Common_Errors.xlsx",
+              "sha256": "c4059271a9a8dd88d482d3144a1414e341f0f6fa04e12b7710334b6df327cf29",
+              "status": "processed",
+              "output": "unspecified-publisher/class-6/english/common-errors.json",
+              "questionCount": 10,
+              "processedAt": "2026-11-22T03:27:30.338Z",
+              "skippedTypes": {
+                "FIB": 22
+              }
+            }
+          }
+        }
+      }
+    },
+    "class-7": {
+      "name": "Class 7",
+      "subjects": {
+        "english": {
+          "name": "English",
+          "topics": {
+            "the-sentence": {
+              "sourcePath": "class7/Final/Eng_Class_7_Assess_QB_01_The_Sentence/Eng_Class_7_Assess_QB_01_The_Sentence.xlsx",
+              "sha256": "2c918acd0d12b2fc60b649c7c0736d5dd03b1bbbc8c61f6111559dd41df6508d",
+              "status": "processed",
+              "output": "unspecified-publisher/class-7/english/the-sentence.json",
+              "questionCount": 10,
+              "processedAt": "2026-11-22T03:27:30.358Z"
+            },
+            "subject-and-predicate": {
+              "sourcePath": "class7/Final/Eng_Class_7_Assess_QB_02_Subject_and_Predicate/Eng_Class_7_Assess_QB_02_Subject_and_Predicate.xlsx",
+              "sha256": "18b3aa636ab71e971a8d4585fcb8336e4adced99da0e7e8f4a5b298328a675e0",
+              "status": "processed",
+              "output": "unspecified-publisher/class-7/english/subject-and-predicate.json",
+              "questionCount": 5,
+              "processedAt": "2026-11-22T03:27:30.376Z",
+              "skippedTypes": {
+                "TOF": 7
+              }
+            },
+            "phrases-and-clauses": {
+              "sourcePath": "class7/Final/Eng_Class_7_Assess_QB_03_Phrases_and_Clauses/Eng_Class_7_Assess_QB_03_Phrases and Clauses.xlsx",
+              "sha256": "56c8158db0436b788999ce7848998a2dfbee0f1e4864e9c3cc8e54e3df5a412c",
+              "status": "processed",
+              "output": "unspecified-publisher/class-7/english/phrases-and-clauses.json",
+              "questionCount": 7,
+              "processedAt": "2026-11-22T03:27:30.395Z",
+              "skippedTypes": {
+                "FIB": 8
+              }
+            },
+            "nouns": {
+              "sourcePath": "class7/Final/Eng_Class_7_Assess_QB_04_Nouns/Eng_Class_7_Assess_QB_04_Nouns.xlsx",
+              "sha256": "7f537a83d15f2ee8f5625a676f23e5a43901839f4f0d3cde34c945c653bf83bb",
+              "status": "processed",
+              "output": "unspecified-publisher/class-7/english/nouns.json",
+              "questionCount": 6,
+              "processedAt": "2026-11-22T03:27:30.414Z",
+              "skippedTypes": {
+                "FIB": 8
+              }
+            },
+            "pronouns": {
+              "sourcePath": "class7/Final/Eng_Class_7_Assess_QB_05_Pronouns/Eng_Class_7_Assess_QB_05_Pronouns.xlsx",
+              "sha256": "647e3e3b6ac2b3029d75fd59361d6258975d89f98e4df467fa7feec73a09d2e0",
+              "status": "processed",
+              "output": "unspecified-publisher/class-7/english/pronouns.json",
+              "questionCount": 16,
+              "processedAt": "2026-11-22T03:27:30.447Z"
+            },
+            "adjectives": {
+              "sourcePath": "class7/Final/Eng_Class_7_Assess_QB_06_Adjectives/Eng_Class_7_Assess_QB_06_Adjectives.xlsx",
+              "sha256": "88061ad5fc054d435ed4658a1b0907355e4470ba0d8fa9307395c1c64aee4f59",
+              "status": "processed",
+              "output": "unspecified-publisher/class-7/english/adjectives.json",
+              "questionCount": 15,
+              "processedAt": "2026-11-22T03:27:30.475Z",
+              "skippedTypes": {
+                "FIB": 6
+              }
+            },
+            "verbs": {
+              "sourcePath": "class7/Final/Eng_Class_7_Assess_QB_07_Verbs/Eng_Class_7_Assess_QB_07_Verbs.xlsx",
+              "sha256": "b36b9f462f694a3452cfc48ea9a55733c4bf768530472ccbae87f5c77d14509a",
+              "status": "warning",
+              "output": "unspecified-publisher/class-7/english/verbs.json",
+              "questionCount": 0,
+              "processedAt": "2026-11-22T03:27:30.493Z",
+              "skippedTypes": {
+                "FIB": 10
+              }
+            },
+            "gerunds-and-infinitives": {
+              "sourcePath": "class7/Final/Eng_Class_7_Assess_QB_08_Gerunds_and_Infinitives/Eng_Class_7_Assess_QB_08_Gerunds_and_Infinitives.xlsx",
+              "sha256": "c8374a14b8362414a883ec1b23955eb0c02b22f37d05e2f278bd9d7f02204b9c",
+              "status": "warning",
+              "output": "unspecified-publisher/class-7/english/gerunds-and-infinitives.json",
+              "questionCount": 0,
+              "processedAt": "2026-11-22T03:27:30.513Z",
+              "skippedTypes": {
+                "FIB": 15
+              }
+            },
+            "participles": {
+              "sourcePath": "class7/Final/Eng_Class_7_Assess_QB_09_Participles/Eng_Class_7_Assess_QB_09_Participles.xlsx",
+              "sha256": "37a833f6ea3d59324b11186ba19f565b01bb01a45e4bd18c2e3ee70c5e44fe54",
+              "status": "warning",
+              "output": "unspecified-publisher/class-7/english/participles.json",
+              "questionCount": 0,
+              "processedAt": "2026-11-22T03:27:30.532Z",
+              "skippedTypes": {
+                "FIB": 18
+              }
+            },
+            "adverbs": {
+              "sourcePath": "class7/Final/Eng_Class_7_Assess_QB_10_Adverbs/Eng_Class_7_Assess_QB_10_Adverbs.xlsx",
+              "sha256": "4ba17c94f592834b6ea476e1d48d62fe0948100635d5406bbaa7013e4b03d4b7",
+              "status": "processed",
+              "output": "unspecified-publisher/class-7/english/adverbs.json",
+              "questionCount": 10,
+              "processedAt": "2026-11-22T03:27:30.551Z"
+            },
+            "determiners": {
+              "sourcePath": "class7/Final/Eng_Class_7_Assess_QB_11_Determiners/Eng_Class_7_Assess_QB_11_Determiners.xlsx",
+              "sha256": "6f997e2c8a891aaa6d96f59a179486350285c54d5444c7941709919dd81af9e7",
+              "status": "processed",
+              "output": "unspecified-publisher/class-7/english/determiners.json",
+              "questionCount": 14,
+              "processedAt": "2026-11-22T03:27:30.570Z"
+            },
+            "articles": {
+              "sourcePath": "class7/Final/Eng_Class_7_Assess_QB_12_Articles/Eng_Class_7_Assess_QB_12_Articles.xlsx",
+              "sha256": "c58003afb256f1599bdb47a66b67bdd216088b4718034a097e91b7840eab54a9",
+              "status": "processed",
+              "output": "unspecified-publisher/class-7/english/articles.json",
+              "questionCount": 12,
+              "processedAt": "2026-11-22T03:27:30.588Z"
+            },
+            "subject-verb-agreement": {
+              "sourcePath": "class7/Final/Eng_Class_7_Assess_QB_13_Subject_Verb_Agreement/Eng_Class_7_Assess_QB_13_Subject_Verb_Agreement.xlsx",
+              "sha256": "e39efedb3945cf3e1dc11ebb12e6ea58ec04016e4925e9fa4432177eddca359a",
+              "status": "warning",
+              "output": "unspecified-publisher/class-7/english/subject-verb-agreement.json",
+              "questionCount": 0,
+              "processedAt": "2026-11-22T03:27:30.608Z",
+              "skippedTypes": {
+                "FIB": 20,
+                "TOF": 12
+              }
+            },
+            "tenses": {
+              "sourcePath": "class7/Final/Eng_Class_7_Assess_QB_14_Tenses/Eng_Class_7_Assess_QB_14_Tenses.xlsx",
+              "sha256": "c8be289e85b8308845a6656de768d18c8bfa3f9129711ad337455a0a3cb62bc0",
+              "status": "processed",
+              "output": "unspecified-publisher/class-7/english/tenses.json",
+              "questionCount": 19,
+              "processedAt": "2026-11-22T03:27:30.628Z",
+              "skippedTypes": {
+                "FIB": 21
+              }
+            },
+            "active-passive-voice": {
+              "sourcePath": "class7/Final/Eng_Class_7_Assess_QB_15_Active_Passive_Voice/Eng_Class_7_Assess_QB_15_Active_Passive_Voice.xlsx",
+              "sha256": "3f080b31430f4093b1451123b126a8851c606bf6f6f66601a9e44d439af9ebe8",
+              "status": "warning",
+              "output": "unspecified-publisher/class-7/english/active-passive-voice.json",
+              "questionCount": 0,
+              "processedAt": "2026-11-22T03:27:30.647Z",
+              "skippedTypes": {
+                "FIB": 10,
+                "TOF": 6
+              }
+            },
+            "modal-and-auxiliary-verbs": {
+              "sourcePath": "class7/Final/Eng_Class_7_Assess_QB_16_Modal _and_Auxiliary_Verbs/Eng_Class_7_Assess_QB_16_Modals _and_Auxiliary_Verbs.xlsx",
+              "sha256": "374d6ec2a66414d24d004e1eea8006d377d571c9557659e2de2c914a9a528290",
+              "status": "warning",
+              "output": "unspecified-publisher/class-7/english/modal-and-auxiliary-verbs.json",
+              "questionCount": 0,
+              "processedAt": "2026-11-22T03:27:30.666Z",
+              "skippedTypes": {
+                "FIB": 21
+              }
+            },
+            "prepositions": {
+              "sourcePath": "class7/Final/Eng_Class_7_Assess_QB_17_Prepositions/Eng_Class_7_Assess_QB_17_Prepositions.xlsx",
+              "sha256": "72f1799ca3f8d19747a1b11119d68fb3f85063cb506ac67a2659f8e52fa5c660",
+              "status": "warning",
+              "output": "unspecified-publisher/class-7/english/prepositions.json",
+              "questionCount": 0,
+              "processedAt": "2026-11-22T03:27:30.684Z",
+              "skippedTypes": {
+                "FIB": 10
+              }
+            },
+            "conjunctions": {
+              "sourcePath": "class7/Final/Eng_Class_7_Assess_QB_18_Conjunctions/Eng_Class_7_Assess_QB_18_Conjunctions.xlsx",
+              "sha256": "86d5ced05b9036f08cffedbe3e236e506b4f9a750bab6328f7f35c671be38255",
+              "status": "processed",
+              "output": "unspecified-publisher/class-7/english/conjunctions.json",
+              "questionCount": 6,
+              "processedAt": "2026-11-22T03:27:30.703Z",
+              "skippedTypes": {
+                "FIB": 10
+              }
+            },
+            "conditional-sentences": {
+              "sourcePath": "class7/Final/Eng_Class_7_Assess_QB_19_Conditional_Sentences/Eng_Class_7_Assess_QB_19_Conditional_Sentences.xlsx",
+              "sha256": "25e3694d4639a237bd25d30bd184030aa77f1352f4bfb9008d8d205c995cf07a",
+              "status": "warning",
+              "output": "unspecified-publisher/class-7/english/conditional-sentences.json",
+              "questionCount": 0,
+              "processedAt": "2026-11-22T03:27:30.721Z",
+              "skippedTypes": {
+                "FIB": 16
+              }
+            },
+            "direct-and-indirect-speech": {
+              "sourcePath": "class7/Final/Eng_Class_7_Assess_QB_20_Direct_and_Indirect_Speech/Eng_Class_7_Assess_QB_20_Direct_and_Indirect_Speech.xlsx",
+              "sha256": "cfb70c890cd9db37c2b984e2c699b44cae3238cf65c43e29c0d7f8babf3ccc10",
+              "status": "warning",
+              "output": "unspecified-publisher/class-7/english/direct-and-indirect-speech.json",
+              "questionCount": 0,
+              "processedAt": "2026-11-22T03:27:30.739Z",
+              "skippedTypes": {
+                "FIB": 3,
+                "TOF": 10
+              }
+            },
+            "punctuation": {
+              "sourcePath": "class7/Final/Eng_Class_7_Assess_QB_21_Punctuation/Eng_Class_7_Assess_QB_21_Punctuation.xlsx",
+              "sha256": "71b2363846f8141fe98ec854b747d783f248a1426bc3d2fc080917e2a58b9c0d",
+              "status": "processed",
+              "output": "unspecified-publisher/class-7/english/punctuation.json",
+              "questionCount": 15,
+              "processedAt": "2026-11-22T03:27:30.759Z"
+            },
+            "antonyms-and-synonyms": {
+              "sourcePath": "class7/Final/Eng_Class_7_Assess_QB_22_Antonyms_and_Synonyms/Eng_Class_7_Assess_QB_22_Antonyms_and_Synonyms.xlsx",
+              "sha256": "45629c9a8a5fef85aadb09eca977891c111b601978efcc165643d81255449d57",
+              "status": "processed",
+              "output": "unspecified-publisher/class-7/english/antonyms-and-synonyms.json",
+              "questionCount": 5,
+              "processedAt": "2026-11-22T03:27:30.777Z",
+              "skippedTypes": {
+                "FIB": 8
+              }
+            },
+            "common-errors": {
+              "sourcePath": "class7/Final/Eng_Class_7_Assess_QB_23_Common_Errors/Grade 7_Common Errors.xlsx",
+              "sha256": "ac33c68ed5792d4643cee44eca0a006b274da35c255fc26393db57a6a3e7ce85",
+              "status": "processed",
+              "output": "unspecified-publisher/class-7/english/common-errors.json",
+              "questionCount": 4,
+              "processedAt": "2026-11-22T03:27:30.795Z",
+              "skippedTypes": {
+                "FIB": 22
+              }
+            }
+          }
+        }
+      }
+    },
+    "class-8": {
+      "name": "Class 8",
+      "subjects": {
+        "english": {
+          "name": "English",
+          "topics": {
+            "the-sentence": {
+              "sourcePath": "Class8/Final/English_Class 8_Assess_QB_01_The_Sentence/Eng_Class 8_Assess_QB_01_The_Sentence.xlsx",
+              "sha256": "3e939ba5c98a570530ef61f21ef946b0122f2520048a59bc59d77e767206c2f4",
+              "status": "processed",
+              "output": "unspecified-publisher/class-8/english/the-sentence.json",
+              "questionCount": 12,
+              "processedAt": "2026-11-22T03:27:30.814Z"
+            },
+            "subject-and-predicate": {
+              "sourcePath": "Class8/Final/English_Class 8_Assess_QB_02_Subject and Predicate/English_Class 8_Assess_QB_2_Subject and Predicate.xlsx",
+              "sha256": "1a56f3514a1eb3458cf8a96d33a71ce8908c605f7ba6f15c1ead4e69c54c13e8",
+              "status": "processed",
+              "output": "unspecified-publisher/class-8/english/subject-and-predicate.json",
+              "questionCount": 10,
+              "processedAt": "2026-11-22T03:27:30.832Z"
+            },
+            "phrases-and-clauses": {
+              "sourcePath": "Class8/Final/English_Class 8_Assess_QB_03_Phrases_and_Clauses/English_Class 8_Assess_03_QB_Phrases_and_Clauses.xlsx",
+              "sha256": "307200c394686a24fca790acbb228b8638ddb1ff12e66e371bffcd8a95233ebd",
+              "status": "processed",
+              "output": "unspecified-publisher/class-8/english/phrases-and-clauses.json",
+              "questionCount": 6,
+              "processedAt": "2026-11-22T03:27:30.850Z",
+              "skippedTypes": {
+                "TOF": 5
+              }
+            },
+            "nouns": {
+              "sourcePath": "Class8/Final/English_Class 8_Assess_QB_04_Nouns/Eng_Class 8_Assess_QB_04_Nouns.xlsx",
+              "sha256": "f863856c4ccfd749b5e7ae6fffdfd44baf76daaf85131eb2ba8aa8e44f142f74",
+              "status": "processed",
+              "output": "unspecified-publisher/class-8/english/nouns.json",
+              "questionCount": 11,
+              "processedAt": "2026-11-22T03:27:30.869Z",
+              "skippedTypes": {
+                "FIB": 4
+              }
+            },
+            "pronouns": {
+              "sourcePath": "Class8/Final/English_Class 8_Assess_QB_05_Pronouns/Eng_Class 8_Assess_QB_05_Pronouns.xlsx",
+              "sha256": "6c02f3396ef06c1afd6e38f49c5536d3b0eb2a8a6ff251156f93f29a9f017f43",
+              "status": "processed",
+              "output": "unspecified-publisher/class-8/english/pronouns.json",
+              "questionCount": 6,
+              "processedAt": "2026-11-22T03:27:30.888Z",
+              "skippedTypes": {
+                "FIB": 10
+              }
+            },
+            "adjectives": {
+              "sourcePath": "Class8/Final/English_Class 8_Assess_QB_06_Adjectives/Eng_Class 8_Assess_QB_06_Adjectives.xlsx",
+              "sha256": "6f4f3d579114d556b77b326650fbb33b4994c0f2250eb75a5a028fd8a68cfe32",
+              "status": "warning",
+              "output": "unspecified-publisher/class-8/english/adjectives.json",
+              "questionCount": 0,
+              "processedAt": "2026-11-22T03:27:30.906Z",
+              "skippedTypes": {
+                "FIB": 10
+              }
+            },
+            "verbs": {
+              "sourcePath": "Class8/Final/English_Class 8_Assess_QB_07_Verbs/Eng_Class 8_Assess_QB_07_Verbs.xlsx",
+              "sha256": "b60246557c6700df135b4897584bc195e5b0073ac3d103a6b961541972d4b7dc",
+              "status": "processed",
+              "output": "unspecified-publisher/class-8/english/verbs.json",
+              "questionCount": 4,
+              "processedAt": "2026-11-22T03:27:30.925Z",
+              "skippedTypes": {
+                "FIB": 4,
+                "TOF": 4
+              }
+            },
+            "finite-non-finite-verbs": {
+              "sourcePath": "Class8/Final/English_Class 8_Assess_QB_08_Finite_Non-Finite_Verbs/Eng_Class 8_Assess_QB_08_Finite_Non-finite_Verbs.xlsx",
+              "sha256": "5b894da82c06114169606a28d98c324ae0b8609b3283a8db36752d4d6742c1f8",
+              "status": "warning",
+              "output": "unspecified-publisher/class-8/english/finite-non-finite-verbs.json",
+              "questionCount": 0,
+              "processedAt": "2026-11-22T03:27:30.942Z",
+              "skippedTypes": {
+                "FIB": 11
+              }
+            },
+            "adverbs": {
+              "sourcePath": "Class8/Final/English_Class 8_Assess_QB_09_Adverbs/Eng_Class 8_Assess_QB_09_Adverbs.xlsx",
+              "sha256": "4489458bbec0d9fad41224fe51d621c4ad40155f4d460c63687d5e248f76d8a1",
+              "status": "processed",
+              "output": "unspecified-publisher/class-8/english/adverbs.json",
+              "questionCount": 11,
+              "processedAt": "2026-11-22T03:27:30.961Z"
+            },
+            "determiners": {
+              "sourcePath": "Class8/Final/English_Class 8_Assess_QB_10_Determiners/Eng_Class 8_Assess_QB_10_Determiners.xlsx",
+              "sha256": "8df75a6a69ec906dab963a3f53d48e1bae6d85ee425f0c1e63d46e4ef3303594",
+              "status": "processed",
+              "output": "unspecified-publisher/class-8/english/determiners.json",
+              "questionCount": 12,
+              "processedAt": "2026-11-22T03:27:30.979Z",
+              "skippedTypes": {
+                "FIB": 8
+              }
+            },
+            "articles": {
+              "sourcePath": "Class8/Final/English_Class 8_Assess_QB_11_Articles/Eng_Class 8_Assess_QB_11_Articles.xlsx",
+              "sha256": "d8c13d82fcdd580a00794f4e52d72af9e024fdeb08210abcd0312e922e61f76d",
+              "status": "processed",
+              "output": "unspecified-publisher/class-8/english/articles.json",
+              "questionCount": 10,
+              "processedAt": "2026-11-22T03:27:30.998Z"
+            },
+            "subject-verb-agreement": {
+              "sourcePath": "Class8/Final/English_Class 8_Assess_QB_12_Subject_Verb_Agreement/Eng_Class 8_Assess_QB_12_Subject_Verb_Agreement.xlsx",
+              "sha256": "adbb4d9bfa1930902a3d9a3271881c0fedec2a5e007f40e9ac25dfeb858d9803",
+              "status": "warning",
+              "output": "unspecified-publisher/class-8/english/subject-verb-agreement.json",
+              "questionCount": 0,
+              "processedAt": "2026-11-22T03:27:31.017Z",
+              "skippedTypes": {
+                "FIB": 17
+              }
+            },
+            "tenses": {
+              "sourcePath": "Class8/Final/English_Class 8_Assess_QB_13_Tenses/English_Class 8_Assess_QB_13_Tenses.xlsx",
+              "sha256": "de02fcff5ccece5edb2d26d58c5e53b2d1bf377c61d97c7a17089dff5b8048dc",
+              "status": "processed",
+              "output": "unspecified-publisher/class-8/english/tenses.json",
+              "questionCount": 6,
+              "processedAt": "2026-11-22T03:27:31.036Z",
+              "skippedTypes": {
+                "FIB": 17
+              }
+            },
+            "active-and-passive-voice": {
+              "sourcePath": "Class8/Final/English_Class 8_Assess_QB_14_Active_and_ Passive_Voice/English_Class 8_Assess_QB_14_Active_and_Passive_Voice.xlsx",
+              "sha256": "46eac8121427d803081afbfd6c9033f9d110715023eb5e4e2685efcf91aa18d6",
+              "status": "processed",
+              "output": "unspecified-publisher/class-8/english/active-and-passive-voice.json",
+              "questionCount": 10,
+              "processedAt": "2026-11-22T03:27:31.054Z"
+            },
+            "modals": {
+              "sourcePath": "Class8/Final/English_Class 8_Assess_QB_15_Modals/Eng_Class 8_Assess_QB_15_Modals.xlsx",
+              "sha256": "618dcf5fe11aa4cb80cfd5d796c30e5729a075f9d904f69a0ceaa42cb2352922",
+              "status": "processed",
+              "output": "unspecified-publisher/class-8/english/modals.json",
+              "questionCount": 10,
+              "processedAt": "2026-11-22T03:27:31.073Z",
+              "skippedTypes": {
+                "FIB": 5
+              }
+            },
+            "prepositions": {
+              "sourcePath": "Class8/Final/English_Class 8_Assess_QB_16_Prepositions/Eng_Class 8_Assess_QB_16_Prepositions.xlsx",
+              "sha256": "2170260d3dcdfc551d8984a7abd5549465ed03d9e120ae7dc42dbe7712d8083f",
+              "status": "warning",
+              "output": "unspecified-publisher/class-8/english/prepositions.json",
+              "questionCount": 0,
+              "processedAt": "2026-11-22T03:27:31.091Z",
+              "skippedTypes": {
+                "FIB": 14
+              }
+            },
+            "conjunctions": {
+              "sourcePath": "Class8/Final/English_Class 8_Assess_QB_17_Conjunctions/Eng_Class 8_Assess_QB_17_Conjunctions.xlsx",
+              "sha256": "503a7d0a448d66de2a02a5ff201ce1714e513ca8ce5de687f950a068fbb50459",
+              "status": "processed",
+              "output": "unspecified-publisher/class-8/english/conjunctions.json",
+              "questionCount": 15,
+              "processedAt": "2026-11-22T03:27:31.110Z"
+            },
+            "conditionals": {
+              "sourcePath": "Class8/Final/English_Class 8_Assess_QB_18_Conditionals/Eng_Class_8_Assess_QB_18_Conditionals.xlsx",
+              "sha256": "3a6a2423ad88f27ef5bad7821839a1e1e3783a9fbef7c3bc931b6be624ed5ce7",
+              "status": "warning",
+              "output": "unspecified-publisher/class-8/english/conditionals.json",
+              "questionCount": 0,
+              "processedAt": "2026-11-22T03:27:31.128Z",
+              "skippedTypes": {
+                "FIB": 10
+              }
+            },
+            "direct-and-indirect-speech": {
+              "sourcePath": "Class8/Final/English_Class 8_Assess_QB_19_Direct and Indirect Speech/English_Class 8_Assess_QB_19_Direct Indirect Speech.xlsx",
+              "sha256": "59d401d2cc2fafaf0e6d351c923c37a0b63459fc7ae9052a8feca0667d7fef82",
+              "status": "processed",
+              "output": "unspecified-publisher/class-8/english/direct-and-indirect-speech.json",
+              "questionCount": 10,
+              "processedAt": "2026-11-22T03:27:31.147Z"
+            },
+            "punctuation": {
+              "sourcePath": "Class8/Final/English_Class 8_Assess_QB_20_Punctuation/Eng_Class 8_Assess_QB_20_Punctuation.xlsx",
+              "sha256": "431bd76fe40c4d57680530b0aec359104beb57ee13dcc28d6a1ed3053b1a62e1",
+              "status": "processed",
+              "output": "unspecified-publisher/class-8/english/punctuation.json",
+              "questionCount": 16,
+              "processedAt": "2026-11-22T03:27:31.166Z"
+            }
+          }
+        }
+      }
+    }
+  },
+  "summary": {
+    "configuredDirectories": 3,
+    "discoveredFiles": 64,
+    "processedFiles": 64,
+    "unchangedFiles": 0,
+    "mcqCount": 511,
+    "skippedFIB": 484,
+    "skippedTOF": 59,
+    "warningFiles": 16,
+    "failedFiles": 0
+  }
+}

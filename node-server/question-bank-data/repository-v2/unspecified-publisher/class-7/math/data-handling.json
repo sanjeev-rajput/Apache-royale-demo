@@ -1,0 +1,640 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-24T11:45:02.682Z",
+  "classification": {
+    "class": "Class 7",
+    "subject": "Math",
+    "topic": "Data Handling"
+  },
+  "publisher": "unspecified-publisher",
+  "source": {
+    "file": "Class7/Final/Math_Class 7_Assess_QB_03_Data_Handling/Int_Math_Class 7_Assess_QB_03_Data_Handling.xlsx",
+    "sheet": "filename"
+  },
+  "questionType": "MCQ",
+  "questionCount": 23,
+  "questions": [
+    {
+      "id": "unspecified-publisher-class-7-math-data-handling-17",
+      "sourceRow": 18,
+      "question": "What is the probability of getting a number greater than 2 in throwing a dice once?",
+      "options": [
+        "Maths_7_Data_Handling_q17_o1.jpg",
+        "Maths_7_Data_Handling_q17_o2.jpg",
+        "Maths_7_Data_Handling_q17_o3.jpg",
+        "Maths_7_Data_Handling_q17_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Chance and Probability"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-data-handling-18",
+      "sourceRow": 19,
+      "question": "In a class of 24 students, 10 students scored less than 50% marks in a quiz. What is the probability of students who scored more than 50% marks in the quiz?",
+      "options": [
+        "Maths_7_Data_Handling_q18_o1.jpg",
+        "Maths_7_Data_Handling_q18_o2.jpg",
+        "Maths_7_Data_Handling_q18_o3.jpg",
+        "Maths_7_Data_Handling_q18_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Chance and Probability"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-data-handling-19",
+      "sourceRow": 20,
+      "question": "Maths_7_Data_Handling_q19.jpg",
+      "options": [
+        "0.60",
+        "0.40",
+        "0.30",
+        "0.20"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Chance and Probability"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-data-handling-20",
+      "sourceRow": 21,
+      "question": "What is the probability of drawing a vowel from five paper chits bearing the letters a, e, i, o, u?",
+      "options": [
+        "0.20",
+        "0.30",
+        "0.40",
+        "0.50"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Chance and Probability"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-data-handling-21",
+      "sourceRow": 22,
+      "question": "A ball is drawn from a pack of 90 balls numbered 1 to 90. What is the probability of drawing a square numbered ball?",
+      "options": [
+        "Maths_7_Data_Handling_q21_o1.jpg",
+        "Maths_7_Data_Handling_q21_o2.jpg",
+        "Maths_7_Data_Handling_q21_o3.jpg",
+        "Maths_7_Data_Handling_q21_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Chance and Probability"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-data-handling-26",
+      "sourceRow": 23,
+      "question": "The mean age of five kids is 12 years. If the age of four kids 11, 16, 6 and 13, then what is the age of fifth kid?",
+      "options": [
+        "11 years",
+        "12 years",
+        "13 years",
+        "14 years"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Representative Values: Mean",
+        "Median",
+        "Mode",
+        "Range"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-data-handling-27",
+      "sourceRow": 24,
+      "question": "The mean of five numbers is 25 years. If one of the numbers is excluded, then new mean becomes 23, then what is the value of the excluded number?",
+      "options": [
+        "31",
+        "33",
+        "35",
+        "37"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Representative Values: Mean",
+        "Median",
+        "Mode",
+        "Range"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-data-handling-28",
+      "sourceRow": 25,
+      "question": "The mean of 5 observations is 16. If the mean of the first two observations is 12 and that of the last three observations is 15. What is the value of first observation?",
+      "options": [
+        "20",
+        "21",
+        "22",
+        "23"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Representative Values: Mean",
+        "Median",
+        "Mode",
+        "Range"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-data-handling-29",
+      "sourceRow": 26,
+      "question": "In which of the following data sets are the mean, median and mode all are same?",
+      "options": [
+        "1, 2, 3, 3, 2, 1, 2",
+        "1, 2, 3, 1, 2, 3, 1",
+        "1, 3, 3, 3, 2, 3, 1",
+        "2, 2, 1, 2, 3, 2, 3"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Representative Values: Mean",
+        "Median",
+        "Mode",
+        "Range"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-data-handling-30",
+      "sourceRow": 27,
+      "question": "The marks scored by 15 students in a mathematics test were as under.<br>60, 65, 100, 70, 85, 75, 95, 70, 75, 75, 70, 80, 80, 70, 75<br>Which of the following frequency table best fits for the data shown above?",
+      "options": [
+        "Maths_7_Data_Handling_q30_o1.jpg",
+        "Maths_7_Data_Handling_q30_o2.jpg",
+        "Maths_7_Data_Handling_q30_o3.jpg",
+        "Maths_7_Data_Handling_q30_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Collection and Organising of Data"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-data-handling-35",
+      "sourceRow": 28,
+      "question": "Collection of numbers gathered to give some information is called:",
+      "options": [
+        "frequency",
+        "data",
+        "tally marks",
+        "mean"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Collection and Organising of Data"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-data-handling-36",
+      "sourceRow": 29,
+      "question": "Students recorded how many servings of fruit they ate in one day. The answers were: 4,1, 2,1, 2, 4,2, 3,4, 1,3, 4, 2,4, 5. The mode is:",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Representative Values: Mean",
+        "Median",
+        "Mode",
+        "Range"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-data-handling-37",
+      "sourceRow": 30,
+      "question": "Choose an appropriate graph for the data of weights of two babies over three months.",
+      "options": [
+        "Pictograph",
+        "Double Bar-graph",
+        "Bar-graph",
+        "All of these"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Bar Graphs"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-data-handling-38",
+      "sourceRow": 31,
+      "question": "Following are the ages of 10 employees of a company 25, 45, 57, 34, 28, 39, 26, 41, 22, 43 Find the mean age.",
+      "options": [
+        "40",
+        "25",
+        "36",
+        "78"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Representative Values: Mean",
+        "Median",
+        "Mode",
+        "Range"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-data-handling-39",
+      "sourceRow": 32,
+      "question": "Determine the median for the following set of data 35, 28, 13, 17, 20, 30, 19, 29, 11, 10, 29, 23, 18, 25, 17",
+      "options": [
+        "20",
+        "23",
+        "19",
+        "18"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Representative Values: Mean",
+        "Median",
+        "Mode",
+        "Range"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-data-handling-40",
+      "sourceRow": 33,
+      "question": "Determine the mode for the following set of data 20, 21,19, 22,18, 23, 25, 22, 23, 20, 23, 20, 22, 21, 24, 21, 22, 23, 19, 21, 22, 22, 24, 26, 22",
+      "options": [
+        "23",
+        "22",
+        "21",
+        "19"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Representative Values: Mean",
+        "Median",
+        "Mode",
+        "Range"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-data-handling-41",
+      "sourceRow": 34,
+      "question": "What is the probability that if you draw a card from a standard deck, its suit will be a heart?",
+      "options": [
+        "Maths_7_Data_Handling_q41_o1.jpg",
+        "Maths_7_Data_Handling_q41_o2.jpg",
+        "Maths_7_Data_Handling_q41_o3.jpg",
+        "Maths_7_Data_Handling_q41_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Chance and Probability"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-data-handling-42",
+      "sourceRow": 35,
+      "question": "What expression best describes the statement, “This year has 366 days”?",
+      "options": [
+        "Impossible",
+        "Unlikely",
+        "Likely",
+        "Certain"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Chance and Probability"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-data-handling-43",
+      "sourceRow": 36,
+      "question": "A jar contains 7 white, 2 blue, 4 red, 1 green and 10 orange marbles. If a marble is drawn at random from the jar, what is the chance it is white?",
+      "options": [
+        "Maths_7_Data_Handling_q43_o1.jpg",
+        "Maths_7_Data_Handling_q43_o2.jpg",
+        "Maths_7_Data_Handling_q43_o3.jpg",
+        "Maths_7_Data_Handling_q43_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Chance and Probability"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-data-handling-44",
+      "sourceRow": 37,
+      "question": "Which word do you choose to describe the event? An ice cube will melt when it is left outside on a hot day.",
+      "options": [
+        "Impossible",
+        "Unlikely",
+        "Likely",
+        "Certain"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Chance and Probability"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-data-handling-45",
+      "sourceRow": 38,
+      "question": "A deck of 20 cards has 5 black cards and 15 red cards. 1 card is drawn without looking. What is the chance it is black?",
+      "options": [
+        "Maths_7_Data_Handling_q45_o1.jpg",
+        "Maths_7_Data_Handling_q45_o2.jpg",
+        "Maths_7_Data_Handling_q45_o3.jpg",
+        "Maths_7_Data_Handling_q45_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Chance and Probability"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-data-handling-46",
+      "sourceRow": 39,
+      "question": "There are 5 red, 2 yellow, 8 orange, 3 green and 10 black balls in a bag. Ankit draws 1 ball without looking. Which ball is most likely to be drawn?",
+      "options": [
+        "Black",
+        "Red",
+        "Yellow",
+        "Green"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Chance and Probability"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-data-handling-47",
+      "sourceRow": 40,
+      "question": "Today is Saturday. What is the chance that tomorrow will be Sunday?",
+      "options": [
+        "Impossible",
+        "Unlikely",
+        "Likely",
+        "Certain"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Chance and Probability"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    }
+  ]
+}

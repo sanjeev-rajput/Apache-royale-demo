@@ -1,0 +1,590 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-24T11:45:03.373Z",
+  "classification": {
+    "class": "Class 8",
+    "subject": "Math",
+    "topic": "Exponents and Powers"
+  },
+  "publisher": "unspecified-publisher",
+  "source": {
+    "file": "Class8/Final/Math_Class8_Assess_QB_12_Exponents_and_Powers/Math_Class 8_Assess_QB_12_Exponents_and_Powers.xlsx",
+    "sheet": "filename"
+  },
+  "questionType": "MCQ",
+  "questionCount": 22,
+  "questions": [
+    {
+      "id": "unspecified-publisher-class-8-math-exponents-and-powers-16",
+      "sourceRow": 17,
+      "question": "Maths_8_Exponents_and_Powers_q16.jpg",
+      "options": [
+        "Maths_8_Exponents_and_Powers_q16_o1.jpg",
+        "Maths_8_Exponents_and_Powers_q16_o2.jpg",
+        "Maths_8_Exponents_and_Powers_q16_o3.jpg",
+        "Maths_8_Exponents_and_Powers_q16_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Powers with Negative Exponents"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-exponents-and-powers-17",
+      "sourceRow": 18,
+      "question": "Maths_8_Exponents_and_Powers_q17.jpg",
+      "options": [
+        "Maths_8_Exponents_and_Powers_q17_o1.jpg",
+        "Maths_8_Exponents_and_Powers_q17_o2.jpg",
+        "Maths_8_Exponents_and_Powers_q17_o3.jpg",
+        "Maths_8_Exponents_and_Powers_q17_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Laws of Exponents"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-exponents-and-powers-18",
+      "sourceRow": 19,
+      "question": "Maths_8_Exponents_and_Powers_q18.jpg",
+      "options": [
+        "4",
+        "2",
+        "8",
+        "16"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Powers with Negative Exponents"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-exponents-and-powers-19",
+      "sourceRow": 20,
+      "question": "What is the value of (20 + 30 – 50)2",
+      "options": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Laws of Exponents"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-exponents-and-powers-20",
+      "sourceRow": 21,
+      "question": "What is the value of p if (–2)3 × (–5)3 = 10p?",
+      "options": [
+        "1",
+        "10",
+        "100",
+        "1000"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Powers with Negative Exponents"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-exponents-and-powers-21",
+      "sourceRow": 22,
+      "question": "What is the area of a rectangle with length 26 m and width of 4–2 m?",
+      "options": [
+        "Maths_8_Exponents_and_Powers_q21_o1.jpg",
+        "Maths_8_Exponents_and_Powers_q21_o2.jpg",
+        "Maths_8_Exponents_and_Powers_q21_o3.jpg",
+        "Maths_8_Exponents_and_Powers_q21_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Powers with Negative Exponents"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-exponents-and-powers-22",
+      "sourceRow": 23,
+      "question": "What is the scientific notation of 0.0067?",
+      "options": [
+        "6.7 × 10–3",
+        "67 × 10–3",
+        "6.7 × 103",
+        "67 × 103"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Expressing Numbers in Standard and Usual Forms"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-exponents-and-powers-23",
+      "sourceRow": 24,
+      "question": "Which of the following expressions is greater than 2.3 × 10–6?",
+      "options": [
+        "4.65 × 10–6",
+        "7 × 10–4",
+        "9.24 × 10–8",
+        "2.3 × 10–7"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Comparing Very Large and Very Small Numbers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-exponents-and-powers-24",
+      "sourceRow": 25,
+      "question": "Which of the following set of numbers is ordered from least to greatest?",
+      "options": [
+        "5.37 × 10–5, 0.00006, 3.56 × 10–4, 0.000543",
+        "5.37 × 10–5, 3.56 × 10–4, 0.000543, 0.00006",
+        "3.56 × 10–4, 5.37 × 10–5, 0.000543, 0.00006",
+        "0.00006, 0.000543, 3.56 × 10–4, 5.37 × 10–5"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Comparing Very Large and Very Small Numbers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-exponents-and-powers-25",
+      "sourceRow": 26,
+      "question": "Maths_8_Exponents_and_Powers_q25.jpg",
+      "options": [
+        "Maths_8_Exponents_and_Powers_q25_o1.jpg",
+        "Maths_8_Exponents_and_Powers_q25_o2.jpg",
+        "Maths_8_Exponents_and_Powers_q25_o3.jpg",
+        "Maths_8_Exponents_and_Powers_q25_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Powers with Negative Exponents"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-exponents-and-powers-26",
+      "sourceRow": 27,
+      "question": "If 5p = 3125, then what is the value of 5(p – 3)?",
+      "options": [
+        "25",
+        "125",
+        "625",
+        "1625"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Laws of Exponents"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-exponents-and-powers-27",
+      "sourceRow": 28,
+      "question": "Maths_8_Exponents_and_Powers_q27.jpg",
+      "options": [
+        "Maths_8_Exponents_and_Powers_q27_o1.jpg",
+        "Maths_8_Exponents_and_Powers_q27_o2.jpg",
+        "Maths_8_Exponents_and_Powers_q27_o3.jpg",
+        "Maths_8_Exponents_and_Powers_q27_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Laws of Exponents"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": "HOTS"
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-exponents-and-powers-28",
+      "sourceRow": 29,
+      "question": "Maths_8_Exponents_and_Powers_q28.jpg",
+      "options": [
+        "0",
+        "1",
+        "–1",
+        "2"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Powers with Negative Exponents"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-exponents-and-powers-29",
+      "sourceRow": 30,
+      "question": "If 5x+3 = 253x–4, then what is the value of x?",
+      "options": [
+        "Maths_8_Exponents_and_Powers_q29_o1.jpg",
+        "Maths_8_Exponents_and_Powers_q29_o2.jpg",
+        "Maths_8_Exponents_and_Powers_q29_o3.jpg",
+        "Maths_8_Exponents_and_Powers_q29_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Laws of Exponents"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-exponents-and-powers-30",
+      "sourceRow": 31,
+      "question": "Maths_8_Exponents_and_Powers_q30.jpg",
+      "options": [
+        "Maths_8_Exponents_and_Powers_q30_o1.jpg",
+        "Maths_8_Exponents_and_Powers_q30_o2.jpg",
+        "Maths_8_Exponents_and_Powers_q30_o3.jpg",
+        "Maths_8_Exponents_and_Powers_q30_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Powers with Negative Exponents"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-exponents-and-powers-31",
+      "sourceRow": 32,
+      "question": "Maths_8_Exponents_and_Powers_q31.jpg",
+      "options": [
+        "Maths_8_Exponents_and_Powers_q31_o1.jpg",
+        "Maths_8_Exponents_and_Powers_q31_o2.jpg",
+        "Maths_8_Exponents_and_Powers_q31_o3.jpg",
+        "Maths_8_Exponents_and_Powers_q31_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Laws of Exponents"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-exponents-and-powers-32",
+      "sourceRow": 33,
+      "question": "What is the value of x, if 81–2 ÷ 7291–x = 92x?",
+      "options": [
+        "2",
+        "–2",
+        "7",
+        "–7"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Laws of Exponents"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-exponents-and-powers-33",
+      "sourceRow": 34,
+      "question": "What is the value of [4–1 + 6–1 + 8–1]0?",
+      "options": [
+        "Maths_8_Exponents_and_Powers_q33_o1.jpg",
+        "Maths_8_Exponents_and_Powers_q33_o2.jpg",
+        "Maths_8_Exponents_and_Powers_q33_o3.jpg",
+        "Maths_8_Exponents_and_Powers_q33_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Powers with Negative Exponents"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-exponents-and-powers-34",
+      "sourceRow": 35,
+      "question": "What is the value of (8–25 – 8–26)?",
+      "options": [
+        "7 × 8–25",
+        "7 × 8–26",
+        "8 × 8–25",
+        "8 × 8–26"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Powers with Negative Exponents"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-exponents-and-powers-35",
+      "sourceRow": 36,
+      "question": "Maths_8_Exponents_and_Powers_q35.jpg",
+      "options": [
+        "Maths_8_Exponents_and_Powers_q35_o1.jpg",
+        "Maths_8_Exponents_and_Powers_q35_o2.jpg",
+        "Maths_8_Exponents_and_Powers_q35_o3.jpg",
+        "Maths_8_Exponents_and_Powers_q35_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Powers with Negative Exponents"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-exponents-and-powers-36",
+      "sourceRow": 37,
+      "question": "Maths_8_Exponents_and_Powers_q36.jpg",
+      "options": [
+        "102",
+        "105",
+        "107",
+        "109"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Powers with Negative Exponents"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": "HOTS"
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-exponents-and-powers-37",
+      "sourceRow": 38,
+      "question": "Which of the following is equals to (6 × 10–2 + 4.9 × 10–4) ?",
+      "options": [
+        "0.006049",
+        "6.049 × 10–1",
+        "6.049 × 10–2",
+        "0.6049"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Expressing Numbers in Standard and Usual Forms"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    }
+  ]
+}

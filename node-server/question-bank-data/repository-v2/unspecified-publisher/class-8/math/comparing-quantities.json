@@ -1,0 +1,616 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-24T11:45:03.276Z",
+  "classification": {
+    "class": "Class 8",
+    "subject": "Math",
+    "topic": "Comparing Quantities"
+  },
+  "publisher": "unspecified-publisher",
+  "source": {
+    "file": "Class8/Final/Math_Class8_Assess_QB_08_Comparing_Quantities/Math_Class 8_Assess_QB_08_Comparing_Quantities.xlsx",
+    "sheet": "filename"
+  },
+  "questionType": "MCQ",
+  "questionCount": 23,
+  "questions": [
+    {
+      "id": "unspecified-publisher-class-8-math-comparing-quantities-11",
+      "sourceRow": 12,
+      "question": "What percent of 0.13 is 0.0156?",
+      "options": [
+        "1.2",
+        "0.012",
+        "0.12",
+        "12"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Revising Ratios and Percentages"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-comparing-quantities-12",
+      "sourceRow": 13,
+      "question": "A piece of rubber band was stretched by 25% to a length of 40 cm. What is its un-stretched original length?",
+      "options": [
+        "30 cm",
+        "32 cm",
+        "40 cm",
+        "50 cm"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Revising Ratios and Percentages"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-comparing-quantities-13",
+      "sourceRow": 14,
+      "question": "Maths_8_Comparing_Quantities_q13.jpg",
+      "options": [
+        "0.12",
+        "0.1",
+        "8%",
+        "6%"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Sales Tax and Value Added Tax"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-comparing-quantities-14",
+      "sourceRow": 15,
+      "question": "Hari purchased a gift for his friend. He found the ratio of the selling price and cost price as 5 : 7. How much discount does Hari get?",
+      "options": [
+        "0.2",
+        "0.3",
+        "40%",
+        "50%"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Revising Profit and Loss"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-comparing-quantities-15",
+      "sourceRow": 16,
+      "question": "If the S.P. of a table is eight fifth of its C.P., then what is the gain per cent?",
+      "options": [
+        "37.50 %",
+        "60.00 %",
+        "23.07 %",
+        "61.53 %"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Revising Profit and Loss"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-comparing-quantities-16",
+      "sourceRow": 17,
+      "question": "If the cost price of sugar has been increased by 20% then by what per cent should it expense be reduced so as to restore the original cost?",
+      "options": [
+        "0.2",
+        "0.25",
+        "30%",
+        "35%"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Revising Profit and Loss"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-comparing-quantities-17",
+      "sourceRow": 18,
+      "question": "Rahul, the shopkeeper, increased the price of an article by 15% and then on the new price gave 15% discount to the customers. Which of the following statements is correct?",
+      "options": [
+        "The cost price remains unchanged",
+        "The cost price increases by 2.5%",
+        "The cost price decreases by 5%",
+        "The cost price increases by 2.25%"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Revising Profit and Loss"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-comparing-quantities-18",
+      "sourceRow": 19,
+      "question": "Maths_8_Comparing_Quantities_q18.jpg",
+      "options": [
+        "0.12",
+        "0.14",
+        "16%",
+        "18%"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Sales Tax and Value Added Tax"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-comparing-quantities-19",
+      "sourceRow": 20,
+      "question": "Maths_8_Comparing_Quantities_q19.jpg",
+      "options": [
+        "Maths_8_Comparing_Quantities_q19_o1.jpg",
+        "Maths_8_Comparing_Quantities_q19_o2.jpg",
+        "Maths_8_Comparing_Quantities_q19_o3.jpg",
+        "Maths_8_Comparing_Quantities_q19_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Compound Interest and its Applications"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": "HOTS"
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-comparing-quantities-20",
+      "sourceRow": 21,
+      "question": "Maths_8_Comparing_Quantities_q20.jpg",
+      "options": [
+        "Maths_8_Comparing_Quantities_q20_o1.jpg",
+        "Maths_8_Comparing_Quantities_q20_o2.jpg",
+        "Maths_8_Comparing_Quantities_q20_o3.jpg",
+        "Maths_8_Comparing_Quantities_q20_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Compound Interest and its Applications"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-comparing-quantities-21",
+      "sourceRow": 22,
+      "question": "Maths_8_Comparing_Quantities_q21.jpg",
+      "options": [
+        "Maths_8_Comparing_Quantities_q21_o1.jpg",
+        "Maths_8_Comparing_Quantities_q21_o2.jpg",
+        "Maths_8_Comparing_Quantities_q21_o3.jpg",
+        "Maths_8_Comparing_Quantities_q21_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Compound Interest and its Applications"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-comparing-quantities-22",
+      "sourceRow": 23,
+      "question": "Maths_8_Comparing_Quantities_q22.jpg",
+      "options": [
+        "Maths_8_Comparing_Quantities_q22_o1.jpg",
+        "Maths_8_Comparing_Quantities_q22_o2.jpg",
+        "Maths_8_Comparing_Quantities_q22_o3.jpg",
+        "Maths_8_Comparing_Quantities_q22_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Compound Interest and its Applications"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": "HOTS"
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-comparing-quantities-23",
+      "sourceRow": 24,
+      "question": "A sum of money becomes sixteen times in four years. What is the rate of interest compounded annually?",
+      "options": [
+        "0.23",
+        "0.81",
+        "0.9",
+        "1"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Compound Interest and its Applications"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-comparing-quantities-24",
+      "sourceRow": 25,
+      "question": "Maths_8_Comparing_Quantities_q24.jpg",
+      "options": [
+        "Maths_8_Comparing_Quantities_q24_o1.jpg",
+        "Maths_8_Comparing_Quantities_q24_o2.jpg",
+        "Maths_8_Comparing_Quantities_q24_o3.jpg",
+        "Maths_8_Comparing_Quantities_q24_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Compound Interest and its Applications"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-comparing-quantities-25",
+      "sourceRow": 26,
+      "question": "Maths_8_Comparing_Quantities_q25.jpg",
+      "options": [
+        "Maths_8_Comparing_Quantities_q25_o1.jpg",
+        "Maths_8_Comparing_Quantities_q25_o2.jpg",
+        "Maths_8_Comparing_Quantities_q25_o3.jpg",
+        "Maths_8_Comparing_Quantities_q25_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Compound Interest and its Applications"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": "HOTS"
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-comparing-quantities-26",
+      "sourceRow": 27,
+      "question": "Maths_8_Comparing_Quantities_q26.jpg",
+      "options": [
+        "0.09",
+        "0.1",
+        "0.11",
+        "0.12"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Compound Interest and its Applications"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-comparing-quantities-27",
+      "sourceRow": 28,
+      "question": "Maths_8_Comparing_Quantities_q27.jpg",
+      "options": [
+        "Maths_8_Comparing_Quantities_q27_o1.jpg",
+        "Maths_8_Comparing_Quantities_q27_o2.jpg",
+        "Maths_8_Comparing_Quantities_q27_o3.jpg",
+        "Maths_8_Comparing_Quantities_q27_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Compound Interest and its Applications"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": "HOTS"
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-comparing-quantities-28",
+      "sourceRow": 29,
+      "question": "Maths_8_Comparing_Quantities_q28.jpg",
+      "options": [
+        "Maths_8_Comparing_Quantities_q28_o1.jpg",
+        "Maths_8_Comparing_Quantities_q28_o2.jpg",
+        "Maths_8_Comparing_Quantities_q28_o3.jpg",
+        "Maths_8_Comparing_Quantities_q28_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Sales Tax and Value Added Tax"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-comparing-quantities-29",
+      "sourceRow": 30,
+      "question": "If a number is firstly reduced by 30% and then increased by 30%, then what happens to the number?",
+      "options": [
+        "It remains unchanged",
+        "It increases by 9%",
+        "It decreases by 9%",
+        "It increases by 6%"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Revising Ratios and Percentages"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-comparing-quantities-30",
+      "sourceRow": 31,
+      "question": "Maths_8_Comparing_Quantities_q30.jpg",
+      "options": [
+        "Maths_8_Comparing_Quantities_q30_o1.jpg",
+        "Maths_8_Comparing_Quantities_q30_o2.jpg",
+        "Maths_8_Comparing_Quantities_q30_o3.jpg",
+        "Maths_8_Comparing_Quantities_q30_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Revising Profit and Loss"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": "HOTS"
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-comparing-quantities-31",
+      "sourceRow": 32,
+      "question": "At an election involving 2 candidates, 68 votes were declared invalid. The winning candidate scores 52% and wins by 98 votes. What is the total number of votes polled?",
+      "options": [
+        "2,518",
+        "2,382",
+        "2,450",
+        "2,400"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Revising Ratios and Percentages"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": "HOTS"
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-comparing-quantities-32",
+      "sourceRow": 33,
+      "question": "The present population of a city is 1.8 lakhs. If it increases at the rate of 8% p.a., then what will be its population after 2 years?",
+      "options": [
+        "2,07,800",
+        "2,09,952",
+        "2,05,992",
+        "2,08,700"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Compound Interest and its Applications"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-comparing-quantities-33",
+      "sourceRow": 34,
+      "question": "Maths_8_Comparing_Quantities_q33.jpg",
+      "options": [
+        "1 year",
+        "1.5 years",
+        "2 years",
+        "2.5 years"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Compound Interest and its Applications"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    }
+  ]
+}

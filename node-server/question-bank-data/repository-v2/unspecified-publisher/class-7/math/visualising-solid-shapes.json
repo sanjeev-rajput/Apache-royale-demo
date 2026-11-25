@@ -1,0 +1,694 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-24T11:45:03.025Z",
+  "classification": {
+    "class": "Class 7",
+    "subject": "Math",
+    "topic": "Visualising Solid Shapes"
+  },
+  "publisher": "unspecified-publisher",
+  "source": {
+    "file": "Class7/Final/Math_Class 7_Assess_QB_15_Visualising_Solid_Shapes/Math_Class 7_Assess_QB_15_Visualising_Solid_Shapes.xlsx",
+    "sheet": "filename"
+  },
+  "questionType": "MCQ",
+  "questionCount": 26,
+  "questions": [
+    {
+      "id": "unspecified-publisher-class-7-math-visualising-solid-shapes-15",
+      "sourceRow": 16,
+      "question": "Which of these solids has the minimum number of vertices?",
+      "options": [
+        "Cone",
+        "Cylinder",
+        "Cuboid",
+        "Rectangular prism"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Plane Figures and Solid Shapes"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-visualising-solid-shapes-16",
+      "sourceRow": 17,
+      "question": "Which of these solids has the maximum number of faces?",
+      "options": [
+        "Cone",
+        "Sphere",
+        "Cylinder",
+        "Cuboid"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Plane Figures and Solid Shapes"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-visualising-solid-shapes-17",
+      "sourceRow": 18,
+      "question": "What is the value of E using the Euler’s formula, if F = 6 and V = 4?",
+      "options": [
+        "10",
+        "4",
+        "12",
+        "8"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Plane Figures and Solid Shapes"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-visualising-solid-shapes-18",
+      "sourceRow": 19,
+      "question": "Maths_7_Visualising Solid Shapes_q18.jpg",
+      "options": [
+        "Circle",
+        "Square",
+        "Rectangle",
+        "Triangle"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Draw Solids on Flat Surface"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-visualising-solid-shapes-19",
+      "sourceRow": 20,
+      "question": "What is the name of a three dimensional figure from which a cross-section of a square can be made?",
+      "options": [
+        "Cylinder",
+        "Cuboid",
+        "Cone",
+        "Pyramid"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Draw Solids on Flat Surface"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-visualising-solid-shapes-20",
+      "sourceRow": 21,
+      "question": "Maths_7_Visualising Solid Shapes_q20.jpg",
+      "options": [
+        "Maths_7_Visualising Solid Shapes_q20_o1.jpg",
+        "Maths_7_Visualising Solid Shapes_q20_o2.jpg",
+        "Maths_7_Visualising Solid Shapes_q20_o3.jpg",
+        "Maths_7_Visualising Solid Shapes_q20_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Visualise Solid Objects"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-visualising-solid-shapes-21",
+      "sourceRow": 22,
+      "question": "Maths_7_Visualising Solid Shapes_q21.jpg",
+      "options": [
+        "Maths_7_Visualising Solid Shapes_q21_o1.jpg",
+        "Maths_7_Visualising Solid Shapes_q21_o2.jpg",
+        "Maths_7_Visualising Solid Shapes_q21_o3.jpg",
+        "Maths_7_Visualising Solid Shapes_q21_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Visualise Solid Objects"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-visualising-solid-shapes-22",
+      "sourceRow": 23,
+      "question": "Maths_7_Visualising Solid Shapes_q22.jpg",
+      "options": [
+        "The plan view of the solid is square.",
+        "The side elevation of the solid is rectangle.",
+        "The front elevation of the solid is rhombus.",
+        "The side elevation of the solid is square."
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Visualise Solid Objects"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-visualising-solid-shapes-23",
+      "sourceRow": 24,
+      "question": "Maths_7_Visualising Solid Shapes_q23.jpg",
+      "options": [
+        "Maths_7_Visualising Solid Shapes_q23_o1.jpg",
+        "Maths_7_Visualising Solid Shapes_q23_o2.jpg",
+        "Maths_7_Visualising Solid Shapes_q23_o3.jpg",
+        "Maths_7_Visualising Solid Shapes_q23_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Visualise Solid Objects"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-visualising-solid-shapes-24",
+      "sourceRow": 25,
+      "question": "Maths_7_Visualising Solid Shapes_q24.jpg",
+      "options": [
+        "Maths_7_Visualising Solid Shapes_q24_o1.jpg",
+        "Maths_7_Visualising Solid Shapes_q24_o2.jpg",
+        "Maths_7_Visualising Solid Shapes_q24_o3.jpg",
+        "Maths_7_Visualising Solid Shapes_q24_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Visualise Solid Objects"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-visualising-solid-shapes-25",
+      "sourceRow": 26,
+      "question": "Maths_7_Visualising Solid Shapes_q25.jpg",
+      "options": [
+        "Maths_7_Visualising Solid Shapes_q25_o1.jpg",
+        "Maths_7_Visualising Solid Shapes_q25_o2.jpg",
+        "Maths_7_Visualising Solid Shapes_q25_o3.jpg",
+        "Maths_7_Visualising Solid Shapes_q25_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Visualise Solid Objects"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-visualising-solid-shapes-26",
+      "sourceRow": 27,
+      "question": "Which of the following nets form cylinder?",
+      "options": [
+        "Maths_7_Visualising Solid Shapes_q26_o1.jpg",
+        "Maths_7_Visualising Solid Shapes_q26_o2.jpg",
+        "Maths_7_Visualising Solid Shapes_q26_o3.jpg",
+        "Maths_7_Visualising Solid Shapes_q26_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Nets for 3D Shapes"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-visualising-solid-shapes-27",
+      "sourceRow": 28,
+      "question": "Which of the following net-diagrams form a square pyramid?",
+      "options": [
+        "Maths_7_Visualising Solid Shapes_q27_o1.jpg",
+        "Maths_7_Visualising Solid Shapes_q27_o2.jpg",
+        "Maths_7_Visualising Solid Shapes_q27_o3.jpg",
+        "Maths_7_Visualising Solid Shapes_q27_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Nets for 3D Shapes"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": "HOTS"
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-visualising-solid-shapes-28",
+      "sourceRow": 29,
+      "question": "Maths_7_Visualising Solid Shapes_q28.jpg",
+      "options": [
+        "I and II",
+        "II and III",
+        "I and III",
+        "III and IV"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Nets for 3D Shapes"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-visualising-solid-shapes-29",
+      "sourceRow": 30,
+      "question": "Which of the following nets will fold to give up a square pyramid?",
+      "options": [
+        "Maths_7_Visualising Solid Shapes_q29_o1.jpg",
+        "Maths_7_Visualising Solid Shapes_q29_o2.jpg",
+        "Maths_7_Visualising Solid Shapes_q29_o3.jpg",
+        "Maths_7_Visualising Solid Shapes_q29_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Nets for 3D Shapes"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": "HOTS"
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-visualising-solid-shapes-30",
+      "sourceRow": 31,
+      "question": "Maths_7_Visualising Solid Shapes_q30.jpg",
+      "options": [
+        "Maths_7_Visualising Solid Shapes_q30_o1.jpg",
+        "Maths_7_Visualising Solid Shapes_q30_o2.jpg",
+        "Maths_7_Visualising Solid Shapes_q30_o3.jpg",
+        "Maths_7_Visualising Solid Shapes_q30_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Nets for 3D Shapes"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": "HOTS"
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-visualising-solid-shapes-31",
+      "sourceRow": 32,
+      "question": "Maths_7_Visualising Solid Shapes_q31.jpg",
+      "options": [
+        "Maths_7_Visualising Solid Shapes_q31_o1.jpg",
+        "Maths_7_Visualising Solid Shapes_q31_o2.jpg",
+        "Maths_7_Visualising Solid Shapes_q31_o3.jpg",
+        "Maths_7_Visualising Solid Shapes_q31_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Visualise Solid Objects"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-visualising-solid-shapes-32",
+      "sourceRow": 33,
+      "question": "A #DASH# has no vertex and no edge.",
+      "options": [
+        "Cylinder",
+        "Sphere",
+        "Cone",
+        "Cube"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Plane Figures and Solid Shapes"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-visualising-solid-shapes-33",
+      "sourceRow": 34,
+      "question": "A triangular pyramid is also called as",
+      "options": [
+        "Cube",
+        "Cuboid",
+        "Tetrahedron",
+        "None of these"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Plane Figures and Solid Shapes"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-visualising-solid-shapes-34",
+      "sourceRow": 35,
+      "question": "All the side faces of a pyramids are:",
+      "options": [
+        "Squares",
+        "Rectangles",
+        "Triangles",
+        "Circle"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Plane Figures and Solid Shapes"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-visualising-solid-shapes-35",
+      "sourceRow": 36,
+      "question": "A line where two faces of a solid meet is called",
+      "options": [
+        "A vertex",
+        "An edge",
+        "An angle",
+        "A face"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Plane Figures and Solid Shapes"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-visualising-solid-shapes-36",
+      "sourceRow": 37,
+      "question": "The figure which has six vertices, nine edges and five faces is called",
+      "options": [
+        "Cuboid",
+        "Cube",
+        "Cone",
+        "Triangular prism"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Plane Figures and Solid Shapes"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-visualising-solid-shapes-37",
+      "sourceRow": 38,
+      "question": "Which of the following solids is a polyhedron?",
+      "options": [
+        "Sphere",
+        "Cone",
+        "Pyramid",
+        "Cylinder"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Plane Figures and Solid Shapes"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-visualising-solid-shapes-38",
+      "sourceRow": 39,
+      "question": "Which shape best represents a hexagonal prism when viewed from the top?",
+      "options": [
+        "Maths_7_Visualising Solid Shapes_q38_o1.jpg",
+        "Maths_7_Visualising Solid Shapes_q38_o2.jpg",
+        "Maths_7_Visualising Solid Shapes_q38_o3.jpg",
+        "Maths_7_Visualising Solid Shapes_q38_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Plane Figures and Solid Shapes"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-visualising-solid-shapes-39",
+      "sourceRow": 40,
+      "question": "The cross-section obtained after giving a horizontal cut to a square pyramid is a:",
+      "options": [
+        "Triangle",
+        "Rectangle",
+        "Circle",
+        "Square"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Plane Figures and Solid Shapes"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-visualising-solid-shapes-40",
+      "sourceRow": 41,
+      "question": "Maths_7_Visualising Solid Shapes_q40.jpg",
+      "options": [
+        "Maths_7_Visualising Solid Shapes_q40_o1.jpg",
+        "Maths_7_Visualising Solid Shapes_q40_o2.jpg",
+        "Maths_7_Visualising Solid Shapes_q40_o3.jpg",
+        "Maths_7_Visualising Solid Shapes_q40_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Plane Figures and Solid Shapes"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    }
+  ]
+}

@@ -1,0 +1,1552 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-24T11:45:03.794Z",
+  "classification": {
+    "class": "Class 10",
+    "subject": "Math",
+    "topic": "Areas Related to Circles"
+  },
+  "publisher": "unspecified-publisher",
+  "source": {
+    "file": "Class10/Final/Math_Class_10_Assess_QB_12_Areas_Related_to_Circles/Math_Class_10_Assess_QB_12_Areas_Related_to_Circles.xlsx",
+    "sheet": "filename"
+  },
+  "questionType": "MCQ",
+  "questionCount": 59,
+  "questions": [
+    {
+      "id": "unspecified-publisher-class-10-math-areas-related-to-circles-1",
+      "sourceRow": 2,
+      "question": "If the area and circumference of a circle are numerically equal, then the radius of the circle is",
+      "options": [
+        "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q1_o1.jpg",
+        "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q1_o2.jpg",
+        "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q1_o3.jpg",
+        "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q1_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Perimeter and Area of a Circle"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-areas-related-to-circles-2",
+      "sourceRow": 3,
+      "question": "Area of a sector of angle P degrees of a circle with radius R is",
+      "options": [
+        "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q2_o1.jpg",
+        "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q2_o2.jpg",
+        "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q2_o3.jpg",
+        "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q2_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Areas of Sector and Segment of a Circle"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-areas-related-to-circles-3",
+      "sourceRow": 4,
+      "question": "The area of a square that can be inscribed in a circle of radius r is",
+      "options": [
+        "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q3_o1.jpg",
+        "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q3_o2.jpg",
+        "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q3_o3.jpg",
+        "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q3_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Perimeter and Area of a Circle"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-areas-related-to-circles-4",
+      "sourceRow": 5,
+      "question": "The circumference of a circle exceeds its diameter by 67.2 cm. The circumference of circle is",
+      "options": [
+        "98.56 cm",
+        "90 cm",
+        "92 cm",
+        "98 cm"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Perimeter and Area of a Circle"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-areas-related-to-circles-5",
+      "sourceRow": 6,
+      "question": "The areas of two circles are in the ratio of 4 : 9. The ratio between their circumference is",
+      "options": [
+        "1 : 2",
+        "4 : 5",
+        "2 : 3",
+        "3 : 4"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Perimeter and Area of a Circle"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-areas-related-to-circles-6",
+      "sourceRow": 7,
+      "question": "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q6.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q6_o1.jpg",
+        "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q6_o2.jpg",
+        "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q6_o3.jpg",
+        "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q6_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Areas of Sector and Segment of a Circle"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-areas-related-to-circles-7",
+      "sourceRow": 8,
+      "question": "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q7.jpg",
+      "options": [
+        "200 mm",
+        "196 mm",
+        "186 mm",
+        "176 mm"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Perimeter and Area of a Circle"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-areas-related-to-circles-8",
+      "sourceRow": 9,
+      "question": "The difference between the circumference and the radius of a circle is 74 cm. The area of the circle is",
+      "options": [
+        "616 cm2",
+        "620 cm2",
+        "610 cm2",
+        "600 cm2"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Perimeter and Area of a Circle"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-areas-related-to-circles-9",
+      "sourceRow": 10,
+      "question": "Length of an arc of a circle of radius R and of angle P at the centre is",
+      "options": [
+        "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q9_o1.jpg",
+        "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q9_o2.jpg",
+        "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q9_o3.jpg",
+        "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q9_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Areas of Sector and Segment of a Circle"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-areas-related-to-circles-10",
+      "sourceRow": 11,
+      "question": "The ratio of the circumference of two circles is 3 : 1. If the circumference of the bigger circle is 39.36 cm, then the radius of the smaller circle is",
+      "options": [
+        "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q10_o1.jpg",
+        "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q10_o2.jpg",
+        "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q10_o3.jpg",
+        "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q10_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Perimeter and Area of a Circle"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-areas-related-to-circles-11",
+      "sourceRow": 12,
+      "question": "If the perimeter of a semicircular protractor is 36 cm, find the diameter.",
+      "options": [
+        "12 cm",
+        "13 cm",
+        "14 cm",
+        "15 cm"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Perimeter and Area of a Circle"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-areas-related-to-circles-12",
+      "sourceRow": 13,
+      "question": "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q12.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q12_o1.jpg",
+        "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q12_o2.jpg",
+        "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q12_o3.jpg",
+        "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q12_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Areas of Combinations of Plane Figures"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-areas-related-to-circles-13",
+      "sourceRow": 14,
+      "question": "A steel wire when bent in the form of a square encloses an area of 121 cm2. If the same wire is bent in the form of a circle, then the area of the circle is",
+      "options": [
+        "160 cm2",
+        "150 cm2",
+        "165 cm2",
+        "154 cm2"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Perimeter and Area of a Circle"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-areas-related-to-circles-14",
+      "sourceRow": 15,
+      "question": "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q14.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q14_o1.jpg",
+        "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q14_02.jpg",
+        "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q14_o3.jpg",
+        "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q14_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Perimeter and Area of a Circle"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-areas-related-to-circles-15",
+      "sourceRow": 16,
+      "question": "The length of the minute hand of a clock is 14 cm, the area swept by the minute hand in one hour is",
+      "options": [
+        "615.44 cm2",
+        "616.44 cm2",
+        "620.44 cm2",
+        "651.44 cm2"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Areas of Sector and Segment of a Circle"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-areas-related-to-circles-16",
+      "sourceRow": 17,
+      "question": "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q16.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q16_o1.jpg",
+        "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q16_o2.jpg",
+        "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q16_o3.jpg",
+        "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q16_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Areas of Sector and Segment of a Circle"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-areas-related-to-circles-17",
+      "sourceRow": 18,
+      "question": "The lengths of the smaller and bigger hands of a watch are 3.50 cm and 4.62 cm respectively. The ratio of distances transversed from 6 a.m. to 6 p.m. is",
+      "options": [
+        "15.84 : 1",
+        "16.82 : 3",
+        "15.82 : 3",
+        "16.84 : 1"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Perimeter and Area of a Circle"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-areas-related-to-circles-18",
+      "sourceRow": 19,
+      "question": "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q18.jpg",
+      "options": [
+        "480 m",
+        "482 m",
+        "450 m",
+        "488 m"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Areas of Combinations of Plane Figures"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-areas-related-to-circles-19",
+      "sourceRow": 20,
+      "question": "A square park has each side 100 m. At each corner of the park, there is a flower bed in the form of a quadrant of radius 14 m. The area of the remaining part of the park is",
+      "options": [
+        "9348 m2",
+        "9384 m2",
+        "9548 m2",
+        "9684 m2"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Areas of Combinations of Plane Figures"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-areas-related-to-circles-20",
+      "sourceRow": 21,
+      "question": "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q20.jpg",
+      "options": [
+        "60 cm2",
+        "50 cm2",
+        "40 cm2",
+        "30 cm2"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Areas of Combinations of Plane Figures"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-areas-related-to-circles-21",
+      "sourceRow": 22,
+      "question": "A race track is in the form of a ring whose inner circumference is 440 m and the outer circumference is 506 m. The width of the track is",
+      "options": [
+        "10.1 m",
+        "10.2 m",
+        "10.4 m",
+        "10.5 m"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Perimeter and Area of a Circle"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-areas-related-to-circles-22",
+      "sourceRow": 23,
+      "question": "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q22.jpg",
+      "options": [
+        "450 cm2",
+        "460 cm2",
+        "472 cm2",
+        "462 cm2"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Perimeter and Area of a Circle"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-areas-related-to-circles-23",
+      "sourceRow": 24,
+      "question": "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q23.jpg",
+      "options": [
+        "14.76 cm2",
+        "12.76 cm2",
+        "13.70 cm2",
+        "17.76 cm2"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Areas of Combinations of Plane Figures"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-areas-related-to-circles-24",
+      "sourceRow": 25,
+      "question": "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q24.jpg",
+      "options": [
+        "230.5 m2",
+        "250.5 m2",
+        "261.5 m2",
+        "271.5 m2"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Areas of Combinations of Plane Figures"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-areas-related-to-circles-25",
+      "sourceRow": 26,
+      "question": "A path 7 m wide runs around outside a circle park whose radius is 18 m, the area of the path is",
+      "options": [
+        "942 m2",
+        "946 m2",
+        "948 m2",
+        "960 m2"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Perimeter and Area of a Circle"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-areas-related-to-circles-26",
+      "sourceRow": 27,
+      "question": "The perimeter of a sector of a circle of radius 5.2 cm is 16.4 cm. The area of the sector is",
+      "options": [
+        "15.1 cm2",
+        "15.5 cm2",
+        "15.6 cm2",
+        "15.9 cm2"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Areas of Sector and Segment of a Circle"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-areas-related-to-circles-27",
+      "sourceRow": 28,
+      "question": "In a circle of radius 21 cm, an arc subtends an angle of 60° at the centre, the length of arc is",
+      "options": [
+        "26 cm",
+        "24 cm",
+        "22 cm",
+        "20 cm"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Areas of Sector and Segment of a Circle"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-areas-related-to-circles-28",
+      "sourceRow": 29,
+      "question": "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q28.jpg",
+      "options": [
+        "270 cm2",
+        "400 cm2",
+        "570 cm2",
+        "300 cm2"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Areas of Sector and Segment of a Circle"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-areas-related-to-circles-29",
+      "sourceRow": 30,
+      "question": "A horse is placed for grazing inside a rectangular field 40 m by 36 m and is gathered to one corner by a rope 14 m long, over how much area can it graze?",
+      "options": [
+        "154 m2",
+        "152 m2",
+        "151 m2",
+        "150 m2"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Areas of Sector and Segment of a Circle"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-areas-related-to-circles-30",
+      "sourceRow": 31,
+      "question": "The diameter of the driving wheel of a bus is 140 cm. How many revolutions per minute must the wheel make in order to keep a speed of 66 km per hour?",
+      "options": [
+        "200",
+        "210",
+        "250",
+        "240"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Perimeter and Area of a Circle"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-areas-related-to-circles-31",
+      "sourceRow": 32,
+      "question": "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q31.jpg",
+      "options": [
+        "824 cm2",
+        "724 cm2",
+        "624 cm2",
+        "924 cm2"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Perimeter and Area of a Circle"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-areas-related-to-circles-32",
+      "sourceRow": 33,
+      "question": "The diameter of a circle whose area is equal to the sum of the areas of the two circles of radii 24 cm and 7 cm is",
+      "options": [
+        "31 cm",
+        "25 cm",
+        "62 cm",
+        "50 cm"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Perimeter and Area of a Circle"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-areas-related-to-circles-33",
+      "sourceRow": 34,
+      "question": "If the area of a circle is 154 cm2, then its perimeter is",
+      "options": [
+        "11 cm",
+        "22 cm",
+        "44 cm",
+        "55 cm"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Perimeter and Area of a Circle"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-areas-related-to-circles-34",
+      "sourceRow": 35,
+      "question": "The area of the square that can be inscribed in a circle of radius 8 cm is",
+      "options": [
+        "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q34_o1.jpg",
+        "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q34_o2.jpg",
+        "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q34_o3.jpg",
+        "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q34_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Areas of Combinations of Plane Figures"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-areas-related-to-circles-35",
+      "sourceRow": 36,
+      "question": "The area of a circle is numerically equal to its perimeter. The diameter of the circle is",
+      "options": [
+        "1 unit",
+        "2 units",
+        "3 units",
+        "4 units"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Perimeter and Area of a Circle"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-areas-related-to-circles-36",
+      "sourceRow": 37,
+      "question": "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q36.jpg",
+      "options": [
+        "7 cm",
+        "3.5 cm",
+        "10 cm",
+        "22 cm"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Perimeter and Area of a Circle"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-areas-related-to-circles-37",
+      "sourceRow": 38,
+      "question": "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q37.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q37_o1.jpg",
+        "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q37_o2.jpg",
+        "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q37_o3.jpg",
+        "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q37_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Areas of Sector and Segment of a Circle"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-areas-related-to-circles-38",
+      "sourceRow": 39,
+      "question": "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q38.jpg",
+      "options": [
+        "100⁰",
+        "90⁰",
+        "60⁰",
+        "45⁰"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Areas of Sector and Segment of a Circle"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-areas-related-to-circles-39",
+      "sourceRow": 40,
+      "question": "The perimeter of a sector of radius 5.9 cm is 19.4 cm. The length of its arc is",
+      "options": [
+        "11.8 cm",
+        "7.6 cm",
+        "5.9 cm",
+        "7.8 cm"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Areas of Sector and Segment of a Circle"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-areas-related-to-circles-40",
+      "sourceRow": 41,
+      "question": "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q40.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q40_o1.jpg",
+        "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q40_o2.jpg",
+        "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q40_o3.jpg",
+        "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q40_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Areas of Sector and Segment of a Circle"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-areas-related-to-circles-41",
+      "sourceRow": 42,
+      "question": "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q41.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q41_o1.jpg",
+        "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q41_o2.jpg",
+        "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q41_o3.jpg",
+        "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q41_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Areas of Combinations of Plane Figures"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-areas-related-to-circles-42",
+      "sourceRow": 43,
+      "question": "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q42.jpg",
+      "options": [
+        "8.12 cm2",
+        "25.12 cm2",
+        "9.12 cm2",
+        "16 cm2"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Areas of Combinations of Plane Figures"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-areas-related-to-circles-43",
+      "sourceRow": 44,
+      "question": "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q43.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q43_o1.jpg",
+        "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q43_o2.jpg",
+        "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q43_o3.jpg",
+        "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q43_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Areas of Combinations of Plane Figures"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-areas-related-to-circles-44",
+      "sourceRow": 45,
+      "question": "Four cows are tethered at the four corners of a square plot of side 100 m, so that they can just reach one another. The area grazed by the four cows is",
+      "options": [
+        "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q44_o1.jpg",
+        "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q44_o2.jpg",
+        "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q44_o3.jpg",
+        "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q44_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Areas of Sector and Segment of a Circle"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-areas-related-to-circles-61",
+      "sourceRow": 62,
+      "question": "If the perimeter of a semicircular protractor is 36 cm, then its diameter is:",
+      "options": [
+        "10 cm",
+        "12 cm",
+        "14 cm",
+        "15 cm"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Perimeter and Area of a Circle"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-areas-related-to-circles-62",
+      "sourceRow": 63,
+      "question": "The area of circle that can be inscribed in a square of side 6 cm is",
+      "options": [
+        "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q62_o1.jpg",
+        "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q62_o2.jpg",
+        "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q62_o3.jpg",
+        "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q62_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Areas of Combinations of Plane Figures"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-areas-related-to-circles-63",
+      "sourceRow": 64,
+      "question": "The diameter of circle whose area is equal to sum of area of two circles of diameter 16 cm and 12 cm is:",
+      "options": [
+        "56 cm",
+        "42 cm",
+        "28 cm",
+        "20 cm"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Perimeter and Area of a Circle"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-areas-related-to-circles-64",
+      "sourceRow": 65,
+      "question": "The circumference of a circle is 44 cm. Then the area of circle is",
+      "options": [
+        "276 cm2",
+        "44 cm2",
+        "176 cm2",
+        "154 cm2"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Perimeter and Area of a Circle"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-areas-related-to-circles-65",
+      "sourceRow": 66,
+      "question": "If a wire is bent into the shape of a square, then the area enclosed by the square is 81 cm2. When the same wire is bent into a semi-circular shape, then the area enclosed by the semi circle will be",
+      "options": [
+        "22 cm2",
+        "44 cm2",
+        "77 cm2",
+        "154 cm2"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Perimeter and Area of a Circle"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-areas-related-to-circles-66",
+      "sourceRow": 67,
+      "question": "The angle through which the minute hand of the clock moves from 8 to 8 : 35 is:",
+      "options": [
+        "210°",
+        "90°",
+        "60°",
+        "45°"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Areas of Sector and Segment of a Circle"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-areas-related-to-circles-67",
+      "sourceRow": 68,
+      "question": "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q67.jpg",
+      "options": [
+        "22 cm",
+        "33 cm",
+        "44 cm",
+        "66 cm"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Perimeter and Area of a Circle"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-areas-related-to-circles-68",
+      "sourceRow": 69,
+      "question": "The perimeter of a quadrant of a circle of radius ‘r’ is",
+      "options": [
+        "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q68_o1.jpg",
+        "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q68_o2.jpg",
+        "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q68_o3.jpg",
+        "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q68_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Perimeter and Area of a Circle"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-areas-related-to-circles-69",
+      "sourceRow": 70,
+      "question": "The minute hand of a clock is 21cm long. The distance moved by the tip of the minute hand in 1 hour is",
+      "options": [
+        "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q69_o1.jpg",
+        "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q69_o2.jpg",
+        "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q69_o3.jpg",
+        "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q69_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Perimeter and Area of a Circle"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-areas-related-to-circles-70",
+      "sourceRow": 71,
+      "question": "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q70.jpg",
+      "options": [
+        "3.5 cm",
+        "5.5 cm",
+        "7.5 cm",
+        "12.5 cm"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Perimeter and Area of a Circle"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-areas-related-to-circles-71",
+      "sourceRow": 72,
+      "question": "If the diameter of a semicircular protractor is 14 cm, then the perimeter of the protractor is:",
+      "options": [
+        "26 cm",
+        "14 cm",
+        "28 cm",
+        "36 cm"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Perimeter and Area of a Circle"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-areas-related-to-circles-72",
+      "sourceRow": 73,
+      "question": "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q71.jpg",
+      "options": [
+        "3.5 cm2",
+        "3.5 cm",
+        "9.625 cm2",
+        "17.25 cm2"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Perimeter and Area of a Circle"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-areas-related-to-circles-73",
+      "sourceRow": 74,
+      "question": "If the circumference of a circle of radius ‘r’ and the perimeter of a square of side ‘a’ are equal, then the ratio of area of the circle to that of the square is:",
+      "options": [
+        "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q73_o1.jpg",
+        "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q73_o2.jpg",
+        "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q73_o3.jpg",
+        "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q73_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Perimeter and Area of a Circle"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-areas-related-to-circles-74",
+      "sourceRow": 75,
+      "question": "The outer and inner diameters of a circular ring are 34 cm and 32 cm respectively. The area of the ring is:",
+      "options": [
+        "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q74_o1.jpg",
+        "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q74_o2.jpg",
+        "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q74_o3.jpg",
+        "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q74_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Perimeter and Area of a Circle"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-areas-related-to-circles-75",
+      "sourceRow": 76,
+      "question": "The circumference of a circle is 100 cm. The side of a square inscribed in the circle is:",
+      "options": [
+        "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q75_o1.jpg",
+        "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q75_o2.jpg",
+        "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q75_o3.jpg",
+        "Math_Class_10_Assess_QB_12_Areas_Related_to_Circles_q75_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Areas of Combinations of Plane Figures"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    }
+  ]
+}

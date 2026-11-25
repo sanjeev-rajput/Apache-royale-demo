@@ -1,0 +1,772 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-24T11:45:03.113Z",
+  "classification": {
+    "class": "Class 8",
+    "subject": "Math",
+    "topic": "Linear Equations"
+  },
+  "publisher": "unspecified-publisher",
+  "source": {
+    "file": "Class8/Final/Math_Class8_Assess_QB_02_Linear_Equations/Math_Class 8_Assess_QB_02_Linear_Equations.xlsx",
+    "sheet": "filename"
+  },
+  "questionType": "MCQ",
+  "questionCount": 29,
+  "questions": [
+    {
+      "id": "unspecified-publisher-class-8-math-linear-equations-10",
+      "sourceRow": 11,
+      "question": "What is the value of ‘a’ in the linear equation 28 + 4a = – 3a – 21?",
+      "options": [
+        "–6",
+        "–7",
+        "6",
+        "7"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Solving Equations With Linear Equations in One Variable"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-linear-equations-11",
+      "sourceRow": 12,
+      "question": "What is the value of ‘a’ in the linear equation 4a + 3(a – 3) = 2(2a – 3)?",
+      "options": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Solving Equations With Variables on Both Sides"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-linear-equations-12",
+      "sourceRow": 13,
+      "question": "What is the value of ‘b’ in the linear equation (b + 3) – 3(b + 1) = 3?",
+      "options": [
+        "Maths_8_Linear Equations_q12_o1.jpg",
+        "Maths_8_Linear Equations_q12_o2.jpg",
+        "Maths_8_Linear Equations_q12_o3.jpg",
+        "Maths_8_Linear Equations_q12_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Solving Equations With Linear Equations in One Variable"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-linear-equations-13",
+      "sourceRow": 14,
+      "question": "Maths_8_Linear Equations_q13.jpg",
+      "options": [
+        "Maths_8_Linear Equations_q13_o1.jpg",
+        "Maths_8_Linear Equations_q13_o2.jpg",
+        "Maths_8_Linear Equations_q13_o3.jpg",
+        "Maths_8_Linear Equations_q13_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Reducing Equations to Simpler and Linear Form"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-linear-equations-14",
+      "sourceRow": 15,
+      "question": "What is the value of ‘x’ in the linear equation 14 + 2x = 2?",
+      "options": [
+        "–3",
+        "–4",
+        "–5",
+        "–6"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Solving Equations With Linear Equations in One Variable"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-linear-equations-15",
+      "sourceRow": 16,
+      "question": "What is the value of ‘b’ in the linear equation 6b + 13 – 2b = 14 – 6b?",
+      "options": [
+        "Maths_8_Linear Equations_q15_o1.jpg",
+        "Maths_8_Linear Equations_q15_o2.jpg",
+        "Maths_8_Linear Equations_q15_o3.jpg",
+        "Maths_8_Linear Equations_q15_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Solving Equations With Variables on Both Sides"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-linear-equations-16",
+      "sourceRow": 17,
+      "question": "A grandmother is nine times older than her grandson. If she is also 56 years older than him, what is the age of her grandson after 6 years?",
+      "options": [
+        "7 years",
+        "9 years",
+        "11 years",
+        "13 years"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Word Problems on Linear Equations"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-linear-equations-17",
+      "sourceRow": 18,
+      "question": "Maths_8_Linear Equations_q17.jpg",
+      "options": [
+        "Maths_8_Linear Equations_q17_o1.jpg",
+        "Maths_8_Linear Equations_q17_o2.jpg",
+        "Maths_8_Linear Equations_q17_o3.jpg",
+        "Maths_8_Linear Equations_q17_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Reducing Equations to Simpler and Linear Form"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-linear-equations-18",
+      "sourceRow": 19,
+      "question": "What is the value of ‘a’ in the linear equation 10a + 8 – 3a = 2a – 3a – 4?",
+      "options": [
+        "Maths_8_Linear Equations_q18_o1.jpg",
+        "Maths_8_Linear Equations_q18_o2.jpg",
+        "Maths_8_Linear Equations_q18_o3.jpg",
+        "Maths_8_Linear Equations_q18_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Solving Equations With Variables on Both Sides"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-linear-equations-19",
+      "sourceRow": 20,
+      "question": "What is the value of a if 6.5a + 15.25 = 4a – 0.25?",
+      "options": [
+        "–6.2",
+        "–5",
+        "5",
+        "6"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Solving Equations With Variables on Both Sides"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-linear-equations-20",
+      "sourceRow": 21,
+      "question": "The sum of two natural numbers is 30. If one of the numbers is one-fifth of the other, then what is the product of both the numbers?",
+      "options": [
+        "5",
+        "25",
+        "30",
+        "125"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Word Problems on Linear Equations"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-linear-equations-21",
+      "sourceRow": 22,
+      "question": "Maths_8_Linear Equations_q21.jpg",
+      "options": [
+        "Maths_8_Linear Equations_q21_o1.jpg",
+        "Maths_8_Linear Equations_q21_o2.jpg",
+        "Maths_8_Linear Equations_q21_o3.jpg",
+        "Maths_8_Linear Equations_q21_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Word Problems on Linear Equations"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-linear-equations-22",
+      "sourceRow": 23,
+      "question": "The angle of a triangles are xo, (x + 25)o and (2x – 9)o. What is the measure of the smallest angle?",
+      "options": [
+        "39o",
+        "41o",
+        "67o",
+        "72o"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Word Problems on Linear Equations"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-linear-equations-23",
+      "sourceRow": 24,
+      "question": "The length and the breadth of a triangle are (4x – 7) cm and (3x + 5) cm. If the value of x is 2, then what is the perimeter of the triangle?",
+      "options": [
+        "22 cm",
+        "24 cm",
+        "26 cm",
+        "28 cm"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Word Problems on Linear Equations"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-linear-equations-24",
+      "sourceRow": 25,
+      "question": "If one-fifth of a number is 90, then what is the value of that number?",
+      "options": [
+        "95",
+        "400",
+        "450",
+        "18"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Word Problems on Linear Equations"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-linear-equations-25",
+      "sourceRow": 26,
+      "question": "What is the value of x in the linear equation 8x – 11 – 5x + 3 = 2x + 4 – 3x?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Solving Equations With Variables on Both Sides"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-linear-equations-26",
+      "sourceRow": 27,
+      "question": "Maths_8_Linear Equations_q26.jpg",
+      "options": [
+        "21",
+        "22",
+        "23",
+        "24"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Reducing Equations to Simpler and Linear Form"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-linear-equations-27",
+      "sourceRow": 28,
+      "question": "What is the value of (p + 3.2) if 1.32p + 0.02 p = 1.19 + p?",
+      "options": [
+        "3.2",
+        "3.5",
+        "6.7",
+        "10.2"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Solving Equations With Variables on Both Sides"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": "PSA"
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-linear-equations-28",
+      "sourceRow": 29,
+      "question": "Maths_8_Linear Equations_q28.jpg",
+      "options": [
+        "Maths_8_Linear Equations_q28_o1.jpg",
+        "Maths_8_Linear Equations_q28_o2.jpg",
+        "Maths_8_Linear Equations_q28_o3.jpg",
+        "Maths_8_Linear Equations_q28_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Reducing Equations to Simpler and Linear Form"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-linear-equations-29",
+      "sourceRow": 30,
+      "question": "Maths_8_Linear Equations_q29.jpg",
+      "options": [
+        "Maths_8_Linear Equations_q29_o1.jpg",
+        "Maths_8_Linear Equations_q29_o2.jpg",
+        "Maths_8_Linear Equations_q29_o3.jpg",
+        "Maths_8_Linear Equations_q29_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Reducing Equations to Simpler and Linear Form"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-linear-equations-30",
+      "sourceRow": 31,
+      "question": "A two digit number becomes five-sixth of itself when its digits are reversed. If the two digits differ by 1, then what is the number?",
+      "options": [
+        "45",
+        "54",
+        "56",
+        "65"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Word Problems on Linear Equations"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-linear-equations-31",
+      "sourceRow": 32,
+      "question": "The ratio of the present ages of two brothers is 1 : 2 and 5 years back the ratio was 1 : 3. What will be the ratio of their ages after 5 years?",
+      "options": [
+        "1 : 4",
+        "2 : 3",
+        "3 : 5",
+        "5 : 6"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Word Problems on Linear Equations"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-linear-equations-32",
+      "sourceRow": 33,
+      "question": "The difference between two positive integers is 50. If the ratio of these integers is 1 : 3, then what is the sum of these integers?",
+      "options": [
+        "25",
+        "50",
+        "75",
+        "100"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Word Problems on Linear Equations"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-linear-equations-33",
+      "sourceRow": 34,
+      "question": "The sum of two numbers is 85. The difference of the two numbers is 13. The numbers are:",
+      "options": [
+        "72, 13",
+        "36, 49",
+        "71, 14",
+        "50, 35"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Word Problems on Linear Equations"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-linear-equations-34",
+      "sourceRow": 35,
+      "question": "Group the terms with variables on one side of the equal sign, and simplify.<br> –10p – 8 + 3p = 2p – 3p + 4 <br> Select your answer.",
+      "options": [
+        "p = –2",
+        "p = 2",
+        "p = 1",
+        "p = –1"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Solving Equations With Variables on Both Sides"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-linear-equations-35",
+      "sourceRow": 36,
+      "question": "The ratio of two numbers is 5 : 6. If the first number is increased by 8 and second number is decreased by 4 their ratio becomes 7 : 5. The numbers are:",
+      "options": [
+        "25, 30",
+        "20, 24",
+        "14, 10",
+        "21, 15"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Word Problems on Linear Equations"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-linear-equations-36",
+      "sourceRow": 37,
+      "question": "Two consecutive even numbers sum to 434. What are the two numbers?",
+      "options": [
+        "212, 212",
+        "202, 222",
+        "218, 220",
+        "216, 218"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Word Problems on Linear Equations"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-linear-equations-37",
+      "sourceRow": 38,
+      "question": "The present age of karan’s mother is three times the present age of karan. After 4 years their ages will add to 76 years. Find their present ages.",
+      "options": [
+        "Karan’s age = 17 years; mother’s age = 51 years",
+        "Karan’s age = 18 years; mother’s age = 50 years",
+        "Karan’s age = 21 years; mother’s age = 51 years",
+        "Karan’s age = 17 years; mother’s age = 55 years"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Word Problems on Linear Equations"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-linear-equations-38",
+      "sourceRow": 39,
+      "question": "The difference between two whole numbers is 33. The ratio of the two numbers is 2 : 5. What are the two numbers?",
+      "options": [
+        "20, 53",
+        "25, 58",
+        "22, 55",
+        "28, 61"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Word Problems on Linear Equations"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    }
+  ]
+}

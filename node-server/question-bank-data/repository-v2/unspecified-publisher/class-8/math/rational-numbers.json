@@ -1,0 +1,902 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-24T11:45:03.084Z",
+  "classification": {
+    "class": "Class 8",
+    "subject": "Math",
+    "topic": "Rational Numbers"
+  },
+  "publisher": "unspecified-publisher",
+  "source": {
+    "file": "Class8/Final/Math_Class8_Assess_QB_01_Rational_Numbers/Math_Class 8_Assess_QB_01_Rational_Numbers.xlsx",
+    "sheet": "filename"
+  },
+  "questionType": "MCQ",
+  "questionCount": 34,
+  "questions": [
+    {
+      "id": "unspecified-publisher-class-8-math-rational-numbers-11",
+      "sourceRow": 12,
+      "question": "Which of the following represents the distributive property of rational numbers?",
+      "options": [
+        "3 × (4 + 6) = 3 × 4 + 3 × 6",
+        "3 × (4 × 6) = (3 × 4) × (3 × 6)",
+        "3 × (4 / 6) = 3 × 4 / 3 × 6",
+        "3 × (4 – 6) = 3 × 6 – 3 × 4"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Properties of Rational Numbers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-rational-numbers-12",
+      "sourceRow": 13,
+      "question": "Maths_8_Rational_Numbers_q12.jpg",
+      "options": [
+        "Commutative and Distributive Property",
+        "Distributive and Associative Property",
+        "Additive Inverse and Associative Property",
+        "Commutative and Associative Property"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Properties of Rational Numbers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-rational-numbers-13",
+      "sourceRow": 14,
+      "question": "Maths_8_Rational_Numbers_q13.jpg",
+      "options": [
+        "Maths_8_Rational_Numbers_q13_o1.jpg",
+        "Maths_8_Rational_Numbers_q13_o2.jpg",
+        "Maths_8_Rational_Numbers_q13_o3.jpg",
+        "Maths_8_Rational_Numbers_q13_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Properties of Rational Numbers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-rational-numbers-14",
+      "sourceRow": 15,
+      "question": "Which of the following number lines represents 2 at point A ?",
+      "options": [
+        "Maths_8_Rational_Numbers_q14_o1.jpg",
+        "Maths_8_Rational_Numbers_q14_o2.jpg",
+        "Maths_8_Rational_Numbers_q14_o3.jpg",
+        "Maths_8_Rational_Numbers_q14_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Representation of Rational Numbers on a Number Line"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-rational-numbers-18",
+      "sourceRow": 16,
+      "question": "Maths_8_Rational_Numbers_q18.jpg",
+      "options": [
+        "Maths_8_Rational_Numbers_q18_o1.jpg",
+        "Maths_8_Rational_Numbers_q18_o2.jpg",
+        "Maths_8_Rational_Numbers_q18_o3.jpg",
+        "Maths_8_Rational_Numbers_q18_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Properties of Rational Numbers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-rational-numbers-19",
+      "sourceRow": 17,
+      "question": "Maths_8_Rational_Numbers_q19.jpg",
+      "options": [
+        "Maths_8_Rational_Numbers_q19_o1.jpg",
+        "Maths_8_Rational_Numbers_q19_o2.jpg",
+        "Maths_8_Rational_Numbers_q19_o3.jpg",
+        "Maths_8_Rational_Numbers_q19_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Properties of Rational Numbers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-rational-numbers-20",
+      "sourceRow": 18,
+      "question": "Maths_8_Rational_Numbers_q20.jpg",
+      "options": [
+        "Maths_8_Rational_Numbers_q20_o1.jpg",
+        "Maths_8_Rational_Numbers_q20_o2.jpg",
+        "Maths_8_Rational_Numbers_q20_o3.jpg",
+        "Maths_8_Rational_Numbers_q20_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Properties of Rational Numbers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-rational-numbers-21",
+      "sourceRow": 19,
+      "question": "Maths_8_Rational_Numbers_q21.jpg",
+      "options": [
+        "Maths_8_Rational_Numbers_q21_o1.jpg",
+        "Maths_8_Rational_Numbers_q21_o2.jpg",
+        "Maths_8_Rational_Numbers_q21_o3.jpg",
+        "Maths_8_Rational_Numbers_q21_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Properties of Rational Numbers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-rational-numbers-22",
+      "sourceRow": 20,
+      "question": "Maths_8_Rational_Numbers_q22.jpg",
+      "options": [
+        "Maths_8_Rational_Numbers_q22_o1.jpg",
+        "Maths_8_Rational_Numbers_q22_o2.jpg",
+        "Maths_8_Rational_Numbers_q22_o3.jpg",
+        "Maths_8_Rational_Numbers_q22_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Representation of Rational Numbers on a Number Line"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-rational-numbers-23",
+      "sourceRow": 21,
+      "question": "Which of the following rational numbers cannot be written as a rational number with numerator 4?",
+      "options": [
+        "Maths_8_Rational_Numbers_q23_o1.jpg",
+        "Maths_8_Rational_Numbers_q23_o2.jpg",
+        "Maths_8_Rational_Numbers_q23_o3.jpg",
+        "Maths_8_Rational_Numbers_q23_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Representation of Rational Numbers on a Number Line"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-rational-numbers-24",
+      "sourceRow": 22,
+      "question": "Maths_8_Rational_Numbers_q24.jpg",
+      "options": [
+        "Maths_8_Rational_Numbers_q24_o1.jpg",
+        "Maths_8_Rational_Numbers_q24_o2.jpg",
+        "Maths_8_Rational_Numbers_q24_o3.jpg",
+        "Maths_8_Rational_Numbers_q24_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Properties of Rational Numbers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-rational-numbers-25",
+      "sourceRow": 23,
+      "question": "Maths_8_Rational_Numbers_q25.jpg",
+      "options": [
+        "Maths_8_Rational_Numbers_q25_o1.jpg",
+        "Maths_8_Rational_Numbers_q25_o2.jpg",
+        "Maths_8_Rational_Numbers_q25_o3.jpg",
+        "Maths_8_Rational_Numbers_q25_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Representation of Rational Numbers on a Number Line"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-rational-numbers-26",
+      "sourceRow": 24,
+      "question": "Maths_8_Rational_Numbers_q26.jpg",
+      "options": [
+        "Maths_8_Rational_Numbers_q26_o1.jpg",
+        "Maths_8_Rational_Numbers_q26_o2.jpg",
+        "Maths_8_Rational_Numbers_q26_o3.jpg",
+        "Maths_8_Rational_Numbers_q26_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Representation of Rational Numbers on a Number Line"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-rational-numbers-27",
+      "sourceRow": 25,
+      "question": "Which of the following pairs of rational numbers are equal?",
+      "options": [
+        "Maths_8_Rational_Numbers_q27_o1.jpg",
+        "Maths_8_Rational_Numbers_q27_o2.jpg",
+        "Maths_8_Rational_Numbers_q27_o3.jpg",
+        "Maths_8_Rational_Numbers_q27_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Properties of Rational Numbers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-rational-numbers-28",
+      "sourceRow": 26,
+      "question": "Which of the following rational numbers when plotted on the number line is far away from left of zero?",
+      "options": [
+        "Maths_8_Rational_Numbers_q28_o1.jpg",
+        "Maths_8_Rational_Numbers_q28_o2.jpg",
+        "Maths_8_Rational_Numbers_q28_o3.jpg",
+        "Maths_8_Rational_Numbers_q28_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Representation of Rational Numbers on a Number Line"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-rational-numbers-29",
+      "sourceRow": 27,
+      "question": "Maths_8_Rational_Numbers_q29.jpg",
+      "options": [
+        "Maths_8_Rational_Numbers_q29_o1.jpg",
+        "Maths_8_Rational_Numbers_q29_o2.jpg",
+        "Maths_8_Rational_Numbers_q29_o3.jpg",
+        "Maths_8_Rational_Numbers_q29_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Properties of Rational Numbers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-rational-numbers-30",
+      "sourceRow": 28,
+      "question": "Maths_8_Rational_Numbers_q30.jpg",
+      "options": [
+        "Maths_8_Rational_Numbers_q30_o1.jpg",
+        "Maths_8_Rational_Numbers_q30_o2.jpg",
+        "Maths_8_Rational_Numbers_q30_o3.jpg",
+        "Maths_8_Rational_Numbers_q30_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Properties of Rational Numbers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-rational-numbers-31",
+      "sourceRow": 29,
+      "question": "Maths_8_Rational_Numbers_q31.jpg",
+      "options": [
+        "Maths_8_Rational_Numbers_q31_o1.jpg",
+        "Maths_8_Rational_Numbers_q31_o2.jpg",
+        "Maths_8_Rational_Numbers_q31_o3.jpg",
+        "Maths_8_Rational_Numbers_q31_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Properties of Rational Numbers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-rational-numbers-32",
+      "sourceRow": 30,
+      "question": "Which of the following are the rational numbers in between –3 and 2?",
+      "options": [
+        "Maths_8_Rational_Numbers_q32_o1.jpg",
+        "Maths_8_Rational_Numbers_q32_o2.jpg",
+        "Maths_8_Rational_Numbers_q32_o3.jpg",
+        "Maths_8_Rational_Numbers_q32_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Rational Numbers Between Two Rational Numbers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-rational-numbers-33",
+      "sourceRow": 31,
+      "question": "Maths_8_Rational_Numbers_q33.jpg",
+      "options": [
+        "Maths_8_Rational_Numbers_q33_o1.jpg",
+        "Maths_8_Rational_Numbers_q33_o2.jpg",
+        "Maths_8_Rational_Numbers_q33_o3.jpg",
+        "Maths_8_Rational_Numbers_q33_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Properties of Rational Numbers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-rational-numbers-34",
+      "sourceRow": 32,
+      "question": "Maths_8_Rational_Numbers_q34.jpg",
+      "options": [
+        "48",
+        "49",
+        "50",
+        "52"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Properties of Rational Numbers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-rational-numbers-35",
+      "sourceRow": 33,
+      "question": "Maths_8_Rational_Numbers_q35.jpg",
+      "options": [
+        "100 kg",
+        "102 kg",
+        "106.5 kg",
+        "104 kg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Properties of Rational Numbers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-rational-numbers-36",
+      "sourceRow": 34,
+      "question": "Every number that can be written as fraction, in which both the numerator and denominator are integers, is a:",
+      "options": [
+        "Integers",
+        "Rational numbers",
+        "Fraction",
+        "Decimals"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Properties of Rational Numbers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-rational-numbers-37",
+      "sourceRow": 35,
+      "question": "The sum of a number and its opposite, or additive inverse, is:",
+      "options": [
+        "Zero",
+        "One",
+        "Two",
+        "Number itself"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Properties of Rational Numbers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-rational-numbers-38",
+      "sourceRow": 36,
+      "question": "Number of rational numbers between any two rational numbers are:",
+      "options": [
+        "Two",
+        "Four",
+        "Zero",
+        "Infinite"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Rational Numbers Between Two Rational Numbers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-rational-numbers-39",
+      "sourceRow": 37,
+      "question": "Multiplicative inverse of 0 is:",
+      "options": [
+        "zero",
+        "one",
+        "does not exist",
+        "none of these"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Properties of Rational Numbers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-rational-numbers-40",
+      "sourceRow": 38,
+      "question": "Maths_8_Rational_Numbers_q40.jpg",
+      "options": [
+        "Maths_8_Rational_Numbers_q40_o1.jpg",
+        "Maths_8_Rational_Numbers_q40_o2.jpg",
+        "Maths_8_Rational_Numbers_q40_o3.jpg",
+        "Maths_8_Rational_Numbers_q40_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Properties of Rational Numbers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-rational-numbers-41",
+      "sourceRow": 39,
+      "question": "Maths_8_Rational_Numbers_q41.jpg",
+      "options": [
+        "Maths_8_Rational_Numbers_q41_o1.jpg",
+        "Maths_8_Rational_Numbers_q41_o2.jpg",
+        "Maths_8_Rational_Numbers_q41_o3.jpg",
+        "Maths_8_Rational_Numbers_q41_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Properties of Rational Numbers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-rational-numbers-42",
+      "sourceRow": 40,
+      "question": "Which of the following rational number is in the standard form?",
+      "options": [
+        "Maths_8_Rational_Numbers_q42_o1.jpg",
+        "Maths_8_Rational_Numbers_q42_o2.jpg",
+        "Maths_8_Rational_Numbers_q42_o3.jpg",
+        "Maths_8_Rational_Numbers_q42_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Properties of Rational Numbers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-rational-numbers-43",
+      "sourceRow": 41,
+      "question": "Maths_8_Rational_Numbers_q43.jpg",
+      "options": [
+        "Maths_8_Rational_Numbers_q43_o1.jpg",
+        "Maths_8_Rational_Numbers_q43_o2.jpg",
+        "Maths_8_Rational_Numbers_q43_o3.jpg",
+        "Maths_8_Rational_Numbers_q43_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Properties of Rational Numbers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-rational-numbers-44",
+      "sourceRow": 42,
+      "question": "Maths_8_Rational_Numbers_q44.jpg",
+      "options": [
+        "Maths_8_Rational_Numbers_q44_o1.jpg",
+        "Maths_8_Rational_Numbers_q44_o2.jpg",
+        "Maths_8_Rational_Numbers_q44_o3.jpg",
+        "Maths_8_Rational_Numbers_q44_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Properties of Rational Numbers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-rational-numbers-50",
+      "sourceRow": 48,
+      "question": "Maths_8_Rational_Numbers_q50.jpg",
+      "options": [
+        "Maths_8_Rational_Numbers_q50_o1.jpg",
+        "Maths_8_Rational_Numbers_q50_o2.jpg",
+        "Maths_8_Rational_Numbers_q50_o3.jpg",
+        "Maths_8_Rational_Numbers_q50_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Properties of Rational Numbers"
+      ],
+      "resource": "Composite Mathematics- S. Chand By S.K. Gupta, Anubhuti Gangal",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-rational-numbers-51",
+      "sourceRow": 49,
+      "question": "Maths_8_Rational_Numbers_q51.jpg",
+      "options": [
+        "Associativity of Addition",
+        "Distributivity of Multiplication over Addition",
+        "Associativity of Multiplicatiion",
+        "Commutativity"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Properties of Rational Numbers"
+      ],
+      "resource": "Composite Mathematics- S. Chand By S.K. Gupta, Anubhuti Gangal",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-rational-numbers-52",
+      "sourceRow": 50,
+      "question": "Maths_8_Rational_Numbers_q52.jpg",
+      "options": [
+        "Maths_8_Rational_Numbers_q52_o1.jpg",
+        "Maths_8_Rational_Numbers_q52_o2.jpg",
+        "Maths_8_Rational_Numbers_q52_o3.jpg",
+        "Maths_8_Rational_Numbers_q52_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Properties of Rational Numbers"
+      ],
+      "resource": "Composite Mathematics- S. Chand By S.K. Gupta, Anubhuti Gangal",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    }
+  ]
+}

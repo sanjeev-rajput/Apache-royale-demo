@@ -66,7 +66,8 @@ Mandatory rules:
 - Follow the supplied SME profile guidance for educational quality and grade-band expectations.
 - Output language: ${language}.
 - Return valid JSON only. No Markdown fences or commentary.
-${profileGuidance ? `\nSME PROFILE GUIDANCE:\n${profileGuidance}` : ""}
+${context.assessmentRetryHint ? `\nRETRY CORRECTION:\n${context.assessmentRetryHint}` : ""}
+  ${profileGuidance ? `\nSME PROFILE GUIDANCE:\n${profileGuidance}` : ""}
 `;
 
   const userPayload = {

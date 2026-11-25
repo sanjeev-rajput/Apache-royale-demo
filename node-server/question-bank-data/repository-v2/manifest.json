@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generatedAt": "2026-11-22T03:27:31.166Z",
+  "generatedAt": "2026-11-24T11:45:03.871Z",
   "classes": {
     "class-6": {
       "name": "Class 6",
@@ -476,6 +476,177 @@
               }
             }
           }
+        },
+        "math": {
+          "name": "Math",
+          "topics": {
+            "integers": {
+              "sourcePath": "Class7/Final/Math_Class 7_Assess_QB_01_Integers/Math_Class 7_Assess_QB_01_Integers.xlsx",
+              "sha256": "03b4bdbf1beeb59b7665baca147f1347b46f35b8e7724799abcdcdf584e4ea8c",
+              "status": "processed",
+              "output": "unspecified-publisher/class-7/math/integers.json",
+              "questionCount": 37,
+              "processedAt": "2026-11-24T11:45:02.569Z",
+              "skippedTypes": {
+                "TOF": 11
+              }
+            },
+            "fractions-and-decimals": {
+              "sourcePath": "Class7/Final/Math_Class 7_Assess_QB_02_Fractions_and_Decimals/Int_Math_Class 7_Assess_QB_02_Fractions_and_Decimals.xlsx",
+              "sha256": "ef14c2c693ade3705cc33cdee35949333fa030ffd153d111cd387125029405cc",
+              "status": "processed",
+              "output": "unspecified-publisher/class-7/math/fractions-and-decimals.json",
+              "questionCount": 40,
+              "processedAt": "2026-11-24T11:45:02.641Z",
+              "skippedTypes": {
+                "TOF": 14
+              }
+            },
+            "data-handling": {
+              "sourcePath": "Class7/Final/Math_Class 7_Assess_QB_03_Data_Handling/Int_Math_Class 7_Assess_QB_03_Data_Handling.xlsx",
+              "sha256": "e42661818b5a55118d1dc42282ec6dd574fdff289577944b596bc5153a972e6b",
+              "status": "processed",
+              "output": "unspecified-publisher/class-7/math/data-handling.json",
+              "questionCount": 23,
+              "processedAt": "2026-11-24T11:45:02.683Z",
+              "skippedTypes": {
+                "TOF": 16
+              }
+            },
+            "simple-equations": {
+              "sourcePath": "Class7/Final/Math_Class 7_Assess_QB_04_Simple_Equations/Int_Math_Class 7_Assess_QB_04_Simple_Equations.xlsx",
+              "sha256": "6f56f04277a0e2d798ea8a1af250fd125bf11b3b5a0b575b6c40a6cd9f9121ee",
+              "status": "processed",
+              "output": "unspecified-publisher/class-7/math/simple-equations.json",
+              "questionCount": 33,
+              "processedAt": "2026-11-24T11:45:02.718Z",
+              "skippedTypes": {
+                "TOF": 12
+              }
+            },
+            "lines-and-angles": {
+              "sourcePath": "Class7/Final/Math_Class 7_Assess_QB_05_Lines_and_Angles/Int_Math_Class 7_Assess_QB_05_Lines_and_Angles.xlsx",
+              "sha256": "27fd1fecb8915e4c91a05901dc1e93794d40167618bc33841f29f55fc5b9870b",
+              "status": "processed",
+              "output": "unspecified-publisher/class-7/math/lines-and-angles.json",
+              "questionCount": 35,
+              "processedAt": "2026-11-24T11:45:02.745Z",
+              "skippedTypes": {
+                "TOF": 10
+              }
+            },
+            "the-triangle-and-its-properties": {
+              "sourcePath": "Class7/Final/Math_Class 7_Assess_QB_06_The_Triangle_and_its_Properties/Int_Math_Class 7_Assess_QB_06_The_Triangle_and_its_Properties.xlsx",
+              "sha256": "f96d1362bc79d30340d978f862d2d6be0389c4a217cdef76480de9472bd9cd4b",
+              "status": "processed",
+              "output": "unspecified-publisher/class-7/math/the-triangle-and-its-properties.json",
+              "questionCount": 30,
+              "processedAt": "2026-11-24T11:45:02.801Z",
+              "skippedTypes": {
+                "TOF": 14
+              }
+            },
+            "congruence-of-triangles": {
+              "sourcePath": "Class7/Final/Math_Class 7_Assess_QB_07_Congruence_of_Triangles/Int_Math_Class 7_Assess_QB_07_Congruence_of_Triangles.xlsx",
+              "sha256": "852c87dce0bb72ac57d152d847298b0ed78328773f9f02ce820f4cb6dd6ab360",
+              "status": "processed",
+              "output": "unspecified-publisher/class-7/math/congruence-of-triangles.json",
+              "questionCount": 32,
+              "processedAt": "2026-11-24T11:45:02.830Z",
+              "skippedTypes": {
+                "TOF": 13
+              }
+            },
+            "comparing-quantities": {
+              "sourcePath": "Class7/Final/Math_Class 7_Assess_QB_08_Comparing_Quantities/Int_Math_Class 7_Assess_QB_08_Comparing_Quantities.xlsx",
+              "sha256": "cfda0dc710db91836cf126c1f706a603d81ad9918c19f4e442001ef7f8d3bede",
+              "status": "processed",
+              "output": "unspecified-publisher/class-7/math/comparing-quantities.json",
+              "questionCount": 38,
+              "processedAt": "2026-11-24T11:45:02.856Z",
+              "skippedTypes": {
+                "TOF": 19
+              }
+            },
+            "rational-numbers": {
+              "sourcePath": "Class7/Final/Math_Class 7_Assess_QB_09_Rational_Numbers/Int_Math_Class 7_Assess_QB_09_Rational_Numbers.xlsx",
+              "sha256": "6c6dbb1b98617b355f63e6ce24a7312ec0fc68971a968f7c5ea249138dd8ceb8",
+              "status": "processed",
+              "output": "unspecified-publisher/class-7/math/rational-numbers.json",
+              "questionCount": 33,
+              "processedAt": "2026-11-24T11:45:02.880Z",
+              "skippedTypes": {
+                "TOF": 15
+              }
+            },
+            "practical-geometry": {
+              "sourcePath": "Class7/Final/Math_Class 7_Assess_QB_10_Practical_Geometry/Int_Math_Class 7_Assess_QB_10_Practical_Geometry.xlsx",
+              "sha256": "4d334acff1e7094b68cf2df23fddb36e78153aa3311ed51e439d521f22b35be3",
+              "status": "processed",
+              "output": "unspecified-publisher/class-7/math/practical-geometry.json",
+              "questionCount": 4,
+              "processedAt": "2026-11-24T11:45:02.900Z",
+              "skippedTypes": {
+                "TOF": 5
+              }
+            },
+            "perimeter-and-area": {
+              "sourcePath": "Class7/Final/Math_Class 7_Assess_QB_11_Perimeter_and_Area/Int_Math_Class 7_Assess_QB_11_Perimeter_and_Area.xlsx",
+              "sha256": "30b991cbf78b93178330b644a5fda5bb4829e71f94598153c458a4b4101e8d8a",
+              "status": "processed",
+              "output": "unspecified-publisher/class-7/math/perimeter-and-area.json",
+              "questionCount": 26,
+              "processedAt": "2026-11-24T11:45:02.926Z",
+              "skippedTypes": {
+                "TOF": 15
+              }
+            },
+            "algebraic-expressions": {
+              "sourcePath": "Class7/Final/Math_Class 7_Assess_QB_12_Algebraic_Expressions/Math_Class 7_Assess_QB_12_Algebraic_Expressions.xlsx",
+              "sha256": "ccf9cc809bb12636bdc69e1eaa8e3e720b02b3f5222ccc970553e9e20ad7251b",
+              "status": "processed",
+              "output": "unspecified-publisher/class-7/math/algebraic-expressions.json",
+              "questionCount": 29,
+              "processedAt": "2026-11-24T11:45:02.955Z",
+              "skippedTypes": {
+                "TOF": 15
+              }
+            },
+            "exponents-and-powers": {
+              "sourcePath": "Class7/Final/Math_Class 7_Assess_QB_13_Exponents_and_Powers/Math_Class 7_Assess_QB_13_Exponents_and_Powers.xlsx",
+              "sha256": "08aa833acb13102551aa7c1a626fe71201a9fe0779f154f11e70f1c7a166d8b8",
+              "status": "processed",
+              "output": "unspecified-publisher/class-7/math/exponents-and-powers.json",
+              "questionCount": 28,
+              "processedAt": "2026-11-24T11:45:02.979Z",
+              "skippedTypes": {
+                "TOF": 13
+              }
+            },
+            "symmetry": {
+              "sourcePath": "Class7/Final/Math_Class 7_Assess_QB_14_Symmetry/Math_Class 7_Assess_QB_14_Symmetry.xlsx",
+              "sha256": "d969c6a96706e6e8fc3ce3a6b952ae89a0e912931f46106117aa83a5a2d1cd0a",
+              "status": "warning",
+              "output": "unspecified-publisher/class-7/math/symmetry.json",
+              "questionCount": 26,
+              "processedAt": "2026-11-24T11:45:03.003Z",
+              "skippedTypes": {
+                "TOF": 14
+              },
+              "invalidMcqRows": 2
+            },
+            "visualising-solid-shapes": {
+              "sourcePath": "Class7/Final/Math_Class 7_Assess_QB_15_Visualising_Solid_Shapes/Math_Class 7_Assess_QB_15_Visualising_Solid_Shapes.xlsx",
+              "sha256": "4683db0c4a8e6259f68e1cb3c26ca51ad264ea25e7a272837a96c5301a82cbe6",
+              "status": "processed",
+              "output": "unspecified-publisher/class-7/math/visualising-solid-shapes.json",
+              "questionCount": 26,
+              "processedAt": "2026-11-24T11:45:03.025Z",
+              "skippedTypes": {
+                "TOF": 14
+              }
+            }
+          }
         }
       }
     },
@@ -683,19 +854,376 @@
               "processedAt": "2026-11-22T03:27:31.166Z"
             }
           }
+        },
+        "math": {
+          "name": "Math",
+          "topics": {
+            "rational-numbers": {
+              "sourcePath": "Class8/Final/Math_Class8_Assess_QB_01_Rational_Numbers/Math_Class 8_Assess_QB_01_Rational_Numbers.xlsx",
+              "sha256": "732edfbc87bceebb4e55a11e82876b6c82cd26d64f3dbbf99ab3289612e643e2",
+              "status": "processed",
+              "output": "unspecified-publisher/class-8/math/rational-numbers.json",
+              "questionCount": 34,
+              "processedAt": "2026-11-24T11:45:03.084Z",
+              "skippedTypes": {
+                "TOF": 15
+              }
+            },
+            "data-handling": {
+              "sourcePath": "Class8/Final/Math_Class8_Assess_QB_05_Data_Handling/Math_Class 8_Assess_QB_05_Data_Handling.xlsx",
+              "sha256": "076d6a37c3d578d4ded42051171f748c863c12c4fca7bffc226746fcb71cebe5",
+              "status": "processed",
+              "output": "unspecified-publisher/class-8/math/data-handling.json",
+              "questionCount": 8,
+              "processedAt": "2026-11-24T11:45:03.205Z",
+              "skippedTypes": {
+                "TOF": 8
+              }
+            },
+            "introduction-to-graphs": {
+              "sourcePath": "Class8/Final/Math_Class8_Assess_QB_15_Introduction_to_Graphs/Math_Class 8_Assess_QB_15_Introduction_to_Graphs.xlsx",
+              "sha256": "8b99318bbf9c5a6713e7ff543aeffd66178a7e9d79acb930295f0d1dee9078c4",
+              "status": "processed",
+              "output": "unspecified-publisher/class-8/math/introduction-to-graphs.json",
+              "questionCount": 17,
+              "processedAt": "2026-11-24T11:45:03.445Z",
+              "skippedTypes": {
+                "TOF": 3
+              }
+            },
+            "linear-equations": {
+              "sourcePath": "Class8/Final/Math_Class8_Assess_QB_02_Linear_Equations/Math_Class 8_Assess_QB_02_Linear_Equations.xlsx",
+              "sha256": "ecc455a5b8dfc9da518f902923e4f4514192a6fd349bb0e0ff6c105046285e33",
+              "status": "processed",
+              "output": "unspecified-publisher/class-8/math/linear-equations.json",
+              "questionCount": 29,
+              "processedAt": "2026-11-24T11:45:03.114Z",
+              "skippedTypes": {
+                "TOF": 13
+              }
+            },
+            "understanding-quadrilaterals": {
+              "sourcePath": "Class8/Final/Math_Class8_Assess_QB_03_Understanding_Quadrilaterals/Math_Class 8_Assess_QB_03_Understanding_Quadrilaterals.xlsx",
+              "sha256": "f27a09e0502aad7c1c90742cefab479990e328cfbb69a151c5bdf4fc242e8599",
+              "status": "processed",
+              "output": "unspecified-publisher/class-8/math/understanding-quadrilaterals.json",
+              "questionCount": 31,
+              "processedAt": "2026-11-24T11:45:03.138Z",
+              "skippedTypes": {
+                "TOF": 14
+              }
+            },
+            "practical-geometry": {
+              "sourcePath": "Class8/Final/Math_Class8_Assess_QB_04_Practical_Geometry/Math_Class 8_Assess_QB_04_Practical_Geometry.xlsx",
+              "sha256": "939096f0b37168cf98680aa581641359e5351aa39d219c19a1bc8cb9a76a0868",
+              "status": "processed",
+              "output": "unspecified-publisher/class-8/math/practical-geometry.json",
+              "questionCount": 3,
+              "processedAt": "2026-11-24T11:45:03.179Z",
+              "skippedTypes": {
+                "TOF": 6
+              }
+            },
+            "squares-and-square-roots": {
+              "sourcePath": "Class8/Final/Math_Class8_Assess_QB_06_Squares_and_Square_Roots/Math_Class 8_Assess_QB_06_Squares_and_Square_Roots.xlsx",
+              "sha256": "142e1fda636499dd6ac39f892467b058b96aa2e44c1784c9673a881c70da5b78",
+              "status": "processed",
+              "output": "unspecified-publisher/class-8/math/squares-and-square-roots.json",
+              "questionCount": 26,
+              "processedAt": "2026-11-24T11:45:03.231Z",
+              "skippedTypes": {
+                "TOF": 13
+              }
+            },
+            "cubes-and-cube-roots": {
+              "sourcePath": "Class8/Final/Math_Class8_Assess_QB_07_Cubes_and_Cube_Roots/Math_Class 8_Assess_QB_07_Cubes_and_Cube_Roots.xlsx",
+              "sha256": "b72d7b8e117a199ef9a71bbd47f2859f45d88a8948d4818fe81a224767c8159a",
+              "status": "processed",
+              "output": "unspecified-publisher/class-8/math/cubes-and-cube-roots.json",
+              "questionCount": 41,
+              "processedAt": "2026-11-24T11:45:03.255Z",
+              "skippedTypes": {
+                "TOF": 11
+              }
+            },
+            "comparing-quantities": {
+              "sourcePath": "Class8/Final/Math_Class8_Assess_QB_08_Comparing_Quantities/Math_Class 8_Assess_QB_08_Comparing_Quantities.xlsx",
+              "sha256": "4b3ae6c907716bece66f580adfa139a655ff1b9cfc122b36909b70a1f7026f63",
+              "status": "processed",
+              "output": "unspecified-publisher/class-8/math/comparing-quantities.json",
+              "questionCount": 23,
+              "processedAt": "2026-11-24T11:45:03.277Z",
+              "skippedTypes": {
+                "TOF": 10
+              }
+            },
+            "algebraic-expressions": {
+              "sourcePath": "Class8/Final/Math_Class8_Assess_QB_09_Algebraic_Expressions/Math_Class 8_Assess_QB_09_Algebraic_Expressions.xlsx",
+              "sha256": "a1b3cd46a1786f721a2e38ea88a635f6df731eababd2242a39f5925cb11f8826",
+              "status": "processed",
+              "output": "unspecified-publisher/class-8/math/algebraic-expressions.json",
+              "questionCount": 28,
+              "processedAt": "2026-11-24T11:45:03.304Z",
+              "skippedTypes": {
+                "TOF": 12
+              }
+            },
+            "visualising-solid-shapes": {
+              "sourcePath": "Class8/Final/Math_Class8_Assess_QB_10_Visualising_Solid_Shapes/Math_Class 8_Assess_QB_10_Visualising_Solid_Shapes.xlsx",
+              "sha256": "12e6efa82146d3a85185b02908feaf87918ba30553a38ac9864a12956619d907",
+              "status": "processed",
+              "output": "unspecified-publisher/class-8/math/visualising-solid-shapes.json",
+              "questionCount": 18,
+              "processedAt": "2026-11-24T11:45:03.326Z",
+              "skippedTypes": {
+                "TOF": 8
+              }
+            },
+            "mensuration": {
+              "sourcePath": "Class8/Final/Math_Class8_Assess_QB_11_Mensuration/Math_Class 8_Assess_QB_11_Mensuration.xlsx",
+              "sha256": "4ddffd641317b4fef8ec79cbd4a5f21de9b29a5ddd74f41d47ef997d0dcdada8",
+              "status": "processed",
+              "output": "unspecified-publisher/class-8/math/mensuration.json",
+              "questionCount": 29,
+              "processedAt": "2026-11-24T11:45:03.350Z",
+              "skippedTypes": {
+                "TOF": 13
+              }
+            },
+            "exponents-and-powers": {
+              "sourcePath": "Class8/Final/Math_Class8_Assess_QB_12_Exponents_and_Powers/Math_Class 8_Assess_QB_12_Exponents_and_Powers.xlsx",
+              "sha256": "46c9289ea09683c6eef05dc12e889c6fcb4d4fceeb4e5f97c58ddc44383119b3",
+              "status": "processed",
+              "output": "unspecified-publisher/class-8/math/exponents-and-powers.json",
+              "questionCount": 22,
+              "processedAt": "2026-11-24T11:45:03.374Z",
+              "skippedTypes": {
+                "TOF": 15
+              }
+            },
+            "direct-and-inverse-proportions": {
+              "sourcePath": "Class8/Final/Math_Class8_Assess_QB_13_Direct_and_Inverse_Proportions/Math_Class 8_Assess_QB_13_Direct_and_Inverse_Proportions.xlsx",
+              "sha256": "d273763fcd120aaefd6ded107b6c54ff7b8b181fa24fdda8abefca2c3d04e462",
+              "status": "processed",
+              "output": "unspecified-publisher/class-8/math/direct-and-inverse-proportions.json",
+              "questionCount": 29,
+              "processedAt": "2026-11-24T11:45:03.397Z",
+              "skippedTypes": {
+                "TOF": 8
+              }
+            },
+            "factorisation": {
+              "sourcePath": "Class8/Final/Math_Class8_Assess_QB_14_Factorisation/Math_Class 8_Assess_QB_14_Factorisation.xlsx",
+              "sha256": "37c74f05c6c3d46e4a9c8cd6d32e9bb87b414dc619ff7a329a6e027649a769d0",
+              "status": "processed",
+              "output": "unspecified-publisher/class-8/math/factorisation.json",
+              "questionCount": 21,
+              "processedAt": "2026-11-24T11:45:03.423Z",
+              "skippedTypes": {
+                "TOF": 15
+              }
+            },
+            "playing-with-numbers": {
+              "sourcePath": "Class8/Final/Math_Class8_Assess_QB_16_Playing_with_Numbers/Math_Class 8_Assess_QB_16_Playing_with_Numbers.xlsx",
+              "sha256": "4d1a226f6b7a2ef52710058c79c757ae67fe3a6276a74125769cb4ba000be1cf",
+              "status": "processed",
+              "output": "unspecified-publisher/class-8/math/playing-with-numbers.json",
+              "questionCount": 20,
+              "processedAt": "2026-11-24T11:45:03.467Z",
+              "skippedTypes": {
+                "TOF": 12
+              }
+            }
+          }
+        }
+      }
+    },
+    "class-10": {
+      "name": "Class 10",
+      "subjects": {
+        "math": {
+          "name": "Math",
+          "topics": {
+            "real-numbers": {
+              "sourcePath": "Class10/Final/Math_Class_10_Assess_QB_01_Real_Numbers/Math_Class_10_Assess_QB_01_Real_Numbers.xlsx",
+              "sha256": "547ed3da891462ff392c0939bace172a716ab2498016802431d16c8aa06cb6f4",
+              "status": "processed",
+              "output": "unspecified-publisher/class-10/math/real-numbers.json",
+              "questionCount": 60,
+              "processedAt": "2026-11-24T11:45:03.493Z",
+              "skippedTypes": {
+                "TOF": 24
+              }
+            },
+            "polynomials": {
+              "sourcePath": "Class10/Final/Math_Class_10_Assess_QB_02_Polynomials/Math_Class_10_Assess_QB_02_Polynomials.xlsx",
+              "sha256": "1ade1cb59fb35b816559dca81d3a591c048ee2f17f399342dc67183677fef793",
+              "status": "processed",
+              "output": "unspecified-publisher/class-10/math/polynomials.json",
+              "questionCount": 54,
+              "processedAt": "2026-11-24T11:45:03.521Z",
+              "skippedTypes": {
+                "TOF": 16
+              }
+            },
+            "pair-of-linear-equations-in-two-variables": {
+              "sourcePath": "Class10/Final/Math_Class_10_Assess_QB_03_Pair_of_Linear_Equations_in_Two_Variables/Math_Class_10_Assess_QB_03_Pair_of_Linear_Equations_in_Two_Variables.xlsx",
+              "sha256": "d5ec4abbbf3d23dc23269cb55ea5d4cec1542e068fb2e49ee3cfce9901cb5e2f",
+              "status": "processed",
+              "output": "unspecified-publisher/class-10/math/pair-of-linear-equations-in-two-variables.json",
+              "questionCount": 55,
+              "processedAt": "2026-11-24T11:45:03.548Z",
+              "skippedTypes": {
+                "TOF": 20
+              }
+            },
+            "quadratic-equations": {
+              "sourcePath": "Class10/Final/Math_Class_10_Assess_QB_04_Quadratic_Equations/Math_Class_10_Assess_QB_04_Quadratic_Equations.xlsx",
+              "sha256": "b5c732e49f11fddaef5d097d803afe2f45a5003e391f782c5294e97852faa08a",
+              "status": "processed",
+              "output": "unspecified-publisher/class-10/math/quadratic-equations.json",
+              "questionCount": 63,
+              "processedAt": "2026-11-24T11:45:03.576Z",
+              "skippedTypes": {
+                "TOF": 22
+              }
+            },
+            "arithmetic-progressions": {
+              "sourcePath": "Class10/Final/Math_Class_10_Assess_QB_05_Arithmetic_Progressions/Math_Class_10_Assess_QB_05_Arithmetic_Progressions.xlsx",
+              "sha256": "153a5da5babb247cf7f62194d33428509a93c7e2d14d8a550c56df3b34627799",
+              "status": "processed",
+              "output": "unspecified-publisher/class-10/math/arithmetic-progressions.json",
+              "questionCount": 62,
+              "processedAt": "2026-11-24T11:45:03.605Z",
+              "skippedTypes": {
+                "TOF": 19
+              }
+            },
+            "triangles": {
+              "sourcePath": "Class10/Final/Math_Class_10_Assess_QB_06_Triangles/Math_Class_10_Assess_QB_06_Triangles.xlsx",
+              "sha256": "63803c7ad44f210f68283ca7ac78a15d0950675528ca21acb5a5170e1ced62c6",
+              "status": "processed",
+              "output": "unspecified-publisher/class-10/math/triangles.json",
+              "questionCount": 62,
+              "processedAt": "2026-11-24T11:45:03.633Z",
+              "skippedTypes": {
+                "TOF": 22
+              }
+            },
+            "coordinate-geometry": {
+              "sourcePath": "Class10/Final/Math_Class_10_Assess_QB_07_Coordinate_Geometry/Math_Class_10_Assess_QB_07_Coordinate_Geometry.xlsx",
+              "sha256": "687aa64a5e32b1e0fbb881ff24542e1ad13bac49888a54cf4bc3db266808a4f5",
+              "status": "processed",
+              "output": "unspecified-publisher/class-10/math/coordinate-geometry.json",
+              "questionCount": 69,
+              "processedAt": "2026-11-24T11:45:03.661Z",
+              "skippedTypes": {
+                "TOF": 18
+              }
+            },
+            "introduction-to-trigonometry": {
+              "sourcePath": "Class10/Final/Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry/Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry.xlsx",
+              "sha256": "6dcb90115fce6ee1b47473e849965e77db68b94163d4ce4fb72de62a7df748ba",
+              "status": "processed",
+              "output": "unspecified-publisher/class-10/math/introduction-to-trigonometry.json",
+              "questionCount": 98,
+              "processedAt": "2026-11-24T11:45:03.693Z",
+              "skippedTypes": {
+                "TOF": 20
+              }
+            },
+            "some-applications-of-trigonometry": {
+              "sourcePath": "Class10/Final/Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry/Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry.xlsx",
+              "sha256": "eba04afb2469349121e515bd359c66eb91dec31fb8cd0c0c4ab67df53e11393c",
+              "status": "processed",
+              "output": "unspecified-publisher/class-10/math/some-applications-of-trigonometry.json",
+              "questionCount": 65,
+              "processedAt": "2026-11-24T11:45:03.718Z",
+              "skippedTypes": {
+                "TOF": 16
+              }
+            },
+            "circles": {
+              "sourcePath": "Class10/Final/Math_Class_10_Assess_QB_10_Circles/Math_Class_10_Assess_QB_10_Circles.xlsx",
+              "sha256": "86757012469cefe175f133eb287ae07697e6012d59efa622e8d123f657c429d3",
+              "status": "processed",
+              "output": "unspecified-publisher/class-10/math/circles.json",
+              "questionCount": 101,
+              "processedAt": "2026-11-24T11:45:03.746Z",
+              "skippedTypes": {
+                "TOF": 17
+              }
+            },
+            "constructions": {
+              "sourcePath": "Class10/Final/Math_Class_10_Assess_QB_11_Constructions/Math_Class_10_Assess_QB_11_Constructions.xlsx",
+              "sha256": "45842573b4a8f77b87f4471ee42ea47863982354ebc7b0645d23e5517eb94eb9",
+              "status": "warning",
+              "output": "unspecified-publisher/class-10/math/constructions.json",
+              "questionCount": 34,
+              "processedAt": "2026-11-24T11:45:03.769Z",
+              "skippedTypes": {
+                "TOF": 9
+              },
+              "invalidMcqRows": 3
+            },
+            "areas-related-to-circles": {
+              "sourcePath": "Class10/Final/Math_Class_10_Assess_QB_12_Areas_Related_to_Circles/Math_Class_10_Assess_QB_12_Areas_Related_to_Circles.xlsx",
+              "sha256": "1f62b9fc2691b01debfe4d0c341cf16b0bcb5d96e9805084f71a2e7c2f3a7008",
+              "status": "processed",
+              "output": "unspecified-publisher/class-10/math/areas-related-to-circles.json",
+              "questionCount": 59,
+              "processedAt": "2026-11-24T11:45:03.794Z",
+              "skippedTypes": {
+                "TOF": 16
+              }
+            },
+            "surface-areas-and-volumes": {
+              "sourcePath": "Class10/Final/Math_Class_10_Assess_QB_13_Surface_Areas_and_Volumes/Math_Class_10_Assess_QB_13_Surface_Areas_and_Volumes.xlsx",
+              "sha256": "d28c23ef21642cc61aed314682752b096cd9e1587731d5663b72228a7a7213d3",
+              "status": "processed",
+              "output": "unspecified-publisher/class-10/math/surface-areas-and-volumes.json",
+              "questionCount": 45,
+              "processedAt": "2026-11-24T11:45:03.819Z",
+              "skippedTypes": {
+                "TOF": 17
+              }
+            },
+            "statistics": {
+              "sourcePath": "Class10/Final/Math_Class_10_Assess_QB_14_Statistics/Math_Class_10_Assess_QB_14_Statistics.xlsx",
+              "sha256": "8bebc63db298469a7325d096647831c154438aa07283b77777ff29cb0f859d73",
+              "status": "processed",
+              "output": "unspecified-publisher/class-10/math/statistics.json",
+              "questionCount": 72,
+              "processedAt": "2026-11-24T11:45:03.845Z",
+              "skippedTypes": {
+                "TOF": 17
+              }
+            },
+            "probability": {
+              "sourcePath": "Class10/Final/Math_Class_10_Assess_QB_15_Probability/Math_Class_10_Assess_QB_15_Probability.xlsx",
+              "sha256": "c6158c7734548fce7f184e33d5a6b40fbbc91367b4f649bbf84c00d7e983860c",
+              "status": "processed",
+              "output": "unspecified-publisher/class-10/math/probability.json",
+              "questionCount": 59,
+              "processedAt": "2026-11-24T11:45:03.871Z",
+              "skippedTypes": {
+                "TOF": 22
+              }
+            }
+          }
         }
       }
     }
   },
   "summary": {
-    "configuredDirectories": 3,
-    "discoveredFiles": 64,
-    "processedFiles": 64,
+    "configuredDirectories": 6,
+    "discoveredFiles": 115,
+    "processedFiles": 111,
     "unchangedFiles": 0,
-    "mcqCount": 511,
+    "mcqCount": 2291,
     "skippedFIB": 484,
-    "skippedTOF": 59,
-    "warningFiles": 16,
-    "failedFiles": 0
+    "skippedTOF": 716,
+    "warningFiles": 18,
+    "failedFiles": 4
   }
 }

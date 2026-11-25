@@ -29,6 +29,7 @@
             import views.actionitemviews.learning.LearningChatbotMain;
             import views.actionitemviews.multilingual.MultilingualTutorMain;
             import views.actionitemviews.agentic.AgenticLearningMain;
+            import views.actionitemviews.adaptive.AdaptiveLearningMain;
             private var mgmtObj:Array = new Array();
             private var learningChatbot:LearningChatbotMain;
             private var multilingualTutor:MultilingualTutorMain;
@@ -136,6 +137,11 @@
                 }
                 if (compName == 'Agentic Learning') {
                     uiComp = new AgenticLearningMain();
+                    vg.addElement(uiComp);
+                    return;
+                }
+                if (compName == 'AI Adaptive Learning') {
+                    uiComp = new AdaptiveLearningMain();
                     vg.addElement(uiComp);
                     return;
                 }

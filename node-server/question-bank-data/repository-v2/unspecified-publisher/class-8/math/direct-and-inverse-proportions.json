@@ -1,0 +1,772 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-24T11:45:03.396Z",
+  "classification": {
+    "class": "Class 8",
+    "subject": "Math",
+    "topic": "Direct and Inverse Proportions"
+  },
+  "publisher": "unspecified-publisher",
+  "source": {
+    "file": "Class8/Final/Math_Class8_Assess_QB_13_Direct_and_Inverse_Proportions/Math_Class 8_Assess_QB_13_Direct_and_Inverse_Proportions.xlsx",
+    "sheet": "filename"
+  },
+  "questionType": "MCQ",
+  "questionCount": 29,
+  "questions": [
+    {
+      "id": "unspecified-publisher-class-8-math-direct-and-inverse-proportions-9",
+      "sourceRow": 10,
+      "question": "It is given that ‘a’ varies directly as ‘b’. What is the value of constant of variation if ‘a’ is 4 when ‘b’ is 6?",
+      "options": [
+        "Maths_8_Direct_and_Inverse_Proportions_q9_o1.jpg",
+        "Maths_8_Direct_and_Inverse_Proportions_q9_o2.jpg",
+        "Maths_8_Direct_and_Inverse_Proportions_q9_o3.jpg",
+        "Maths_8_Direct_and_Inverse_Proportions_q9_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Direct Proportion"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-direct-and-inverse-proportions-10",
+      "sourceRow": 11,
+      "question": "Maths_8_Direct_and_Inverse_Proportions_q10.jpg",
+      "options": [
+        "120",
+        "110",
+        "100",
+        "90"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Direct Proportion"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-direct-and-inverse-proportions-11",
+      "sourceRow": 12,
+      "question": "Maths_8_Direct_and_Inverse_Proportions_q11.jpg",
+      "options": [
+        "1.8 and 19",
+        "7.2 and 4.75",
+        "1.8 and 4.75",
+        "7.2 and 19"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Direct Proportion"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-direct-and-inverse-proportions-12",
+      "sourceRow": 13,
+      "question": "Maths_8_Direct_and_Inverse_Proportions_q12.jpg",
+      "options": [
+        "Maths_8_Direct_and_Inverse_Proportions_q12_o1.jpg",
+        "Maths_8_Direct_and_Inverse_Proportions_q12_o2.jpg",
+        "Maths_8_Direct_and_Inverse_Proportions_q12_o3.jpg",
+        "Maths_8_Direct_and_Inverse_Proportions_q12_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Word Problems on Direct Proportion"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-direct-and-inverse-proportions-13",
+      "sourceRow": 14,
+      "question": "If 20 men work 8 hours a day to complete a task, then how many hours will be taken if 12 men work every day?",
+      "options": [
+        "Maths_8_Direct_and_Inverse_Proportions_q13_o1.jpg",
+        "Maths_8_Direct_and_Inverse_Proportions_q13_o2.jpg",
+        "Maths_8_Direct_and_Inverse_Proportions_q13_o3.jpg",
+        "Maths_8_Direct_and_Inverse_Proportions_q13_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Word Problems on Direct Proportion"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": "HOTS"
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-direct-and-inverse-proportions-14",
+      "sourceRow": 15,
+      "question": "A machine taken 5 hours in cutting 120 tools. How much time will the same machine take in cutting 480 tools?",
+      "options": [
+        "20 hours",
+        "10 hours",
+        "5 hours",
+        "30 hours"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Word Problems on Direct Proportion"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-direct-and-inverse-proportions-15",
+      "sourceRow": 16,
+      "question": "Which of the following quantities vary inversely to each other?",
+      "options": [
+        "Number of articles q and their price p.",
+        "Weight of articles w and their cost c.",
+        "Wages and hours of work.",
+        "Speed and time keeping distance covered same."
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Inverse Proportion"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-direct-and-inverse-proportions-16",
+      "sourceRow": 17,
+      "question": "Which of the following equation represents direct variation?",
+      "options": [
+        "Maths_8_Direct_and_Inverse_Proportions_q16_o1.jpg",
+        "Maths_8_Direct_and_Inverse_Proportions_q16_o2.jpg",
+        "Maths_8_Direct_and_Inverse_Proportions_q16_o3.jpg",
+        "Maths_8_Direct_and_Inverse_Proportions_q16_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Direct Proportion"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-direct-and-inverse-proportions-17",
+      "sourceRow": 18,
+      "question": "Maths_8_Direct_and_Inverse_Proportions_q17.jpg",
+      "options": [
+        "11",
+        "13",
+        "15",
+        "17"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Word Problems on Direct Proportion"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-direct-and-inverse-proportions-18",
+      "sourceRow": 19,
+      "question": "Maths_8_Direct_and_Inverse_Proportions_q18.jpg",
+      "options": [
+        "Maths_8_Direct_and_Inverse_Proportions_q18_o1.jpg",
+        "Maths_8_Direct_and_Inverse_Proportions_q18_o2.jpg",
+        "Maths_8_Direct_and_Inverse_Proportions_q18_o3.jpg",
+        "Maths_8_Direct_and_Inverse_Proportions_q18_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Word Problems on Direct Proportion"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-direct-and-inverse-proportions-19",
+      "sourceRow": 20,
+      "question": "Which of the following vary directly to each other?",
+      "options": [
+        "Maths_8_Direct_and_Inverse_Proportions_q19_o1.jpg",
+        "Maths_8_Direct_and_Inverse_Proportions_q19_o2.jpg",
+        "Maths_8_Direct_and_Inverse_Proportions_q19_o3.jpg",
+        "Maths_8_Direct_and_Inverse_Proportions_q19_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Word Problems on Direct Proportion"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": "HOTS"
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-direct-and-inverse-proportions-20",
+      "sourceRow": 21,
+      "question": "p and q varies inversely as each other. When p = 10, q = 6, which of the following is not a possible pair of corresponding values of p and q?",
+      "options": [
+        "15 and 4",
+        "20 and 3",
+        "1.5 and 30",
+        "0.6 and 100"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Inverse Proportion"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": "HOTS"
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-direct-and-inverse-proportions-21",
+      "sourceRow": 22,
+      "question": "If a varies inversely as b + 2 and if a = 8 when b = 1.5, then what is the value of a if b = 5?",
+      "options": [
+        "Maths_8_Direct_and_Inverse_Proportions_q21_o1.jpg",
+        "Maths_8_Direct_and_Inverse_Proportions_q21_o2.jpg",
+        "Maths_8_Direct_and_Inverse_Proportions_q21_o3.jpg",
+        "Maths_8_Direct_and_Inverse_Proportions_q21_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Inverse Proportion"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-direct-and-inverse-proportions-22",
+      "sourceRow": 23,
+      "question": "Which of the following tables represent the direct variation in x and y ?",
+      "options": [
+        "Maths_8_Direct_and_Inverse_Proportions_q22_o1.jpg",
+        "Maths_8_Direct_and_Inverse_Proportions_q22_o2.jpg",
+        "Maths_8_Direct_and_Inverse_Proportions_q22_o3.jpg",
+        "Maths_8_Direct_and_Inverse_Proportions_q22_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Direct Proportion"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": "HOTS"
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-direct-and-inverse-proportions-23",
+      "sourceRow": 24,
+      "question": "If s is inversely proportional to t, how does s change when t is tripled?",
+      "options": [
+        "s is tripled",
+        "s becomes 9 times",
+        "s is one-third",
+        "the value of s gets cubed"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Inverse Proportion"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-direct-and-inverse-proportions-24",
+      "sourceRow": 25,
+      "question": "If 20 men assemble 8 machines in a day, how many men are needed to assesmble 12 machines in a day?",
+      "options": [
+        "30",
+        "40",
+        "50",
+        "20"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Direct Proportion"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-direct-and-inverse-proportions-25",
+      "sourceRow": 26,
+      "question": "In a dairy farm, 40 cows eat 40 bags of husk in 40 days. In how many days one cow will eat one bag of husk?",
+      "options": [
+        "Maths_8_Direct_and_Inverse_Proportions_q25_o1.jpg",
+        "Maths_8_Direct_and_Inverse_Proportions_q25_o2.jpg",
+        "Maths_8_Direct_and_Inverse_Proportions_q25_o3.jpg",
+        "Maths_8_Direct_and_Inverse_Proportions_q25_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Word Problems on Inverse Proportion"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-direct-and-inverse-proportions-26",
+      "sourceRow": 27,
+      "question": "Some person can do a piece of work in 12 days. In how many days will two times the number of such person do half of that work?",
+      "options": [
+        "3 days",
+        "6 days",
+        "4 days",
+        "12 days"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Word Problems on Inverse Proportion"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": "HOTS"
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-direct-and-inverse-proportions-27",
+      "sourceRow": 28,
+      "question": "The number of hours needed to clear the trees from some land is inversely proportional to the number of people who are working. If it would take 4 people 15 hours to do the job, then how many people would be needed to complete the job in 6 hours?",
+      "options": [
+        "22 people",
+        "8 people",
+        "10 people",
+        "15 people"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Word Problems on Inverse Proportion"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": "PSA"
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-direct-and-inverse-proportions-28",
+      "sourceRow": 29,
+      "question": "Maths_8_Direct_and_Inverse_Proportions_q28.jpg",
+      "options": [
+        "2",
+        "4",
+        "5",
+        "6"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Word Problems on Direct Proportion"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": "HOTS"
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-direct-and-inverse-proportions-29",
+      "sourceRow": 30,
+      "question": "On a scale of map 0.7 cm represents 8.4 km. If the distance between two points on the map is 4.65 cm, then what is the actual distance between the points?",
+      "options": [
+        "56 km",
+        "55.80 km",
+        "62.80 km",
+        "72 km"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Word Problems on Direct Proportion"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-direct-and-inverse-proportions-30",
+      "sourceRow": 31,
+      "question": "Maths_8_Direct_and_Inverse_Proportions_q30.jpg",
+      "options": [
+        "Maths_8_Direct_and_Inverse_Proportions_q30_o1.jpg",
+        "Maths_8_Direct_and_Inverse_Proportions_q30_o2.jpg",
+        "Maths_8_Direct_and_Inverse_Proportions_q30_o3.jpg",
+        "Maths_8_Direct_and_Inverse_Proportions_q30_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Word Problems on Inverse Proportion"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": "PSA"
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-direct-and-inverse-proportions-31",
+      "sourceRow": 32,
+      "question": "If 20 men working together can finish a job in 20 days, then how many days will be taken by 25 men if the same capacity to finish the job?",
+      "options": [
+        "25",
+        "20",
+        "16",
+        "12"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Word Problems on Inverse Proportion"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-direct-and-inverse-proportions-32",
+      "sourceRow": 33,
+      "question": "600 labours build a tower in 180 days. All started working but after 40 days, 100 labors left the work, then how many days will the remaining labor take to complete the work?",
+      "options": [
+        "150 days",
+        "142 days",
+        "168 days",
+        "200 days"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Word Problems on Inverse Proportion"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": "HOTS"
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-direct-and-inverse-proportions-33",
+      "sourceRow": 34,
+      "question": "A pulley revolves at a speed that is inversely proportional to its diameter. A pulley with a diameter of 12 cm is belted to a pulley with a diameter of 8 cm. If the smaller pulley is revolving at a rate of 96 revolutions per minute, then how fast is the larger pulley revolving?",
+      "options": [
+        "144 rpm",
+        "64 rpm",
+        "40 rpm",
+        "48 rpm"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Word Problems on Inverse Proportion"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": "PSA"
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-direct-and-inverse-proportions-34",
+      "sourceRow": 35,
+      "question": "14 pumps of equal capacity can fill a tank in 6 days. If the tank has to be filled in 4 days, then how many extra pumps are needed?",
+      "options": [
+        "7",
+        "14",
+        "21",
+        "28"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Word Problems on Inverse Proportion"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-direct-and-inverse-proportions-35",
+      "sourceRow": 36,
+      "question": "A man travels a certain distance by train in 4 hours and 12 minutes at a rate of 44.8 km per hour. How much time will it take to cover the same distance if the seed if the train is increased to 57.6 km per hour?",
+      "options": [
+        "3 hours 12 minutes",
+        "3 hours 24 minutes",
+        "3 hours 16 minutes",
+        "3 hours 20 minutes"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Word Problems on Inverse Proportion"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": "HOTS"
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-direct-and-inverse-proportions-36",
+      "sourceRow": 37,
+      "question": "Maths_8_Direct_and_Inverse_Proportions_q36.jpg",
+      "options": [
+        "1.52 km",
+        "13.07 km",
+        "128.33 km",
+        "212.14 km"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Word Problems on Inverse Proportion"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": "HOTS"
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-direct-and-inverse-proportions-37",
+      "sourceRow": 38,
+      "question": "A builder completes a work in 3 months using his 200 labors. If he wants to complete the project with just 125 workers, then in how much time the project will get completed?",
+      "options": [
+        "1.8 months",
+        "3 months",
+        "4.8 months",
+        "7.8 months"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Word Problems on Inverse Proportion"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": "HOTS"
+    }
+  ]
+}

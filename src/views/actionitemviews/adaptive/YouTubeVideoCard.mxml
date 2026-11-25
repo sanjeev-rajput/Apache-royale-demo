@@ -1,0 +1,139 @@
+<j:VGroup xmlns:fx="http://ns.adobe.com/mxml/2009"
+          xmlns:j="library://ns.apache.org/royale/jewel"
+          xmlns:html="library://ns.apache.org/royale/html"
+          width="100%"
+          className="youtube-video-card"
+          click="playVideo()"
+          initComplete="initializeCard()">
+
+    <fx:Script>
+        <![CDATA[
+            import com.util.StringUtil;
+            import views.ContentLoaderIframe;
+
+            private var _video:Object;
+
+            public function set video(value:Object):void
+            {
+                _video = value;
+
+                if (videoDetails != null)
+                    renderCard();
+            }
+
+            public function get video():Object
+            {
+                return _video;
+            }
+
+            // The video property may be assigned before the child Span is ready.
+            // Render again once this component has completed initialization.
+            private function initializeCard():void
+            {
+                if (_video != null)
+                    renderCard();
+            }
+
+            private function renderCard():void
+            {
+                if (videoDetails == null || _video == null)
+                    return;
+
+                var title:String = _video.title != null
+                    ? String(_video.title)
+                    : "Recommended learning video";
+
+                var channel:String = _video.channelTitle != null
+                    ? String(_video.channelTitle)
+                    : "YouTube";
+
+                var description:String = _video.description != null
+                    ? String(_video.description)
+                    : "";
+
+                var thumbnail:String = _video.thumbnailUrl != null
+                    ? String(_video.thumbnailUrl)
+                    : "";
+
+                var safeTitle:String = StringUtil.escapeHTML(title);
+                var safeChannel:String = StringUtil.escapeHTML(channel);
+                var safeDescription:String = StringUtil.escapeHTML(description);
+                var safeThumbnail:String = StringUtil.escapeHTML(thumbnail);
+
+                if (safeDescription.length > 180)
+                    safeDescription = safeDescription.substr(0, 177) + "...";
+
+                var html:String =
+                    "<div style='display:flex;align-items:center;gap:14px;" +
+                    "width:100%;box-sizing:border-box;padding:10px;" +
+                    "background:#FFF7ED;border:1px solid #F59E0B;" +
+                    "border-left:5px solid #F59E0B;border-radius:8px;" +
+                    "cursor:pointer;'>";
+
+                if (safeThumbnail != "")
+                {
+                    html +=
+                        "<img src='" + safeThumbnail +
+                        "' alt='" + safeTitle +
+                        "' style='display:block;width:42%;max-width:220px;" +
+                        "height:auto;aspect-ratio:16/9;object-fit:cover;" +
+                        "border-radius:6px;flex-shrink:0;' />";
+                }
+
+                html +=
+                    "<div style='min-width:0;flex:1;color:#292524;'>" +
+                    "<div style='font-weight:700;font-size:1em;" +
+                    "line-height:1.35;margin-bottom:5px;'>" +
+                    safeTitle + "</div>" +
+                    "<div style='font-size:0.85em;color:#9A3412;" +
+                    "font-weight:600;margin-bottom:6px;'>" +
+                    safeChannel + "</div>";
+
+                if (safeDescription != "")
+                {
+                    html +=
+                        "<div style='font-size:0.85em;color:#57534E;" +
+                        "line-height:1.4;'>" +
+                        safeDescription + "</div>";
+                }
+
+                html +=
+                    "<div style='font-size:0.78em;color:#C2410C;" +
+                    "font-weight:700;margin-top:8px;'>▶ VIDEO LESSON · CLICK TO PLAY</div>" +
+                    "</div></div>";
+
+                videoDetails.innerHTML = html;
+            }
+
+            private function playVideo():void
+            {
+                if (_video == null || _video.embedUrl == null)
+                    return;
+
+                var embedUrl:String = String(_video.embedUrl);
+
+                // Only allow the privacy-enhanced YouTube embed URL.
+                if (embedUrl.indexOf(
+                    "https://www.youtube-nocookie.com/embed/"
+                ) != 0)
+                {
+                    trace("[YouTube Card] Rejected unexpected embed URL.");
+                    return;
+                }
+
+                if (ContentLoaderIframe.instance != null)
+                {
+                    ContentLoaderIframe.instance.loadExternalPage(embedUrl);
+                }
+                else
+                {
+                    trace("[YouTube Card] ContentLoaderIframe instance is not available.");
+                }
+            }
+        ]]>
+    </fx:Script>
+
+    <html:Span id="videoDetails"
+               width="100%"
+               class="youtube-video-details"/>
+</j:VGroup>

@@ -5,7 +5,7 @@
         "targets": ["JSRoyale"],
         "source-map": false,
         "js-library-path": [
-            "target",
+            "libs/target",
             "libs"
         ],
         //"theme": "",
@@ -14,9 +14,9 @@
             "src"
 
         ],
-        "js-external-library-path": ["typedefs"],
+        "js-external-library-path": ["libs/typedefs"],
         "remove-circulars": true,
-        "html-template": "index-template.html",
+        "html-template": "libs/html-template/index-template.html",
         "js-compiler-option": [
             "--skip_type_inference"
         ]

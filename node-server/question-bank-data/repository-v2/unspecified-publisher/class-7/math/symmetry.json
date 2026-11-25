@@ -1,0 +1,694 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-24T11:45:03.002Z",
+  "classification": {
+    "class": "Class 7",
+    "subject": "Math",
+    "topic": "Symmetry"
+  },
+  "publisher": "unspecified-publisher",
+  "source": {
+    "file": "Class7/Final/Math_Class 7_Assess_QB_14_Symmetry/Math_Class 7_Assess_QB_14_Symmetry.xlsx",
+    "sheet": "filename"
+  },
+  "questionType": "MCQ",
+  "questionCount": 26,
+  "questions": [
+    {
+      "id": "unspecified-publisher-class-7-math-symmetry-15",
+      "sourceRow": 16,
+      "question": "Which of the following letters have more than one line of symmetries?",
+      "options": [
+        "H",
+        "A",
+        "T",
+        "E"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Line of Symmetry for Regular Polygons"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-symmetry-16",
+      "sourceRow": 17,
+      "question": "Which of the following doesn’t have a line of symmetry?",
+      "options": [
+        "3",
+        "69",
+        "70",
+        "44"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Line of Symmetry for Regular Polygons"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-symmetry-17",
+      "sourceRow": 18,
+      "question": "Which of the following road signs has a line of symmetry?",
+      "options": [
+        "Maths_7_Symmetry_q17_o1.jpg",
+        "Maths_7_Symmetry_q17_o2.jpg",
+        "Maths_7_Symmetry_q17_o3.jpg",
+        "Maths_7_Symmetry_q17_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Line of Symmetry for Regular Polygons"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-symmetry-18",
+      "sourceRow": 19,
+      "question": "What is the order of rotational symmetry of rectangle?",
+      "options": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Rotational Symmetry"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-symmetry-19",
+      "sourceRow": 20,
+      "question": "What is the order of rational symmetry of an equilateral triangle?",
+      "options": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Rotational Symmetry"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-symmetry-20",
+      "sourceRow": 21,
+      "question": "Which of the following figures have both lines of symmetry and rotational symmetry of order more than one?",
+      "options": [
+        "A",
+        "C",
+        "W",
+        "H"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Rotational Symmetry"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-symmetry-21",
+      "sourceRow": 22,
+      "question": "Which of the following shapes does not have a rotational symmetry?",
+      "options": [
+        "Maths_7_Symmetry_q21_o1.jpg",
+        "Maths_7_Symmetry_q21_o2.jpg",
+        "Maths_7_Symmetry_q21_o3.jpg",
+        "Maths_7_Symmetry_q21_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Rotational Symmetry"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-symmetry-22",
+      "sourceRow": 23,
+      "question": "Maths_7_Symmetry_q22.jpg",
+      "options": [
+        "5",
+        "4",
+        "3",
+        "2"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Rotational Symmetry"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-symmetry-23",
+      "sourceRow": 24,
+      "question": "Which of the following letters does not have a line of symmetry but has a rotational symmetry?",
+      "options": [
+        "H",
+        "X",
+        "Z",
+        "I"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Rotational Symmetry"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-symmetry-24",
+      "sourceRow": 25,
+      "question": "Maths_7_Symmetry_q24.jpg",
+      "options": [
+        "30o",
+        "60o",
+        "180o",
+        "360o"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Rotational Symmetry"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": "HOTS"
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-symmetry-25",
+      "sourceRow": 26,
+      "question": "Mohit cut a wooden plank in a shape that has rotational symmetry, but has no line of symmetry. Which of these could be the shapes of the wooden plank?",
+      "options": [
+        "Maths_7_Symmetry_q25_o1.jpg",
+        "Maths_7_Symmetry_q25_o2.jpg",
+        "Maths_7_Symmetry_q25_o3.jpg",
+        "Maths_7_Symmetry_q25_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Rotational Symmetry"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": "HOTS"
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-symmetry-26",
+      "sourceRow": 27,
+      "question": "Which of the following figures has a rotational symmetry of order 3?",
+      "options": [
+        "Maths_7_Symmetry_q26_o1.jpg",
+        "Maths_7_Symmetry_q26_o2.jpg",
+        "Maths_7_Symmetry_q26_o3.jpg",
+        "Maths_7_Symmetry_q26_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Rotational Symmetry"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": "HOTS"
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-symmetry-27",
+      "sourceRow": 28,
+      "question": "Maths_7_Symmetry_q27.jpg",
+      "options": [
+        "2",
+        "4",
+        "6",
+        "8"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Rotational Symmetry"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": "HOTS"
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-symmetry-28",
+      "sourceRow": 29,
+      "question": "Maths_7_Symmetry_q28.jpg",
+      "options": [
+        "Maths_7_Symmetry_q28_o1.jpg",
+        "Maths_7_Symmetry_q28_o2.jpg",
+        "Maths_7_Symmetry_q28_o3.jpg",
+        "Maths_7_Symmetry_q28_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Rotational Symmetry"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-symmetry-29",
+      "sourceRow": 30,
+      "question": "Maths_7_Symmetry_q29.jpg",
+      "options": [
+        "180º rotation",
+        "270º rotation",
+        "90º rotation",
+        "360º rotation"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Rotational Symmetry"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-symmetry-30",
+      "sourceRow": 31,
+      "question": "Which of the following does not have reflectional symmetry?",
+      "options": [
+        "A",
+        "V",
+        "T",
+        "R"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Line of Symmetry for Regular Polygons"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-symmetry-31",
+      "sourceRow": 32,
+      "question": "A square has",
+      "options": [
+        "one line of symmetry",
+        "two lines of symmetry",
+        "three lines of symmetry",
+        "four lines of symmetry"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Line of Symmetry for Regular Polygons"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-symmetry-32",
+      "sourceRow": 33,
+      "question": "A semi-circle has",
+      "options": [
+        "rotational symmetry",
+        "reflection symmetry",
+        "line symmetry",
+        "all options are correct"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Rotational Symmetry"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-symmetry-35",
+      "sourceRow": 36,
+      "question": "Maths_7_Symmetry_q35.jpg",
+      "options": [
+        "Turns 1",
+        "Turns 2",
+        "Turns 3",
+        "Turns 4"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Rotational Symmetry"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-symmetry-36",
+      "sourceRow": 37,
+      "question": "The number of letters in the word SNAIL that have line of symmetry is?",
+      "options": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Line of Symmetry for Regular Polygons"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-symmetry-37",
+      "sourceRow": 38,
+      "question": "Which of the following does not have a line symmetry?",
+      "options": [
+        "Maths_7_Symmetry_q37_o1.jpg",
+        "Maths_7_Symmetry_q37_o2.jpg",
+        "Maths_7_Symmetry_q37_o3.jpg",
+        "Maths_7_Symmetry_q37_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Line of Symmetry for Regular Polygons"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-symmetry-38",
+      "sourceRow": 39,
+      "question": "A triangle having one line of symmetry but showing no rotational symmetry is:",
+      "options": [
+        "Isosceles triangle",
+        "Scalene triangle",
+        "Equilateral triangle",
+        "Right-angled triangle"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Rotational Symmetry"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-symmetry-39",
+      "sourceRow": 40,
+      "question": "After rotation by 60o about the centre, a figure looks exactly the same as its original position. At which of the following angles will this not happen again for the figure?",
+      "options": [
+        "180o",
+        "240o",
+        "90o",
+        "300o"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Rotational Symmetry"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-symmetry-40",
+      "sourceRow": 41,
+      "question": "Maths_7_Symmetry_q40.jpg",
+      "options": [
+        "4",
+        "6",
+        "5",
+        "3"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Rotational Symmetry"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-symmetry-41",
+      "sourceRow": 42,
+      "question": "Which of the following letters has both line symmetry and rotational symmetry?",
+      "options": [
+        "A",
+        "U",
+        "H",
+        "W"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Line of Symmetry for Regular Polygons"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-symmetry-42",
+      "sourceRow": 43,
+      "question": "A quadrilateral having rotational symmetry, but no line symmetry is:",
+      "options": [
+        "Square",
+        "Rectangle",
+        "Parallelogram",
+        "Rhombus"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Rotational Symmetry"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    }
+  ]
+}

@@ -1,0 +1,980 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-24T11:45:02.568Z",
+  "classification": {
+    "class": "Class 7",
+    "subject": "Math",
+    "topic": "Integers"
+  },
+  "publisher": "unspecified-publisher",
+  "source": {
+    "file": "Class7/Final/Math_Class 7_Assess_QB_01_Integers/Math_Class 7_Assess_QB_01_Integers.xlsx",
+    "sheet": "filename"
+  },
+  "questionType": "MCQ",
+  "questionCount": 37,
+  "questions": [
+    {
+      "id": "unspecified-publisher-class-7-math-integers-12",
+      "sourceRow": 13,
+      "question": "What is the value of (–1)12 × (–1)15 × (–1)47?",
+      "options": [
+        "+1",
+        "–1",
+        "–1 and +1",
+        "2"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Multiplication of Integers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-integers-13",
+      "sourceRow": 14,
+      "question": "For integers p, q and r, which of the following statements is incorrect?",
+      "options": [
+        "The example of closure property over multiplication is (p × q) is an integer.",
+        "The example of commutative property of multiplication is p × q = q × p",
+        "The example of associative property of multiplication is (p × q) × r = p × (q × r)",
+        "The example of distributive property of multiplication over addition is: p × (q + r) = p × r + q × r"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Properties of Multiplication of Integers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-integers-14",
+      "sourceRow": 15,
+      "question": "Which of the following expressions is equal to the expression (–91) × (–41)?",
+      "options": [
+        "4100 – 369",
+        "9100 – 819",
+        "4100 + 369",
+        "9100 + 819"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Properties of Multiplication of Integers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-integers-15",
+      "sourceRow": 16,
+      "question": "What is the value of the expression (–75) ÷ [(–5) × (–5)]?",
+      "options": [
+        "–125",
+        "125",
+        "3",
+        "–3"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Division of Integers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-integers-16",
+      "sourceRow": 17,
+      "question": "What is the value of the expression (–36) ÷ [(–6) ÷ (–2)]?",
+      "options": [
+        "–3",
+        "–6",
+        "–9",
+        "–12"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Division of Integers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-integers-17",
+      "sourceRow": 18,
+      "question": "Which of the following pair of number lines correctly shows the work out of dividing –6 by 3?",
+      "options": [
+        "Maths_7_Integers_q17_o1.jpg",
+        "Maths_7_Integers_q17_o2.jpg",
+        "Maths_7_Integers_q17_o3.jpg",
+        "Maths_7_Integers_q17_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Properties of Addition and Subtraction of Integers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-integers-18",
+      "sourceRow": 19,
+      "question": "A class teacher writes the steps to solve the expression (24 × 102).<br>24 × 102 = 24 × (100 + 2)<br>= 24 × 100 + 24 × 2<br>= 2400 + 48<br>= 2448<br>Which of the following property of integer is used in the highlighted expression?",
+      "options": [
+        "Associative property over addition",
+        "Distributive property of multiplication over addition",
+        "Associative property over multiplication",
+        "Commutative property over multiplication"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Properties of Multiplication of Integers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-integers-19",
+      "sourceRow": 20,
+      "question": "Which of the following expression is equivalent to the expression 19 × (–38) + 18 × (–19)?",
+      "options": [
+        "19 × (–56)",
+        "19 × (–57)",
+        "37 × (–56)",
+        "37 × (–57)"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Properties of Multiplication of Integers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-integers-20",
+      "sourceRow": 21,
+      "question": "Which of the following relation is correct?",
+      "options": [
+        "85 ÷ (–5) = 17",
+        "(–25) ÷ (–5) = –5",
+        "(–95) ÷ 5 = –19",
+        "(–28) ÷ (–7) = –4"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Division of Integers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-integers-21",
+      "sourceRow": 22,
+      "question": "Which of the following expressions are equal to –20?",
+      "options": [
+        "(–4) × (–5)",
+        "–32 + 10 – (–2)",
+        "–6 × 2 – [2 × (–4)]",
+        "5 × (–2) + 3 × (–4)"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Multiplication of Integers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-integers-22",
+      "sourceRow": 23,
+      "question": "Which expression has a value less than (–6) × 2?",
+      "options": [
+        "18 + (–6)",
+        "(–5) × 3",
+        "(–4) × (–2) × (–1)",
+        "2 + (–6)"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Multiplication of Integers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-integers-23",
+      "sourceRow": 24,
+      "question": "Which of the following represents the ascending order of the integers –6, –11, 12, –32, 14, and 0?",
+      "options": [
+        "–32, –11, –6, 0, 12, 14",
+        "–6, –11, –32, 0, 12, 14",
+        "–32, –11, –6, 0, 14, 12",
+        "–6 –32, –11, 0, 14, 12"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Revision"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-integers-24",
+      "sourceRow": 25,
+      "question": "Which of the following options on simplification is not negative?",
+      "options": [
+        "–8 + (–4) + 5",
+        "–6 – 2 + (–9)",
+        "–10 – (–2) + 4",
+        "7 + (–11) – (–6)"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Properties of Addition and Subtraction of Integers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-integers-25",
+      "sourceRow": 26,
+      "question": "In a math quiz, positive marks were given for correct answers and negative marks are given for incorrect answers. If Akriti’s scores in five successive rounds were 30, –10, –12, –15, and 20, what is her total score at the end of the quiz?",
+      "options": [
+        "–37",
+        "27",
+        "–13",
+        "13"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Properties of Addition and Subtraction of Integers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-integers-26",
+      "sourceRow": 27,
+      "question": "What is the result of ||–22| + (–28) – (–12) + 30|?",
+      "options": [
+        "–36",
+        "–8",
+        "36",
+        "14"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Revision"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-integers-27",
+      "sourceRow": 28,
+      "question": "At a food store, there is a cold room for storing meat. On a certain day, the temperature outside was 30˚ C. The temperature in the cold room was 43˚ C less than the temperature outside. What was the temperature of the cold room?",
+      "options": [
+        "–73˚ C",
+        "–13˚ C",
+        "–3˚ C",
+        "–63˚ C"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Revision"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-integers-28",
+      "sourceRow": 29,
+      "question": "If 7 integers are multiplied and the product is negative, which of the following statement could not be true about integers?",
+      "options": [
+        "6 are positive integers and 1 are negative integers",
+        "2 are positive integers and 5 are negative integers",
+        "4 are positive integers and 3 are negative integers",
+        "5 are positive integers and 2 is negative integer"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Multiplication of Integers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-integers-29",
+      "sourceRow": 30,
+      "question": "Which has the greatest quotient?",
+      "options": [
+        "–25 ÷ –5",
+        "–20 ÷ 4",
+        "–16 ÷ –8",
+        "–30 ÷ –10"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Division of Integers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-integers-30",
+      "sourceRow": 31,
+      "question": "In a quiz, team A scored –40, 10, 0 and team B scored –10, 0, 50 in three successive rounds. Which team scored more?",
+      "options": [
+        "A",
+        "B",
+        "A or B",
+        "A and B"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Properties of Addition and Subtraction of Integers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-integers-31",
+      "sourceRow": 32,
+      "question": "Sushma multiplied two numbers and got –12 as the product. She then subtracted the second number from the first and got the answer as 7. What are two numbers?",
+      "options": [
+        "2, –6",
+        "3, –4",
+        "–3, 4",
+        "6, –2"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Properties of Multiplication of Integers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-integers-32",
+      "sourceRow": 33,
+      "question": "Which of the following correctly describes the set {..., –5, –4, –3, –2, –1, 0}?",
+      "options": [
+        "The set of negative whole numbers",
+        "The set of negative integers",
+        "The set of non–positive integers",
+        "The set of non–negative integers"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Revision"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-integers-33",
+      "sourceRow": 34,
+      "question": "The product of four integers is 1680. If two of them are –5 and 8, then the other two are:",
+      "options": [
+        "7 and 6",
+        "–7 and 6",
+        "–7 and –6",
+        "3 and 14"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Multiplication of Integers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-integers-34",
+      "sourceRow": 35,
+      "question": "Which of the following has the greatest quotient?",
+      "options": [
+        "–25 ÷ –5",
+        "–35 ÷ 5",
+        "–25 ÷ 5",
+        "30 ÷ –5"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Division of Integers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-integers-35",
+      "sourceRow": 36,
+      "question": "Successor of –250 is",
+      "options": [
+        "–251",
+        "251",
+        "–249",
+        "249"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Revision"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-integers-36",
+      "sourceRow": 37,
+      "question": "The integer which is its own additive inverse is:",
+      "options": [
+        "1",
+        "integer itself",
+        "–1",
+        "0"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Revision"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-integers-37",
+      "sourceRow": 38,
+      "question": "Which of the following statement is incorrect?",
+      "options": [
+        "The product of 4 negative integers and a positive integer is negative.",
+        "The product of 6 negative integers and 10 positive integers is positive.",
+        "The product of 2 negative integers and 5 positive integers is positive.",
+        "The product of 7 negative integers and 3 positive integers is negative."
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Properties of Multiplication of Integers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-integers-38",
+      "sourceRow": 39,
+      "question": "At 9:00 am the temperature was –15˚C. Now, an hour later, the temperature has risen by 7ºC. What is the temperature now?",
+      "options": [
+        "–22˚C",
+        "–8˚C",
+        "22˚C",
+        "8˚C"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Properties of Addition and Subtraction of Integers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-integers-39",
+      "sourceRow": 40,
+      "question": "Simplify, which of the following is not negative?",
+      "options": [
+        "–8 – (–4) + 5",
+        "7 + (–11) – 5",
+        "–4 – 2 + (–8)",
+        "–10 – (–2) + 4"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Properties of Addition and Subtraction of Integers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-integers-40",
+      "sourceRow": 41,
+      "question": "At a milk factory, there is a cold room for storing milk products. On a certain day, the temperature outside was 25˚C. The temperature in the cold room was 37˚C less than the temperature outside. The temperature of the cold room was:",
+      "options": [
+        "–62˚C",
+        "–12˚C",
+        "–2˚C",
+        "–52˚C"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Properties of Addition and Subtraction of Integers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-integers-41",
+      "sourceRow": 42,
+      "question": "If 5 integers are multiplied and the product is negative, which of the following statements could not be true about integers?",
+      "options": [
+        "3 are negative, 2 are positive",
+        "2 are negative, 3 are positive",
+        "4 are positive, 1 is negative",
+        "5 are negative"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Multiplication of Integers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-integers-42",
+      "sourceRow": 43,
+      "question": "Which expression has a value less than (–5) × 2",
+      "options": [
+        "18 + (–12)",
+        "(–3) × 4 × (–1)",
+        "4 × (–6)",
+        "2 – (–7)"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Properties of Multiplication of Integers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-integers-43",
+      "sourceRow": 44,
+      "question": "A certain freezing process requires that room temperature be lowered from 40˚C at the rate of 5˚C every hour. What will be the room temperature 10 hours after the process begins?",
+      "options": [
+        "–10˚C",
+        "10˚C",
+        "20˚C",
+        "–5˚C"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Multiplication of Integers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-integers-44",
+      "sourceRow": 45,
+      "question": "Which of these expressions checks the solution to the division problem (–10) / (–5) = 2?",
+      "options": [
+        "2 × (–10)",
+        "2 × 2",
+        "2 × (–5)",
+        "(–10) × (–5)"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Division of Integers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-integers-45",
+      "sourceRow": 46,
+      "question": "Evaluate [(–48) / 16] / 3",
+      "options": [
+        "1",
+        "–9",
+        "9",
+        "–1"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Division of Integers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-integers-46",
+      "sourceRow": 47,
+      "question": "Which has the greatest quotient?",
+      "options": [
+        "–20 / –5",
+        "–20 / 5",
+        "20 / –4",
+        "20 / 4"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Division of Integers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-integers-47",
+      "sourceRow": 48,
+      "question": "The temperature at noon at a certain place was 12 degrees above zero. If it decreases at the rate of 2 degrees per hour until midnight, at what time would it be 10 degrees below zero?",
+      "options": [
+        "2 p. m.",
+        "11 p. m.",
+        "12 midnight",
+        "10 p.m."
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Division of Integers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-integers-48",
+      "sourceRow": 49,
+      "question": "[(–30) / (–5)] / (–2) _______ (–16) / 4",
+      "options": [
+        "<",
+        ">",
+        "=",
+        "None of these"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Division of Integers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    }
+  ]
+}

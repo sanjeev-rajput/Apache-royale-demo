@@ -1,0 +1,460 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-24T11:45:03.445Z",
+  "classification": {
+    "class": "Class 8",
+    "subject": "Math",
+    "topic": "Introduction to Graphs"
+  },
+  "publisher": "unspecified-publisher",
+  "source": {
+    "file": "Class8/Final/Math_Class8_Assess_QB_15_Introduction_to_Graphs/Math_Class 8_Assess_QB_15_Introduction_to_Graphs.xlsx",
+    "sheet": "filename"
+  },
+  "questionType": "MCQ",
+  "questionCount": 17,
+  "questions": [
+    {
+      "id": "unspecified-publisher-class-8-math-introduction-to-graphs-4",
+      "sourceRow": 5,
+      "question": "Which of the following tables construct the graph of the function y = 2x – 3?",
+      "options": [
+        "Maths_8_Introduction_to_Graphs_q4_o1.jpg",
+        "Maths_8_Introduction_to_Graphs_q4_o2.jpg",
+        "Maths_8_Introduction_to_Graphs_q4_o3.jpg",
+        "Maths_8_Introduction_to_Graphs_q4_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Histograms and Line Graphs"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-introduction-to-graphs-5",
+      "sourceRow": 6,
+      "question": "Which of the following graphs represents the correct location of the point A (0, –4)?",
+      "options": [
+        "Maths_8_Introduction_to_Graphs_q5_o1.jpg",
+        "Maths_8_Introduction_to_Graphs_q5_o2.jpg",
+        "Maths_8_Introduction_to_Graphs_q5_o3.jpg",
+        "Maths_8_Introduction_to_Graphs_q5_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Linear Graphs"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-introduction-to-graphs-6",
+      "sourceRow": 7,
+      "question": "Maths_8_Introduction_to_Graphs_q6.jpg",
+      "options": [
+        "(–4, –5)",
+        "(4, –5)",
+        "(–4, 5)",
+        "(4, 5)"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Linear Graphs"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-introduction-to-graphs-7",
+      "sourceRow": 8,
+      "question": "In which quadrant does the point X(–11, –9) lies?",
+      "options": [
+        "First Quadrant",
+        "Second Quadrant",
+        "Third Quadrant",
+        "Fourth Quadrant"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Linear Graphs"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-introduction-to-graphs-12",
+      "sourceRow": 9,
+      "question": "Maths_8_Introduction_to_Graphs_q12.jpg",
+      "options": [
+        "The population was least during the period 1901-1920",
+        "The population more than tripled from 1901 to 2000",
+        "The population decreased and remained more or less same after 1960",
+        "The ratio of the population in 1901-1920 to the population in 1961-1980 was 1:2"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Histograms and Line Graphs"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-introduction-to-graphs-17",
+      "sourceRow": 10,
+      "question": "Maths_8_Introduction_to_Graphs_q17.jpg",
+      "options": [
+        "13.5 %",
+        "20 %",
+        "34.7 %",
+        "37.5 %"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Bar Graphs and Pie Graphs"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-introduction-to-graphs-18",
+      "sourceRow": 11,
+      "question": "Maths_8_Introduction_to_Graphs_q18.jpg",
+      "options": [
+        "300",
+        "700",
+        "750",
+        "900"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Bar Graphs and Pie Graphs"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-introduction-to-graphs-19",
+      "sourceRow": 12,
+      "question": "In which quadrant does the point lie if both number of the ordered pair are negative?",
+      "options": [
+        "First Quadrant",
+        "Second Quadrant",
+        "Third Quadrant",
+        "Fourth Quadrant"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Linear Graphs"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-introduction-to-graphs-20",
+      "sourceRow": 13,
+      "question": "Which of the following graph represents the description “The cycle is travelling at a constant speed and then stopped suddenly”?",
+      "options": [
+        "Maths_8_Introduction_to_Graphs_q20_o1.jpg",
+        "Maths_8_Introduction_to_Graphs_q20_o2.jpg",
+        "Maths_8_Introduction_to_Graphs_q20_o3.jpg",
+        "Maths_8_Introduction_to_Graphs_q20_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Application in Real Life"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-introduction-to-graphs-21",
+      "sourceRow": 14,
+      "question": "Maths_8_Introduction_to_Graphs_q21.jpg",
+      "options": [
+        "Maths_8_Introduction_to_Graphs_q21_o1.jpg",
+        "Maths_8_Introduction_to_Graphs_q21_o2.jpg",
+        "Maths_8_Introduction_to_Graphs_q21_o3.jpg",
+        "Maths_8_Introduction_to_Graphs_q21_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Histograms and Line Graphs"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-introduction-to-graphs-22",
+      "sourceRow": 15,
+      "question": "Without plotting the points (–3, 6), in which quadrant does it lie?",
+      "options": [
+        "First Quadrant",
+        "Second Quadrant",
+        "Third Quadrant",
+        "Fourth Quadrant"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Linear Graphs"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-introduction-to-graphs-23",
+      "sourceRow": 16,
+      "question": "Maths_8_Introduction_to_Graphs_q23.jpg",
+      "options": [
+        "Maths_8_Introduction_to_Graphs_q23_o1.jpg",
+        "Maths_8_Introduction_to_Graphs_q23_o2.jpg",
+        "Maths_8_Introduction_to_Graphs_q23_o3.jpg",
+        "Maths_8_Introduction_to_Graphs_q23_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Histograms and Line Graphs"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-introduction-to-graphs-24",
+      "sourceRow": 17,
+      "question": "Maths_8_Introduction_to_Graphs_q24.jpg",
+      "options": [
+        "Maths_8_Introduction_to_Graphs_q24_o1.jpg",
+        "Maths_8_Introduction_to_Graphs_q24_o2.jpg",
+        "Maths_8_Introduction_to_Graphs_q24_o3.jpg",
+        "Maths_8_Introduction_to_Graphs_q24_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Bar Graphs and Pie Graphs"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-introduction-to-graphs-25",
+      "sourceRow": 18,
+      "question": "Give the coordinates of the point in Quadrant III that is 4 units to the left and 2 units down from the origin.",
+      "options": [
+        "(4, 2)",
+        "(–4, 2)",
+        "(–4, –2)",
+        "(4, –2)"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Linear Graphs"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-introduction-to-graphs-26",
+      "sourceRow": 19,
+      "question": "Identify the quadrant in which each point has an x-coordinate that is positive and a y-coordinate that is negative.",
+      "options": [
+        "Quadrant I",
+        "Quadrant II",
+        "Quadrant III",
+        "Quadrant IV"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Linear Graphs"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-introduction-to-graphs-27",
+      "sourceRow": 20,
+      "question": "Which one of these points lies in Quadrant II of the coordinate plane above?",
+      "options": [
+        "(–5, 1)",
+        "(5, 1)",
+        "(5, –1)",
+        "(–5, –1)"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Linear Graphs"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-introduction-to-graphs-28",
+      "sourceRow": 21,
+      "question": "When a point lies on the x-axis, which of these must be true?",
+      "options": [
+        "The x-coordinate is 0",
+        "The y-coordinate is 0",
+        "The x-coordinate is greater than the y-coordinate",
+        "The y-coordinate is greater than the x-coordinate"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Linear Graphs"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    }
+  ]
+}

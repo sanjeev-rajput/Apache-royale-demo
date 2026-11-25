@@ -1,0 +1,1708 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-24T11:45:03.717Z",
+  "classification": {
+    "class": "Class 10",
+    "subject": "Math",
+    "topic": "Some Applications of Trigonometry"
+  },
+  "publisher": "unspecified-publisher",
+  "source": {
+    "file": "Class10/Final/Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry/Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry.xlsx",
+    "sheet": "filename"
+  },
+  "questionType": "MCQ",
+  "questionCount": 65,
+  "questions": [
+    {
+      "id": "unspecified-publisher-class-10-math-some-applications-of-trigonometry-1",
+      "sourceRow": 2,
+      "question": "The angles of elevation of the top of a rock from the top and foot of 100 m high tower are respectively 30° and 45°. The height of the rock is",
+      "options": [
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q1_o1.jpg",
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q1_o2.jpg",
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q1_o3.jpg",
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q1_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Heights and Distances"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-some-applications-of-trigonometry-2",
+      "sourceRow": 3,
+      "question": "The angles of elevation of the top of a tower from the points P and Q at distances of a and b respectively from the base and in the same straight line with it are complementary. The height of the tower is",
+      "options": [
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q2_o1.jpg",
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q2_o2.jpg",
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q2_o3.jpg",
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q2_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Heights and Distances"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-some-applications-of-trigonometry-3",
+      "sourceRow": 4,
+      "question": "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q3.jpg",
+      "options": [
+        "30°",
+        "45°",
+        "60°",
+        "90°"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Heights and Distances"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-some-applications-of-trigonometry-4",
+      "sourceRow": 5,
+      "question": "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q4.jpg",
+      "options": [
+        "82.5 m",
+        "78.05 m",
+        "80.5 m",
+        "75 m"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Heights and Distances"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-some-applications-of-trigonometry-5",
+      "sourceRow": 6,
+      "question": "An observer, 1.5 m tall, 28.5 m away from a 30 m high tower. The angle of elevation of the top of the tower from his eye is",
+      "options": [
+        "60°",
+        "120°",
+        "45°",
+        "30°"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Heights and Distances"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-some-applications-of-trigonometry-6",
+      "sourceRow": 7,
+      "question": "If the angle of elevation of a tower from a distance of 100 m from its foot is 60°, then the height of the tower is",
+      "options": [
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q6_o1.jpg",
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q6_o2.jpg",
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q6_o3.jpg",
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q6_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Heights and Distances"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-some-applications-of-trigonometry-7",
+      "sourceRow": 8,
+      "question": "If the altitude of the sun is at 60°, then the height of the vertical tower that will cast a shadow of length 30 m is",
+      "options": [
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q7_o1.jpg",
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q7_o2.jpg",
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q7_o3.jpg",
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q7_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Heights and Distances"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-some-applications-of-trigonometry-8",
+      "sourceRow": 9,
+      "question": "From a point 20 m away from the foot of a tower, the angle of elevation of the top of the tower is 30°. The height of the tower is",
+      "options": [
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q8_o1.jpg",
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q8_o2.jpg",
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q8_o3.jpg",
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q8_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Heights and Distances"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-some-applications-of-trigonometry-9",
+      "sourceRow": 10,
+      "question": "The shadow of a tower standing on a level ground is found to be 4 m longer when the sun’s altitude is 30° than when it was 60°. Then the height of the tower is",
+      "options": [
+        "38.97 m",
+        "39.98 m",
+        "40.95 m",
+        "45.98 m"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Heights and Distances"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-some-applications-of-trigonometry-10",
+      "sourceRow": 11,
+      "question": "A small island is in the middle of a 100 m wide river and a tall tree stands on the island. P and Q are points directly opposite to each other on the two banks. The angles of elevation of the top of the tree from P and Q are 30° and 45°. The height of the tree is",
+      "options": [
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q10_o1.jpg",
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q10_o2.jpg",
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q10_o3.jpg",
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q10_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Heights and Distances"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-some-applications-of-trigonometry-11",
+      "sourceRow": 12,
+      "question": "The angles of depression of the top and bottom of a 7 m tall building from the top of the tower are 45° and 60° respectively. The height of the tower is",
+      "options": [
+        "16.50 m",
+        "16.06 m",
+        "16.50 m",
+        "16.68 m"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Heights and Distances"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-some-applications-of-trigonometry-12",
+      "sourceRow": 13,
+      "question": "The angle of elevation of the top of a mountain at the foot of a tower is 60° and the angle of elevation of the top of the tower from the foot of the mountain is 30°. If the tower is 50 m high. the height of the mountain is",
+      "options": [
+        "100 m",
+        "150 m",
+        "160 m",
+        "170 m"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Heights and Distances"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-some-applications-of-trigonometry-13",
+      "sourceRow": 14,
+      "question": "From the top of a house 32 m high, if the angle of elevation of the top of a tower is 45° and the angle of depression of the foot of the tower is 30°, then the height of the tower is",
+      "options": [
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q13_o1.jpg",
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q13_o2.jpg",
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q13_o3.jpg",
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q13_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Heights and Distances"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-some-applications-of-trigonometry-14",
+      "sourceRow": 15,
+      "question": "The angle of elevation of the top of a tower at a distance of 500 m from the foot is 30°. The height of the tower is",
+      "options": [
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q14_o1.jpg",
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q14_o2.jpg",
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q14_o3.jpg",
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q14_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Heights and Distances"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-some-applications-of-trigonometry-15",
+      "sourceRow": 16,
+      "question": "The angles of elevation of the top of a tower from two points distant a and b (a > b) from its foot and in this same straight line from it are 30° and 60°. The height of the tower is",
+      "options": [
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q15_o1.jpg",
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q15_o2.jpg",
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q15_o3.jpg",
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q15_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Heights and Distances"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-some-applications-of-trigonometry-16",
+      "sourceRow": 17,
+      "question": "If the angles of depression and elevation of the top of a tower of height h from the top and bottom of a second tower are x and y respectively, then the height of the second tower is",
+      "options": [
+        "h (cot y + cot x)",
+        "h (tan x + tan y)",
+        "h (1 + tan x cot y)",
+        "h (tan y cot x + 1)"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Heights and Distances"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-some-applications-of-trigonometry-17",
+      "sourceRow": 18,
+      "question": "A man on the top of a bamboo pole observes that the angles of depression of the base and the top of another pole are 60° and 30° respectively. If the second pole stands 5m above the ground level, then the height of the bamboo, on which the man is sitting, is",
+      "options": [
+        "5 m",
+        "7.5 m",
+        "10 m",
+        "12.5 m"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Heights and Distances"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-some-applications-of-trigonometry-18",
+      "sourceRow": 19,
+      "question": "Upper part of a vertical tree which is broken over by the winds just touches the ground and makes an angle of 30° with the ground. If the length of the broken part is 20 m, then the remaining part of the tree is of length",
+      "options": [
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q18_o1.jpg",
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q18_o2.jpg",
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q18_o3.jpg",
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q18_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Heights and Distances"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-some-applications-of-trigonometry-19",
+      "sourceRow": 20,
+      "question": "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q19.jpg",
+      "options": [
+        "75 m",
+        "78.05 m",
+        "226 m",
+        "none of these"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Heights and Distances"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-some-applications-of-trigonometry-20",
+      "sourceRow": 21,
+      "question": "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q20.jpg",
+      "options": [
+        "30°",
+        "45°",
+        "60°",
+        "90°"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Heights and Distances"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-some-applications-of-trigonometry-21",
+      "sourceRow": 22,
+      "question": "The angle of elevation of the sun’s altitude where the length of a shadow of a vertical pole is equal to its height is",
+      "options": [
+        "30°",
+        "45°",
+        "60°",
+        "90°"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Heights and Distances"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-some-applications-of-trigonometry-22",
+      "sourceRow": 23,
+      "question": "The angle of elevation of an aeroplane from a point on the ground is 60°. After 15 seconds flight the angle of elevation changes to 30°. If the aeroplane is flying at a height of 3000 m, the speed of the aeroplane in km/hr is",
+      "options": [
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q22_o1.jpg",
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q22_o2.jpg",
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q22_o3.jpg",
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q22_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Heights and Distances"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-some-applications-of-trigonometry-23",
+      "sourceRow": 24,
+      "question": "If the angle of elevation of the sun changes from 30° to 60°, then the difference between the lengths of shadows of a pole 15 m high at these two elevations of the sun is",
+      "options": [
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q23_o1.jpg",
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q23_o2.jpg",
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q23_o3.jpg",
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q23_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Heights and Distances"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-some-applications-of-trigonometry-24",
+      "sourceRow": 25,
+      "question": "Two men are diametrically opposite side of a tower. They measure the angles of elevation of the top of the tower as 45° and 60° respectively. If the height of the tower is 200 m, the distance between the two men is",
+      "options": [
+        "310 m",
+        "320 m",
+        "315.6 m",
+        "325 m"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Heights and Distances"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-some-applications-of-trigonometry-25",
+      "sourceRow": 26,
+      "question": "Two men standing on opposite sides of a flagstaff measure the angles of the top of the flagstaff as 30° and 60°. If the height of the flagstaff is 20 m, distance between the men is",
+      "options": [
+        "30 m",
+        "40 m",
+        "46.19 m",
+        "50 m"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Heights and Distances"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-some-applications-of-trigonometry-26",
+      "sourceRow": 27,
+      "question": "The angle of elevation of the top of a tower as observed from a point on the horizontal ground is x. If we move a distance ‘d’ towards the foot of the tower and the angle of elevation increases to y, then the height of the tower is",
+      "options": [
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q26_o1.jpg",
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q26_o2.jpg",
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q26_o3.jpg",
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q26_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Heights and Distances"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-some-applications-of-trigonometry-27",
+      "sourceRow": 28,
+      "question": "Two persons are a metres apart and the height of one is double that of the other. If from the middle point of the line joining their feet, an observer finds the angular elevation of their tops to be complementary, then the height of the shorter pole is",
+      "options": [
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q27_o1.jpg",
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q27_o2.jpg",
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q27_o3.jpg",
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q27_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Heights and Distances"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-some-applications-of-trigonometry-28",
+      "sourceRow": 29,
+      "question": "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q28.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q28_o1.jpg",
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q28_o2.jpg",
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q28_o3.jpg",
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q28_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Heights and Distances"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-some-applications-of-trigonometry-29",
+      "sourceRow": 30,
+      "question": "A man observes the elevation of a balloon to be 30°. He then walks 1 km towards the balloon and finds that the elevation now is 60°. The height (in km) of the balloon is",
+      "options": [
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q29_o1.jpg",
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q29_o2.jpg",
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q29_o3.jpg",
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q29_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Heights and Distances"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-some-applications-of-trigonometry-30",
+      "sourceRow": 31,
+      "question": "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q30.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q30_o1.jpg",
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q30_o2.jpg",
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q30_o3.jpg",
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q30_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Heights and Distances"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-some-applications-of-trigonometry-31",
+      "sourceRow": 32,
+      "question": "When a student looks down at an object on the ground, the line drawn from his eye to the object is called",
+      "options": [
+        "Parallel line",
+        "Perpendicular line",
+        "Line of sight",
+        "None of these"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Heights and Distances"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-some-applications-of-trigonometry-32",
+      "sourceRow": 33,
+      "question": "When a student looks up at the top of a tree, the angle formed by the line of sight with the horizontal line through his eye is called",
+      "options": [
+        "Angle of depression",
+        "Angle of elevation",
+        "Right angle",
+        "Obtuse angle"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Heights and Distances"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-some-applications-of-trigonometry-33",
+      "sourceRow": 34,
+      "question": "The height of an object or distance between two objects can be measured with the help of",
+      "options": [
+        "Trigonometric ratios",
+        "Basic Proportionality Theorem",
+        "A Similarity criterion",
+        "None of these"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Heights and Distances"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-some-applications-of-trigonometry-34",
+      "sourceRow": 35,
+      "question": "When a person is standing on a mountain and looking at the road below, the angle formed by the line of sight with the horizontal line through his eye, is called",
+      "options": [
+        "Angle of elevation",
+        "Right angle",
+        "Angle of depression",
+        "None of these"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Heights and Distances"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-some-applications-of-trigonometry-35",
+      "sourceRow": 36,
+      "question": "When an electric pole and its shadow are of the same length, the angle of elevation is",
+      "options": [
+        "30⁰",
+        "45⁰",
+        "60⁰",
+        "All of these"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Heights and Distances"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-some-applications-of-trigonometry-36",
+      "sourceRow": 37,
+      "question": "A tree is struck by lightning and as it falls, its top makes an angle of 45⁰ with the ground. If the height of the point where the tree is broken is 12 m, the whole height of the tree is",
+      "options": [
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q36_o1.jpg",
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q36_o2.jpg",
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q36_o3.jpg",
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q36_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Heights and Distances"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-some-applications-of-trigonometry-37",
+      "sourceRow": 38,
+      "question": "Two poles of equal height are 100 m apart. A point P makes an angle of 30⁰ with the top of the first pole and 60⁰ with the top of the second pole. The distance of point P from the first pole is",
+      "options": [
+        "50 m",
+        "75 m",
+        "25 m",
+        "30 m"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Heights and Distances"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-some-applications-of-trigonometry-38",
+      "sourceRow": 39,
+      "question": "Two men on the same side of a building measure the angles of elevation of the top of the building as 30⁰ and 45⁰. If the men are 30 m apart, the height of the building is",
+      "options": [
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q38_o1.jpg",
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q38_o2.jpg",
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q38_o3.jpg",
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q38_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Heights and Distances"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-some-applications-of-trigonometry-39",
+      "sourceRow": 40,
+      "question": "A man who is 1.8 m tall finds the angle of elevation of the top of a pillar as 60⁰ and the angle of depression of the base of the pillar as 30⁰. The height of the pillar is",
+      "options": [
+        "5.4 m",
+        "7.2 m",
+        "6 m",
+        "1.8 m"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Heights and Distances"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-some-applications-of-trigonometry-40",
+      "sourceRow": 41,
+      "question": "From the top of a lighthouse, a man observes the angles of depression of two ships sailing towards the lighthouse from opposite directions as 30⁰ and 45⁰. If the ships are 1 km apart, the height of the lighthouse is",
+      "options": [
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q40_o1.jpg",
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q40_o2.jpg",
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q40_o3.jpg",
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q40_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Heights and Distances"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-some-applications-of-trigonometry-41",
+      "sourceRow": 42,
+      "question": "From the top of a tower 60 m high, the angles of depression of the top and bottom of a pole are 30⁰ and 60⁰ respectively. The height of the pole is",
+      "options": [
+        "20 m",
+        "30 m",
+        "40 m",
+        "50 m"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Heights and Distances"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-some-applications-of-trigonometry-55",
+      "sourceRow": 56,
+      "question": "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q55.jpg",
+      "options": [
+        "90°",
+        "60°",
+        "30°",
+        "45°"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Heights and Distances"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-some-applications-of-trigonometry-56",
+      "sourceRow": 57,
+      "question": "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q56.jpg",
+      "options": [
+        "90°",
+        "60°",
+        "45°",
+        "30°"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Heights and Distances"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-some-applications-of-trigonometry-57",
+      "sourceRow": 58,
+      "question": "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q57.jpg",
+      "options": [
+        "30°",
+        "60°",
+        "90°",
+        "45°"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Heights and Distances"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-some-applications-of-trigonometry-58",
+      "sourceRow": 59,
+      "question": "If the angle between two radii of a circle is 140°, then the angle between the tangents at the ends of the radii is:",
+      "options": [
+        "90°",
+        "40°",
+        "70°",
+        "60°"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Heights and Distances"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-some-applications-of-trigonometry-59",
+      "sourceRow": 60,
+      "question": "A pole 10 m high cast a shadow 10 m long on the ground, then the sun’s elevation is",
+      "options": [
+        "60°",
+        "45°",
+        "30°",
+        "90°"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Heights and Distances"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-some-applications-of-trigonometry-60",
+      "sourceRow": 61,
+      "question": "If the altitude of the sun is 60°, the height of a tower which casts a shadow of length 30 m is:",
+      "options": [
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q60_o1.jpg",
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q60_o2.jpg",
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q60_o3.jpg",
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q60_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Heights and Distances"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-some-applications-of-trigonometry-61",
+      "sourceRow": 62,
+      "question": "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q61.jpg",
+      "options": [
+        "60°",
+        "45°",
+        "30°",
+        "90°"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Heights and Distances"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-some-applications-of-trigonometry-62",
+      "sourceRow": 63,
+      "question": "The length of the string of a kite flying at 100 mts above the ground with the elevation of 60° is:",
+      "options": [
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q62_o1.jpg",
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q62_o2.jpg",
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q62_o3.jpg",
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q62_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Heights and Distances"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-some-applications-of-trigonometry-63",
+      "sourceRow": 64,
+      "question": "The length of the shadow of a 20 m tall pole, on the ground when the sun’s elevation is 45° is:",
+      "options": [
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q63_o1.jpg",
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q63_o2.jpg",
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q63_o3.jpg",
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q63_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Heights and Distances"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-some-applications-of-trigonometry-64",
+      "sourceRow": 65,
+      "question": "When the angle of elevation of sun is 30° the length of the shadow cast by 50 m high building is",
+      "options": [
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q64_o1.jpg",
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q64_o2.jpg",
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q64_o3.jpg",
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q64_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Heights and Distances"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-some-applications-of-trigonometry-65",
+      "sourceRow": 66,
+      "question": "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q65.jpg",
+      "options": [
+        "60°",
+        "30°",
+        "45°",
+        "cannot be determined"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Heights and Distances"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-some-applications-of-trigonometry-66",
+      "sourceRow": 67,
+      "question": "If the angle of depression of an object from a 75 m high tower is 30°, then the distance of the object from the base of tower is",
+      "options": [
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q66_o1.jpg",
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q66_o2.jpg",
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q66_o3.jpg",
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q66_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Heights and Distances"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-some-applications-of-trigonometry-67",
+      "sourceRow": 68,
+      "question": "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q67.jpg",
+      "options": [
+        "30°",
+        "45°",
+        "60°",
+        "90°"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Heights and Distances"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-some-applications-of-trigonometry-68",
+      "sourceRow": 69,
+      "question": "A tree casts a shadow 4 m long on the ground, when the angle of elevation of the sun is 45°. The height of the tree (in metres) is:",
+      "options": [
+        "3",
+        "4",
+        "4.5",
+        "5.2"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Heights and Distances"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-some-applications-of-trigonometry-69",
+      "sourceRow": 70,
+      "question": "The angle between two tangents drawn from an external point to a circle is 110°. The angle subtended at the centre by the segments joining the points of contact to the centre of circle is:",
+      "options": [
+        "70°",
+        "110°",
+        "90°",
+        "55°"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Heights and Distances"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-some-applications-of-trigonometry-70",
+      "sourceRow": 71,
+      "question": "The angle of depression from the top of a tower 12 m high, at a point on the ground is 30°. The distance of the point from the top of the tower is:",
+      "options": [
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q70_o1.jpg",
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q70_o2.jpg",
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q70_o3.jpg",
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q70_o3.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Heights and Distances"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-some-applications-of-trigonometry-71",
+      "sourceRow": 72,
+      "question": "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q71.jpg",
+      "options": [
+        "30°",
+        "60°",
+        "45°",
+        "90°"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Heights and Distances"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-some-applications-of-trigonometry-72",
+      "sourceRow": 73,
+      "question": "The angle of elevation of the top of a tower from a point on the ground is 45°. If the observer is 42 m away from the foot of the tower, the height of the tower is:",
+      "options": [
+        "63 m",
+        "21 m",
+        "84 m",
+        "42 m"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Heights and Distances"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-some-applications-of-trigonometry-73",
+      "sourceRow": 74,
+      "question": "If the height and length of the shadow of a man are the same, then the angle of elevation of the sun is",
+      "options": [
+        "30°",
+        "60°",
+        "45°",
+        "15°"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Heights and Distances"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-some-applications-of-trigonometry-74",
+      "sourceRow": 75,
+      "question": "If sun’s elevation is 60° then a pole of height 6 m will cast a shadow of length.",
+      "options": [
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q74_o1.jpg",
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q74_o2.jpg",
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q74_o3.jpg",
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q74_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Heights and Distances"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-some-applications-of-trigonometry-75",
+      "sourceRow": 76,
+      "question": "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q75.jpg",
+      "options": [
+        "45°",
+        "30°",
+        "60°",
+        "90°"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Heights and Distances"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-some-applications-of-trigonometry-76",
+      "sourceRow": 77,
+      "question": "The distance between the tops of two trees 20 m and 28 m high is 17 m. The horizontal distance between the two trees is",
+      "options": [
+        "9 m",
+        "11 m",
+        "15 m",
+        "31 m"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Heights and Distances"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-some-applications-of-trigonometry-77",
+      "sourceRow": 78,
+      "question": "A tower subtends an angle of 30° at a point on the same level as its foot. At a second point ‘h’ metres above the first, the depression of the foot of the tower is 60°. The height of the tower is,",
+      "options": [
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q77_o1.jpg",
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q77_o2.jpg",
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q77_o3.jpg",
+        "Math_Class_10_Assess_QB_09_Some_Applications_of_Trigonometry_Additional_q77_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Heights and Distances"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-some-applications-of-trigonometry-78",
+      "sourceRow": 79,
+      "question": "The tops of two poles of height 20 m and 14 m are connected by a wire. If the wire makes an angle of 30° with horizontal, then the length of the wire is,",
+      "options": [
+        "12 m",
+        "10 m",
+        "8 m",
+        "6 m"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Heights and Distances"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    }
+  ]
+}

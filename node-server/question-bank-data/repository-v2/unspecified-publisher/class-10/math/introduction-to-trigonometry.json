@@ -1,0 +1,2566 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-24T11:45:03.692Z",
+  "classification": {
+    "class": "Class 10",
+    "subject": "Math",
+    "topic": "Introduction to Trigonometry"
+  },
+  "publisher": "unspecified-publisher",
+  "source": {
+    "file": "Class10/Final/Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry/Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry.xlsx",
+    "sheet": "Maths_Grade_9_Ch-8"
+  },
+  "questionType": "MCQ",
+  "questionCount": 98,
+  "questions": [
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-1",
+      "sourceRow": 2,
+      "question": "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q1.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q1_o1.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q1_o2.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q1_o3.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q1_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Identities"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Analysing",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-2",
+      "sourceRow": 3,
+      "question": "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q2.jpg",
+      "options": [
+        "90",
+        "40",
+        "0",
+        "1"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Ratios of Complementary Angles"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-3",
+      "sourceRow": 4,
+      "question": "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q3.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q3_o1.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q3_o2.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q3_o3.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q3_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Ratios Value for Some Specific Angles"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-4",
+      "sourceRow": 5,
+      "question": "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q4.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q4_o1.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q4_o2.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q4_o3.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q4_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Ratios of Complementary Angles"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-5",
+      "sourceRow": 6,
+      "question": "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q5.jpg",
+      "options": [
+        "1",
+        "0",
+        "2",
+        "none of these"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Ratios of Complementary Angles"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-6",
+      "sourceRow": 7,
+      "question": "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q6.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q6_o1.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q6_o2.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q6_o3.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q6_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Identities"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-7",
+      "sourceRow": 8,
+      "question": "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q7.jpg",
+      "options": [
+        "0",
+        "2",
+        "1",
+        "none of these"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Ratios of Complementary Angles"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-8",
+      "sourceRow": 9,
+      "question": "The value of cosec2 67° – tan2 23°, is equal to",
+      "options": [
+        "0",
+        "1",
+        "–1",
+        "none of these"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Trigonometric Ratios of Complementary Angles"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-9",
+      "sourceRow": 10,
+      "question": "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q9.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q9_o1.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q9_o2.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q9_o3.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q9_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Identities"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-10",
+      "sourceRow": 11,
+      "question": "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q10.jpg",
+      "options": [
+        "0",
+        "2",
+        "3",
+        "1"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Ratios of Complementary Angles"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-11",
+      "sourceRow": 12,
+      "question": "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q11.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q11_o1.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q11_o2.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q11_o3.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q11_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Ratios Value for Some Specific Angles"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-12",
+      "sourceRow": 13,
+      "question": "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q12.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q12_o1.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q12_o2.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q12_o3.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q12_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Identities"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Analysing",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-13",
+      "sourceRow": 14,
+      "question": "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q13.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q13_o1.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q13_o2.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q13_o3.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q13_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Ratios Value for Some Specific Angles"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-14",
+      "sourceRow": 15,
+      "question": "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q14.jpg",
+      "options": [
+        "a3",
+        "b3",
+        "0",
+        "1"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Identities"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Analysing",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-15",
+      "sourceRow": 16,
+      "question": "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q15.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q15_o1.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q15_o2.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q15_o3.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q15_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Ratios of Complementary Angles"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-16",
+      "sourceRow": 17,
+      "question": "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q16.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q16_o1.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q16_o2.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q16_o3.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q16_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Identities"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Analysing",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-17",
+      "sourceRow": 18,
+      "question": "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q17.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q17_o1.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q17_o2.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q17_o3.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q17_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Identities"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-18",
+      "sourceRow": 19,
+      "question": "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q18.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q18_o1.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q18_o2.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q18_o3.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q18_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Identities"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Analysing",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-19",
+      "sourceRow": 20,
+      "question": "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q19.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q19_o1.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q19_o2.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q19_o3.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q19_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Identities"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-20",
+      "sourceRow": 21,
+      "question": "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q20.jpg",
+      "options": [
+        "cot A tan B",
+        "tan A cot B",
+        "1",
+        "1 – tan A cot B"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Ratios Value for Some Specific Angles"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-21",
+      "sourceRow": 22,
+      "question": "cos4 x – sin4 x is equal to",
+      "options": [
+        "2 sin2 x –1",
+        "1 – 2 cos2 x",
+        "sin2 x – cos2 x",
+        "none of these"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Identities"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-22",
+      "sourceRow": 23,
+      "question": "Which of the following is true if A is an acute angle?",
+      "options": [
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q22_o1.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q22_o2.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q22_o3.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q22_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Ratios Value for Some Specific Angles"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-23",
+      "sourceRow": 24,
+      "question": "tan 5° tan 25° tan 30° tan 65° tan 85° is equal to",
+      "options": [
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q23_o1.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q23_o2.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q23_o3.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q23_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Ratios of Complementary Angles"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-24",
+      "sourceRow": 25,
+      "question": "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q24.jpg",
+      "options": [
+        "30°, 90° and 60",
+        "45°, 90° and 45°",
+        "60°, 90° and 30°",
+        "none of these"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Ratios Value for Some Specific Angles"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-25",
+      "sourceRow": 26,
+      "question": "(cos 0° + sin 45° + sin 30°) (sin 90° – cos 45° + cos 60°) is equal to",
+      "options": [
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q25_o1.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q25_o2.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q25_o3.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q25_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Ratios Value for Some Specific Angles"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-26",
+      "sourceRow": 27,
+      "question": "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q26.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q26_o1.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q26_o2.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q26_o3.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q26_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Ratios Value for Some Specific Angles"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-27",
+      "sourceRow": 28,
+      "question": "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q27.jpg",
+      "options": [
+        "36°",
+        "24°",
+        "66°",
+        "none of these"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Ratios of Complementary Angles"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-28",
+      "sourceRow": 29,
+      "question": "A triangle ABC is right-angled at B, if sin (A – C) = 0 then value of 2A + C is",
+      "options": [
+        "90°",
+        "135°",
+        "145°",
+        "180°"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Trigonometric Ratios Value for Some Specific Angles"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-29",
+      "sourceRow": 30,
+      "question": "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q29.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q29_o1.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q29_o2.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q29_o3.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q29_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Ratios Value for Some Specific Angles"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Analysing",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-30",
+      "sourceRow": 31,
+      "question": "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q30.jpg",
+      "options": [
+        "3",
+        "2",
+        "1",
+        "0"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Ratios of Complementary Angles"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": "Exemplar"
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-31",
+      "sourceRow": 32,
+      "question": "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q31.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q31_o1.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q31_o2.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q31_o3.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q31_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Identities"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": "Exemplar"
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-32",
+      "sourceRow": 33,
+      "question": "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q32.jpg",
+      "options": [
+        "0°",
+        "30°",
+        "60°",
+        "90°"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Ratios Value for Some Specific Angles"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": "Exemplar"
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-33",
+      "sourceRow": 34,
+      "question": "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q33.jpg",
+      "options": [
+        "30°",
+        "45°",
+        "60°",
+        "90°"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Ratios Value for Some Specific Angles"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-34",
+      "sourceRow": 35,
+      "question": "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q34.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q34_o1.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q34_o2.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q34_o2.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q34_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Ratios Value for Some Specific Angles"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-35",
+      "sourceRow": 36,
+      "question": "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q35.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q35_o1.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q35_o2.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q35_o3.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q35_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Ratios of Complementary Angles"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-36",
+      "sourceRow": 37,
+      "question": "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q36.jpg",
+      "options": [
+        "4",
+        "3",
+        "2",
+        "1"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Identities"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": "Analysing",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-37",
+      "sourceRow": 38,
+      "question": "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q37.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q37_o1.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q37_o2.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q37_o3.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q37_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Identities"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": "Analysing",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-38",
+      "sourceRow": 39,
+      "question": "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q38.jpg",
+      "options": [
+        "88°",
+        "44°",
+        "22°",
+        "11°"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Ratios of Complementary Angles"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-39",
+      "sourceRow": 40,
+      "question": "The value of sin 23⁰cos 67⁰ + cos 23⁰sin 67⁰ is",
+      "options": [
+        "0",
+        "1",
+        "−1",
+        "None of these"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Trigonometric Ratios of Complementary Angles"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-40",
+      "sourceRow": 41,
+      "question": "The value of cosec 40⁰cos 50⁰ + sin 42⁰ sec 48⁰ is",
+      "options": [
+        "2",
+        "1",
+        "0",
+        "−1"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Trigonometric Ratios of Complementary Angles"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-41",
+      "sourceRow": 42,
+      "question": "The value of tan2 A − sec2A is",
+      "options": [
+        "1",
+        "0",
+        "−1",
+        "2"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Trigonometric Identities"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-42",
+      "sourceRow": 43,
+      "question": "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q42.jpg",
+      "options": [
+        "cot 30⁰",
+        "tan 30⁰",
+        "cot 60⁰",
+        "tan 60⁰"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Trigonometric Ratios Value for Some Specific Angles"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-63",
+      "sourceRow": 64,
+      "question": "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q63.jpg",
+      "options": [
+        "cos 60°",
+        "sin 60°",
+        "tan 60°",
+        "sin 30°"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Ratios Value for Some Specific Angles"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-64",
+      "sourceRow": 65,
+      "question": "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q64.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q64_o1.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q64_o2.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q64_o3.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q64_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Ratios Value for Some Specific Angles"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-65",
+      "sourceRow": 66,
+      "question": "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q65.jpg",
+      "options": [
+        "1",
+        "2",
+        "–1",
+        "–2"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Ratios Value for Some Specific Angles"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-66",
+      "sourceRow": 67,
+      "question": "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q66.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q66_o1.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q66_o2.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q66_o3.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q66_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Identities"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-67",
+      "sourceRow": 68,
+      "question": "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q67.jpg",
+      "options": [
+        "90°",
+        "30°",
+        "45°",
+        "60°"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Ratios Value for Some Specific Angles"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-68",
+      "sourceRow": 69,
+      "question": "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q68.jpg",
+      "options": [
+        "tan A",
+        "1",
+        "0",
+        "–tan A"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Identities"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-69",
+      "sourceRow": 70,
+      "question": "cos4 A – sin4 A is equal to :",
+      "options": [
+        "2 cos2 A + 1",
+        "2 cos2 A – 1",
+        "2 sin2 A – 1",
+        "2 sin2 A + 1"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Identities"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-70",
+      "sourceRow": 71,
+      "question": "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q70.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q70_o1.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q70_o2.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q70_o2.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q70_o3.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Identities"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-71",
+      "sourceRow": 72,
+      "question": "If cos A + cos2 A = 1, then sin2 A + sin4 A is:",
+      "options": [
+        "–1",
+        "0",
+        "1",
+        "2"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Identities"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-72",
+      "sourceRow": 73,
+      "question": "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q72.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q72_o1.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q72_o2.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q72_o3.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q72_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Ratios Value for Some Specific Angles"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-73",
+      "sourceRow": 74,
+      "question": "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q73.jpg",
+      "options": [
+        "7",
+        "12",
+        "25",
+        "None"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Identities"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-74",
+      "sourceRow": 75,
+      "question": "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q74.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q74_o1.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q74_o2.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q74_o3.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q74_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Identities"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-75",
+      "sourceRow": 76,
+      "question": "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q75.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q75_o1.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q75_o2.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q75_o2.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q75_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Ratios Value for Some Specific Angles"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-76",
+      "sourceRow": 77,
+      "question": "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q76.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q76_o1.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q76_o2.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q76_o3.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q76_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Ratios Value for Some Specific Angles"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-77",
+      "sourceRow": 78,
+      "question": "The expression of sin A in terms of cot A is :",
+      "options": [
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q77_o1.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q77_o2.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q77_o3.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q77_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Identities"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-78",
+      "sourceRow": 79,
+      "question": "If tan 2A = cot (A – 18°), then the value of A is",
+      "options": [
+        "18°",
+        "36°",
+        "24°",
+        "27°"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Ratios of Complementary Angles"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-79",
+      "sourceRow": 80,
+      "question": "Which of the following is not defined ?",
+      "options": [
+        "cos 0°",
+        "tan 45°",
+        "sec 90°",
+        "sin 90°"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Ratios Value for Some Specific Angles"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Remembering",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-80",
+      "sourceRow": 81,
+      "question": "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q80.jpg",
+      "options": [
+        "6",
+        "9",
+        "18",
+        "4"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Ratios Value for Some Specific Angles"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-81",
+      "sourceRow": 82,
+      "question": "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q81.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q81_o1.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q81_o2.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q81_o3.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q81_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Ratios Value for Some Specific Angles"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-82",
+      "sourceRow": 83,
+      "question": "(sec A + tan A) (1 – sin A) is equal to :",
+      "options": [
+        "sec A",
+        "sin A",
+        "cosec A",
+        "cos A"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Identities"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-83",
+      "sourceRow": 84,
+      "question": "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q83.jpg",
+      "options": [
+        "0",
+        "1",
+        "2",
+        "–1"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Ratios of Complementary Angles"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-84",
+      "sourceRow": 85,
+      "question": "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q84.jpg",
+      "options": [
+        "45°",
+        "60°",
+        "15°",
+        "0°"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Ratios Value for Some Specific Angles"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-85",
+      "sourceRow": 86,
+      "question": "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q85.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q85_o1.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q85_o2.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q85_o3.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q85_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Ratios Value for Some Specific Angles"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-86",
+      "sourceRow": 87,
+      "question": "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q86.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q86_o1.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q86_o2.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q86_o3.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q86_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Ratios Value for Some Specific Angles"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-87",
+      "sourceRow": 88,
+      "question": "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q87.jpg",
+      "options": [
+        "0°",
+        "90°",
+        "30°",
+        "60°"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Ratios Value for Some Specific Angles"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-88",
+      "sourceRow": 89,
+      "question": "The value of tan 1°. tan 2°. tan 3°…tan 89° is:",
+      "options": [
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q88_o1.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q88_o2.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q88_o3.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q88_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Ratios of Complementary Angles"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-89",
+      "sourceRow": 90,
+      "question": "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q89.jpg",
+      "options": [
+        "30°",
+        "45°",
+        "75°",
+        "15°"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Ratios Value for Some Specific Angles"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-90",
+      "sourceRow": 91,
+      "question": "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q90.jpg",
+      "options": [
+        "1",
+        "–5",
+        "0",
+        "5"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Identities"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-91",
+      "sourceRow": 92,
+      "question": "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q91.jpg",
+      "options": [
+        "cot A",
+        "2 sin A",
+        "2 cos A",
+        "sec A"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Identities"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-92",
+      "sourceRow": 93,
+      "question": "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q92.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q92_o1.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q92_o2.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q92_o3.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q92_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Identities"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-93",
+      "sourceRow": 94,
+      "question": "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q93.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q93_o1.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q93_o2.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q93_o3.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q93_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Ratios Value for Some Specific Angles"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-94",
+      "sourceRow": 95,
+      "question": "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q94.jpg",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Identities"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-95",
+      "sourceRow": 96,
+      "question": "5cosec2 θ – 5cot2 A is equal to:",
+      "options": [
+        "5",
+        "1",
+        "0",
+        "–5"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Identities"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-96",
+      "sourceRow": 97,
+      "question": "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q96.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q96_o1.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q96_o2.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q96_o3.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q96_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Ratios Value for Some Specific Angles"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-97",
+      "sourceRow": 98,
+      "question": "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q97.jpg",
+      "options": [
+        "0°",
+        "45°",
+        "60°",
+        "30°"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Ratios Value for Some Specific Angles"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-98",
+      "sourceRow": 99,
+      "question": "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q98.jpg",
+      "options": [
+        "3",
+        "4",
+        "8",
+        "5"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Identities"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-99",
+      "sourceRow": 100,
+      "question": "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q99.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q99_o1.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q99_o2.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q99_o3.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q99_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Ratios Value for Some Specific Angles"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-100",
+      "sourceRow": 101,
+      "question": "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q100.jpg",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Identities"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-101",
+      "sourceRow": 102,
+      "question": "The value of cos 60° sin 30° + sin 60° cos 30° is :",
+      "options": [
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q101_o1.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q101_o2.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q101_o3.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q101_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Ratios Value for Some Specific Angles"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-102",
+      "sourceRow": 103,
+      "question": "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q102.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q102_o1.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q102_o2.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q102_o3.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q102_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Identities"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-103",
+      "sourceRow": 104,
+      "question": "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q103.jpg",
+      "options": [
+        "20°",
+        "50°",
+        "30°",
+        "40°"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Ratios of Complementary Angles"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-104",
+      "sourceRow": 105,
+      "question": "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q104.jpg",
+      "options": [
+        "1",
+        "0",
+        "2",
+        "–1"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Ratios of Complementary Angles"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-105",
+      "sourceRow": 106,
+      "question": "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q105.jpg",
+      "options": [
+        "3",
+        "7",
+        "9",
+        "5"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Identities"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-106",
+      "sourceRow": 107,
+      "question": "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q106.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q106_o1.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q106_o2.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q106_o3.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q106_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Ratios Value for Some Specific Angles"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-107",
+      "sourceRow": 108,
+      "question": "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q107.jpg",
+      "options": [
+        "3",
+        "2",
+        "1",
+        "0"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Identities"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-108",
+      "sourceRow": 109,
+      "question": "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q108.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q108_o1.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q108_o2.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q108_o3.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q108_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Ratios Value for Some Specific Angles"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-109",
+      "sourceRow": 110,
+      "question": "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q109.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q109_o1.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q109_o2.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q109_o3.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q109_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Ratios Value for Some Specific Angles"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-110",
+      "sourceRow": 111,
+      "question": "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q110.jpg",
+      "options": [
+        "16°",
+        "32°",
+        "48°",
+        "45°"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Ratios of Complementary Angles"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-111",
+      "sourceRow": 112,
+      "question": "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q111.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q111_o1.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q111_o2.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q111_o3.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q111_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Ratios Value for Some Specific Angles"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-112",
+      "sourceRow": 113,
+      "question": "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q112.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q112_o1.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q112_o2.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q112_o3.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q112_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Ratios Value for Some Specific Angles"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-113",
+      "sourceRow": 114,
+      "question": "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q113.jpg",
+      "options": [
+        "Zero",
+        ">90°",
+        "90°",
+        "40"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Ratios Value for Some Specific Angles"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-114",
+      "sourceRow": 115,
+      "question": "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q114.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q114_o1.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q114_o2.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q114_o3.jpg",
+        "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q114_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Ratios Value for Some Specific Angles"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-115",
+      "sourceRow": 116,
+      "question": "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q115.jpg",
+      "options": [
+        "1",
+        "–1",
+        "9",
+        "–9"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Identities"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-116",
+      "sourceRow": 117,
+      "question": "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q116.jpg",
+      "options": [
+        "–1",
+        "2",
+        "3",
+        "1"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Identities"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-117",
+      "sourceRow": 118,
+      "question": "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q117.jpg",
+      "options": [
+        "45°",
+        "15°",
+        "60°",
+        "30°"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Ratios Value for Some Specific Angles"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-introduction-to-trigonometry-118",
+      "sourceRow": 119,
+      "question": "Math_Class_10_Assess_QB_08_Introduction_to_Trigonometry_q118.jpg",
+      "options": [
+        "45°",
+        "60°",
+        "0°",
+        "15°"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Trigonometric Ratios Value for Some Specific Angles"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    }
+  ]
+}

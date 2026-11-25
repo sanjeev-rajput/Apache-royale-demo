@@ -1,0 +1,1552 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-24T11:45:03.870Z",
+  "classification": {
+    "class": "Class 10",
+    "subject": "Math",
+    "topic": "Probability"
+  },
+  "publisher": "unspecified-publisher",
+  "source": {
+    "file": "Class10/Final/Math_Class_10_Assess_QB_15_Probability/Math_Class_10_Assess_QB_15_Probability.xlsx",
+    "sheet": "Maths_Grade_9_Ch-8"
+  },
+  "questionType": "MCQ",
+  "questionCount": 59,
+  "questions": [
+    {
+      "id": "unspecified-publisher-class-10-math-probability-1",
+      "sourceRow": 2,
+      "question": "A die is thrown once. The probability of getting a number 3 or 4 is",
+      "options": [
+        "Math_Class_10_Assess_QB_15_Probability_q1_o1.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q1_o2.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q1_o3.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q1_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Theoretical Probability"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-probability-2",
+      "sourceRow": 3,
+      "question": "Two dice are thrown simultaneously. The probability of getting a doublet or a total of 4 is",
+      "options": [
+        "Math_Class_10_Assess_QB_15_Probability_q2_o1.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q2_o2.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q2_o3.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q2_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Theoretical Probability"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-probability-3",
+      "sourceRow": 4,
+      "question": "A die is thrown once. The probability of getting a number greater than 3 is",
+      "options": [
+        "Math_Class_10_Assess_QB_15_Probability_q3_o1.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q3_o2.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q3_o3.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q3_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Theoretical Probability"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-probability-4",
+      "sourceRow": 5,
+      "question": "If one card is drawn from a pack of 52 cards, the probability of an ace is",
+      "options": [
+        "Math_Class_10_Assess_QB_15_Probability_q4_o1.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q4_o2.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q4_o3.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q4_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Theoretical Probability"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-probability-5",
+      "sourceRow": 6,
+      "question": "If one card is drawn from a well shuffled deck of 52 cards, then the probability of drawing a face card is",
+      "options": [
+        "Math_Class_10_Assess_QB_15_Probability_q5_o1.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q5_o2.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q5_o3.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q5_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Theoretical Probability"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-probability-6",
+      "sourceRow": 7,
+      "question": "If the probability of winning a game is 0.3, the probability of losing it is",
+      "options": [
+        "0.5",
+        "0.2",
+        "0.7",
+        "none of these"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Theoretical Probability"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-probability-7",
+      "sourceRow": 8,
+      "question": "A dice is rolled once. Then the probability of getting a prime number is",
+      "options": [
+        "Math_Class_10_Assess_QB_15_Probability_q7_o1.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q7_o2.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q7_o3.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q7_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Theoretical Probability"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-probability-8",
+      "sourceRow": 9,
+      "question": "1000 tickets of a lottery were sold and there are 5 prizes on these tickets. If Ruchi purchased one lottery ticket, the probability of winning a prize is",
+      "options": [
+        "Math_Class_10_Assess_QB_15_Probability_q8_o1.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q8_o2.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q8_o3.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q8_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Theoretical Probability"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-probability-9",
+      "sourceRow": 10,
+      "question": "If two coins are tossed simultaneously, then the probability of getting two heads is",
+      "options": [
+        "Math_Class_10_Assess_QB_15_Probability_q9_o1.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q9_o2.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q9_o3.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q9_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Theoretical Probability"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-probability-10",
+      "sourceRow": 11,
+      "question": "The probability of getting no head if two coins are tossed simultaneously is",
+      "options": [
+        "Math_Class_10_Assess_QB_15_Probability_q10_o1.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q10_o2.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q10_o3.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q10_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Theoretical Probability"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-probability-11",
+      "sourceRow": 12,
+      "question": "Two coins are tossed simultaneously. The probability of getting at least one head is",
+      "options": [
+        "Math_Class_10_Assess_QB_15_Probability_q11_o1.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q11_o2.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q11_o3.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q11_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Theoretical Probability"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-probability-12",
+      "sourceRow": 13,
+      "question": "The probability that a leap year selected at random contains 53 Sundays is",
+      "options": [
+        "Math_Class_10_Assess_QB_15_Probability_q12_o1.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q12_o2.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q12_o3.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q12_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Theoretical Probability"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-probability-13",
+      "sourceRow": 14,
+      "question": "In a non leap year the probability of getting 53 Tuesdays is",
+      "options": [
+        "Math_Class_10_Assess_QB_15_Probability_q13_o1.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q13_o2.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q13_o3.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q13_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Theoretical Probability"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-probability-14",
+      "sourceRow": 15,
+      "question": "A marble is drawn at random from a bag. The probability that the marble is green if the bag contains marbles whose colours are 6 blue, 4 green is",
+      "options": [
+        "Math_Class_10_Assess_QB_15_Probability_q14_o1.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q14_o2.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q14_o3.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q14_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Theoretical Probability"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-probability-15",
+      "sourceRow": 16,
+      "question": "A bag contains 5 red balls and some blue balls. The probability of drawing a blue ball is double that of a red ball. The number of blue balls in the bag is",
+      "options": [
+        "10",
+        "20",
+        "5",
+        "30"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Theoretical Probability"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-probability-16",
+      "sourceRow": 17,
+      "question": "A bag contains 5 white, 4 red and 3 black balls. If a ball is drawn from the bag, then the probability of ball that is not black is",
+      "options": [
+        "Math_Class_10_Assess_QB_15_Probability_q16_o1.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q16_o2.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q16_o3.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q16_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Theoretical Probability"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-probability-17",
+      "sourceRow": 18,
+      "question": "Twenty balls are serially numbered and placed in a bag. The probability that a ball drawn is a multiple of 3 or 5 is",
+      "options": [
+        "Math_Class_10_Assess_QB_15_Probability_q17_o1.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q17_o2.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q17_o3.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q17_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Theoretical Probability"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-probability-18",
+      "sourceRow": 19,
+      "question": "If a dice is thrown once, then the probability of getting an even number is",
+      "options": [
+        "Math_Class_10_Assess_QB_15_Probability_q18_o1.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q18_o2.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q18_o3.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q18_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Theoretical Probability"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-probability-19",
+      "sourceRow": 20,
+      "question": "A bag contains 12 balls out of which x are white. One ball is drawn at random. If 6 more white balls are put in the bag, the probability of drawing a white ball will be double than that of the probability of drawing a white ball. Then, the value of x is",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Theoretical Probability"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-probability-20",
+      "sourceRow": 21,
+      "question": "Two dice are thrown simultaneously. The probability of getting a multiple of 2 on one dice and a multiple of 3 on the other is",
+      "options": [
+        "Math_Class_10_Assess_QB_15_Probability_q20_o1.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q20_o2.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q20_o3.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q20_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Theoretical Probability"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-probability-21",
+      "sourceRow": 22,
+      "question": "Cards marked with the numbers 2 to 101 are placed in a box and mixed throughly. One card is drawn from this bag. The probability that the number of the card is a prime number less than 20 is",
+      "options": [
+        "Math_Class_10_Assess_QB_15_Probability_q21_o1.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q21_o2.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q21_o3.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q21_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Theoretical Probability"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-probability-22",
+      "sourceRow": 23,
+      "question": "If four whole numbers taken at random are multiplied together, then the probability that the last digit in the product is 1, 3, 7 or 9 is",
+      "options": [
+        "Math_Class_10_Assess_QB_15_Probability_q22_o1.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q22_o2.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q22_o3.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q22_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Theoretical Probability"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-probability-23",
+      "sourceRow": 24,
+      "question": "The King, Queen and Jack of clubs are removed from a deck of 52 playing cards and then well shuffled. One card is selected from the remaining cards. The probability of getting a club is",
+      "options": [
+        "Math_Class_10_Assess_QB_15_Probability_q23_o1.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q23_o2.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q23_o3.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q23_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Theoretical Probability"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-probability-24",
+      "sourceRow": 25,
+      "question": "Three unbiased coins are tossed together. The probability of getting at least two heads is",
+      "options": [
+        "Math_Class_10_Assess_QB_15_Probability_q24_o1.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q24_o2.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q24_o3.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q24_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Theoretical Probability"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-probability-25",
+      "sourceRow": 26,
+      "question": "In tossing a coin, the probability of throwing head and tail alternatively in 3 successive trials is",
+      "options": [
+        "Math_Class_10_Assess_QB_15_Probability_q25_o1.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q25_o2.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q25_o3.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q25_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Theoretical Probability"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-probability-26",
+      "sourceRow": 27,
+      "question": "Two dice are tossed. The probability of getting two 5’s is",
+      "options": [
+        "Math_Class_10_Assess_QB_15_Probability_q26_o1.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q26_o2.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q26_o3.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q26_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Theoretical Probability"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-probability-27",
+      "sourceRow": 28,
+      "question": "Math_Class_10_Assess_QB_15_Probability_q27.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_15_Probability_q27_o1.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q27_o2.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q27_o3.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q27_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Theoretical Probability"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-probability-28",
+      "sourceRow": 29,
+      "question": "Two customers are visiting a particular shop in the same week (Monday to Saturday). Each is equally likely to visit the shop on any day as on another day. The probability that both will visit the shop on different days is",
+      "options": [
+        "Math_Class_10_Assess_QB_15_Probability_q28_o1.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q28_o2.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q28_o3.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q28_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Theoretical Probability"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-probability-29",
+      "sourceRow": 30,
+      "question": "The probability of having at least one tail in 4 throws with a coin is",
+      "options": [
+        "Math_Class_10_Assess_QB_15_Probability_q29_o1.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q29_o2.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q29_o3.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q29_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Theoretical Probability"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-probability-30",
+      "sourceRow": 31,
+      "question": "Three unbiased coins are tossed. What is the probability of getting at most 2 heads?",
+      "options": [
+        "Math_Class_10_Assess_QB_15_Probability_q30_o1.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q30_o2.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q30_o3.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q30_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Theoretical Probability"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-probability-31",
+      "sourceRow": 32,
+      "question": "Tickets numbered 1 to 20 are mixed up and then a ticket is drawn at random. What is the probability that the ticket drawn bears a number which is multiple of 3?",
+      "options": [
+        "Math_Class_10_Assess_QB_15_Probability_q31_o1.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q31_o2.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q31_o3.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q31_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Theoretical Probability"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-probability-32",
+      "sourceRow": 33,
+      "question": "One card is drawn at random from a pack of 52 cards. What is the probability that the card drawn is either a red card or a king ?",
+      "options": [
+        "Math_Class_10_Assess_QB_15_Probability_q32_o1.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q32_o2.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q32_o3.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q32_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Theoretical Probability"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-probability-33",
+      "sourceRow": 34,
+      "question": "In a lottery there are 10 prizes and 25 blanks. What is the probability of getting prize?",
+      "options": [
+        "Math_Class_10_Assess_QB_15_Probability_q33_o1.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q33_o2.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q33_o3.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q33_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Theoretical Probability"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-probability-52",
+      "sourceRow": 53,
+      "question": "The probability of an event cannot be",
+      "options": [
+        "0",
+        "1",
+        "0.5",
+        "- 0.5"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Theoretical Probability"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": "Remembering",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-probability-53",
+      "sourceRow": 54,
+      "question": "If P(E) is the probability of an event E, which of the following is correct?",
+      "options": [
+        "Math_Class_10_Assess_QB_15_Probability_q53_o1.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q53_o2.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q53_o3.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q53_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Theoretical Probability"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": "Remembering",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-probability-54",
+      "sourceRow": 55,
+      "question": "A bag contains 5 red balls, 6 white balls and 9 black balls. A ball is drawn at random from the bag. The probability that the ball drawn is yellow is",
+      "options": [
+        "Math_Class_10_Assess_QB_15_Probability_q54_o1.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q54_o2.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q54_o3.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q54_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Theoretical Probability"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-probability-55",
+      "sourceRow": 56,
+      "question": "A bag contains 5 red balls, 6 white balls and 9 black balls. A ball is drawn at random from the bag. The probability that the ball drawn is ‘not white’ is",
+      "options": [
+        "Math_Class_10_Assess_QB_15_Probability_q55_o1.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q55_o2.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q55_o3.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q55_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Theoretical Probability"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-probability-56",
+      "sourceRow": 57,
+      "question": "Two coins are tossed simultaneously. The probability of getting exactly ‘one tail’ is",
+      "options": [
+        "Math_Class_10_Assess_QB_15_Probability_q56_o1.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q56_o2.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q56_o3.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q56_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Theoretical Probability"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-probability-57",
+      "sourceRow": 58,
+      "question": "Two coins are tossed simultaneously. The probability of getting ‘at least one head’ is",
+      "options": [
+        "Math_Class_10_Assess_QB_15_Probability_q57_o1.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q57_o2.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q57_o3.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q57_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Theoretical Probability"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-probability-58",
+      "sourceRow": 59,
+      "question": "A card is drawn at random from a pack of 52 playing cards. The probability that the card is neither a king nor a queen is",
+      "options": [
+        "Math_Class_10_Assess_QB_15_Probability_q58_o1.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q58_o2.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q58_o3.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q58_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Theoretical Probability"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-probability-59",
+      "sourceRow": 60,
+      "question": "A die is thrown once. The probability of getting an ‘odd prime number’ is",
+      "options": [
+        "Math_Class_10_Assess_QB_15_Probability_q59_o1.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q59_o2.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q59_o3.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q59_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Theoretical Probability"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-probability-60",
+      "sourceRow": 61,
+      "question": "Cards marked with numbers 6, 7, 8, …, 35 are placed in a box and mixed thoroughly. One card is drawn at random. The probability that the card drawn is ‘divisible by 5’ is",
+      "options": [
+        "Math_Class_10_Assess_QB_15_Probability_q60_o1.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q60_o2.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q60_o3.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q60_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Theoretical Probability"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-probability-61",
+      "sourceRow": 62,
+      "question": "Cards marked with numbers 6, 7, 8, …, 35 are placed in a box and mixed thoroughly. One card is drawn at random. The probability that the card drawn is ‘an even number’ is",
+      "options": [
+        "Math_Class_10_Assess_QB_15_Probability_q61_o1.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q61_o2.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q61_o3.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q61_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Theoretical Probability"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-probability-66",
+      "sourceRow": 67,
+      "question": "In a throw of a pair of dice, what is the probability of getting a doublet?",
+      "options": [
+        "Math_Class_10_Assess_QB_15_Probability_q66_o1.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q66_o2.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q66_o3.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q66_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Theoretical Probability"
+      ],
+      "resource": "H.K.Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-probability-67",
+      "sourceRow": 68,
+      "question": "The probability of getting a bad egg from a lot of 400 eggs is 0.035. The number of bad eggs in the lot is",
+      "options": [
+        "7",
+        "14",
+        "21",
+        "25"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Theoretical Probability"
+      ],
+      "resource": "H.K.Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-probability-68",
+      "sourceRow": 69,
+      "question": "Math_Class_10_Assess_QB_15_Probability_q68.jpg",
+      "options": [
+        "3",
+        "4",
+        "2",
+        "1"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Theoretical Probability"
+      ],
+      "resource": "H.K.Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-probability-69",
+      "sourceRow": 70,
+      "question": "In a throw of two dice, the probability of getting a sum of 10 is",
+      "options": [
+        "Math_Class_10_Assess_QB_15_Probability_q69_o1.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q69_o2.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q69_o3.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q69_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Theoretical Probability"
+      ],
+      "resource": "H.K.Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-probability-70",
+      "sourceRow": 71,
+      "question": "The probability that a non leap year selected at random will have 53 Tuesdays is:",
+      "options": [
+        "Math_Class_10_Assess_QB_15_Probability_q70_o1.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q70_o2.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q70_o3.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q70_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Theoretical Probability"
+      ],
+      "resource": "H.K.Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-probability-71",
+      "sourceRow": 72,
+      "question": "If the probability of happening of an event is p, then the probability of its not happening is",
+      "options": [
+        "Math_Class_10_Assess_QB_15_Probability_q71_o1.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q71_o2.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q71_o3.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q71_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Theoretical Probability"
+      ],
+      "resource": "H.K.Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-probability-72",
+      "sourceRow": 73,
+      "question": "The probability of drawing a green coloured ball from a bag containing 6 red and 5 black balls is:",
+      "options": [
+        "Math_Class_10_Assess_QB_15_Probability_q72_o1.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q72_o2.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q72_o3.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q72_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Theoretical Probability"
+      ],
+      "resource": "H.K.Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-probability-73",
+      "sourceRow": 74,
+      "question": "If the probability of winning a game is 0.995, then the probability of losing is:",
+      "options": [
+        "1",
+        "0.05",
+        "0.0050",
+        "0.0"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Theoretical Probability"
+      ],
+      "resource": "H.K.Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-probability-74",
+      "sourceRow": 75,
+      "question": "If a die is thrown once, the probability of getting a number less than 3 and greater than 2 is:",
+      "options": [
+        "Math_Class_10_Assess_QB_15_Probability_q74_o1.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q74_o2.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q74_o3.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q74_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Theoretical Probability"
+      ],
+      "resource": "H.K.Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-probability-75",
+      "sourceRow": 76,
+      "question": "The probability of getting a number between 1 and 100 which is divisible by 7 is",
+      "options": [
+        "Math_Class_10_Assess_QB_15_Probability_q75_o1.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q75_o2.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q75_o3.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q75_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Theoretical Probability"
+      ],
+      "resource": "H.K.Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-probability-76",
+      "sourceRow": 77,
+      "question": "If two coins are tossed simultaneously, then the probability of getting at least one head is:",
+      "options": [
+        "Math_Class_10_Assess_QB_15_Probability_q76_o1.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q76_o2.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q76_o3.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q76_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Theoretical Probability"
+      ],
+      "resource": "H.K.Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-probability-77",
+      "sourceRow": 78,
+      "question": "Two dice are thrown simultaneously. Probability of getting a prime number on both dice is:",
+      "options": [
+        "Math_Class_10_Assess_QB_15_Probability_q77_o1.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q77_o2.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q77_o3.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q77_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Theoretical Probability"
+      ],
+      "resource": "H.K.Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-probability-78",
+      "sourceRow": 79,
+      "question": "If a letter of English alphabet is chosen at random, then the probability that the letter is a consonant is:",
+      "options": [
+        "Math_Class_10_Assess_QB_15_Probability_q78_o1.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q78_o2.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q78_o3.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q78_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Theoretical Probability"
+      ],
+      "resource": "H.K.Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-probability-79",
+      "sourceRow": 80,
+      "question": "The probability of getting a prime number in single throw of a dice is:",
+      "options": [
+        "Math_Class_10_Assess_QB_15_Probability_q79_o1.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q79_o2.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q79_o3.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q79_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Theoretical Probability"
+      ],
+      "resource": "H.K.Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-probability-80",
+      "sourceRow": 81,
+      "question": "Which one of the following cannot be the probability of an event?",
+      "options": [
+        "1.1",
+        "0.1",
+        "0.9",
+        "0.05"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Theoretical Probability"
+      ],
+      "resource": "H.K.Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-probability-81",
+      "sourceRow": 82,
+      "question": "Two coins are tossed together. The probability of getting head on both is:",
+      "options": [
+        "Math_Class_10_Assess_QB_15_Probability_q81_o1.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q81_o2.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q81_o3.jpg",
+        "Math_Class_10_Assess_QB_15_Probability_q81_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Theoretical Probability"
+      ],
+      "resource": "H.K.Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    }
+  ]
+}

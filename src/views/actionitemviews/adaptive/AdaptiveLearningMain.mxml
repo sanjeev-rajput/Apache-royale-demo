@@ -1,0 +1,973 @@
+<j:VGroup xmlns:fx="http://ns.adobe.com/mxml/2009"
+          xmlns:j="library://ns.apache.org/royale/jewel"
+          xmlns:sp="library://ns.unhurdle.com/spectrum"
+          xmlns:html="library://ns.apache.org/royale/html"
+          width="100%"
+          height="100%"
+          itemsHorizontalAlign="itemsStretch"
+          itemsVerticalAlign="itemsStretch"
+          gap="1"
+          initComplete="initializeAdaptiveLearning()">
+
+
+    <fx:Script>
+        <![CDATA[
+            import org.apache.royale.events.Event;
+            import org.apache.royale.html.HTMLText;
+            import com.util.StringUtil;
+            import com.model.Config;
+            import com.model.ServiceLoader;
+            import com.unhurdle.spectrum.BarLoader;
+            import views.actionitemviews.learning.AiResponse;
+            import com.unhurdle.spectrum.Button;
+            import com.unhurdle.spectrum.Label;
+            import org.apache.royale.html.elements.Div;
+
+            
+            private var sessionLoader:ServiceLoader;
+            private var sessionId:String;
+            private var currentLearningTopic:String = "";
+            private var currentLearningGrade:String = "";
+            private var currentLearningSubject:String = "";
+            private var requestInProgress:Boolean = false;
+            private var thinkingLabel:BarLoader;
+            private var actionButtons:Array = [];
+            private var activeQBPanel:QbAssessmentPanel;
+            private var activeAiPanel:AiAssessmentPanel;
+            private var practiceSource:String;
+            private var practiceAttemptId:String;
+            private var questionBankClasses:Array = [];
+            private var selectedQBClass:Object;
+            private var selectedQBSubject:Object;
+            private var selectedQBTopic:Object;
+            private var qbSelectionContainer:Div;
+            private var pendingAction:String = ""; 
+
+            private function initializeAdaptiveLearning():void
+            {
+                trace("AI Adaptive Learning initialized.");
+                document.body.classList.add("chatbot-page");
+                addContentMessage("Welcome to AI Adaptive Learning. Tell me what you would like to learn.");
+            }
+
+            private function startLearningSession():void
+            {
+                if (requestInProgress || sessionId != null)
+                    return;
+
+                var prompt:String = promptInput.text == null ? "" : promptInput.text.replace(/^\\s+|\\s+$/g, "");
+                if (prompt == "")
+                {
+                    addContentMessage("Please enter what you would like to learn.");
+                    return;
+                }
+
+                var grade:String = gradeInput.text == null ? "" : gradeInput.text.replace(/^\\s+|\\s+$/g, "");
+                var subject:String = subjectInput.text == null ? "" : subjectInput.text.replace(/^\\s+|\\s+$/g, "");
+
+                requestInProgress = true;
+                startButton.visible = false;
+                showThinkingIndicator("Starting your learning session...");
+
+                sessionLoader = new ServiceLoader();
+                sessionLoader.reqMethod = "POST";
+                sessionLoader.contentType = "application/json";
+                sessionLoader.reqData = JSON.stringify({
+                    prompt: prompt,
+                    grade: grade,
+                    subject: subject,
+                    language: "English"
+                });
+                sessionLoader.loadJData(
+                    Config.apiBaseUrl + "adaptive-learning/sessions",
+                    handleSessionStarted,
+                    ServiceLoader.DATA_TYPE_JSON,
+                    handleSessionStartError,
+                    false
+                );
+            }
+
+            private function handleSessionStarted(response:Object):void
+            {
+                finishRequest();
+                if (response == null || response.success != true || response.session == null)
+                {
+                    addContentMessage(response != null && response.message != null
+                        ? String(response.message)
+                        : "The learning session could not be started. Please try again.");
+                    startButton.visible = true;
+                    return;
+                }
+
+                sessionId = String(response.session.sessionId);
+                currentLearningTopic = String(response.session.topic || "");
+                currentLearningGrade = String(response.session.grade || gradeInput.text || "");
+                currentLearningSubject = String(response.session.subject || subjectInput.text || "");
+                gradeInput.disabled = true;
+                subjectInput.disabled = true;
+                promptInput.disabled = true;
+                startButton.visible = false;
+                resetButton.visible = true;
+
+                addContentMessage("Learning topic: <b>" + StringUtil.escapeHTML(String(response.session.topic)) + "</b>");
+                renderInitialContent(response.content);
+
+                if (response.message != null && String(response.message) != "")
+                    addContentMessage(String(response.message));
+            }
+
+            private function handleSessionStartError(event:Event):void
+            {
+                finishRequest();
+                startButton.visible = true;
+                addContentMessage("I couldn't connect to the learning service. Please try again.");
+                trace("AI Adaptive Learning session creation request failed.");
+            }
+
+            private function renderInitialContent(content:Object):void
+            {
+                if (content == null)
+                {
+                    addContentMessage("Your session started, but no learning content was returned.");
+                    return;
+                }
+
+                if (content.explanation != null && String(content.explanation) != "")
+                {
+                    addSectionHeading("Learning explanation");
+                    addContentMessage(String(content.explanation));
+                }
+                else
+                {
+                    addContentMessage("The AI explanation is temporarily unavailable. You can still explore the available learning resources.");
+                }
+
+                var activities:Array = content.activities as Array;
+                addSectionHeading("Learning activities");
+                if (activities != null && activities.length > 0)
+                {
+                    for each (var activity:Object in activities)
+                        addActivity(activity);
+                }
+                else
+                {
+                    addContentMessage("No matching catalogue activities are available right now.");
+                }
+
+                var videos:Array = content.videos as Array;
+                addSectionHeading("Learning videos");
+                if (videos != null && videos.length > 0)
+                {
+                    for each (var video:Object in videos)
+                        addYouTubeVideo(video);
+                }
+                else
+                {
+                    addContentMessage("No matching learning videos are available right now.");
+                }
+                addLearningChoices();
+            }
+
+            private function addLearningChoices():void
+            {
+                addSectionHeading("What would you like to do next?");
+                addContentMessage("Choose how you want to continue learning.");
+                addActionButton("Explore More Learning Activities", "show_activities");
+                addActionButton("Watch More Learning Videos", "show_videos");
+                addActionButton("Test Your Understanding with AI Practice", "start_ai_assessment");
+                addActionButton("Practice with the Question Bank", "choose_question_bank");
+            }
+
+            private function addActionButton(label:String, action:String):void
+            {
+                var button:Button = new Button();
+                button.text = label;
+                button.percentWidth = 100;
+                button.addEventListener("click", function(event:Event):void
+                {
+                    if (!requestInProgress) performAction(action, {});
+                });
+                actionButtons.push(button);
+                resultsContainer.addElement(button);
+            }
+
+            private function removeActionButtons():void
+            {
+                for each (var button:Button in actionButtons)
+                {
+                    if (resultsContainer.getElementIndex(button) != -1)
+                        resultsContainer.removeElement(button);
+                }
+                actionButtons = [];
+            }
+
+            private function performAction(action:String, input:Object):void
+            {
+                if (sessionId == null || sessionId == "" || requestInProgress) return;
+                removeActionButtons();
+                pendingAction = action;
+                requestInProgress = true;
+                showThinkingIndicator("Working on your next learning step...");
+                sessionLoader = new ServiceLoader();
+                sessionLoader.reqMethod = "POST";
+                sessionLoader.contentType = "application/json";
+                sessionLoader.reqData = JSON.stringify({ action: action, input: input || {} });
+                sessionLoader.loadJData(
+                    Config.apiBaseUrl + "adaptive-learning/sessions/" + sessionId + "/actions",
+                    handleActionResponse,
+                    ServiceLoader.DATA_TYPE_JSON,
+                    handleActionError,
+                    false
+                );
+            }
+
+            private function handleActionResponse(response:Object):void
+            {
+                finishRequest();
+                if (response == null || response.success != true)
+                {
+                    if (pendingAction == "submit_assessment")
+                        setAdaptivePracticePending(false);
+                    addContentMessage(response != null && response.message != null
+                        ? String(response.message) : "That learning action could not be completed.");
+                    if (pendingAction == "start_question_bank" && qbSelectionContainer != null &&
+                        selectedQBSubject != null)
+                        renderQBTopicsForCurrentContext();
+                    addLearningChoices();
+                    pendingAction = "";
+                    return;
+                }
+
+                if (response.topicSwitched === true)
+                {
+                    currentLearningTopic = String(response.topic || currentLearningTopic);
+                    removeQBSelectionContainer();
+                    addSectionHeading("New learning topic: " + currentLearningTopic);
+                    if (response.content != null && response.content.explanation != null)
+                    {
+                        addSectionHeading("Learning explanation");
+                        addContentMessage(String(response.content.explanation));
+                    }
+                    var switchedActivities:Array = response.content != null ? response.content.activities as Array : null;
+                    addSectionHeading("Learning activities");
+                    if (switchedActivities != null && switchedActivities.length > 0)
+                    {
+                        for each (var switchedActivity:Object in switchedActivities) addActivity(switchedActivity);
+                    }
+                    else addContentMessage("No matching catalogue activities are available for this topic right now.");
+
+                    var switchedVideos:Array = response.content != null ? response.content.videos as Array : null;
+                    addSectionHeading("Learning videos");
+                    if (switchedVideos != null && switchedVideos.length > 0)
+                    {
+                        for each (var switchedVideo:Object in switchedVideos) addYouTubeVideo(switchedVideo);
+                    }
+                    else addContentMessage("No matching learning videos are available for this topic right now.");
+                    addLearningChoices();
+                    pendingAction = "";
+                    return;
+                }
+
+                if (response.activities != null)
+                {
+                    var activities:Array = response.activities as Array;
+                    if (activities == null || activities.length == 0)
+                        addContentMessage("You've explored all the relevant activities currently available for this topic.");
+                    else
+                    {
+                        addSectionHeading("More learning activities");
+                        for each (var activity:Object in activities) addActivity(activity);
+                    }
+                }
+                if (response.videos != null)
+                {
+                    var videos:Array = response.videos as Array;
+                    if (videos == null || videos.length == 0)
+                        addContentMessage("You've reached the end of the relevant videos currently available.");
+                    else
+                    {
+                        addSectionHeading("More learning videos");
+                        for each (var video:Object in videos) addYouTubeVideo(video);
+                    }
+                }
+                if (response.assessment != null && response.attemptId != null)
+                {
+                    removeQBSelectionContainer();
+                    renderPractice(response);
+                }
+                if (response.questionBankTopics != null)
+                    renderQuestionBankSelection(response.questionBankTopics);
+                if (response.assessmentResult != null)
+                    renderAssessmentFeedback(response);
+                if (response.message != null && String(response.message) != "")
+                    addContentMessage(String(response.message));
+
+                if (response.activities != null || response.videos != null)
+                    addLearningChoices();
+                pendingAction = "";
+            }
+
+            private function handleActionError(event:Event):void
+            {
+                finishRequest();
+                if (pendingAction == "submit_assessment")
+                    setAdaptivePracticePending(false);
+                addContentMessage("The learning service could not complete this request. Please try again; your previous learning content is preserved.");
+                if (pendingAction == "start_question_bank" && qbSelectionContainer != null &&
+                    selectedQBSubject != null)
+                    renderQBTopicsForCurrentContext();
+                addLearningChoices();
+                pendingAction = "";
+            }
+
+            private function renderPractice(response:Object):void
+            {
+                removeActivePractice();
+                practiceSource = String(response.source);
+                practiceAttemptId = String(response.attemptId);
+
+                var questions:Array = response.assessment != null
+                    ? response.assessment.questions as Array : null;
+                if (questions == null || questions.length == 0)
+                {
+                    addContentMessage("No practice questions were returned. Please choose another learning step.");
+                    practiceAttemptId = null;
+                    addLearningChoices();
+                    return;
+                }
+
+                if (practiceSource == "ai")
+                {
+                    activeAiPanel = new AiAssessmentPanel();
+                    activeAiPanel.percentWidth = 100;
+                    activeAiPanel.assessment = response.assessment;
+                    activeAiPanel.onSubmit = handleAdaptivePracticeSubmit;
+                    activeAiPanel.onValidationMessage = handleAdaptivePracticeValidation;
+                    resultsContainer.addElement(activeAiPanel);
+                }
+                else
+                {
+                    activeQBPanel = new QbAssessmentPanel();
+                    activeQBPanel.percentWidth = 100;
+                    activeQBPanel.assessment = response.assessment;
+                    activeQBPanel.classId = selectedQBClass != null
+                        ? String(selectedQBClass.classId) : "";
+                    activeQBPanel.subjectId = selectedQBSubject != null
+                        ? String(selectedQBSubject.subjectId) : "";
+                    activeQBPanel.apiBaseUrl = String(Config.apiBaseUrl);
+                    activeQBPanel.onSubmit = handleAdaptivePracticeSubmit;
+                    activeQBPanel.onValidationMessage = handleAdaptivePracticeValidation;
+                    resultsContainer.addElement(activeQBPanel);
+                }
+            }
+
+            private function handleAdaptivePracticeValidation(message:String):void
+            {
+                addContentMessage(message);
+            }
+
+            private function handleAdaptivePracticeSubmit(answers:Array):void
+            {
+                if (requestInProgress || practiceAttemptId == null ||
+                    answers == null || answers.length == 0) return;
+
+                setAdaptivePracticePending(true);
+                performAction("submit_assessment", {
+                    source: practiceSource,
+                    attemptId: practiceAttemptId,
+                    answers: answers
+                });
+            }
+
+            private function setAdaptivePracticePending(value:Boolean):void
+            {
+                if (activeQBPanel != null)
+                    activeQBPanel.setSubmissionPending(value);
+                if (activeAiPanel != null)
+                    activeAiPanel.setSubmissionPending(value);
+            }
+
+            private function renderQuestionBankSelection(data:Object):void
+            {
+                questionBankClasses = data != null ? data.classes as Array : null;
+                selectedQBClass = null;
+                selectedQBSubject = null;
+                selectedQBTopic = null;
+                removeQBSelectionContainer();
+
+                if (questionBankClasses == null || questionBankClasses.length == 0)
+                {
+                    addContentMessage("No publisher Question Bank topics are currently available.");
+                    addLearningChoices();
+                    return;
+                }
+
+                qbSelectionContainer = new Div();
+                qbSelectionContainer.className = "qb-selection-content";
+                resultsContainer.addElement(qbSelectionContainer);
+
+                // Reuse the class and subject already supplied at session start.
+                selectedQBClass = findMatchingQBClass(currentLearningGrade);
+                if (selectedQBClass != null)
+                    selectedQBSubject = findMatchingQBSubject(selectedQBClass, currentLearningSubject);
+
+                if (selectedQBClass != null && selectedQBSubject != null)
+                {
+                    renderQBTopicsForCurrentContext();
+                    return;
+                }
+
+                if (selectedQBClass != null)
+                {
+                    addQBBreadcrumb();
+                    addQBHeading("Choose a subject");
+                    addQBChoices(selectedQBClass.subjects as Array, "subjectName", selectQBSubject);
+                    return;
+                }
+
+                addQBHeading("Choose a class");
+                addQBChoices(questionBankClasses, "className", selectQBClass);
+            }
+
+            private function findMatchingQBClass(value:String):Object
+            {
+                var wanted:String = normalizeQBValue(value);
+                if (wanted == "") return null;
+                for each (var item:Object in questionBankClasses)
+                {
+                    var candidate:String = normalizeQBValue(String(item.className));
+                    if (candidate == wanted || candidate == "class " + wanted || wanted == "class " + candidate)
+                        return item;
+                    if (candidate.replace("class ", "") == wanted.replace("class ", ""))
+                        return item;
+                }
+                return null;
+            }
+
+            private function findMatchingQBSubject(selectedClass:Object, value:String):Object
+            {
+                var wanted:String = normalizeQBValue(value);
+                if (wanted == "") return null;
+                var subjects:Array = selectedClass != null ? selectedClass.subjects as Array : null;
+                if (subjects == null) return null;
+                for each (var item:Object in subjects)
+                {
+                    if (normalizeQBValue(String(item.subjectName)) == wanted)
+                        return item;
+                }
+                return null;
+            }
+
+            private function normalizeQBValue(value:String):String
+            {
+                return String(value || "").toLowerCase().replace(/^\\s+|\\s+$/g, "").replace(/\\s+/g, " ");
+            }
+
+            private function removeQBSelectionContainer():void
+            {
+                if (qbSelectionContainer != null)
+                {
+                    if (resultsContainer.getElementIndex(qbSelectionContainer) != -1)
+                        resultsContainer.removeElement(qbSelectionContainer);
+                    qbSelectionContainer = null;
+                }
+            }
+
+            private function clearQBSelection():void
+            {
+                if (qbSelectionContainer == null) return;
+                while (qbSelectionContainer.numElements > 0)
+                    qbSelectionContainer.removeElement(qbSelectionContainer.getElementAt(0));
+            }
+
+            private function addQBHeading(value:String):void
+            {
+                var heading:HTMLText = new HTMLText();
+                heading.percentWidth = 100;
+                heading.html = "<h3>" + StringUtil.escapeHTML(value) + "</h3>";
+                qbSelectionContainer.addElement(heading);
+            }
+
+            private function addQBBreadcrumb():void
+            {
+                var parts:Array = [];
+                if (selectedQBClass != null) parts.push(String(selectedQBClass.className));
+                if (selectedQBSubject != null) parts.push(String(selectedQBSubject.subjectName));
+                if (selectedQBTopic != null) parts.push(String(selectedQBTopic.topicName));
+                var crumb:HTMLText = new HTMLText();
+                crumb.percentWidth = 100;
+                crumb.html = "<b>" + StringUtil.escapeHTML(parts.join("  ›  ")) + "</b>";
+                crumb.className = "qb-selection-breadcrumb";
+                qbSelectionContainer.addElement(crumb);
+            }
+
+            private function addQBChoices(items:Array, labelField:String, callback:Function):void
+            {
+                if (items == null) return;
+                for each (var item:Object in items)
+                {
+                    var choice:Label = new Label();
+                    choice.text = String(item[labelField]);
+                    choice.color = "orange";
+                    choice.className = "qb-selection-link";
+                    choice.addEventListener("rollOver", handleQBChoiceRollOver);
+                    choice.addEventListener("rollOut", handleQBChoiceRollOut);
+                    choice.addEventListener("click", createQBChoiceHandler(item, callback));
+                    qbSelectionContainer.addElement(choice);
+                }
+            }
+
+            private function createQBChoiceHandler(item:Object, callback:Function):Function
+            {
+                return function(event:Event):void
+                {
+                    if (!requestInProgress) callback(item);
+                };
+            }
+
+            private function handleQBChoiceRollOver(event:Event):void
+            {
+                var choice:Label = event.currentTarget as Label;
+                if (choice != null) choice.color = "#c46a16";
+            }
+
+            private function handleQBChoiceRollOut(event:Event):void
+            {
+                var choice:Label = event.currentTarget as Label;
+                if (choice != null) choice.color = "orange";
+            }
+
+            private function selectQBClass(item:Object):void
+            {
+                selectedQBClass = item;
+                selectedQBSubject = null;
+                selectedQBTopic = null;
+                clearQBSelection();
+                addQBBreadcrumb();
+                addQBHeading("Choose a subject");
+                addQBChoices(item.subjects as Array, "subjectName", selectQBSubject);
+            }
+
+            private function selectQBSubject(item:Object):void
+            {
+                selectedQBSubject = item;
+                selectedQBTopic = null;
+                renderQBTopicsForCurrentContext();
+            }
+
+            private function renderQBTopicsForCurrentContext():void
+            {
+                clearQBSelection();
+                addQBBreadcrumb();
+                addQBHeading("Choose a topic");
+                addQBChoices(selectedQBSubject != null ? selectedQBSubject.topics as Array : null,
+                             "topicName", selectQBTopic);
+                addQBBackChoice("Back to subjects", showQBSubjects);
+            }
+
+            private function selectQBTopic(item:Object):void
+            {
+                selectedQBTopic = item;
+                clearQBSelection();
+                addQBBreadcrumb();
+                addQBHeading("How would you like to continue with " + String(item.topicName) + "?");
+                addQBBackChoice("Learn this topic", switchToSelectedQBTopic);
+                addQBBackChoice("Practise 5 Question Bank questions", startSelectedQBPractice);
+                addQBBackChoice("Back to topics", renderQBTopicsForCurrentContext);
+            }
+
+            private function switchToSelectedQBTopic():void
+            {
+                if (selectedQBTopic == null) return;
+                performAction("switch_topic", { topic: String(selectedQBTopic.topicName) });
+            }
+
+            private function startSelectedQBPractice():void
+            {
+                if (selectedQBClass == null || selectedQBSubject == null || selectedQBTopic == null) return;
+                addQBHeading("Preparing five publisher questions...");
+                performAction("start_question_bank", {
+                    classId: String(selectedQBClass.classId),
+                    subjectId: String(selectedQBSubject.subjectId),
+                    topicId: String(selectedQBTopic.topicId),
+                    questionCount: 5
+                });
+            }
+
+            private function addQBBackChoice(value:String, callback:Function):void
+            {
+                var back:Label = new Label();
+                back.text = value;
+                back.color = "#080808";
+                back.className = "qb-selection-link qb-selection-back";
+                back.addEventListener("click", function(event:Event):void
+                {
+                    if (!requestInProgress) callback();
+                });
+                qbSelectionContainer.addElement(back);
+            }
+
+            private function showQBSubjects():void
+            {
+                selectedQBSubject = null;
+                selectedQBTopic = null;
+                clearQBSelection();
+                addQBBreadcrumb();
+                addQBHeading("Choose a subject");
+                addQBChoices(selectedQBClass != null ? selectedQBClass.subjects as Array : null,
+                             "subjectName", selectQBSubject);
+            }
+
+            private function renderAssessmentFeedback(response:Object):void
+            {
+                addSectionHeading("Assessment feedback");
+                var result:Object = response.assessmentResult;
+
+                var scoreLine:HTMLText = new HTMLText();
+                scoreLine.percentWidth = 100;
+                scoreLine.html = "<b>Your score: " + StringUtil.escapeHTML(
+                    String(result.score) + " / " + String(result.total) + " (" + String(result.percentage) + "%)") + "</b>";
+                scoreLine.className = "assessment-score";
+                resultsContainer.addElement(scoreLine);
+
+                var questionResults:Array = result.questions as Array;
+                var questionNumber:int = 0;
+                for each (var item:Object in questionResults)
+                {
+                    questionNumber++;
+                    var questionId:String = String(item.questionId);
+                    var selectedOptionId:String = item.selectedOptionId == null
+                        ? "" : String(item.selectedOptionId);
+                    var correctOptionId:String = item.correctOptionId == null
+                        ? "" : String(item.correctOptionId);
+
+                    var questionPrompt:String = activeQBPanel != null
+                        ? activeQBPanel.getQuestionPrompt(questionId)
+                        : (activeAiPanel != null ? activeAiPanel.getQuestionPrompt(questionId) : "");
+                    var questionImageUrl:String = activeQBPanel != null
+                        ? activeQBPanel.getQuestionPromptImageUrl(questionId)
+                        : (activeAiPanel != null ? activeAiPanel.getQuestionPromptImageUrl(questionId) : null);
+                    var selectedAnswer:String = activeQBPanel != null
+                        ? activeQBPanel.getOptionText(questionId, selectedOptionId)
+                        : (activeAiPanel != null ? activeAiPanel.getOptionText(questionId, selectedOptionId) : "");
+                    var selectedAnswerImageUrl:String = activeQBPanel != null
+                        ? activeQBPanel.getOptionImageUrl(questionId, selectedOptionId)
+                        : (activeAiPanel != null ? activeAiPanel.getOptionImageUrl(questionId, selectedOptionId) : null);
+                    var correctAnswerValue:String = activeQBPanel != null
+                        ? activeQBPanel.getCorrectAnswer(questionId, correctOptionId)
+                        : (activeAiPanel != null ? activeAiPanel.getCorrectAnswer(questionId, correctOptionId) : "");
+                    var correctAnswerImageUrl:String = activeQBPanel != null
+                        ? activeQBPanel.getCorrectAnswerImageUrl(questionId, correctOptionId)
+                        : (activeAiPanel != null ? activeAiPanel.getCorrectAnswerImageUrl(questionId, correctOptionId) : null);
+
+                    var questionHeading:HTMLText = new HTMLText();
+                    questionHeading.percentWidth = 100;
+                    questionHeading.html = "<b>Question " + String(questionNumber) + "</b>";
+                    questionHeading.className = "assessment-question-number";
+                    resultsContainer.addElement(questionHeading);
+
+                    if (questionImageUrl != null)
+                    {
+                        var promptImage:HTMLText = new HTMLText();
+                        promptImage.percentWidth = 100;
+                        promptImage.html = "<img class='assessment-question-image' src='" +
+                            StringUtil.escapeHTML(questionImageUrl) + "' />";
+                        resultsContainer.addElement(promptImage);
+                    }
+                    else if (questionPrompt != "")
+                    {
+                        var promptText:HTMLText = new HTMLText();
+                        promptText.percentWidth = 100;
+                        promptText.html = StringUtil.escapeHTML(questionPrompt);
+                        promptText.className = "assessment-question-prompt";
+                        resultsContainer.addElement(promptText);
+                    }
+
+                    var marksText:String = "";
+                    if (item.score != null && item.totalMarks != null)
+                        marksText = " (" + String(item.score) + "/" + String(item.totalMarks) + ")";
+
+                    var yourAnswerHeading:HTMLText = new HTMLText();
+                    yourAnswerHeading.percentWidth = 100;
+                    yourAnswerHeading.html = "<b>Your answer</b>";
+                    resultsContainer.addElement(yourAnswerHeading);
+
+                    var selectedStatus:HTMLText = new HTMLText();
+                    selectedStatus.percentWidth = 100;
+                    selectedStatus.html = "<b>" + StringUtil.escapeHTML(
+                        (item.isCorrect === true ? "Correct" : "Incorrect") + marksText) + "</b>";
+                    selectedStatus.className = item.isCorrect === true
+                        ? "assessment-answer-correct" : "assessment-answer-incorrect";
+                    resultsContainer.addElement(selectedStatus);
+
+                    if (selectedAnswerImageUrl != null)
+                    {
+                        var selectedImage:HTMLText = new HTMLText();
+                        selectedImage.percentWidth = 100;
+                        selectedImage.html = "<img class='assessment-option-image' src='" +
+                            StringUtil.escapeHTML(selectedAnswerImageUrl) + "' />";
+                        resultsContainer.addElement(selectedImage);
+                    }
+                    else if (selectedAnswer != "")
+                    {
+                        var selectedText:HTMLText = new HTMLText();
+                        selectedText.percentWidth = 100;
+                        selectedText.html = StringUtil.escapeHTML(selectedAnswer);
+                        selectedText.className = "assessment-correct-answer";
+                        resultsContainer.addElement(selectedText);
+                    }
+
+                    if (item.isCorrect !== true)
+                    {
+                        var correctHeading:HTMLText = new HTMLText();
+                        correctHeading.percentWidth = 100;
+                        correctHeading.html = "<b>Correct answer</b>";
+                        resultsContainer.addElement(correctHeading);
+
+                        if (correctAnswerImageUrl != null)
+                        {
+                            var correctImage:HTMLText = new HTMLText();
+                            correctImage.percentWidth = 100;
+                            correctImage.html = "<img class='assessment-option-image' src='" +
+                                StringUtil.escapeHTML(correctAnswerImageUrl) + "' />";
+                            resultsContainer.addElement(correctImage);
+                        }
+                        else if (correctAnswerValue != "")
+                        {
+                            var correctText:HTMLText = new HTMLText();
+                            correctText.percentWidth = 100;
+                            correctText.html = StringUtil.escapeHTML(correctAnswerValue);
+                            correctText.className = "assessment-correct-answer";
+                            resultsContainer.addElement(correctText);
+                        }
+                    }
+
+                    var feedback:HTMLText = new HTMLText();
+                    feedback.percentWidth = 100;
+                    var feedbackText:String;
+                    if (item.isCorrect === true)
+                    {
+                        feedbackText = item.feedback != null && String(item.feedback).length > 0
+                            ? String(item.feedback)
+                            : "Good work! That's correct!";
+                    }
+                    else
+                    {
+                        // Use consistent learner guidance for incorrect answers.
+                        // The correct answer is already displayed immediately above.
+                        feedbackText = "Not quite. The correct answer is shown above. Review it carefully to understand the difference.";
+                    }
+                    feedback.html = StringUtil.escapeHTML(feedbackText);
+                    feedback.className = "assessment-answer-explanation";
+                    resultsContainer.addElement(feedback);
+                }
+
+                var percentage:Number = Number(result.percentage);
+                var overall:HTMLText = new HTMLText();
+                overall.percentWidth = 100;
+                overall.html = "<b>Overall feedback</b><br/>" +
+                    StringUtil.escapeHTML(getPerformanceMessage(percentage));
+                overall.className = "assessment-overall-feedback";
+                resultsContainer.addElement(overall);
+
+                removeActivePractice();
+                practiceAttemptId = null;
+                practiceSource = null;
+                if (response.content != null && response.content.explanation != null)
+                {
+                    addSectionHeading("A new explanation based on your practice");
+                    addContentMessage(String(response.content.explanation));
+                }
+                addLearningChoices();
+            }
+
+            private function getPerformanceMessage(percentage:Number):String
+            {
+                if (percentage >= 80)
+                    return "Excellent work! You have demonstrated a strong understanding of this topic.";
+                if (percentage >= 60)
+                    return "Good effort! You understand many of the key ideas. Review the questions you missed to strengthen your learning.";
+                if (percentage >= 40)
+                    return "You're making progress. Review the explanations and practise the topic again.";
+                return "Keep practising! Review the explanations and try another practice to build your understanding.";
+            }
+
+
+            private function removeActivePractice():void
+            {
+                if (activeQBPanel != null)
+                {
+                    if (resultsContainer.getElementIndex(activeQBPanel) != -1)
+                        resultsContainer.removeElement(activeQBPanel);
+                    activeQBPanel = null;
+                }
+                if (activeAiPanel != null)
+                {
+                    if (resultsContainer.getElementIndex(activeAiPanel) != -1)
+                        resultsContainer.removeElement(activeAiPanel);
+                    activeAiPanel = null;
+                }
+            }
+
+            private function addActivity(item:Object):void
+            {
+                if (item == null)
+                    return;
+                var card:AiResponse = new AiResponse();
+                card.aiResponse = item;
+                resultsContainer.addElement(card);
+            }
+
+            private function addYouTubeVideo(video:Object):void
+            {
+                if (video == null || video.videoId == null)
+                    return;
+                var card:YouTubeVideoCard = new YouTubeVideoCard();
+                card.video = video;
+                resultsContainer.addElement(card);
+            }
+
+            private function addSectionHeading(value:String):void
+            {
+                var heading:HTMLText = new HTMLText();
+                heading.percentWidth = 100;
+                heading.html = "<h3>" + StringUtil.escapeHTML(value) + "</h3>";
+                resultsContainer.addElement(heading);
+            }
+
+            private function addContentMessage(value:String):void
+            {
+                var label:HTMLText = new HTMLText();
+                label.percentWidth = 100;
+                label.html = StringUtil.markdownToHtml(value);
+                resultsContainer.addElement(label);
+            }
+
+            private function showThinkingIndicator(message:String):void
+            {
+                hideThinkingIndicator();
+                thinkingLabel = new BarLoader();
+                thinkingLabel.label = message;
+                thinkingLabel.showPercentage = "false";
+                thinkingLabel.small = "true";
+                thinkingLabel.indeterminate = "true";
+                resultsContainer.addElement(thinkingLabel);
+            }
+
+            private function hideThinkingIndicator():void
+            {
+                if (thinkingLabel != null)
+                {
+                    resultsContainer.removeElement(thinkingLabel);
+                    thinkingLabel = null;
+                }
+            }
+
+            private function finishRequest():void
+            {
+                requestInProgress = false;
+                hideThinkingIndicator();
+                sessionLoader = null;
+            }
+
+            private function killAndStartNewSession():void
+            {
+                if (requestInProgress)
+                    return;
+
+                if (sessionId == null || sessionId == "")
+                {
+                    resetLocalSession();
+                    return;
+                }
+
+                requestInProgress = true;
+                resetButton.visible = false;
+                showThinkingIndicator("Ending the current learning session...");
+
+                var endingSessionId:String = sessionId;
+                sessionLoader = new ServiceLoader();
+                sessionLoader.reqMethod = "DELETE";
+                sessionLoader.loadJData(
+                    Config.apiBaseUrl + "adaptive-learning/sessions/" + endingSessionId,
+                    handleSessionEnded,
+                    ServiceLoader.DATA_TYPE_JSON,
+                    handleSessionEndError,
+                    false
+                );
+            }
+
+            private function handleSessionEnded(response:Object):void
+            {
+                finishRequest();
+                resetLocalSession();
+                addContentMessage("The previous learning session has ended. You can start a new topic now.");
+            }
+
+            private function handleSessionEndError(event:Event):void
+            {
+                finishRequest();
+                // The server may already have expired the temporary session.
+                // Clearing the local experience is still the correct reset behaviour.
+                resetLocalSession();
+                addContentMessage("The previous session is no longer active. You can start a new topic now.");
+            }
+
+            private function resetLocalSession():void
+            {
+                removeActivePractice();
+                sessionId = null;
+                gradeInput.text = "";
+                subjectInput.text = "";
+                promptInput.text = "";
+                gradeInput.disabled = false;
+                subjectInput.disabled = false;
+                promptInput.disabled = false;
+                startButton.visible  = true;
+                startButton.visible = true;
+                resetButton.visible = true;
+                resetButton.visible = false;
+                clearLearningHistory();
+            }
+
+            private function clearLearningHistory():void
+            {
+                hideThinkingIndicator();
+                while (resultsContainer.numElements > 0)
+                    resultsContainer.removeElement(resultsContainer.getElementAt(0));
+            }
+
+            public function disposeMe():void
+            {
+                if (sessionLoader != null)
+                    sessionLoader.cancel();
+                document.body.classList.remove("chatbot-page");
+                trace("AI Adaptive Learning disposed.");
+            }
+        ]]>
+    </fx:Script>
+
+    <j:VGroup width="100%" gap="0"
+              itemsHorizontalAlign="itemsStretch">
+        <j:HGroup width="100%" gap="0" itemsVerticalAlign="itemsCenter">
+            <sp:TextField id="gradeInput" width="100%" placeholder="Class (optional)"/>
+            <sp:TextField id="subjectInput" width="100%" placeholder="Subject (optional)"/>
+            <sp:Label id="startButton" text="Start Learning Session" color="orange" width="25%" userSelect="true"
+                       click="startLearningSession()"/>
+            <sp:Label id="resetButton" text="Kill and Start a New Session" color="red" width="25%" userSelect="true"
+                       click="killAndStartNewSession()" visible="false"/>
+        </j:HGroup>
+            <sp:TextField id="promptInput" width="100%"
+                          placeholder="What would you like to learn? e.g. I want to learn verbs"/>
+            
+    </j:VGroup>
+
+    <j:VGroup id="resultsContainer"
+              className="Adaptive-resultsContainer"
+              width="100%"
+              gap="1">
+        <j:beads>
+            <j:ScrollingViewport/>
+        </j:beads>
+    </j:VGroup>
+</j:VGroup>

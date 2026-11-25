@@ -86,7 +86,7 @@ async function requestOllama(messages, options) {
 }
 
 async function requestOpenRouter(messages, options) {
-  const requestedModel = options.model || config.model;
+  const requestedModel = config.model;
   if (!config.apiKey) throw new Error("OPENROUTER_API_KEY is not configured.");
 
   const body = {
@@ -160,8 +160,8 @@ export function getLlmConfig() {
   return { provider: config.provider, model: config.model };
 }
 
-export async function generateText({ messages, temperature = 0.4, maxTokens = 500, timeoutMs = timeoutDefault, model }) {
-  const options = { temperature, maxTokens, timeoutMs, json: false, model };
+export async function generateText({ messages, temperature = 0.4, maxTokens = 500, timeoutMs = timeoutDefault }) {
+  const options = { temperature, maxTokens, timeoutMs, json: false };
   return config.provider === "openrouter"
     ? requestOpenRouter(messages, options)
     : requestOllama(messages, options);
@@ -172,14 +172,13 @@ export async function generateStructuredResponse({
   userPayload,
   temperature = 0,
   maxTokens = 450,
-  timeoutMs = timeoutDefault,
-  model
+  timeoutMs = timeoutDefault
 }) {
   const messages = [
     { role: "system", content: `${systemPrompt}\nReturn one valid JSON object only. Do not include Markdown fences or commentary.` },
     { role: "user", content: typeof userPayload === "string" ? userPayload : JSON.stringify(userPayload) }
   ];
-  const options = { temperature, maxTokens, timeoutMs, json: true, model };
+  const options = { temperature, maxTokens, timeoutMs, json: true };
   let content;
   try {
     content = config.provider === "openrouter"
@@ -192,7 +191,7 @@ export async function generateStructuredResponse({
   try { return parseJson(content); }
   catch (cause) {
     const error = new Error(`The ${config.provider} model returned invalid JSON: ${content.slice(0, 500)}`);
-    error.modelId = model || config.model;
+    error.modelId = config.model;
     error.provider = config.provider;
     error.failureType = "invalid_json";
     error.rawContent = content;

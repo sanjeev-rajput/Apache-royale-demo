@@ -1,0 +1,1630 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-24T11:45:03.632Z",
+  "classification": {
+    "class": "Class 10",
+    "subject": "Math",
+    "topic": "Triangles"
+  },
+  "publisher": "unspecified-publisher",
+  "source": {
+    "file": "Class10/Final/Math_Class_10_Assess_QB_06_Triangles/Math_Class_10_Assess_QB_06_Triangles.xlsx",
+    "sheet": "Maths_Grade_10_Ch-6"
+  },
+  "questionType": "MCQ",
+  "questionCount": 62,
+  "questions": [
+    {
+      "id": "unspecified-publisher-class-10-math-triangles-1",
+      "sourceRow": 2,
+      "question": "Which of the following pairs of triangles are similar?",
+      "options": [
+        "Any two isosceles triangles",
+        "Any two equilateral triangles",
+        "Any two right triangles",
+        "Any two scalene triangles"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Similarity of Triangles"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-triangles-2",
+      "sourceRow": 3,
+      "question": "Math_Class_10_Assess_QB_06_Triangles_q2.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_06_Triangles_q2_o1.jpg",
+        "Math_Class_10_Assess_QB_06_Triangles_q2_o2.jpg",
+        "Math_Class_10_Assess_QB_06_Triangles_q2_o3.jpg",
+        "Math_Class_10_Assess_QB_06_Triangles_q2_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Similarity of Triangles"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-triangles-3",
+      "sourceRow": 4,
+      "question": "Which of the following triangles are similar?",
+      "options": [
+        "Math_Class_10_Assess_QB_06_Triangles_q3_o1.jpg",
+        "Math_Class_10_Assess_QB_06_Triangles_q3_o2.jpg",
+        "Math_Class_10_Assess_QB_06_Triangles_q3_o3.jpg",
+        "Math_Class_10_Assess_QB_06_Triangles_q3_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Similarity of Triangles"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-triangles-4",
+      "sourceRow": 5,
+      "question": "Math_Class_10_Assess_QB_06_Triangles_q4.jpg",
+      "options": [
+        "2 cm",
+        "4 cm",
+        "3 cm",
+        "8 cm"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Similar Figures and Basic Proportionality Theorem"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-triangles-5",
+      "sourceRow": 6,
+      "question": "Math_Class_10_Assess_QB_06_Triangles_q5.jpg",
+      "options": [
+        "1.5 cm",
+        "1 cm",
+        "3 cm",
+        "2 cm"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Similar Figures and Basic Proportionality Theorem"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-triangles-6",
+      "sourceRow": 7,
+      "question": "Two poles of heights 2 m and 8 m are x m apart. If the distance between their tops is 10 m, the value of x is",
+      "options": [
+        "6 m",
+        "4 m",
+        "10 m",
+        "8 m"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Pythagoras Theorem"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-triangles-7",
+      "sourceRow": 8,
+      "question": "Which of the following sides do NOT form a right triangle?",
+      "options": [
+        "9 cm, 40 cm, 41 cm",
+        "7 cm, 24 cm, 25 cm",
+        "11 cm, 60 cm, 61 cm",
+        "3 cm, 4 cm, 6 cm"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Pythagoras Theorem"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-triangles-8",
+      "sourceRow": 9,
+      "question": "The areas of two similar triangles are 144 cm2 and 81 cm2. If one side of the first triangle is 8.4 cm, then the corresponding side of the second triangle is",
+      "options": [
+        "9 cm",
+        "6 cm",
+        "6.3 cm",
+        "8 cm"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Areas of Similar Triangles"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-triangles-9",
+      "sourceRow": 10,
+      "question": "Math_Class_10_Assess_QB_06_Triangles_q9.jpg",
+      "options": [
+        "4 cm2",
+        "16 cm2",
+        "32 cm2",
+        "64 cm2"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Areas of Similar Triangles"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-triangles-10",
+      "sourceRow": 11,
+      "question": "The sides of two similar triangles are in the ratio 2: 5. If a side of the first triangle is 6 cm, the measure of the corresponding side of the second triangle is",
+      "options": [
+        "Math_Class_10_Assess_QB_06_Triangles_q10_o1.jpg",
+        "Math_Class_10_Assess_QB_06_Triangles_q10_o2.jpg",
+        "Math_Class_10_Assess_QB_06_Triangles_q10_o3.jpg",
+        "Math_Class_10_Assess_QB_06_Triangles_q10_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Similarity of Triangles"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-triangles-11",
+      "sourceRow": 12,
+      "question": "The lengths of the diagonals of a rhombus are 24 cm and 32 cm. The perimeter of the rhombus is :",
+      "options": [
+        "9 cm",
+        "128 cm",
+        "80 cm",
+        "56 cm"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Pythagoras Theorem"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-triangles-12",
+      "sourceRow": 13,
+      "question": "Math_Class_10_Assess_QB_06_Triangles_q12.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_06_Triangles_q12_o1.jpg",
+        "Math_Class_10_Assess_QB_06_Triangles_q12_o2.jpg",
+        "Math_Class_10_Assess_QB_06_Triangles_q12_o3.jpg",
+        "Math_Class_10_Assess_QB_06_Triangles_q12_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Pythagoras Theorem"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-triangles-13",
+      "sourceRow": 14,
+      "question": "Math_Class_10_Assess_QB_06_Triangles_q13.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_06_Triangles_q13_o1.jpg",
+        "Math_Class_10_Assess_QB_06_Triangles_q13_o2.jpg",
+        "Math_Class_10_Assess_QB_06_Triangles_q13_o3.jpg",
+        "Math_Class_10_Assess_QB_06_Triangles_q13_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Similarity of Triangles"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-triangles-14",
+      "sourceRow": 15,
+      "question": "Math_Class_10_Assess_QB_06_Triangles_q14.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_06_Triangles_q14_o1.jpg",
+        "Math_Class_10_Assess_QB_06_Triangles_q14_o2.jpg",
+        "Math_Class_10_Assess_QB_06_Triangles_q14_o3.jpg",
+        "Math_Class_10_Assess_QB_06_Triangles_q14_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Similarity of Triangles"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-triangles-15",
+      "sourceRow": 16,
+      "question": "Math_Class_10_Assess_QB_06_Triangles_q15.jpg",
+      "options": [
+        "40°",
+        "30°",
+        "70°",
+        "110°"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Similarity of Triangles"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-triangles-16",
+      "sourceRow": 17,
+      "question": "The area of two similar triangles ABC and PQR are 25 cm2, 49 cm2. If QR = 9.8 cm, then BC is :",
+      "options": [
+        "9.8 cm",
+        "7 cm",
+        "49 cm",
+        "25 cm"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Areas of Similar Triangles"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-triangles-17",
+      "sourceRow": 18,
+      "question": "Math_Class_10_Assess_QB_06_Triangles_q17.jpg",
+      "options": [
+        "0",
+        "1",
+        "–1",
+        "None of the above"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Pythagoras Theorem"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-triangles-18",
+      "sourceRow": 19,
+      "question": "Math_Class_10_Assess_QB_06_Triangles_q18.jpg",
+      "options": [
+        "60°",
+        "70°",
+        "50°",
+        "80°"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Similarity of Triangles"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-triangles-19",
+      "sourceRow": 20,
+      "question": "Math_Class_10_Assess_QB_06_Triangles_q19.jpg",
+      "options": [
+        "83°",
+        "32°",
+        "65°",
+        "97°"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Similarity of Triangles"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-triangles-20",
+      "sourceRow": 21,
+      "question": "Sides of two similar triangles are in the ratio 4 : 9. Areas of these triangles are in the ratio :",
+      "options": [
+        "Math_Class_10_Assess_QB_06_Triangles_q20_o1.jpg",
+        "Math_Class_10_Assess_QB_06_Triangles_q20_o2.jpg",
+        "Math_Class_10_Assess_QB_06_Triangles_q20_o3.jpg",
+        "Math_Class_10_Assess_QB_06_Triangles_q20_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Areas of Similar Triangles"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-triangles-21",
+      "sourceRow": 22,
+      "question": "Math_Class_10_Assess_QB_06_Triangles_q21.jpg",
+      "options": [
+        "30 cm",
+        "0.5 m",
+        "50 cm",
+        "3 m"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Areas of Similar Triangles"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-triangles-22",
+      "sourceRow": 23,
+      "question": "Math_Class_10_Assess_QB_06_Triangles_q22.jpg",
+      "options": [
+        "100 cm2",
+        "125 cm2",
+        "150 cm2",
+        "200 cm2"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Areas of Similar Triangles"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-triangles-23",
+      "sourceRow": 24,
+      "question": "If the ratio of the corresponding sides of two similar triangles is 2 : 3, then the ratio of their corresponding altitude is:",
+      "options": [
+        "Math_Class_10_Assess_QB_06_Triangles_q23_o1.jpg",
+        "Math_Class_10_Assess_QB_06_Triangles_q23_o2.jpg",
+        "Math_Class_10_Assess_QB_06_Triangles_q23_o3.jpg",
+        "Math_Class_10_Assess_QB_06_Triangles_q23_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Areas of Similar Triangles"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-triangles-24",
+      "sourceRow": 25,
+      "question": "Which of the following are not the sides of a right triangle ?",
+      "options": [
+        "Math_Class_10_Assess_QB_06_Triangles_q24_o1.jpg",
+        "Math_Class_10_Assess_QB_06_Triangles_q24_o2.jpg",
+        "Math_Class_10_Assess_QB_06_Triangles_q24_o3.jpg",
+        "Math_Class_10_Assess_QB_06_Triangles_q24_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Pythagoras Theorem"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-triangles-25",
+      "sourceRow": 26,
+      "question": "Math_Class_10_Assess_QB_06_Triangles_q25.jpg",
+      "options": [
+        "4.8 cm",
+        "12 cm",
+        "4 cm",
+        "5.6 cm"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Areas of Similar Triangles"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-triangles-26",
+      "sourceRow": 27,
+      "question": "Math_Class_10_Assess_QB_06_Triangles_q26.jpg",
+      "options": [
+        "3 cm",
+        "4 cm",
+        "7 cm",
+        "4.7 cm"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Similar Figures and Basic Proportionality Theorem"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-triangles-27",
+      "sourceRow": 28,
+      "question": "Math_Class_10_Assess_QB_06_Triangles_q27.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_06_Triangles_q27_o1.jpg",
+        "Math_Class_10_Assess_QB_06_Triangles_q27_o2.jpg",
+        "Math_Class_10_Assess_QB_06_Triangles_q27_o3.jpg",
+        "Math_Class_10_Assess_QB_06_Triangles_q27_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Areas of Similar Triangles"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-triangles-28",
+      "sourceRow": 29,
+      "question": "The perimeters of two similar triangles ABC and LMN are 60 cm and 48 cm respectively. If LM = 8 cm, length of AB is",
+      "options": [
+        "10 cm",
+        "8 cm",
+        "5 cm",
+        "6 cm"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Similarity of Triangles"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-triangles-29",
+      "sourceRow": 30,
+      "question": "Math_Class_10_Assess_QB_06_Triangles_q29.jpg",
+      "options": [
+        "60°",
+        "50°",
+        "40°",
+        "30°"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Similarity of Triangles"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-triangles-30",
+      "sourceRow": 31,
+      "question": "Math_Class_10_Assess_QB_06_Triangles_q30.jpg",
+      "options": [
+        "4 cm",
+        "8 cm",
+        "12 cm",
+        "16 cm"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Similarity of Triangles"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-triangles-31",
+      "sourceRow": 32,
+      "question": "The ratio of the corresponding sides of two similar triangles is 2 : 3. The ratio of the corresponding heights is",
+      "options": [
+        "Math_Class_10_Assess_QB_06_Triangles_q31_o1.jpg",
+        "Math_Class_10_Assess_QB_06_Triangles_q31_o2.jpg",
+        "Math_Class_10_Assess_QB_06_Triangles_q31_o3.jpg",
+        "Math_Class_10_Assess_QB_06_Triangles_q31_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Similarity of Triangles"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-triangles-32",
+      "sourceRow": 33,
+      "question": "Math_Class_10_Assess_QB_06_Triangles_q32.jpg",
+      "options": [
+        "1.6 cm",
+        "1.8 cm",
+        "3.2 cm",
+        "3.6 cm"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Similar Figures and Basic Proportionality Theorem"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-triangles-33",
+      "sourceRow": 34,
+      "question": "A man goes 150 m due east and then 200 m due north.<br> How far is he from the starting point ?",
+      "options": [
+        "100 m",
+        "200 m",
+        "250 m",
+        "300 m"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Pythagoras Theorem"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-triangles-34",
+      "sourceRow": 35,
+      "question": "Math_Class_10_Assess_QB_06_Triangles_q34.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_06_Triangles_q34_o1.jpg",
+        "Math_Class_10_Assess_QB_06_Triangles_q34_o2.jpg",
+        "Math_Class_10_Assess_QB_06_Triangles_q34_o3.jpg",
+        "Math_Class_10_Assess_QB_06_Triangles_q34_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Similarity of Triangles"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Analysing",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-triangles-35",
+      "sourceRow": 36,
+      "question": "Math_Class_10_Assess_QB_06_Triangles_q35.jpg",
+      "options": [
+        "7.5 cm",
+        "15 cm",
+        "30 cm",
+        "22.5 cm"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Similarity of Triangles"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Analysing",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-triangles-36",
+      "sourceRow": 37,
+      "question": "The perimeters of two similar triangles are 40 cm and 50 cm respectively. The ratio of the area of the first triangle to the area of the second triangle is",
+      "options": [
+        "Math_Class_10_Assess_QB_06_Triangles_q36_o1.jpg",
+        "Math_Class_10_Assess_QB_06_Triangles_q36_o2.jpg",
+        "Math_Class_10_Assess_QB_06_Triangles_q36_o3.jpg",
+        "Math_Class_10_Assess_QB_06_Triangles_q36_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Areas of Similar Triangles"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-triangles-37",
+      "sourceRow": 38,
+      "question": "Math_Class_10_Assess_QB_06_Triangles_q37.jpg",
+      "options": [
+        "7 cm",
+        "7.5 cm",
+        "8 cm",
+        "20 cm"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Pythagoras Theorem"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Analysing",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-triangles-38",
+      "sourceRow": 39,
+      "question": "Two poles of height 6 m and 11 m stand vertically upright on a plane ground. If the distance between their foot is 12 m, then the distance between their tops is",
+      "options": [
+        "11 cm",
+        "12 cm",
+        "13 cm",
+        "14 cm"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Pythagoras Theorem"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-triangles-39",
+      "sourceRow": 40,
+      "question": "Math_Class_10_Assess_QB_06_Triangles_q39.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_06_Triangles_q39_o1.jpg",
+        "Math_Class_10_Assess_QB_06_Triangles_q39_o2.jpg",
+        "Math_Class_10_Assess_QB_06_Triangles_q39_o3.jpg",
+        "Math_Class_10_Assess_QB_06_Triangles_q39_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Similar Figures and Basic Proportionality Theorem"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-triangles-40",
+      "sourceRow": 41,
+      "question": "Math_Class_10_Assess_QB_06_Triangles_q40.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_06_Triangles_q40_o1.jpg",
+        "Math_Class_10_Assess_QB_06_Triangles_q40_o2.jpg",
+        "Math_Class_10_Assess_QB_06_Triangles_q40_o3.jpg",
+        "Math_Class_10_Assess_QB_06_Triangles_q40_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Pythagoras Theorem"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Analysing",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-triangles-41",
+      "sourceRow": 42,
+      "question": "Math_Class_10_Assess_QB_06_Triangles_q41.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_06_Triangles_q41_o1.jpg",
+        "Math_Class_10_Assess_QB_06_Triangles_q41_o2.jpg",
+        "Math_Class_10_Assess_QB_06_Triangles_q41_o3.jpg",
+        "Math_Class_10_Assess_QB_06_Triangles_q41_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Pythagoras Theorem"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Analysing",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-triangles-42",
+      "sourceRow": 43,
+      "question": "Math_Class_10_Assess_QB_06_Triangles_q42.jpg",
+      "options": [
+        "50°",
+        "60°",
+        "70°",
+        "80°"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Similarity of Triangles"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-triangles-43",
+      "sourceRow": 44,
+      "question": "If in two triangles, corresponding angles are equal, then the two triangles are",
+      "options": [
+        "equiangular",
+        "similar",
+        "equiangular and similar",
+        "none of these"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Similarity of Triangles"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-triangles-44",
+      "sourceRow": 45,
+      "question": "Math_Class_10_Assess_QB_06_Triangles_q44.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_06_Triangles_q44_o1.jpg",
+        "Math_Class_10_Assess_QB_06_Triangles_q44_o2.jpg",
+        "Math_Class_10_Assess_QB_06_Triangles_q44_o3.jpg",
+        "Math_Class_10_Assess_QB_06_Triangles_q44_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Similar Figures and Basic Proportionality Theorem"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Analysing",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-triangles-45",
+      "sourceRow": 46,
+      "question": "Math_Class_10_Assess_QB_06_Triangles_q45.jpg",
+      "options": [
+        "ab",
+        "b(b – a)",
+        "b(a + b)",
+        "a(a + b)"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Pythagoras Theorem"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-triangles-46",
+      "sourceRow": 47,
+      "question": "Math_Class_10_Assess_QB_06_Triangles_q46.jpg",
+      "options": [
+        "4 cm",
+        "8 cm",
+        "12 cm",
+        "16 cm"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Similarity of Triangles"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-triangles-47",
+      "sourceRow": 48,
+      "question": "The areas of two similar triangles are 32 cm2 and 48 cm2. If the square of a side of the first triangle is 24 cm2, the square of the corresponding side of the second triangle will be",
+      "options": [
+        "16 cm2",
+        "36 cm2",
+        "30 cm2",
+        "72 cm2"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Areas of Similar Triangles"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-triangles-48",
+      "sourceRow": 49,
+      "question": "A ladder reaches a window which is 12 m above the ground on one side of the street, keeping the foot at the same point, the ladder is turned to the other side of the street to reach a window 9 m high. The width of the street if the length of the ladder is 15 m is",
+      "options": [
+        "10 m",
+        "15 m",
+        "21 m",
+        "25 m"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Pythagoras Theorem"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-triangles-49",
+      "sourceRow": 50,
+      "question": "Math_Class_10_Assess_QB_06_Triangles_q49.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_06_Triangles_q49_o1.jpg",
+        "Math_Class_10_Assess_QB_06_Triangles_q49_o2.jpg",
+        "Math_Class_10_Assess_QB_06_Triangles_q49_o3.jpg",
+        "Math_Class_10_Assess_QB_06_Triangles_q49_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Similarity of Triangles"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-triangles-50",
+      "sourceRow": 51,
+      "question": "Math_Class_10_Assess_QB_06_Triangles_q50.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_06_Triangles_q50_o1.jpg",
+        "Math_Class_10_Assess_QB_06_Triangles_q50_o2.jpg",
+        "Math_Class_10_Assess_QB_06_Triangles_q50_o3.jpg",
+        "Math_Class_10_Assess_QB_06_Triangles_q50_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Similarity of Triangles"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-triangles-51",
+      "sourceRow": 52,
+      "question": "Math_Class_10_Assess_QB_06_Triangles_q51.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_06_Triangles_q51_o1.jpg",
+        "Math_Class_10_Assess_QB_06_Triangles_q51_o2.jpg",
+        "Math_Class_10_Assess_QB_06_Triangles_q51_o3.jpg",
+        "Math_Class_10_Assess_QB_06_Triangles_q51_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Similar Figures and Basic Proportionality Theorem"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-triangles-52",
+      "sourceRow": 53,
+      "question": "Math_Class_10_Assess_QB_06_Triangles_q52.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_06_Triangles_q52_o1.jpg",
+        "Math_Class_10_Assess_QB_06_Triangles_q52_o2.jpg",
+        "Math_Class_10_Assess_QB_06_Triangles_q52_o3.jpg",
+        "Math_Class_10_Assess_QB_06_Triangles_q52_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Similar Figures and Basic Proportionality Theorem"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-triangles-53",
+      "sourceRow": 54,
+      "question": "Math_Class_10_Assess_QB_06_Triangles_q53.jpg",
+      "options": [
+        "4 cm",
+        "6 cm",
+        "3 cm",
+        "8 cm"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Similarity of Triangles"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Analysing",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-triangles-54",
+      "sourceRow": 55,
+      "question": "Math_Class_10_Assess_QB_06_Triangles_q54.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_06_Triangles_q54_o1.jpg",
+        "Math_Class_10_Assess_QB_06_Triangles_q54_o2.jpg",
+        "Math_Class_10_Assess_QB_06_Triangles_q54_o3.jpg",
+        "Math_Class_10_Assess_QB_06_Triangles_q54_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Pythagoras Theorem"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Analysing",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-triangles-55",
+      "sourceRow": 56,
+      "question": "Math_Class_10_Assess_QB_06_Triangles_q55.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_06_Triangles_q55_o1.jpg",
+        "Math_Class_10_Assess_QB_06_Triangles_q55_o2.jpg",
+        "Math_Class_10_Assess_QB_06_Triangles_q55_o3.jpg",
+        "Math_Class_10_Assess_QB_06_Triangles_q55_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Similarity of Triangles"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Analysing",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-triangles-56",
+      "sourceRow": 57,
+      "question": "Math_Class_10_Assess_QB_06_Triangles_q56.jpg",
+      "options": [
+        "4.2 cm",
+        "4.5 cm",
+        "4.8 cm",
+        "5 cm"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Similarity of Triangles"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Analysing",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-triangles-57",
+      "sourceRow": 58,
+      "question": "Math_Class_10_Assess_QB_06_Triangles_q57.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_06_Triangles_q57_o1.jpg",
+        "Math_Class_10_Assess_QB_06_Triangles_q57_o2.jpg",
+        "Math_Class_10_Assess_QB_06_Triangles_q57_o3.jpg",
+        "Math_Class_10_Assess_QB_06_Triangles_q57_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Similarity of Triangles"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-triangles-58",
+      "sourceRow": 59,
+      "question": "Math_Class_10_Assess_QB_06_Triangles_q58.jpg",
+      "options": [
+        "7.25 cm",
+        "8.25 cm",
+        "8.75 cm",
+        "7.75 cm"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Similar Figures and Basic Proportionality Theorem"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-triangles-59",
+      "sourceRow": 60,
+      "question": "Math_Class_10_Assess_QB_06_Triangles_q59.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_06_Triangles_q59_o1.jpg",
+        "Math_Class_10_Assess_QB_06_Triangles_q59_o2.jpg",
+        "Math_Class_10_Assess_QB_06_Triangles_q59_o3.jpg",
+        "Math_Class_10_Assess_QB_06_Triangles_q59_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Areas of Similar Triangles"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": "Exemplar"
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-triangles-60",
+      "sourceRow": 61,
+      "question": "Math_Class_10_Assess_QB_06_Triangles_q60.jpg",
+      "options": [
+        "45°",
+        "60°",
+        "90°",
+        "30°"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Pythagoras Theorem"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-triangles-61",
+      "sourceRow": 62,
+      "question": "The perimeters of two similar triangles ABC and PQR are respectively 36 cm and 24 cm.<br> If PQ = 10 cm, then AB = #DASH#",
+      "options": [
+        "10 cm",
+        "20 cm",
+        "25 cm",
+        "15 cm"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Similarity of Triangles"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Analysing",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-triangles-62",
+      "sourceRow": 63,
+      "question": "Math_Class_10_Assess_QB_06_Triangles_q62.jpg",
+      "options": [
+        "2",
+        "3",
+        "1",
+        "3.5"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Similar Figures and Basic Proportionality Theorem"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Analysing",
+      "smeComments": null,
+      "specialCategory": null
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-24T11:45:03.179Z",
+  "classification": {
+    "class": "Class 8",
+    "subject": "Math",
+    "topic": "Practical Geometry"
+  },
+  "publisher": "unspecified-publisher",
+  "source": {
+    "file": "Class8/Final/Math_Class8_Assess_QB_04_Practical_Geometry/Math_Class 8_Assess_QB_04_Practical_Geometry.xlsx",
+    "sheet": "filename"
+  },
+  "questionType": "MCQ",
+  "questionCount": 3,
+  "questions": [
+    {
+      "id": "unspecified-publisher-class-8-math-practical-geometry-7",
+      "sourceRow": 8,
+      "question": "How many least number of measurements are required to construct a parallelogram?",
+      "options": [
+        "One",
+        "Two",
+        "Three",
+        "Four"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Construction of Special Quadrilaterals"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-practical-geometry-8",
+      "sourceRow": 9,
+      "question": "Which of the following statement is true if on joining the mid-points of a quadrilateral PQRS we get a rhombus?",
+      "options": [
+        "PQRS has perpendicular diagonals",
+        "PQRS has equal diagonals",
+        "PQRS is a rhombus",
+        "PQRS is a parallelogram"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Construction of Special Quadrilaterals"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-practical-geometry-9",
+      "sourceRow": 10,
+      "question": "What is the minimum number of measurements required to construct a square?",
+      "options": [
+        "One",
+        "Two",
+        "Three",
+        "Four"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Construction of Special Quadrilaterals"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    }
+  ]
+}

@@ -1,0 +1,694 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-24T11:45:03.230Z",
+  "classification": {
+    "class": "Class 8",
+    "subject": "Math",
+    "topic": "Squares and Square Roots"
+  },
+  "publisher": "unspecified-publisher",
+  "source": {
+    "file": "Class8/Final/Math_Class8_Assess_QB_06_Squares_and_Square_Roots/Math_Class 8_Assess_QB_06_Squares_and_Square_Roots.xlsx",
+    "sheet": "filename"
+  },
+  "questionType": "MCQ",
+  "questionCount": 26,
+  "questions": [
+    {
+      "id": "unspecified-publisher-class-8-math-squares-and-square-roots-14",
+      "sourceRow": 15,
+      "question": "Which number is not a perfect square?",
+      "options": [
+        "576",
+        "676",
+        "931",
+        "961"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Properties of Square Numbers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-squares-and-square-roots-15",
+      "sourceRow": 16,
+      "question": "Which of the following is the largest number by which 900 must be added to make the sum a perfect square less than 1200?",
+      "options": [
+        "245",
+        "256",
+        "109",
+        "44"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Application of Square Root"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-squares-and-square-roots-16",
+      "sourceRow": 17,
+      "question": "What is the value of (282 – 272)?",
+      "options": [
+        "1",
+        "27",
+        "28",
+        "55"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Pattern of Square Numbers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-squares-and-square-roots-17",
+      "sourceRow": 18,
+      "question": "What is the digit in the unit’s place in the square of 5097?",
+      "options": [
+        "1",
+        "6",
+        "7",
+        "9"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Properties of Square Numbers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-squares-and-square-roots-18",
+      "sourceRow": 19,
+      "question": "Which of the following triplets are not Pythagorean?",
+      "options": [
+        "(10, 24, 26)",
+        "(14, 48, 50)",
+        "(22, 120, 122)",
+        "(18, 79, 82)"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Pattern of Square Numbers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-squares-and-square-roots-19",
+      "sourceRow": 20,
+      "question": "Which of the following is not correct?",
+      "options": [
+        "Maths_8_Squares_and_Square_Roots_q19_o1.jpg",
+        "Maths_8_Squares_and_Square_Roots_q19_o2.jpg",
+        "Maths_8_Squares_and_Square_Roots_q19_o3.jpg",
+        "Maths_8_Squares_and_Square_Roots_q19_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Square Root of Decimals"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-squares-and-square-roots-20",
+      "sourceRow": 21,
+      "question": "Maths_8_Squares_and_Square_Roots_q20.jpg",
+      "options": [
+        "Maths_8_Squares_and_Square_Roots_q20_o1.jpg",
+        "Maths_8_Squares_and_Square_Roots_q20_o2.jpg",
+        "Maths_8_Squares_and_Square_Roots_q20_o3.jpg",
+        "Maths_8_Squares_and_Square_Roots_q20_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Square Root of Decimals"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-squares-and-square-roots-21",
+      "sourceRow": 22,
+      "question": "Maths_8_Squares_and_Square_Roots_q21.jpg",
+      "options": [
+        "0.00084",
+        "0.0084",
+        "0.084",
+        "0.84"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Square Root of Decimals"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-squares-and-square-roots-22",
+      "sourceRow": 23,
+      "question": "Which of the following is a perfect square?",
+      "options": [
+        "15732",
+        "2093",
+        "5479",
+        "5776"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Properties of Square Numbers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-squares-and-square-roots-23",
+      "sourceRow": 24,
+      "question": "What is the sum of first 10 odd natural numbers?",
+      "options": [
+        "85",
+        "90",
+        "95",
+        "100"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Pattern of Square Numbers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-squares-and-square-roots-24",
+      "sourceRow": 25,
+      "question": "Which of the following numbers when added results in 64?",
+      "options": [
+        "3, 5, 7, 9, 11, 13, 15, 17",
+        "1, 3, 5, 7, 9, 11, 13, 15",
+        "1, 2, 3, 4, 5, 6, 7, 8",
+        "1, 3, 5, 7, 11, 13, 17, 19"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Pattern of Square Numbers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-squares-and-square-roots-25",
+      "sourceRow": 26,
+      "question": "For every number, which of the following is equal to (n + 1)2 – n2?",
+      "options": [
+        "(n + 1) + n",
+        "n – (n + 1)",
+        "(n + 1) – n",
+        "(n – 1) + n"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Pattern of Square Numbers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-squares-and-square-roots-26",
+      "sourceRow": 27,
+      "question": "Which of the following is the least number?",
+      "options": [
+        "Maths_8_Squares_and_Square_Roots_q26_o1.jpg",
+        "Maths_8_Squares_and_Square_Roots_q26_o2.jpg",
+        "Maths_8_Squares_and_Square_Roots_q26_o3.jpg",
+        "Maths_8_Squares_and_Square_Roots_q26_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Square Root of Decimals"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-squares-and-square-roots-27",
+      "sourceRow": 28,
+      "question": "Maths_8_Squares_and_Square_Roots_q27.jpg",
+      "options": [
+        "Maths_8_Squares_and_Square_Roots_q27_o1.jpg",
+        "Maths_8_Squares_and_Square_Roots_q27_o2.jpg",
+        "Maths_8_Squares_and_Square_Roots_q27_o3.jpg",
+        "Maths_8_Squares_and_Square_Roots_q27_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Finding Square Roots"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-squares-and-square-roots-28",
+      "sourceRow": 29,
+      "question": "Maths_8_Squares_and_Square_Roots_q28.jpg",
+      "options": [
+        "Maths_8_Squares_and_Square_Roots_q28_o1.jpg",
+        "Maths_8_Squares_and_Square_Roots_q28_o2.jpg",
+        "Maths_8_Squares_and_Square_Roots_q28_o3.jpg",
+        "Maths_8_Squares_and_Square_Roots_q28_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Application of Square Root"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-squares-and-square-roots-29",
+      "sourceRow": 30,
+      "question": "What is the square root of 3881.29?",
+      "options": [
+        "61.3",
+        "62.3",
+        "63.3",
+        "64.3"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Square Root of Decimals"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-squares-and-square-roots-30",
+      "sourceRow": 31,
+      "question": "Maths_8_Squares_and_Square_Roots_q30.jpg",
+      "options": [
+        "1",
+        "0.071",
+        "0.017",
+        "0.17"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Square Root of Decimals"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-squares-and-square-roots-31",
+      "sourceRow": 32,
+      "question": "Maths_8_Squares_and_Square_Roots_q31.jpg",
+      "options": [
+        "3.15",
+        "3.20",
+        "3.41",
+        "3.73"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Square Root of Decimals"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-squares-and-square-roots-32",
+      "sourceRow": 33,
+      "question": "What is the least number which must be subtracted from 6429 to make it a perfect square?",
+      "options": [
+        "188",
+        "132",
+        "152",
+        "208"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Finding Square Roots"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-squares-and-square-roots-33",
+      "sourceRow": 34,
+      "question": "Which of the following is the greatest number of four digits which is a perfect square?",
+      "options": [
+        "9999",
+        "9901",
+        "8836",
+        "9624"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Finding Square Roots"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-squares-and-square-roots-34",
+      "sourceRow": 35,
+      "question": "Without adding, what is the sum of 1+3+5+7+9+11+13+15+17+19+21?",
+      "options": [
+        "81",
+        "100",
+        "121",
+        "144"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Pattern of Square Numbers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-squares-and-square-roots-35",
+      "sourceRow": 36,
+      "question": "How many non square numbers lie between the two square numbers 9 and 16?",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Pattern of Square Numbers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-squares-and-square-roots-36",
+      "sourceRow": 37,
+      "question": "To find the square root of a number correct to 2 decimal places, how many digits after the decimal point the number should have?",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Application of Square Root"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-squares-and-square-roots-37",
+      "sourceRow": 38,
+      "question": "Maths_8_Squares_and_Square_Roots_q37.jpg",
+      "options": [
+        "2",
+        "82.5",
+        "825",
+        "3666.67"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Square Root of Decimals"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-squares-and-square-roots-38",
+      "sourceRow": 39,
+      "question": "A man plants 15376 apple trees in his garden and arranges them so that there are as many rows as there are apples trees in each row. How many rows are there?",
+      "options": [
+        "124",
+        "126",
+        "134",
+        "144"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Application of Square Root"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-squares-and-square-roots-39",
+      "sourceRow": 40,
+      "question": "If a * b = a2 + b2 + ab, then what is the value of 2 * 5?",
+      "options": [
+        "29",
+        "35",
+        "14",
+        "39"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Finding the Square of a Number"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    }
+  ]
+}

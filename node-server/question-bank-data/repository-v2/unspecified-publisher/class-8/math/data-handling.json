@@ -1,0 +1,226 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-24T11:45:03.205Z",
+  "classification": {
+    "class": "Class 8",
+    "subject": "Math",
+    "topic": "Data Handling"
+  },
+  "publisher": "unspecified-publisher",
+  "source": {
+    "file": "Class8/Final/Math_Class8_Assess_QB_05_Data_Handling/Math_Class 8_Assess_QB_05_Data_Handling.xlsx",
+    "sheet": "filename"
+  },
+  "questionType": "MCQ",
+  "questionCount": 8,
+  "questions": [
+    {
+      "id": "unspecified-publisher-class-8-math-data-handling-9",
+      "sourceRow": 10,
+      "question": "The scores obtained by 15 students in a mathematics quiz are 22, 23, 34, 62, 34, 67, 78, 54, 97, 52, 76, 24, 56, 49 and 82. Which of the following frequency table displays the correct information?",
+      "options": [
+        "Maths_8_Data_Handling_q9_o1.jpg",
+        "Maths_8_Data_Handling_q9_o2.jpg",
+        "Maths_8_Data_Handling_q9_o3.jpg",
+        "Maths_8_Data_Handling_q9_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Organising and Grouping Data"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-data-handling-10",
+      "sourceRow": 11,
+      "question": "Raju rolls a die and then tosses a coin. Which of the following set of outcomes correctly shows the outcomes of getting an odd number followed by head on the coin?",
+      "options": [
+        "{(1, Tail), (2, Tail), (3, Tail), (5, Tail)}",
+        "{(2, Tail), (4, Tail), (6, Tail)}",
+        "{(1, Tail), (3, Tail), (5, Tail)}",
+        "{(2, Tail), (3, Tail), (5, Tail)}"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Chance and Probability"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-data-handling-11",
+      "sourceRow": 12,
+      "question": "Sushmita has three one rupee coins, five two rupee coins and four five rupee coins in her purse. She draws a coin from her purse without seeing. What is the probability of getting a two rupee coin?",
+      "options": [
+        "Maths_8_Data_Handling_q11_o1.jpg",
+        "Maths_8_Data_Handling_q11_o2.jpg",
+        "Maths_8_Data_Handling_q11_o3.jpg",
+        "Maths_8_Data_Handling_q11_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Chance and Probability"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-data-handling-12",
+      "sourceRow": 13,
+      "question": "Maths_8_Data_Handling_q12.jpg",
+      "options": [
+        "Maths_8_Data_Handling_q12_o1.jpg",
+        "Maths_8_Data_Handling_q12_o2.jpg",
+        "Maths_8_Data_Handling_q12_o3.jpg",
+        "Maths_8_Data_Handling_q12_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Interpreting and Constructing Graphs"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-data-handling-13",
+      "sourceRow": 14,
+      "question": "Maths_8_Data_Handling_q13.jpg",
+      "options": [
+        "Maths_8_Data_Handling_q13_o1.jpg",
+        "Maths_8_Data_Handling_q13_o2.jpg",
+        "Maths_8_Data_Handling_q13_o3.jpg",
+        "Maths_8_Data_Handling_q13_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Interpreting and Constructing Graphs"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-data-handling-14",
+      "sourceRow": 15,
+      "question": "Maths_8_Data_Handling_q14.jpg",
+      "options": [
+        "13.5%",
+        "37.5%",
+        "50%",
+        "20%"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Interpreting and Constructing Graphs"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-data-handling-18",
+      "sourceRow": 16,
+      "question": "A pouch holds 25 cards, each marked with numbers from 1 to 25. What is the probability that one card is chosen at random is a multiple of 4?",
+      "options": [
+        "Maths_8_Data_Handling_q18_o1.jpg",
+        "Maths_8_Data_Handling_q18_o2.jpg",
+        "Maths_8_Data_Handling_q18_o3.jpg",
+        "Maths_8_Data_Handling_q18_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Chance and Probability"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-data-handling-26",
+      "sourceRow": 17,
+      "question": "Maths_8_Data_Handling_q26.jpg",
+      "options": [
+        "It looks as if the price of an ad tripled in 2001.",
+        "It looks as if the price of an ad decreased in 2001.",
+        "It looks as if the price of an ad stayed the same.",
+        "It looks as if the price of an ad becomes zero in 2001."
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Interpreting and Constructing Graphs"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    }
+  ]
+}

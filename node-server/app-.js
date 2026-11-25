@@ -1,0 +1,57 @@
+import express from 'express';
+import path from 'path';
+import cors from 'cors';
+import bodyParser from 'body-parser';
+
+import chatRoutes from './routes/chat.js';
+import visionRoutes from './routes/vision.js';
+import llamaRoutes from './routes/llama.js';
+import pexelsVideoRoutes from './routes/pexelsVideoStream.js';
+import learningRoutes from './routes/learning.js';
+import { fileURLToPath } from 'url';
+//import voiceTranslateRoutes from './routes/voiceTranslate.js';
+import multilingualRoutes from './routes/multilingual.js';
+import agentRoutes from './routes/agent.js';
+import assessmentRoutes from './routes/assessment.js';
+import questionBankRoutes from './routes/questionBank.js';
+import adaptiveLearningRoutes from './routes/adaptiveLearning.js';
+
+
+
+const app = express();
+
+app.use(cors({
+  origin: [
+    'http://localhost:5500',
+    'http://127.0.0.1:5500',
+    'https://sanjeev-rajput.github.io',
+    'http://localhost:8501'
+  ]
+}));
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+
+app.use('/bin', express.static(path.join(__dirname, 'bin')));
+
+
+app.use(bodyParser.json());
+app.use(express.json());
+
+// Mount routes
+app.use('/api/vision', visionRoutes);
+app.use('/api/llama', llamaRoutes);
+app.use('/api/pexels', pexelsVideoRoutes);
+// Assessment endpoints must be registered before the general learning route.
+app.use('/api/learning/assessment', assessmentRoutes);
+app.use('/api/learning/question-bank', questionBankRoutes);
+app.use('/api/learning', learningRoutes);
+app.use('/api/chat', chatRoutes);
+//app.use('/api/voice', voiceTranslateRoutes);
+app.use('/api/multilingual', multilingualRoutes);
+app.use('/api/agent', agentRoutes);
+app.use('/api/adaptive-learning', adaptiveLearningRoutes);
+
+
+export default app;

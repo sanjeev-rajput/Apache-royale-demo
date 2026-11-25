@@ -712,3 +712,22 @@ button.spectrum-Button.clear-conversation-btn .spectrum-Button-label {
 .qb-selection-link span {
     text-decoration: none !important;
 }
+.qb-selection-back{
+  background-color: grey;
+  font-weight: bold;
+}
+.Adaptive-resultsContainer {
+    margin: 10px;
+    padding-bottom: 45px;
+    box-sizing: border-box;
+}
+
+/* Question Bank question image */
+.assessment-question-image {
+    display: block;
+    max-width: 100%;
+    max-height: 320px;
+    height: auto;
+    object-fit: contain;
+    margin: 6px 0 10px;
+}

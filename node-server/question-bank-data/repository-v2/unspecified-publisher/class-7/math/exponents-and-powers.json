@@ -1,0 +1,746 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-24T11:45:02.979Z",
+  "classification": {
+    "class": "Class 7",
+    "subject": "Math",
+    "topic": "Exponents and Powers"
+  },
+  "publisher": "unspecified-publisher",
+  "source": {
+    "file": "Class7/Final/Math_Class 7_Assess_QB_13_Exponents_and_Powers/Math_Class 7_Assess_QB_13_Exponents_and_Powers.xlsx",
+    "sheet": "filename"
+  },
+  "questionType": "MCQ",
+  "questionCount": 28,
+  "questions": [
+    {
+      "id": "unspecified-publisher-class-7-math-exponents-and-powers-14",
+      "sourceRow": 15,
+      "question": "Maths_7_Exponents_and_Powers_q14.jpg",
+      "options": [
+        "Maths_7_Exponents_and_Powers_q14_o1.jpg",
+        "Maths_7_Exponents_and_Powers_q14_o2.jpg",
+        "Maths_7_Exponents_and_Powers_q14_o3.jpg",
+        "Maths_7_Exponents_and_Powers_q14_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Exponents"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-exponents-and-powers-15",
+      "sourceRow": 16,
+      "question": "Maths_7_Exponents_and_Powers_q15.jpg",
+      "options": [
+        "Maths_7_Exponents_and_Powers_q15_o1.jpg",
+        "Maths_7_Exponents_and_Powers_q15_o2.jpg",
+        "Maths_7_Exponents_and_Powers_q15_o3.jpg",
+        "Maths_7_Exponents_and_Powers_q15_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Laws of Exponents"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-exponents-and-powers-16",
+      "sourceRow": 17,
+      "question": "Which of the following statements is true?",
+      "options": [
+        "43 > 34",
+        "35 < 53",
+        "22 + 32 = (2 + 3)2",
+        "28 > 82"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Exponents"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-exponents-and-powers-17",
+      "sourceRow": 18,
+      "question": "What is the value of x, if 104 × 10x = 10000000?",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Laws of Exponents"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-exponents-and-powers-18",
+      "sourceRow": 19,
+      "question": "Which of the following is equivalent to 812 as a power of 3?",
+      "options": [
+        "32",
+        "34",
+        "36",
+        "38"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Exponents"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-exponents-and-powers-19",
+      "sourceRow": 20,
+      "question": "What is the simplified form of (26 × 25) ÷ (23 × 22)?",
+      "options": [
+        "64",
+        "32",
+        "16",
+        "8"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Laws of Exponents"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-exponents-and-powers-20",
+      "sourceRow": 21,
+      "question": "Maths_7_Exponents_and_Powers_q20.jpg",
+      "options": [
+        "Maths_7_Exponents_and_Powers_q20_o1.jpg",
+        "Maths_7_Exponents_and_Powers_q20_o2.jpg",
+        "Maths_7_Exponents_and_Powers_q20_o3.jpg",
+        "Maths_7_Exponents_and_Powers_q20_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Exponents"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-exponents-and-powers-21",
+      "sourceRow": 22,
+      "question": "Which of the following when simplified is not equal to 27?",
+      "options": [
+        "[910 ÷ 98] ÷ 3",
+        "312 ÷ 38",
+        "(38 ÷ 36) × (40 × 50 × 60)",
+        "90 × 33"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Exponents"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-exponents-and-powers-22",
+      "sourceRow": 23,
+      "question": "What is the value of 3n–1 if 3n = 81?",
+      "options": [
+        "0",
+        "3",
+        "9",
+        "27"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Laws of Exponents"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-exponents-and-powers-23",
+      "sourceRow": 24,
+      "question": "If 22n–1 = 83–n, then what is the value of n?",
+      "options": [
+        "3",
+        "2",
+        "0",
+        "–2"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Laws of Exponents"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-exponents-and-powers-24",
+      "sourceRow": 25,
+      "question": "If 5n = 3125, then what is the value of 5(n – 3)?",
+      "options": [
+        "25",
+        "125",
+        "625",
+        "1625"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Laws of Exponents"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-exponents-and-powers-25",
+      "sourceRow": 26,
+      "question": "Maths_7_Exponents_and_Powers_q25.jpg",
+      "options": [
+        "Maths_7_Exponents_and_Powers_q25_o1.jpg",
+        "Maths_7_Exponents_and_Powers_q25_o2.jpg",
+        "Maths_7_Exponents_and_Powers_q25_o3.jpg",
+        "Maths_7_Exponents_and_Powers_q25_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Laws of Exponents"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": "HOTS"
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-exponents-and-powers-26",
+      "sourceRow": 27,
+      "question": "What is the value of x, if 49 × 49 × 49 × 49 = 7x?",
+      "options": [
+        "4",
+        "7",
+        "8",
+        "16"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Exponents"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-exponents-and-powers-27",
+      "sourceRow": 28,
+      "question": "If 5x+3 = 253x–4, then what is the value of x?",
+      "options": [
+        "Maths_7_Exponents_and_Powers_q27_o1.jpg",
+        "Maths_7_Exponents_and_Powers_q27_o2.jpg",
+        "Maths_7_Exponents_and_Powers_q27_o3.jpg",
+        "Maths_7_Exponents_and_Powers_q27_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Laws of Exponents"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-exponents-and-powers-28",
+      "sourceRow": 29,
+      "question": "Which of the following values are equal?",
+      "options": [
+        "15 and 05",
+        "15 and 50",
+        "15 and 51",
+        "05 and 51"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Exponents"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-exponents-and-powers-29",
+      "sourceRow": 30,
+      "question": "Maths_7_Exponents_and_Powers_q29.jpg",
+      "options": [
+        "Maths_7_Exponents_and_Powers_q29_o1.jpg",
+        "Maths_7_Exponents_and_Powers_q29_o2.jpg",
+        "Maths_7_Exponents_and_Powers_q29_o3.jpg",
+        "Maths_7_Exponents_and_Powers_q29_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Laws of Exponents"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-exponents-and-powers-30",
+      "sourceRow": 31,
+      "question": "Which of the following statement is true?",
+      "options": [
+        "0.00003 × 106 is greater than 1",
+        "0.00003 × 106 is less than 1",
+        "0.00003 × 106 lies between 0 and 1",
+        "None of these"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Standard Form of Large Numbers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-exponents-and-powers-31",
+      "sourceRow": 32,
+      "question": "Which of the following is true?",
+      "options": [
+        "8 × 104 + 6 × 103 + 3 × 102 + 0 × 101 + 5 × 100 = 8635",
+        "4 × 105 + 6 × 103 + 0 × 101 + 5 × 100 = 4,06,005",
+        "8 × 104 + 6 × 103 + 3 × 102 + 0 × 101 + 5 × 100 = 86,300",
+        "4 × 105 + 6 × 103 + 0 × 101 + 5 × 100 = 4605"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Decimal Number System"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-exponents-and-powers-32",
+      "sourceRow": 33,
+      "question": "Express –343 in power notation",
+      "options": [
+        "(–7)3",
+        "73",
+        "–63",
+        "None of these"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Exponents"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-exponents-and-powers-33",
+      "sourceRow": 34,
+      "question": "What is the index and base in the expression 28?",
+      "options": [
+        "index = 4; base = 4",
+        "index = 2; base = 8",
+        "index = 8; base = 2",
+        "None of these"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Exponents"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-exponents-and-powers-34",
+      "sourceRow": 35,
+      "question": "(10+20+30+40+50+60+70+80+90+100) is",
+      "options": [
+        "55",
+        "10",
+        "0",
+        "1"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Laws of Exponents"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-exponents-and-powers-35",
+      "sourceRow": 36,
+      "question": "Maths_7_Exponents_and_Powers_q35.jpg",
+      "options": [
+        "Maths_7_Exponents_and_Powers_q35_o1.jpg",
+        "Maths_7_Exponents_and_Powers_q35_o2.jpg",
+        "Maths_7_Exponents_and_Powers_q35_o3.jpg",
+        "Maths_7_Exponents_and_Powers_q35_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Laws of Exponents"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-exponents-and-powers-36",
+      "sourceRow": 37,
+      "question": "Express 234.5678 in standard form",
+      "options": [
+        "2.345 × 104",
+        "2.345 × 102",
+        "2.345 × 10–2",
+        "2.345 × 10–4"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Standard Form of Large Numbers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-exponents-and-powers-37",
+      "sourceRow": 38,
+      "question": "A number to the 7th power divided by the same number to the 3rd power equals 256. What is the number?",
+      "options": [
+        "4",
+        "3",
+        "2",
+        "5"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Laws of Exponents"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-exponents-and-powers-38",
+      "sourceRow": 39,
+      "question": "Find x if 56x = (625)3",
+      "options": [
+        "7",
+        "2",
+        "–2",
+        "1"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Laws of Exponents"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-exponents-and-powers-39",
+      "sourceRow": 40,
+      "question": "Maths_7_Exponents_and_Powers_q39.jpg",
+      "options": [
+        "1",
+        "0",
+        "30",
+        "10"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Laws of Exponents"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-exponents-and-powers-40",
+      "sourceRow": 41,
+      "question": "Maths_7_Exponents_and_Powers_q40.jpg",
+      "options": [
+        "Maths_7_Exponents_and_Powers_q40_o1.jpg",
+        "Maths_7_Exponents_and_Powers_q40_o2.jpg",
+        "Maths_7_Exponents_and_Powers_q40_o3.jpg",
+        "Maths_7_Exponents_and_Powers_q40_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Laws of Exponents"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-exponents-and-powers-41",
+      "sourceRow": 42,
+      "question": "Express 0.00009823 in standard form",
+      "options": [
+        "9.823 × 105",
+        "98.23 × 10–4",
+        "98.23 × 104",
+        "9.823 × 10–5"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Standard Form of Large Numbers"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    }
+  ]
+}

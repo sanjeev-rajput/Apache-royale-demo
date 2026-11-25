@@ -1,0 +1,902 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-24T11:45:03.768Z",
+  "classification": {
+    "class": "Class 10",
+    "subject": "Math",
+    "topic": "Constructions"
+  },
+  "publisher": "unspecified-publisher",
+  "source": {
+    "file": "Class10/Final/Math_Class_10_Assess_QB_11_Constructions/Math_Class_10_Assess_QB_11_Constructions.xlsx",
+    "sheet": "filename"
+  },
+  "questionType": "MCQ",
+  "questionCount": 34,
+  "questions": [
+    {
+      "id": "unspecified-publisher-class-10-math-constructions-1",
+      "sourceRow": 2,
+      "question": "Math_Class_10_Assess_QB_11_Constructions_q1.jpg",
+      "options": [
+        "A5 and B6",
+        "A6 and B5",
+        "A4 and B5",
+        "A5 and B4"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Division of Line Segments"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-constructions-2",
+      "sourceRow": 3,
+      "question": "Math_Class_10_Assess_QB_11_Constructions_q2.jpg",
+      "options": [
+        "greater of ‘p’ and ‘q’",
+        "(p + q)",
+        "(p + q – 1)",
+        "pq"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Division of Line Segments"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-constructions-3",
+      "sourceRow": 4,
+      "question": "Math_Class_10_Assess_QB_11_Constructions_q3.jpg",
+      "options": [
+        "3",
+        "6",
+        "5",
+        "2"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Division of Line Segments"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-constructions-4",
+      "sourceRow": 5,
+      "question": "To draw a pair of tangents to a circle which are inclined to each other at an angle of 80º, it is required to draw tangents at end points of those two radii of the circle, the angle between them should be",
+      "options": [
+        "135º",
+        "90º",
+        "60º",
+        "100º"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Construction of Tangents to a Circle"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-constructions-5",
+      "sourceRow": 6,
+      "question": "Math_Class_10_Assess_QB_11_Constructions_q5.jpg",
+      "options": [
+        "5",
+        "9",
+        "13",
+        "4"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Construction of Similar Triangles"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-constructions-6",
+      "sourceRow": 7,
+      "question": "Math_Class_10_Assess_QB_11_Constructions_q6.jpg",
+      "options": [
+        "A12",
+        "A11",
+        "A3",
+        "A8"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Division of Line Segments"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-constructions-7",
+      "sourceRow": 8,
+      "question": "By geometrical constructions, which of the following is possible to divide a line segment in the given ratio ?",
+      "options": [
+        "Math_Class_10_Assess_QB_11_Constructions_q7_o1.jpg",
+        "Math_Class_10_Assess_QB_11_Constructions_q7_o2.jpg",
+        "Math_Class_10_Assess_QB_11_Constructions_q7_o3.jpg",
+        "Math_Class_10_Assess_QB_11_Constructions_q7_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Division of Line Segments"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-constructions-8",
+      "sourceRow": 9,
+      "question": "A pair of tangents can be constructed from a point P to a circle of radius 8 cm situated at a distance of #DASH# from the centre.",
+      "options": [
+        "4 cm",
+        "7.9 cm",
+        "7.5 cm",
+        "10 cm"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Construction of Tangents to a Circle"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-constructions-9",
+      "sourceRow": 10,
+      "question": "In the construction of triangle similar and larger to a given triangle as per given scale factor m : n. Then, it is possible only when",
+      "options": [
+        "m > n",
+        "m = n",
+        "m < n",
+        "independent of scale factor"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Construction of Similar Triangles"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-constructions-10",
+      "sourceRow": 11,
+      "question": "Math_Class_10_Assess_QB_11_Constructions_q10.jpg",
+      "options": [
+        "58º",
+        "32º",
+        "122º",
+        "29º"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Construction of Tangents to a Circle"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-constructions-11",
+      "sourceRow": 12,
+      "question": "Math_Class_10_Assess_QB_11_Constructions_q11.jpg",
+      "options": [
+        "1 : 2",
+        "1 : 3",
+        "1 : 4",
+        "1 : 1"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Division of Line Segments"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-constructions-12",
+      "sourceRow": 13,
+      "question": "Math_Class_10_Assess_QB_11_Constructions_q12.jpg",
+      "options": [
+        "1 : 2",
+        "1 : 3",
+        "1 : 4",
+        "1 : 1"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Division of Line Segments"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-constructions-13",
+      "sourceRow": 14,
+      "question": "Math_Class_10_Assess_QB_11_Constructions_q13.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_11_Constructions_q13_o1.jpg",
+        "Math_Class_10_Assess_QB_11_Constructions_q13_o2.jpg",
+        "Math_Class_10_Assess_QB_11_Constructions_q13_o3.jpg",
+        "Math_Class_10_Assess_QB_11_Constructions_q13_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Construction of Tangents to a Circle"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-constructions-14",
+      "sourceRow": 15,
+      "question": "Math_Class_10_Assess_QB_11_Constructions_q14.jpg",
+      "options": [
+        "A12",
+        "A11",
+        "A10",
+        "A9"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Division of Line Segments"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-constructions-15",
+      "sourceRow": 16,
+      "question": "Math_Class_10_Assess_QB_11_Constructions_q15.jpg",
+      "options": [
+        "5",
+        "8",
+        "13",
+        "3"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Construction of Similar Triangles"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-constructions-16",
+      "sourceRow": 17,
+      "question": "To draw a pair of tangents to a circle which are inclined to each other at an angle of 35°, it is required to draw tangents at the end points of those two radii of the circle, the angle between which is",
+      "options": [
+        "105°",
+        "70°",
+        "140°",
+        "145°"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Construction of Tangents to a Circle"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-constructions-17",
+      "sourceRow": 18,
+      "question": "Math_Class_10_Assess_QB_11_Constructions_q17.jpg",
+      "options": [
+        "Obtuse angle",
+        "Acute angle",
+        "Right angle",
+        "Straight angle"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Division of Line Segments"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-constructions-18",
+      "sourceRow": 19,
+      "question": "To divide a line segment AB internally in the ratio 4 : 7, the number of equal arcs drawn on the ray AX is",
+      "options": [
+        "4",
+        "7",
+        "11",
+        "3"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Division of Line Segments"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-constructions-19",
+      "sourceRow": 20,
+      "question": "The length of line segment PQ is 6.3 cm. If it is divided internally in the ratio 2: 5 by a point S, the length of PS is",
+      "options": [
+        "6.3 cm",
+        "5.5 cm",
+        "4.5 cm",
+        "1.8 cm"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Division of Line Segments"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-constructions-20",
+      "sourceRow": 21,
+      "question": "The ratio of the corresponding sides of two similar triangles is called",
+      "options": [
+        "Scale factor",
+        "Scale",
+        "Equality factor",
+        "None of these"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Construction of Similar Triangles"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-constructions-21",
+      "sourceRow": 22,
+      "question": "To construct a triangle similar and larger than a given triangle with a scale factor m : n, is possible if",
+      "options": [
+        "m = n",
+        "m < n",
+        "m > n",
+        "None of these"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Construction of Similar Triangles"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-constructions-22",
+      "sourceRow": 23,
+      "question": "Math_Class_10_Assess_QB_11_Constructions_q22.jpg",
+      "options": [
+        "7",
+        "5",
+        "12",
+        "2"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Construction of Similar Triangles"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-constructions-23",
+      "sourceRow": 24,
+      "question": "Math_Class_10_Assess_QB_11_Constructions_q23.jpg",
+      "options": [
+        "3",
+        "11",
+        "5",
+        "8"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Construction of Similar Triangles"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-constructions-24",
+      "sourceRow": 25,
+      "question": "Math_Class_10_Assess_QB_11_Constructions_q24.jpg",
+      "options": [
+        "3 : 2",
+        "5 : 2",
+        "2 : 3",
+        "1 : 2"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Construction of Similar Triangles"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-constructions-25",
+      "sourceRow": 26,
+      "question": "A tangent cannot be constructed to a circle from a point",
+      "options": [
+        "Outside the circle",
+        "On the circle",
+        "Inside the circle",
+        "All of these"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Construction of Tangents to a Circle"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-constructions-26",
+      "sourceRow": 27,
+      "question": "If two tangents PT and PT΄are drawn to a circle, from a point P. If PT = 4.5 cm, the length of PT΄ is",
+      "options": [
+        "9 cm",
+        "4 cm",
+        "4.5 cm",
+        "8 cm"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Construction of Tangents to a Circle"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-constructions-27",
+      "sourceRow": 28,
+      "question": "If two tangents are to be constructed to a circle, inclined at an angle of 45⁰, the angle formed by the two radii at the centre is",
+      "options": [
+        "60⁰",
+        "90⁰",
+        "120⁰",
+        "135⁰"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Construction of Tangents to a Circle"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-constructions-28",
+      "sourceRow": 29,
+      "question": "A pair of tangents is to be constructed from a point P, to a circle with centre O. If the radius of the circle is 7.5 cm, the length of OP can be",
+      "options": [
+        "9 cm",
+        "5 cm",
+        "7 cm",
+        "6 cm"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Construction of Tangents to a Circle"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-constructions-29",
+      "sourceRow": 30,
+      "question": "AB is a tangent drawn to a circle from external point A. O is the centre of the circle. If OB = 4 cm and AB = 6 cm, length of OA is",
+      "options": [
+        "Math_Class_10_Assess_QB_11_Constructions_q29_o1.jpg",
+        "Math_Class_10_Assess_QB_11_Constructions_q29_o2.jpg",
+        "Math_Class_10_Assess_QB_11_Constructions_q29_o3.jpg",
+        "Math_Class_10_Assess_QB_11_Constructions_q29_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Construction of Tangents to a Circle"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-constructions-30",
+      "sourceRow": 31,
+      "question": "Two tangents are to be constructed from an external point P, to a circle with centre O. If C is the mid-point of OP, then another circle is constructed with the diameter",
+      "options": [
+        "OC",
+        "OP",
+        "CP",
+        "None of these"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Construction of Tangents to a Circle"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-constructions-40",
+      "sourceRow": 41,
+      "question": "Math_Class_10_Assess_QB_11_Constructions_q40.jpg",
+      "options": [
+        "1 : 2",
+        "1 : 3",
+        "1 : 4",
+        "1 : 1"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Division of Line Segments"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-constructions-41",
+      "sourceRow": 42,
+      "question": "In the construction of triangle similar and larger to a given triangle as per given scale factor m : n, the construction is possible only when:",
+      "options": [
+        "m > n",
+        "m = n",
+        "m < n",
+        "independent of scale factor"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Construction of Similar Triangles"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-constructions-42",
+      "sourceRow": 43,
+      "question": "Math_Class_10_Assess_QB_11_Constructions_q42.jpg",
+      "options": [
+        "3 : 4",
+        "4 : 3",
+        "1 : 3",
+        "3 : 1"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Division of Line Segments"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-constructions-43",
+      "sourceRow": 44,
+      "question": "Math_Class_10_Assess_QB_11_Constructions_q43.jpg",
+      "options": [
+        "8, 7, 3",
+        "8, 6, 4",
+        "8, 4, 4",
+        "7, 6, 5"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Construction of Similar Triangles"
+      ],
+      "resource": "H. K. Dass",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    }
+  ]
+}

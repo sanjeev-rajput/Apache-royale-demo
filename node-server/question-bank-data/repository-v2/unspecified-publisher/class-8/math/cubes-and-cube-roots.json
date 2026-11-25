@@ -1,0 +1,1084 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-24T11:45:03.254Z",
+  "classification": {
+    "class": "Class 8",
+    "subject": "Math",
+    "topic": "Cubes and Cube Roots"
+  },
+  "publisher": "unspecified-publisher",
+  "source": {
+    "file": "Class8/Final/Math_Class8_Assess_QB_07_Cubes_and_Cube_Roots/Math_Class 8_Assess_QB_07_Cubes_and_Cube_Roots.xlsx",
+    "sheet": "filename"
+  },
+  "questionType": "MCQ",
+  "questionCount": 41,
+  "questions": [
+    {
+      "id": "unspecified-publisher-class-8-math-cubes-and-cube-roots-12",
+      "sourceRow": 13,
+      "question": "Which of the following expressions is not a perfect cube?",
+      "options": [
+        "9 × 12 × 8",
+        "20 × 25 × 16",
+        "8 × 9 × 27",
+        "64 × 24 × 72"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Finding Cube Roots"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-cubes-and-cube-roots-13",
+      "sourceRow": 14,
+      "question": "By which of the following smallest number should the number 1800 be multiplied so that it can become a perfect cube?",
+      "options": [
+        "2",
+        "3",
+        "30",
+        "15"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Finding Cube Roots"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-cubes-and-cube-roots-14",
+      "sourceRow": 15,
+      "question": "What is the unit digit of the cube of the number 89p32q23, where p and q are single digit numbers?",
+      "options": [
+        "1",
+        "3",
+        "7",
+        "9"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Finding Cubes"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-cubes-and-cube-roots-15",
+      "sourceRow": 16,
+      "question": "Which of the following number is not a perfect cube?",
+      "options": [
+        "64",
+        "729",
+        "800",
+        "1331"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Finding Cubes"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-cubes-and-cube-roots-16",
+      "sourceRow": 17,
+      "question": "Which of the following number is a perfect cube?",
+      "options": [
+        "216",
+        "66",
+        "124",
+        "342"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Finding Cube Roots"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-cubes-and-cube-roots-17",
+      "sourceRow": 18,
+      "question": "What is the unit digit of the cube of 109?",
+      "options": [
+        "1",
+        "3",
+        "7",
+        "9"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Finding Cubes"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-cubes-and-cube-roots-18",
+      "sourceRow": 19,
+      "question": "What is the value of x for which cube root of 5832 = 2(x – 2)?",
+      "options": [
+        "7",
+        "9",
+        "11",
+        "18"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Finding Cube Roots"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-cubes-and-cube-roots-19",
+      "sourceRow": 20,
+      "question": "Maths_8_Cubes_and_Cube_Roots_q19.jpg",
+      "options": [
+        "41",
+        "89",
+        "141",
+        "189"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Finding Cubes"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-cubes-and-cube-roots-20",
+      "sourceRow": 21,
+      "question": "Maths_8_Cubes_and_Cube_Roots_q20.jpg",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Finding Cube Roots"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-cubes-and-cube-roots-21",
+      "sourceRow": 22,
+      "question": "Maths_8_Cubes_and_Cube_Roots_q21.jpg",
+      "options": [
+        "4",
+        "40",
+        "400",
+        "4000"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Finding Cube Roots"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-cubes-and-cube-roots-22",
+      "sourceRow": 23,
+      "question": "Which of the following represents the correct notation for a to be the cube root of b?",
+      "options": [
+        "Maths_8_Cubes_and_Cube_Roots_q22_o1.jpg",
+        "Maths_8_Cubes_and_Cube_Roots_q22_o2.jpg",
+        "Maths_8_Cubes_and_Cube_Roots_q22_o3.jpg",
+        "Maths_8_Cubes_and_Cube_Roots_q22_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Finding Cube Roots"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-cubes-and-cube-roots-23",
+      "sourceRow": 24,
+      "question": "Which of the following becomes a perfect cube when we divide the number by 4?",
+      "options": [
+        "16",
+        "64",
+        "128",
+        "256"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Finding Cube Roots"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-cubes-and-cube-roots-24",
+      "sourceRow": 25,
+      "question": "If the cube of a number b is sixty four times of itself, then what is the non-negative and non-zero value of the number b?",
+      "options": [
+        "4",
+        "8",
+        "16",
+        "64"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Finding Cubes"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-cubes-and-cube-roots-25",
+      "sourceRow": 26,
+      "question": "By which of the following least number 4320 be multiplied to obtain a number which is a perfect cube?",
+      "options": [
+        "10",
+        "20",
+        "25",
+        "50"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Finding Cube Roots"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-cubes-and-cube-roots-26",
+      "sourceRow": 27,
+      "question": "Maths_8_Cubes_and_Cube_Roots_q26.jpg",
+      "options": [
+        "6",
+        "81",
+        "75",
+        "9"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Finding Cube Roots"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-cubes-and-cube-roots-27",
+      "sourceRow": 28,
+      "question": "Which of the following is the cube root of 0.000361?",
+      "options": [
+        "0.019",
+        "0.19",
+        "1.9",
+        "19"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Finding Cube Roots"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-cubes-and-cube-roots-28",
+      "sourceRow": 29,
+      "question": "Maths_8_Cubes_and_Cube_Roots_q28.jpg",
+      "options": [
+        "Maths_8_Cubes_and_Cube_Roots_q28_o1.jpg",
+        "Maths_8_Cubes_and_Cube_Roots_q28_o2.jpg",
+        "Maths_8_Cubes_and_Cube_Roots_q28_o3.jpg",
+        "Maths_8_Cubes_and_Cube_Roots_q28_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Finding Cube Roots"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-cubes-and-cube-roots-29",
+      "sourceRow": 30,
+      "question": "Maths_8_Cubes_and_Cube_Roots_q29.jpg",
+      "options": [
+        "0.002",
+        "0.2",
+        "2",
+        "0.02"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Finding Cube Roots"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-cubes-and-cube-roots-30",
+      "sourceRow": 31,
+      "question": "By which of the following least number 1600 be multiplied to obtain a number which is a perfect cube?",
+      "options": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Finding Cube Roots"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-cubes-and-cube-roots-31",
+      "sourceRow": 32,
+      "question": "Which of the following is the largest four-digit number which is a perfect cube?",
+      "options": [
+        "1,000",
+        "8,000",
+        "9,261",
+        "9,999"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Finding Cube Roots"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-cubes-and-cube-roots-32",
+      "sourceRow": 33,
+      "question": "By which of the following least number 4000 be divided to obtain a number which is a perfect cube?",
+      "options": [
+        "8",
+        "50",
+        "100",
+        "500"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Finding Cube Roots"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-cubes-and-cube-roots-33",
+      "sourceRow": 34,
+      "question": "Maths_8_Cubes_and_Cube_Roots_q33.jpg",
+      "options": [
+        "Maths_8_Cubes_and_Cube_Roots_q33_o1.jpg",
+        "Maths_8_Cubes_and_Cube_Roots_q33_o2.jpg",
+        "Maths_8_Cubes_and_Cube_Roots_q33_o3.jpg",
+        "Maths_8_Cubes_and_Cube_Roots_q33_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Finding Cube Roots"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-cubes-and-cube-roots-34",
+      "sourceRow": 35,
+      "question": "Maths_8_Cubes_and_Cube_Roots_q34.jpg",
+      "options": [
+        "32",
+        "6",
+        "33",
+        "5"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Finding Cube Roots"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-cubes-and-cube-roots-35",
+      "sourceRow": 36,
+      "question": "What is the volume of a cube whose side is 7 m?",
+      "options": [
+        "42 m3",
+        "84 m3",
+        "343 m3",
+        "512 m3"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Finding Cubes"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-cubes-and-cube-roots-36",
+      "sourceRow": 37,
+      "question": "By which of the following numbers 13718 must be divided to get a perfect cube?",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "6"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Finding Cube Roots"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-cubes-and-cube-roots-37",
+      "sourceRow": 38,
+      "question": "Which of the following number is a perfect cube?",
+      "options": [
+        "529",
+        "629",
+        "729",
+        "829"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Finding Cubes"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-cubes-and-cube-roots-38",
+      "sourceRow": 39,
+      "question": "Which of the following number must be subtracted from 2745 to get a perfect cube?",
+      "options": [
+        "1",
+        "5",
+        "35",
+        "45"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Finding Cube Roots"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-cubes-and-cube-roots-39",
+      "sourceRow": 40,
+      "question": "Maths_8_Cubes_and_Cube_Roots_q39.jpg",
+      "options": [
+        "Maths_8_Cubes_and_Cube_Roots_q39_o1.jpg",
+        "Maths_8_Cubes_and_Cube_Roots_q39_o2.jpg",
+        "Maths_8_Cubes_and_Cube_Roots_q39_o3.jpg",
+        "Maths_8_Cubes_and_Cube_Roots_q39_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Finding Cube Roots"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-cubes-and-cube-roots-40",
+      "sourceRow": 41,
+      "question": "How many zeros are there in the cube of 110?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Finding Cubes"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-cubes-and-cube-roots-41",
+      "sourceRow": 42,
+      "question": "What is the cube of 0.06?",
+      "options": [
+        "0.216",
+        "0.0216",
+        "0.00216",
+        "0.000216"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Finding Cubes"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-cubes-and-cube-roots-42",
+      "sourceRow": 43,
+      "question": "Maths_8_Cubes_and_Cube_Roots_q42.jpg",
+      "options": [
+        "Maths_8_Cubes_and_Cube_Roots_q42_o1.jpg",
+        "Maths_8_Cubes_and_Cube_Roots_q42_o2.jpg",
+        "Maths_8_Cubes_and_Cube_Roots_q42_o3.jpg",
+        "Maths_8_Cubes_and_Cube_Roots_q42_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Finding Cube Roots"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-cubes-and-cube-roots-43",
+      "sourceRow": 44,
+      "question": "Which of the following is the cube of an odd natural number?",
+      "options": [
+        "2744",
+        "12167",
+        "8000",
+        "32768"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Finding Cubes"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-cubes-and-cube-roots-44",
+      "sourceRow": 45,
+      "question": "What is the least possible value of A for which 180 × A is a perfect cube?",
+      "options": [
+        "125",
+        "150",
+        "30",
+        "75"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Finding Cube Roots"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-cubes-and-cube-roots-45",
+      "sourceRow": 46,
+      "question": "Ankit, a class teacher, wrote four different statements on black-board and asked his class students to find the correct statement(s).<br>Statement 1: If a number ends with 1, then it cube ends with 1.<br>Statement 2: If a number ends with 2, then it cube ends with 4.<br>Statement 3: If a number ends with 9, then it cube ends with 1.<br>Statement 4: If a number ends with 7, then it cube ends with 3. <br>Which of the following set of statements are correct?",
+      "options": [
+        "Statements 1 and 2",
+        "Statements 2 and 3",
+        "Statements 3 and 4",
+        "Statements 1 and 4"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Finding Cubes"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": "PSA"
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-cubes-and-cube-roots-46",
+      "sourceRow": 47,
+      "question": "Maths_8_Cubes_and_Cube_Roots_q46.jpg",
+      "options": [
+        "22",
+        "32",
+        "12",
+        "82"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Finding Cube Roots"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-cubes-and-cube-roots-47",
+      "sourceRow": 48,
+      "question": "Maths_8_Cubes_and_Cube_Roots_q47.jpg",
+      "options": [
+        "Maths_8_Cubes_and_Cube_Roots_q47_o1.jpg",
+        "Maths_8_Cubes_and_Cube_Roots_q47_o2.jpg",
+        "Maths_8_Cubes_and_Cube_Roots_q47_o3.jpg",
+        "Maths_8_Cubes_and_Cube_Roots_q47_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Finding Cube Roots"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-cubes-and-cube-roots-48",
+      "sourceRow": 49,
+      "question": "The cube root of 0.000512 is:",
+      "options": [
+        "0.5",
+        "0.08",
+        "0.008",
+        "8"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Finding Cube Roots"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-cubes-and-cube-roots-49",
+      "sourceRow": 50,
+      "question": "By what least number should 675 be multiplied so as to obtain a number which is a perfect cube?",
+      "options": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Finding Cubes"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-cubes-and-cube-roots-50",
+      "sourceRow": 51,
+      "question": "By what least number should 4000 be divided so as to obtain a number which is a perfect cube?",
+      "options": [
+        "8",
+        "4",
+        "12",
+        "6"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Finding Cubes"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-cubes-and-cube-roots-51",
+      "sourceRow": 52,
+      "question": "The cube root of (–63 × –73) is",
+      "options": [
+        "216",
+        "–42",
+        "42",
+        "21"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Finding Cube Roots"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-cubes-and-cube-roots-52",
+      "sourceRow": 53,
+      "question": "Maths_8_Cubes_and_Cube_Roots_q52.jpg",
+      "options": [
+        "10",
+        "–20",
+        "20",
+        "40"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Finding Cube Roots"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    }
+  ]
+}

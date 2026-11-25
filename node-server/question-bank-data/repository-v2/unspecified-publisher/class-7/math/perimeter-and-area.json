@@ -1,0 +1,694 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-24T11:45:02.925Z",
+  "classification": {
+    "class": "Class 7",
+    "subject": "Math",
+    "topic": "Perimeter and Area"
+  },
+  "publisher": "unspecified-publisher",
+  "source": {
+    "file": "Class7/Final/Math_Class 7_Assess_QB_11_Perimeter_and_Area/Int_Math_Class 7_Assess_QB_11_Perimeter_and_Area.xlsx",
+    "sheet": "filename"
+  },
+  "questionType": "MCQ",
+  "questionCount": 26,
+  "questions": [
+    {
+      "id": "unspecified-publisher-class-7-math-perimeter-and-area-16",
+      "sourceRow": 17,
+      "question": "The circumference of a circle is 88 cm. What is its radius?",
+      "options": [
+        "14",
+        "22",
+        "28",
+        "44"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Circumference and Area of Circles"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-perimeter-and-area-17",
+      "sourceRow": 18,
+      "question": "The perimeter of a square is 24 cm. The area of the rectangle is 4 cm2 less than the area of the square. If the length of the rectangle is 8 cm, then what is its perimeter?",
+      "options": [
+        "16 cm",
+        "24 cm",
+        "32 cm",
+        "40 cm"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Perimeter and Area of Squares and Rectangles"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-perimeter-and-area-18",
+      "sourceRow": 19,
+      "question": "The area of a rectangle is 98 cm2, which is equal to 50% of the area of the square. What is the perimeter of that square?",
+      "options": [
+        "196 cm",
+        "14 cm",
+        "42 cm",
+        "56 cm"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Perimeter and Area of Squares and Rectangles"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": "HOTS"
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-perimeter-and-area-19",
+      "sourceRow": 20,
+      "question": "What is the area of the circle of diameter 14 cm?",
+      "options": [
+        "44 cm2",
+        "88 cm2",
+        "154 cm2",
+        "616 cm2"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Circumference and Area of Circles"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-perimeter-and-area-20",
+      "sourceRow": 21,
+      "question": "Joseph wrote 2 statements on whiteboard.<br>Statement 1: A rectangle of length 24 cm and breadth 17 cm<br>Statement 2: A square of side 21 cm<br>Which of the following is true in respect of their corresponding areas?",
+      "options": [
+        "The result in both the statements are equal",
+        "The result of statement 1 is greater than that the value of statement 2",
+        "The result of statement 1 is smaller than that the value of statement 2",
+        "The result of statement 1 is greater than or equal to that the value of statement 2"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Perimeter and Area of Squares and Rectangles"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": "HOTS"
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-perimeter-and-area-21",
+      "sourceRow": 22,
+      "question": "Maths_7_Perimeter_and_Area_q21.jpg",
+      "options": [
+        "Maths_7_Perimeter_and_Area_q21_o1.jpg",
+        "Maths_7_Perimeter_and_Area_q21_o2.jpg",
+        "Maths_7_Perimeter_and_Area_q21_o3.jpg",
+        "Maths_7_Perimeter_and_Area_q21_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Perimeter and Area of Squares and Rectangles"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": "HOTS"
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-perimeter-and-area-22",
+      "sourceRow": 23,
+      "question": "Maths_7_Perimeter_and_Area_q22.jpg",
+      "options": [
+        "Maths_7_Perimeter_and_Area_q22_o1.jpg",
+        "Maths_7_Perimeter_and_Area_q22_o2.jpg",
+        "Maths_7_Perimeter_and_Area_q22_o3.jpg",
+        "Maths_7_Perimeter_and_Area_q22_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Area of Triangles and Parallelograms"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-perimeter-and-area-23",
+      "sourceRow": 24,
+      "question": "The area of the parallelogram is 72 inches2 and its base is twice the altitude. What is the length of the base?",
+      "options": [
+        "4 inches",
+        "6 inches",
+        "8 inches",
+        "12 inches"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Area of Triangles and Parallelograms"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-perimeter-and-area-24",
+      "sourceRow": 25,
+      "question": "A rope by which a calf is tied is increased from 12 cm to 23 cm. How much additional grassy ground shall it graze?",
+      "options": [
+        "1120 cm2",
+        "1250 cm2",
+        "1210 cm2",
+        "1200 cm2"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Circumference and Area of Circles"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-perimeter-and-area-25",
+      "sourceRow": 26,
+      "question": "The length of a rectangular plot is 1.5 times its breadth. If 20% of its perimeter is 20 metres, then what is the area of the plot?",
+      "options": [
+        "100 m2",
+        "200 m2",
+        "240 m2",
+        "600 m2"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Perimeter and Area of Squares and Rectangles"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-perimeter-and-area-26",
+      "sourceRow": 27,
+      "question": "The area of a rhombus is 98 cm2 and its perimeter is 28 cm. What is the altitude of the rhombus?",
+      "options": [
+        "3.5 cm",
+        "7 cm",
+        "10.5 cm",
+        "14 cm"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Area of Triangles and Parallelograms"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-perimeter-and-area-27",
+      "sourceRow": 28,
+      "question": "If the area of a square with side y is equal to the area of a triangle with base y, then what is the altitude of the triangle?",
+      "options": [
+        "Maths_7_Perimeter_and_Area_q27_o1.jpg",
+        "Maths_7_Perimeter_and_Area_q27_o2.jpg",
+        "Maths_7_Perimeter_and_Area_q27_o3.jpg",
+        "Maths_7_Perimeter_and_Area_q27_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Perimeter and Area of Squares and Rectangles"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": "HOTS"
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-perimeter-and-area-28",
+      "sourceRow": 29,
+      "question": "What happens to the area of a square if its side is halved?",
+      "options": [
+        "Maths_7_Perimeter_and_Area_q28_o1.jpg",
+        "Maths_7_Perimeter_and_Area_q28_o2.jpg",
+        "Maths_7_Perimeter_and_Area_q28_o3.jpg",
+        "Maths_7_Perimeter_and_Area_q28_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Perimeter and Area of Squares and Rectangles"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-perimeter-and-area-29",
+      "sourceRow": 30,
+      "question": "If the ratio of the radii of two circles is 5 : 9, then what is the ratio of their circumferences?",
+      "options": [
+        "9 : 5",
+        "1 : 9",
+        "5 : 9",
+        "5 : 1"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Circumference and Area of Circles"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-perimeter-and-area-30",
+      "sourceRow": 31,
+      "question": "Maths_7_Perimeter_and_Area_q30.jpg",
+      "options": [
+        "Maths_7_Perimeter_and_Area_q30_o1.jpg",
+        "Maths_7_Perimeter_and_Area_q30_o2.jpg",
+        "Maths_7_Perimeter_and_Area_q30_o3.jpg",
+        "Maths_7_Perimeter_and_Area_q30_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Perimeter and Area of Squares and Rectangles"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-perimeter-and-area-31",
+      "sourceRow": 32,
+      "question": "Which of the following is equivalent to 90 hectares?",
+      "options": [
+        "900 m2",
+        "9,000 m2",
+        "90,000 m2",
+        "9,00,000 m2"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Conversion of Units"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-perimeter-and-area-32",
+      "sourceRow": 33,
+      "question": "A circle has area which is 144 times the area of another circle. What is the ratio of the circumferences of the newer circle to the older circle?",
+      "options": [
+        "12 : 1",
+        "1 : 12",
+        "1 : 1",
+        "144 : 1"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Circumference and Area of Circles"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-perimeter-and-area-33",
+      "sourceRow": 34,
+      "question": "What is the height of a triangle whose base is 13 m and area is 156 m2?",
+      "options": [
+        "10 m",
+        "11 m",
+        "24 m",
+        "12 m"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Area of Triangles and Parallelograms"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-perimeter-and-area-34",
+      "sourceRow": 35,
+      "question": "A piece of wire in the form a rectangle with dimensions 14 m by 8 m is bent to form a circle. What is the diameter of the circle?",
+      "options": [
+        "7 m",
+        "8 m",
+        "14 m",
+        "22 m"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Circumference and Area of Circles"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-perimeter-and-area-35",
+      "sourceRow": 36,
+      "question": "If the circumference and area of a circle are numerically equal, then what is the length of the diameter?",
+      "options": [
+        "Maths_7_Perimeter_and_Area_q35_o1.jpg",
+        "Maths_7_Perimeter_and_Area_q35_o2.jpg",
+        "Maths_7_Perimeter_and_Area_q35_o3.jpg",
+        "Maths_7_Perimeter_and_Area_q35_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Circumference and Area of Circles"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-perimeter-and-area-36",
+      "sourceRow": 37,
+      "question": "If the side of a square is doubled, its area",
+      "options": [
+        "is doubled",
+        "remains same",
+        "becomes four times",
+        "None of these"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Area of Triangles and Parallelograms"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-perimeter-and-area-37",
+      "sourceRow": 38,
+      "question": "If the radius of a circle is doubled, then its circumference will be:",
+      "options": [
+        "half",
+        "twice",
+        "thrice",
+        "one-fourth"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Circumference and Area of Circles"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-perimeter-and-area-38",
+      "sourceRow": 39,
+      "question": "A rectangle has a length that is 6 cm more than the width. Its perimeter is 100 cm. What is the area?",
+      "options": [
+        "616 cm2",
+        "1672 cm2",
+        "2200 cm2",
+        "None of these"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Area of Triangles and Parallelograms"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-perimeter-and-area-39",
+      "sourceRow": 40,
+      "question": "Compare the areas of a square 15 cm on each side and a rectangle 11 cm by 8 cm. Which figure has a greater area?",
+      "options": [
+        "Rectangle",
+        "Square",
+        "Triangle",
+        "Circle"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Area of Triangles and Parallelograms"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-perimeter-and-area-40",
+      "sourceRow": 41,
+      "question": "The area of a triangle is equal to the area of a square of side 120 m. Find the side of the triangle whose corresponding altitude is 180 m.",
+      "options": [
+        "180 m",
+        "200 m",
+        "160 m",
+        "120 m"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Area of Triangles and Parallelograms"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-7-math-perimeter-and-area-41",
+      "sourceRow": 42,
+      "question": "A wire is in a circular shape of radius 3.5 m. It is reshaped bent to form a square. Find the area of the square so formed.",
+      "options": [
+        "40 m2",
+        "30.25 m2",
+        "32.25 m2",
+        "28.2 m2"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Circumference and Area of Circles"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    }
+  ]
+}

@@ -1,0 +1,824 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-24T11:45:03.138Z",
+  "classification": {
+    "class": "Class 8",
+    "subject": "Math",
+    "topic": "Understanding Quadrilaterals"
+  },
+  "publisher": "unspecified-publisher",
+  "source": {
+    "file": "Class8/Final/Math_Class8_Assess_QB_03_Understanding_Quadrilaterals/Math_Class 8_Assess_QB_03_Understanding_Quadrilaterals.xlsx",
+    "sheet": "filename"
+  },
+  "questionType": "MCQ",
+  "questionCount": 31,
+  "questions": [
+    {
+      "id": "unspecified-publisher-class-8-math-understanding-quadrilaterals-11",
+      "sourceRow": 12,
+      "question": "Maths_8_Understanding_Quadrilaterals_q11.jpg",
+      "options": [
+        "38.89o",
+        "41.33o",
+        "88.25o",
+        "45.89o"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Angles in Polygons"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-understanding-quadrilaterals-12",
+      "sourceRow": 13,
+      "question": "Maths_8_Understanding_Quadrilaterals_q12.jpg",
+      "options": [
+        "170o",
+        "60o",
+        "100o",
+        "90o"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Angles in Polygons"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-understanding-quadrilaterals-13",
+      "sourceRow": 14,
+      "question": "Maths_8_Understanding_Quadrilaterals_q13.jpg",
+      "options": [
+        "160o",
+        "220o",
+        "20o",
+        "180o"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Some Special Parallelograms"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-understanding-quadrilaterals-14",
+      "sourceRow": 15,
+      "question": "Maths_8_Understanding_Quadrilaterals_q14.jpg",
+      "options": [
+        "140o",
+        "120o",
+        "100o",
+        "360o"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Angles in Polygons"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-understanding-quadrilaterals-15",
+      "sourceRow": 16,
+      "question": "What is the sum of angles in a pentagon?",
+      "options": [
+        "360o",
+        "450o",
+        "540o",
+        "630o"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Angles in Polygons"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-understanding-quadrilaterals-16",
+      "sourceRow": 17,
+      "question": "What is the sum of angles in a hexagon?",
+      "options": [
+        "540o",
+        "630o",
+        "720o",
+        "810o"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Angles in Polygons"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-understanding-quadrilaterals-17",
+      "sourceRow": 18,
+      "question": "Maths_8_Understanding_Quadrilaterals_q17.jpg",
+      "options": [
+        "80o",
+        "140o",
+        "160o",
+        "280o"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Some Special Parallelograms"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-understanding-quadrilaterals-18",
+      "sourceRow": 19,
+      "question": "Maths_8_Understanding_Quadrilaterals_q18.jpg",
+      "options": [
+        "6",
+        "9",
+        "18",
+        "26"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Some Special Parallelograms"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-understanding-quadrilaterals-19",
+      "sourceRow": 20,
+      "question": "Maths_8_Understanding_Quadrilaterals_q19.jpg",
+      "options": [
+        "5",
+        "10",
+        "15",
+        "20"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Some Special Parallelograms"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-understanding-quadrilaterals-20",
+      "sourceRow": 21,
+      "question": "Maths_8_Understanding_Quadrilaterals_q20.jpg",
+      "options": [
+        "23 cm",
+        "28 cm",
+        "37 cm",
+        "46 cm"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Some Special Parallelograms"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-understanding-quadrilaterals-21",
+      "sourceRow": 22,
+      "question": "Mohan got a question to find the number of sides a regular polygon will have if its exterior angle is 45o. Which of the following options Mohan will choose to get full marks?",
+      "options": [
+        "Five",
+        "Six",
+        "Seven",
+        "Eight"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Angles in Polygons"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-understanding-quadrilaterals-22",
+      "sourceRow": 23,
+      "question": "Maths_8_Understanding_Quadrilaterals_q22.jpg",
+      "options": [
+        "60o",
+        "80o",
+        "120o",
+        "180o"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Angles in Polygons"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-understanding-quadrilaterals-23",
+      "sourceRow": 24,
+      "question": "Maths_8_Understanding_Quadrilaterals_q23.jpg",
+      "options": [
+        "160o",
+        "120o",
+        "200o",
+        "220o"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Angles in Polygons"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-understanding-quadrilaterals-24",
+      "sourceRow": 25,
+      "question": "Maths_8_Understanding_Quadrilaterals_q24.jpg",
+      "options": [
+        "223o",
+        "108o",
+        "43o",
+        "83o"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Angles in Polygons"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-understanding-quadrilaterals-25",
+      "sourceRow": 26,
+      "question": "Maths_8_Understanding_Quadrilaterals_q25.jpg",
+      "options": [
+        "90o",
+        "40o",
+        "230o",
+        "270o"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Angles in Polygons"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-understanding-quadrilaterals-26",
+      "sourceRow": 27,
+      "question": "Maths_8_Understanding_Quadrilaterals_q26.jpg",
+      "options": [
+        "1o",
+        "2o",
+        "3o",
+        "4o"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Angles in Polygons"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-understanding-quadrilaterals-27",
+      "sourceRow": 28,
+      "question": "Maths_8_Understanding_Quadrilaterals_q27.jpg",
+      "options": [
+        "35o",
+        "36o",
+        "37o",
+        "38o"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Angles in Polygons"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-understanding-quadrilaterals-28",
+      "sourceRow": 29,
+      "question": "Maths_8_Understanding_Quadrilaterals_q28.jpg",
+      "options": [
+        "43o",
+        "49o",
+        "111o",
+        "157o"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Angles in Polygons"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-understanding-quadrilaterals-29",
+      "sourceRow": 30,
+      "question": "Maths_8_Understanding_Quadrilaterals_q29.jpg",
+      "options": [
+        "192.3o",
+        "87.25o",
+        "177.50o",
+        "88.25o"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Angles in Polygons"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-understanding-quadrilaterals-30",
+      "sourceRow": 31,
+      "question": "Maths_8_Understanding_Quadrilaterals_q30.jpg",
+      "options": [
+        "360o",
+        "110o",
+        "70o",
+        "180o"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Some Special Parallelograms"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-understanding-quadrilaterals-31",
+      "sourceRow": 32,
+      "question": "The three angles of a quadrilateral are in the ratio of 3 : 4 : 5. If the measure of fourth angle is 120o, then what are the respective values of three angles?",
+      "options": [
+        "60o, 80o and 100o",
+        "80o, 60o and 100o",
+        "100o, 80o and 60o",
+        "60o, 100o and 80o"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Some Special Parallelograms"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": "HOTS"
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-understanding-quadrilaterals-32",
+      "sourceRow": 33,
+      "question": "What kind of quadrilateral is formed when the mid points of the sides of a rectangle are joined?",
+      "options": [
+        "Rectangle",
+        "Square",
+        "Trapezium",
+        "Rhombus"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Kinds of Quadrilaterals"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-understanding-quadrilaterals-33",
+      "sourceRow": 34,
+      "question": "In a square PQRS, PR = (7x – 2) cm and QS = (11x – 10) cm. What is the length of PR?",
+      "options": [
+        "8 cm",
+        "9 cm",
+        "11 cm",
+        "12 cm"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Some Special Parallelograms"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-understanding-quadrilaterals-34",
+      "sourceRow": 35,
+      "question": "Maths_8_Understanding_Quadrilaterals_q34.jpg",
+      "options": [
+        "xo",
+        "2xo",
+        "(180 – x)o",
+        "(180 – 2x)o"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Some Special Parallelograms"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-understanding-quadrilaterals-35",
+      "sourceRow": 36,
+      "question": "Maths_8_Understanding_Quadrilaterals_q35.jpg",
+      "options": [
+        "15o",
+        "165o",
+        "58o",
+        "118o"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Angles in Polygons"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-understanding-quadrilaterals-36",
+      "sourceRow": 37,
+      "question": "Which quadrilateral must have diagonals that are congruent and perpendicular?",
+      "options": [
+        "Rhombus",
+        "Square",
+        "Trapezoid",
+        "Parallelogram"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Kinds of Quadrilaterals"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-understanding-quadrilaterals-37",
+      "sourceRow": 38,
+      "question": "Which statement about quadrilaterals is true?",
+      "options": [
+        "All quadrilaterals have four right angles",
+        "All quadrilaterals have four sides",
+        "All quadrilaterals are parallelograms",
+        "All quadrilaterals have equal sides"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Kinds of Quadrilaterals"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-understanding-quadrilaterals-38",
+      "sourceRow": 39,
+      "question": "The measure of one angle of a parallelogram is 70o, what are the measures of the remaining angles?",
+      "options": [
+        "70o, 110o and 110o",
+        "80o, 100o and 120o",
+        "100o, 100o and 90o",
+        "None of these"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Angles in Polygons"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-understanding-quadrilaterals-39",
+      "sourceRow": 40,
+      "question": "Maths_8_Understanding_Quadrilaterals_q39.jpg",
+      "options": [
+        "56o",
+        "90o",
+        "34o",
+        "None of these"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Some Special Parallelograms"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-understanding-quadrilaterals-40",
+      "sourceRow": 41,
+      "question": "Maths_8_Understanding_Quadrilaterals_q40.jpg",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Some Special Parallelograms"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-8-math-understanding-quadrilaterals-41",
+      "sourceRow": 42,
+      "question": "Maths_8_Understanding_Quadrilaterals_q41.jpg",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": null,
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Some Special Parallelograms"
+      ],
+      "resource": "SME Created Question Bank",
+      "bloomsTaxonomy": null,
+      "smeComments": null,
+      "specialCategory": null
+    }
+  ]
+}

@@ -1,0 +1,1188 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-24T11:45:03.819Z",
+  "classification": {
+    "class": "Class 10",
+    "subject": "Math",
+    "topic": "Surface Areas and Volumes"
+  },
+  "publisher": "unspecified-publisher",
+  "source": {
+    "file": "Class10/Final/Math_Class_10_Assess_QB_13_Surface_Areas_and_Volumes/Math_Class_10_Assess_QB_13_Surface_Areas_and_Volumes.xlsx",
+    "sheet": "Maths_Grade_9_Ch-13"
+  },
+  "questionType": "MCQ",
+  "questionCount": 45,
+  "questions": [
+    {
+      "id": "unspecified-publisher-class-10-math-surface-areas-and-volumes-1",
+      "sourceRow": 2,
+      "question": "Marbles of diameter 1.4 cm are dropped into a cylindrical beaker of diameter 7 cm containing some water. The number of marbles that should be dropped into the beaker so that the water level rises by 5.6 cm is",
+      "options": [
+        "100",
+        "150",
+        "200",
+        "250"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Conversion of Solid from One Shape to Another"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Analysing",
+      "smeComments": null,
+      "specialCategory": "Exemplar"
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-surface-areas-and-volumes-2",
+      "sourceRow": 3,
+      "question": "An ice-cream cone has a hemispherical top. If the height of the conical portion is 9 cm and base radius is 2.5 cm, the volume of ice-cream in the ice-cream cone is",
+      "options": [
+        "Math_Class_10_Assess_QB_13_Surface_Areas_and_Volumes_q2_o1.jpg",
+        "Math_Class_10_Assess_QB_13_Surface_Areas_and_Volumes_q2_o2.jpg",
+        "Math_Class_10_Assess_QB_13_Surface_Areas_and_Volumes_q2_o3.jpg",
+        "Math_Class_10_Assess_QB_13_Surface_Areas_and_Volumes_q2_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Volume of a Combination of Solids"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-surface-areas-and-volumes-3",
+      "sourceRow": 4,
+      "question": "Math_Class_10_Assess_QB_13_Surface_Areas_and_Volumes_q3.jpg",
+      "options": [
+        "4.25 cm2",
+        "74.26 cm2",
+        "73.26 cm2",
+        "74.36 cm2"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Surface Area of a Combination of Solids"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-surface-areas-and-volumes-4",
+      "sourceRow": 5,
+      "question": "Math_Class_10_Assess_QB_13_Surface_Areas_and_Volumes_q4.jpg",
+      "options": [
+        "11100",
+        "11200",
+        "11000",
+        "11300"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Conversion of Solid from One Shape to Another"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Analysing",
+      "smeComments": null,
+      "specialCategory": "Exemplar"
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-surface-areas-and-volumes-5",
+      "sourceRow": 6,
+      "question": "A round bottom flask is a combination of",
+      "options": [
+        "Hemisphere + cylinder",
+        "Sphere + cylinder",
+        "Hemisphere + cone",
+        "Sphere + cone"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Volume of a Combination of Solids"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-surface-areas-and-volumes-6",
+      "sourceRow": 7,
+      "question": "When a solid is melted and recast to form another solid, the volume of the new solid",
+      "options": [
+        "Remains unchanged",
+        "Increases",
+        "Decreases",
+        "May increase or decrease"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Easy",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Conversion of Solid from One Shape to Another"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-surface-areas-and-volumes-7",
+      "sourceRow": 8,
+      "question": "A solid sphere of radius r is melted to form a cone of the same radius. The height of the cone is",
+      "options": [
+        "r",
+        "2r",
+        "3r",
+        "4r"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Conversion of Solid from One Shape to Another"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-surface-areas-and-volumes-8",
+      "sourceRow": 9,
+      "question": "A cube of edge 2 cm is melted to form smaller cubes of edge 1 cm each. The ratio of the surface area of the large cube to the smaller cubes is",
+      "options": [
+        "Math_Class_10_Assess_QB_13_Surface_Areas_and_Volumes_q8_o1.jpg",
+        "Math_Class_10_Assess_QB_13_Surface_Areas_and_Volumes_q8_o2.jpg",
+        "Math_Class_10_Assess_QB_13_Surface_Areas_and_Volumes_q8_o3.jpg",
+        "Math_Class_10_Assess_QB_13_Surface_Areas_and_Volumes_q8_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Conversion of Solid from One Shape to Another"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-surface-areas-and-volumes-9",
+      "sourceRow": 10,
+      "question": "A toy is in the form of a cone mounted on a hemisphere of common base radius 7 cm. The total height of the toy is 31 cm. The slant height of the cone is",
+      "options": [
+        "31 cm",
+        "7 cm",
+        "24 cm",
+        "25 cm"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Surface Area of a Combination of Solids"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-surface-areas-and-volumes-10",
+      "sourceRow": 11,
+      "question": "The radii of two cylinders are in the ratio 1 : 2 and their heights are in the ratio 5 : 3.The ratio of their volumes is",
+      "options": [
+        "Math_Class_10_Assess_QB_13_Surface_Areas_and_Volumes_q10_o1.jpg",
+        "Math_Class_10_Assess_QB_13_Surface_Areas_and_Volumes_q10_o2.jpg",
+        "Math_Class_10_Assess_QB_13_Surface_Areas_and_Volumes_q10_o3.jpg",
+        "Math_Class_10_Assess_QB_13_Surface_Areas_and_Volumes_q10_o4.jpg"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Volume of a Combination of Solids"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-surface-areas-and-volumes-11",
+      "sourceRow": 12,
+      "question": "A solid spherical ball of diameter 6 cm is melted to form three smaller spherical balls. If the diameter of two of the balls is 4 cm and 5 cm, the diameter of the third ball is",
+      "options": [
+        "1.5 cm",
+        "2 cm",
+        "3 cm",
+        "4.5 cm"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Conversion of Solid from One Shape to Another"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": "Analysing",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-surface-areas-and-volumes-12",
+      "sourceRow": 13,
+      "question": "Three cubes, each of volume 8 cm3 are joined end to end. The surface area of the resulting cuboid is",
+      "options": [
+        "28 cm2",
+        "56 cm2",
+        "72 cm2",
+        "None of these"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Surface Area of a Combination of Solids"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-surface-areas-and-volumes-13",
+      "sourceRow": 14,
+      "question": "Math_Class_10_Assess_QB_13_Surface_Areas_and_Volumes_q13.jpg",
+      "options": [
+        "Math_Class_10_Assess_QB_13_Surface_Areas_and_Volumes_q13_o1.jpg",
+        "Math_Class_10_Assess_QB_13_Surface_Areas_and_Volumes_q13_o2.jpg",
+        "Math_Class_10_Assess_QB_13_Surface_Areas_and_Volumes_q13_o3.jpg",
+        "Math_Class_10_Assess_QB_13_Surface_Areas_and_Volumes_q13_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Surface Area of a Combination of Solids"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": "Analysing",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-surface-areas-and-volumes-14",
+      "sourceRow": 15,
+      "question": "A solid metallic sphere of radius 21 cm is melted to form a number of smaller cones of diameter 14 cm and height 6 cm. The number of cones formed is",
+      "options": [
+        "63",
+        "189",
+        "126",
+        "100"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Conversion of Solid from One Shape to Another"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": "Analysing",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-surface-areas-and-volumes-15",
+      "sourceRow": 16,
+      "question": "A test tube is in the shape of a right circular cylinder with a hemispherical end. The diameter of both the parts is 3 cm and the total height of the test tube is 9.5 cm. The volume of liquid that it can hold is",
+      "options": [
+        "Math_Class_10_Assess_QB_13_Surface_Areas_and_Volumes_q15_o1.jpg",
+        "Math_Class_10_Assess_QB_13_Surface_Areas_and_Volumes_q15_o2.jpg",
+        "Math_Class_10_Assess_QB_13_Surface_Areas_and_Volumes_q15_o3.jpg",
+        "Math_Class_10_Assess_QB_13_Surface_Areas_and_Volumes_q15_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Volume of a Combination of Solids"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-surface-areas-and-volumes-16",
+      "sourceRow": 17,
+      "question": "A hemispherical bowl of diameter 30 cm is filled with some liquid, which is poured into 60 cylindrical bottles of height 6 cm each. The diameter of each cylindrical bottle is",
+      "options": [
+        "2.5 cm",
+        "5 cm",
+        "3 cm",
+        "6 cm"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Conversion of Solid from One Shape to Another"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-surface-areas-and-volumes-17",
+      "sourceRow": 18,
+      "question": "The height of a frustum of a cone is 24 cm and its slant height is 40 cm. The difference in the radii of the two circular sides is",
+      "options": [
+        "28 cm",
+        "21 cm",
+        "25 cm",
+        "32 cm"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Frustum of a Cone"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-surface-areas-and-volumes-18",
+      "sourceRow": 19,
+      "question": "A bucket is in the form of a frustum of a cone. The radii of its two ends are 14 cm and 7 cm. If the slant height of the bucket is 20 cm, its total surface area is",
+      "options": [
+        "Math_Class_10_Assess_QB_13_Surface_Areas_and_Volumes_q18_o1.jpg",
+        "Math_Class_10_Assess_QB_13_Surface_Areas_and_Volumes_q18_o2.jpg",
+        "Math_Class_10_Assess_QB_13_Surface_Areas_and_Volumes_q18_o3.jpg",
+        "Math_Class_10_Assess_QB_13_Surface_Areas_and_Volumes_q18_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Frustum of a Cone"
+      ],
+      "resource": "DS_Workbook",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-surface-areas-and-volumes-36",
+      "sourceRow": 37,
+      "question": "The diameter of a metallic sphere is 6 cm. It is melted and drawn into a wire of diameter 2 cm, then the length of the wire is",
+      "options": [
+        "12 cm",
+        "18 cm",
+        "36 cm",
+        "66 cm"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Conversion of Solid from One Shape to Another"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-surface-areas-and-volumes-37",
+      "sourceRow": 38,
+      "question": "The radii of the base of a cylinder and a cone of the same height are in the ratio 3 : 4. The ratio of their volumes is:",
+      "options": [
+        "Math_Class_10_Assess_QB_13_Surface_Areas_and_Volumes_q37_o1.jpg",
+        "Math_Class_10_Assess_QB_13_Surface_Areas_and_Volumes_q37_o2.jpg",
+        "Math_Class_10_Assess_QB_13_Surface_Areas_and_Volumes_q37_o3.jpg",
+        "Math_Class_10_Assess_QB_13_Surface_Areas_and_Volumes_q37_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Conversion of Solid from One Shape to Another"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-surface-areas-and-volumes-38",
+      "sourceRow": 39,
+      "question": "If a cone is cut into two parts by a horizontal plane passing through the mid-points of its axis, the ratio of the volumes of the upper part and the cone is",
+      "options": [
+        "Math_Class_10_Assess_QB_13_Surface_Areas_and_Volumes_q38_o1.jpg",
+        "Math_Class_10_Assess_QB_13_Surface_Areas_and_Volumes_q38_o2.jpg",
+        "Math_Class_10_Assess_QB_13_Surface_Areas_and_Volumes_q38_o3.jpg",
+        "Math_Class_10_Assess_QB_13_Surface_Areas_and_Volumes_q38_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Frustum of a Cone"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-surface-areas-and-volumes-39",
+      "sourceRow": 40,
+      "question": "A solid sphere of radius x cm is melted and cast into a shape of a solid cone of radius x cm. Then the height of the cone is:",
+      "options": [
+        "3x cm",
+        "x cm",
+        "4x cm",
+        "2x cm"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Conversion of Solid from One Shape to Another"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-surface-areas-and-volumes-40",
+      "sourceRow": 41,
+      "question": "A solid sphere of diameter 6 cm is melted and drawn into a wire of radius 4 mm. The length of wire is:",
+      "options": [
+        "900 cm",
+        "90 cm",
+        "900 m",
+        "225 cm"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Conversion of Solid from One Shape to Another"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-surface-areas-and-volumes-41",
+      "sourceRow": 42,
+      "question": "A metallic cube of edge 1 cm is drawn into a wire of diameter 4 mm, then the length of the wire is",
+      "options": [
+        "Math_Class_10_Assess_QB_13_Surface_Areas_and_Volumes_q41_o1.jpg",
+        "Math_Class_10_Assess_QB_13_Surface_Areas_and_Volumes_q41_o2.jpg",
+        "Math_Class_10_Assess_QB_13_Surface_Areas_and_Volumes_q41_o3.jpg",
+        "Math_Class_10_Assess_QB_13_Surface_Areas_and_Volumes_q41_o4.jpg"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Conversion of Solid from One Shape to Another"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-surface-areas-and-volumes-42",
+      "sourceRow": 43,
+      "question": "The ratio of volume of a cone and a cylinder of equal diameter and equal height is",
+      "options": [
+        "Math_Class_10_Assess_QB_13_Surface_Areas_and_Volumes_q42_o1.jpg",
+        "Math_Class_10_Assess_QB_13_Surface_Areas_and_Volumes_q42_o2.jpg",
+        "Math_Class_10_Assess_QB_13_Surface_Areas_and_Volumes_q42_o3.jpg",
+        "Math_Class_10_Assess_QB_13_Surface_Areas_and_Volumes_q42_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Conversion of Solid from One Shape to Another"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-surface-areas-and-volumes-43",
+      "sourceRow": 44,
+      "question": "If a solid right circular cone of height 24 cm and base radius 6 cm is melted and recast in the shape of a sphere, then the radius of the sphere is",
+      "options": [
+        "6 cm",
+        "4 cm",
+        "8 cm",
+        "12 cm"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Conversion of Solid from One Shape to Another"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-surface-areas-and-volumes-44",
+      "sourceRow": 45,
+      "question": "A solid sphere of radius r is melted and recast into the shape of a solid cone of height r, then the radius of the base of the cone is:",
+      "options": [
+        "Math_Class_10_Assess_QB_13_Surface_Areas_and_Volumes_q44_o1.jpg",
+        "Math_Class_10_Assess_QB_13_Surface_Areas_and_Volumes_q44_o2.jpg",
+        "Math_Class_10_Assess_QB_13_Surface_Areas_and_Volumes_q44_o3.jpg",
+        "Math_Class_10_Assess_QB_13_Surface_Areas_and_Volumes_q44_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Conversion of Solid from One Shape to Another"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-surface-areas-and-volumes-45",
+      "sourceRow": 46,
+      "question": "The volume of a sphere (in cu. cm) is equal to its surface area (in sq. cm). The diameter of the sphere (in cm) is:",
+      "options": [
+        "3",
+        "6",
+        "2",
+        "4"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Conversion of Solid from One Shape to Another"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-surface-areas-and-volumes-46",
+      "sourceRow": 47,
+      "question": "The diameter of a sphere is 6 cm. It is melted and drwan into a wire of diameter 2 mm. The length of wire is",
+      "options": [
+        "12 m",
+        "18 m",
+        "36 m",
+        "66 m"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Conversion of Solid from One shape to Another"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-surface-areas-and-volumes-47",
+      "sourceRow": 48,
+      "question": "If a cone is cut into two parts by a horizontal plane passing through the mid-points of its axis, the ratio of the volumes of the upper part and the cone is",
+      "options": [
+        "1 : 2",
+        "1 : 4",
+        "1 : 6",
+        "1 : 8"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Volume of a Combination of Solids"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-surface-areas-and-volumes-48",
+      "sourceRow": 49,
+      "question": "A soild sphere of radius r is melted and cast into the shape of a solid cone of height r, the radius of the base of the cone is",
+      "options": [
+        "2r",
+        "3r",
+        "r",
+        "4r"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Conversion of Solid from One shape to Another"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-surface-areas-and-volumes-49",
+      "sourceRow": 50,
+      "question": "How many small spheres of radius 2 cm, can be formed by melting a ball of iron of radius 4 cm?",
+      "options": [
+        "4",
+        "16",
+        "8",
+        "12"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Volume of a Combination of Solids"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-surface-areas-and-volumes-50",
+      "sourceRow": 51,
+      "question": "The material of a cone is converted into the shape of a cylinder of equal radius. If height of the cylinder is 5 cm, then height of the cone is",
+      "options": [
+        "10 cm",
+        "15 cm",
+        "18 cm",
+        "24 cm"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Conversion of Solid from One shape to Another"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-surface-areas-and-volumes-51",
+      "sourceRow": 52,
+      "question": "A hemispherical bowl of interal radius 9 cm contains a liquid. This liquid is to be filled into cylindrical-shaped smal bottles of diameter 3 cm and height4 cm. How many bottles are necessary to empty the bowl?",
+      "options": [
+        "50",
+        "52",
+        "54",
+        "60"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Volume of a Combination of Solids"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-surface-areas-and-volumes-52",
+      "sourceRow": 53,
+      "question": "The number of spheres of 5 mm radius which can be made by melting a sphere of lead of radius 8 cm is",
+      "options": [
+        "less than 3000",
+        "more than 3000 and less than 4000",
+        "6000 approximately",
+        "more than 4000 and less than 5000"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Volume of a Combination of Solids"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-surface-areas-and-volumes-53",
+      "sourceRow": 54,
+      "question": "A solid is hemispherical at the bottom and conical above. If the surface areas of the two parts are equal, then the ratio of its radius and the height of its conical part is",
+      "options": [
+        "Math_Class_10_Assess_QB_13_Surface_Areas_and_Volumes_q53_o1.jpg",
+        "Math_Class_10_Assess_QB_13_Surface_Areas_and_Volumes_q53_o2.jpg",
+        "Math_Class_10_Assess_QB_13_Surface_Areas_and_Volumes_q53_o3.jpg",
+        "Math_Class_10_Assess_QB_13_Surface_Areas_and_Volumes_q53_o4.jpg"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Volume of a Combination of Solids"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-surface-areas-and-volumes-54",
+      "sourceRow": 55,
+      "question": "The solid sphere radius 10 cm is moulded into 8 spherical solid balls of equal radius, then the surface area of each ball is",
+      "options": [
+        "Math_Class_10_Assess_QB_13_Surface_Areas_and_Volumes_q54_o1.jpg",
+        "Math_Class_10_Assess_QB_13_Surface_Areas_and_Volumes_q54_o2.jpg",
+        "Math_Class_10_Assess_QB_13_Surface_Areas_and_Volumes_q54_o3.jpg",
+        "Math_Class_10_Assess_QB_13_Surface_Areas_and_Volumes_q54_o4.jpg"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Conversion of Solid from One shape to Another"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-surface-areas-and-volumes-55",
+      "sourceRow": 56,
+      "question": "A reservoir is in the shape of a frustum of a right circular cone. It is 8 cm across at the top and 4 m across at the bottom. If it is 6 m deep, then its capacity is",
+      "options": [
+        "176 m2",
+        "196 m2",
+        "200 m3",
+        "110 m3"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Frustum of a Cone"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-surface-areas-and-volumes-56",
+      "sourceRow": 57,
+      "question": "The radius of wire is decreased to one-third. It volume remains the same, the length will become",
+      "options": [
+        "3 times",
+        "6 times",
+        "9 times",
+        "27 times"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Conversion of Solid from One shape to Another"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-surface-areas-and-volumes-57",
+      "sourceRow": 58,
+      "question": "The number of solid spheres, each of diameter 6 cm, that could be moulded to form a soild metal cylinder of height 45 cm and diameter 4 cm, is",
+      "options": [
+        "3",
+        "4",
+        "6",
+        "5"
+      ],
+      "correctOption": 4,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Conversion of Solid from One shape to Another"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-surface-areas-and-volumes-58",
+      "sourceRow": 59,
+      "question": "Three soild spherical bends of radii 3 cm, 4 cm and 5 cm are melted into a single spherical bend. Its radius is",
+      "options": [
+        "9 cm",
+        "8 cm",
+        "6 cm",
+        "None of these"
+      ],
+      "correctOption": 3,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Conversion of Solid from One shape to Another"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-surface-areas-and-volumes-59",
+      "sourceRow": 60,
+      "question": "If the radii of the circular ends of a bucket of height 40 cm are of lengths 35 cm and 14 cm, then the volume of the bucket is",
+      "options": [
+        "60060 cm3",
+        "80080 cm3",
+        "70040 cm3",
+        "80160 cm3"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Frustum of a Cone"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-surface-areas-and-volumes-60",
+      "sourceRow": 61,
+      "question": "If the diameter of the cross-section of a cylinder is decresed by 5% how much percent will the length be increased so that volume remains the same?",
+      "options": [
+        "0.1",
+        "0.11",
+        "0.12",
+        "0.05"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Conversion of Solid from One shape to Another"
+      ],
+      "resource": "CCE_Manual",
+      "bloomsTaxonomy": "Applying",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-surface-areas-and-volumes-61",
+      "sourceRow": 62,
+      "question": "Math_Class_10_Assess_QB_13_Surface_Areas_and_Volumes_q61.jpg",
+      "options": [
+        "25 cm",
+        "21 cm",
+        "19 cm",
+        "23 cm"
+      ],
+      "correctOption": 2,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Image",
+      "concepts": [
+        "Conversion of Solid from One shape to Another"
+      ],
+      "resource": "H.K.Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    },
+    {
+      "id": "unspecified-publisher-class-10-math-surface-areas-and-volumes-62",
+      "sourceRow": 63,
+      "question": "If the radii of circular ends of frustum of a cone are 20 cm and 12 cm and its height is 6 cm, then the slant height of frustum (in cm) is:",
+      "options": [
+        "10",
+        "8",
+        "12",
+        "15"
+      ],
+      "correctOption": 1,
+      "feedback": {
+        "wrong": "That's Incorrect! The correct answer is",
+        "correct": "Good Work. That's Correct!"
+      },
+      "difficulty": "Medium",
+      "score": 1,
+      "contentType": "Text",
+      "concepts": [
+        "Frustum of a Cone"
+      ],
+      "resource": "H.K.Dass",
+      "bloomsTaxonomy": "Understanding",
+      "smeComments": null,
+      "specialCategory": null
+    }
+  ]
+}
