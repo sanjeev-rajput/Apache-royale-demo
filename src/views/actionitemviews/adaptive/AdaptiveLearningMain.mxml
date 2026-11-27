@@ -14,6 +14,7 @@
         <![CDATA[
             import org.apache.royale.events.Event;
             import org.apache.royale.html.HTMLText;
+            import org.apache.royale.html.Image;
             import com.util.StringUtil;
             import com.model.Config;
             import com.model.ServiceLoader;
@@ -25,6 +26,15 @@
 
             
             private var sessionLoader:ServiceLoader;
+            private var explanationLoader:ServiceLoader;
+            private var explanationRequestToken:int = 0;
+            private var currentTopicVersion:int = 1;
+            private var explanationPanel:Div;
+            private var explanationProgress:BarLoader;
+            private var explanationToggle:Label;
+            private var explanationContent:HTMLText;
+            private var explanationExpanded:Boolean = false;
+            private var explanationUnavailable:Boolean = false;
             private var sessionId:String;
             private var currentLearningTopic:String = "";
             private var currentLearningGrade:String = "";
@@ -41,7 +51,13 @@
             private var selectedQBSubject:Object;
             private var selectedQBTopic:Object;
             private var qbSelectionContainer:Div;
-            private var pendingAction:String = ""; 
+            private var pendingAction:String = "";
+            private var assessmentHistory:Array = [];
+            private var topicConfirmationContainer:Div;
+            private var pendingTopicSelection:Object;
+            private var pendingQBPracticeAfterSession:Boolean = false;
+            private var pendingQBPracticeInput:Object;
+            private var pendingTopicChange:Boolean = false;
 
             private function initializeAdaptiveLearning():void
             {
@@ -96,10 +112,14 @@
                         ? String(response.message)
                         : "The learning session could not be started. Please try again.");
                     startButton.visible = true;
+                    pendingQBPracticeAfterSession = false;
+                    pendingQBPracticeInput = null;
                     return;
                 }
 
                 sessionId = String(response.session.sessionId);
+                assessmentHistory = response.session.assessmentHistory as Array || [];
+                currentTopicVersion = response.session.topicVersion != null ? int(response.session.topicVersion) : 1;
                 currentLearningTopic = String(response.session.topic || "");
                 currentLearningGrade = String(response.session.grade || gradeInput.text || "");
                 currentLearningSubject = String(response.session.subject || subjectInput.text || "");
@@ -111,6 +131,15 @@
 
                 addContentMessage("Learning topic: <b>" + StringUtil.escapeHTML(String(response.session.topic)) + "</b>");
                 renderInitialContent(response.content);
+                requestCurrentExplanation();
+
+                if (pendingQBPracticeAfterSession && pendingQBPracticeInput != null)
+                {
+                    pendingQBPracticeAfterSession = false;
+                    var nextQBInput:Object = pendingQBPracticeInput;
+                    pendingQBPracticeInput = null;
+                    performAction("start_question_bank", nextQBInput);
+                }
 
                 if (response.message != null && String(response.message) != "")
                     addContentMessage(String(response.message));
@@ -120,8 +149,146 @@
             {
                 finishRequest();
                 startButton.visible = true;
+                pendingQBPracticeAfterSession = false;
+                pendingQBPracticeInput = null;
                 addContentMessage("I couldn't connect to the learning service. Please try again.");
                 trace("AI Adaptive Learning session creation request failed.");
+            }
+
+            private function requestCurrentExplanation():void
+            {
+                if (sessionId == null || sessionId == "") return;
+
+                ensureExplanationPanel();
+                setExplanationLoading();
+
+                var requestToken:int = ++explanationRequestToken;
+                explanationLoader = new ServiceLoader();
+                explanationLoader.reqMethod = "POST";
+                explanationLoader.contentType = "application/json";
+                explanationLoader.reqData = JSON.stringify({ topicVersion: currentTopicVersion });
+                explanationLoader.loadJData(
+                    Config.apiBaseUrl + "adaptive-learning/sessions/" + sessionId + "/explanation",
+                    function(response:Object):void
+                    {
+                        if (requestToken != explanationRequestToken) return;
+                        explanationLoader = null;
+                        if (response == null || response.success != true)
+                        {
+                            setExplanationUnavailable(response != null && response.message != null
+                                ? String(response.message)
+                                : "The AI explanation is temporarily unavailable. You can continue with the learning resources.");
+                            return;
+                        }
+                        if (response.stale === true) return;
+                        if (int(response.topicVersion) != currentTopicVersion) return;
+
+                        if (response.available === true && response.explanation != null &&
+                            String(response.explanation) != "")
+                        {
+                            setExplanationReady(String(response.explanation));
+                        }
+                        else
+                        {
+                            setExplanationUnavailable(response.message != null && String(response.message) != ""
+                                ? String(response.message)
+                                : "The AI explanation is temporarily unavailable. You can continue with the learning resources.");
+                        }
+                    },
+                    ServiceLoader.DATA_TYPE_JSON,
+                    function(event:Event):void
+                    {
+                        if (requestToken != explanationRequestToken) return;
+                        explanationLoader = null;
+                        setExplanationUnavailable("The AI explanation is temporarily unavailable. You can continue with the learning resources.");
+                    },
+                    false
+                );
+            }
+
+            private function ensureExplanationPanel():void
+            {
+                if (explanationPanel != null) return;
+
+                explanationPanel = new Div();
+                explanationPanel.percentWidth = 100;
+                explanationPanel.className = "adaptive-explanation-panel";
+
+                var heading:HTMLText = new HTMLText();
+                heading.percentWidth = 100;
+                heading.html = "<h3>Learning explanation</h3>";
+                explanationPanel.addElement(heading);
+
+                explanationProgress = new BarLoader();
+                explanationProgress.label = "Preparing your AI explanation. You can explore the learning resources in the meantime.";
+                explanationProgress.showPercentage = "false";
+                explanationProgress.small = "true";
+                explanationProgress.indeterminate = "true";
+                explanationPanel.addElement(explanationProgress);
+
+                explanationToggle = new Label();
+                explanationToggle.text = "Your AI explanation is ready. Click to read it.";
+                explanationToggle.color = "orange";
+                explanationToggle.className = "adaptive-explanation-toggle";
+                explanationToggle.visible = false;
+                explanationToggle.addEventListener("click", toggleExplanationExpanded);
+                explanationPanel.addElement(explanationToggle);
+
+                explanationContent = new HTMLText();
+                explanationContent.percentWidth = 100;
+                explanationContent.className = "adaptive-explanation-content";
+                explanationContent.visible = false;
+                explanationPanel.addElement(explanationContent);
+
+                resultsContainer.addElement(explanationPanel);
+            }
+
+            private function setExplanationLoading():void
+            {
+                ensureExplanationPanel();
+                explanationExpanded = false;
+                explanationUnavailable = false;
+                explanationProgress.visible = true;
+                explanationProgress.label = "Preparing your AI explanation. You can explore the learning resources in the meantime.";
+                explanationToggle.visible = false;
+                explanationContent.visible = false;
+                explanationContent.html = "";
+            }
+
+            private function setExplanationReady(value:String):void
+            {
+                ensureExplanationPanel();
+                explanationProgress.visible = false;
+                explanationUnavailable = false;
+                explanationToggle.text = "Your AI explanation is ready. Click to read it.";
+                explanationToggle.visible = true;
+                explanationContent.html = StringUtil.markdownToHtml(value);
+                explanationExpanded = false;
+                explanationContent.visible = false;
+            }
+
+            private function setExplanationUnavailable(message:String):void
+            {
+                ensureExplanationPanel();
+                explanationProgress.visible = false;
+                explanationUnavailable = true;
+                explanationToggle.text = "AI explanation is temporarily unavailable. Click for details.";
+                explanationToggle.visible = true;
+                explanationContent.html = StringUtil.markdownToHtml(message);
+                explanationExpanded = false;
+                explanationContent.visible = false;
+            }
+
+            private function toggleExplanationExpanded(event:Event):void
+            {
+                if (explanationContent == null) return;
+                explanationExpanded = !explanationExpanded;
+                explanationContent.visible = explanationExpanded;
+                explanationToggle.text = explanationExpanded
+                    ? (explanationUnavailable ? "Hide details" : "Hide AI explanation")
+                    : (explanationUnavailable
+                        ? "AI explanation is temporarily unavailable. Click for details."
+                        : "Your AI explanation is ready. Click to read it.");
             }
 
             private function renderInitialContent(content:Object):void
@@ -132,15 +299,11 @@
                     return;
                 }
 
+                ensureExplanationPanel();
                 if (content.explanation != null && String(content.explanation) != "")
-                {
-                    addSectionHeading("Learning explanation");
-                    addContentMessage(String(content.explanation));
-                }
+                    setExplanationReady(String(content.explanation));
                 else
-                {
-                    addContentMessage("The AI explanation is temporarily unavailable. You can still explore the available learning resources.");
-                }
+                    setExplanationLoading();
 
                 var activities:Array = content.activities as Array;
                 addSectionHeading("Learning activities");
@@ -176,6 +339,172 @@
                 addActionButton("Watch More Learning Videos", "show_videos");
                 addActionButton("Test Your Understanding with AI Practice", "start_ai_assessment");
                 addActionButton("Practice with the Question Bank", "choose_question_bank");
+                if (assessmentHistory != null && assessmentHistory.length >= 3)
+                    addOutcomeButton();
+            }
+
+            private function addOutcomeButton():void
+            {
+                var button:Button = new Button();
+                button.text = "My Learning Progress";
+                button.percentWidth = 100;
+                button.addEventListener("click", function(event:Event):void
+                {
+                    if (!requestInProgress) renderConsolidatedOutcome();
+                });
+                actionButtons.push(button);
+                resultsContainer.addElement(button);
+            }
+
+            private function renderConsolidatedOutcome():void
+            {
+                removeActionButtons();
+                if (assessmentHistory == null || assessmentHistory.length < 3)
+                {
+                    addContentMessage("Complete at least three assessments to view your learning progress.");
+                    return;
+                }
+
+                addSectionHeading("My Learning Progress");
+                var count:int = assessmentHistory.length;
+                var totalPercentage:Number = 0;
+                var bestPercentage:Number = 0;
+                var latest:Object = assessmentHistory[count - 1];
+                for each (var attempt:Object in assessmentHistory)
+                {
+                    var value:Number = Number(attempt.percentage);
+                    totalPercentage += value;
+                    if (value > bestPercentage) bestPercentage = value;
+                }
+                var average:Number = Math.round(totalPercentage / count);
+
+                var summary:HTMLText = new HTMLText();
+                summary.percentWidth = 100;
+                summary.html = "<b>Learning topic:</b> " + StringUtil.escapeHTML(currentLearningTopic) +
+                    "<br/><b>Assessments completed:</b> " + count +
+                    "<br/><b>Average assessment percentage:</b> " + average + "%" +
+                    "<br/><b>Best assessment percentage:</b> " + Math.round(bestPercentage) + "%" +
+                    "<br/><b>Most recent assessment:</b> " + Math.round(Number(latest.percentage)) + "%";
+                summary.className = "assessment-overall-feedback";
+                resultsContainer.addElement(summary);
+
+                addSectionHeading("Assessment progress");
+                var chart:HTMLText = new HTMLText();
+                chart.percentWidth = 100;
+                var chartHtml:String = "";
+                for (var i:int = 0; i < assessmentHistory.length; i++)
+                {
+                    var entry:Object = assessmentHistory[i];
+                    var pct:Number = Math.max(0, Math.min(100, Number(entry.percentage)));
+                    var sourceLabel:String = String(entry.source) == "question_bank" ? "Question Bank" : "AI assessment";
+                    chartHtml += "<div style='margin:10px 0;padding:8px;border:1px solid #dce3ed;border-radius:8px'>" +
+                        "<b>Attempt " + (i + 1) + " · " + StringUtil.escapeHTML(sourceLabel) + "</b>" +
+                        "<div style='height:9px;background:#e8edf4;border-radius:8px;margin:6px 0;overflow:hidden'>" +
+                        "<div style='height:9px;width:" + pct + "%;background:#3978c8;border-radius:8px'></div></div>" +
+                        "<span>" + Math.round(pct) + "% · " +
+                        StringUtil.escapeHTML(String(entry.score) + " / " + String(entry.total)) + "</span></div>";
+                }
+                chart.html = chartHtml;
+                resultsContainer.addElement(chart);
+
+                addSectionHeading("Assessment review");
+                for each (var review:Object in assessmentHistory)
+                {
+                    var sourceName:String = String(review.source) == "question_bank" ? "Question Bank" : "AI assessment";
+                    var heading:HTMLText = new HTMLText();
+                    heading.percentWidth = 100;
+                    heading.html = "<b>" + StringUtil.escapeHTML(String(review.title || sourceName)) +
+                        "</b> — " + Math.round(Number(review.percentage)) + "% (" +
+                        StringUtil.escapeHTML(String(review.score) + " / " + String(review.total)) + ")";
+                    resultsContainer.addElement(heading);
+
+                    var reviewQuestions:Array = review.questions as Array;
+                    if (reviewQuestions == null) continue;
+                    var reviewContext:Object = review.context || {};
+                    var reviewClassId:String = String(reviewContext.classId || "");
+                    var reviewSubjectId:String = String(reviewContext.subjectId || "");
+                    var qn:int = 0;
+                    for each (var reviewedQuestion:Object in reviewQuestions)
+                    {
+                        qn++;
+                        var detail:HTMLText = new HTMLText();
+                        detail.percentWidth = 100;
+                        var status:String = reviewedQuestion.isCorrect === true ? "Correct" : "Incorrect";
+                        var questionMarks:String = reviewedQuestion.totalMarks != null
+                            ? " (" + String(reviewedQuestion.score) + "/" + String(reviewedQuestion.totalMarks) + " marks)"
+                            : "";
+                        detail.html = "<b>Q" + qn + " · " + status +
+                            StringUtil.escapeHTML(questionMarks) + "</b>";
+                        detail.className = "assessment-answer-explanation";
+                        resultsContainer.addElement(detail);
+
+                        appendReviewValue(String(reviewedQuestion.prompt || ""), reviewClassId, reviewSubjectId, "assessment-question-prompt");
+                        appendReviewField("Your answer:", String(reviewedQuestion.selectedAnswer || "Not answered"), reviewClassId, reviewSubjectId);
+                        if (reviewedQuestion.isCorrect !== true)
+                            appendReviewField("Correct answer:", String(reviewedQuestion.correctAnswer || ""), reviewClassId, reviewSubjectId);
+                        if (reviewedQuestion.feedback != null && String(reviewedQuestion.feedback) != "")
+                        {
+                            var feedback:HTMLText = new HTMLText();
+                            feedback.percentWidth = 100;
+                            feedback.html = "<b>Feedback:</b> " + StringUtil.escapeHTML(String(reviewedQuestion.feedback));
+                            feedback.className = "assessment-answer-explanation";
+                            resultsContainer.addElement(feedback);
+                        }
+                    }
+                }
+                addContentMessage("This summary describes assessment performance in the current learning session. It is not a formal measure of overall subject mastery.");
+                addLearningChoices();
+            }
+
+            private function appendReviewField(label:String, value:String, classId:String, subjectId:String):void
+            {
+                var fieldLabel:HTMLText = new HTMLText();
+                fieldLabel.percentWidth = 100;
+                fieldLabel.html = "<b>" + StringUtil.escapeHTML(label) + "</b>";
+                fieldLabel.className = "assessment-answer-explanation";
+                resultsContainer.addElement(fieldLabel);
+                appendReviewValue(value, classId, subjectId, "assessment-answer-explanation");
+            }
+
+            private function appendReviewValue(value:String, classId:String, subjectId:String, styleName:String):void
+            {
+                var imageUrl:String = getReviewQuestionImageUrl(value, classId, subjectId);
+                if (imageUrl != null)
+                {
+                    var image:Image = new Image();
+                    image.src = imageUrl;
+                    image.className = "assessment-question-image";
+                    resultsContainer.addElement(image);
+                    return;
+                }
+
+                var textValue:HTMLText = new HTMLText();
+                textValue.percentWidth = 100;
+                textValue.html = StringUtil.escapeHTML(value);
+                textValue.className = styleName;
+                resultsContainer.addElement(textValue);
+            }
+
+            private function getReviewQuestionImageUrl(value:String, classId:String, subjectId:String):String
+            {
+                var fileName:String = getReviewQuestionImageFileName(value);
+                if (fileName == "" || classId == "" || subjectId == "") return null;
+
+                var baseUrl:String = String(Config.apiBaseUrl || "");
+                baseUrl = baseUrl.replace(new RegExp("/api/?$", "i"), "/");
+                if (baseUrl.charAt(baseUrl.length - 1) != "/") baseUrl += "/";
+                return baseUrl + "question-bank-assets/" + encodeURIComponent(classId) + "/" +
+                    encodeURIComponent(subjectId) + "/icon/" + encodeURIComponent(fileName);
+            }
+
+            private function getReviewQuestionImageFileName(value:String):String
+            {
+                if (value == null) return "";
+                var candidate:String = value.replace(/\\/g, "/");
+                candidate = candidate.substring(candidate.lastIndexOf("/") + 1);
+                candidate = candidate.replace(/^\s+|\s+$/g, "");
+                candidate = candidate.replace(/^[A-Za-z]\.\s*/, "");
+                return /^[A-Za-z0-9_ .-]+\.(jpg|jpeg|png|gif)$/i.test(candidate) ? candidate : "";
             }
 
             private function addActionButton(label:String, action:String):void
@@ -238,35 +567,8 @@
                     return;
                 }
 
-                if (response.topicSwitched === true)
-                {
-                    currentLearningTopic = String(response.topic || currentLearningTopic);
-                    removeQBSelectionContainer();
-                    addSectionHeading("New learning topic: " + currentLearningTopic);
-                    if (response.content != null && response.content.explanation != null)
-                    {
-                        addSectionHeading("Learning explanation");
-                        addContentMessage(String(response.content.explanation));
-                    }
-                    var switchedActivities:Array = response.content != null ? response.content.activities as Array : null;
-                    addSectionHeading("Learning activities");
-                    if (switchedActivities != null && switchedActivities.length > 0)
-                    {
-                        for each (var switchedActivity:Object in switchedActivities) addActivity(switchedActivity);
-                    }
-                    else addContentMessage("No matching catalogue activities are available for this topic right now.");
-
-                    var switchedVideos:Array = response.content != null ? response.content.videos as Array : null;
-                    addSectionHeading("Learning videos");
-                    if (switchedVideos != null && switchedVideos.length > 0)
-                    {
-                        for each (var switchedVideo:Object in switchedVideos) addYouTubeVideo(switchedVideo);
-                    }
-                    else addContentMessage("No matching learning videos are available for this topic right now.");
-                    addLearningChoices();
-                    pendingAction = "";
-                    return;
-                }
+                if (response.session != null && response.session.assessmentHistory is Array)
+                    assessmentHistory = response.session.assessmentHistory as Array;
 
                 if (response.activities != null)
                 {
@@ -578,20 +880,144 @@
 
             private function switchToSelectedQBTopic():void
             {
-                if (selectedQBTopic == null) return;
-                performAction("switch_topic", { topic: String(selectedQBTopic.topicName) });
+                if (selectedQBClass == null || selectedQBSubject == null || selectedQBTopic == null) return;
+                if (isSelectedQBTopicCurrent())
+                {
+                    addContentMessage("You are already learning this topic in the current session.");
+                    return;
+                }
+                showTopicChangeConfirmation(false);
             }
 
             private function startSelectedQBPractice():void
             {
                 if (selectedQBClass == null || selectedQBSubject == null || selectedQBTopic == null) return;
-                addQBHeading("Preparing five publisher questions...");
-                performAction("start_question_bank", {
+                var input:Object = {
                     classId: String(selectedQBClass.classId),
                     subjectId: String(selectedQBSubject.subjectId),
                     topicId: String(selectedQBTopic.topicId),
                     questionCount: 5
-                });
+                };
+                if (!isSelectedQBTopicCurrent())
+                {
+                    pendingQBPracticeInput = input;
+                    showTopicChangeConfirmation(true);
+                    return;
+                }
+                addQBHeading("Preparing five publisher questions...");
+                performAction("start_question_bank", input);
+            }
+
+            private function isSelectedQBTopicCurrent():Boolean
+            {
+                if (selectedQBClass == null || selectedQBSubject == null || selectedQBTopic == null)
+                    return false;
+                return normalizeComparableLearningValue(String(selectedQBClass.className)) ==
+                        normalizeComparableLearningValue(currentLearningGrade) &&
+                    normalizeComparableLearningValue(String(selectedQBSubject.subjectName)) ==
+                        normalizeComparableLearningValue(currentLearningSubject) &&
+                    normalizeComparableLearningValue(String(selectedQBTopic.topicName)) ==
+                        normalizeComparableLearningValue(currentLearningTopic);
+            }
+
+            private function normalizeComparableLearningValue(value:String):String
+            {
+                var normalized:String = normalizeQBValue(value).replace(/^class /, "").replace(/s$/, "");
+                if (normalized == "math" || normalized == "maths" || normalized == "mathematic")
+                    return "mathematics";
+                if (normalized == "ev" || normalized == "environmental studies")
+                    return "evs";
+                return normalized;
+            }
+
+            private function showTopicChangeConfirmation(startPractice:Boolean):void
+            {
+                if (topicConfirmationContainer != null) return;
+                if (pendingTopicSelection == null)
+                {
+                    pendingTopicSelection = {
+                        grade: String(selectedQBClass.className),
+                        subject: String(selectedQBSubject.subjectName),
+                        topic: String(selectedQBTopic.topicName)
+                    };
+                }
+                pendingQBPracticeAfterSession = startPractice;
+
+                topicConfirmationContainer = new Div();
+                topicConfirmationContainer.percentWidth = 100;
+                topicConfirmationContainer.className = "adaptive-topic-change-confirmation";
+
+                var message:HTMLText = new HTMLText();
+                message.percentWidth = 100;
+                message.html = "<b>You are changing your learning topic</b><br/>Current: " +
+                    StringUtil.escapeHTML(currentLearningGrade + " · " + currentLearningSubject + " · " + currentLearningTopic) +
+                    "<br/>New: " + StringUtil.escapeHTML(
+                        String(pendingTopicSelection.grade) + " · " +
+                        String(pendingTopicSelection.subject) + " · " +
+                        String(pendingTopicSelection.topic)) +
+                    "<br/><br/>Starting this topic will end your current session. Any unfinished practice, assessment history, feedback and learning progress from this session will be cleared from this page.";
+                topicConfirmationContainer.addElement(message);
+
+                var cancel:Button = new Button();
+                cancel.text = "Cancel";
+                cancel.addEventListener("click", cancelTopicChange);
+                topicConfirmationContainer.addElement(cancel);
+
+                var confirm:Button = new Button();
+                confirm.text = "Start New Session";
+                confirm.addEventListener("click", confirmTopicChange);
+                topicConfirmationContainer.addElement(confirm);
+                resultsContainer.addElement(topicConfirmationContainer);
+            }
+
+            private function cancelTopicChange(event:Event):void
+            {
+                if (topicConfirmationContainer != null &&
+                    resultsContainer.getElementIndex(topicConfirmationContainer) != -1)
+                    resultsContainer.removeElement(topicConfirmationContainer);
+                topicConfirmationContainer = null;
+                pendingTopicSelection = null;
+                pendingQBPracticeInput = null;
+                pendingQBPracticeAfterSession = false;
+            }
+
+            private function confirmTopicChange(event:Event):void
+            {
+                if (requestInProgress || pendingTopicSelection == null) return;
+                if (topicConfirmationContainer != null &&
+                    resultsContainer.getElementIndex(topicConfirmationContainer) != -1)
+                    resultsContainer.removeElement(topicConfirmationContainer);
+                topicConfirmationContainer = null;
+
+                pendingTopicChange = true;
+                if (sessionId == null || sessionId == "")
+                {
+                    startNewSessionForPendingTopic();
+                    return;
+                }
+
+                requestInProgress = true;
+                showThinkingIndicator("Ending the previous learning session...");
+                sessionLoader = new ServiceLoader();
+                sessionLoader.reqMethod = "DELETE";
+                sessionLoader.loadJData(
+                    Config.apiBaseUrl + "adaptive-learning/sessions/" + sessionId,
+                    handleSessionEnded,
+                    ServiceLoader.DATA_TYPE_JSON,
+                    handleSessionEndError,
+                    false
+                );
+            }
+
+            private function startNewSessionForPendingTopic():void
+            {
+                var selection:Object = pendingTopicSelection;
+                resetLocalSession();
+                gradeInput.text = String(selection.grade || "");
+                subjectInput.text = String(selection.subject || "");
+                promptInput.text = "I want to learn " + String(selection.topic || "");
+                pendingTopicSelection = null;
+                startLearningSession();
             }
 
             private function addQBBackChoice(value:String, callback:Function):void
@@ -753,13 +1179,22 @@
                     }
                     else
                     {
-                        // Use consistent learner guidance for incorrect answers.
-                        // The correct answer is already displayed immediately above.
+                        // Keep the agreed learner-facing introduction, then retain useful
+                        // publisher/AI explanation instead of discarding it.
                         feedbackText = "Not quite. The correct answer is shown above. Review it carefully to understand the difference.";
                     }
                     feedback.html = StringUtil.escapeHTML(feedbackText);
                     feedback.className = "assessment-answer-explanation";
                     resultsContainer.addElement(feedback);
+
+                    if (item.isCorrect !== true && item.feedback != null && String(item.feedback).replace(/^\\s+|\\s+$/g, "") != "")
+                    {
+                        var detailedFeedback:HTMLText = new HTMLText();
+                        detailedFeedback.percentWidth = 100;
+                        detailedFeedback.html = StringUtil.escapeHTML(String(item.feedback));
+                        detailedFeedback.className = "assessment-answer-explanation";
+                        resultsContainer.addElement(detailedFeedback);
+                    }
                 }
 
                 var percentage:Number = Number(result.percentage);
@@ -783,13 +1218,8 @@
 
             private function getPerformanceMessage(percentage:Number):String
             {
-                if (percentage >= 80)
-                    return "Excellent work! You have demonstrated a strong understanding of this topic.";
-                if (percentage >= 60)
-                    return "Good effort! You understand many of the key ideas. Review the questions you missed to strengthen your learning.";
-                if (percentage >= 40)
-                    return "You're making progress. Review the explanations and practise the topic again.";
-                return "Keep practising! Review the explanations and try another practice to build your understanding.";
+                return "You scored " + Math.round(percentage) +
+                    "%. Review the question feedback to see what you answered correctly and what you can improve.";
             }
 
 
@@ -839,8 +1269,60 @@
             {
                 var label:HTMLText = new HTMLText();
                 label.percentWidth = 100;
-                label.html = StringUtil.markdownToHtml(value);
+                label.html = StringUtil.markdownToHtml(normalizeInlineMathDelimiters(value));
                 resultsContainer.addElement(label);
+                typesetMathIn(label);
+            }
+
+            private function normalizeInlineMathDelimiters(value:String):String
+            {
+                if (value == null || value == "") return value;
+                // The page intentionally excludes single-dollar MathJax delimiters
+                // to avoid treating currency as mathematics. Normalize only dollar
+                // pairs containing TeX commands, leaving ordinary prices untouched.
+                return value.replace(/\$([^$\r\n]*\\[A-Za-z]+[^$\r\n]*)\$/g, "\\($1\\)");
+            }
+
+            private function typesetMathIn(label:HTMLText, retryCount:int = 0):void
+            {
+                try
+                {
+                    var browserWindow:Object = (document as Object)["defaultView"];
+                    if (browserWindow == null || label == null) return;
+
+                    var mathJax:Object = browserWindow["MathJax"];
+                    var labelObject:Object = label as Object;
+                    var target:Object = labelObject["element"];
+                    if (mathJax == null || mathJax["typesetPromise"] == null || target == null)
+                    {
+                        // The page loads MathJax asynchronously. Retry briefly so
+                        // early messages are not permanently skipped during startup.
+                        if (retryCount < 30 && browserWindow["setTimeout"] != null)
+                        {
+                            var schedule:Function = browserWindow["setTimeout"] as Function;
+                            schedule.call(browserWindow, function():void
+                            {
+                                typesetMathIn(label, retryCount + 1);
+                            }, 100);
+                        }
+                        return;
+                    }
+
+                    var typeset:Function = mathJax["typesetPromise"] as Function;
+                    var promise:Object = typeset.call(mathJax, [target]);
+                    if (promise != null && promise["catch"] != null)
+                    {
+                        var catchHandler:Function = promise["catch"] as Function;
+                        catchHandler.call(promise, function(error:Object):void
+                        {
+                            trace("MathJax typesetting failed: " + String(error));
+                        });
+                    }
+                }
+                catch (error:Error)
+                {
+                    trace("MathJax typesetting failed: " + error.message);
+                }
             }
 
             private function showThinkingIndicator(message:String):void
@@ -900,6 +1382,12 @@
             private function handleSessionEnded(response:Object):void
             {
                 finishRequest();
+                if (pendingTopicChange)
+                {
+                    pendingTopicChange = false;
+                    startNewSessionForPendingTopic();
+                    return;
+                }
                 resetLocalSession();
                 addContentMessage("The previous learning session has ended. You can start a new topic now.");
             }
@@ -908,15 +1396,40 @@
             {
                 finishRequest();
                 // The server may already have expired the temporary session.
-                // Clearing the local experience is still the correct reset behaviour.
+                // A confirmed topic change can still safely begin a fresh session.
+                if (pendingTopicChange)
+                {
+                    pendingTopicChange = false;
+                    startNewSessionForPendingTopic();
+                    return;
+                }
                 resetLocalSession();
                 addContentMessage("The previous session is no longer active. You can start a new topic now.");
             }
 
             private function resetLocalSession():void
             {
+                explanationRequestToken++;
                 removeActivePractice();
                 sessionId = null;
+                assessmentHistory = [];
+                topicConfirmationContainer = null;
+                pendingTopicSelection = null;
+                pendingTopicChange = false;
+                currentLearningTopic = "";
+                currentLearningGrade = "";
+                currentLearningSubject = "";
+                explanationPanel = null;
+                explanationProgress = null;
+                explanationToggle = null;
+                explanationContent = null;
+                explanationExpanded = false;
+                explanationUnavailable = false;
+                if (explanationLoader != null)
+                {
+                    explanationLoader.cancel();
+                    explanationLoader = null;
+                }
                 gradeInput.text = "";
                 subjectInput.text = "";
                 promptInput.text = "";
@@ -927,6 +1440,11 @@
                 startButton.visible = true;
                 resetButton.visible = true;
                 resetButton.visible = false;
+                removeQBSelectionContainer();
+                selectedQBClass = null;
+                selectedQBSubject = null;
+                selectedQBTopic = null;
+                questionBankClasses = [];
                 clearLearningHistory();
             }
 
@@ -941,6 +1459,9 @@
             {
                 if (sessionLoader != null)
                     sessionLoader.cancel();
+                if (explanationLoader != null)
+                    explanationLoader.cancel();
+                explanationRequestToken++;
                 document.body.classList.remove("chatbot-page");
                 trace("AI Adaptive Learning disposed.");
             }

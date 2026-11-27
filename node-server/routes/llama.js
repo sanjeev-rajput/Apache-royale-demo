@@ -1,8 +1,7 @@
 import express from 'express';
-import fetch from 'node-fetch';
+import { generateText } from "../services/llmProvider.js";
 
 const router = express.Router();
-const OPENROUTER_API_KEY = process.env.OPENROUTER_API_KEY;
 
 // 🧠 In-memory conversation history (for 1 user)
 let conversationHistory = [
@@ -17,31 +16,21 @@ router.post('/', async (req, res) => {
     // Add new user message to history
     conversationHistory.push({ role: 'user', content: prompt });
 
-    const response = await fetch('https://openrouter.ai/api/v1/chat/completions', {
-      method: 'POST',
-      headers: {
-        Authorization: `Bearer ${OPENROUTER_API_KEY}`,
-        'Content-Type': 'application/json',
-        'X-Title': 'Royale-Chat',
-      },
-      body: JSON.stringify({
-        model: 'google/gemma-4-26b-a4b-it:free',
-        messages: conversationHistory,
-      }),
+    const aiResponse = await generateText({
+      messages: conversationHistory,
+      temperature: 0.4,
+      maxTokens: 700,
+      model: process.env.OPENROUTER_CHAT_MODEL || "google/gemma-4-26b-a4b-it:free"
     });
-
-    const data = await response.json();
-    if (data.error) return res.status(500).json({ error: data.error.message });
-
-    const aiResponse = data.choices?.[0]?.message?.content || 'No response';
-
     // Save AI response to history
     conversationHistory.push({ role: 'assistant', content: aiResponse });
 
     res.json({ response: aiResponse });
   } catch (err) {
-    console.error('AI Error:', err);
-    res.status(500).json({ error: 'AI server error' });
+    // Remove the unpaired learner message when the provider call fails.
+    if (conversationHistory.at(-1)?.role === 'user' && conversationHistory.at(-1)?.content === prompt) conversationHistory.pop();
+    console.error('AI Error:', err?.code || err?.message);
+    res.status(503).json({ error: 'AI chat is temporarily unavailable. Other learning services remain available.' });
   }
 });
 

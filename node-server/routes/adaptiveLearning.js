@@ -1,5 +1,5 @@
 import express from "express";
-import { createAdaptiveSession, performAdaptiveAction, endAdaptiveSession } from "../services/adaptiveLearningService.js";
+import { createAdaptiveSession, generateAdaptiveSessionExplanation, performAdaptiveAction, endAdaptiveSession } from "../services/adaptiveLearningService.js";
 
 const router = express.Router();
 
@@ -12,6 +12,22 @@ router.post("/sessions", async (req, res) => {
       success: false,
       errorCode: error.code || "ADAPTIVE_SESSION_CREATE_FAILED",
       message: error.statusCode ? error.message : "The learning session could not be started. Please try again."
+    });
+  }
+});
+
+router.post("/sessions/:sessionId/explanation", async (req, res) => {
+  try {
+    const result = await generateAdaptiveSessionExplanation(
+      req.params.sessionId,
+      req.body?.topicVersion
+    );
+    return res.status(200).json({ success: true, ...result });
+  } catch (error) {
+    return res.status(error.statusCode || 500).json({
+      success: false,
+      errorCode: error.code || "ADAPTIVE_EXPLANATION_FAILED",
+      message: error.message || "The AI explanation could not be generated."
     });
   }
 });

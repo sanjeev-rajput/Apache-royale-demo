@@ -1,7 +1,7 @@
 import { randomUUID } from "node:crypto";
 import { getLearningCatalogueResources, getLearningExplanationGuidance, getLearningVideos } from "./learningResourceService.js";
 import { generateText } from "./llmProvider.js";
-import { createAssessment, submitAssessment } from "../agent/assessment-agent/assessmentService.js";
+import { createAdaptiveAssessment, submitAdaptiveAssessment } from "../adaptive/assessment/adaptiveAssessmentService.js";
 import { listQuestionBankTopics, submitQuestionBankAssessment } from "./questionBank/questionBankAssessmentService.js";
 import { questionBankRepository } from "./questionBank/questionBankRepository.js";
 import { questionBankAttemptManager } from "./questionBank/questionBankAttemptManager.js";
@@ -69,6 +69,8 @@ function assessmentContext(session) {
   const firstActivity = session.content.activities[0] || {};
   return {
     topic: session.topic,
+    topicVersion: session.topicVersion,
+    explanationStatus: session.explanationStatus,
     grade: session.grade,
     subject: session.subject || firstActivity.subject || "",
     language: session.language,
@@ -79,13 +81,19 @@ function assessmentContext(session) {
 
 
 async function generateAdaptiveExplanation(session, result) {
-  const evidence = (result.questions || []).map((question, index) => ({
-    question: index + 1,
-    correct: question.isCorrect,
-    selectedOptionId: question.selectedOptionId,
-    correctOptionId: question.correctOptionId,
-    feedback: question.feedback || ""
-  }));
+  const evidence = (result.questions || []).map((question, index) => {
+    const options = Array.isArray(question.options) ? question.options : [];
+    const selected = options.find(option => option.id === question.selectedOptionId);
+    const correct = options.find(option => option.id === question.correctOptionId);
+    return {
+      questionNumber: index + 1,
+      prompt: question.prompt || "",
+      correct: question.isCorrect,
+      selectedAnswer: selected?.text || "",
+      correctAnswer: correct?.text || question.correctAnswer || "",
+      feedback: question.feedback || ""
+    };
+  });
   const guidance = await getLearningExplanationGuidance(learningRequest(session));
   const response = await generateText({
     messages: [
@@ -150,6 +158,8 @@ function publicSession(session) {
     expiresAt: new Date(session.expiresAt).toISOString(),
     completedActions: session.completedActions.length,
     assessmentCount: session.assessmentCount,
+    completedAssessmentCount: (session.assessmentHistory || []).length,
+    assessmentHistory: (session.assessmentHistory || []).map(item => ({ ...item })),
     latestResult: session.latestResult
   };
 }
@@ -160,6 +170,8 @@ export function normalizeAdaptiveAssessmentResult(source, attemptId, result, top
     selectedOptionId: item.selectedOptionId ?? null,
     correctOptionId: item.correctOptionId,
     isCorrect: item.isCorrect === true,
+    score: source === "question_bank" ? Number(item.score || 0) : (item.isCorrect === true ? 1 : 0),
+    totalMarks: source === "question_bank" ? Number(item.totalMarks || 0) : 1,
     earnedMarks: source === "question_bank" ? Number(item.score || 0) : (item.isCorrect === true ? 1 : 0),
     availableMarks: source === "question_bank" ? Number(item.totalMarks || 0) : 1,
     feedback: source === "question_bank" ? (item.feedback || "") : (item.explanation || "")
@@ -173,6 +185,28 @@ export function normalizeAdaptiveAssessmentResult(source, attemptId, result, top
     percentage: Number(result.percentage || 0),
     completedAt: new Date().toISOString(),
     questions
+  };
+}
+
+export function attachAssessmentQuestionDetails(normalized, attempt = {}) {
+  const questionDetails = new Map((attempt.questions || []).map(question => [question.questionId, question]));
+  return {
+    ...normalized,
+    title: attempt.title || normalized.title || `${normalized.topic} — ${normalized.source === "ai" ? "AI" : "Question Bank"} Practice`,
+    context: { ...(attempt.context || {}), topic: normalized.topic },
+    questions: (normalized.questions || []).map(question => {
+      const detail = questionDetails.get(question.questionId) || {};
+      const options = Array.isArray(detail.options) ? detail.options : [];
+      const selected = options.find(option => option.id === question.selectedOptionId);
+      const correct = options.find(option => option.id === question.correctOptionId);
+      return {
+        ...question,
+        prompt: detail.prompt || "",
+        options,
+        selectedAnswer: selected?.text || "",
+        correctAnswer: correct?.text || question.correctAnswer || ""
+      };
+    })
   };
 }
 
@@ -220,6 +254,30 @@ function extractSessionInput(input = {}) {
   return { topic, grade, subject, language: String(input.language || "English").trim() };
 }
 
+function saveTopicSnapshot(session) {
+  const version = String(session.topicVersion);
+  session.topicHistory ||= {};
+  session.topicHistory[version] = {
+    topic: session.topic,
+    grade: session.grade,
+    subject: session.subject,
+    language: session.language,
+    content: {
+      explanation: "",
+      activities: [...(session.content.activities || [])],
+      videos: [...(session.content.videos || [])],
+      availability: { ...(session.content.availability || {}) }
+    },
+    explanationStatus: "pending",
+    explanation: ""
+  };
+
+  const versions = Object.keys(session.topicHistory).map(Number).sort((a, b) => a - b);
+  while (versions.length > 20) {
+    delete session.topicHistory[String(versions.shift())];
+  }
+}
+
 export async function createAdaptiveSession(input = {}) {
   pruneSessions();
   const normalizedInput = extractSessionInput(input);
@@ -234,18 +292,21 @@ export async function createAdaptiveSession(input = {}) {
     sessionId: randomUUID(), topic, grade, subject, language,
     status: "active", createdAt: new Date(now).toISOString(), expiresAt: now + SESSION_TTL_MS,
     content: { explanation: "", activities: [], videos: [], availability: {} },
+    explanationStatus: "pending",
+    topicVersion: 1,
+    topicHistory: {},
     activityOffset: 0,
     videoOffset: 0,
     completedActions: [], assessmentCount: 0, latestResult: null,
+    assessmentHistory: [],
     seenQuestionIds: {}, activeAttempt: null
   };
   sessions.set(session.sessionId, session);
 
   const request = learningResourceRequest(session);
-  const [catalogue, videos, explanation] = await Promise.allSettled([
+  const [catalogue, videos] = await Promise.allSettled([
     Promise.resolve().then(() => getLearningCatalogueResources(request)),
-    getLearningVideos(request),
-    generateExplanation(session)
+    getLearningVideos(request)
   ]);
 
   if (catalogue.status === "fulfilled") {
@@ -256,22 +317,38 @@ export async function createAdaptiveSession(input = {}) {
     session.content.videos = videos.value.videos || [];
     session.content.availability.youtube = videos.value.availability?.youtube === true;
   }
-  if (explanation.status === "fulfilled") session.content.explanation = explanation.value;
-  session.content.explanationAvailable = explanation.status === "fulfilled";
+
+  session.content.explanationAvailable = false;
+  session.explanationStatus = "pending";
+  saveTopicSnapshot(session);
 
   return {
     session: publicSession(session),
     content: {
       ...session.content,
+      explanationStatus: session.explanationStatus,
+      topicVersion: session.topicVersion,
       activities: session.content.activities.slice(0, 10)
     },
     recommendations: recommendationsFor(session),
-    message: explanation.status === "rejected" ? "AI explanation is unavailable right now. Other learning activities may still be available." : ""
+    message: ""
   };
 }
 
 function topicKey(input) {
   return [input.classId, input.subjectId, input.topicId].map(value => String(value || "").trim()).join("|");
+}
+
+function comparableLearningValue(value) {
+  const normalized = String(value || "")
+    .toLowerCase()
+    .replace(/^class\\s+/, "")
+    .replace(/\\s+/g, " ")
+    .trim()
+    .replace(/s$/, "");
+  if (["math", "maths", "mathematic"].includes(normalized)) return "mathematics";
+  if (["ev", "environmental studies"].includes(normalized)) return "evs";
+  return normalized;
 }
 
 async function startQuestionBank(session, input = {}) {
@@ -287,6 +364,27 @@ async function startQuestionBank(session, input = {}) {
     throw serviceError("Choose a class, subject, and Question Bank topic.");
   }
   const topic = await questionBankRepository.getTopicQuestions(selection);
+  const manifest = await questionBankRepository.getManifest();
+  const classEntry = manifest.classes?.[selection.classId];
+  const subjectEntry = classEntry?.subjects?.[selection.subjectId];
+  const selectedTopicName = String(topic.classification?.topic || selection.topicId);
+  const selectedGrade = String(classEntry?.name || topic.classification?.class || session.grade || "");
+  const selectedSubject = String(subjectEntry?.name || topic.classification?.subject || session.subject || "");
+
+  // The UI asks for confirmation and creates a fresh session before reaching
+  // this action. Keep the API boundary consistent with that session contract.
+  const contextChanged =
+    (session.grade && selectedGrade && comparableLearningValue(session.grade) !== comparableLearningValue(selectedGrade)) ||
+    (session.subject && selectedSubject && comparableLearningValue(session.subject) !== comparableLearningValue(selectedSubject)) ||
+    comparableLearningValue(session.topic) !== comparableLearningValue(selectedTopicName);
+  if (contextChanged) {
+    throw serviceError(
+      "This Question Bank topic differs from your current learning session. Confirm the topic change and start a new session first.",
+      409,
+      "ADAPTIVE_TOPIC_CHANGE_REQUIRED"
+    );
+  }
+
   const key = topicKey(selection);
   const seenIds = session.seenQuestionIds[key] || [];
   const requestedCount = 5;
@@ -314,8 +412,24 @@ async function startQuestionBank(session, input = {}) {
   };
   const attempt = questionBankAttemptManager.create({ assessment, context: { ...selection, publisher: topic.publisher || null } });
   session.seenQuestionIds[key] = [...seenIds, ...selected.map(question => question.id)];
-  session.activeAttempt = { source: "question_bank", attemptId: attempt.attemptId };
-  session.assessmentCount++;
+  session.activeAttempt = {
+    source: "question_bank",
+    attemptId: attempt.attemptId,
+    title: assessment.title,
+    context: {
+      classId: selection.classId,
+      subjectId: selection.subjectId,
+      topicId: selection.topicId,
+      grade: topic.classification?.class || selection.classId,
+      subject: topic.classification?.subject || selection.subjectId,
+      topic: topic.classification?.topic || selection.topicId
+    },
+    questions: assessment.questions.map(question => ({
+      questionId: question.id,
+      prompt: question.prompt,
+      options: question.options.map(option => ({ id: option.id, text: option.text }))
+    }))
+  };
   return {
     attemptId: attempt.attemptId,
     expiresAt: attempt.expiresAt,
@@ -330,83 +444,59 @@ async function startQuestionBank(session, input = {}) {
 }
 
 
-async function switchLearningTopic(session, nextTopic) {
-  const topic = normalizeTopic(nextTopic);
-  if (!topic || topic.length > 160) {
-    throw serviceError("Choose a valid learning topic.", 400, "INVALID_TOPIC");
+/**
+ * Generate the current topic explanation independently from resource retrieval.
+ * The topic version prevents a slow response for an older topic overwriting a newer one.
+ */
+export async function generateAdaptiveSessionExplanation(sessionId, expectedTopicVersion) {
+  const session = requireSession(sessionId);
+  const version = Number(expectedTopicVersion);
+  if (!Number.isInteger(version)) {
+    throw serviceError("A valid learning topic version is required.", 400, "INVALID_TOPIC_VERSION");
   }
-  if (session.activeAttempt) {
-    throw serviceError("Complete or finish the current practice before changing topics.", 409, "ADAPTIVE_ATTEMPT_ACTIVE");
+
+  const topicRecord = session.topicHistory?.[String(version)];
+  if (!topicRecord) {
+    throw serviceError("This topic's explanation is no longer available. Please select the topic again.", 409, "TOPIC_HISTORY_EXPIRED");
   }
 
-  const previousTopic = session.topic;
-  const previousResult = session.latestResult;
-  session.topic = topic;
-  session.activityOffset = 0;
-  session.videoOffset = 0;
+  if (topicRecord.explanationStatus === "ready" && topicRecord.explanation) {
+    return {
+      available: true, stale: false, cached: true,
+      topic: topicRecord.topic, topicVersion: version,
+      explanation: topicRecord.explanation
+    };
+  }
 
-  const request = learningResourceRequest(session);
-  const guidance = await getLearningExplanationGuidance(learningRequest(session));
-  const priorEvidence = previousResult ? {
-    previousTopic: previousResult.topic || previousTopic,
-    score: previousResult.score,
-    total: previousResult.total,
-    percentage: previousResult.percentage,
-    questionEvidence: (previousResult.questions || []).map((question, index) => ({
-      question: index + 1,
-      correct: question.isCorrect,
-      feedback: question.feedback || ""
-    }))
-  } : null;
+  try {
+    const topicSnapshot = {
+      ...session,
+      topic: topicRecord.topic,
+      grade: topicRecord.grade,
+      subject: topicRecord.subject,
+      language: topicRecord.language,
+      content: topicRecord.content
+    };
+    const explanation = await generateExplanation(topicSnapshot);
+    const current = sessions.get(session.sessionId);
+    const savedRecord = current?.topicHistory?.[String(version)];
+    if (!current || !savedRecord) {
+      return { available: false, stale: true, topic: topicRecord.topic, topicVersion: version };
+    }
 
-  const [catalogue, videos, explanation] = await Promise.allSettled([
-    getLearningCatalogueResources(request),
-    getLearningVideos(request),
-    generateText({
-      messages: [
-        {
-          role: "system",
-          content: `You are a friendly, age-appropriate K-12 adaptive tutor. The learner has selected a new topic. Teach ONLY the new topic: ${topic}. Use prior assessment evidence only to adapt the explanation style and level; do not carry misconceptions from the previous topic into this topic. Do not invent catalogue activities or video links.${guidance ? `\\n\\n${guidance}` : ""}`
-        },
-        {
-          role: "user",
-          content: `New topic: ${topic}
-Class: ${session.grade || "Not specified"}
-Subject: ${session.subject || "Not specified"}
-Language: ${session.language}
-Previous learning topic: ${previousTopic}
-Previous assessment evidence: ${JSON.stringify(priorEvidence)}
-Explain the new topic clearly with examples suitable for the learner. Adapt complexity and explanation style using the previous performance as general learning evidence, but keep all teaching content about the new topic.`
-        }
-      ],
-      temperature: 0.4,
-      maxTokens: 750
-    })
-  ]);
-
-  session.content.activities = catalogue.status === "fulfilled" ? (catalogue.value.results || []) : [];
-  session.content.videos = videos.status === "fulfilled" ? (videos.value.videos || []) : [];
-  session.content.availability = {
-    catalogue: catalogue.status === "fulfilled" && catalogue.value.availability?.catalogue === true,
-    youtube: videos.status === "fulfilled" && videos.value.availability?.youtube === true
-  };
-  session.content.explanation = explanation.status === "fulfilled" ? explanation.value : "";
-  session.content.explanationAvailable = explanation.status === "fulfilled";
-
-  return {
-    topicSwitched: true,
-    previousTopic,
-    topic,
-    content: {
-      explanation: session.content.explanation,
-      activities: session.content.activities.slice(0, 10),
-      videos: session.content.videos.slice(0, 5),
-      availability: session.content.availability
-    },
-    message: explanation.status === "rejected"
-      ? "The new topic is selected, but its AI explanation is temporarily unavailable. You can still explore the available resources."
-      : ""
-  };
+    savedRecord.explanation = explanation;
+    savedRecord.explanationStatus = "ready";
+    return {
+      available: true, stale: false, cached: false,
+      topic: savedRecord.topic, topicVersion: version, explanation
+    };
+  } catch (error) {
+    const current = sessions.get(session.sessionId);
+    const savedRecord = current?.topicHistory?.[String(version)];
+    if (savedRecord) savedRecord.explanationStatus = "unavailable";
+    console.warn("[Adaptive Learning] Topic explanation unavailable:", error.message);
+    throw error;
+  }
 }
 
 export async function performAdaptiveAction(sessionId, action, input = {}) {
@@ -417,8 +507,10 @@ export async function performAdaptiveAction(sessionId, action, input = {}) {
       try {
         session.content.explanation = await generateExplanation(session);
         session.content.explanationAvailable = true;
+        session.explanationStatus = "ready";
       } catch {
         session.content.explanationAvailable = false;
+        session.explanationStatus = "unavailable";
         throw serviceError("The AI explanation is unavailable right now. Try another next step.", 502, "AI_EXPLANATION_UNAVAILABLE");
       }
       result = { content: { explanation: session.content.explanation } };
@@ -442,22 +534,32 @@ export async function performAdaptiveAction(sessionId, action, input = {}) {
       if (session.activeAttempt) {
         throw serviceError("Submit or finish your current practice before starting another assessment.", 409, "ADAPTIVE_ATTEMPT_ACTIVE");
       }
-      const assessment = await createAssessment(assessmentContext(session));
+      const assessment = await createAdaptiveAssessment(assessmentContext(session));
       if (!assessment || !assessment.attemptId || !assessment.assessment ||
           !Array.isArray(assessment.assessment.questions) ||
           assessment.assessment.questions.length === 0) {
         throw serviceError("AI practice questions are not available for this topic right now. Please choose another learning activity or try again later.", 503, "AI_ASSESSMENT_UNAVAILABLE");
       }
-      session.activeAttempt = { source: "ai", attemptId: assessment.attemptId };
-      session.assessmentCount++;
+      session.activeAttempt = {
+        source: "ai",
+        attemptId: assessment.attemptId,
+        title: assessment.assessment.title || `${session.topic} — AI Practice`,
+        context: {
+          grade: session.grade,
+          subject: session.subject,
+          topic: session.topic
+        },
+        questions: (assessment.assessment.questions || []).map(question => ({
+          questionId: question.id,
+          prompt: question.prompt,
+          options: (question.options || []).map(option => ({ id: option.id, text: option.text }))
+        }))
+      };
       result = { ...assessment, source: "ai" };
       break;
     }
     case "choose_question_bank":
       result = { questionBankTopics: await listQuestionBankTopics() };
-      break;
-    case "switch_topic":
-      result = await switchLearningTopic(session, input.topic);
       break;
     case "start_question_bank":
       result = await startQuestionBank(session, input);
@@ -468,14 +570,23 @@ export async function performAdaptiveAction(sessionId, action, input = {}) {
       if (!session.activeAttempt || session.activeAttempt.source !== source || session.activeAttempt.attemptId !== attemptId) {
         throw serviceError("This assessment attempt is no longer active. Start a new practice assessment.", 409, "ADAPTIVE_ATTEMPT_NOT_ACTIVE");
       }
+      const activeAttempt = session.activeAttempt;
       const submitted = source === "ai"
-        ? submitAssessment({ attemptId, answers: input.answers })
+        ? submitAdaptiveAssessment({ attemptId, answers: input.answers })
         : source === "question_bank"
           ? submitQuestionBankAssessment({ attemptId, answers: input.answers })
           : null;
       if (!submitted) throw serviceError("Unsupported assessment type.");
-      const normalized = normalizeAdaptiveAssessmentResult(source, attemptId, submitted, session.topic);
+
+      const normalized = attachAssessmentQuestionDetails(
+        normalizeAdaptiveAssessmentResult(source, attemptId, submitted, session.topic),
+        activeAttempt
+      );
+
       session.latestResult = normalized;
+      session.assessmentHistory ||= [];
+      session.assessmentHistory.push(normalized);
+      session.assessmentCount = session.assessmentHistory.length;
       session.activeAttempt = null;
       session.completedActions.push("assessment_completed");
       let adaptiveExplanation = "";

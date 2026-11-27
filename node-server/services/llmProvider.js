@@ -1,32 +1,34 @@
-// APP_ENV is the single source of truth for backend environment selection.
-// LOCAL always uses Ollama; LIVE always uses OpenRouter.
-const appEnvironment = String(process.env.APP_ENV || "").trim().toUpperCase();
-if (!["LOCAL", "LIVE"].includes(appEnvironment)) {
-  throw new Error(
-    `Invalid or missing APP_ENV: "${appEnvironment}". Set APP_ENV=LOCAL or APP_ENV=LIVE.`
-  );
-}
+import { requestOpenRouterChatCompletion, getOpenRouterRequestStatus } from "./openRouterRequestManager.js";
+import { getSelectedFreeModel, markFreeModelUnavailable, isCapabilityCompatibilityError, getFreeModelSelectionStatus } from "./openRouterModelManager.js";
 
-const provider = appEnvironment === "LOCAL" ? "ollama" : "openrouter";
+// APP_ENV selects the provider, but a configuration problem must never prevent
+// Express from starting: non-LLM routes (catalogue, YouTube, Question Bank) must
+// remain available even when the optional AI service is misconfigured.
+const appEnvironment = String(process.env.APP_ENV || "").trim().toUpperCase();
+const validEnvironment = ["LOCAL", "LIVE"].includes(appEnvironment);
+const provider = !validEnvironment ? "disabled" : appEnvironment === "LOCAL" ? "ollama" : "openrouter";
 const timeoutDefault = Number(process.env.AI_TIMEOUT_MS || 60000);
 
 const config = provider === "openrouter"
   ? {
       provider,
-      model: process.env.OPENROUTER_MODEL || "openrouter/free",
+      model: "auto-free",
       url: process.env.OPENROUTER_API_URL || "https://openrouter.ai/api/v1/chat/completions",
       apiKey: process.env.OPENROUTER_API_KEY || ""
     }
-  : {
-      provider: "ollama",
-      model: process.env.OLLAMA_MODEL || "qwen3.5:4b",
-      url: process.env.OLLAMA_URL || "http://localhost:11434/api/chat"
-    };
+  : provider === "ollama"
+    ? {
+        provider: "ollama",
+        model: process.env.OLLAMA_MODEL || "qwen3.5:4b",
+        url: process.env.OLLAMA_URL || "http://localhost:11434/api/chat"
+      }
+    : { provider: "disabled", model: null, reason: `Invalid or missing APP_ENV: "${appEnvironment}". Set APP_ENV=LOCAL or APP_ENV=LIVE.` };
 
 if (config.provider === "openrouter" && !config.apiKey) {
   console.warn("APP_ENV=LIVE selects OpenRouter, but OPENROUTER_API_KEY is not configured.");
 }
-console.log(`[LLM] APP_ENV=${appEnvironment}; provider=${config.provider}; model=${config.model}`);
+if (config.provider === "disabled") console.error(`[LLM] ${config.reason} AI features are disabled; non-LLM services remain available.`);
+console.log(`[LLM] APP_ENV=${appEnvironment || "(missing)"}; provider=${config.provider}; model=${config.model || "none"}`);
 
 function parseJson(content) {
   const cleaned = String(content || "")
@@ -86,82 +88,66 @@ async function requestOllama(messages, options) {
 }
 
 async function requestOpenRouter(messages, options) {
-  const requestedModel = config.model;
-  if (!config.apiKey) throw new Error("OPENROUTER_API_KEY is not configured.");
-
-  const body = {
-    model: requestedModel,
-    messages,
-    temperature: options.temperature,
-    max_tokens: options.maxTokens
-  };
-  if (options.json) body.response_format = { type: "json_object" };
-
-  const response = await fetch(config.url, {
-    method: "POST",
-    headers: {
-      Authorization: `Bearer ${config.apiKey}`,
-      "Content-Type": "application/json",
-      "X-Title": "Royale-K12-Tutor"
-    },
-    body: JSON.stringify(body),
-    signal: AbortSignal.timeout(options.timeoutMs)
-  });
-
-  const raw = await response.text();
-  let data;
-  try { data = JSON.parse(raw); }
-  catch { throw new Error(`OpenRouter returned non-JSON (${response.status}): ${raw.slice(0, 1200)}`); }
-
-  if (!response.ok || data.error) {
-    const message = data.error?.message || `HTTP ${response.status}`;
-    const metadata = data.error?.metadata ? `; metadata: ${JSON.stringify(data.error.metadata)}` : "";
-    const error = new Error(`OpenRouter request failed (${response.status}): ${message}${metadata}`);
-    error.modelId = data?.model || requestedModel;
-    error.status = response.status;
-    error.metadata = data.error?.metadata || null;
-    error.providerMessage = message;
-    error.rateLimitReset = response.headers.get("X-RateLimit-Reset");
-    throw error;
-  }
-
-  const choice = data.choices?.[0];
-  const finishReason = choice?.finish_reason || null;
-  const content = choice?.message?.content;
-  if (finishReason === "length") {
-    const error = new Error(`OpenRouter output was truncated (finish_reason=length; requested max_tokens=${options.maxTokens}).`);
-    Object.assign(error, {
-      modelId: data?.model || requestedModel,
-      status: response.status,
-      finishReason,
-      failureType: "output_truncated",
-      maxTokens: options.maxTokens,
-      rawContent: typeof content === "string" ? content : "",
-      usage: data.usage || null,
-      provider: "openrouter"
+  // The provider owns model discovery/selection. Callers cannot pin a paid or
+  // stale model by passing a model argument into generateText/generateStructuredResponse.
+  const selected = await getSelectedFreeModel({ requireJson: options.json });
+  options.selectedModelId = selected.id;
+  try {
+    const result = await requestOpenRouterChatCompletion({
+      body: {
+        model: selected.id,
+        messages,
+        temperature: options.temperature,
+        max_tokens: options.maxTokens,
+        ...(options.json ? { response_format: { type: "json_object" } } : {})
+      },
+      url: config.url,
+      apiKey: config.apiKey,
+      timeoutMs: options.timeoutMs,
+      title: "Royale-K12-Tutor"
     });
+    return result.content;
+  } catch (error) {
+    // Do not burn additional prompts in the same operation. The next request
+    // will centrally select another eligible free model after a model-specific rejection.
+    if (Number(error?.status) === 404) {
+      markFreeModelUnavailable(selected.id, "HTTP 404", { global: true });
+    } else if (isCapabilityCompatibilityError(error, options.json ? "json" : "text")) {
+      markFreeModelUnavailable(selected.id, `HTTP 422 capability incompatibility (${options.json ? "json" : "text"})`, { capability: options.json ? "json" : "text" });
+    }
     throw error;
   }
-  if (typeof content !== "string" || !content.trim()) {
-    const error = new Error("OpenRouter returned empty message content.");
-    error.modelId = data?.model || requestedModel;
-    error.status = response.status;
-    error.finishReason = finishReason;
-    error.failureType = "empty_content";
-    error.rawContent = typeof content === "string" ? content : "";
-    error.usage = data.usage || null;
-    error.provider = "openrouter";
+}
+
+function assertProviderAvailable() {
+  if (config.provider === "disabled") {
+    const error = new Error(config.reason);
+    error.name = "LlmProviderUnavailableError";
+    error.code = "LLM_PROVIDER_MISCONFIGURED";
+    error.failureType = "configuration";
+    error.retryable = false;
     throw error;
   }
-  return content.trim();
 }
 
 export function getLlmConfig() {
-  return { provider: config.provider, model: config.model };
+  return { provider: config.provider, model: config.provider === "openrouter" ? "auto-free" : config.model };
 }
 
-export async function generateText({ messages, temperature = 0.4, maxTokens = 500, timeoutMs = timeoutDefault }) {
-  const options = { temperature, maxTokens, timeoutMs, json: false };
+export function getLlmRuntimeStatus() {
+  return {
+    provider: config.provider,
+    model: config.provider === "openrouter" ? (getFreeModelSelectionStatus().selectedTextModel || getFreeModelSelectionStatus().selectedJsonModel || "auto-free") : config.model,
+    modelSelection: config.provider === "openrouter" ? getFreeModelSelectionStatus() : null,
+    available: config.provider !== "disabled" && !(config.provider === "openrouter" && (!config.apiKey || getOpenRouterRequestStatus().circuit.state === "open" || getOpenRouterRequestStatus().remaining <= 0)),
+    configurationError: config.provider === "disabled" ? config.reason : config.provider === "openrouter" && !config.apiKey ? "OPENROUTER_API_KEY is not configured." : null,
+    ...(config.provider === "openrouter" ? { openRouter: getOpenRouterRequestStatus() } : {})
+  };
+}
+
+export async function generateText({ messages, temperature = 0.4, maxTokens = 500, timeoutMs = timeoutDefault, model }) {
+  const options = { temperature, maxTokens, timeoutMs, json: false, model };
+  assertProviderAvailable();
   return config.provider === "openrouter"
     ? requestOpenRouter(messages, options)
     : requestOllama(messages, options);
@@ -172,13 +158,15 @@ export async function generateStructuredResponse({
   userPayload,
   temperature = 0,
   maxTokens = 450,
-  timeoutMs = timeoutDefault
+  timeoutMs = timeoutDefault,
+  model
 }) {
   const messages = [
     { role: "system", content: `${systemPrompt}\nReturn one valid JSON object only. Do not include Markdown fences or commentary.` },
     { role: "user", content: typeof userPayload === "string" ? userPayload : JSON.stringify(userPayload) }
   ];
-  const options = { temperature, maxTokens, timeoutMs, json: true };
+  const options = { temperature, maxTokens, timeoutMs, json: true, model };
+  assertProviderAvailable();
   let content;
   try {
     content = config.provider === "openrouter"
@@ -191,7 +179,7 @@ export async function generateStructuredResponse({
   try { return parseJson(content); }
   catch (cause) {
     const error = new Error(`The ${config.provider} model returned invalid JSON: ${content.slice(0, 500)}`);
-    error.modelId = config.model;
+    error.modelId = options.selectedModelId || model || config.model;
     error.provider = config.provider;
     error.failureType = "invalid_json";
     error.rawContent = content;

@@ -1,8 +1,9 @@
 import express from 'express';
-import fetch from 'node-fetch';
+import { requestOpenRouterChatCompletion } from "../services/openRouterRequestManager.js";
+import { getLlmConfig } from "../services/llmProvider.js";
+import { getSelectedFreeModel, markFreeModelUnavailable, isCapabilityCompatibilityError } from "../services/openRouterModelManager.js";
 
 const router = express.Router();
-const OPENROUTER_API_KEY = process.env.OPENROUTER_API_KEY;
 
 router.post('/', async (req, res) => {
   const { prompt, imageUrl } = req.body;
@@ -12,39 +13,41 @@ router.post('/', async (req, res) => {
   }
 
   try {
-    const response = await fetch('https://openrouter.ai/api/v1/chat/completions', {
-      method: 'POST',
-      headers: {
-        Authorization: `Bearer ${OPENROUTER_API_KEY}`,
-        'Content-Type': 'application/json',
-        'X-Title': 'Royale-ImageVision'
-      },
-      body: JSON.stringify({
-        model: 'openrouter/free',
-        messages: [
-          {
-            role: 'user',
-            content: [
-              { type: 'text', text: prompt },
-              { type: 'image_url', image_url: { url: imageUrl } }
-            ]
-          }
-        ]
-      })
-    });
-
-    const data = await response.json();
-
-    if (data.error) {
-      return res.status(500).json({ error: data.error.message });
+    // This legacy image endpoint currently uses OpenRouter's image_url format.
+    // Do not leak OpenRouter calls into LOCAL/Ollama development.
+    if (getLlmConfig().provider !== "openrouter") {
+      return res.status(503).json({ error: "Image analysis is unavailable in the current local model configuration. Other learning services remain available." });
     }
-
-    const aiResponse = data.choices?.[0]?.message?.content || 'No response';
+    const selected = await getSelectedFreeModel({ requireImage: true });
+    let result;
+    try {
+      result = await requestOpenRouterChatCompletion({
+        body: {
+          model: selected.id,
+          messages: [{
+            role: "user",
+            content: [
+              { type: "text", text: prompt },
+              { type: "image_url", image_url: { url: imageUrl } }
+            ]
+          }]
+        },
+        title: "Royale-ImageVision"
+      });
+    } catch (error) {
+      if (Number(error?.status) === 404) {
+        markFreeModelUnavailable(selected.id, "Vision HTTP 404", { global: true });
+      } else if (isCapabilityCompatibilityError(error, "image")) {
+        markFreeModelUnavailable(selected.id, "Vision HTTP 422 image capability incompatibility", { capability: "image" });
+      }
+      throw error;
+    }
+    const aiResponse = result.content;
     res.json({ response: aiResponse });
 
   } catch (err) {
     console.error('Vision AI Error:', err);
-    res.status(500).json({ error: 'Vision AI server error' });
+    res.status(err?.retryable === false || err?.code?.startsWith('OPENROUTER_') ? 503 : 500).json({ error: 'Vision analysis is temporarily unavailable. Other learning services remain available.' });
   }
 });
 

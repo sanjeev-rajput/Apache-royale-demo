@@ -722,12 +722,23 @@ button.spectrum-Button.clear-conversation-btn .spectrum-Button-label {
     box-sizing: border-box;
 }
 
-/* Question Bank question image */
+/* Adaptive Learning Question Bank images */
 .assessment-question-image {
     display: block;
+    width: auto;
+    height: auto;
     max-width: 100%;
     max-height: 320px;
-    height: auto;
     object-fit: contain;
-    margin: 6px 0 10px;
+    margin: 8px 0 12px;
+}
+
+.assessment-option-image {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: calc(100% - 34px);
+    max-height: 180px;
+    object-fit: contain;
+    margin: 4px 0 12px 34px;
 }
