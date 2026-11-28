@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "performanceThreshold": 60,
+  "recommendations": {
+    "beforeAssessment": [
+      { "id": "show_activities", "label": "Explore catalogue activities" },
+      { "id": "show_videos", "label": "Watch learning videos" },
+      { "id": "start_ai_assessment", "label": "Check your understanding" },
+      { "id": "choose_question_bank", "label": "Practise with the Question Bank" }
+    ],
+    "belowThreshold": [
+      { "id": "repeat_explanation", "label": "Review the explanation" },
+      { "id": "show_activities", "label": "Try a catalogue activity" },
+      { "id": "show_videos", "label": "Watch a learning video" },
+      { "id": "choose_question_bank", "label": "Practise these ideas" },
+      { "id": "start_ai_assessment", "label": "Try the assessment again" }
+    ],
+    "atOrAboveThreshold": [
+      { "id": "show_videos", "label": "Explore another explanation" },
+      { "id": "show_activities", "label": "Explore catalogue activities" },
+      { "id": "start_ai_assessment", "label": "Try another AI assessment" },
+      { "id": "choose_question_bank", "label": "Practise with the Question Bank" },
+      { "id": "repeat_explanation", "label": "Review the explanation" }
+    ]
+  }
+}

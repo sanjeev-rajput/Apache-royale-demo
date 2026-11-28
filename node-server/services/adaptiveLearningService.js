@@ -1,6 +1,8 @@
 import { randomUUID } from "node:crypto";
-import { getLearningCatalogueResources, getLearningExplanationGuidance, getLearningVideos } from "./learningResourceService.js";
+import { getLearningCatalogueResources, getLearningExplanationGuidance, getLearningProfileGuidance, getLearningVideos } from "./learningResourceService.js";
 import { generateText } from "./llmProvider.js";
+import { isAdaptiveIntelligenceEnabled } from "./adaptiveIntelligenceConfig.js";
+import { buildAdaptiveRecommendations, getAdaptiveLearningPolicy } from "./adaptiveLearningPolicy.js";
 import { createAdaptiveAssessment, submitAdaptiveAssessment } from "../adaptive/assessment/adaptiveAssessmentService.js";
 import { listQuestionBankTopics, submitQuestionBankAssessment } from "./questionBank/questionBankAssessmentService.js";
 import { questionBankRepository } from "./questionBank/questionBankRepository.js";
@@ -65,6 +67,11 @@ async function generateExplanation(session) {
   });
 }
 
+function selectedInstructionProfileId(session) {
+  const firstActivity = session.content.activities[0] || {};
+  return String(firstActivity.instructionProfileId || "").trim();
+}
+
 function assessmentContext(session) {
   const firstActivity = session.content.activities[0] || {};
   return {
@@ -74,7 +81,7 @@ function assessmentContext(session) {
     grade: session.grade,
     subject: session.subject || firstActivity.subject || "",
     language: session.language,
-    instructionProfileId: firstActivity.instructionProfileId || "",
+    instructionProfileId: selectedInstructionProfileId(session),
     learningContext: String(session.content.explanation || learningRequest(session)).slice(0, 1000)
   };
 }
@@ -88,18 +95,21 @@ async function generateAdaptiveExplanation(session, result) {
     return {
       questionNumber: index + 1,
       prompt: question.prompt || "",
+      answered: question.answered === true,
       correct: question.isCorrect,
       selectedAnswer: selected?.text || "",
       correctAnswer: correct?.text || question.correctAnswer || "",
       feedback: question.feedback || ""
     };
   });
-  const guidance = await getLearningExplanationGuidance(learningRequest(session));
+  // Use the same selected profile that was supplied to AI assessment generation.
+  // Do not re-search the catalogue and accidentally combine unrelated profiles.
+  const guidance = await getLearningProfileGuidance(selectedInstructionProfileId(session));
   const response = await generateText({
     messages: [
       {
         role: "system",
-        content: `You are continuing a K-12 learning session. Keep the learner on the same topic: ${session.topic}. Use the assessment evidence to identify what needs reinforcement. Do not claim a specific misconception unless the question feedback supports it. Adapt the explanation style, examples and challenge level. Do not generate marks or change assessment results. ${guidance || ""}`
+        content: `You are continuing a K-12 learning session. Keep the learner on the same topic: ${session.topic}. Use the assessment evidence to identify what may need reinforcement. Distinguish unanswered questions from answered-but-incorrect questions: an unanswered question is not evidence of a misconception. Do not claim a specific misconception unless the question feedback explicitly supports it. Do not infer a concept-level weakness from a single unsupported signal. Adapt the explanation style, examples and challenge level. Do not generate marks, alter answer keys, or change assessment results. ${guidance || ""}`
       },
       {
         role: "user",
@@ -108,9 +118,9 @@ Class: ${session.grade || "Not specified"}
 Subject: ${session.subject || "Not specified"}
 Assessment source: ${result.source}
 Score: ${result.score}/${result.total} (${result.percentage}%)
-Question-level evidence:
+Question-level evidence (answered=false means the learner left the question unanswered):
 ${JSON.stringify(evidence)}
-Write the next teaching response. Address the demonstrated gaps, explain with a fresh simple example, and keep the response focused on the same topic.`
+Write the next teaching response. Address only the gaps supported by the evidence, explain with a fresh simple example, and keep the response focused on the same topic.`
       }
     ],
     temperature: 0.4,
@@ -120,31 +130,7 @@ Write the next teaching response. Address the demonstrated gaps, explain with a 
 }
 
 function recommendationsFor(session) {
-  const afterAssessment = session.latestResult != null;
-  const lowScore = afterAssessment && session.latestResult.percentage < 60;
-  const items = [];
-  if (afterAssessment) {
-    if (lowScore) {
-      items.push({ id: "repeat_explanation", label: "Review the explanation" });
-      items.push({ id: "show_activities", label: "Try a catalogue activity" });
-      items.push({ id: "show_videos", label: "Watch a learning video" });
-      items.push({ id: "choose_question_bank", label: "Practise these ideas" });
-      items.push({ id: "start_ai_assessment", label: "Try the assessment again" });
-    } else {
-      items.push({ id: "show_videos", label: "Explore another explanation" });
-      items.push({ id: "show_activities", label: "Explore catalogue activities" });
-      items.push({ id: "start_ai_assessment", label: "Try another AI assessment" });
-      items.push({ id: "choose_question_bank", label: "Practise with the Question Bank" });
-      items.push({ id: "repeat_explanation", label: "Review the explanation" });
-    }
-  } else {
-    items.push({ id: "show_activities", label: "Explore catalogue activities" });
-    items.push({ id: "show_videos", label: "Watch learning videos" });
-    items.push({ id: "start_ai_assessment", label: "Check your understanding" });
-    items.push({ id: "choose_question_bank", label: "Practise with the Question Bank" });
-  }
-  if (!session.content.explanation) items.unshift({ id: "repeat_explanation", label: "Try the AI explanation again" });
-  return items;
+  return buildAdaptiveRecommendations(session, getAdaptiveLearningPolicy());
 }
 
 function publicSession(session) {
@@ -168,6 +154,7 @@ export function normalizeAdaptiveAssessmentResult(source, attemptId, result, top
   const questions = (Array.isArray(result.questionResults) ? result.questionResults : []).map(item => ({
     questionId: item.questionId,
     selectedOptionId: item.selectedOptionId ?? null,
+    answered: item.selectedOptionId != null,
     correctOptionId: item.correctOptionId,
     isCorrect: item.isCorrect === true,
     score: source === "question_bank" ? Number(item.score || 0) : (item.isCorrect === true ? 1 : 0),
@@ -589,16 +576,31 @@ export async function performAdaptiveAction(sessionId, action, input = {}) {
       session.assessmentCount = session.assessmentHistory.length;
       session.activeAttempt = null;
       session.completedActions.push("assessment_completed");
+      const adaptiveIntelligenceEnabled = isAdaptiveIntelligenceEnabled();
       let adaptiveExplanation = "";
-      try {
-        adaptiveExplanation = await generateAdaptiveExplanation(session, normalized);
-      } catch (error) {
-        console.warn("[Adaptive Learning] Follow-up explanation unavailable:", error.message);
+      let adaptiveIntelligenceStatus = adaptiveIntelligenceEnabled ? "unavailable" : "disabled";
+      if (adaptiveIntelligenceEnabled) {
+        try {
+          // One bounded post-assessment request. The attempt is already consumed,
+          // so a repeated submission cannot process the same evidence again.
+          adaptiveExplanation = await generateAdaptiveExplanation(session, normalized);
+          adaptiveIntelligenceStatus = adaptiveExplanation ? "generated" : "unavailable";
+        } catch (error) {
+          console.warn("[Adaptive Learning] Adaptive Intelligence follow-up unavailable:", error.message);
+        }
       }
       result = {
         assessmentResult: normalized,
+        adaptiveIntelligence: {
+          enabled: adaptiveIntelligenceEnabled,
+          status: adaptiveIntelligenceStatus
+        },
         content: adaptiveExplanation ? { explanation: adaptiveExplanation } : null,
-        message: adaptiveExplanation ? "" : "Your assessment was evaluated, but the next AI explanation is temporarily unavailable."
+        message: adaptiveExplanation
+          ? ""
+          : adaptiveIntelligenceStatus === "disabled"
+            ? "Your assessment was evaluated successfully. Adaptive Intelligence is disabled for this deployment."
+            : "Your assessment was evaluated successfully, but the optional Adaptive Intelligence follow-up is unavailable right now."
       };
       break;
     }

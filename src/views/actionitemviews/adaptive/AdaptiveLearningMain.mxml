@@ -912,10 +912,16 @@
             {
                 if (selectedQBClass == null || selectedQBSubject == null || selectedQBTopic == null)
                     return false;
+
+                var currentSubject:String = normalizeComparableLearningValue(currentLearningSubject);
+                var selectedSubject:String = normalizeComparableLearningValue(String(selectedQBSubject.subjectName));
+
+                // Subject is optional when the learner starts a session from free text.
+                // If it was not supplied, use class + normalized topic to identify the
+                // existing session instead of treating the QB catalogue subject as a change.
                 return normalizeComparableLearningValue(String(selectedQBClass.className)) ==
                         normalizeComparableLearningValue(currentLearningGrade) &&
-                    normalizeComparableLearningValue(String(selectedQBSubject.subjectName)) ==
-                        normalizeComparableLearningValue(currentLearningSubject) &&
+                    (currentSubject == "" || selectedSubject == currentSubject) &&
                     normalizeComparableLearningValue(String(selectedQBTopic.topicName)) ==
                         normalizeComparableLearningValue(currentLearningTopic);
             }

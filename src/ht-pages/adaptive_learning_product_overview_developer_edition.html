@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#10213b">
+<title>Adaptive Learning | Product Overview & Solution Blueprint</title>
+<style>
+:root{
+ --navy:#10213b;--navy2:#19365e;--blue:#3568c8;--blue2:#eaf1ff;
+ --ink:#18263b;--muted:#62718a;--line:#e2e8f0;--bg:#f4f7fb;--white:#fff;
+ --teal:#087e83;--tealbg:#e8f6f5;--green:#18794e;--greenbg:#eaf7f0;
+ --amber:#94600a;--amberbg:#fff5df;--red:#a43b3b;--redbg:#fff0ef;
+ --purple:#6948a5;--purplebg:#f2edfc;--shadow:0 12px 34px rgba(20,39,69,.075);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.58 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+a{color:var(--blue)}
+button{font:inherit}
+.hero{background:radial-gradient(ellipse at 85% 10%,#3c659a 0,transparent 34%),linear-gradient(120deg,var(--navy),#1b3c69 72%,#244d7d);color:#fff;padding:34px 24px 28px}
+.hero-inner,.page{max-width:1160px;margin:auto}
+.brandline{display:flex;align-items:center;gap:9px;color:#c8d9f3;font-size:11px;font-weight:800;letter-spacing:.16em;text-transform:uppercase}
+.brandmark{width:30px;height:30px;border:1px solid #ffffff55;border-radius:9px;display:grid;place-items:center;font-weight:900;color:white;letter-spacing:0}
+.hero h1{font-size:clamp(32px,5vw,52px);line-height:1.06;letter-spacing:-.045em;margin:22px 0 13px;max-width:850px}
+.hero p{color:#e2eaf6;max-width:790px;font-size:17px;margin:0}
+.hero-meta{display:flex;flex-wrap:wrap;gap:9px;margin-top:22px}
+.meta-chip{font-size:12px;color:#e4ecf9;border:1px solid #ffffff3b;background:#ffffff0d;border-radius:99px;padding:6px 11px}
+.navshell{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 4px 16px #152b4710}
+.navinner{max-width:1160px;margin:auto;padding:11px 24px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.audience-nav{display:flex;gap:7px;flex-wrap:wrap}
+.audience-nav button,.utility button{border:1px solid transparent;background:transparent;color:#53627a;padding:9px 13px;border-radius:9px;font-size:13px;font-weight:750;cursor:pointer}
+.audience-nav button[aria-selected="true"]{background:var(--navy);color:#fff}
+.audience-nav button:hover:not([aria-selected="true"]),.utility button:hover{background:#f0f4fa}
+.utility{display:flex;gap:5px}
+.utility button{border-color:var(--line);background:#fff}
+.page{padding:22px 24px 44px}
+.panel{display:none}
+.panel.active{display:block}
+.eyebrow{font-size:11px;font-weight:850;letter-spacing:.13em;text-transform:uppercase;color:var(--blue)}
+h2{font-size:25px;line-height:1.2;letter-spacing:-.025em;margin:5px 0 8px}
+h3{font-size:16px;line-height:1.3;margin:0 0 7px}
+p{margin:6px 0}
+.intro{color:var(--muted);max-width:850px;margin:0 0 18px}
+.section{background:var(--white);border:1px solid var(--line);border-radius:16px;padding:21px;margin:15px 0;box-shadow:var(--shadow)}
+.section-head{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;margin-bottom:15px}
+.section-head p{color:var(--muted);font-size:13px;max-width:700px;margin:0}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.grid.two{grid-template-columns:repeat(2,1fr)}
+.grid.four{grid-template-columns:repeat(4,1fr)}
+.tile{border:1px solid var(--line);border-radius:13px;padding:16px;background:#fff}
+.tile p{font-size:13px;color:var(--muted)}
+.tile .kicker{font-size:11px;color:var(--blue);font-weight:850;text-transform:uppercase;letter-spacing:.08em;margin-bottom:7px}
+.big-number{font-size:25px;font-weight:850;letter-spacing:-.04em;color:var(--navy)}
+.tag{display:inline-flex;align-items:center;gap:5px;border-radius:99px;padding:4px 9px;font-size:11px;font-weight:800;white-space:nowrap}
+.tag.done{color:var(--green);background:var(--greenbg)}.tag.partial{color:var(--amber);background:var(--amberbg)}
+.tag.gap{color:var(--red);background:var(--redbg)}.tag.future{color:var(--blue);background:var(--blue2)}
+.tag.purple{color:var(--purple);background:var(--purplebg)}.tag.neutral{color:#56657b;background:#eef1f5}
+.callout{border:1px solid #d8e4f8;background:#f1f6ff;border-radius:13px;padding:16px 18px;margin:13px 0}
+.callout.priority{border-color:#f0dfb9;background:var(--amberbg)}
+.callout strong{display:block;margin-bottom:4px}
+.callout p{font-size:13px;color:#586983}
+table{width:100%;border-collapse:collapse;min-width:720px}
+.tablebox{overflow:auto;border:1px solid var(--line);border-radius:12px}
+th{background:#f2f5fa;color:#56657b;text-transform:uppercase;letter-spacing:.07em;font-size:10px;text-align:left;padding:12px}
+td{padding:12px;border-top:1px solid var(--line);font-size:13px;vertical-align:top}
+td:first-child{font-weight:750;min-width:175px}
+td small{display:block;color:var(--muted);font-size:12px;margin-top:3px}
+ul,ol{padding-left:21px;margin:8px 0}
+li{margin:6px 0}
+.flow{display:grid;grid-template-columns:repeat(5,1fr);gap:9px}
+.flow-item{background:#f5f8fc;border:1px solid var(--line);border-radius:12px;padding:13px;text-align:center;font-size:13px;font-weight:800}
+.flow-item span{display:block;font-weight:500;color:var(--muted);font-size:11px;margin-top:5px}
+.flow-item em{display:block;font-style:normal;font-size:10px;color:var(--blue);margin-bottom:7px;letter-spacing:.08em}
+.roadmap{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.phase{border:1px solid var(--line);border-radius:13px;padding:16px}
+.phase-top{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.phase p{font-size:13px;color:var(--muted)}
+.phase .accept{border-top:1px solid var(--line);padding-top:9px;margin-top:9px;font-size:12px;color:#4e6078}
+pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#17263e;color:#e7effb;border-radius:12px;padding:16px;font-size:12px;line-height:1.55;overflow:auto}
+code{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;background:#f0f3f8;padding:2px 5px;border-radius:5px;font-size:.92em}
+.muted{color:var(--muted)}.small{font-size:12px;color:var(--muted)}
+.quote{font-size:20px;line-height:1.4;font-weight:750;letter-spacing:-.02em;color:var(--navy);border-left:4px solid var(--teal);padding:3px 0 3px 17px;margin:14px 0}
+.footer{max-width:1160px;margin:auto;padding:0 24px 30px;color:var(--muted);font-size:11px}
+.checklist{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
+.check{border:1px solid var(--line);border-radius:10px;padding:10px 12px;font-size:13px}
+.check:before{content:"✓";color:var(--green);font-weight:900;margin-right:8px}
+.audience-note{border-radius:12px;background:#f4f7fb;padding:12px 14px;color:#596a83;font-size:12px;margin-top:12px}
+@media(max-width:850px){.grid.four{grid-template-columns:repeat(2,1fr)}.grid{grid-template-columns:1fr 1fr}.flow{grid-template-columns:1fr}.navinner{align-items:flex-start;flex-direction:column}.navshell{position:relative}}
+@media(max-width:620px){.hero{padding:26px 17px}.page{padding:15px}.navinner{padding:10px 15px}.grid,.grid.two,.grid.four,.roadmap,.checklist{grid-template-columns:1fr}.section{padding:16px}.audience-nav{width:100%}.audience-nav button{flex:1}}
+@media print{
+ body{background:#fff}.hero{background:#fff;color:#111;padding:15px 0}.hero p,.brandline{color:#333}.navshell{display:none}.page{padding:0;max-width:none}
+ .panel{display:block!important;break-before:page}.panel:first-child{break-before:auto}
+ .section,.tile{box-shadow:none;break-inside:avoid}.footer{padding:10px 0}
+}
+
+/* Learner-first landing experience */
+.student-landing{background:linear-gradient(180deg,#eef4ff 0%,#f7f9fc 100%);padding:34px 24px 30px;border-bottom:1px solid #dce6f4}
+.student-inner{max-width:1160px;margin:auto}
+.student-top{display:grid;grid-template-columns:1.2fr .8fr;gap:26px;align-items:center}
+.student-kicker{display:inline-flex;align-items:center;gap:8px;color:#176c78;background:#e3f5f4;border:1px solid #c9e9e7;border-radius:99px;padding:6px 11px;font-size:11px;font-weight:850;letter-spacing:.08em;text-transform:uppercase}
+.student-landing h2{font-size:clamp(28px,4vw,43px);line-height:1.1;letter-spacing:-.04em;color:var(--navy);margin:14px 0 12px;max-width:690px}
+.student-lead{font-size:17px;line-height:1.6;color:#53647d;max-width:720px}
+.student-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
+.student-actions button{border:0;border-radius:10px;padding:11px 16px;font-weight:800;cursor:pointer}
+.student-actions .primary{background:var(--navy);color:#fff;box-shadow:0 7px 18px #10213b22}
+.student-actions .secondary{background:#fff;color:var(--navy);border:1px solid #d7e0ed}
+.student-actions button:hover{transform:translateY(-1px)}
+.student-visual{background:linear-gradient(145deg,#17365f,#275b88);border-radius:20px;padding:20px;color:white;box-shadow:0 18px 36px #19365e25;position:relative;overflow:hidden}
+.student-visual:after{content:"";position:absolute;width:190px;height:190px;border-radius:50%;background:#ffffff0c;right:-55px;top:-65px}
+.learning-card{position:relative;z-index:1;background:#ffffff12;border:1px solid #ffffff35;border-radius:14px;padding:15px;margin:8px 0}
+.learning-card small{color:#c6d9f2;font-size:10px;font-weight:800;letter-spacing:.1em;text-transform:uppercase}
+.learning-card strong{display:block;font-size:17px;margin:4px 0}
+.learning-card p{font-size:12px;color:#dce8f7;margin:0}
+.learning-progress{height:7px;background:#ffffff28;border-radius:99px;margin-top:12px;overflow:hidden}
+.learning-progress span{display:block;width:68%;height:100%;background:#61d4c5;border-radius:99px}
+.student-visual-foot{display:flex;justify-content:space-between;gap:8px;color:#d5e3f4;font-size:11px;margin-top:11px}
+.student-benefits{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:24px}
+.benefit{background:#fff;border:1px solid #e0e8f2;border-radius:14px;padding:15px;box-shadow:0 6px 18px #19365e08}
+.benefit-icon{width:34px;height:34px;border-radius:10px;background:#edf3ff;color:#315fba;display:grid;place-items:center;font-size:17px;font-weight:900;margin-bottom:10px}
+.benefit h3{font-size:14px;margin-bottom:5px;color:var(--navy)}
+.benefit p{font-size:12px;color:var(--muted);margin:0}
+.student-journey{margin-top:20px;background:#fff;border:1px solid #e0e8f2;border-radius:16px;padding:18px}
+.student-journey-head{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;margin-bottom:13px}
+.student-journey-head h3{font-size:16px;color:var(--navy);margin:0}
+.student-journey-head p{font-size:12px;color:var(--muted);margin:0}
+.journey-steps{display:grid;grid-template-columns:repeat(5,1fr);gap:9px}
+.journey-step{background:#f5f8fc;border:1px solid #e6edf5;border-radius:11px;padding:12px}
+.journey-step b{display:block;font-size:12px;color:var(--navy)}
+.journey-step span{display:block;font-size:11px;color:var(--muted);margin-top:4px}
+.journey-step em{font-style:normal;color:#3568c8;font-size:10px;font-weight:900;letter-spacing:.08em}
+.student-pitch{margin-top:17px;border-radius:14px;padding:16px 19px;background:linear-gradient(100deg,#e7f6f4,#edf3ff);border:1px solid #d8e9ee;color:#21415a;font-size:14px}
+.student-pitch strong{color:var(--navy)}
+.landing-disclaimer{font-size:11px;color:#687991;margin-top:10px}
+@media(max-width:850px){.student-top{grid-template-columns:1fr}.student-benefits{grid-template-columns:repeat(2,1fr)}.journey-steps{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:620px){.student-landing{padding:24px 15px}.student-benefits,.journey-steps{grid-template-columns:1fr}.student-journey-head{display:block}.student-visual{padding:15px}}
+@media print{.student-landing{background:#fff;padding:15px 0}.student-actions{display:none}}
+
+
+/* Investor proposition additions */
+.mode-card{border:1px solid var(--line);border-radius:14px;padding:17px;background:#fff}
+.mode-card.enabled{border-color:#b9dcd7;background:linear-gradient(180deg,#f0faf8,#fff)}
+.mode-card.disabled{border-color:#dce4ef;background:linear-gradient(180deg,#f5f7fa,#fff)}
+.mode-label{display:inline-flex;border-radius:99px;padding:4px 9px;font-size:10px;font-weight:900;letter-spacing:.07em;text-transform:uppercase;margin-bottom:9px}
+.mode-card.enabled .mode-label{background:var(--tealbg);color:var(--teal)}
+.mode-card.disabled .mode-label{background:#e9eef5;color:#53627a}
+.capability-list{display:grid;grid-template-columns:repeat(3,1fr);gap:11px}
+.capability{border:1px solid var(--line);border-radius:12px;padding:14px;background:#fff}
+.capability b{display:block;color:var(--navy);font-size:13px;margin-bottom:5px}
+.capability p{font-size:12px;color:var(--muted);margin:0}
+.stage-line{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.stage{background:#f4f7fb;border:1px solid var(--line);border-radius:11px;padding:13px}
+.stage b{display:block;font-size:12px;color:var(--navy)}
+.stage span{display:block;font-size:11px;color:var(--muted);margin-top:5px}
+@media(max-width:850px){.capability-list{grid-template-columns:1fr 1fr}.stage-line{grid-template-columns:1fr 1fr}}
+@media(max-width:620px){.capability-list,.stage-line{grid-template-columns:1fr}}
+@media print{.mode-card{break-inside:avoid}}
+/* Developer-guidelines tab */
+.architecture-flow{display:grid;grid-template-columns:repeat(4,1fr);gap:9px}
+.architecture-node{border:1px solid var(--line);border-radius:11px;padding:13px;background:#f7f9fc;min-width:0}
+.architecture-node b{display:block;color:var(--navy);font-size:12px;margin-bottom:5px}
+.architecture-node code{display:block;margin:4px 0;overflow-wrap:anywhere}
+.config-card{border:1px solid var(--line);border-radius:12px;padding:15px;background:#fff}
+.config-card h3{color:var(--navy)}
+.config-card .scope{font-size:11px;font-weight:850;text-transform:uppercase;letter-spacing:.07em;color:var(--blue)}
+.file-tree{font-size:12px;line-height:1.65}
+.file-tree .folder{color:#9ed1ff}.file-tree .file{color:#e8effa}
+@media(max-width:850px){.architecture-flow{grid-template-columns:1fr 1fr}}
+@media(max-width:620px){.architecture-flow{grid-template-columns:1fr}}
+@media print{.architecture-node,.config-card{break-inside:avoid}}
+
+</style>
+</head>
+<body>
+<header class="hero">
+ <div class="hero-inner">
+  <div class="brandline"><span class="brandmark">A</span> Adaptive Learning · Product & Solution Overview</div>
+  <h1>Learning that adapts.<br>Built to fit your education ecosystem.</h1>
+  <p>A configurable adaptive-learning experience that connects curriculum content, educator guidance, assessment evidence and learning resources — designed as an extensible foundation for schools, publishers and education technology providers.</p>
+  <div class="hero-meta">
+   <span class="meta-chip">Working proof of concept</span>
+   <span class="meta-chip">Subject-agnostic direction</span>
+   <span class="meta-chip">SME-governed educational configuration</span>
+   <span class="meta-chip">Integration-oriented architecture</span>
+    <span class="meta-chip">Configurable intelligence · backend POC implemented</span>
+  </div>
+ </div>
+</header>
+
+<div class="navshell">
+ <div class="navinner">
+  <nav class="audience-nav" aria-label="Choose audience view" role="tablist">
+   <button role="tab" id="tab-learner" aria-controls="view-learner" aria-selected="true" data-view="learner">Learner Experience</button>
+   <button role="tab" id="tab-management" aria-controls="view-management" aria-selected="false" data-view="management" tabindex="-1">Management</button>
+   <button role="tab" id="tab-educators" aria-controls="view-educators" aria-selected="false" data-view="educators" tabindex="-1">Educators & SMEs</button>
+   <button role="tab" id="tab-technology" aria-controls="view-technology" aria-selected="false" data-view="technology" tabindex="-1">Technology & Integration</button>
+   <button role="tab" id="tab-developers" aria-controls="view-developers" aria-selected="false" data-view="developers" tabindex="-1">Developer Guidelines</button>
+   <button role="tab" id="tab-roadmap" aria-controls="view-roadmap" aria-selected="false" data-view="roadmap" tabindex="-1">Roadmap & Readiness</button>
+  </nav>
+  <div class="utility">
+   <button id="print">Print / PDF</button>
+  </div>
+ </div>
+</div>
+<main class="page">
+
+<section class="panel active" id="view-learner" role="tabpanel" aria-labelledby="tab-learner">
+<section class="student-landing" aria-labelledby="student-landing-title">
+ <div class="student-inner">
+  <div class="student-top">
+   <div>
+    <span class="student-kicker">The learner experience · Start here</span>
+    <h2 id="student-landing-title">Every learner deserves a clearer next step.</h2>
+    <p class="student-lead">Help students move from “I’m learning this” to “I understand it better.” Explore a learning experience that brings together curriculum-linked resources, practice, feedback and explanations — so learners can practise, reflect and choose what to explore next.</p>
+    <div class="student-actions">
+     <button class="primary" id="explore-solution">Explore the solution <span aria-hidden="true">→</span></button>
+     <button class="secondary" id="see-learning-journey">See the learning journey</button>
+    </div>
+   </div>
+   <div class="student-visual" aria-label="Illustrative learner experience">
+    <div class="learning-card">
+     <small>My learning space · Example</small>
+     <strong>Today, I’m learning Fractions</strong>
+     <p>Explore a short learning resource, try a few questions and review the explanation when you are ready.</p>
+     <div class="learning-progress"><span></span></div>
+     <div class="student-visual-foot"><span>Learn · Practise · Review</span><span>My pace</span></div>
+    </div>
+    <div class="learning-card">
+     <small>After practice</small>
+     <strong>Understand the answer — not just the score</strong>
+     <p>Review your response, see the correct answer and revisit the learning explanation.</p>
+    </div>
+   </div>
+  </div>
+
+  <div class="student-benefits" aria-label="Potential learner benefits">
+   <article class="benefit"><div class="benefit-icon" aria-hidden="true">◎</div><h3>Find relevant learning material</h3><p>Explore resources organised around the learner’s selected class, subject and topic.</p></article>
+   <article class="benefit"><div class="benefit-icon" aria-hidden="true">✎</div><h3>Practise with purpose</h3><p>Use AI-generated or curated question-bank assessments to check understanding and practise a topic.</p></article>
+   <article class="benefit"><div class="benefit-icon" aria-hidden="true">✓</div><h3>Learn from feedback</h3><p>Review selected answers, correct answers and explanations instead of seeing only a final score.</p></article>
+   <article class="benefit"><div class="benefit-icon" aria-hidden="true">↗</div><h3>Continue exploring</h3><p>Keep topic-specific explanations available during the session and choose what to learn next.</p></article>
+  </div>
+
+  <div class="student-journey" id="student-journey">
+   <div class="student-journey-head"><h3>A simple learning journey</h3><p>Designed to support practice, reflection and learner choice</p></div>
+   <div class="journey-steps">
+    <div class="journey-step"><em>01 · SELECT</em><b>Choose a topic</b><span>Start with a class, subject and topic.</span></div>
+    <div class="journey-step"><em>02 · EXPLORE</em><b>Access resources</b><span>Discover relevant learning material and explanations.</span></div>
+    <div class="journey-step"><em>03 · PRACTISE</em><b>Try an assessment</b><span>Answer questions and check your understanding.</span></div>
+    <div class="journey-step"><em>04 · REFLECT</em><b>Review feedback</b><span>See responses, correct answers and supporting explanations.</span></div>
+    <div class="journey-step"><em>05 · CONTINUE</em><b>Choose the next step</b><span>Revisit the topic or explore another learning activity.</span></div>
+   </div>
+  </div>
+
+  <div class="student-pitch"><strong>The central promise:</strong> make learning more engaging, more understandable and easier to continue — by bringing learning resources, practice and meaningful feedback into one connected experience.</div>
+  <p class="landing-disclaimer">The experience shown here describes the current proof-of-concept direction. It is not a claim of proven learning gains, automated mastery measurement or a fully personalised learning pathway. Those capabilities require further educational design, validation and development.</p>
+ </div>
+</section>
+</section>
+
+<section class="panel" id="view-management" role="tabpanel" aria-labelledby="tab-management">
+ <div class="eyebrow">Management view · Product proposition</div>
+ <h2>A configurable learning layer for existing education platforms</h2>
+ <p class="intro">The opportunity is not simply another quiz or chatbot. It is an adaptable learning experience that can use an institution's curriculum, content catalogue and educator-defined guidance to make learning resources and practice more relevant to each learner.</p>
+
+ <div class="grid four">
+  <div class="tile"><div class="kicker">Content-led</div><h3>Use your curriculum</h3><p>Organise learning resources around the subjects, grades, topics and activities that matter to your institution.</p></div>
+  <div class="tile"><div class="kicker">Educator-governed</div><h3>Keep pedagogy configurable</h3><p>SME-owned profiles guide educational quality, explanations and assessment behaviour.</p></div>
+  <div class="tile"><div class="kicker">Evidence-informed</div><h3>Respond to learner needs</h3><p>Use assessment and activity evidence to inform recommendations, with appropriate uncertainty.</p></div>
+  <div class="tile"><div class="kicker">Integration-minded</div><h3>Fit into existing systems</h3><p>Designed as a separable application capability that can be adapted for a publisher or school platform.</p></div>
+ </div>
+
+ <section class="section">
+  <div class="section-head"><div><div class="eyebrow">The proposition</div><h2>From content delivery to guided learning journeys</h2><p>Institutions retain ownership of curriculum and educational policy. The platform coordinates learning context, evidence, AI-assisted interpretation and resource delivery.</p></div><span class="tag future">POC direction</span></div>
+  <div class="flow">
+   <div class="flow-item"><em>01 · CONTEXT</em>Curriculum & topic<span>Subject, grade, topic and available content</span></div>
+   <div class="flow-item"><em>02 · EXPERIENCE</em>Learn & practise<span>Explanations, activities, videos and assessments</span></div>
+   <div class="flow-item"><em>03 · EVIDENCE</em>Observe learning<span>Responses, attempts, outcomes and feedback</span></div>
+   <div class="flow-item"><em>04 · GUIDANCE</em>Interpret carefully<span>SME policy and AI-assisted interpretation</span></div>
+   <div class="flow-item"><em>05 · CHOICE</em>Recommend next steps<span>Learner chooses what to explore next</span></div>
+  </div>
+  <div class="quote">The platform recommends a helpful next step; it does not take control away from the learner or the educator.</div>
+ </section>
+
+ <section class="section">
+  <div class="eyebrow">Potential value for adopters</div><h2>Why an education organisation may care</h2>
+  <div class="grid two">
+   <div class="tile"><h3>For a school or school network</h3><ul><li>Bring curriculum-aligned resources and practice into a coherent learner experience.</li><li>Allow educators to guide learning quality through reviewed configuration.</li><li>Explore evidence-informed recommendations without committing to a fully automated teaching system.</li></ul></div>
+   <div class="tile"><h3>For a publisher or content owner</h3><ul><li>Organise existing digital content by curriculum, grade, topic and activity.</li><li>Connect content assets to an interactive learning journey.</li><li>Retain editorial and subject-matter control over educational guidance.</li></ul></div>
+   <div class="tile"><h3>For an EdTech platform</h3><ul><li>Evaluate an adaptive-learning capability that can be integrated with an existing product.</li><li>Keep subject content and educational rules configurable.</li><li>Extend the experience without requiring a separate subject-specific engine for every topic.</li></ul></div>
+   <div class="tile"><h3>For product and business teams</h3><ul><li>Start with a bounded proof of concept.</li><li>Validate learner and educator value before investing in enterprise-scale services.</li><li>Use the roadmap to plan integration, governance and scale-up.</li></ul></div>
+  </div>
+ </section>
+
+ 
+  <section class="section">
+   <div class="eyebrow">Product differentiation · Why this is more than a chatbot</div>
+   <h2>A coordinated learning capability, not a single AI feature</h2>
+   <p class="intro">The proposition combines curriculum context, educator-defined guidance, learning resources, assessment workflows and a pathway for using evidence to inform what happens next. The value is in how these parts work together.</p>
+   <div class="capability-list">
+    <article class="capability"><b>Curriculum-aware context</b><p>Class, subject and topic give explanations, resources and practice a shared learning context.</p></article>
+    <article class="capability"><b>Educator-governed behaviour</b><p>Educational expectations can be expressed through configuration and reviewed SME guidance rather than scattered subject-specific code.</p></article>
+    <article class="capability"><b>Multiple ways to learn</b><p>Explanations, catalogue activities, videos, AI practice and question-bank practice contribute to a topic-focused experience.</p></article>
+    <article class="capability"><b>Evidence with provenance</b><p>Assessment responses and outcomes can be retained with their source, distinguishing observed evidence from later interpretation.</p></article>
+    <article class="capability"><b>Learner agency</b><p>Recommendations can guide the learner without removing available choices or forcing a fixed sequence.</p></article>
+    <article class="capability"><b>Model flexibility</b><p>A centrally managed AI provider/model choice allows the deployment strategy to evolve over time.</p></article>
+   </div>
+   <div class="quote">The differentiator is not simply that AI can answer a learner. It is the ability to connect learning context, educational guidance, practice evidence and the learner’s next choice.</div>
+  </section>
+  <section class="section">
+   <div class="eyebrow">Configurable intelligence · A deliberate product choice</div>
+   <h2>Adaptive Intelligence can be enabled when the use case and budget justify it</h2>
+   <p class="intro">Evidence-driven adaptive analysis should be optional—not a prerequisite for the core learning experience. This creates a practical adoption path for organisations with different infrastructure, AI budgets and maturity levels.</p>
+   <div class="grid two">
+    <article class="mode-card disabled"><span class="mode-label">Adaptive Intelligence · Off</span><h3>Lightweight learning mode</h3>
+     <ul><li>Keep the core learning experience available.</li><li>Continue using the configured AI capabilities already required by the selected workflow.</li><li>Do not run the additional post-assessment evidence-interpretation step.</li><li>Keep assessment scoring and recorded outcomes independent of AI interpretation.</li></ul>
+     <p class="small">Intended for constrained hardware, lower-cost deployments, early pilots or organisations introducing adaptive analysis later.</p>
+    </article>
+    <article class="mode-card enabled"><span class="mode-label">Adaptive Intelligence · On</span><h3>Evidence-informed learning mode</h3>
+     <ul><li>Use completed assessment evidence to inform a more tailored teaching response.</li><li>Consider responses, outcomes, feedback and the limits of available evidence.</li><li>Use the selected SME-authored profile guidance to shape interpretation and suggested next steps; profile metadata status does not currently block loading.</li><li>Keep recommendations optional and preserve learner choice.</li></ul>
+     <p class="small">Intended where expected educational value justifies additional AI processing and operating cost.</p>
+    </article>
+   </div>
+   <div class="callout"><strong>Implemented as a bounded backend POC control</strong><p>When enabled, the backend makes one post-assessment teaching request after a completed assessment. A submitted attempt cannot be submitted again, preventing the same active attempt from triggering duplicate processing. If the optional request fails, the completed assessment and its history remain available. This switch does not turn off existing AI features.</p></div>
+   <p class="small">Status: backend POC code implemented and automated tests passed. Live model behaviour, Royale rendering of the response metadata/message, and hosted deployment configuration still require validation. This is not a production-certified product setting.</p>
+  </section>
+  <section class="section">
+   <div class="eyebrow">Commercial flexibility · Adoption without a big-bang replacement</div>
+   <h2>A staged route from proof of concept to an adopter-specific solution</h2>
+   <div class="stage-line">
+    <div class="stage"><b>01 · Evaluate</b><span>Demonstrate the current POC with selected topics, resources and assessment flows.</span></div>
+    <div class="stage"><b>02 · Configure</b><span>Align catalogue data, SME guidance, language and assessment policies.</span></div>
+    <div class="stage"><b>03 · Extend</b><span>Introduce optional adaptive intelligence, integrations and persistence according to validated needs.</span></div>
+    <div class="stage"><b>04 · Operationalise</b><span>Complete adopter-specific identity, privacy, security, hosting, monitoring and support work.</span></div>
+   </div>
+   <p class="small">This is a proposed adoption pathway, not a claim that these stages are already packaged, priced or production-certified.</p>
+  </section>
+  <section class="section">
+   <div class="eyebrow">Potential commercial pathways · To be validated</div><h2>One foundation, multiple ways to adopt</h2>
+   <div class="grid two">
+    <div class="tile"><h3>Capability licensing</h3><p>License selected learning capabilities for adaptation to an organisation’s product, subject to ownership, licensing and support agreements.</p></div>
+    <div class="tile"><h3>Platform integration</h3><p>Integrate selected services and learner experiences into an existing publisher or EdTech platform.</p></div>
+    <div class="tile"><h3>Customised institutional solution</h3><p>Configure content, guidance and integration around an institution’s curriculum and operating model.</p></div>
+    <div class="tile"><h3>Progressive capability expansion</h3><p>Begin with core workflows and later evaluate optional adaptive intelligence, analytics and cross-session continuity.</p></div>
+   </div>
+   <p class="small">These are commercial hypotheses for buyer discussions. Pricing, licensing terms, intellectual-property arrangements, service levels and delivery scope have not been established.</p>
+  </section>
+
+<section class="section">
+  <div class="eyebrow">Current maturity</div><h2>A working foundation — not an enterprise-ready claim</h2>
+  <p class="intro">The supplied source snapshot shows a functioning POC foundation across catalogue configuration, SME instruction profiles, Adaptive assessment and resource delivery. The following capabilities remain at different levels of maturity.</p>
+  <div class="tablebox"><table><thead><tr><th>Capability area</th><th>Current position</th><th>Business interpretation</th></tr></thead><tbody>
+   <tr><td>Learning catalogue and resource organisation</td><td><span class="tag done">Implemented foundation</span></td><td>There is an existing mechanism to register catalogues and describe learning content.</td></tr>
+   <tr><td>SME instruction profiles</td><td><span class="tag done">Implemented foundation</span></td><td>Educational guidance can be maintained outside core application code.</td></tr>
+   <tr><td>Adaptive assessment flow</td><td><span class="tag done">POC implemented</span></td><td>AI and Question Bank assessment paths exist in the Adaptive experience.</td></tr>
+   <tr><td>Evidence-informed recommendations</td><td><span class="tag partial">Partial</span></td><td>The next development priority is to make recommendation policy configurable and evidence-aware.</td></tr>
+   <tr><td>Cross-session learner analytics</td><td><span class="tag neutral">Future scope</span></td><td>Not part of the current session-oriented POC; requires identity, storage and governance design.</td></tr>
+  </tbody></table></div>
+  <div class="callout"><strong>Commercially responsible positioning</strong><p>This is a demonstrable proof of concept and an extensible starting point. Production deployment, enterprise security, integrations, scale, data governance and operational support must be assessed and implemented for each adopter's environment.</p></div>
+ </section>
+ <div class="audience-note">This view is written for business owners, school leadership, publishers, product leaders and potential technology partners. Use the tabs above for educator and technical detail.</div>
+</section>
+
+<section class="panel" id="view-educators" role="tabpanel" aria-labelledby="tab-educators">
+ <div class="eyebrow">Educator & SME view · Educational governance</div>
+ <h2>Educational intent stays with the people who understand learning</h2>
+ <p class="intro">The platform should not hardcode pedagogy. Subject-matter experts and instructional designers define the educational expectations; the application provides reusable mechanisms to apply them.</p>
+ <section class="section">
+  <h2>What educators and SMEs can govern</h2>
+  <div class="tablebox"><table><thead><tr><th>Educational area</th><th>SME / educator responsibility</th><th>How the platform supports it</th></tr></thead><tbody>
+   <tr><td>Curriculum and content</td><td>Define curriculum alignment, grade suitability, topic structure and approved resources.</td><td>Catalogue manifest and CSV-based learning catalogues.</td></tr>
+   <tr><td>Teaching and response style</td><td>Specify age-appropriate language, explanation depth, examples and instructional tone.</td><td>SME-owned instruction profiles with response guidelines.</td></tr>
+   <tr><td>Content quality</td><td>Set accuracy, clarity, relevance and age-appropriateness expectations.</td><td>Quality guidelines included in AI generation context.</td></tr>
+   <tr><td>Assessment design</td><td>Define assessment expectations, question quality and feedback guidance.</td><td>Assessment guidelines supplied to assessment generation.</td></tr>
+   <tr><td>Diagnosis and intervention</td><td>Define how evidence should be interpreted and which learning interventions are suitable.</td><td>Planned extension of SME profile/policy configuration.</td></tr>
+   <tr><td>Recommendation policy</td><td>Review what evidence justifies revision, practice or progression recommendations.</td><td>Highest-priority configuration change: remove hardcoded recommendation threshold.</td></tr>
+  </tbody></table></div>
+ </section>
+ <section class="section">
+  <h2>Existing configuration foundation</h2>
+  <div class="grid two">
+   <div class="tile"><h3>Learning catalogues</h3><p>CSV-based catalogues currently include English, Mathematics and EVS examples. Catalogue entries can reference an instruction profile through <code>instructionProfileId</code>.</p></div>
+   <div class="tile"><h3>Instruction profiles</h3><p>JSON profiles include SME ownership and lifecycle metadata such as owner, status, version and review notes, alongside response, quality and assessment guidance.</p></div>
+   <div class="tile"><h3>Language and conversation settings</h3><p>A separate language configuration holds intent rules, aliases, messages, language behaviour and AI feature settings.</p></div>
+   <div class="tile"><h3>Governance principle</h3><p>Profile status (including draft) is descriptive metadata; the current loader uses referenced profiles regardless of status. SME authorship, review notes and version history remain useful governance information, but status is not a runtime loading gate.</p></div>
+  </div>
+ </section>
+ <section class="section">
+  <h2>Subject-agnostic by design</h2>
+  <p class="intro">The engine should not need a new hardcoded branch for every subject. Subject differences should be described through curriculum data, learning objectives when available, evidence expectations and SME guidance.</p>
+  <div class="tablebox"><table><thead><tr><th>Illustrative subject</th><th>Possible evidence</th><th>SME-defined interpretation</th></tr></thead><tbody>
+   <tr><td>Mathematics</td><td>Worked steps, selected answer, numerical result, explanation.</td><td>Whether the learner applied a concept or procedure correctly.</td></tr>
+   <tr><td>Science</td><td>Explanation, observation, classification, application.</td><td>Whether the learner can explain or apply a scientific idea.</td></tr>
+   <tr><td>English / languages</td><td>Reading response, grammar choice, written or spoken response.</td><td>Whether the learner demonstrates the targeted language skill.</td></tr>
+   <tr><td>Social Studies</td><td>Interpretation, chronology, source-based response, reasoning.</td><td>Whether the learner can interpret information and support a conclusion.</td></tr>
+  </tbody></table></div>
+  <p class="small">Examples are illustrative. The current POC does not claim to support every evidence type above. Additional response formats and evaluation methods would need to be implemented and validated.</p>
+ </section>
+ <section class="section">
+  <h2>How to avoid misleading learner conclusions</h2>
+  <ul><li>An incorrect response is evidence, not automatic proof of a misconception.</li><li>Insufficient evidence must be an acceptable outcome.</li><li>Mastery criteria and recommendation bands must be reviewed by the relevant SME.</li><li>Feedback should be appropriate to the specific learning objective and learner context.</li><li>The learner should be offered helpful choices rather than forced into a rigid path.</li></ul>
+ </section>
+ <div class="audience-note">For subject experts, curriculum leads, assessment designers and instructional designers.</div>
+</section>
+
+<section class="panel" id="view-technology" role="tabpanel" aria-labelledby="tab-technology">
+ <div class="eyebrow">Technology view · Architecture & integration</div>
+ <h2>A modular capability designed for integration</h2>
+ <p class="intro">The current POC uses Apache Royale for its frontend and Node.js for backend orchestration and services. The architecture direction keeps educational configuration separate from application mechanics and AI-provider details.</p>
+ <section class="section">
+  <h2>Conceptual responsibility boundaries</h2>
+  <div class="tablebox"><table><thead><tr><th>Layer</th><th>Responsibility</th><th>Ownership / change pattern</th></tr></thead><tbody>
+   <tr><td>Experience layer</td><td>Adaptive learner interface and presentation of activities, resources and assessments.</td><td>Frontend implementation; integrate into host platform UI as required.</td></tr>
+   <tr><td>Adaptive orchestration</td><td>Session lifecycle, topic context, action handling and coordination of Adaptive workflows.</td><td>Application code; keep isolated from Agentic and AI K12 experiences.</td></tr>
+   <tr><td>Catalogue and resource services</td><td>Resolve available learning content and resource metadata.</td><td>Catalogue data and service logic.</td></tr>
+   <tr><td>Configuration services</td><td>Load catalogue manifests, language settings and SME instruction profiles.</td><td>Configuration-driven; validate structure and supported fields. Profile status is descriptive metadata and does not gate loading.</td></tr>
+   <tr><td>Assessment services</td><td>Generate, validate, verify and score assessments using server-owned records.</td><td>Adaptive-specific assessment path; deterministic score authority.</td></tr>
+   <tr><td>LLM provider layer</td><td>Abstract model/provider selection and generation requests.</td><td>Central provider management; model-agnostic application design.</td></tr>
+  </tbody></table></div>
+ </section>
+ <section class="section">
+  <h2>Configuration versus code</h2>
+  <div class="grid two">
+   <div class="tile"><span class="tag done">Configuration / SME</span><h3>Educational variation</h3><ul><li>Curriculum, subject, grade, topic and catalogue metadata.</li><li>Response, quality and assessment guidelines.</li><li>Diagnostic, mastery and recommendation policies as these are introduced.</li><li>Language, intent phrases, aliases and conversation messages.</li></ul></div>
+   <div class="tile"><span class="tag future">Code / engineering</span><h3>Reusable mechanics</h3><ul><li>Load and validate configuration.</li><li>Manage sessions and evidence contracts.</li><li>Call services and models; handle timeouts and failures.</li><li>Enforce schema integrity, permissions and deterministic scoring.</li></ul></div>
+  </div>
+ </section>
+ 
+  <section class="section">
+   <h2>AI provider flexibility and cost-aware operation</h2>
+   <p class="intro">A shared provider-selection layer is intended to keep learning workflows independent of a specific model vendor and allow the operating choice to reflect hardware, latency, quality and cost requirements.</p>
+   <div class="grid two">
+    <div class="tile"><span class="tag done">Architectural direction</span><h3>Central model selection</h3><p>Local development and hosted deployment can use centrally selected providers/models. Individual learning modules should not independently discover, switch or hardcode providers.</p></div>
+    <div class="tile"><span class="tag future">Planned control</span><h3>Optional adaptive analysis</h3><p>The additional evidence-interpretation step is intended to be independently switchable, controlling when the extra model workload is incurred.</p></div>
+    <div class="tile"><span class="tag future">Resilience principle</span><h3>Graceful degradation</h3><p>If optional interpretation fails, existing assessment results and core learning choices should remain available.</p></div>
+    <div class="tile"><span class="tag future">Deployment choice</span><h3>Local or hosted AI</h3><p>Deployments can evaluate local models or hosted services against privacy, infrastructure, response-time, quality and cost requirements.</p></div>
+   </div>
+   <div class="callout"><strong>Why this matters commercially</strong><p>A buyer should not have to commit permanently to one model, hardware profile or AI cost structure. The intended architecture centralises that decision and makes the additional adaptive-analysis workload optional. Provider compatibility, performance and economics must be validated in the target environment.</p></div>
+  </section>
+
+<section class="section">
+  <h2>Integration approach for an adopting organisation</h2>
+  <div class="roadmap">
+   <div class="phase"><div class="phase-top"><h3>Option A · Integrate capability</h3><span class="tag future">Potential</span></div><p>Adopt selected backend services and the learner experience, then connect them to the organisation's identity, content and platform services.</p></div>
+   <div class="phase"><div class="phase-top"><h3>Option B · Adapt the codebase</h3><span class="tag future">Potential</span></div><p>Use the POC as a reference implementation and adapt frontend, APIs, data contracts and operational controls to the host architecture.</p></div>
+   <div class="phase"><div class="phase-top"><h3>Option C · Use as a product foundation</h3><span class="tag future">Potential</span></div><p>Extend the capability into a more complete solution with enterprise identity, persistence, monitoring, governance and deployment architecture.</p></div>
+   <div class="phase"><div class="phase-top"><h3>Integration work to assess</h3><span class="tag neutral">Per adopter</span></div><p>Authentication, authorisation, content APIs, learner records, privacy, data retention, hosting, security reviews, load and operational support.</p></div>
+  </div>
+  <p class="small">These are possible adoption patterns, not currently delivered deployment packages or contractual offers. Suitability depends on code review, licensing, security and integration assessment.</p>
+ </section>
+ <section class="section">
+  <h2>Engineering guardrails</h2>
+  <ul><li>Do not hardcode subject names, topic names or educational thresholds in central Adaptive orchestration.</li><li>Do not allow an LLM to authoritatively set marks, answer keys or learner records.</li><li>Keep non-LLM resource and Question Bank functionality available when an LLM is unavailable.</li><li>Keep Adaptive, Agentic and AI K12 workflows separated unless a deliberate shared-service decision is approved.</li><li>Validate configuration structure and fail safely with useful diagnostics.</li><li>Do not claim a source-level check is equivalent to a full browser, security or load test.</li></ul>
+ </section>
+ <div class="audience-note">For software architects, engineering teams, integration partners, security reviewers and technical evaluators.</div>
+</section>
+
+<section class="panel" id="view-developers" role="tabpanel" aria-labelledby="tab-developers">
+ <div class="eyebrow">Developer view · Implementation reference</div>
+ <h2>Application architecture, configuration ownership and engineering rules</h2>
+ <p class="intro">This tab is the engineering companion to the product overview. It documents the observed Node.js source snapshot and supplied configuration archive, distinguishes developer-owned mechanics from SME-owned educational policy, and explains the runtime switches. Paths are relative to the Node server project root unless stated otherwise.</p>
+
+ <section class="section">
+  <div class="section-head"><div><div class="eyebrow">System architecture</div><h2>Runtime composition and API boundaries</h2><p>Apache Royale owns the learner interface. Express mounts separate API experiences; shared infrastructure is reused only where it is an intentional service boundary.</p></div><span class="tag done">Observed source structure</span></div>
+  <div class="architecture-flow">
+   <div class="architecture-node"><b>01 · Frontend</b><code>Apache Royale</code><span class="small">Adaptive Learning and other learner-facing experiences call backend APIs.</span></div>
+   <div class="architecture-node"><b>02 · HTTP composition</b><code>server.js</code><code>app.js</code><span class="small">Environment bootstrap, Express app, middleware, route mounting and HTTP server.</span></div>
+   <div class="architecture-node"><b>03 · Experience routes</b><code>routes/adaptiveLearning.js</code><code>routes/agent.js</code><code>routes/assessment.js</code><code>routes/questionBank.js</code><code>routes/chat.js</code><span class="small">Separate API boundaries for Adaptive, Agentic, assessment, Question Bank and AI K12 chat.</span></div>
+   <div class="architecture-node"><b>04 · Services and providers</b><code>services/*.js</code><code>adaptive/assessment/*</code><code>agent/*</code><span class="small">Orchestration, catalogue/config loading, deterministic assessment and central LLM access.</span></div>
+  </div>
+  <div class="callout"><strong>Separation rule</strong><p>Adaptive Learning, Agentic Learning / Agentic Assessment, Question Bank and AI K12 chat are distinct application experiences. Do not merge their route or assessment responsibilities merely because some helper implementations look similar. Shared utilities should remain shared only when the contract and behaviour are genuinely identical.</p></div>
+ </section>
+
+ <section class="section">
+  <h2>Application workflows and source ownership</h2>
+  <div class="tablebox"><table><thead><tr><th>Experience / workflow</th><th>Entry point</th><th>Core implementation</th><th>Responsibility</th></tr></thead><tbody>
+   <tr><td>Adaptive Learning</td><td><code>routes/adaptiveLearning.js</code><small>Mounted at <code>/api/adaptive-learning</code></small></td><td><code>services/adaptiveLearningService.js</code></td><td>Owns topic-focused session state, learning resources, AI Practice and Question Bank action coordination, assessment history and follow-up explanation.</td></tr>
+   <tr><td>Adaptive AI Practice</td><td><code>services/adaptiveLearningService.js</code></td><td><code>adaptive/assessment/adaptiveAssessmentService.js</code><small>Generator, validator, attempt manager, evaluator and optional verifier</small></td><td>Generates and validates questions; server-side evaluator is authoritative for correctness and marks.</td></tr>
+   <tr><td>Adaptive Question Bank</td><td><code>services/adaptiveLearningService.js</code></td><td><code>services/questionBank/questionBankAssessmentService.js</code><small><code>questionBankRepository.js</code> and <code>questionBankAttemptManager.js</code></small></td><td>Loads publisher/question-bank material and evaluates its own assessment attempts; it converges with AI Practice at Adaptive session result handling.</td></tr>
+   <tr><td>Agentic Learning</td><td><code>routes/agent.js</code></td><td><code>agent/agentEngine.js</code>, <code>agent/agentPlanner.js</code>, <code>agent/agentTools.js</code>, <code>agent/agentConfigLoader.js</code></td><td>Plans and executes catalogue/resource learning requests and supplies catalogue-linked SME profile guidance.</td></tr>
+   <tr><td>Agentic Assessment</td><td><code>routes/assessment.js</code></td><td><code>agent/assessment-agent/</code></td><td>Independent assessment generation, validation, attempts and evaluation. Do not silently substitute Adaptive or Question Bank assessment behaviour.</td></tr>
+   <tr><td>AI K12 conversational learning</td><td><code>routes/chat.js</code></td><td><code>services/conversationInterpreter.js</code>, <code>services/misconceptionDetector.js</code>, <code>services/learningLanguageConfig.js</code></td><td>Conversational learning and its optional misconception-detection workflow. Its switches do not automatically control Adaptive Learning.</td></tr>
+  </tbody></table></div>
+ </section>
+
+ <section class="section">
+  <h2>Adaptive Learning assessment lifecycle</h2>
+  <div class="flow">
+   <div class="flow-item"><em>01 · SESSION</em>Start topic<span><code>createAdaptiveSession()</code> builds session context and catalogue content.</span></div>
+   <div class="flow-item"><em>02 · ASSESS</em>Choose source<span>AI Practice or Question Bank; each uses its own generator/repository and evaluator.</span></div>
+   <div class="flow-item"><em>03 · NORMALISE</em>Common result<span><code>normalizeAdaptiveAssessmentResult()</code> and <code>attachAssessmentQuestionDetails()</code>.</span></div>
+   <div class="flow-item"><em>04 · RECORD</em>Session history<span>Store the deterministic result in <code>session.latestResult</code> and <code>assessmentHistory</code>.</span></div>
+   <div class="flow-item"><em>05 · TEACH</em>Follow-up response<span><code>generateAdaptiveExplanation()</code> uses question evidence and the central LLM provider.</span></div>
+  </div>
+  <p class="small">Both Adaptive assessment sources converge after deterministic evaluation. <code>ADAPTIVE_INTELLIGENCE_ENABLED</code> now governs the optional post-assessment teaching request: OFF skips that request; ON makes one bounded request through the central provider. It does not control question generation, scoring, or the other learning experiences.</p>
+  <div class="callout priority"><strong>Assessment authority</strong><p>The LLM may generate question content and teaching explanations. It must not decide the authoritative answer key, correctness, marks or stored assessment result. Preserve source provenance and distinguish unanswered questions from answered-but-incorrect questions when constructing evidence.</p></div>
+ </section>
+
+ <section class="section">
+  <div class="eyebrow">Environment configuration · Engineering-owned</div><h2>Runtime variables and exactly what they control</h2>
+  <p class="intro">These settings have different scopes. They are not interchangeable global AI switches. Keep secrets in environment variables and never commit API keys or credentials.</p>
+  <div class="tablebox"><table><thead><tr><th>Setting</th><th>Observed behaviour</th><th>Scope and usage guidance</th></tr></thead><tbody>
+   <tr><td><code>APP_ENV</code></td><td><code>LOCAL</code> selects Ollama; <code>LIVE</code> selects OpenRouter. Missing or invalid values disable the LLM provider while allowing Express and non-LLM routes to start.</td><td>Central provider selection in <code>services/llmProvider.js</code>. This is the provider switch, not a switch for one learning feature. Use one deployment-level value.</td></tr>
+   <tr><td><code>AI_ENABLED</code></td><td>In <code>routes/chat.js</code>, AI is enabled unless the value is exactly the string <code>false</code>.</td><td>Legacy AI K12 / Chat route control. It is not a global kill switch for Adaptive Learning, Agentic Learning or every LLM call in the application.</td></tr>
+   <tr><td><code>ADAPTIVE_ASSESSMENT_VERIFY</code></td><td>Defaults OFF. Values <code>1</code>, <code>true</code>, <code>yes</code>, <code>on</code> or <code>enabled</code> enable optional background verification.</td><td>Adaptive AI assessment quality check only. Runs after structurally valid question generation and does not delay learner delivery. It is independent of Adaptive Intelligence.</td></tr>
+   <tr><td><code>ADAPTIVE_INTELLIGENCE_ENABLED</code></td><td>Defaults OFF. Only <code>true</code> (case-insensitive, after trimming) enables it; any other or missing value means OFF.</td><td>Controls only the optional post-assessment evidence-informed teaching request in <code>services/adaptiveLearningService.js</code>. It does not disable AI Practice generation, initial explanations or other learning experiences.</td></tr>
+   <tr><td><code>ADAPTIVE_ASSESSMENT_VERIFY_TIMEOUT_MS</code></td><td>Verifier timeout; source default is 90,000 ms.</td><td>Only the optional Adaptive assessment verification request. Not the general LLM timeout.</td></tr>
+   <tr><td><code>AI_TIMEOUT_MS</code></td><td>General provider request timeout; source default is 60,000 ms.</td><td>Read by <code>services/llmProvider.js</code> for provider requests. Tune against model latency and learner experience.</td></tr>
+   <tr><td><code>OLLAMA_MODEL</code>, <code>OLLAMA_URL</code></td><td>Local model and Ollama endpoint; source defaults are <code>qwen3.5:4b</code> and <code>http://localhost:11434/api/chat</code>.</td><td>Used when <code>APP_ENV=LOCAL</code>. Keep model selection central rather than embedding it in individual services.</td></tr>
+   <tr><td><code>OPENROUTER_API_KEY</code>, <code>OPENROUTER_API_URL</code></td><td>OpenRouter credential and endpoint; URL has a source default.</td><td>Used when <code>APP_ENV=LIVE</code>. Never place the key in source, frontend code, HTML documentation examples or version control.</td></tr>
+   <tr><td><code>LEARNING_CONFIG_DIR</code></td><td>Required path to the educational configuration directory; relative paths resolve from <code>process.cwd()</code>.</td><td>Read by <code>services/configPath.js</code>. The source comments show local and Render examples; verify the actual deployment working directory before setting it.</td></tr>
+   <tr><td><code>PORT</code></td><td>HTTP server port; source default is 3000.</td><td>Read by <code>server.js</code>; deployment platform may provide this value.</td></tr>
+  </tbody></table></div>
+  <div class="callout"><strong>New independent setting — implemented in the Adaptive backend POC</strong><p><code>ADAPTIVE_INTELLIGENCE_ENABLED=false</code> is the default. Only the value <code>true</code> (case-insensitive, after trimming) enables the optional post-assessment teaching request; missing, empty and other values mean OFF. It does not suppress AI calls required for initial explanations, AI Practice question generation, Agentic Learning, AI K12 or other existing workflows.</p><p>The service returns <code>adaptiveIntelligence.enabled</code> and <code>adaptiveIntelligence.status</code> (<code>disabled</code>, <code>generated</code> or <code>unavailable</code>) alongside the deterministic assessment result.</p></div>
+ </section>
+
+ <section class="section">
+  <h2>Learning-language feature flags</h2>
+  <p class="intro">These settings live in <code>config/learning-language.json</code> under <code>aiFeatures</code>. The loader in <code>services/learningLanguageConfig.js</code> requires both the feature-level <code>enabled: true</code> and the requested interaction-mode flag to be true.</p>
+  <div class="grid two">
+   <article class="config-card"><div class="scope">Configured in supplied archive</div><h3><code>misconceptionDetection</code></h3><pre>"misconceptionDetection": {
+  "enabled": true,
+  "normalChat": true,
+  "quizMode": true,
+  "maxFollowUpQuestions": 2
+}</pre><p>Used by the AI K12 conversational path. The detector in <code>services/misconceptionDetector.js</code> returns evidence-qualified outcomes and uses two structured LLM analysis/review calls. It can ask bounded follow-up questions. Do not automatically invoke it from Adaptive Learning: that would add cost and change the evidence/interaction contract.</p></article>
+   <article class="config-card"><div class="scope">Configured but not consumed in audited snapshot</div><h3><code>deepDive</code></h3><pre>"deepDive": {
+  "enabled": false,
+  "normalChat": true,
+  "quizMode": false
+}</pre><p>The feature is present in the JSON configuration, but a source search did not find a consumer of <code>deepDive</code> in this archive. Treat it as configured future/unused capability until an implementation is added and tested; do not describe it as active functionality.</p></article>
+  </div>
+  <p class="small">The same language file also carries intent phrases, priorities, language/conversation configuration and messages. It is not the location for deployment provider selection.</p>
+ </section>
+
+ <section class="section">
+  <div class="eyebrow">Configuration layout · SME-owned educational content</div><h2>What belongs in the config directory</h2>
+  <pre class="file-tree"><span class="folder">config/</span>
+  <span class="file">learning-catalogs.json</span>       <span class="small">Catalogue manifest: enabled catalogues and CSV filenames</span>
+  <span class="file">learning-language.json</span>      <span class="small">Intent rules, language/conversation settings and AI feature flags</span>
+  <span class="file">English.csv</span>                  <span class="small">English catalogue entries</span>
+  <span class="file">Math.csv</span>                     <span class="small">Mathematics catalogue entries</span>
+  <span class="file">EVS.csv</span>                      <span class="small">EVS catalogue entries</span>
+  <span class="folder">profiles/</span>
+    <span class="file">*_instruction.json</span>         <span class="small">Teaching/response profile examples</span>
+    <span class="file">*_practice.json</span>            <span class="small">Practice/assessment guidance examples</span>
+    <span class="file">*_story.json</span>               <span class="small">Story/rhyme guidance example</span>
+  <span class="file">README.md</span>                    <span class="small">Configuration notes; verify against current manifest and actual files</span>
+  <span class="file">Other JSON files</span>              <span class="small">Legacy/demo/product files; not automatically part of the learning catalogue</span></pre>
+  <div class="tablebox"><table><thead><tr><th>File / field</th><th>Owner</th><th>How the application uses it</th></tr></thead><tbody>
+   <tr><td><code>learning-catalogs.json</code></td><td>SME/content operations with developer-defined schema</td><td><code>services/learningCatalog.js</code> reads enabled catalogue entries and loads the named CSV files.</td></tr>
+   <tr><td>Catalogue CSV <code>instructionProfileId</code></td><td>SME/content operations</td><td>Associates a catalogue row with a profile identifier. The supplied English, Math and EVS files contain this column.</td></tr>
+   <tr><td><code>profiles/{profileId}.json</code></td><td>SME / subject expert</td><td><code>agent/agentConfigLoader.js</code> loads referenced JSON and formats <code>responseGuidelines</code>, <code>qualityGuidelines</code> and <code>assessmentGuidelines</code>.</td></tr>
+   <tr><td><code>metadata.owner/status/version/reviewNotes</code></td><td>SME governance metadata</td><td>Useful for authorship and review tracking. In the supplied loader, <code>status</code> is not checked and does not prevent a referenced profile from loading. Draft profiles load.</td></tr>
+   <tr><td><code>learning-language.json</code></td><td>SME/product configuration with developer-owned schema</td><td><code>services/learningLanguageConfig.js</code> loads intent rules and feature configuration; invalid/missing feature definitions disable that feature.</td></tr>
+  </tbody></table></div>
+  <div class="callout"><strong>SME versus developer boundary</strong><p>SMEs define what good teaching, content and assessment look like: age-appropriate wording, explanation depth, examples, quality expectations, question design, feedback and evidence interpretation policy. Developers define schemas, loaders, validation, APIs, session/evidence contracts, scoring mechanics, provider calls, timeouts, security and failure handling. Do not encode subject-specific pedagogy or thresholds in generic application code when that decision belongs in reviewed educational configuration.</p></div>
+ </section>
+
+ <section class="section">
+  <h2>Configuration loading and profile resolution</h2>
+  <div class="flow">
+   <div class="flow-item"><em>01 · PATH</em><code>LEARNING_CONFIG_DIR</code><span><code>services/configPath.js</code> resolves the configured directory.</span></div>
+   <div class="flow-item"><em>02 · MANIFEST</em><code>learning-catalogs.json</code><span><code>services/learningCatalog.js</code> loads enabled CSV files.</span></div>
+   <div class="flow-item"><em>03 · CATALOGUE</em><code>instructionProfileId</code><span>Each matching catalogue record can reference a profile.</span></div>
+   <div class="flow-item"><em>04 · PROFILE</em><code>profiles/*.json</code><span><code>agent/agentConfigLoader.js</code> reads referenced profiles and formats supported guidance.</span></div>
+   <div class="flow-item"><em>05 · PROMPT</em>LLM context<span>Relevant educational guidance is included in the request made by the consuming workflow.</span></div>
+  </div>
+  <p class="small">The supplied manifest enables English.csv, Math.csv and EVS.csv. The supplied archive has 17 profile JSON files referenced by the catalogue rows. Profile metadata status is not a load filter. The manifest schema's declared columns should be kept aligned with the actual CSV headers when the configuration schema is next maintained.</p>
+ </section>
+
+ <section class="section">
+  <h2>Central LLM provider architecture</h2>
+  <div class="architecture-flow">
+   <div class="architecture-node"><b>Application service</b><code>generateText()</code><code>generateStructuredResponse()</code><span class="small">Call a provider-neutral interface; do not hardcode vendor APIs inside feature services.</span></div>
+   <div class="architecture-node"><b>Provider selection</b><code>services/llmProvider.js</code><span class="small"><code>APP_ENV</code> chooses LOCAL/Ollama or LIVE/OpenRouter once centrally.</span></div>
+   <div class="architecture-node"><b>Provider-specific request</b><code>Ollama</code><code>OpenRouter</code><span class="small">Central request handling, timeout, JSON parsing and error behaviour.</span></div>
+   <div class="architecture-node"><b>Model choice</b><code>OLLAMA_MODEL</code><code>OpenRouter model manager</code><span class="small">Model selection belongs to central provider configuration, not individual learning modules.</span></div>
+  </div>
+  <ul><li><code>APP_ENV=LOCAL</code> uses Ollama with <code>OLLAMA_MODEL</code> and <code>OLLAMA_URL</code>.</li><li><code>APP_ENV=LIVE</code> uses OpenRouter; the current source sets the provider model label to <code>auto-free</code> and selects through the OpenRouter model manager.</li><li>Missing/invalid <code>APP_ENV</code> makes the LLM provider unavailable; non-LLM routes are intended to remain available.</li><li>Do not let feature services discover, switch or silently fall back between providers independently.</li><li>Do not log, expose or place credentials in frontend assets, documentation examples or source control.</li></ul>
+ </section>
+
+ <section class="section">
+  <h2>Environment examples (illustrative only)</h2>
+  <p class="small">Use the values appropriate to the actual machine or hosting environment. These examples contain no credentials.</p>
+  <div class="grid two">
+   <div class="tile"><h3>Local development with Ollama</h3><pre>APP_ENV=LOCAL
+OLLAMA_MODEL=qwen3.5:4b
+OLLAMA_URL=http://localhost:11434/api/chat
+AI_TIMEOUT_MS=60000
+LEARNING_CONFIG_DIR=../src/config
+ADAPTIVE_ASSESSMENT_VERIFY=false
+ADAPTIVE_INTELLIGENCE_ENABLED=false</pre><p class="small">The configuration path is relative to the Node process working directory; confirm the actual folder layout before copying this example.</p></div>
+   <div class="tile"><h3>Hosted deployment with OpenRouter</h3><pre>APP_ENV=LIVE
+OPENROUTER_API_KEY=<set-in-host-secret-store>
+AI_TIMEOUT_MS=60000
+LEARNING_CONFIG_DIR=./config
+ADAPTIVE_ASSESSMENT_VERIFY=false
+ADAPTIVE_INTELLIGENCE_ENABLED=false</pre><p class="small">Set the secret through the hosting provider's environment/secret settings. Do not commit a real key or include it in this HTML file.</p></div>
+  </div>
+ </section>
+
+ <section class="section">
+  <h2>Engineering guardrails and change protocol</h2>
+  <div class="checklist">
+   <div class="check">Keep Adaptive, Agentic, Agentic Assessment, Question Bank and AI K12 workflows isolated.</div>
+   <div class="check">Keep LLM provider/model selection central and model-agnostic.</div>
+   <div class="check">Keep scoring, answer keys and marks deterministic and server-authoritative.</div>
+   <div class="check">Preserve assessment source, question-level evidence and unanswered-answer distinction.</div>
+   <div class="check">Keep all learner choices available; recommendations do not force a pathway.</div>
+   <div class="check">Treat profile status as metadata; referenced draft profiles must continue to load.</div>
+   <div class="check">Validate config shape and profile content; log actionable errors without leaking secrets.</div>
+   <div class="check">An optional AI failure must not erase a completed assessment or block core non-AI features.</div>
+   <div class="check">Add tests for both enabled and disabled feature states and for each assessment source.</div>
+   <div class="check">Run regression tests for untouched experiences after a shared-service change.</div>
+   <div class="check">Do not equate static source inspection with runtime, browser, security or load validation.</div>
+   <div class="check">Update this architecture reference when a material workflow, path or configuration contract changes.</div>
+  </div>
+ </section>
+
+ <section class="section">
+  <h2>Current state versus approved next implementation</h2>
+  <div class="tablebox"><table><thead><tr><th>Item</th><th>State in audited snapshot</th><th>Approved next-step treatment</th></tr></thead><tbody>
+   <tr><td>Provider selection via <code>APP_ENV</code></td><td><span class="tag done">Implemented</span></td><td>Preserve central LOCAL/LIVE selection.</td></tr>
+   <tr><td>Chat route <code>AI_ENABLED</code></td><td><span class="tag done">Implemented</span></td><td>Leave scope unchanged; do not treat as global switch.</td></tr>
+   <tr><td>Misconception detection</td><td><span class="tag done">Implemented in AI K12 path</span></td><td>Keep separate; no automatic Adaptive integration in first change.</td></tr>
+   <tr><td>Adaptive assessment verification</td><td><span class="tag done">Implemented; default OFF</span></td><td>Preserve as independent background quality check.</td></tr>
+   <tr><td>Adaptive Intelligence switch</td><td><span class="tag done">Backend POC implemented</span></td><td><code>ADAPTIVE_INTELLIGENCE_ENABLED</code> defaults OFF; only exact <code>true</code> enables the optional post-assessment request.</td></tr>
+   <tr><td>Consistent Adaptive profile selection</td><td><span class="tag done">Implemented in Adaptive</span></td><td>The follow-up uses the same selected profile ID passed to AI Practice generation; shared Agentic profile loading is unchanged.</td></tr>
+   <tr><td>Explicit unanswered evidence</td><td><span class="tag done">Implemented</span></td><td>Normalized evidence now includes <code>answered</code>; deterministic correctness and marks are unchanged.</td></tr>
+  </tbody></table></div>
+  <p class="small">Backend implementation and automated tests are complete in the supplied patch. A live Ollama/OpenRouter request, Royale response rendering and deployment-level configuration still require validation in the user’s environment. This is a POC implementation, not a production-readiness claim.</p>
+ </section>
+ <div class="audience-note">For developers, software architects, technical reviewers and SMEs who need to understand where educational policy ends and application mechanics begin.</div>
+</section>
+
+<section class="panel" id="view-roadmap" role="tabpanel" aria-labelledby="tab-roadmap">
+ <div class="eyebrow">Roadmap view · Maturity & next steps</div>
+ <h2>Build the right foundation before scaling the promise</h2>
+ <p class="intro">The roadmap deliberately prioritises educational correctness and configuration governance before adding complex learner analytics or enterprise infrastructure.</p>
+ <section class="section">
+  <div class="callout priority"><strong>P0 · Highest priority: make recommendations SME-configurable</strong><p>The current Adaptive <code>recommendationsFor()</code> contains a hardcoded 60% comparison. Move the educational decision into reviewed configuration, test boundary and missing-policy behaviour, and do not assume 60% is pedagogically valid without SME approval.</p></div>
+  <div class="roadmap">
+
+   <div class="phase" style="grid-column:1/-1">
+    <div class="phase-top"><h3>Configurable Adaptive Intelligence switch</h3><span class="tag partial">Backend POC implemented · integration pending</span></div>
+    <p>The backend now supports an independent deployment-level control for the optional post-assessment teaching request. It uses the central provider and preserves the completed assessment when the optional request is disabled or unavailable.</p>
+    <div class="accept"><b>Verified:</b> default OFF, explicit ON parsing, profile-specific guidance loading and unanswered-answer evidence are covered by automated tests. <b>Pending:</b> live local-model behaviour, Royale display and hosted-environment validation.</div>
+   </div>
+
+   <div class="phase"><div class="phase-top"><h3>P0 · Recommendation policy</h3><span class="tag gap">Immediate</span></div><p>Remove hardcoded educational threshold and mapping. Resolve policy source and safe fallback.</p><div class="accept"><b>Acceptance:</b> changing the approved configuration changes recommendations without modifying JavaScript.</div></div>
+   <div class="phase"><div class="phase-top"><h3>P1 · Lightweight evidence contract</h3><span class="tag future">Next</span></div><p>Represent assessment and activity evidence in a common session-scoped format while preserving source-specific details.</p><div class="accept"><b>Acceptance:</b> AI and Question Bank evidence can be used consistently without losing provenance.</div></div>
+   <div class="phase"><div class="phase-top"><h3>P2 · SME diagnostic guidance</h3><span class="tag future">Planned</span></div><p>Extend existing profiles where justified; audit and reuse misconception detection; support insufficient evidence.</p><div class="accept"><b>Acceptance:</b> no subject-specific diagnostic branches in the generic engine.</div></div>
+   <div class="phase"><div class="phase-top"><h3>P3 · Evidence-informed suggestions</h3><span class="tag future">Planned</span></div><p>Connect evidence and approved policies to learner-selectable activities, explanations, videos and assessments.</p><div class="accept"><b>Acceptance:</b> recommendations have a clear rationale and do not force a learner path.</div></div>
+   <div class="phase"><div class="phase-top"><h3>P4 · Learning objective metadata</h3><span class="tag purple">Future scale</span></div><p>Add optional objective identifiers and relationships when catalogue owners and SMEs are ready to maintain them.</p><div class="accept"><b>Acceptance:</b> new subjects and topics are primarily data/configuration additions.</div></div>
+   <div class="phase"><div class="phase-top"><h3>P5 · Persistent learner profile</h3><span class="tag neutral">Beyond POC</span></div><p>Consider cross-session progress after identity, storage, privacy, consent and retention are designed.</p><div class="accept"><b>Acceptance:</b> separate product and architecture approval before implementation.</div></div>
+  </div>
+ </section>
+ <section class="section">
+  <h2>Current implementation inventory</h2>
+  <div class="tablebox"><table><thead><tr><th>Capability</th><th>Observed implementation</th><th>Status</th><th>Remaining concern</th></tr></thead><tbody>
+   <tr><td>Catalogue registry</td><td><code>learning-catalogs.json</code> and <code>services/learningCatalog.js</code></td><td><span class="tag done">Present</span></td><td>Broader subject coverage depends on curated catalogue data.</td></tr>
+   <tr><td>SME profiles</td><td><code>profiles/*.json</code> and <code>agent/agentConfigLoader.js</code></td><td><span class="tag done">Present</span></td><td>Extend supported sections carefully and preserve compatibility.</td></tr>
+   <tr><td>Language config</td><td><code>learning-language.json</code> and loader</td><td><span class="tag done">Present</span></td><td>Keep conversation/language behaviour separate from subject pedagogy.</td></tr>
+   <tr><td>Adaptive topic history</td><td>Session topic snapshots</td><td><span class="tag done">Present</span></td><td>Current session scope only.</td></tr>
+   <tr><td>Adaptive assessment</td><td>Independent Adaptive assessment workflow, validation and deterministic evaluation</td><td><span class="tag done">Present</span></td><td>Educational verification quality requires ongoing evaluation.</td></tr>
+   <tr><td>Misconception detector</td><td><code>services/misconceptionDetector.js</code></td><td><span class="tag partial">Exists</span></td><td>Not integrated into Adaptive flow in audited snapshot.</td></tr>
+   <tr><td>Recommendation policy</td><td><code>recommendationsFor()</code></td><td><span class="tag gap">Hardcoded threshold</span></td><td>P0 configuration correction.</td></tr>
+   <tr><td>Persistent analytics</td><td>Not in current POC scope</td><td><span class="tag neutral">Deferred</span></td><td>Identity, database and governance design required.</td></tr>
+  </tbody></table></div>
+ </section>
+ <section class="section">
+  <h2>Readiness and evidence checklist</h2>
+  <div class="checklist">
+   <div class="check">POC functionality demonstrated in target environment</div>
+   <div class="check">Recommendation policy reviewed by an SME</div>
+   <div class="check">Subject/profile configuration validated</div>
+   <div class="check">Integration contracts reviewed with adopter</div>
+   <div class="check">Security and privacy assessment completed</div>
+   <div class="check">Load, reliability and recovery tested</div>
+   <div class="check">Deployment and monitoring model agreed</div>
+   <div class="check">Licensing and code ownership reviewed</div>
+  </div>
+  <p class="small">This is a readiness checklist, not a statement that these enterprise checks have already been completed.</p>
+ </section>
+ <div class="audience-note">For decision-makers evaluating roadmap, technical risk, investment and readiness for a pilot or integration.</div>
+</section>
+</main>
+<footer class="footer">Adaptive Learning · Product & Solution Overview · Living POC, buyer discussion and developer architecture reference. Current-state statements reflect previously reviewed source snapshots and user-reported demonstrations; proposed capabilities are labelled and require implementation, validation and adopter-specific assessment.</footer>
+<script>
+const tabs=[...document.querySelectorAll('[role="tab"]')];
+const panels=[...document.querySelectorAll('[role="tabpanel"]')];
+function activate(name,focus=false){
+ tabs.forEach(t=>{const on=t.dataset.view===name;t.setAttribute('aria-selected',String(on));t.tabIndex=on?0:-1;});
+ panels.forEach(p=>p.classList.toggle('active',p.id==='view-'+name));
+ if(focus){document.getElementById('tab-'+name)?.focus();}
+ window.scrollTo({top:0,behavior:'smooth'});
+}
+tabs.forEach((tab,i)=>{
+ tab.addEventListener('click',()=>activate(tab.dataset.view));
+ tab.addEventListener('keydown',e=>{
+  if(!['ArrowRight','ArrowLeft','Home','End'].includes(e.key))return;
+  e.preventDefault();
+  let next=i;
+  if(e.key==='ArrowRight')next=(i+1)%tabs.length;
+  if(e.key==='ArrowLeft')next=(i-1+tabs.length)%tabs.length;
+  if(e.key==='Home')next=0;if(e.key==='End')next=tabs.length-1;
+  activate(tabs[next].dataset.view,true);
+ });
+});
+document.getElementById('print').addEventListener('click',()=>window.print());
+
+document.getElementById('explore-solution').addEventListener('click',()=>{
+ document.querySelector('.navshell').scrollIntoView({behavior:'smooth',block:'start'});
+});
+document.getElementById('see-learning-journey').addEventListener('click',()=>{
+ document.getElementById('student-journey').scrollIntoView({behavior:'smooth',block:'center'});
+});
+
+</script>
+</body>
+</html>

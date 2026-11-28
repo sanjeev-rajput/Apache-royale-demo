@@ -181,3 +181,20 @@ export async function getLearningExplanationGuidance(message) {
     return "";
   }
 }
+
+/**
+ * Load guidance for one profile already selected by the Adaptive session.
+ * This avoids a second catalogue search combining unrelated profiles after
+ * an assessment. Profile metadata (including status) does not gate loading.
+ */
+export async function getLearningProfileGuidance(instructionProfileId) {
+  const profileId = String(instructionProfileId || "").trim();
+  if (!profileId) return "";
+
+  try {
+    return await loadInstructionsForCatalogueResults([{ instructionProfileId: profileId }]);
+  } catch (error) {
+    console.warn(`[Adaptive Learning] SME profile '${profileId}' lookup skipped:`, error.message);
+    return "";
+  }
+}
